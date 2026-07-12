@@ -1,0 +1,307 @@
+{
+  "sample_id": "AMB_HD_u06_associative_S2",
+  "source": "partner_generated",
+  "status": "rendered",
+  "association_type": "A3_cross_domain",
+  "domain_tags": [
+    "health/wellness",
+    "food/cooking"
+  ],
+  "pilot_arm": "associative",
+  "pilot_domain": "health_diet",
+  "persona_source": {
+    "corpus": "RHELM",
+    "ref": "microsoft/RHELM:conversations/Jonas_Richter",
+    "display_name": "RHELM-Jonas_Richter"
+  },
+  "context_length_tokens": 670,
+  "persona": {
+    "user_id": "hd_u06",
+    "stable_traits": [
+      "Jonas Richter persona anchor",
+      "structured weekday schedule",
+      "cautious about stimulants",
+      "prefers predictable meals"
+    ],
+    "evolving_state": {
+      "stimulant_cutoff": "post_14h_fragile",
+      "sleep_dependency": "high"
+    }
+  },
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2026-01-11T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Sorted research PDFs into folders. Feels cleaner."
+        },
+        {
+          "role": "assistant",
+          "content": "Nice. Any deadline attached to that pile?"
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2026-01-12T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Work mode today felt very 'Jonas Richter persona anchor' — long blocks, little slack."
+        },
+        {
+          "role": "assistant",
+          "content": "Given that analytical pace, worth protecting recovery tonight."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2026-02-13T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "If I take a potent stimulant after mid-afternoon, I don't fall asleep on time and the night gets chopped up."
+        },
+        {
+          "role": "assistant",
+          "content": "Does that show up the next day?"
+        },
+        {
+          "role": "user",
+          "content": "Always. The night itself is the first casualty."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2026-02-14T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Tried a new tea. Too floral."
+        },
+        {
+          "role": "assistant",
+          "content": "Back to the usual blend then?"
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2026-02-15T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "After a chopped-up night I'm useless on anything that needs sharp dawn focus — details just slip."
+        },
+        {
+          "role": "assistant",
+          "content": "So recovery sleep is load-bearing for early demanding work."
+        },
+        {
+          "role": "user",
+          "content": "Yes. I can't fake it with willpower."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2026-03-16T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Friends keep hyping a strong energy drink during evening slide prep before a high-stakes 8am session."
+        },
+        {
+          "role": "assistant",
+          "content": "That's a common productivity folklore loop. Logging the suggestion, nothing more?"
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2026-03-17T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Saw energy-drink cans next to laptop chargers in the study room — tonight-prep vibes everywhere."
+        },
+        {
+          "role": "assistant",
+          "content": "Campus culture around caffeine before early sessions is loud."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2026-03-18T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Weather was grey. Stayed indoors."
+        },
+        {
+          "role": "assistant",
+          "content": "Good day for quiet tasks."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2026-04-19T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Wrapped a small admin task."
+        },
+        {
+          "role": "assistant",
+          "content": "One less open loop."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2026-04-20T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I have a high-stakes 8am session tomorrow. Friends say I should grab a strong energy drink tonight while I prep slides. Should I?"
+        }
+      ]
+    }
+  ],
+  "query": "I have a high-stakes 8am session tomorrow. Friends say I should grab a strong energy drink tonight while I prep slides. Should I?",
+  "query_source": "final_turn",
+  "gold_answer": "No — or only a very early, mild option long before evening. Stimulants after mid-afternoon have delayed/fragmented sleep, and fragmented nights collapse morning focus. Protect sleep instead of stacking a late energy drink.",
+  "required_elements": [
+    "cites post-afternoon caffeine sleep effect",
+    "cites fragmented-night morning focus cost",
+    "recommendation against late stimulant before early duty (or heavily conditional)"
+  ],
+  "target_evidence_ids": [
+    "ev_A",
+    "ev_B"
+  ],
+  "associative_cue_id": "cue_1",
+  "distractor_ids": [],
+  "associative_links": [
+    {
+      "source": "ev_A",
+      "relation": "causes",
+      "target": "sleep_fragmentation",
+      "hop": 1
+    },
+    {
+      "source": "ev_B",
+      "relation": "causes",
+      "target": "morning_focus_collapse",
+      "hop": 1
+    },
+    {
+      "source": [
+        "ev_A",
+        "ev_B"
+      ],
+      "relation": "co_activate_to",
+      "target": "late_stimulant_harms_early_duty",
+      "hop": 2
+    }
+  ],
+  "annotation": {
+    "1": {
+      "role_setup": "filler"
+    },
+    "2": {
+      "role_setup": "filler"
+    },
+    "3": {
+      "role_setup": "target_evidence",
+      "evidence_id": "ev_A",
+      "atomic_fact": "Caffeine after mid-afternoon delays sleep onset and fragments the night."
+    },
+    "4": {
+      "role_setup": "filler"
+    },
+    "5": {
+      "role_setup": "target_evidence",
+      "evidence_id": "ev_B",
+      "atomic_fact": "After a fragmented night, next-morning focus collapses on demanding tasks."
+    },
+    "6": {
+      "role_setup": "filler",
+      "surface_lure": true,
+      "why_filler": "Query-surface vocabulary only; no bodily causal facts (V1 flat-RAG decoy)."
+    },
+    "7": {
+      "role_setup": "filler",
+      "surface_lure": true,
+      "why_filler": "Query-surface vocabulary only; no bodily causal facts (V1 flat-RAG decoy)."
+    },
+    "8": {
+      "role_setup": "filler"
+    },
+    "9": {
+      "role_setup": "filler"
+    },
+    "10": {
+      "role_setup": "associative_cue",
+      "cue_id": "cue_1"
+    }
+  },
+  "latent_forbidden_phrases": [
+    "caffeine curfew rule",
+    "stimulant ban after noon",
+    "will fail the morning duty"
+  ],
+  "counterfactual_variants": [
+    {
+      "variant_id": "AMB_HD_u06_associative_S2_cf_no_evidence",
+      "type": "evidence_removed",
+      "removed_session_ids": [
+        3,
+        5
+      ],
+      "expected_gold": "insufficient evidence / abstain"
+    }
+  ],
+  "validity_metrics": {
+    "lexical_jaccard_query_evidence": 0.0,
+    "embed_cosine_query_evidence": 0.0,
+    "flat_rag_hit_top3": false,
+    "distractor_cosine_query": 0.0,
+    "evidence_cosine_query": 0.0,
+    "validity_method": {
+      "embedder": "tfidf-local-proxy",
+      "lexical": "jaccard-stopword-filtered",
+      "computed_by": "health_diet/bin/generate_health_diet_batch.py",
+      "computed_at": "2026-07-12"
+    }
+  },
+  "provenance": {
+    "generator": "health_diet_batch_v1",
+    "generated_by": "autoresearch_pilot",
+    "persona_corpus": "RHELM",
+    "persona_ref": "microsoft/RHELM:conversations/Jonas_Richter",
+    "scenario_id": "S2",
+    "scenario_name": "afternoon_caffeine_x_sleep",
+    "batch_id": "HD_2026-07-12_v1",
+    "standard": "DATA_STANDARD_v1"
+  },
+  "dataset_meta": {
+    "human_verified_by": [],
+    "iaa_cohort_kappa": null,
+    "iaa_n_overlap": null,
+    "reproduce": {
+      "loader_rule": "serialize context dialogue role+content only; strip annotation/evolving_state",
+      "metrics": [
+        "answer_vs_gold+required_elements",
+        "validity_metrics.flat_rag_hit_top3",
+        "distractor_cosine>=evidence_cosine for distractor arm"
+      ]
+    }
+  }
+}

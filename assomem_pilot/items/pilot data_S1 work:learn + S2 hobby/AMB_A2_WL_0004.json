@@ -1,0 +1,263 @@
+{
+  "sample_id": "AMB_A2_WL_0004",
+  "source": "partner_generated",
+  "status": "rendered",
+  "association_type": "A2_cue_chain",
+  "domain_tags": [
+    "work/career",
+    "learning/education"
+  ],
+  "pilot_arm": "associative",
+  "pilot_domain": "work_learning",
+  "context_length_tokens": 709,
+  "persona": {
+    "user_id": "u_wl_04",
+    "stable_traits": [
+      "junior engineer",
+      "social learner",
+      "asks questions freely"
+    ],
+    "evolving_state": {
+      "learning_mode": "pair_programming_dependent"
+    }
+  },
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2026-01-12T19:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Tried a new sandwich place near the office. Decent."
+        },
+        {
+          "role": "assistant",
+          "content": "Always good to find a reliable lunch spot. Will you go back?"
+        },
+        {
+          "role": "user",
+          "content": "Probably on Thursdays when I am in."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2026-01-27T20:30:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Onboarding clicked only after Maya sat with me for two afternoons and we chased bugs together on one screen. Working alone from the backlog before that felt like guessing in the dark."
+        },
+        {
+          "role": "assistant",
+          "content": "Side-by-side debugging can compress months of thrashing. Glad it helped."
+        },
+        {
+          "role": "user",
+          "content": "I still ask her to share her screen when I hit a wall. Solo docs are slower for me."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2026-02-08T11:15:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Gym membership finally activated. Starting with short sessions."
+        },
+        {
+          "role": "assistant",
+          "content": "Consistency beats intensity at the start. Good plan."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2026-02-20T18:40:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Recruiter pinged me about a remote role with a fully async culture — tickets and comments, almost no live pairing. Early stage chat."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth a conversation even if you stay put. Curious about the stack?"
+        },
+        {
+          "role": "user",
+          "content": "Mostly TypeScript. Similar to what I do now. Not sure about that async offer yet."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2026-03-05T21:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Finished a mystery novel in two nights. Could not put it down."
+        },
+        {
+          "role": "assistant",
+          "content": "Nice binge. Looking for another recommendation?"
+        },
+        {
+          "role": "user",
+          "content": "Maybe later. Brain needs a break from plot twists."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2026-03-16T13:25:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Our team is debating more written feedback in comments versus live syncs. Some want a fully async culture."
+        },
+        {
+          "role": "assistant",
+          "content": "Different people thrive on different channels. Where do you land?"
+        },
+        {
+          "role": "user",
+          "content": "I have not decided yet. Still listening about how we ramp on new systems."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2026-03-29T17:50:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Bought a second monitor for the home desk. Setup feels less cramped."
+        },
+        {
+          "role": "assistant",
+          "content": "Extra screen space helps a lot. Enjoy the roomier layout."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2026-04-08T19:20:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "That remote team sent an offer. Culture is fully async — written comments only, no real-time collaboration, backlog items alone. Should I accept given how I ramp on new systems?"
+        }
+      ]
+    }
+  ],
+  "query": "That remote team sent an offer. Culture is fully async — written comments only, no real-time collaboration, backlog items alone. Should I accept given how I ramp on new systems?",
+  "query_source": "final_turn",
+  "gold_answer": "Lean no, or negotiate structured real-time collaboration. The user ramps by sitting with someone on one screen and stalls on solo backlog grinding, so a fully async comments-only culture is a poor match for how they learn new systems.",
+  "required_elements": [
+    "cites live co-debugging / screen-share ramp pattern",
+    "flags async comments-only culture as a mismatch",
+    "recommendation negative or heavily conditional"
+  ],
+  "target_evidence_ids": [
+    "ev_A"
+  ],
+  "associative_cue_id": "cue_1",
+  "distractor_ids": [],
+  "associative_links": [
+    {
+      "source": "ev_A",
+      "relation": "indicates",
+      "target": "needs_live_pairing",
+      "hop": 1
+    },
+    {
+      "source": "needs_live_pairing",
+      "relation": "constrains",
+      "target": "answer_to_cue_1",
+      "hop": 2
+    }
+  ],
+  "annotation": {
+    "1": {
+      "role_setup": "filler"
+    },
+    "2": {
+      "role_setup": "target_evidence",
+      "evidence_id": "ev_A",
+      "atomic_fact": "The user learns new codebases fastest through live co-debugging, not solo backlog grinding."
+    },
+    "3": {
+      "role_setup": "filler"
+    },
+    "4": {
+      "role_setup": "filler"
+    },
+    "5": {
+      "role_setup": "filler"
+    },
+    "6": {
+      "role_setup": "filler"
+    },
+    "7": {
+      "role_setup": "filler"
+    },
+    "8": {
+      "role_setup": "associative_cue"
+    }
+  },
+  "counterfactual_variants": [
+    {
+      "variant_id": "AMB_A2_WL_0004_cf_no_evidence",
+      "type": "evidence_removed",
+      "removed_session_ids": [
+        2
+      ],
+      "expected_gold": "insufficient evidence — cannot judge async fit from memory"
+    },
+    {
+      "variant_id": "AMB_A2_WL_0004_cf_solo_strong",
+      "type": "evidence_replaced",
+      "replace_session_id": 2,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "I ramp fastest alone with docs and tickets. Pairing actually slows me down."
+        },
+        {
+          "role": "assistant",
+          "content": "Solo deep dives work well for some people."
+        }
+      ],
+      "expected_gold": "async-only offer could fit a strong solo learner"
+    }
+  ],
+  "latent_forbidden_phrases": [
+    "pair_programming_dependent",
+    "reject async-only offer",
+    "will stall without live co-debugging"
+  ],
+  "validity_metrics": {
+    "lexical_jaccard_query_evidence": 0.0545,
+    "embed_cosine_query_evidence": 0.0672,
+    "flat_rag_hit_top3": false,
+    "distractor_cosine_query": 0.0,
+    "evidence_cosine_query": 0.0672,
+    "validity_method": {
+      "embedder": "tfidf-local-proxy",
+      "lexical": "jaccard-stopword-filtered",
+      "computed_by": "assomem_pilot/validity_gate.py",
+      "computed_at": "2026-07-11"
+    }
+  },
+  "provenance": {
+    "generator": "planned+rendered",
+    "generated_by": "autoresearch_pilot",
+    "pilot_batch": "2026-07-11_wl_hh_v1"
+  },
+  "dataset_meta": {
+    "human_verified_by": [],
+    "iaa_cohort_kappa": null,
+    "iaa_n_overlap": null
+  }
+}

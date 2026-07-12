@@ -1,0 +1,268 @@
+{
+  "sample_id": "AMB_HH_u10_distractor_S1",
+  "source": "partner_generated",
+  "status": "rendered",
+  "association_type": "A3_cross_domain",
+  "secondary_association_type": "distractor_interference",
+  "domain_tags": [
+    "hobbies/leisure",
+    "health/wellness"
+  ],
+  "pilot_arm": "distractor",
+  "pilot_domain": "hobby_habit",
+  "context_length_tokens": 669,
+  "persona": {
+    "user_id": "hh_u10",
+    "stable_traits": [
+      "psychology + AI research student",
+      "University of Michigan exchange",
+      "King's College London BSc Psychology",
+      "mundane hobby routines (running, film, cooking, clay, games)",
+      "values low-drama sustainable habits"
+    ],
+    "evolving_state": {
+      "event_readiness": "contraindicated_elevation_events",
+      "knee_pattern": "incline_flare_prone"
+    }
+  },
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2026-01-06T07:25:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Quick calf stretch reminder after an easy park loop?"
+        },
+        {
+          "role": "assistant",
+          "content": "Wall calf stretch thirty seconds each side, then a soft hamstring reach. Stop if the joint complains."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2026-01-10T19:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "My coworker is hyping a flat charity 5K race signup for their fundraising team. They keep saying the race is amazing and asking if joining the team is worth it for networking. I do not care about the fundraising angle."
+        },
+        {
+          "role": "assistant",
+          "content": "If the value is only networking, treat it as optional social time, not training advice. A flat charity race signup can be a yes for people reasons and still be unrelated to your own training limits."
+        },
+        {
+          "role": "user",
+          "content": "Yeah. Friend said it is amazing, but I am mostly annoyed by the signup pressure from the team chat."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2026-01-12T07:40:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Weekday mornings I stick to a flat park loop. When I cut through steeper neighborhood streets, my right knee starts complaining."
+        },
+        {
+          "role": "assistant",
+          "content": "Flat comfort plus steeper-street discomfort points to incline load as the trigger."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2026-01-16T12:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Simple way to note how a session felt without a fancy app?"
+        },
+        {
+          "role": "assistant",
+          "content": "Three words: effort, mood, body note. That is enough."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2026-01-18T19:30:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Clinic visit this week: keep elevation gentle for the next couple of months while things settle."
+        },
+        {
+          "role": "assistant",
+          "content": "Clear constraint. Gentle elevation for a couple of months while you keep moving on softer surfaces."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2026-01-22T08:10:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Foam roller after easy sessions — useful or skippable?"
+        },
+        {
+          "role": "assistant",
+          "content": "Optional. Use it if it feels good; skip if it irritates anything."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2026-01-25T20:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Community signups are everywhere. How do I ignore the hype?"
+        },
+        {
+          "role": "assistant",
+          "content": "Ask what constraint of yours the event respects. Hype is not a constraint check."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2026-01-28T21:10:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A coworker says a mountain race signup this month is amazing and wants me on the team. Should I? Is it worth it?"
+        }
+      ]
+    }
+  ],
+  "query": "A coworker says a mountain race signup this month is amazing and wants me on the team. Should I? Is it worth it?",
+  "query_source": "final_turn",
+  "gold_answer": "Decline. Your steeper-street knee pattern and the clinic's gentle-elevation guidance make a mountain race a poor fit. The flat charity 5K chatter is unrelated social noise.",
+  "required_elements": [
+    "cites knee discomfort on steeper routes",
+    "cites gentle-elevation clinic guidance",
+    "recommends declining the mountain race",
+    "does not treat the charity 5K as decisive evidence"
+  ],
+  "target_evidence_ids": [
+    "ev_A",
+    "ev_B"
+  ],
+  "associative_cue_id": "cue_1",
+  "distractor_ids": [
+    "dist_1"
+  ],
+  "associative_links": [
+    {
+      "source": "ev_A",
+      "relation": "indicates",
+      "target": "elevation_intolerance",
+      "hop": 1
+    },
+    {
+      "source": "ev_B",
+      "relation": "constrains",
+      "target": "elevation_events",
+      "hop": 1
+    },
+    {
+      "source": "dist_1",
+      "relation": "analogous",
+      "target": "surface_race_signup_language_only",
+      "hop": 1
+    }
+  ],
+  "annotation": {
+    "1": {
+      "role_setup": "filler"
+    },
+    "2": {
+      "role_setup": "distractor",
+      "distractor_id": "dist_1",
+      "why_distractor": "Talks about race signup, team, friend said amazing, and whether it is worth it — sharing the query's decision vocabulary — but discusses a flat charity 5K for a coworker, which is associatively irrelevant to the user's incline knee constraint."
+    },
+    "3": {
+      "role_setup": "target_evidence",
+      "evidence_id": "ev_A",
+      "atomic_fact": "User jogs weekday mornings on flat park paths and feels knee discomfort on steeper neighborhood streets."
+    },
+    "4": {
+      "role_setup": "filler"
+    },
+    "5": {
+      "role_setup": "target_evidence",
+      "evidence_id": "ev_B",
+      "atomic_fact": "Clinic advised keeping elevation gentle for a couple of months."
+    },
+    "6": {
+      "role_setup": "filler"
+    },
+    "7": {
+      "role_setup": "filler"
+    },
+    "8": {
+      "role_setup": "associative_cue",
+      "cue_id": "cue_1"
+    }
+  },
+  "counterfactual_variants": [
+    {
+      "variant_id": "cf_remove_distractor",
+      "type": "evidence_removed",
+      "removed_session_ids": [
+        2
+      ],
+      "expected_gold": "Same recommendation: decline the mountain race based on knee incline pattern and clinic guidance."
+    },
+    {
+      "variant_id": "cf_remove_ev_A",
+      "type": "evidence_removed",
+      "removed_session_ids": [
+        3
+      ],
+      "expected_gold": "With only clinic elevation guidance, remain cautious about a mountain race until course profile is known."
+    }
+  ],
+  "latent_forbidden_phrases": [
+    "contraindicated_elevation_events",
+    "incline_flare_prone",
+    "skip the mountain race",
+    "do not sign up for the race"
+  ],
+  "validity_metrics": {
+    "lexical_jaccard_query_evidence": 0.0,
+    "embed_cosine_query_evidence": 0.0,
+    "flat_rag_hit_top3": false,
+    "distractor_cosine_query": 0.346,
+    "evidence_cosine_query": 0.0,
+    "validity_method": {
+      "embedder": "tfidf-local-proxy",
+      "lexical": "jaccard-stopword-filtered",
+      "computed_by": "hobby_habit/bin/generate_hobby_habit_batch.py",
+      "computed_at": "2026-07-12"
+    }
+  },
+  "provenance": {
+    "generator": "hobby_habit_migrate_pilot_v1",
+    "generated_by": "autoresearch_pilot",
+    "pilot_batch": "2026-07-11_wl_hh_v1",
+    "migrated_from": "pilot:AMB_A3_HH_0006",
+    "migrated_from_file": "AMB_A3_HH_0006.json",
+    "batch_id": "HH_2026-07-12_v1",
+    "standard": "DATA_STANDARD_v1"
+  },
+  "dataset_meta": {
+    "human_verified_by": [],
+    "iaa_cohort_kappa": null,
+    "iaa_n_overlap": null
+  },
+  "persona_source": {
+    "corpus": "desktop_user",
+    "ref": "local:Healthy Li (UMich exchange / KCL Psychology; pilot HH migrated)",
+    "display_name": "desktop-Healthy_Li"
+  }
+}

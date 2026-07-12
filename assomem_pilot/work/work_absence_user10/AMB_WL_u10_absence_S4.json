@@ -1,0 +1,213 @@
+{
+  "sample_id": "AMB_WL_u10_absence_S4",
+  "source": "partner_generated",
+  "status": "rendered",
+  "association_type": "A5_absence_control",
+  "domain_tags": [
+    "work/career",
+    "learning/education"
+  ],
+  "pilot_arm": "absence",
+  "pilot_domain": "work_learning",
+  "context_length_tokens": 442,
+  "persona": {
+    "user_id": "wl_u10",
+    "stable_traits": [
+      "psychology + AI research student",
+      "University of Michigan exchange",
+      "King's College London BSc Psychology",
+      "software/research work rhythms",
+      "values deep work autonomy"
+    ],
+    "evolving_state": {
+      "learning_mode": "unknown_unobserved"
+    }
+  },
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2026-01-15T19:20:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "New sandwich place near the office is decent."
+        },
+        {
+          "role": "assistant",
+          "content": "Always good to have a reliable lunch option."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2026-01-29T11:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Gym membership activated. Short sessions first."
+        },
+        {
+          "role": "assistant",
+          "content": "Consistency over intensity. Solid plan."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2026-02-11T18:40:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Recruiter pinged about a remote role. Early chat only."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth hearing them out. Similar stack?"
+        },
+        {
+          "role": "user",
+          "content": "Mostly TypeScript."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2026-02-25T21:10:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Finished a mystery novel in two nights."
+        },
+        {
+          "role": "assistant",
+          "content": "Nice binge. Ready for another?"
+        },
+        {
+          "role": "user",
+          "content": "Later. Brain needs a break."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2026-03-10T13:30:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Team debating written updates versus live syncs."
+        },
+        {
+          "role": "assistant",
+          "content": "Different channels suit different people."
+        },
+        {
+          "role": "user",
+          "content": "Still listening for now."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2026-03-22T17:55:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Second monitor arrived. Desk feels roomier."
+        },
+        {
+          "role": "assistant",
+          "content": "Extra screen space helps a lot."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2026-04-05T19:20:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "That remote team sent an offer. Culture is fully async — no pairing, tickets only, feedback in comments. Should I take it given how I ramp on new systems?"
+        }
+      ]
+    }
+  ],
+  "query": "That remote team sent an offer. Culture is fully async — no pairing, tickets only, feedback in comments. Should I take it given how I ramp on new systems?",
+  "query_source": "final_turn",
+  "gold_answer": "Not enough evidence in memory about how this user ramps on new systems. Abstain from a yes/no on the async-only offer and ask whether live pairing or solo tickets have worked better historically.",
+  "required_elements": [
+    "abstains or cites insufficient evidence",
+    "does not invent pairing preference"
+  ],
+  "target_evidence_ids": [],
+  "associative_cue_id": "cue_1",
+  "distractor_ids": [],
+  "associative_links": [],
+  "annotation": {
+    "1": {
+      "role_setup": "filler"
+    },
+    "2": {
+      "role_setup": "filler"
+    },
+    "3": {
+      "role_setup": "filler"
+    },
+    "4": {
+      "role_setup": "filler"
+    },
+    "5": {
+      "role_setup": "filler"
+    },
+    "6": {
+      "role_setup": "filler"
+    },
+    "7": {
+      "role_setup": "associative_cue",
+      "cue_id": "cue_1"
+    }
+  },
+  "counterfactual_variants": [
+    {
+      "variant_id": "AMB_A5_WL_0014_cf_add_evidence",
+      "type": "evidence_added",
+      "expected_gold": "with pairing-preference evidence, lean against async-only"
+    }
+  ],
+  "latent_forbidden_phrases": [
+    "pair_programming_dependent",
+    "needs live pairing",
+    "stalls on solo tickets"
+  ],
+  "validity_metrics": {
+    "lexical_jaccard_query_evidence": 0.0,
+    "embed_cosine_query_evidence": 0.0,
+    "flat_rag_hit_top3": false,
+    "distractor_cosine_query": 0.0,
+    "evidence_cosine_query": 0.0,
+    "validity_method": {
+      "embedder": "tfidf-local-proxy",
+      "lexical": "jaccard-stopword-filtered",
+      "computed_by": "work_learn/bin/generate_work_learn_batch.py",
+      "computed_at": "2026-07-12"
+    }
+  },
+  "provenance": {
+    "generator": "work_learn_migrate_pilot_v1",
+    "generated_by": "autoresearch_pilot",
+    "pilot_batch": "2026-07-11_wl_hh_v1",
+    "migrated_from": "pilot:AMB_A5_WL_0014",
+    "migrated_from_file": "AMB_A5_WL_0014.json",
+    "batch_id": "WL_2026-07-12_v1",
+    "standard": "DATA_STANDARD_v1"
+  },
+  "dataset_meta": {
+    "human_verified_by": [],
+    "iaa_cohort_kappa": null,
+    "iaa_n_overlap": null
+  },
+  "persona_source": {
+    "corpus": "desktop_user",
+    "ref": "local:Healthy Li (UMich exchange / KCL Psychology; pilot WL migrated)",
+    "display_name": "desktop-Healthy_Li"
+  }
+}
