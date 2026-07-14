@@ -1,0 +1,213 @@
+{
+  "sample_id": "AMB_A2_HH_0004",
+  "source": "partner_generated",
+  "status": "rendered",
+  "association_type": "A2_cue_chain",
+  "domain_tags": [
+    "hobbies/leisure",
+    "health/wellness"
+  ],
+  "pilot_arm": "associative",
+  "pilot_domain": "hobby_habit",
+  "context_length_tokens": 575,
+  "persona": {
+    "user_id": "u_hh_04",
+    "stable_traits": [
+      "trains finger strength on a hangboard",
+      "history of overuse caution",
+      "likes measurable progress"
+    ],
+    "evolving_state": {
+      "finger_status": "post_pulley_guarded",
+      "max_hang_readiness": "not_cleared"
+    }
+  },
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2026-02-02T18:10:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "What warm-up do you recommend before any board session?"
+        },
+        {
+          "role": "assistant",
+          "content": "Start with open-hand dead hangs at bodyweight, then easy pull-ups, then short edge touches. Stop if anything feels pinchy in a finger joint."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2026-02-05T20:30:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I tweaked a finger pulley last season. It feels mostly okay now, but I am still avoiding peak one-arm edge efforts and sticking to easier open-hand work."
+        },
+        {
+          "role": "assistant",
+          "content": "That is a sensible guardrail. Easier open-hand loading while you stay away from peak one-arm edge efforts reduces re-injury risk."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2026-02-08T11:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Should I ice after every session or only when something feels irritated?"
+        },
+        {
+          "role": "assistant",
+          "content": "Only when something feels irritated. Routine icing after normal sessions is usually unnecessary."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2026-02-11T19:20:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Gyms love challenge signups. How do I evaluate whether a signup is useful training or just marketing?"
+        },
+        {
+          "role": "assistant",
+          "content": "Check whether the challenge signup matches your current limits. If it pushes a quality you are deliberately avoiding, it is marketing, not training."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2026-02-14T10:15:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Any non-board forearm work that will not spike tendon load?"
+        },
+        {
+          "role": "assistant",
+          "content": "Rice-bucket rotations and light wrist curls with high control are usually gentler than dense edge work."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2026-02-17T21:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A friend said the gym challenge signup this month is amazing. I am on the fence about whether I should join."
+        },
+        {
+          "role": "assistant",
+          "content": "Filter any challenge signup against what you already decided to protect. Hype alone is not a reason to join."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2026-02-20T18:45:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The climbing gym is pushing a max-hang challenge signup this month. Should I join?"
+        }
+      ]
+    }
+  ],
+  "query": "The climbing gym is pushing a max-hang challenge signup this month. Should I join?",
+  "query_source": "final_turn",
+  "gold_answer": "No. After a prior finger pulley strain you are still avoiding peak one-arm edge efforts. A max-hang challenge signup is the same kind of peak loading, so skip it for now.",
+  "required_elements": [
+    "cites prior finger pulley strain",
+    "cites current avoidance of peak one-arm edge efforts",
+    "recommends not joining the challenge"
+  ],
+  "target_evidence_ids": [
+    "ev_A"
+  ],
+  "associative_cue_id": "cue_1",
+  "distractor_ids": [],
+  "associative_links": [
+    {
+      "source": "ev_A",
+      "relation": "constrains",
+      "target": "max_hang_protocols",
+      "hop": 1
+    },
+    {
+      "source": "cue_1",
+      "relation": "indicates",
+      "target": "max_hang_protocols",
+      "hop": 1
+    }
+  ],
+  "annotation": {
+    "1": {
+      "role_setup": "filler"
+    },
+    "2": {
+      "role_setup": "target_evidence",
+      "evidence_id": "ev_A",
+      "atomic_fact": "User had a prior finger pulley strain and still avoids peak one-arm edge efforts while recovering cautiously."
+    },
+    "3": {
+      "role_setup": "filler"
+    },
+    "4": {
+      "role_setup": "filler"
+    },
+    "5": {
+      "role_setup": "filler"
+    },
+    "6": {
+      "role_setup": "filler"
+    },
+    "7": {
+      "role_setup": "associative_cue"
+    }
+  },
+  "counterfactual_variants": [
+    {
+      "variant_id": "cf_remove_ev_A",
+      "type": "evidence_removed",
+      "removed_session_ids": [
+        2
+      ],
+      "expected_gold": "Without the pulley history on record, there is insufficient personal evidence to advise for or against the challenge."
+    }
+  ],
+  "latent_forbidden_phrases": [
+    "post_pulley_guarded",
+    "not_cleared",
+    "skip the max-hang challenge",
+    "do not join the hang challenge",
+    "avoid max hangs"
+  ],
+  "validity_metrics": {
+    "lexical_jaccard_query_evidence": 0.0,
+    "embed_cosine_query_evidence": 0,
+    "flat_rag_hit_top3": false,
+    "distractor_cosine_query": 0.0,
+    "evidence_cosine_query": 0,
+    "validity_method": {
+      "embedder": "tfidf-local-proxy",
+      "lexical": "jaccard-stopword-filtered",
+      "computed_by": "assomem_pilot/validity_gate.py",
+      "computed_at": "2026-07-11"
+    }
+  },
+  "provenance": {
+    "generator": "planned+rendered",
+    "generated_by": "autoresearch_pilot",
+    "pilot_batch": "2026-07-11_wl_hh_v1"
+  },
+  "dataset_meta": {
+    "human_verified_by": [],
+    "iaa_cohort_kappa": null,
+    "iaa_n_overlap": null
+  }
+}

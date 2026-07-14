@@ -1,0 +1,293 @@
+{
+  "sample_id": "AMB_A3_WL_0003",
+  "source": "partner_generated",
+  "status": "rendered",
+  "association_type": "A3_cross_domain",
+  "domain_tags": [
+    "work/career",
+    "household/logistics"
+  ],
+  "pilot_arm": "associative",
+  "pilot_domain": "work_learning",
+  "context_length_tokens": 719,
+  "persona": {
+    "user_id": "u_wl_03",
+    "stable_traits": [
+      "backend engineer",
+      "noise-sensitive",
+      "remote-friendly"
+    ],
+    "evolving_state": {
+      "focus_environment_need": "silence_for_deep_work"
+    }
+  },
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2026-01-09T08:40:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Coffee machine at home died. Temporary French press life."
+        },
+        {
+          "role": "assistant",
+          "content": "French press can be nice. Planning a replacement soon?"
+        },
+        {
+          "role": "user",
+          "content": "Maybe next paycheck. Not urgent."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2026-01-22T21:15:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Tried working from a cafe today. Even soft chatter wrecked my concentration — I could not hold a complex bug in my head."
+        },
+        {
+          "role": "assistant",
+          "content": "Some brains need low ambient noise for hard problems. Did you leave early?"
+        },
+        {
+          "role": "user",
+          "content": "Yeah, packed up after forty minutes. Total waste."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2026-02-05T19:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Neighbor's dog barked half the night. Rough sleep."
+        },
+        {
+          "role": "assistant",
+          "content": "That is exhausting. Hope tonight is quieter."
+        },
+        {
+          "role": "user",
+          "content": "Earplugs are back on the nightstand."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2026-02-18T14:30:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Visited HQ yesterday. The open floor is basically a hallway — people stop by all day to chat."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds busy. How long were you there?"
+        },
+        {
+          "role": "user",
+          "content": "Half a day. I barely finished one issue between interruptions."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2026-03-01T11:20:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Ordered new noise-cancelling headphones. Shipping next week."
+        },
+        {
+          "role": "assistant",
+          "content": "Useful kit. Travel or home use?"
+        },
+        {
+          "role": "user",
+          "content": "Mostly transit. Home is already calm enough."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2026-03-14T16:45:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Facilities emailed about desk reassignment for hybrid days — hot desk in the main collaborative bay versus a fixed seat in a small enclosed focus room on the quiet wing."
+        },
+        {
+          "role": "assistant",
+          "content": "Hybrid seating can get political. Have you picked a preference yet?"
+        },
+        {
+          "role": "user",
+          "content": "Not yet. Waiting to see the floor map before I take either seating option."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2026-03-28T09:10:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Plant on my windowsill finally flowered. Tiny white blooms."
+        },
+        {
+          "role": "assistant",
+          "content": "That is a sweet win. What kind of plant?"
+        },
+        {
+          "role": "user",
+          "content": "Some orchid I almost killed last year. Still thinking about that enclosed room versus the bay."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2026-04-05T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Facilities offered me either a hot desk in the main collaborative bay or a fixed seat in a small enclosed room on the low-traffic wing. Which seating should I take for hybrid days if I want fewer design mistakes?"
+        }
+      ]
+    }
+  ],
+  "query": "Facilities offered me either a hot desk in the main collaborative bay or a fixed seat in a small enclosed room on the low-traffic wing. Which seating should I take for hybrid days if I want fewer design mistakes?",
+  "query_source": "final_turn",
+  "gold_answer": "Take the enclosed low-traffic seat. The user cannot hold complex work amid ambient chatter, and the open bay is described as constant hallway-style interruption, so the collaborative hot desk would undermine careful design work.",
+  "required_elements": [
+    "cites ambient-chatter concentration failure",
+    "cites open-floor interruption pattern",
+    "recommends enclosed/low-traffic seat over collaborative bay"
+  ],
+  "target_evidence_ids": [
+    "ev_A",
+    "ev_B"
+  ],
+  "associative_cue_id": "cue_1",
+  "distractor_ids": [],
+  "associative_links": [
+    {
+      "source": "ev_A",
+      "relation": "constrains",
+      "target": "ambient_noise_tolerance",
+      "hop": 1
+    },
+    {
+      "source": "ev_B",
+      "relation": "indicates",
+      "target": "open_bay_interruption",
+      "hop": 1
+    },
+    {
+      "source": [
+        "ev_A",
+        "ev_B"
+      ],
+      "relation": "co_activate_to",
+      "target": "silence_for_deep_work",
+      "hop": 2
+    },
+    {
+      "source": "silence_for_deep_work",
+      "relation": "constrains",
+      "target": "answer_to_cue_1",
+      "hop": 3
+    }
+  ],
+  "annotation": {
+    "1": {
+      "role_setup": "filler"
+    },
+    "2": {
+      "role_setup": "target_evidence",
+      "evidence_id": "ev_A",
+      "atomic_fact": "The user needs near-silence to enter deep concentration; ambient chatter breaks it."
+    },
+    "3": {
+      "role_setup": "filler"
+    },
+    "4": {
+      "role_setup": "target_evidence",
+      "evidence_id": "ev_B",
+      "atomic_fact": "The company's open-plan floor has constant hallway traffic and ad-hoc conversations near desks."
+    },
+    "5": {
+      "role_setup": "filler"
+    },
+    "6": {
+      "role_setup": "filler"
+    },
+    "7": {
+      "role_setup": "filler"
+    },
+    "8": {
+      "role_setup": "associative_cue"
+    }
+  },
+  "counterfactual_variants": [
+    {
+      "variant_id": "AMB_A3_WL_0003_cf_no_evidence",
+      "type": "evidence_removed",
+      "removed_session_ids": [
+        2,
+        4
+      ],
+      "expected_gold": "insufficient evidence — cannot recommend seating from memory"
+    },
+    {
+      "variant_id": "AMB_A3_WL_0003_cf_likes_buzz",
+      "type": "evidence_replaced",
+      "replace_session_id": 2,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "I love cafe buzz when I code. Background energy keeps me sharp."
+        },
+        {
+          "role": "assistant",
+          "content": "Some people thrive on that hum."
+        }
+      ],
+      "also_remove_session_ids": [
+        4
+      ],
+      "expected_gold": "collaborative bay could be fine if ambient energy helps"
+    }
+  ],
+  "latent_forbidden_phrases": [
+    "silence_for_deep_work",
+    "reject open-plan desk",
+    "needs closed room"
+  ],
+  "validity_metrics": {
+    "lexical_jaccard_query_evidence": 0.013,
+    "embed_cosine_query_evidence": 0.0251,
+    "flat_rag_hit_top3": false,
+    "distractor_cosine_query": 0.0,
+    "evidence_cosine_query": 0.0251,
+    "validity_method": {
+      "embedder": "tfidf-local-proxy",
+      "lexical": "jaccard-stopword-filtered",
+      "computed_by": "assomem_pilot/validity_gate.py",
+      "computed_at": "2026-07-11"
+    }
+  },
+  "provenance": {
+    "generator": "planned+rendered",
+    "generated_by": "autoresearch_pilot",
+    "pilot_batch": "2026-07-11_wl_hh_v1"
+  },
+  "dataset_meta": {
+    "human_verified_by": [],
+    "iaa_cohort_kappa": null,
+    "iaa_n_overlap": null
+  }
+}

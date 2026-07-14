@@ -9,3 +9,15 @@ results.json
 .ipynb_checkpoints/
 *.egg-info/
 .pytest_cache/
+
+# local IDE / MCP config, not part of the pipeline
+.vscode/
+.vscode:mcp.json
+
+# stray exports / scratch files
+notion.zip
+data - how to get 1000 conversations.md
+data - how to get 1000 conversations-assets/
+
+# third-party reference papers (copyright; not needed to reproduce)
+docs/papers/

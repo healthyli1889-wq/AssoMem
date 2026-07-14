@@ -82,19 +82,23 @@ class BenchItem:
     """One unified associative-inference test item.
 
     Maps the four base datasets onto one schema (see data/README.md):
-      stored_context : the user history / facts the agent may use   (PersonaMem context,
-                       LoCoMo sessions, PerLTQA profile+events)
-      query          : the trigger asking the agent to INFER something new
-      options        : MC options (PersonaMem); empty -> open-ended
-      gold           : ground-truth inferred preference / answer
-      evidence_ids   : which stored facts support the gold (LoCoMo evidence / PerLTQA anchor)
-      constraints    : ordered list of accumulated conditions for long-horizon RS scoring
-      action_gold    : downstream action the inferred preference should drive (MemoryArena)
-      scenario       : "associative" | "long_horizon" | "memory_to_action"
-      question_type  : recall | suggest_new | recommend | generalize | track_update ...
+      stored_context    : the user history / facts the agent may use
+      query             : the trigger asking the agent to INFER something new
+      options           : MC options (PersonaMem); empty -> open-ended
+      gold              : ground-truth inferred preference / answer
+      evidence_ids      : which stored facts support the gold
+      constraints       : ordered list of accumulated conditions for long-horizon RS scoring
+      action_gold       : downstream action the inferred preference should drive (MemoryArena)
+      scenario          : "associative" | "long_horizon" | "memory_to_action" | "working_memory_control"
+      question_type     : recall | suggest_new | recommend | generalize | track_update ...
+      association_type  : A1_relational_binding | A2_cue_chain | A3_cross_domain |
+                          A4_temporal_consistency | A5_absence_control
+                          (from the annotation scheme; used to stratify evaluation results)
+      counterfactual_probes : auto-detected probe types for A5 Counterfactual Necessity
+                          (no_memory | remove_bridge | stale_memory | distractor_swap)
     """
     item_id: str
-    source: str                              # personamem | locomo | perltqa | memoryarena | synthetic
+    source: str                              # personamem | locomo | perltqa | memoryarena | longmemeval
     scenario: str
     stored_context: List[str]
     query: str
@@ -105,6 +109,9 @@ class BenchItem:
     action_gold: Optional[str] = None
     question_type: str = "suggest_new"
     is_answerable: bool = True               # False -> abstention item (validity control)
+    association_type: str = ""               # A1 / A2 / A3 / A4 / A5_absence_control
+    counterfactual_probes: List[str] = field(default_factory=list)   # no_memory | remove_bridge | ...
+    distractor_ids: List[str] = field(default_factory=list)   # session/turn ids of injected lures
     meta: Dict[str, Any] = field(default_factory=dict)
 
     @property

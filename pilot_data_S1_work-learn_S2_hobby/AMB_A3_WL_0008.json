@@ -1,0 +1,269 @@
+{
+  "sample_id": "AMB_A3_WL_0008",
+  "source": "partner_generated",
+  "status": "rendered",
+  "association_type": "A3_cross_domain",
+  "domain_tags": [
+    "work/career",
+    "health/wellness"
+  ],
+  "pilot_arm": "distractor",
+  "pilot_domain": "work_learning",
+  "context_length_tokens": 704,
+  "persona": {
+    "user_id": "u_wl_08",
+    "stable_traits": [
+      "engineer",
+      "caffeine-dependent mornings",
+      "client-facing sometimes"
+    ],
+    "evolving_state": {
+      "energy_crash_pattern": "post_2pm_crash"
+    }
+  },
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2026-01-11T09:20:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Monday inbox was brutal. Cleared the urgent ones."
+        },
+        {
+          "role": "assistant",
+          "content": "Good triage. Anything left that can wait?"
+        },
+        {
+          "role": "user",
+          "content": "A few docs. Tomorrow problem."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2026-01-25T15:45:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "My coffee high dies after two o'clock. After that I am foggy and slow no matter what I drink."
+        },
+        {
+          "role": "assistant",
+          "content": "That afternoon dip is common. Does it hit focus hard?"
+        },
+        {
+          "role": "user",
+          "content": "Yeah. Detailed reviews after that are a mess."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2026-02-07T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Bought running shoes. Plan is short loops after work."
+        },
+        {
+          "role": "assistant",
+          "content": "Short and consistent is a good start."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2026-02-21T20:10:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "That 4pm account review last month was embarrassing. I lost the thread twice and someone else had to rescue the meeting."
+        },
+        {
+          "role": "assistant",
+          "content": "Harsh memory. Was the material unfamiliar?"
+        },
+        {
+          "role": "user",
+          "content": "No, I knew it. I was just empty by then."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2026-03-06T12:30:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A senior said late client workshops are amazing for visibility — if you want to grow, you should say yes to every workshop slot because leadership notices who shows up."
+        },
+        {
+          "role": "assistant",
+          "content": "Visibility advice is common. Does it match how you actually perform?"
+        },
+        {
+          "role": "user",
+          "content": "They made it sound like it is always worth it for the career story."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2026-03-18T19:25:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Cooked a big chili batch. Freezer is happy. Also keep hearing that late client workshops are amazing for visibility and worth saying yes."
+        },
+        {
+          "role": "assistant",
+          "content": "Career advice travels fast. How do you feel about those slots?"
+        },
+        {
+          "role": "user",
+          "content": "Still deciding whether to take a recurring late block."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2026-03-30T10:05:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Account team is planning April enablement sessions and a recurring late client workshop block from 3:30 to 5:30."
+        },
+        {
+          "role": "assistant",
+          "content": "Busy month ahead then."
+        },
+        {
+          "role": "user",
+          "content": "A senior said saying yes is amazing for visibility. Not sure."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2026-04-09T17:40:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "They asked me to lead a recurring late client workshop block from 3:30 to 5:30. A senior said those workshops are amazing for visibility and worth saying yes. Should I take it?"
+        }
+      ]
+    }
+  ],
+  "query": "They asked me to lead a recurring late client workshop block from 3:30 to 5:30. A senior said those workshops are amazing for visibility and worth saying yes. Should I take it?",
+  "query_source": "final_turn",
+  "gold_answer": "Lean no or renegotiate to a morning slot. The user crashes after 2pm and already failed a late account review while cognitively empty; career-visibility talk does not change that energy constraint.",
+  "required_elements": [
+    "cites post-2pm crash",
+    "cites prior late afternoon meeting failure",
+    "does not treat visibility distractor as decisive",
+    "recommendation negative or time-shift conditional"
+  ],
+  "target_evidence_ids": [
+    "ev_A",
+    "ev_B"
+  ],
+  "associative_cue_id": "cue_1",
+  "distractor_ids": [
+    "dist_1"
+  ],
+  "associative_links": [
+    {
+      "source": "ev_A",
+      "relation": "causes",
+      "target": "afternoon_fog",
+      "hop": 1
+    },
+    {
+      "source": "ev_B",
+      "relation": "co_occurs",
+      "target": "late_workshop_failure",
+      "hop": 1
+    },
+    {
+      "source": [
+        "ev_A",
+        "ev_B"
+      ],
+      "relation": "co_activate_to",
+      "target": "post_2pm_crash",
+      "hop": 2
+    }
+  ],
+  "annotation": {
+    "1": {
+      "role_setup": "filler"
+    },
+    "2": {
+      "role_setup": "target_evidence",
+      "evidence_id": "ev_A",
+      "atomic_fact": "After a morning coffee peak, the user crashes hard after 2pm and cannot sustain sharp client work."
+    },
+    "3": {
+      "role_setup": "filler"
+    },
+    "4": {
+      "role_setup": "target_evidence",
+      "evidence_id": "ev_B",
+      "atomic_fact": "A prior late-afternoon account review went poorly because the user was already cognitively drained."
+    },
+    "5": {
+      "role_setup": "distractor",
+      "distractor_id": "dist_1",
+      "why_distractor": "Loads query words (client workshop, visibility, career, worth it, say yes) and frames acceptance as career-smart, without addressing afternoon energy; surface-similar lure."
+    },
+    "6": {
+      "role_setup": "filler"
+    },
+    "7": {
+      "role_setup": "filler"
+    },
+    "8": {
+      "role_setup": "associative_cue"
+    }
+  },
+  "counterfactual_variants": [
+    {
+      "variant_id": "AMB_A3_WL_0008_cf_no_evidence",
+      "type": "evidence_removed",
+      "removed_session_ids": [
+        2,
+        4
+      ],
+      "expected_gold": "insufficient evidence; visibility advice alone is not enough"
+    }
+  ],
+  "latent_forbidden_phrases": [
+    "post_2pm_crash",
+    "avoid late workshops",
+    "afternoon energy collapse"
+  ],
+  "validity_metrics": {
+    "lexical_jaccard_query_evidence": 0.0,
+    "embed_cosine_query_evidence": 0,
+    "flat_rag_hit_top3": false,
+    "distractor_cosine_query": 0.2968,
+    "evidence_cosine_query": 0,
+    "validity_method": {
+      "embedder": "tfidf-local-proxy",
+      "lexical": "jaccard-stopword-filtered",
+      "computed_by": "assomem_pilot/validity_gate.py",
+      "computed_at": "2026-07-11"
+    }
+  },
+  "provenance": {
+    "generator": "planned+rendered",
+    "generated_by": "autoresearch_pilot",
+    "pilot_batch": "2026-07-11_wl_hh_v1"
+  },
+  "dataset_meta": {
+    "human_verified_by": [],
+    "iaa_cohort_kappa": null,
+    "iaa_n_overlap": null
+  }
+}

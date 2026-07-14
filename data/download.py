@@ -1,17 +1,21 @@
 """
-Download the four REAL base datasets into data/raw/.
+Download the base datasets into data/raw/.
 
     python data/download.py --all
-    python data/download.py --datasets personamem locomo
+    python data/download.py --datasets personamem locomo longmemeval
 
-Verified sources (June 2026):
-  PersonaMem   HF: bowen-upenn/PersonaMem        https://huggingface.co/datasets/bowen-upenn/PersonaMem
-               GH: https://github.com/bowen-upenn/PersonaMem   (MIT)
-  LoCoMo       GH: https://github.com/snap-research/locomo     (data/locomo10.json)
-  PerLTQA      GH: https://github.com/Elvin-Yiming-Du/PerLTQA  (data/ JSON)
-  MemoryArena  HF: ZexueHe/memoryarena           https://huggingface.co/datasets/ZexueHe/memoryarena
-               configs: bundled_shopping, progressive_search, group_travel_planner,
-                        formal_reasoning_math, formal_reasoning_phys
+Verified sources (July 2026):
+  PersonaMem    HF: bowen-upenn/PersonaMem        https://huggingface.co/datasets/bowen-upenn/PersonaMem
+                GH: https://github.com/bowen-upenn/PersonaMem   (MIT)
+  LoCoMo        GH: https://github.com/snap-research/locomo     (data/locomo10.json)
+                License: CC BY-NC 4.0
+  PerLTQA       GH: https://github.com/Elvin-Yiming-Du/PerLTQA  (data/ JSON)
+  MemoryArena   HF: ZexueHe/memoryarena           https://huggingface.co/datasets/ZexueHe/memoryarena
+                configs: bundled_shopping, progressive_search, group_travel_planner,
+                         formal_reasoning_math, formal_reasoning_phys
+  LongMemEval   HF: xiaowu0162/longmemeval-cleaned (oracle split only; MIT)
+                GH: https://github.com/xiaowu0162/LongMemEval
+                Paper: arXiv:2410.10813 (ICLR 2025)
 
 Requires: `pip install datasets` and `git` on PATH. Each downloader is independent and
 fails loudly with the manual URL if the automatic path is unavailable.
@@ -90,8 +94,39 @@ def get_memoryarena() -> None:
               f"https://huggingface.co/datasets/ZexueHe/memoryarena")
 
 
+def get_longmemeval() -> None:
+    """Download LongMemEval oracle split (~15 MB) from HuggingFace.
+
+    We use the oracle split (only evidence sessions included per question) rather than
+    longmemeval_s/m (40-500 sessions of haystack noise). The oracle split gives us the
+    ground-truth stored_context for each item, which is what the STORE→RETRIEVE pipeline
+    needs. Haystack noise is irrelevant for associative inference correctness.
+
+    arXiv:2410.10813 (ICLR 2025) | MIT License
+    """
+    print("[LongMemEval]")
+    out_dir = os.path.join(RAW, "longmemeval", "data")
+    _ensure(out_dir)
+    oracle = os.path.join(out_dir, "longmemeval_oracle.json")
+    if os.path.exists(oracle):
+        print(f"  [skip] {oracle} already exists")
+        return
+    url = ("https://huggingface.co/datasets/xiaowu0162/longmemeval-cleaned"
+           "/resolve/main/longmemeval_oracle.json")
+    print(f"  downloading {url}")
+    try:
+        import urllib.request
+        urllib.request.urlretrieve(url, oracle)
+        import os as _os
+        print(f"  saved -> {oracle} ({_os.path.getsize(oracle)//1024} KB)")
+    except Exception as e:
+        print(f"  [error] download failed: {e}")
+        print(f"  Manual: wget '{url}' -O {oracle}")
+
+
 REGISTRY = {"personamem": get_personamem, "locomo": get_locomo,
-            "perltqa": get_perltqa, "memoryarena": get_memoryarena}
+            "perltqa": get_perltqa, "memoryarena": get_memoryarena,
+            "longmemeval": get_longmemeval}
 
 
 def main():
