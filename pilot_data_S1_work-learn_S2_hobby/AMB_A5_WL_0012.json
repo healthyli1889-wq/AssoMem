@@ -1,0 +1,204 @@
+{
+  "sample_id": "AMB_A5_WL_0012",
+  "source": "partner_generated",
+  "status": "rendered",
+  "association_type": "A5_absence_control",
+  "domain_tags": [
+    "learning/education"
+  ],
+  "pilot_arm": "absence",
+  "pilot_domain": "work_learning",
+  "context_length_tokens": 443,
+  "persona": {
+    "user_id": "u_wl_12",
+    "stable_traits": [
+      "analyst",
+      "uses stipend sometimes",
+      "private about study habits"
+    ],
+    "evolving_state": {
+      "learning_format_constraint": "unknown_unobserved"
+    }
+  },
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2026-01-09T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Weekend pottery was messy fun."
+        },
+        {
+          "role": "assistant",
+          "content": "Creative breaks help. Keep the mug?"
+        },
+        {
+          "role": "user",
+          "content": "Absolutely."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2026-01-23T12:30:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Team lunch had great dumplings."
+        },
+        {
+          "role": "assistant",
+          "content": "Lucky. Homemade?"
+        },
+        {
+          "role": "user",
+          "content": "Someone brought them in."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2026-02-05T19:45:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Standing desk mat arrived. Knees happier."
+        },
+        {
+          "role": "assistant",
+          "content": "Small comfort upgrades matter."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2026-02-18T17:10:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Learning stipend resets next month."
+        },
+        {
+          "role": "assistant",
+          "content": "Good reminder to browse options early."
+        },
+        {
+          "role": "user",
+          "content": "I am skimming catalogs tonight."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2026-03-03T20:20:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Rainy weekend. Laundry and podcasts."
+        },
+        {
+          "role": "assistant",
+          "content": "Quiet resets have value."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2026-03-16T11:50:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "HR posted two stipend tracks again."
+        },
+        {
+          "role": "assistant",
+          "content": "Same Alpha/Beta split as last year?"
+        },
+        {
+          "role": "user",
+          "content": "Looks similar from the blurb."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2026-03-30T16:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "HR is pushing two stipend options: Track Alpha is mostly pre-recorded theory modules with quizzes, Track Beta is a live lab cohort with weekly build demos. Which format should I pick given how I actually learn?"
+        }
+      ]
+    }
+  ],
+  "query": "HR is pushing two stipend options: Track Alpha is mostly pre-recorded theory modules with quizzes, Track Beta is a live lab cohort with weekly build demos. Which format should I pick given how I actually learn?",
+  "query_source": "final_turn",
+  "gold_answer": "Cannot tell from memory. There is not enough prior evidence about whether this user retains material via builds versus lectures, so format choice should abstain pending questions about past course experiences.",
+  "required_elements": [
+    "abstains or cites insufficient evidence",
+    "does not invent hands-on vs lecture preference"
+  ],
+  "target_evidence_ids": [],
+  "associative_cue_id": "cue_1",
+  "distractor_ids": [],
+  "associative_links": [],
+  "annotation": {
+    "1": {
+      "role_setup": "filler"
+    },
+    "2": {
+      "role_setup": "filler"
+    },
+    "3": {
+      "role_setup": "filler"
+    },
+    "4": {
+      "role_setup": "filler"
+    },
+    "5": {
+      "role_setup": "filler"
+    },
+    "6": {
+      "role_setup": "filler"
+    },
+    "7": {
+      "role_setup": "associative_cue"
+    }
+  },
+  "counterfactual_variants": [
+    {
+      "variant_id": "AMB_A5_WL_0012_cf_add_evidence",
+      "type": "evidence_added",
+      "expected_gold": "with added build-vs-lecture evidence, recommend Beta"
+    }
+  ],
+  "latent_forbidden_phrases": [
+    "hands_on_not_lecture",
+    "hates talking-head videos",
+    "must build to retain"
+  ],
+  "validity_metrics": {
+    "lexical_jaccard_query_evidence": 0.0,
+    "embed_cosine_query_evidence": 0.0,
+    "flat_rag_hit_top3": false,
+    "distractor_cosine_query": 0.0,
+    "evidence_cosine_query": 0.0,
+    "validity_method": {
+      "embedder": "tfidf-local-proxy",
+      "lexical": "jaccard-stopword-filtered",
+      "computed_by": "assomem_pilot/validity_gate.py",
+      "computed_at": "2026-07-11"
+    }
+  },
+  "provenance": {
+    "generator": "planned+rendered",
+    "generated_by": "autoresearch_pilot",
+    "pilot_batch": "2026-07-11_wl_hh_v1"
+  },
+  "dataset_meta": {
+    "human_verified_by": [],
+    "iaa_cohort_kappa": null,
+    "iaa_n_overlap": null
+  }
+}
