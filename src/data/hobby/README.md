@@ -7,12 +7,12 @@
 ## Folder map
 
 ```
-assomem_pilot/hobby/                     # DATA — items only (sibling of health/ + work/)
+assomem_pilot/src/data/hobby/           # DATA — items only
   hobby_associative_user{1..10}/
   hobby_distractor_user{1..10}/
   hobby_absence_user{1..10}/
 
-assomem_pilot/tools/hobby/               # GENERATOR + personas (reports → manifests/hobby/)
+assomem_pilot/tools/hobby/              # GENERATOR (reports → manifests/hobby/)
   personas/personas_hobby_habit.json
   bin/generate_hobby_habit_gold_batch.py
 ```

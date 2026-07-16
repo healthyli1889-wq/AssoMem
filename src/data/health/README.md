@@ -7,7 +7,7 @@ Sibling of [`../work/`](../work/) (work/learning) and [`../hobby/`](../hobby/) (
 ## Folder map
 
 ```
-assomem_pilot/health/                    # DATA — items only
+assomem_pilot/src/data/health/         # DATA — items only
   diet_associative_user{1..10}/
   diet_distractor_user{1..10}/
   diet_absence_user{1..10}/

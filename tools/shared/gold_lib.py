@@ -240,6 +240,9 @@ def _counterfactuals(
     return variants
 
 
+DATA_ROOT = Path("src") / "data"
+
+
 HEALTH_BATCH_CONFIG: dict[str, Any] = {
     "id_prefix": "HD",
     "pilot_domain": "health_diet",
@@ -797,6 +800,7 @@ def output_path(
     tag = persona_record["folder_tag"]
     return (
         root
+        / DATA_ROOT
         / cfg["data_subdir"]
         / f"{cfg['folder_prefix']}_{item['pilot_arm']}_{tag}"
         / f"{item['sample_id']}.json"

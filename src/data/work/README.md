@@ -7,7 +7,7 @@ Sibling to [`../health/`](../health/) and [`../hobby/`](../hobby/). Gold standar
 ## Folder map
 
 ```
-assomem_pilot/work/                      # DATA — items only
+assomem_pilot/src/data/work/           # DATA — items only
   work_associative_user{1..10}/
   work_distractor_user{1..10}/
   work_absence_user{1..10}/
