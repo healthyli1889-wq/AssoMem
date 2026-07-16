@@ -1,0 +1,407 @@
+{
+  "sample_id": "AMB_WL_u09_distractor_S1",
+  "source": "partner_generated",
+  "status": "rendered",
+  "association_type": "A3_cross_domain",
+  "domain_tags": [
+    "work/career",
+    "education/learning"
+  ],
+  "pilot_arm": "distractor",
+  "pilot_domain": "work_learning",
+  "persona_source": {
+    "corpus": "RHELM",
+    "ref": "microsoft/RHELM:conversations/Martin_Keller",
+    "display_name": "RHELM-Martin_Keller"
+  },
+  "context_length_tokens": 716,
+  "persona": {
+    "user_id": "wl_u09",
+    "stable_traits": [
+      "Martin Keller persona anchor",
+      "steady office routine",
+      "prefers simple durable workflows",
+      "cautious about high-prestige disruptions"
+    ],
+    "evolving_state": {
+      "chronotype_pattern": "night_oriented_pattern",
+      "early_calls": "morning_headaches"
+    }
+  },
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2026-01-05T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Cleared a long email thread. Brain feels flat."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth a short walk."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2026-01-07T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Work mode today felt very 'Martin Keller persona anchor' — long blocks, little slack."
+        },
+        {
+          "role": "assistant",
+          "content": "Given that practical pace, worth protecting recovery tonight."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2026-01-09T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Filed expense receipts from last client trip."
+        },
+        {
+          "role": "assistant",
+          "content": "Budget hygiene helps."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2026-01-11T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Keep getting dull headaches when I am up before six for those early calls."
+        },
+        {
+          "role": "assistant",
+          "content": "Do they fade later?"
+        },
+        {
+          "role": "user",
+          "content": "By noon I am fine. The early stretch is the problem."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2026-01-13T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Short walk after back-to-back calls."
+        },
+        {
+          "role": "assistant",
+          "content": "Movement between blocks matters."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2026-01-15T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "It is past midnight and I just finished a clean refactor. This window is when my brain actually locks in."
+        },
+        {
+          "role": "assistant",
+          "content": "Late focus can be powerful if you protect recovery somehow."
+        },
+        {
+          "role": "user",
+          "content": "I sleep in on weekends to compensate."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2026-01-17T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Colleague mentioned a spring skills fair. Saved the flyer without committing."
+        },
+        {
+          "role": "assistant",
+          "content": "Fairs are tempting calendar items."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2026-01-19T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Blocked Friday afternoon for deep review work."
+        },
+        {
+          "role": "assistant",
+          "content": "Protected blocks are scarce."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2026-01-21T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Printed the March calendar. Dawn blocks are marked as protected."
+        },
+        {
+          "role": "assistant",
+          "content": "Paper copies help on busy weeks."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2026-02-20T11:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I really love my current team though. Honestly I would do almost anything to work more closely with Helga's crew — they are amazing."
+        },
+        {
+          "role": "assistant",
+          "content": "People-fit is not the same as schedule-fit."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2026-03-09T17:30:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Manager offered a move onto the platform pod with a mandatory daily dawn check-in — would I thrive there based on what you know about me?"
+        }
+      ]
+    }
+  ],
+  "query": "Manager offered a move onto the platform pod with a mandatory daily dawn check-in — would I thrive there based on what you know about me?",
+  "query_source": "final_turn",
+  "gold_answer": "Probably not as-is. Rising before 6am for early calls already causes dull morning headaches, and your peak deep-work window is roughly midnight to 3am, so a mandatory daily dawn check-in conflicts with known patterns. Negotiate flexible hours or decline rather than accepting unchanged.",
+  "required_elements": [
+    "uses early-rising headache pattern",
+    "uses late-night peak deep-work window",
+    "recommends declining or negotiating away mandatory dawn check-in"
+  ],
+  "target_evidence_ids": [
+    "ev_A",
+    "ev_B"
+  ],
+  "associative_cue_id": "cue_1",
+  "distractor_ids": [
+    "dist_1"
+  ],
+  "associative_links": [
+    {
+      "source": "ev_A",
+      "relation": "causes",
+      "target": "morning_impairment",
+      "hop": 1
+    },
+    {
+      "source": "ev_B",
+      "relation": "indicates",
+      "target": "evening_peak",
+      "hop": 1
+    },
+    {
+      "source": [
+        "ev_A",
+        "ev_B"
+      ],
+      "relation": "co_activate_to",
+      "target": "dawn_checkin_poor_fit",
+      "hop": 2
+    }
+  ],
+  "annotation": {
+    "1": {
+      "role_setup": "background_memory"
+    },
+    "2": {
+      "role_setup": "background_memory"
+    },
+    "3": {
+      "role_setup": "background_memory"
+    },
+    "4": {
+      "role_setup": "target_evidence",
+      "evidence_id": "ev_A",
+      "atomic_fact": "Rising before 6am for early calls causes dull morning headaches that ease by noon."
+    },
+    "5": {
+      "role_setup": "background_memory"
+    },
+    "6": {
+      "role_setup": "target_evidence",
+      "evidence_id": "ev_B",
+      "atomic_fact": "The user's peak deep-work window is roughly midnight to 3am."
+    },
+    "7": {
+      "role_setup": "background_memory"
+    },
+    "8": {
+      "role_setup": "background_memory"
+    },
+    "9": {
+      "role_setup": "background_memory"
+    },
+    "10": {
+      "role_setup": "distractor",
+      "distractor_id": "dist_1",
+      "why_distractor": "Team-bond FOMO is query-relevant but not evidence about this user's early-headache pattern or late-night deep-work window."
+    },
+    "11": {
+      "role_setup": "associative_cue",
+      "cue_id": "cue_1"
+    }
+  },
+  "latent_forbidden_phrases": [
+    "night_oriented_pattern",
+    "must never work mornings",
+    "decline all team moves"
+  ],
+  "counterfactual_variants": [
+    {
+      "variant_id": "AMB_WL_u09_distractor_S1_cf_remove_ev_A",
+      "type": "evidence_removed",
+      "removed_session_ids": [
+        4
+      ],
+      "result_arm": "absence",
+      "result_association_type": "A5_hard_absence_control",
+      "result_gold_answer": "There is insufficient evidence for a personalized recommendation. I know your peak deep-work window is roughly midnight to 3am, but the available memory does not establish that early calls cause morning headaches. I cannot reject the move from chronotype alone.",
+      "result_required_elements": [
+        "states that the early-headache evidence is missing",
+        "does not infer morning harm from the offer alone",
+        "explicitly abstains from rejecting the move"
+      ],
+      "result_target_evidence_ids": [],
+      "result_associative_links": [],
+      "expected_gold": "insufficient evidence / abstain"
+    },
+    {
+      "variant_id": "AMB_WL_u09_distractor_S1_cf_remove_ev_B",
+      "type": "evidence_removed",
+      "removed_session_ids": [
+        6
+      ],
+      "result_arm": "absence",
+      "result_association_type": "A5_hard_absence_control",
+      "result_gold_answer": "There is insufficient evidence for a personalized recommendation. Early rising has caused morning headaches, but I cannot tell from the available memory whether your deep-work window is late at night. Confirm chronotype and morning tolerance before deciding on a dawn check-in team.",
+      "result_required_elements": [
+        "states that the late deep-work window evidence is missing",
+        "does not infer schedule harm from the offer alone",
+        "asks about chronotype or explicitly abstains"
+      ],
+      "result_target_evidence_ids": [],
+      "result_associative_links": [],
+      "expected_gold": "insufficient evidence / abstain"
+    },
+    {
+      "variant_id": "AMB_WL_u09_distractor_S1_cf_remove_distractor",
+      "type": "distractor_removed",
+      "removed_session_ids": [
+        "$distractor_session"
+      ],
+      "result_arm": "associative",
+      "result_association_type": "A3_cross_domain",
+      "result_gold_answer": "Probably not as-is. Rising before 6am for early calls already causes dull morning headaches, and your peak deep-work window is roughly midnight to 3am, so a mandatory daily dawn check-in conflicts with known patterns. Negotiate flexible hours or decline rather than accepting unchanged.",
+      "result_required_elements": [
+        "uses early-rising headache pattern",
+        "uses late-night peak deep-work window",
+        "recommends declining or negotiating away mandatory dawn check-in"
+      ],
+      "result_target_evidence_ids": [
+        "ev_A",
+        "ev_B"
+      ],
+      "result_associative_links": [
+        {
+          "source": "ev_A",
+          "relation": "causes",
+          "target": "morning_impairment",
+          "hop": 1
+        },
+        {
+          "source": "ev_B",
+          "relation": "indicates",
+          "target": "evening_peak",
+          "hop": 1
+        },
+        {
+          "source": [
+            "ev_A",
+            "ev_B"
+          ],
+          "relation": "co_activate_to",
+          "target": "dawn_checkin_poor_fit",
+          "hop": 2
+        }
+      ],
+      "expected_gold": "Probably not as-is. Rising before 6am for early calls already causes dull morning headaches, and your peak deep-work window is roughly midnight to 3am, so a mandatory daily dawn check-in conflicts with known patterns. Negotiate flexible hours or decline rather than accepting unchanged."
+    }
+  ],
+  "validity_metrics": {
+    "lexical_jaccard_query_evidence": 0.0,
+    "embed_cosine_query_evidence": 0,
+    "flat_rag_hit_top3": false,
+    "distractor_cosine_query": 0,
+    "evidence_cosine_query": 0,
+    "partial_evidence_cosine_query": 0.0,
+    "validity_method": {
+      "embedder": "tfidf-local-proxy",
+      "lexical": "jaccard-stopword-filtered",
+      "computed_by": "work_learn/bin/generate_work_learn_gold_batch.py",
+      "computed_at": "2026-07-15",
+      "limitation": "Lexical proxy only; dense semantic validation and human IAA remain required."
+    }
+  },
+  "provenance": {
+    "generator": "work_learn_gold_s1_s5_v2",
+    "generated_by": "autoresearch_pilot",
+    "persona_corpus": "RHELM",
+    "persona_ref": "microsoft/RHELM:conversations/Martin_Keller",
+    "scenario_id": "S1",
+    "scenario_name": "early_headache_x_late_deepwork",
+    "batch_id": "WL_GOLD_S1_S5_2026-07-16_v2",
+    "standard": "DATA_STANDARD_v1",
+    "timeline_id": "WL_u09_shared_timeline_v2",
+    "timeline_prefix_end": 9,
+    "gold_tier": "v2"
+  },
+  "dataset_meta": {
+    "golden_candidate": true,
+    "human_verified_by": [],
+    "iaa_cohort_kappa": null,
+    "iaa_n_overlap": null,
+    "known_validation_gaps": [
+      "dense semantic discriminant gate not yet run",
+      "two-person blind human necessity review not yet run",
+      "real-model full/no-assoc/no-distractor evaluation not yet run"
+    ],
+    "reproduce": {
+      "loader_rule": "serialize context dialogue role+content only; strip annotation/evolving_state",
+      "generator": "python3 work_learn/bin/generate_work_learn_gold_batch.py",
+      "metrics": [
+        "answer_vs_gold+required_elements",
+        "joint_evidence_recall",
+        "single_evidence_counterfactual_abstention",
+        "distractor_removal_invariance"
+      ]
+    }
+  }
+}

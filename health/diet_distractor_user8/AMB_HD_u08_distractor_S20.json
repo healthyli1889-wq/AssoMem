@@ -1,0 +1,2290 @@
+{
+  "sample_id": "AMB_HD_u08_distractor_S20",
+  "source": "partner_generated",
+  "status": "rendered",
+  "association_type": "A3_cross_domain",
+  "domain_tags": [
+    "health/wellness",
+    "food/cooking",
+    "work/routine"
+  ],
+  "pilot_arm": "distractor",
+  "pilot_domain": "health_diet",
+  "persona_source": {
+    "corpus": "RHELM",
+    "ref": "microsoft/RHELM:conversations/Dr._Elena_Markovic",
+    "display_name": "RHELM-Dr_Elena_Markovic"
+  },
+  "context_length_tokens": 8435,
+  "persona": {
+    "user_id": "hd_u08",
+    "stable_traits": [
+      "Dr. Elena Markovic persona anchor",
+      "clinically literate about symptoms",
+      "early clinical schedule",
+      "disciplined about recovery sleep"
+    ],
+    "evolving_state": {
+      "no_snack_transfer": "shaky_and_foggy",
+      "telehealth_week": "steady_afternoon_cognition"
+    }
+  },
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2026-01-05T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The tracker trend is finally steady again. Three regular bedtimes made a bigger difference than I expected."
+        },
+        {
+          "role": "assistant",
+          "content": "A short consistent stretch can be informative."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2026-01-07T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I batch-cooked grains and protein for the clinical days this week. Lunch decisions are handled."
+        },
+        {
+          "role": "assistant",
+          "content": "That removes one variable from the workday."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2026-01-09T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "My shoulders were tight after a long desk block, but a twenty-minute walk loosened them up."
+        },
+        {
+          "role": "assistant",
+          "content": "Useful to notice what changes it."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2026-01-11T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A normal cheese portion after dinner was fine again. It does not seem like dairy across the board."
+        },
+        {
+          "role": "assistant",
+          "content": "Timing and what else you ate may matter."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2026-01-13T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "On early departure days I leave before I can face breakfast. I usually arrive with only water in me."
+        },
+        {
+          "role": "assistant",
+          "content": "Is food available when you arrive?"
+        },
+        {
+          "role": "user",
+          "content": "Usually not until the first scheduled break."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2026-01-15T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I tested the rich yogurt-and-cream bowl again while I was still empty. Within an hour I was bloated and mentally foggy."
+        },
+        {
+          "role": "assistant",
+          "content": "Did the same thing happen when you had it later in the day?"
+        },
+        {
+          "role": "user",
+          "content": "No. After a proper lunch, a small serving has been uneventful."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2026-01-17T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The soup portions I froze held up well. I have two emergency dinners left."
+        },
+        {
+          "role": "assistant",
+          "content": "Good buffer for a crowded week."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2026-01-19T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The conference block email finally listed the 8am room and the first-session agenda. I saved the map."
+        },
+        {
+          "role": "assistant",
+          "content": "Good to have the logistics settled."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2026-01-21T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A catering newsletter compared tasting formats for corporate offsites. I saved it with the working-group material."
+        },
+        {
+          "role": "assistant",
+          "content": "That may be useful when the agenda is finalized."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2026-01-23T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The weekend meal prep worked. I did not end up grazing through the afternoon calls."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth keeping as a repeatable setup."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2026-01-25T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The orange-label can I sometimes buy after work suppresses my appetite until late the next morning, although it has not affected my sleep."
+        },
+        {
+          "role": "assistant",
+          "content": "Does an ordinary morning coffee do that too?"
+        },
+        {
+          "role": "user",
+          "content": "No. I have only noticed the long appetite drop with that can late in the day."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2026-01-27T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A small coffee before lunch was fine today, and I stopped there."
+        },
+        {
+          "role": "assistant",
+          "content": "That is useful to record separately."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2026-01-29T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I finished the methods appendix before dinner. Having a defined stopping point helped."
+        },
+        {
+          "role": "assistant",
+          "content": "Clear edges make long work easier to contain."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2026-01-31T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "If I lead an early briefing without a real breakfast, I lose my verbal thread and start misreading numbers halfway through."
+        },
+        {
+          "role": "assistant",
+          "content": "Has breakfast made a consistent difference?"
+        },
+        {
+          "role": "user",
+          "content": "Yes. Three no-breakfast briefings went badly; the ones after a proper meal were steady."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2026-02-02T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The template for presenting the research findings is loaded, and the eight o'clock video room is confirmed. The remaining work is slide order."
+        },
+        {
+          "role": "assistant",
+          "content": "The logistics sound settled."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2026-02-04T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The vending machine now has the tonic in orange packaging beside the sparkling water."
+        },
+        {
+          "role": "assistant",
+          "content": "That is a noticeable restock."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2026-02-06T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The low-salt bean stew was better after a day in the fridge. I froze the extra portion."
+        },
+        {
+          "role": "assistant",
+          "content": "That is a useful weekday fallback."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2026-02-08T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A modest bowl of low-sodium ramen at lunch sat fine. Portion and broth concentration seem to matter."
+        },
+        {
+          "role": "assistant",
+          "content": "That is a more specific observation than treating all ramen alike."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2026-02-10T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Concentrated restaurant broth is fine for me at lunch, but when I start a briny bowl after seven I wake up thirsty and dried out."
+        },
+        {
+          "role": "assistant",
+          "content": "Has the timing difference repeated?"
+        },
+        {
+          "role": "user",
+          "content": "Three late bowls caused it; earlier servings and my lighter soup at home did not."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2026-02-12T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I cleared the client revisions before the end of the workday. No late scramble this time."
+        },
+        {
+          "role": "assistant",
+          "content": "That is a better finish."
+        }
+      ]
+    },
+    {
+      "session_id": 21,
+      "timestamp": "2026-02-14T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "On the hospital district client-review days the debrief runs until about 6:50, and the commute back means I cannot meet anyone for food before 7:40."
+        },
+        {
+          "role": "assistant",
+          "content": "Is that timing fairly fixed?"
+        },
+        {
+          "role": "user",
+          "content": "Yes. The team books the same review block and traffic does the rest."
+        }
+      ]
+    },
+    {
+      "session_id": 22,
+      "timestamp": "2026-02-16T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I replaced the desk water bottle. The old cap kept leaking into my bag."
+        },
+        {
+          "role": "assistant",
+          "content": "A mundane but worthwhile fix."
+        }
+      ]
+    },
+    {
+      "session_id": 23,
+      "timestamp": "2026-02-18T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Friends attending next week's the hospital district review asked when I would be free afterward. I have not answered yet."
+        },
+        {
+          "role": "assistant",
+          "content": "You can reply once the schedule is settled."
+        }
+      ]
+    },
+    {
+      "session_id": 24,
+      "timestamp": "2026-02-20T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A new ramen place is advertising the chef's dense-stock bowl as its dinner special."
+        },
+        {
+          "role": "assistant",
+          "content": "That is a specific menu pitch."
+        }
+      ]
+    },
+    {
+      "session_id": 25,
+      "timestamp": "2026-02-22T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I left with only coffee at dawn again and energy cratered before ten — focus just collapsed."
+        },
+        {
+          "role": "assistant",
+          "content": "Has that happened on other empty-start days?"
+        },
+        {
+          "role": "user",
+          "content": "Yes. It is consistent when I skip a real first meal."
+        }
+      ]
+    },
+    {
+      "session_id": 26,
+      "timestamp": "2026-02-24T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Venue rider I countersigned: personal meal parcels are refused at the threshold; caterers alone supply edibles until staff declare the halfway refresh window."
+        },
+        {
+          "role": "assistant",
+          "content": "Is there any way to bring your own fuel?"
+        },
+        {
+          "role": "user",
+          "content": "Not according to the signed rider. We are limited to what caterers place indoors."
+        }
+      ]
+    },
+    {
+      "session_id": 27,
+      "timestamp": "2026-02-26T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Planning note: the orientation block is 8 to 12 and the host email highlights viennoiserie at entry — just filing logistics."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth thinking through fuel before a long indoor stretch."
+        }
+      ]
+    },
+    {
+      "session_id": 28,
+      "timestamp": "2026-02-28T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Orientation email highlights viennoiserie at entry as the featured catering choice for the 8-to-12 block."
+        },
+        {
+          "role": "assistant",
+          "content": "That is a common default for long indoor sessions."
+        }
+      ]
+    },
+    {
+      "session_id": 29,
+      "timestamp": "2026-03-02T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I tried the chili-heavy tasting plate within two hours of bedtime and woke up with reflux. Earlier spicy lunches have been fine."
+        },
+        {
+          "role": "assistant",
+          "content": "Does the timing window matter more than the heat level?"
+        },
+        {
+          "role": "user",
+          "content": "For me, yes — close to bedtime is what triggers it."
+        }
+      ]
+    },
+    {
+      "session_id": 30,
+      "timestamp": "2026-03-04T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "After those reflux nights my voice wavers on the morning video sessions I lead. I sound less steady than I want."
+        },
+        {
+          "role": "assistant",
+          "content": "Has that shown up on early calls after calm evenings?"
+        },
+        {
+          "role": "user",
+          "content": "No. It tracks the reflux nights specifically."
+        }
+      ]
+    },
+    {
+      "session_id": 31,
+      "timestamp": "2026-03-06T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The debrief calendar shows a 7:30am video room tomorrow. I blocked prep time tonight."
+        },
+        {
+          "role": "assistant",
+          "content": "Early speaking days need a calm evening plate."
+        }
+      ]
+    },
+    {
+      "session_id": 32,
+      "timestamp": "2026-03-08T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A colleague forwarded the 9pm chili tasting invite for tonight. It overlaps with tomorrow's early debrief."
+        },
+        {
+          "role": "assistant",
+          "content": "That is a tight pairing on the calendar."
+        }
+      ]
+    },
+    {
+      "session_id": 33,
+      "timestamp": "2026-03-10T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The summer block schedule is loaded. I am trying to keep recovery days visible on the calendar."
+        },
+        {
+          "role": "assistant",
+          "content": "That makes tradeoffs easier to see."
+        }
+      ]
+    },
+    {
+      "session_id": 34,
+      "timestamp": "2026-03-12T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A strong roast after the workday ends left me waking twice overnight. Morning caffeine before midday has never done that."
+        },
+        {
+          "role": "assistant",
+          "content": "Has the late timing repeated?"
+        },
+        {
+          "role": "user",
+          "content": "Twice now. It is specifically an after-work strong cup, not caffeine in general."
+        }
+      ]
+    },
+    {
+      "session_id": 35,
+      "timestamp": "2026-03-14T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I walked the long way back from the cafe district. Nice reset between calls."
+        },
+        {
+          "role": "assistant",
+          "content": "Small movement breaks add up."
+        }
+      ]
+    },
+    {
+      "session_id": 36,
+      "timestamp": "2026-03-16T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "After those chopped-up nights I get lightheaded in the before-breakfast studio class — I stopped booking the dawn slot when sleep was bad."
+        },
+        {
+          "role": "assistant",
+          "content": "Does a full night change it?"
+        },
+        {
+          "role": "user",
+          "content": "Yes. On rested nights the same class is fine."
+        }
+      ]
+    },
+    {
+      "session_id": 37,
+      "timestamp": "2026-03-18T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The studio sent a promo for dawn spin blocks. I saved it without replying."
+        },
+        {
+          "role": "assistant",
+          "content": "Early classes need a predictable recovery window."
+        }
+      ]
+    },
+    {
+      "session_id": 38,
+      "timestamp": "2026-03-20T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Office chat says a post-four strong cup is harmless before an early ride."
+        },
+        {
+          "role": "assistant",
+          "content": "Office folklore around caffeine timing is loud."
+        }
+      ]
+    },
+    {
+      "session_id": 39,
+      "timestamp": "2026-03-22T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Reorganized pantry labels. Minor win."
+        },
+        {
+          "role": "assistant",
+          "content": "Small order helps on busy weeks."
+        }
+      ]
+    },
+    {
+      "session_id": 40,
+      "timestamp": "2026-03-24T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A dense pulse-heavy plate near bedtime left me bloated all night. Midday portions of similar food were fine."
+        },
+        {
+          "role": "assistant",
+          "content": "Does the late timing matter for you?"
+        },
+        {
+          "role": "user",
+          "content": "Clearly. Three late pulse-heavy dinners did it; earlier portions did not."
+        }
+      ]
+    },
+    {
+      "session_id": 41,
+      "timestamp": "2026-03-26T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Short walk after lunch cleared the afternoon fog."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth repeating when the schedule allows."
+        }
+      ]
+    },
+    {
+      "session_id": 42,
+      "timestamp": "2026-03-28T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "On bloated mornings a fitted blazer feels distracting during client pitches — I am less present than I want."
+        },
+        {
+          "role": "assistant",
+          "content": "Has that tracked the heavy late dinners?"
+        },
+        {
+          "role": "user",
+          "content": "Yes. Calm mornings after lighter evenings are fine in the same clothes."
+        }
+      ]
+    },
+    {
+      "session_id": 43,
+      "timestamp": "2026-03-30T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The nine o'clock structured-jacket pitch deck is almost final — still weighing whether tomorrow's late group meal matters."
+        },
+        {
+          "role": "assistant",
+          "content": "Early prep reduces morning scramble."
+        }
+      ]
+    },
+    {
+      "session_id": 44,
+      "timestamp": "2026-04-01T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Group meal invite mentions a late start and a plant-protein-heavy chef's table — filing the logistics only."
+        },
+        {
+          "role": "assistant",
+          "content": "Long evenings before speaking days need a plan."
+        }
+      ]
+    },
+    {
+      "session_id": 45,
+      "timestamp": "2026-04-03T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Periodic bloodwork requires nothing by mouth until the technician completes collection, usually early afternoon."
+        },
+        {
+          "role": "assistant",
+          "content": "Is that timing fairly fixed?"
+        },
+        {
+          "role": "user",
+          "content": "Yes. The clinic books the same morning block."
+        }
+      ]
+    },
+    {
+      "session_id": 46,
+      "timestamp": "2026-04-05T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Picked up the lab requisition. No food until the draw, as usual."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth blocking lunch plans around that."
+        }
+      ]
+    },
+    {
+      "session_id": 47,
+      "timestamp": "2026-04-07T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Deferring refueling until a late mid-day meal after collection makes the afternoon cognition window collapse — details slip on dense material."
+        },
+        {
+          "role": "assistant",
+          "content": "Has eating soon after collection helped?"
+        },
+        {
+          "role": "user",
+          "content": "Always. Waiting until mid-afternoon or later costs me the whole afternoon."
+        }
+      ]
+    },
+    {
+      "session_id": 48,
+      "timestamp": "2026-04-09T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Dense post-lunch work blocks are stacked next week after the panel day — fuel timing may matter."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth blocking hospitality meals around that."
+        }
+      ]
+    },
+    {
+      "session_id": 49,
+      "timestamp": "2026-04-11T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Calendar shows a hosted meal block right after the bloodwork appointment next week — exact timing still fuzzy."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth confirming before the collection day."
+        }
+      ]
+    },
+    {
+      "session_id": 50,
+      "timestamp": "2026-04-13T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Even two drinks at an evening reception threw off my next-morning routine — I skipped steps I normally never miss."
+        },
+        {
+          "role": "assistant",
+          "content": "Was it just one night?"
+        },
+        {
+          "role": "user",
+          "content": "Twice. Small amounts still disrupted the sequence."
+        }
+      ]
+    },
+    {
+      "session_id": 51,
+      "timestamp": "2026-04-15T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "My morning supplement protocol needs food at a consistent time. When the routine slips, I feel off for hours."
+        },
+        {
+          "role": "assistant",
+          "content": "Is the timing as important as the dose?"
+        },
+        {
+          "role": "user",
+          "content": "For me, yes — irregular mornings undo the benefit."
+        }
+      ]
+    },
+    {
+      "session_id": 52,
+      "timestamp": "2026-04-17T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Industry reception tonight lists complimentary cocktails on the invite."
+        },
+        {
+          "role": "assistant",
+          "content": "Evening events before dawn sequences are worth weighing."
+        }
+      ]
+    },
+    {
+      "session_id": 53,
+      "timestamp": "2026-04-19T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Blocked tomorrow morning for the supplement-and-breakfast sequence."
+        },
+        {
+          "role": "assistant",
+          "content": "Protecting that window is sensible."
+        }
+      ]
+    },
+    {
+      "session_id": 54,
+      "timestamp": "2026-04-21T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Someone said skipping the bar at mixers is antisocial and not worth it."
+        },
+        {
+          "role": "assistant",
+          "content": "Social pressure around drinks is common."
+        }
+      ]
+    },
+    {
+      "session_id": 55,
+      "timestamp": "2026-04-23T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Weekday staples hold desk blocks but I empty out when output is high."
+        },
+        {
+          "role": "assistant",
+          "content": "Portion size may need a mode switch."
+        },
+        {
+          "role": "user",
+          "content": "Desk portions are not enough when output is high."
+        }
+      ]
+    },
+    {
+      "session_id": 56,
+      "timestamp": "2026-04-25T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Short urban hike last month with the same containers left me shaky by hour four."
+        },
+        {
+          "role": "assistant",
+          "content": "Active days seem to need different fuel density."
+        }
+      ]
+    },
+    {
+      "session_id": 57,
+      "timestamp": "2026-04-27T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The mapped route tomorrow is endurance-length with zero purchase points."
+        },
+        {
+          "role": "assistant",
+          "content": "That is a different fueling problem than a desk week."
+        }
+      ]
+    },
+    {
+      "session_id": 58,
+      "timestamp": "2026-04-29T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Outing group chat says packing light means relying on sedentary-week staples you already have."
+        },
+        {
+          "role": "assistant",
+          "content": "Light packs and long circuits do not always align."
+        }
+      ]
+    },
+    {
+      "session_id": 59,
+      "timestamp": "2026-05-01T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Clear skies expected for the alpine circuit tomorrow. I have not finalized the pack list yet."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth deciding fuel before you are on the route."
+        }
+      ]
+    },
+    {
+      "session_id": 60,
+      "timestamp": "2026-05-03T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Recovery week is finally on the calendar again."
+        },
+        {
+          "role": "assistant",
+          "content": "Tradeoffs are easier to see."
+        }
+      ]
+    },
+    {
+      "session_id": 61,
+      "timestamp": "2026-05-05T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Cold plunge after hard training days speeds my recovery — warm-pool-only weeks feel sluggish the next morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Has that contrast repeated?"
+        },
+        {
+          "role": "user",
+          "content": "Twice this month. It is the cold plunge specifically, not swimming in general."
+        }
+      ]
+    },
+    {
+      "session_id": 62,
+      "timestamp": "2026-05-07T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Walked the long way back from the pool deck. Nice reset."
+        },
+        {
+          "role": "assistant",
+          "content": "Small movement breaks add up."
+        }
+      ]
+    },
+    {
+      "session_id": 63,
+      "timestamp": "2026-05-09T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Sports med this month: avoid overhead stroke loads for about four weeks while shoulder impingement settles."
+        },
+        {
+          "role": "assistant",
+          "content": "Is that non-negotiable for now?"
+        },
+        {
+          "role": "user",
+          "content": "Yes. I am treating it as a hard training boundary."
+        }
+      ]
+    },
+    {
+      "session_id": 64,
+      "timestamp": "2026-05-11T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Pool newsletter arrived. I only skimmed the facility-hours section."
+        },
+        {
+          "role": "assistant",
+          "content": "Not every mailer needs a decision."
+        }
+      ]
+    },
+    {
+      "session_id": 65,
+      "timestamp": "2026-05-13T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Logged shoulder mobility drills from sports med. Keeping overhead moves light this month."
+        },
+        {
+          "role": "assistant",
+          "content": "Rehab notes are worth tracking."
+        }
+      ]
+    },
+    {
+      "session_id": 66,
+      "timestamp": "2026-05-15T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Restocked the fridge probiotics. Timing still matters for me."
+        },
+        {
+          "role": "assistant",
+          "content": "Gut routines are not one-size."
+        }
+      ]
+    },
+    {
+      "session_id": 67,
+      "timestamp": "2026-05-17T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Refrigerated probiotic capsules on an empty stomach leave me bloated by afternoon — with food they are fine."
+        },
+        {
+          "role": "assistant",
+          "content": "Has empty-stomach timing repeated?"
+        },
+        {
+          "role": "user",
+          "content": "Yes. Three fasted mornings did it; with-breakfast days were uneventful."
+        }
+      ]
+    },
+    {
+      "session_id": 68,
+      "timestamp": "2026-05-19T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Short lunch away from the desk. Helped the afternoon block."
+        },
+        {
+          "role": "assistant",
+          "content": "Breaks protect afternoon quality."
+        }
+      ]
+    },
+    {
+      "session_id": 69,
+      "timestamp": "2026-05-21T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Tuesday hospital rounds start at six-thirty with no food until mid-morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Is that slot movable?"
+        },
+        {
+          "role": "user",
+          "content": "Not easily. The service schedule is fixed."
+        }
+      ]
+    },
+    {
+      "session_id": 70,
+      "timestamp": "2026-05-23T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Residency group chat is noisy about supplement rituals. I muted the thread."
+        },
+        {
+          "role": "assistant",
+          "content": "Mute buttons save attention."
+        }
+      ]
+    },
+    {
+      "session_id": 71,
+      "timestamp": "2026-05-25T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Printed the August service calendar. Tuesday dawn blocks are locked."
+        },
+        {
+          "role": "assistant",
+          "content": "Paper copies help on busy weeks."
+        }
+      ]
+    },
+    {
+      "session_id": 72,
+      "timestamp": "2026-05-27T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Natural low-sulfite pours trigger flushing and poor sleep for me — conventional wine in moderation has been fine."
+        },
+        {
+          "role": "assistant",
+          "content": "Has the natural-wine pattern repeated?"
+        },
+        {
+          "role": "user",
+          "content": "Yes. Three natural pours did it; conventional glasses at lunch did not."
+        }
+      ]
+    },
+    {
+      "session_id": 73,
+      "timestamp": "2026-05-29T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Guest-room linens are washed for the weekend hosting block."
+        },
+        {
+          "role": "assistant",
+          "content": "Hosting prep has a timeline."
+        }
+      ]
+    },
+    {
+      "session_id": 74,
+      "timestamp": "2026-05-31T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Hosting in-laws Saturday through Sunday needs clear-headed mornings for meal prep."
+        },
+        {
+          "role": "assistant",
+          "content": "Is that deadline firm?"
+        },
+        {
+          "role": "user",
+          "content": "Yes. Breakfast and lunch prep are already on the list."
+        }
+      ]
+    },
+    {
+      "session_id": 75,
+      "timestamp": "2026-06-02T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Partner ordered a mixed case for the guest weekend. I have not opened it yet."
+        },
+        {
+          "role": "assistant",
+          "content": "Cases can wait for a plan."
+        }
+      ]
+    },
+    {
+      "session_id": 76,
+      "timestamp": "2026-06-04T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Guest-room checklist is almost done. Saturday breakfast prep starts early."
+        },
+        {
+          "role": "assistant",
+          "content": "Hosting logistics are the priority."
+        }
+      ]
+    },
+    {
+      "session_id": 77,
+      "timestamp": "2026-06-06T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Fiber supplement before vigorous exercise causes mid-session cramping — taking it with dinner later is fine."
+        },
+        {
+          "role": "assistant",
+          "content": "Was that a one-off?"
+        },
+        {
+          "role": "user",
+          "content": "No. Twice on pre-workout timing; dinner timing was uneventful."
+        }
+      ]
+    },
+    {
+      "session_id": 78,
+      "timestamp": "2026-06-08T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Track bag is packed. Session timing changed this month."
+        },
+        {
+          "role": "assistant",
+          "content": "Dawn blocks need a different fuel plan."
+        }
+      ]
+    },
+    {
+      "session_id": 79,
+      "timestamp": "2026-06-10T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Track club moved my interval block to dawn Thursday this month."
+        },
+        {
+          "role": "assistant",
+          "content": "Is that slot firm?"
+        },
+        {
+          "role": "user",
+          "content": "Yes. It is already on the calendar."
+        }
+      ]
+    },
+    {
+      "session_id": 80,
+      "timestamp": "2026-06-12T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Club forum is loud about pre-session rituals. I am not adopting forum norms."
+        },
+        {
+          "role": "assistant",
+          "content": "Forum norms are not stomach facts."
+        }
+      ]
+    },
+    {
+      "session_id": 81,
+      "timestamp": "2026-06-14T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Packed electrolytes and a light snack for the dawn block. Timing still feels tight."
+        },
+        {
+          "role": "assistant",
+          "content": "Fuel timing matters on short sleep."
+        }
+      ]
+    },
+    {
+      "session_id": 82,
+      "timestamp": "2026-06-16T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Late refined-dessert evenings bump my dawn glucose reading above the personal target I track."
+        },
+        {
+          "role": "assistant",
+          "content": "Has that pattern repeated?"
+        },
+        {
+          "role": "user",
+          "content": "Yes. Pastry-preview nights do it; lighter evenings do not."
+        }
+      ]
+    },
+    {
+      "session_id": 83,
+      "timestamp": "2026-06-18T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Glucose log is updated for the week. Thursday check-in is on the calendar."
+        },
+        {
+          "role": "assistant",
+          "content": "Fasting context matters for labs."
+        }
+      ]
+    },
+    {
+      "session_id": 84,
+      "timestamp": "2026-06-20T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Endocrinologist check-in Thursday at seven-thirty implies fasting labs."
+        },
+        {
+          "role": "assistant",
+          "content": "Is that timing firm?"
+        },
+        {
+          "role": "user",
+          "content": "Yes. It is already booked."
+        }
+      ]
+    },
+    {
+      "session_id": 85,
+      "timestamp": "2026-06-22T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Pastry club sent another social invite. I filed it without replying."
+        },
+        {
+          "role": "assistant",
+          "content": "Invites can wait for a lab window."
+        }
+      ]
+    },
+    {
+      "session_id": 86,
+      "timestamp": "2026-06-24T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Set out the fasting-lab checklist for Thursday morning. No food after the draw."
+        },
+        {
+          "role": "assistant",
+          "content": "Lab mornings need a clean routine."
+        }
+      ]
+    },
+    {
+      "session_id": 112,
+      "timestamp": "2026-06-25T09:30:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "James said accepting the heavier no-fuel corridor block this week is amazing hype and worth it for clinic efficiency."
+        },
+        {
+          "role": "assistant",
+          "content": "Efficiency hype and afternoon cognition are different ledgers."
+        }
+      ]
+    },
+    {
+      "session_id": 87,
+      "timestamp": "2026-06-26T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Autumn vitals calendar is printed. Afternoon walk blocks are marked."
+        },
+        {
+          "role": "assistant",
+          "content": "Paper copies help on busy weeks."
+        }
+      ]
+    },
+    {
+      "session_id": 88,
+      "timestamp": "2026-06-28T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Oil-kitchen lunches leave me sluggish with elevated post-walk glucose — grilled options have been fine."
+        },
+        {
+          "role": "assistant",
+          "content": "Has that pattern repeated?"
+        },
+        {
+          "role": "user",
+          "content": "Yes. Twice on fryer-heavy lunches; grilled plates did not."
+        }
+      ]
+    },
+    {
+      "session_id": 89,
+      "timestamp": "2026-06-30T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Short walk after lunch. Nice reset."
+        },
+        {
+          "role": "assistant",
+          "content": "Small movement breaks add up."
+        }
+      ]
+    },
+    {
+      "session_id": 90,
+      "timestamp": "2026-07-02T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Wednesday corridor vitals block needs stable post-meal readings — already on the calendar."
+        },
+        {
+          "role": "assistant",
+          "content": "Is that timing firm?"
+        },
+        {
+          "role": "user",
+          "content": "Yes. It is already booked."
+        }
+      ]
+    },
+    {
+      "session_id": 91,
+      "timestamp": "2026-07-04T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Cafeteria posted a grease-line signup blurb. I filed it without replying."
+        },
+        {
+          "role": "assistant",
+          "content": "Invites can wait for a calendar plan."
+        }
+      ]
+    },
+    {
+      "session_id": 92,
+      "timestamp": "2026-07-06T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Restocked pantry supplies for the autumn sprint. Timing still matters."
+        },
+        {
+          "role": "assistant",
+          "content": "Clinic routines are not one-size."
+        }
+      ]
+    },
+    {
+      "session_id": 93,
+      "timestamp": "2026-07-08T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Fizz-heavy zero-cal drinks cause bloating on sensitive gut evenings — still water has been fine."
+        },
+        {
+          "role": "assistant",
+          "content": "Has the fizz-heavy pattern repeated?"
+        },
+        {
+          "role": "user",
+          "content": "Yes. Three carbonated evenings did it; still-water days were uneventful."
+        }
+      ]
+    },
+    {
+      "session_id": 94,
+      "timestamp": "2026-07-10T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Short lunch away from the desk. Helped the afternoon block."
+        },
+        {
+          "role": "assistant",
+          "content": "Breaks protect afternoon quality."
+        }
+      ]
+    },
+    {
+      "session_id": 95,
+      "timestamp": "2026-07-12T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Friday scope prep window requires clear liquids with minimal bloating Wednesday night — already on the calendar."
+        },
+        {
+          "role": "assistant",
+          "content": "Is that slot movable?"
+        },
+        {
+          "role": "user",
+          "content": "Not easily. The prep schedule is fixed."
+        }
+      ]
+    },
+    {
+      "session_id": 96,
+      "timestamp": "2026-07-14T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Clinic chat is noisy about fizz rituals. I muted the thread."
+        },
+        {
+          "role": "assistant",
+          "content": "Mute buttons save attention."
+        }
+      ]
+    },
+    {
+      "session_id": 97,
+      "timestamp": "2026-07-16T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Printed the autumn lab calendar. Solo prep blocks are marked."
+        },
+        {
+          "role": "assistant",
+          "content": "Lab weeks need a clean routine."
+        }
+      ]
+    },
+    {
+      "session_id": 98,
+      "timestamp": "2026-07-18T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Large crunch-bowl evenings cause bloating before dawn blood draws — cooked veg portions have been fine."
+        },
+        {
+          "role": "assistant",
+          "content": "Has the crunch-bowl pattern repeated?"
+        },
+        {
+          "role": "user",
+          "content": "Yes. Three raw-heavy evenings did it; cooked veg portions did not."
+        }
+      ]
+    },
+    {
+      "session_id": 99,
+      "timestamp": "2026-07-20T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Caterer mailer landed. I filed it without replying."
+        },
+        {
+          "role": "assistant",
+          "content": "Invites can wait for a draw plan."
+        }
+      ]
+    },
+    {
+      "session_id": 100,
+      "timestamp": "2026-07-22T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Thursday dawn panel draw needs a settled morning stomach — late-slot food signup is already booked through the night before."
+        },
+        {
+          "role": "assistant",
+          "content": "Is that timing firm?"
+        },
+        {
+          "role": "user",
+          "content": "Yes. The draw is already scheduled."
+        }
+      ]
+    },
+    {
+      "session_id": 101,
+      "timestamp": "2026-07-24T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Packed reference notes for the dawn draw. Timing still feels tight."
+        },
+        {
+          "role": "assistant",
+          "content": "Draw timing matters on lab weeks."
+        }
+      ]
+    },
+    {
+      "session_id": 102,
+      "timestamp": "2026-07-26T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Skills demo outline is packed. Wednesday slot is on the calendar."
+        },
+        {
+          "role": "assistant",
+          "content": "Demo weeks need protected prep blocks."
+        }
+      ]
+    },
+    {
+      "session_id": 103,
+      "timestamp": "2026-07-28T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I retain portioning skills best with whole-food prep — blender-only practice weakens demo performance for me."
+        },
+        {
+          "role": "assistant",
+          "content": "Has the blender-only pattern repeated?"
+        },
+        {
+          "role": "user",
+          "content": "Yes. Twice on blender-only prep; whole-food practice did not."
+        }
+      ]
+    },
+    {
+      "session_id": 104,
+      "timestamp": "2026-07-30T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Culinary forum is loud about blender-only run-throughs. I am not adopting forum defaults."
+        },
+        {
+          "role": "assistant",
+          "content": "Forum norms are not prep facts."
+        }
+      ]
+    },
+    {
+      "session_id": 105,
+      "timestamp": "2026-08-01T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Prior blender-only rehearsal went poorly before skills demo night — I misjudged portions twice."
+        },
+        {
+          "role": "assistant",
+          "content": "Harsh memory. Was the material unfamiliar?"
+        },
+        {
+          "role": "user",
+          "content": "No. The format fought my process."
+        }
+      ]
+    },
+    {
+      "session_id": 106,
+      "timestamp": "2026-08-03T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Printed the skills demo calendar. Solo whole-food prep blocks are locked."
+        },
+        {
+          "role": "assistant",
+          "content": "Paper copies help on busy weeks."
+        }
+      ]
+    },
+    {
+      "session_id": 107,
+      "timestamp": "2026-08-05T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Stacked telehealth week memo landed. I only skimmed the corridor-transfer section."
+        },
+        {
+          "role": "assistant",
+          "content": "Not every memo needs a decision."
+        }
+      ]
+    },
+    {
+      "session_id": 108,
+      "timestamp": "2026-08-07T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Corridor transfers without snacks leave me shaky and foggy — light bar transfers have been fine."
+        },
+        {
+          "role": "assistant",
+          "content": "Has the no-snack transfer pattern repeated?"
+        },
+        {
+          "role": "user",
+          "content": "Yes. Three empty-transfer blocks did it; light bar transfers did not."
+        }
+      ]
+    },
+    {
+      "session_id": 109,
+      "timestamp": "2026-08-09T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Clinic shuttle blurb posted. I filed it without replying."
+        },
+        {
+          "role": "assistant",
+          "content": "Invites can wait for a telehealth plan."
+        }
+      ]
+    },
+    {
+      "session_id": 110,
+      "timestamp": "2026-08-11T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Stacked telehealth week requires steady afternoon cognition with no scheduled meal gap — already on the calendar."
+        },
+        {
+          "role": "assistant",
+          "content": "Is that timing firm?"
+        },
+        {
+          "role": "user",
+          "content": "Yes. The telehealth week is already booked."
+        }
+      ]
+    },
+    {
+      "session_id": 111,
+      "timestamp": "2026-08-13T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Packed a light bar for a possible corridor day. Transfer timing still feels tight."
+        },
+        {
+          "role": "assistant",
+          "content": "Telehealth weeks need an energy plan."
+        }
+      ]
+    },
+    {
+      "session_id": 113,
+      "timestamp": "2026-08-17T18:10:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Worth accepting the heavier no-fuel corridor block this week — based on what you know about me?"
+        }
+      ]
+    }
+  ],
+  "query": "Worth accepting the heavier no-fuel corridor block this week — based on what you know about me?",
+  "query_source": "final_turn",
+  "gold_answer": "Lean no unless snacks are built into transfers. Corridor transfers without snacks have left you shaky and foggy, and stacked telehealth week requires steady afternoon cognition with no scheduled meal gap. Carry a light bar or defer no-fuel blocks until after telehealth week.",
+  "required_elements": [
+    "uses no-snack corridor transfers causing shakiness and fog",
+    "uses stacked telehealth week requiring steady afternoon cognition",
+    "recommends declining or adding snacks to no-fuel corridor block"
+  ],
+  "target_evidence_ids": [
+    "ev_A",
+    "ev_B"
+  ],
+  "associative_cue_id": "cue_1",
+  "distractor_ids": [
+    "dist_1"
+  ],
+  "associative_links": [
+    {
+      "source": "ev_A",
+      "relation": "causes",
+      "target": "no_snack_transfer_shakiness",
+      "hop": 1
+    },
+    {
+      "source": "ev_B",
+      "relation": "constrains",
+      "target": "telehealth_steady_afternoon_cognition",
+      "hop": 1
+    },
+    {
+      "source": [
+        "ev_A",
+        "ev_B"
+      ],
+      "relation": "co_activate_to",
+      "target": "no_fuel_block_conflicts_telehealth",
+      "hop": 2
+    }
+  ],
+  "annotation": {
+    "1": {
+      "role_setup": "background_memory"
+    },
+    "2": {
+      "role_setup": "background_memory"
+    },
+    "3": {
+      "role_setup": "background_memory"
+    },
+    "4": {
+      "role_setup": "background_memory"
+    },
+    "5": {
+      "role_setup": "background_memory"
+    },
+    "6": {
+      "role_setup": "background_memory"
+    },
+    "7": {
+      "role_setup": "background_memory"
+    },
+    "8": {
+      "role_setup": "background_memory"
+    },
+    "9": {
+      "role_setup": "background_memory"
+    },
+    "10": {
+      "role_setup": "background_memory"
+    },
+    "11": {
+      "role_setup": "background_memory"
+    },
+    "12": {
+      "role_setup": "background_memory"
+    },
+    "13": {
+      "role_setup": "background_memory"
+    },
+    "14": {
+      "role_setup": "background_memory"
+    },
+    "15": {
+      "role_setup": "background_memory"
+    },
+    "16": {
+      "role_setup": "background_memory"
+    },
+    "17": {
+      "role_setup": "background_memory"
+    },
+    "18": {
+      "role_setup": "background_memory"
+    },
+    "19": {
+      "role_setup": "background_memory"
+    },
+    "20": {
+      "role_setup": "background_memory"
+    },
+    "21": {
+      "role_setup": "background_memory"
+    },
+    "22": {
+      "role_setup": "background_memory"
+    },
+    "23": {
+      "role_setup": "background_memory"
+    },
+    "24": {
+      "role_setup": "background_memory"
+    },
+    "25": {
+      "role_setup": "background_memory"
+    },
+    "26": {
+      "role_setup": "background_memory"
+    },
+    "27": {
+      "role_setup": "background_memory"
+    },
+    "28": {
+      "role_setup": "background_memory"
+    },
+    "29": {
+      "role_setup": "background_memory"
+    },
+    "30": {
+      "role_setup": "background_memory"
+    },
+    "31": {
+      "role_setup": "background_memory"
+    },
+    "32": {
+      "role_setup": "background_memory"
+    },
+    "33": {
+      "role_setup": "background_memory"
+    },
+    "34": {
+      "role_setup": "background_memory"
+    },
+    "35": {
+      "role_setup": "background_memory"
+    },
+    "36": {
+      "role_setup": "background_memory"
+    },
+    "37": {
+      "role_setup": "background_memory"
+    },
+    "38": {
+      "role_setup": "background_memory"
+    },
+    "39": {
+      "role_setup": "background_memory"
+    },
+    "40": {
+      "role_setup": "background_memory"
+    },
+    "41": {
+      "role_setup": "background_memory"
+    },
+    "42": {
+      "role_setup": "background_memory"
+    },
+    "43": {
+      "role_setup": "background_memory"
+    },
+    "44": {
+      "role_setup": "background_memory"
+    },
+    "45": {
+      "role_setup": "background_memory"
+    },
+    "46": {
+      "role_setup": "background_memory"
+    },
+    "47": {
+      "role_setup": "background_memory"
+    },
+    "48": {
+      "role_setup": "background_memory"
+    },
+    "49": {
+      "role_setup": "background_memory"
+    },
+    "50": {
+      "role_setup": "background_memory"
+    },
+    "51": {
+      "role_setup": "background_memory"
+    },
+    "52": {
+      "role_setup": "background_memory"
+    },
+    "53": {
+      "role_setup": "background_memory"
+    },
+    "54": {
+      "role_setup": "background_memory"
+    },
+    "55": {
+      "role_setup": "background_memory"
+    },
+    "56": {
+      "role_setup": "background_memory"
+    },
+    "57": {
+      "role_setup": "background_memory"
+    },
+    "58": {
+      "role_setup": "background_memory"
+    },
+    "59": {
+      "role_setup": "background_memory"
+    },
+    "60": {
+      "role_setup": "background_memory"
+    },
+    "61": {
+      "role_setup": "background_memory"
+    },
+    "62": {
+      "role_setup": "background_memory"
+    },
+    "63": {
+      "role_setup": "background_memory"
+    },
+    "64": {
+      "role_setup": "background_memory"
+    },
+    "65": {
+      "role_setup": "background_memory"
+    },
+    "66": {
+      "role_setup": "background_memory"
+    },
+    "67": {
+      "role_setup": "background_memory"
+    },
+    "68": {
+      "role_setup": "background_memory"
+    },
+    "69": {
+      "role_setup": "background_memory"
+    },
+    "70": {
+      "role_setup": "background_memory"
+    },
+    "71": {
+      "role_setup": "background_memory"
+    },
+    "72": {
+      "role_setup": "background_memory"
+    },
+    "73": {
+      "role_setup": "background_memory"
+    },
+    "74": {
+      "role_setup": "background_memory"
+    },
+    "75": {
+      "role_setup": "background_memory"
+    },
+    "76": {
+      "role_setup": "background_memory"
+    },
+    "77": {
+      "role_setup": "background_memory"
+    },
+    "78": {
+      "role_setup": "background_memory"
+    },
+    "79": {
+      "role_setup": "background_memory"
+    },
+    "80": {
+      "role_setup": "background_memory"
+    },
+    "81": {
+      "role_setup": "background_memory"
+    },
+    "82": {
+      "role_setup": "background_memory"
+    },
+    "83": {
+      "role_setup": "background_memory"
+    },
+    "84": {
+      "role_setup": "background_memory"
+    },
+    "85": {
+      "role_setup": "background_memory"
+    },
+    "86": {
+      "role_setup": "background_memory"
+    },
+    "112": {
+      "role_setup": "distractor",
+      "distractor_id": "dist_1",
+      "why_distractor": "No-fuel corridor block hype is query-similar FOMO but is not evidence about this user's no-snack shakiness pattern or telehealth-week cognition requirement."
+    },
+    "87": {
+      "role_setup": "background_memory"
+    },
+    "88": {
+      "role_setup": "background_memory"
+    },
+    "89": {
+      "role_setup": "background_memory"
+    },
+    "90": {
+      "role_setup": "background_memory"
+    },
+    "91": {
+      "role_setup": "background_memory"
+    },
+    "92": {
+      "role_setup": "background_memory"
+    },
+    "93": {
+      "role_setup": "background_memory"
+    },
+    "94": {
+      "role_setup": "background_memory"
+    },
+    "95": {
+      "role_setup": "background_memory"
+    },
+    "96": {
+      "role_setup": "background_memory"
+    },
+    "97": {
+      "role_setup": "background_memory"
+    },
+    "98": {
+      "role_setup": "background_memory"
+    },
+    "99": {
+      "role_setup": "background_memory"
+    },
+    "100": {
+      "role_setup": "background_memory"
+    },
+    "101": {
+      "role_setup": "background_memory"
+    },
+    "102": {
+      "role_setup": "background_memory"
+    },
+    "103": {
+      "role_setup": "background_memory"
+    },
+    "104": {
+      "role_setup": "background_memory"
+    },
+    "105": {
+      "role_setup": "background_memory"
+    },
+    "106": {
+      "role_setup": "background_memory"
+    },
+    "107": {
+      "role_setup": "background_memory"
+    },
+    "108": {
+      "role_setup": "target_evidence",
+      "evidence_id": "ev_A",
+      "atomic_fact": "Corridor transfers without snacks leave the user shaky and foggy; light bar transfers have been fine."
+    },
+    "109": {
+      "role_setup": "background_memory"
+    },
+    "110": {
+      "role_setup": "target_evidence",
+      "evidence_id": "ev_B",
+      "atomic_fact": "Stacked telehealth week requires steady afternoon cognition with no scheduled meal gap."
+    },
+    "111": {
+      "role_setup": "background_memory"
+    },
+    "113": {
+      "role_setup": "associative_cue",
+      "cue_id": "cue_1"
+    }
+  },
+  "latent_forbidden_phrases": [
+    "snacking ban forever",
+    "must cancel telehealth",
+    "transfers always unsafe"
+  ],
+  "counterfactual_variants": [
+    {
+      "variant_id": "AMB_HD_u08_distractor_S20_cf_remove_ev_A",
+      "type": "evidence_removed",
+      "removed_session_ids": [
+        108
+      ],
+      "result_arm": "absence",
+      "result_association_type": "A5_hard_absence_control",
+      "result_gold_answer": "There is insufficient evidence for a personalized recommendation. I know stacked telehealth week requires steady afternoon cognition with no scheduled meal gap, but the available memory does not establish that corridor transfers without snacks leave you shaky and foggy. I cannot reject the block from schedule alone.",
+      "result_required_elements": [
+        "states that the no-snack transfer shakiness evidence is missing",
+        "does not infer cognition harm from the block alone",
+        "explicitly abstains from rejecting the block"
+      ],
+      "result_target_evidence_ids": [],
+      "result_associative_links": [],
+      "expected_gold": "insufficient evidence / abstain"
+    },
+    {
+      "variant_id": "AMB_HD_u08_distractor_S20_cf_remove_ev_B",
+      "type": "evidence_removed",
+      "removed_session_ids": [
+        110
+      ],
+      "result_arm": "absence",
+      "result_association_type": "A5_hard_absence_control",
+      "result_gold_answer": "There is insufficient evidence for a personalized recommendation. No-snack transfers have caused shakiness, but I cannot tell from the available memory whether stacked telehealth week requires steady afternoon cognition with no meal gap. Confirm telehealth-week schedule before deciding.",
+      "result_required_elements": [
+        "states that the telehealth-week cognition-gap evidence is missing",
+        "does not infer focus harm from the block invite alone",
+        "asks about telehealth-week schedule or explicitly abstains"
+      ],
+      "result_target_evidence_ids": [],
+      "result_associative_links": [],
+      "expected_gold": "insufficient evidence / abstain"
+    },
+    {
+      "variant_id": "AMB_HD_u08_distractor_S20_cf_remove_distractor",
+      "type": "distractor_removed",
+      "removed_session_ids": [
+        "$distractor_session"
+      ],
+      "result_arm": "associative",
+      "result_association_type": "A3_cross_domain",
+      "result_gold_answer": "Lean no unless snacks are built into transfers. Corridor transfers without snacks have left you shaky and foggy, and stacked telehealth week requires steady afternoon cognition with no scheduled meal gap. Carry a light bar or defer no-fuel blocks until after telehealth week.",
+      "result_required_elements": [
+        "uses no-snack corridor transfers causing shakiness and fog",
+        "uses stacked telehealth week requiring steady afternoon cognition",
+        "recommends declining or adding snacks to no-fuel corridor block"
+      ],
+      "result_target_evidence_ids": [
+        "ev_A",
+        "ev_B"
+      ],
+      "result_associative_links": [
+        {
+          "source": "ev_A",
+          "relation": "causes",
+          "target": "no_snack_transfer_shakiness",
+          "hop": 1
+        },
+        {
+          "source": "ev_B",
+          "relation": "constrains",
+          "target": "telehealth_steady_afternoon_cognition",
+          "hop": 1
+        },
+        {
+          "source": [
+            "ev_A",
+            "ev_B"
+          ],
+          "relation": "co_activate_to",
+          "target": "no_fuel_block_conflicts_telehealth",
+          "hop": 2
+        }
+      ],
+      "expected_gold": "Lean no unless snacks are built into transfers. Corridor transfers without snacks have left you shaky and foggy, and stacked telehealth week requires steady afternoon cognition with no scheduled meal gap. Carry a light bar or defer no-fuel blocks until after telehealth week."
+    }
+  ],
+  "validity_metrics": {
+    "lexical_jaccard_query_evidence": 0.0714,
+    "embed_cosine_query_evidence": 0.1224,
+    "flat_rag_hit_top3": false,
+    "distractor_cosine_query": 0.3906,
+    "evidence_cosine_query": 0.1224,
+    "partial_evidence_cosine_query": 0.0,
+    "validity_method": {
+      "embedder": "tfidf-local-proxy",
+      "lexical": "jaccard-stopword-filtered",
+      "computed_by": "health_diet/bin/generate_health_diet_gold_batch.py",
+      "computed_at": "2026-07-15",
+      "limitation": "Lexical proxy only; dense semantic validation and human IAA remain required."
+    }
+  },
+  "provenance": {
+    "generator": "health_diet_gold_batch_v2",
+    "generated_by": "autoresearch_pilot",
+    "persona_corpus": "RHELM",
+    "persona_ref": "microsoft/RHELM:conversations/Dr._Elena_Markovic",
+    "scenario_id": "S20",
+    "scenario_name": "no_snack_transfer_x_stacked_telehealth_week",
+    "batch_id": "HD_GOLD_BATCH_2026-07-15_v2",
+    "standard": "DATA_STANDARD_v1",
+    "timeline_id": "HD_u08_shared_timeline_v2",
+    "timeline_prefix_end": 111,
+    "gold_tier": "v2"
+  },
+  "dataset_meta": {
+    "golden_candidate": true,
+    "human_verified_by": [],
+    "iaa_cohort_kappa": null,
+    "iaa_n_overlap": null,
+    "known_validation_gaps": [
+      "dense semantic discriminant gate not yet run",
+      "two-person blind human necessity review not yet run",
+      "real-model full/no-assoc/no-distractor evaluation not yet run"
+    ],
+    "reproduce": {
+      "loader_rule": "serialize context dialogue role+content only; strip annotation/evolving_state",
+      "generator": "python3 health_diet/bin/generate_health_diet_gold_batch.py",
+      "metrics": [
+        "answer_vs_gold+required_elements",
+        "joint_evidence_recall",
+        "single_evidence_counterfactual_abstention",
+        "distractor_removal_invariance"
+      ]
+    }
+  }
+}

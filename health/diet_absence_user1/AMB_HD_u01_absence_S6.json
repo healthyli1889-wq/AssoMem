@@ -1,0 +1,853 @@
+{
+  "sample_id": "AMB_HD_u01_absence_S6",
+  "source": "partner_generated",
+  "status": "rendered",
+  "association_type": "A5_hard_absence_control",
+  "domain_tags": [
+    "health/wellness",
+    "food/cooking",
+    "work/routine"
+  ],
+  "pilot_arm": "absence",
+  "pilot_domain": "health_diet",
+  "persona_source": {
+    "corpus": "DynamicMem",
+    "ref": "xiewenya/dynamicmem:001_user_001",
+    "display_name": "DM-user_001"
+  },
+  "context_length_tokens": 2959,
+  "persona": {
+    "user_id": "hd_u01",
+    "stable_traits": [
+      "coatings industry consultant",
+      "Pittsburgh suburbs",
+      "data-driven health tracker",
+      "Oura Ring user",
+      "desk-job lower back stiffness"
+    ],
+    "evolving_state": {
+      "late_espresso_effect": "fragmented_sleep_after_4pm",
+      "early_cycle_tolerance": "poor_after_bad_sleep"
+    }
+  },
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2026-01-05T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The Oura trend is finally steady again. Three regular bedtimes made a bigger difference than I expected."
+        },
+        {
+          "role": "assistant",
+          "content": "A short consistent stretch can be informative."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2026-01-07T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I batch-cooked lentils and rice for the consulting days this week. Lunch decisions are handled."
+        },
+        {
+          "role": "assistant",
+          "content": "That removes one variable from the workday."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2026-01-09T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "My lower back was stiff after a long report, but a twenty-minute walk loosened it up."
+        },
+        {
+          "role": "assistant",
+          "content": "Useful to notice what changes it."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2026-01-11T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A normal cheese portion after dinner was fine again. It does not seem like dairy across the board."
+        },
+        {
+          "role": "assistant",
+          "content": "Timing and what else you ate may matter."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2026-01-13T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "On early offsite days I leave before I can face breakfast. I usually reach the venue with only water in me."
+        },
+        {
+          "role": "assistant",
+          "content": "Is food available when you arrive?"
+        },
+        {
+          "role": "user",
+          "content": "Usually not until the first scheduled break."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2026-01-15T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I tested the rich yogurt-and-cream bowl again while I was still empty. Within an hour I was bloated and mentally foggy."
+        },
+        {
+          "role": "assistant",
+          "content": "Did the same thing happen when you had it later in the day?"
+        },
+        {
+          "role": "user",
+          "content": "No. After a proper lunch, a small serving has been uneventful."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2026-01-17T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The soup portions I froze held up well. I have two emergency dinners left."
+        },
+        {
+          "role": "assistant",
+          "content": "Good buffer for a crowded week."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2026-01-19T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The offsite working-group email finally listed the 8am room and the first-session agenda. I saved the map."
+        },
+        {
+          "role": "assistant",
+          "content": "Good to have the logistics settled."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2026-01-21T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A catering newsletter compared tasting formats for corporate offsites. I saved it with the working-group material."
+        },
+        {
+          "role": "assistant",
+          "content": "That may be useful when the agenda is finalized."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2026-01-23T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The weekend meal prep worked. I did not end up grazing through the afternoon calls."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth keeping as a repeatable setup."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2026-01-25T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The orange-label can I sometimes buy after work suppresses my appetite until late the next morning, although it has not affected my sleep."
+        },
+        {
+          "role": "assistant",
+          "content": "Does an ordinary morning coffee do that too?"
+        },
+        {
+          "role": "user",
+          "content": "No. I have only noticed the long appetite drop with that can late in the day."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2026-01-27T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A small coffee before lunch was fine today, and I stopped there."
+        },
+        {
+          "role": "assistant",
+          "content": "That is useful to record separately."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2026-01-29T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I finished the methods appendix before dinner. Having a defined stopping point helped."
+        },
+        {
+          "role": "assistant",
+          "content": "Clear edges make long work easier to contain."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2026-01-31T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "If I lead an early briefing without a real breakfast, I lose my verbal thread and start misreading numbers halfway through."
+        },
+        {
+          "role": "assistant",
+          "content": "Has breakfast made a consistent difference?"
+        },
+        {
+          "role": "user",
+          "content": "Yes. Three no-breakfast briefings went badly; the ones after a proper meal were steady."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2026-02-02T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The template for presenting the research findings is loaded, and the eight o'clock video room is confirmed. The remaining work is slide order."
+        },
+        {
+          "role": "assistant",
+          "content": "The logistics sound settled."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2026-02-04T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The vending machine now has the tonic in orange packaging beside the sparkling water."
+        },
+        {
+          "role": "assistant",
+          "content": "That is a noticeable restock."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2026-02-06T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The low-salt bean stew was better after a day in the fridge. I froze the extra portion."
+        },
+        {
+          "role": "assistant",
+          "content": "That is a useful weekday fallback."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2026-02-08T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A modest bowl of low-sodium ramen at lunch sat fine. Portion and broth concentration seem to matter."
+        },
+        {
+          "role": "assistant",
+          "content": "That is a more specific observation than treating all ramen alike."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2026-02-10T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Concentrated restaurant broth is fine for me at lunch, but when I start a briny bowl after seven I wake up thirsty and dried out."
+        },
+        {
+          "role": "assistant",
+          "content": "Has the timing difference repeated?"
+        },
+        {
+          "role": "user",
+          "content": "Three late bowls caused it; earlier servings and my lighter soup at home did not."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2026-02-12T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I cleared the client revisions before the end of the workday. No late scramble this time."
+        },
+        {
+          "role": "assistant",
+          "content": "That is a better finish."
+        }
+      ]
+    },
+    {
+      "session_id": 21,
+      "timestamp": "2026-02-14T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "On Pittsburgh client-review days the debrief runs until about 6:50, and the drive back means I cannot meet anyone for food before 7:40."
+        },
+        {
+          "role": "assistant",
+          "content": "Is that timing fairly fixed?"
+        },
+        {
+          "role": "user",
+          "content": "Yes. The team books the same review block and traffic does the rest."
+        }
+      ]
+    },
+    {
+      "session_id": 22,
+      "timestamp": "2026-02-16T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I replaced the desk water bottle. The old cap kept leaking into my bag."
+        },
+        {
+          "role": "assistant",
+          "content": "A mundane but worthwhile fix."
+        }
+      ]
+    },
+    {
+      "session_id": 23,
+      "timestamp": "2026-02-18T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Friends attending next week's Pittsburgh review asked when I would be free afterward. I have not answered yet."
+        },
+        {
+          "role": "assistant",
+          "content": "You can reply once the schedule is settled."
+        }
+      ]
+    },
+    {
+      "session_id": 24,
+      "timestamp": "2026-02-20T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A new ramen place is advertising the chef's dense-stock bowl as its dinner special."
+        },
+        {
+          "role": "assistant",
+          "content": "That is a specific menu pitch."
+        }
+      ]
+    },
+    {
+      "session_id": 25,
+      "timestamp": "2026-02-22T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I left with only coffee at dawn again and energy cratered before ten — focus just collapsed."
+        },
+        {
+          "role": "assistant",
+          "content": "Has that happened on other empty-start days?"
+        },
+        {
+          "role": "user",
+          "content": "Yes. It is consistent when I skip a real first meal."
+        }
+      ]
+    },
+    {
+      "session_id": 26,
+      "timestamp": "2026-02-24T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Venue rider I countersigned: personal meal parcels are refused at the threshold; caterers alone supply edibles until staff declare the halfway refresh window."
+        },
+        {
+          "role": "assistant",
+          "content": "Is there any way to bring your own fuel?"
+        },
+        {
+          "role": "user",
+          "content": "Not according to the signed rider. We are limited to what caterers place indoors."
+        }
+      ]
+    },
+    {
+      "session_id": 27,
+      "timestamp": "2026-02-26T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Planning note: the orientation block is 8 to 12 and the host email highlights viennoiserie at entry — just filing logistics."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth thinking through fuel before a long indoor stretch."
+        }
+      ]
+    },
+    {
+      "session_id": 28,
+      "timestamp": "2026-02-28T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Orientation email highlights viennoiserie at entry as the featured catering choice for the 8-to-12 block."
+        },
+        {
+          "role": "assistant",
+          "content": "That is a common default for long indoor sessions."
+        }
+      ]
+    },
+    {
+      "session_id": 29,
+      "timestamp": "2026-03-02T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I tried the chili-heavy tasting plate within two hours of bedtime and woke up with reflux. Earlier spicy lunches have been fine."
+        },
+        {
+          "role": "assistant",
+          "content": "Does the timing window matter more than the heat level?"
+        },
+        {
+          "role": "user",
+          "content": "For me, yes — close to bedtime is what triggers it."
+        }
+      ]
+    },
+    {
+      "session_id": 30,
+      "timestamp": "2026-03-04T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "After those reflux nights my voice wavers on the morning video sessions I lead. I sound less steady than I want."
+        },
+        {
+          "role": "assistant",
+          "content": "Has that shown up on early calls after calm evenings?"
+        },
+        {
+          "role": "user",
+          "content": "No. It tracks the reflux nights specifically."
+        }
+      ]
+    },
+    {
+      "session_id": 31,
+      "timestamp": "2026-03-06T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The debrief calendar shows a 7:30am video room tomorrow. I blocked prep time tonight."
+        },
+        {
+          "role": "assistant",
+          "content": "Early speaking days need a calm evening plate."
+        }
+      ]
+    },
+    {
+      "session_id": 32,
+      "timestamp": "2026-03-08T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A colleague forwarded the 9pm chili tasting invite for tonight. It overlaps with tomorrow's early debrief."
+        },
+        {
+          "role": "assistant",
+          "content": "That is a tight pairing on the calendar."
+        }
+      ]
+    },
+    {
+      "session_id": 33,
+      "timestamp": "2026-03-10T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The summer block schedule is loaded. I am trying to keep recovery days visible on the calendar."
+        },
+        {
+          "role": "assistant",
+          "content": "That makes tradeoffs easier to see."
+        }
+      ]
+    },
+    {
+      "session_id": 34,
+      "timestamp": "2026-03-12T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A strong roast after the workday ends left me waking twice overnight. Morning caffeine before midday has never done that."
+        },
+        {
+          "role": "assistant",
+          "content": "Has the late timing repeated?"
+        },
+        {
+          "role": "user",
+          "content": "Twice now. It is specifically an after-work strong cup, not caffeine in general."
+        }
+      ]
+    },
+    {
+      "session_id": 35,
+      "timestamp": "2026-03-14T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I walked the long way back from the cafe district. Nice reset between calls."
+        },
+        {
+          "role": "assistant",
+          "content": "Small movement breaks add up."
+        }
+      ]
+    },
+    {
+      "session_id": 37,
+      "timestamp": "2026-03-18T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The studio sent a promo for dawn spin blocks. I saved it without replying."
+        },
+        {
+          "role": "assistant",
+          "content": "Early classes need a predictable recovery window."
+        }
+      ]
+    },
+    {
+      "session_id": 38,
+      "timestamp": "2026-03-20T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Office chat says a post-four strong cup is harmless before an early ride."
+        },
+        {
+          "role": "assistant",
+          "content": "Office folklore around caffeine timing is loud."
+        }
+      ]
+    },
+    {
+      "session_id": 39,
+      "timestamp": "2026-06-15T17:10:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The cafe across the street is pushing a post-four double espresso. I locked the dawn spin slot tomorrow — should I grab one now?"
+        }
+      ]
+    }
+  ],
+  "query": "The cafe across the street is pushing a post-four double espresso. I locked the dawn spin slot tomorrow — should I grab one now?",
+  "query_source": "final_turn",
+  "gold_answer": "There is insufficient evidence for a personalized recommendation. Late espresso has fragmented your sleep twice, but I cannot tell from the available memory whether tomorrow's cycle class is sensitive to that pattern. Confirm how you tolerate early classes after a chopped-up night before deciding.",
+  "required_elements": [
+    "states that the class-after-bad-sleep consequence is missing",
+    "does not infer lightheadedness from booking the class alone",
+    "explicitly abstains or asks about early-class tolerance after poor sleep"
+  ],
+  "target_evidence_ids": [],
+  "associative_cue_id": "cue_1",
+  "distractor_ids": [],
+  "associative_links": [],
+  "annotation": {
+    "1": {
+      "role_setup": "background_memory"
+    },
+    "2": {
+      "role_setup": "background_memory"
+    },
+    "3": {
+      "role_setup": "background_memory"
+    },
+    "4": {
+      "role_setup": "background_memory"
+    },
+    "5": {
+      "role_setup": "background_memory"
+    },
+    "6": {
+      "role_setup": "background_memory"
+    },
+    "7": {
+      "role_setup": "background_memory"
+    },
+    "8": {
+      "role_setup": "background_memory"
+    },
+    "9": {
+      "role_setup": "background_memory"
+    },
+    "10": {
+      "role_setup": "background_memory"
+    },
+    "11": {
+      "role_setup": "background_memory"
+    },
+    "12": {
+      "role_setup": "background_memory"
+    },
+    "13": {
+      "role_setup": "background_memory"
+    },
+    "14": {
+      "role_setup": "background_memory"
+    },
+    "15": {
+      "role_setup": "background_memory"
+    },
+    "16": {
+      "role_setup": "background_memory"
+    },
+    "17": {
+      "role_setup": "background_memory"
+    },
+    "18": {
+      "role_setup": "background_memory"
+    },
+    "19": {
+      "role_setup": "background_memory"
+    },
+    "20": {
+      "role_setup": "background_memory"
+    },
+    "21": {
+      "role_setup": "background_memory"
+    },
+    "22": {
+      "role_setup": "background_memory"
+    },
+    "23": {
+      "role_setup": "background_memory"
+    },
+    "24": {
+      "role_setup": "background_memory"
+    },
+    "25": {
+      "role_setup": "background_memory"
+    },
+    "26": {
+      "role_setup": "background_memory"
+    },
+    "27": {
+      "role_setup": "background_memory"
+    },
+    "28": {
+      "role_setup": "background_memory"
+    },
+    "29": {
+      "role_setup": "background_memory"
+    },
+    "30": {
+      "role_setup": "background_memory"
+    },
+    "31": {
+      "role_setup": "background_memory"
+    },
+    "32": {
+      "role_setup": "background_memory"
+    },
+    "33": {
+      "role_setup": "background_memory"
+    },
+    "34": {
+      "role_setup": "partial_evidence",
+      "evidence_id": "ev_A",
+      "atomic_fact": "A strong roast after the workday ends leaves the user waking twice overnight; morning caffeine before midday has not caused this.",
+      "insufficiency_note": "ev_B is intentionally unavailable"
+    },
+    "35": {
+      "role_setup": "background_memory"
+    },
+    "37": {
+      "role_setup": "background_memory"
+    },
+    "38": {
+      "role_setup": "background_memory"
+    },
+    "39": {
+      "role_setup": "associative_cue",
+      "cue_id": "cue_1"
+    }
+  },
+  "latent_forbidden_phrases": [
+    "all caffeine is unsafe",
+    "must cancel the cycle class",
+    "espresso always ruins sleep"
+  ],
+  "counterfactual_variants": [
+    {
+      "variant_id": "AMB_HD_u01_absence_S6_cf_restore_ev_B",
+      "type": "evidence_added",
+      "added_session": {
+        "session_id": 36,
+        "timestamp": "2026-03-16T18:00:00Z",
+        "dialogue": [
+          {
+            "role": "user",
+            "content": "After those chopped-up nights I get lightheaded in the before-breakfast studio class — I stopped booking the dawn slot when sleep was bad."
+          },
+          {
+            "role": "assistant",
+            "content": "Does a full night change it?"
+          },
+          {
+            "role": "user",
+            "content": "Yes. On rested nights the same class is fine."
+          }
+        ]
+      },
+      "result_arm": "associative",
+      "result_association_type": "A3_cross_domain",
+      "result_gold_answer": "Skip the post-four double espresso. An after-work strong cup has left you waking twice overnight, and after fragmented sleep you get lightheaded in the before-breakfast studio class. Choose a non-caffeinated drink or move the spin slot to a day with protected sleep.",
+      "result_required_elements": [
+        "links post-four espresso to fragmented overnight sleep",
+        "links fragmented sleep to lightheadedness in the 6:30 cycle class",
+        "recommends skipping the espresso or rescheduling the class"
+      ],
+      "result_target_evidence_ids": [
+        "ev_A",
+        "ev_B"
+      ],
+      "result_associative_links": [
+        {
+          "source": "ev_A",
+          "relation": "causes",
+          "target": "fragmented_overnight_sleep",
+          "hop": 1
+        },
+        {
+          "source": "ev_B",
+          "relation": "conditional_on",
+          "target": "early_cycle_lightheadedness",
+          "hop": 1
+        },
+        {
+          "source": [
+            "ev_A",
+            "ev_B"
+          ],
+          "relation": "co_activate_to",
+          "target": "late_espresso_threatens_early_cycle",
+          "hop": 2
+        }
+      ],
+      "expected_gold": "Skip the post-four double espresso. An after-work strong cup has left you waking twice overnight, and after fragmented sleep you get lightheaded in the before-breakfast studio class. Choose a non-caffeinated drink or move the spin slot to a day with protected sleep."
+    }
+  ],
+  "validity_metrics": {
+    "lexical_jaccard_query_evidence": 0.0,
+    "embed_cosine_query_evidence": 0.0,
+    "flat_rag_hit_top3": false,
+    "distractor_cosine_query": 0.0,
+    "evidence_cosine_query": 0.0,
+    "partial_evidence_cosine_query": 0.0323,
+    "validity_method": {
+      "embedder": "tfidf-local-proxy",
+      "lexical": "jaccard-stopword-filtered",
+      "computed_by": "health_diet/bin/generate_health_diet_gold_batch.py",
+      "computed_at": "2026-07-15",
+      "limitation": "Lexical proxy only; dense semantic validation and human IAA remain required."
+    }
+  },
+  "provenance": {
+    "generator": "health_diet_gold_batch_v2",
+    "generated_by": "autoresearch_pilot",
+    "persona_corpus": "DynamicMem",
+    "persona_ref": "xiewenya/dynamicmem:001_user_001",
+    "scenario_id": "S6",
+    "scenario_name": "late_espresso_x_early_cycle_class",
+    "batch_id": "HD_GOLD_BATCH_2026-07-15_v2",
+    "standard": "DATA_STANDARD_v1",
+    "timeline_id": "HD_u01_shared_timeline_v2",
+    "timeline_prefix_end": 38,
+    "gold_tier": "v2"
+  },
+  "dataset_meta": {
+    "golden_candidate": true,
+    "human_verified_by": [],
+    "iaa_cohort_kappa": null,
+    "iaa_n_overlap": null,
+    "known_validation_gaps": [
+      "dense semantic discriminant gate not yet run",
+      "two-person blind human necessity review not yet run",
+      "real-model full/no-assoc/no-distractor evaluation not yet run"
+    ],
+    "reproduce": {
+      "loader_rule": "serialize context dialogue role+content only; strip annotation/evolving_state",
+      "generator": "python3 health_diet/bin/generate_health_diet_gold_batch.py",
+      "metrics": [
+        "answer_vs_gold+required_elements",
+        "joint_evidence_recall",
+        "single_evidence_counterfactual_abstention",
+        "distractor_removal_invariance"
+      ]
+    }
+  }
+}

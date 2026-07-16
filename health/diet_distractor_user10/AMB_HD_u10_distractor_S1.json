@@ -1,0 +1,422 @@
+{
+  "sample_id": "AMB_HD_u10_distractor_S1",
+  "source": "partner_generated",
+  "status": "rendered",
+  "association_type": "A3_cross_domain",
+  "domain_tags": [
+    "health/wellness",
+    "food/cooking",
+    "work/routine"
+  ],
+  "pilot_arm": "distractor",
+  "pilot_domain": "health_diet",
+  "persona_source": {
+    "corpus": "desktop_user",
+    "ref": "local:Healthy Li (UMich exchange / KCL Psychology; desktop+Downloads resumes)",
+    "display_name": "desktop-Healthy_Li"
+  },
+  "context_length_tokens": 825,
+  "persona": {
+    "user_id": "hd_u10",
+    "stable_traits": [
+      "psychology + AI research student",
+      "University of Michigan exchange",
+      "King's College London BSc Psychology",
+      "irregular study-hour meals",
+      "caffeine used for deadlines",
+      "young adult, research-heavy schedule"
+    ],
+    "evolving_state": {
+      "cream_response": "conditional_on_empty_stomach",
+      "early_offsite_meal_state": "usually_fasted_until_first_break"
+    }
+  },
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2026-01-05T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The app trend is finally steady again. Three regular bedtimes made a bigger difference than I expected."
+        },
+        {
+          "role": "assistant",
+          "content": "A short consistent stretch can be informative."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2026-01-07T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I batch-cooked grains and protein for the research days this week. Lunch decisions are handled."
+        },
+        {
+          "role": "assistant",
+          "content": "That removes one variable from the workday."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2026-01-09T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "My shoulders were tight after a long desk block, but a twenty-minute walk loosened them up."
+        },
+        {
+          "role": "assistant",
+          "content": "Useful to notice what changes it."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2026-01-11T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A normal cheese portion after dinner was fine again. It does not seem like dairy across the board."
+        },
+        {
+          "role": "assistant",
+          "content": "Timing and what else you ate may matter."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2026-01-13T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "On early departure days I leave before I can face breakfast. I usually arrive with only water in me."
+        },
+        {
+          "role": "assistant",
+          "content": "Is food available when you arrive?"
+        },
+        {
+          "role": "user",
+          "content": "Usually not until the first scheduled break."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2026-01-15T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I tested the rich yogurt-and-cream bowl again while I was still empty. Within an hour I was bloated and mentally foggy."
+        },
+        {
+          "role": "assistant",
+          "content": "Did the same thing happen when you had it later in the day?"
+        },
+        {
+          "role": "user",
+          "content": "No. After a proper lunch, a small serving has been uneventful."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2026-01-17T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The soup portions I froze held up well. I have two emergency dinners left."
+        },
+        {
+          "role": "assistant",
+          "content": "Good buffer for a crowded week."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2026-01-19T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The seminar block email finally listed the 8am room and the first-session agenda. I saved the map."
+        },
+        {
+          "role": "assistant",
+          "content": "Good to have the logistics settled."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2026-01-21T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A catering newsletter compared tasting formats for corporate offsites. I saved it with the working-group material."
+        },
+        {
+          "role": "assistant",
+          "content": "That may be useful when the agenda is finalized."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2026-03-05T20:20:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Mia mentioned that her team used a cream-and-soft-cheese tasting as an icebreaker at last year's offsite, and she enjoyed meeting people there."
+        },
+        {
+          "role": "assistant",
+          "content": "It sounds as though the social format worked well for her group."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2026-03-09T17:30:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The gathering starts with an 8am cream-and-soft-cheese tasting before the first working session. Would that be a good way for me to join the group?"
+        }
+      ]
+    }
+  ],
+  "query": "The gathering starts with an 8am cream-and-soft-cheese tasting before the first working session. Would that be a good way for me to join the group?",
+  "query_source": "final_turn",
+  "gold_answer": "Skip the tasting portion this time. On early offsite mornings you normally arrive without having eaten, and cream-heavy food has caused bloating and fog specifically when you were empty. Join only after the tasting, unless you change the plan by arranging a substantial non-cream breakfast beforehand.",
+  "required_elements": [
+    "uses the empty-stomach conditional rather than treating all dairy as harmful",
+    "uses the early-offsite no-breakfast routine",
+    "recommends eating substantial food first or skipping the tasting portion"
+  ],
+  "target_evidence_ids": [
+    "ev_A",
+    "ev_B"
+  ],
+  "associative_cue_id": "cue_1",
+  "distractor_ids": [
+    "dist_1"
+  ],
+  "associative_links": [
+    {
+      "source": "ev_A",
+      "relation": "conditional_on",
+      "target": "fasted_cream_reaction",
+      "hop": 1
+    },
+    {
+      "source": "ev_B",
+      "relation": "indicates",
+      "target": "arrives_fasted_at_early_offsite",
+      "hop": 1
+    },
+    {
+      "source": [
+        "ev_A",
+        "ev_B"
+      ],
+      "relation": "co_activate_to",
+      "target": "cream_tasting_recreates_risk_condition",
+      "hop": 2
+    },
+    {
+      "source": "cream_tasting_recreates_risk_condition",
+      "relation": "constrains",
+      "target": "answer_to_cue",
+      "hop": 3
+    }
+  ],
+  "annotation": {
+    "1": {
+      "role_setup": "background_memory"
+    },
+    "2": {
+      "role_setup": "background_memory"
+    },
+    "3": {
+      "role_setup": "background_memory"
+    },
+    "4": {
+      "role_setup": "background_memory"
+    },
+    "5": {
+      "role_setup": "target_evidence",
+      "evidence_id": "ev_B",
+      "atomic_fact": "On early offsite mornings the user leaves without breakfast and usually has no food before the venue's first break."
+    },
+    "6": {
+      "role_setup": "target_evidence",
+      "evidence_id": "ev_A",
+      "atomic_fact": "Cream-heavy food causes bloating and cognitive fog only when eaten on an empty stomach; a small serving after a proper meal has been tolerated."
+    },
+    "7": {
+      "role_setup": "background_memory"
+    },
+    "8": {
+      "role_setup": "background_memory"
+    },
+    "9": {
+      "role_setup": "background_memory"
+    },
+    "10": {
+      "role_setup": "distractor",
+      "distractor_id": "dist_1",
+      "why_distractor": "A third party's similar offsite tasting is query-relevant but provides no evidence about this user's fasted morning response."
+    },
+    "11": {
+      "role_setup": "associative_cue",
+      "cue_id": "cue_1"
+    }
+  },
+  "latent_forbidden_phrases": [
+    "lactose intolerance diagnosis",
+    "all dairy is unsafe",
+    "the user definitely ate breakfast"
+  ],
+  "counterfactual_variants": [
+    {
+      "variant_id": "AMB_HD_u10_distractor_S1_cf_remove_ev_A",
+      "type": "evidence_removed",
+      "removed_session_ids": [
+        6
+      ],
+      "result_arm": "absence",
+      "result_association_type": "A5_hard_absence_control",
+      "result_gold_answer": "There is insufficient evidence for a personalized recommendation. I know early offsite mornings often leave you without breakfast, but the available memory does not establish that cream-heavy food causes you a problem in that state. I cannot reject this tasting based on the routine alone.",
+      "result_required_elements": [
+        "states that the cream-response evidence is missing",
+        "does not infer a dairy or cream intolerance",
+        "explicitly abstains from rejecting the tasting"
+      ],
+      "result_target_evidence_ids": [],
+      "result_associative_links": [],
+      "expected_gold": "insufficient evidence / abstain"
+    },
+    {
+      "variant_id": "AMB_HD_u10_distractor_S1_cf_remove_ev_B",
+      "type": "evidence_removed",
+      "removed_session_ids": [
+        5
+      ],
+      "result_arm": "absence",
+      "result_association_type": "A5_hard_absence_control",
+      "result_gold_answer": "Cream-heavy food has caused problems when you were empty and has been tolerated after a proper meal, but I cannot tell whether you will have eaten before this event. I can give the conditional guidance to eat first or skip the tasting, but I cannot determine whether this specific plan fits your routine.",
+      "result_required_elements": [
+        "states that meal/fasting status is missing",
+        "does not infer that the user will arrive fasted",
+        "asks whether substantial food can be eaten first or explicitly abstains"
+      ],
+      "result_target_evidence_ids": [],
+      "result_associative_links": [],
+      "expected_gold": "insufficient evidence / abstain"
+    },
+    {
+      "variant_id": "AMB_HD_u10_distractor_S1_cf_remove_distractor",
+      "type": "distractor_removed",
+      "removed_session_ids": [
+        "$distractor_session"
+      ],
+      "result_arm": "associative",
+      "result_association_type": "A3_cross_domain",
+      "result_gold_answer": "Skip the tasting portion this time. On early offsite mornings you normally arrive without having eaten, and cream-heavy food has caused bloating and fog specifically when you were empty. Join only after the tasting, unless you change the plan by arranging a substantial non-cream breakfast beforehand.",
+      "result_required_elements": [
+        "uses the empty-stomach conditional rather than treating all dairy as harmful",
+        "uses the early-offsite no-breakfast routine",
+        "recommends eating substantial food first or skipping the tasting portion"
+      ],
+      "result_target_evidence_ids": [
+        "ev_A",
+        "ev_B"
+      ],
+      "result_associative_links": [
+        {
+          "source": "ev_A",
+          "relation": "conditional_on",
+          "target": "fasted_cream_reaction",
+          "hop": 1
+        },
+        {
+          "source": "ev_B",
+          "relation": "indicates",
+          "target": "arrives_fasted_at_early_offsite",
+          "hop": 1
+        },
+        {
+          "source": [
+            "ev_A",
+            "ev_B"
+          ],
+          "relation": "co_activate_to",
+          "target": "cream_tasting_recreates_risk_condition",
+          "hop": 2
+        },
+        {
+          "source": "cream_tasting_recreates_risk_condition",
+          "relation": "constrains",
+          "target": "answer_to_cue",
+          "hop": 3
+        }
+      ],
+      "expected_gold": "Skip the tasting portion this time. On early offsite mornings you normally arrive without having eaten, and cream-heavy food has caused bloating and fog specifically when you were empty. Join only after the tasting, unless you change the plan by arranging a substantial non-cream breakfast beforehand."
+    }
+  ],
+  "validity_metrics": {
+    "lexical_jaccard_query_evidence": 0.0536,
+    "embed_cosine_query_evidence": 0.0759,
+    "flat_rag_hit_top3": false,
+    "distractor_cosine_query": 0.1682,
+    "evidence_cosine_query": 0.0759,
+    "partial_evidence_cosine_query": 0.0,
+    "validity_method": {
+      "embedder": "tfidf-local-proxy",
+      "lexical": "jaccard-stopword-filtered",
+      "computed_by": "health_diet/bin/generate_health_diet_gold_batch.py",
+      "computed_at": "2026-07-15",
+      "limitation": "Lexical proxy only; dense semantic validation and human IAA remain required."
+    }
+  },
+  "provenance": {
+    "generator": "health_diet_gold_batch_v2",
+    "generated_by": "autoresearch_pilot",
+    "persona_corpus": "desktop_user",
+    "persona_ref": "local:Healthy Li (UMich exchange / KCL Psychology; desktop+Downloads resumes)",
+    "scenario_id": "S1",
+    "scenario_name": "fasted_offsite_x_cream_tasting",
+    "batch_id": "HD_GOLD_BATCH_2026-07-15_v2",
+    "standard": "DATA_STANDARD_v1",
+    "timeline_id": "HD_u10_shared_timeline_v2",
+    "timeline_prefix_end": 9,
+    "gold_tier": "v2"
+  },
+  "dataset_meta": {
+    "golden_candidate": true,
+    "human_verified_by": [],
+    "iaa_cohort_kappa": null,
+    "iaa_n_overlap": null,
+    "known_validation_gaps": [
+      "dense semantic discriminant gate not yet run",
+      "two-person blind human necessity review not yet run",
+      "real-model full/no-assoc/no-distractor evaluation not yet run"
+    ],
+    "reproduce": {
+      "loader_rule": "serialize context dialogue role+content only; strip annotation/evolving_state",
+      "generator": "python3 health_diet/bin/generate_health_diet_gold_batch.py",
+      "metrics": [
+        "answer_vs_gold+required_elements",
+        "joint_evidence_recall",
+        "single_evidence_counterfactual_abstention",
+        "distractor_removal_invariance"
+      ]
+    }
+  }
+}

@@ -1,0 +1,470 @@
+{
+  "sample_id": "AMB_WL_u08_associative_S2",
+  "source": "partner_generated",
+  "status": "rendered",
+  "association_type": "A3_cross_domain",
+  "domain_tags": [
+    "work/career",
+    "education/learning"
+  ],
+  "pilot_arm": "associative",
+  "pilot_domain": "work_learning",
+  "persona_source": {
+    "corpus": "RHELM",
+    "ref": "microsoft/RHELM:conversations/Dr._Elena_Markovic",
+    "display_name": "RHELM-Dr_Elena_Markovic"
+  },
+  "context_length_tokens": 1111,
+  "persona": {
+    "user_id": "wl_u08",
+    "stable_traits": [
+      "Dr. Elena Markovic persona anchor",
+      "early clinical / professional schedule",
+      "disciplined about recovery",
+      "precise about capacity limits"
+    ],
+    "evolving_state": {
+      "learning_mode": "build_first",
+      "passive_video": "dropout"
+    }
+  },
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2026-01-05T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Cleared a long email thread. Brain feels flat."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth a short walk."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2026-01-07T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Work mode today felt very 'Dr. Elena Markovic persona anchor' — long blocks, little slack."
+        },
+        {
+          "role": "assistant",
+          "content": "Given that practical pace, worth protecting recovery tonight."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2026-01-09T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Filed expense receipts from last client trip."
+        },
+        {
+          "role": "assistant",
+          "content": "Budget hygiene helps."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2026-01-11T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Keep getting dull headaches when I am up before six for those early calls."
+        },
+        {
+          "role": "assistant",
+          "content": "Do they fade later?"
+        },
+        {
+          "role": "user",
+          "content": "By noon I am fine. The early stretch is the problem."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2026-01-13T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Short walk after back-to-back calls."
+        },
+        {
+          "role": "assistant",
+          "content": "Movement between blocks matters."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2026-01-15T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "It is past midnight and I just finished a clean refactor. This window is when my brain actually locks in."
+        },
+        {
+          "role": "assistant",
+          "content": "Late focus can be powerful if you protect recovery somehow."
+        },
+        {
+          "role": "user",
+          "content": "I sleep in on weekends to compensate."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2026-01-17T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Colleague mentioned a spring skills fair. Saved the flyer without committing."
+        },
+        {
+          "role": "assistant",
+          "content": "Fairs are tempting calendar items."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2026-01-19T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Blocked Friday afternoon for deep review work."
+        },
+        {
+          "role": "assistant",
+          "content": "Protected blocks are scarce."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2026-01-21T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Printed the March calendar. Dawn blocks are marked as protected."
+        },
+        {
+          "role": "assistant",
+          "content": "Paper copies help on busy weeks."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2026-01-23T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Archived old Slack channels from a closed project."
+        },
+        {
+          "role": "assistant",
+          "content": "Less notification noise."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2026-01-25T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Python finally stuck after I rebuilt a tiny ETL script myself. Tutorials alone never lasted."
+        },
+        {
+          "role": "assistant",
+          "content": "Making something real is a strong teacher."
+        },
+        {
+          "role": "user",
+          "content": "If I am not typing the solution, it fades."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2026-01-27T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Prepared a one-page brief before tomorrow's sync."
+        },
+        {
+          "role": "assistant",
+          "content": "Prep beats improvisation."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2026-01-29T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Abandoned another course full of forty-minute talking-head recordings. I kept drifting and then felt lost."
+        },
+        {
+          "role": "assistant",
+          "content": "Passive video can be brutal. Did any format work better before?"
+        },
+        {
+          "role": "user",
+          "content": "Short exercises with feedback. That is about it."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2026-01-31T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Declined an optional evening networking mixer."
+        },
+        {
+          "role": "assistant",
+          "content": "Energy has a ledger."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2026-02-02T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "HR mailed two stipend options. I filed them without replying yet."
+        },
+        {
+          "role": "assistant",
+          "content": "Learning-budget choices often split theory vs build."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2026-02-04T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Printed the stipend comparison sheet. Theory and build columns are side by side."
+        },
+        {
+          "role": "assistant",
+          "content": "Paper copies help on busy weeks."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2026-04-10T17:05:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "For the learning stipend, should I pick the theory-module track or the live build cohort? A friend says the theory track is amazing."
+        }
+      ]
+    }
+  ],
+  "query": "For the learning stipend, should I pick the theory-module track or the live build cohort? A friend says the theory track is amazing.",
+  "query_source": "final_turn",
+  "gold_answer": "Choose the live build cohort despite the friend's theory-track praise. You retain skills by building small projects and abandon long talking-head recordings; certificate prestige is not evidence of retention fit.",
+  "required_elements": [
+    "uses project-based learning preference",
+    "uses lecture-video abandonment pattern",
+    "recommends live build cohort over theory-module track"
+  ],
+  "target_evidence_ids": [
+    "ev_A",
+    "ev_B"
+  ],
+  "associative_cue_id": "cue_1",
+  "distractor_ids": [],
+  "associative_links": [
+    {
+      "source": "ev_A",
+      "relation": "indicates",
+      "target": "build_based_retention",
+      "hop": 1
+    },
+    {
+      "source": "ev_B",
+      "relation": "causes",
+      "target": "lecture_dropout",
+      "hop": 1
+    },
+    {
+      "source": [
+        "ev_A",
+        "ev_B"
+      ],
+      "relation": "co_activate_to",
+      "target": "prefer_lab_track",
+      "hop": 2
+    }
+  ],
+  "annotation": {
+    "1": {
+      "role_setup": "background_memory"
+    },
+    "2": {
+      "role_setup": "background_memory"
+    },
+    "3": {
+      "role_setup": "background_memory"
+    },
+    "4": {
+      "role_setup": "background_memory"
+    },
+    "5": {
+      "role_setup": "background_memory"
+    },
+    "6": {
+      "role_setup": "background_memory"
+    },
+    "7": {
+      "role_setup": "background_memory"
+    },
+    "8": {
+      "role_setup": "background_memory"
+    },
+    "9": {
+      "role_setup": "background_memory"
+    },
+    "10": {
+      "role_setup": "background_memory"
+    },
+    "11": {
+      "role_setup": "target_evidence",
+      "evidence_id": "ev_A",
+      "atomic_fact": "The user retains skills by building small projects, not by passive reading."
+    },
+    "12": {
+      "role_setup": "background_memory"
+    },
+    "13": {
+      "role_setup": "target_evidence",
+      "evidence_id": "ev_B",
+      "atomic_fact": "Long recorded lecture videos cause the user to zone out and quit courses."
+    },
+    "14": {
+      "role_setup": "background_memory"
+    },
+    "15": {
+      "role_setup": "background_memory"
+    },
+    "16": {
+      "role_setup": "background_memory"
+    },
+    "17": {
+      "role_setup": "associative_cue",
+      "cue_id": "cue_1"
+    }
+  },
+  "latent_forbidden_phrases": [
+    "always choose beta",
+    "learning style diagnosis",
+    "must reject all theory"
+  ],
+  "counterfactual_variants": [
+    {
+      "variant_id": "AMB_WL_u08_associative_S2_cf_remove_ev_A",
+      "type": "evidence_removed",
+      "removed_session_ids": [
+        11
+      ],
+      "result_arm": "absence",
+      "result_association_type": "A5_hard_absence_control",
+      "result_gold_answer": "There is insufficient evidence for a personalized recommendation. I know long recorded lectures cause dropout, but the available memory does not establish that you retain skills by building projects. I cannot reject the theory track from video format alone.",
+      "result_required_elements": [
+        "states that the project-learning evidence is missing",
+        "does not infer retention fit from the theory track alone",
+        "explicitly abstains from recommending a track"
+      ],
+      "result_target_evidence_ids": [],
+      "result_associative_links": [],
+      "expected_gold": "insufficient evidence / abstain"
+    },
+    {
+      "variant_id": "AMB_WL_u08_associative_S2_cf_remove_ev_B",
+      "type": "evidence_removed",
+      "removed_session_ids": [
+        13
+      ],
+      "result_arm": "absence",
+      "result_association_type": "A5_hard_absence_control",
+      "result_gold_answer": "There is insufficient evidence for a personalized recommendation. Project-based learning has worked for you, but I cannot tell from the available memory whether long lecture videos cause dropout. Confirm learning-format history before picking a stipend track.",
+      "result_required_elements": [
+        "states that the lecture-dropout evidence is missing",
+        "does not infer format harm from the friend's praise alone",
+        "asks about learning format or explicitly abstains"
+      ],
+      "result_target_evidence_ids": [],
+      "result_associative_links": [],
+      "expected_gold": "insufficient evidence / abstain"
+    }
+  ],
+  "validity_metrics": {
+    "lexical_jaccard_query_evidence": 0.0,
+    "embed_cosine_query_evidence": 0,
+    "flat_rag_hit_top3": false,
+    "distractor_cosine_query": 0.0,
+    "evidence_cosine_query": 0,
+    "partial_evidence_cosine_query": 0.0,
+    "validity_method": {
+      "embedder": "tfidf-local-proxy",
+      "lexical": "jaccard-stopword-filtered",
+      "computed_by": "work_learn/bin/generate_work_learn_gold_batch.py",
+      "computed_at": "2026-07-15",
+      "limitation": "Lexical proxy only; dense semantic validation and human IAA remain required."
+    }
+  },
+  "provenance": {
+    "generator": "work_learn_gold_s1_s5_v2",
+    "generated_by": "autoresearch_pilot",
+    "persona_corpus": "RHELM",
+    "persona_ref": "microsoft/RHELM:conversations/Dr._Elena_Markovic",
+    "scenario_id": "S2",
+    "scenario_name": "project_learning_x_video_dropout",
+    "batch_id": "WL_GOLD_S1_S5_2026-07-16_v2",
+    "standard": "DATA_STANDARD_v1",
+    "timeline_id": "WL_u08_shared_timeline_v2",
+    "timeline_prefix_end": 16,
+    "gold_tier": "v2"
+  },
+  "dataset_meta": {
+    "golden_candidate": true,
+    "human_verified_by": [],
+    "iaa_cohort_kappa": null,
+    "iaa_n_overlap": null,
+    "known_validation_gaps": [
+      "dense semantic discriminant gate not yet run",
+      "two-person blind human necessity review not yet run",
+      "real-model full/no-assoc/no-distractor evaluation not yet run"
+    ],
+    "reproduce": {
+      "loader_rule": "serialize context dialogue role+content only; strip annotation/evolving_state",
+      "generator": "python3 work_learn/bin/generate_work_learn_gold_batch.py",
+      "metrics": [
+        "answer_vs_gold+required_elements",
+        "joint_evidence_recall",
+        "single_evidence_counterfactual_abstention",
+        "distractor_removal_invariance"
+      ]
+    }
+  }
+}

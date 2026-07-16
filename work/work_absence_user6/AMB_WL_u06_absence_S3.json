@@ -1,0 +1,589 @@
+{
+  "sample_id": "AMB_WL_u06_absence_S3",
+  "source": "partner_generated",
+  "status": "rendered",
+  "association_type": "A5_hard_absence_control",
+  "domain_tags": [
+    "work/career",
+    "education/learning"
+  ],
+  "pilot_arm": "absence",
+  "pilot_domain": "work_learning",
+  "persona_source": {
+    "corpus": "RHELM",
+    "ref": "microsoft/RHELM:conversations/Jonas_Richter",
+    "display_name": "RHELM-Jonas_Richter"
+  },
+  "context_length_tokens": 1546,
+  "persona": {
+    "user_id": "wl_u06",
+    "stable_traits": [
+      "Jonas Richter persona anchor",
+      "structured weekday schedule",
+      "analytical about tradeoffs",
+      "prefers predictable work blocks"
+    ],
+    "evolving_state": {
+      "post_lunch_dip": "severe_after_14h",
+      "late_meeting_risk": "high"
+    }
+  },
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2026-01-05T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Cleared a long email thread. Brain feels flat."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth a short walk."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2026-01-07T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Work mode today felt very 'Jonas Richter persona anchor' — long blocks, little slack."
+        },
+        {
+          "role": "assistant",
+          "content": "Given that practical pace, worth protecting recovery tonight."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2026-01-09T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Filed expense receipts from last client trip."
+        },
+        {
+          "role": "assistant",
+          "content": "Budget hygiene helps."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2026-01-11T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Keep getting dull headaches when I am up before six for those early calls."
+        },
+        {
+          "role": "assistant",
+          "content": "Do they fade later?"
+        },
+        {
+          "role": "user",
+          "content": "By noon I am fine. The early stretch is the problem."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2026-01-13T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Short walk after back-to-back calls."
+        },
+        {
+          "role": "assistant",
+          "content": "Movement between blocks matters."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2026-01-15T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "It is past midnight and I just finished a clean refactor. This window is when my brain actually locks in."
+        },
+        {
+          "role": "assistant",
+          "content": "Late focus can be powerful if you protect recovery somehow."
+        },
+        {
+          "role": "user",
+          "content": "I sleep in on weekends to compensate."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2026-01-17T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Colleague mentioned a spring skills fair. Saved the flyer without committing."
+        },
+        {
+          "role": "assistant",
+          "content": "Fairs are tempting calendar items."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2026-01-19T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Blocked Friday afternoon for deep review work."
+        },
+        {
+          "role": "assistant",
+          "content": "Protected blocks are scarce."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2026-01-21T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Printed the March calendar. Dawn blocks are marked as protected."
+        },
+        {
+          "role": "assistant",
+          "content": "Paper copies help on busy weeks."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2026-01-23T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Archived old Slack channels from a closed project."
+        },
+        {
+          "role": "assistant",
+          "content": "Less notification noise."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2026-01-25T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Python finally stuck after I rebuilt a tiny ETL script myself. Tutorials alone never lasted."
+        },
+        {
+          "role": "assistant",
+          "content": "Making something real is a strong teacher."
+        },
+        {
+          "role": "user",
+          "content": "If I am not typing the solution, it fades."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2026-01-27T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Prepared a one-page brief before tomorrow's sync."
+        },
+        {
+          "role": "assistant",
+          "content": "Prep beats improvisation."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2026-01-29T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Abandoned another course full of forty-minute talking-head recordings. I kept drifting and then felt lost."
+        },
+        {
+          "role": "assistant",
+          "content": "Passive video can be brutal. Did any format work better before?"
+        },
+        {
+          "role": "user",
+          "content": "Short exercises with feedback. That is about it."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2026-01-31T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Declined an optional evening networking mixer."
+        },
+        {
+          "role": "assistant",
+          "content": "Energy has a ledger."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2026-02-02T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "HR mailed two stipend options. I filed them without replying yet."
+        },
+        {
+          "role": "assistant",
+          "content": "Learning-budget choices often split theory vs build."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2026-02-04T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Printed the stipend comparison sheet. Theory and build columns are side by side."
+        },
+        {
+          "role": "assistant",
+          "content": "Paper copies help on busy weeks."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2026-02-06T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Tested a new note template for client meetings."
+        },
+        {
+          "role": "assistant",
+          "content": "Templates reduce cognitive load."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2026-02-08T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "My coffee high dies after two o'clock. After that I am foggy and slow no matter what I drink."
+        },
+        {
+          "role": "assistant",
+          "content": "That afternoon dip is common. Does it hit focus hard?"
+        },
+        {
+          "role": "user",
+          "content": "Yeah. Detailed reviews after that are a mess."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2026-02-10T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Facilities posted updated ergonomic reminders in the lobby."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth noting for long desk days."
+        }
+      ]
+    },
+    {
+      "session_id": 21,
+      "timestamp": "2026-02-14T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Cleaned up stale calendar holds from last quarter."
+        },
+        {
+          "role": "assistant",
+          "content": "Calendar hygiene helps."
+        }
+      ]
+    },
+    {
+      "session_id": 22,
+      "timestamp": "2026-02-16T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Short reading block after lunch. Kept it under thirty minutes."
+        },
+        {
+          "role": "assistant",
+          "content": "Bounded breaks help."
+        }
+      ]
+    },
+    {
+      "session_id": 23,
+      "timestamp": "2026-02-18T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Visibility committee posted a late-block invite. I filed it without replying."
+        },
+        {
+          "role": "assistant",
+          "content": "Invites can wait for an energy plan."
+        }
+      ]
+    },
+    {
+      "session_id": 24,
+      "timestamp": "2026-02-20T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Printed the facilitation calendar. Late blocks are marked in red."
+        },
+        {
+          "role": "assistant",
+          "content": "Paper copies help on busy weeks."
+        }
+      ]
+    },
+    {
+      "session_id": 25,
+      "timestamp": "2026-05-12T18:45:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Worth leading the recurring late facilitation block after mid-afternoon? A senior said those blocks are amazing for visibility."
+        }
+      ]
+    }
+  ],
+  "query": "Worth leading the recurring late facilitation block after mid-afternoon? A senior said those blocks are amazing for visibility.",
+  "query_source": "final_turn",
+  "gold_answer": "There is insufficient evidence to decide whether a late facilitation block fits. Post-2pm crashes have hurt focus, but I cannot tell from the available memory whether a prior late review failed while you were empty. Confirm afternoon energy before committing.",
+  "required_elements": [
+    "states that the late-review failure evidence is missing",
+    "does not infer cognitive harm from visibility talk alone",
+    "asks about afternoon energy or explicitly abstains"
+  ],
+  "target_evidence_ids": [],
+  "associative_cue_id": "cue_1",
+  "distractor_ids": [],
+  "associative_links": [],
+  "annotation": {
+    "1": {
+      "role_setup": "background_memory"
+    },
+    "2": {
+      "role_setup": "background_memory"
+    },
+    "3": {
+      "role_setup": "background_memory"
+    },
+    "4": {
+      "role_setup": "background_memory"
+    },
+    "5": {
+      "role_setup": "background_memory"
+    },
+    "6": {
+      "role_setup": "background_memory"
+    },
+    "7": {
+      "role_setup": "background_memory"
+    },
+    "8": {
+      "role_setup": "background_memory"
+    },
+    "9": {
+      "role_setup": "background_memory"
+    },
+    "10": {
+      "role_setup": "background_memory"
+    },
+    "11": {
+      "role_setup": "background_memory"
+    },
+    "12": {
+      "role_setup": "background_memory"
+    },
+    "13": {
+      "role_setup": "background_memory"
+    },
+    "14": {
+      "role_setup": "background_memory"
+    },
+    "15": {
+      "role_setup": "background_memory"
+    },
+    "16": {
+      "role_setup": "background_memory"
+    },
+    "17": {
+      "role_setup": "background_memory"
+    },
+    "18": {
+      "role_setup": "partial_evidence",
+      "evidence_id": "ev_A",
+      "atomic_fact": "After a morning coffee peak, the user crashes hard after 2pm and cannot sustain detailed review work.",
+      "insufficiency_note": "ev_B is intentionally unavailable"
+    },
+    "19": {
+      "role_setup": "background_memory"
+    },
+    "21": {
+      "role_setup": "background_memory"
+    },
+    "22": {
+      "role_setup": "background_memory"
+    },
+    "23": {
+      "role_setup": "background_memory"
+    },
+    "24": {
+      "role_setup": "background_memory"
+    },
+    "25": {
+      "role_setup": "associative_cue",
+      "cue_id": "cue_1"
+    }
+  },
+  "latent_forbidden_phrases": [
+    "ADHD diagnosis",
+    "must decline all visibility",
+    "never take late meetings"
+  ],
+  "counterfactual_variants": [
+    {
+      "variant_id": "AMB_WL_u06_absence_S3_cf_restore_ev_B",
+      "type": "evidence_added",
+      "added_session": {
+        "session_id": 20,
+        "timestamp": "2026-02-12T18:00:00Z",
+        "dialogue": [
+          {
+            "role": "user",
+            "content": "That 4pm account review last month was embarrassing. I lost the thread twice and someone else had to rescue the room."
+          },
+          {
+            "role": "assistant",
+            "content": "Harsh memory. Was the material unfamiliar?"
+          },
+          {
+            "role": "user",
+            "content": "No, I knew it. I was just empty by then."
+          }
+        ]
+      },
+      "result_arm": "associative",
+      "result_association_type": "A3_cross_domain",
+      "result_gold_answer": "Lean no or renegotiate to a morning slot. You crash hard after 2pm and already failed a late account review while cognitively empty; visibility talk does not override that pattern.",
+      "result_required_elements": [
+        "uses post-2pm crash pattern",
+        "uses prior late-afternoon review failure",
+        "recommends declining or shifting the late facilitation block"
+      ],
+      "result_target_evidence_ids": [
+        "ev_A",
+        "ev_B"
+      ],
+      "result_associative_links": [
+        {
+          "source": "ev_A",
+          "relation": "causes",
+          "target": "post_2pm_crash",
+          "hop": 1
+        },
+        {
+          "source": "ev_B",
+          "relation": "indicates",
+          "target": "late_slot_failure",
+          "hop": 1
+        },
+        {
+          "source": [
+            "ev_A",
+            "ev_B"
+          ],
+          "relation": "co_activate_to",
+          "target": "avoid_late_workshop_block",
+          "hop": 2
+        }
+      ],
+      "expected_gold": "Lean no or renegotiate to a morning slot. You crash hard after 2pm and already failed a late account review while cognitively empty; visibility talk does not override that pattern."
+    }
+  ],
+  "validity_metrics": {
+    "lexical_jaccard_query_evidence": 0.0,
+    "embed_cosine_query_evidence": 0.0,
+    "flat_rag_hit_top3": false,
+    "distractor_cosine_query": 0.0,
+    "evidence_cosine_query": 0.0,
+    "partial_evidence_cosine_query": 0.1248,
+    "validity_method": {
+      "embedder": "tfidf-local-proxy",
+      "lexical": "jaccard-stopword-filtered",
+      "computed_by": "work_learn/bin/generate_work_learn_gold_batch.py",
+      "computed_at": "2026-07-15",
+      "limitation": "Lexical proxy only; dense semantic validation and human IAA remain required."
+    }
+  },
+  "provenance": {
+    "generator": "work_learn_gold_s1_s5_v2",
+    "generated_by": "autoresearch_pilot",
+    "persona_corpus": "RHELM",
+    "persona_ref": "microsoft/RHELM:conversations/Jonas_Richter",
+    "scenario_id": "S3",
+    "scenario_name": "afternoon_crash_x_late_workshop",
+    "batch_id": "WL_GOLD_S1_S5_2026-07-16_v2",
+    "standard": "DATA_STANDARD_v1",
+    "timeline_id": "WL_u06_shared_timeline_v2",
+    "timeline_prefix_end": 24,
+    "gold_tier": "v2"
+  },
+  "dataset_meta": {
+    "golden_candidate": true,
+    "human_verified_by": [],
+    "iaa_cohort_kappa": null,
+    "iaa_n_overlap": null,
+    "known_validation_gaps": [
+      "dense semantic discriminant gate not yet run",
+      "two-person blind human necessity review not yet run",
+      "real-model full/no-assoc/no-distractor evaluation not yet run"
+    ],
+    "reproduce": {
+      "loader_rule": "serialize context dialogue role+content only; strip annotation/evolving_state",
+      "generator": "python3 work_learn/bin/generate_work_learn_gold_batch.py",
+      "metrics": [
+        "answer_vs_gold+required_elements",
+        "joint_evidence_recall",
+        "single_evidence_counterfactual_abstention",
+        "distractor_removal_invariance"
+      ]
+    }
+  }
+}
