@@ -1,0 +1,920 @@
+{
+  "sample_id": "AMB_HH_u06_absence_S7",
+  "source": "partner_generated",
+  "status": "rendered",
+  "association_type": "A5_hard_absence_control",
+  "domain_tags": [
+    "hobby/leisure",
+    "daily_habits"
+  ],
+  "pilot_arm": "absence",
+  "pilot_domain": "hobby_habit",
+  "persona_source": {
+    "corpus": "RHELM",
+    "ref": "microsoft/RHELM:conversations/Jonas_Richter",
+    "display_name": "RHELM-Jonas_Richter"
+  },
+  "context_length_tokens": 2653,
+  "persona": {
+    "user_id": "hh_u06",
+    "stable_traits": [
+      "Jonas Richter persona anchor",
+      "structured leisure",
+      "analytical about gear vs habit fit",
+      "avoids impulse upgrades"
+    ],
+    "evolving_state": {
+      "evening_hobby": "home_hand_drums",
+      "quiet_hours": "building_after_8pm"
+    }
+  },
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2026-01-05T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Watered the balcony herbs. Basil is finally upright."
+        },
+        {
+          "role": "assistant",
+          "content": "Small wins count."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2026-01-07T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Hobby mode felt very 'Jonas Richter persona anchor' today — small routines, no drama."
+        },
+        {
+          "role": "assistant",
+          "content": "Good maintenance habit."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2026-01-09T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Sorted game cards into sleeves. Less sticky."
+        },
+        {
+          "role": "assistant",
+          "content": "Tiny resets help."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2026-01-11T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A quiet evening with a podcast. No drama."
+        },
+        {
+          "role": "assistant",
+          "content": "Low-key recovery counts."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2026-01-13T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Checked the studio calendar for spring blocks."
+        },
+        {
+          "role": "assistant",
+          "content": "Planning ahead reduces collisions."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2026-01-15T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Fixed a loose shelf bracket in the hobby corner."
+        },
+        {
+          "role": "assistant",
+          "content": "Small home repairs add up."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2026-01-17T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Returned a library book on time. Minor victory."
+        },
+        {
+          "role": "assistant",
+          "content": "One less open loop."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2026-01-19T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Wiped dust off the film developing trays."
+        },
+        {
+          "role": "assistant",
+          "content": "Gear maintenance is part of the hobby."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2026-01-21T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Neighbor mentioned a spring craft fair. I saved the flyer without committing."
+        },
+        {
+          "role": "assistant",
+          "content": "Fairs are tempting calendar items."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2026-01-23T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Tuned the bike derailleur. Commute felt smoother."
+        },
+        {
+          "role": "assistant",
+          "content": "A tuned bike is a quieter worry."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2026-01-25T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Repotted one balcony tomato. The rest can wait."
+        },
+        {
+          "role": "assistant",
+          "content": "Not every pot needs attention today."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2026-01-27T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Filed receipts from a small gear purchase."
+        },
+        {
+          "role": "assistant",
+          "content": "Budget hygiene helps."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2026-01-29T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Listened to a friend's travel stories. Nice, but I kept the evening short."
+        },
+        {
+          "role": "assistant",
+          "content": "Social without overcommitting."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2026-01-31T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Tested a new board-game ruleset solo. Worked fine."
+        },
+        {
+          "role": "assistant",
+          "content": "Solo tests save table time."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2026-02-02T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The building posted updated quiet-hour reminders in the lobby."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth noting for evening hobbies."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2026-02-04T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Cleaned drum practice pads. Less smear on the table."
+        },
+        {
+          "role": "assistant",
+          "content": "Maintenance keeps hobbies pleasant."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2026-02-06T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Short flat ride after work. Easy on the body."
+        },
+        {
+          "role": "assistant",
+          "content": "Gentle movement days matter."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2026-02-08T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Labeled spice jars after a batch-cook afternoon."
+        },
+        {
+          "role": "assistant",
+          "content": "Kitchen order supports the week."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2026-02-10T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A friend sent photos from a public drum workshop. Looked fun but not my regular slot."
+        },
+        {
+          "role": "assistant",
+          "content": "One-off events are different from home routines."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2026-02-12T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Checked guest-room sheets for next weekend. Not urgent yet."
+        },
+        {
+          "role": "assistant",
+          "content": "Hosting prep has a timeline."
+        }
+      ]
+    },
+    {
+      "session_id": 21,
+      "timestamp": "2026-02-14T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The Berlin walking group chat shared a ridge map. I saved it for later."
+        },
+        {
+          "role": "assistant",
+          "content": "Maps are not commitments."
+        }
+      ]
+    },
+    {
+      "session_id": 22,
+      "timestamp": "2026-02-16T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Balcony basil needed a trim. Quick morning task done early."
+        },
+        {
+          "role": "assistant",
+          "content": "Small plant care is steady work."
+        }
+      ]
+    },
+    {
+      "session_id": 23,
+      "timestamp": "2026-02-18T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Restocked fixer bottles for the darkroom corner."
+        },
+        {
+          "role": "assistant",
+          "content": "Chemicals need planned sessions."
+        }
+      ]
+    },
+    {
+      "session_id": 24,
+      "timestamp": "2026-02-20T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Poker night at a cafe last month was fine — public venue, not home."
+        },
+        {
+          "role": "assistant",
+          "content": "Venue choice changes the noise math."
+        }
+      ]
+    },
+    {
+      "session_id": 25,
+      "timestamp": "2026-02-22T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Commute days felt easier after an early bedtime stretch."
+        },
+        {
+          "role": "assistant",
+          "content": "Sleep and hobbies share a ledger."
+        }
+      ]
+    },
+    {
+      "session_id": 26,
+      "timestamp": "2026-02-24T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Someone hyped a flat charity walk team signup. Different beast from erg crews."
+        },
+        {
+          "role": "assistant",
+          "content": "Signup FOMO comes in many shapes."
+        }
+      ]
+    },
+    {
+      "session_id": 27,
+      "timestamp": "2026-02-26T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Studio newsletter mentioned a weekend glaze workshop ticket. Saved, not booked."
+        },
+        {
+          "role": "assistant",
+          "content": "One-off tickets are separate decisions."
+        }
+      ]
+    },
+    {
+      "session_id": 28,
+      "timestamp": "2026-02-28T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Restaurant sent a prix-fixe Saturday signup email. One night out, not hosting."
+        },
+        {
+          "role": "assistant",
+          "content": "Reservation talk is not capacity talk."
+        }
+      ]
+    },
+    {
+      "session_id": 29,
+      "timestamp": "2026-03-02T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Cinema chain pushed a weekend blockbuster signup. Fun, but just a seat."
+        },
+        {
+          "role": "assistant",
+          "content": "Ticket invites are low stakes."
+        }
+      ]
+    },
+    {
+      "session_id": 30,
+      "timestamp": "2026-03-04T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Game cafe posted a Tuesday board-game night signup. Public venue again."
+        },
+        {
+          "role": "assistant",
+          "content": "Outings and apartment rules are different."
+        }
+      ]
+    },
+    {
+      "session_id": 31,
+      "timestamp": "2026-03-06T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Summer hobby calendar is getting crowded. I am marking hard limits."
+        },
+        {
+          "role": "assistant",
+          "content": "Limits are data."
+        }
+      ]
+    },
+    {
+      "session_id": 32,
+      "timestamp": "2026-03-08T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Put away the mug from last night's tea. Small close."
+        },
+        {
+          "role": "assistant",
+          "content": "One less open loop."
+        }
+      ]
+    },
+    {
+      "session_id": 33,
+      "timestamp": "2026-03-10T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Recovery days are finally visible on the hobby calendar again."
+        },
+        {
+          "role": "assistant",
+          "content": "Tradeoffs are easier to see."
+        }
+      ]
+    },
+    {
+      "session_id": 34,
+      "timestamp": "2026-03-12T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Long erg pulls on the indoor rower leave my wrist tendons cranky the next day. Casual flat cycling has been fine."
+        },
+        {
+          "role": "assistant",
+          "content": "Has the sustained grip load repeated?"
+        },
+        {
+          "role": "user",
+          "content": "Twice this month. Short easy rides do not do it — it is the long erg grip."
+        }
+      ]
+    },
+    {
+      "session_id": 35,
+      "timestamp": "2026-03-14T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Walked back from the gym district. Nice reset."
+        },
+        {
+          "role": "assistant",
+          "content": "Small movement breaks add up."
+        }
+      ]
+    },
+    {
+      "session_id": 36,
+      "timestamp": "2026-03-16T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Physio this week: avoid repetitive wrist loading for about six weeks while things settle."
+        },
+        {
+          "role": "assistant",
+          "content": "Is that non-negotiable for now?"
+        },
+        {
+          "role": "user",
+          "content": "Yes. I am treating it as a hard hobby boundary."
+        }
+      ]
+    },
+    {
+      "session_id": 37,
+      "timestamp": "2026-03-18T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Office chat is hyping an erg crew challenge this month — lots of signup pressure."
+        },
+        {
+          "role": "assistant",
+          "content": "Crew FOMO is loud."
+        }
+      ]
+    },
+    {
+      "session_id": 38,
+      "timestamp": "2026-03-20T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Someone asked whether joining any erg crew is worth it for networking."
+        },
+        {
+          "role": "assistant",
+          "content": "Networking and wrist load are different questions."
+        }
+      ]
+    },
+    {
+      "session_id": 39,
+      "timestamp": "2026-03-22T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Rinsed drum practice pads again. Less smear on the table."
+        },
+        {
+          "role": "assistant",
+          "content": "Maintenance keeps the hobby pleasant."
+        }
+      ]
+    },
+    {
+      "session_id": 40,
+      "timestamp": "2026-03-24T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Hand-drum practice after dinner is my main evening hobby at home. I look forward to it most weekdays."
+        },
+        {
+          "role": "assistant",
+          "content": "Does it usually stay contained?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, but it is still an evening sound in the apartment."
+        }
+      ]
+    },
+    {
+      "session_id": 41,
+      "timestamp": "2026-03-26T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Short walk after lunch. Cleared the afternoon fog."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth repeating."
+        }
+      ]
+    },
+    {
+      "session_id": 43,
+      "timestamp": "2026-03-30T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Building social committee posted a late-evening noise event idea. I archived it."
+        },
+        {
+          "role": "assistant",
+          "content": "Hosting ideas need a capacity check."
+        }
+      ]
+    },
+    {
+      "session_id": 44,
+      "timestamp": "2026-04-01T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Someone asked whether any late-evening apartment gathering is a good idea before quiet hours."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth-it talk often ignores building rules."
+        }
+      ]
+    },
+    {
+      "session_id": 45,
+      "timestamp": "2026-06-26T18:20:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A nine o'clock percussion-circle signup at my apartment is getting hype. Should I host it?"
+        }
+      ]
+    }
+  ],
+  "query": "A nine o'clock percussion-circle signup at my apartment is getting hype. Should I host it?",
+  "query_source": "final_turn",
+  "gold_answer": "There is insufficient evidence to decide whether a nine o'clock drum circle fits at home. Hand-drum practice is your main evening hobby, but I cannot tell from the available memory whether building quiet-hour rules would block it. Confirm quiet-hour timing before hosting.",
+  "required_elements": [
+    "states that quiet-hour evidence is missing",
+    "does not infer building conflict from the invite alone",
+    "asks about quiet-hour timing or explicitly abstains"
+  ],
+  "target_evidence_ids": [],
+  "associative_cue_id": "cue_1",
+  "distractor_ids": [],
+  "associative_links": [],
+  "annotation": {
+    "1": {
+      "role_setup": "background_memory"
+    },
+    "2": {
+      "role_setup": "background_memory"
+    },
+    "3": {
+      "role_setup": "background_memory"
+    },
+    "4": {
+      "role_setup": "background_memory"
+    },
+    "5": {
+      "role_setup": "background_memory"
+    },
+    "6": {
+      "role_setup": "background_memory"
+    },
+    "7": {
+      "role_setup": "background_memory"
+    },
+    "8": {
+      "role_setup": "background_memory"
+    },
+    "9": {
+      "role_setup": "background_memory"
+    },
+    "10": {
+      "role_setup": "background_memory"
+    },
+    "11": {
+      "role_setup": "background_memory"
+    },
+    "12": {
+      "role_setup": "background_memory"
+    },
+    "13": {
+      "role_setup": "background_memory"
+    },
+    "14": {
+      "role_setup": "background_memory"
+    },
+    "15": {
+      "role_setup": "background_memory"
+    },
+    "16": {
+      "role_setup": "background_memory"
+    },
+    "17": {
+      "role_setup": "background_memory"
+    },
+    "18": {
+      "role_setup": "background_memory"
+    },
+    "19": {
+      "role_setup": "background_memory"
+    },
+    "20": {
+      "role_setup": "background_memory"
+    },
+    "21": {
+      "role_setup": "background_memory"
+    },
+    "22": {
+      "role_setup": "background_memory"
+    },
+    "23": {
+      "role_setup": "background_memory"
+    },
+    "24": {
+      "role_setup": "background_memory"
+    },
+    "25": {
+      "role_setup": "background_memory"
+    },
+    "26": {
+      "role_setup": "background_memory"
+    },
+    "27": {
+      "role_setup": "background_memory"
+    },
+    "28": {
+      "role_setup": "background_memory"
+    },
+    "29": {
+      "role_setup": "background_memory"
+    },
+    "30": {
+      "role_setup": "background_memory"
+    },
+    "31": {
+      "role_setup": "background_memory"
+    },
+    "32": {
+      "role_setup": "background_memory"
+    },
+    "33": {
+      "role_setup": "background_memory"
+    },
+    "34": {
+      "role_setup": "background_memory"
+    },
+    "35": {
+      "role_setup": "background_memory"
+    },
+    "36": {
+      "role_setup": "background_memory"
+    },
+    "37": {
+      "role_setup": "background_memory"
+    },
+    "38": {
+      "role_setup": "background_memory"
+    },
+    "39": {
+      "role_setup": "background_memory"
+    },
+    "40": {
+      "role_setup": "partial_evidence",
+      "evidence_id": "ev_A",
+      "atomic_fact": "Hand-drum practice after dinner is the user's main evening hobby at home on most weekdays.",
+      "insufficiency_note": "ev_B is intentionally unavailable"
+    },
+    "41": {
+      "role_setup": "background_memory"
+    },
+    "43": {
+      "role_setup": "background_memory"
+    },
+    "44": {
+      "role_setup": "background_memory"
+    },
+    "45": {
+      "role_setup": "associative_cue",
+      "cue_id": "cue_1"
+    }
+  },
+  "latent_forbidden_phrases": [
+    "drums banned",
+    "must cancel all music",
+    "never host friends"
+  ],
+  "counterfactual_variants": [
+    {
+      "variant_id": "AMB_HH_u06_absence_S7_cf_restore_ev_B",
+      "type": "evidence_added",
+      "added_session": {
+        "session_id": 42,
+        "timestamp": "2026-03-28T18:00:00Z",
+        "dialogue": [
+          {
+            "role": "user",
+            "content": "Building quiet hours start at eight in the evening. A prior noise note from management is still on file."
+          },
+          {
+            "role": "assistant",
+            "content": "Is that a hard household boundary?"
+          },
+          {
+            "role": "user",
+            "content": "Yes. Group evenings after eight need another venue."
+          }
+        ]
+      },
+      "result_arm": "associative",
+      "result_association_type": "A3_cross_domain",
+      "result_gold_answer": "Do not host the percussion circle at home. Hand-drum practice is your main evening hobby, but building quiet hours start at eight and a prior noise note is on file. Host at a public workshop venue or pick a quieter format. The public drum workshop ticket talk is a different outing.",
+      "result_required_elements": [
+        "uses hand-drum practice as a home evening hobby",
+        "uses eight o'clock quiet-hour building rule",
+        "recommends against hosting the drum circle at home"
+      ],
+      "result_target_evidence_ids": [
+        "ev_A",
+        "ev_B"
+      ],
+      "result_associative_links": [
+        {
+          "source": "ev_A",
+          "relation": "indicates",
+          "target": "home_evening_drums",
+          "hop": 1
+        },
+        {
+          "source": "ev_B",
+          "relation": "constrains",
+          "target": "apartment_quiet_after_8pm",
+          "hop": 1
+        },
+        {
+          "source": [
+            "ev_A",
+            "ev_B"
+          ],
+          "relation": "co_activate_to",
+          "target": "drum_circle_conflicts_quiet_hours",
+          "hop": 2
+        }
+      ],
+      "expected_gold": "Do not host the percussion circle at home. Hand-drum practice is your main evening hobby, but building quiet hours start at eight and a prior noise note is on file. Host at a public workshop venue or pick a quieter format. The public drum workshop ticket talk is a different outing."
+    }
+  ],
+  "validity_metrics": {
+    "lexical_jaccard_query_evidence": 0.0,
+    "embed_cosine_query_evidence": 0.0,
+    "flat_rag_hit_top3": false,
+    "distractor_cosine_query": 0.0,
+    "evidence_cosine_query": 0.0,
+    "partial_evidence_cosine_query": 0.0489,
+    "validity_method": {
+      "embedder": "tfidf-local-proxy",
+      "lexical": "jaccard-stopword-filtered",
+      "computed_by": "hobby_habit/bin/generate_hobby_habit_gold_batch.py",
+      "computed_at": "2026-07-15",
+      "limitation": "Lexical proxy only; dense semantic validation and human IAA remain required."
+    }
+  },
+  "provenance": {
+    "generator": "hobby_habit_gold_batch_v2",
+    "generated_by": "autoresearch_pilot",
+    "persona_corpus": "RHELM",
+    "persona_ref": "microsoft/RHELM:conversations/Jonas_Richter",
+    "scenario_id": "S7",
+    "scenario_name": "home_drums_x_quiet_hours_circle",
+    "batch_id": "HH_GOLD_S6_S10_2026-07-15_v2",
+    "standard": "DATA_STANDARD_v1",
+    "timeline_id": "HH_u06_shared_timeline_v2",
+    "timeline_prefix_end": 44
+  },
+  "dataset_meta": {
+    "golden_candidate": true,
+    "human_verified_by": [],
+    "iaa_cohort_kappa": null,
+    "iaa_n_overlap": null,
+    "known_validation_gaps": [
+      "dense semantic discriminant gate not yet run",
+      "two-person blind human necessity review not yet run",
+      "real-model full/no-assoc/no-distractor evaluation not yet run"
+    ],
+    "reproduce": {
+      "loader_rule": "serialize context dialogue role+content only; strip annotation/evolving_state",
+      "generator": "python3 hobby_habit/bin/generate_hobby_habit_gold_batch.py",
+      "metrics": [
+        "answer_vs_gold+required_elements",
+        "joint_evidence_recall",
+        "single_evidence_counterfactual_abstention",
+        "distractor_removal_invariance"
+      ]
+    }
+  }
+}

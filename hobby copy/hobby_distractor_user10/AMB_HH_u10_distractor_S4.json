@@ -1,0 +1,260 @@
+{
+  "sample_id": "AMB_HH_u10_distractor_S4",
+  "source": "partner_generated",
+  "status": "rendered",
+  "association_type": "A3_cross_domain",
+  "secondary_association_type": "distractor_interference",
+  "domain_tags": [
+    "hobbies/leisure",
+    "health/wellness"
+  ],
+  "pilot_arm": "distractor",
+  "pilot_domain": "hobby_habit",
+  "context_length_tokens": 693,
+  "persona": {
+    "user_id": "hh_u10",
+    "stable_traits": [
+      "psychology + AI research student",
+      "University of Michigan exchange",
+      "King's College London BSc Psychology",
+      "mundane hobby routines (running, film, cooking, clay, games)",
+      "values low-drama sustainable habits"
+    ],
+    "evolving_state": {
+      "schedule_conflict": "pottery_vs_dawn_bakery",
+      "sleep_priority": "pre_dawn_shift_protected"
+    }
+  },
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2026-03-01T09:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "How do I keep clay from drying out between weekly classes?"
+        },
+        {
+          "role": "assistant",
+          "content": "Wrap pieces in damp paper towels inside a sealed bag, and check moisture midweek."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2026-03-03T20:15:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A friend said a weekend glaze workshop signup is amazing and asked if the class is worth it. Should I grab that one tourist-style ticket? It is not my regular evening studio."
+        },
+        {
+          "role": "assistant",
+          "content": "Treat a one-off weekend workshop signup as a fun ticket decision. It does not automatically say anything about your recurring evening schedule."
+        },
+        {
+          "role": "user",
+          "content": "Friend said it is amazing, but I only care whether that single workshop class signup is worth it."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2026-03-05T21:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "My weekday wheel sessions at the studio often run past eleven. I get home wired and it takes a while to settle."
+        },
+        {
+          "role": "assistant",
+          "content": "Studio nights that run past eleven can push bedtime later even when the making itself is enjoyable."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2026-03-07T08:20:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Best way to clean tools without clogging the sink?"
+        },
+        {
+          "role": "assistant",
+          "content": "Wipe scraps into the trash first, then rinse in a bucket and dump settled water outside if allowed."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2026-03-09T06:40:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A few times a week I help shape loaves before sunrise at a friend's shop. I need solid sleep the night before or I am useless at the oven."
+        },
+        {
+          "role": "assistant",
+          "content": "Pre-dawn oven shifts make the prior night non-negotiable. Staying up late beforehand will tax that."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2026-03-11T12:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "How do I choose between hobbies when both feel meaningful?"
+        },
+        {
+          "role": "assistant",
+          "content": "Rank by recovery cost, not by which one sounds cooler to friends."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2026-03-13T19:30:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "People keep saying an extra late evening class signup would be amazing and asking if it is worth it."
+        },
+        {
+          "role": "assistant",
+          "content": "An extra late evening class signup only helps if it does not steal sleep you already allocated elsewhere. Amazing is not the test."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2026-03-15T20:50:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The studio opened another late evening class signup on nights before my bakery mornings. Friend said it is amazing. Should I add it — is it worth it?"
+        }
+      ]
+    }
+  ],
+  "query": "The studio opened another late evening class signup on nights before my bakery mornings. Friend said it is amazing. Should I add it — is it worth it?",
+  "query_source": "final_turn",
+  "gold_answer": "Do not add it. Your weekday wheel sessions already run past eleven, and pre-dawn loaf shifts need solid sleep the night before. An extra late evening class signup on those nights conflicts. The weekend workshop ticket talk is unrelated.",
+  "required_elements": [
+    "cites late studio wheel sessions",
+    "cites pre-dawn shop/oven sleep need",
+    "recommends against extra late class on those nights",
+    "does not treat weekend workshop as decisive"
+  ],
+  "target_evidence_ids": [
+    "ev_A",
+    "ev_B"
+  ],
+  "associative_cue_id": "cue_1",
+  "distractor_ids": [
+    "dist_1"
+  ],
+  "associative_links": [
+    {
+      "source": "ev_A",
+      "relation": "causes",
+      "target": "late_bedtime",
+      "hop": 1
+    },
+    {
+      "source": "ev_B",
+      "relation": "constrains",
+      "target": "late_bedtime_before_shifts",
+      "hop": 1
+    },
+    {
+      "source": "dist_1",
+      "relation": "analogous",
+      "target": "surface_class_signup_language_only",
+      "hop": 1
+    }
+  ],
+  "annotation": {
+    "1": {
+      "role_setup": "filler"
+    },
+    "2": {
+      "role_setup": "distractor",
+      "distractor_id": "dist_1",
+      "why_distractor": "Uses class signup, evenings, friend said amazing, worth it, should I — matching the query — but about a one-off weekend glaze workshop tourist ticket, not the recurring evening class versus dawn bakery conflict."
+    },
+    "3": {
+      "role_setup": "target_evidence",
+      "evidence_id": "ev_A",
+      "atomic_fact": "User's weekday wheel sessions at the studio often run past eleven and leave them wired."
+    },
+    "4": {
+      "role_setup": "filler"
+    },
+    "5": {
+      "role_setup": "target_evidence",
+      "evidence_id": "ev_B",
+      "atomic_fact": "User helps shape loaves before sunrise at a friend's shop and needs solid sleep the night before."
+    },
+    "6": {
+      "role_setup": "filler"
+    },
+    "7": {
+      "role_setup": "filler"
+    },
+    "8": {
+      "role_setup": "associative_cue",
+      "cue_id": "cue_1"
+    }
+  },
+  "counterfactual_variants": [
+    {
+      "variant_id": "cf_remove_dist",
+      "type": "evidence_removed",
+      "removed_session_ids": [
+        2
+      ],
+      "expected_gold": "Still decline the extra late class on bakery-eve nights based on sleep needs."
+    }
+  ],
+  "latent_forbidden_phrases": [
+    "pottery_vs_dawn_bakery",
+    "pre_dawn_shift_protected",
+    "drop the evening class",
+    "do not add late studio nights"
+  ],
+  "validity_metrics": {
+    "lexical_jaccard_query_evidence": 0.0656,
+    "embed_cosine_query_evidence": 0.0905,
+    "flat_rag_hit_top3": false,
+    "distractor_cosine_query": 0.3358,
+    "evidence_cosine_query": 0.0905,
+    "validity_method": {
+      "embedder": "tfidf-local-proxy",
+      "lexical": "jaccard-stopword-filtered",
+      "computed_by": "hobby_habit/bin/generate_hobby_habit_batch.py",
+      "computed_at": "2026-07-12"
+    }
+  },
+  "provenance": {
+    "generator": "hobby_habit_migrate_pilot_v1",
+    "generated_by": "autoresearch_pilot",
+    "pilot_batch": "2026-07-11_wl_hh_v1",
+    "migrated_from": "pilot:AMB_A3_HH_0009",
+    "migrated_from_file": "AMB_A3_HH_0009.json",
+    "batch_id": "HH_2026-07-12_v1",
+    "standard": "DATA_STANDARD_v1"
+  },
+  "dataset_meta": {
+    "human_verified_by": [],
+    "iaa_cohort_kappa": null,
+    "iaa_n_overlap": null
+  },
+  "persona_source": {
+    "corpus": "desktop_user",
+    "ref": "local:Healthy Li (UMich exchange / KCL Psychology; pilot HH migrated)",
+    "display_name": "desktop-Healthy_Li"
+  }
+}

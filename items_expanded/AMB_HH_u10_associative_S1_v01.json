@@ -1,0 +1,309 @@
+{
+  "sample_id": "AMB_HH_u10_associative_S1_v01",
+  "source": "partner_generated",
+  "status": "rendered",
+  "association_type": "A3_cross_domain",
+  "domain_tags": [
+    "hobbies/leisure",
+    "health/wellness"
+  ],
+  "pilot_arm": "associative",
+  "pilot_domain": "hobby_habit",
+  "context_length_tokens": 843,
+  "persona": {
+    "user_id": "hh_u10",
+    "stable_traits": [
+      "psychology + AI research student",
+      "University of Michigan exchange",
+      "King's College London BSc Psychology",
+      "mundane hobby routines (running, film, cooking, clay, games)",
+      "values low-drama sustainable habits"
+    ],
+    "evolving_state": {
+      "event_readiness": "contraindicated_elevation_events",
+      "knee_pattern": "incline_flare_prone"
+    }
+  },
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2026-01-06T07:20:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Can you remind me how to stretch calves after an easy park loop?"
+        },
+        {
+          "role": "assistant",
+          "content": "Sure. After you cool down, do a wall calf stretch for 30 seconds each side, then a gentle seated hamstring reach. Keep the knee soft if anything feels sharp."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2026-01-09T21:05:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I keep getting invites to random weekend group activities. How do I politely decline without sounding antisocial?"
+        },
+        {
+          "role": "assistant",
+          "content": "A short honest line works: thank them, say this weekend is already spoken for, and offer a different low-key hang another time. You do not owe a long explanation."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2026-01-12T07:40:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "My weekday mornings are usually a flat park loop. Whenever I cut through those steeper neighborhood streets instead, my right knee starts complaining by the end."
+        },
+        {
+          "role": "assistant",
+          "content": "That pattern is useful information. Flat loops that feel fine plus discomfort on steeper streets often means the incline load is the trigger, not the total distance alone."
+        },
+        {
+          "role": "user",
+          "content": "Yeah, on the flat path I feel fine. It is specifically those uphill blocks that bother me."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2026-01-15T12:10:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "What is a simple way to log how a workout felt without turning it into a spreadsheet hobby?"
+        },
+        {
+          "role": "assistant",
+          "content": "Use three words after each session: effort, mood, and one body note. That is enough to spot patterns later without extra tooling."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2026-01-18T19:30:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I saw the clinic this week. They said keep elevation gentle for the next couple of months while things settle, and stick to softer surfaces when I can."
+        },
+        {
+          "role": "assistant",
+          "content": "That is a clear constraint. Gentle elevation and softer surfaces for a couple of months gives the joint a quieter loading pattern while you keep moving."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2026-01-22T08:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Do foam rollers actually help after easy sessions or is that mostly placebo?"
+        },
+        {
+          "role": "assistant",
+          "content": "They can reduce next-day stiffness for some people. If it feels good and does not irritate the joint, a short roll is fine; it is not mandatory."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2026-01-25T20:15:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A friend keeps saying community signups are a great way to stay motivated. I am not sure I agree."
+        },
+        {
+          "role": "assistant",
+          "content": "Group signups help some people and pressure others. Match the format to what actually keeps you consistent, not what sounds impressive."
+        }
+      ]
+    },
+    {
+      "session_id": 0,
+      "timestamp": "2026-01-26T21:10:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I reorganized a few notes before deciding."
+        },
+        {
+          "role": "assistant",
+          "content": "That gives you another detail to weigh against your priorities."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2026-01-28T21:10:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Quick one. A coworker says a mountain race signup this month is amazing and wants me to join the team. Should I?"
+        }
+      ]
+    }
+  ],
+  "query": "Quick one. A coworker says a mountain race signup this month is amazing and wants me to join the team. Should I?",
+  "query_source": "final_turn",
+  "gold_answer": "Probably not right now. Your mornings already show knee discomfort on steeper streets, and the clinic asked you to keep elevation gentle for a couple of months. A mountain race is the opposite loading pattern, so decline or pick a flat alternative later.",
+  "required_elements": [
+    "cites knee discomfort on steeper routes",
+    "cites clinic guidance to keep elevation gentle",
+    "recommends declining or delaying the mountain race"
+  ],
+  "target_evidence_ids": [
+    "ev_A",
+    "ev_B"
+  ],
+  "associative_cue_id": "cue_1",
+  "distractor_ids": [],
+  "associative_links": [
+    {
+      "source": [
+        "ev_A"
+      ],
+      "relation": "co_occurs",
+      "target": "elevation_intolerance",
+      "hop": 1,
+      "source_text": "User jogs most weekday mornings on flat park paths and feels knee discomfort when routes include steeper neighborhood streets.",
+      "target_text": "elevation intolerance"
+    },
+    {
+      "source": [
+        "ev_B"
+      ],
+      "relation": "constrains",
+      "target": "elevation_events",
+      "hop": 1,
+      "source_text": "A clinician advised the user to keep elevation gentle for the next couple of months while the knee settles.",
+      "target_text": "elevation events"
+    },
+    {
+      "source": [
+        "elevation_intolerance"
+      ],
+      "relation": "causes",
+      "target": "decline_mountain_race",
+      "hop": 2
+    }
+  ],
+  "annotation": {
+    "1": {
+      "role_setup": "filler"
+    },
+    "2": {
+      "role_setup": "filler"
+    },
+    "3": {
+      "role_setup": "target_evidence",
+      "evidence_id": "ev_A",
+      "atomic_fact": "User jogs most weekday mornings on flat park paths and feels knee discomfort when routes include steeper neighborhood streets."
+    },
+    "4": {
+      "role_setup": "filler"
+    },
+    "5": {
+      "role_setup": "target_evidence",
+      "evidence_id": "ev_B",
+      "atomic_fact": "A clinician advised the user to keep elevation gentle for the next couple of months while the knee settles."
+    },
+    "6": {
+      "role_setup": "filler"
+    },
+    "7": {
+      "role_setup": "filler"
+    },
+    "8": {
+      "role_setup": "associative_cue",
+      "cue_id": "cue_1"
+    },
+    "0": {
+      "role_setup": "filler"
+    }
+  },
+  "counterfactual_variants": [
+    {
+      "variant_id": "cf_remove_ev_A",
+      "type": "evidence_removed",
+      "removed_session_ids": [
+        3
+      ],
+      "expected_gold": "With only the clinic note about gentle elevation, lean cautious and ask how hilly the course is before committing."
+    },
+    {
+      "variant_id": "cf_remove_ev_B",
+      "type": "evidence_removed",
+      "removed_session_ids": [
+        5
+      ],
+      "expected_gold": "Your steeper-street knee pattern alone is a warning; treat a mountain race as high risk unless you confirm a flat course."
+    }
+  ],
+  "latent_forbidden_phrases": [
+    "contraindicated_elevation_events",
+    "incline_flare_prone",
+    "skip the mountain race",
+    "do not sign up for the race",
+    "avoid hilly races"
+  ],
+  "validity_metrics": {
+    "lexical_jaccard_query_evidence": 0.0,
+    "embed_cosine_query_evidence": 0,
+    "flat_rag_hit_top3": false,
+    "distractor_cosine_query": 0.0,
+    "evidence_cosine_query": 0,
+    "validity_method": {
+      "embedder": "tfidf-local-proxy",
+      "lexical": "jaccard-stopword-filtered",
+      "computed_by": "assomem_pilot/validity_gate.py"
+    },
+    "_debug": {
+      "ev_ids": [
+        "ev_A",
+        "ev_B"
+      ],
+      "dist_ids": [],
+      "top3_session_ids": [
+        1,
+        4,
+        8
+      ],
+      "target_session_ids": [
+        3,
+        5
+      ]
+    }
+  },
+  "provenance": {
+    "generator": "hobby_habit_migrate_pilot_v1",
+    "generated_by": "autoresearch_pilot",
+    "pilot_batch": "2026-07-11_wl_hh_v1",
+    "migrated_from": "pilot:AMB_A3_HH_0001",
+    "migrated_from_file": "AMB_A3_HH_0001.json",
+    "batch_id": "HH_2026-07-12_v1",
+    "standard": "DATA_STANDARD_v1",
+    "expanded_from": "AMB_HH_u10_associative_S1",
+    "variant_index": 1,
+    "expansion_method": "controlled_filler_variant",
+    "target_batch_size": 850
+  },
+  "dataset_meta": {
+    "human_verified_by": [],
+    "iaa_cohort_kappa": null,
+    "iaa_n_overlap": null
+  },
+  "persona_source": {
+    "corpus": "desktop_user",
+    "ref": "local:Healthy Li (UMich exchange / KCL Psychology; pilot HH migrated)",
+    "display_name": "desktop-Healthy_Li"
+  }
+}

@@ -1,0 +1,368 @@
+{
+  "sample_id": "AMB_HH_u04_distractor_S2_v03",
+  "source": "partner_generated",
+  "status": "rendered",
+  "association_type": "A3_cross_domain",
+  "domain_tags": [
+    "hobby/leisure",
+    "daily_habits"
+  ],
+  "pilot_arm": "distractor",
+  "pilot_domain": "hobby_habit",
+  "persona_source": {
+    "corpus": "DynamicMem",
+    "ref": "xiewenya/dynamicmem:004_user_004",
+    "display_name": "DM-user_004"
+  },
+  "context_length_tokens": 827,
+  "persona": {
+    "user_id": "hh_u04",
+    "stable_traits": [
+      "family-oriented professional",
+      "Sunday logistics matter",
+      "Hobby & Habit domain in DynamicMem",
+      "hosts small gatherings carefully"
+    ],
+    "evolving_state": {
+      "gear_budget": "frozen_until_april",
+      "daylight_window": "weekend_mornings_only"
+    }
+  },
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2026-01-11T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Sorted old negatives into sleeves. Dusty but satisfying."
+        },
+        {
+          "role": "assistant",
+          "content": "Archive days feel good."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2026-01-12T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Hobby mode today felt very 'family-oriented professional' — small routines, no drama."
+        },
+        {
+          "role": "assistant",
+          "content": "Given that warm pace, protecting the quiet habits is reasonable."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2026-02-13T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I am developing rolls at home. Hobby spending is frozen until April, so no new equipment before then."
+        },
+        {
+          "role": "assistant",
+          "content": "A freeze until April is a hard budget boundary. Use what you already own."
+        },
+        {
+          "role": "user",
+          "content": "Exactly. No impulse gear until then."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2026-02-14T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Tried a new tea while editing. Too floral."
+        },
+        {
+          "role": "assistant",
+          "content": "Back to the usual blend?"
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2026-02-15T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Weekday evenings I am indoors. My only outdoor shooting window is Saturday and Sunday mornings before winter light dies."
+        },
+        {
+          "role": "assistant",
+          "content": "Weekend mornings are your scarce outdoor resource."
+        },
+        {
+          "role": "user",
+          "content": "Midweek daylight is basically gone for me."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2026-03-16T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Someone floated a Wednesday coastal outing with a borrowed high-end body — friend said similar trips are amazing."
+        },
+        {
+          "role": "assistant",
+          "content": "Daylight + gear FOMO often travel together. Logging the invite?"
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2026-03-17T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Group chat keeps asking whether that upgrade-style coastal trip is worth it right now."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth-it talk can drown out calendar and budget facts."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2026-03-18T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A friend said the museum gift-shop compact camera upgrade is amazing and that a spontaneous city trip with it is worth it. They want me to buy one for a tourist afternoon. I do not need another compact point-and-shoot."
+        },
+        {
+          "role": "assistant",
+          "content": "Gift-shop upgrades are usually impulse pricing. A tourist afternoon does not require a new compact body if you already have something that works."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2026-04-19T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Put away a mug. Tiny close."
+        },
+        {
+          "role": "assistant",
+          "content": "One less open loop."
+        }
+      ]
+    },
+    {
+      "session_id": 0,
+      "timestamp": "2026-04-16T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A friend sent another suggestion, but I have not committed."
+        },
+        {
+          "role": "assistant",
+          "content": "That gives you another detail to weigh against your priorities."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2026-04-20T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Someone offered a Wednesday coastal outing with a borrowed high-end body. Friend said similar trips are amazing. Is the upgrade-style trip worth it for me right now?"
+        }
+      ]
+    }
+  ],
+  "query": "Someone offered a Wednesday coastal outing with a borrowed high-end body. Friend said similar trips are amazing. Is the upgrade-style trip worth it for me right now?",
+  "query_source": "final_turn",
+  "gold_answer": "No. Your spending freeze until April and weekend-only outdoor window conflict with a Wednesday coastal outing. The gift-shop compact upgrade chatter is unrelated impulse talk.",
+  "required_elements": [
+    "cites spending freeze until April",
+    "cites weekend-morning outdoor window",
+    "recommends declining Wednesday coastal outing",
+    "does not treat near-miss FOMO distractor as decisive capacity evidence"
+  ],
+  "target_evidence_ids": [
+    "ev_A",
+    "ev_B"
+  ],
+  "associative_cue_id": "cue_1",
+  "distractor_ids": [
+    "dist_1"
+  ],
+  "associative_links": [
+    {
+      "source": [
+        "ev_A"
+      ],
+      "relation": "constrains",
+      "target": "gear_outlay",
+      "hop": 1,
+      "source_text": "Hobby spending frozen until April; developing at home; no new equipment.",
+      "target_text": "gear outlay"
+    },
+    {
+      "source": [
+        "ev_B"
+      ],
+      "relation": "constrains",
+      "target": "weekday_daylight",
+      "hop": 1,
+      "source_text": "Only outdoor shooting window is Saturday and Sunday mornings; weekday evenings indoors.",
+      "target_text": "weekday daylight"
+    },
+    {
+      "source": [
+        "ev_A",
+        "ev_B"
+      ],
+      "relation": "constrains",
+      "target": "poor_fit_wednesday_coastal",
+      "hop": 2
+    }
+  ],
+  "annotation": {
+    "1": {
+      "role_setup": "filler"
+    },
+    "2": {
+      "role_setup": "filler"
+    },
+    "3": {
+      "role_setup": "target_evidence",
+      "evidence_id": "ev_A",
+      "atomic_fact": "Hobby spending frozen until April; developing at home; no new equipment."
+    },
+    "4": {
+      "role_setup": "filler"
+    },
+    "5": {
+      "role_setup": "target_evidence",
+      "evidence_id": "ev_B",
+      "atomic_fact": "Only outdoor shooting window is Saturday and Sunday mornings; weekday evenings indoors."
+    },
+    "6": {
+      "role_setup": "filler",
+      "surface_lure": true,
+      "why_filler": "Query-surface FOMO/signup vocabulary only; no capacity causal facts (V1 flat-RAG decoy)."
+    },
+    "7": {
+      "role_setup": "filler",
+      "surface_lure": true,
+      "why_filler": "Query-surface FOMO/signup vocabulary only; no capacity causal facts (V1 flat-RAG decoy)."
+    },
+    "8": {
+      "role_setup": "distractor",
+      "distractor_id": "dist_1",
+      "why_distractor": "Shares decision vocabulary (amazing / worth it / signup) but is a different mundane decision (flat 5K / gift-shop camera / restaurant seat / weekend workshop / cafe ticket); not capacity evidence for the cue."
+    },
+    "9": {
+      "role_setup": "filler"
+    },
+    "10": {
+      "role_setup": "associative_cue",
+      "cue_id": "cue_1"
+    },
+    "0": {
+      "role_setup": "filler"
+    }
+  },
+  "latent_forbidden_phrases": [
+    "frozen_until_april",
+    "weekend_mornings_only",
+    "skip the coastal outing",
+    "reject the borrowed body"
+  ],
+  "counterfactual_variants": [
+    {
+      "variant_id": "AMB_HH_u04_distractor_S2_cf_no_evidence",
+      "type": "evidence_removed",
+      "removed_session_ids": [
+        3,
+        5
+      ],
+      "expected_gold": "insufficient evidence / abstain"
+    },
+    {
+      "variant_id": "AMB_HH_u04_distractor_S2_cf_no_distractor",
+      "type": "distractor_removed",
+      "removed_session_ids": [
+        8
+      ],
+      "expected_gold": "same associative recommendation, easier inhibition"
+    }
+  ],
+  "validity_metrics": {
+    "lexical_jaccard_query_evidence": 0.0,
+    "embed_cosine_query_evidence": 0,
+    "flat_rag_hit_top3": false,
+    "distractor_cosine_query": 0.1407,
+    "evidence_cosine_query": 0,
+    "validity_method": {
+      "embedder": "tfidf-local-proxy",
+      "lexical": "jaccard-stopword-filtered",
+      "computed_by": "assomem_pilot/validity_gate.py"
+    },
+    "_debug": {
+      "ev_ids": [
+        "ev_A",
+        "ev_B"
+      ],
+      "dist_ids": [
+        "dist_1"
+      ],
+      "top3_session_ids": [
+        6,
+        7,
+        10
+      ],
+      "target_session_ids": [
+        3,
+        5
+      ]
+    }
+  },
+  "provenance": {
+    "generator": "hobby_habit_batch_v1",
+    "generated_by": "autoresearch_pilot",
+    "persona_corpus": "DynamicMem",
+    "persona_ref": "xiewenya/dynamicmem:004_user_004",
+    "scenario_id": "S2",
+    "scenario_name": "budget_freeze_x_weekday_coastal_shoot",
+    "batch_id": "HH_2026-07-12_v1",
+    "standard": "DATA_STANDARD_v1",
+    "domain_note": "highest_mundane_priority",
+    "expanded_from": "AMB_HH_u04_distractor_S2",
+    "variant_index": 3,
+    "expansion_method": "controlled_filler_variant",
+    "target_batch_size": 850
+  },
+  "dataset_meta": {
+    "human_verified_by": [],
+    "iaa_cohort_kappa": null,
+    "iaa_n_overlap": null,
+    "reproduce": {
+      "loader_rule": "serialize context dialogue role+content only; strip annotation/evolving_state",
+      "metrics": [
+        "answer_vs_gold+required_elements",
+        "validity_metrics.flat_rag_hit_top3",
+        "distractor_cosine>=evidence_cosine for distractor arm"
+      ]
+    }
+  }
+}

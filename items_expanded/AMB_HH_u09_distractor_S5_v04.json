@@ -1,0 +1,368 @@
+{
+  "sample_id": "AMB_HH_u09_distractor_S5_v04",
+  "source": "partner_generated",
+  "status": "rendered",
+  "association_type": "A3_cross_domain",
+  "domain_tags": [
+    "hobby/leisure",
+    "daily_habits"
+  ],
+  "pilot_arm": "distractor",
+  "pilot_domain": "hobby_habit",
+  "persona_source": {
+    "corpus": "RHELM",
+    "ref": "microsoft/RHELM:conversations/Martin_Keller",
+    "display_name": "RHELM-Martin_Keller"
+  },
+  "context_length_tokens": 795,
+  "persona": {
+    "user_id": "hh_u09",
+    "stable_traits": [
+      "Martin Keller persona anchor",
+      "steady home routines",
+      "quiet evenings preferred",
+      "cautious about loud hosting"
+    ],
+    "evolving_state": {
+      "home_noise_budget": "roommate_quiet_constraint",
+      "game_night_fit": "needs_quiet_or_elsewhere"
+    }
+  },
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2026-01-11T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Wiped the game-shelf dust. Cards look less sticky."
+        },
+        {
+          "role": "assistant",
+          "content": "Tiny resets help."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2026-01-12T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Hobby mode today felt very 'Martin Keller persona anchor' — small routines, no drama."
+        },
+        {
+          "role": "assistant",
+          "content": "Given that plain pace, protecting the quiet habits is reasonable."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2026-02-13T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I like hosting small tabletop nights at home every couple of weeks. It is my main social hobby."
+        },
+        {
+          "role": "assistant",
+          "content": "Home hosting is a real social outlet. Keep the format compatible with whoever shares the space."
+        },
+        {
+          "role": "user",
+          "content": "Quiet games work well for me."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2026-02-14T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Bought snacks for later. Nothing fancy."
+        },
+        {
+          "role": "assistant",
+          "content": "Prepared enough."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2026-02-15T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "My roommate is sensitive to noise after dinner and asked me to keep apartment evenings calmer, especially with groups."
+        },
+        {
+          "role": "assistant",
+          "content": "That is a hard household constraint. High-volume group nights at home will create conflict."
+        },
+        {
+          "role": "user",
+          "content": "I do not want to blow up the household over one night."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2026-03-16T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Friends want me to host a loud party-game night signup at my place — they said it would be amazing."
+        },
+        {
+          "role": "assistant",
+          "content": "Hosting FOMO can outrun roommate constraints."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2026-03-17T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Group chat keeps asking if a loud party-game night at the apartment is worth it."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth-it for guests is not the same as worth-it for the household."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2026-03-18T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A friend said a board-game cafe game night signup is amazing and asked if that public event is worth it. Should I grab a ticket? It is not at my apartment."
+        },
+        {
+          "role": "assistant",
+          "content": "A cafe game night signup is just an outing ticket. Judge noise and cost for that venue, not your apartment rules."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2026-04-19T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Put away a mug. Tiny close."
+        },
+        {
+          "role": "assistant",
+          "content": "One less open loop."
+        }
+      ]
+    },
+    {
+      "session_id": 0,
+      "timestamp": "2026-04-15T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I am trying to leave room for a practical alternative."
+        },
+        {
+          "role": "assistant",
+          "content": "That gives you another detail to weigh against your priorities."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2026-04-20T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Friends want me to host a loud party-game night signup at my place. They said it would be amazing. Should I — is it worth it?"
+        }
+      ]
+    }
+  ],
+  "query": "Friends want me to host a loud party-game night signup at my place. They said it would be amazing. Should I — is it worth it?",
+  "query_source": "final_turn",
+  "gold_answer": "Host somewhere else or pick a quiet game. You like home tabletop nights, but your roommate needs quieter evenings, so a loud party-game night at the apartment is a poor fit. The cafe ticket discussion is a different outing.",
+  "required_elements": [
+    "cites home board game hosting habit",
+    "cites roommate evening noise sensitivity",
+    "recommends against loud party hosting at home (or relocate/quiet format)",
+    "does not treat near-miss FOMO distractor as decisive capacity evidence"
+  ],
+  "target_evidence_ids": [
+    "ev_A",
+    "ev_B"
+  ],
+  "associative_cue_id": "cue_1",
+  "distractor_ids": [
+    "dist_1"
+  ],
+  "associative_links": [
+    {
+      "source": [
+        "ev_A"
+      ],
+      "relation": "co_occurs",
+      "target": "home_tabletop_habit",
+      "hop": 1,
+      "source_text": "User regularly hosts small board game nights at home.",
+      "target_text": "home tabletop habit"
+    },
+    {
+      "source": [
+        "ev_B"
+      ],
+      "relation": "constrains",
+      "target": "apartment_noise",
+      "hop": 1,
+      "source_text": "Roommate is noise-sensitive in the evenings and asks for quieter nights at the apartment.",
+      "target_text": "apartment noise"
+    },
+    {
+      "source": [
+        "ev_A",
+        "ev_B"
+      ],
+      "relation": "constrains",
+      "target": "loud_party_poor_fit",
+      "hop": 2
+    }
+  ],
+  "annotation": {
+    "1": {
+      "role_setup": "filler"
+    },
+    "2": {
+      "role_setup": "filler"
+    },
+    "3": {
+      "role_setup": "target_evidence",
+      "evidence_id": "ev_A",
+      "atomic_fact": "User regularly hosts small board game nights at home."
+    },
+    "4": {
+      "role_setup": "filler"
+    },
+    "5": {
+      "role_setup": "target_evidence",
+      "evidence_id": "ev_B",
+      "atomic_fact": "Roommate is noise-sensitive in the evenings and asks for quieter nights at the apartment."
+    },
+    "6": {
+      "role_setup": "filler",
+      "surface_lure": true,
+      "why_filler": "Query-surface FOMO/signup vocabulary only; no capacity causal facts (V1 flat-RAG decoy)."
+    },
+    "7": {
+      "role_setup": "filler",
+      "surface_lure": true,
+      "why_filler": "Query-surface FOMO/signup vocabulary only; no capacity causal facts (V1 flat-RAG decoy)."
+    },
+    "8": {
+      "role_setup": "distractor",
+      "distractor_id": "dist_1",
+      "why_distractor": "Shares decision vocabulary (amazing / worth it / signup) but is a different mundane decision (flat 5K / gift-shop camera / restaurant seat / weekend workshop / cafe ticket); not capacity evidence for the cue."
+    },
+    "9": {
+      "role_setup": "filler"
+    },
+    "10": {
+      "role_setup": "associative_cue",
+      "cue_id": "cue_1"
+    },
+    "0": {
+      "role_setup": "filler"
+    }
+  },
+  "latent_forbidden_phrases": [
+    "roommate_quiet_constraint",
+    "needs_quiet_or_elsewhere",
+    "cancel loud game night",
+    "do not host the party game night"
+  ],
+  "counterfactual_variants": [
+    {
+      "variant_id": "AMB_HH_u09_distractor_S5_cf_no_evidence",
+      "type": "evidence_removed",
+      "removed_session_ids": [
+        3,
+        5
+      ],
+      "expected_gold": "insufficient evidence / abstain"
+    },
+    {
+      "variant_id": "AMB_HH_u09_distractor_S5_cf_no_distractor",
+      "type": "distractor_removed",
+      "removed_session_ids": [
+        8
+      ],
+      "expected_gold": "same associative recommendation, easier inhibition"
+    }
+  ],
+  "validity_metrics": {
+    "lexical_jaccard_query_evidence": 0.0351,
+    "embed_cosine_query_evidence": 0.067,
+    "flat_rag_hit_top3": false,
+    "distractor_cosine_query": 0.3034,
+    "evidence_cosine_query": 0.067,
+    "validity_method": {
+      "embedder": "tfidf-local-proxy",
+      "lexical": "jaccard-stopword-filtered",
+      "computed_by": "assomem_pilot/validity_gate.py"
+    },
+    "_debug": {
+      "ev_ids": [
+        "ev_A",
+        "ev_B"
+      ],
+      "dist_ids": [
+        "dist_1"
+      ],
+      "top3_session_ids": [
+        6,
+        7,
+        10
+      ],
+      "target_session_ids": [
+        3,
+        5
+      ]
+    }
+  },
+  "provenance": {
+    "generator": "hobby_habit_batch_v1",
+    "generated_by": "autoresearch_pilot",
+    "persona_corpus": "RHELM",
+    "persona_ref": "microsoft/RHELM:conversations/Martin_Keller",
+    "scenario_id": "S5",
+    "scenario_name": "home_games_x_roommate_quiet",
+    "batch_id": "HH_2026-07-12_v1",
+    "standard": "DATA_STANDARD_v1",
+    "domain_note": "highest_mundane_priority",
+    "expanded_from": "AMB_HH_u09_distractor_S5",
+    "variant_index": 4,
+    "expansion_method": "controlled_filler_variant",
+    "target_batch_size": 850
+  },
+  "dataset_meta": {
+    "human_verified_by": [],
+    "iaa_cohort_kappa": null,
+    "iaa_n_overlap": null,
+    "reproduce": {
+      "loader_rule": "serialize context dialogue role+content only; strip annotation/evolving_state",
+      "metrics": [
+        "answer_vs_gold+required_elements",
+        "validity_metrics.flat_rag_hit_top3",
+        "distractor_cosine>=evidence_cosine for distractor arm"
+      ]
+    }
+  }
+}

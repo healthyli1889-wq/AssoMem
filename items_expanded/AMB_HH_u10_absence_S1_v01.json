@@ -1,0 +1,235 @@
+{
+  "sample_id": "AMB_HH_u10_absence_S1_v01",
+  "source": "partner_generated",
+  "status": "rendered",
+  "association_type": "A5_absence_control",
+  "domain_tags": [
+    "hobbies/leisure",
+    "health/wellness"
+  ],
+  "pilot_arm": "absence",
+  "pilot_domain": "hobby_habit",
+  "context_length_tokens": 512,
+  "persona": {
+    "user_id": "hh_u10",
+    "stable_traits": [
+      "psychology + AI research student",
+      "University of Michigan exchange",
+      "King's College London BSc Psychology",
+      "mundane hobby routines (running, film, cooking, clay, games)",
+      "values low-drama sustainable habits"
+    ],
+    "evolving_state": {
+      "event_readiness": "unknown_no_evidence",
+      "knee_pattern": "unobserved"
+    }
+  },
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2026-01-07T07:30:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "What is a gentle warm-up before an easy outdoor session?"
+        },
+        {
+          "role": "assistant",
+          "content": "Two minutes of brisk walking, then a few leg swings and ankle circles. Keep it light."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2026-01-11T19:20:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "How do I politely decline weekend group invites?"
+        },
+        {
+          "role": "assistant",
+          "content": "Thank them, say you cannot make it, and optionally suggest another time. Short is fine."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2026-01-15T12:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Is foam rolling necessary after easy sessions?"
+        },
+        {
+          "role": "assistant",
+          "content": "No. Use it if it feels good; otherwise skip it."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2026-01-19T08:10:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Simple way to log how a workout felt?"
+        },
+        {
+          "role": "assistant",
+          "content": "Effort, mood, and one body note. Three words are enough."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2026-01-23T20:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Community signups are everywhere. How do I ignore hype?"
+        },
+        {
+          "role": "assistant",
+          "content": "Check the event against your known limits. If you have no personal limits on record, say you need more information."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2026-01-26T18:40:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "What should I ask before joining any team event?"
+        },
+        {
+          "role": "assistant",
+          "content": "Ask about distance, elevation, pacing norms, and recovery time afterward."
+        }
+      ]
+    },
+    {
+      "session_id": 0,
+      "timestamp": "2026-01-26T21:10:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I reorganized a few notes before deciding."
+        },
+        {
+          "role": "assistant",
+          "content": "That gives you another detail to weigh against your priorities."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2026-01-28T21:10:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A coworker says a mountain race signup this month is amazing and wants me to join the team. Should I?"
+        }
+      ]
+    }
+  ],
+  "query": "A coworker says a mountain race signup this month is amazing and wants me to join the team. Should I?",
+  "query_source": "final_turn",
+  "gold_answer": "Insufficient evidence in memory. You have not shared personal training limits, knee history, or elevation tolerance here, so I cannot recommend for or against the mountain race from prior conversations. Ask about the course profile and how your body has handled hills lately.",
+  "required_elements": [
+    "states insufficient evidence / cannot recommend from memory",
+    "notes absence of personal elevation or injury history",
+    "suggests gathering course and body-status information"
+  ],
+  "target_evidence_ids": [],
+  "associative_cue_id": "cue_1",
+  "distractor_ids": [],
+  "associative_links": [],
+  "annotation": {
+    "1": {
+      "role_setup": "filler"
+    },
+    "2": {
+      "role_setup": "filler"
+    },
+    "3": {
+      "role_setup": "filler"
+    },
+    "4": {
+      "role_setup": "filler"
+    },
+    "5": {
+      "role_setup": "filler"
+    },
+    "6": {
+      "role_setup": "filler"
+    },
+    "7": {
+      "role_setup": "associative_cue",
+      "cue_id": "cue_1"
+    },
+    "0": {
+      "role_setup": "filler"
+    }
+  },
+  "counterfactual_variants": [
+    {
+      "variant_id": "cf_add_knee_evidence",
+      "type": "evidence_added_hypothetical",
+      "removed_session_ids": [],
+      "expected_gold": "If incline knee flares and gentle-elevation guidance were on record, recommend declining."
+    }
+  ],
+  "latent_forbidden_phrases": [
+    "unknown_no_evidence",
+    "unobserved",
+    "skip the mountain race",
+    "knee cannot handle hills"
+  ],
+  "validity_metrics": {
+    "lexical_jaccard_query_evidence": 0.0,
+    "embed_cosine_query_evidence": 0.0,
+    "flat_rag_hit_top3": false,
+    "distractor_cosine_query": 0.0,
+    "evidence_cosine_query": 0.0,
+    "validity_method": {
+      "embedder": "tfidf-local-proxy",
+      "lexical": "jaccard-stopword-filtered",
+      "computed_by": "assomem_pilot/validity_gate.py"
+    },
+    "_debug": {
+      "ev_ids": [],
+      "dist_ids": [],
+      "top3_session_ids": [
+        1,
+        6,
+        7
+      ],
+      "target_session_ids": []
+    }
+  },
+  "provenance": {
+    "generator": "hobby_habit_migrate_pilot_v1",
+    "generated_by": "autoresearch_pilot",
+    "pilot_batch": "2026-07-11_wl_hh_v1",
+    "migrated_from": "pilot:AMB_A5_HH_0011",
+    "migrated_from_file": "AMB_A5_HH_0011.json",
+    "batch_id": "HH_2026-07-12_v1",
+    "standard": "DATA_STANDARD_v1",
+    "expanded_from": "AMB_HH_u10_absence_S1",
+    "variant_index": 1,
+    "expansion_method": "controlled_filler_variant",
+    "target_batch_size": 850
+  },
+  "dataset_meta": {
+    "human_verified_by": [],
+    "iaa_cohort_kappa": null,
+    "iaa_n_overlap": null
+  },
+  "persona_source": {
+    "corpus": "desktop_user",
+    "ref": "local:Healthy Li (UMich exchange / KCL Psychology; pilot HH migrated)",
+    "display_name": "desktop-Healthy_Li"
+  }
+}

@@ -1,0 +1,310 @@
+{
+  "sample_id": "AMB_HH_u10_distractor_S3_v02",
+  "source": "partner_generated",
+  "status": "rendered",
+  "association_type": "A3_cross_domain",
+  "secondary_association_type": "distractor_interference",
+  "domain_tags": [
+    "hobbies/leisure",
+    "household"
+  ],
+  "pilot_arm": "distractor",
+  "pilot_domain": "hobby_habit",
+  "context_length_tokens": 688,
+  "persona": {
+    "user_id": "hh_u10",
+    "stable_traits": [
+      "psychology + AI research student",
+      "University of Michigan exchange",
+      "King's College London BSc Psychology",
+      "mundane hobby routines (running, film, cooking, clay, games)",
+      "values low-drama sustainable habits"
+    ],
+    "evolving_state": {
+      "sunday_capacity": "travel_disrupts_batch_cook",
+      "hosting_fit": "poor_for_standing_dinners"
+    }
+  },
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2026-02-01T10:10:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Leak-proof freezer containers for soup?"
+        },
+        {
+          "role": "assistant",
+          "content": "Latch lids with silicone gaskets, and leave headspace when freezing."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2026-02-04T19:30:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A friend said a prix-fixe Sunday dinner signup at a restaurant across town is amazing and asked if it is worth it. Should I grab a seat for that one night? I am not hosting anything."
+        },
+        {
+          "role": "assistant",
+          "content": "A one-night restaurant signup is just a reservation decision. Judge it on cost and travel time that evening, not on whether you want to become a host."
+        },
+        {
+          "role": "user",
+          "content": "True. Friend said it is amazing, but I only care whether that single Sunday dinner out is worth it."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2026-02-05T18:45:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Sunday batch cooking is how I eat all week. Skip it and I am buying takeout by Wednesday."
+        },
+        {
+          "role": "assistant",
+          "content": "That block is load-bearing. Protect it from optional social cooking plans."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2026-02-08T09:40:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Breakfast ideas using leftover roasted vegetables?"
+        },
+        {
+          "role": "assistant",
+          "content": "Skillet eggs or a wrap with yogurt sauce. Both are fast."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2026-02-10T20:10:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Next several Sundays I will be on trains visiting family, so I will not be home for my usual kitchen afternoon."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything that assumes you are home those afternoons needs another plan."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2026-02-13T12:20:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Meal kits that deliver Sunday ingredients — useful when weekends are messy?"
+        },
+        {
+          "role": "assistant",
+          "content": "Only if you are actually home on delivery day."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2026-02-15T19:10:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Building socials keep calling standing dinners amazing. Still thinking."
+        },
+        {
+          "role": "assistant",
+          "content": "Standing plans need recurring capacity. Check that first."
+        }
+      ]
+    },
+    {
+      "session_id": 0,
+      "timestamp": "2026-02-13T21:05:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I compared two more options and kept the details."
+        },
+        {
+          "role": "assistant",
+          "content": "That gives you another detail to weigh against your priorities."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2026-02-16T21:05:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "My neighbor wants me to host a standing Sunday dinner for our building. Friend said it would be amazing. Should I say yes — is it worth it?"
+        }
+      ]
+    }
+  ],
+  "query": "My neighbor wants me to host a standing Sunday dinner for our building. Friend said it would be amazing. Should I say yes — is it worth it?",
+  "query_source": "final_turn",
+  "gold_answer": "No. Sunday batch cooking and multi-week Sunday family travel leave no capacity to host a standing building dinner. The restaurant prix-fixe signup talk is a different, one-off decision.",
+  "required_elements": [
+    "cites Sunday batch cooking",
+    "cites Sunday family travel",
+    "recommends declining standing hosting",
+    "does not treat restaurant signup as the answer"
+  ],
+  "target_evidence_ids": [
+    "ev_A",
+    "ev_B"
+  ],
+  "associative_cue_id": "cue_1",
+  "distractor_ids": [
+    "dist_1"
+  ],
+  "associative_links": [
+    {
+      "source": [
+        "ev_A"
+      ],
+      "relation": "constrains",
+      "target": "sunday_hosting",
+      "hop": 1,
+      "source_text": "Sunday batch cooking feeds the user for the work week.",
+      "target_text": "sunday hosting"
+    },
+    {
+      "source": [
+        "ev_B"
+      ],
+      "relation": "causes",
+      "target": "sunday_absence",
+      "hop": 1,
+      "source_text": "Next several Sundays spent on trains visiting family; not home for kitchen block.",
+      "target_text": "sunday absence"
+    },
+    {
+      "source": [
+        "dist_1"
+      ],
+      "relation": "analogous_to",
+      "target": "surface_sunday_dinner_language_only",
+      "hop": 1,
+      "source_text": "A friend said a prix-fixe Sunday dinner signup at a restaurant across town is amazing and asked if it is worth it. Should I grab a seat for that one night? I am not hosting anything. A one-night restaurant signup is just a reservation decision. Judge it on cost and travel time that evening, not on whether you want to become a host. True. Friend said it is amazing, but I only care whether that single Sunday dinner out is worth it.",
+      "target_text": "surface sunday dinner language only"
+    }
+  ],
+  "annotation": {
+    "1": {
+      "role_setup": "filler"
+    },
+    "2": {
+      "role_setup": "distractor",
+      "distractor_id": "dist_1",
+      "why_distractor": "Shares should I, signup, Sunday, dinner, friend said amazing, worth it with the query, but discusses a one-time restaurant prix-fixe signup across town — not building hosting and irrelevant to batch-cook plus travel constraints."
+    },
+    "3": {
+      "role_setup": "target_evidence",
+      "evidence_id": "ev_A",
+      "atomic_fact": "Sunday batch cooking feeds the user for the work week."
+    },
+    "4": {
+      "role_setup": "filler"
+    },
+    "5": {
+      "role_setup": "target_evidence",
+      "evidence_id": "ev_B",
+      "atomic_fact": "Next several Sundays spent on trains visiting family; not home for kitchen block."
+    },
+    "6": {
+      "role_setup": "filler"
+    },
+    "7": {
+      "role_setup": "filler"
+    },
+    "8": {
+      "role_setup": "associative_cue",
+      "cue_id": "cue_1"
+    },
+    "0": {
+      "role_setup": "filler"
+    }
+  },
+  "counterfactual_variants": [
+    {
+      "variant_id": "cf_remove_dist",
+      "type": "evidence_removed",
+      "removed_session_ids": [
+        2
+      ],
+      "expected_gold": "Still decline hosting based on batch-cook dependence and Sunday travel."
+    }
+  ],
+  "latent_forbidden_phrases": [
+    "travel_disrupts_batch_cook",
+    "poor_for_standing_dinners",
+    "do not host Sunday dinner",
+    "decline the standing dinner"
+  ],
+  "validity_metrics": {
+    "lexical_jaccard_query_evidence": 0.0213,
+    "embed_cosine_query_evidence": 0.0272,
+    "flat_rag_hit_top3": false,
+    "distractor_cosine_query": 0.3161,
+    "evidence_cosine_query": 0.0272,
+    "validity_method": {
+      "embedder": "tfidf-local-proxy",
+      "lexical": "jaccard-stopword-filtered",
+      "computed_by": "assomem_pilot/validity_gate.py"
+    },
+    "_debug": {
+      "ev_ids": [
+        "ev_A",
+        "ev_B"
+      ],
+      "dist_ids": [
+        "dist_1"
+      ],
+      "top3_session_ids": [
+        2,
+        7,
+        8
+      ],
+      "target_session_ids": [
+        3,
+        5
+      ]
+    }
+  },
+  "provenance": {
+    "generator": "hobby_habit_migrate_pilot_v1",
+    "generated_by": "autoresearch_pilot",
+    "pilot_batch": "2026-07-11_wl_hh_v1",
+    "migrated_from": "pilot:AMB_A3_HH_0008",
+    "migrated_from_file": "AMB_A3_HH_0008.json",
+    "batch_id": "HH_2026-07-12_v1",
+    "standard": "DATA_STANDARD_v1",
+    "expanded_from": "AMB_HH_u10_distractor_S3",
+    "variant_index": 2,
+    "expansion_method": "controlled_filler_variant",
+    "target_batch_size": 850
+  },
+  "dataset_meta": {
+    "human_verified_by": [],
+    "iaa_cohort_kappa": null,
+    "iaa_n_overlap": null
+  },
+  "persona_source": {
+    "corpus": "desktop_user",
+    "ref": "local:Healthy Li (UMich exchange / KCL Psychology; pilot HH migrated)",
+    "display_name": "desktop-Healthy_Li"
+  }
+}

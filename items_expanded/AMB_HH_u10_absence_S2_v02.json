@@ -1,0 +1,233 @@
+{
+  "sample_id": "AMB_HH_u10_absence_S2_v02",
+  "source": "partner_generated",
+  "status": "rendered",
+  "association_type": "A5_absence_control",
+  "domain_tags": [
+    "hobbies/leisure"
+  ],
+  "pilot_arm": "absence",
+  "pilot_domain": "hobby_habit",
+  "context_length_tokens": 534,
+  "persona": {
+    "user_id": "hh_u10",
+    "stable_traits": [
+      "psychology + AI research student",
+      "University of Michigan exchange",
+      "King's College London BSc Psychology",
+      "mundane hobby routines (running, film, cooking, clay, games)",
+      "values low-drama sustainable habits"
+    ],
+    "evolving_state": {
+      "gear_budget": "unknown",
+      "daylight_window": "unknown"
+    }
+  },
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2026-01-09T18:20:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "How do I keep dust off a lens without special gear?"
+        },
+        {
+          "role": "assistant",
+          "content": "A clean microfiber cloth and a blower bulb handle most dust. Avoid wiping dry grit across glass."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2026-01-13T12:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "People say gear upgrades are worth it. How do I stay skeptical?"
+        },
+        {
+          "role": "assistant",
+          "content": "Name the specific limitation you hit last month. If you cannot name one, skip the upgrade."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2026-01-17T10:30:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Any tips for packing light for a day out?"
+        },
+        {
+          "role": "assistant",
+          "content": "One body, one lens, spare battery, and a weather layer. Leave the rest."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2026-01-21T19:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "How do I tell FOMO invitations from useful practice?"
+        },
+        {
+          "role": "assistant",
+          "content": "Ask what skill the outing practices that you cannot practice nearby."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2026-01-24T11:40:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Midweek coastal outings sound amazing in theory."
+        },
+        {
+          "role": "assistant",
+          "content": "Theory is cheap. Check schedule and budget before you commit."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2026-01-27T20:10:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "What questions should I ask before borrowing someone else's equipment?"
+        },
+        {
+          "role": "assistant",
+          "content": "Ask about insurance, replacement value, and whether you are comfortable with the learning curve on a short outing."
+        }
+      ]
+    },
+    {
+      "session_id": 0,
+      "timestamp": "2026-01-26T20:40:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I compared two more options and kept the details."
+        },
+        {
+          "role": "assistant",
+          "content": "That gives you another detail to weigh against your priorities."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2026-01-29T20:40:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Someone offered a Wednesday coastal outing with a borrowed high-end body. Is that a smart move for me right now?"
+        }
+      ]
+    }
+  ],
+  "query": "Someone offered a Wednesday coastal outing with a borrowed high-end body. Is that a smart move for me right now?",
+  "query_source": "final_turn",
+  "gold_answer": "Insufficient evidence / abstain. You have not established a hobby budget freeze, outdoor daylight window, or weekday constraints in prior chats, so I cannot say whether the Wednesday coastal outing is smart for you. Ask about spending limits and when outdoor shooting is actually available before recommending yes/no.",
+  "required_elements": [
+    "states insufficient evidence / cannot recommend from memory",
+    "notes missing budget and schedule constraints",
+    "invites user to provide those facts"
+  ],
+  "target_evidence_ids": [],
+  "associative_cue_id": "cue_1",
+  "distractor_ids": [],
+  "associative_links": [],
+  "annotation": {
+    "1": {
+      "role_setup": "filler"
+    },
+    "2": {
+      "role_setup": "filler"
+    },
+    "3": {
+      "role_setup": "filler"
+    },
+    "4": {
+      "role_setup": "filler"
+    },
+    "5": {
+      "role_setup": "filler"
+    },
+    "6": {
+      "role_setup": "filler"
+    },
+    "7": {
+      "role_setup": "associative_cue",
+      "cue_id": "cue_1"
+    },
+    "0": {
+      "role_setup": "filler"
+    }
+  },
+  "counterfactual_variants": [
+    {
+      "variant_id": "cf_add_budget_and_light",
+      "type": "evidence_added_hypothetical",
+      "removed_session_ids": [],
+      "expected_gold": "If a spending freeze and weekend-only outdoor window were known, recommend declining."
+    }
+  ],
+  "latent_forbidden_phrases": [
+    "frozen_until_april",
+    "weekend_mornings_only",
+    "skip the coastal outing"
+  ],
+  "validity_metrics": {
+    "lexical_jaccard_query_evidence": 0.0,
+    "embed_cosine_query_evidence": 0.0,
+    "flat_rag_hit_top3": false,
+    "distractor_cosine_query": 0.0,
+    "evidence_cosine_query": 0.0,
+    "validity_method": {
+      "embedder": "tfidf-local-proxy",
+      "lexical": "jaccard-stopword-filtered",
+      "computed_by": "assomem_pilot/validity_gate.py"
+    },
+    "_debug": {
+      "ev_ids": [],
+      "dist_ids": [],
+      "top3_session_ids": [
+        5,
+        6,
+        7
+      ],
+      "target_session_ids": []
+    }
+  },
+  "provenance": {
+    "generator": "hobby_habit_migrate_pilot_v1",
+    "generated_by": "autoresearch_pilot",
+    "pilot_batch": "2026-07-11_wl_hh_v1",
+    "migrated_from": "pilot:AMB_A5_HH_0012",
+    "migrated_from_file": "AMB_A5_HH_0012.json",
+    "batch_id": "HH_2026-07-12_v1",
+    "standard": "DATA_STANDARD_v1",
+    "expanded_from": "AMB_HH_u10_absence_S2",
+    "variant_index": 2,
+    "expansion_method": "controlled_filler_variant",
+    "target_batch_size": 850
+  },
+  "dataset_meta": {
+    "human_verified_by": [],
+    "iaa_cohort_kappa": null,
+    "iaa_n_overlap": null
+  },
+  "persona_source": {
+    "corpus": "desktop_user",
+    "ref": "local:Healthy Li (UMich exchange / KCL Psychology; pilot HH migrated)",
+    "display_name": "desktop-Healthy_Li"
+  }
+}

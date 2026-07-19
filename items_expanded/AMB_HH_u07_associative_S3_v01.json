@@ -1,0 +1,353 @@
+{
+  "sample_id": "AMB_HH_u07_associative_S3_v01",
+  "source": "partner_generated",
+  "status": "rendered",
+  "association_type": "A3_cross_domain",
+  "domain_tags": [
+    "hobby/leisure",
+    "daily_habits"
+  ],
+  "pilot_arm": "associative",
+  "pilot_domain": "hobby_habit",
+  "persona_source": {
+    "corpus": "RHELM",
+    "ref": "microsoft/RHELM:conversations/David_Reyes",
+    "display_name": "RHELM-David_Reyes"
+  },
+  "context_length_tokens": 725,
+  "persona": {
+    "user_id": "hh_u07",
+    "stable_traits": [
+      "David Reyes persona anchor",
+      "social hobbies with friends",
+      "notices body limits on inclines",
+      "balances FOMO with recovery"
+    ],
+    "evolving_state": {
+      "sunday_capacity": "travel_disrupts_batch_cook",
+      "hosting_fit": "poor_for_standing_dinners"
+    }
+  },
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2026-01-11T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Wiped down the spice rack. Oddly calming."
+        },
+        {
+          "role": "assistant",
+          "content": "Kitchen resets help."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2026-01-12T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Hobby mode today felt very 'David Reyes persona anchor' — small routines, no drama."
+        },
+        {
+          "role": "assistant",
+          "content": "Given that casual pace, protecting the quiet habits is reasonable."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2026-02-13T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "My weekly meal-prep block is how I eat all week. Skip it and I am buying takeout by midweek."
+        },
+        {
+          "role": "assistant",
+          "content": "That block is load-bearing. Protect it from optional social cooking plans."
+        },
+        {
+          "role": "user",
+          "content": "It is not optional for me."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2026-02-14T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Put a reminder to buy rice. Staples again."
+        },
+        {
+          "role": "assistant",
+          "content": "Boring and useful."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2026-02-15T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "For the next several weeks I will be on trains visiting family on my usual kitchen afternoon, so I will not be home."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything that assumes you are home those afternoons needs another plan."
+        },
+        {
+          "role": "user",
+          "content": "Travel already ate that slot."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2026-03-16T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Neighbor wants me to host a standing Sunday dinner for our building — friend said it would be amazing."
+        },
+        {
+          "role": "assistant",
+          "content": "Standing hosting invites are sticky. Just noting the ask?"
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2026-03-17T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Building chat is full of Sunday dinner hosting FOMO. Everyone asking who will say yes."
+        },
+        {
+          "role": "assistant",
+          "content": "Social pressure around hosting can outrun capacity."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2026-03-18T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Sky was grey. Stayed in with a book."
+        },
+        {
+          "role": "assistant",
+          "content": "Quiet evening material."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2026-04-19T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Put away a mug. Tiny close."
+        },
+        {
+          "role": "assistant",
+          "content": "One less open loop."
+        }
+      ]
+    },
+    {
+      "session_id": 0,
+      "timestamp": "2026-04-18T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I reorganized a few notes before deciding."
+        },
+        {
+          "role": "assistant",
+          "content": "That gives you another detail to weigh against your priorities."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2026-04-20T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "My neighbor wants me to host a standing Sunday dinner for our building. Friend said it would be amazing. Should I say yes — is it worth it?"
+        }
+      ]
+    }
+  ],
+  "query": "My neighbor wants me to host a standing Sunday dinner for our building. Friend said it would be amazing. Should I say yes — is it worth it?",
+  "query_source": "final_turn",
+  "gold_answer": "No. Weekly meal-prep and multi-week family travel leave no capacity to host a standing building dinner. The restaurant prix-fixe signup talk is a different, one-off decision.",
+  "required_elements": [
+    "cites Sunday batch cooking / weekly meal-prep block",
+    "cites Sunday family travel / not home",
+    "recommends declining standing hosting"
+  ],
+  "target_evidence_ids": [
+    "ev_A",
+    "ev_B"
+  ],
+  "associative_cue_id": "cue_1",
+  "distractor_ids": [],
+  "associative_links": [
+    {
+      "source": [
+        "ev_A"
+      ],
+      "relation": "co_occurs",
+      "target": "meal_prep_load_bearing",
+      "hop": 1,
+      "source_text": "Sunday batch cooking feeds the user for the work week.",
+      "target_text": "meal prep load bearing"
+    },
+    {
+      "source": [
+        "ev_B"
+      ],
+      "relation": "constrains",
+      "target": "home_kitchen_afternoons",
+      "hop": 1,
+      "source_text": "Next several Sundays spent on trains visiting family; not home for kitchen block.",
+      "target_text": "home kitchen afternoons"
+    },
+    {
+      "source": [
+        "ev_A",
+        "ev_B"
+      ],
+      "relation": "constrains",
+      "target": "cannot_host_standing_dinner",
+      "hop": 2
+    }
+  ],
+  "annotation": {
+    "1": {
+      "role_setup": "filler"
+    },
+    "2": {
+      "role_setup": "filler"
+    },
+    "3": {
+      "role_setup": "target_evidence",
+      "evidence_id": "ev_A",
+      "atomic_fact": "Sunday batch cooking feeds the user for the work week."
+    },
+    "4": {
+      "role_setup": "filler"
+    },
+    "5": {
+      "role_setup": "target_evidence",
+      "evidence_id": "ev_B",
+      "atomic_fact": "Next several Sundays spent on trains visiting family; not home for kitchen block."
+    },
+    "6": {
+      "role_setup": "filler",
+      "surface_lure": true,
+      "why_filler": "Query-surface FOMO/signup vocabulary only; no capacity causal facts (V1 flat-RAG decoy)."
+    },
+    "7": {
+      "role_setup": "filler",
+      "surface_lure": true,
+      "why_filler": "Query-surface FOMO/signup vocabulary only; no capacity causal facts (V1 flat-RAG decoy)."
+    },
+    "8": {
+      "role_setup": "filler"
+    },
+    "9": {
+      "role_setup": "filler"
+    },
+    "10": {
+      "role_setup": "associative_cue",
+      "cue_id": "cue_1"
+    },
+    "0": {
+      "role_setup": "filler"
+    }
+  },
+  "latent_forbidden_phrases": [
+    "travel_disrupts_batch_cook",
+    "poor_for_standing_dinners",
+    "do not host Sunday dinner",
+    "decline the standing dinner"
+  ],
+  "counterfactual_variants": [
+    {
+      "variant_id": "AMB_HH_u07_associative_S3_cf_no_evidence",
+      "type": "evidence_removed",
+      "removed_session_ids": [
+        3,
+        5
+      ],
+      "expected_gold": "insufficient evidence / abstain"
+    }
+  ],
+  "validity_metrics": {
+    "lexical_jaccard_query_evidence": 0.0,
+    "embed_cosine_query_evidence": 0,
+    "flat_rag_hit_top3": false,
+    "distractor_cosine_query": 0.0,
+    "evidence_cosine_query": 0,
+    "validity_method": {
+      "embedder": "tfidf-local-proxy",
+      "lexical": "jaccard-stopword-filtered",
+      "computed_by": "assomem_pilot/validity_gate.py"
+    },
+    "_debug": {
+      "ev_ids": [
+        "ev_A",
+        "ev_B"
+      ],
+      "dist_ids": [],
+      "top3_session_ids": [
+        6,
+        7,
+        10
+      ],
+      "target_session_ids": [
+        3,
+        5
+      ]
+    }
+  },
+  "provenance": {
+    "generator": "hobby_habit_batch_v1",
+    "generated_by": "autoresearch_pilot",
+    "persona_corpus": "RHELM",
+    "persona_ref": "microsoft/RHELM:conversations/David_Reyes",
+    "scenario_id": "S3",
+    "scenario_name": "batch_cook_x_standing_sunday_host",
+    "batch_id": "HH_2026-07-12_v1",
+    "standard": "DATA_STANDARD_v1",
+    "domain_note": "highest_mundane_priority",
+    "expanded_from": "AMB_HH_u07_associative_S3",
+    "variant_index": 1,
+    "expansion_method": "controlled_filler_variant",
+    "target_batch_size": 850
+  },
+  "dataset_meta": {
+    "human_verified_by": [],
+    "iaa_cohort_kappa": null,
+    "iaa_n_overlap": null,
+    "reproduce": {
+      "loader_rule": "serialize context dialogue role+content only; strip annotation/evolving_state",
+      "metrics": [
+        "answer_vs_gold+required_elements",
+        "validity_metrics.flat_rag_hit_top3",
+        "distractor_cosine>=evidence_cosine for distractor arm"
+      ]
+    }
+  }
+}
