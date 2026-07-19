@@ -1,0 +1,1139 @@
+{
+  "sample_id": "AMB_FN_u06_associative_S9",
+  "source": "partner_generated",
+  "status": "rendered",
+  "association_type": "A3_cross_domain",
+  "domain_tags": [
+    "finance/personal",
+    "everyday_money"
+  ],
+  "pilot_arm": "associative",
+  "pilot_domain": "finance_personal",
+  "persona_source": {
+    "corpus": "RHELM",
+    "ref": "microsoft/RHELM:conversations/Jonas_Richter",
+    "display_name": "RHELM-Jonas_Richter"
+  },
+  "context_length_tokens": 3685,
+  "persona": {
+    "user_id": "fn_u06",
+    "stable_traits": [
+      "Jonas Richter persona anchor",
+      "structured weekday schedule",
+      "tracks cashflow before speculative bets",
+      "prioritizes high-interest debt clearance",
+      "keeps a thin but intentional buffer"
+    ],
+    "evolving_state": {
+      "hsa_room": "still_open",
+      "dental": "hsa_eligible_scheduled"
+    }
+  },
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2026-01-05T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Exported last month's ledger CSV. Categories look messy."
+        },
+        {
+          "role": "assistant",
+          "content": "Small tidy passes help."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2026-01-07T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Money mode felt very 'Jonas Richter persona anchor' today — skipped a tip thread, no drama."
+        },
+        {
+          "role": "assistant",
+          "content": "Optional money FOMO can wait."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2026-01-09T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Paid a utility bill early. Boring and fine."
+        },
+        {
+          "role": "assistant",
+          "content": "Boring payments count."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2026-01-11T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A revolving store card is still open at roughly twenty-four percent — minimum payments keep the balance sticky for months."
+        },
+        {
+          "role": "assistant",
+          "content": "Has that pattern repeated?"
+        },
+        {
+          "role": "user",
+          "content": "Yes. Twice this year; paying more than the minimum is what actually shrinks it."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2026-01-13T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Muted a tip-thread for an afternoon. Quiet helped."
+        },
+        {
+          "role": "assistant",
+          "content": "Attention has a ledger."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2026-01-15T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Lease security deposit is due next month — already marked as a hard cash outflow on the calendar."
+        },
+        {
+          "role": "assistant",
+          "content": "Is that timing firm?"
+        },
+        {
+          "role": "user",
+          "content": "Yes. It is already booked."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2026-01-17T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Chat is hyping a speculative tip pool signup this month — everyone saying it is amazing."
+        },
+        {
+          "role": "assistant",
+          "content": "Signup FOMO around spare cash is loud."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2026-01-19T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Someone asked whether parking spare cash in that tip pool is worth it for upside."
+        },
+        {
+          "role": "assistant",
+          "content": "Upside talk and cash obligations are different questions."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2026-01-21T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Printed March money calendar. Deposit week is marked."
+        },
+        {
+          "role": "assistant",
+          "content": "Paper copies help on busy weeks."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2026-01-23T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Archived old brokerage statements. Less inbox clutter."
+        },
+        {
+          "role": "assistant",
+          "content": "Digital tidy helps."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2026-01-25T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "On sharp red days I have panic-sold broad holdings and then regretted it within a week. Holding through ordinary dips has been fine."
+        },
+        {
+          "role": "assistant",
+          "content": "Has the panic-sell pattern repeated?"
+        },
+        {
+          "role": "user",
+          "content": "Yes. Three red-day sells did it; staying on the plan did not."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2026-01-27T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Short walk after lunch. Cleared the afternoon fog."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth repeating."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2026-01-29T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Paycheck auto-transfers into a broad index fund on payday are the only investing habit that has stuck for me."
+        },
+        {
+          "role": "assistant",
+          "content": "Is that habit firm?"
+        },
+        {
+          "role": "user",
+          "content": "Yes. It is already automated."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2026-01-31T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Someone hyped a one-week day-trading bootcamp. Different beast from a quiet payday plan."
+        },
+        {
+          "role": "assistant",
+          "content": "Signup FOMO comes in many shapes."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2026-02-02T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Trading-group chat is loud. I muted notifications overnight."
+        },
+        {
+          "role": "assistant",
+          "content": "Mute buttons save attention."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2026-02-04T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Printed the payday transfer reminder. Auto-plan is marked in red."
+        },
+        {
+          "role": "assistant",
+          "content": "Paper copies help on busy weeks."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2026-02-06T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Declined a last-minute yield-chase invite. Buffer felt thin."
+        },
+        {
+          "role": "assistant",
+          "content": "Boundaries are data."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2026-02-08T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "My liquid reserve is under one month of expenses — a surprise bill would force a card swipe."
+        },
+        {
+          "role": "assistant",
+          "content": "Has that thin-reserve pattern repeated?"
+        },
+        {
+          "role": "user",
+          "content": "Yes. Twice after surprise bills; a fuller reserve did not."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2026-02-10T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Wrote a short note about skipping a tip pitch. No reply needed."
+        },
+        {
+          "role": "assistant",
+          "content": "Low-pressure contact counts."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2026-02-12T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A dental procedure with a deductible reset is already on the books — I need money set aside before the appointment."
+        },
+        {
+          "role": "assistant",
+          "content": "Is that timing firm?"
+        },
+        {
+          "role": "user",
+          "content": "Yes. It is already booked."
+        }
+      ]
+    },
+    {
+      "session_id": 21,
+      "timestamp": "2026-02-14T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Forum crowd insists parking idle cash for extra return is normal. I disagree."
+        },
+        {
+          "role": "assistant",
+          "content": "Online norms are not cash facts."
+        }
+      ]
+    },
+    {
+      "session_id": 22,
+      "timestamp": "2026-02-16T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Someone forwarded hype about parking idle cash for extra return. Not my plan."
+        },
+        {
+          "role": "assistant",
+          "content": "Social pressure is not a schedule."
+        }
+      ]
+    },
+    {
+      "session_id": 23,
+      "timestamp": "2026-02-18T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Restocked basic pantry staples. Cash stayed local."
+        },
+        {
+          "role": "assistant",
+          "content": "Small local spends are fine."
+        }
+      ]
+    },
+    {
+      "session_id": 24,
+      "timestamp": "2026-02-20T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Printed the procedure-week checklist. Reserved cash is marked."
+        },
+        {
+          "role": "assistant",
+          "content": "Paper copies help on busy weeks."
+        }
+      ]
+    },
+    {
+      "session_id": 25,
+      "timestamp": "2026-02-22T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Roth contribution room for 2026 is already used — no leftover annual space left to fill."
+        },
+        {
+          "role": "assistant",
+          "content": "Has that room been checked?"
+        },
+        {
+          "role": "user",
+          "content": "Yes. The annual limit is already hit."
+        }
+      ]
+    },
+    {
+      "session_id": 26,
+      "timestamp": "2026-02-24T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Filed a short tax folder note. Boring and done."
+        },
+        {
+          "role": "assistant",
+          "content": "Admin tidying counts."
+        }
+      ]
+    },
+    {
+      "session_id": 27,
+      "timestamp": "2026-02-26T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A prior December dual-wrapper paperwork sprint left clutter and no useful new contribution room — I blanked on why I opened it."
+        },
+        {
+          "role": "assistant",
+          "content": "Was that a one-off?"
+        },
+        {
+          "role": "user",
+          "content": "No. December dual-wrapper sprints have been a weak spot for me."
+        }
+      ]
+    },
+    {
+      "session_id": 28,
+      "timestamp": "2026-02-28T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Desk chat is hyping another December dual-wrapper paperwork sprint. I filed it without replying."
+        },
+        {
+          "role": "assistant",
+          "content": "Invites can wait for a room check."
+        }
+      ]
+    },
+    {
+      "session_id": 29,
+      "timestamp": "2026-03-02T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Odd months with thinner freelance invoices leave cash gaps — fixed outflows still hit on time."
+        },
+        {
+          "role": "assistant",
+          "content": "Has that gap pattern repeated?"
+        },
+        {
+          "role": "user",
+          "content": "Yes. Two thin invoice months did it; steadier months did not."
+        }
+      ]
+    },
+    {
+      "session_id": 30,
+      "timestamp": "2026-03-04T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Canceled one unused trial. Felt like oxygen."
+        },
+        {
+          "role": "assistant",
+          "content": "Small cuts help."
+        }
+      ]
+    },
+    {
+      "session_id": 31,
+      "timestamp": "2026-03-06T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Stacked auto-renew memberships are already hard to unwind mid-cycle — mid-cycle cancels rarely stick for me."
+        },
+        {
+          "role": "assistant",
+          "content": "Is that stack still active?"
+        },
+        {
+          "role": "user",
+          "content": "Yes. It is already on the calendar of renewals."
+        }
+      ]
+    },
+    {
+      "session_id": 32,
+      "timestamp": "2026-03-08T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Someone hyped a bundled lifestyle membership. Different beast from trimming renewals."
+        },
+        {
+          "role": "assistant",
+          "content": "Signup FOMO comes in many shapes."
+        }
+      ]
+    },
+    {
+      "session_id": 33,
+      "timestamp": "2026-03-10T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Printed the autumn money calendar. Match deadlines are marked."
+        },
+        {
+          "role": "assistant",
+          "content": "Paper copies help on busy weeks."
+        }
+      ]
+    },
+    {
+      "session_id": 34,
+      "timestamp": "2026-03-12T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Employer match on retirement contributions is still unused this pay cycle — only the paycheck remainder counts toward it."
+        },
+        {
+          "role": "assistant",
+          "content": "Has that unused-match pattern repeated?"
+        },
+        {
+          "role": "user",
+          "content": "Yes. Twice this quarter; general savings do not earn the match."
+        }
+      ]
+    },
+    {
+      "session_id": 35,
+      "timestamp": "2026-03-14T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Short walk between errands. Nice reset."
+        },
+        {
+          "role": "assistant",
+          "content": "Small movement breaks add up."
+        }
+      ]
+    },
+    {
+      "session_id": 36,
+      "timestamp": "2026-03-16T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The paycheck remainder is already marked for the match window closing this Friday — it is not free discretionary money."
+        },
+        {
+          "role": "assistant",
+          "content": "Is that earmark firm?"
+        },
+        {
+          "role": "user",
+          "content": "Yes. It is already on the calendar."
+        }
+      ]
+    },
+    {
+      "session_id": 37,
+      "timestamp": "2026-03-18T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Chat posted another speculative hallway invite. I filed it without replying."
+        },
+        {
+          "role": "assistant",
+          "content": "Invites can wait for a match plan."
+        }
+      ]
+    },
+    {
+      "session_id": 38,
+      "timestamp": "2026-03-20T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Restocked envelopes for bill sorting. Solo evenings still matter."
+        },
+        {
+          "role": "assistant",
+          "content": "Focus routines are not one-size."
+        }
+      ]
+    },
+    {
+      "session_id": 39,
+      "timestamp": "2026-03-22T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Saturday and Sunday person-to-person remittances in foreign currency add steep FX fees for me — weekday bank wires have been cheaper."
+        },
+        {
+          "role": "assistant",
+          "content": "Has the weekend FX-fee pattern repeated?"
+        },
+        {
+          "role": "user",
+          "content": "Yes. Three weekend P2P sends did it; weekday wires did not."
+        }
+      ]
+    },
+    {
+      "session_id": 40,
+      "timestamp": "2026-03-24T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Short lunch away from the phone. Helped the afternoon block."
+        },
+        {
+          "role": "assistant",
+          "content": "Breaks protect afternoon quality."
+        }
+      ]
+    },
+    {
+      "session_id": 41,
+      "timestamp": "2026-03-26T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The first-workday rent draft in euros is already locked — I need the weekday wire path, not a weekend remittance detour."
+        },
+        {
+          "role": "assistant",
+          "content": "Is that draft firm?"
+        },
+        {
+          "role": "user",
+          "content": "Yes. It is already scheduled."
+        }
+      ]
+    },
+    {
+      "session_id": 42,
+      "timestamp": "2026-03-28T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Group chat is noisy about weekend investment-club transfers. I muted the thread."
+        },
+        {
+          "role": "assistant",
+          "content": "Mute buttons save attention."
+        }
+      ]
+    },
+    {
+      "session_id": 43,
+      "timestamp": "2026-03-30T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Printed the estimated-tax checklist. Reserved cash is marked."
+        },
+        {
+          "role": "assistant",
+          "content": "Prep weeks need a clean routine."
+        }
+      ]
+    },
+    {
+      "session_id": 44,
+      "timestamp": "2026-04-01T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A prior buy-now-pay-later stack pushed me into overdraft — small card purchases have been fine."
+        },
+        {
+          "role": "assistant",
+          "content": "Has the BNPL overdraft pattern repeated?"
+        },
+        {
+          "role": "user",
+          "content": "Yes. Two BNPL stacks did it; ordinary card purchases did not."
+        }
+      ]
+    },
+    {
+      "session_id": 45,
+      "timestamp": "2026-04-03T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Mailer landed. I filed it without replying."
+        },
+        {
+          "role": "assistant",
+          "content": "Invites can wait for a tax plan."
+        }
+      ]
+    },
+    {
+      "session_id": 46,
+      "timestamp": "2026-04-05T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Quarterly estimated tax reserve is already earmarked and due before month-end — not available for split payments."
+        },
+        {
+          "role": "assistant",
+          "content": "Is that reserve firm?"
+        },
+        {
+          "role": "user",
+          "content": "Yes. The tax calendar is already booked."
+        }
+      ]
+    },
+    {
+      "session_id": 47,
+      "timestamp": "2026-04-07T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Packed notes for the tax filing week. Timing still feels tight."
+        },
+        {
+          "role": "assistant",
+          "content": "Lock timing matters on deadline weeks."
+        }
+      ]
+    },
+    {
+      "session_id": 48,
+      "timestamp": "2026-04-09T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "HSA balance note is packed. Contribution room is on the calendar."
+        },
+        {
+          "role": "assistant",
+          "content": "Account weeks need protected checks."
+        }
+      ]
+    },
+    {
+      "session_id": 49,
+      "timestamp": "2026-04-11T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "HSA contribution room for this year is still open — payroll deferrals into it have been the cleanest tax-advantaged use of leftover wages."
+        },
+        {
+          "role": "assistant",
+          "content": "Has that HSA-room pattern been checked?"
+        },
+        {
+          "role": "user",
+          "content": "Yes. Room remains and payroll deferral works."
+        }
+      ]
+    },
+    {
+      "session_id": 50,
+      "timestamp": "2026-04-13T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Forum is loud about idle-cash tip channels. I am not adopting forum defaults."
+        },
+        {
+          "role": "assistant",
+          "content": "Forum norms are not tax facts."
+        }
+      ]
+    },
+    {
+      "session_id": 51,
+      "timestamp": "2026-04-15T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Elective dental work is already scheduled after deductible is met and counts as HSA-eligible care."
+        },
+        {
+          "role": "assistant",
+          "content": "Is that appointment firm?"
+        },
+        {
+          "role": "user",
+          "content": "Yes. It is already booked."
+        }
+      ]
+    },
+    {
+      "session_id": 52,
+      "timestamp": "2026-04-17T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Printed the HSA and appointment calendar. Solo admin blocks are locked."
+        },
+        {
+          "role": "assistant",
+          "content": "Paper copies help on busy weeks."
+        }
+      ]
+    },
+    {
+      "session_id": 53,
+      "timestamp": "2026-09-11T16:30:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Colleague floated an after-tax tip-channel signup this cycle — fit for me?"
+        }
+      ]
+    }
+  ],
+  "query": "Colleague floated an after-tax tip-channel signup this cycle — fit for me?",
+  "query_source": "final_turn",
+  "gold_answer": "Decline the after-tax tip-channel signup this cycle. HSA contribution room is still open and payroll deferral is your cleanest tax-advantaged use of leftover pay, and elective dental work already scheduled after deductible is HSA-eligible. Prefer HSA deferral over an after-tax tip-channel signup.",
+  "required_elements": [
+    "uses open HSA contribution room and payroll deferral preference",
+    "uses scheduled HSA-eligible dental after deductible",
+    "recommends declining after-tax tip-channel signup this cycle"
+  ],
+  "target_evidence_ids": [
+    "ev_A",
+    "ev_B"
+  ],
+  "associative_cue_id": "cue_1",
+  "distractor_ids": [],
+  "associative_links": [
+    {
+      "source": "ev_A",
+      "relation": "indicates",
+      "target": "open_hsa_room",
+      "hop": 1
+    },
+    {
+      "source": "ev_B",
+      "relation": "constrains",
+      "target": "hsa_eligible_dental",
+      "hop": 1
+    },
+    {
+      "source": [
+        "ev_A",
+        "ev_B"
+      ],
+      "relation": "co_activate_to",
+      "target": "taxable_tip_pool_poor_fit",
+      "hop": 2
+    }
+  ],
+  "annotation": {
+    "1": {
+      "role_setup": "background_memory"
+    },
+    "2": {
+      "role_setup": "background_memory"
+    },
+    "3": {
+      "role_setup": "background_memory"
+    },
+    "4": {
+      "role_setup": "background_memory"
+    },
+    "5": {
+      "role_setup": "background_memory"
+    },
+    "6": {
+      "role_setup": "background_memory"
+    },
+    "7": {
+      "role_setup": "background_memory"
+    },
+    "8": {
+      "role_setup": "background_memory"
+    },
+    "9": {
+      "role_setup": "background_memory"
+    },
+    "10": {
+      "role_setup": "background_memory"
+    },
+    "11": {
+      "role_setup": "background_memory"
+    },
+    "12": {
+      "role_setup": "background_memory"
+    },
+    "13": {
+      "role_setup": "background_memory"
+    },
+    "14": {
+      "role_setup": "background_memory"
+    },
+    "15": {
+      "role_setup": "background_memory"
+    },
+    "16": {
+      "role_setup": "background_memory"
+    },
+    "17": {
+      "role_setup": "background_memory"
+    },
+    "18": {
+      "role_setup": "background_memory"
+    },
+    "19": {
+      "role_setup": "background_memory"
+    },
+    "20": {
+      "role_setup": "background_memory"
+    },
+    "21": {
+      "role_setup": "background_memory"
+    },
+    "22": {
+      "role_setup": "background_memory"
+    },
+    "23": {
+      "role_setup": "background_memory"
+    },
+    "24": {
+      "role_setup": "background_memory"
+    },
+    "25": {
+      "role_setup": "background_memory"
+    },
+    "26": {
+      "role_setup": "background_memory"
+    },
+    "27": {
+      "role_setup": "background_memory"
+    },
+    "28": {
+      "role_setup": "background_memory"
+    },
+    "29": {
+      "role_setup": "background_memory"
+    },
+    "30": {
+      "role_setup": "background_memory"
+    },
+    "31": {
+      "role_setup": "background_memory"
+    },
+    "32": {
+      "role_setup": "background_memory"
+    },
+    "33": {
+      "role_setup": "background_memory"
+    },
+    "34": {
+      "role_setup": "background_memory"
+    },
+    "35": {
+      "role_setup": "background_memory"
+    },
+    "36": {
+      "role_setup": "background_memory"
+    },
+    "37": {
+      "role_setup": "background_memory"
+    },
+    "38": {
+      "role_setup": "background_memory"
+    },
+    "39": {
+      "role_setup": "background_memory"
+    },
+    "40": {
+      "role_setup": "background_memory"
+    },
+    "41": {
+      "role_setup": "background_memory"
+    },
+    "42": {
+      "role_setup": "background_memory"
+    },
+    "43": {
+      "role_setup": "background_memory"
+    },
+    "44": {
+      "role_setup": "background_memory"
+    },
+    "45": {
+      "role_setup": "background_memory"
+    },
+    "46": {
+      "role_setup": "background_memory"
+    },
+    "47": {
+      "role_setup": "background_memory"
+    },
+    "48": {
+      "role_setup": "background_memory"
+    },
+    "49": {
+      "role_setup": "target_evidence",
+      "evidence_id": "ev_A",
+      "atomic_fact": "HSA contribution room for this year is still open; payroll deferrals into it are the cleanest tax-advantaged use of leftover wages."
+    },
+    "50": {
+      "role_setup": "background_memory"
+    },
+    "51": {
+      "role_setup": "target_evidence",
+      "evidence_id": "ev_B",
+      "atomic_fact": "Elective dental work is already scheduled after deductible is met and counts as HSA-eligible care."
+    },
+    "52": {
+      "role_setup": "background_memory"
+    },
+    "53": {
+      "role_setup": "associative_cue",
+      "cue_id": "cue_1"
+    }
+  },
+  "latent_forbidden_phrases": [
+    "medical advice",
+    "tax fraud advice",
+    "guaranteed HSA outcomes"
+  ],
+  "counterfactual_variants": [
+    {
+      "variant_id": "AMB_FN_u06_associative_S9_cf_remove_ev_A",
+      "type": "evidence_removed",
+      "removed_session_ids": [
+        49
+      ],
+      "result_arm": "absence",
+      "result_association_type": "A5_hard_absence_control",
+      "result_gold_answer": "There is insufficient evidence for a personalized recommendation. I know elective dental work is scheduled and HSA-eligible, but the available memory does not establish that HSA contribution room remains. I cannot reject the tip-channel signup from the appointment alone.",
+      "result_required_elements": [
+        "states that the HSA-room evidence is missing",
+        "does not infer tax harm from the tip pool alone",
+        "explicitly abstains from rejecting the tip pool"
+      ],
+      "result_target_evidence_ids": [],
+      "result_associative_links": [],
+      "expected_gold": "insufficient evidence / abstain"
+    },
+    {
+      "variant_id": "AMB_FN_u06_associative_S9_cf_remove_ev_B",
+      "type": "evidence_removed",
+      "removed_session_ids": [
+        51
+      ],
+      "result_arm": "absence",
+      "result_association_type": "A5_hard_absence_control",
+      "result_gold_answer": "There is insufficient evidence to decide whether a taxable tip pool fits. HSA room is still open, but I cannot tell from the available memory whether HSA-eligible dental work is already scheduled. Confirm that appointment before parking spare cash in a taxable tip pool.",
+      "result_required_elements": [
+        "states that the dental/HSA-eligible evidence is missing",
+        "does not infer harm from the tip-pool invite alone",
+        "asks about dental timing or explicitly abstains"
+      ],
+      "result_target_evidence_ids": [],
+      "result_associative_links": [],
+      "expected_gold": "insufficient evidence / abstain"
+    }
+  ],
+  "validity_metrics": {
+    "lexical_jaccard_query_evidence": 0.0488,
+    "embed_cosine_query_evidence": 0.0633,
+    "flat_rag_hit_top3": false,
+    "distractor_cosine_query": 0.0,
+    "evidence_cosine_query": 0.0633,
+    "partial_evidence_cosine_query": 0.0,
+    "validity_method": {
+      "embedder": "tfidf-local-proxy",
+      "lexical": "jaccard-stopword-filtered",
+      "computed_by": "tools/finance/bin/generate_finance_gold_batch.py",
+      "computed_at": "2026-07-15",
+      "limitation": "Lexical proxy only; dense semantic validation and human IAA remain required."
+    }
+  },
+  "provenance": {
+    "generator": "finance_gold_s6_s15_v3ultra",
+    "generated_by": "autoresearch_pilot",
+    "persona_corpus": "RHELM",
+    "persona_ref": "microsoft/RHELM:conversations/Jonas_Richter",
+    "scenario_id": "S9",
+    "scenario_name": "hsa_room_x_elective_dental",
+    "batch_id": "FN_GOLD_S6_S15_2026-07-18_v3ultra",
+    "standard": "DATA_STANDARD_v1",
+    "timeline_id": "FN_u06_shared_timeline_v2",
+    "timeline_prefix_end": 52,
+    "gold_tier": "v3_ultra"
+  },
+  "dataset_meta": {
+    "golden_candidate": true,
+    "human_verified_by": [],
+    "iaa_cohort_kappa": null,
+    "iaa_n_overlap": null,
+    "known_validation_gaps": [
+      "dense semantic discriminant gate not yet run",
+      "two-person blind human necessity review not yet run",
+      "real-model full/no-assoc/no-distractor evaluation not yet run"
+    ],
+    "reproduce": {
+      "loader_rule": "serialize context dialogue role+content only; strip annotation/evolving_state",
+      "generator": "python3 tools/finance/bin/generate_finance_gold_batch.py",
+      "metrics": [
+        "answer_vs_gold+required_elements",
+        "joint_evidence_recall",
+        "single_evidence_counterfactual_abstention",
+        "distractor_removal_invariance"
+      ]
+    }
+  }
+}

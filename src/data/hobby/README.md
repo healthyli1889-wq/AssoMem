@@ -7,15 +7,14 @@
 ## Folder map
 
 ```
-assomem_pilot/src/data/hobby/           # DATA — items only
-  hobby_associative_user{1..10}/
-  hobby_distractor_user{1..10}/
-  hobby_absence_user{1..10}/
-
-assomem_pilot/tools/hobby/              # GENERATOR (reports → manifests/hobby/)
-  personas/personas_hobby_habit.json
-  bin/generate_hobby_habit_gold_batch.py
+src/data/hobby/
+  associative/     # all users
+  distractor/
+  absence/
 ```
+
+Filenames: `AMB_{XX}_u{{NN}}_{{arm}}_S{{N}}.json` (user id in name, not folder).
+
 
 IDs: `AMB_HH_uXX_{arm}_S{1..5}.json`.
 

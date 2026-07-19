@@ -1,47 +1,53 @@
-# AssoMemBench Pilot — Directory Layout
+# AssoMemBench — Directory Layout
 
 ## Top level
 
 ```
-assomem_pilot/
+.
 ├── src/
-│   └── data/           # DATA — rendered JSON samples
-│       ├── hobby/      # 600 items
-│       ├── health/     # 600 items
-│       └── work/       # 600 items
-├── tools/              # GENERATORS — personas + batch scripts
-├── manifests/          # REPORTS — gate summaries, model_inputs jsonl
-├── logs/               # RUN LOGS per domain
-├── docs/               # DOCS — standards, program notes
-├── gates/              # Global gate snapshot (legacy v1)
-├── external/           # External reference (not pilot data)
-└── rubbish/            # Local archive only (not pushed to GitHub)
+│   └── data/                 # gold JSON (arm-first)
+│       ├── work/
+│       ├── hobby/
+│       ├── health/
+│       ├── social/
+│       └── finance/
+├── tools/                    # generators (personas + batch scripts)
+├── manifests/                # gate / release reports
+├── logs/                     # run logs per domain
+├── docs/                     # standards, program notes (related docs go here)
+├── judge/
+│   └── LLM judge/
+│       └── LLM judge prompts/   # drop judge prompts here
+├── gates/                    # global gate snapshot (legacy)
+└── rubbish/                  # local archive only (not for release)
 ```
 
 ## Data (`src/data/`)
 
+Arm-first: all users for one arm share one folder. User identity stays in the filename.
+
 ```
-src/data/hobby/hobby_associative_user{1..10}/AMB_HH_u{NN}_associative_S{N}.json
-src/data/health/diet_associative_user{1..10}/...
-src/data/work/work_associative_user{1..10}/...
+src/data/{work,hobby,health,social,finance}/
+  associative/AMB_*_u{NN}_associative_S{N}.json
+  distractor/AMB_*_u{NN}_distractor_S{N}.json
+  absence/AMB_*_u{NN}_absence_S{N}.json
 ```
+
+Each domain: 10 users × 20 scenarios × 3 arms = **600** items.
 
 ## Tools (`tools/`)
 
 | Path | Role |
 |------|------|
-| `tools/shared/gold_lib.py` | Shared v2 builder, gates, scoring |
-| `tools/hobby/bin/generate_hobby_habit_gold_batch.py` | Hobby S1–S20 |
-| `tools/health/bin/generate_health_diet_gold_batch.py` | Health S1–S20 |
-| `tools/work/bin/generate_work_learn_gold_batch.py` | Work S1–S20 |
+| `tools/shared/gold_lib.py` | Shared builder, gates, scoring, `output_path` |
+| `tools/{domain}/bin/generate_*_gold_batch.py` | Domain generators |
 
 ```bash
-python3 tools/hobby/bin/generate_hobby_habit_gold_batch.py --scenarios S1-S20
+python3 tools/finance/bin/generate_finance_gold_batch.py --scenarios S16-S20
 ```
 
-Writes JSON → `src/data/{domain}/`. Reports → `manifests/{domain}/`.
+Writes JSON → `src/data/{domain}/{arm}/`. Reports → `manifests/{domain}/`.
 
-## Manifests & logs
+## Judge (`judge/`)
 
-- `manifests/` — `*_gold_*_report.json`, `*_model_inputs.jsonl`
-- `logs/` — `generate_log.txt`, `results.tsv` per domain
+LLM-as-judge assets. Prompts go under `judge/LLM judge/LLM judge prompts/`.

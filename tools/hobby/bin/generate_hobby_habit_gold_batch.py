@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Generate hobby/habit gold batches (S1–S20).
 
-Writes to assomem_pilot/hobby/hobby_{arm}_user{N}/AMB_HH_u{NN}_{arm}_S{N}.json
+Writes to src/data/{domain}/{arm}/AMB_*_u{NN}_{arm}_S{N}.json
 Scenario batches are generated separately; neither overwrites the other by default.
 """
 

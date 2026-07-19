@@ -1,13 +1,15 @@
 # Pilot data
 
-Rendered AssoMemBench v2 gold JSON samples.
+Rendered AssoMemBench gold JSON samples (arm-first layout).
 
-| Folder | Items | ID pattern |
-|--------|------:|------------|
-| `hobby/` | 600 | `AMB_HH_u{NN}_{arm}_S{N}.json` |
-| `health/` | 600 | `AMB_HD_u{NN}_{arm}_S{N}.json` |
-| `work/` | 600 | `AMB_WL_u{NN}_{arm}_S{N}.json` |
+| Folder | Items | Layout |
+|--------|------:|--------|
+| `work/` | 600 | `{associative,distractor,absence}/AMB_WL_…` |
+| `hobby/` | 600 | `{associative,distractor,absence}/AMB_HH_…` |
+| `health/` | 600 | `{associative,distractor,absence}/AMB_HD_…` |
+| `social/` | 600 | `{associative,distractor,absence}/AMB_SC_…` |
+| `finance/` | 600 | `{associative,distractor,absence}/AMB_FN_…` |
 
-Each domain: 10 users × 20 scenarios × 3 arms (associative / distractor / absence).
+Each domain: 10 users × 20 scenarios × 3 arms. User id is in the filename (`u{NN}`), not the folder.
 
-Generators live in [`../../tools/`](../../tools/). Reports in [`../../manifests/`](../../manifests/).
+Generators: [`../../tools/`](../../tools/). Reports: [`../../manifests/`](../../manifests/).

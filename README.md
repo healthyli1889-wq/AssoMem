@@ -1,11 +1,13 @@
-# AssoMem — Associative Memory Benchmark Pilot
+# AssoMem — Associative Memory Benchmark
 
-v2 gold pilot data (hobby / health / work), 600 items per domain.
+Gold data across five everyday domains (600 items each): work, hobby, health, social, finance.
 
 ```
-src/data/hobby|health|work/   # JSON samples
+src/data/{domain}/{associative|distractor|absence}/
 tools/                        # generators
-manifests/                    # gate reports
+manifests/                    # gate / release reports
+judge/LLM judge/…             # LLM-as-judge prompts (to be added)
+docs/                         # related documentation
 ```
 
 See [STRUCTURE.md](STRUCTURE.md).

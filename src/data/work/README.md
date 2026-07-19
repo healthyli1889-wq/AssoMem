@@ -7,15 +7,14 @@ Sibling to [`../health/`](../health/) and [`../hobby/`](../hobby/). Gold standar
 ## Folder map
 
 ```
-assomem_pilot/src/data/work/           # DATA — items only
-  work_associative_user{1..10}/
-  work_distractor_user{1..10}/
-  work_absence_user{1..10}/
-
-assomem_pilot/tools/work/                # GENERATOR (reports → manifests/work/)
-  personas/personas_work_learn.json
-  bin/generate_work_learn_gold_batch.py
+src/data/work/
+  associative/     # all users
+  distractor/
+  absence/
 ```
+
+Filenames: `AMB_{XX}_u{{NN}}_{{arm}}_S{{N}}.json` (user id in name, not folder).
+
 
 IDs: `AMB_WL_uXX_{arm}_S{1..5}.json`.
 

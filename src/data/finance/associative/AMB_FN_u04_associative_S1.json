@@ -1,0 +1,344 @@
+{
+  "sample_id": "AMB_FN_u04_associative_S1",
+  "source": "partner_generated",
+  "status": "rendered",
+  "association_type": "A3_cross_domain",
+  "domain_tags": [
+    "finance/personal",
+    "everyday_money"
+  ],
+  "pilot_arm": "associative",
+  "pilot_domain": "finance_personal",
+  "persona_source": {
+    "corpus": "DynamicMem",
+    "ref": "xiewenya/dynamicmem:004_user_004",
+    "display_name": "DM-user_004"
+  },
+  "context_length_tokens": 647,
+  "persona": {
+    "user_id": "fn_u04",
+    "stable_traits": [
+      "family-oriented professional",
+      "balances career growth with home logistics",
+      "tracks cashflow before speculative bets",
+      "prioritizes high-interest debt clearance",
+      "keeps a thin but intentional buffer"
+    ],
+    "evolving_state": {
+      "revolving_card": "high_apr_sticky",
+      "lease_deposit": "next_month_hard_outflow"
+    }
+  },
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2026-01-05T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Exported last month's ledger CSV. Categories look messy."
+        },
+        {
+          "role": "assistant",
+          "content": "Small tidy passes help."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2026-01-07T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Money mode felt very 'family-oriented professional' today — skipped a tip thread, no drama."
+        },
+        {
+          "role": "assistant",
+          "content": "Optional money FOMO can wait."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2026-01-09T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Paid a utility bill early. Boring and fine."
+        },
+        {
+          "role": "assistant",
+          "content": "Boring payments count."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2026-01-11T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A revolving store card is still open at roughly twenty-four percent — minimum payments keep the balance sticky for months."
+        },
+        {
+          "role": "assistant",
+          "content": "Has that pattern repeated?"
+        },
+        {
+          "role": "user",
+          "content": "Yes. Twice this year; paying more than the minimum is what actually shrinks it."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2026-01-13T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Muted a tip-thread for an afternoon. Quiet helped."
+        },
+        {
+          "role": "assistant",
+          "content": "Attention has a ledger."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2026-01-15T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Lease security deposit is due next month — already marked as a hard cash outflow on the calendar."
+        },
+        {
+          "role": "assistant",
+          "content": "Is that timing firm?"
+        },
+        {
+          "role": "user",
+          "content": "Yes. It is already booked."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2026-01-17T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Chat is hyping a speculative tip pool signup this month — everyone saying it is amazing."
+        },
+        {
+          "role": "assistant",
+          "content": "Signup FOMO around spare cash is loud."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2026-01-19T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Someone asked whether parking spare cash in that tip pool is worth it for upside."
+        },
+        {
+          "role": "assistant",
+          "content": "Upside talk and cash obligations are different questions."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2026-01-21T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Printed March money calendar. Deposit week is marked."
+        },
+        {
+          "role": "assistant",
+          "content": "Paper copies help on busy weeks."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2026-03-09T17:30:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Worth parking spare cash in a speculative tip pool this month — based on what you know about me?"
+        }
+      ]
+    }
+  ],
+  "query": "Worth parking spare cash in a speculative tip pool this month — based on what you know about me?",
+  "query_source": "final_turn",
+  "gold_answer": "Decline the speculative tip pool this month. A revolving store card near twenty-four percent is still sticky on minimum payments, and a lease security deposit is already due next month as a hard cash outflow. Spare cash should clear costly balance or fund the deposit — not a tip pool. The signup chatter is unrelated FOMO.",
+  "required_elements": [
+    "uses high-rate revolving balance still sticky on minimums",
+    "uses lease security deposit due next month",
+    "recommends declining speculative tip pool this month"
+  ],
+  "target_evidence_ids": [
+    "ev_A",
+    "ev_B"
+  ],
+  "associative_cue_id": "cue_1",
+  "distractor_ids": [],
+  "associative_links": [
+    {
+      "source": "ev_A",
+      "relation": "constrains",
+      "target": "high_apr_cash_priority",
+      "hop": 1
+    },
+    {
+      "source": "ev_B",
+      "relation": "constrains",
+      "target": "near_term_deposit_outflow",
+      "hop": 1
+    },
+    {
+      "source": [
+        "ev_A",
+        "ev_B"
+      ],
+      "relation": "co_activate_to",
+      "target": "tip_pool_poor_fit",
+      "hop": 2
+    }
+  ],
+  "annotation": {
+    "1": {
+      "role_setup": "background_memory"
+    },
+    "2": {
+      "role_setup": "background_memory"
+    },
+    "3": {
+      "role_setup": "background_memory"
+    },
+    "4": {
+      "role_setup": "target_evidence",
+      "evidence_id": "ev_A",
+      "atomic_fact": "A revolving store card remains open near twenty-four percent; minimum payments keep the balance sticky."
+    },
+    "5": {
+      "role_setup": "background_memory"
+    },
+    "6": {
+      "role_setup": "target_evidence",
+      "evidence_id": "ev_B",
+      "atomic_fact": "Lease security deposit is due next month as a hard cash outflow."
+    },
+    "7": {
+      "role_setup": "background_memory"
+    },
+    "8": {
+      "role_setup": "background_memory"
+    },
+    "9": {
+      "role_setup": "background_memory"
+    },
+    "10": {
+      "role_setup": "associative_cue",
+      "cue_id": "cue_1"
+    }
+  },
+  "latent_forbidden_phrases": [
+    "never invest",
+    "bankruptcy advice",
+    "guaranteed returns"
+  ],
+  "counterfactual_variants": [
+    {
+      "variant_id": "AMB_FN_u04_associative_S1_cf_remove_ev_A",
+      "type": "evidence_removed",
+      "removed_session_ids": [
+        4
+      ],
+      "result_arm": "absence",
+      "result_association_type": "A5_hard_absence_control",
+      "result_gold_answer": "There is insufficient evidence for a personalized recommendation. I know a lease security deposit is due next month, but the available memory does not establish that a high-rate revolving balance is still sticky. I cannot reject the tip pool from the deposit alone.",
+      "result_required_elements": [
+        "states that the revolving-balance evidence is missing",
+        "does not infer debt harm from the tip pool alone",
+        "explicitly abstains from rejecting the tip pool"
+      ],
+      "result_target_evidence_ids": [],
+      "result_associative_links": [],
+      "expected_gold": "insufficient evidence / abstain"
+    },
+    {
+      "variant_id": "AMB_FN_u04_associative_S1_cf_remove_ev_B",
+      "type": "evidence_removed",
+      "removed_session_ids": [
+        6
+      ],
+      "result_arm": "absence",
+      "result_association_type": "A5_hard_absence_control",
+      "result_gold_answer": "There is insufficient evidence for a personalized recommendation. High-rate revolving balance is still sticky, but I cannot tell from the available memory whether a lease deposit is already due next month. Confirm that outflow before parking spare cash in a tip pool.",
+      "result_required_elements": [
+        "states that the lease-deposit evidence is missing",
+        "does not infer harm from the tip-pool invite alone",
+        "asks about near-term cash outflows or explicitly abstains"
+      ],
+      "result_target_evidence_ids": [],
+      "result_associative_links": [],
+      "expected_gold": "insufficient evidence / abstain"
+    }
+  ],
+  "validity_metrics": {
+    "lexical_jaccard_query_evidence": 0.0417,
+    "embed_cosine_query_evidence": 0.0889,
+    "flat_rag_hit_top3": false,
+    "distractor_cosine_query": 0.0,
+    "evidence_cosine_query": 0.0889,
+    "partial_evidence_cosine_query": 0.0,
+    "validity_method": {
+      "embedder": "tfidf-local-proxy",
+      "lexical": "jaccard-stopword-filtered",
+      "computed_by": "tools/finance/bin/generate_finance_gold_batch.py",
+      "computed_at": "2026-07-15",
+      "limitation": "Lexical proxy only; dense semantic validation and human IAA remain required."
+    }
+  },
+  "provenance": {
+    "generator": "finance_gold_s1_s5_v2",
+    "generated_by": "autoresearch_pilot",
+    "persona_corpus": "DynamicMem",
+    "persona_ref": "xiewenya/dynamicmem:004_user_004",
+    "scenario_id": "S1",
+    "scenario_name": "high_apr_revolving_x_lease_deposit",
+    "batch_id": "FN_GOLD_S1_S5_2026-07-18_v2",
+    "standard": "DATA_STANDARD_v1",
+    "timeline_id": "FN_u04_shared_timeline_v2",
+    "timeline_prefix_end": 9,
+    "gold_tier": "v2"
+  },
+  "dataset_meta": {
+    "golden_candidate": true,
+    "human_verified_by": [],
+    "iaa_cohort_kappa": null,
+    "iaa_n_overlap": null,
+    "known_validation_gaps": [
+      "dense semantic discriminant gate not yet run",
+      "two-person blind human necessity review not yet run",
+      "real-model full/no-assoc/no-distractor evaluation not yet run"
+    ],
+    "reproduce": {
+      "loader_rule": "serialize context dialogue role+content only; strip annotation/evolving_state",
+      "generator": "python3 tools/finance/bin/generate_finance_gold_batch.py",
+      "metrics": [
+        "answer_vs_gold+required_elements",
+        "joint_evidence_recall",
+        "single_evidence_counterfactual_abstention",
+        "distractor_removal_invariance"
+      ]
+    }
+  }
+}

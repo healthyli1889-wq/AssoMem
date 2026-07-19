@@ -796,12 +796,12 @@ def output_path(
     *,
     batch_config: dict[str, Any] | None = None,
 ) -> Path:
+    """Arm-first layout: src/data/{domain}/{associative|distractor|absence}/{sample_id}.json."""
     cfg = {**HEALTH_BATCH_CONFIG, **(batch_config or {})}
-    tag = persona_record["folder_tag"]
     return (
         root
         / DATA_ROOT
         / cfg["data_subdir"]
-        / f"{cfg['folder_prefix']}_{item['pilot_arm']}_{tag}"
+        / item["pilot_arm"]
         / f"{item['sample_id']}.json"
     )

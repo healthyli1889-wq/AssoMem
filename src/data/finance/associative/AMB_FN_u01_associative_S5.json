@@ -1,0 +1,767 @@
+{
+  "sample_id": "AMB_FN_u01_associative_S5",
+  "source": "partner_generated",
+  "status": "rendered",
+  "association_type": "A3_cross_domain",
+  "domain_tags": [
+    "finance/personal",
+    "everyday_money"
+  ],
+  "pilot_arm": "associative",
+  "pilot_domain": "finance_personal",
+  "persona_source": {
+    "corpus": "DynamicMem",
+    "ref": "xiewenya/dynamicmem:001_user_001",
+    "display_name": "DM-user_001"
+  },
+  "context_length_tokens": 2236,
+  "persona": {
+    "user_id": "fn_u01",
+    "stable_traits": [
+      "coatings industry consultant",
+      "Pittsburgh suburbs",
+      "tracks cashflow before speculative bets",
+      "prioritizes high-interest debt clearance",
+      "keeps a thin but intentional buffer"
+    ],
+    "evolving_state": {
+      "freelance_months": "thin_invoice_gaps",
+      "memberships": "autorenew_stack_active"
+    }
+  },
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2026-01-05T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Exported last month's ledger CSV. Categories look messy."
+        },
+        {
+          "role": "assistant",
+          "content": "Small tidy passes help."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2026-01-07T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Skipped a flashy tip channel for now. Felt lighter."
+        },
+        {
+          "role": "assistant",
+          "content": "Optional money FOMO can wait."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2026-01-09T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Paid a utility bill early. Boring and fine."
+        },
+        {
+          "role": "assistant",
+          "content": "Boring payments count."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2026-01-11T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A revolving store card is still open at roughly twenty-four percent — minimum payments keep the balance sticky for months."
+        },
+        {
+          "role": "assistant",
+          "content": "Has that pattern repeated?"
+        },
+        {
+          "role": "user",
+          "content": "Yes. Twice this year; paying more than the minimum is what actually shrinks it."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2026-01-13T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Muted a tip-thread for an afternoon. Quiet helped."
+        },
+        {
+          "role": "assistant",
+          "content": "Attention has a ledger."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2026-01-15T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Lease security deposit is due next month — already marked as a hard cash outflow on the calendar."
+        },
+        {
+          "role": "assistant",
+          "content": "Is that timing firm?"
+        },
+        {
+          "role": "user",
+          "content": "Yes. It is already booked."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2026-01-17T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Chat is hyping a speculative tip pool signup this month — everyone saying it is amazing."
+        },
+        {
+          "role": "assistant",
+          "content": "Signup FOMO around spare cash is loud."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2026-01-19T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Someone asked whether parking spare cash in that tip pool is worth it for upside."
+        },
+        {
+          "role": "assistant",
+          "content": "Upside talk and cash obligations are different questions."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2026-01-21T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Printed March money calendar. Deposit week is marked."
+        },
+        {
+          "role": "assistant",
+          "content": "Paper copies help on busy weeks."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2026-01-23T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Archived old brokerage statements. Less inbox clutter."
+        },
+        {
+          "role": "assistant",
+          "content": "Digital tidy helps."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2026-01-25T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "On sharp red days I have panic-sold broad holdings and then regretted it within a week. Holding through ordinary dips has been fine."
+        },
+        {
+          "role": "assistant",
+          "content": "Has the panic-sell pattern repeated?"
+        },
+        {
+          "role": "user",
+          "content": "Yes. Three red-day sells did it; staying on the plan did not."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2026-01-27T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Short walk after lunch. Cleared the afternoon fog."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth repeating."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2026-01-29T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Paycheck auto-transfers into a broad index fund on payday are the only investing habit that has stuck for me."
+        },
+        {
+          "role": "assistant",
+          "content": "Is that habit firm?"
+        },
+        {
+          "role": "user",
+          "content": "Yes. It is already automated."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2026-01-31T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Someone hyped a one-week day-trading bootcamp. Different beast from a quiet payday plan."
+        },
+        {
+          "role": "assistant",
+          "content": "Signup FOMO comes in many shapes."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2026-02-02T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Trading-group chat is loud. I muted notifications overnight."
+        },
+        {
+          "role": "assistant",
+          "content": "Mute buttons save attention."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2026-02-04T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Printed the payday transfer reminder. Auto-plan is marked in red."
+        },
+        {
+          "role": "assistant",
+          "content": "Paper copies help on busy weeks."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2026-02-06T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Declined a last-minute yield-chase invite. Buffer felt thin."
+        },
+        {
+          "role": "assistant",
+          "content": "Boundaries are data."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2026-02-08T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "My liquid reserve is under one month of expenses — a surprise bill would force a card swipe."
+        },
+        {
+          "role": "assistant",
+          "content": "Has that thin-reserve pattern repeated?"
+        },
+        {
+          "role": "user",
+          "content": "Yes. Twice after surprise bills; a fuller reserve did not."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2026-02-10T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Wrote a short note about skipping a tip pitch. No reply needed."
+        },
+        {
+          "role": "assistant",
+          "content": "Low-pressure contact counts."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2026-02-12T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A dental procedure with a deductible reset is already on the books — I need money set aside before the appointment."
+        },
+        {
+          "role": "assistant",
+          "content": "Is that timing firm?"
+        },
+        {
+          "role": "user",
+          "content": "Yes. It is already booked."
+        }
+      ]
+    },
+    {
+      "session_id": 21,
+      "timestamp": "2026-02-14T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Forum crowd insists parking idle cash for extra return is normal. I disagree."
+        },
+        {
+          "role": "assistant",
+          "content": "Online norms are not cash facts."
+        }
+      ]
+    },
+    {
+      "session_id": 22,
+      "timestamp": "2026-02-16T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Someone forwarded hype about parking idle cash for extra return. Not my plan."
+        },
+        {
+          "role": "assistant",
+          "content": "Social pressure is not a schedule."
+        }
+      ]
+    },
+    {
+      "session_id": 23,
+      "timestamp": "2026-02-18T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Restocked basic pantry staples. Cash stayed local."
+        },
+        {
+          "role": "assistant",
+          "content": "Small local spends are fine."
+        }
+      ]
+    },
+    {
+      "session_id": 24,
+      "timestamp": "2026-02-20T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Printed the procedure-week checklist. Reserved cash is marked."
+        },
+        {
+          "role": "assistant",
+          "content": "Paper copies help on busy weeks."
+        }
+      ]
+    },
+    {
+      "session_id": 25,
+      "timestamp": "2026-02-22T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Roth contribution room for 2026 is already used — no leftover annual space left to fill."
+        },
+        {
+          "role": "assistant",
+          "content": "Has that room been checked?"
+        },
+        {
+          "role": "user",
+          "content": "Yes. The annual limit is already hit."
+        }
+      ]
+    },
+    {
+      "session_id": 26,
+      "timestamp": "2026-02-24T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Filed a short tax folder note. Boring and done."
+        },
+        {
+          "role": "assistant",
+          "content": "Admin tidying counts."
+        }
+      ]
+    },
+    {
+      "session_id": 27,
+      "timestamp": "2026-02-26T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A prior December dual-wrapper paperwork sprint left clutter and no useful new contribution room — I blanked on why I opened it."
+        },
+        {
+          "role": "assistant",
+          "content": "Was that a one-off?"
+        },
+        {
+          "role": "user",
+          "content": "No. December dual-wrapper sprints have been a weak spot for me."
+        }
+      ]
+    },
+    {
+      "session_id": 28,
+      "timestamp": "2026-02-28T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Desk chat is hyping another December dual-wrapper paperwork sprint. I filed it without replying."
+        },
+        {
+          "role": "assistant",
+          "content": "Invites can wait for a room check."
+        }
+      ]
+    },
+    {
+      "session_id": 29,
+      "timestamp": "2026-03-02T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Odd months with thinner freelance invoices leave cash gaps — fixed outflows still hit on time."
+        },
+        {
+          "role": "assistant",
+          "content": "Has that gap pattern repeated?"
+        },
+        {
+          "role": "user",
+          "content": "Yes. Two thin invoice months did it; steadier months did not."
+        }
+      ]
+    },
+    {
+      "session_id": 30,
+      "timestamp": "2026-03-04T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Canceled one unused trial. Felt like oxygen."
+        },
+        {
+          "role": "assistant",
+          "content": "Small cuts help."
+        }
+      ]
+    },
+    {
+      "session_id": 31,
+      "timestamp": "2026-03-06T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Stacked auto-renew memberships are already hard to unwind mid-cycle — another bundled plan would tighten odd-month gaps."
+        },
+        {
+          "role": "assistant",
+          "content": "Is that stack still active?"
+        },
+        {
+          "role": "user",
+          "content": "Yes. It is already on the calendar of renewals."
+        }
+      ]
+    },
+    {
+      "session_id": 32,
+      "timestamp": "2026-03-08T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Someone hyped a bundled lifestyle membership this week. Different beast from trimming renewals."
+        },
+        {
+          "role": "assistant",
+          "content": "Signup FOMO comes in many shapes."
+        }
+      ]
+    },
+    {
+      "session_id": 33,
+      "timestamp": "2026-08-11T17:10:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Worth adding the bundled lifestyle membership this week — based on what you know about me?"
+        }
+      ]
+    }
+  ],
+  "query": "Worth adding the bundled lifestyle membership this week — based on what you know about me?",
+  "query_source": "final_turn",
+  "gold_answer": "Decline the bundled lifestyle membership this week. Odd months with thinner freelance invoices already leave cash gaps, and stacked auto-renew memberships are already hard to unwind mid-cycle. Adding another bundled plan would tighten those gaps further.",
+  "required_elements": [
+    "uses odd-month freelance invoice cash gaps",
+    "uses stacked auto-renew memberships hard to unwind",
+    "recommends declining bundled lifestyle membership this week"
+  ],
+  "target_evidence_ids": [
+    "ev_A",
+    "ev_B"
+  ],
+  "associative_cue_id": "cue_1",
+  "distractor_ids": [],
+  "associative_links": [
+    {
+      "source": "ev_A",
+      "relation": "causes",
+      "target": "odd_month_cash_gaps",
+      "hop": 1
+    },
+    {
+      "source": "ev_B",
+      "relation": "constrains",
+      "target": "autorenew_stack_friction",
+      "hop": 1
+    },
+    {
+      "source": [
+        "ev_A",
+        "ev_B"
+      ],
+      "relation": "co_activate_to",
+      "target": "bundled_membership_poor_fit",
+      "hop": 2
+    }
+  ],
+  "annotation": {
+    "1": {
+      "role_setup": "background_memory"
+    },
+    "2": {
+      "role_setup": "background_memory"
+    },
+    "3": {
+      "role_setup": "background_memory"
+    },
+    "4": {
+      "role_setup": "background_memory"
+    },
+    "5": {
+      "role_setup": "background_memory"
+    },
+    "6": {
+      "role_setup": "background_memory"
+    },
+    "7": {
+      "role_setup": "background_memory"
+    },
+    "8": {
+      "role_setup": "background_memory"
+    },
+    "9": {
+      "role_setup": "background_memory"
+    },
+    "10": {
+      "role_setup": "background_memory"
+    },
+    "11": {
+      "role_setup": "background_memory"
+    },
+    "12": {
+      "role_setup": "background_memory"
+    },
+    "13": {
+      "role_setup": "background_memory"
+    },
+    "14": {
+      "role_setup": "background_memory"
+    },
+    "15": {
+      "role_setup": "background_memory"
+    },
+    "16": {
+      "role_setup": "background_memory"
+    },
+    "17": {
+      "role_setup": "background_memory"
+    },
+    "18": {
+      "role_setup": "background_memory"
+    },
+    "19": {
+      "role_setup": "background_memory"
+    },
+    "20": {
+      "role_setup": "background_memory"
+    },
+    "21": {
+      "role_setup": "background_memory"
+    },
+    "22": {
+      "role_setup": "background_memory"
+    },
+    "23": {
+      "role_setup": "background_memory"
+    },
+    "24": {
+      "role_setup": "background_memory"
+    },
+    "25": {
+      "role_setup": "background_memory"
+    },
+    "26": {
+      "role_setup": "background_memory"
+    },
+    "27": {
+      "role_setup": "background_memory"
+    },
+    "28": {
+      "role_setup": "background_memory"
+    },
+    "29": {
+      "role_setup": "target_evidence",
+      "evidence_id": "ev_A",
+      "atomic_fact": "Odd months with thinner freelance invoices leave cash gaps while fixed outflows still hit on time."
+    },
+    "30": {
+      "role_setup": "background_memory"
+    },
+    "31": {
+      "role_setup": "target_evidence",
+      "evidence_id": "ev_B",
+      "atomic_fact": "Stacked auto-renew memberships are already hard to unwind mid-cycle."
+    },
+    "32": {
+      "role_setup": "background_memory"
+    },
+    "33": {
+      "role_setup": "associative_cue",
+      "cue_id": "cue_1"
+    }
+  },
+  "latent_forbidden_phrases": [
+    "never subscribe",
+    "income advice license",
+    "must cancel all memberships"
+  ],
+  "counterfactual_variants": [
+    {
+      "variant_id": "AMB_FN_u01_associative_S5_cf_remove_ev_A",
+      "type": "evidence_removed",
+      "removed_session_ids": [
+        29
+      ],
+      "result_arm": "absence",
+      "result_association_type": "A5_hard_absence_control",
+      "result_gold_answer": "There is insufficient evidence for a personalized recommendation. I know stacked auto-renew memberships are hard to unwind mid-cycle, but the available memory does not establish that odd months leave cash gaps. I cannot reject the membership from the renewal stack alone.",
+      "result_required_elements": [
+        "states that the freelance-gap evidence is missing",
+        "does not infer cash harm from the membership alone",
+        "explicitly abstains from rejecting the membership"
+      ],
+      "result_target_evidence_ids": [],
+      "result_associative_links": [],
+      "expected_gold": "insufficient evidence / abstain"
+    },
+    {
+      "variant_id": "AMB_FN_u01_associative_S5_cf_remove_ev_B",
+      "type": "evidence_removed",
+      "removed_session_ids": [
+        31
+      ],
+      "result_arm": "absence",
+      "result_association_type": "A5_hard_absence_control",
+      "result_gold_answer": "There is insufficient evidence for a personalized recommendation. Thin-invoice months leave cash gaps, but I cannot tell from the available memory whether an auto-renew membership stack is already hard to unwind. Confirm that stack before adding a bundled lifestyle membership.",
+      "result_required_elements": [
+        "states that the auto-renew stack evidence is missing",
+        "does not infer harm from the membership invite alone",
+        "asks about renewal stack or explicitly abstains"
+      ],
+      "result_target_evidence_ids": [],
+      "result_associative_links": [],
+      "expected_gold": "insufficient evidence / abstain"
+    }
+  ],
+  "validity_metrics": {
+    "lexical_jaccard_query_evidence": 0.0213,
+    "embed_cosine_query_evidence": 0.0567,
+    "flat_rag_hit_top3": false,
+    "distractor_cosine_query": 0.0,
+    "evidence_cosine_query": 0.0567,
+    "partial_evidence_cosine_query": 0.0,
+    "validity_method": {
+      "embedder": "tfidf-local-proxy",
+      "lexical": "jaccard-stopword-filtered",
+      "computed_by": "tools/finance/bin/generate_finance_gold_batch.py",
+      "computed_at": "2026-07-15",
+      "limitation": "Lexical proxy only; dense semantic validation and human IAA remain required."
+    }
+  },
+  "provenance": {
+    "generator": "finance_gold_s1_s5_v2",
+    "generated_by": "autoresearch_pilot",
+    "persona_corpus": "DynamicMem",
+    "persona_ref": "xiewenya/dynamicmem:001_user_001",
+    "scenario_id": "S5",
+    "scenario_name": "freelance_gaps_x_autorenew_stack",
+    "batch_id": "FN_GOLD_S1_S5_2026-07-18_v2",
+    "standard": "DATA_STANDARD_v1",
+    "timeline_id": "FN_u01_shared_timeline_v2",
+    "timeline_prefix_end": 32,
+    "gold_tier": "v2"
+  },
+  "dataset_meta": {
+    "golden_candidate": true,
+    "human_verified_by": [],
+    "iaa_cohort_kappa": null,
+    "iaa_n_overlap": null,
+    "known_validation_gaps": [
+      "dense semantic discriminant gate not yet run",
+      "two-person blind human necessity review not yet run",
+      "real-model full/no-assoc/no-distractor evaluation not yet run"
+    ],
+    "reproduce": {
+      "loader_rule": "serialize context dialogue role+content only; strip annotation/evolving_state",
+      "generator": "python3 tools/finance/bin/generate_finance_gold_batch.py",
+      "metrics": [
+        "answer_vs_gold+required_elements",
+        "joint_evidence_recall",
+        "single_evidence_counterfactual_abstention",
+        "distractor_removal_invariance"
+      ]
+    }
+  }
+}

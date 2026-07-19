@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Generate work/learning gold batches (S1–S20).
 
-Writes to assomem_pilot/work/work_{arm}_user{N}/AMB_WL_u{NN}_{arm}_S{N}.json
+Writes to src/data/{domain}/{arm}/AMB_*_u{NN}_{arm}_S{N}.json
 Scenario batches are generated separately; neither overwrites the other by default.
 """
 

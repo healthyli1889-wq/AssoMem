@@ -7,15 +7,14 @@ Sibling of [`../work/`](../work/) (work/learning) and [`../hobby/`](../hobby/) (
 ## Folder map
 
 ```
-assomem_pilot/src/data/health/         # DATA — items only
-  diet_associative_user{1..10}/
-  diet_distractor_user{1..10}/
-  diet_absence_user{1..10}/
-
-assomem_pilot/tools/health/              # GENERATOR (reports → manifests/health/)
-  personas/personas_health_diet.json
-  bin/generate_health_diet_gold_batch.py
+src/data/health/
+  associative/     # all users
+  distractor/
+  absence/
 ```
+
+Filenames: `AMB_{XX}_u{{NN}}_{{arm}}_S{{N}}.json` (user id in name, not folder).
+
 
 Each folder has 5 JSON files: `AMB_HD_uXX_{arm}_S{1..5}.json`.
 

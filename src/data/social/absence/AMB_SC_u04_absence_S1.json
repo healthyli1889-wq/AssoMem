@@ -1,0 +1,319 @@
+{
+  "sample_id": "AMB_SC_u04_absence_S1",
+  "source": "partner_generated",
+  "status": "rendered",
+  "association_type": "A5_hard_absence_control",
+  "domain_tags": [
+    "social/relationships",
+    "everyday_social"
+  ],
+  "pilot_arm": "absence",
+  "pilot_domain": "social_relation",
+  "persona_source": {
+    "corpus": "DynamicMem",
+    "ref": "xiewenya/dynamicmem:004_user_004",
+    "display_name": "DM-user_004"
+  },
+  "context_length_tokens": 562,
+  "persona": {
+    "user_id": "sc_u04",
+    "stable_traits": [
+      "family-oriented professional",
+      "balances career growth with home logistics",
+      "protects social energy budget",
+      "prefers small-group over large-crowd formats",
+      "values clear repair conversations"
+    ],
+    "evolving_state": {
+      "gathering_load": "large_noisy_drain",
+      "household": "roommate_early_shift_quiet"
+    }
+  },
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2026-01-05T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Texted a friend back after a long day. Kept it short."
+        },
+        {
+          "role": "assistant",
+          "content": "Short replies are fine."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2026-01-07T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Social mode felt very 'family-oriented professional' today — short replies, no drama."
+        },
+        {
+          "role": "assistant",
+          "content": "Optional social plans can wait."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2026-01-09T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Walked home after a small dinner. Conversation felt easy."
+        },
+        {
+          "role": "assistant",
+          "content": "Small formats suit you."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2026-01-11T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Large noisy gatherings leave me drained and snappy the next day. Small dinners with three or four people are fine."
+        },
+        {
+          "role": "assistant",
+          "content": "Has that contrast repeated?"
+        },
+        {
+          "role": "user",
+          "content": "Yes. Twice after packed house nights; small dinners did not."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2026-01-13T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Muted a group chat for an afternoon. Quiet helped."
+        },
+        {
+          "role": "assistant",
+          "content": "Attention has a ledger."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2026-01-17T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Friends chat is hyping a packed house mixer this weekend — everyone saying it is amazing for the group."
+        },
+        {
+          "role": "assistant",
+          "content": "Signup FOMO around hosting is loud."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2026-01-19T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Someone asked whether hosting that packed house mixer is worth it for networking."
+        },
+        {
+          "role": "assistant",
+          "content": "Networking and capacity are different questions."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2026-01-21T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Printed March social calendar. Quiet nights are marked."
+        },
+        {
+          "role": "assistant",
+          "content": "Paper copies help on busy weeks."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2026-03-09T17:30:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Worth accepting the heavier weekend hosting block — based on what you know about me?"
+        }
+      ]
+    }
+  ],
+  "query": "Worth accepting the heavier weekend hosting block — based on what you know about me?",
+  "query_source": "final_turn",
+  "gold_answer": "There is insufficient evidence for a personalized recommendation. Large gatherings have drained you, but I cannot tell from the available memory whether quieter evenings at home are currently required. Confirm household quiet constraints before accepting a heavier weekend hosting block.",
+  "required_elements": [
+    "states that the roommate quiet-evening evidence is missing",
+    "does not infer household harm from the hosting invite alone",
+    "asks about quiet constraints or explicitly abstains"
+  ],
+  "target_evidence_ids": [],
+  "associative_cue_id": "cue_1",
+  "distractor_ids": [],
+  "associative_links": [],
+  "annotation": {
+    "1": {
+      "role_setup": "background_memory"
+    },
+    "2": {
+      "role_setup": "background_memory"
+    },
+    "3": {
+      "role_setup": "background_memory"
+    },
+    "4": {
+      "role_setup": "partial_evidence",
+      "evidence_id": "ev_A",
+      "atomic_fact": "Large noisy gatherings leave the user drained and snappy the next day; small dinners are fine.",
+      "insufficiency_note": "ev_B is intentionally unavailable"
+    },
+    "5": {
+      "role_setup": "background_memory"
+    },
+    "7": {
+      "role_setup": "background_memory"
+    },
+    "8": {
+      "role_setup": "background_memory"
+    },
+    "9": {
+      "role_setup": "background_memory"
+    },
+    "10": {
+      "role_setup": "associative_cue",
+      "cue_id": "cue_1"
+    }
+  },
+  "latent_forbidden_phrases": [
+    "never host friends",
+    "social ban forever",
+    "roommate conflict diagnosis"
+  ],
+  "counterfactual_variants": [
+    {
+      "variant_id": "AMB_SC_u04_absence_S1_cf_restore_ev_B",
+      "type": "evidence_added",
+      "added_session": {
+        "session_id": 6,
+        "timestamp": "2026-01-15T18:00:00Z",
+        "dialogue": [
+          {
+            "role": "user",
+            "content": "Roommate has early shifts this month and asked for quieter evenings at home — already on the household calendar."
+          },
+          {
+            "role": "assistant",
+            "content": "Is that timing firm?"
+          },
+          {
+            "role": "user",
+            "content": "Yes. It is already booked."
+          }
+        ]
+      },
+      "result_arm": "associative",
+      "result_association_type": "A3_cross_domain",
+      "result_gold_answer": "Decline or renegotiate to a small dinner. Large noisy gatherings have left you drained and snappy the next day, and your roommate already needs quieter evenings at home during early-shift weeks. A heavier weekend hosting block conflicts with both patterns. The packed house mixer chatter is unrelated social noise.",
+      "result_required_elements": [
+        "uses large-gathering drain pattern",
+        "uses roommate quieter-evening constraint",
+        "recommends declining or shrinking the heavier weekend hosting block"
+      ],
+      "result_target_evidence_ids": [
+        "ev_A",
+        "ev_B"
+      ],
+      "result_associative_links": [
+        {
+          "source": "ev_A",
+          "relation": "causes",
+          "target": "post_gathering_drain",
+          "hop": 1
+        },
+        {
+          "source": "ev_B",
+          "relation": "constrains",
+          "target": "home_quiet_evenings",
+          "hop": 1
+        },
+        {
+          "source": [
+            "ev_A",
+            "ev_B"
+          ],
+          "relation": "co_activate_to",
+          "target": "weekend_hosting_poor_fit",
+          "hop": 2
+        }
+      ],
+      "expected_gold": "Decline or renegotiate to a small dinner. Large noisy gatherings have left you drained and snappy the next day, and your roommate already needs quieter evenings at home during early-shift weeks. A heavier weekend hosting block conflicts with both patterns. The packed house mixer chatter is unrelated social noise."
+    }
+  ],
+  "validity_metrics": {
+    "lexical_jaccard_query_evidence": 0.0,
+    "embed_cosine_query_evidence": 0.0,
+    "flat_rag_hit_top3": false,
+    "distractor_cosine_query": 0.0,
+    "evidence_cosine_query": 0.0,
+    "partial_evidence_cosine_query": 0,
+    "validity_method": {
+      "embedder": "tfidf-local-proxy",
+      "lexical": "jaccard-stopword-filtered",
+      "computed_by": "tools/social/bin/generate_social_gold_batch.py",
+      "computed_at": "2026-07-15",
+      "limitation": "Lexical proxy only; dense semantic validation and human IAA remain required."
+    }
+  },
+  "provenance": {
+    "generator": "social_gold_s1_s5_v2",
+    "generated_by": "autoresearch_pilot",
+    "persona_corpus": "DynamicMem",
+    "persona_ref": "xiewenya/dynamicmem:004_user_004",
+    "scenario_id": "S1",
+    "scenario_name": "large_gathering_drain_x_roommate_quiet",
+    "batch_id": "SC_GOLD_S1_S5_2026-07-17_v2",
+    "standard": "DATA_STANDARD_v1",
+    "timeline_id": "SC_u04_shared_timeline_v2",
+    "timeline_prefix_end": 9,
+    "gold_tier": "v2"
+  },
+  "dataset_meta": {
+    "golden_candidate": true,
+    "human_verified_by": [],
+    "iaa_cohort_kappa": null,
+    "iaa_n_overlap": null,
+    "known_validation_gaps": [
+      "dense semantic discriminant gate not yet run",
+      "two-person blind human necessity review not yet run",
+      "real-model full/no-assoc/no-distractor evaluation not yet run"
+    ],
+    "reproduce": {
+      "loader_rule": "serialize context dialogue role+content only; strip annotation/evolving_state",
+      "generator": "python3 tools/social/bin/generate_social_gold_batch.py",
+      "metrics": [
+        "answer_vs_gold+required_elements",
+        "joint_evidence_recall",
+        "single_evidence_counterfactual_abstention",
+        "distractor_removal_invariance"
+      ]
+    }
+  }
+}

@@ -1,0 +1,182 @@
+{
+  "domain": "finance/personal",
+  "batch_id": "FN_2026-07-18_v2",
+  "standard": "DATA_STANDARD v1 / AssoMemBench",
+  "note": "user1–9 persona anchors reused across domains; user10 = desktop Healthy Li; finance traits authored for personal-money constraints",
+  "users": [
+    {
+      "user_index": 1,
+      "user_id": "fn_u01",
+      "folder_tag": "user1",
+      "display_name": "DM-user_001",
+      "source_corpus": "DynamicMem",
+      "source_ref": "xiewenya/dynamicmem:001_user_001",
+      "stable_traits": [
+        "coatings industry consultant",
+        "Pittsburgh suburbs",
+        "tracks cashflow before speculative bets",
+        "prioritizes high-interest debt clearance",
+        "keeps a thin but intentional buffer"
+      ],
+      "voice": "practical, measured, middle-aged professional",
+      "finance_anchors_from_source": [
+        "consultant calendar with uneven invoice timing",
+        "prefers measurable money routines over vibes"
+      ]
+    },
+    {
+      "user_index": 2,
+      "user_id": "fn_u02",
+      "folder_tag": "user2",
+      "display_name": "DM-user_002",
+      "source_corpus": "DynamicMem",
+      "source_ref": "xiewenya/dynamicmem:002_user_002",
+      "stable_traits": [
+        "Netherlands-based professional",
+        "structured weekday schedule",
+        "tracks cashflow before speculative bets",
+        "prioritizes high-interest debt clearance",
+        "keeps a thin but intentional buffer"
+      ],
+      "voice": "precise, slightly formal, Northern European English",
+      "finance_anchors_from_source": [
+        "digital tracking preference",
+        "protects month-end liquidity windows"
+      ]
+    },
+    {
+      "user_index": 3,
+      "user_id": "fn_u03",
+      "folder_tag": "user3",
+      "display_name": "DM-user_003",
+      "source_corpus": "DynamicMem",
+      "source_ref": "xiewenya/dynamicmem:003_user_003",
+      "stable_traits": [
+        "urban knowledge worker",
+        "Work & Learning domain active in DynamicMem",
+        "tracks cashflow before speculative bets",
+        "prioritizes high-interest debt clearance",
+        "keeps a thin but intentional buffer"
+      ],
+      "voice": "concise, tech-adjacent",
+      "finance_anchors_from_source": [
+        "DynamicMem Work & Learning trajectory (persona-aligned synthesis)"
+      ]
+    },
+    {
+      "user_index": 4,
+      "user_id": "fn_u04",
+      "folder_tag": "user4",
+      "display_name": "DM-user_004",
+      "source_corpus": "DynamicMem",
+      "source_ref": "xiewenya/dynamicmem:004_user_004",
+      "stable_traits": [
+        "family-oriented professional",
+        "balances career growth with home logistics",
+        "tracks cashflow before speculative bets",
+        "prioritizes high-interest debt clearance",
+        "keeps a thin but intentional buffer"
+      ],
+      "voice": "warm, logistical",
+      "finance_anchors_from_source": [
+        "DynamicMem Work & Learning trajectory (persona-aligned synthesis)"
+      ]
+    },
+    {
+      "user_index": 5,
+      "user_id": "fn_u05",
+      "folder_tag": "user5",
+      "display_name": "RHELM-Elena_Morales",
+      "source_corpus": "RHELM",
+      "source_ref": "microsoft/RHELM:conversations/Elena_Morales",
+      "stable_traits": [
+        "Elena Morales persona anchor",
+        "busy professional calendar",
+        "tracks cashflow before speculative bets",
+        "prioritizes high-interest debt clearance",
+        "keeps a thin but intentional buffer"
+      ],
+      "voice": "direct, organized",
+      "finance_anchors_from_source": [
+        "RHELM long-horizon persona identity (finance dialogues newly authored)"
+      ]
+    },
+    {
+      "user_index": 6,
+      "user_id": "fn_u06",
+      "folder_tag": "user6",
+      "display_name": "RHELM-Jonas_Richter",
+      "source_corpus": "RHELM",
+      "source_ref": "microsoft/RHELM:conversations/Jonas_Richter",
+      "stable_traits": [
+        "Jonas Richter persona anchor",
+        "structured weekday schedule",
+        "tracks cashflow before speculative bets",
+        "prioritizes high-interest debt clearance",
+        "keeps a thin but intentional buffer"
+      ],
+      "voice": "analytical, understated",
+      "finance_anchors_from_source": [
+        "RHELM long-horizon persona identity (finance dialogues newly authored)"
+      ]
+    },
+    {
+      "user_index": 7,
+      "user_id": "fn_u07",
+      "folder_tag": "user7",
+      "display_name": "RHELM-David_Reyes",
+      "source_corpus": "RHELM",
+      "source_ref": "microsoft/RHELM:conversations/David_Reyes",
+      "stable_traits": [
+        "David Reyes persona anchor",
+        "social workplace ties matter",
+        "tracks cashflow before speculative bets",
+        "prioritizes high-interest debt clearance",
+        "keeps a thin but intentional buffer"
+      ],
+      "voice": "casual, conversational",
+      "finance_anchors_from_source": [
+        "RHELM long-horizon persona identity (finance dialogues newly authored)"
+      ]
+    },
+    {
+      "user_index": 8,
+      "user_id": "fn_u08",
+      "folder_tag": "user8",
+      "display_name": "RHELM-Dr_Elena_Markovic",
+      "source_corpus": "RHELM",
+      "source_ref": "microsoft/RHELM:conversations/Dr._Elena_Markovic",
+      "stable_traits": [
+        "Dr. Elena Markovic persona anchor",
+        "early clinical / professional schedule",
+        "tracks cashflow before speculative bets",
+        "prioritizes high-interest debt clearance",
+        "keeps a thin but intentional buffer"
+      ],
+      "voice": "precise, medical-adjacent wording without jargon dumps",
+      "finance_anchors_from_source": [
+        "RHELM long-horizon persona identity (finance dialogues newly authored)"
+      ]
+    },
+    {
+      "user_index": 9,
+      "user_id": "fn_u09",
+      "folder_tag": "user9",
+      "display_name": "RHELM-Martin_Keller",
+      "source_corpus": "RHELM",
+      "source_ref": "microsoft/RHELM:conversations/Martin_Keller",
+      "stable_traits": [
+        "Martin Keller persona anchor",
+        "steady office routine",
+        "tracks cashflow before speculative bets",
+        "prioritizes high-interest debt clearance",
+        "keeps a thin but intentional buffer"
+      ],
+      "voice": "plain, matter-of-fact",
+      "finance_anchors_from_source": [
+        "RHELM long-horizon persona identity (finance dialogues newly authored)"
+      ]
+    }
+  ],
+  "design_intent": "Personal-finance tradeoffs (debt, buffers, tax-advantaged room, auto-renews, panic trading) where associative memory must beat FOMO and flat keyword RAG"
+}

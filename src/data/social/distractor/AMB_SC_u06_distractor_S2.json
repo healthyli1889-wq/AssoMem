@@ -1,0 +1,535 @@
+{
+  "sample_id": "AMB_SC_u06_distractor_S2",
+  "source": "partner_generated",
+  "status": "rendered",
+  "association_type": "A3_cross_domain",
+  "domain_tags": [
+    "social/relationships",
+    "everyday_social"
+  ],
+  "pilot_arm": "distractor",
+  "pilot_domain": "social_relation",
+  "persona_source": {
+    "corpus": "RHELM",
+    "ref": "microsoft/RHELM:conversations/Jonas_Richter",
+    "display_name": "RHELM-Jonas_Richter"
+  },
+  "context_length_tokens": 1180,
+  "persona": {
+    "user_id": "sc_u06",
+    "stable_traits": [
+      "Jonas Richter persona anchor",
+      "structured weekday schedule",
+      "protects social energy budget",
+      "prefers small-group over large-crowd formats",
+      "values clear repair conversations"
+    ],
+    "evolving_state": {
+      "messaging_load": "reply_storm_anxiety",
+      "friend_need": "slow_one_on_one_checkin"
+    }
+  },
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2026-01-05T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Texted a friend back after a long day. Kept it short."
+        },
+        {
+          "role": "assistant",
+          "content": "Short replies are fine."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2026-01-07T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Social mode felt very 'Jonas Richter persona anchor' today — short replies, no drama."
+        },
+        {
+          "role": "assistant",
+          "content": "Optional social plans can wait."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2026-01-09T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Walked home after a small dinner. Conversation felt easy."
+        },
+        {
+          "role": "assistant",
+          "content": "Small formats suit you."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2026-01-11T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Large noisy gatherings leave me drained and snappy the next day. Small dinners with three or four people are fine."
+        },
+        {
+          "role": "assistant",
+          "content": "Has that contrast repeated?"
+        },
+        {
+          "role": "user",
+          "content": "Yes. Twice after packed house nights; small dinners did not."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2026-01-13T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Muted a group chat for an afternoon. Quiet helped."
+        },
+        {
+          "role": "assistant",
+          "content": "Attention has a ledger."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2026-01-15T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Roommate has early shifts this month and asked for quieter evenings at home — already on the household calendar."
+        },
+        {
+          "role": "assistant",
+          "content": "Is that timing firm?"
+        },
+        {
+          "role": "user",
+          "content": "Yes. It is already booked."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2026-01-17T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Friends chat is hyping a packed house mixer this weekend — everyone saying it is amazing for the group."
+        },
+        {
+          "role": "assistant",
+          "content": "Signup FOMO around hosting is loud."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2026-01-19T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Someone asked whether hosting that packed house mixer is worth it for networking."
+        },
+        {
+          "role": "assistant",
+          "content": "Networking and capacity are different questions."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2026-01-21T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Printed March social calendar. Quiet nights are marked."
+        },
+        {
+          "role": "assistant",
+          "content": "Paper copies help on busy weeks."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2026-01-23T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Archived old event photos from last year. Less phone clutter."
+        },
+        {
+          "role": "assistant",
+          "content": "Digital tidy helps."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2026-01-25T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Rapid group-chat reply storms leave me anxious and snappy the next day. Slow one-to-one threads are fine."
+        },
+        {
+          "role": "assistant",
+          "content": "Has the reply-storm pattern repeated?"
+        },
+        {
+          "role": "user",
+          "content": "Yes. Three storm days did it; slow threads did not."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2026-01-27T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Short walk after lunch. Cleared the afternoon fog."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth repeating."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2026-01-29T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Close friend needs a slow one-on-one call this week — not group logistics. Already on the calendar."
+        },
+        {
+          "role": "assistant",
+          "content": "Is that slot movable?"
+        },
+        {
+          "role": "user",
+          "content": "Not easily. The check-in depends on it."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2026-01-31T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Someone hyped being the always-on message runner. Different beast from a real check-in."
+        },
+        {
+          "role": "assistant",
+          "content": "Signup FOMO comes in many shapes."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2026-02-02T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Reunion planning chat is loud. I muted notifications overnight."
+        },
+        {
+          "role": "assistant",
+          "content": "Mute buttons save attention."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2026-02-04T18:00:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Printed the check-in reminder. Slow call is marked in red."
+        },
+        {
+          "role": "assistant",
+          "content": "Paper copies help on busy weeks."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2026-04-07T09:30:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Tobias said being the always-on reunion chat lead is amazing hype and worth it for staying visible."
+        },
+        {
+          "role": "assistant",
+          "content": "Visibility hype and reply-load capacity are different ledgers."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2026-04-10T17:05:00Z",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Group wants me as the always-on reunion chat lead — sensible?"
+        }
+      ]
+    }
+  ],
+  "query": "Group wants me as the always-on reunion chat lead — sensible?",
+  "query_source": "final_turn",
+  "gold_answer": "Decline the always-on reunion chat lead. Rapid group-chat reply storms have left you anxious and snappy the next day, and a close friend already needs a slow one-on-one call this week. Protect the check-in and defer always-on chat coordination.",
+  "required_elements": [
+    "uses rapid reply-storm anxiety pattern",
+    "uses slow one-on-one check-in need",
+    "recommends declining always-on reunion chat lead"
+  ],
+  "target_evidence_ids": [
+    "ev_A",
+    "ev_B"
+  ],
+  "associative_cue_id": "cue_1",
+  "distractor_ids": [
+    "dist_1"
+  ],
+  "associative_links": [
+    {
+      "source": "ev_A",
+      "relation": "causes",
+      "target": "reply_storm_anxiety",
+      "hop": 1
+    },
+    {
+      "source": "ev_B",
+      "relation": "constrains",
+      "target": "slow_checkin_window",
+      "hop": 1
+    },
+    {
+      "source": [
+        "ev_A",
+        "ev_B"
+      ],
+      "relation": "co_activate_to",
+      "target": "chat_lead_poor_fit",
+      "hop": 2
+    }
+  ],
+  "annotation": {
+    "1": {
+      "role_setup": "background_memory"
+    },
+    "2": {
+      "role_setup": "background_memory"
+    },
+    "3": {
+      "role_setup": "background_memory"
+    },
+    "4": {
+      "role_setup": "background_memory"
+    },
+    "5": {
+      "role_setup": "background_memory"
+    },
+    "6": {
+      "role_setup": "background_memory"
+    },
+    "7": {
+      "role_setup": "background_memory"
+    },
+    "8": {
+      "role_setup": "background_memory"
+    },
+    "9": {
+      "role_setup": "background_memory"
+    },
+    "10": {
+      "role_setup": "background_memory"
+    },
+    "11": {
+      "role_setup": "target_evidence",
+      "evidence_id": "ev_A",
+      "atomic_fact": "Rapid group-chat reply storms leave the user anxious and snappy the next day; slow one-to-one threads are fine."
+    },
+    "12": {
+      "role_setup": "background_memory"
+    },
+    "13": {
+      "role_setup": "target_evidence",
+      "evidence_id": "ev_B",
+      "atomic_fact": "Close friend needs a slow one-on-one call this week; not group logistics."
+    },
+    "14": {
+      "role_setup": "background_memory"
+    },
+    "15": {
+      "role_setup": "background_memory"
+    },
+    "16": {
+      "role_setup": "background_memory"
+    },
+    "17": {
+      "role_setup": "distractor",
+      "distractor_id": "dist_1",
+      "why_distractor": "Chat-lead FOMO shares query surface but is not evidence about this user's reply-storm pattern or slow check-in need."
+    },
+    "18": {
+      "role_setup": "associative_cue",
+      "cue_id": "cue_1"
+    }
+  },
+  "latent_forbidden_phrases": [
+    "phone ban forever",
+    "must leave all group chats",
+    "anxiety diagnosis"
+  ],
+  "counterfactual_variants": [
+    {
+      "variant_id": "AMB_SC_u06_distractor_S2_cf_remove_ev_A",
+      "type": "evidence_removed",
+      "removed_session_ids": [
+        11
+      ],
+      "result_arm": "absence",
+      "result_association_type": "A5_hard_absence_control",
+      "result_gold_answer": "There is insufficient evidence for a personalized recommendation. I know a slow one-on-one check-in is booked this week, but the available memory does not establish that rapid reply storms leave you anxious. I cannot reject the chat-lead role from calendar alone.",
+      "result_required_elements": [
+        "states that the reply-storm evidence is missing",
+        "does not infer mood harm from the role alone",
+        "explicitly abstains from rejecting the role"
+      ],
+      "result_target_evidence_ids": [],
+      "result_associative_links": [],
+      "expected_gold": "insufficient evidence / abstain"
+    },
+    {
+      "variant_id": "AMB_SC_u06_distractor_S2_cf_remove_ev_B",
+      "type": "evidence_removed",
+      "removed_session_ids": [
+        13
+      ],
+      "result_arm": "absence",
+      "result_association_type": "A5_hard_absence_control",
+      "result_gold_answer": "There is insufficient evidence for a personalized recommendation. Reply storms have hurt your next-day mood, but I cannot tell from the available memory whether a slow one-on-one check-in is already booked this week. Confirm that calendar before accepting chat-lead duty.",
+      "result_required_elements": [
+        "states that the one-on-one check-in evidence is missing",
+        "does not infer harm from the chat-lead invite alone",
+        "asks about check-in timing or explicitly abstains"
+      ],
+      "result_target_evidence_ids": [],
+      "result_associative_links": [],
+      "expected_gold": "insufficient evidence / abstain"
+    },
+    {
+      "variant_id": "AMB_SC_u06_distractor_S2_cf_remove_distractor",
+      "type": "distractor_removed",
+      "removed_session_ids": [
+        "$distractor_session"
+      ],
+      "result_arm": "associative",
+      "result_association_type": "A3_cross_domain",
+      "result_gold_answer": "Decline the always-on reunion chat lead. Rapid group-chat reply storms have left you anxious and snappy the next day, and a close friend already needs a slow one-on-one call this week. Protect the check-in and defer always-on chat coordination.",
+      "result_required_elements": [
+        "uses rapid reply-storm anxiety pattern",
+        "uses slow one-on-one check-in need",
+        "recommends declining always-on reunion chat lead"
+      ],
+      "result_target_evidence_ids": [
+        "ev_A",
+        "ev_B"
+      ],
+      "result_associative_links": [
+        {
+          "source": "ev_A",
+          "relation": "causes",
+          "target": "reply_storm_anxiety",
+          "hop": 1
+        },
+        {
+          "source": "ev_B",
+          "relation": "constrains",
+          "target": "slow_checkin_window",
+          "hop": 1
+        },
+        {
+          "source": [
+            "ev_A",
+            "ev_B"
+          ],
+          "relation": "co_activate_to",
+          "target": "chat_lead_poor_fit",
+          "hop": 2
+        }
+      ],
+      "expected_gold": "Decline the always-on reunion chat lead. Rapid group-chat reply storms have left you anxious and snappy the next day, and a close friend already needs a slow one-on-one call this week. Protect the check-in and defer always-on chat coordination."
+    }
+  ],
+  "validity_metrics": {
+    "lexical_jaccard_query_evidence": 0.0513,
+    "embed_cosine_query_evidence": 0.067,
+    "flat_rag_hit_top3": false,
+    "distractor_cosine_query": 0.2529,
+    "evidence_cosine_query": 0.067,
+    "partial_evidence_cosine_query": 0.0,
+    "validity_method": {
+      "embedder": "tfidf-local-proxy",
+      "lexical": "jaccard-stopword-filtered",
+      "computed_by": "tools/social/bin/generate_social_gold_batch.py",
+      "computed_at": "2026-07-15",
+      "limitation": "Lexical proxy only; dense semantic validation and human IAA remain required."
+    }
+  },
+  "provenance": {
+    "generator": "social_gold_s1_s5_v2",
+    "generated_by": "autoresearch_pilot",
+    "persona_corpus": "RHELM",
+    "persona_ref": "microsoft/RHELM:conversations/Jonas_Richter",
+    "scenario_id": "S2",
+    "scenario_name": "reply_storm_x_slow_checkin",
+    "batch_id": "SC_GOLD_S1_S5_2026-07-17_v2",
+    "standard": "DATA_STANDARD_v1",
+    "timeline_id": "SC_u06_shared_timeline_v2",
+    "timeline_prefix_end": 16,
+    "gold_tier": "v2"
+  },
+  "dataset_meta": {
+    "golden_candidate": true,
+    "human_verified_by": [],
+    "iaa_cohort_kappa": null,
+    "iaa_n_overlap": null,
+    "known_validation_gaps": [
+      "dense semantic discriminant gate not yet run",
+      "two-person blind human necessity review not yet run",
+      "real-model full/no-assoc/no-distractor evaluation not yet run"
+    ],
+    "reproduce": {
+      "loader_rule": "serialize context dialogue role+content only; strip annotation/evolving_state",
+      "generator": "python3 tools/social/bin/generate_social_gold_batch.py",
+      "metrics": [
+        "answer_vs_gold+required_elements",
+        "joint_evidence_recall",
+        "single_evidence_counterfactual_abstention",
+        "distractor_removal_invariance"
+      ]
+    }
+  }
+}
