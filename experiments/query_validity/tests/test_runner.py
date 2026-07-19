@@ -1,4 +1,5 @@
 import sys
+import tempfile
 import unittest
 from pathlib import Path
 
@@ -6,7 +7,12 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[3]
 sys.path.insert(0, str(ROOT / "experiments" / "query_validity"))
 
-from runner import condition_passes, make_generation_prompt, make_validation_prompt  # noqa: E402
+from runner import (  # noqa: E402
+    condition_passes,
+    make_generation_prompt,
+    make_validation_prompt,
+    run_experiment,
+)
 
 
 class RunnerTests(unittest.TestCase):
@@ -32,6 +38,16 @@ class RunnerTests(unittest.TestCase):
         )
         self.assertIn("both", validation_prompt)
         self.assertIn("required_elements", validation_prompt)
+
+    def test_dry_run_writes_checkpoint_and_resume_keeps_records(self):
+        with tempfile.TemporaryDirectory() as directory:
+            output = Path(directory)
+            first = run_experiment(ROOT, output, limit=1, dry_run=True)
+            self.assertEqual(first["n_scenarios"], 1)
+            self.assertTrue((output / "checkpoint.json").is_file())
+            second = run_experiment(ROOT, output, limit=1, dry_run=True, resume=True)
+            self.assertEqual(second["n_scenarios"], 1)
+            self.assertEqual(second["n_pending"], 1)
 
 
 if __name__ == "__main__":

@@ -12,6 +12,8 @@
 python3 experiments/query_validity/runner.py --dry-run
 ```
 
+中断后可使用 `--resume` 从 `checkpoint.json` 继续；已完成的 selection 不会重复调用。
+
 真实运行时，分别设置 `ASSOMEM_GENERATOR_*` 与 `ASSOMEM_VALIDATOR_*` 环境变量。
 两个模型槽都支持：
 
@@ -48,5 +50,5 @@ python3 experiments/query_validity/runner.py
 ## 输出
 
 `selection.json` 保存固定 seed 的抽样与三臂文件 hash；`records.jsonl` 保存每条
-样本每轮生成/验证结果；`pending_model_calls.jsonl` 保存 dry-run 的 600 个调用；
+样本每轮生成/验证结果；`checkpoint.json` 支持逐条恢复；`pending_model_calls.jsonl` 保存 dry-run 的 600 个调用；
 `human_review.csv` 是人工终审入口；`summary.json` 记录自动统计及其限制。

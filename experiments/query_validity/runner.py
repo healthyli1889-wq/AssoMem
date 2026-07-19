@@ -139,6 +139,7 @@ def run_experiment(
     seed: int = 17,
     limit: int | None = None,
     dry_run: bool = False,
+    resume: bool = False,
     model_call: Callable[[ModelConfig, str], dict[str, Any]] = call_model,
 ) -> dict[str, Any]:
     output_dir.mkdir(parents=True, exist_ok=True)
@@ -147,7 +148,13 @@ def run_experiment(
         selection = selection[:limit]
     (output_dir / "selection.json").write_text(_dump(selection) + "\n", encoding="utf-8")
 
+    checkpoint_path = output_dir / "checkpoint.json"
     records: list[dict[str, Any]] = []
+    if resume and checkpoint_path.is_file():
+        checkpoint = json.loads(checkpoint_path.read_text(encoding="utf-8"))
+        records = checkpoint.get("records", [])
+        completed_ids = {row["selection_id"] for row in records}
+        selection = [row for row in selection if row["selection_id"] not in completed_ids]
     pending: list[dict[str, Any]] = []
     for selected in selection:
         arms = {
@@ -163,6 +170,10 @@ def run_experiment(
                 "original_query": arms["associative"]["query"],
                 "generation_prompt": generation_prompt,
             })
+            checkpoint_path.write_text(
+                _dump({"updated_at": _now(), "records": records}) + "\n",
+                encoding="utf-8",
+            )
             pending.extend(
                 _pending_record(selected, condition, make_validation_prompt(
                     condition,
@@ -216,6 +227,10 @@ def run_experiment(
                 for name, result in condition_results.items()
             ),
         })
+        checkpoint_path.write_text(
+            _dump({"updated_at": _now(), "records": records}) + "\n",
+            encoding="utf-8",
+        )
     _write_jsonl(output_dir / "records.jsonl", records)
     if pending:
         _write_jsonl(output_dir / "pending_model_calls.jsonl", pending)
@@ -257,6 +272,7 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--seed", type=int, default=17)
     parser.add_argument("--limit", type=int)
     parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument("--resume", action="store_true")
     args = parser.parse_args(argv)
     try:
         generator = None if args.dry_run else config_from_env("ASSOMEM_GENERATOR")
@@ -264,6 +280,7 @@ def main(argv: list[str] | None = None) -> int:
         summary = run_experiment(
             args.root, args.output, generator=generator, validator=validator,
             seed=args.seed, limit=args.limit, dry_run=args.dry_run,
+            resume=args.resume,
         )
     except (OSError, ValueError, RuntimeError) as exc:
         print(f"error: {exc}", file=sys.stderr)
