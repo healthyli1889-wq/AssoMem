@@ -57,6 +57,7 @@ def request_payload(config: ModelConfig, prompt: str) -> dict[str, Any]:
             "messages": [{"role": "user", "content": prompt}],
             "temperature": config.temperature,
             "max_tokens": 512,
+            "response_format": {"type": "json_object"},
         }
     if config.provider == "anthropic":
         return {

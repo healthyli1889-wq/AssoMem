@@ -31,7 +31,9 @@ class ClientTests(unittest.TestCase):
 
     def test_openai_chat_payload_limits_response_tokens(self):
         config = ModelConfig("openai-chat", "m", "k", "https://example.test")
-        self.assertEqual(request_payload(config, "Return JSON.")["max_tokens"], 512)
+        payload = request_payload(config, "Return JSON.")
+        self.assertEqual(payload["max_tokens"], 512)
+        self.assertEqual(payload["response_format"], {"type": "json_object"})
 
     def test_openai_chat_falls_back_to_reasoning_when_content_is_empty(self):
         config = ModelConfig("openai-chat", "m", "k", "https://example.test")
