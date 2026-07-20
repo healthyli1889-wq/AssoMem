@@ -27,13 +27,13 @@ class ModelConfig:
     def __post_init__(self) -> None:
         if self.provider not in SUPPORTED_PROVIDERS:
             raise ValueError(f"Unsupported provider: {self.provider}")
-        if not self.model or not self.api_key:
-            raise ValueError("model and api_key are required")
+        if not self.model or not self.api_key or not self.base_url:
+            raise ValueError("model, api_key, and base_url are required")
 
 
 def config_from_env(prefix: str) -> ModelConfig:
     values = {
-        "provider": os.environ.get(f"{prefix}_PROVIDER", "openai-chat"),
+        "provider": os.environ.get(f"{prefix}_PROVIDER", ""),
         "model": os.environ.get(f"{prefix}_MODEL", ""),
         "api_key": os.environ.get(f"{prefix}_API_KEY", ""),
         "base_url": os.environ.get(f"{prefix}_BASE_URL", ""),
@@ -41,12 +41,6 @@ def config_from_env(prefix: str) -> ModelConfig:
         "timeout": float(os.environ.get(f"{prefix}_TIMEOUT", "120")),
         "max_retries": int(os.environ.get(f"{prefix}_MAX_RETRIES", "3")),
     }
-    if not values["base_url"]:
-        values["base_url"] = (
-            "https://api.anthropic.com/v1"
-            if values["provider"] == "anthropic"
-            else "https://api.openai.com/v1"
-        )
     return ModelConfig(**values)
 
 
@@ -62,6 +56,7 @@ def request_payload(config: ModelConfig, prompt: str) -> dict[str, Any]:
             "model": config.model,
             "messages": [{"role": "user", "content": prompt}],
             "temperature": config.temperature,
+            "max_tokens": 512,
         }
     if config.provider == "anthropic":
         return {
@@ -107,7 +102,8 @@ def _text_from_response(config: ModelConfig, response: dict[str, Any]) -> str:
                     parts.append(content.get("text", ""))
         return "\n".join(parts)
     if config.provider == "openai-chat":
-        return response["choices"][0]["message"]["content"]
+        message = response["choices"][0]["message"]
+        return message.get("content") or message.get("reasoning_content", "")
     content = response.get("content", [])
     return "\n".join(part.get("text", "") for part in content if part.get("type") == "text")
 
@@ -116,18 +112,35 @@ def extract_json_object(text: str) -> dict[str, Any]:
     cleaned = text.strip()
     fenced = re.search(r"```(?:json)?\s*(\{.*?\})\s*```", cleaned, flags=re.S | re.I)
     candidate = fenced.group(1) if fenced else cleaned
-    if not fenced:
-        start, end = candidate.find("{"), candidate.rfind("}")
-        if start < 0 or end <= start:
-            raise ValueError("Model response does not contain a JSON object")
-        candidate = candidate[start:end + 1]
-    value = json.loads(candidate)
-    if not isinstance(value, dict):
-        raise ValueError("Model response JSON must be an object")
-    return value
+    if fenced:
+        value = json.loads(candidate)
+        if not isinstance(value, dict):
+            raise ValueError("Model response JSON must be an object")
+        return value
+    decoder = json.JSONDecoder()
+    for match in re.finditer(r"\{", candidate):
+        try:
+            value, _ = decoder.raw_decode(candidate[match.start():])
+        except json.JSONDecodeError:
+            continue
+        if isinstance(value, dict):
+            return value
+    raise ValueError("Model response does not contain a JSON object")
 
 
-def call_model(config: ModelConfig, prompt: str) -> dict[str, Any]:
+def normalize_usage(payload: dict[str, Any]) -> dict[str, int | None]:
+    """Normalize provider usage fields without retaining raw response metadata."""
+    usage = payload.get("usage") or payload
+    details = usage.get("completion_tokens_details") or usage.get("output_tokens_details") or {}
+    return {
+        "input_tokens": usage.get("input_tokens", usage.get("prompt_tokens")),
+        "output_tokens": usage.get("output_tokens", usage.get("completion_tokens")),
+        "reasoning_tokens": usage.get("reasoning_tokens", details.get("reasoning_tokens")),
+        "total_tokens": usage.get("total_tokens"),
+    }
+
+
+def call_model_with_usage(config: ModelConfig, prompt: str) -> tuple[dict[str, Any], dict[str, int | None]]:
     body = json.dumps(request_payload(config, prompt)).encode("utf-8")
     request = urllib.request.Request(_endpoint(config), data=body, headers=_headers(config))
     last_error: Exception | None = None
@@ -135,10 +148,17 @@ def call_model(config: ModelConfig, prompt: str) -> dict[str, Any]:
         try:
             with urllib.request.urlopen(request, timeout=config.timeout) as response:
                 payload = json.loads(response.read().decode("utf-8"))
-            return extract_json_object(_text_from_response(config, payload))
+            return (
+                extract_json_object(_text_from_response(config, payload)),
+                normalize_usage(payload),
+            )
         except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError, json.JSONDecodeError, KeyError, ValueError) as exc:
             last_error = exc
             if attempt >= config.max_retries:
                 break
             time.sleep(min(2 ** attempt, 8))
     raise RuntimeError(f"Model call failed after retries: {last_error}") from last_error
+
+
+def call_model(config: ModelConfig, prompt: str) -> dict[str, Any]:
+    return call_model_with_usage(config, prompt)[0]

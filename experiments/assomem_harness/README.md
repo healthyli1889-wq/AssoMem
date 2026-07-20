@@ -13,9 +13,11 @@
 
 ## 角色
 
-1. query-author：从可见 context 和旧 query focus 起草 query/GT。
-2. validator：独立验收 query/GT，并对 solver 回答逐 required element 打分。
-3. solver A/B/C：分别输出答案；必须通过不同环境变量配置。
+1. solver：接收冻结的 gold JSON `query` 和可见 dialogue，输出答案。
+2. validator：接收 solver 答案和隐藏的 `gold_answer` / `required_elements`，逐元素打分。
+
+两者均可独立配置为 OpenAI-compatible、OpenAI Responses 或 Anthropic 模型；
+具体模型、endpoint 和密钥只由本地 shell 环境注入，不写入仓库。
 
 solver 永远只看到 query、`context[].dialogue` 和 data filename；不会收到
 annotation、evidence ID、gold、required elements、links 或 evolving state。
@@ -34,7 +36,7 @@ source experiments/assomem_harness/config.example.sh
 # 无网络：验证 profile，写 inventory 和待执行 manifest
 python3 experiments/assomem_harness/run.py --dry-run
 
-# 在 author、validator、三个 solver 均配置完成且 smoke 通过后运行
+# 在 solver 和独立 validator 均配置完成且 smoke 通过后运行
 python3 experiments/assomem_harness/run.py --execute --max-items 10
 ```
 
@@ -43,7 +45,7 @@ python3 experiments/assomem_harness/run.py --execute --max-items 10
 
 ## 统计
 
-- Table A：FULL / no-target / broken-link REA、配对 bootstrap 的 Δ_mem / Δ_assoc。
+- Table A：单个 solver 的 FULL / no-target / broken-link REA、配对 bootstrap 的 Δ_mem / Δ_assoc。
 - Table B：JER、DIR、FoolRate、AbC、add-evidence flip rate；SAA 为 deferred。
 - REA 是 required elements 的 AND；比例使用 Wilson 95% CI，Delta 使用 paired
   bootstrap 95% CI。

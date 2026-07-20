@@ -4,29 +4,18 @@ export ASSOMEM_PROFILE="$PWD/experiments/assomem_harness/profiles/assomem-v1.jso
 export ASSOMEM_DOMAIN=work
 export ASSOMEM_RUN_ID=work-smoke-20260720
 export ASSOMEM_LOG_ROOT="$PWD/logs"
+# Optional on hosts whose system certificate store is incomplete:
+# export SSL_CERT_FILE="$(python3 -c 'import certifi; print(certifi.where())')"
 
-# Query author: creates candidate query/GT records.
-export ASSOMEM_AUTHOR_PROVIDER=openai-chat
-export ASSOMEM_AUTHOR_MODEL=
-export ASSOMEM_AUTHOR_API_KEY=
-export ASSOMEM_AUTHOR_BASE_URL=https://api.openai.com/v1
+# Solver: sees only frozen query + visible dialogue and writes an answer.
+export ASSOMEM_SOLVER_PROVIDER=
+export ASSOMEM_SOLVER_MODEL=
+export ASSOMEM_SOLVER_API_KEY=
+export ASSOMEM_SOLVER_BASE_URL=
 
-# Independent validator: validates query/GT and scores solver answers.
-export ASSOMEM_VALIDATOR_PROVIDER=anthropic
+# Independent validator: sees solver answer plus hidden gold and scores it.
+export ASSOMEM_VALIDATOR_PROVIDER=
 export ASSOMEM_VALIDATOR_MODEL=
 export ASSOMEM_VALIDATOR_API_KEY=
-export ASSOMEM_VALIDATOR_BASE_URL=https://api.anthropic.com/v1
+export ASSOMEM_VALIDATOR_BASE_URL=
 
-# Three solvers. Set each provider/model/key/base URL independently.
-export ASSOMEM_SOLVER_A_PROVIDER=openai-chat
-export ASSOMEM_SOLVER_A_MODEL=GPT-oss-20b
-export ASSOMEM_SOLVER_A_API_KEY=
-export ASSOMEM_SOLVER_A_BASE_URL=
-export ASSOMEM_SOLVER_B_PROVIDER=openai-chat
-export ASSOMEM_SOLVER_B_MODEL=Gemma-4-31b
-export ASSOMEM_SOLVER_B_API_KEY=
-export ASSOMEM_SOLVER_B_BASE_URL=
-export ASSOMEM_SOLVER_C_PROVIDER=openai-chat
-export ASSOMEM_SOLVER_C_MODEL=Qwen-3.6-35b
-export ASSOMEM_SOLVER_C_API_KEY=
-export ASSOMEM_SOLVER_C_BASE_URL=

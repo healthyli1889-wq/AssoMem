@@ -26,6 +26,22 @@ class RunTests(unittest.TestCase):
             self.assertTrue((output / "work/test-run/log/inventory.jsonl").is_file())
             self.assertTrue((output / "work/test-run/results.tsv").is_file())
 
+    def test_dry_run_can_limit_items_for_inspection(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            output = Path(temporary)
+            result = prepare_run(
+                ROOT / "src/data",
+                ROOT / "experiments/assomem_harness/profiles/assomem-v1.json",
+                "work",
+                "partial-run",
+                output,
+                max_items=3,
+            )
+            self.assertEqual(result["base_items"], 3)
+            self.assertEqual(result["shipped_conversations"], 9)
+            inventory = (output / "work/partial-run/log/inventory.jsonl").read_text().splitlines()
+            self.assertEqual(len(inventory), 3)
+
 
 if __name__ == "__main__":
     unittest.main()
