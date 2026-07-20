@@ -1,0 +1,29 @@
+{
+  "profile_id": "assomem-v1",
+  "schema_version": 1,
+  "arms": ["associative", "distractor", "absence"],
+  "domain_prefixes": {
+    "work": "WL",
+    "hobby": "HH",
+    "health": "HD",
+    "social": "SC",
+    "finance": "FN"
+  },
+  "filename_template": "AMB_{prefix}_u{user:02d}_{arm}_S{scenario}.json",
+  "context_field": "context",
+  "query_field": "query",
+  "annotation_field": "annotation",
+  "evidence_roles": {
+    "target": "target_evidence",
+    "distractor": "distractor",
+    "partial": "partial_evidence"
+  },
+  "capabilities": {
+    "no_target": true,
+    "broken_link": true,
+    "distractor": true,
+    "absence": true,
+    "add_evidence": true,
+    "source_swap": false
+  }
+}
