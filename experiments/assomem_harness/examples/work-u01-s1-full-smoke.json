@@ -1,0 +1,25 @@
+{
+  "record_type": "manual_smoke_example",
+  "note": "This record predates automatic usage logging; token usage is unavailable.",
+  "item_id": "work-u01-S1",
+  "data_filename": "work/associative/AMB_WL_u01_associative_S1.json",
+  "arm": "full",
+  "solver_model": "kimi/kimi-k3",
+  "validator_model": "qwen3.7-plus",
+  "query": "Manager offered a move onto the platform pod with a mandatory daily dawn check-in — would I thrive there based on what you know about me?",
+  "solver_answer": "Based on what you've shared, a mandatory daily dawn check-in looks like a poor fit for you. The evidence points the other way: you get dull headaches whenever you're up before six for early calls (they only clear by noon), your brain 'actually locks in' past midnight — that's your peak focus window — and you sleep in on weekends to compensate for the mismatch. You've also marked dawn blocks as protected on your March calendar, which suggests mornings are time you deliberately guard rather than give away. Taken together, you're a night-oriented worker whose body and focus both resist early starts, so a daily dawn obligation would likely mean recurring headaches and working against your natural rhythm rather than thriving. That said, this is based on a handful of conversations, not a full picture — if the pod offers something you strongly value, you could ask whether the check-in time is negotiable or whether an async standup is possible before deciding.",
+  "validator": {
+    "element_hits": [true, true, true],
+    "cited_evidence_count": 2,
+    "abstains": false,
+    "asserts_absent_pattern": false,
+    "reason": "The solver successfully addresses all required elements. It explicitly uses the early-rising headache pattern, identifies the late-night peak deep-work window, and recommends negotiating the mandatory dawn check-in or exploring async alternatives."
+  },
+  "metrics": {
+    "rea": 1,
+    "jer": 1,
+    "h_k": 2,
+    "abc": 0
+  },
+  "usage": null
+}

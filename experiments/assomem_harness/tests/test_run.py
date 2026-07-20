@@ -7,7 +7,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[3]
 sys.path.insert(0, str(ROOT / "experiments" / "assomem_harness"))
 
-from run import prepare_run  # noqa: E402
+from run import parse_arms, prepare_run  # noqa: E402
 
 
 class RunTests(unittest.TestCase):
@@ -41,6 +41,12 @@ class RunTests(unittest.TestCase):
             self.assertEqual(result["shipped_conversations"], 9)
             inventory = (output / "work/partial-run/log/inventory.jsonl").read_text().splitlines()
             self.assertEqual(len(inventory), 3)
+
+    def test_parse_arms_accepts_single_and_multiple_arms(self):
+        self.assertEqual(parse_arms("full"), ("full",))
+        self.assertEqual(parse_arms("full,no_target"), ("full", "no_target"))
+        with self.assertRaises(ValueError):
+            parse_arms("unknown")
 
 
 if __name__ == "__main__":

@@ -22,6 +22,16 @@ import sys
 sys.path.insert(0, str(sys_path))
 from clients import call_model_with_usage  # noqa: E402
 
+EVALUATION_ARMS = ("full", "no_target", "broken_link", "distractor", "absence", "add_evidence")
+
+
+def parse_arms(value: str) -> tuple[str, ...]:
+    arms = tuple(part.strip() for part in value.split(",") if part.strip())
+    unknown = set(arms) - set(EVALUATION_ARMS)
+    if not arms or unknown:
+        raise ValueError(f"Unsupported evaluation arms: {', '.join(sorted(unknown)) or value}")
+    return arms
+
 
 def _now() -> str:
     return datetime.now(timezone.utc).isoformat()
@@ -84,7 +94,7 @@ def prepare_run(
 
 def execute_run(
     data_root: Path, profile_path: Path, domain: str, run_id: str, log_root: Path,
-    *, max_items: int | None = None,
+    *, max_items: int | None = None, arms: tuple[str, ...] = EVALUATION_ARMS,
 ) -> dict[str, Any]:
     """Run one solver against frozen gold and score with an independent validator."""
     profile = load_profile(profile_path)
@@ -108,6 +118,8 @@ def execute_run(
     for paired in items:
         frozen_query = paired.arms["associative"]["query"]
         for arm_name, arm in materialize_arms(paired, profile, frozen_query).items():
+            if arm_name not in arms:
+                continue
             checkpoint_id = f"{paired.item_id}:{arm_name}:solver"
             if checkpoint_id in completed:
                 continue
@@ -154,13 +166,14 @@ def main() -> int:
     parser.add_argument("--dry-run", action="store_true")
     parser.add_argument("--execute", action="store_true")
     parser.add_argument("--max-items", type=int, help="Limit an inspection or real execution run.")
+    parser.add_argument("--arms", default=",".join(EVALUATION_ARMS), help="Comma-separated evaluation arms.")
     args = parser.parse_args()
     if args.data_root is None or args.profile is None:
         parser.error("--data-root and --profile (or corresponding environment variables) are required")
     if args.execute:
         manifest = execute_run(
             args.data_root, args.profile, args.domain, args.run_id, args.log_root,
-            max_items=args.max_items,
+            max_items=args.max_items, arms=parse_arms(args.arms),
         )
     else:
         manifest = prepare_run(
