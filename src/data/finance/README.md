@@ -10,33 +10,47 @@
 
 Shared cumulative timeline (111 sessions). Each scenario cuts via `timeline_prefix_end`.
 
+## Folder map
+
+```
+src/data/finance/
+  associative/     # all users
+  distractor/
+  absence/
+```
+
+Filenames: `AMB_FN_u{NN}_{arm}_S{N}.json`
+
+Full scenario cards (evidence quotes, links, distractors) for query agents:  
+→ [`SCENARIOS_S1_S20.md`](SCENARIOS_S1_S20.md)
+
 Generator: `tools/finance/bin/generate_finance_gold_batch.py`  
 Reports: `manifests/finance/finance_gold_s{1_s5,6_s15,16_s20}_report.json`
 
-## Scenarios
+## Scenario cores (S1–S20)
 
-| ID | Bridge (ev_A × ev_B) | Decoupled query |
-|----|----------------------|-----------------|
-| S1 | high-APR revolving sticky × lease deposit next month | speculative tip pool this month |
-| S2 | red-day panic sells × payday auto index transfers | one-week day-trading bootcamp |
-| S3 | liquid reserve <1 month × deductible dental booked | idle cash into yield chase |
-| S4 | Roth room used for 2026 × prior December dual-wrapper fail | year-end second-account signup blitz |
-| S5 | odd-month freelance gaps × auto-renew stack hard to unwind | bundled lifestyle membership |
-| S6 | unused employer match × Friday match-window earmark | hallway raffle stake this afternoon |
-| S7 | weekend FX remittance fees × first-workday euro rent wire | after-hours remittance into group pot |
-| S8 | prior BNPL overdraft × estimated-tax reserve earmarked | split-pay gift plan this week |
-| S9 | open HSA room × HSA-eligible dental scheduled | after-tax tip-channel signup this cycle |
-| S10 | deductible-reset liquid fund × brake repair booked | high-APR chase for emergency envelope |
-| S11 | loan autopay bounce before payout × incentive after draft | deluxe class hold on future paycheck |
-| S12 | dual-approval joint account × dual-approval-only window | off-book stake wire right now |
-| S13 | hype-thread coin losses × index risk budget allocated | one-off coin call signup tonight |
-| S14 | escrow cash committed × move-in buffer reserved | condo crowdfund this housing week |
-| S15 | wash-sale risk on queued harvest × post-window replacement | same-sector rebound buy this week |
-| S16 | high utilization score-ding × landlord soft-pull next week | points-card signup sprint this afternoon |
-| S17 | education-gift earmark × Friday school-calendar deadline | premium holiday gift pool this cycle |
-| S18 | mid-month insurance premium draft × peer-lending lockup | locked yield circle this week |
-| S19 | annual trial-flip overdraft × thin Friday cash buffer | annual productivity-suite trial convert |
-| S20 | away-from-home cash-machine markups × trip cash budgeted | last-minute FX window stop before boarding |
+| ID | Bridge (ev_A × ev_B) | Decoupled query (surface) |
+|----|----------------------|---------------------------|
+| S1 | high apr revolving × lease deposit | Worth parking spare cash in a speculative tip pool th… |
+| S2 | panic sell × payday dca | Chat is hyping a one-week day-trading bootcamp signup |
+| S3 | thin buffer × deductible procedure | Someone pitched rolling idle cash into a yield chase … |
+| S4 | roth room used × second account blitz | Desk wants me on a year-end second-account signup blitz |
+| S5 | freelance gaps × autorenew stack | Worth adding the bundled lifestyle membership this week |
+| S6 | unused match × earmarked paycheck | Desk pinged me about a hallway raffle stake this afte… |
+| S7 | weekend fx fees × monday rent wire | Club pinged me about an after-hours remittance into t… |
+| S8 | bnpl overdraft × estimated tax reserve | Registry wants me on a split-pay gift plan this week |
+| S9 | hsa room × elective dental | Colleague floated an after-tax tip-channel signup thi… |
+| S10 | deductible cash × brake repair | Pitch came in to park the emergency envelope in a hig… |
+| S11 | loan autopay × late bonus | Seller is pushing a deluxe class hold funded by a fut… |
+| S12 | dual approval × household window | Buddy asked me to wire a sizable stake into an off-bo… |
+| S13 | hype coin loss × index risk budget | Discord floated a one-off coin call signup tonight |
+| S14 | escrow committed × movein buffer | Building chat wants me in a condo crowdfund this week |
+| S15 | wash sale × harvest window | Thread wants me on a same-sector rebound buy this week |
+| S16 | utilization spike × landlord soft pull | Desk pinged me about a points-card signup sprint this… |
+| S17 | education gift earmark × friday deadline | Colleague floated a premium holiday gift pool this cycle |
+| S18 | premium draft × peer lending lockup | Buddy asked me to park cash in a locked yield circle … |
+| S19 | annual trial trap × thin friday buffer | Colleague floated an annual productivity-suite trial … |
+| S20 | airport fx markup × trip cash budgeted | Crew floated a last-minute FX window stop before boar… |
 
 ## Arms
 
@@ -50,18 +64,7 @@ Reports: `manifests/finance/finance_gold_s{1_s5,6_s15,16_s20}_report.json`
 - distractor cosine margin ≥ 0.05 above evidence
 - query↔history surface jaccard < 0.30
 - flat TF-IDF top-3 miss on target evidence
-- generator only writes items with autograder **total ≥ 95**
 
-IDs: `AMB_FN_u{NN}_{arm}_S{N}.json`
+## Loader (do not leak labels)
 
-## Folder map
-
-```
-src/data/finance/
-  associative/     # all users
-  distractor/
-  absence/
-```
-
-Filenames: `AMB_{XX}_u{{NN}}_{{arm}}_S{{N}}.json` (user id in name, not folder).
-
+Serialize `context[].dialogue` with only `role`+`content`. Strip `annotation`, `associative_links`, `gold_answer`, `validity_metrics` from model-visible input.
