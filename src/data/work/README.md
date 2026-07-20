@@ -1,8 +1,6 @@
-# AssoMemBench — work/learning batch (v1)
+# AssoMemBench — work/learning (S1–S20)
 
-**150 items · 10 personas · 15 each (5 associative / 5 distractor / 5 absence) · validity gate 150/150 PASS**
-
-Sibling to [`../health/`](../health/) and [`../hobby/`](../hobby/). Gold standard: `DATA_STANDARD v1`.
+**600 items · 10 users · 20 scenarios × 3 arms**
 
 ## Folder map
 
@@ -13,41 +11,50 @@ src/data/work/
   absence/
 ```
 
-Filenames: `AMB_{XX}_u{{NN}}_{{arm}}_S{{N}}.json` (user id in name, not folder).
+Filenames: `AMB_WL_u{NN}_{arm}_S{N}.json`
 
-
-IDs: `AMB_WL_uXX_{arm}_S{1..5}.json`.
+Full scenario cards (evidence quotes, links, distractors) for query agents:  
+→ [`SCENARIOS_S1_S20.md`](SCENARIOS_S1_S20.md)
 
 ## Personas
 
-| user | Source | Notes |
-|------|--------|--------|
-| user1–4 | DynamicMem ×4 | newly generated |
-| user5–9 | RHELM ×5 | newly generated |
-| **user10** | **Desktop Healthy Li** | **migrated from pilot `items/pilot data_S1 work:learn + S2 hobby/` (WL only; HH left in pilot)** |
+| user | Source |
+|------|--------|
+| user1–4 | DynamicMem ×4 |
+| user5–9 | RHELM ×5 |
+| user10 | Desktop Healthy Li |
 
-## Scenario cores (user1–9, aligned)
+## Scenario cores (S1–S20)
 
-| ID | Bridge | Cue decision |
-|----|--------|----------------|
-| S1 | early-rising headache × late deep-work peak | mandatory 7am standup / platform pod |
-| S2 | build-to-learn × lecture-video dropout | stipend Track Alpha vs Beta |
-| S3 | post-2pm crash × prior late review fail | late client workshop 3:30–5:30 |
-| S4 | handwriting retention × digital-slate fail | tablet-only bootcamp |
-| S5 | night-alert sleep debt × unbroken-sleep need | SRE rotation |
+| ID | Bridge (ev_A × ev_B) | Decoupled query (surface) |
+|----|----------------------|---------------------------|
+| S1 | early-rising headache × late deep-work peak | mandatory dawn check-in / platform pod |
+| S2 | build-to-learn × lecture-video dropout | stipend theory track vs live build cohort |
+| S3 | post-2pm crash × prior late review fail | late facilitation block |
+| S4 | handwriting retention × digital-slate fail | screen-first skills cohort |
+| S5 | night-alert sleep debt × unbroken-sleep need | six-week callback / SRE roster |
+| S6 | standing-desk back flare × cap standing hours | full-day standing onsite workshop |
+| S7 | 8–11am focus block × Tuesday leadership opener | keep nine-o'clock Tuesday visibility opener |
+| S8 | async written prep × live panel fail | moderate live panel |
+| S9 | overnight-flight flatness × Monday board dry-run | late Sunday return flight |
+| S10 | channel-ping context loss × interrupt sprint defects | five-day desk-side collaboration sprint |
+| S11 | back-to-back video voice strain × Thu keynote dry-run | consecutive lens-on blocks |
+| S12 | afternoon pair-programming drain × Fri design-doc | afternoon shared-keyboard block |
+| S13 | late-night cert cram × Mon on-call paging | midnight skill drills before duty roster |
+| S14 | hot-desk noise × Wed policy draft | floor-hopping days before compliance memo |
+| S15 | weekend inbox blitz × sabbatical planning Mon | Sunday admin before personal roadmap week |
+| S16 | bullpen chatter × diagram sprint mornings | standing huddle loop before blueprint lock |
+| S17 | full-day mentor shadowing × Fri advancement dossier | bench-adjacent immersion before packet cutoff |
+| S18 | post-2pm espresso / jitter × midweek clarity checkpoint | dusk-to-dawn maker signup |
+| S19 | spreadsheet-grid thinking × wall-chart rehearsal fail | poster-board run-through for numbers session |
+| S20 | rush-hour commute drain × long client-site transit | heavier daily corridor for relocated account |
 
-**user10 note:** migrated pilot keeps original surface text. Associative S4–S5 are the pilot A2 items (async remote; stakeholder walkthroughs); distractor/absence S3–S5 follow the table above. Arms still each have 5/5/5.
+## Arms
 
-## Arms & gates
+- **associative** — both evidences visible; gold needs co-activation → usually decline / protect calendar
+- **distractor** — FOMO lure; same C; must ignore lure
+- **absence** — withhold ev_B; gold abstains
 
-Same as health/diet: A3 associative · A3+V2 distractor · A5 absence; V1 Jaccard≤0.08 / cosine≤0.22 / `flat_rag_hit_top3=false`; V2 distractor≥evidence.
+## Loader (do not leak labels)
 
-## Reproduce
-
-```bash
-cd assomem_pilot/work_learn
-python3 bin/generate_work_learn_batch.py
-# regenerates user1–9; re-validates (does not invent) user10; expects 150/150 PASS
-```
-
-Loader: serialize `context[].dialogue` with only `role`+`content`; strip annotation / evolving_state / links from model-visible input; score vs `gold_answer` + `required_elements` per arm.
+Serialize `context[].dialogue` with only `role`+`content`. Strip `annotation`, `associative_links`, `gold_answer`, `validity_metrics` from model-visible input.
