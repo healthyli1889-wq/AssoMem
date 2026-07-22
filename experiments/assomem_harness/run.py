@@ -48,6 +48,40 @@ def _write_jsonl(path: Path, rows: list[dict[str, Any]]) -> None:
             handle.write(json.dumps(row, ensure_ascii=False) + "\n")
 
 
+def _sha256_file(path: Path) -> str:
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def _write_e1_template(path: Path, inventory: list[dict[str, Any]]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("w", encoding="utf-8", newline="") as handle:
+        writer = csv.DictWriter(
+            handle,
+            fieldnames=(
+                "item_id", "arm", "source", "human_pass", "reviewer", "notes"
+            ),
+        )
+        writer.writeheader()
+        for row in inventory:
+            for arm in ("no_target", "broken_link", "distractor", "absence"):
+                evaluation = row["evaluation_arms"].get(arm)
+                if evaluation:
+                    writer.writerow({
+                        "item_id": row["item_id"],
+                        "arm": arm,
+                        "source": evaluation["lineage"]["source"],
+                        "human_pass": "",
+                        "reviewer": "",
+                        "notes": "",
+                    })
+
+
+def _append_registry(log_root: Path, manifest: dict[str, Any]) -> None:
+    registry = log_root / "registry.jsonl"
+    with registry.open("a", encoding="utf-8") as handle:
+        handle.write(json.dumps(manifest, ensure_ascii=False) + "\n")
+
+
 def _record_path(records_dir: Path, checkpoint_id: str) -> Path:
     digest = hashlib.sha256(checkpoint_id.encode("utf-8")).hexdigest()
     return records_dir / f"{digest}.json"
@@ -129,6 +163,7 @@ def prepare_run(
             "query_status": "needs_author_validator",
         })
     _write_jsonl(log_dir / "inventory.jsonl", inventory)
+    _write_e1_template(run_root / "review" / "e1_intervention.csv", inventory)
     with (run_root / "results.tsv").open("w", encoding="utf-8", newline="") as handle:
         writer = csv.writer(handle, delimiter="\t")
         writer.writerow(["timestamp", "phase", "domain", "run_id", "status", "description"])
@@ -141,12 +176,16 @@ def prepare_run(
         "run_id": run_id,
         "base_items": len(items),
         "shipped_conversations": len(items) * len(profile.arms),
+        "profile_sha256": _sha256_file(profile_path),
+        "prompt_contract_version": 3,
+        "evaluation_arms": list(EVALUATION_ARMS),
         "generated_at": _now(),
         "mode": "dry-run",
     }
     (run_root / "run_manifest.json").write_text(
         json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )
+    _append_registry(log_root, manifest)
     return manifest
 
 
@@ -246,7 +285,7 @@ def _execute_run_unlocked(
             record = {
                 "checkpoint_id": checkpoint_id,
                 "item_id": paired.item_id,
-                "data_filename": arm.visible["data_filename"],
+                "data_filename": arm.lineage["source"],
                 "domain": domain,
                 "arm": arm_name,
                 "solver_model": roles["solver"].model,

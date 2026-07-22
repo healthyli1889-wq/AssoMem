@@ -61,13 +61,22 @@ def aggregate(results_path: Path, output_dir: Path, *, seed: int = 20260720) -> 
             if arm == "absence":
                 grouped[solver]["abc"].append(int(record["abc"]))
     rows = []
+    control_rows = []
     for solver, values in sorted(grouped.items()):
-        required = ("full", "no_target", "broken_link", "jer", "dir", "fool_rate", "abc")
-        if any(not values[key] for key in required):
-            raise ValueError(f"incomplete scored run for {solver}: {', '.join(key for key in required if not values[key])}")
-        rows.append({"solver": solver, **{key: values[key] for key in required}})
+        ladder_required = ("full", "no_target", "broken_link", "jer")
+        if any(not values[key] for key in ladder_required):
+            raise ValueError(
+                f"incomplete ladder run for {solver}: "
+                f"{', '.join(key for key in ladder_required if not values[key])}"
+            )
+        row = {"solver": solver, **{key: values[key] for key in ladder_required}}
+        rows.append(row)
+        control_required = ("dir", "fool_rate", "abc")
+        if all(values[key] for key in control_required):
+            control_rows.append({**row, **{key: values[key] for key in control_required}})
     (output_dir / "table_a.md").write_text(build_table_a(rows, seed=seed), encoding="utf-8")
-    (output_dir / "table_b.md").write_text(build_table_b(rows), encoding="utf-8")
+    if control_rows:
+        (output_dir / "table_b.md").write_text(build_table_b(control_rows), encoding="utf-8")
     (output_dir / "scores.json").write_text(json.dumps(rows, indent=2) + "\n", encoding="utf-8")
 
 

@@ -29,7 +29,7 @@ class ProfileDatasetTests(unittest.TestCase):
         payload = solver_input(item.arms["associative"], item.arms["associative"]["query"])
         rendered = str(payload)
         self.assertIn("context", payload)
-        self.assertIn("data_filename", payload)
+        self.assertNotIn("data_filename", payload)
         self.assertNotIn("gold_answer", rendered)
         self.assertNotIn("required_elements", rendered)
         self.assertNotIn("annotation", rendered)

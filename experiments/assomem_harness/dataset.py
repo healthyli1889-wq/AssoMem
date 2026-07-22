@@ -70,7 +70,6 @@ def solver_input(item: dict[str, Any], query: str) -> dict[str, Any]:
     for session in context:
         session.pop("annotation", None)
     return {
-        "data_filename": item["sample_id"] + ".json",
         "context": context,
         "query": query,
         "prompt_hash": hashlib.sha256(

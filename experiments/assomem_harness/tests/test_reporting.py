@@ -8,7 +8,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[3]
 sys.path.insert(0, str(ROOT / "experiments" / "assomem_harness"))
 
-from aggregate import audit_attempts  # noqa: E402
+from aggregate import aggregate, audit_attempts  # noqa: E402
 from reporting import build_table_a, build_table_b  # noqa: E402
 
 
@@ -38,6 +38,23 @@ class ReportingTests(unittest.TestCase):
             audit = audit_attempts(path)
         self.assertEqual(audit["duplicate_keys"], 1)
         self.assertEqual(audit["conflicting_scores"], 1)
+
+    def test_ladder_only_run_writes_table_a_without_control_arms(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            results = root / "results.jsonl"
+            rows = [
+                {
+                    "checkpoint_id": f"item:{arm}", "prompt_hash": arm, "status": "scored",
+                    "solver_model": "solver", "arm": arm, "rea": 1 if arm == "full" else 0,
+                    "jer": 1, "abc": 0,
+                }
+                for arm in ("full", "no_target", "broken_link")
+            ]
+            results.write_text("\n".join(json.dumps(row) for row in rows) + "\n")
+            aggregate(results, root / "output")
+            self.assertTrue((root / "output" / "table_a.md").is_file())
+            self.assertFalse((root / "output" / "table_b.md").exists())
 
     def test_aggregate_ignores_error_records_before_incomplete_check(self):
         with tempfile.TemporaryDirectory() as directory:
