@@ -97,9 +97,16 @@ def _no_target_audit(item: dict[str, Any], removed_sessions: set[int]) -> dict[s
     }
 
 
-def _break_link(item: dict[str, Any], profile: DatasetProfile) -> dict[str, Any]:
-    """Keep ev_B content but visibly make every turn a non-user source."""
+def _source_name(item: dict[str, Any]) -> str:
+    names = ("Alex", "Maya", "Jordan", "Priya", "Sam", "Nora", "Leo", "Rina")
+    index = int(hashlib.sha256(item["sample_id"].encode("utf-8")).hexdigest(), 16)
+    return names[index % len(names)]
+
+
+def _break_link(item: dict[str, Any], profile: DatasetProfile) -> tuple[dict[str, Any], str]:
+    """Reattribute ev_B to a named friend while preserving the reported content."""
     clone = copy.deepcopy(item)
+    source_name = _source_name(item)
     ev_b_session = next(
         int(session_id) for session_id, annotation in clone[profile.annotation_field].items()
         if annotation.get("evidence_id") == "ev_B"
@@ -107,12 +114,17 @@ def _break_link(item: dict[str, Any], profile: DatasetProfile) -> dict[str, Any]
     for session in clone["context"]:
         if session["session_id"] != ev_b_session:
             continue
+        user_turn_count = 0
         for turn in session["dialogue"]:
             if turn["role"] == "user":
-                turn["content"] = "Friend (not the user) said: " + turn["content"]
+                if user_turn_count == 0:
+                    turn["content"] = f"My friend {source_name} told me: “{turn['content']}”"
+                else:
+                    turn["content"] = f"{source_name} also told me: “{turn['content']}”"
+                user_turn_count += 1
             else:
-                turn["content"] = "Assistant replied to the friend: " + turn["content"]
-    return clone
+                turn["content"] = f"It sounds like {source_name}'s experience, not yours."
+    return clone, source_name
 
 
 def materialize_arms(
@@ -121,11 +133,13 @@ def materialize_arms(
     base = paired.arms["associative"]
     target_sessions = set(_target_sessions(base, profile))
     no_target = _remove_sessions(base, target_sessions)
-    broken = _break_link(base, profile)
+    broken, source_name = _break_link(base, profile)
     absence = paired.arms["absence"]
     distractor = paired.arms["distractor"]
     full_contract = _evidence_contract(base, profile, {"ev_A": "user", "ev_B": "user"})
     broken_contract = _evidence_contract(base, profile, {"ev_A": "user", "ev_B": "friend"})
+    broken_contract["ev_B"]["source"] = "other_person"
+    broken_contract["ev_B"]["source_name"] = source_name
     no_target_contract = _evidence_contract(base, profile, {"ev_A": "missing", "ev_B": "missing"})
     absence_contract = _evidence_contract(base, profile, {"ev_A": "user", "ev_B": "missing"})
     return {
@@ -142,7 +156,11 @@ def materialize_arms(
             _visible(no_target, query), _gold(base, "not_gold", no_target_contract),
         ),
         "broken_link": EvaluationArm(
-            "broken_link", {"source": paired.filenames["associative"], "transform": "ev_B_to_friend"},
+            "broken_link", {
+                "source": paired.filenames["associative"],
+                "transform": "ev_B_to_named_friend",
+                "source_name": source_name,
+            },
             _visible(broken, query), _gold(base, "not_gold", broken_contract),
         ),
         "distractor": EvaluationArm(

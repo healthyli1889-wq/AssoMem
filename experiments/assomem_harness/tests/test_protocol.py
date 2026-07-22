@@ -35,6 +35,7 @@ class ProtocolTests(unittest.TestCase):
         self.assertIn("source_misattribution", prompt)
         self.assertIn("conclusion_correct", prompt)
         self.assertIn("evidence_contract", prompt)
+        self.assertIn("same user", prompt)
 
 
 if __name__ == "__main__":
