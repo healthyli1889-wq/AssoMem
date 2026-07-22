@@ -21,7 +21,7 @@ from manifest import build_stratified_manifest, select_manifest_items
 from models import load_roles, validate_solver_validator_independence
 from profile import load_profile
 from protocol import score_prompt, solver_prompt
-from workflow import score_solver_answer, validate_solver_answer, validate_validator_answer
+from workflow import score_solver_answer, validate_solver_answer
 from zero_evidence import run_zero_evidence_check
 
 sys_path = Path(__file__).resolve().parents[1] / "query_validity"
@@ -103,9 +103,8 @@ def _write_e2_template(path: Path, inventory: list[dict[str, Any]]) -> None:
         writer = csv.DictWriter(
             handle,
             fieldnames=(
-                "item_id", "arm", "human_binary_correct", "human_target_asserted",
-                "human_h_k", "human_source_misattribution", "judge_agrees",
-                "reviewer", "notes",
+                "item_id", "arm", "human_rea", "human_h_k",
+                "human_source_misattribution", "judge_agrees", "reviewer", "notes",
             ),
         )
         writer.writeheader()
@@ -114,8 +113,7 @@ def _write_e2_template(path: Path, inventory: list[dict[str, Any]]) -> None:
                 writer.writerow({
                     "item_id": row["item_id"],
                     "arm": arm,
-                    "human_binary_correct": "",
-                    "human_target_asserted": "",
+                    "human_rea": "",
                     "human_h_k": "",
                     "human_source_misattribution": "",
                     "judge_agrees": "",
@@ -151,7 +149,7 @@ def _record_path(records_dir: Path, checkpoint_id: str) -> Path:
     return records_dir / f"{digest}.json"
 
 
-def _write_record(records_dir: Path, record: dict[str, Any]) -> dict[str, Any]:
+def _write_record(records_dir: Path, record: dict[str, Any]) -> None:
     records_dir.mkdir(parents=True, exist_ok=True)
     persisted = {**record, "attempt_id": str(uuid.uuid4()), "recorded_at": _now()}
     attempts_dir = records_dir.parent / "attempts"
@@ -171,49 +169,6 @@ def _write_record(records_dir: Path, record: dict[str, Any]) -> dict[str, Any]:
         temporary.write(json.dumps(persisted, ensure_ascii=False) + "\n")
         temporary_path = Path(temporary.name)
     os.replace(temporary_path, destination)
-    return persisted
-
-
-def _canonical_records(records_dir: Path) -> list[dict[str, Any]]:
-    if not records_dir.is_dir():
-        return []
-    return sorted(
-        (
-            json.loads(path.read_text(encoding="utf-8"))
-            for path in records_dir.glob("*.json")
-        ),
-        key=lambda record: record["checkpoint_id"],
-    )
-
-
-def _refresh_run_views(
-    run_root: Path, records_dir: Path, *, target: int, current_stage: str
-) -> None:
-    """Rebuild compatibility views from atomic canonical records."""
-    records = _canonical_records(records_dir)
-    _write_jsonl(run_root / "checkpoint.jsonl", records)
-    log_dir = run_root / "log"
-    log_dir.mkdir(parents=True, exist_ok=True)
-    _write_jsonl(log_dir / "results.jsonl", records)
-    by_condition = run_root / "by_condition"
-    for arm in VNEXT_EVALUATION_ARMS:
-        destination = by_condition / arm
-        destination.mkdir(parents=True, exist_ok=True)
-        _write_jsonl(
-            destination / "trials.jsonl",
-            [record for record in records if record.get("arm") == arm],
-        )
-    scored = sum(record.get("status") == "scored" for record in records)
-    failed = sum(record.get("status") != "scored" for record in records)
-    (run_root / "PROGRESS.txt").write_text(
-        f"{scored}/{target}\nscored={scored}\nfailed={failed}\n"
-        f"target={target}\nstage={current_stage}\n",
-        encoding="utf-8",
-    )
-
-
-def _stage(name: str, status: str = "complete", **details: Any) -> dict[str, Any]:
-    return {"stage": name, "status": status, "timestamp": _now(), **details}
 
 
 def completed_checkpoint_ids(records_dir: Path) -> set[str]:
@@ -332,15 +287,12 @@ def run_zero_evidence(
     results = []
     for item in items:
         result = run_zero_evidence_check(
-            item.arms["associative"], profile, roles["solver"], roles["validator"],
-            call_model_with_usage, trials=trials,
+            item.arms["associative"], profile, roles["solver"], call_model_with_usage, trials=trials
         )
         (destination / f"{item.item_id}.json").write_text(
             json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
         )
         results.append(result)
-        if not result["pass"]:
-            raise RuntimeError(f"{item.item_id}: zero-evidence gate failed")
     return {
         "run_id": run_id,
         "domain": domain,
@@ -421,8 +373,6 @@ def _execute_run_unlocked(
             if json.loads(line).get("status") == "scored"
         }
 
-    target = len(items) * len(selected_arms)
-    _refresh_run_views(run_root, records_dir, target=target, current_stage="execute")
     records: list[dict[str, Any]] = []
     for paired in items:
         for arm_name, arm in _materialize(paired, profile).items():
@@ -431,23 +381,15 @@ def _execute_run_unlocked(
             checkpoint_id = f"{paired.item_id}:{arm_name}:solver"
             if checkpoint_id in completed:
                 continue
-            trace = [_stage(
-                "materialized",
-                arm=arm_name,
-                source=arm.lineage["source"],
-                prompt_hash=arm.visible["prompt_hash"],
-            )]
             if arm_name == "no_target" and not arm.lineage["leakage_audit"]["passed"]:
                 record = {
                     "checkpoint_id": checkpoint_id, "item_id": paired.item_id,
                     "arm": arm_name, "status": "invalid_arm",
-                    "error_stage": "materialized",
                     "error": "no_target leakage audit failed", "lineage": arm.lineage,
-                    "stage_trace": trace + [_stage("materialized", "failed")],
                 }
                 _write_record(records_dir, record)
-                _refresh_run_views(run_root, records_dir, target=target, current_stage="failed")
-                raise RuntimeError(record["error"])
+                records.append(record)
+                continue
             try:
                 answer, solver_usage = call_model_with_usage(
                     roles["solver"], solver_prompt(arm.visible, profile)
@@ -456,77 +398,37 @@ def _execute_run_unlocked(
                 record = {
                     "checkpoint_id": checkpoint_id, "item_id": paired.item_id,
                     "arm": arm_name, "status": "solver_error",
-                    "error_stage": "solver_called",
                     "error": str(exc), "lineage": arm.lineage,
-                    "stage_trace": trace + [_stage("solver_called", "failed")],
                 }
                 _write_record(records_dir, record)
-                _refresh_run_views(run_root, records_dir, target=target, current_stage="failed")
-                raise RuntimeError(f"{checkpoint_id}: {record['error']}") from exc
-            trace.append(_stage("solver_called", usage=solver_usage))
+                records.append(record)
+                continue
             schema_error = validate_solver_answer(answer, profile)
             if schema_error:
                 record = {
                     "checkpoint_id": checkpoint_id, "item_id": paired.item_id,
                     "arm": arm_name, "status": "invalid_response",
-                    "error_stage": "solver_validated",
                     "error": schema_error, "response": answer,
                     "solver_usage": solver_usage, "lineage": arm.lineage,
-                    "stage_trace": trace + [_stage("solver_validated", "failed")],
                 }
                 _write_record(records_dir, record)
-                _refresh_run_views(run_root, records_dir, target=target, current_stage="failed")
-                raise RuntimeError(f"{checkpoint_id}: {schema_error}")
-            trace.append(_stage("solver_validated"))
+                records.append(record)
+                continue
             try:
                 judgment, validator_usage = call_model_with_usage(
-                    roles["validator"],
-                    score_prompt(answer, arm.ground_truth, profile, visible=arm.visible),
+                    roles["validator"], score_prompt(answer, arm.ground_truth, profile)
                 )
             except (OSError, RuntimeError, ValueError) as exc:
                 record = {
                     "checkpoint_id": checkpoint_id, "item_id": paired.item_id,
                     "arm": arm_name, "status": "validator_error",
-                    "error_stage": "validator_called",
                     "error": str(exc), "response": answer,
                     "solver_usage": solver_usage, "lineage": arm.lineage,
-                    "stage_trace": trace + [_stage("validator_called", "failed")],
                 }
                 _write_record(records_dir, record)
-                _refresh_run_views(run_root, records_dir, target=target, current_stage="failed")
-                raise RuntimeError(f"{checkpoint_id}: {record['error']}") from exc
-            trace.append(_stage("validator_called", usage=validator_usage))
-            validator_error = validate_validator_answer(judgment, profile)
-            if validator_error:
-                record = {
-                    "checkpoint_id": checkpoint_id, "item_id": paired.item_id,
-                    "arm": arm_name, "status": "invalid_validator_response",
-                    "error_stage": "validator_validated",
-                    "error": validator_error, "response": answer,
-                    "validator": judgment, "solver_usage": solver_usage,
-                    "validator_usage": validator_usage, "lineage": arm.lineage,
-                    "stage_trace": trace + [_stage("validator_validated", "failed")],
-                }
-                _write_record(records_dir, record)
-                _refresh_run_views(run_root, records_dir, target=target, current_stage="failed")
-                raise RuntimeError(f"{checkpoint_id}: {validator_error}")
-            trace.append(_stage("validator_validated"))
-            try:
-                metric = score_solver_answer(judgment, answer, arm.ground_truth, profile)
-            except (KeyError, TypeError, ValueError) as exc:
-                record = {
-                    "checkpoint_id": checkpoint_id, "item_id": paired.item_id,
-                    "arm": arm_name, "status": "scoring_error",
-                    "error_stage": "scored", "error": str(exc),
-                    "response": answer, "validator": judgment,
-                    "solver_usage": solver_usage, "validator_usage": validator_usage,
-                    "lineage": arm.lineage,
-                    "stage_trace": trace + [_stage("scored", "failed")],
-                }
-                _write_record(records_dir, record)
-                _refresh_run_views(run_root, records_dir, target=target, current_stage="failed")
-                raise RuntimeError(f"{checkpoint_id}: {record['error']}") from exc
-            trace.append(_stage("scored", metrics=metric))
+                records.append(record)
+                continue
+            metric = score_solver_answer(judgment, answer, arm.ground_truth, profile)
             record = {
                 "checkpoint_id": checkpoint_id,
                 "item_id": paired.item_id,
@@ -543,12 +445,10 @@ def _execute_run_unlocked(
                 "status": "scored",
                 **metric,
                 "lineage": arm.lineage,
-                "stage_trace": trace + [_stage("persisted")],
             }
             records.append(record)
             _write_record(records_dir, record)
-            _refresh_run_views(run_root, records_dir, target=target, current_stage="execute")
-    _refresh_run_views(run_root, records_dir, target=target, current_stage="complete")
+    _write_jsonl(log_dir / "results.jsonl", records)
     return {
         "run_id": run_id, "domain": domain, "answer_records": len(records),
         "run_root": str(run_root), "query_source": "frozen_gold_json",

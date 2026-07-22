@@ -14,20 +14,13 @@ def _dump(value: Any) -> str:
 
 def solver_prompt(visible: dict[str, Any], profile: DatasetProfile | None = None) -> str:
     if profile and profile.data_format == "work-vnext-1":
-        model_input = {
-            "context": visible["context"],
-            "query": visible["query"],
-        }
-        return f"""Answer the user's query using only the supplied conversation.
-If the visible memories do not justify a personalized answer, withhold it rather
-than guessing. Do not assume or infer any hidden proposition.
+        return f"""Answer the target proposition using only the supplied conversation.
 Return exactly one JSON object with exactly these keys:
-{{"mode":"answer"|"withhold","answer":string,"evidence_session_ids":[integer]}}.
-`mode` is `answer` only when the visible memories support the substantive answer;
-otherwise use `withhold`. `answer` must respond naturally to the query and briefly
-explain the evidence boundary. Cite only visible session IDs. Do not mention
-benchmark metadata, evaluation arms, hidden labels, or a target proposition.
-Conversation input: {_dump(model_input)}
+{{"decision":"yes"|"no","answer":string,"evidence_session_ids":[integer]}}.
+`decision` must be yes only when the visible evidence supports the target proposition;
+otherwise return no. `answer` must briefly justify that binary decision. Cite only
+visible session IDs. Do not mention benchmark metadata or hidden labels.
+Conversation input: {_dump(visible)}
 """
     return f"""Answer the user's final query using only the supplied conversation.
 If the evidence is insufficient, explicitly abstain. Do not mention benchmark metadata.
@@ -40,42 +33,24 @@ Conversation input: {_dump(visible)}
 
 
 def score_prompt(
-    answer: dict[str, Any],
-    ground_truth: dict[str, Any],
-    profile: DatasetProfile | None = None,
-    *,
-    visible: dict[str, Any] | None = None,
+    answer: dict[str, Any], ground_truth: dict[str, Any], profile: DatasetProfile | None = None
 ) -> str:
     if profile and profile.data_format == "work-vnext-1":
-        if visible is None:
-            raise ValueError("vNext validator prompt requires the solver-visible arm")
-        validator_visible = {
-            "context": visible["context"],
-            "query": visible["query"],
-        }
         return f"""You are a strict benchmark annotator. Score the solver response against
-the hidden target proposition using the exact conversation that was visible to the
-solver. Do not award credit for world knowledge, generic advice, removed evidence,
-or evidence not visible in this arm.
+the hidden binary target and its arm-specific requirements. Do not award credit for
+world knowledge, generic advice, or evidence not visible in the arm.
 
 Return exactly this JSON schema:
-{{"target_asserted":bool,"target_evidence_grounded":bool,
-"evidence_usage":{{"ev_A_used":bool,"ev_B_used":bool,"h_k":0,
-"source_misattribution":bool}},"abstention":{{"abstains":bool,
-"asserts_absent_pattern":bool}},
+{{"binary_decision_correct":bool,"required_elements":[{{"hit":bool,
+"evidence_grounded":bool,"support":str}}],"evidence_usage":{{"ev_A_used":bool,
+"ev_B_used":bool,"h_k":0}},"abstention":{{"abstains":bool,
+"asserts_absent_pattern":bool}},"source_misattribution":false,
 "condition_correct":bool,"failure_tags":[str],"reason":str}}.
 
-`target_asserted` means the substantive answer, regardless of wording or polarity,
-asserts the hidden target proposition. `target_evidence_grounded` is true only when
-that assertion is supported by the visible conversation. `ev_A_used` and `ev_B_used`
-refer only to the original target facts identified in the ground truth; a neutral
-replacement or B-prime is not the removed original fact. `h_k` is 0, 1, or 2 and
-counts original target facts explicitly cited or unambiguously paraphrased.
-`condition_correct` requires a grounded target assertion for `infer_C`; for
-`withhold_C`, it requires no target assertion and no use of evidence absent from
-`allowed_evidence_ids`. A refusal to assert the target must not be interpreted as
-asserting the opposite arrangement.
-Solver-visible conversation: {_dump(validator_visible)}
+`condition_correct` requires the correct yes/no decision and all arm-specific
+required elements. `h_k` is 0, 1, or 2 and counts only evidence explicitly cited or
+unambiguously paraphrased from the visible input. With `withhold_C`, answer no and
+do not assert the target proposition.
 Solver response: {_dump(answer)}
 Ground truth: {_dump(ground_truth)}
 """

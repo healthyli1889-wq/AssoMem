@@ -40,13 +40,9 @@ def build_stratified_manifest(
     if count > 20 or count < 1:
         raise ValueError("Pilot manifest count must be between 1 and 20")
     if profile.data_format == "work-vnext-1":
-        ordered = sorted(items, key=lambda item: item.item_id)
-        if len(ordered) < count:
-            raise ValueError(f"Only {len(ordered)} vNext pairs are available")
-        # Even stride over the sorted pair list so a small pilot spans all
-        # scenario families instead of exhausting S01 first.
-        stride = len(ordered) / count
-        selected_items = [ordered[int(index * stride)] for index in range(count)]
+        selected_items = sorted(items, key=lambda item: item.item_id)[:count]
+        if len(selected_items) != count:
+            raise ValueError(f"Only {len(selected_items)} vNext pairs are available")
         selected = [{
             "item_id": item.item_id,
             "user_id": item.user_id,
@@ -67,7 +63,7 @@ def build_stratified_manifest(
         } for item in selected_items]
         return {
             "manifest_version": 1,
-            "selection_method": "pair_id_even_stride",
+            "selection_method": "pair_id_sorted",
             "selection_seed": seed,
             "profile_id": profile.profile_id,
             "domain": "work",

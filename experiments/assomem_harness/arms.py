@@ -168,34 +168,16 @@ def materialize_arms(
 
 
 def _vnext_gold(candidate: dict[str, Any], arm_name: str) -> dict[str, Any]:
-    """work-vnext-2.0 arm_gold carries only expected_mode + binary_decision;
-    required_elements/rationale existed only in the retired 1.x pilot data."""
     arm_gold = candidate["arm_gold"][arm_name]
-    contract = candidate["answer_contract"]
-    allowed_evidence = {
-        "full": ["ev_A", "ev_B"],
-        "a_only": ["ev_A"],
-        "b_only": ["ev_B"],
-        "link_broken": ["ev_A"],
-        "distractor": ["ev_A", "ev_B"],
-        "absence": [],
-    }[arm_name]
-    evidence_contract = {
-        evidence_id: evidence
-        for evidence_id, evidence in candidate.get("evidence", {}).items()
-        if evidence_id in allowed_evidence
-    }
     return {
-        "target_proposition": contract["target_proposition"],
-        "allowed_decisions": contract["allowed_decisions"],
-        "decision_semantics": contract.get("decision_semantics", {}),
-        "required_output_fields": contract["required_output_fields"],
+        "target_proposition": candidate["answer_contract"]["target_proposition"],
+        "allowed_decisions": candidate["answer_contract"]["allowed_decisions"],
+        "required_output_fields": candidate["answer_contract"]["required_output_fields"],
         "expected_mode": arm_gold["expected_mode"],
         "binary_decision": arm_gold["binary_decision"],
-        "required_elements": list(arm_gold.get("required_elements", [])),
+        "required_elements": list(arm_gold["required_elements"]),
         "rationale": arm_gold.get("rationale", ""),
-        "evidence_contract": evidence_contract,
-        "allowed_evidence_ids": allowed_evidence,
+        "evidence_contract": candidate["evidence"],
     }
 
 

@@ -1,0 +1,233 @@
+{
+  "schema_version": "work-vnext-1.2",
+  "candidate_id": "AMB_WV_s1_anon_001_absence",
+  "domain": "work",
+  "user_id": "anon_work_user_001",
+  "query_type": "situational_fit",
+  "polarity": "reject",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2025-09-08T16:20:00Z",
+      "speaker_id": "anon_work_user_001",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I keep an incident notebook because I lose the thread when service dependencies are only in chat. Drawing the chain lets me revisit the reasoning later."
+        },
+        {
+          "role": "assistant",
+          "content": "You use an incident notebook to preserve dependency reasoning across interruptions."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2025-10-21T14:40:00Z",
+      "speaker_id": "anon_work_user_001",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The ordinary 08:30 status update was fine today because I only needed to report a finished task; I did not have to decide between competing incidents."
+        },
+        {
+          "role": "assistant",
+          "content": "Routine early reporting felt different from making a live priority decision."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2025-11-17T18:10:00Z",
+      "speaker_id": "anon_work_user_001",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "After a dense client day, I protected the next morning for routine follow-up and moved the architecture review to a later block. The written follow-up was easy; the design tradeoffs needed more room."
+        },
+        {
+          "role": "assistant",
+          "content": "You distinguished routine follow-up from a later block for architecture tradeoffs."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2025-12-09T11:15:00Z",
+      "speaker_id": "anon_work_user_001",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "For a recent rollout, I wrote the dependency map before inviting others to comment. It made the later discussion calmer because everyone could point to the same sequence."
+        },
+        {
+          "role": "assistant",
+          "content": "A written dependency map gave the later discussion a shared sequence."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2026-02-01T15:05:00Z",
+      "speaker_id": "anon_work_user_001",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I finished the routine access-review tickets after lunch. They were straightforward once the owner list was already defined."
+        },
+        {
+          "role": "assistant",
+          "content": "The predefined routine work was straightforward."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2026-03-03T13:45:00Z",
+      "speaker_id": "anon_work_user_001",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Before the afternoon sync, I sent a short written sequence of open decisions. It meant the meeting could focus on exceptions instead of reconstructing the whole incident."
+        },
+        {
+          "role": "assistant",
+          "content": "Written preparation let the meeting focus on exceptions."
+        }
+      ]
+    }
+  ],
+  "query": "The platform pod requires a fixed 06:15 daily live incident-priority call. Based only on these records, should that schedule be flagged as a fit risk for this user? Answer yes or no, then cite the relevant records.",
+  "evidence": {
+    "ev_A": {
+      "session_id": 5,
+      "owner": "anon_work_user_001",
+      "fact": "After interruptions ended, the user integrated several service dependencies between 23:40 and 02:10, protected the following morning, and recovered before rechecking the plan."
+    },
+    "ev_B": {
+      "session_id": 7,
+      "owner": "anon_work_user_001",
+      "fact": "At 05:55 the user could read alerts but misordered interdependent incident priorities in a live multi-team call, while routine tickets were normal by 10:30."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory",
+      "summary": "Uses external representation to preserve dependency reasoning."
+    },
+    "2": {
+      "role": "background_memory",
+      "summary": "Can complete an early routine status update; live priority decisions are a distinct demand."
+    },
+    "3": {
+      "role": "background_memory",
+      "summary": "Separates routine follow-up from architecture tradeoffs after a dense day."
+    },
+    "4": {
+      "role": "background_memory",
+      "summary": "Uses written dependency maps before group discussion."
+    },
+    "6": {
+      "role": "background_memory",
+      "summary": "Can complete routine predefined work in a normal afternoon block."
+    },
+    "8": {
+      "role": "background_memory",
+      "summary": "Uses written preparation to reduce live reconstruction work."
+    }
+  },
+  "relational_connector": {
+    "relation": "A fixed dawn live-prioritization demand may arrive before this user's stable complex-integration and recovery cycle.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "excludes": [
+      "all early work is unsuitable",
+      "all meetings are unsuitable",
+      "the user must reject the role"
+    ],
+    "link_broken_change": "The early-call impairment is made environment-specific rather than a schedule-phase signal."
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 5,
+      "quote": "kept several service dependencies active at once"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 7,
+      "quote": "I put account recovery after notifications"
+    }
+  ],
+  "retrieval_cue": {
+    "cue_type": "situational_fit",
+    "why_it_naturally_retrieves_R": "A fixed daily live priority call raises a concrete schedule-fit question without naming either episode or the inferred phase-misalignment relation."
+  },
+  "relation_specificity": {
+    "nearby_relation": "The user can complete routine early reporting and routine tickets.",
+    "why_it_does_not_license_C": "Those facts do not show how the user performs when early work requires live integration of multiple dependent priorities."
+  },
+  "coactivation_bridge": "A shows a stable pattern of complex dependency integration in a late, protected work-and-recovery cycle. B shows a selective early live-prioritization failure rather than a universal inability to work in the morning. Together they support flagging a fixed dawn schedule as a fit risk only when it repeatedly requires real-time dependency integration.",
+  "latent_C": {
+    "inference": "The fixed daily 06:15 live incident-priority schedule should be flagged as a fit risk for this user.",
+    "calibrated_language": "flagged as a fit risk"
+  },
+  "answer_contract": {
+    "target_proposition": "The fixed daily 06:15 live incident-priority schedule should be flagged as a fit risk for this user.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible evidence supports the target proposition.",
+      "no": "The visible evidence does not support the target proposition; this does not mean the schedule is positively suitable."
+    },
+    "required_output_fields": [
+      "decision",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "arm_gold": {
+    "absence": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that the visible records do not support the target proposition",
+        "do not claim that the schedule is positively suitable"
+      ],
+      "rationale": "Without both target episodes, the remaining background cannot support the original schedule-risk proposition."
+    }
+  },
+  "provenance": {
+    "authoring_method": "human-gated manual draft",
+    "created_at": "2026-07-22",
+    "anonymous_submission": true,
+    "source_person_name": null,
+    "source_corpus": null,
+    "gate_0_review_path": "s1/review/gate_0.csv",
+    "gate_0_review_unit": "work_s1_relational_v1",
+    "release_eligible": true,
+    "materialized_from": "AMB_WV_s1_anon_001",
+    "source_data_arm": "absence"
+  },
+  "pair_id": "AMB_WV_s1_anon_001",
+  "data_arm": "absence",
+  "withheld_target_evidence_ids": [
+    "ev_A",
+    "ev_B"
+  ],
+  "target_evidence_ids": [],
+  "available_evaluation_conditions": [
+    "absence"
+  ]
+}

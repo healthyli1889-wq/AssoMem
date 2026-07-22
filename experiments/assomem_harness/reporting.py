@@ -76,10 +76,8 @@ def build_vnext_table_b(rows: list[dict[str, Any]]) -> str:
     ]
     for row in rows:
         absence_fpr = 1 - sum(row["absence"]) / len(row["absence"])
-        zero_fpr = float(row["zero_evidence_fpr"])
-        zero_status = "pass" if bool(row["zero_evidence_pass"]) else "fail"
         lines.append(
             f"| {row['solver']} | {_cell(row['distractor'])} | {absence_fpr:.2f} | "
-            f"{zero_status} (FPR {zero_fpr:.2f}) |"
+            "required before execution |"
         )
     return "\n".join(lines) + "\n"

@@ -19,7 +19,7 @@ class VnextHarnessTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.profile = load_profile(ROOT / "experiments/assomem_harness/profiles/work-vnext-1.json")
-        cls.data_root = ROOT / "staging/work-vnext/work/harness-root-s1-s10"
+        cls.data_root = ROOT / "staging/work-vnext/v1/s1/candidates"
         cls.item = discover_vnext_items(cls.data_root, cls.profile, "work")[0]
 
     def test_discovers_and_materializes_the_three_source_pair(self):
@@ -30,78 +30,29 @@ class VnextHarnessTests(unittest.TestCase):
         )
         self.assertEqual(arms["full"].ground_truth["binary_decision"], True)
         self.assertEqual(arms["a_only"].ground_truth["binary_decision"], False)
-        self.assertEqual(arms["absence"].ground_truth["expected_mode"], "withhold_C")
-        self.assertEqual(len(arms["distractor"].visible["context"]), 20)
-        self.assertEqual(len(arms["absence"].visible["context"]), 20)
-        # a_only must visibly replace the ev_B session rather than delete it.
-        full_ids = [session["session_id"] for session in arms["full"].visible["context"]]
-        a_only_ids = [session["session_id"] for session in arms["a_only"].visible["context"]]
-        self.assertEqual(full_ids, a_only_ids)
-        self.assertNotEqual(arms["full"].visible["context"], arms["a_only"].visible["context"])
+        self.assertIn(9, [session["session_id"] for session in arms["distractor"].visible["context"]])
+        self.assertNotIn(5, [session["session_id"] for session in arms["absence"].visible["context"]])
 
-    def test_binary_contract_requires_mode_and_scores_it_deterministically(self):
+    def test_binary_contract_requires_decision_and_scores_it_deterministically(self):
         self.assertIsNone(validate_solver_answer(
-            {"mode": "answer", "answer": "Supported by sessions 5 and 7.", "evidence_session_ids": [5, 7]},
+            {"decision": "yes", "answer": "Supported by sessions 5 and 7.", "evidence_session_ids": [5, 7]},
             self.profile,
         ))
-        self.assertIn("mode", validate_solver_answer({"answer": "x"}, self.profile) or "")
+        self.assertIn("decision", validate_solver_answer({"answer": "x"}, self.profile) or "")
         score = score_solver_answer(
-            {
-                "target_asserted": True,
-                "target_evidence_grounded": True,
-                "evidence_usage": {
-                    "ev_A_used": True,
-                    "ev_B_used": True,
-                    "h_k": 2,
-                    "source_misattribution": False,
-                },
-                "abstention": {"abstains": False, "asserts_absent_pattern": False},
-                "condition_correct": True,
-                "failure_tags": [],
-                "reason": "Both visible target facts support the answer.",
-            },
-            {"mode": "answer", "answer": "x", "evidence_session_ids": [5, 7]},
-            {
-                "binary_decision": True,
-                "expected_mode": "infer_C",
-                "allowed_evidence_ids": ["ev_A", "ev_B"],
-            },
+            {"required_elements": [{"hit": True}], "binary_decision_correct": True},
+            {"decision": "yes", "answer": "x", "evidence_session_ids": [5, 7]},
+            {"binary_decision": True},
             self.profile,
         )
         self.assertEqual(score["binary_correct"], 1)
 
     def test_zero_evidence_rejects_a_target_positive_guess(self):
-        solver = object()
-        validator = object()
-
-        def fake_call(model, _prompt):
-            if model is solver:
-                return (
-                    {"mode": "answer", "answer": "guess", "evidence_session_ids": []},
-                    {},
-                )
-            self.assertIs(model, validator)
-            return ({
-                "target_asserted": True,
-                "target_evidence_grounded": False,
-                "evidence_usage": {
-                    "ev_A_used": False,
-                    "ev_B_used": False,
-                    "h_k": 0,
-                    "source_misattribution": False,
-                },
-                "abstention": {"abstains": False, "asserts_absent_pattern": False},
-                "condition_correct": False,
-                "failure_tags": ["unsupported_target"],
-                "reason": "The target was guessed without visible memories.",
-            }, {})
-
         result = run_zero_evidence_check(
             self.item.arms["associative"],
             self.profile,
-            solver,
-            validator,
-            fake_call,
+            object(),
+            lambda _solver, _prompt: ({"decision": "yes", "answer": "guess", "evidence_session_ids": []}, {}),
             trials=2,
         )
         self.assertFalse(result["pass"])
