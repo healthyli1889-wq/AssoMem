@@ -3,6 +3,8 @@
 from __future__ import annotations
 
 import copy
+import hashlib
+import re
 from dataclasses import dataclass
 from typing import Any
 
@@ -46,8 +48,39 @@ def _remove_sessions(item: dict[str, Any], sessions: set[int]) -> dict[str, Any]
     return clone
 
 
+def _session_text(session: dict[str, Any]) -> str:
+    return " ".join(turn["content"] for turn in session["dialogue"])
+
+
+def _normalized(text: str) -> str:
+    return re.sub(r"\s+", " ", text.lower()).strip()
+
+
+def _no_target_audit(item: dict[str, Any], removed_sessions: set[int]) -> dict[str, Any]:
+    removed = [
+        _session_text(session) for session in item["context"]
+        if session["session_id"] in removed_sessions
+    ]
+    visible = " ".join(
+        _session_text(session) for session in item["context"]
+        if session["session_id"] not in removed_sessions
+    )
+    normalized_visible = _normalized(visible)
+    leaked = [
+        text for text in removed
+        if len(_normalized(text)) >= 40 and _normalized(text) in normalized_visible
+    ]
+    return {
+        "removed_evidence_fingerprints": [
+            hashlib.sha256(text.encode("utf-8")).hexdigest() for text in removed
+        ],
+        "exact_visible_leaks": len(leaked),
+        "passed": not leaked,
+    }
+
+
 def _break_link(item: dict[str, Any], profile: DatasetProfile) -> dict[str, Any]:
-    """Keep content but make ev_B explicitly attributable to a friend."""
+    """Keep ev_B content but visibly make every turn a non-user source."""
     clone = copy.deepcopy(item)
     ev_b_session = next(
         int(session_id) for session_id, annotation in clone[profile.annotation_field].items()
@@ -58,7 +91,9 @@ def _break_link(item: dict[str, Any], profile: DatasetProfile) -> dict[str, Any]
             continue
         for turn in session["dialogue"]:
             if turn["role"] == "user":
-                turn["content"] = "A friend told me: " + turn["content"]
+                turn["content"] = "Friend (not the user) said: " + turn["content"]
+            else:
+                turn["content"] = "Assistant replied to the friend: " + turn["content"]
     return clone
 
 
@@ -77,7 +112,11 @@ def materialize_arms(
             _visible(base, query), _gold(base, "answer"),
         ),
         "no_target": EvaluationArm(
-            "no_target", {"source": paired.filenames["associative"], "removed_sessions": sorted(target_sessions)},
+            "no_target", {
+                "source": paired.filenames["associative"],
+                "removed_sessions": sorted(target_sessions),
+                "leakage_audit": _no_target_audit(base, target_sessions),
+            },
             _visible(no_target, query), _gold(base, "not_gold"),
         ),
         "broken_link": EvaluationArm(

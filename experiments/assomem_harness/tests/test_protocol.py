@@ -22,10 +22,15 @@ class ProtocolTests(unittest.TestCase):
     def test_validator_scoring_prompt_contains_gt_but_solver_prompt_would_not(self):
         prompt = score_prompt(
             {"answer": "answer"},
-            {"gold_answer": "gold", "required_elements": ["one", "two"], "expected_mode": "answer"},
+            {
+                "gold_answer": "gold",
+                "required_elements": ["one", "two"],
+                "expected_mode": "not_gold",
+            },
         )
         self.assertIn("gold", prompt)
         self.assertIn("required_elements", prompt)
+        self.assertIn("source_misattribution", prompt)
 
 
 if __name__ == "__main__":

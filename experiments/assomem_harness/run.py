@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import hashlib
 import json
 import os
 from datetime import datetime, timezone
@@ -15,7 +16,7 @@ from dataset import discover_items, solver_input
 from models import load_roles, validate_solver_validator_independence
 from profile import load_profile
 from protocol import score_prompt, solver_prompt
-from workflow import score_solver_answer
+from workflow import score_solver_answer, validate_solver_answer
 
 sys_path = Path(__file__).resolve().parents[1] / "query_validity"
 import sys
@@ -41,6 +42,19 @@ def _write_jsonl(path: Path, rows: list[dict[str, Any]]) -> None:
     with path.open("w", encoding="utf-8") as handle:
         for row in rows:
             handle.write(json.dumps(row, ensure_ascii=False) + "\n")
+
+
+def _record_path(records_dir: Path, checkpoint_id: str) -> Path:
+    digest = hashlib.sha256(checkpoint_id.encode("utf-8")).hexdigest()
+    return records_dir / f"{digest}.json"
+
+
+def _write_record(records_dir: Path, record: dict[str, Any]) -> None:
+    records_dir.mkdir(parents=True, exist_ok=True)
+    destination = _record_path(records_dir, record["checkpoint_id"])
+    temporary = destination.with_suffix(".tmp")
+    temporary.write_text(json.dumps(record, ensure_ascii=False) + "\n", encoding="utf-8")
+    os.replace(temporary, destination)
 
 
 def prepare_run(
@@ -107,11 +121,16 @@ def execute_run(
     log_dir = run_root / "log"
     log_dir.mkdir(parents=True, exist_ok=True)
     checkpoint_path = run_root / "checkpoint.jsonl"
-    completed = set()
-    if checkpoint_path.is_file():
+    records_dir = run_root / "records"
+    completed = {
+        json.loads(path.read_text(encoding="utf-8"))["checkpoint_id"]
+        for path in records_dir.glob("*.json")
+    } if records_dir.is_dir() else set()
+    if checkpoint_path.is_file() and not completed:
         completed = {
             json.loads(line)["checkpoint_id"]
             for line in checkpoint_path.read_text(encoding="utf-8").splitlines()
+            if json.loads(line).get("status") == "scored"
         }
 
     records: list[dict[str, Any]] = []
@@ -123,12 +142,53 @@ def execute_run(
             checkpoint_id = f"{paired.item_id}:{arm_name}:solver"
             if checkpoint_id in completed:
                 continue
-            answer, solver_usage = call_model_with_usage(
-                roles["solver"], solver_prompt(arm.visible)
-            )
-            judgment, validator_usage = call_model_with_usage(
-                roles["validator"], score_prompt(answer, arm.ground_truth)
-            )
+            if arm_name == "no_target" and not arm.lineage["leakage_audit"]["passed"]:
+                record = {
+                    "checkpoint_id": checkpoint_id, "item_id": paired.item_id,
+                    "arm": arm_name, "status": "invalid_arm",
+                    "error": "no_target leakage audit failed", "lineage": arm.lineage,
+                }
+                _write_record(records_dir, record)
+                records.append(record)
+                continue
+            try:
+                answer, solver_usage = call_model_with_usage(
+                    roles["solver"], solver_prompt(arm.visible)
+                )
+            except RuntimeError as exc:
+                record = {
+                    "checkpoint_id": checkpoint_id, "item_id": paired.item_id,
+                    "arm": arm_name, "status": "solver_error",
+                    "error": str(exc), "lineage": arm.lineage,
+                }
+                _write_record(records_dir, record)
+                records.append(record)
+                continue
+            schema_error = validate_solver_answer(answer)
+            if schema_error:
+                record = {
+                    "checkpoint_id": checkpoint_id, "item_id": paired.item_id,
+                    "arm": arm_name, "status": "invalid_response",
+                    "error": schema_error, "response": answer,
+                    "solver_usage": solver_usage, "lineage": arm.lineage,
+                }
+                _write_record(records_dir, record)
+                records.append(record)
+                continue
+            try:
+                judgment, validator_usage = call_model_with_usage(
+                    roles["validator"], score_prompt(answer, arm.ground_truth)
+                )
+            except RuntimeError as exc:
+                record = {
+                    "checkpoint_id": checkpoint_id, "item_id": paired.item_id,
+                    "arm": arm_name, "status": "validator_error",
+                    "error": str(exc), "response": answer,
+                    "solver_usage": solver_usage, "lineage": arm.lineage,
+                }
+                _write_record(records_dir, record)
+                records.append(record)
+                continue
             metric = score_solver_answer(judgment)
             record = {
                 "checkpoint_id": checkpoint_id,
@@ -143,12 +203,12 @@ def execute_run(
                 "validator": judgment,
                 "solver_usage": solver_usage,
                 "validator_usage": validator_usage,
+                "status": "scored",
                 **metric,
                 "lineage": arm.lineage,
             }
             records.append(record)
-            with checkpoint_path.open("a", encoding="utf-8") as handle:
-                handle.write(json.dumps(record, ensure_ascii=False) + "\n")
+            _write_record(records_dir, record)
     _write_jsonl(log_dir / "results.jsonl", records)
     return {
         "run_id": run_id, "domain": domain, "answer_records": len(records),

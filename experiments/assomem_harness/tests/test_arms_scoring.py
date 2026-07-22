@@ -29,9 +29,10 @@ class ArmsAndScoringTests(unittest.TestCase):
             turn["content"] for session in arms["broken_link"].visible["context"]
             for turn in session["dialogue"]
         )
-        self.assertIn("A friend told me:", broken_text)
+        self.assertIn("Friend (not the user) said:", broken_text)
         self.assertNotIn("annotation", str(arms["broken_link"].visible))
         self.assertEqual(arms["absence"].ground_truth["expected_mode"], "abstain")
+        self.assertTrue(arms["no_target"].lineage["leakage_audit"]["passed"])
 
     def test_rea_is_and_aggregation_and_delta_ci_is_paired(self):
         self.assertEqual(rea_item([True, True]), 1)
