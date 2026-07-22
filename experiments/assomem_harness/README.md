@@ -33,14 +33,17 @@ distractor、absence、add-evidence。source-swap/SAA 未实现，报告必须�
 ```bash
 source experiments/assomem_harness/config.example.sh
 
-# 无网络：验证 profile，写 inventory 和待执行 manifest
-python3 experiments/assomem_harness/run.py --dry-run
+# 无网络：冻结并审查分层 pilot manifest
+python3 experiments/assomem_harness/run.py --dry-run --max-items 20 \
+  --run-id work-calibration-v4
 
-# 在 solver 和独立 validator 均配置完成且 smoke 通过后运行
-python3 experiments/assomem_harness/run.py --execute --max-items 10
+# E1 审查通过后，execute 必须使用同一 immutable manifest
+python3 experiments/assomem_harness/run.py --execute --max-items 10 \
+  --item-manifest logs/work/work-calibration-v4/item_manifest.json \
+  --arms full,no_target,broken_link
 ```
 
-每个 run 先记录 `results.tsv`，再产生 `log/` JSONL、checkpoint、review pack、
+每个 run 先记录 `results.tsv`，再产生 `item_manifest.json`、`log/` JSONL、checkpoint、review pack、
 `table_a.md` 与 `table_b.md`。运行输出由 `.gitignore` 忽略，不应提交。
 
 ## 统计
