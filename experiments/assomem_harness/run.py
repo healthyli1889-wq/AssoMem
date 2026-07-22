@@ -198,6 +198,7 @@ def prepare_run(
     log_dir = run_root / "log"
     log_dir.mkdir(parents=True, exist_ok=True)
     inventory: list[dict[str, Any]] = []
+    e1_packets: list[dict[str, Any]] = []
     for item in items:
         query = item.arms["associative"]["query"]
         arms = materialize_arms(item, profile, query)
@@ -212,9 +213,19 @@ def prepare_run(
             },
             "query_status": "needs_author_validator",
         })
+        for arm_name, arm in arms.items():
+            e1_packets.append({
+                "item_id": item.item_id,
+                "arm": arm_name,
+                "source_files": item.filenames,
+                "visible_solver_input": arm.visible,
+                "lineage": arm.lineage,
+                "review_contract": arm.ground_truth,
+            })
     _write_jsonl(log_dir / "inventory.jsonl", inventory)
     _write_e1_template(run_root / "review" / "e1_intervention.csv", inventory)
     _write_e2_template(run_root / "review" / "e2_judgment.csv", inventory)
+    _write_jsonl(run_root / "review" / "e1_packets.jsonl", e1_packets)
     if selection_manifest:
         (run_root / "item_manifest.json").write_text(
             json.dumps(selection_manifest, ensure_ascii=False, indent=2) + "\n",

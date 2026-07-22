@@ -29,6 +29,7 @@ class RunTests(unittest.TestCase):
             self.assertTrue((output / "work/test-run/results.tsv").is_file())
             self.assertTrue((output / "work/test-run/review/e1_intervention.csv").is_file())
             self.assertTrue((output / "work/test-run/review/e2_judgment.csv").is_file())
+            self.assertTrue((output / "work/test-run/review/e1_packets.jsonl").is_file())
             self.assertTrue((output / "registry.jsonl").is_file())
             with (output / "work/test-run/review/e1_intervention.csv").open() as handle:
                 e1_arms = {row["arm"] for row in csv.DictReader(handle)}
