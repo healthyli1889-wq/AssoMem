@@ -33,6 +33,7 @@ class ArmsAndScoringTests(unittest.TestCase):
         self.assertNotIn("annotation", str(arms["broken_link"].visible))
         self.assertEqual(arms["absence"].ground_truth["expected_mode"], "abstain")
         self.assertTrue(arms["no_target"].lineage["leakage_audit"]["passed"])
+        self.assertEqual(arms["broken_link"].ground_truth["evidence_contract"]["ev_B"]["source"], "friend")
 
     def test_rea_is_and_aggregation_and_delta_ci_is_paired(self):
         self.assertEqual(rea_item([True, True]), 1)

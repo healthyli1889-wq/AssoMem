@@ -32,11 +32,29 @@ def _visible(item: dict[str, Any], query: str) -> dict[str, Any]:
     return solver_input(item, query)
 
 
-def _gold(item: dict[str, Any], expected_mode: str) -> dict[str, Any]:
+def _evidence_contract(
+    item: dict[str, Any], profile: DatasetProfile, sources: dict[str, str]
+) -> dict[str, dict[str, str]]:
+    contract: dict[str, dict[str, str]] = {}
+    for annotation in item[profile.annotation_field].values():
+        evidence_id = annotation.get("evidence_id")
+        if evidence_id not in {"ev_A", "ev_B"}:
+            continue
+        contract[evidence_id] = {
+            "fact": annotation.get("atomic_fact", ""),
+            "source": sources.get(evidence_id, "missing"),
+        }
+    return contract
+
+
+def _gold(
+    item: dict[str, Any], expected_mode: str, evidence_contract: dict[str, dict[str, str]]
+) -> dict[str, Any]:
     return {
         "gold_answer": item["gold_answer"],
         "required_elements": list(item["required_elements"]),
         "expected_mode": expected_mode,
+        "evidence_contract": evidence_contract,
     }
 
 
@@ -106,10 +124,14 @@ def materialize_arms(
     broken = _break_link(base, profile)
     absence = paired.arms["absence"]
     distractor = paired.arms["distractor"]
+    full_contract = _evidence_contract(base, profile, {"ev_A": "user", "ev_B": "user"})
+    broken_contract = _evidence_contract(base, profile, {"ev_A": "user", "ev_B": "friend"})
+    no_target_contract = _evidence_contract(base, profile, {"ev_A": "missing", "ev_B": "missing"})
+    absence_contract = _evidence_contract(base, profile, {"ev_A": "user", "ev_B": "missing"})
     return {
         "full": EvaluationArm(
             "full", {"source": paired.filenames["associative"], "transform": "identity"},
-            _visible(base, query), _gold(base, "answer"),
+            _visible(base, query), _gold(base, "answer", full_contract),
         ),
         "no_target": EvaluationArm(
             "no_target", {
@@ -117,22 +139,22 @@ def materialize_arms(
                 "removed_sessions": sorted(target_sessions),
                 "leakage_audit": _no_target_audit(base, target_sessions),
             },
-            _visible(no_target, query), _gold(base, "not_gold"),
+            _visible(no_target, query), _gold(base, "not_gold", no_target_contract),
         ),
         "broken_link": EvaluationArm(
             "broken_link", {"source": paired.filenames["associative"], "transform": "ev_B_to_friend"},
-            _visible(broken, query), _gold(base, "not_gold"),
+            _visible(broken, query), _gold(base, "not_gold", broken_contract),
         ),
         "distractor": EvaluationArm(
             "distractor", {"source": paired.filenames["distractor"], "transform": "shipped"},
-            _visible(distractor, query), _gold(distractor, "answer"),
+            _visible(distractor, query), _gold(distractor, "answer", full_contract),
         ),
         "absence": EvaluationArm(
             "absence", {"source": paired.filenames["absence"], "transform": "shipped"},
-            _visible(absence, query), _gold(absence, "abstain"),
+            _visible(absence, query), _gold(absence, "abstain", absence_contract),
         ),
         "add_evidence": EvaluationArm(
             "add_evidence", {"source": paired.filenames["associative"], "transform": "restore_associative_twin"},
-            _visible(base, query), _gold(base, "answer"),
+            _visible(base, query), _gold(base, "answer", full_contract),
         ),
     }

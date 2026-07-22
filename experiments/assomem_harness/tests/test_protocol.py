@@ -27,11 +27,14 @@ class ProtocolTests(unittest.TestCase):
                 "gold_answer": "gold",
                 "required_elements": ["one", "two"],
                 "expected_mode": "not_gold",
+                "evidence_contract": {"ev_A": {"fact": "A", "source": "user"}},
             },
         )
         self.assertIn("gold", prompt)
         self.assertIn("required_elements", prompt)
         self.assertIn("source_misattribution", prompt)
+        self.assertIn("conclusion_correct", prompt)
+        self.assertIn("evidence_contract", prompt)
 
 
 if __name__ == "__main__":

@@ -22,13 +22,26 @@ Conversation input: {_dump(visible)}
 
 
 def score_prompt(answer: dict[str, Any], ground_truth: dict[str, Any]) -> str:
-    return f"""Score a solver response against hidden ground truth. Return JSON:
-{{"element_hits":[bool],"cited_evidence_count":0,"abstains":bool,
-"asserts_absent_pattern":bool,"source_misattribution":bool,"condition_correct":bool,"reason":str}}.
-element_hits must align in order with required_elements; cite count is 0, 1, or 2.
-When expected_mode is `not_gold`, condition_correct is true only when the solver
-withholds the original personalized inference. For a broken-link input, mark
-source_misattribution true if a friend's statement is used as the user's fact.
+    return f"""You are a strict benchmark annotator. Score the solver response using only
+the hidden ground truth and evidence_contract. Do not award evidence credit for a
+generic conclusion or unstated world knowledge.
+
+Return exactly this JSON schema:
+{{"conclusion_correct":bool,"recommendation_correct":bool,
+"required_elements":[{{"hit":bool,"evidence_grounded":bool,"support":str}}],
+"evidence_usage":{{"ev_A_used":bool,"ev_B_used":bool,"h_k":0,
+"source_misattribution":bool}},"abstention":{{"abstains":bool,
+"asserts_absent_pattern":bool}},"condition_correct":bool,
+"failure_tags":[str],"reason":str}}.
+
+Required-elements array must preserve the exact order and length of required_elements.
+Set h_k to 0, 1, or 2 based only on evidence_contract facts explicitly quoted or
+unambiguously paraphrased in the answer. A generic trait is not evidence usage.
+For expected_mode `answer`, condition_correct requires all required elements, an
+evidence-grounded conclusion, and the required recommendation. For `abstain`,
+condition_correct requires explicit withholding and no original personalized inference.
+For `not_gold`, condition_correct requires withholding the original inference; mark
+source_misattribution true whenever a friend-sourced fact is treated as a user fact.
 Solver response: {_dump(answer)}
 Ground truth: {_dump(ground_truth)}
 """

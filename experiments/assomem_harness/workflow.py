@@ -15,11 +15,22 @@ def validate_solver_answer(answer: dict) -> str | None:
 
 
 def score_solver_answer(verdict: dict) -> dict[str, int | bool]:
-    hits = [bool(hit) for hit in verdict.get("element_hits", [])]
-    cited = int(verdict.get("cited_evidence_count", 0))
-    abstains = bool(verdict.get("abstains"))
-    absent_assertion = bool(verdict.get("asserts_absent_pattern"))
-    source_misattribution = bool(verdict.get("source_misattribution"))
+    element_records = verdict.get("required_elements", [])
+    hits = (
+        [bool(element.get("hit")) for element in element_records]
+        if element_records
+        else [bool(hit) for hit in verdict.get("element_hits", [])]
+    )
+    evidence_usage = verdict.get("evidence_usage", {})
+    cited = int(evidence_usage.get("h_k", verdict.get("cited_evidence_count", 0)))
+    abstention = verdict.get("abstention", {})
+    abstains = bool(abstention.get("abstains", verdict.get("abstains")))
+    absent_assertion = bool(
+        abstention.get("asserts_absent_pattern", verdict.get("asserts_absent_pattern"))
+    )
+    source_misattribution = bool(
+        evidence_usage.get("source_misattribution", verdict.get("source_misattribution"))
+    )
     condition_correct = bool(verdict.get("condition_correct"))
     return {
         "rea": rea_item(hits),
