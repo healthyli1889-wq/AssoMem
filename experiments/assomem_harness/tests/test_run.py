@@ -27,6 +27,7 @@ class RunTests(unittest.TestCase):
             self.assertTrue((output / "work/test-run/log/inventory.jsonl").is_file())
             self.assertTrue((output / "work/test-run/results.tsv").is_file())
             self.assertTrue((output / "work/test-run/review/e1_intervention.csv").is_file())
+            self.assertTrue((output / "work/test-run/review/e2_judgment.csv").is_file())
             self.assertTrue((output / "registry.jsonl").is_file())
 
     def test_dry_run_can_limit_items_for_inspection(self):

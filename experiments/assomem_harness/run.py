@@ -76,6 +76,31 @@ def _write_e1_template(path: Path, inventory: list[dict[str, Any]]) -> None:
                     })
 
 
+def _write_e2_template(path: Path, inventory: list[dict[str, Any]]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("w", encoding="utf-8", newline="") as handle:
+        writer = csv.DictWriter(
+            handle,
+            fieldnames=(
+                "item_id", "arm", "human_rea", "human_h_k",
+                "human_source_misattribution", "judge_agrees", "reviewer", "notes",
+            ),
+        )
+        writer.writeheader()
+        for row in inventory:
+            for arm in ("full", "no_target", "broken_link"):
+                writer.writerow({
+                    "item_id": row["item_id"],
+                    "arm": arm,
+                    "human_rea": "",
+                    "human_h_k": "",
+                    "human_source_misattribution": "",
+                    "judge_agrees": "",
+                    "reviewer": "",
+                    "notes": "",
+                })
+
+
 def _append_registry(log_root: Path, manifest: dict[str, Any]) -> None:
     registry = log_root / "registry.jsonl"
     with registry.open("a", encoding="utf-8") as handle:
@@ -164,6 +189,7 @@ def prepare_run(
         })
     _write_jsonl(log_dir / "inventory.jsonl", inventory)
     _write_e1_template(run_root / "review" / "e1_intervention.csv", inventory)
+    _write_e2_template(run_root / "review" / "e2_judgment.csv", inventory)
     with (run_root / "results.tsv").open("w", encoding="utf-8", newline="") as handle:
         writer = csv.writer(handle, delimiter="\t")
         writer.writerow(["timestamp", "phase", "domain", "run_id", "status", "description"])
