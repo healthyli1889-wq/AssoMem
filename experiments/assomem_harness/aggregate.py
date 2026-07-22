@@ -10,7 +10,34 @@ from pathlib import Path
 from reporting import build_table_a, build_table_b
 
 
+def audit_attempts(path: Path) -> dict[str, int]:
+    """Audit legacy JSONL before any metric aggregation."""
+    groups: dict[tuple[str, str], list[dict]] = defaultdict(list)
+    with path.open(encoding="utf-8") as handle:
+        for line in handle:
+            record = json.loads(line)
+            key = (record.get("checkpoint_id", ""), record.get("prompt_hash", ""))
+            groups[key].append(record)
+    duplicated = [records for records in groups.values() if len(records) > 1]
+    conflicts = sum(
+        len({record.get("rea") for record in records if record.get("status") == "scored"}) > 1
+        for records in duplicated
+    )
+    return {
+        "records": sum(len(records) for records in groups.values()),
+        "unique_keys": len(groups),
+        "duplicate_keys": len(duplicated),
+        "conflicting_scores": conflicts,
+    }
+
+
 def aggregate(results_path: Path, output_dir: Path, *, seed: int = 20260720) -> None:
+    audit = audit_attempts(results_path)
+    if audit["duplicate_keys"]:
+        raise ValueError(
+            "Refusing aggregation: duplicate attempts exist. "
+            "Inspect the duplicate audit before choosing a resolution."
+        )
     grouped: dict[str, dict[str, list[int]]] = defaultdict(lambda: defaultdict(list))
     with results_path.open(encoding="utf-8") as handle:
         for line in handle:

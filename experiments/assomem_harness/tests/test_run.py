@@ -7,7 +7,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[3]
 sys.path.insert(0, str(ROOT / "experiments" / "assomem_harness"))
 
-from run import parse_arms, prepare_run  # noqa: E402
+from run import acquire_run_lock, parse_arms, prepare_run  # noqa: E402
 
 
 class RunTests(unittest.TestCase):
@@ -47,6 +47,14 @@ class RunTests(unittest.TestCase):
         self.assertEqual(parse_arms("full,no_target"), ("full", "no_target"))
         with self.assertRaises(ValueError):
             parse_arms("unknown")
+
+    def test_run_lock_rejects_a_second_process_for_same_run(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            run_root = Path(temporary)
+            with acquire_run_lock(run_root):
+                with self.assertRaises(RuntimeError):
+                    with acquire_run_lock(run_root):
+                        pass
 
 
 if __name__ == "__main__":

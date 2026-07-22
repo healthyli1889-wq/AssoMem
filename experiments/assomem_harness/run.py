@@ -4,9 +4,12 @@ from __future__ import annotations
 
 import argparse
 import csv
+import fcntl
 import hashlib
 import json
 import os
+import tempfile
+from contextlib import contextmanager
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
@@ -52,9 +55,27 @@ def _record_path(records_dir: Path, checkpoint_id: str) -> Path:
 def _write_record(records_dir: Path, record: dict[str, Any]) -> None:
     records_dir.mkdir(parents=True, exist_ok=True)
     destination = _record_path(records_dir, record["checkpoint_id"])
-    temporary = destination.with_suffix(".tmp")
-    temporary.write_text(json.dumps(record, ensure_ascii=False) + "\n", encoding="utf-8")
-    os.replace(temporary, destination)
+    with tempfile.NamedTemporaryFile(
+        mode="w", encoding="utf-8", dir=records_dir, suffix=".tmp", delete=False
+    ) as temporary:
+        temporary.write(json.dumps(record, ensure_ascii=False) + "\n")
+        temporary_path = Path(temporary.name)
+    os.replace(temporary_path, destination)
+
+
+@contextmanager
+def acquire_run_lock(run_root: Path):
+    run_root.mkdir(parents=True, exist_ok=True)
+    lock_path = run_root / ".run.lock"
+    with lock_path.open("w", encoding="utf-8") as handle:
+        try:
+            fcntl.flock(handle.fileno(), fcntl.LOCK_EX | fcntl.LOCK_NB)
+        except BlockingIOError as exc:
+            raise RuntimeError(f"run is already active: {run_root}") from exc
+        try:
+            yield
+        finally:
+            fcntl.flock(handle.fileno(), fcntl.LOCK_UN)
 
 
 def prepare_run(
@@ -107,6 +128,18 @@ def prepare_run(
 
 
 def execute_run(
+    data_root: Path, profile_path: Path, domain: str, run_id: str, log_root: Path,
+    *, max_items: int | None = None, arms: tuple[str, ...] = EVALUATION_ARMS,
+) -> dict[str, Any]:
+    run_root = log_root / domain / run_id
+    with acquire_run_lock(run_root):
+        return _execute_run_unlocked(
+            data_root, profile_path, domain, run_id, log_root,
+            max_items=max_items, arms=arms,
+        )
+
+
+def _execute_run_unlocked(
     data_root: Path, profile_path: Path, domain: str, run_id: str, log_root: Path,
     *, max_items: int | None = None, arms: tuple[str, ...] = EVALUATION_ARMS,
 ) -> dict[str, Any]:

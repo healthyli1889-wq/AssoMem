@@ -15,7 +15,8 @@ def solver_prompt(visible: dict[str, Any]) -> str:
 If the evidence is insufficient, explicitly abstain. Do not mention benchmark metadata.
 Return exactly one JSON object with exactly one key, `answer`. Its string value must
 be your substantive answer to the user and must not be a placeholder, schema example,
-or restatement of this instruction.
+restatement of this instruction. It must not be a dialogue/session object, transcript,
+or metadata.
 Conversation input: {_dump(visible)}
 """
 

@@ -18,6 +18,7 @@ class ProtocolTests(unittest.TestCase):
         self.assertNotIn("required_elements", prompt)
         self.assertIn("key, `answer`", prompt)
         self.assertIn("must not be a placeholder", prompt)
+        self.assertIn("must not be a dialogue", prompt)
 
     def test_validator_scoring_prompt_contains_gt_but_solver_prompt_would_not(self):
         prompt = score_prompt(
