@@ -9,6 +9,7 @@ import hashlib
 import json
 import os
 import tempfile
+import uuid
 from contextlib import contextmanager
 from datetime import datetime, timezone
 from pathlib import Path
@@ -54,13 +55,35 @@ def _record_path(records_dir: Path, checkpoint_id: str) -> Path:
 
 def _write_record(records_dir: Path, record: dict[str, Any]) -> None:
     records_dir.mkdir(parents=True, exist_ok=True)
-    destination = _record_path(records_dir, record["checkpoint_id"])
+    persisted = {**record, "attempt_id": str(uuid.uuid4()), "recorded_at": _now()}
+    attempts_dir = records_dir.parent / "attempts"
+    attempts_dir.mkdir(parents=True, exist_ok=True)
+    attempt_destination = attempts_dir / f"{persisted['attempt_id']}.json"
+    with tempfile.NamedTemporaryFile(
+        mode="w", encoding="utf-8", dir=attempts_dir, suffix=".tmp", delete=False
+    ) as temporary:
+        temporary.write(json.dumps(persisted, ensure_ascii=False) + "\n")
+        temporary_path = Path(temporary.name)
+    os.replace(temporary_path, attempt_destination)
+
+    destination = _record_path(records_dir, persisted["checkpoint_id"])
     with tempfile.NamedTemporaryFile(
         mode="w", encoding="utf-8", dir=records_dir, suffix=".tmp", delete=False
     ) as temporary:
-        temporary.write(json.dumps(record, ensure_ascii=False) + "\n")
+        temporary.write(json.dumps(persisted, ensure_ascii=False) + "\n")
         temporary_path = Path(temporary.name)
     os.replace(temporary_path, destination)
+
+
+def completed_checkpoint_ids(records_dir: Path) -> set[str]:
+    if not records_dir.is_dir():
+        return set()
+    return {
+        record["checkpoint_id"]
+        for path in records_dir.glob("*.json")
+        for record in [json.loads(path.read_text(encoding="utf-8"))]
+        if record.get("status") == "scored"
+    }
 
 
 @contextmanager
@@ -155,10 +178,7 @@ def _execute_run_unlocked(
     log_dir.mkdir(parents=True, exist_ok=True)
     checkpoint_path = run_root / "checkpoint.jsonl"
     records_dir = run_root / "records"
-    completed = {
-        json.loads(path.read_text(encoding="utf-8"))["checkpoint_id"]
-        for path in records_dir.glob("*.json")
-    } if records_dir.is_dir() else set()
+    completed = completed_checkpoint_ids(records_dir)
     if checkpoint_path.is_file() and not completed:
         completed = {
             json.loads(line)["checkpoint_id"]

@@ -39,6 +39,24 @@ class ReportingTests(unittest.TestCase):
         self.assertEqual(audit["duplicate_keys"], 1)
         self.assertEqual(audit["conflicting_scores"], 1)
 
+    def test_aggregate_ignores_error_records_before_incomplete_check(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            results = root / "results.jsonl"
+            output = root / "out"
+            results.write_text("\n".join([
+                json.dumps({"checkpoint_id": "error", "status": "solver_error", "error": "429"}),
+                json.dumps({
+                    "checkpoint_id": "ok", "prompt_hash": "p", "status": "scored",
+                    "solver_model": "solver", "arm": "full", "rea": 1, "jer": 1, "abc": 0,
+                }),
+            ]) + "\n")
+            from aggregate import aggregate
+            with self.assertRaisesRegex(ValueError, "incomplete"):
+                aggregate(results, output)
+            audit = json.loads((output / "run_audit.json").read_text())
+        self.assertEqual(audit["status_counts"]["solver_error"], 1)
+
 
 if __name__ == "__main__":
     unittest.main()

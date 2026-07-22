@@ -1,3 +1,4 @@
+import json
 import tempfile
 import sys
 import unittest
@@ -7,7 +8,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[3]
 sys.path.insert(0, str(ROOT / "experiments" / "assomem_harness"))
 
-from run import acquire_run_lock, parse_arms, prepare_run  # noqa: E402
+from run import acquire_run_lock, completed_checkpoint_ids, parse_arms, prepare_run  # noqa: E402
 
 
 class RunTests(unittest.TestCase):
@@ -55,6 +56,17 @@ class RunTests(unittest.TestCase):
                 with self.assertRaises(RuntimeError):
                     with acquire_run_lock(run_root):
                         pass
+
+    def test_only_scored_records_are_completed(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            records = Path(temporary)
+            (records / "scored.json").write_text(json.dumps({
+                "checkpoint_id": "done", "status": "scored",
+            }))
+            (records / "error.json").write_text(json.dumps({
+                "checkpoint_id": "retry", "status": "solver_error",
+            }))
+            self.assertEqual(completed_checkpoint_ids(records), {"done"})
 
 
 if __name__ == "__main__":
