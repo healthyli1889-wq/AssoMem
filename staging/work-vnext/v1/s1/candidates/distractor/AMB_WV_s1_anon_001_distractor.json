@@ -1,0 +1,327 @@
+{
+  "schema_version": "work-vnext-1.2",
+  "candidate_id": "AMB_WV_s1_anon_001_distractor",
+  "domain": "work",
+  "user_id": "anon_work_user_001",
+  "query_type": "situational_fit",
+  "polarity": "reject",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2025-09-08T16:20:00Z",
+      "speaker_id": "anon_work_user_001",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I keep an incident notebook because I lose the thread when service dependencies are only in chat. Drawing the chain lets me revisit the reasoning later."
+        },
+        {
+          "role": "assistant",
+          "content": "You use an incident notebook to preserve dependency reasoning across interruptions."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2025-10-21T14:40:00Z",
+      "speaker_id": "anon_work_user_001",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The ordinary 08:30 status update was fine today because I only needed to report a finished task; I did not have to decide between competing incidents."
+        },
+        {
+          "role": "assistant",
+          "content": "Routine early reporting felt different from making a live priority decision."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2025-11-17T18:10:00Z",
+      "speaker_id": "anon_work_user_001",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "After a dense client day, I protected the next morning for routine follow-up and moved the architecture review to a later block. The written follow-up was easy; the design tradeoffs needed more room."
+        },
+        {
+          "role": "assistant",
+          "content": "You distinguished routine follow-up from a later block for architecture tradeoffs."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2025-12-09T11:15:00Z",
+      "speaker_id": "anon_work_user_001",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "For a recent rollout, I wrote the dependency map before inviting others to comment. It made the later discussion calmer because everyone could point to the same sequence."
+        },
+        {
+          "role": "assistant",
+          "content": "A written dependency map gave the later discussion a shared sequence."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2026-01-18T02:20:00Z",
+      "speaker_id": "anon_work_user_001",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Daytime messages kept fragmenting the data-loss investigation. From 23:40 to 02:10, I rebuilt the service map and kept several service dependencies active at once; the causal chain finally held together and I wrote a coherent incident plan."
+        },
+        {
+          "role": "assistant",
+          "content": "You were able to integrate the dependency chain after the interruptions ended."
+        },
+        {
+          "role": "user",
+          "content": "I protected the following morning, slept until 09:30, then checked the plan again. It still made sense, and I felt settled rather than overstimulated."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2026-02-01T15:05:00Z",
+      "speaker_id": "anon_work_user_001",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I finished the routine access-review tickets after lunch. They were straightforward once the owner list was already defined."
+        },
+        {
+          "role": "assistant",
+          "content": "The predefined routine work was straightforward."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2026-02-11T06:30:00Z",
+      "speaker_id": "anon_work_user_001",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "On the 05:55 incident-priority call, I could read each alert, but while several teams asked what to handle first, I put account recovery after notifications. A colleague later reordered the dependency sequence."
+        },
+        {
+          "role": "assistant",
+          "content": "You could process the individual alerts but the live ordering of dependencies went wrong."
+        },
+        {
+          "role": "user",
+          "content": "By 10:30 I could clear routine tickets normally. The failure was trying to order interdependent work while answering people live that early."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2026-03-03T13:45:00Z",
+      "speaker_id": "anon_work_user_001",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Before the afternoon sync, I sent a short written sequence of open decisions. It meant the meeting could focus on exceptions instead of reconstructing the whole incident."
+        },
+        {
+          "role": "assistant",
+          "content": "Written preparation let the meeting focus on exceptions."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2026-03-10T17:20:00Z",
+      "speaker_id": "anon_work_user_001",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I joined the platform pod’s demo. Their work is visible across several teams, and they document decisions clearly. If I looked only at the team itself, I would be excited to collaborate with them."
+        },
+        {
+          "role": "assistant",
+          "content": "You have a positive impression of the platform pod’s visibility and collaboration style."
+        }
+      ]
+    }
+  ],
+  "query": "The platform pod requires a fixed 06:15 daily live incident-priority call. Based only on these records, should that schedule be flagged as a fit risk for this user? Answer yes or no, then cite the relevant records.",
+  "evidence": {
+    "ev_A": {
+      "session_id": 5,
+      "owner": "anon_work_user_001",
+      "fact": "After interruptions ended, the user integrated several service dependencies between 23:40 and 02:10, protected the following morning, and recovered before rechecking the plan."
+    },
+    "ev_B": {
+      "session_id": 7,
+      "owner": "anon_work_user_001",
+      "fact": "At 05:55 the user could read alerts but misordered interdependent incident priorities in a live multi-team call, while routine tickets were normal by 10:30."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory",
+      "summary": "Uses external representation to preserve dependency reasoning."
+    },
+    "2": {
+      "role": "background_memory",
+      "summary": "Can complete an early routine status update; live priority decisions are a distinct demand."
+    },
+    "3": {
+      "role": "background_memory",
+      "summary": "Separates routine follow-up from architecture tradeoffs after a dense day."
+    },
+    "4": {
+      "role": "background_memory",
+      "summary": "Uses written dependency maps before group discussion."
+    },
+    "5": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "anon_work_user_001",
+        "context": "A fragmented data-loss investigation after daytime interruptions",
+        "goal_or_prediction": "Reconstruct the causal chain across service dependencies",
+        "action": "Worked from 23:40 to 02:10 and rebuilt the service map",
+        "outcome_or_affect": "Produced a coherent plan, protected recovery, and felt settled"
+      }
+    },
+    "6": {
+      "role": "background_memory",
+      "summary": "Can complete routine predefined work in a normal afternoon block."
+    },
+    "7": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "anon_work_user_001",
+        "context": "A 05:55 live multi-team incident-priority call",
+        "goal_or_prediction": "Order interdependent incidents while answering teams in real time",
+        "action": "Read each alert but placed account recovery after notifications",
+        "outcome_or_affect": "A colleague corrected the order; routine work was normal by 10:30"
+      }
+    },
+    "8": {
+      "role": "background_memory",
+      "summary": "Uses written preparation to reduce live reconstruction work."
+    },
+    "9": {
+      "role": "distractor",
+      "summary": "Positive platform-team attractiveness, not evidence about the dawn schedule relation."
+    }
+  },
+  "relational_connector": {
+    "relation": "A fixed dawn live-prioritization demand may arrive before this user's stable complex-integration and recovery cycle.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "excludes": [
+      "all early work is unsuitable",
+      "all meetings are unsuitable",
+      "the user must reject the role"
+    ],
+    "link_broken_change": "The early-call impairment is made environment-specific rather than a schedule-phase signal."
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 5,
+      "quote": "kept several service dependencies active at once"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 7,
+      "quote": "I put account recovery after notifications"
+    }
+  ],
+  "retrieval_cue": {
+    "cue_type": "situational_fit",
+    "why_it_naturally_retrieves_R": "A fixed daily live priority call raises a concrete schedule-fit question without naming either episode or the inferred phase-misalignment relation."
+  },
+  "relation_specificity": {
+    "nearby_relation": "The user can complete routine early reporting and routine tickets.",
+    "why_it_does_not_license_C": "Those facts do not show how the user performs when early work requires live integration of multiple dependent priorities."
+  },
+  "coactivation_bridge": "A shows a stable pattern of complex dependency integration in a late, protected work-and-recovery cycle. B shows a selective early live-prioritization failure rather than a universal inability to work in the morning. Together they support flagging a fixed dawn schedule as a fit risk only when it repeatedly requires real-time dependency integration.",
+  "latent_C": {
+    "inference": "The fixed daily 06:15 live incident-priority schedule should be flagged as a fit risk for this user.",
+    "calibrated_language": "flagged as a fit risk"
+  },
+  "answer_contract": {
+    "target_proposition": "The fixed daily 06:15 live incident-priority schedule should be flagged as a fit risk for this user.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible evidence supports the target proposition.",
+      "no": "The visible evidence does not support the target proposition; this does not mean the schedule is positively suitable."
+    },
+    "required_output_fields": [
+      "decision",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "distractor": {
+    "added_session": {
+      "session_id": 9,
+      "timestamp": "2026-03-10T17:20:00Z",
+      "speaker_id": "anon_work_user_001",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I joined the platform pod’s demo. Their work is visible across several teams, and they document decisions clearly. If I looked only at the team itself, I would be excited to collaborate with them."
+        },
+        {
+          "role": "assistant",
+          "content": "You have a positive impression of the platform pod’s visibility and collaboration style."
+        }
+      ]
+    },
+    "why_distractor": "The session is highly relevant to whether joining the platform pod feels attractive, but it contains no evidence about dawn timing, sleep/recovery, live dependency prioritization, or the target schedule-fit relation."
+  },
+  "arm_gold": {
+    "distractor": {
+      "expected_mode": "infer_C",
+      "binary_decision": true,
+      "required_elements": [
+        "answer yes",
+        "cite the target relation from sessions 5 and 7",
+        "state that platform-pod visibility or collaboration appeal does not answer the schedule-fit risk question"
+      ],
+      "rationale": "The distractor offers an attractive, query-relevant team signal but does not remove the A+B schedule-risk evidence."
+    }
+  },
+  "provenance": {
+    "authoring_method": "human-gated manual draft",
+    "created_at": "2026-07-22",
+    "anonymous_submission": true,
+    "source_person_name": null,
+    "source_corpus": null,
+    "gate_0_review_path": "s1/review/gate_0.csv",
+    "gate_0_review_unit": "work_s1_relational_v1",
+    "release_eligible": true,
+    "materialized_from": "AMB_WV_s1_anon_001",
+    "source_data_arm": "distractor"
+  },
+  "pair_id": "AMB_WV_s1_anon_001",
+  "data_arm": "distractor",
+  "available_evaluation_conditions": [
+    "distractor"
+  ]
+}
