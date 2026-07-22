@@ -2,13 +2,14 @@ import json
 import tempfile
 import sys
 import unittest
+import csv
 from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[3]
 sys.path.insert(0, str(ROOT / "experiments" / "assomem_harness"))
 
-from run import acquire_run_lock, completed_checkpoint_ids, parse_arms, prepare_run  # noqa: E402
+from run import acquire_run_lock, completed_checkpoint_ids, parse_arms, prepare_run, validate_e1_gate  # noqa: E402
 
 
 class RunTests(unittest.TestCase):
@@ -29,6 +30,9 @@ class RunTests(unittest.TestCase):
             self.assertTrue((output / "work/test-run/review/e1_intervention.csv").is_file())
             self.assertTrue((output / "work/test-run/review/e2_judgment.csv").is_file())
             self.assertTrue((output / "registry.jsonl").is_file())
+            with (output / "work/test-run/review/e1_intervention.csv").open() as handle:
+                e1_arms = {row["arm"] for row in csv.DictReader(handle)}
+            self.assertIn("full", e1_arms)
 
     def test_dry_run_can_limit_items_for_inspection(self):
         with tempfile.TemporaryDirectory() as temporary:
@@ -70,6 +74,20 @@ class RunTests(unittest.TestCase):
                 "checkpoint_id": "retry", "status": "solver_error",
             }))
             self.assertEqual(completed_checkpoint_ids(records), {"done"})
+
+    def test_e1_gate_requires_explicit_pass_for_selected_arms(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            path = Path(temporary) / "e1.csv"
+            path.write_text(
+                "item_id,arm,human_pass\n"
+                "item-1,full,pass\n"
+                "item-1,no_target,pass\n"
+                "item-1,broken_link,pass\n"
+            )
+            validate_e1_gate(path, {"item-1"}, ("full", "no_target", "broken_link"))
+            path.write_text(path.read_text().replace("item-1,broken_link,pass", "item-1,broken_link,"))
+            with self.assertRaises(ValueError):
+                validate_e1_gate(path, {"item-1"}, ("full", "no_target", "broken_link"))
 
 
 if __name__ == "__main__":

@@ -40,11 +40,15 @@ python3 experiments/assomem_harness/run.py --dry-run --max-items 20 \
 # E1 审查通过后，execute 必须使用同一 immutable manifest
 python3 experiments/assomem_harness/run.py --execute --max-items 10 \
   --item-manifest logs/work/work-calibration-v4/item_manifest.json \
+  --e1-review logs/work/work-calibration-v4/review/e1_intervention.csv \
   --arms full,no_target,broken_link
 ```
 
 每个 run 先记录 `results.tsv`，再产生 `item_manifest.json`、`log/` JSONL、checkpoint、review pack、
 `table_a.md` 与 `table_b.md`。运行输出由 `.gitignore` 忽略，不应提交。
+
+执行顺序固定为：E1 pre-run intervention audit → execute → E2 post-run
+judgment audit → aggregate。聚合器会拒绝含重复 scored attempt 的输入。
 
 ## 统计
 
