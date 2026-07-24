@@ -10,6 +10,7 @@ sys.path.insert(0, str(ROOT / "experiments" / "assomem_harness"))
 from arms import materialize_vnext_arms  # noqa: E402
 from dataset import discover_vnext_items  # noqa: E402
 from profile import load_profile  # noqa: E402
+from protocol import solver_prompt  # noqa: E402
 from run import prepare_run  # noqa: E402
 from workflow import score_solver_answer, validate_solver_answer  # noqa: E402
 from zero_evidence import run_zero_evidence_check  # noqa: E402
@@ -73,6 +74,11 @@ class VnextHarnessTests(unittest.TestCase):
             e1 = (output / "work/vnext-test/review/e1_intervention.csv").read_text()
             self.assertIn("a_only", e1)
             self.assertIn("link_broken", e1)
+
+    def test_solver_prompt_requires_person_indexed_evidence(self):
+        prompt = solver_prompt({"context": [], "query": "q"}, self.profile)
+        self.assertIn("same target person", prompt)
+        self.assertIn("other person's", prompt)
 
 
 if __name__ == "__main__":

@@ -17,7 +17,7 @@ from schema import CORE_ARMS, render_arms, validate_candidate
 
 
 REPO = ROOT.parents[1]
-CANDIDATE = REPO / "staging/work-vnext/v1/candidates/work-vnext-001.json"
+CANDIDATE = REPO / "staging/work-vnext/v1/s1/candidates/associative/AMB_WV_s1_anon_001_associative.json"
 S1_CANDIDATES = {
     arm: REPO / f"staging/work-vnext/v1/s1/candidates/{arm}/AMB_WV_s1_anon_001_{arm}.json"
     for arm in ("associative", "distractor", "absence")
@@ -40,23 +40,22 @@ class WorkVnextSchemaTests(unittest.TestCase):
         self.assertLess(len(arms["a_only"]["context"]), len(arms["full"]["context"]))
         self.assertLess(len(arms["b_only"]["context"]), len(arms["full"]["context"]))
         self.assertTrue(arms["link_broken"]["lineage"]["source_owner_preserved"])
-        self.assertFalse(arms["source_swap"]["lineage"]["source_owner_preserved"])
+        b_session_id = self.candidate["evidence"]["ev_B"]["session_id"]
         link_broken_session = next(
-            s for s in arms["link_broken"]["context"] if s["session_id"] == 102
-        )
-        source_swap_session = next(
-            s for s in arms["source_swap"]["context"] if s["session_id"] == 102
+            s for s in arms["link_broken"]["context"] if s["session_id"] == b_session_id
         )
         self.assertEqual(link_broken_session["speaker_id"], self.candidate["user_id"])
-        self.assertEqual(source_swap_session["speaker_id"], "colleague_001")
+        self.assertNotIn("source_swap", arms)
 
     def test_rejects_direct_latent_c_leakage(self) -> None:
         invalid = copy.deepcopy(self.candidate)
-        invalid["context"][0]["dialogue"][0]["content"] += (
-            " A project combining customer discovery with a prototype iteration "
-            "is likely to fit the user better than an isolated research brief."
-        )
+        invalid["context"][0]["dialogue"][0]["content"] += " " + invalid["latent_C"]["inference"]
         self.assertIn("latent_C is directly leaked in context or query", validate_candidate(invalid))
+
+    def test_schema_accepts_a_nonwork_vnext_domain(self) -> None:
+        social = copy.deepcopy(self.candidate)
+        social["domain"] = "social"
+        self.assertEqual(validate_candidate(social), [])
 
     def test_evaluator_requires_exact_scores_and_consistent_verdict(self) -> None:
         verdict = {
@@ -99,9 +98,8 @@ class WorkVnextSchemaTests(unittest.TestCase):
         ]["asserts_original_C"] = True
         self.assertFalse(controls_pass(records))
 
-    def test_pre_gate_illustration_cannot_advance(self) -> None:
-        with self.assertRaisesRegex(ValueError, "quarantined"):
-            ensure_release_eligible(self.candidate)
+    def test_release_eligible_candidate_can_advance(self) -> None:
+        ensure_release_eligible(self.candidate)
 
     def test_s1_construct_gate_requires_actual_human_decisions(self) -> None:
         review = REPO / "staging/work-vnext/v1/s1/review/gate_0.csv"

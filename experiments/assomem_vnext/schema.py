@@ -62,8 +62,8 @@ def validate_candidate(candidate: dict[str, Any]) -> list[str]:
     missing = required - candidate.keys()
     if missing:
         return [f"missing required fields: {', '.join(sorted(missing))}"]
-    if candidate["domain"] != "work":
-        errors.append("vNext exemplar must be in domain=work")
+    if not isinstance(candidate["domain"], str) or not candidate["domain"]:
+        errors.append("domain must be a non-empty string")
     if candidate["query_type"] not in QUERY_TYPES:
         errors.append("unknown query_type")
     if candidate["polarity"] not in POLARITIES:
@@ -139,8 +139,15 @@ def validate_candidate(candidate: dict[str, Any]) -> list[str]:
     if "source_swap" in candidate.get("arm_gold", {}):
         if not candidate.get("source_swap", {}).get("speaker_id"):
             errors.append("source_swap needs a non-user speaker_id")
+        if not candidate.get("source_swap", {}).get("replacement_dialogue"):
+            errors.append("source_swap needs a natural replacement_dialogue")
 
-    if candidate["schema_version"] in {"work-vnext-1.1", "work-vnext-1.2"}:
+    if candidate["schema_version"] in {
+        "work-vnext-1.1",
+        "work-vnext-1.2",
+        "assomem-vnext-1.1",
+        "assomem-vnext-1.2",
+    }:
         required_v11 = {
             "episode_annotations",
             "relational_connector",
@@ -279,6 +286,7 @@ def render_arms(candidate: dict[str, Any]) -> dict[str, dict[str, Any]]:
             if int(session["session_id"]) == b_id:
                 session["speaker_id"] = candidate["source_swap"]["speaker_id"]
                 session["speaker_label"] = candidate["source_swap"]["speaker_label"]
+                session["dialogue"] = copy.deepcopy(candidate["source_swap"]["replacement_dialogue"])
         arms["source_swap"] = {
             "context": swapped,
             "query": candidate["query"],

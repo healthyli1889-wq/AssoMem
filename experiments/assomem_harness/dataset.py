@@ -59,10 +59,8 @@ def discover_items(data_root: Path, profile: DatasetProfile, domain: str) -> lis
 
 def discover_vnext_items(data_root: Path, profile: DatasetProfile, domain: str) -> list[PairedItem]:
     """Discover one immutable three-file vNext source pair per candidate."""
-    if profile.data_format != "work-vnext-1":
-        raise ValueError("discover_vnext_items requires a work-vnext-1 profile")
-    if domain != "work":
-        raise ValueError("work-vnext-1 currently supports only the work domain")
+    if profile.data_format not in {"work-vnext-1", "assomem-vnext-1"}:
+        raise ValueError("discover_vnext_items requires an assomem vNext profile")
     grouped: dict[str, dict[str, tuple[dict[str, Any], Path]]] = {}
     for source_arm in profile.arms:
         directory = data_root / source_arm
@@ -90,6 +88,8 @@ def discover_vnext_items(data_root: Path, profile: DatasetProfile, domain: str) 
         if len(shared) != 1:
             raise ValueError(f"{pair_id}: source files disagree on user, query, or domain")
         user_id, _, _ = next(iter(shared))
+        if arms[profile.arms[0]]["domain"] != domain:
+            raise ValueError(f"{pair_id}: candidate domain does not match selected domain")
         rows.append(PairedItem(
             item_id=pair_id,
             domain=domain,

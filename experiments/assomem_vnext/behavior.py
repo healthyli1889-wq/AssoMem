@@ -17,7 +17,7 @@ from clients import call_model_with_usage, config_from_env  # noqa: E402
 
 
 def _solver_prompt(payload: dict[str, Any]) -> str:
-    return f"""Answer a personalized work question from the provided memory only.
+    return f"""Answer a personalized question from the provided memory only.
 Use calibrated language. Never treat a memory owned by another person as evidence
 about the user. Return JSON only: {{"answer": string, "evidence_session_ids": [int],
 "withheld": boolean}}.
