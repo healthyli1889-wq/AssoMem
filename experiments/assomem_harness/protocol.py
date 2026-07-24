@@ -19,11 +19,16 @@ Return exactly one JSON object with exactly these keys:
 {{"decision":"yes"|"no","answer":string,"evidence_session_ids":[integer]}}.
 `decision` must be yes only when the visible evidence supports the target proposition;
 otherwise return no. `answer` must briefly justify that binary decision. Cite only
-visible session IDs. Do not mention benchmark metadata or hidden labels.
+visible session IDs. Combine evidence only when it belongs to the same target person.
+An other person's preference, habit, or outcome is not evidence for a conclusion about
+the target user, even if the facts are semantically associated. Do not mention benchmark
+metadata or hidden labels.
 Conversation input: {_dump(visible)}
 """
     return f"""Answer the user's final query using only the supplied conversation.
 If the evidence is insufficient, explicitly abstain. Do not mention benchmark metadata.
+Keep memories person-indexed: do not use another person's experience as evidence for a
+conclusion about the user, even when the two experiences are semantically associated.
 Return exactly one JSON object with exactly one key, `answer`. Its string value must
 be your substantive answer to the user and must not be a placeholder, schema example,
 restatement of this instruction. It must not be a dialogue/session object, transcript,
