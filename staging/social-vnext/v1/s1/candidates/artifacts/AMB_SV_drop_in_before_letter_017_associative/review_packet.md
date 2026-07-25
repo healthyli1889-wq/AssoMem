@@ -4,7 +4,7 @@
 - User: `anon_social_user_08`
 - Query type: `situational_fit`
 - Polarity: `reject`
-- Query: A friend asked whether their group can stop by spontaneously on Saturday night. Should I say yes?
+- Query: A friend asked whether their group can stop by spontaneously on Saturday night. Would saying yes be a risk for me?
 - Latent C: The spontaneous Saturday drop-in should be flagged as a fit risk because it would disrupt the user's planned recommendation letter writing.
 - Calibrated wording: flagged as a fit risk
 
@@ -366,7 +366,7 @@
       ]
     }
   ],
-  "query": "A friend asked whether their group can stop by spontaneously on Saturday night. Should I say yes?"
+  "query": "A friend asked whether their group can stop by spontaneously on Saturday night. Would saying yes be a risk for me?"
 }
 ```
 - Why original C is or is not licensed: A and B jointly support the target proposition.
@@ -682,7 +682,7 @@
       ]
     }
   ],
-  "query": "A friend asked whether their group can stop by spontaneously on Saturday night. Should I say yes?"
+  "query": "A friend asked whether their group can stop by spontaneously on Saturday night. Would saying yes be a risk for me?"
 }
 ```
 - Why original C is or is not licensed: A alone does not establish that the proposed event conflicts with a concrete responsibility.
@@ -998,7 +998,7 @@
       ]
     }
   ],
-  "query": "A friend asked whether their group can stop by spontaneously on Saturday night. Should I say yes?"
+  "query": "A friend asked whether their group can stop by spontaneously on Saturday night. Would saying yes be a risk for me?"
 }
 ```
 - Why original C is or is not licensed: B alone does not establish that the proposed event would impair the responsibility.
@@ -1330,7 +1330,7 @@
       ]
     }
   ],
-  "query": "A friend asked whether their group can stop by spontaneously on Saturday night. Should I say yes?"
+  "query": "A friend asked whether their group can stop by spontaneously on Saturday night. Would saying yes be a risk for me?"
 }
 ```
 - Why original C is or is not licensed: B-prime removes the responsibility connector while retaining same-user conversational form.

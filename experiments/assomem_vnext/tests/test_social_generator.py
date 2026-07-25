@@ -74,6 +74,7 @@ class SocialPilotGeneratorTests(unittest.TestCase):
                 query = candidate["query"].lower()
                 self.assertNotIn("based only on these records", query)
                 self.assertNotIn("sunday", query)
+                self.assertIn("risk for me", query)
 
     def test_staged_social_pilot_has_102_valid_records(self) -> None:
         root = ROOT.parents[1] / "staging/social-vnext/v1/s1/candidates"

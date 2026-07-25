@@ -4,7 +4,7 @@
 - User: `anon_social_user_10`
 - Query type: `situational_fit`
 - Polarity: `reject`
-- Query: A group invited me to a long sequence of video hangouts on Saturday. Would joining be a good idea for me?
+- Query: A group invited me to a long sequence of video hangouts on Saturday. Would joining be a risk for me?
 - Latent C: The stacked video hangouts should be flagged as a fit risk because they would impair the user's energy for the reunion lunch.
 - Calibrated wording: flagged as a fit risk
 
@@ -366,7 +366,7 @@
       ]
     }
   ],
-  "query": "A group invited me to a long sequence of video hangouts on Saturday. Would joining be a good idea for me?"
+  "query": "A group invited me to a long sequence of video hangouts on Saturday. Would joining be a risk for me?"
 }
 ```
 - Why original C is or is not licensed: A and B jointly support the target proposition.
@@ -682,7 +682,7 @@
       ]
     }
   ],
-  "query": "A group invited me to a long sequence of video hangouts on Saturday. Would joining be a good idea for me?"
+  "query": "A group invited me to a long sequence of video hangouts on Saturday. Would joining be a risk for me?"
 }
 ```
 - Why original C is or is not licensed: A alone does not establish that the proposed event conflicts with a concrete responsibility.
@@ -998,7 +998,7 @@
       ]
     }
   ],
-  "query": "A group invited me to a long sequence of video hangouts on Saturday. Would joining be a good idea for me?"
+  "query": "A group invited me to a long sequence of video hangouts on Saturday. Would joining be a risk for me?"
 }
 ```
 - Why original C is or is not licensed: B alone does not establish that the proposed event would impair the responsibility.
@@ -1330,7 +1330,7 @@
       ]
     }
   ],
-  "query": "A group invited me to a long sequence of video hangouts on Saturday. Would joining be a good idea for me?"
+  "query": "A group invited me to a long sequence of video hangouts on Saturday. Would joining be a risk for me?"
 }
 ```
 - Why original C is or is not licensed: B-prime removes the responsibility connector while retaining same-user conversational form.

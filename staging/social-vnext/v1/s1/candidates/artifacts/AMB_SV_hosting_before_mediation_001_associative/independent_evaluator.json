@@ -3,22 +3,22 @@
   "status": "completed",
   "model": "Vendor2/GPT-5.5",
   "usage": {
-    "input_tokens": 13011,
-    "output_tokens": 3054,
+    "input_tokens": 13017,
+    "output_tokens": 2111,
     "reasoning_tokens": null,
-    "total_tokens": 16065
+    "total_tokens": 15128
   },
   "verdict": {
     "clause_scores": {
       "same_person_temporal_separation": 100,
-      "a_only_insufficiency": 99,
-      "b_only_insufficiency": 99,
-      "joint_support_for_C": 99,
-      "C_novelty_no_leakage": 99,
-      "query_natural_recall_trigger": 98,
-      "link_broken_validity": 98,
+      "a_only_insufficiency": 100,
+      "b_only_insufficiency": 100,
+      "joint_support_for_C": 100,
+      "C_novelty_no_leakage": 100,
+      "query_natural_recall_trigger": 100,
+      "link_broken_validity": 100,
       "gold_scoreability": 100,
-      "query_taxonomy_compliance": 99
+      "query_taxonomy_compliance": 100
     },
     "evidence_spans": [
       {
@@ -27,67 +27,64 @@
           5,
           12
         ],
-        "quote": "After facilitating a lively group gathering, I need a quiet morning before I can listen carefully to someone else's conflict. / I have a Sunday mediation check-in already booked; it needs patient one-to-one listening."
+        "quote": "session 5: \"After facilitating a lively group gathering, I need a quiet morning before I can listen carefully to someone else's conflict.\"; session 12: \"I have a Sunday mediation check-in already booked; it needs patient one-to-one listening.\""
       },
       {
         "clause": "a_only_insufficiency",
         "session_ids": [
           5
         ],
-        "quote": "After facilitating a lively group gathering, I need a quiet morning before I can listen carefully to someone else's conflict."
+        "quote": "\"After facilitating a lively group gathering, I need a quiet morning before I can listen carefully to someone else's conflict.\""
       },
       {
         "clause": "b_only_insufficiency",
         "session_ids": [
           12
         ],
-        "quote": "I have a Sunday mediation check-in already booked; it needs patient one-to-one listening."
+        "quote": "\"I have a Sunday mediation check-in already booked; it needs patient one-to-one listening.\""
       },
       {
         "clause": "joint_support_for_C",
         "session_ids": [
           5,
-          12,
-          20
+          12
         ],
-        "quote": "After facilitating a lively group gathering, I need a quiet morning before I can listen carefully to someone else's conflict. / I have a Sunday mediation check-in already booked; it needs patient one-to-one listening. / A neighborhood group asked me to host a bigger Saturday welcome gathering. Would taking it on make sense for me?"
+        "quote": "\"After facilitating a lively group gathering, I need a quiet morning before I can listen carefully to someone else's conflict.\" + \"I have a Sunday mediation check-in already booked; it needs patient one-to-one listening.\""
       },
       {
         "clause": "C_novelty_no_leakage",
         "session_ids": [
           20
         ],
-        "quote": "A neighborhood group asked me to host a bigger Saturday welcome gathering. Would taking it on make sense for me?"
+        "quote": "\"A neighborhood group asked me to host a bigger Saturday welcome gathering. Would taking it on be a risk for me?\""
       },
       {
         "clause": "query_natural_recall_trigger",
         "session_ids": [
           20
         ],
-        "quote": "A neighborhood group asked me to host a bigger Saturday welcome gathering. Would taking it on make sense for me?"
+        "quote": "\"A neighborhood group asked me to host a bigger Saturday welcome gathering. Would taking it on be a risk for me?\""
       },
       {
         "clause": "link_broken_validity",
         "session_ids": [
           12
         ],
-        "quote": "I have a Sunday coffee with a friend that can be moved easily; it does not require focused listening."
+        "quote": "\"I have a Sunday coffee with a friend that can be moved easily; it does not require focused listening.\""
       },
       {
         "clause": "gold_scoreability",
         "session_ids": [
-          5,
-          12,
           20
         ],
-        "quote": "The benchmark provides a binary decision contract, explicit allowed decisions yes/no, required output fields, and the full/a_only/b_only/link_broken arms needed to judge the target proposition."
+        "quote": "\"A neighborhood group asked me to host a bigger Saturday welcome gathering. Would taking it on be a risk for me?\""
       },
       {
         "clause": "query_taxonomy_compliance",
         "session_ids": [
           20
         ],
-        "quote": "A neighborhood group asked me to host a bigger Saturday welcome gathering. Would taking it on make sense for me?"
+        "quote": "\"query_type\": \"situational_fit\"; \"A neighborhood group asked me to host a bigger Saturday welcome gathering. Would taking it on be a risk for me?\""
       }
     ],
     "failure_tags": [],
@@ -95,6 +92,6 @@
     "overall_verdict": "pass"
   },
   "validation_errors": [],
-  "minimum_score": 98,
+  "minimum_score": 100,
   "pass": true
 }

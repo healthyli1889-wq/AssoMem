@@ -4,7 +4,7 @@
 - User: `anon_social_user_10`
 - Query type: `situational_fit`
 - Polarity: `reject`
-- Query: Friends invited me to a midnight send-off party on Saturday. Should I go?
+- Query: Friends invited me to a midnight send-off party on Saturday. Would going be a risk for me?
 - Latent C: The midnight send-off party should be flagged as a fit risk because it would undermine the user's airport-help commitment.
 - Calibrated wording: flagged as a fit risk
 
@@ -366,7 +366,7 @@
       ]
     }
   ],
-  "query": "Friends invited me to a midnight send-off party on Saturday. Should I go?"
+  "query": "Friends invited me to a midnight send-off party on Saturday. Would going be a risk for me?"
 }
 ```
 - Why original C is or is not licensed: A and B jointly support the target proposition.
@@ -682,7 +682,7 @@
       ]
     }
   ],
-  "query": "Friends invited me to a midnight send-off party on Saturday. Should I go?"
+  "query": "Friends invited me to a midnight send-off party on Saturday. Would going be a risk for me?"
 }
 ```
 - Why original C is or is not licensed: A alone does not establish that the proposed event conflicts with a concrete responsibility.
@@ -998,7 +998,7 @@
       ]
     }
   ],
-  "query": "Friends invited me to a midnight send-off party on Saturday. Should I go?"
+  "query": "Friends invited me to a midnight send-off party on Saturday. Would going be a risk for me?"
 }
 ```
 - Why original C is or is not licensed: B alone does not establish that the proposed event would impair the responsibility.
@@ -1330,7 +1330,7 @@
       ]
     }
   ],
-  "query": "Friends invited me to a midnight send-off party on Saturday. Should I go?"
+  "query": "Friends invited me to a midnight send-off party on Saturday. Would going be a risk for me?"
 }
 ```
 - Why original C is or is not licensed: B-prime removes the responsibility connector while retaining same-user conversational form.
