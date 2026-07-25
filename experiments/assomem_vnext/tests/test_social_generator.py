@@ -25,12 +25,45 @@ class SocialPilotGeneratorTests(unittest.TestCase):
             self.assertEqual(result["base_candidates"], 34)
             files = list(destination.glob("*/*.json"))
             self.assertEqual(len(files), 102)
+            associative = sorted(destination.glob("associative/*.json"))
+            pairs = [
+                json.loads(path.read_text(encoding="utf-8"))
+                for path in associative
+            ]
+            scenario_persona_pairs = {
+                (candidate["pair_id"].rsplit("_", 1)[0], candidate["user_id"])
+                for candidate in pairs
+            }
+            self.assertEqual(len(scenario_persona_pairs), 34)
             for path in files:
                 candidate = json.loads(path.read_text(encoding="utf-8"))
                 self.assertEqual(candidate["domain"], "social")
                 self.assertEqual(validate_candidate(candidate), [])
             profile = load_profile(HARNESS / "profiles/social-vnext-1.json")
             self.assertEqual(len(discover_vnext_items(destination, profile, "social")), 34)
+
+    def test_rebuild_removes_stale_source_records(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            destination = Path(temporary)
+            build_social_pilot(destination, count=34)
+            stale = destination / "associative" / "stale.json"
+            stale.write_text("{}")
+            build_social_pilot(destination, count=34)
+            self.assertFalse(stale.exists())
+
+    def test_background_persona_is_not_repeated_in_every_session(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            destination = Path(temporary)
+            build_social_pilot(destination, count=34)
+            candidate = json.loads(next((destination / "associative").glob("*.json")).read_text())
+            texts = [
+                turn["content"]
+                for session in candidate["context"]
+                for turn in session["dialogue"]
+                if turn["role"] == "user"
+            ]
+            self.assertEqual(sum("As someone who" in text for text in texts), 0)
+            self.assertFalse(any(" i " in text for text in texts))
 
     def test_staged_social_pilot_has_102_valid_records(self) -> None:
         root = ROOT.parents[1] / "staging/social-vnext/v1/s1/candidates"

@@ -53,7 +53,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i chose a quiet route home."
+          "content": "I value dependable follow-through. I chose a quiet route home."
         },
         {
           "role": "assistant",
@@ -69,7 +69,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i checked my weekend plan once more."
+          "content": "I checked my weekend plan once more."
         },
         {
           "role": "assistant",
@@ -85,7 +85,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i put a library book by the door."
+          "content": "I put a library book by the door."
         },
         {
           "role": "assistant",
@@ -101,7 +101,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i watered the plants before breakfast."
+          "content": "I watered the plants before breakfast."
         },
         {
           "role": "assistant",
@@ -133,7 +133,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i listened to a short podcast while cooking."
+          "content": "I listened to a short podcast while cooking."
         },
         {
           "role": "assistant",
@@ -149,7 +149,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i replied to an invitation with a clear boundary."
+          "content": "I replied to an invitation with a clear boundary."
         },
         {
           "role": "assistant",
@@ -165,7 +165,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i made a note to call a relative next month."
+          "content": "I made a note to call a relative next month."
         },
         {
           "role": "assistant",
@@ -181,7 +181,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i booked a routine appointment."
+          "content": "I booked a routine appointment."
         },
         {
           "role": "assistant",
@@ -197,7 +197,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i updated my paper calendar before the week began."
+          "content": "I updated my paper calendar before the week began."
         },
         {
           "role": "assistant",
@@ -213,7 +213,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i sent a short check-in to a friend after work."
+          "content": "I sent a short check-in to a friend after work."
         },
         {
           "role": "assistant",
@@ -245,7 +245,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i sorted a few photos from a recent trip."
+          "content": "I sorted a few photos from a recent trip."
         },
         {
           "role": "assistant",
@@ -261,7 +261,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i made tea before reading for a while."
+          "content": "I made tea before reading for a while."
         },
         {
           "role": "assistant",
@@ -277,7 +277,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i wrote down a reminder for next week."
+          "content": "I wrote down a reminder for next week."
         },
         {
           "role": "assistant",
@@ -293,7 +293,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i had a small lunch with a colleague."
+          "content": "I had a small lunch with a colleague."
         },
         {
           "role": "assistant",
@@ -309,7 +309,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i cleared a few messages before bed."
+          "content": "I cleared a few messages before bed."
         },
         {
           "role": "assistant",
@@ -325,7 +325,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i chose a quiet route home."
+          "content": "I chose a quiet route home."
         },
         {
           "role": "assistant",
@@ -341,7 +341,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i checked my weekend plan once more."
+          "content": "I checked my weekend plan once more."
         },
         {
           "role": "assistant",
@@ -385,7 +385,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i chose a quiet route home."
+          "content": "I value dependable follow-through. I chose a quiet route home."
         },
         {
           "role": "assistant",
@@ -401,7 +401,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i checked my weekend plan once more."
+          "content": "I checked my weekend plan once more."
         },
         {
           "role": "assistant",
@@ -417,7 +417,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i put a library book by the door."
+          "content": "I put a library book by the door."
         },
         {
           "role": "assistant",
@@ -433,7 +433,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i watered the plants before breakfast."
+          "content": "I watered the plants before breakfast."
         },
         {
           "role": "assistant",
@@ -465,7 +465,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i listened to a short podcast while cooking."
+          "content": "I listened to a short podcast while cooking."
         },
         {
           "role": "assistant",
@@ -481,7 +481,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i replied to an invitation with a clear boundary."
+          "content": "I replied to an invitation with a clear boundary."
         },
         {
           "role": "assistant",
@@ -497,7 +497,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i made a note to call a relative next month."
+          "content": "I made a note to call a relative next month."
         },
         {
           "role": "assistant",
@@ -513,7 +513,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i booked a routine appointment."
+          "content": "I booked a routine appointment."
         },
         {
           "role": "assistant",
@@ -529,7 +529,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i updated my paper calendar before the week began."
+          "content": "I updated my paper calendar before the week began."
         },
         {
           "role": "assistant",
@@ -545,7 +545,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i sent a short check-in to a friend after work."
+          "content": "I sent a short check-in to a friend after work."
         },
         {
           "role": "assistant",
@@ -561,7 +561,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i sorted a few photos from a recent trip."
+          "content": "I sorted a few photos from a recent trip."
         },
         {
           "role": "assistant",
@@ -577,7 +577,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i made tea before reading for a while."
+          "content": "I made tea before reading for a while."
         },
         {
           "role": "assistant",
@@ -593,7 +593,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i wrote down a reminder for next week."
+          "content": "I wrote down a reminder for next week."
         },
         {
           "role": "assistant",
@@ -609,7 +609,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i had a small lunch with a colleague."
+          "content": "I had a small lunch with a colleague."
         },
         {
           "role": "assistant",
@@ -625,7 +625,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i cleared a few messages before bed."
+          "content": "I cleared a few messages before bed."
         },
         {
           "role": "assistant",
@@ -641,7 +641,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i chose a quiet route home."
+          "content": "I chose a quiet route home."
         },
         {
           "role": "assistant",
@@ -657,7 +657,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i checked my weekend plan once more."
+          "content": "I checked my weekend plan once more."
         },
         {
           "role": "assistant",
@@ -701,7 +701,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i chose a quiet route home."
+          "content": "I value dependable follow-through. I chose a quiet route home."
         },
         {
           "role": "assistant",
@@ -717,7 +717,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i checked my weekend plan once more."
+          "content": "I checked my weekend plan once more."
         },
         {
           "role": "assistant",
@@ -733,7 +733,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i put a library book by the door."
+          "content": "I put a library book by the door."
         },
         {
           "role": "assistant",
@@ -749,7 +749,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i watered the plants before breakfast."
+          "content": "I watered the plants before breakfast."
         },
         {
           "role": "assistant",
@@ -765,7 +765,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i listened to a short podcast while cooking."
+          "content": "I listened to a short podcast while cooking."
         },
         {
           "role": "assistant",
@@ -781,7 +781,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i replied to an invitation with a clear boundary."
+          "content": "I replied to an invitation with a clear boundary."
         },
         {
           "role": "assistant",
@@ -797,7 +797,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i made a note to call a relative next month."
+          "content": "I made a note to call a relative next month."
         },
         {
           "role": "assistant",
@@ -813,7 +813,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i booked a routine appointment."
+          "content": "I booked a routine appointment."
         },
         {
           "role": "assistant",
@@ -829,7 +829,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i updated my paper calendar before the week began."
+          "content": "I updated my paper calendar before the week began."
         },
         {
           "role": "assistant",
@@ -845,7 +845,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i sent a short check-in to a friend after work."
+          "content": "I sent a short check-in to a friend after work."
         },
         {
           "role": "assistant",
@@ -877,7 +877,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i sorted a few photos from a recent trip."
+          "content": "I sorted a few photos from a recent trip."
         },
         {
           "role": "assistant",
@@ -893,7 +893,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i made tea before reading for a while."
+          "content": "I made tea before reading for a while."
         },
         {
           "role": "assistant",
@@ -909,7 +909,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i wrote down a reminder for next week."
+          "content": "I wrote down a reminder for next week."
         },
         {
           "role": "assistant",
@@ -925,7 +925,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i had a small lunch with a colleague."
+          "content": "I had a small lunch with a colleague."
         },
         {
           "role": "assistant",
@@ -941,7 +941,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i cleared a few messages before bed."
+          "content": "I cleared a few messages before bed."
         },
         {
           "role": "assistant",
@@ -957,7 +957,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i chose a quiet route home."
+          "content": "I chose a quiet route home."
         },
         {
           "role": "assistant",
@@ -973,7 +973,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i checked my weekend plan once more."
+          "content": "I checked my weekend plan once more."
         },
         {
           "role": "assistant",
@@ -1017,7 +1017,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i chose a quiet route home."
+          "content": "I value dependable follow-through. I chose a quiet route home."
         },
         {
           "role": "assistant",
@@ -1033,7 +1033,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i checked my weekend plan once more."
+          "content": "I checked my weekend plan once more."
         },
         {
           "role": "assistant",
@@ -1049,7 +1049,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i put a library book by the door."
+          "content": "I put a library book by the door."
         },
         {
           "role": "assistant",
@@ -1065,7 +1065,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i watered the plants before breakfast."
+          "content": "I watered the plants before breakfast."
         },
         {
           "role": "assistant",
@@ -1097,7 +1097,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i listened to a short podcast while cooking."
+          "content": "I listened to a short podcast while cooking."
         },
         {
           "role": "assistant",
@@ -1113,7 +1113,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i replied to an invitation with a clear boundary."
+          "content": "I replied to an invitation with a clear boundary."
         },
         {
           "role": "assistant",
@@ -1129,7 +1129,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i made a note to call a relative next month."
+          "content": "I made a note to call a relative next month."
         },
         {
           "role": "assistant",
@@ -1145,7 +1145,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i booked a routine appointment."
+          "content": "I booked a routine appointment."
         },
         {
           "role": "assistant",
@@ -1161,7 +1161,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i updated my paper calendar before the week began."
+          "content": "I updated my paper calendar before the week began."
         },
         {
           "role": "assistant",
@@ -1177,7 +1177,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i sent a short check-in to a friend after work."
+          "content": "I sent a short check-in to a friend after work."
         },
         {
           "role": "assistant",
@@ -1209,7 +1209,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i sorted a few photos from a recent trip."
+          "content": "I sorted a few photos from a recent trip."
         },
         {
           "role": "assistant",
@@ -1225,7 +1225,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i made tea before reading for a while."
+          "content": "I made tea before reading for a while."
         },
         {
           "role": "assistant",
@@ -1241,7 +1241,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i wrote down a reminder for next week."
+          "content": "I wrote down a reminder for next week."
         },
         {
           "role": "assistant",
@@ -1257,7 +1257,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i had a small lunch with a colleague."
+          "content": "I had a small lunch with a colleague."
         },
         {
           "role": "assistant",
@@ -1273,7 +1273,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i cleared a few messages before bed."
+          "content": "I cleared a few messages before bed."
         },
         {
           "role": "assistant",
@@ -1289,7 +1289,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i chose a quiet route home."
+          "content": "I chose a quiet route home."
         },
         {
           "role": "assistant",
@@ -1305,7 +1305,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i checked my weekend plan once more."
+          "content": "I checked my weekend plan once more."
         },
         {
           "role": "assistant",
@@ -1349,7 +1349,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i chose a quiet route home."
+          "content": "I value dependable follow-through. I chose a quiet route home."
         },
         {
           "role": "assistant",
@@ -1365,7 +1365,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i checked my weekend plan once more."
+          "content": "I checked my weekend plan once more."
         },
         {
           "role": "assistant",
@@ -1381,7 +1381,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i put a library book by the door."
+          "content": "I put a library book by the door."
         },
         {
           "role": "assistant",
@@ -1397,7 +1397,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i watered the plants before breakfast."
+          "content": "I watered the plants before breakfast."
         },
         {
           "role": "assistant",
@@ -1429,7 +1429,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i listened to a short podcast while cooking."
+          "content": "I listened to a short podcast while cooking."
         },
         {
           "role": "assistant",
@@ -1445,7 +1445,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i replied to an invitation with a clear boundary."
+          "content": "I replied to an invitation with a clear boundary."
         },
         {
           "role": "assistant",
@@ -1461,7 +1461,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i made a note to call a relative next month."
+          "content": "I made a note to call a relative next month."
         },
         {
           "role": "assistant",
@@ -1477,7 +1477,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i booked a routine appointment."
+          "content": "I booked a routine appointment."
         },
         {
           "role": "assistant",
@@ -1493,7 +1493,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i updated my paper calendar before the week began."
+          "content": "I updated my paper calendar before the week began."
         },
         {
           "role": "assistant",
@@ -1509,7 +1509,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i sent a short check-in to a friend after work."
+          "content": "I sent a short check-in to a friend after work."
         },
         {
           "role": "assistant",
@@ -1541,7 +1541,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i sorted a few photos from a recent trip."
+          "content": "I sorted a few photos from a recent trip."
         },
         {
           "role": "assistant",
@@ -1557,7 +1557,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i made tea before reading for a while."
+          "content": "I made tea before reading for a while."
         },
         {
           "role": "assistant",
@@ -1573,7 +1573,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i wrote down a reminder for next week."
+          "content": "I wrote down a reminder for next week."
         },
         {
           "role": "assistant",
@@ -1589,7 +1589,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i had a small lunch with a colleague."
+          "content": "I had a small lunch with a colleague."
         },
         {
           "role": "assistant",
@@ -1605,7 +1605,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i cleared a few messages before bed."
+          "content": "I cleared a few messages before bed."
         },
         {
           "role": "assistant",
@@ -1621,7 +1621,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i chose a quiet route home."
+          "content": "I chose a quiet route home."
         },
         {
           "role": "assistant",
@@ -1637,7 +1637,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i checked my weekend plan once more."
+          "content": "I checked my weekend plan once more."
         },
         {
           "role": "assistant",

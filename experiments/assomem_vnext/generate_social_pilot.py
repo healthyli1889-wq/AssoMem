@@ -5,6 +5,7 @@ from __future__ import annotations
 import argparse
 import copy
 import json
+import shutil
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
@@ -104,16 +105,16 @@ SOCIAL_SCENARIOS = (
 )
 
 PERSONAS = (
-    "keeps a small paper calendar",
-    "prefers one-to-one conversations to group chatter",
-    "takes evening walks to reset",
-    "writes short notes after busy weekends",
-    "likes hosting small dinners",
-    "plans commitments a week ahead",
-    "values dependable follow-through",
-    "uses quiet mornings for reflection",
-    "checks in with close friends regularly",
-    "avoids making rushed social promises",
+    "keep a small paper calendar",
+    "prefer one-to-one conversations to group chatter",
+    "take evening walks to reset",
+    "write short notes after busy weekends",
+    "like hosting small dinners",
+    "plan commitments a week ahead",
+    "value dependable follow-through",
+    "use quiet mornings for reflection",
+    "check in with close friends regularly",
+    "avoid making rushed social promises",
 )
 
 
@@ -151,7 +152,9 @@ def _background_text(user_id: str, persona: str, session_id: int) -> tuple[str, 
         ("I booked a routine appointment.", "You handled a practical detail early."),
     )
     text, reply = topics[(session_id + int(user_id[-2:])) % len(topics)]
-    return f"As someone who {persona}, {text[0].lower() + text[1:]}", reply
+    if session_id == 1:
+        return f"I {persona}. {text}", reply
+    return text, reply
 
 
 def _annotations(context: list[dict[str, Any]], user_id: str, a_text: str, b_text: str) -> dict[str, Any]:
@@ -230,8 +233,13 @@ def _core_gold(scenario: dict[str, str]) -> dict[str, dict[str, Any]]:
 
 
 def _candidate(pair_number: int, source_arm: str) -> dict[str, Any]:
-    scenario = SOCIAL_SCENARIOS[(pair_number - 1) % len(SOCIAL_SCENARIOS)]
-    user_number = ((pair_number - 1) % len(PERSONAS)) + 1
+    scenario_index = (pair_number - 1) % len(SOCIAL_SCENARIOS)
+    cycle = (pair_number - 1) // len(SOCIAL_SCENARIOS)
+    scenario = SOCIAL_SCENARIOS[scenario_index]
+    # Rotate persona assignment on every scenario cycle. This preserves scenario
+    # coverage while preventing the duplicated scenario×persona combinations caused
+    # by using the same modulus for both dimensions.
+    user_number = ((scenario_index + cycle) % len(PERSONAS)) + 1
     user_id = f"anon_social_user_{user_number:02d}"
     pair_id = f"AMB_SV_{scenario['slug']}_{pair_number:03d}"
     persona = PERSONAS[user_number - 1]
@@ -369,7 +377,9 @@ def _candidate(pair_number: int, source_arm: str) -> dict[str, Any]:
 def build_social_pilot(destination: Path, count: int = 34) -> dict[str, int]:
     if count != 34:
         raise ValueError("The authorized social pilot must contain exactly 34 source triads")
+    shutil.rmtree(destination / "artifacts", ignore_errors=True)
     for source_arm in ("associative", "distractor", "absence"):
+        shutil.rmtree(destination / source_arm, ignore_errors=True)
         (destination / source_arm).mkdir(parents=True, exist_ok=True)
     for pair_number in range(1, count + 1):
         for source_arm in ("associative", "distractor", "absence"):

@@ -1,7 +1,7 @@
 # Review packet — AMB_SV_drop_in_before_letter_017_associative
 
 ## Candidate
-- User: `anon_social_user_07`
+- User: `anon_social_user_08`
 - Query type: `situational_fit`
 - Polarity: `reject`
 - Query: Based only on these records, should the spontaneous Saturday drop-in be flagged as a fit risk for this user?
@@ -48,28 +48,12 @@
     {
       "session_id": 1,
       "timestamp": "2026-01-04T18:00:00Z",
-      "speaker_id": "anon_social_user_07",
+      "speaker_id": "anon_social_user_08",
       "speaker_label": "User",
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i chose a quiet route home."
-        },
-        {
-          "role": "assistant",
-          "content": "You protected a little decompression time."
-        }
-      ]
-    },
-    {
-      "session_id": 2,
-      "timestamp": "2026-01-07T18:00:00Z",
-      "speaker_id": "anon_social_user_07",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "As someone who values dependable follow-through, i checked my weekend plan once more."
+          "content": "I use quiet mornings for reflection. I checked my weekend plan once more."
         },
         {
           "role": "assistant",
@@ -78,14 +62,14 @@
       ]
     },
     {
-      "session_id": 3,
-      "timestamp": "2026-01-10T18:00:00Z",
-      "speaker_id": "anon_social_user_07",
+      "session_id": 2,
+      "timestamp": "2026-01-07T18:00:00Z",
+      "speaker_id": "anon_social_user_08",
       "speaker_label": "User",
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i put a library book by the door."
+          "content": "I put a library book by the door."
         },
         {
           "role": "assistant",
@@ -94,14 +78,14 @@
       ]
     },
     {
-      "session_id": 4,
-      "timestamp": "2026-01-13T18:00:00Z",
-      "speaker_id": "anon_social_user_07",
+      "session_id": 3,
+      "timestamp": "2026-01-10T18:00:00Z",
+      "speaker_id": "anon_social_user_08",
       "speaker_label": "User",
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i watered the plants before breakfast."
+          "content": "I watered the plants before breakfast."
         },
         {
           "role": "assistant",
@@ -110,9 +94,25 @@
       ]
     },
     {
+      "session_id": 4,
+      "timestamp": "2026-01-13T18:00:00Z",
+      "speaker_id": "anon_social_user_08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I organized a drawer that had been bothering me."
+        },
+        {
+          "role": "assistant",
+          "content": "A contained task gave you a reset."
+        }
+      ]
+    },
+    {
       "session_id": 5,
       "timestamp": "2026-01-16T18:00:00Z",
-      "speaker_id": "anon_social_user_07",
+      "speaker_id": "anon_social_user_08",
       "speaker_label": "User",
       "dialogue": [
         {
@@ -128,28 +128,12 @@
     {
       "session_id": 6,
       "timestamp": "2026-01-19T18:00:00Z",
-      "speaker_id": "anon_social_user_07",
+      "speaker_id": "anon_social_user_08",
       "speaker_label": "User",
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i listened to a short podcast while cooking."
-        },
-        {
-          "role": "assistant",
-          "content": "You kept the evening low-pressure."
-        }
-      ]
-    },
-    {
-      "session_id": 7,
-      "timestamp": "2026-01-22T18:00:00Z",
-      "speaker_id": "anon_social_user_07",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "As someone who values dependable follow-through, i replied to an invitation with a clear boundary."
+          "content": "I replied to an invitation with a clear boundary."
         },
         {
           "role": "assistant",
@@ -158,14 +142,14 @@
       ]
     },
     {
-      "session_id": 8,
-      "timestamp": "2026-01-25T18:00:00Z",
-      "speaker_id": "anon_social_user_07",
+      "session_id": 7,
+      "timestamp": "2026-01-22T18:00:00Z",
+      "speaker_id": "anon_social_user_08",
       "speaker_label": "User",
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i made a note to call a relative next month."
+          "content": "I made a note to call a relative next month."
         },
         {
           "role": "assistant",
@@ -174,14 +158,14 @@
       ]
     },
     {
-      "session_id": 9,
-      "timestamp": "2026-01-28T18:00:00Z",
-      "speaker_id": "anon_social_user_07",
+      "session_id": 8,
+      "timestamp": "2026-01-25T18:00:00Z",
+      "speaker_id": "anon_social_user_08",
       "speaker_label": "User",
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i booked a routine appointment."
+          "content": "I booked a routine appointment."
         },
         {
           "role": "assistant",
@@ -190,14 +174,14 @@
       ]
     },
     {
-      "session_id": 10,
-      "timestamp": "2026-01-31T18:00:00Z",
-      "speaker_id": "anon_social_user_07",
+      "session_id": 9,
+      "timestamp": "2026-01-28T18:00:00Z",
+      "speaker_id": "anon_social_user_08",
       "speaker_label": "User",
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i updated my paper calendar before the week began."
+          "content": "I updated my paper calendar before the week began."
         },
         {
           "role": "assistant",
@@ -206,14 +190,14 @@
       ]
     },
     {
-      "session_id": 11,
-      "timestamp": "2026-02-03T18:00:00Z",
-      "speaker_id": "anon_social_user_07",
+      "session_id": 10,
+      "timestamp": "2026-01-31T18:00:00Z",
+      "speaker_id": "anon_social_user_08",
       "speaker_label": "User",
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i sent a short check-in to a friend after work."
+          "content": "I sent a short check-in to a friend after work."
         },
         {
           "role": "assistant",
@@ -222,9 +206,25 @@
       ]
     },
     {
+      "session_id": 11,
+      "timestamp": "2026-02-03T18:00:00Z",
+      "speaker_id": "anon_social_user_08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I took a quiet walk after dinner."
+        },
+        {
+          "role": "assistant",
+          "content": "A small reset can make an evening feel less crowded."
+        }
+      ]
+    },
+    {
       "session_id": 12,
       "timestamp": "2026-02-06T18:00:00Z",
-      "speaker_id": "anon_social_user_07",
+      "speaker_id": "anon_social_user_08",
       "speaker_label": "User",
       "dialogue": [
         {
@@ -240,28 +240,12 @@
     {
       "session_id": 13,
       "timestamp": "2026-02-09T18:00:00Z",
-      "speaker_id": "anon_social_user_07",
+      "speaker_id": "anon_social_user_08",
       "speaker_label": "User",
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i sorted a few photos from a recent trip."
-        },
-        {
-          "role": "assistant",
-          "content": "Low-pressure tasks can be restorative."
-        }
-      ]
-    },
-    {
-      "session_id": 14,
-      "timestamp": "2026-02-12T18:00:00Z",
-      "speaker_id": "anon_social_user_07",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "As someone who values dependable follow-through, i made tea before reading for a while."
+          "content": "I made tea before reading for a while."
         },
         {
           "role": "assistant",
@@ -270,14 +254,14 @@
       ]
     },
     {
-      "session_id": 15,
-      "timestamp": "2026-02-15T18:00:00Z",
-      "speaker_id": "anon_social_user_07",
+      "session_id": 14,
+      "timestamp": "2026-02-12T18:00:00Z",
+      "speaker_id": "anon_social_user_08",
       "speaker_label": "User",
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i wrote down a reminder for next week."
+          "content": "I wrote down a reminder for next week."
         },
         {
           "role": "assistant",
@@ -286,14 +270,14 @@
       ]
     },
     {
-      "session_id": 16,
-      "timestamp": "2026-02-18T18:00:00Z",
-      "speaker_id": "anon_social_user_07",
+      "session_id": 15,
+      "timestamp": "2026-02-15T18:00:00Z",
+      "speaker_id": "anon_social_user_08",
       "speaker_label": "User",
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i had a small lunch with a colleague."
+          "content": "I had a small lunch with a colleague."
         },
         {
           "role": "assistant",
@@ -302,14 +286,14 @@
       ]
     },
     {
-      "session_id": 17,
-      "timestamp": "2026-02-21T18:00:00Z",
-      "speaker_id": "anon_social_user_07",
+      "session_id": 16,
+      "timestamp": "2026-02-18T18:00:00Z",
+      "speaker_id": "anon_social_user_08",
       "speaker_label": "User",
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i cleared a few messages before bed."
+          "content": "I cleared a few messages before bed."
         },
         {
           "role": "assistant",
@@ -318,14 +302,14 @@
       ]
     },
     {
-      "session_id": 18,
-      "timestamp": "2026-02-24T18:00:00Z",
-      "speaker_id": "anon_social_user_07",
+      "session_id": 17,
+      "timestamp": "2026-02-21T18:00:00Z",
+      "speaker_id": "anon_social_user_08",
       "speaker_label": "User",
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i chose a quiet route home."
+          "content": "I chose a quiet route home."
         },
         {
           "role": "assistant",
@@ -334,14 +318,14 @@
       ]
     },
     {
-      "session_id": 19,
-      "timestamp": "2026-02-27T18:00:00Z",
-      "speaker_id": "anon_social_user_07",
+      "session_id": 18,
+      "timestamp": "2026-02-24T18:00:00Z",
+      "speaker_id": "anon_social_user_08",
       "speaker_label": "User",
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i checked my weekend plan once more."
+          "content": "I checked my weekend plan once more."
         },
         {
           "role": "assistant",
@@ -350,9 +334,25 @@
       ]
     },
     {
+      "session_id": 19,
+      "timestamp": "2026-02-27T18:00:00Z",
+      "speaker_id": "anon_social_user_08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I put a library book by the door."
+        },
+        {
+          "role": "assistant",
+          "content": "You prepared for a simple errand."
+        }
+      ]
+    },
+    {
       "session_id": 20,
       "timestamp": "2026-03-02T18:00:00Z",
-      "speaker_id": "anon_social_user_07",
+      "speaker_id": "anon_social_user_08",
       "speaker_label": "User",
       "dialogue": [
         {
@@ -380,28 +380,12 @@
     {
       "session_id": 1,
       "timestamp": "2026-01-04T18:00:00Z",
-      "speaker_id": "anon_social_user_07",
+      "speaker_id": "anon_social_user_08",
       "speaker_label": "User",
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i chose a quiet route home."
-        },
-        {
-          "role": "assistant",
-          "content": "You protected a little decompression time."
-        }
-      ]
-    },
-    {
-      "session_id": 2,
-      "timestamp": "2026-01-07T18:00:00Z",
-      "speaker_id": "anon_social_user_07",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "As someone who values dependable follow-through, i checked my weekend plan once more."
+          "content": "I use quiet mornings for reflection. I checked my weekend plan once more."
         },
         {
           "role": "assistant",
@@ -410,14 +394,14 @@
       ]
     },
     {
-      "session_id": 3,
-      "timestamp": "2026-01-10T18:00:00Z",
-      "speaker_id": "anon_social_user_07",
+      "session_id": 2,
+      "timestamp": "2026-01-07T18:00:00Z",
+      "speaker_id": "anon_social_user_08",
       "speaker_label": "User",
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i put a library book by the door."
+          "content": "I put a library book by the door."
         },
         {
           "role": "assistant",
@@ -426,14 +410,14 @@
       ]
     },
     {
-      "session_id": 4,
-      "timestamp": "2026-01-13T18:00:00Z",
-      "speaker_id": "anon_social_user_07",
+      "session_id": 3,
+      "timestamp": "2026-01-10T18:00:00Z",
+      "speaker_id": "anon_social_user_08",
       "speaker_label": "User",
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i watered the plants before breakfast."
+          "content": "I watered the plants before breakfast."
         },
         {
           "role": "assistant",
@@ -442,9 +426,25 @@
       ]
     },
     {
+      "session_id": 4,
+      "timestamp": "2026-01-13T18:00:00Z",
+      "speaker_id": "anon_social_user_08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I organized a drawer that had been bothering me."
+        },
+        {
+          "role": "assistant",
+          "content": "A contained task gave you a reset."
+        }
+      ]
+    },
+    {
       "session_id": 5,
       "timestamp": "2026-01-16T18:00:00Z",
-      "speaker_id": "anon_social_user_07",
+      "speaker_id": "anon_social_user_08",
       "speaker_label": "User",
       "dialogue": [
         {
@@ -460,28 +460,12 @@
     {
       "session_id": 6,
       "timestamp": "2026-01-19T18:00:00Z",
-      "speaker_id": "anon_social_user_07",
+      "speaker_id": "anon_social_user_08",
       "speaker_label": "User",
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i listened to a short podcast while cooking."
-        },
-        {
-          "role": "assistant",
-          "content": "You kept the evening low-pressure."
-        }
-      ]
-    },
-    {
-      "session_id": 7,
-      "timestamp": "2026-01-22T18:00:00Z",
-      "speaker_id": "anon_social_user_07",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "As someone who values dependable follow-through, i replied to an invitation with a clear boundary."
+          "content": "I replied to an invitation with a clear boundary."
         },
         {
           "role": "assistant",
@@ -490,14 +474,14 @@
       ]
     },
     {
-      "session_id": 8,
-      "timestamp": "2026-01-25T18:00:00Z",
-      "speaker_id": "anon_social_user_07",
+      "session_id": 7,
+      "timestamp": "2026-01-22T18:00:00Z",
+      "speaker_id": "anon_social_user_08",
       "speaker_label": "User",
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i made a note to call a relative next month."
+          "content": "I made a note to call a relative next month."
         },
         {
           "role": "assistant",
@@ -506,14 +490,14 @@
       ]
     },
     {
-      "session_id": 9,
-      "timestamp": "2026-01-28T18:00:00Z",
-      "speaker_id": "anon_social_user_07",
+      "session_id": 8,
+      "timestamp": "2026-01-25T18:00:00Z",
+      "speaker_id": "anon_social_user_08",
       "speaker_label": "User",
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i booked a routine appointment."
+          "content": "I booked a routine appointment."
         },
         {
           "role": "assistant",
@@ -522,14 +506,14 @@
       ]
     },
     {
-      "session_id": 10,
-      "timestamp": "2026-01-31T18:00:00Z",
-      "speaker_id": "anon_social_user_07",
+      "session_id": 9,
+      "timestamp": "2026-01-28T18:00:00Z",
+      "speaker_id": "anon_social_user_08",
       "speaker_label": "User",
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i updated my paper calendar before the week began."
+          "content": "I updated my paper calendar before the week began."
         },
         {
           "role": "assistant",
@@ -538,14 +522,14 @@
       ]
     },
     {
-      "session_id": 11,
-      "timestamp": "2026-02-03T18:00:00Z",
-      "speaker_id": "anon_social_user_07",
+      "session_id": 10,
+      "timestamp": "2026-01-31T18:00:00Z",
+      "speaker_id": "anon_social_user_08",
       "speaker_label": "User",
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i sent a short check-in to a friend after work."
+          "content": "I sent a short check-in to a friend after work."
         },
         {
           "role": "assistant",
@@ -554,30 +538,30 @@
       ]
     },
     {
-      "session_id": 13,
-      "timestamp": "2026-02-09T18:00:00Z",
-      "speaker_id": "anon_social_user_07",
+      "session_id": 11,
+      "timestamp": "2026-02-03T18:00:00Z",
+      "speaker_id": "anon_social_user_08",
       "speaker_label": "User",
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i sorted a few photos from a recent trip."
+          "content": "I took a quiet walk after dinner."
         },
         {
           "role": "assistant",
-          "content": "Low-pressure tasks can be restorative."
+          "content": "A small reset can make an evening feel less crowded."
         }
       ]
     },
     {
-      "session_id": 14,
-      "timestamp": "2026-02-12T18:00:00Z",
-      "speaker_id": "anon_social_user_07",
+      "session_id": 13,
+      "timestamp": "2026-02-09T18:00:00Z",
+      "speaker_id": "anon_social_user_08",
       "speaker_label": "User",
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i made tea before reading for a while."
+          "content": "I made tea before reading for a while."
         },
         {
           "role": "assistant",
@@ -586,14 +570,14 @@
       ]
     },
     {
-      "session_id": 15,
-      "timestamp": "2026-02-15T18:00:00Z",
-      "speaker_id": "anon_social_user_07",
+      "session_id": 14,
+      "timestamp": "2026-02-12T18:00:00Z",
+      "speaker_id": "anon_social_user_08",
       "speaker_label": "User",
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i wrote down a reminder for next week."
+          "content": "I wrote down a reminder for next week."
         },
         {
           "role": "assistant",
@@ -602,14 +586,14 @@
       ]
     },
     {
-      "session_id": 16,
-      "timestamp": "2026-02-18T18:00:00Z",
-      "speaker_id": "anon_social_user_07",
+      "session_id": 15,
+      "timestamp": "2026-02-15T18:00:00Z",
+      "speaker_id": "anon_social_user_08",
       "speaker_label": "User",
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i had a small lunch with a colleague."
+          "content": "I had a small lunch with a colleague."
         },
         {
           "role": "assistant",
@@ -618,14 +602,14 @@
       ]
     },
     {
-      "session_id": 17,
-      "timestamp": "2026-02-21T18:00:00Z",
-      "speaker_id": "anon_social_user_07",
+      "session_id": 16,
+      "timestamp": "2026-02-18T18:00:00Z",
+      "speaker_id": "anon_social_user_08",
       "speaker_label": "User",
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i cleared a few messages before bed."
+          "content": "I cleared a few messages before bed."
         },
         {
           "role": "assistant",
@@ -634,14 +618,14 @@
       ]
     },
     {
-      "session_id": 18,
-      "timestamp": "2026-02-24T18:00:00Z",
-      "speaker_id": "anon_social_user_07",
+      "session_id": 17,
+      "timestamp": "2026-02-21T18:00:00Z",
+      "speaker_id": "anon_social_user_08",
       "speaker_label": "User",
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i chose a quiet route home."
+          "content": "I chose a quiet route home."
         },
         {
           "role": "assistant",
@@ -650,14 +634,14 @@
       ]
     },
     {
-      "session_id": 19,
-      "timestamp": "2026-02-27T18:00:00Z",
-      "speaker_id": "anon_social_user_07",
+      "session_id": 18,
+      "timestamp": "2026-02-24T18:00:00Z",
+      "speaker_id": "anon_social_user_08",
       "speaker_label": "User",
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i checked my weekend plan once more."
+          "content": "I checked my weekend plan once more."
         },
         {
           "role": "assistant",
@@ -666,9 +650,25 @@
       ]
     },
     {
+      "session_id": 19,
+      "timestamp": "2026-02-27T18:00:00Z",
+      "speaker_id": "anon_social_user_08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I put a library book by the door."
+        },
+        {
+          "role": "assistant",
+          "content": "You prepared for a simple errand."
+        }
+      ]
+    },
+    {
       "session_id": 20,
       "timestamp": "2026-03-02T18:00:00Z",
-      "speaker_id": "anon_social_user_07",
+      "speaker_id": "anon_social_user_08",
       "speaker_label": "User",
       "dialogue": [
         {
@@ -696,28 +696,12 @@
     {
       "session_id": 1,
       "timestamp": "2026-01-04T18:00:00Z",
-      "speaker_id": "anon_social_user_07",
+      "speaker_id": "anon_social_user_08",
       "speaker_label": "User",
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i chose a quiet route home."
-        },
-        {
-          "role": "assistant",
-          "content": "You protected a little decompression time."
-        }
-      ]
-    },
-    {
-      "session_id": 2,
-      "timestamp": "2026-01-07T18:00:00Z",
-      "speaker_id": "anon_social_user_07",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "As someone who values dependable follow-through, i checked my weekend plan once more."
+          "content": "I use quiet mornings for reflection. I checked my weekend plan once more."
         },
         {
           "role": "assistant",
@@ -726,14 +710,14 @@
       ]
     },
     {
-      "session_id": 3,
-      "timestamp": "2026-01-10T18:00:00Z",
-      "speaker_id": "anon_social_user_07",
+      "session_id": 2,
+      "timestamp": "2026-01-07T18:00:00Z",
+      "speaker_id": "anon_social_user_08",
       "speaker_label": "User",
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i put a library book by the door."
+          "content": "I put a library book by the door."
         },
         {
           "role": "assistant",
@@ -742,14 +726,14 @@
       ]
     },
     {
-      "session_id": 4,
-      "timestamp": "2026-01-13T18:00:00Z",
-      "speaker_id": "anon_social_user_07",
+      "session_id": 3,
+      "timestamp": "2026-01-10T18:00:00Z",
+      "speaker_id": "anon_social_user_08",
       "speaker_label": "User",
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i watered the plants before breakfast."
+          "content": "I watered the plants before breakfast."
         },
         {
           "role": "assistant",
@@ -758,30 +742,30 @@
       ]
     },
     {
-      "session_id": 6,
-      "timestamp": "2026-01-19T18:00:00Z",
-      "speaker_id": "anon_social_user_07",
+      "session_id": 4,
+      "timestamp": "2026-01-13T18:00:00Z",
+      "speaker_id": "anon_social_user_08",
       "speaker_label": "User",
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i listened to a short podcast while cooking."
+          "content": "I organized a drawer that had been bothering me."
         },
         {
           "role": "assistant",
-          "content": "You kept the evening low-pressure."
+          "content": "A contained task gave you a reset."
         }
       ]
     },
     {
-      "session_id": 7,
-      "timestamp": "2026-01-22T18:00:00Z",
-      "speaker_id": "anon_social_user_07",
+      "session_id": 6,
+      "timestamp": "2026-01-19T18:00:00Z",
+      "speaker_id": "anon_social_user_08",
       "speaker_label": "User",
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i replied to an invitation with a clear boundary."
+          "content": "I replied to an invitation with a clear boundary."
         },
         {
           "role": "assistant",
@@ -790,14 +774,14 @@
       ]
     },
     {
-      "session_id": 8,
-      "timestamp": "2026-01-25T18:00:00Z",
-      "speaker_id": "anon_social_user_07",
+      "session_id": 7,
+      "timestamp": "2026-01-22T18:00:00Z",
+      "speaker_id": "anon_social_user_08",
       "speaker_label": "User",
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i made a note to call a relative next month."
+          "content": "I made a note to call a relative next month."
         },
         {
           "role": "assistant",
@@ -806,14 +790,14 @@
       ]
     },
     {
-      "session_id": 9,
-      "timestamp": "2026-01-28T18:00:00Z",
-      "speaker_id": "anon_social_user_07",
+      "session_id": 8,
+      "timestamp": "2026-01-25T18:00:00Z",
+      "speaker_id": "anon_social_user_08",
       "speaker_label": "User",
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i booked a routine appointment."
+          "content": "I booked a routine appointment."
         },
         {
           "role": "assistant",
@@ -822,14 +806,14 @@
       ]
     },
     {
-      "session_id": 10,
-      "timestamp": "2026-01-31T18:00:00Z",
-      "speaker_id": "anon_social_user_07",
+      "session_id": 9,
+      "timestamp": "2026-01-28T18:00:00Z",
+      "speaker_id": "anon_social_user_08",
       "speaker_label": "User",
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i updated my paper calendar before the week began."
+          "content": "I updated my paper calendar before the week began."
         },
         {
           "role": "assistant",
@@ -838,14 +822,14 @@
       ]
     },
     {
-      "session_id": 11,
-      "timestamp": "2026-02-03T18:00:00Z",
-      "speaker_id": "anon_social_user_07",
+      "session_id": 10,
+      "timestamp": "2026-01-31T18:00:00Z",
+      "speaker_id": "anon_social_user_08",
       "speaker_label": "User",
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i sent a short check-in to a friend after work."
+          "content": "I sent a short check-in to a friend after work."
         },
         {
           "role": "assistant",
@@ -854,9 +838,25 @@
       ]
     },
     {
+      "session_id": 11,
+      "timestamp": "2026-02-03T18:00:00Z",
+      "speaker_id": "anon_social_user_08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I took a quiet walk after dinner."
+        },
+        {
+          "role": "assistant",
+          "content": "A small reset can make an evening feel less crowded."
+        }
+      ]
+    },
+    {
       "session_id": 12,
       "timestamp": "2026-02-06T18:00:00Z",
-      "speaker_id": "anon_social_user_07",
+      "speaker_id": "anon_social_user_08",
       "speaker_label": "User",
       "dialogue": [
         {
@@ -872,28 +872,12 @@
     {
       "session_id": 13,
       "timestamp": "2026-02-09T18:00:00Z",
-      "speaker_id": "anon_social_user_07",
+      "speaker_id": "anon_social_user_08",
       "speaker_label": "User",
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i sorted a few photos from a recent trip."
-        },
-        {
-          "role": "assistant",
-          "content": "Low-pressure tasks can be restorative."
-        }
-      ]
-    },
-    {
-      "session_id": 14,
-      "timestamp": "2026-02-12T18:00:00Z",
-      "speaker_id": "anon_social_user_07",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "As someone who values dependable follow-through, i made tea before reading for a while."
+          "content": "I made tea before reading for a while."
         },
         {
           "role": "assistant",
@@ -902,14 +886,14 @@
       ]
     },
     {
-      "session_id": 15,
-      "timestamp": "2026-02-15T18:00:00Z",
-      "speaker_id": "anon_social_user_07",
+      "session_id": 14,
+      "timestamp": "2026-02-12T18:00:00Z",
+      "speaker_id": "anon_social_user_08",
       "speaker_label": "User",
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i wrote down a reminder for next week."
+          "content": "I wrote down a reminder for next week."
         },
         {
           "role": "assistant",
@@ -918,14 +902,14 @@
       ]
     },
     {
-      "session_id": 16,
-      "timestamp": "2026-02-18T18:00:00Z",
-      "speaker_id": "anon_social_user_07",
+      "session_id": 15,
+      "timestamp": "2026-02-15T18:00:00Z",
+      "speaker_id": "anon_social_user_08",
       "speaker_label": "User",
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i had a small lunch with a colleague."
+          "content": "I had a small lunch with a colleague."
         },
         {
           "role": "assistant",
@@ -934,14 +918,14 @@
       ]
     },
     {
-      "session_id": 17,
-      "timestamp": "2026-02-21T18:00:00Z",
-      "speaker_id": "anon_social_user_07",
+      "session_id": 16,
+      "timestamp": "2026-02-18T18:00:00Z",
+      "speaker_id": "anon_social_user_08",
       "speaker_label": "User",
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i cleared a few messages before bed."
+          "content": "I cleared a few messages before bed."
         },
         {
           "role": "assistant",
@@ -950,14 +934,14 @@
       ]
     },
     {
-      "session_id": 18,
-      "timestamp": "2026-02-24T18:00:00Z",
-      "speaker_id": "anon_social_user_07",
+      "session_id": 17,
+      "timestamp": "2026-02-21T18:00:00Z",
+      "speaker_id": "anon_social_user_08",
       "speaker_label": "User",
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i chose a quiet route home."
+          "content": "I chose a quiet route home."
         },
         {
           "role": "assistant",
@@ -966,14 +950,14 @@
       ]
     },
     {
-      "session_id": 19,
-      "timestamp": "2026-02-27T18:00:00Z",
-      "speaker_id": "anon_social_user_07",
+      "session_id": 18,
+      "timestamp": "2026-02-24T18:00:00Z",
+      "speaker_id": "anon_social_user_08",
       "speaker_label": "User",
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i checked my weekend plan once more."
+          "content": "I checked my weekend plan once more."
         },
         {
           "role": "assistant",
@@ -982,9 +966,25 @@
       ]
     },
     {
+      "session_id": 19,
+      "timestamp": "2026-02-27T18:00:00Z",
+      "speaker_id": "anon_social_user_08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I put a library book by the door."
+        },
+        {
+          "role": "assistant",
+          "content": "You prepared for a simple errand."
+        }
+      ]
+    },
+    {
       "session_id": 20,
       "timestamp": "2026-03-02T18:00:00Z",
-      "speaker_id": "anon_social_user_07",
+      "speaker_id": "anon_social_user_08",
       "speaker_label": "User",
       "dialogue": [
         {
@@ -1012,28 +1012,12 @@
     {
       "session_id": 1,
       "timestamp": "2026-01-04T18:00:00Z",
-      "speaker_id": "anon_social_user_07",
+      "speaker_id": "anon_social_user_08",
       "speaker_label": "User",
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i chose a quiet route home."
-        },
-        {
-          "role": "assistant",
-          "content": "You protected a little decompression time."
-        }
-      ]
-    },
-    {
-      "session_id": 2,
-      "timestamp": "2026-01-07T18:00:00Z",
-      "speaker_id": "anon_social_user_07",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "As someone who values dependable follow-through, i checked my weekend plan once more."
+          "content": "I use quiet mornings for reflection. I checked my weekend plan once more."
         },
         {
           "role": "assistant",
@@ -1042,14 +1026,14 @@
       ]
     },
     {
-      "session_id": 3,
-      "timestamp": "2026-01-10T18:00:00Z",
-      "speaker_id": "anon_social_user_07",
+      "session_id": 2,
+      "timestamp": "2026-01-07T18:00:00Z",
+      "speaker_id": "anon_social_user_08",
       "speaker_label": "User",
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i put a library book by the door."
+          "content": "I put a library book by the door."
         },
         {
           "role": "assistant",
@@ -1058,14 +1042,14 @@
       ]
     },
     {
-      "session_id": 4,
-      "timestamp": "2026-01-13T18:00:00Z",
-      "speaker_id": "anon_social_user_07",
+      "session_id": 3,
+      "timestamp": "2026-01-10T18:00:00Z",
+      "speaker_id": "anon_social_user_08",
       "speaker_label": "User",
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i watered the plants before breakfast."
+          "content": "I watered the plants before breakfast."
         },
         {
           "role": "assistant",
@@ -1074,9 +1058,25 @@
       ]
     },
     {
+      "session_id": 4,
+      "timestamp": "2026-01-13T18:00:00Z",
+      "speaker_id": "anon_social_user_08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I organized a drawer that had been bothering me."
+        },
+        {
+          "role": "assistant",
+          "content": "A contained task gave you a reset."
+        }
+      ]
+    },
+    {
       "session_id": 5,
       "timestamp": "2026-01-16T18:00:00Z",
-      "speaker_id": "anon_social_user_07",
+      "speaker_id": "anon_social_user_08",
       "speaker_label": "User",
       "dialogue": [
         {
@@ -1092,28 +1092,12 @@
     {
       "session_id": 6,
       "timestamp": "2026-01-19T18:00:00Z",
-      "speaker_id": "anon_social_user_07",
+      "speaker_id": "anon_social_user_08",
       "speaker_label": "User",
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i listened to a short podcast while cooking."
-        },
-        {
-          "role": "assistant",
-          "content": "You kept the evening low-pressure."
-        }
-      ]
-    },
-    {
-      "session_id": 7,
-      "timestamp": "2026-01-22T18:00:00Z",
-      "speaker_id": "anon_social_user_07",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "As someone who values dependable follow-through, i replied to an invitation with a clear boundary."
+          "content": "I replied to an invitation with a clear boundary."
         },
         {
           "role": "assistant",
@@ -1122,14 +1106,14 @@
       ]
     },
     {
-      "session_id": 8,
-      "timestamp": "2026-01-25T18:00:00Z",
-      "speaker_id": "anon_social_user_07",
+      "session_id": 7,
+      "timestamp": "2026-01-22T18:00:00Z",
+      "speaker_id": "anon_social_user_08",
       "speaker_label": "User",
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i made a note to call a relative next month."
+          "content": "I made a note to call a relative next month."
         },
         {
           "role": "assistant",
@@ -1138,14 +1122,14 @@
       ]
     },
     {
-      "session_id": 9,
-      "timestamp": "2026-01-28T18:00:00Z",
-      "speaker_id": "anon_social_user_07",
+      "session_id": 8,
+      "timestamp": "2026-01-25T18:00:00Z",
+      "speaker_id": "anon_social_user_08",
       "speaker_label": "User",
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i booked a routine appointment."
+          "content": "I booked a routine appointment."
         },
         {
           "role": "assistant",
@@ -1154,14 +1138,14 @@
       ]
     },
     {
-      "session_id": 10,
-      "timestamp": "2026-01-31T18:00:00Z",
-      "speaker_id": "anon_social_user_07",
+      "session_id": 9,
+      "timestamp": "2026-01-28T18:00:00Z",
+      "speaker_id": "anon_social_user_08",
       "speaker_label": "User",
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i updated my paper calendar before the week began."
+          "content": "I updated my paper calendar before the week began."
         },
         {
           "role": "assistant",
@@ -1170,14 +1154,14 @@
       ]
     },
     {
-      "session_id": 11,
-      "timestamp": "2026-02-03T18:00:00Z",
-      "speaker_id": "anon_social_user_07",
+      "session_id": 10,
+      "timestamp": "2026-01-31T18:00:00Z",
+      "speaker_id": "anon_social_user_08",
       "speaker_label": "User",
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i sent a short check-in to a friend after work."
+          "content": "I sent a short check-in to a friend after work."
         },
         {
           "role": "assistant",
@@ -1186,9 +1170,25 @@
       ]
     },
     {
+      "session_id": 11,
+      "timestamp": "2026-02-03T18:00:00Z",
+      "speaker_id": "anon_social_user_08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I took a quiet walk after dinner."
+        },
+        {
+          "role": "assistant",
+          "content": "A small reset can make an evening feel less crowded."
+        }
+      ]
+    },
+    {
       "session_id": 12,
       "timestamp": "2026-02-06T18:00:00Z",
-      "speaker_id": "anon_social_user_07",
+      "speaker_id": "anon_social_user_08",
       "speaker_label": "User",
       "dialogue": [
         {
@@ -1204,28 +1204,12 @@
     {
       "session_id": 13,
       "timestamp": "2026-02-09T18:00:00Z",
-      "speaker_id": "anon_social_user_07",
+      "speaker_id": "anon_social_user_08",
       "speaker_label": "User",
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i sorted a few photos from a recent trip."
-        },
-        {
-          "role": "assistant",
-          "content": "Low-pressure tasks can be restorative."
-        }
-      ]
-    },
-    {
-      "session_id": 14,
-      "timestamp": "2026-02-12T18:00:00Z",
-      "speaker_id": "anon_social_user_07",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "As someone who values dependable follow-through, i made tea before reading for a while."
+          "content": "I made tea before reading for a while."
         },
         {
           "role": "assistant",
@@ -1234,14 +1218,14 @@
       ]
     },
     {
-      "session_id": 15,
-      "timestamp": "2026-02-15T18:00:00Z",
-      "speaker_id": "anon_social_user_07",
+      "session_id": 14,
+      "timestamp": "2026-02-12T18:00:00Z",
+      "speaker_id": "anon_social_user_08",
       "speaker_label": "User",
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i wrote down a reminder for next week."
+          "content": "I wrote down a reminder for next week."
         },
         {
           "role": "assistant",
@@ -1250,14 +1234,14 @@
       ]
     },
     {
-      "session_id": 16,
-      "timestamp": "2026-02-18T18:00:00Z",
-      "speaker_id": "anon_social_user_07",
+      "session_id": 15,
+      "timestamp": "2026-02-15T18:00:00Z",
+      "speaker_id": "anon_social_user_08",
       "speaker_label": "User",
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i had a small lunch with a colleague."
+          "content": "I had a small lunch with a colleague."
         },
         {
           "role": "assistant",
@@ -1266,14 +1250,14 @@
       ]
     },
     {
-      "session_id": 17,
-      "timestamp": "2026-02-21T18:00:00Z",
-      "speaker_id": "anon_social_user_07",
+      "session_id": 16,
+      "timestamp": "2026-02-18T18:00:00Z",
+      "speaker_id": "anon_social_user_08",
       "speaker_label": "User",
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i cleared a few messages before bed."
+          "content": "I cleared a few messages before bed."
         },
         {
           "role": "assistant",
@@ -1282,14 +1266,14 @@
       ]
     },
     {
-      "session_id": 18,
-      "timestamp": "2026-02-24T18:00:00Z",
-      "speaker_id": "anon_social_user_07",
+      "session_id": 17,
+      "timestamp": "2026-02-21T18:00:00Z",
+      "speaker_id": "anon_social_user_08",
       "speaker_label": "User",
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i chose a quiet route home."
+          "content": "I chose a quiet route home."
         },
         {
           "role": "assistant",
@@ -1298,14 +1282,14 @@
       ]
     },
     {
-      "session_id": 19,
-      "timestamp": "2026-02-27T18:00:00Z",
-      "speaker_id": "anon_social_user_07",
+      "session_id": 18,
+      "timestamp": "2026-02-24T18:00:00Z",
+      "speaker_id": "anon_social_user_08",
       "speaker_label": "User",
       "dialogue": [
         {
           "role": "user",
-          "content": "As someone who values dependable follow-through, i checked my weekend plan once more."
+          "content": "I checked my weekend plan once more."
         },
         {
           "role": "assistant",
@@ -1314,9 +1298,25 @@
       ]
     },
     {
+      "session_id": 19,
+      "timestamp": "2026-02-27T18:00:00Z",
+      "speaker_id": "anon_social_user_08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I put a library book by the door."
+        },
+        {
+          "role": "assistant",
+          "content": "You prepared for a simple errand."
+        }
+      ]
+    },
+    {
       "session_id": 20,
       "timestamp": "2026-03-02T18:00:00Z",
-      "speaker_id": "anon_social_user_07",
+      "speaker_id": "anon_social_user_08",
       "speaker_label": "User",
       "dialogue": [
         {
