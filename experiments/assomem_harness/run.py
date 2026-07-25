@@ -31,6 +31,7 @@ from clients import call_model_with_usage  # noqa: E402
 
 EVALUATION_ARMS = ("full", "no_target", "broken_link", "distractor", "absence", "add_evidence")
 VNEXT_EVALUATION_ARMS = ("full", "a_only", "b_only", "link_broken", "distractor", "absence")
+VNEXT_DATA_FORMATS = {"work-vnext-1", "assomem-vnext-1"}
 
 
 def parse_arms(value: str) -> tuple[str, ...]:
@@ -42,13 +43,13 @@ def parse_arms(value: str) -> tuple[str, ...]:
 
 
 def _evaluation_arms(profile: Any) -> tuple[str, ...]:
-    return VNEXT_EVALUATION_ARMS if profile.data_format == "work-vnext-1" else EVALUATION_ARMS
+    return VNEXT_EVALUATION_ARMS if profile.data_format in VNEXT_DATA_FORMATS else EVALUATION_ARMS
 
 
 def _discover(data_root: Path, profile: Any, domain: str):
     return (
         discover_vnext_items(data_root, profile, domain)
-        if profile.data_format == "work-vnext-1"
+        if profile.data_format in VNEXT_DATA_FORMATS
         else discover_items(data_root, profile, domain)
     )
 
@@ -56,7 +57,7 @@ def _discover(data_root: Path, profile: Any, domain: str):
 def _materialize(item: Any, profile: Any):
     return (
         materialize_vnext_arms(item, profile)
-        if profile.data_format == "work-vnext-1"
+        if profile.data_format in VNEXT_DATA_FORMATS
         else materialize_arms(item, profile, item.arms["associative"]["query"])
     )
 
@@ -209,7 +210,7 @@ def prepare_run(
         if max_items > 20:
             raise ValueError("Pilot selection supports at most 20 items; provide a frozen manifest for larger runs")
         selection_manifest = build_stratified_manifest(
-            all_items, profile, data_root, count=max_items, seed=20260722
+            all_items, profile, data_root, count=max_items, seed=20260722, domain=domain
         )
         items = select_manifest_items(all_items, selection_manifest, data_root)
     else:
@@ -253,7 +254,7 @@ def prepare_run(
         "base_items": len(items),
         "shipped_conversations": len(items) * (
             len(_evaluation_arms(profile))
-            if profile.data_format == "work-vnext-1"
+            if profile.data_format in VNEXT_DATA_FORMATS
             else len(profile.arms)
         ),
         "profile_sha256": _sha256_file(profile_path),
@@ -275,8 +276,8 @@ def run_zero_evidence(
 ) -> dict[str, Any]:
     """Execute the query-only shortcut screen and persist one artifact per item."""
     profile = load_profile(profile_path)
-    if profile.data_format != "work-vnext-1":
-        raise ValueError("zero-evidence is currently defined only for work-vnext-1")
+    if profile.data_format not in VNEXT_DATA_FORMATS:
+        raise ValueError("zero-evidence is currently defined only for vNext profiles")
     roles = load_roles()
     manifest = json.loads(item_manifest_path.read_text(encoding="utf-8"))
     if manifest["profile_id"] != profile.profile_id or manifest["domain"] != domain:
@@ -286,10 +287,16 @@ def run_zero_evidence(
     destination.mkdir(parents=True, exist_ok=True)
     results = []
     for item in items:
+        artifact_path = destination / f"{item.item_id}.json"
+        if artifact_path.is_file():
+            cached = json.loads(artifact_path.read_text(encoding="utf-8"))
+            if cached.get("pass"):
+                results.append(cached)
+                continue
         result = run_zero_evidence_check(
             item.arms["associative"], profile, roles["solver"], call_model_with_usage, trials=trials
         )
-        (destination / f"{item.item_id}.json").write_text(
+        artifact_path.write_text(
             json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
         )
         results.append(result)
@@ -359,7 +366,7 @@ def _execute_run_unlocked(
         raise ValueError("execute requires an approved --e1-review CSV")
     validate_e1_gate(e1_review_path, {item.item_id for item in items}, selected_arms)
     run_root = log_root / domain / run_id
-    if profile.data_format == "work-vnext-1":
+    if profile.data_format in VNEXT_DATA_FORMATS:
         _validate_zero_evidence_gate(run_root, {item.item_id for item in items})
     log_dir = run_root / "log"
     log_dir.mkdir(parents=True, exist_ok=True)

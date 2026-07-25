@@ -35,11 +35,12 @@ def _difficulty(item: PairedItem, profile: DatasetProfile) -> dict[str, int | fl
 
 
 def build_stratified_manifest(
-    items: list[PairedItem], profile: DatasetProfile, data_root: Path, *, count: int, seed: int
+    items: list[PairedItem], profile: DatasetProfile, data_root: Path, *, count: int, seed: int,
+    domain: str = "work",
 ) -> dict:
     if count > 20 or count < 1:
         raise ValueError("Pilot manifest count must be between 1 and 20")
-    if profile.data_format == "work-vnext-1":
+    if profile.data_format in {"work-vnext-1", "assomem-vnext-1"}:
         selected_items = sorted(items, key=lambda item: item.item_id)[:count]
         if len(selected_items) != count:
             raise ValueError(f"Only {len(selected_items)} vNext pairs are available")
@@ -66,7 +67,7 @@ def build_stratified_manifest(
             "selection_method": "pair_id_sorted",
             "selection_seed": seed,
             "profile_id": profile.profile_id,
-            "domain": "work",
+            "domain": domain,
             "items": selected,
         }
     by_key = {(item.user_id, item.scenario_id): item for item in items}

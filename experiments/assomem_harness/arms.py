@@ -185,8 +185,8 @@ def materialize_vnext_arms(
     paired: PairedItem, profile: DatasetProfile
 ) -> dict[str, EvaluationArm]:
     """Materialize approved vNext conditions without reusing legacy controls."""
-    if profile.data_format != "work-vnext-1":
-        raise ValueError("materialize_vnext_arms requires a work-vnext-1 profile")
+    if profile.data_format not in {"work-vnext-1", "assomem-vnext-1"}:
+        raise ValueError("materialize_vnext_arms requires a vNext profile")
     associative = paired.arms["associative"]
     rendered = render_arms(associative)
     arms: dict[str, EvaluationArm] = {}

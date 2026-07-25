@@ -49,7 +49,7 @@ Return exactly this JSON schema:
 {{"binary_decision_correct":bool,"required_elements":[{{"hit":bool,
 "evidence_grounded":bool,"support":str}}],"evidence_usage":{{"ev_A_used":bool,
 "ev_B_used":bool,"h_k":0}},"abstention":{{"abstains":bool,
-"asserts_absent_pattern":bool}},"source_misattribution":false,
+"asserts_absent_pattern":bool}},"source_misattribution":bool,
 "condition_correct":bool,"failure_tags":[str],"reason":str}}.
 
 `condition_correct` requires the correct yes/no decision and all arm-specific
