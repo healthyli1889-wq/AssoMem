@@ -4,7 +4,7 @@
 - User: `anon_social_user_02`
 - Query type: `situational_fit`
 - Polarity: `reject`
-- Query: A neighbor asked me to host an open-house event on Saturday evening. Would that be a good commitment for me?
+- Query: A neighbor asked me to host an open-house event on Saturday evening. Would taking that on be a risk for me?
 - Latent C: The Saturday open-house event should be flagged as a fit risk because it would reduce the user's capacity for the sensitive family planning call.
 - Calibrated wording: flagged as a fit risk
 
@@ -366,7 +366,7 @@
       ]
     }
   ],
-  "query": "A neighbor asked me to host an open-house event on Saturday evening. Would that be a good commitment for me?"
+  "query": "A neighbor asked me to host an open-house event on Saturday evening. Would taking that on be a risk for me?"
 }
 ```
 - Why original C is or is not licensed: A and B jointly support the target proposition.
@@ -682,7 +682,7 @@
       ]
     }
   ],
-  "query": "A neighbor asked me to host an open-house event on Saturday evening. Would that be a good commitment for me?"
+  "query": "A neighbor asked me to host an open-house event on Saturday evening. Would taking that on be a risk for me?"
 }
 ```
 - Why original C is or is not licensed: A alone does not establish that the proposed event conflicts with a concrete responsibility.
@@ -998,7 +998,7 @@
       ]
     }
   ],
-  "query": "A neighbor asked me to host an open-house event on Saturday evening. Would that be a good commitment for me?"
+  "query": "A neighbor asked me to host an open-house event on Saturday evening. Would taking that on be a risk for me?"
 }
 ```
 - Why original C is or is not licensed: B alone does not establish that the proposed event would impair the responsibility.
@@ -1330,7 +1330,7 @@
       ]
     }
   ],
-  "query": "A neighbor asked me to host an open-house event on Saturday evening. Would that be a good commitment for me?"
+  "query": "A neighbor asked me to host an open-house event on Saturday evening. Would taking that on be a risk for me?"
 }
 ```
 - Why original C is or is not licensed: B-prime removes the responsibility connector while retaining same-user conversational form.

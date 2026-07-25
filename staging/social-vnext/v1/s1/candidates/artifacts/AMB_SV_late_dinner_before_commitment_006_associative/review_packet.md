@@ -4,7 +4,7 @@
 - User: `anon_social_user_06`
 - Query type: `situational_fit`
 - Polarity: `reject`
-- Query: Friends invited me to a Saturday dinner that may run past midnight. Should I go?
+- Query: Friends invited me to a Saturday dinner that may run past midnight. Would going be a risk for me?
 - Latent C: The late Saturday dinner should be flagged as a fit risk because it would compromise the user's Sunday coordination responsibility.
 - Calibrated wording: flagged as a fit risk
 
@@ -366,7 +366,7 @@
       ]
     }
   ],
-  "query": "Friends invited me to a Saturday dinner that may run past midnight. Should I go?"
+  "query": "Friends invited me to a Saturday dinner that may run past midnight. Would going be a risk for me?"
 }
 ```
 - Why original C is or is not licensed: A and B jointly support the target proposition.
@@ -682,7 +682,7 @@
       ]
     }
   ],
-  "query": "Friends invited me to a Saturday dinner that may run past midnight. Should I go?"
+  "query": "Friends invited me to a Saturday dinner that may run past midnight. Would going be a risk for me?"
 }
 ```
 - Why original C is or is not licensed: A alone does not establish that the proposed event conflicts with a concrete responsibility.
@@ -998,7 +998,7 @@
       ]
     }
   ],
-  "query": "Friends invited me to a Saturday dinner that may run past midnight. Should I go?"
+  "query": "Friends invited me to a Saturday dinner that may run past midnight. Would going be a risk for me?"
 }
 ```
 - Why original C is or is not licensed: B alone does not establish that the proposed event would impair the responsibility.
@@ -1330,7 +1330,7 @@
       ]
     }
   ],
-  "query": "Friends invited me to a Saturday dinner that may run past midnight. Should I go?"
+  "query": "Friends invited me to a Saturday dinner that may run past midnight. Would going be a risk for me?"
 }
 ```
 - Why original C is or is not licensed: B-prime removes the responsibility connector while retaining same-user conversational form.
@@ -1662,7 +1662,7 @@
       ]
     }
   ],
-  "query": "Friends invited me to a Saturday dinner that may run past midnight. Should I go?"
+  "query": "Friends invited me to a Saturday dinner that may run past midnight. Would going be a risk for me?"
 }
 ```
 - Why original C is or is not licensed: Other-person evidence cannot support a target-user conclusion.

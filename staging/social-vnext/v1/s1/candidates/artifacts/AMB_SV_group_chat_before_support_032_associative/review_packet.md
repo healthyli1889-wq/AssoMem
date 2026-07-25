@@ -4,7 +4,7 @@
 - User: `anon_social_user_05`
 - Query type: `situational_fit`
 - Polarity: `reject`
-- Query: The reunion group wants me to keep its message thread active through Saturday night. Should I take that on?
+- Query: The reunion group wants me to keep its message thread active through Saturday night. Would taking that on be a risk for me?
 - Latent C: The always-on reunion role should be flagged as a fit risk because it would impair the user's attention for the Sunday support call.
 - Calibrated wording: flagged as a fit risk
 
@@ -366,7 +366,7 @@
       ]
     }
   ],
-  "query": "The reunion group wants me to keep its message thread active through Saturday night. Should I take that on?"
+  "query": "The reunion group wants me to keep its message thread active through Saturday night. Would taking that on be a risk for me?"
 }
 ```
 - Why original C is or is not licensed: A and B jointly support the target proposition.
@@ -682,7 +682,7 @@
       ]
     }
   ],
-  "query": "The reunion group wants me to keep its message thread active through Saturday night. Should I take that on?"
+  "query": "The reunion group wants me to keep its message thread active through Saturday night. Would taking that on be a risk for me?"
 }
 ```
 - Why original C is or is not licensed: A alone does not establish that the proposed event conflicts with a concrete responsibility.
@@ -998,7 +998,7 @@
       ]
     }
   ],
-  "query": "The reunion group wants me to keep its message thread active through Saturday night. Should I take that on?"
+  "query": "The reunion group wants me to keep its message thread active through Saturday night. Would taking that on be a risk for me?"
 }
 ```
 - Why original C is or is not licensed: B alone does not establish that the proposed event would impair the responsibility.
@@ -1330,7 +1330,7 @@
       ]
     }
   ],
-  "query": "The reunion group wants me to keep its message thread active through Saturday night. Should I take that on?"
+  "query": "The reunion group wants me to keep its message thread active through Saturday night. Would taking that on be a risk for me?"
 }
 ```
 - Why original C is or is not licensed: B-prime removes the responsibility connector while retaining same-user conversational form.

@@ -1,12 +1,12 @@
 {
   "arm": "a_only",
   "expected_mode": "withhold_C",
-  "started_at": "2026-07-25T08:29:40.037539+00:00",
+  "started_at": "2026-07-25T08:51:14.675337+00:00",
   "status": "scored",
   "solver_model": "Vendor2/GPT-5.6-Terra",
   "validator_model": "kimi/kimi-k3",
   "solver_answer": {
-    "answer": "It may make sense only if you can protect a quiet, low-demand Sunday morning afterward and confirm that it does not crowd out other commitments. You previously described needing a quiet morning after facilitating a lively group gathering before you can listen carefully to someone else’s conflict, so a bigger Saturday event could carry a meaningful recovery cost. Checking your calendar and setting a clear limit on the role or scope would be prudent.",
+    "answer": "Possibly. You’ve said that facilitating a lively group gathering can leave you needing a quiet morning before you can give careful attention to someone else’s conflict, so a bigger Saturday evening event may carry a recovery and next-day-capacity risk. It is not clear from the memory whether Sunday demands would make that risk unacceptable. Checking your paper calendar and protecting recovery time or setting a clear scope could help you decide.",
     "evidence_session_ids": [
       5,
       13,
@@ -20,19 +20,19 @@
     "evidence_grounded": true,
     "calibrated": false,
     "source_misattribution": false,
-    "rationale": "The expected mode for the a_only arm is withhold_C: with evidence B (session 12) removed, the context only establishes a general recovery pattern (session 5), not a conflict with a concrete next-day responsibility, so the solver should have declined to affirm that taking on the gathering makes sense and noted that no specific next-day responsibility is available. Instead, the solver gave a conditional endorsement ('It may make sense only if...'), which asserts rather than withholds the target proposition. Its citations (sessions 5, 13, 16) are real and accurately characterized, so the evidence is grounded with no source misattribution, but the answer is not calibrated to the missing evidence: it over-commits to a recommendation the available context cannot support."
+    "rationale": "The expected mode was withhold_C: with the session-12 evidence (a concrete next-day responsibility) removed, the correct answer is 'no' plus an explicit statement that no specific next-day responsibility is on record to establish a conflict, while withholding the proposition that hosting would be a risk. The solver instead answered 'Possibly' and asserted a hedged version of the target proposition ('may carry a recovery and next-day-capacity risk') with withheld=false, so it neither answered no nor withheld C. It did acknowledge that no Sunday demand is visible in memory, which partially gestures at the missing evidence, but it used that gap to soften rather than withhold the claim, so the answer is miscalibrated and overclaims beyond what the A-only evidence supports. The cited sessions (5, 13, 16) exist and are accurately described, so the answer is grounded with no source misattribution."
   },
   "solver_usage": {
-    "input_tokens": 1781,
-    "output_tokens": 192,
+    "input_tokens": 1782,
+    "output_tokens": 191,
     "reasoning_tokens": null,
     "total_tokens": 1973
   },
   "validator_usage": {
-    "input_tokens": 2128,
-    "output_tokens": 531,
+    "input_tokens": 2130,
+    "output_tokens": 668,
     "reasoning_tokens": null,
-    "total_tokens": 2659
+    "total_tokens": 2798
   },
-  "finished_at": "2026-07-25T08:30:41.001332+00:00"
+  "finished_at": "2026-07-25T08:53:05.505808+00:00"
 }

@@ -4,7 +4,7 @@
 - User: `anon_social_user_05`
 - Query type: `situational_fit`
 - Polarity: `reject`
-- Query: A dinner organizer asked me to join a live recognition round on Saturday night. Should I agree to it?
+- Query: A dinner organizer asked me to join a live recognition round on Saturday night. Would agreeing to it be a risk for me?
 - Latent C: The live recognition round should be flagged as a fit risk because it would interfere with the user's promised detailed feedback.
 - Calibrated wording: flagged as a fit risk
 
@@ -366,7 +366,7 @@
       ]
     }
   ],
-  "query": "A dinner organizer asked me to join a live recognition round on Saturday night. Should I agree to it?"
+  "query": "A dinner organizer asked me to join a live recognition round on Saturday night. Would agreeing to it be a risk for me?"
 }
 ```
 - Why original C is or is not licensed: A and B jointly support the target proposition.
@@ -682,7 +682,7 @@
       ]
     }
   ],
-  "query": "A dinner organizer asked me to join a live recognition round on Saturday night. Should I agree to it?"
+  "query": "A dinner organizer asked me to join a live recognition round on Saturday night. Would agreeing to it be a risk for me?"
 }
 ```
 - Why original C is or is not licensed: A alone does not establish that the proposed event conflicts with a concrete responsibility.
@@ -998,7 +998,7 @@
       ]
     }
   ],
-  "query": "A dinner organizer asked me to join a live recognition round on Saturday night. Should I agree to it?"
+  "query": "A dinner organizer asked me to join a live recognition round on Saturday night. Would agreeing to it be a risk for me?"
 }
 ```
 - Why original C is or is not licensed: B alone does not establish that the proposed event would impair the responsibility.
@@ -1330,7 +1330,7 @@
       ]
     }
   ],
-  "query": "A dinner organizer asked me to join a live recognition round on Saturday night. Should I agree to it?"
+  "query": "A dinner organizer asked me to join a live recognition round on Saturday night. Would agreeing to it be a risk for me?"
 }
 ```
 - Why original C is or is not licensed: B-prime removes the responsibility connector while retaining same-user conversational form.
