@@ -1,0 +1,30 @@
+{
+  "check": "zero_evidence",
+  "candidate_id": "AMB_SV_drop_in_before_letter_017_associative",
+  "pair_id": "AMB_SV_drop_in_before_letter_017",
+  "query_only": true,
+  "context_session_count": 0,
+  "trials_requested": 1,
+  "valid_trials": 1,
+  "target_yes_count": 0,
+  "target_false_positive_rate": 0.0,
+  "pass": true,
+  "attempts": [
+    {
+      "trial": 1,
+      "status": "valid",
+      "decision": "no",
+      "response": {
+        "decision": "no",
+        "answer": "No visible evidence indicates whether spontaneous Saturday-night visitors are acceptable.",
+        "evidence_session_ids": []
+      },
+      "solver_usage": {
+        "input_tokens": 166,
+        "output_tokens": 47,
+        "reasoning_tokens": null,
+        "total_tokens": 213
+      }
+    }
+  ]
+}

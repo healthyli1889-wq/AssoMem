@@ -1,0 +1,38 @@
+{
+  "arm": "a_only",
+  "expected_mode": "withhold_C",
+  "started_at": "2026-07-25T08:29:40.037539+00:00",
+  "status": "scored",
+  "solver_model": "Vendor2/GPT-5.6-Terra",
+  "validator_model": "kimi/kimi-k3",
+  "solver_answer": {
+    "answer": "It may make sense only if you can protect a quiet, low-demand Sunday morning afterward and confirm that it does not crowd out other commitments. You previously described needing a quiet morning after facilitating a lively group gathering before you can listen carefully to someone else’s conflict, so a bigger Saturday event could carry a meaningful recovery cost. Checking your calendar and setting a clear limit on the role or scope would be prudent.",
+    "evidence_session_ids": [
+      5,
+      13,
+      16
+    ],
+    "withheld": false
+  },
+  "validator_verdict": {
+    "condition_correct": false,
+    "asserts_original_C": true,
+    "evidence_grounded": true,
+    "calibrated": false,
+    "source_misattribution": false,
+    "rationale": "The expected mode for the a_only arm is withhold_C: with evidence B (session 12) removed, the context only establishes a general recovery pattern (session 5), not a conflict with a concrete next-day responsibility, so the solver should have declined to affirm that taking on the gathering makes sense and noted that no specific next-day responsibility is available. Instead, the solver gave a conditional endorsement ('It may make sense only if...'), which asserts rather than withholds the target proposition. Its citations (sessions 5, 13, 16) are real and accurately characterized, so the evidence is grounded with no source misattribution, but the answer is not calibrated to the missing evidence: it over-commits to a recommendation the available context cannot support."
+  },
+  "solver_usage": {
+    "input_tokens": 1781,
+    "output_tokens": 192,
+    "reasoning_tokens": null,
+    "total_tokens": 1973
+  },
+  "validator_usage": {
+    "input_tokens": 2128,
+    "output_tokens": 531,
+    "reasoning_tokens": null,
+    "total_tokens": 2659
+  },
+  "finished_at": "2026-07-25T08:30:41.001332+00:00"
+}

@@ -4,7 +4,7 @@
 - User: `anon_social_user_05`
 - Query type: `situational_fit`
 - Polarity: `reject`
-- Query: Based only on these records, should the extended networking mixer be flagged as a fit risk for this user?
+- Query: A colleague invited me to spend Saturday afternoon at an extended networking mixer. Does that sound like a good fit for me?
 - Latent C: The extended networking mixer should be flagged as a fit risk because it would reduce the user's capacity for the scheduled repair conversation.
 - Calibrated wording: flagged as a fit risk
 
@@ -366,7 +366,7 @@
       ]
     }
   ],
-  "query": "Based only on these records, should the extended networking mixer be flagged as a fit risk for this user?"
+  "query": "A colleague invited me to spend Saturday afternoon at an extended networking mixer. Does that sound like a good fit for me?"
 }
 ```
 - Why original C is or is not licensed: A and B jointly support the target proposition.
@@ -682,7 +682,7 @@
       ]
     }
   ],
-  "query": "Based only on these records, should the extended networking mixer be flagged as a fit risk for this user?"
+  "query": "A colleague invited me to spend Saturday afternoon at an extended networking mixer. Does that sound like a good fit for me?"
 }
 ```
 - Why original C is or is not licensed: A alone does not establish that the proposed event conflicts with a concrete responsibility.
@@ -998,7 +998,7 @@
       ]
     }
   ],
-  "query": "Based only on these records, should the extended networking mixer be flagged as a fit risk for this user?"
+  "query": "A colleague invited me to spend Saturday afternoon at an extended networking mixer. Does that sound like a good fit for me?"
 }
 ```
 - Why original C is or is not licensed: B alone does not establish that the proposed event would impair the responsibility.
@@ -1330,7 +1330,7 @@
       ]
     }
   ],
-  "query": "Based only on these records, should the extended networking mixer be flagged as a fit risk for this user?"
+  "query": "A colleague invited me to spend Saturday afternoon at an extended networking mixer. Does that sound like a good fit for me?"
 }
 ```
 - Why original C is or is not licensed: B-prime removes the responsibility connector while retaining same-user conversational form.

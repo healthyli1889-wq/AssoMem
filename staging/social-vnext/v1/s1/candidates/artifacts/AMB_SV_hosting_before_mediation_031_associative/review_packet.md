@@ -4,7 +4,7 @@
 - User: `anon_social_user_04`
 - Query type: `situational_fit`
 - Polarity: `reject`
-- Query: Based only on these records, should the bigger Saturday hosting role be flagged as a fit risk for this user?
+- Query: A neighborhood group asked me to host a bigger Saturday welcome gathering. Would taking it on make sense for me?
 - Latent C: The bigger Saturday hosting role should be flagged as a fit risk because it would remove quiet recovery before the user's Sunday mediation check-in.
 - Calibrated wording: flagged as a fit risk
 
@@ -366,7 +366,7 @@
       ]
     }
   ],
-  "query": "Based only on these records, should the bigger Saturday hosting role be flagged as a fit risk for this user?"
+  "query": "A neighborhood group asked me to host a bigger Saturday welcome gathering. Would taking it on make sense for me?"
 }
 ```
 - Why original C is or is not licensed: A and B jointly support the target proposition.
@@ -682,7 +682,7 @@
       ]
     }
   ],
-  "query": "Based only on these records, should the bigger Saturday hosting role be flagged as a fit risk for this user?"
+  "query": "A neighborhood group asked me to host a bigger Saturday welcome gathering. Would taking it on make sense for me?"
 }
 ```
 - Why original C is or is not licensed: A alone does not establish that the proposed event conflicts with a concrete responsibility.
@@ -998,7 +998,7 @@
       ]
     }
   ],
-  "query": "Based only on these records, should the bigger Saturday hosting role be flagged as a fit risk for this user?"
+  "query": "A neighborhood group asked me to host a bigger Saturday welcome gathering. Would taking it on make sense for me?"
 }
 ```
 - Why original C is or is not licensed: B alone does not establish that the proposed event would impair the responsibility.
@@ -1330,7 +1330,7 @@
       ]
     }
   ],
-  "query": "Based only on these records, should the bigger Saturday hosting role be flagged as a fit risk for this user?"
+  "query": "A neighborhood group asked me to host a bigger Saturday welcome gathering. Would taking it on make sense for me?"
 }
 ```
 - Why original C is or is not licensed: B-prime removes the responsibility connector while retaining same-user conversational form.
