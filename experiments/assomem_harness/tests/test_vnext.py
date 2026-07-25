@@ -80,6 +80,11 @@ class VnextHarnessTests(unittest.TestCase):
         self.assertIn("same target person", prompt)
         self.assertIn("other person's", prompt)
 
+    def test_social_vnext_uses_binary_solver_contract(self):
+        social = load_profile(ROOT / "experiments" / "assomem_harness" / "profiles/social-vnext-1.json")
+        prompt = solver_prompt({"context": [], "query": "q"}, social)
+        self.assertIn('"decision":"yes"|"no"', prompt)
+
 
 if __name__ == "__main__":
     unittest.main()

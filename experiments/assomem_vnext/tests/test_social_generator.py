@@ -65,6 +65,16 @@ class SocialPilotGeneratorTests(unittest.TestCase):
             self.assertEqual(sum("As someone who" in text for text in texts), 0)
             self.assertFalse(any(" i " in text for text in texts))
 
+    def test_queries_are_natural_and_do_not_disclose_next_day_connector(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            destination = Path(temporary)
+            build_social_pilot(destination, count=34)
+            for path in destination.glob("associative/*.json"):
+                candidate = json.loads(path.read_text())
+                query = candidate["query"].lower()
+                self.assertNotIn("based only on these records", query)
+                self.assertNotIn("sunday", query)
+
     def test_staged_social_pilot_has_102_valid_records(self) -> None:
         root = ROOT.parents[1] / "staging/social-vnext/v1/s1/candidates"
         files = list(root.glob("*/*.json"))

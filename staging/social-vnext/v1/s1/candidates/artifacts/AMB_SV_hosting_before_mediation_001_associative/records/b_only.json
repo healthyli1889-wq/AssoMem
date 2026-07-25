@@ -1,0 +1,39 @@
+{
+  "arm": "b_only",
+  "expected_mode": "withhold_C",
+  "started_at": "2026-07-25T08:30:41.002174+00:00",
+  "status": "scored",
+  "solver_model": "Vendor2/GPT-5.6-Terra",
+  "validator_model": "kimi/kimi-k3",
+  "solver_answer": {
+    "answer": "It may make sense only if the Saturday gathering has a manageable scope and leaves you enough capacity for your already-booked Sunday mediation check-in, which requires patient one-to-one listening. Your notes suggest you value clear boundaries and visible planning, so clarifying the expected attendance, duration, and help available before agreeing would likely be prudent. If it would be a large, demanding event or crowd out recovery time, declining or proposing a smaller/shared-host role may fit better.",
+    "evidence_session_ids": [
+      12,
+      13,
+      16,
+      20
+    ],
+    "withheld": false
+  },
+  "validator_verdict": {
+    "condition_correct": false,
+    "asserts_original_C": false,
+    "evidence_grounded": true,
+    "calibrated": false,
+    "source_misattribution": false,
+    "rationale": "The arm requires withholding: the answer should be 'no', should state that no exposure-recovery pattern is available (session 5 was removed, so B alone cannot establish that the gathering would impair the Sunday mediation responsibility), and should withhold the target proposition. The solver instead gave a conditional, quasi-affirmative recommendation ('It may make sense only if...') with withheld=false, never answered 'no', and never acknowledged the missing exposure-recovery evidence. It did not outright assert the original target proposition either, hedging conditionally instead. The cited evidence sessions (12, 13, 16, 20) exist and are accurately characterized, so evidence is grounded and there is no source misattribution, but the confidence/recommendation is miscalibrated for a condition that demands abstention."
+  },
+  "solver_usage": {
+    "input_tokens": 1776,
+    "output_tokens": 215,
+    "reasoning_tokens": null,
+    "total_tokens": 1991
+  },
+  "validator_usage": {
+    "input_tokens": 2138,
+    "output_tokens": 458,
+    "reasoning_tokens": null,
+    "total_tokens": 2596
+  },
+  "finished_at": "2026-07-25T08:31:05.310983+00:00"
+}

@@ -23,6 +23,7 @@ class ModelConfig:
     temperature: float = 0.0
     timeout: float = 120.0
     max_retries: int = 3
+    max_tokens: int = 512
 
     def __post_init__(self) -> None:
         if self.provider not in SUPPORTED_PROVIDERS:
@@ -40,6 +41,7 @@ def config_from_env(prefix: str) -> ModelConfig:
         "temperature": float(os.environ.get(f"{prefix}_TEMPERATURE", "0")),
         "timeout": float(os.environ.get(f"{prefix}_TIMEOUT", "120")),
         "max_retries": int(os.environ.get(f"{prefix}_MAX_RETRIES", "3")),
+        "max_tokens": int(os.environ.get(f"{prefix}_MAX_TOKENS", "512")),
     }
     return ModelConfig(**values)
 
@@ -56,7 +58,7 @@ def request_payload(config: ModelConfig, prompt: str) -> dict[str, Any]:
             "model": config.model,
             "messages": [{"role": "user", "content": prompt}],
             "temperature": config.temperature,
-            "max_tokens": 512,
+            "max_tokens": config.max_tokens,
             "response_format": {"type": "json_object"},
         }
     if config.provider == "anthropic":

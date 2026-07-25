@@ -4,7 +4,7 @@
 - User: `anon_social_user_06`
 - Query type: `situational_fit`
 - Polarity: `reject`
-- Query: Based only on these records, should accepting the overnight guest be flagged as a fit risk for this user?
+- Query: A friend asked to stay over after Saturday's event. Would saying yes work well for me?
 - Latent C: Accepting the overnight guest should be flagged as a fit risk because it would leave the user depleted for Sunday mentoring.
 - Calibrated wording: flagged as a fit risk
 
@@ -366,7 +366,7 @@
       ]
     }
   ],
-  "query": "Based only on these records, should accepting the overnight guest be flagged as a fit risk for this user?"
+  "query": "A friend asked to stay over after Saturday's event. Would saying yes work well for me?"
 }
 ```
 - Why original C is or is not licensed: A and B jointly support the target proposition.
@@ -682,7 +682,7 @@
       ]
     }
   ],
-  "query": "Based only on these records, should accepting the overnight guest be flagged as a fit risk for this user?"
+  "query": "A friend asked to stay over after Saturday's event. Would saying yes work well for me?"
 }
 ```
 - Why original C is or is not licensed: A alone does not establish that the proposed event conflicts with a concrete responsibility.
@@ -998,7 +998,7 @@
       ]
     }
   ],
-  "query": "Based only on these records, should accepting the overnight guest be flagged as a fit risk for this user?"
+  "query": "A friend asked to stay over after Saturday's event. Would saying yes work well for me?"
 }
 ```
 - Why original C is or is not licensed: B alone does not establish that the proposed event would impair the responsibility.
@@ -1330,7 +1330,7 @@
       ]
     }
   ],
-  "query": "Based only on these records, should accepting the overnight guest be flagged as a fit risk for this user?"
+  "query": "A friend asked to stay over after Saturday's event. Would saying yes work well for me?"
 }
 ```
 - Why original C is or is not licensed: B-prime removes the responsibility connector while retaining same-user conversational form.

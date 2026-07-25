@@ -1,0 +1,30 @@
+{
+  "check": "zero_evidence",
+  "candidate_id": "AMB_SV_video_hang_before_reunion_018_associative",
+  "pair_id": "AMB_SV_video_hang_before_reunion_018",
+  "query_only": true,
+  "context_session_count": 0,
+  "trials_requested": 1,
+  "valid_trials": 1,
+  "target_yes_count": 0,
+  "target_false_positive_rate": 0.0,
+  "pass": true,
+  "attempts": [
+    {
+      "trial": 1,
+      "status": "valid",
+      "decision": "no",
+      "response": {
+        "decision": "no",
+        "answer": "There is no visible evidence about your preferences, schedule, or likely experience with a long sequence of video hangouts.",
+        "evidence_session_ids": []
+      },
+      "solver_usage": {
+        "input_tokens": 171,
+        "output_tokens": 43,
+        "reasoning_tokens": null,
+        "total_tokens": 214
+      }
+    }
+  ]
+}

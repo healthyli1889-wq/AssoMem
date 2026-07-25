@@ -13,7 +13,7 @@ def _dump(value: Any) -> str:
 
 
 def solver_prompt(visible: dict[str, Any], profile: DatasetProfile | None = None) -> str:
-    if profile and profile.data_format == "work-vnext-1":
+    if profile and profile.data_format in {"work-vnext-1", "assomem-vnext-1"}:
         return f"""Answer the target proposition using only the supplied conversation.
 Return exactly one JSON object with exactly these keys:
 {{"decision":"yes"|"no","answer":string,"evidence_session_ids":[integer]}}.
@@ -40,7 +40,7 @@ Conversation input: {_dump(visible)}
 def score_prompt(
     answer: dict[str, Any], ground_truth: dict[str, Any], profile: DatasetProfile | None = None
 ) -> str:
-    if profile and profile.data_format == "work-vnext-1":
+    if profile and profile.data_format in {"work-vnext-1", "assomem-vnext-1"}:
         return f"""You are a strict benchmark annotator. Score the solver response against
 the hidden binary target and its arm-specific requirements. Do not award credit for
 world knowledge, generic advice, or evidence not visible in the arm.

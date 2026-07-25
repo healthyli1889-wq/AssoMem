@@ -1,0 +1,30 @@
+{
+  "check": "zero_evidence",
+  "candidate_id": "AMB_SV_late_dinner_before_commitment_026_associative",
+  "pair_id": "AMB_SV_late_dinner_before_commitment_026",
+  "query_only": true,
+  "context_session_count": 0,
+  "trials_requested": 1,
+  "valid_trials": 1,
+  "target_yes_count": 0,
+  "target_false_positive_rate": 0.0,
+  "pass": true,
+  "attempts": [
+    {
+      "trial": 1,
+      "status": "valid",
+      "decision": "no",
+      "response": {
+        "decision": "no",
+        "answer": "No visible evidence indicates whether attending a dinner that may run past midnight is suitable for you.",
+        "evidence_session_ids": []
+      },
+      "solver_usage": {
+        "input_tokens": 164,
+        "output_tokens": 75,
+        "reasoning_tokens": null,
+        "total_tokens": 239
+      }
+    }
+  ]
+}
