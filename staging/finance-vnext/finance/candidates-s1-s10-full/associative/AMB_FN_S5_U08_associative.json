@@ -1,0 +1,641 @@
+{
+  "schema_version": "finance-vnext-2.0",
+  "candidate_id": "AMB_FN_S5_U08_associative",
+  "pair_id": "AMB_FN_S5_U08",
+  "data_arm": "associative",
+  "domain": "finance",
+  "user_id": "finance_s5_u08",
+  "sub_scenario": {
+    "family": "income volatility versus sticky auto-renew stacks",
+    "role": "ethical investing learner",
+    "one_line": "ethical investing learner: only if timing clears first; otherwise skip the peer lifestyle bundle on a gap month"
+  },
+  "query_type": "recommendation_ranking",
+  "polarity": "conditional",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2027-11-29T11:00:00Z",
+      "speaker_id": "finance_s5_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "skimmed the inc-7 for five minutes then closed it."
+        },
+        {
+          "role": "assistant",
+          "content": "anything?"
+        },
+        {
+          "role": "user",
+          "content": "nah, just noise."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2027-11-30T14:00:00Z",
+      "speaker_id": "finance_s5_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "half-did the sub-7 and called it a win."
+        },
+        {
+          "role": "assistant",
+          "content": "honest."
+        },
+        {
+          "role": "user",
+          "content": "deeply honest."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2027-12-01T16:00:00Z",
+      "speaker_id": "finance_s5_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "canceled one unused trial. oxygen."
+        },
+        {
+          "role": "assistant",
+          "content": "nice."
+        },
+        {
+          "role": "user",
+          "content": "small win."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2027-12-02T18:00:00Z",
+      "speaker_id": "finance_s5_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "moved a cable on the desk desk like that fixes my life."
+        },
+        {
+          "role": "assistant",
+          "content": "did it?"
+        },
+        {
+          "role": "user",
+          "content": "spiritually."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2027-12-03T09:00:00Z",
+      "speaker_id": "finance_s5_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "muted a thread about bundle-7 before lunch."
+        },
+        {
+          "role": "assistant",
+          "content": "smart."
+        },
+        {
+          "role": "user",
+          "content": "self-defense."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2027-12-04T11:00:00Z",
+      "speaker_id": "finance_s5_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "gap months between contracts leave cash holes while fixed outflows still hit — that's a repeated pattern."
+        },
+        {
+          "role": "assistant",
+          "content": "gaps are real?"
+        },
+        {
+          "role": "user",
+          "content": "gaps are real."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2027-12-05T14:00:00Z",
+      "speaker_id": "finance_s5_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "printed a renewal list."
+        },
+        {
+          "role": "assistant",
+          "content": "scary?"
+        },
+        {
+          "role": "user",
+          "content": "honest."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2027-12-06T16:00:00Z",
+      "speaker_id": "finance_s5_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "renamed a folder for the sub-7 because chaos."
+        },
+        {
+          "role": "assistant",
+          "content": "progress?"
+        },
+        {
+          "role": "user",
+          "content": "cosmetic progress."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2027-12-07T18:00:00Z",
+      "speaker_id": "finance_s5_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "sticky renewals are already hard to unwind mid-cycle — mid-cycle cancels rarely stick for me."
+        },
+        {
+          "role": "assistant",
+          "content": "stack still active?"
+        },
+        {
+          "role": "user",
+          "content": "still on the renewal calendar."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2027-12-08T09:00:00Z",
+      "speaker_id": "finance_s5_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "short call about the inc-7, brain melted a little."
+        },
+        {
+          "role": "assistant",
+          "content": "worth it?"
+        },
+        {
+          "role": "user",
+          "content": "barely."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2027-12-09T11:00:00Z",
+      "speaker_id": "finance_s5_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "walked around the block then poked the bundle-7 again."
+        },
+        {
+          "role": "assistant",
+          "content": "reset?"
+        },
+        {
+          "role": "user",
+          "content": "kinda."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2027-12-10T14:00:00Z",
+      "speaker_id": "finance_s5_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "cleared two tiny sub-7 leftovers."
+        },
+        {
+          "role": "assistant",
+          "content": "momentum."
+        },
+        {
+          "role": "user",
+          "content": "micro momentum."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2027-12-11T16:00:00Z",
+      "speaker_id": "finance_s5_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "fixed a dumb typo in the inc-7 notes."
+        },
+        {
+          "role": "assistant",
+          "content": "root cause?"
+        },
+        {
+          "role": "user",
+          "content": "user error (me)."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2027-12-12T18:00:00Z",
+      "speaker_id": "finance_s5_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I added a peer lifestyle bundle during a gap month once — another sticky renewal on a thin month. never again energy."
+        },
+        {
+          "role": "assistant",
+          "content": "bundle as trap?"
+        },
+        {
+          "role": "user",
+          "content": "bundle as trap."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2027-12-13T09:00:00Z",
+      "speaker_id": "finance_s5_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "sketched next week for the bundle-7 then got distracted."
+        },
+        {
+          "role": "assistant",
+          "content": "classic."
+        },
+        {
+          "role": "user",
+          "content": "classic."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2027-12-14T11:00:00Z",
+      "speaker_id": "finance_s5_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "ate lunch cold and updated the inc-7 anyway."
+        },
+        {
+          "role": "assistant",
+          "content": "dedication."
+        },
+        {
+          "role": "user",
+          "content": "or spite."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2027-12-15T14:00:00Z",
+      "speaker_id": "finance_s5_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "peer lifestyle bundle pitch is back this week; gap months between contracts still in season."
+        },
+        {
+          "role": "assistant",
+          "content": "you know."
+        },
+        {
+          "role": "user",
+          "content": "I know."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2027-12-16T16:00:00Z",
+      "speaker_id": "finance_s5_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "compared two boring options for the sub-7."
+        },
+        {
+          "role": "assistant",
+          "content": "picked?"
+        },
+        {
+          "role": "user",
+          "content": "deferred, obviously."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2027-12-17T18:00:00Z",
+      "speaker_id": "finance_s5_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "closed the week updating desk notes nobody will read."
+        },
+        {
+          "role": "assistant",
+          "content": "iconic."
+        },
+        {
+          "role": "user",
+          "content": "quietly iconic."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2027-12-18T09:00:00Z",
+      "speaker_id": "finance_s5_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "under what conditions would that ask actually fit how I run money — worth adding the peer lifestyle bundle this week?"
+        }
+      ]
+    }
+  ],
+  "query": "under what conditions would that ask actually fit how I run money — worth adding the peer lifestyle bundle this week?",
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "finance_s5_u08",
+      "fact": "gap months between contracts leave cash holes while fixed outflows still hit — that's a repeated pattern."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "finance_s5_u08",
+      "fact": "I added a peer lifestyle bundle during a gap month once — another sticky renewal on a thin month. never again energy."
+    }
+  },
+  "supporting_constraints": {
+    "E1": {
+      "session_id": 9,
+      "fact": "sticky renewals are already hard to unwind mid-cycle — mid-cycle cancels rarely stick for me."
+    },
+    "E2": {
+      "session_id": 17,
+      "fact": "peer lifestyle bundle pitch is back this week; gap months between contracts still in season."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "finance_s5_u08",
+        "context": "gap months between contracts",
+        "goal_or_prediction": "protect cash in thin months",
+        "action": "avoided new fixed outflows",
+        "outcome_or_affect": "gaps survived"
+      }
+    },
+    "7": {
+      "role": "nearby_counterexample"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "supporting_constraint",
+      "fact_id": "E1"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "finance_s5_u08",
+        "context": "peer lifestyle bundle in gap month",
+        "goal_or_prediction": "buy self-care ROI",
+        "action": "added sticky renewal",
+        "outcome_or_affect": "thinner month"
+      }
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "supporting_constraint",
+      "fact_id": "E2"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "gap months between contracts plus sticky sticky renewals make another bundle a trap; a prior peer lifestyle bundle proved it.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": [
+      "E1",
+      "E2"
+    ]
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "gap months between contracts leave cash holes while fixed outflows still hit — that's a repeated pattern"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "I added a peer lifestyle bundle during a gap month once — another sticky renewal on a thin month"
+    }
+  ],
+  "retrieval_cue": {
+    "cue_type": "recommendation_ranking",
+    "why_it_naturally_retrieves_R": "A realistic personal-finance ask forces a personalized call without naming either episode or the link between them."
+  },
+  "relation_specificity": {
+    "nearby_relation": "Canceling unused trials is fine.",
+    "why_it_does_not_license_C": "Neither licenses a peer lifestyle bundle on a gap month with an existing stack."
+  },
+  "coactivation_bridge": "A and B form the only intervention pair. gap months between contracts plus sticky sticky renewals make another bundle a trap; a prior peer lifestyle bundle proved it. E1 and E2 are logistical calibration only and do not open a second route to C.",
+  "latent_C": {
+    "inference": "This user can consider the ask only after the hard cash timing in E1/E2 no longer collides; otherwise skip the peer lifestyle bundle on a gap month.",
+    "calibrated_language": "only if timing clears first; otherwise skip the peer lifestyle bundle on a gap month"
+  },
+  "answer_contract": {
+    "target_proposition": "This user can consider the ask only after the hard cash timing in E1/E2 no longer collides; otherwise skip the peer lifestyle bundle on a gap month.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "mq_user35",
+    "external_folder_tag": "user35",
+    "external_source": "memoryquest",
+    "status": "review_candidate_only",
+    "tone": "natural_chat_v1",
+    "anonymization": "External MemoryQuest persona material was used only during authoring; no corpus, legal name, country, or demographic metadata is in visible dialogue."
+  },
+  "arm_gold": {
+    "full": {
+      "expected_mode": "infer_C",
+      "binary_decision": true
+    },
+    "a_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    },
+    "b_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    },
+    "link_broken": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    }
+  },
+  "single_evidence_replacements": {
+    "a_only": {
+      "replaced_session_id": 14,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "filed some boring bundle-7 stuff and moved on."
+        },
+        {
+          "role": "assistant",
+          "content": "anything weird?"
+        },
+        {
+          "role": "user",
+          "content": "nah, routine."
+        }
+      ]
+    },
+    "b_only": {
+      "replaced_session_id": 6,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "did a nothing pass on the sub-7."
+        },
+        {
+          "role": "assistant",
+          "content": "exceptions?"
+        },
+        {
+          "role": "user",
+          "content": "none worth typing."
+        }
+      ]
+    }
+  },
+  "link_broken": {
+    "replaced_session_id": 14,
+    "replacement_dialogue": [
+      {
+        "role": "user",
+        "content": "bundle offered with a true one-click cancel before next gap month."
+      },
+      {
+        "role": "assistant",
+        "content": "then maybe?"
+      },
+      {
+        "role": "user",
+        "content": "then it wouldn't sticky-trap me."
+      }
+    ]
+  }
+}

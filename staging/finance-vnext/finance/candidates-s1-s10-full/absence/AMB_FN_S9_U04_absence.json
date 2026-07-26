@@ -1,0 +1,573 @@
+{
+  "schema_version": "finance-vnext-2.0",
+  "candidate_id": "AMB_FN_S9_U04_absence",
+  "pair_id": "AMB_FN_S9_U04",
+  "data_arm": "absence",
+  "domain": "finance",
+  "user_id": "finance_s9_u04",
+  "sub_scenario": {
+    "family": "open HSA contribution room versus after-tax speculative signups",
+    "role": "European markets learner",
+    "one_line": "European markets learner: only if timing clears first; otherwise only after clinic is funded via the medical room"
+  },
+  "query_type": "preference_generalization",
+  "polarity": "conditional",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2028-04-25T11:00:00Z",
+      "speaker_id": "finance_s9_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "skimmed the hsa folder for five minutes then closed it."
+        },
+        {
+          "role": "assistant",
+          "content": "anything?"
+        },
+        {
+          "role": "user",
+          "content": "nah, just noise."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2028-04-26T14:00:00Z",
+      "speaker_id": "finance_s9_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "half-did the kids clinic and called it a win."
+        },
+        {
+          "role": "assistant",
+          "content": "honest."
+        },
+        {
+          "role": "user",
+          "content": "deeply honest."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2028-04-27T16:00:00Z",
+      "speaker_id": "finance_s9_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "lessons paid. proceed."
+        },
+        {
+          "role": "assistant",
+          "content": "proceed."
+        },
+        {
+          "role": "user",
+          "content": "proceeding."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2028-04-28T18:00:00Z",
+      "speaker_id": "finance_s9_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "moved a cable on the kitchen table desk like that fixes my life."
+        },
+        {
+          "role": "assistant",
+          "content": "did it?"
+        },
+        {
+          "role": "user",
+          "content": "spiritually."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2028-04-29T09:00:00Z",
+      "speaker_id": "finance_s9_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "muted a thread about parent tip pot before lunch."
+        },
+        {
+          "role": "assistant",
+          "content": "smart."
+        },
+        {
+          "role": "user",
+          "content": "self-defense."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2028-04-30T11:00:00Z",
+      "speaker_id": "finance_s9_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "did a nothing-burger pass on the kids clinic this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "anything?"
+        },
+        {
+          "role": "user",
+          "content": "nah."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2028-05-01T14:00:00Z",
+      "speaker_id": "finance_s9_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "envelope sacred. continue."
+        },
+        {
+          "role": "assistant",
+          "content": "continue."
+        },
+        {
+          "role": "user",
+          "content": "continuing."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2028-05-02T16:00:00Z",
+      "speaker_id": "finance_s9_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "renamed a folder for the kids clinic because chaos."
+        },
+        {
+          "role": "assistant",
+          "content": "progress?"
+        },
+        {
+          "role": "user",
+          "content": "cosmetic progress."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2028-05-03T18:00:00Z",
+      "speaker_id": "finance_s9_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "kids' clinic visit is booked and eligible; leftover has a job."
+        },
+        {
+          "role": "assistant",
+          "content": "not parent-pot job yet."
+        },
+        {
+          "role": "user",
+          "content": "not yet."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2028-05-04T09:00:00Z",
+      "speaker_id": "finance_s9_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "short call about the hsa folder, brain melted a little."
+        },
+        {
+          "role": "assistant",
+          "content": "worth it?"
+        },
+        {
+          "role": "user",
+          "content": "barely."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2028-05-05T11:00:00Z",
+      "speaker_id": "finance_s9_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "walked around the block then poked the parent tip pot again."
+        },
+        {
+          "role": "assistant",
+          "content": "reset?"
+        },
+        {
+          "role": "user",
+          "content": "kinda."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2028-05-06T14:00:00Z",
+      "speaker_id": "finance_s9_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "cleared two tiny kids clinic leftovers."
+        },
+        {
+          "role": "assistant",
+          "content": "momentum."
+        },
+        {
+          "role": "user",
+          "content": "micro momentum."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2028-05-07T16:00:00Z",
+      "speaker_id": "finance_s9_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "fixed a dumb typo in the hsa folder notes."
+        },
+        {
+          "role": "assistant",
+          "content": "root cause?"
+        },
+        {
+          "role": "user",
+          "content": "user error (me)."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2028-05-08T18:00:00Z",
+      "speaker_id": "finance_s9_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "closed a boring parent tip pot loop."
+        },
+        {
+          "role": "assistant",
+          "content": "follow-up?"
+        },
+        {
+          "role": "user",
+          "content": "just a note for next time."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2028-05-09T09:00:00Z",
+      "speaker_id": "finance_s9_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "sketched next week for the parent tip pot then got distracted."
+        },
+        {
+          "role": "assistant",
+          "content": "classic."
+        },
+        {
+          "role": "user",
+          "content": "classic."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2028-05-10T11:00:00Z",
+      "speaker_id": "finance_s9_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "ate lunch cold and updated the hsa folder anyway."
+        },
+        {
+          "role": "assistant",
+          "content": "dedication."
+        },
+        {
+          "role": "user",
+          "content": "or spite."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2028-05-11T14:00:00Z",
+      "speaker_id": "finance_s9_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "parent tip pot wants money now; clinic date fixed."
+        },
+        {
+          "role": "assistant",
+          "content": "condition fails today."
+        },
+        {
+          "role": "user",
+          "content": "fails."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2028-05-12T16:00:00Z",
+      "speaker_id": "finance_s9_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "compared two boring options for the kids clinic."
+        },
+        {
+          "role": "assistant",
+          "content": "picked?"
+        },
+        {
+          "role": "user",
+          "content": "deferred, obviously."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2028-05-13T18:00:00Z",
+      "speaker_id": "finance_s9_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "closed the week updating kitchen table notes nobody will read."
+        },
+        {
+          "role": "assistant",
+          "content": "iconic."
+        },
+        {
+          "role": "user",
+          "content": "quietly iconic."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2028-05-14T09:00:00Z",
+      "speaker_id": "finance_s9_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "under what conditions would that ask actually fit how I run money — when is a parent tip pot consistent with our open medical contribution room?"
+        }
+      ]
+    }
+  ],
+  "query": "under what conditions would that ask actually fit how I run money — when is a parent tip pot consistent with our open medical contribution room?",
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "finance_s9_u04",
+      "fact": "family hsa-equivalent room is open — we only throw leftover at tip pots after medical bookings are funded through that room."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "finance_s9_u04",
+      "fact": "we funded a parent tip pot early once... medical room lagged, clinic week got stressful."
+    }
+  },
+  "supporting_constraints": {
+    "E1": {
+      "session_id": 9,
+      "fact": "kids' clinic visit is booked and eligible; leftover has a job."
+    },
+    "E2": {
+      "session_id": 17,
+      "fact": "parent tip pot wants money now; clinic date fixed."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "background_memory"
+    },
+    "7": {
+      "role": "nearby_counterexample"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "supporting_constraint",
+      "fact_id": "E1"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "background_memory"
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "supporting_constraint",
+      "fact_id": "E2"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "Open medical room funds eligible care first, and an early parent tip pot left the room lagging into a stressful clinic week.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": [
+      "E1",
+      "E2"
+    ]
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "family hsa-equivalent room is open — we only throw leftover at tip pots after medical bookings are funded through that room"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "we funded a parent tip pot early once"
+    }
+  ],
+  "retrieval_cue": {
+    "cue_type": "preference_generalization",
+    "why_it_naturally_retrieves_R": "A realistic personal-finance ask forces a personalized call without naming either episode or the link between them."
+  },
+  "relation_specificity": {
+    "nearby_relation": "Lessons and sacred envelopes are fine.",
+    "why_it_does_not_license_C": "Neither licenses tip pots before clinic funding."
+  },
+  "coactivation_bridge": "A and B form the only intervention pair. Open medical room funds eligible care first, and an early parent tip pot left the room lagging into a stressful clinic week. E1 and E2 are logistical calibration only and do not open a second route to C.",
+  "latent_C": {
+    "inference": "This user can consider the ask only after the hard cash timing in E1/E2 no longer collides; otherwise only after clinic is funded via the medical room.",
+    "calibrated_language": "only if timing clears first; otherwise only after clinic is funded via the medical room"
+  },
+  "answer_contract": {
+    "target_proposition": "This user can consider the ask only after the hard cash timing in E1/E2 no longer collides; otherwise only after clinic is funded via the medical room.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "mq_user15",
+    "external_folder_tag": "user15",
+    "external_source": "memoryquest",
+    "status": "review_candidate_only",
+    "tone": "natural_chat_v1",
+    "anonymization": "External MemoryQuest persona material was used only during authoring; no corpus, legal name, country, or demographic metadata is in visible dialogue."
+  },
+  "target_evidence_ids": [],
+  "arm_gold": {
+    "absence": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    }
+  },
+  "absence_note": {
+    "replaced_session_ids": [
+      6,
+      14
+    ],
+    "withheld_evidence_ids": [
+      "ev_A",
+      "ev_B"
+    ]
+  }
+}

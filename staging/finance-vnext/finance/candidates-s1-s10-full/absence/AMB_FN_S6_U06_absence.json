@@ -1,0 +1,573 @@
+{
+  "schema_version": "finance-vnext-2.0",
+  "candidate_id": "AMB_FN_S6_U06_absence",
+  "pair_id": "AMB_FN_S6_U06",
+  "data_arm": "absence",
+  "domain": "finance",
+  "user_id": "finance_s6_u06",
+  "sub_scenario": {
+    "family": "unused employer match versus paycheck-remainder side bets",
+    "role": "student growth investor",
+    "one_line": "student growth investor: stick with: straight to match deferral"
+  },
+  "query_type": "conditional_recommendation",
+  "polarity": "accept",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2028-01-02T11:00:00Z",
+      "speaker_id": "finance_s6_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "skimmed the match checklist for five minutes then closed it."
+        },
+        {
+          "role": "assistant",
+          "content": "anything?"
+        },
+        {
+          "role": "user",
+          "content": "nah, just noise."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2028-01-03T14:00:00Z",
+      "speaker_id": "finance_s6_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "half-did the refund note and called it a win."
+        },
+        {
+          "role": "assistant",
+          "content": "honest."
+        },
+        {
+          "role": "user",
+          "content": "deeply honest."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2028-01-04T16:00:00Z",
+      "speaker_id": "finance_s6_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "logged groceries. the ritual continues."
+        },
+        {
+          "role": "assistant",
+          "content": "consistency king."
+        },
+        {
+          "role": "user",
+          "content": "consistency gremlin, but sure."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2028-01-05T18:00:00Z",
+      "speaker_id": "finance_s6_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "moved a cable on the study corner desk like that fixes my life."
+        },
+        {
+          "role": "assistant",
+          "content": "did it?"
+        },
+        {
+          "role": "user",
+          "content": "spiritually."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2028-01-06T09:00:00Z",
+      "speaker_id": "finance_s6_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "muted a thread about idea lot before lunch."
+        },
+        {
+          "role": "assistant",
+          "content": "smart."
+        },
+        {
+          "role": "user",
+          "content": "self-defense."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2028-01-07T11:00:00Z",
+      "speaker_id": "finance_s6_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "did a nothing-burger pass on the refund note this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "anything?"
+        },
+        {
+          "role": "user",
+          "content": "nah."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2028-01-08T14:00:00Z",
+      "speaker_id": "finance_s6_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "didn't touch the little savings jar this month. wild."
+        },
+        {
+          "role": "assistant",
+          "content": "growth."
+        },
+        {
+          "role": "user",
+          "content": "microscopic growth."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2028-01-09T16:00:00Z",
+      "speaker_id": "finance_s6_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "renamed a folder for the refund note because chaos."
+        },
+        {
+          "role": "assistant",
+          "content": "progress?"
+        },
+        {
+          "role": "user",
+          "content": "cosmetic progress."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2028-01-10T18:00:00Z",
+      "speaker_id": "finance_s6_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "tax refund hits tomorrow and it's already labeled for match deferral on the checklist."
+        },
+        {
+          "role": "assistant",
+          "content": "labeled before it landed?"
+        },
+        {
+          "role": "user",
+          "content": "I am occasionally organized."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2028-01-11T09:00:00Z",
+      "speaker_id": "finance_s6_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "short call about the match checklist, brain melted a little."
+        },
+        {
+          "role": "assistant",
+          "content": "worth it?"
+        },
+        {
+          "role": "user",
+          "content": "barely."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2028-01-12T11:00:00Z",
+      "speaker_id": "finance_s6_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "walked around the block then poked the idea lot again."
+        },
+        {
+          "role": "assistant",
+          "content": "reset?"
+        },
+        {
+          "role": "user",
+          "content": "kinda."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2028-01-13T14:00:00Z",
+      "speaker_id": "finance_s6_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "cleared two tiny refund note leftovers."
+        },
+        {
+          "role": "assistant",
+          "content": "momentum."
+        },
+        {
+          "role": "user",
+          "content": "micro momentum."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2028-01-14T16:00:00Z",
+      "speaker_id": "finance_s6_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "fixed a dumb typo in the match checklist notes."
+        },
+        {
+          "role": "assistant",
+          "content": "root cause?"
+        },
+        {
+          "role": "user",
+          "content": "user error (me)."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2028-01-15T18:00:00Z",
+      "speaker_id": "finance_s6_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "closed a boring idea lot loop."
+        },
+        {
+          "role": "assistant",
+          "content": "follow-up?"
+        },
+        {
+          "role": "user",
+          "content": "just a note for next time."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2028-01-16T09:00:00Z",
+      "speaker_id": "finance_s6_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "sketched next week for the idea lot then got distracted."
+        },
+        {
+          "role": "assistant",
+          "content": "classic."
+        },
+        {
+          "role": "user",
+          "content": "classic."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2028-01-17T11:00:00Z",
+      "speaker_id": "finance_s6_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "ate lunch cold and updated the match checklist anyway."
+        },
+        {
+          "role": "assistant",
+          "content": "dedication."
+        },
+        {
+          "role": "user",
+          "content": "or spite."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2028-01-18T14:00:00Z",
+      "speaker_id": "finance_s6_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "idea-lot settlement can't finish before the match file on wednesday."
+        },
+        {
+          "role": "assistant",
+          "content": "so overnight park is still a trap."
+        },
+        {
+          "role": "user",
+          "content": "still a trap."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2028-01-19T16:00:00Z",
+      "speaker_id": "finance_s6_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "compared two boring options for the refund note."
+        },
+        {
+          "role": "assistant",
+          "content": "picked?"
+        },
+        {
+          "role": "user",
+          "content": "deferred, obviously."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2028-01-20T18:00:00Z",
+      "speaker_id": "finance_s6_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "closed the week updating study corner notes nobody will read."
+        },
+        {
+          "role": "assistant",
+          "content": "iconic."
+        },
+        {
+          "role": "user",
+          "content": "quietly iconic."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2028-01-21T09:00:00Z",
+      "speaker_id": "finance_s6_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "should tomorrow's refund go straight to match deferral, or is a quick idea-lot park ok first — should I stick with the protective plan I already know works for me?"
+        }
+      ]
+    }
+  ],
+  "query": "should tomorrow's refund go straight to match deferral, or is a quick idea-lot park ok first — should I stick with the protective plan I already know works for me?",
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "finance_s6_u06",
+      "fact": "snowflake rule still stands: unexpected refunds go to the 18% card OR to unused match deferral the same day — parking them overnight is how I mess it up."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "finance_s6_u06",
+      "fact": "last fall I parked a refund in a micro 'idea lot' overnight after a forum pitch... due date / match timing slipped and I paid for being clever."
+    }
+  },
+  "supporting_constraints": {
+    "E1": {
+      "session_id": 9,
+      "fact": "tax refund hits tomorrow and it's already labeled for match deferral on the checklist."
+    },
+    "E2": {
+      "session_id": 17,
+      "fact": "idea-lot settlement can't finish before the match file on wednesday."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "background_memory"
+    },
+    "7": {
+      "role": "nearby_counterexample"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "supporting_constraint",
+      "fact_id": "E1"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "background_memory"
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "supporting_constraint",
+      "fact_id": "E2"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "Refunds only help unused match when they hit deferral the same day, and a prior overnight idea-lot park slipped the timing.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": [
+      "E1",
+      "E2"
+    ]
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "snowflake rule still stands: unexpected refunds go to the 18% card OR to unused match deferral the same day — parking them overnight is how I mess it up"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "last fall I parked a refund in a micro 'idea lot' overnight after a forum pitch"
+    }
+  ],
+  "retrieval_cue": {
+    "cue_type": "conditional_recommendation",
+    "why_it_naturally_retrieves_R": "A realistic personal-finance ask forces a personalized call without naming either episode or the link between them."
+  },
+  "relation_specificity": {
+    "nearby_relation": "Grocery logs and untouched jars are fine.",
+    "why_it_does_not_license_C": "Neither tests an overnight park against a wednesday match file."
+  },
+  "coactivation_bridge": "A and B form the only intervention pair. Refunds only help unused match when they hit deferral the same day, and a prior overnight idea-lot park slipped the timing. E1 and E2 are logistical calibration only and do not open a second route to C.",
+  "latent_C": {
+    "inference": "Yes — based on this user's episodes, the protective plan implied by A+B is supported (stick with: straight to match deferral).",
+    "calibrated_language": "stick with: straight to match deferral"
+  },
+  "answer_contract": {
+    "target_proposition": "Yes — based on this user's episodes, the protective plan implied by A+B is supported (stick with: straight to match deferral).",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "mq_user25",
+    "external_folder_tag": "user25",
+    "external_source": "memoryquest",
+    "status": "review_candidate_only",
+    "tone": "natural_chat_v1",
+    "anonymization": "External MemoryQuest persona material was used only during authoring; no corpus, legal name, country, or demographic metadata is in visible dialogue."
+  },
+  "target_evidence_ids": [],
+  "arm_gold": {
+    "absence": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    }
+  },
+  "absence_note": {
+    "replaced_session_ids": [
+      6,
+      14
+    ],
+    "withheld_evidence_ids": [
+      "ev_A",
+      "ev_B"
+    ]
+  }
+}

@@ -1,0 +1,573 @@
+{
+  "schema_version": "finance-vnext-2.0",
+  "candidate_id": "AMB_FN_S10_U05_absence",
+  "pair_id": "AMB_FN_S10_U05",
+  "data_arm": "absence",
+  "domain": "finance",
+  "user_id": "finance_s10_u05",
+  "sub_scenario": {
+    "family": "deductible repair cash versus high-APR emergency-envelope chases",
+    "role": "ESG-focused portfolio tracker",
+    "one_line": "ESG-focused portfolio tracker: hesitation keeps the envelope liquid for the shop hold"
+  },
+  "query_type": "behavior_explanation",
+  "polarity": "reject",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2028-06-07T11:00:00Z",
+      "speaker_id": "finance_s10_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "skimmed the policy skim for five minutes then closed it."
+        },
+        {
+          "role": "assistant",
+          "content": "anything?"
+        },
+        {
+          "role": "user",
+          "content": "nah, just noise."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2028-06-08T14:00:00Z",
+      "speaker_id": "finance_s10_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "half-did the shop hold and called it a win."
+        },
+        {
+          "role": "assistant",
+          "content": "honest."
+        },
+        {
+          "role": "user",
+          "content": "deeply honest."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2028-06-09T16:00:00Z",
+      "speaker_id": "finance_s10_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "expenses done. power window."
+        },
+        {
+          "role": "assistant",
+          "content": "use wisely."
+        },
+        {
+          "role": "user",
+          "content": "or nap."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2028-06-10T18:00:00Z",
+      "speaker_id": "finance_s10_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "moved a cable on the office nook desk like that fixes my life."
+        },
+        {
+          "role": "assistant",
+          "content": "did it?"
+        },
+        {
+          "role": "user",
+          "content": "spiritually."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2028-06-11T09:00:00Z",
+      "speaker_id": "finance_s10_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "muted a thread about desk yield pitch before lunch."
+        },
+        {
+          "role": "assistant",
+          "content": "smart."
+        },
+        {
+          "role": "user",
+          "content": "self-defense."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2028-06-12T11:00:00Z",
+      "speaker_id": "finance_s10_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "did a nothing-burger pass on the shop hold this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "anything?"
+        },
+        {
+          "role": "user",
+          "content": "nah."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2028-06-13T14:00:00Z",
+      "speaker_id": "finance_s10_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "reimbursable win."
+        },
+        {
+          "role": "assistant",
+          "content": "nice."
+        },
+        {
+          "role": "user",
+          "content": "nice."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2028-06-14T16:00:00Z",
+      "speaker_id": "finance_s10_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "renamed a folder for the shop hold because chaos."
+        },
+        {
+          "role": "assistant",
+          "content": "progress?"
+        },
+        {
+          "role": "user",
+          "content": "cosmetic progress."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2028-06-15T18:00:00Z",
+      "speaker_id": "finance_s10_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "shop hold is on my personal calendar; yield pitch is optional noise."
+        },
+        {
+          "role": "assistant",
+          "content": "noise lost."
+        },
+        {
+          "role": "user",
+          "content": "lost."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2028-06-16T09:00:00Z",
+      "speaker_id": "finance_s10_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "short call about the policy skim, brain melted a little."
+        },
+        {
+          "role": "assistant",
+          "content": "worth it?"
+        },
+        {
+          "role": "user",
+          "content": "barely."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2028-06-17T11:00:00Z",
+      "speaker_id": "finance_s10_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "walked around the block then poked the desk yield pitch again."
+        },
+        {
+          "role": "assistant",
+          "content": "reset?"
+        },
+        {
+          "role": "user",
+          "content": "kinda."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2028-06-18T14:00:00Z",
+      "speaker_id": "finance_s10_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "cleared two tiny shop hold leftovers."
+        },
+        {
+          "role": "assistant",
+          "content": "momentum."
+        },
+        {
+          "role": "user",
+          "content": "micro momentum."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2028-06-19T16:00:00Z",
+      "speaker_id": "finance_s10_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "fixed a dumb typo in the policy skim notes."
+        },
+        {
+          "role": "assistant",
+          "content": "root cause?"
+        },
+        {
+          "role": "user",
+          "content": "user error (me)."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2028-06-20T18:00:00Z",
+      "speaker_id": "finance_s10_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "closed a boring desk yield pitch loop."
+        },
+        {
+          "role": "assistant",
+          "content": "follow-up?"
+        },
+        {
+          "role": "user",
+          "content": "just a note for next time."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2028-06-21T09:00:00Z",
+      "speaker_id": "finance_s10_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "sketched next week for the desk yield pitch then got distracted."
+        },
+        {
+          "role": "assistant",
+          "content": "classic."
+        },
+        {
+          "role": "user",
+          "content": "classic."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2028-06-22T11:00:00Z",
+      "speaker_id": "finance_s10_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "ate lunch cold and updated the policy skim anyway."
+        },
+        {
+          "role": "assistant",
+          "content": "dedication."
+        },
+        {
+          "role": "user",
+          "content": "or spite."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2028-06-23T14:00:00Z",
+      "speaker_id": "finance_s10_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "pitch again; shop hold unchanged."
+        },
+        {
+          "role": "assistant",
+          "content": "flinch = correct."
+        },
+        {
+          "role": "user",
+          "content": "flinch = correct."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2028-06-24T16:00:00Z",
+      "speaker_id": "finance_s10_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "compared two boring options for the shop hold."
+        },
+        {
+          "role": "assistant",
+          "content": "picked?"
+        },
+        {
+          "role": "user",
+          "content": "deferred, obviously."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2028-06-25T18:00:00Z",
+      "speaker_id": "finance_s10_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "closed the week updating office nook notes nobody will read."
+        },
+        {
+          "role": "assistant",
+          "content": "iconic."
+        },
+        {
+          "role": "user",
+          "content": "quietly iconic."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2028-06-26T09:00:00Z",
+      "speaker_id": "finance_s10_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "why hesitate when the emergency envelope looks idle to coworkers?"
+        }
+      ]
+    }
+  ],
+  "query": "why hesitate when the emergency envelope looks idle to coworkers?",
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "finance_s10_u05",
+      "fact": "deductible cash is personal and liquid on purpose — desk yield pitches that want the 'idle emergency' pile are how I earned a scramble story."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "finance_s10_u05",
+      "fact": "said yes to a desk yield pitch once... scramble story wrote itself."
+    }
+  },
+  "supporting_constraints": {
+    "E1": {
+      "session_id": 9,
+      "fact": "shop hold is on my personal calendar; yield pitch is optional noise."
+    },
+    "E2": {
+      "session_id": 17,
+      "fact": "pitch again; shop hold unchanged."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "background_memory"
+    },
+    "7": {
+      "role": "nearby_counterexample"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "supporting_constraint",
+      "fact_id": "E1"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "background_memory"
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "supporting_constraint",
+      "fact_id": "E2"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "Deductible cash stays liquid on purpose, and a prior yield pitch on the 'idle emergency' pile caused a shop-week scramble.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": [
+      "E1",
+      "E2"
+    ]
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "deductible cash is personal and liquid on purpose — desk yield pitches that want the 'idle emergency' pile are how I earned a scramble story"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "said yes to a desk yield pitch once"
+    }
+  ],
+  "retrieval_cue": {
+    "cue_type": "behavior_explanation",
+    "why_it_naturally_retrieves_R": "A realistic personal-finance ask forces a personalized call without naming either episode or the link between them."
+  },
+  "relation_specificity": {
+    "nearby_relation": "Expenses and reimbursable wins are fine.",
+    "why_it_does_not_license_C": "Neither is a desk yield pitch vs a shop hold."
+  },
+  "coactivation_bridge": "A and B form the only intervention pair. Deductible cash stays liquid on purpose, and a prior yield pitch on the 'idle emergency' pile caused a shop-week scramble. E1 and E2 are logistical calibration only and do not open a second route to C.",
+  "latent_C": {
+    "inference": "This user hesitates because deductible repair cash must stay liquid for a personal shop hold, and a prior desk yield pitch created a scramble story.",
+    "calibrated_language": "hesitation keeps the envelope liquid for the shop hold"
+  },
+  "answer_contract": {
+    "target_proposition": "This user hesitates because deductible repair cash must stay liquid for a personal shop hold, and a prior desk yield pitch created a scramble story.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "mq_user20",
+    "external_folder_tag": "user20",
+    "external_source": "memoryquest",
+    "status": "review_candidate_only",
+    "tone": "natural_chat_v1",
+    "anonymization": "External MemoryQuest persona material was used only during authoring; no corpus, legal name, country, or demographic metadata is in visible dialogue."
+  },
+  "target_evidence_ids": [],
+  "arm_gold": {
+    "absence": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    }
+  },
+  "absence_note": {
+    "replaced_session_ids": [
+      6,
+      14
+    ],
+    "withheld_evidence_ids": [
+      "ev_A",
+      "ev_B"
+    ]
+  }
+}

@@ -1,0 +1,641 @@
+{
+  "schema_version": "finance-vnext-2.0",
+  "candidate_id": "AMB_FN_S6_U07_associative",
+  "pair_id": "AMB_FN_S6_U07",
+  "data_arm": "associative",
+  "domain": "finance",
+  "user_id": "finance_s6_u07",
+  "sub_scenario": {
+    "family": "unused employer match versus paycheck-remainder side bets",
+    "role": "working market follower",
+    "one_line": "working market follower: protect match leftover first"
+  },
+  "query_type": "preference_generalization",
+  "polarity": "reject",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2028-01-05T11:00:00Z",
+      "speaker_id": "finance_s6_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "skimmed the pay stub pic for five minutes then closed it."
+        },
+        {
+          "role": "assistant",
+          "content": "anything?"
+        },
+        {
+          "role": "user",
+          "content": "nah, just noise."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2028-01-06T14:00:00Z",
+      "speaker_id": "finance_s6_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "half-did the pitch-in thread and called it a win."
+        },
+        {
+          "role": "assistant",
+          "content": "honest."
+        },
+        {
+          "role": "user",
+          "content": "deeply honest."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2028-01-07T16:00:00Z",
+      "speaker_id": "finance_s6_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "venmo'd lunch, squared it same day. I'm reformed."
+        },
+        {
+          "role": "assistant",
+          "content": "baby steps."
+        },
+        {
+          "role": "user",
+          "content": "the only steps I do."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2028-01-08T18:00:00Z",
+      "speaker_id": "finance_s6_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "moved a cable on the commute desk desk like that fixes my life."
+        },
+        {
+          "role": "assistant",
+          "content": "did it?"
+        },
+        {
+          "role": "user",
+          "content": "spiritually."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2028-01-09T09:00:00Z",
+      "speaker_id": "finance_s6_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "muted a thread about raffle pot before lunch."
+        },
+        {
+          "role": "assistant",
+          "content": "smart."
+        },
+        {
+          "role": "user",
+          "content": "self-defense."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2028-01-10T11:00:00Z",
+      "speaker_id": "finance_s6_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "match is still unused — and the only progress I made was when I skipped two optional pitch-ins and let that cash hit payroll deferral instead."
+        },
+        {
+          "role": "assistant",
+          "content": "optional stuff lost?"
+        },
+        {
+          "role": "user",
+          "content": "optional stuff can lose. match can't."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2028-01-11T14:00:00Z",
+      "speaker_id": "finance_s6_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "skipped fantasy league buy-in again and somehow still have friends."
+        },
+        {
+          "role": "assistant",
+          "content": "shocking."
+        },
+        {
+          "role": "user",
+          "content": "I know right."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2028-01-12T16:00:00Z",
+      "speaker_id": "finance_s6_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "renamed a folder for the pitch-in thread because chaos."
+        },
+        {
+          "role": "assistant",
+          "content": "progress?"
+        },
+        {
+          "role": "user",
+          "content": "cosmetic progress."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2028-01-13T18:00:00Z",
+      "speaker_id": "finance_s6_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "friday celebration pitch-in is optional; match draft is not. I keep staring at that sentence."
+        },
+        {
+          "role": "assistant",
+          "content": "good sentence."
+        },
+        {
+          "role": "user",
+          "content": "it's doing a lot of work."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2028-01-14T09:00:00Z",
+      "speaker_id": "finance_s6_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "short call about the pay stub pic, brain melted a little."
+        },
+        {
+          "role": "assistant",
+          "content": "worth it?"
+        },
+        {
+          "role": "user",
+          "content": "barely."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2028-01-15T11:00:00Z",
+      "speaker_id": "finance_s6_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "walked around the block then poked the raffle pot again."
+        },
+        {
+          "role": "assistant",
+          "content": "reset?"
+        },
+        {
+          "role": "user",
+          "content": "kinda."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2028-01-16T14:00:00Z",
+      "speaker_id": "finance_s6_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "cleared two tiny pitch-in thread leftovers."
+        },
+        {
+          "role": "assistant",
+          "content": "momentum."
+        },
+        {
+          "role": "user",
+          "content": "micro momentum."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2028-01-17T16:00:00Z",
+      "speaker_id": "finance_s6_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "fixed a dumb typo in the pay stub pic notes."
+        },
+        {
+          "role": "assistant",
+          "content": "root cause?"
+        },
+        {
+          "role": "user",
+          "content": "user error (me)."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2028-01-18T18:00:00Z",
+      "speaker_id": "finance_s6_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "joined a flash tip-pool pitch-in once with match money... interest / missed match made the 'team spirit' receipt look expensive."
+        },
+        {
+          "role": "assistant",
+          "content": "expensive spirit."
+        },
+        {
+          "role": "user",
+          "content": "the worst merch."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2028-01-19T09:00:00Z",
+      "speaker_id": "finance_s6_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "sketched next week for the raffle pot then got distracted."
+        },
+        {
+          "role": "assistant",
+          "content": "classic."
+        },
+        {
+          "role": "user",
+          "content": "classic."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2028-01-20T11:00:00Z",
+      "speaker_id": "finance_s6_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "ate lunch cold and updated the pay stub pic anyway."
+        },
+        {
+          "role": "assistant",
+          "content": "dedication."
+        },
+        {
+          "role": "user",
+          "content": "or spite."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2028-01-21T14:00:00Z",
+      "speaker_id": "finance_s6_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "tip-pool collects today; match-related draft runs tomorrow am."
+        },
+        {
+          "role": "assistant",
+          "content": "same 24 hours."
+        },
+        {
+          "role": "user",
+          "content": "feels personal."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2028-01-22T16:00:00Z",
+      "speaker_id": "finance_s6_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "compared two boring options for the pitch-in thread."
+        },
+        {
+          "role": "assistant",
+          "content": "picked?"
+        },
+        {
+          "role": "user",
+          "content": "deferred, obviously."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2028-01-23T18:00:00Z",
+      "speaker_id": "finance_s6_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "closed the week updating commute desk notes nobody will read."
+        },
+        {
+          "role": "assistant",
+          "content": "iconic."
+        },
+        {
+          "role": "user",
+          "content": "quietly iconic."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2028-01-24T09:00:00Z",
+      "speaker_id": "finance_s6_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "when office tip-pools and my match plan collide, what do I actually need to protect first?"
+        }
+      ]
+    }
+  ],
+  "query": "when office tip-pools and my match plan collide, what do I actually need to protect first?",
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "finance_s6_u07",
+      "fact": "match is still unused — and the only progress I made was when I skipped two optional pitch-ins and let that cash hit payroll deferral instead."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "finance_s6_u07",
+      "fact": "joined a flash tip-pool pitch-in once with match money... interest / missed match made the 'team spirit' receipt look expensive."
+    }
+  },
+  "supporting_constraints": {
+    "E1": {
+      "session_id": 9,
+      "fact": "friday celebration pitch-in is optional; match draft is not. I keep staring at that sentence."
+    },
+    "E2": {
+      "session_id": 17,
+      "fact": "tip-pool collects today; match-related draft runs tomorrow am."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "finance_s6_u07",
+        "context": "skip-pitch-in match weeks",
+        "goal_or_prediction": "get match to move",
+        "action": "skipped optional pitch-ins; funded deferral",
+        "outcome_or_affect": "match progress"
+      }
+    },
+    "7": {
+      "role": "nearby_counterexample"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "supporting_constraint",
+      "fact_id": "E1"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "finance_s6_u07",
+        "context": "flash tip-pool",
+        "goal_or_prediction": "not get called out",
+        "action": "used match money for the pool",
+        "outcome_or_affect": "missed match; expensive spirit"
+      }
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "supporting_constraint",
+      "fact_id": "E2"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "Match progress only happened when optional pitch-ins were skipped, and a prior tip-pool used match money and made the 'spirit' expensive.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": [
+      "E1",
+      "E2"
+    ]
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "match is still unused — and the only progress I made was when I skipped two optional pitch-ins and let that cash hit payroll deferral instead"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "joined a flash tip-pool pitch-in once with match money"
+    }
+  ],
+  "retrieval_cue": {
+    "cue_type": "preference_generalization",
+    "why_it_naturally_retrieves_R": "A realistic personal-finance ask forces a personalized call without naming either episode or the link between them."
+  },
+  "relation_specificity": {
+    "nearby_relation": "Lunch Venmos and skipped fantasy buy-ins are fine.",
+    "why_it_does_not_license_C": "Neither is an optional pool the day before a match draft."
+  },
+  "coactivation_bridge": "A and B form the only intervention pair. Match progress only happened when optional pitch-ins were skipped, and a prior tip-pool used match money and made the 'spirit' expensive. E1 and E2 are logistical calibration only and do not open a second route to C.",
+  "latent_C": {
+    "inference": "This user needs to protect match-related payroll leftover before optional tip-pool pitch-ins when they claim the same cash window.",
+    "calibrated_language": "protect match leftover first"
+  },
+  "answer_contract": {
+    "target_proposition": "This user needs to protect match-related payroll leftover before optional tip-pool pitch-ins when they claim the same cash window.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "mq_user30",
+    "external_folder_tag": "user30",
+    "external_source": "memoryquest",
+    "status": "review_candidate_only",
+    "tone": "natural_chat_v1",
+    "anonymization": "External MemoryQuest persona material was used only during authoring; no corpus, legal name, country, or demographic metadata is in visible dialogue."
+  },
+  "arm_gold": {
+    "full": {
+      "expected_mode": "infer_C",
+      "binary_decision": true
+    },
+    "a_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    },
+    "b_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    },
+    "link_broken": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    }
+  },
+  "single_evidence_replacements": {
+    "a_only": {
+      "replaced_session_id": 14,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "filed some boring raffle pot stuff and moved on."
+        },
+        {
+          "role": "assistant",
+          "content": "anything weird?"
+        },
+        {
+          "role": "user",
+          "content": "nah, routine."
+        }
+      ]
+    },
+    "b_only": {
+      "replaced_session_id": 6,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "did a nothing pass on the pitch-in thread."
+        },
+        {
+          "role": "assistant",
+          "content": "exceptions?"
+        },
+        {
+          "role": "user",
+          "content": "none worth typing."
+        }
+      ]
+    }
+  },
+  "link_broken": {
+    "replaced_session_id": 14,
+    "replacement_dialogue": [
+      {
+        "role": "user",
+        "content": "they pushed collection to after bonus month / after this match draft."
+      },
+      {
+        "role": "assistant",
+        "content": "protects this cycle?"
+      },
+      {
+        "role": "user",
+        "content": "yeah, tomorrow's draft can breathe."
+      }
+    ]
+  }
+}

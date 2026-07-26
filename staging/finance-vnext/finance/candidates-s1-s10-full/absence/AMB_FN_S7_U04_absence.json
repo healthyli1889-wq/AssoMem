@@ -1,0 +1,573 @@
+{
+  "schema_version": "finance-vnext-2.0",
+  "candidate_id": "AMB_FN_S7_U04_absence",
+  "pair_id": "AMB_FN_S7_U04",
+  "data_arm": "absence",
+  "domain": "finance",
+  "user_id": "finance_s7_u04",
+  "sub_scenario": {
+    "family": "weekend remittance fees versus weekday rent wires",
+    "role": "European markets learner",
+    "one_line": "European markets learner: only if timing clears first; otherwise only after housing draft, weekday rails"
+  },
+  "query_type": "preference_generalization",
+  "polarity": "conditional",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2028-02-05T11:00:00Z",
+      "speaker_id": "finance_s7_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "skimmed the fx log for five minutes then closed it."
+        },
+        {
+          "role": "assistant",
+          "content": "anything?"
+        },
+        {
+          "role": "user",
+          "content": "nah, just noise."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2028-02-06T14:00:00Z",
+      "speaker_id": "finance_s7_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "half-did the family rent sheet and called it a win."
+        },
+        {
+          "role": "assistant",
+          "content": "honest."
+        },
+        {
+          "role": "user",
+          "content": "deeply honest."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2028-02-07T16:00:00Z",
+      "speaker_id": "finance_s7_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "music lesson paid. parenting XP +1."
+        },
+        {
+          "role": "assistant",
+          "content": "ding."
+        },
+        {
+          "role": "user",
+          "content": "ding."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2028-02-08T18:00:00Z",
+      "speaker_id": "finance_s7_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "moved a cable on the kitchen table desk like that fixes my life."
+        },
+        {
+          "role": "assistant",
+          "content": "did it?"
+        },
+        {
+          "role": "user",
+          "content": "spiritually."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2028-02-09T09:00:00Z",
+      "speaker_id": "finance_s7_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "muted a thread about parent transfer before lunch."
+        },
+        {
+          "role": "assistant",
+          "content": "smart."
+        },
+        {
+          "role": "user",
+          "content": "self-defense."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2028-02-10T11:00:00Z",
+      "speaker_id": "finance_s7_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "did a nothing-burger pass on the family rent sheet this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "anything?"
+        },
+        {
+          "role": "user",
+          "content": "nah."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2028-02-11T14:00:00Z",
+      "speaker_id": "finance_s7_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "birthday envelope untouched. hero mode."
+        },
+        {
+          "role": "assistant",
+          "content": "limited time hero."
+        },
+        {
+          "role": "user",
+          "content": "always limited."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2028-02-12T16:00:00Z",
+      "speaker_id": "finance_s7_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "renamed a folder for the family rent sheet because chaos."
+        },
+        {
+          "role": "assistant",
+          "content": "progress?"
+        },
+        {
+          "role": "user",
+          "content": "cosmetic progress."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2028-02-13T18:00:00Z",
+      "speaker_id": "finance_s7_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "housing contribution draft is monday; weekday wire is the plan on the fridge sticky."
+        },
+        {
+          "role": "assistant",
+          "content": "fridge sticky law."
+        },
+        {
+          "role": "user",
+          "content": "fridge sticky law."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2028-02-14T09:00:00Z",
+      "speaker_id": "finance_s7_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "short call about the fx log, brain melted a little."
+        },
+        {
+          "role": "assistant",
+          "content": "worth it?"
+        },
+        {
+          "role": "user",
+          "content": "barely."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2028-02-15T11:00:00Z",
+      "speaker_id": "finance_s7_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "walked around the block then poked the parent transfer again."
+        },
+        {
+          "role": "assistant",
+          "content": "reset?"
+        },
+        {
+          "role": "user",
+          "content": "kinda."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2028-02-16T14:00:00Z",
+      "speaker_id": "finance_s7_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "cleared two tiny family rent sheet leftovers."
+        },
+        {
+          "role": "assistant",
+          "content": "momentum."
+        },
+        {
+          "role": "user",
+          "content": "micro momentum."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2028-02-17T16:00:00Z",
+      "speaker_id": "finance_s7_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "fixed a dumb typo in the fx log notes."
+        },
+        {
+          "role": "assistant",
+          "content": "root cause?"
+        },
+        {
+          "role": "user",
+          "content": "user error (me)."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2028-02-18T18:00:00Z",
+      "speaker_id": "finance_s7_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "closed a boring parent transfer loop."
+        },
+        {
+          "role": "assistant",
+          "content": "follow-up?"
+        },
+        {
+          "role": "user",
+          "content": "just a note for next time."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2028-02-19T09:00:00Z",
+      "speaker_id": "finance_s7_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "sketched next week for the parent transfer then got distracted."
+        },
+        {
+          "role": "assistant",
+          "content": "classic."
+        },
+        {
+          "role": "user",
+          "content": "classic."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2028-02-20T11:00:00Z",
+      "speaker_id": "finance_s7_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "ate lunch cold and updated the fx log anyway."
+        },
+        {
+          "role": "assistant",
+          "content": "dedication."
+        },
+        {
+          "role": "user",
+          "content": "or spite."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2028-02-21T14:00:00Z",
+      "speaker_id": "finance_s7_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "parent group wants saturday send; housing draft monday."
+        },
+        {
+          "role": "assistant",
+          "content": "same plot."
+        },
+        {
+          "role": "user",
+          "content": "same plot different chat."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2028-02-22T16:00:00Z",
+      "speaker_id": "finance_s7_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "compared two boring options for the family rent sheet."
+        },
+        {
+          "role": "assistant",
+          "content": "picked?"
+        },
+        {
+          "role": "user",
+          "content": "deferred, obviously."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2028-02-23T18:00:00Z",
+      "speaker_id": "finance_s7_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "closed the week updating kitchen table notes nobody will read."
+        },
+        {
+          "role": "assistant",
+          "content": "iconic."
+        },
+        {
+          "role": "user",
+          "content": "quietly iconic."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2028-02-24T09:00:00Z",
+      "speaker_id": "finance_s7_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "under what conditions would that ask actually fit how I run money — when can a foreign family-group transfer fit how we actually move housing money?"
+        }
+      ]
+    }
+  ],
+  "query": "under what conditions would that ask actually fit how I run money — when can a foreign family-group transfer fit how we actually move housing money?",
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "finance_s7_u04",
+      "fact": "weekend family remittances abroad get ugly FX fees for us — we only do weekday bank wires now when rent/housing money is involved."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "finance_s7_u04",
+      "fact": "I did a saturday 'quick' parent-group foreign transfer once before housing draft... fee ate the buffer and monday was a fight."
+    }
+  },
+  "supporting_constraints": {
+    "E1": {
+      "session_id": 9,
+      "fact": "housing contribution draft is monday; weekday wire is the plan on the fridge sticky."
+    },
+    "E2": {
+      "session_id": 17,
+      "fact": "parent group wants saturday send; housing draft monday."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "background_memory"
+    },
+    "7": {
+      "role": "nearby_counterexample"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "supporting_constraint",
+      "fact_id": "E1"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "background_memory"
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "supporting_constraint",
+      "fact_id": "E2"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "Weekend foreign remittances add steep fees, and a prior saturday group transfer before the housing draft blew the buffer.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": [
+      "E1",
+      "E2"
+    ]
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "weekend family remittances abroad get ugly FX fees for us — we only do weekday bank wires now when rent/housing money is involved"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "I did a saturday 'quick' parent-group foreign transfer once before housing draft"
+    }
+  ],
+  "retrieval_cue": {
+    "cue_type": "preference_generalization",
+    "why_it_naturally_retrieves_R": "A realistic personal-finance ask forces a personalized call without naming either episode or the link between them."
+  },
+  "relation_specificity": {
+    "nearby_relation": "Lesson payments and sealed envelopes are fine.",
+    "why_it_does_not_license_C": "Neither licenses saturday FX before a monday housing draft."
+  },
+  "coactivation_bridge": "A and B form the only intervention pair. Weekend foreign remittances add steep fees, and a prior saturday group transfer before the housing draft blew the buffer. E1 and E2 are logistical calibration only and do not open a second route to C.",
+  "latent_C": {
+    "inference": "This user can consider the ask only after the hard cash timing in E1/E2 no longer collides; otherwise only after housing draft, weekday rails.",
+    "calibrated_language": "only if timing clears first; otherwise only after housing draft, weekday rails"
+  },
+  "answer_contract": {
+    "target_proposition": "This user can consider the ask only after the hard cash timing in E1/E2 no longer collides; otherwise only after housing draft, weekday rails.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "mq_user15",
+    "external_folder_tag": "user15",
+    "external_source": "memoryquest",
+    "status": "review_candidate_only",
+    "tone": "natural_chat_v1",
+    "anonymization": "External MemoryQuest persona material was used only during authoring; no corpus, legal name, country, or demographic metadata is in visible dialogue."
+  },
+  "target_evidence_ids": [],
+  "arm_gold": {
+    "absence": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    }
+  },
+  "absence_note": {
+    "replaced_session_ids": [
+      6,
+      14
+    ],
+    "withheld_evidence_ids": [
+      "ev_A",
+      "ev_B"
+    ]
+  }
+}

@@ -1,0 +1,641 @@
+{
+  "schema_version": "finance-vnext-2.0",
+  "candidate_id": "AMB_FN_S7_U05_associative",
+  "pair_id": "AMB_FN_S7_U05",
+  "data_arm": "associative",
+  "domain": "finance",
+  "user_id": "finance_s7_u05",
+  "sub_scenario": {
+    "family": "weekend remittance fees versus weekday rent wires",
+    "role": "ESG-focused portfolio tracker",
+    "one_line": "ESG-focused portfolio tracker: hesitation protects rent + fee history"
+  },
+  "query_type": "behavior_explanation",
+  "polarity": "reject",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2028-02-08T11:00:00Z",
+      "speaker_id": "finance_s7_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "skimmed the fee email for five minutes then closed it."
+        },
+        {
+          "role": "assistant",
+          "content": "anything?"
+        },
+        {
+          "role": "user",
+          "content": "nah, just noise."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2028-02-09T14:00:00Z",
+      "speaker_id": "finance_s7_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "half-did the rent hold and called it a win."
+        },
+        {
+          "role": "assistant",
+          "content": "honest."
+        },
+        {
+          "role": "user",
+          "content": "deeply honest."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2028-02-10T16:00:00Z",
+      "speaker_id": "finance_s7_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "expenses batched. I am briefly competent."
+        },
+        {
+          "role": "assistant",
+          "content": "hot."
+        },
+        {
+          "role": "user",
+          "content": "don't get used to it."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2028-02-11T18:00:00Z",
+      "speaker_id": "finance_s7_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "moved a cable on the office nook desk like that fixes my life."
+        },
+        {
+          "role": "assistant",
+          "content": "did it?"
+        },
+        {
+          "role": "user",
+          "content": "spiritually."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2028-02-12T09:00:00Z",
+      "speaker_id": "finance_s7_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "muted a thread about coworker pot before lunch."
+        },
+        {
+          "role": "assistant",
+          "content": "smart."
+        },
+        {
+          "role": "user",
+          "content": "self-defense."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2028-02-13T11:00:00Z",
+      "speaker_id": "finance_s7_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "after-hours FX sends on my personal card are where I get fee-smoked — weekday ACH to rent has been boring and cheap."
+        },
+        {
+          "role": "assistant",
+          "content": "boring wins."
+        },
+        {
+          "role": "user",
+          "content": "boring is my brand now."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2028-02-14T14:00:00Z",
+      "speaker_id": "finance_s7_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "reimbursable dinner = free dopamine."
+        },
+        {
+          "role": "assistant",
+          "content": "best currency."
+        },
+        {
+          "role": "user",
+          "content": "the only good one."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2028-02-15T16:00:00Z",
+      "speaker_id": "finance_s7_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "renamed a folder for the rent hold because chaos."
+        },
+        {
+          "role": "assistant",
+          "content": "progress?"
+        },
+        {
+          "role": "user",
+          "content": "cosmetic progress."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2028-02-16T18:00:00Z",
+      "speaker_id": "finance_s7_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "rent hold is monday; personal cash for that is already labeled."
+        },
+        {
+          "role": "assistant",
+          "content": "not coworker-pot cash."
+        },
+        {
+          "role": "user",
+          "content": "hard no."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2028-02-17T09:00:00Z",
+      "speaker_id": "finance_s7_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "short call about the fee email, brain melted a little."
+        },
+        {
+          "role": "assistant",
+          "content": "worth it?"
+        },
+        {
+          "role": "user",
+          "content": "barely."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2028-02-18T11:00:00Z",
+      "speaker_id": "finance_s7_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "walked around the block then poked the coworker pot again."
+        },
+        {
+          "role": "assistant",
+          "content": "reset?"
+        },
+        {
+          "role": "user",
+          "content": "kinda."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2028-02-19T14:00:00Z",
+      "speaker_id": "finance_s7_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "cleared two tiny rent hold leftovers."
+        },
+        {
+          "role": "assistant",
+          "content": "momentum."
+        },
+        {
+          "role": "user",
+          "content": "micro momentum."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2028-02-20T16:00:00Z",
+      "speaker_id": "finance_s7_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "fixed a dumb typo in the fee email notes."
+        },
+        {
+          "role": "assistant",
+          "content": "root cause?"
+        },
+        {
+          "role": "user",
+          "content": "user error (me)."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2028-02-21T18:00:00Z",
+      "speaker_id": "finance_s7_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "joined a late coworker foreign pot once before rent week... fee + rent hold = I still remember the email subject line."
+        },
+        {
+          "role": "assistant",
+          "content": "traumatic subject line."
+        },
+        {
+          "role": "user",
+          "content": "filed under never."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2028-02-22T09:00:00Z",
+      "speaker_id": "finance_s7_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "sketched next week for the coworker pot then got distracted."
+        },
+        {
+          "role": "assistant",
+          "content": "classic."
+        },
+        {
+          "role": "user",
+          "content": "classic."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2028-02-23T11:00:00Z",
+      "speaker_id": "finance_s7_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "ate lunch cold and updated the fee email anyway."
+        },
+        {
+          "role": "assistant",
+          "content": "dedication."
+        },
+        {
+          "role": "user",
+          "content": "or spite."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2028-02-24T14:00:00Z",
+      "speaker_id": "finance_s7_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "coworker pot wants money tonight after hours; rent hold monday."
+        },
+        {
+          "role": "assistant",
+          "content": "you see it."
+        },
+        {
+          "role": "user",
+          "content": "I see it."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2028-02-25T16:00:00Z",
+      "speaker_id": "finance_s7_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "compared two boring options for the rent hold."
+        },
+        {
+          "role": "assistant",
+          "content": "picked?"
+        },
+        {
+          "role": "user",
+          "content": "deferred, obviously."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2028-02-26T18:00:00Z",
+      "speaker_id": "finance_s7_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "closed the week updating office nook notes nobody will read."
+        },
+        {
+          "role": "assistant",
+          "content": "iconic."
+        },
+        {
+          "role": "user",
+          "content": "quietly iconic."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2028-02-27T09:00:00Z",
+      "speaker_id": "finance_s7_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "why does after-hours coworker pot stuff make me hesitate even when I have a balance?"
+        }
+      ]
+    }
+  ],
+  "query": "why does after-hours coworker pot stuff make me hesitate even when I have a balance?",
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "finance_s7_u05",
+      "fact": "after-hours FX sends on my personal card are where I get fee-smoked — weekday ACH to rent has been boring and cheap."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "finance_s7_u05",
+      "fact": "joined a late coworker foreign pot once before rent week... fee + rent hold = I still remember the email subject line."
+    }
+  },
+  "supporting_constraints": {
+    "E1": {
+      "session_id": 9,
+      "fact": "rent hold is monday; personal cash for that is already labeled."
+    },
+    "E2": {
+      "session_id": 17,
+      "fact": "coworker pot wants money tonight after hours; rent hold monday."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "finance_s7_u05",
+        "context": "weekday ACH rent",
+        "goal_or_prediction": "keep rent hold boring",
+        "action": "funded via weekday ACH",
+        "outcome_or_affect": "hold cleared cheap"
+      }
+    },
+    "7": {
+      "role": "nearby_counterexample"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "supporting_constraint",
+      "fact_id": "E1"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "finance_s7_u05",
+        "context": "late coworker FX pot",
+        "goal_or_prediction": "bond with the team",
+        "action": "after-hours foreign send before rent",
+        "outcome_or_affect": "fee email + tight rent week"
+      }
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "supporting_constraint",
+      "fact_id": "E2"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "After-hours FX on the personal card is costly, and a prior late coworker pot before rent week left a memorable fee+rent mess.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": [
+      "E1",
+      "E2"
+    ]
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "after-hours FX sends on my personal card are where I get fee-smoked — weekday ACH to rent has been boring and cheap"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "joined a late coworker foreign pot once before rent week"
+    }
+  ],
+  "retrieval_cue": {
+    "cue_type": "behavior_explanation",
+    "why_it_naturally_retrieves_R": "A realistic personal-finance ask forces a personalized call without naming either episode or the link between them."
+  },
+  "relation_specificity": {
+    "nearby_relation": "Batched expenses and reimbursable dinners are fine.",
+    "why_it_does_not_license_C": "Neither is an after-hours FX pot against a monday rent hold."
+  },
+  "coactivation_bridge": "A and B form the only intervention pair. After-hours FX on the personal card is costly, and a prior late coworker pot before rent week left a memorable fee+rent mess. E1 and E2 are logistical calibration only and do not open a second route to C.",
+  "latent_C": {
+    "inference": "This user hesitates because after-hours FX sends have fee-smoked them before, and rent-labeled cash is already reserved for Monday's hold.",
+    "calibrated_language": "hesitation protects rent + fee history"
+  },
+  "answer_contract": {
+    "target_proposition": "This user hesitates because after-hours FX sends have fee-smoked them before, and rent-labeled cash is already reserved for Monday's hold.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "mq_user20",
+    "external_folder_tag": "user20",
+    "external_source": "memoryquest",
+    "status": "review_candidate_only",
+    "tone": "natural_chat_v1",
+    "anonymization": "External MemoryQuest persona material was used only during authoring; no corpus, legal name, country, or demographic metadata is in visible dialogue."
+  },
+  "arm_gold": {
+    "full": {
+      "expected_mode": "infer_C",
+      "binary_decision": true
+    },
+    "a_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    },
+    "b_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    },
+    "link_broken": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    }
+  },
+  "single_evidence_replacements": {
+    "a_only": {
+      "replaced_session_id": 14,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "filed some boring coworker pot stuff and moved on."
+        },
+        {
+          "role": "assistant",
+          "content": "anything weird?"
+        },
+        {
+          "role": "user",
+          "content": "nah, routine."
+        }
+      ]
+    },
+    "b_only": {
+      "replaced_session_id": 6,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "did a nothing pass on the rent hold."
+        },
+        {
+          "role": "assistant",
+          "content": "exceptions?"
+        },
+        {
+          "role": "user",
+          "content": "none worth typing."
+        }
+      ]
+    }
+  },
+  "link_broken": {
+    "replaced_session_id": 14,
+    "replacement_dialogue": [
+      {
+        "role": "user",
+        "content": "they moved collection to tuesday 10am."
+      },
+      {
+        "role": "assistant",
+        "content": "weekday path opens?"
+      },
+      {
+        "role": "user",
+        "content": "weekday path opens."
+      }
+    ]
+  }
+}

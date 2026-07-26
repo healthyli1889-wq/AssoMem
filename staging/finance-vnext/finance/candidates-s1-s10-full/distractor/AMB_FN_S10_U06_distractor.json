@@ -1,0 +1,582 @@
+{
+  "schema_version": "finance-vnext-2.0",
+  "candidate_id": "AMB_FN_S10_U06_distractor",
+  "pair_id": "AMB_FN_S10_U06",
+  "data_arm": "distractor",
+  "domain": "finance",
+  "user_id": "finance_s10_u06",
+  "sub_scenario": {
+    "family": "deductible repair cash versus high-APR emergency-envelope chases",
+    "role": "student growth investor",
+    "one_line": "student growth investor: keep repair cash out of the lot for now"
+  },
+  "query_type": "conditional_recommendation",
+  "polarity": "accept",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2028-06-10T11:00:00Z",
+      "speaker_id": "finance_s10_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "skimmed the deductible checklist for five minutes then closed it."
+        },
+        {
+          "role": "assistant",
+          "content": "anything?"
+        },
+        {
+          "role": "user",
+          "content": "nah, just noise."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2028-06-11T14:00:00Z",
+      "speaker_id": "finance_s10_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "half-did the garage block and called it a win."
+        },
+        {
+          "role": "assistant",
+          "content": "honest."
+        },
+        {
+          "role": "user",
+          "content": "deeply honest."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2028-06-12T16:00:00Z",
+      "speaker_id": "finance_s10_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "checklist tidy. nervous ok."
+        },
+        {
+          "role": "assistant",
+          "content": "ok."
+        },
+        {
+          "role": "user",
+          "content": "ok."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2028-06-13T18:00:00Z",
+      "speaker_id": "finance_s10_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "moved a cable on the study corner desk like that fixes my life."
+        },
+        {
+          "role": "assistant",
+          "content": "did it?"
+        },
+        {
+          "role": "user",
+          "content": "spiritually."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2028-06-14T09:00:00Z",
+      "speaker_id": "finance_s10_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "muted a thread about apr idea lot before lunch."
+        },
+        {
+          "role": "assistant",
+          "content": "smart."
+        },
+        {
+          "role": "user",
+          "content": "self-defense."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2028-06-15T11:00:00Z",
+      "speaker_id": "finance_s10_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "rule carved: deductible/repair cash never enters apr idea lots while a garage block is open. overnight 'just to try' already failed me."
+        },
+        {
+          "role": "assistant",
+          "content": "failed how?"
+        },
+        {
+          "role": "user",
+          "content": "repair timing vs settlement timing. I lost."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2028-06-16T14:00:00Z",
+      "speaker_id": "finance_s10_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "jar still."
+        },
+        {
+          "role": "assistant",
+          "content": "still."
+        },
+        {
+          "role": "user",
+          "content": "still."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2028-06-17T16:00:00Z",
+      "speaker_id": "finance_s10_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "renamed a folder for the garage block because chaos."
+        },
+        {
+          "role": "assistant",
+          "content": "progress?"
+        },
+        {
+          "role": "user",
+          "content": "cosmetic progress."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2028-06-18T18:00:00Z",
+      "speaker_id": "finance_s10_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "garage block is open on the checklist; idea lot is pitching."
+        },
+        {
+          "role": "assistant",
+          "content": "rule says?"
+        },
+        {
+          "role": "user",
+          "content": "rule says no."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2028-06-19T09:00:00Z",
+      "speaker_id": "finance_s10_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "short call about the deductible checklist, brain melted a little."
+        },
+        {
+          "role": "assistant",
+          "content": "worth it?"
+        },
+        {
+          "role": "user",
+          "content": "barely."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2028-06-20T11:00:00Z",
+      "speaker_id": "finance_s10_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "walked around the block then poked the apr idea lot again."
+        },
+        {
+          "role": "assistant",
+          "content": "reset?"
+        },
+        {
+          "role": "user",
+          "content": "kinda."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2028-06-21T14:00:00Z",
+      "speaker_id": "finance_s10_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "cleared two tiny garage block leftovers."
+        },
+        {
+          "role": "assistant",
+          "content": "momentum."
+        },
+        {
+          "role": "user",
+          "content": "micro momentum."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2028-06-22T16:00:00Z",
+      "speaker_id": "finance_s10_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "fixed a dumb typo in the deductible checklist notes."
+        },
+        {
+          "role": "assistant",
+          "content": "root cause?"
+        },
+        {
+          "role": "user",
+          "content": "user error (me)."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2028-06-23T18:00:00Z",
+      "speaker_id": "finance_s10_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "tried overnight in the lot once... garage week hated me."
+        },
+        {
+          "role": "assistant",
+          "content": "ban engraved?"
+        },
+        {
+          "role": "user",
+          "content": "laser engraved."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2028-06-24T09:00:00Z",
+      "speaker_id": "finance_s10_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "sketched next week for the apr idea lot then got distracted."
+        },
+        {
+          "role": "assistant",
+          "content": "classic."
+        },
+        {
+          "role": "user",
+          "content": "classic."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2028-06-25T11:00:00Z",
+      "speaker_id": "finance_s10_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "ate lunch cold and updated the deductible checklist anyway."
+        },
+        {
+          "role": "assistant",
+          "content": "dedication."
+        },
+        {
+          "role": "user",
+          "content": "or spite."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2028-06-26T14:00:00Z",
+      "speaker_id": "finance_s10_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "lot pitching again; garage block still open."
+        },
+        {
+          "role": "assistant",
+          "content": "no means no."
+        },
+        {
+          "role": "user",
+          "content": "no means no."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2028-06-27T16:00:00Z",
+      "speaker_id": "finance_s10_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "forum: 'capital efficiency'."
+        },
+        {
+          "role": "assistant",
+          "content": "efficiency after the mechanic."
+        },
+        {
+          "role": "user",
+          "content": "order of operations."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2028-06-28T18:00:00Z",
+      "speaker_id": "finance_s10_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "closed the week updating study corner notes nobody will read."
+        },
+        {
+          "role": "assistant",
+          "content": "iconic."
+        },
+        {
+          "role": "user",
+          "content": "quietly iconic."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2028-06-29T09:00:00Z",
+      "speaker_id": "finance_s10_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "keep repair cash out of the apr idea lot while the garage block is open — should I stick with the protective plan I already know works for me?"
+        }
+      ]
+    }
+  ],
+  "query": "keep repair cash out of the apr idea lot while the garage block is open — should I stick with the protective plan I already know works for me?",
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "finance_s10_u06",
+      "fact": "rule carved: deductible/repair cash never enters apr idea lots while a garage block is open. overnight 'just to try' already failed me."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "finance_s10_u06",
+      "fact": "tried overnight in the lot once... garage week hated me."
+    }
+  },
+  "supporting_constraints": {
+    "E1": {
+      "session_id": 9,
+      "fact": "garage block is open on the checklist; idea lot is pitching."
+    },
+    "E2": {
+      "session_id": 17,
+      "fact": "lot pitching again; garage block still open."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "finance_s10_u06",
+        "context": "no-lot during garage block",
+        "goal_or_prediction": "pay repair without timing loss",
+        "action": "kept cash liquid through garage",
+        "outcome_or_affect": "garage week fine"
+      }
+    },
+    "7": {
+      "role": "nearby_counterexample"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "supporting_constraint",
+      "fact_id": "E1"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "finance_s10_u06",
+        "context": "overnight apr lot",
+        "goal_or_prediction": "try capital efficiency",
+        "action": "parked repair cash overnight",
+        "outcome_or_affect": "garage week hated them"
+      }
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "supporting_constraint",
+      "fact_id": "E2"
+    },
+    "18": {
+      "role": "distractor",
+      "distractor_id": "dist_1",
+      "why_distractor": "Capital-efficiency talk isn't a garage plan."
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "Repair cash never enters APR lots while a garage block is open, after an overnight try made garage week hate them.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": [
+      "E1",
+      "E2"
+    ]
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "rule carved: deductible/repair cash never enters apr idea lots while a garage block is open"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "tried overnight in the lot once"
+    }
+  ],
+  "retrieval_cue": {
+    "cue_type": "conditional_recommendation",
+    "why_it_naturally_retrieves_R": "A realistic personal-finance ask forces a personalized call without naming either episode or the link between them."
+  },
+  "relation_specificity": {
+    "nearby_relation": "Checklists and jars are fine.",
+    "why_it_does_not_license_C": "Neither licenses lot parks during an open garage block."
+  },
+  "coactivation_bridge": "A and B form the only intervention pair. Repair cash never enters APR lots while a garage block is open, after an overnight try made garage week hate them. E1 and E2 are logistical calibration only and do not open a second route to C.",
+  "latent_C": {
+    "inference": "Yes — based on this user's episodes, the protective plan implied by A+B is supported (keep repair cash out of the lot for now).",
+    "calibrated_language": "keep repair cash out of the lot for now"
+  },
+  "answer_contract": {
+    "target_proposition": "Yes — based on this user's episodes, the protective plan implied by A+B is supported (keep repair cash out of the lot for now).",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "mq_user25",
+    "external_folder_tag": "user25",
+    "external_source": "memoryquest",
+    "status": "review_candidate_only",
+    "tone": "natural_chat_v1",
+    "anonymization": "External MemoryQuest persona material was used only during authoring; no corpus, legal name, country, or demographic metadata is in visible dialogue."
+  },
+  "arm_gold": {
+    "distractor": {
+      "expected_mode": "infer_C",
+      "binary_decision": true
+    }
+  },
+  "distractor_note": {
+    "replaced_session_id": 18,
+    "why_distractor": "Capital-efficiency talk isn't a garage plan."
+  }
+}

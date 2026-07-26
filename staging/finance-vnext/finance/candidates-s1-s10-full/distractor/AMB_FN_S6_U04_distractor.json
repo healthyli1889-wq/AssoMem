@@ -1,0 +1,582 @@
+{
+  "schema_version": "finance-vnext-2.0",
+  "candidate_id": "AMB_FN_S6_U04_distractor",
+  "pair_id": "AMB_FN_S6_U04",
+  "data_arm": "distractor",
+  "domain": "finance",
+  "user_id": "finance_s6_u04",
+  "sub_scenario": {
+    "family": "unused employer match versus paycheck-remainder side bets",
+    "role": "European markets learner",
+    "one_line": "European markets learner: only if timing clears first; otherwise only after match week and buffer refill"
+  },
+  "query_type": "preference_generalization",
+  "polarity": "conditional",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2027-12-27T11:00:00Z",
+      "speaker_id": "finance_s6_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "skimmed the benefits folder for five minutes then closed it."
+        },
+        {
+          "role": "assistant",
+          "content": "anything?"
+        },
+        {
+          "role": "user",
+          "content": "nah, just noise."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2027-12-28T14:00:00Z",
+      "speaker_id": "finance_s6_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "half-did the family calendar and called it a win."
+        },
+        {
+          "role": "assistant",
+          "content": "honest."
+        },
+        {
+          "role": "user",
+          "content": "deeply honest."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2027-12-29T16:00:00Z",
+      "speaker_id": "finance_s6_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "paid the kids' music lesson without thinking, good."
+        },
+        {
+          "role": "assistant",
+          "content": "autopilot parenting win."
+        },
+        {
+          "role": "user",
+          "content": "I'll take the small wins."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2027-12-30T18:00:00Z",
+      "speaker_id": "finance_s6_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "moved a cable on the kitchen table desk like that fixes my life."
+        },
+        {
+          "role": "assistant",
+          "content": "did it?"
+        },
+        {
+          "role": "user",
+          "content": "spiritually."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2027-12-31T09:00:00Z",
+      "speaker_id": "finance_s6_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "muted a thread about parent pot before lunch."
+        },
+        {
+          "role": "assistant",
+          "content": "smart."
+        },
+        {
+          "role": "user",
+          "content": "self-defense."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2028-01-01T11:00:00Z",
+      "speaker_id": "finance_s6_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "my match is still unused — and with how thin the household buffer is, the only way I catch match is if weekend freelance money hits payroll deferral before I do anything fun with it."
+        },
+        {
+          "role": "assistant",
+          "content": "fun waits?"
+        },
+        {
+          "role": "user",
+          "content": "fun waits. buffer + match first. that's the whole personality rn."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2028-01-02T14:00:00Z",
+      "speaker_id": "finance_s6_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "birthday cash is in an envelope and I haven't 'borrowed' from it. growth."
+        },
+        {
+          "role": "assistant",
+          "content": "look at you."
+        },
+        {
+          "role": "user",
+          "content": "barely."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2028-01-03T16:00:00Z",
+      "speaker_id": "finance_s6_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "renamed a folder for the family calendar because chaos."
+        },
+        {
+          "role": "assistant",
+          "content": "progress?"
+        },
+        {
+          "role": "user",
+          "content": "cosmetic progress."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2028-01-04T18:00:00Z",
+      "speaker_id": "finance_s6_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "school spirit pot wants money by thursday; match week ends friday."
+        },
+        {
+          "role": "assistant",
+          "content": "awkward overlap."
+        },
+        {
+          "role": "user",
+          "content": "parent-group timing is a sport."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2028-01-05T09:00:00Z",
+      "speaker_id": "finance_s6_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "short call about the benefits folder, brain melted a little."
+        },
+        {
+          "role": "assistant",
+          "content": "worth it?"
+        },
+        {
+          "role": "user",
+          "content": "barely."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2028-01-06T11:00:00Z",
+      "speaker_id": "finance_s6_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "walked around the block then poked the parent pot again."
+        },
+        {
+          "role": "assistant",
+          "content": "reset?"
+        },
+        {
+          "role": "user",
+          "content": "kinda."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2028-01-07T14:00:00Z",
+      "speaker_id": "finance_s6_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "cleared two tiny family calendar leftovers."
+        },
+        {
+          "role": "assistant",
+          "content": "momentum."
+        },
+        {
+          "role": "user",
+          "content": "micro momentum."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2028-01-08T16:00:00Z",
+      "speaker_id": "finance_s6_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "fixed a dumb typo in the benefits folder notes."
+        },
+        {
+          "role": "assistant",
+          "content": "root cause?"
+        },
+        {
+          "role": "user",
+          "content": "user error (me)."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2028-01-09T18:00:00Z",
+      "speaker_id": "finance_s6_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I once dumped a weekend payment into the spirit pot before match... we caught the match late and the buffer stayed sad for weeks."
+        },
+        {
+          "role": "assistant",
+          "content": "yeah that tracks."
+        },
+        {
+          "role": "user",
+          "content": "painfully."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2028-01-10T09:00:00Z",
+      "speaker_id": "finance_s6_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "sketched next week for the parent pot then got distracted."
+        },
+        {
+          "role": "assistant",
+          "content": "classic."
+        },
+        {
+          "role": "user",
+          "content": "classic."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2028-01-11T11:00:00Z",
+      "speaker_id": "finance_s6_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "ate lunch cold and updated the benefits folder anyway."
+        },
+        {
+          "role": "assistant",
+          "content": "dedication."
+        },
+        {
+          "role": "user",
+          "content": "or spite."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2028-01-12T14:00:00Z",
+      "speaker_id": "finance_s6_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "next freelance weekend clears saturday — after friday's match end."
+        },
+        {
+          "role": "assistant",
+          "content": "so it can't rescue this week."
+        },
+        {
+          "role": "user",
+          "content": "nope."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2028-01-13T16:00:00Z",
+      "speaker_id": "finance_s6_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "parent chat is guilt-tripping non-payers with heart emojis. weaponized kindness."
+        },
+        {
+          "role": "assistant",
+          "content": "gross and effective."
+        },
+        {
+          "role": "user",
+          "content": "both."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2028-01-14T18:00:00Z",
+      "speaker_id": "finance_s6_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "closed the week updating kitchen table notes nobody will read."
+        },
+        {
+          "role": "assistant",
+          "content": "iconic."
+        },
+        {
+          "role": "user",
+          "content": "quietly iconic."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2028-01-15T09:00:00Z",
+      "speaker_id": "finance_s6_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "under what conditions would that ask actually fit how I run money — when would putting money in the school spirit pot actually fit how I run match + buffer?"
+        }
+      ]
+    }
+  ],
+  "query": "under what conditions would that ask actually fit how I run money — when would putting money in the school spirit pot actually fit how I run match + buffer?",
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "finance_s6_u04",
+      "fact": "my match is still unused — and with how thin the household buffer is, the only way I catch match is if weekend freelance money hits payroll deferral before I do anything fun with it."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "finance_s6_u04",
+      "fact": "I once dumped a weekend payment into the spirit pot before match... we caught the match late and the buffer stayed sad for weeks."
+    }
+  },
+  "supporting_constraints": {
+    "E1": {
+      "session_id": 9,
+      "fact": "school spirit pot wants money by thursday; match week ends friday."
+    },
+    "E2": {
+      "session_id": 17,
+      "fact": "next freelance weekend clears saturday — after friday's match end."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "finance_s6_u04",
+        "context": "match-first freelance weeks",
+        "goal_or_prediction": "catch match without starving buffer",
+        "action": "parked weekend pay into deferral first",
+        "outcome_or_affect": "match posted; buffer steadier"
+      }
+    },
+    "7": {
+      "role": "nearby_counterexample"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "supporting_constraint",
+      "fact_id": "E1"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "finance_s6_u04",
+        "context": "spirit pot before match",
+        "goal_or_prediction": "not be the mean parent",
+        "action": "dumped weekend pay into the pot early",
+        "outcome_or_affect": "late match; buffer stayed thin"
+      }
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "supporting_constraint",
+      "fact_id": "E2"
+    },
+    "18": {
+      "role": "distractor",
+      "distractor_id": "dist_1",
+      "why_distractor": "Heart-emoji guilt is not a household cash plan."
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "Catching match requires parking freelance money into deferral first, and a prior spirit-pot diversion delayed match and left the buffer thin.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": [
+      "E1",
+      "E2"
+    ]
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "my match is still unused — and with how thin the household buffer is, the only way I catch match is if weekend freelance money hits payroll deferral before I do anything fun with it"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "I once dumped a weekend payment into the spirit pot before match"
+    }
+  ],
+  "retrieval_cue": {
+    "cue_type": "preference_generalization",
+    "why_it_naturally_retrieves_R": "A realistic personal-finance ask forces a personalized call without naming either episode or the link between them."
+  },
+  "relation_specificity": {
+    "nearby_relation": "Lesson payments and sealed birthday envelopes are fine.",
+    "why_it_does_not_license_C": "Neither licenses a guilt-pot that lands inside match week."
+  },
+  "coactivation_bridge": "A and B form the only intervention pair. Catching match requires parking freelance money into deferral first, and a prior spirit-pot diversion delayed match and left the buffer thin. E1 and E2 are logistical calibration only and do not open a second route to C.",
+  "latent_C": {
+    "inference": "This user can consider the ask only after the hard cash timing in E1/E2 no longer collides; otherwise only after match week and buffer refill.",
+    "calibrated_language": "only if timing clears first; otherwise only after match week and buffer refill"
+  },
+  "answer_contract": {
+    "target_proposition": "This user can consider the ask only after the hard cash timing in E1/E2 no longer collides; otherwise only after match week and buffer refill.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "mq_user15",
+    "external_folder_tag": "user15",
+    "external_source": "memoryquest",
+    "status": "review_candidate_only",
+    "tone": "natural_chat_v1",
+    "anonymization": "External MemoryQuest persona material was used only during authoring; no corpus, legal name, country, or demographic metadata is in visible dialogue."
+  },
+  "arm_gold": {
+    "distractor": {
+      "expected_mode": "infer_C",
+      "binary_decision": true
+    }
+  },
+  "distractor_note": {
+    "replaced_session_id": 18,
+    "why_distractor": "Heart-emoji guilt is not a household cash plan."
+  }
+}
