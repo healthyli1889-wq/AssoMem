@@ -1,0 +1,638 @@
+{
+  "schema_version": "work-vnext-2.0",
+  "candidate_id": "AMB_WV_S17_U01_associative",
+  "pair_id": "AMB_WV_S17_U01",
+  "data_arm": "associative",
+  "domain": "work",
+  "user_id": "work_s17_u01",
+  "sub_scenario": {
+    "family": "negotiating scope commitments when project evidence is incomplete",
+    "role": "grant portfolio coordinator",
+    "one_line": "grant portfolio coordinator: limit the commitment to evidence gathering"
+  },
+  "query_type": "predicted_reaction",
+  "polarity": "reject",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2028-03-08T11:00:00Z",
+      "speaker_id": "work_s17_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I spent the first hour tidying the award register and closing stale entries."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything still open?"
+        },
+        {
+          "role": "user",
+          "content": "Two items, both with owners."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2028-03-09T14:00:00Z",
+      "speaker_id": "work_s17_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The partner brief review wrapped early today."
+        },
+        {
+          "role": "assistant",
+          "content": "Any surprises in it?"
+        },
+        {
+          "role": "user",
+          "content": "None worth recording."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2028-03-10T16:00:00Z",
+      "speaker_id": "work_s17_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I can outline a small discovery task for a familiar partner in one afternoon."
+        },
+        {
+          "role": "assistant",
+          "content": "Does an open-ended assignment always concern you?"
+        },
+        {
+          "role": "user",
+          "content": "No, not when the deliverable and evidence base are already clear."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2028-03-11T18:00:00Z",
+      "speaker_id": "work_s17_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Someone new shadowed me in the funding desk this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Did that slow you down?"
+        },
+        {
+          "role": "user",
+          "content": "A little, but the questions were good ones."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2028-03-12T09:00:00Z",
+      "speaker_id": "work_s17_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I batched my replies about the proposal windows into one message before lunch."
+        },
+        {
+          "role": "assistant",
+          "content": "Cleaner than drip-feeding answers."
+        },
+        {
+          "role": "user",
+          "content": "Much cleaner."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2028-03-13T11:00:00Z",
+      "speaker_id": "work_s17_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The coastal learning proposal has only an initial concept sheet and no confirmed participant counts or delivery sites."
+        },
+        {
+          "role": "assistant",
+          "content": "What can you responsibly promise from that material?"
+        },
+        {
+          "role": "user",
+          "content": "I can promise a short evidence-gathering phase, not the full regional rollout."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2028-03-14T14:00:00Z",
+      "speaker_id": "work_s17_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Last quarter I prepared a renewal summary after the usage figures had been reconciled."
+        },
+        {
+          "role": "assistant",
+          "content": "Was that a difficult commitment to make?"
+        },
+        {
+          "role": "user",
+          "content": "No, the completed figures showed exactly what the partner had used."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2028-03-15T16:00:00Z",
+      "speaker_id": "work_s17_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I archived last cycle's notes on the partner brief and set up the new folder."
+        },
+        {
+          "role": "assistant",
+          "content": "A fresh start?"
+        },
+        {
+          "role": "user",
+          "content": "As fresh as these things get."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2028-03-16T18:00:00Z",
+      "speaker_id": "work_s17_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The funding round closes in six weeks, and the desk can reserve a modest planning allocation now."
+        },
+        {
+          "role": "assistant",
+          "content": "Does that fund implementation as well?"
+        },
+        {
+          "role": "user",
+          "content": "No, it covers interviews and a costed plan only."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2028-03-17T09:00:00Z",
+      "speaker_id": "work_s17_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A vendor call about the award register ran long but ended well."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth the time?"
+        },
+        {
+          "role": "user",
+          "content": "This one, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2028-03-18T11:00:00Z",
+      "speaker_id": "work_s17_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I walked through the funding desk checklist with the new starter."
+        },
+        {
+          "role": "assistant",
+          "content": "How did they do?"
+        },
+        {
+          "role": "user",
+          "content": "Careful and quick, a good sign."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2028-03-19T14:00:00Z",
+      "speaker_id": "work_s17_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Quiet afternoon; I cleared the backlog around the proposal windows."
+        },
+        {
+          "role": "assistant",
+          "content": "A rare day."
+        },
+        {
+          "role": "user",
+          "content": "I did not waste it."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2028-03-20T16:00:00Z",
+      "speaker_id": "work_s17_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I flagged a small inconsistency in the partner brief records and fixed it at the source."
+        },
+        {
+          "role": "assistant",
+          "content": "Root cause or symptom?"
+        },
+        {
+          "role": "user",
+          "content": "Root cause, for once."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2028-03-21T18:00:00Z",
+      "speaker_id": "work_s17_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "At yesterday's partner call, the regional office agreed to supply attendance records and nominate local contacts by next Friday."
+        },
+        {
+          "role": "assistant",
+          "content": "Why does that matter?"
+        },
+        {
+          "role": "user",
+          "content": "Those are the missing inputs needed to turn the concept into a scoped plan."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2028-03-22T09:00:00Z",
+      "speaker_id": "work_s17_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I sketched next week's plan for the proposal windows before leaving."
+        },
+        {
+          "role": "assistant",
+          "content": "Ahead of schedule?"
+        },
+        {
+          "role": "user",
+          "content": "Ahead enough to sleep well."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2028-03-23T11:00:00Z",
+      "speaker_id": "work_s17_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Lunch walk, then a clean pass through the award register updates."
+        },
+        {
+          "role": "assistant",
+          "content": "Does the walk help?"
+        },
+        {
+          "role": "user",
+          "content": "It resets the afternoon."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2028-03-24T14:00:00Z",
+      "speaker_id": "work_s17_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The finance team requires a written ceiling before any award can move beyond planning."
+        },
+        {
+          "role": "assistant",
+          "content": "Has a ceiling been approved?"
+        },
+        {
+          "role": "user",
+          "content": "Not yet; that decision waits for the costed plan."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2028-03-25T16:00:00Z",
+      "speaker_id": "work_s17_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I compared two options for the partner brief tooling and noted a mild preference."
+        },
+        {
+          "role": "assistant",
+          "content": "Decision made?"
+        },
+        {
+          "role": "user",
+          "content": "Deferred until the trial ends."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2028-03-26T18:00:00Z",
+      "speaker_id": "work_s17_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I closed the week by updating the funding desk handover notes."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual to hand over?"
+        },
+        {
+          "role": "user",
+          "content": "Blessedly little."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2028-03-27T09:00:00Z",
+      "speaker_id": "work_s17_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Should I commit our office to delivering the full coastal learning rollout?"
+        }
+      ]
+    }
+  ],
+  "query": "Should I commit our office to delivering the full coastal learning rollout?",
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "work_s17_u01",
+      "fact": "The coastal learning proposal has only an initial concept sheet and no confirmed participant counts or delivery sites."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "work_s17_u01",
+      "fact": "At yesterday's partner call, the regional office agreed to supply attendance records and nominate local contacts by next Friday."
+    }
+  },
+  "supporting_constraints": {
+    "E1": {
+      "session_id": 9,
+      "fact": "The funding round closes in six weeks, and the desk can reserve a modest planning allocation now."
+    },
+    "E2": {
+      "session_id": 17,
+      "fact": "The finance team requires a written ceiling before any award can move beyond planning."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "work_s17_u01",
+        "context": "incomplete proposal",
+        "goal_or_prediction": "define the coastal learning work",
+        "action": "has no counts or sites",
+        "outcome_or_affect": "supports only initial discovery"
+      }
+    },
+    "7": {
+      "role": "nearby_counterexample"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "supporting_constraint",
+      "fact_id": "E1"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "work_s17_u01",
+        "context": "partner records commitment",
+        "goal_or_prediction": "supply planning evidence",
+        "action": "promised records and contacts by next Friday",
+        "outcome_or_affect": "enables a bounded plan"
+      }
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "supporting_constraint",
+      "fact_id": "E2"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "The incomplete concept sheet becomes actionable only if the partner's dated records-and-contacts commitment supports a bounded planning phase; it does not justify a delivery promise.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": [
+      "E1",
+      "E2"
+    ]
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "The coastal learning proposal has only an initial concept sheet and no confirmed participant counts or delivery sites"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "At yesterday's partner call, the regional office agreed to supply attendance records and nominate local contacts by next Friday"
+    }
+  ],
+  "retrieval_cue": {
+    "cue_type": "predicted_reaction",
+    "why_it_naturally_retrieves_R": "A realistic work request forces a personalized decision without naming either episode or the relation between them."
+  },
+  "relation_specificity": {
+    "nearby_relation": "The user has successfully scoped familiar work and renewed a programme after its figures were complete.",
+    "why_it_does_not_license_C": "Neither example begins without participant counts, sites, or a delivery ceiling."
+  },
+  "coactivation_bridge": "A shows the operating condition; B shows the demand or failure that makes it decisive. The incomplete concept sheet becomes actionable only if the partner's dated records-and-contacts commitment supports a bounded planning phase; it does not justify a delivery promise. E1 and E2 calibrate the practical recommendation without opening a second route to the conclusion.",
+  "latent_C": {
+    "inference": "Decline the full rollout commitment and offer the funded discovery phase.",
+    "calibrated_language": "limit the commitment to evidence gathering"
+  },
+  "answer_contract": {
+    "target_proposition": "Decline the full rollout commitment and offer the funded discovery phase.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "decision",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "work_u01",
+    "status": "review_candidate_only",
+    "anonymization": "External persona material was used only during authoring; no corpus, name, country, or demographic metadata is included."
+  },
+  "arm_gold": {
+    "full": {
+      "expected_mode": "infer_C",
+      "binary_decision": true
+    },
+    "a_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    },
+    "b_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    },
+    "link_broken": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    }
+  },
+  "single_evidence_replacements": {
+    "a_only": {
+      "replaced_session_id": 14,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "I filed the routine proposal windows paperwork and confirmed the owner list."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual in it?"
+        },
+        {
+          "role": "user",
+          "content": "A routine cycle, happily."
+        }
+      ]
+    },
+    "b_only": {
+      "replaced_session_id": 6,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "I did a standard pass over the partner brief records this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Any exceptions?"
+        },
+        {
+          "role": "user",
+          "content": "None worth a note."
+        }
+      ]
+    }
+  },
+  "link_broken": {
+    "replaced_session_id": 14,
+    "replacement_dialogue": [
+      {
+        "role": "user",
+        "content": "At yesterday's partner call, the regional office said it hoped to share records soon but did not commit to a date or local contacts."
+      },
+      {
+        "role": "assistant",
+        "content": "Would that support the same promise?"
+      },
+      {
+        "role": "user",
+        "content": "No, hope alone leaves the planning inputs uncertain."
+      }
+    ]
+  }
+}

@@ -1,0 +1,579 @@
+{
+  "schema_version": "work-vnext-2.0",
+  "candidate_id": "AMB_WV_S04_U02_distractor",
+  "pair_id": "AMB_WV_S04_U02",
+  "data_arm": "distractor",
+  "domain": "work",
+  "user_id": "work_s04_u02",
+  "sub_scenario": {
+    "family": "asynchronous versus live collaboration",
+    "role": "policy analyst",
+    "one_line": "policy analyst: join only with a verification hour first"
+  },
+  "query_type": "conditional_recommendation",
+  "polarity": "conditional",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2026-07-17T11:00:00Z",
+      "speaker_id": "work_s04_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I spent the first hour tidying the verification notes and closing stale entries."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything still open?"
+        },
+        {
+          "role": "user",
+          "content": "Two items, both with owners."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2026-07-18T14:00:00Z",
+      "speaker_id": "work_s04_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The briefing pack review wrapped early today."
+        },
+        {
+          "role": "assistant",
+          "content": "Any surprises in it?"
+        },
+        {
+          "role": "user",
+          "content": "None worth recording."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2026-07-19T16:00:00Z",
+      "speaker_id": "work_s04_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Testifying live after preparing written testimony goes well for me."
+        },
+        {
+          "role": "assistant",
+          "content": "Prepared live is your mode."
+        },
+        {
+          "role": "user",
+          "content": "Prepared anything is."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2026-07-20T18:00:00Z",
+      "speaker_id": "work_s04_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Someone new shadowed me in the policy desk this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Did that slow you down?"
+        },
+        {
+          "role": "user",
+          "content": "A little, but the questions were good ones."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2026-07-21T09:00:00Z",
+      "speaker_id": "work_s04_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I batched my replies about the statistics checks into one message before lunch."
+        },
+        {
+          "role": "assistant",
+          "content": "Cleaner than drip-feeding answers."
+        },
+        {
+          "role": "user",
+          "content": "Much cleaner."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2026-07-22T11:00:00Z",
+      "speaker_id": "work_s04_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "For the transit white paper I compared three funding models in writing over a week, and the recommendation held through committee unchanged."
+        },
+        {
+          "role": "assistant",
+          "content": "Written comparison, durable outcome."
+        },
+        {
+          "role": "user",
+          "content": "The only kind that survives committee."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2026-07-23T14:00:00Z",
+      "speaker_id": "work_s04_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Casual live brainstorming with the team is pleasant and harmless."
+        },
+        {
+          "role": "assistant",
+          "content": "Stakes gate the format."
+        },
+        {
+          "role": "user",
+          "content": "Stakes always gate it."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2026-07-24T16:00:00Z",
+      "speaker_id": "work_s04_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I archived last cycle's notes on the briefing pack and set up the new folder."
+        },
+        {
+          "role": "assistant",
+          "content": "A fresh start?"
+        },
+        {
+          "role": "user",
+          "content": "As fresh as these things get."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2026-07-25T18:00:00Z",
+      "speaker_id": "work_s04_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I can verify most statistics in under an hour with database access."
+        },
+        {
+          "role": "assistant",
+          "content": "A short written buffer suffices."
+        },
+        {
+          "role": "user",
+          "content": "One hour buys correctness."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2026-07-26T09:00:00Z",
+      "speaker_id": "work_s04_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A vendor call about the verification notes ran long but ended well."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth the time?"
+        },
+        {
+          "role": "user",
+          "content": "This one, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2026-07-27T11:00:00Z",
+      "speaker_id": "work_s04_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I walked through the policy desk checklist with the new starter."
+        },
+        {
+          "role": "assistant",
+          "content": "How did they do?"
+        },
+        {
+          "role": "user",
+          "content": "Careful and quick, a good sign."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2026-07-28T14:00:00Z",
+      "speaker_id": "work_s04_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Quiet afternoon; I cleared the backlog around the statistics checks."
+        },
+        {
+          "role": "assistant",
+          "content": "A rare day."
+        },
+        {
+          "role": "user",
+          "content": "I did not waste it."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2026-07-29T16:00:00Z",
+      "speaker_id": "work_s04_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I flagged a small inconsistency in the briefing pack records and fixed it at the source."
+        },
+        {
+          "role": "assistant",
+          "content": "Root cause or symptom?"
+        },
+        {
+          "role": "user",
+          "content": "Root cause, for once."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2026-07-30T18:00:00Z",
+      "speaker_id": "work_s04_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "On the rapid-response call in March I endorsed a statistic live that I had not verified; it was outdated, and the correction memo circulated wider than my original point."
+        },
+        {
+          "role": "assistant",
+          "content": "Live endorsement, lasting cost."
+        },
+        {
+          "role": "user",
+          "content": "Corrections always travel further."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2026-07-31T09:00:00Z",
+      "speaker_id": "work_s04_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I sketched next week's plan for the statistics checks before leaving."
+        },
+        {
+          "role": "assistant",
+          "content": "Ahead of schedule?"
+        },
+        {
+          "role": "user",
+          "content": "Ahead enough to sleep well."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2026-08-01T11:00:00Z",
+      "speaker_id": "work_s04_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Lunch walk, then a clean pass through the verification notes updates."
+        },
+        {
+          "role": "assistant",
+          "content": "Does the walk help?"
+        },
+        {
+          "role": "user",
+          "content": "It resets the afternoon."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2026-08-02T14:00:00Z",
+      "speaker_id": "work_s04_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Rapid-response briefings are moving to twice daily during the legislative session."
+        },
+        {
+          "role": "assistant",
+          "content": "Frequency doubles exposure."
+        },
+        {
+          "role": "user",
+          "content": "Exactly when scrutiny peaks."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2026-08-03T16:00:00Z",
+      "speaker_id": "work_s04_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The comms director says analysts who sound decisive on the call get quoted in the press roundup."
+        },
+        {
+          "role": "assistant",
+          "content": "Quotability as incentive."
+        },
+        {
+          "role": "user",
+          "content": "A powerful one here."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2026-08-04T18:00:00Z",
+      "speaker_id": "work_s04_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I closed the week by updating the policy desk handover notes."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual to hand over?"
+        },
+        {
+          "role": "user",
+          "content": "Blessedly little."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2026-08-05T09:00:00Z",
+      "speaker_id": "work_s04_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "They are staffing the rapid-response briefing team for the session. What should I require before joining?"
+        }
+      ]
+    }
+  ],
+  "query": "They are staffing the rapid-response briefing team for the session. What should I require before joining?",
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "work_s04_u02",
+      "fact": "For the transit white paper I compared three funding models in writing over a week, and the recommendation held through committee unchanged."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "work_s04_u02",
+      "fact": "On the rapid-response call in March I endorsed a statistic live that I had not verified; it was outdated, and the correction memo circulated wider than my original point."
+    }
+  },
+  "supporting_constraints": {
+    "E1": {
+      "session_id": 9,
+      "fact": "I can verify most statistics in under an hour with database access."
+    },
+    "E2": {
+      "session_id": 17,
+      "fact": "Rapid-response briefings are moving to twice daily during the legislative session."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "work_s04_u02",
+        "context": "transit white paper",
+        "goal_or_prediction": "recommend a funding model",
+        "action": "compared three models in writing over a week",
+        "outcome_or_affect": "held through committee unchanged"
+      }
+    },
+    "7": {
+      "role": "nearby_counterexample"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "supporting_constraint",
+      "fact_id": "E1"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "work_s04_u02",
+        "context": "March rapid-response call",
+        "goal_or_prediction": "endorse a statistic live",
+        "action": "cited an unverified number",
+        "outcome_or_affect": "correction memo outran the point"
+      }
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "supporting_constraint",
+      "fact_id": "E2"
+    },
+    "18": {
+      "role": "distractor",
+      "distractor_id": "dist_1",
+      "why_distractor": "Press-roundup quotability rewards sounding decisive, not being right."
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "This user's positions hold when written verification precedes speech, and the March call showed what one unverified live endorsement costs.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": [
+      "E1",
+      "E2"
+    ]
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "For the transit white paper I compared three funding models in writing over a week, and the recommendation held through committee unchanged"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "On the rapid-response call in March I endorsed a statistic live that I had not verified; it was outdated, and the correction memo circulated wider than my original point"
+    }
+  ],
+  "retrieval_cue": {
+    "cue_type": "conditional_recommendation",
+    "why_it_naturally_retrieves_R": "A realistic work request forces a personalized decision without naming either episode or the relation between them."
+  },
+  "relation_specificity": {
+    "nearby_relation": "The user testifies well when prepared and brainstorms casually without risk.",
+    "why_it_does_not_license_C": "Neither involves endorsing unverified statistics live under session scrutiny."
+  },
+  "coactivation_bridge": "A shows the operating condition; B shows the demand or failure that makes it decisive. This user's positions hold when written verification precedes speech, and the March call showed what one unverified live endorsement costs. E1 and E2 calibrate the practical recommendation without opening a second route to the conclusion.",
+  "latent_C": {
+    "inference": "This user should join the briefing team only if a written verification hour precedes each live call.",
+    "calibrated_language": "join only with a verification hour first"
+  },
+  "answer_contract": {
+    "target_proposition": "This user should join the briefing team only if a written verification hour precedes each live call.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "decision",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "work_u02",
+    "status": "review_candidate_only",
+    "anonymization": "External persona material was used only during authoring; no corpus, name, country, or demographic metadata is included."
+  },
+  "arm_gold": {
+    "distractor": {
+      "expected_mode": "infer_C",
+      "binary_decision": true
+    }
+  },
+  "distractor_note": {
+    "replaced_session_id": 18,
+    "why_distractor": "Press-roundup quotability rewards sounding decisive, not being right."
+  }
+}

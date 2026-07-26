@@ -1,0 +1,638 @@
+{
+  "schema_version": "work-vnext-2.0",
+  "candidate_id": "AMB_WV_S01_U04_associative",
+  "pair_id": "AMB_WV_S01_U04",
+  "data_arm": "associative",
+  "domain": "work",
+  "user_id": "work_s01_u04",
+  "sub_scenario": {
+    "family": "fixed early live dependency prioritization",
+    "role": "data pipeline engineer",
+    "one_line": "data pipeline engineer: reliable only with a written graph"
+  },
+  "query_type": "preference_generalization",
+  "polarity": "conditional",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2026-03-08T11:00:00Z",
+      "speaker_id": "work_s01_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I spent the first hour tidying the DAG sketchbook and closing stale entries."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything still open?"
+        },
+        {
+          "role": "user",
+          "content": "Two items, both with owners."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2026-03-09T14:00:00Z",
+      "speaker_id": "work_s01_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The backfill ledger review wrapped early today."
+        },
+        {
+          "role": "assistant",
+          "content": "Any surprises in it?"
+        },
+        {
+          "role": "user",
+          "content": "None worth recording."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2026-03-10T16:00:00Z",
+      "speaker_id": "work_s01_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I do fine on 06:15 pages that are single-job restarts."
+        },
+        {
+          "role": "assistant",
+          "content": "Simple early pages are okay?"
+        },
+        {
+          "role": "user",
+          "content": "No thinking required, so yes."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2026-03-11T18:00:00Z",
+      "speaker_id": "work_s01_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Someone new shadowed me in the data platform channel this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Did that slow you down?"
+        },
+        {
+          "role": "user",
+          "content": "A little, but the questions were good ones."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2026-03-12T09:00:00Z",
+      "speaker_id": "work_s01_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I batched my replies about the job dependencies into one message before lunch."
+        },
+        {
+          "role": "assistant",
+          "content": "Cleaner than drip-feeding answers."
+        },
+        {
+          "role": "user",
+          "content": "Much cleaner."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2026-03-13T11:00:00Z",
+      "speaker_id": "work_s01_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "During the warehouse incident I redrew the job graph on the whiteboard before touching anything, and the reruns landed in one pass."
+        },
+        {
+          "role": "assistant",
+          "content": "Drawing before doing."
+        },
+        {
+          "role": "user",
+          "content": "It is the only way I trust my ordering."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2026-03-14T14:00:00Z",
+      "speaker_id": "work_s01_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Give me a gnarly dependency puzzle at 10:00 with a whiteboard and I am happy."
+        },
+        {
+          "role": "assistant",
+          "content": "So complexity itself is not the enemy."
+        },
+        {
+          "role": "user",
+          "content": "Not even slightly."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2026-03-15T16:00:00Z",
+      "speaker_id": "work_s01_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I archived last cycle's notes on the backfill ledger and set up the new folder."
+        },
+        {
+          "role": "assistant",
+          "content": "A fresh start?"
+        },
+        {
+          "role": "user",
+          "content": "As fresh as these things get."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2026-03-16T18:00:00Z",
+      "speaker_id": "work_s01_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "My most reliable thinking hours are 09:00 to 12:00; my commit history says so and my sleep tracker agrees."
+        },
+        {
+          "role": "assistant",
+          "content": "You actually checked?"
+        },
+        {
+          "role": "user",
+          "content": "I graphed it last year."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2026-03-17T09:00:00Z",
+      "speaker_id": "work_s01_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A vendor call about the DAG sketchbook ran long but ended well."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth the time?"
+        },
+        {
+          "role": "user",
+          "content": "This one, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2026-03-18T11:00:00Z",
+      "speaker_id": "work_s01_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I walked through the data platform channel checklist with the new starter."
+        },
+        {
+          "role": "assistant",
+          "content": "How did they do?"
+        },
+        {
+          "role": "user",
+          "content": "Careful and quick, a good sign."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2026-03-19T14:00:00Z",
+      "speaker_id": "work_s01_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Quiet afternoon; I cleared the backlog around the job dependencies."
+        },
+        {
+          "role": "assistant",
+          "content": "A rare day."
+        },
+        {
+          "role": "user",
+          "content": "I did not waste it."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2026-03-20T16:00:00Z",
+      "speaker_id": "work_s01_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I flagged a small inconsistency in the backfill ledger records and fixed it at the source."
+        },
+        {
+          "role": "assistant",
+          "content": "Root cause or symptom?"
+        },
+        {
+          "role": "user",
+          "content": "Root cause, for once."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2026-03-21T18:00:00Z",
+      "speaker_id": "work_s01_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The 06:15 page in March wanted an immediate rerun order; I picked the downstream aggregate first from memory, and the backfill doubled."
+        },
+        {
+          "role": "assistant",
+          "content": "Would you have caught it on paper?"
+        },
+        {
+          "role": "user",
+          "content": "In ten seconds. In my ear at dawn, I did not."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2026-03-22T09:00:00Z",
+      "speaker_id": "work_s01_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I sketched next week's plan for the job dependencies before leaving."
+        },
+        {
+          "role": "assistant",
+          "content": "Ahead of schedule?"
+        },
+        {
+          "role": "user",
+          "content": "Ahead enough to sleep well."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2026-03-23T11:00:00Z",
+      "speaker_id": "work_s01_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Lunch walk, then a clean pass through the DAG sketchbook updates."
+        },
+        {
+          "role": "assistant",
+          "content": "Does the walk help?"
+        },
+        {
+          "role": "user",
+          "content": "It resets the afternoon."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2026-03-24T14:00:00Z",
+      "speaker_id": "work_s01_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The paging policy sends dependency incidents to whoever is on rota regardless of hour; there is no written-first option right now."
+        },
+        {
+          "role": "assistant",
+          "content": "So the format is fixed at the moment."
+        },
+        {
+          "role": "user",
+          "content": "Unless the policy changes, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2026-03-25T16:00:00Z",
+      "speaker_id": "work_s01_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I compared two options for the backfill ledger tooling and noted a mild preference."
+        },
+        {
+          "role": "assistant",
+          "content": "Decision made?"
+        },
+        {
+          "role": "user",
+          "content": "Deferred until the trial ends."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2026-03-26T18:00:00Z",
+      "speaker_id": "work_s01_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I closed the week by updating the data platform channel handover notes."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual to hand over?"
+        },
+        {
+          "role": "user",
+          "content": "Blessedly little."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2026-03-27T09:00:00Z",
+      "speaker_id": "work_s01_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A new hire asked me to describe the conditions under which I make my best calls on pipeline incidents. What should I tell them about myself?"
+        }
+      ]
+    }
+  ],
+  "query": "A new hire asked me to describe the conditions under which I make my best calls on pipeline incidents. What should I tell them about myself?",
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "work_s01_u04",
+      "fact": "During the warehouse incident I redrew the job graph on the whiteboard before touching anything, and the reruns landed in one pass."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "work_s01_u04",
+      "fact": "The 06:15 page in March wanted an immediate rerun order; I picked the downstream aggregate first from memory, and the backfill doubled."
+    }
+  },
+  "supporting_constraints": {
+    "E1": {
+      "session_id": 9,
+      "fact": "My most reliable thinking hours are 09:00 to 12:00; my commit history says so and my sleep tracker agrees."
+    },
+    "E2": {
+      "session_id": 17,
+      "fact": "The paging policy sends dependency incidents to whoever is on rota regardless of hour; there is no written-first option right now."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "work_s01_u04",
+        "context": "warehouse incident",
+        "goal_or_prediction": "land the reruns in one pass",
+        "action": "redrew the job graph before acting",
+        "outcome_or_affect": "clean single-pass backfill"
+      }
+    },
+    "7": {
+      "role": "nearby_counterexample"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "supporting_constraint",
+      "fact_id": "E1"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "work_s01_u04",
+        "context": "06:15 dependency page",
+        "goal_or_prediction": "order reruns immediately",
+        "action": "picked a downstream job from memory",
+        "outcome_or_affect": "backfill doubled"
+      }
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "supporting_constraint",
+      "fact_id": "E2"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "This user's rerun ordering succeeds after drawing the job graph and fails when immediate dawn ordering precedes any drawing.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": [
+      "E1",
+      "E2"
+    ]
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "During the warehouse incident I redrew the job graph on the whiteboard before touching anything, and the reruns landed in one pass"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "The 06:15 page in March wanted an immediate rerun order; I picked the downstream aggregate first from memory, and the backfill doubled"
+    }
+  ],
+  "retrieval_cue": {
+    "cue_type": "preference_generalization",
+    "why_it_naturally_retrieves_R": "A realistic work request forces a personalized decision without naming either episode or the relation between them."
+  },
+  "relation_specificity": {
+    "nearby_relation": "The user handles simple early restarts and complex mid-morning puzzles well.",
+    "why_it_does_not_license_C": "Neither shows immediate multi-job ordering without a drawn graph."
+  },
+  "coactivation_bridge": "A shows the operating condition; B shows the demand or failure that makes it decisive. This user's rerun ordering succeeds after drawing the job graph and fails when immediate dawn ordering precedes any drawing. E1 and E2 calibrate the practical recommendation without opening a second route to the conclusion.",
+  "latent_C": {
+    "inference": "This user makes reliable dependency calls only when a written job graph is in front of them.",
+    "calibrated_language": "reliable only with a written graph"
+  },
+  "answer_contract": {
+    "target_proposition": "This user makes reliable dependency calls only when a written job graph is in front of them.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "decision",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "work_u04",
+    "status": "review_candidate_only",
+    "anonymization": "External persona material was used only during authoring; no corpus, name, country, or demographic metadata is included."
+  },
+  "arm_gold": {
+    "full": {
+      "expected_mode": "infer_C",
+      "binary_decision": true
+    },
+    "a_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    },
+    "b_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    },
+    "link_broken": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    }
+  },
+  "single_evidence_replacements": {
+    "a_only": {
+      "replaced_session_id": 14,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "I filed the routine job dependencies paperwork and confirmed the owner list."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual in it?"
+        },
+        {
+          "role": "user",
+          "content": "A routine cycle, happily."
+        }
+      ]
+    },
+    "b_only": {
+      "replaced_session_id": 6,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "I did a standard pass over the backfill ledger records this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Any exceptions?"
+        },
+        {
+          "role": "user",
+          "content": "None worth a note."
+        }
+      ]
+    }
+  },
+  "link_broken": {
+    "replaced_session_id": 14,
+    "replacement_dialogue": [
+      {
+        "role": "user",
+        "content": "The new paging flow now posts an auto-generated dependency graph with every dawn page, straight to the same screen."
+      },
+      {
+        "role": "assistant",
+        "content": "So the picture arrives with the page."
+      },
+      {
+        "role": "user",
+        "content": "Right, the drawing is done for me before I answer."
+      }
+    ]
+  }
+}

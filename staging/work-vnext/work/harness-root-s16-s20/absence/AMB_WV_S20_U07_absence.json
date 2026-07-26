@@ -1,0 +1,572 @@
+{
+  "schema_version": "work-vnext-2.0",
+  "candidate_id": "AMB_WV_S20_U07_absence",
+  "pair_id": "AMB_WV_S20_U07",
+  "data_arm": "absence",
+  "domain": "work",
+  "user_id": "work_s20_u07",
+  "sub_scenario": {
+    "family": "choosing synchronous versus asynchronous collaboration for complex handoffs",
+    "role": "fashion production manager",
+    "one_line": "fashion production manager: share fit-linked changes before a focused call"
+  },
+  "query_type": "conditional_recommendation",
+  "polarity": "reject",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2028-09-22T11:00:00Z",
+      "speaker_id": "work_s20_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I spent the first hour tidying the sample tracker and closing stale entries."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything still open?"
+        },
+        {
+          "role": "user",
+          "content": "Two items, both with owners."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2028-09-23T14:00:00Z",
+      "speaker_id": "work_s20_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The fit notes review wrapped early today."
+        },
+        {
+          "role": "assistant",
+          "content": "Any surprises in it?"
+        },
+        {
+          "role": "user",
+          "content": "None worth recording."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2028-09-24T16:00:00Z",
+      "speaker_id": "work_s20_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I can make a simple color approval in a quick video call."
+        },
+        {
+          "role": "assistant",
+          "content": "Is synchronous review useful sometimes?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, when the sample and specification already agree."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2028-09-25T18:00:00Z",
+      "speaker_id": "work_s20_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Someone new shadowed me in the production chat this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Did that slow you down?"
+        },
+        {
+          "role": "user",
+          "content": "A little, but the questions were good ones."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2028-09-26T09:00:00Z",
+      "speaker_id": "work_s20_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I batched my replies about the factory deadlines into one message before lunch."
+        },
+        {
+          "role": "assistant",
+          "content": "Cleaner than drip-feeding answers."
+        },
+        {
+          "role": "user",
+          "content": "Much cleaner."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2028-09-27T11:00:00Z",
+      "speaker_id": "work_s20_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I did a standard pass over the fit notes records this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Any exceptions in there?"
+        },
+        {
+          "role": "user",
+          "content": "None worth a note."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2028-09-28T14:00:00Z",
+      "speaker_id": "work_s20_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I post production updates in the chat throughout a normal day."
+        },
+        {
+          "role": "assistant",
+          "content": "Do factories respond well to written updates?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, especially when sizes and dates are listed."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2028-09-29T16:00:00Z",
+      "speaker_id": "work_s20_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I archived last cycle's notes on the fit notes and set up the new folder."
+        },
+        {
+          "role": "assistant",
+          "content": "A fresh start?"
+        },
+        {
+          "role": "user",
+          "content": "As fresh as these things get."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2028-09-30T18:00:00Z",
+      "speaker_id": "work_s20_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I confirmed next week's fit notes slots with the team."
+        },
+        {
+          "role": "assistant",
+          "content": "Any conflicts?"
+        },
+        {
+          "role": "user",
+          "content": "None that survived five minutes."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2028-10-01T09:00:00Z",
+      "speaker_id": "work_s20_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A vendor call about the sample tracker ran long but ended well."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth the time?"
+        },
+        {
+          "role": "user",
+          "content": "This one, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2028-10-02T11:00:00Z",
+      "speaker_id": "work_s20_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I walked through the production chat checklist with the new starter."
+        },
+        {
+          "role": "assistant",
+          "content": "How did they do?"
+        },
+        {
+          "role": "user",
+          "content": "Careful and quick, a good sign."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2028-10-03T14:00:00Z",
+      "speaker_id": "work_s20_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Quiet afternoon; I cleared the backlog around the factory deadlines."
+        },
+        {
+          "role": "assistant",
+          "content": "A rare day."
+        },
+        {
+          "role": "user",
+          "content": "I did not waste it."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2028-10-04T16:00:00Z",
+      "speaker_id": "work_s20_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I flagged a small inconsistency in the fit notes records and fixed it at the source."
+        },
+        {
+          "role": "assistant",
+          "content": "Root cause or symptom?"
+        },
+        {
+          "role": "user",
+          "content": "Root cause, for once."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2028-10-05T18:00:00Z",
+      "speaker_id": "work_s20_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I closed a routine factory deadlines cycle without surprises."
+        },
+        {
+          "role": "assistant",
+          "content": "Follow-up needed?"
+        },
+        {
+          "role": "user",
+          "content": "A note for the next cycle, nothing more."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2028-10-06T09:00:00Z",
+      "speaker_id": "work_s20_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I sketched next week's plan for the factory deadlines before leaving."
+        },
+        {
+          "role": "assistant",
+          "content": "Ahead of schedule?"
+        },
+        {
+          "role": "user",
+          "content": "Ahead enough to sleep well."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2028-10-07T11:00:00Z",
+      "speaker_id": "work_s20_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Lunch walk, then a clean pass through the sample tracker updates."
+        },
+        {
+          "role": "assistant",
+          "content": "Does the walk help?"
+        },
+        {
+          "role": "user",
+          "content": "It resets the afternoon."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2028-10-08T14:00:00Z",
+      "speaker_id": "work_s20_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I moved my reminders so the sample tracker review lands before the weekly sync."
+        },
+        {
+          "role": "assistant",
+          "content": "Small automation helps."
+        },
+        {
+          "role": "user",
+          "content": "It adds up over a quarter."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2028-10-09T16:00:00Z",
+      "speaker_id": "work_s20_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I compared two options for the fit notes tooling and noted a mild preference."
+        },
+        {
+          "role": "assistant",
+          "content": "Decision made?"
+        },
+        {
+          "role": "user",
+          "content": "Deferred until the trial ends."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2028-10-10T18:00:00Z",
+      "speaker_id": "work_s20_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I closed the week by updating the production chat handover notes."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual to hand over?"
+        },
+        {
+          "role": "user",
+          "content": "Blessedly little."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2028-10-11T09:00:00Z",
+      "speaker_id": "work_s20_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The factory is pressing for a video decision on the revised outerwear sample. How should I respond?"
+        }
+      ]
+    }
+  ],
+  "query": "The factory is pressing for a video decision on the revised outerwear sample. How should I respond?",
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "work_s20_u07",
+      "fact": "For the outerwear fit revision, I attached the fit notes to the sample tracker and sent the factory a size-by-size change list before confirming the next pattern."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "work_s20_u07",
+      "fact": "A previous live call agreed to shorten a sleeve from a visual impression, and the resulting sample failed when the recorded measurement arrived."
+    }
+  },
+  "supporting_constraints": {
+    "E1": {
+      "session_id": 9,
+      "fact": "The fit model's measurements arrive after the first sample review on certain weeks."
+    },
+    "E2": {
+      "session_id": 17,
+      "fact": "Once the measurements are in the tracker, I can send the change list and schedule a short call if the factory needs to compare two feasible constructions."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "background_memory"
+    },
+    "7": {
+      "role": "nearby_counterexample"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "background_memory"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "background_memory"
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "background_memory"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "The outerwear revision was dependable because every instruction linked the sample to recorded fit measurements; the earlier call made a similar-looking but unsupported visual choice.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": [
+      "E1",
+      "E2"
+    ]
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "For the outerwear fit revision, I attached the fit notes to the sample tracker and sent the factory a size-by-size change list before confirming the next pattern"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "A previous live call agreed to shorten a sleeve from a visual impression, and the resulting sample failed when the recorded measurement arrived"
+    }
+  ],
+  "retrieval_cue": {
+    "cue_type": "conditional_recommendation",
+    "why_it_naturally_retrieves_R": "A realistic work request forces a personalized decision without naming either episode or the relation between them."
+  },
+  "relation_specificity": {
+    "nearby_relation": "The user can approve aligned color samples and send routine chat updates.",
+    "why_it_does_not_license_C": "Neither activity establishes a measurement-dependent pattern revision."
+  },
+  "coactivation_bridge": "A shows the operating condition; B shows the demand or failure that makes it decisive. The outerwear revision was dependable because every instruction linked the sample to recorded fit measurements; the earlier call made a similar-looking but unsupported visual choice. E1 and E2 calibrate the practical recommendation without opening a second route to the conclusion.",
+  "latent_C": {
+    "inference": "Send the measured change list first and reserve a live call for choosing among data-supported constructions.",
+    "calibrated_language": "share fit-linked changes before a focused call"
+  },
+  "answer_contract": {
+    "target_proposition": "Send the measured change list first and reserve a live call for choosing among data-supported constructions.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "decision",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "work_u07",
+    "status": "review_candidate_only",
+    "anonymization": "External persona material was used only during authoring; no corpus, name, country, or demographic metadata is included."
+  },
+  "target_evidence_ids": [],
+  "arm_gold": {
+    "absence": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    }
+  },
+  "absence_note": {
+    "replaced_session_ids": [
+      6,
+      9,
+      14,
+      17
+    ],
+    "withheld_evidence_ids": [
+      "ev_A",
+      "ev_B",
+      "E1",
+      "E2"
+    ]
+  }
+}

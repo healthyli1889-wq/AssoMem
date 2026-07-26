@@ -1,0 +1,638 @@
+{
+  "schema_version": "work-vnext-2.0",
+  "candidate_id": "AMB_WV_S12_U02_associative",
+  "pair_id": "AMB_WV_S12_U02",
+  "data_arm": "associative",
+  "domain": "work",
+  "user_id": "work_s12_u02",
+  "sub_scenario": {
+    "family": "rehearsal load versus protected voice clarity",
+    "role": "emergency management planner",
+    "one_line": "emergency management planner: accept the single rehearsal and decline the add-on run"
+  },
+  "query_type": "situational_fit",
+  "polarity": "accept",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2027-03-08T11:00:00Z",
+      "speaker_id": "work_s12_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I spent the first hour tidying the incident map and closing stale entries."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything still open?"
+        },
+        {
+          "role": "user",
+          "content": "Two items, both with owners."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2027-03-09T14:00:00Z",
+      "speaker_id": "work_s12_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The exercise brief review wrapped early today."
+        },
+        {
+          "role": "assistant",
+          "content": "Any surprises in it?"
+        },
+        {
+          "role": "user",
+          "content": "None worth recording."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2027-03-10T16:00:00Z",
+      "speaker_id": "work_s12_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I handle a five-minute radio check at shift change."
+        },
+        {
+          "role": "assistant",
+          "content": "That is much shorter than an exercise rehearsal."
+        },
+        {
+          "role": "user",
+          "content": "And it does not require calling commands across the room."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2027-03-11T18:00:00Z",
+      "speaker_id": "work_s12_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Someone new shadowed me in the coordination room this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Did that slow you down?"
+        },
+        {
+          "role": "user",
+          "content": "A little, but the questions were good ones."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2027-03-12T09:00:00Z",
+      "speaker_id": "work_s12_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I batched my replies about the storm season into one message before lunch."
+        },
+        {
+          "role": "assistant",
+          "content": "Cleaner than drip-feeding answers."
+        },
+        {
+          "role": "user",
+          "content": "Much cleaner."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2027-03-13T11:00:00Z",
+      "speaker_id": "work_s12_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "On 18 February, I ran the flood-tabletop rehearsal after the command cards had been revised asynchronously by every agency."
+        },
+        {
+          "role": "assistant",
+          "content": "What was the result the next day?"
+        },
+        {
+          "role": "user",
+          "content": "I gave the 08:00 public-safety briefing crisply because the rehearsal had one focused pass."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2027-03-14T14:00:00Z",
+      "speaker_id": "work_s12_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I can circulate a decision tree and collect edits in writing."
+        },
+        {
+          "role": "assistant",
+          "content": "So the briefing can be prepared without extra speaking."
+        },
+        {
+          "role": "user",
+          "content": "That is how I resolve most wording disputes."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2027-03-15T16:00:00Z",
+      "speaker_id": "work_s12_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I archived last cycle's notes on the exercise brief and set up the new folder."
+        },
+        {
+          "role": "assistant",
+          "content": "A fresh start?"
+        },
+        {
+          "role": "user",
+          "content": "As fresh as these things get."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2027-03-16T18:00:00Z",
+      "speaker_id": "work_s12_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "You once facilitated a long afternoon workshop successfully."
+        },
+        {
+          "role": "assistant",
+          "content": "Yes, but it followed two quiet days and there was no dawn briefing after it."
+        },
+        {
+          "role": "user",
+          "content": "The calendar around the load was different."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2027-03-17T09:00:00Z",
+      "speaker_id": "work_s12_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A vendor call about the incident map ran long but ended well."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth the time?"
+        },
+        {
+          "role": "user",
+          "content": "This one, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2027-03-18T11:00:00Z",
+      "speaker_id": "work_s12_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I walked through the coordination room checklist with the new starter."
+        },
+        {
+          "role": "assistant",
+          "content": "How did they do?"
+        },
+        {
+          "role": "user",
+          "content": "Careful and quick, a good sign."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2027-03-19T14:00:00Z",
+      "speaker_id": "work_s12_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Quiet afternoon; I cleared the backlog around the storm season."
+        },
+        {
+          "role": "assistant",
+          "content": "A rare day."
+        },
+        {
+          "role": "user",
+          "content": "I did not waste it."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2027-03-20T16:00:00Z",
+      "speaker_id": "work_s12_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I flagged a small inconsistency in the exercise brief records and fixed it at the source."
+        },
+        {
+          "role": "assistant",
+          "content": "Root cause or symptom?"
+        },
+        {
+          "role": "user",
+          "content": "Root cause, for once."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2027-03-21T18:00:00Z",
+      "speaker_id": "work_s12_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "On 29 May, an unplanned second rehearsal stretched until 20:30 before a 07:45 wildfire briefing."
+        },
+        {
+          "role": "assistant",
+          "content": "What failed?"
+        },
+        {
+          "role": "user",
+          "content": "My voice cracked during the opening instructions and the deputy took the media questions."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2027-03-22T09:00:00Z",
+      "speaker_id": "work_s12_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I sketched next week's plan for the storm season before leaving."
+        },
+        {
+          "role": "assistant",
+          "content": "Ahead of schedule?"
+        },
+        {
+          "role": "user",
+          "content": "Ahead enough to sleep well."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2027-03-23T11:00:00Z",
+      "speaker_id": "work_s12_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Lunch walk, then a clean pass through the incident map updates."
+        },
+        {
+          "role": "assistant",
+          "content": "Does the walk help?"
+        },
+        {
+          "role": "user",
+          "content": "It resets the afternoon."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2027-03-24T14:00:00Z",
+      "speaker_id": "work_s12_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I am recovering from a respiratory infection, and my doctor asked me to avoid prolonged evening projection for another week."
+        },
+        {
+          "role": "assistant",
+          "content": "Does that rule out all preparation?"
+        },
+        {
+          "role": "user",
+          "content": "No, just the kind that delays vocal recovery."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2027-03-25T16:00:00Z",
+      "speaker_id": "work_s12_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I compared two options for the exercise brief tooling and noted a mild preference."
+        },
+        {
+          "role": "assistant",
+          "content": "Decision made?"
+        },
+        {
+          "role": "user",
+          "content": "Deferred until the trial ends."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2027-03-26T18:00:00Z",
+      "speaker_id": "work_s12_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I closed the week by updating the coordination room handover notes."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual to hand over?"
+        },
+        {
+          "role": "user",
+          "content": "Blessedly little."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2027-03-27T09:00:00Z",
+      "speaker_id": "work_s12_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Should I take the Thursday evening command rehearsal when I am scheduled to brief the wildfire coordination group Friday at 07:45?"
+        }
+      ]
+    }
+  ],
+  "query": "Should I take the Thursday evening command rehearsal when I am scheduled to brief the wildfire coordination group Friday at 07:45?",
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "work_s12_u02",
+      "fact": "On 18 February, I ran the flood-tabletop rehearsal after the command cards had been revised asynchronously by every agency."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "work_s12_u02",
+      "fact": "On 29 May, an unplanned second rehearsal stretched until 20:30 before a 07:45 wildfire briefing."
+    }
+  },
+  "supporting_constraints": {
+    "E1": {
+      "session_id": 9,
+      "fact": "You once facilitated a long afternoon workshop successfully."
+    },
+    "E2": {
+      "session_id": 17,
+      "fact": "I am recovering from a respiratory infection, and my doctor asked me to avoid prolonged evening projection for another week."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "work_s12_u02",
+        "context": "18 February flood rehearsal",
+        "goal_or_prediction": "prepare agency commands",
+        "action": "rehearsed once from revised command cards",
+        "outcome_or_affect": "gave a crisp 08:00 briefing"
+      }
+    },
+    "7": {
+      "role": "nearby_counterexample"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "supporting_constraint",
+      "fact_id": "E1"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "work_s12_u02",
+        "context": "29 May added rehearsal",
+        "goal_or_prediction": "prepare wildfire instructions",
+        "action": "spoke through a second late run",
+        "outcome_or_affect": "voice cracked at the early briefing"
+      }
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "supporting_constraint",
+      "fact_id": "E2"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "The user succeeds when written command cards concentrate rehearsal into one pass, while a late extra run before an early fixed briefing has degraded their voice.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": [
+      "E1",
+      "E2"
+    ]
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "On 18 February, I ran the flood-tabletop rehearsal after the command cards had been revised asynchronously by every agency"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "On 29 May, an unplanned second rehearsal stretched until 20:30 before a 07:45 wildfire briefing"
+    }
+  ],
+  "retrieval_cue": {
+    "cue_type": "situational_fit",
+    "why_it_naturally_retrieves_R": "A realistic work request forces a personalized decision without naming either episode or the relation between them."
+  },
+  "relation_specificity": {
+    "nearby_relation": "The user can complete radio checks and has led a long workshop under a different calendar.",
+    "why_it_does_not_license_C": "Those facts do not establish clarity after extended evening projection before an early public briefing."
+  },
+  "coactivation_bridge": "A shows the operating condition; B shows the demand or failure that makes it decisive. The user succeeds when written command cards concentrate rehearsal into one pass, while a late extra run before an early fixed briefing has degraded their voice. E1 and E2 calibrate the practical recommendation without opening a second route to the conclusion.",
+  "latent_C": {
+    "inference": "Taking one tightly timed rehearsal after written preparation is a good fit; adding a second evening run is not.",
+    "calibrated_language": "accept the single rehearsal and decline the add-on run"
+  },
+  "answer_contract": {
+    "target_proposition": "Taking one tightly timed rehearsal after written preparation is a good fit; adding a second evening run is not.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "decision",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "work_u02",
+    "status": "review_candidate_only",
+    "anonymization": "External persona material was used only during authoring; no corpus, name, country, or demographic metadata is included."
+  },
+  "arm_gold": {
+    "full": {
+      "expected_mode": "infer_C",
+      "binary_decision": true
+    },
+    "a_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    },
+    "b_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    },
+    "link_broken": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    }
+  },
+  "single_evidence_replacements": {
+    "a_only": {
+      "replaced_session_id": 14,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "I filed the routine storm season paperwork and confirmed the owner list."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual in it?"
+        },
+        {
+          "role": "user",
+          "content": "A routine cycle, happily."
+        }
+      ]
+    },
+    "b_only": {
+      "replaced_session_id": 6,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "I did a standard pass over the exercise brief records this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Any exceptions?"
+        },
+        {
+          "role": "user",
+          "content": "None worth a note."
+        }
+      ]
+    }
+  },
+  "link_broken": {
+    "replaced_session_id": 14,
+    "replacement_dialogue": [
+      {
+        "role": "user",
+        "content": "If the wildfire briefing were reassigned to Monday, what would change?"
+      },
+      {
+        "role": "assistant",
+        "content": "The immediate recovery constraint would be gone."
+      },
+      {
+        "role": "user",
+        "content": "Then I could weigh the extended rehearsal differently."
+      }
+    ]
+  }
+}

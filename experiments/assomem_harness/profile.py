@@ -12,6 +12,7 @@ from typing import Any
 class DatasetProfile:
     profile_id: str
     schema_version: int
+    data_format: str
     arms: tuple[str, ...]
     domain_prefixes: dict[str, str]
     filename_template: str
@@ -46,6 +47,7 @@ def load_profile(path: Path) -> DatasetProfile:
     return DatasetProfile(
         profile_id=raw["profile_id"],
         schema_version=int(raw["schema_version"]),
+        data_format=str(raw.get("data_format", "assomem-v1")),
         arms=tuple(raw["arms"]),
         domain_prefixes=dict(raw["domain_prefixes"]),
         filename_template=raw["filename_template"],

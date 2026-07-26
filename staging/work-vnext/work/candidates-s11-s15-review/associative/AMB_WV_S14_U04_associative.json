@@ -1,0 +1,638 @@
+{
+  "schema_version": "work-vnext-2.0",
+  "candidate_id": "AMB_WV_S14_U04_associative",
+  "pair_id": "AMB_WV_S14_U04",
+  "data_arm": "associative",
+  "domain": "work",
+  "user_id": "work_s14_u04",
+  "sub_scenario": {
+    "family": "hot-desking versus quiet compliance drafting",
+    "role": "academic registrar",
+    "one_line": "academic registrar: protect a booked quiet room or remote writing block"
+  },
+  "query_type": "behavior_explanation",
+  "polarity": "reject",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2035-05-08T11:00:00Z",
+      "speaker_id": "work_s14_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I spent the first hour tidying the academic registrar and closing stale entries."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything still open?"
+        },
+        {
+          "role": "user",
+          "content": "Two items, both with owners."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2035-05-09T14:00:00Z",
+      "speaker_id": "work_s14_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The calendar review wrapped early today."
+        },
+        {
+          "role": "assistant",
+          "content": "Any surprises in it?"
+        },
+        {
+          "role": "user",
+          "content": "None worth recording."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2035-05-10T16:00:00Z",
+      "speaker_id": "work_s14_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I can hold meetings in the student services hot desks. Case-note 793."
+        },
+        {
+          "role": "assistant",
+          "content": "Meetings do not require dense drafting. Case-note 794."
+        },
+        {
+          "role": "user",
+          "content": "Shallow work survives interruptions. Case-note 795."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2035-05-11T18:00:00Z",
+      "speaker_id": "work_s14_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Someone new shadowed me in the workplace this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Did that slow you down?"
+        },
+        {
+          "role": "user",
+          "content": "A little, but the questions were good ones."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2035-05-12T09:00:00Z",
+      "speaker_id": "work_s14_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I batched my replies about the review cycle into one message before lunch."
+        },
+        {
+          "role": "assistant",
+          "content": "Cleaner than drip-feeding answers."
+        },
+        {
+          "role": "user",
+          "content": "Much cleaner."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2035-05-13T11:00:00Z",
+      "speaker_id": "work_s14_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Drafting the degree-policy memo in the student services hot desks broke my concentration. Case-note 799."
+        },
+        {
+          "role": "assistant",
+          "content": "Interruptions fragmented the policy sequence. Case-note 800."
+        },
+        {
+          "role": "user",
+          "content": "I had to restart paragraphs repeatedly. Case-note 801."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2035-05-14T14:00:00Z",
+      "speaker_id": "work_s14_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Routine follow-up is fine at any desk. Case-note 796."
+        },
+        {
+          "role": "assistant",
+          "content": "The memo needs another work mode. Case-note 797."
+        },
+        {
+          "role": "user",
+          "content": "It needs uninterrupted reasoning. Case-note 798."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2035-05-15T16:00:00Z",
+      "speaker_id": "work_s14_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I archived last cycle's notes on the calendar and set up the new folder."
+        },
+        {
+          "role": "assistant",
+          "content": "A fresh start?"
+        },
+        {
+          "role": "user",
+          "content": "As fresh as these things get."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2035-05-16T18:00:00Z",
+      "speaker_id": "work_s14_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Home Vpn Migration removes my reliable home quiet setup this week. Case-note 802."
+        },
+        {
+          "role": "assistant",
+          "content": "The usual fallback is unavailable. Case-note 803."
+        },
+        {
+          "role": "user",
+          "content": "The timing makes location material. Case-note 804."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2035-05-17T09:00:00Z",
+      "speaker_id": "work_s14_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A vendor call about the academic registrar ran long but ended well."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth the time?"
+        },
+        {
+          "role": "user",
+          "content": "This one, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2035-05-18T11:00:00Z",
+      "speaker_id": "work_s14_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I walked through the workplace checklist with the new starter."
+        },
+        {
+          "role": "assistant",
+          "content": "How did they do?"
+        },
+        {
+          "role": "user",
+          "content": "Careful and quick, a good sign."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2035-05-19T14:00:00Z",
+      "speaker_id": "work_s14_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Quiet afternoon; I cleared the backlog around the review cycle."
+        },
+        {
+          "role": "assistant",
+          "content": "A rare day."
+        },
+        {
+          "role": "user",
+          "content": "I did not waste it."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2035-05-20T16:00:00Z",
+      "speaker_id": "work_s14_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I flagged a small inconsistency in the calendar records and fixed it at the source."
+        },
+        {
+          "role": "assistant",
+          "content": "Root cause or symptom?"
+        },
+        {
+          "role": "user",
+          "content": "Root cause, for once."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2035-05-21T18:00:00Z",
+      "speaker_id": "work_s14_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The degree-policy memo is due Wednesday approval and needs a deep writing block. Case-note 805."
+        },
+        {
+          "role": "assistant",
+          "content": "The deadline is fixed. Case-note 806."
+        },
+        {
+          "role": "user",
+          "content": "The draft cannot be deferred casually. Case-note 807."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2035-05-22T09:00:00Z",
+      "speaker_id": "work_s14_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I sketched next week's plan for the review cycle before leaving."
+        },
+        {
+          "role": "assistant",
+          "content": "Ahead of schedule?"
+        },
+        {
+          "role": "user",
+          "content": "Ahead enough to sleep well."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2035-05-23T11:00:00Z",
+      "speaker_id": "work_s14_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Lunch walk, then a clean pass through the academic registrar updates."
+        },
+        {
+          "role": "assistant",
+          "content": "Does the walk help?"
+        },
+        {
+          "role": "user",
+          "content": "It resets the afternoon."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2035-05-24T14:00:00Z",
+      "speaker_id": "work_s14_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Inbox Alerts arrive throughout draft windows. Case-note 808."
+        },
+        {
+          "role": "assistant",
+          "content": "The channel adds non-actionable interruption. Case-note 809."
+        },
+        {
+          "role": "user",
+          "content": "It compounds the desk problem. Case-note 810."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2035-05-25T16:00:00Z",
+      "speaker_id": "work_s14_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I compared two options for the calendar tooling and noted a mild preference."
+        },
+        {
+          "role": "assistant",
+          "content": "Decision made?"
+        },
+        {
+          "role": "user",
+          "content": "Deferred until the trial ends."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2035-05-26T18:00:00Z",
+      "speaker_id": "work_s14_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I closed the week by updating the workplace handover notes."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual to hand over?"
+        },
+        {
+          "role": "user",
+          "content": "Blessedly little."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2035-05-27T09:00:00Z",
+      "speaker_id": "work_s14_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Facilities asks me to work from student services hot desks Tuesday and Wednesday while the degree-policy memo is due Wednesday approval. What should I tell them?"
+        }
+      ]
+    }
+  ],
+  "query": "Facilities asks me to work from student services hot desks Tuesday and Wednesday while the degree-policy memo is due Wednesday approval. What should I tell them?",
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "work_s14_u04",
+      "fact": "Drafting the degree-policy memo in the student services hot desks broke my concentration. Case-note 799."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "work_s14_u04",
+      "fact": "The degree-policy memo is due Wednesday approval and needs a deep writing block. Case-note 805."
+    }
+  },
+  "supporting_constraints": {
+    "E1": {
+      "session_id": 9,
+      "fact": "Home Vpn Migration removes my reliable home quiet setup this week. Case-note 802."
+    },
+    "E2": {
+      "session_id": 17,
+      "fact": "Inbox Alerts arrive throughout draft windows. Case-note 808."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "work_s14_u04",
+        "context": "degree-policy memo",
+        "goal_or_prediction": "draft dense policy",
+        "action": "worked amid interruptions",
+        "outcome_or_affect": "concentration repeatedly broken"
+      }
+    },
+    "7": {
+      "role": "nearby_counterexample"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "supporting_constraint",
+      "fact_id": "E1"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "work_s14_u04",
+        "context": "Wednesday approval",
+        "goal_or_prediction": "deliver memo",
+        "action": "need uninterrupted writing",
+        "outcome_or_affect": "deadline fixed"
+      }
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "supporting_constraint",
+      "fact_id": "E2"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "Known focus loss, the fixed Wednesday approval deadline, unavailable home quiet space, and inbox alerts combine to require protected drafting space.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": [
+      "E1",
+      "E2"
+    ]
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "Drafting the degree-policy memo in the student services hot desks broke my concentration"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "The degree-policy memo is due Wednesday approval and needs a deep writing block"
+    }
+  ],
+  "retrieval_cue": {
+    "cue_type": "behavior_explanation",
+    "why_it_naturally_retrieves_R": "A realistic work request forces a personalized decision without naming either episode or the relation between them."
+  },
+  "relation_specificity": {
+    "nearby_relation": "The user handles meetings and routine follow-up in the student services hot desks.",
+    "why_it_does_not_license_C": "Those tasks do not demand uninterrupted policy drafting."
+  },
+  "coactivation_bridge": "A shows the operating condition; B shows the demand or failure that makes it decisive. Known focus loss, the fixed Wednesday approval deadline, unavailable home quiet space, and inbox alerts combine to require protected drafting space. E1 and E2 calibrate the practical recommendation without opening a second route to the conclusion.",
+  "latent_C": {
+    "inference": "The hot-desk arrangement should not be accepted without protected quiet drafting space.",
+    "calibrated_language": "protect a booked quiet room or remote writing block"
+  },
+  "answer_contract": {
+    "target_proposition": "The hot-desk arrangement should not be accepted without protected quiet drafting space.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "decision",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "work_u04",
+    "status": "review_candidate_only",
+    "anonymization": "External persona material was used only during authoring; no corpus, name, country, or demographic metadata is included."
+  },
+  "arm_gold": {
+    "full": {
+      "expected_mode": "infer_C",
+      "binary_decision": true
+    },
+    "a_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    },
+    "b_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    },
+    "link_broken": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    }
+  },
+  "single_evidence_replacements": {
+    "a_only": {
+      "replaced_session_id": 14,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "I filed the routine review cycle paperwork and confirmed the owner list."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual in it?"
+        },
+        {
+          "role": "user",
+          "content": "A routine cycle, happily."
+        }
+      ]
+    },
+    "b_only": {
+      "replaced_session_id": 6,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "I did a standard pass over the calendar records this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Any exceptions?"
+        },
+        {
+          "role": "user",
+          "content": "None worth a note."
+        }
+      ]
+    }
+  },
+  "link_broken": {
+    "replaced_session_id": 14,
+    "replacement_dialogue": [
+      {
+        "role": "user",
+        "content": "The degree-policy memo deadline moved to Friday after the VPN stabilized. Case-note 814."
+      },
+      {
+        "role": "assistant",
+        "content": "The Tuesday-Wednesday link breaks. Case-note 815."
+      },
+      {
+        "role": "user",
+        "content": "The requested desks then have a different consequence. Case-note 816."
+      }
+    ]
+  }
+}

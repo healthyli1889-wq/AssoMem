@@ -1,0 +1,2489 @@
+{
+  "pair_id": "AMB_WV_S16_U03",
+  "scenario": "S16",
+  "uid": "U03",
+  "role": "medical device vigilance analyst",
+  "query": "The liaison asks me to rank the two regulator-call duties. Should initial hazard spokesperson come first?",
+  "target": "Do not rank initial hazard spokesperson first; rank overnight evidence synthesis above it.",
+  "calibrated": "rank evidence synthesis above hazard spokesperson",
+  "relation": "The pump investigation shows a strong overnight synthesis contribution, and the recall huddle shows a specific failure when this user is made the live initial-causation voice.",
+  "A": "For a February pump-alarm cluster, I reconstructed service histories and clinician reports overnight, isolated a shared valve batch, and proposed a focused field check that confirmed worn valves.",
+  "B": "In an April rapid-recall huddle, I acted as the initial hazard voice and attributed alarms to a battery lot from one hospital report; maintenance records later tied them to a software update, and unaffected units were held.",
+  "E1": "The regulator call starts at 09:00, and hospitals must receive a holding message by 09:30.",
+  "E2": "The overnight review room is available until 08:30, and the call agenda has separate evidence-summary and initial-hazard slots.",
+  "B_prime": "In a June rapid-recall huddle, I maintained the complaint queue, read each hospital's timestamps, and recorded requested follow-ups; the appointed medical officer issued the provisional hazard position, which remained pending at adjournment.",
+  "lure": "A senior director said the initial-hazard slot would raise my profile.",
+  "subset_gate": {
+    "full_supports_C": "",
+    "a_only_supports_C": "",
+    "b_only_supports_C": "",
+    "link_broken_supports_C": "",
+    "absence_supports_C": "",
+    "reviewer": "",
+    "notes": ""
+  },
+  "arms": {
+    "full": {
+      "expected_mode": "infer_C",
+      "lineage": {
+        "transform": "identity",
+        "retained_sessions": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ]
+      },
+      "changed_sessions": [],
+      "context": [
+        {
+          "session_id": 1,
+          "timestamp": "2028-01-14T11:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I spent the first hour tidying the complaint chronology and closing stale entries."
+            },
+            {
+              "role": "assistant",
+              "content": "Anything still open?"
+            },
+            {
+              "role": "user",
+              "content": "Two items, both with owners."
+            }
+          ]
+        },
+        {
+          "session_id": 2,
+          "timestamp": "2028-01-15T14:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The safety inbox review wrapped early today."
+            },
+            {
+              "role": "assistant",
+              "content": "Any surprises in it?"
+            },
+            {
+              "role": "user",
+              "content": "None worth recording."
+            }
+          ]
+        },
+        {
+          "session_id": 3,
+          "timestamp": "2028-01-16T16:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I presented a completed complaint chronology to quality last week."
+            },
+            {
+              "role": "assistant",
+              "content": "Was the cause still disputed?"
+            },
+            {
+              "role": "user",
+              "content": "No, the review had already closed."
+            }
+          ]
+        },
+        {
+          "session_id": 4,
+          "timestamp": "2028-01-17T18:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Someone new shadowed me in the vigilance office this morning."
+            },
+            {
+              "role": "assistant",
+              "content": "Did that slow you down?"
+            },
+            {
+              "role": "user",
+              "content": "A little, but the questions were good ones."
+            }
+          ]
+        },
+        {
+          "session_id": 5,
+          "timestamp": "2028-01-18T09:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I batched my replies about the recall alerts into one message before lunch."
+            },
+            {
+              "role": "assistant",
+              "content": "Cleaner than drip-feeding answers."
+            },
+            {
+              "role": "user",
+              "content": "Much cleaner."
+            }
+          ]
+        },
+        {
+          "session_id": 6,
+          "timestamp": "2028-01-19T11:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "For a February pump-alarm cluster, I reconstructed service histories and clinician reports overnight, isolated a shared valve batch, and proposed a focused field check that confirmed worn valves."
+            },
+            {
+              "role": "assistant",
+              "content": "What was the intended result?"
+            },
+            {
+              "role": "user",
+              "content": "To turn scattered complaints into a testable inspection scope."
+            }
+          ]
+        },
+        {
+          "session_id": 7,
+          "timestamp": "2028-01-20T14:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I sent three hospitals the standard follow-up form on Monday."
+            },
+            {
+              "role": "assistant",
+              "content": "Did you assess their devices?"
+            },
+            {
+              "role": "user",
+              "content": "No, I only requested the listed records."
+            }
+          ]
+        },
+        {
+          "session_id": 8,
+          "timestamp": "2028-01-21T16:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I archived last cycle's notes on the safety inbox and set up the new folder."
+            },
+            {
+              "role": "assistant",
+              "content": "A fresh start?"
+            },
+            {
+              "role": "user",
+              "content": "As fresh as these things get."
+            }
+          ]
+        },
+        {
+          "session_id": 9,
+          "timestamp": "2028-01-22T18:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The regulator call starts at 09:00, and hospitals must receive a holding message by 09:30."
+            },
+            {
+              "role": "assistant",
+              "content": "Are those deadlines fixed?"
+            },
+            {
+              "role": "user",
+              "content": "Yes, they are on the liaison schedule."
+            }
+          ]
+        },
+        {
+          "session_id": 10,
+          "timestamp": "2028-01-23T09:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "A vendor call about the complaint chronology ran long but ended well."
+            },
+            {
+              "role": "assistant",
+              "content": "Worth the time?"
+            },
+            {
+              "role": "user",
+              "content": "This one, yes."
+            }
+          ]
+        },
+        {
+          "session_id": 11,
+          "timestamp": "2028-01-24T11:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I walked through the vigilance office checklist with the new starter."
+            },
+            {
+              "role": "assistant",
+              "content": "How did they do?"
+            },
+            {
+              "role": "user",
+              "content": "Careful and quick, a good sign."
+            }
+          ]
+        },
+        {
+          "session_id": 12,
+          "timestamp": "2028-01-25T14:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Quiet afternoon; I cleared the backlog around the recall alerts."
+            },
+            {
+              "role": "assistant",
+              "content": "A rare day."
+            },
+            {
+              "role": "user",
+              "content": "I did not waste it."
+            }
+          ]
+        },
+        {
+          "session_id": 13,
+          "timestamp": "2028-01-26T16:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I flagged a small inconsistency in the safety inbox records and fixed it at the source."
+            },
+            {
+              "role": "assistant",
+              "content": "Root cause or symptom?"
+            },
+            {
+              "role": "user",
+              "content": "Root cause, for once."
+            }
+          ]
+        },
+        {
+          "session_id": 14,
+          "timestamp": "2028-01-27T18:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "In an April rapid-recall huddle, I acted as the initial hazard voice and attributed alarms to a battery lot from one hospital report; maintenance records later tied them to a software update, and unaffected units were held."
+            },
+            {
+              "role": "assistant",
+              "content": "What were you expected to provide?"
+            },
+            {
+              "role": "user",
+              "content": "A live causal position before the complaint histories had been reconciled."
+            }
+          ]
+        },
+        {
+          "session_id": 15,
+          "timestamp": "2028-01-28T09:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I sketched next week's plan for the recall alerts before leaving."
+            },
+            {
+              "role": "assistant",
+              "content": "Ahead of schedule?"
+            },
+            {
+              "role": "user",
+              "content": "Ahead enough to sleep well."
+            }
+          ]
+        },
+        {
+          "session_id": 16,
+          "timestamp": "2028-01-29T11:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Lunch walk, then a clean pass through the complaint chronology updates."
+            },
+            {
+              "role": "assistant",
+              "content": "Does the walk help?"
+            },
+            {
+              "role": "user",
+              "content": "It resets the afternoon."
+            }
+          ]
+        },
+        {
+          "session_id": 17,
+          "timestamp": "2028-01-30T14:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The overnight review room is available until 08:30, and the call agenda has separate evidence-summary and initial-hazard slots."
+            },
+            {
+              "role": "assistant",
+              "content": "Is that division permitted?"
+            },
+            {
+              "role": "user",
+              "content": "Yes, both slots are on the approved agenda."
+            }
+          ]
+        },
+        {
+          "session_id": 18,
+          "timestamp": "2028-01-31T16:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I compared two options for the safety inbox tooling and noted a mild preference."
+            },
+            {
+              "role": "assistant",
+              "content": "Decision made?"
+            },
+            {
+              "role": "user",
+              "content": "Deferred until the trial ends."
+            }
+          ]
+        },
+        {
+          "session_id": 19,
+          "timestamp": "2028-02-01T18:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I closed the week by updating the vigilance office handover notes."
+            },
+            {
+              "role": "assistant",
+              "content": "Anything unusual to hand over?"
+            },
+            {
+              "role": "user",
+              "content": "Blessedly little."
+            }
+          ]
+        },
+        {
+          "session_id": 20,
+          "timestamp": "2028-02-02T09:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The liaison asks me to rank the two regulator-call duties. Should initial hazard spokesperson come first?"
+            }
+          ]
+        }
+      ],
+      "query": "The liaison asks me to rank the two regulator-call duties. Should initial hazard spokesperson come first?"
+    },
+    "a_only": {
+      "expected_mode": "withhold_C",
+      "lineage": {
+        "transform": "replace_ev_B_with_neutral",
+        "changed_sessions": [
+          14
+        ]
+      },
+      "changed_sessions": [
+        14
+      ],
+      "context": [
+        {
+          "session_id": 1,
+          "timestamp": "2028-01-14T11:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I spent the first hour tidying the complaint chronology and closing stale entries."
+            },
+            {
+              "role": "assistant",
+              "content": "Anything still open?"
+            },
+            {
+              "role": "user",
+              "content": "Two items, both with owners."
+            }
+          ]
+        },
+        {
+          "session_id": 2,
+          "timestamp": "2028-01-15T14:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The safety inbox review wrapped early today."
+            },
+            {
+              "role": "assistant",
+              "content": "Any surprises in it?"
+            },
+            {
+              "role": "user",
+              "content": "None worth recording."
+            }
+          ]
+        },
+        {
+          "session_id": 3,
+          "timestamp": "2028-01-16T16:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I presented a completed complaint chronology to quality last week."
+            },
+            {
+              "role": "assistant",
+              "content": "Was the cause still disputed?"
+            },
+            {
+              "role": "user",
+              "content": "No, the review had already closed."
+            }
+          ]
+        },
+        {
+          "session_id": 4,
+          "timestamp": "2028-01-17T18:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Someone new shadowed me in the vigilance office this morning."
+            },
+            {
+              "role": "assistant",
+              "content": "Did that slow you down?"
+            },
+            {
+              "role": "user",
+              "content": "A little, but the questions were good ones."
+            }
+          ]
+        },
+        {
+          "session_id": 5,
+          "timestamp": "2028-01-18T09:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I batched my replies about the recall alerts into one message before lunch."
+            },
+            {
+              "role": "assistant",
+              "content": "Cleaner than drip-feeding answers."
+            },
+            {
+              "role": "user",
+              "content": "Much cleaner."
+            }
+          ]
+        },
+        {
+          "session_id": 6,
+          "timestamp": "2028-01-19T11:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "For a February pump-alarm cluster, I reconstructed service histories and clinician reports overnight, isolated a shared valve batch, and proposed a focused field check that confirmed worn valves."
+            },
+            {
+              "role": "assistant",
+              "content": "What was the intended result?"
+            },
+            {
+              "role": "user",
+              "content": "To turn scattered complaints into a testable inspection scope."
+            }
+          ]
+        },
+        {
+          "session_id": 7,
+          "timestamp": "2028-01-20T14:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I sent three hospitals the standard follow-up form on Monday."
+            },
+            {
+              "role": "assistant",
+              "content": "Did you assess their devices?"
+            },
+            {
+              "role": "user",
+              "content": "No, I only requested the listed records."
+            }
+          ]
+        },
+        {
+          "session_id": 8,
+          "timestamp": "2028-01-21T16:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I archived last cycle's notes on the safety inbox and set up the new folder."
+            },
+            {
+              "role": "assistant",
+              "content": "A fresh start?"
+            },
+            {
+              "role": "user",
+              "content": "As fresh as these things get."
+            }
+          ]
+        },
+        {
+          "session_id": 9,
+          "timestamp": "2028-01-22T18:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The regulator call starts at 09:00, and hospitals must receive a holding message by 09:30."
+            },
+            {
+              "role": "assistant",
+              "content": "Are those deadlines fixed?"
+            },
+            {
+              "role": "user",
+              "content": "Yes, they are on the liaison schedule."
+            }
+          ]
+        },
+        {
+          "session_id": 10,
+          "timestamp": "2028-01-23T09:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "A vendor call about the complaint chronology ran long but ended well."
+            },
+            {
+              "role": "assistant",
+              "content": "Worth the time?"
+            },
+            {
+              "role": "user",
+              "content": "This one, yes."
+            }
+          ]
+        },
+        {
+          "session_id": 11,
+          "timestamp": "2028-01-24T11:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I walked through the vigilance office checklist with the new starter."
+            },
+            {
+              "role": "assistant",
+              "content": "How did they do?"
+            },
+            {
+              "role": "user",
+              "content": "Careful and quick, a good sign."
+            }
+          ]
+        },
+        {
+          "session_id": 12,
+          "timestamp": "2028-01-25T14:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Quiet afternoon; I cleared the backlog around the recall alerts."
+            },
+            {
+              "role": "assistant",
+              "content": "A rare day."
+            },
+            {
+              "role": "user",
+              "content": "I did not waste it."
+            }
+          ]
+        },
+        {
+          "session_id": 13,
+          "timestamp": "2028-01-26T16:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I flagged a small inconsistency in the safety inbox records and fixed it at the source."
+            },
+            {
+              "role": "assistant",
+              "content": "Root cause or symptom?"
+            },
+            {
+              "role": "user",
+              "content": "Root cause, for once."
+            }
+          ]
+        },
+        {
+          "session_id": 14,
+          "timestamp": "2028-01-27T18:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I filed the routine recall alerts paperwork and confirmed the owner list."
+            },
+            {
+              "role": "assistant",
+              "content": "Anything unusual in it?"
+            },
+            {
+              "role": "user",
+              "content": "A routine cycle, happily."
+            }
+          ]
+        },
+        {
+          "session_id": 15,
+          "timestamp": "2028-01-28T09:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I sketched next week's plan for the recall alerts before leaving."
+            },
+            {
+              "role": "assistant",
+              "content": "Ahead of schedule?"
+            },
+            {
+              "role": "user",
+              "content": "Ahead enough to sleep well."
+            }
+          ]
+        },
+        {
+          "session_id": 16,
+          "timestamp": "2028-01-29T11:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Lunch walk, then a clean pass through the complaint chronology updates."
+            },
+            {
+              "role": "assistant",
+              "content": "Does the walk help?"
+            },
+            {
+              "role": "user",
+              "content": "It resets the afternoon."
+            }
+          ]
+        },
+        {
+          "session_id": 17,
+          "timestamp": "2028-01-30T14:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The overnight review room is available until 08:30, and the call agenda has separate evidence-summary and initial-hazard slots."
+            },
+            {
+              "role": "assistant",
+              "content": "Is that division permitted?"
+            },
+            {
+              "role": "user",
+              "content": "Yes, both slots are on the approved agenda."
+            }
+          ]
+        },
+        {
+          "session_id": 18,
+          "timestamp": "2028-01-31T16:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I compared two options for the safety inbox tooling and noted a mild preference."
+            },
+            {
+              "role": "assistant",
+              "content": "Decision made?"
+            },
+            {
+              "role": "user",
+              "content": "Deferred until the trial ends."
+            }
+          ]
+        },
+        {
+          "session_id": 19,
+          "timestamp": "2028-02-01T18:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I closed the week by updating the vigilance office handover notes."
+            },
+            {
+              "role": "assistant",
+              "content": "Anything unusual to hand over?"
+            },
+            {
+              "role": "user",
+              "content": "Blessedly little."
+            }
+          ]
+        },
+        {
+          "session_id": 20,
+          "timestamp": "2028-02-02T09:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The liaison asks me to rank the two regulator-call duties. Should initial hazard spokesperson come first?"
+            }
+          ]
+        }
+      ],
+      "query": "The liaison asks me to rank the two regulator-call duties. Should initial hazard spokesperson come first?"
+    },
+    "b_only": {
+      "expected_mode": "withhold_C",
+      "lineage": {
+        "transform": "replace_ev_A_with_neutral",
+        "changed_sessions": [
+          6
+        ]
+      },
+      "changed_sessions": [
+        6
+      ],
+      "context": [
+        {
+          "session_id": 1,
+          "timestamp": "2028-01-14T11:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I spent the first hour tidying the complaint chronology and closing stale entries."
+            },
+            {
+              "role": "assistant",
+              "content": "Anything still open?"
+            },
+            {
+              "role": "user",
+              "content": "Two items, both with owners."
+            }
+          ]
+        },
+        {
+          "session_id": 2,
+          "timestamp": "2028-01-15T14:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The safety inbox review wrapped early today."
+            },
+            {
+              "role": "assistant",
+              "content": "Any surprises in it?"
+            },
+            {
+              "role": "user",
+              "content": "None worth recording."
+            }
+          ]
+        },
+        {
+          "session_id": 3,
+          "timestamp": "2028-01-16T16:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I presented a completed complaint chronology to quality last week."
+            },
+            {
+              "role": "assistant",
+              "content": "Was the cause still disputed?"
+            },
+            {
+              "role": "user",
+              "content": "No, the review had already closed."
+            }
+          ]
+        },
+        {
+          "session_id": 4,
+          "timestamp": "2028-01-17T18:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Someone new shadowed me in the vigilance office this morning."
+            },
+            {
+              "role": "assistant",
+              "content": "Did that slow you down?"
+            },
+            {
+              "role": "user",
+              "content": "A little, but the questions were good ones."
+            }
+          ]
+        },
+        {
+          "session_id": 5,
+          "timestamp": "2028-01-18T09:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I batched my replies about the recall alerts into one message before lunch."
+            },
+            {
+              "role": "assistant",
+              "content": "Cleaner than drip-feeding answers."
+            },
+            {
+              "role": "user",
+              "content": "Much cleaner."
+            }
+          ]
+        },
+        {
+          "session_id": 6,
+          "timestamp": "2028-01-19T11:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I did a standard pass over the safety inbox records this morning."
+            },
+            {
+              "role": "assistant",
+              "content": "Any exceptions?"
+            },
+            {
+              "role": "user",
+              "content": "None worth a note."
+            }
+          ]
+        },
+        {
+          "session_id": 7,
+          "timestamp": "2028-01-20T14:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I sent three hospitals the standard follow-up form on Monday."
+            },
+            {
+              "role": "assistant",
+              "content": "Did you assess their devices?"
+            },
+            {
+              "role": "user",
+              "content": "No, I only requested the listed records."
+            }
+          ]
+        },
+        {
+          "session_id": 8,
+          "timestamp": "2028-01-21T16:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I archived last cycle's notes on the safety inbox and set up the new folder."
+            },
+            {
+              "role": "assistant",
+              "content": "A fresh start?"
+            },
+            {
+              "role": "user",
+              "content": "As fresh as these things get."
+            }
+          ]
+        },
+        {
+          "session_id": 9,
+          "timestamp": "2028-01-22T18:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The regulator call starts at 09:00, and hospitals must receive a holding message by 09:30."
+            },
+            {
+              "role": "assistant",
+              "content": "Are those deadlines fixed?"
+            },
+            {
+              "role": "user",
+              "content": "Yes, they are on the liaison schedule."
+            }
+          ]
+        },
+        {
+          "session_id": 10,
+          "timestamp": "2028-01-23T09:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "A vendor call about the complaint chronology ran long but ended well."
+            },
+            {
+              "role": "assistant",
+              "content": "Worth the time?"
+            },
+            {
+              "role": "user",
+              "content": "This one, yes."
+            }
+          ]
+        },
+        {
+          "session_id": 11,
+          "timestamp": "2028-01-24T11:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I walked through the vigilance office checklist with the new starter."
+            },
+            {
+              "role": "assistant",
+              "content": "How did they do?"
+            },
+            {
+              "role": "user",
+              "content": "Careful and quick, a good sign."
+            }
+          ]
+        },
+        {
+          "session_id": 12,
+          "timestamp": "2028-01-25T14:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Quiet afternoon; I cleared the backlog around the recall alerts."
+            },
+            {
+              "role": "assistant",
+              "content": "A rare day."
+            },
+            {
+              "role": "user",
+              "content": "I did not waste it."
+            }
+          ]
+        },
+        {
+          "session_id": 13,
+          "timestamp": "2028-01-26T16:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I flagged a small inconsistency in the safety inbox records and fixed it at the source."
+            },
+            {
+              "role": "assistant",
+              "content": "Root cause or symptom?"
+            },
+            {
+              "role": "user",
+              "content": "Root cause, for once."
+            }
+          ]
+        },
+        {
+          "session_id": 14,
+          "timestamp": "2028-01-27T18:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "In an April rapid-recall huddle, I acted as the initial hazard voice and attributed alarms to a battery lot from one hospital report; maintenance records later tied them to a software update, and unaffected units were held."
+            },
+            {
+              "role": "assistant",
+              "content": "What were you expected to provide?"
+            },
+            {
+              "role": "user",
+              "content": "A live causal position before the complaint histories had been reconciled."
+            }
+          ]
+        },
+        {
+          "session_id": 15,
+          "timestamp": "2028-01-28T09:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I sketched next week's plan for the recall alerts before leaving."
+            },
+            {
+              "role": "assistant",
+              "content": "Ahead of schedule?"
+            },
+            {
+              "role": "user",
+              "content": "Ahead enough to sleep well."
+            }
+          ]
+        },
+        {
+          "session_id": 16,
+          "timestamp": "2028-01-29T11:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Lunch walk, then a clean pass through the complaint chronology updates."
+            },
+            {
+              "role": "assistant",
+              "content": "Does the walk help?"
+            },
+            {
+              "role": "user",
+              "content": "It resets the afternoon."
+            }
+          ]
+        },
+        {
+          "session_id": 17,
+          "timestamp": "2028-01-30T14:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The overnight review room is available until 08:30, and the call agenda has separate evidence-summary and initial-hazard slots."
+            },
+            {
+              "role": "assistant",
+              "content": "Is that division permitted?"
+            },
+            {
+              "role": "user",
+              "content": "Yes, both slots are on the approved agenda."
+            }
+          ]
+        },
+        {
+          "session_id": 18,
+          "timestamp": "2028-01-31T16:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I compared two options for the safety inbox tooling and noted a mild preference."
+            },
+            {
+              "role": "assistant",
+              "content": "Decision made?"
+            },
+            {
+              "role": "user",
+              "content": "Deferred until the trial ends."
+            }
+          ]
+        },
+        {
+          "session_id": 19,
+          "timestamp": "2028-02-01T18:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I closed the week by updating the vigilance office handover notes."
+            },
+            {
+              "role": "assistant",
+              "content": "Anything unusual to hand over?"
+            },
+            {
+              "role": "user",
+              "content": "Blessedly little."
+            }
+          ]
+        },
+        {
+          "session_id": 20,
+          "timestamp": "2028-02-02T09:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The liaison asks me to rank the two regulator-call duties. Should initial hazard spokesperson come first?"
+            }
+          ]
+        }
+      ],
+      "query": "The liaison asks me to rank the two regulator-call duties. Should initial hazard spokesperson come first?"
+    },
+    "link_broken": {
+      "expected_mode": "withhold_C",
+      "lineage": {
+        "transform": "replace_relation_in_ev_B",
+        "changed_sessions": [
+          14
+        ],
+        "source_owner_preserved": true
+      },
+      "changed_sessions": [
+        14
+      ],
+      "context": [
+        {
+          "session_id": 1,
+          "timestamp": "2028-01-14T11:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I spent the first hour tidying the complaint chronology and closing stale entries."
+            },
+            {
+              "role": "assistant",
+              "content": "Anything still open?"
+            },
+            {
+              "role": "user",
+              "content": "Two items, both with owners."
+            }
+          ]
+        },
+        {
+          "session_id": 2,
+          "timestamp": "2028-01-15T14:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The safety inbox review wrapped early today."
+            },
+            {
+              "role": "assistant",
+              "content": "Any surprises in it?"
+            },
+            {
+              "role": "user",
+              "content": "None worth recording."
+            }
+          ]
+        },
+        {
+          "session_id": 3,
+          "timestamp": "2028-01-16T16:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I presented a completed complaint chronology to quality last week."
+            },
+            {
+              "role": "assistant",
+              "content": "Was the cause still disputed?"
+            },
+            {
+              "role": "user",
+              "content": "No, the review had already closed."
+            }
+          ]
+        },
+        {
+          "session_id": 4,
+          "timestamp": "2028-01-17T18:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Someone new shadowed me in the vigilance office this morning."
+            },
+            {
+              "role": "assistant",
+              "content": "Did that slow you down?"
+            },
+            {
+              "role": "user",
+              "content": "A little, but the questions were good ones."
+            }
+          ]
+        },
+        {
+          "session_id": 5,
+          "timestamp": "2028-01-18T09:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I batched my replies about the recall alerts into one message before lunch."
+            },
+            {
+              "role": "assistant",
+              "content": "Cleaner than drip-feeding answers."
+            },
+            {
+              "role": "user",
+              "content": "Much cleaner."
+            }
+          ]
+        },
+        {
+          "session_id": 6,
+          "timestamp": "2028-01-19T11:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "For a February pump-alarm cluster, I reconstructed service histories and clinician reports overnight, isolated a shared valve batch, and proposed a focused field check that confirmed worn valves."
+            },
+            {
+              "role": "assistant",
+              "content": "What was the intended result?"
+            },
+            {
+              "role": "user",
+              "content": "To turn scattered complaints into a testable inspection scope."
+            }
+          ]
+        },
+        {
+          "session_id": 7,
+          "timestamp": "2028-01-20T14:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I sent three hospitals the standard follow-up form on Monday."
+            },
+            {
+              "role": "assistant",
+              "content": "Did you assess their devices?"
+            },
+            {
+              "role": "user",
+              "content": "No, I only requested the listed records."
+            }
+          ]
+        },
+        {
+          "session_id": 8,
+          "timestamp": "2028-01-21T16:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I archived last cycle's notes on the safety inbox and set up the new folder."
+            },
+            {
+              "role": "assistant",
+              "content": "A fresh start?"
+            },
+            {
+              "role": "user",
+              "content": "As fresh as these things get."
+            }
+          ]
+        },
+        {
+          "session_id": 9,
+          "timestamp": "2028-01-22T18:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The regulator call starts at 09:00, and hospitals must receive a holding message by 09:30."
+            },
+            {
+              "role": "assistant",
+              "content": "Are those deadlines fixed?"
+            },
+            {
+              "role": "user",
+              "content": "Yes, they are on the liaison schedule."
+            }
+          ]
+        },
+        {
+          "session_id": 10,
+          "timestamp": "2028-01-23T09:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "A vendor call about the complaint chronology ran long but ended well."
+            },
+            {
+              "role": "assistant",
+              "content": "Worth the time?"
+            },
+            {
+              "role": "user",
+              "content": "This one, yes."
+            }
+          ]
+        },
+        {
+          "session_id": 11,
+          "timestamp": "2028-01-24T11:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I walked through the vigilance office checklist with the new starter."
+            },
+            {
+              "role": "assistant",
+              "content": "How did they do?"
+            },
+            {
+              "role": "user",
+              "content": "Careful and quick, a good sign."
+            }
+          ]
+        },
+        {
+          "session_id": 12,
+          "timestamp": "2028-01-25T14:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Quiet afternoon; I cleared the backlog around the recall alerts."
+            },
+            {
+              "role": "assistant",
+              "content": "A rare day."
+            },
+            {
+              "role": "user",
+              "content": "I did not waste it."
+            }
+          ]
+        },
+        {
+          "session_id": 13,
+          "timestamp": "2028-01-26T16:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I flagged a small inconsistency in the safety inbox records and fixed it at the source."
+            },
+            {
+              "role": "assistant",
+              "content": "Root cause or symptom?"
+            },
+            {
+              "role": "user",
+              "content": "Root cause, for once."
+            }
+          ]
+        },
+        {
+          "session_id": 14,
+          "timestamp": "2028-01-27T18:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "In a June rapid-recall huddle, I maintained the complaint queue, read each hospital's timestamps, and recorded requested follow-ups; the appointed medical officer issued the provisional hazard position, which remained pending at adjournment."
+            },
+            {
+              "role": "assistant",
+              "content": "Did you attribute the alarms?"
+            },
+            {
+              "role": "user",
+              "content": "No, I administered the same huddle while the medical officer owned causation."
+            }
+          ]
+        },
+        {
+          "session_id": 15,
+          "timestamp": "2028-01-28T09:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I sketched next week's plan for the recall alerts before leaving."
+            },
+            {
+              "role": "assistant",
+              "content": "Ahead of schedule?"
+            },
+            {
+              "role": "user",
+              "content": "Ahead enough to sleep well."
+            }
+          ]
+        },
+        {
+          "session_id": 16,
+          "timestamp": "2028-01-29T11:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Lunch walk, then a clean pass through the complaint chronology updates."
+            },
+            {
+              "role": "assistant",
+              "content": "Does the walk help?"
+            },
+            {
+              "role": "user",
+              "content": "It resets the afternoon."
+            }
+          ]
+        },
+        {
+          "session_id": 17,
+          "timestamp": "2028-01-30T14:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The overnight review room is available until 08:30, and the call agenda has separate evidence-summary and initial-hazard slots."
+            },
+            {
+              "role": "assistant",
+              "content": "Is that division permitted?"
+            },
+            {
+              "role": "user",
+              "content": "Yes, both slots are on the approved agenda."
+            }
+          ]
+        },
+        {
+          "session_id": 18,
+          "timestamp": "2028-01-31T16:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I compared two options for the safety inbox tooling and noted a mild preference."
+            },
+            {
+              "role": "assistant",
+              "content": "Decision made?"
+            },
+            {
+              "role": "user",
+              "content": "Deferred until the trial ends."
+            }
+          ]
+        },
+        {
+          "session_id": 19,
+          "timestamp": "2028-02-01T18:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I closed the week by updating the vigilance office handover notes."
+            },
+            {
+              "role": "assistant",
+              "content": "Anything unusual to hand over?"
+            },
+            {
+              "role": "user",
+              "content": "Blessedly little."
+            }
+          ]
+        },
+        {
+          "session_id": 20,
+          "timestamp": "2028-02-02T09:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The liaison asks me to rank the two regulator-call duties. Should initial hazard spokesperson come first?"
+            }
+          ]
+        }
+      ],
+      "query": "The liaison asks me to rank the two regulator-call duties. Should initial hazard spokesperson come first?"
+    },
+    "distractor": {
+      "expected_mode": "infer_C",
+      "lineage": {
+        "transform": "shipped",
+        "changed_sessions": [
+          18
+        ]
+      },
+      "changed_sessions": [
+        18
+      ],
+      "context": [
+        {
+          "session_id": 1,
+          "timestamp": "2028-01-14T11:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I spent the first hour tidying the complaint chronology and closing stale entries."
+            },
+            {
+              "role": "assistant",
+              "content": "Anything still open?"
+            },
+            {
+              "role": "user",
+              "content": "Two items, both with owners."
+            }
+          ]
+        },
+        {
+          "session_id": 2,
+          "timestamp": "2028-01-15T14:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The safety inbox review wrapped early today."
+            },
+            {
+              "role": "assistant",
+              "content": "Any surprises in it?"
+            },
+            {
+              "role": "user",
+              "content": "None worth recording."
+            }
+          ]
+        },
+        {
+          "session_id": 3,
+          "timestamp": "2028-01-16T16:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I presented a completed complaint chronology to quality last week."
+            },
+            {
+              "role": "assistant",
+              "content": "Was the cause still disputed?"
+            },
+            {
+              "role": "user",
+              "content": "No, the review had already closed."
+            }
+          ]
+        },
+        {
+          "session_id": 4,
+          "timestamp": "2028-01-17T18:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Someone new shadowed me in the vigilance office this morning."
+            },
+            {
+              "role": "assistant",
+              "content": "Did that slow you down?"
+            },
+            {
+              "role": "user",
+              "content": "A little, but the questions were good ones."
+            }
+          ]
+        },
+        {
+          "session_id": 5,
+          "timestamp": "2028-01-18T09:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I batched my replies about the recall alerts into one message before lunch."
+            },
+            {
+              "role": "assistant",
+              "content": "Cleaner than drip-feeding answers."
+            },
+            {
+              "role": "user",
+              "content": "Much cleaner."
+            }
+          ]
+        },
+        {
+          "session_id": 6,
+          "timestamp": "2028-01-19T11:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "For a February pump-alarm cluster, I reconstructed service histories and clinician reports overnight, isolated a shared valve batch, and proposed a focused field check that confirmed worn valves."
+            },
+            {
+              "role": "assistant",
+              "content": "What was the intended result?"
+            },
+            {
+              "role": "user",
+              "content": "To turn scattered complaints into a testable inspection scope."
+            }
+          ]
+        },
+        {
+          "session_id": 7,
+          "timestamp": "2028-01-20T14:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I sent three hospitals the standard follow-up form on Monday."
+            },
+            {
+              "role": "assistant",
+              "content": "Did you assess their devices?"
+            },
+            {
+              "role": "user",
+              "content": "No, I only requested the listed records."
+            }
+          ]
+        },
+        {
+          "session_id": 8,
+          "timestamp": "2028-01-21T16:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I archived last cycle's notes on the safety inbox and set up the new folder."
+            },
+            {
+              "role": "assistant",
+              "content": "A fresh start?"
+            },
+            {
+              "role": "user",
+              "content": "As fresh as these things get."
+            }
+          ]
+        },
+        {
+          "session_id": 9,
+          "timestamp": "2028-01-22T18:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The regulator call starts at 09:00, and hospitals must receive a holding message by 09:30."
+            },
+            {
+              "role": "assistant",
+              "content": "Are those deadlines fixed?"
+            },
+            {
+              "role": "user",
+              "content": "Yes, they are on the liaison schedule."
+            }
+          ]
+        },
+        {
+          "session_id": 10,
+          "timestamp": "2028-01-23T09:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "A vendor call about the complaint chronology ran long but ended well."
+            },
+            {
+              "role": "assistant",
+              "content": "Worth the time?"
+            },
+            {
+              "role": "user",
+              "content": "This one, yes."
+            }
+          ]
+        },
+        {
+          "session_id": 11,
+          "timestamp": "2028-01-24T11:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I walked through the vigilance office checklist with the new starter."
+            },
+            {
+              "role": "assistant",
+              "content": "How did they do?"
+            },
+            {
+              "role": "user",
+              "content": "Careful and quick, a good sign."
+            }
+          ]
+        },
+        {
+          "session_id": 12,
+          "timestamp": "2028-01-25T14:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Quiet afternoon; I cleared the backlog around the recall alerts."
+            },
+            {
+              "role": "assistant",
+              "content": "A rare day."
+            },
+            {
+              "role": "user",
+              "content": "I did not waste it."
+            }
+          ]
+        },
+        {
+          "session_id": 13,
+          "timestamp": "2028-01-26T16:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I flagged a small inconsistency in the safety inbox records and fixed it at the source."
+            },
+            {
+              "role": "assistant",
+              "content": "Root cause or symptom?"
+            },
+            {
+              "role": "user",
+              "content": "Root cause, for once."
+            }
+          ]
+        },
+        {
+          "session_id": 14,
+          "timestamp": "2028-01-27T18:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "In an April rapid-recall huddle, I acted as the initial hazard voice and attributed alarms to a battery lot from one hospital report; maintenance records later tied them to a software update, and unaffected units were held."
+            },
+            {
+              "role": "assistant",
+              "content": "What were you expected to provide?"
+            },
+            {
+              "role": "user",
+              "content": "A live causal position before the complaint histories had been reconciled."
+            }
+          ]
+        },
+        {
+          "session_id": 15,
+          "timestamp": "2028-01-28T09:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I sketched next week's plan for the recall alerts before leaving."
+            },
+            {
+              "role": "assistant",
+              "content": "Ahead of schedule?"
+            },
+            {
+              "role": "user",
+              "content": "Ahead enough to sleep well."
+            }
+          ]
+        },
+        {
+          "session_id": 16,
+          "timestamp": "2028-01-29T11:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Lunch walk, then a clean pass through the complaint chronology updates."
+            },
+            {
+              "role": "assistant",
+              "content": "Does the walk help?"
+            },
+            {
+              "role": "user",
+              "content": "It resets the afternoon."
+            }
+          ]
+        },
+        {
+          "session_id": 17,
+          "timestamp": "2028-01-30T14:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The overnight review room is available until 08:30, and the call agenda has separate evidence-summary and initial-hazard slots."
+            },
+            {
+              "role": "assistant",
+              "content": "Is that division permitted?"
+            },
+            {
+              "role": "user",
+              "content": "Yes, both slots are on the approved agenda."
+            }
+          ]
+        },
+        {
+          "session_id": 18,
+          "timestamp": "2028-01-31T16:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "A senior director said the initial-hazard slot would raise my profile."
+            },
+            {
+              "role": "assistant",
+              "content": "Did the director supply complaint records?"
+            },
+            {
+              "role": "user",
+              "content": "No, it was career advice."
+            }
+          ]
+        },
+        {
+          "session_id": 19,
+          "timestamp": "2028-02-01T18:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I closed the week by updating the vigilance office handover notes."
+            },
+            {
+              "role": "assistant",
+              "content": "Anything unusual to hand over?"
+            },
+            {
+              "role": "user",
+              "content": "Blessedly little."
+            }
+          ]
+        },
+        {
+          "session_id": 20,
+          "timestamp": "2028-02-02T09:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The liaison asks me to rank the two regulator-call duties. Should initial hazard spokesperson come first?"
+            }
+          ]
+        }
+      ],
+      "query": "The liaison asks me to rank the two regulator-call duties. Should initial hazard spokesperson come first?"
+    },
+    "absence": {
+      "expected_mode": "withhold_C",
+      "lineage": {
+        "transform": "replace_ev_A_and_ev_B_only",
+        "changed_sessions": [
+          6,
+          14
+        ]
+      },
+      "changed_sessions": [
+        6,
+        14
+      ],
+      "context": [
+        {
+          "session_id": 1,
+          "timestamp": "2028-01-14T11:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I spent the first hour tidying the complaint chronology and closing stale entries."
+            },
+            {
+              "role": "assistant",
+              "content": "Anything still open?"
+            },
+            {
+              "role": "user",
+              "content": "Two items, both with owners."
+            }
+          ]
+        },
+        {
+          "session_id": 2,
+          "timestamp": "2028-01-15T14:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The safety inbox review wrapped early today."
+            },
+            {
+              "role": "assistant",
+              "content": "Any surprises in it?"
+            },
+            {
+              "role": "user",
+              "content": "None worth recording."
+            }
+          ]
+        },
+        {
+          "session_id": 3,
+          "timestamp": "2028-01-16T16:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I presented a completed complaint chronology to quality last week."
+            },
+            {
+              "role": "assistant",
+              "content": "Was the cause still disputed?"
+            },
+            {
+              "role": "user",
+              "content": "No, the review had already closed."
+            }
+          ]
+        },
+        {
+          "session_id": 4,
+          "timestamp": "2028-01-17T18:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Someone new shadowed me in the vigilance office this morning."
+            },
+            {
+              "role": "assistant",
+              "content": "Did that slow you down?"
+            },
+            {
+              "role": "user",
+              "content": "A little, but the questions were good ones."
+            }
+          ]
+        },
+        {
+          "session_id": 5,
+          "timestamp": "2028-01-18T09:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I batched my replies about the recall alerts into one message before lunch."
+            },
+            {
+              "role": "assistant",
+              "content": "Cleaner than drip-feeding answers."
+            },
+            {
+              "role": "user",
+              "content": "Much cleaner."
+            }
+          ]
+        },
+        {
+          "session_id": 6,
+          "timestamp": "2028-01-19T11:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I did a standard pass over the safety inbox records this morning."
+            },
+            {
+              "role": "assistant",
+              "content": "Any exceptions in there?"
+            },
+            {
+              "role": "user",
+              "content": "None worth a note."
+            }
+          ]
+        },
+        {
+          "session_id": 7,
+          "timestamp": "2028-01-20T14:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I sent three hospitals the standard follow-up form on Monday."
+            },
+            {
+              "role": "assistant",
+              "content": "Did you assess their devices?"
+            },
+            {
+              "role": "user",
+              "content": "No, I only requested the listed records."
+            }
+          ]
+        },
+        {
+          "session_id": 8,
+          "timestamp": "2028-01-21T16:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I archived last cycle's notes on the safety inbox and set up the new folder."
+            },
+            {
+              "role": "assistant",
+              "content": "A fresh start?"
+            },
+            {
+              "role": "user",
+              "content": "As fresh as these things get."
+            }
+          ]
+        },
+        {
+          "session_id": 9,
+          "timestamp": "2028-01-22T18:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The regulator call starts at 09:00, and hospitals must receive a holding message by 09:30."
+            },
+            {
+              "role": "assistant",
+              "content": "Are those deadlines fixed?"
+            },
+            {
+              "role": "user",
+              "content": "Yes, they are on the liaison schedule."
+            }
+          ]
+        },
+        {
+          "session_id": 10,
+          "timestamp": "2028-01-23T09:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "A vendor call about the complaint chronology ran long but ended well."
+            },
+            {
+              "role": "assistant",
+              "content": "Worth the time?"
+            },
+            {
+              "role": "user",
+              "content": "This one, yes."
+            }
+          ]
+        },
+        {
+          "session_id": 11,
+          "timestamp": "2028-01-24T11:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I walked through the vigilance office checklist with the new starter."
+            },
+            {
+              "role": "assistant",
+              "content": "How did they do?"
+            },
+            {
+              "role": "user",
+              "content": "Careful and quick, a good sign."
+            }
+          ]
+        },
+        {
+          "session_id": 12,
+          "timestamp": "2028-01-25T14:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Quiet afternoon; I cleared the backlog around the recall alerts."
+            },
+            {
+              "role": "assistant",
+              "content": "A rare day."
+            },
+            {
+              "role": "user",
+              "content": "I did not waste it."
+            }
+          ]
+        },
+        {
+          "session_id": 13,
+          "timestamp": "2028-01-26T16:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I flagged a small inconsistency in the safety inbox records and fixed it at the source."
+            },
+            {
+              "role": "assistant",
+              "content": "Root cause or symptom?"
+            },
+            {
+              "role": "user",
+              "content": "Root cause, for once."
+            }
+          ]
+        },
+        {
+          "session_id": 14,
+          "timestamp": "2028-01-27T18:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I closed a routine recall alerts cycle without surprises."
+            },
+            {
+              "role": "assistant",
+              "content": "Follow-up needed?"
+            },
+            {
+              "role": "user",
+              "content": "A note for the next cycle, nothing more."
+            }
+          ]
+        },
+        {
+          "session_id": 15,
+          "timestamp": "2028-01-28T09:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I sketched next week's plan for the recall alerts before leaving."
+            },
+            {
+              "role": "assistant",
+              "content": "Ahead of schedule?"
+            },
+            {
+              "role": "user",
+              "content": "Ahead enough to sleep well."
+            }
+          ]
+        },
+        {
+          "session_id": 16,
+          "timestamp": "2028-01-29T11:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Lunch walk, then a clean pass through the complaint chronology updates."
+            },
+            {
+              "role": "assistant",
+              "content": "Does the walk help?"
+            },
+            {
+              "role": "user",
+              "content": "It resets the afternoon."
+            }
+          ]
+        },
+        {
+          "session_id": 17,
+          "timestamp": "2028-01-30T14:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The overnight review room is available until 08:30, and the call agenda has separate evidence-summary and initial-hazard slots."
+            },
+            {
+              "role": "assistant",
+              "content": "Is that division permitted?"
+            },
+            {
+              "role": "user",
+              "content": "Yes, both slots are on the approved agenda."
+            }
+          ]
+        },
+        {
+          "session_id": 18,
+          "timestamp": "2028-01-31T16:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I compared two options for the safety inbox tooling and noted a mild preference."
+            },
+            {
+              "role": "assistant",
+              "content": "Decision made?"
+            },
+            {
+              "role": "user",
+              "content": "Deferred until the trial ends."
+            }
+          ]
+        },
+        {
+          "session_id": 19,
+          "timestamp": "2028-02-01T18:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I closed the week by updating the vigilance office handover notes."
+            },
+            {
+              "role": "assistant",
+              "content": "Anything unusual to hand over?"
+            },
+            {
+              "role": "user",
+              "content": "Blessedly little."
+            }
+          ]
+        },
+        {
+          "session_id": 20,
+          "timestamp": "2028-02-02T09:00:00Z",
+          "speaker_id": "work_s16_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The liaison asks me to rank the two regulator-call duties. Should initial hazard spokesperson come first?"
+            }
+          ]
+        }
+      ],
+      "query": "The liaison asks me to rank the two regulator-call duties. Should initial hazard spokesperson come first?"
+    }
+  }
+}

@@ -1,0 +1,579 @@
+{
+  "schema_version": "work-vnext-2.0",
+  "candidate_id": "AMB_WV_S18_U01_distractor",
+  "pair_id": "AMB_WV_S18_U01",
+  "data_arm": "distractor",
+  "domain": "work",
+  "user_id": "work_s18_u01",
+  "sub_scenario": {
+    "family": "review and decision quality under interruption density versus protected focused work",
+    "role": "standards editor",
+    "one_line": "standards editor: protect a continuous comparison block"
+  },
+  "query_type": "recommendation_ranking",
+  "polarity": "reject",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2028-05-07T11:00:00Z",
+      "speaker_id": "work_s18_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I spent the first hour tidying the manuscript queue and closing stale entries."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything still open?"
+        },
+        {
+          "role": "user",
+          "content": "Two items, both with owners."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2028-05-08T14:00:00Z",
+      "speaker_id": "work_s18_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The editorial calendar review wrapped early today."
+        },
+        {
+          "role": "assistant",
+          "content": "Any surprises in it?"
+        },
+        {
+          "role": "user",
+          "content": "None worth recording."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2028-05-09T16:00:00Z",
+      "speaker_id": "work_s18_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I cleared routine correspondence between meetings without losing track."
+        },
+        {
+          "role": "assistant",
+          "content": "Did those messages affect a publication decision?"
+        },
+        {
+          "role": "user",
+          "content": "No, they were routing notes rather than comparative readings."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2028-05-10T18:00:00Z",
+      "speaker_id": "work_s18_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Someone new shadowed me in the review studio this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Did that slow you down?"
+        },
+        {
+          "role": "user",
+          "content": "A little, but the questions were good ones."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2028-05-11T09:00:00Z",
+      "speaker_id": "work_s18_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I batched my replies about the revision weeks into one message before lunch."
+        },
+        {
+          "role": "assistant",
+          "content": "Cleaner than drip-feeding answers."
+        },
+        {
+          "role": "user",
+          "content": "Much cleaner."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2028-05-12T11:00:00Z",
+      "speaker_id": "work_s18_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "For the flood-resilience handbook, I reserved a two-hour quiet block, compared all cited thresholds side by side, and caught that the executive summary overstated the evidence."
+        },
+        {
+          "role": "assistant",
+          "content": "What made the correction possible?"
+        },
+        {
+          "role": "user",
+          "content": "I could hold the competing passages together until the claim was checked."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2028-05-13T14:00:00Z",
+      "speaker_id": "work_s18_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I discussed a draft with an author for twenty minutes after the section list was settled."
+        },
+        {
+          "role": "assistant",
+          "content": "Was that a decision-bearing comparison?"
+        },
+        {
+          "role": "user",
+          "content": "No, it was a clarifying conversation about structure."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2028-05-14T16:00:00Z",
+      "speaker_id": "work_s18_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I archived last cycle's notes on the editorial calendar and set up the new folder."
+        },
+        {
+          "role": "assistant",
+          "content": "A fresh start?"
+        },
+        {
+          "role": "user",
+          "content": "As fresh as these things get."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2028-05-15T18:00:00Z",
+      "speaker_id": "work_s18_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "My review calendar marks protected blocks as unavailable on the shared schedule."
+        },
+        {
+          "role": "assistant",
+          "content": "Why make that boundary visible?"
+        },
+        {
+          "role": "user",
+          "content": "A posted block keeps ordinary questions from fragmenting the evidence check."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2028-05-16T09:00:00Z",
+      "speaker_id": "work_s18_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A vendor call about the manuscript queue ran long but ended well."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth the time?"
+        },
+        {
+          "role": "user",
+          "content": "This one, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2028-05-17T11:00:00Z",
+      "speaker_id": "work_s18_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I walked through the review studio checklist with the new starter."
+        },
+        {
+          "role": "assistant",
+          "content": "How did they do?"
+        },
+        {
+          "role": "user",
+          "content": "Careful and quick, a good sign."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2028-05-18T14:00:00Z",
+      "speaker_id": "work_s18_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Quiet afternoon; I cleared the backlog around the revision weeks."
+        },
+        {
+          "role": "assistant",
+          "content": "A rare day."
+        },
+        {
+          "role": "user",
+          "content": "I did not waste it."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2028-05-19T16:00:00Z",
+      "speaker_id": "work_s18_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I flagged a small inconsistency in the editorial calendar records and fixed it at the source."
+        },
+        {
+          "role": "assistant",
+          "content": "Root cause or symptom?"
+        },
+        {
+          "role": "user",
+          "content": "Root cause, for once."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2028-05-20T18:00:00Z",
+      "speaker_id": "work_s18_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "While reviewing the accessibility guide in the open office, I answered chat requests between sections and approved a recommendation before noticing its exception clause."
+        },
+        {
+          "role": "assistant",
+          "content": "What caused the miss?"
+        },
+        {
+          "role": "user",
+          "content": "Each restart made the earlier qualification harder to retain."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2028-05-21T09:00:00Z",
+      "speaker_id": "work_s18_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I sketched next week's plan for the revision weeks before leaving."
+        },
+        {
+          "role": "assistant",
+          "content": "Ahead of schedule?"
+        },
+        {
+          "role": "user",
+          "content": "Ahead enough to sleep well."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2028-05-22T11:00:00Z",
+      "speaker_id": "work_s18_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Lunch walk, then a clean pass through the manuscript queue updates."
+        },
+        {
+          "role": "assistant",
+          "content": "Does the walk help?"
+        },
+        {
+          "role": "user",
+          "content": "It resets the afternoon."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2028-05-23T14:00:00Z",
+      "speaker_id": "work_s18_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The production coordinator holds a 15:00 calendar slot after my review block."
+        },
+        {
+          "role": "assistant",
+          "content": "Is that slot fixed?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, it is booked on the editorial calendar."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2028-05-24T16:00:00Z",
+      "speaker_id": "work_s18_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The publisher says rapid chat replies make an editor look collaborative."
+        },
+        {
+          "role": "assistant",
+          "content": "Does that settle the review schedule?"
+        },
+        {
+          "role": "user",
+          "content": "No, responsiveness is useful only if the decision remains accurate."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2028-05-25T18:00:00Z",
+      "speaker_id": "work_s18_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I closed the week by updating the review studio handover notes."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual to hand over?"
+        },
+        {
+          "role": "user",
+          "content": "Blessedly little."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2028-05-26T09:00:00Z",
+      "speaker_id": "work_s18_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "How should I handle author questions during tomorrow's policy manuscript review?"
+        }
+      ]
+    }
+  ],
+  "query": "How should I handle author questions during tomorrow's policy manuscript review?",
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "work_s18_u01",
+      "fact": "For the flood-resilience handbook, I reserved a two-hour quiet block, compared all cited thresholds side by side, and caught that the executive summary overstated the evidence."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "work_s18_u01",
+      "fact": "While reviewing the accessibility guide in the open office, I answered chat requests between sections and approved a recommendation before noticing its exception clause."
+    }
+  },
+  "supporting_constraints": {
+    "E1": {
+      "session_id": 9,
+      "fact": "My review calendar marks protected blocks as unavailable on the shared schedule."
+    },
+    "E2": {
+      "session_id": 17,
+      "fact": "The production coordinator holds a 15:00 calendar slot after my review block."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "work_s18_u01",
+        "context": "flood-resilience handbook review",
+        "goal_or_prediction": "verify an evidence claim",
+        "action": "compared cited thresholds in a quiet block",
+        "outcome_or_affect": "overstatement corrected before publication"
+      }
+    },
+    "7": {
+      "role": "nearby_counterexample"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "supporting_constraint",
+      "fact_id": "E1"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "work_s18_u01",
+        "context": "accessibility guide chat review",
+        "goal_or_prediction": "approve a recommendation",
+        "action": "answered chats between sections before approving",
+        "outcome_or_affect": "exception clause missed"
+      }
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "supporting_constraint",
+      "fact_id": "E2"
+    },
+    "18": {
+      "role": "distractor",
+      "distractor_id": "dist_1",
+      "why_distractor": "Publisher praise for rapid replies concerns availability, not the quality of the resulting publication judgment."
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "The flood-resilience review shows that uninterrupted comparison catches consequential qualifications, while the accessibility chat episode shows why this user's split attention produces a missed exception.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": [
+      "E1",
+      "E2"
+    ]
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "For the flood-resilience handbook, I reserved a two-hour quiet block, compared all cited thresholds side by side, and caught that the executive summary overstated the evidence"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "While reviewing the accessibility guide in the open office, I answered chat requests between sections and approved a recommendation before noticing its exception clause"
+    }
+  ],
+  "retrieval_cue": {
+    "cue_type": "recommendation_ranking",
+    "why_it_naturally_retrieves_R": "A realistic work request forces a personalized decision without naming either episode or the relation between them."
+  },
+  "relation_specificity": {
+    "nearby_relation": "The user handles routine correspondence and brief author conversations well.",
+    "why_it_does_not_license_C": "Neither activity requires tracking qualifications across a long, decision-bearing comparison."
+  },
+  "coactivation_bridge": "A and B form the only intervention pair. The flood-resilience review shows that uninterrupted comparison catches consequential qualifications, while the accessibility chat episode shows why this user's split attention produces a missed exception. E1 and E2 are logistical calibration only and do not open a second route to C.",
+  "latent_C": {
+    "inference": "Ask colleagues to batch nonurgent questions and preserve a protected evidence-review block.",
+    "calibrated_language": "protect a continuous comparison block"
+  },
+  "answer_contract": {
+    "target_proposition": "Ask colleagues to batch nonurgent questions and preserve a protected evidence-review block.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "work_u01",
+    "status": "review_candidate_only",
+    "anonymization": "External persona material was used only during authoring; no corpus, name, country, or demographic metadata is included."
+  },
+  "arm_gold": {
+    "distractor": {
+      "expected_mode": "infer_C",
+      "binary_decision": true
+    }
+  },
+  "distractor_note": {
+    "replaced_session_id": 18,
+    "why_distractor": "Publisher praise for rapid replies concerns availability, not the quality of the resulting publication judgment."
+  }
+}

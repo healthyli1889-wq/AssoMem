@@ -1,0 +1,573 @@
+{
+  "schema_version": "work-vnext-2.0",
+  "candidate_id": "AMB_WV_S13_U02_distractor",
+  "pair_id": "AMB_WV_S13_U02",
+  "data_arm": "distractor",
+  "domain": "work",
+  "user_id": "work_s13_u02",
+  "sub_scenario": {
+    "family": "APAC verbal ownership under incomplete records",
+    "role": "merchant-acquiring risk lead",
+    "one_line": "merchant-acquiring risk lead: name verified codes, merchant assertions, and pending network responses"
+  },
+  "query_type": "recommendation_ranking",
+  "polarity": "accept",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2027-05-07T11:00:00Z",
+      "speaker_id": "work_s13_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I spent the first hour tidying the merchant-acquiring risk lead and closing stale entries."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything still open?"
+        },
+        {
+          "role": "user",
+          "content": "Two items, both with owners."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2027-05-08T14:00:00Z",
+      "speaker_id": "work_s13_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The settlement dashboard review wrapped early today."
+        },
+        {
+          "role": "assistant",
+          "content": "Any surprises in it?"
+        },
+        {
+          "role": "user",
+          "content": "None worth recording."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2027-05-09T16:00:00Z",
+      "speaker_id": "work_s13_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I can summarize yesterday's settled chargebacks from the dashboard."
+        },
+        {
+          "role": "assistant",
+          "content": "Is that the same as deciding a new hold?"
+        },
+        {
+          "role": "user",
+          "content": "No, the settled figures need no inference."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2027-05-10T18:00:00Z",
+      "speaker_id": "work_s13_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Someone new shadowed me in the APAC bridge this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Did that slow you down?"
+        },
+        {
+          "role": "user",
+          "content": "A little, but the questions were good ones."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2027-05-11T09:00:00Z",
+      "speaker_id": "work_s13_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I batched my replies about the chargeback handoff into one message before lunch."
+        },
+        {
+          "role": "assistant",
+          "content": "Cleaner than drip-feeding answers."
+        },
+        {
+          "role": "user",
+          "content": "Much cleaner."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2027-05-12T11:00:00Z",
+      "speaker_id": "work_s13_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "For a sudden chargeback cluster, I write an evidence ledger separating issuer-confirmed codes, merchant claims, and transactions still awaiting network response."
+        },
+        {
+          "role": "assistant",
+          "content": "Why make a ledger?"
+        },
+        {
+          "role": "user",
+          "content": "It prevents a tentative pattern from becoming a stated cause."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2027-05-13T14:00:00Z",
+      "speaker_id": "work_s13_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I can route a merchant question to the investigations queue."
+        },
+        {
+          "role": "assistant",
+          "content": "Does routing establish cause?"
+        },
+        {
+          "role": "user",
+          "content": "No, it only starts the review."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2027-05-14T16:00:00Z",
+      "speaker_id": "work_s13_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I archived last cycle's notes on the settlement dashboard and set up the new folder."
+        },
+        {
+          "role": "assistant",
+          "content": "A fresh start?"
+        },
+        {
+          "role": "user",
+          "content": "As fresh as these things get."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2027-05-15T18:00:00Z",
+      "speaker_id": "work_s13_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The 07:10 Hong Kong bridge ends fifteen minutes before the network's temporary-hold window closes."
+        },
+        {
+          "role": "assistant",
+          "content": "Is there time for a later discussion?"
+        },
+        {
+          "role": "user",
+          "content": "No, the hold request must be sent within that window."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2027-05-16T09:00:00Z",
+      "speaker_id": "work_s13_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A vendor call about the merchant-acquiring risk lead ran long but ended well."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth the time?"
+        },
+        {
+          "role": "user",
+          "content": "This one, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2027-05-17T11:00:00Z",
+      "speaker_id": "work_s13_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I walked through the APAC bridge checklist with the new starter."
+        },
+        {
+          "role": "assistant",
+          "content": "How did they do?"
+        },
+        {
+          "role": "user",
+          "content": "Careful and quick, a good sign."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2027-05-18T14:00:00Z",
+      "speaker_id": "work_s13_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Quiet afternoon; I cleared the backlog around the chargeback handoff."
+        },
+        {
+          "role": "assistant",
+          "content": "A rare day."
+        },
+        {
+          "role": "user",
+          "content": "I did not waste it."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2027-05-19T16:00:00Z",
+      "speaker_id": "work_s13_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I flagged a small inconsistency in the settlement dashboard records and fixed it at the source."
+        },
+        {
+          "role": "assistant",
+          "content": "Root cause or symptom?"
+        },
+        {
+          "role": "user",
+          "content": "Root cause, for once."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2027-05-20T18:00:00Z",
+      "speaker_id": "work_s13_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "In a prior cluster, I said fraud was established from merchant emails and requested a broad hold; network data later showed a duplicate-submission defect."
+        },
+        {
+          "role": "assistant",
+          "content": "What was the consequence?"
+        },
+        {
+          "role": "user",
+          "content": "Several legitimate merchants were paused."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2027-05-21T09:00:00Z",
+      "speaker_id": "work_s13_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I sketched next week's plan for the chargeback handoff before leaving."
+        },
+        {
+          "role": "assistant",
+          "content": "Ahead of schedule?"
+        },
+        {
+          "role": "user",
+          "content": "Ahead enough to sleep well."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2027-05-22T11:00:00Z",
+      "speaker_id": "work_s13_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Lunch walk, then a clean pass through the merchant-acquiring risk lead updates."
+        },
+        {
+          "role": "assistant",
+          "content": "Does the walk help?"
+        },
+        {
+          "role": "user",
+          "content": "It resets the afternoon."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2027-05-23T14:00:00Z",
+      "speaker_id": "work_s13_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The office coffee machine is being replaced this week."
+        },
+        {
+          "role": "assistant",
+          "content": "Does that bear on the hold?"
+        },
+        {
+          "role": "user",
+          "content": "No, it is simply an office disruption."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2027-05-24T16:00:00Z",
+      "speaker_id": "work_s13_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The sales team says a decisive call will reassure a prospective enterprise merchant."
+        },
+        {
+          "role": "assistant",
+          "content": "Does reassurance verify the pattern?"
+        },
+        {
+          "role": "user",
+          "content": "No, it cannot substitute for network evidence."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2027-05-25T18:00:00Z",
+      "speaker_id": "work_s13_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I closed the week by updating the APAC bridge handover notes."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual to hand over?"
+        },
+        {
+          "role": "user",
+          "content": "Blessedly little."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2027-05-26T09:00:00Z",
+      "speaker_id": "work_s13_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Rank accepting the Hong Kong chargeback handoff for the next bridge."
+        }
+      ]
+    }
+  ],
+  "query": "Rank accepting the Hong Kong chargeback handoff for the next bridge.",
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "work_s13_u02",
+      "fact": "For a sudden chargeback cluster, I write an evidence ledger separating issuer-confirmed codes, merchant claims, and transactions still awaiting network response."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "work_s13_u02",
+      "fact": "In a prior cluster, I said fraud was established from merchant emails and requested a broad hold; network data later showed a duplicate-submission defect."
+    }
+  },
+  "supporting_constraints": {
+    "E1": {
+      "session_id": 9,
+      "fact": "The 07:10 Hong Kong bridge ends fifteen minutes before the network's temporary-hold window closes."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "work_s13_u02",
+        "context": "chargeback cluster",
+        "goal_or_prediction": "write evidence ledger",
+        "action": "verified codes and pending responses",
+        "outcome_or_affect": "qualified handoff"
+      }
+    },
+    "7": {
+      "role": "nearby_counterexample"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "supporting_constraint",
+      "fact_id": "E1"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "work_s13_u02",
+        "context": "prior broad hold",
+        "goal_or_prediction": "attribute cluster",
+        "action": "network data absent",
+        "outcome_or_affect": "legitimate merchants paused"
+      }
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "background_memory"
+    },
+    "18": {
+      "role": "distractor",
+      "distractor_id": "dist_1",
+      "why_distractor": "Sales reassurance is not evidence of fraud."
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "The ledger preserves the live constraint while preventing a repeat of the unsupported broad hold.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": [
+      "E1"
+    ]
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "For a sudden chargeback cluster, I write an evidence ledger separating issuer-confirmed codes, merchant claims, and transactions still awaiting network response"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "In a prior cluster, I said fraud was established from merchant emails and requested a broad hold; network data later showed a duplicate-submission defect"
+    }
+  ],
+  "retrieval_cue": {
+    "cue_type": "recommendation_ranking",
+    "why_it_naturally_retrieves_R": "A realistic work request forces a personalized decision without naming either episode or the relation between them."
+  },
+  "relation_specificity": {
+    "nearby_relation": "The user can summarize settled chargebacks.",
+    "why_it_does_not_license_C": "That task does not require attributing an active cluster."
+  },
+  "coactivation_bridge": "A and B form the intervention pair. The ledger preserves the live constraint while preventing a repeat of the unsupported broad hold. The short APAC overlap is E1; session 17 is ordinary background, not decision evidence.",
+  "latent_C": {
+    "inference": "Accept it if the evidence ledger travels with the handoff.",
+    "calibrated_language": "name verified codes, merchant assertions, and pending network responses"
+  },
+  "answer_contract": {
+    "target_proposition": "Accept it if the evidence ledger travels with the handoff.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "decision",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "work_u02",
+    "status": "review_candidate_only",
+    "anonymization": "External persona material was used only during authoring; no corpus, name, country, or demographic metadata is included."
+  },
+  "arm_gold": {
+    "distractor": {
+      "expected_mode": "infer_C",
+      "binary_decision": true
+    }
+  },
+  "distractor_note": {
+    "replaced_session_id": 18,
+    "why_distractor": "Sales reassurance is not evidence of fraud."
+  }
+}

@@ -1,0 +1,579 @@
+{
+  "schema_version": "work-vnext-2.0",
+  "candidate_id": "AMB_WV_S01_U09_distractor",
+  "pair_id": "AMB_WV_S01_U09",
+  "data_arm": "distractor",
+  "domain": "work",
+  "user_id": "work_s01_u09",
+  "sub_scenario": {
+    "family": "fixed early live dependency prioritization",
+    "role": "school operations manager",
+    "one_line": "school operations manager: defer until the feed question is resolved"
+  },
+  "query_type": "predicted_reaction",
+  "polarity": "non_decision",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2026-03-18T11:00:00Z",
+      "speaker_id": "work_s01_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I spent the first hour tidying the route map and closing stale entries."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything still open?"
+        },
+        {
+          "role": "user",
+          "content": "Two items, both with owners."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2026-03-19T14:00:00Z",
+      "speaker_id": "work_s01_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The bus roster review wrapped early today."
+        },
+        {
+          "role": "assistant",
+          "content": "Any surprises in it?"
+        },
+        {
+          "role": "user",
+          "content": "None worth recording."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2026-03-20T16:00:00Z",
+      "speaker_id": "work_s01_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Single-closure mornings on the 06:20 call are easy; one street, one detour."
+        },
+        {
+          "role": "assistant",
+          "content": "The simple case is fine live?"
+        },
+        {
+          "role": "user",
+          "content": "Genuinely fine."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2026-03-21T18:00:00Z",
+      "speaker_id": "work_s01_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Someone new shadowed me in the district office this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Did that slow you down?"
+        },
+        {
+          "role": "user",
+          "content": "A little, but the questions were good ones."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2026-03-22T09:00:00Z",
+      "speaker_id": "work_s01_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I batched my replies about the route coverage into one message before lunch."
+        },
+        {
+          "role": "assistant",
+          "content": "Cleaner than drip-feeding answers."
+        },
+        {
+          "role": "user",
+          "content": "Much cleaner."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2026-03-23T11:00:00Z",
+      "speaker_id": "work_s01_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The evening before the marathon closures I mapped the affected streets and re-ordered the routes; every bus was on time."
+        },
+        {
+          "role": "assistant",
+          "content": "Planning the night before worked."
+        },
+        {
+          "role": "user",
+          "content": "With the closure list in hand it always does."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2026-03-24T14:00:00Z",
+      "speaker_id": "work_s01_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Give me the closure list at 21:00 and the morning call becomes a formality."
+        },
+        {
+          "role": "assistant",
+          "content": "Preparation converts the task."
+        },
+        {
+          "role": "user",
+          "content": "Completely."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2026-03-25T16:00:00Z",
+      "speaker_id": "work_s01_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I archived last cycle's notes on the bus roster and set up the new folder."
+        },
+        {
+          "role": "assistant",
+          "content": "A fresh start?"
+        },
+        {
+          "role": "user",
+          "content": "As fresh as these things get."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2026-03-26T18:00:00Z",
+      "speaker_id": "work_s01_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Winter closures average one a week; triple-overlap mornings have happened twice in three years."
+        },
+        {
+          "role": "assistant",
+          "content": "So the hard case is rare."
+        },
+        {
+          "role": "user",
+          "content": "Rare but expensive when it lands."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2026-03-27T09:00:00Z",
+      "speaker_id": "work_s01_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A vendor call about the route map ran long but ended well."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth the time?"
+        },
+        {
+          "role": "user",
+          "content": "This one, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2026-03-28T11:00:00Z",
+      "speaker_id": "work_s01_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I walked through the district office checklist with the new starter."
+        },
+        {
+          "role": "assistant",
+          "content": "How did they do?"
+        },
+        {
+          "role": "user",
+          "content": "Careful and quick, a good sign."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2026-03-29T14:00:00Z",
+      "speaker_id": "work_s01_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Quiet afternoon; I cleared the backlog around the route coverage."
+        },
+        {
+          "role": "assistant",
+          "content": "A rare day."
+        },
+        {
+          "role": "user",
+          "content": "I did not waste it."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2026-03-30T16:00:00Z",
+      "speaker_id": "work_s01_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I flagged a small inconsistency in the bus roster records and fixed it at the source."
+        },
+        {
+          "role": "assistant",
+          "content": "Root cause or symptom?"
+        },
+        {
+          "role": "user",
+          "content": "Root cause, for once."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2026-03-31T18:00:00Z",
+      "speaker_id": "work_s01_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The morning three closures came in overnight, the 06:20 live call had me re-ordering on the fly and two buses ended up crossing the same blocked bridge."
+        },
+        {
+          "role": "assistant",
+          "content": "Was the overlap visible in hindsight?"
+        },
+        {
+          "role": "user",
+          "content": "Instantly, on the map I drew afterwards."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2026-04-01T09:00:00Z",
+      "speaker_id": "work_s01_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I sketched next week's plan for the route coverage before leaving."
+        },
+        {
+          "role": "assistant",
+          "content": "Ahead of schedule?"
+        },
+        {
+          "role": "user",
+          "content": "Ahead enough to sleep well."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2026-04-02T11:00:00Z",
+      "speaker_id": "work_s01_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Lunch walk, then a clean pass through the route map updates."
+        },
+        {
+          "role": "assistant",
+          "content": "Does the walk help?"
+        },
+        {
+          "role": "user",
+          "content": "It resets the afternoon."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2026-04-03T14:00:00Z",
+      "speaker_id": "work_s01_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The district cannot say yet whether the closure feed can be delivered the evening before; the vendor demo is next month."
+        },
+        {
+          "role": "assistant",
+          "content": "A key fact still unknown."
+        },
+        {
+          "role": "user",
+          "content": "Until that demo, unknown."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2026-04-04T16:00:00Z",
+      "speaker_id": "work_s01_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The transport chief said committing now would show leadership backbone."
+        },
+        {
+          "role": "assistant",
+          "content": "Pressure vocabulary."
+        },
+        {
+          "role": "user",
+          "content": "It is effective vocabulary, unfortunately."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2026-04-05T18:00:00Z",
+      "speaker_id": "work_s01_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I closed the week by updating the district office handover notes."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual to hand over?"
+        },
+        {
+          "role": "user",
+          "content": "Blessedly little."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2026-04-06T09:00:00Z",
+      "speaker_id": "work_s01_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The district wants a permanent answer this week on me owning the 06:20 routing call. Given everything, how would I most plausibly respond right now?"
+        }
+      ]
+    }
+  ],
+  "query": "The district wants a permanent answer this week on me owning the 06:20 routing call. Given everything, how would I most plausibly respond right now?",
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "work_s01_u09",
+      "fact": "The evening before the marathon closures I mapped the affected streets and re-ordered the routes; every bus was on time."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "work_s01_u09",
+      "fact": "The morning three closures came in overnight, the 06:20 live call had me re-ordering on the fly and two buses ended up crossing the same blocked bridge."
+    }
+  },
+  "supporting_constraints": {
+    "E1": {
+      "session_id": 9,
+      "fact": "Winter closures average one a week; triple-overlap mornings have happened twice in three years."
+    },
+    "E2": {
+      "session_id": 17,
+      "fact": "The district cannot say yet whether the closure feed can be delivered the evening before; the vendor demo is next month."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "work_s01_u09",
+        "context": "pre-marathon evening planning",
+        "goal_or_prediction": "keep every bus on time",
+        "action": "mapped closures and re-ordered routes the night before",
+        "outcome_or_affect": "all buses on time"
+      }
+    },
+    "7": {
+      "role": "nearby_counterexample"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "supporting_constraint",
+      "fact_id": "E1"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "work_s01_u09",
+        "context": "triple-closure 06:20 live call",
+        "goal_or_prediction": "re-order routes on the fly",
+        "action": "sequenced live without a map",
+        "outcome_or_affect": "two buses crossed the same blocked bridge"
+      }
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "supporting_constraint",
+      "fact_id": "E2"
+    },
+    "18": {
+      "role": "distractor",
+      "distractor_id": "dist_1",
+      "why_distractor": "Leadership-backbone rhetoric pressures a commitment without resolving the feed unknown."
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "This user routes reliably with an evening closure list and misrouted when multi-closure ordering was demanded live, and the feed timing is still undecided.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": [
+      "E1",
+      "E2"
+    ]
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "The evening before the marathon closures I mapped the affected streets and re-ordered the routes; every bus was on time"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "The morning three closures came in overnight, the 06:20 live call had me re-ordering on the fly and two buses ended up crossing the same blocked bridge"
+    }
+  ],
+  "retrieval_cue": {
+    "cue_type": "predicted_reaction",
+    "why_it_naturally_retrieves_R": "A realistic work request forces a personalized decision without naming either episode or the relation between them."
+  },
+  "relation_specificity": {
+    "nearby_relation": "The user handles single-closure live mornings and prepared mornings easily.",
+    "why_it_does_not_license_C": "Neither settles how permanent multi-closure live mornings would go without the feed."
+  },
+  "coactivation_bridge": "A shows the operating condition; B shows the demand or failure that makes it decisive. This user routes reliably with an evening closure list and misrouted when multi-closure ordering was demanded live, and the feed timing is still undecided. E1 and E2 calibrate the practical recommendation without opening a second route to the conclusion.",
+  "latent_C": {
+    "inference": "The records support this user deferring a permanent commitment until the evening closure-feed question is resolved.",
+    "calibrated_language": "defer until the feed question is resolved"
+  },
+  "answer_contract": {
+    "target_proposition": "The records support this user deferring a permanent commitment until the evening closure-feed question is resolved.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "decision",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "work_u09",
+    "status": "review_candidate_only",
+    "anonymization": "External persona material was used only during authoring; no corpus, name, country, or demographic metadata is included."
+  },
+  "arm_gold": {
+    "distractor": {
+      "expected_mode": "infer_C",
+      "binary_decision": true
+    }
+  },
+  "distractor_note": {
+    "replaced_session_id": 18,
+    "why_distractor": "Leadership-backbone rhetoric pressures a commitment without resolving the feed unknown."
+  }
+}

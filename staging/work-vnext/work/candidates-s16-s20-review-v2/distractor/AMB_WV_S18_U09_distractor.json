@@ -1,0 +1,579 @@
+{
+  "schema_version": "work-vnext-2.0",
+  "candidate_id": "AMB_WV_S18_U09_distractor",
+  "pair_id": "AMB_WV_S18_U09",
+  "data_arm": "distractor",
+  "domain": "work",
+  "user_id": "work_s18_u09",
+  "sub_scenario": {
+    "family": "review and decision quality under interruption density versus protected focused work",
+    "role": "claims quality auditor",
+    "one_line": "claims quality auditor: protect contested-file chronology review"
+  },
+  "query_type": "behavior_explanation",
+  "polarity": "accept",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2028-05-31T11:00:00Z",
+      "speaker_id": "work_s18_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I spent the first hour tidying the claim file and closing stale entries."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything still open?"
+        },
+        {
+          "role": "user",
+          "content": "Two items, both with owners."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2028-06-01T14:00:00Z",
+      "speaker_id": "work_s18_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The audit rota review wrapped early today."
+        },
+        {
+          "role": "assistant",
+          "content": "Any surprises in it?"
+        },
+        {
+          "role": "user",
+          "content": "None worth recording."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2028-06-02T16:00:00Z",
+      "speaker_id": "work_s18_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I approved a routine address correction while colleagues asked questions."
+        },
+        {
+          "role": "assistant",
+          "content": "Was a coverage interpretation involved?"
+        },
+        {
+          "role": "user",
+          "content": "No, it was a clerical field fix."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2028-06-03T18:00:00Z",
+      "speaker_id": "work_s18_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Someone new shadowed me in the quality office this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Did that slow you down?"
+        },
+        {
+          "role": "user",
+          "content": "A little, but the questions were good ones."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2028-06-04T09:00:00Z",
+      "speaker_id": "work_s18_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I batched my replies about the appeal cycles into one message before lunch."
+        },
+        {
+          "role": "assistant",
+          "content": "Cleaner than drip-feeding answers."
+        },
+        {
+          "role": "user",
+          "content": "Much cleaner."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2028-06-05T11:00:00Z",
+      "speaker_id": "work_s18_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "In an appeal involving storm damage, I used a quiet review block to align photographs, contractor invoices, and the adjuster's notes, then found that the denial had overlooked the documented date of loss."
+        },
+        {
+          "role": "assistant",
+          "content": "What followed?"
+        },
+        {
+          "role": "user",
+          "content": "We corrected the decision before the customer entered a longer appeal."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2028-06-06T14:00:00Z",
+      "speaker_id": "work_s18_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I attended a short morning calibration huddle."
+        },
+        {
+          "role": "assistant",
+          "content": "Did that reconstruct a disputed chronology?"
+        },
+        {
+          "role": "user",
+          "content": "No, it aligned scoring examples across auditors."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2028-06-07T16:00:00Z",
+      "speaker_id": "work_s18_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I archived last cycle's notes on the audit rota and set up the new folder."
+        },
+        {
+          "role": "assistant",
+          "content": "A fresh start?"
+        },
+        {
+          "role": "user",
+          "content": "As fresh as these things get."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2028-06-08T18:00:00Z",
+      "speaker_id": "work_s18_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The audit rota gives contested denials a protected hour, with interruptions limited to a vulnerable-customer escalation, a regulator request, or a data-security issue."
+        },
+        {
+          "role": "assistant",
+          "content": "Why separate those cases?"
+        },
+        {
+          "role": "user",
+          "content": "They may change urgency or legal obligations; routine queue questions do not."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2028-06-09T09:00:00Z",
+      "speaker_id": "work_s18_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A vendor call about the claim file ran long but ended well."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth the time?"
+        },
+        {
+          "role": "user",
+          "content": "This one, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2028-06-10T11:00:00Z",
+      "speaker_id": "work_s18_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I walked through the quality office checklist with the new starter."
+        },
+        {
+          "role": "assistant",
+          "content": "How did they do?"
+        },
+        {
+          "role": "user",
+          "content": "Careful and quick, a good sign."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2028-06-11T14:00:00Z",
+      "speaker_id": "work_s18_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Quiet afternoon; I cleared the backlog around the appeal cycles."
+        },
+        {
+          "role": "assistant",
+          "content": "A rare day."
+        },
+        {
+          "role": "user",
+          "content": "I did not waste it."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2028-06-12T16:00:00Z",
+      "speaker_id": "work_s18_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I flagged a small inconsistency in the audit rota records and fixed it at the source."
+        },
+        {
+          "role": "assistant",
+          "content": "Root cause or symptom?"
+        },
+        {
+          "role": "user",
+          "content": "Root cause, for once."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2028-06-13T18:00:00Z",
+      "speaker_id": "work_s18_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "On a water-damage audit, I answered queue messages between exhibits and treated a later repair estimate as if it predated the policy lapse, upholding a denial incorrectly."
+        },
+        {
+          "role": "assistant",
+          "content": "What did the switching affect?"
+        },
+        {
+          "role": "user",
+          "content": "I lost the sequence that gave the estimate its meaning."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2028-06-14T09:00:00Z",
+      "speaker_id": "work_s18_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I sketched next week's plan for the appeal cycles before leaving."
+        },
+        {
+          "role": "assistant",
+          "content": "Ahead of schedule?"
+        },
+        {
+          "role": "user",
+          "content": "Ahead enough to sleep well."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2028-06-15T11:00:00Z",
+      "speaker_id": "work_s18_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Lunch walk, then a clean pass through the claim file updates."
+        },
+        {
+          "role": "assistant",
+          "content": "Does the walk help?"
+        },
+        {
+          "role": "user",
+          "content": "It resets the afternoon."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2028-06-16T14:00:00Z",
+      "speaker_id": "work_s18_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A queue coordinator can hold routine questions and send one summary at the end of the contested-file block."
+        },
+        {
+          "role": "assistant",
+          "content": "Would claimants wait longer?"
+        },
+        {
+          "role": "user",
+          "content": "No, the queue continues moving while the appeal-risk decision is checked properly."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2028-06-17T16:00:00Z",
+      "speaker_id": "work_s18_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The operations head says an auditor who answers instantly keeps service levels high."
+        },
+        {
+          "role": "assistant",
+          "content": "Does that show the denial is sound?"
+        },
+        {
+          "role": "user",
+          "content": "No, service level and evidentiary accuracy both matter."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2028-06-18T18:00:00Z",
+      "speaker_id": "work_s18_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I closed the week by updating the quality office handover notes."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual to hand over?"
+        },
+        {
+          "role": "user",
+          "content": "Blessedly little."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2028-06-19T09:00:00Z",
+      "speaker_id": "work_s18_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Why should contested-denial audits have a protected review hour instead of taking routine queue messages throughout?"
+        }
+      ]
+    }
+  ],
+  "query": "Why should contested-denial audits have a protected review hour instead of taking routine queue messages throughout?",
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "work_s18_u09",
+      "fact": "In an appeal involving storm damage, I used a quiet review block to align photographs, contractor invoices, and the adjuster's notes, then found that the denial had overlooked the documented date of loss."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "work_s18_u09",
+      "fact": "On a water-damage audit, I answered queue messages between exhibits and treated a later repair estimate as if it predated the policy lapse, upholding a denial incorrectly."
+    }
+  },
+  "supporting_constraints": {
+    "E1": {
+      "session_id": 9,
+      "fact": "The audit rota gives contested denials a protected hour, with interruptions limited to a vulnerable-customer escalation, a regulator request, or a data-security issue."
+    },
+    "E2": {
+      "session_id": 17,
+      "fact": "A queue coordinator can hold routine questions and send one summary at the end of the contested-file block."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "work_s18_u09",
+        "context": "storm-damage appeal audit",
+        "goal_or_prediction": "check a denial",
+        "action": "aligned photos, invoices, and notes in a quiet block",
+        "outcome_or_affect": "overlooked loss date corrected"
+      }
+    },
+    "7": {
+      "role": "nearby_counterexample"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "supporting_constraint",
+      "fact_id": "E1"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "work_s18_u09",
+        "context": "water-damage denial audit",
+        "goal_or_prediction": "review a disputed denial",
+        "action": "answered queue messages between exhibits",
+        "outcome_or_affect": "repair-estimate chronology reversed"
+      }
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "supporting_constraint",
+      "fact_id": "E2"
+    },
+    "18": {
+      "role": "distractor",
+      "distractor_id": "dist_1",
+      "why_distractor": "Instant queue responsiveness does not establish that an interrupted denial review is accurate."
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "The storm-damage appeal shows that focused alignment corrects an overlooked loss date, while the water-damage queue episode shows why this user's interrupted review reversed a repair estimate's chronology.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": [
+      "E1",
+      "E2"
+    ]
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "In an appeal involving storm damage, I used a quiet review block to align photographs, contractor invoices, and the adjuster's notes, then found that the denial had overlooked the documented date of loss"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "On a water-damage audit, I answered queue messages between exhibits and treated a later repair estimate as if it predated the policy lapse, upholding a denial incorrectly"
+    }
+  ],
+  "retrieval_cue": {
+    "cue_type": "behavior_explanation",
+    "why_it_naturally_retrieves_R": "A realistic work request forces a personalized decision without naming either episode or the relation between them."
+  },
+  "relation_specificity": {
+    "nearby_relation": "The user can process address corrections and join short calibration huddles.",
+    "why_it_does_not_license_C": "Neither requires evaluating disputed coverage through a multi-document timeline."
+  },
+  "coactivation_bridge": "A and B form the only intervention pair. The storm-damage appeal shows that focused alignment corrects an overlooked loss date, while the water-damage queue episode shows why this user's interrupted review reversed a repair estimate's chronology. E1 and E2 are logistical calibration only and do not open a second route to C.",
+  "latent_C": {
+    "inference": "Because accurate appeal-risk decisions depend on uninterrupted reconstruction of the file chronology.",
+    "calibrated_language": "protect contested-file chronology review"
+  },
+  "answer_contract": {
+    "target_proposition": "Because accurate appeal-risk decisions depend on uninterrupted reconstruction of the file chronology.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "work_u09",
+    "status": "review_candidate_only",
+    "anonymization": "External persona material was used only during authoring; no corpus, name, country, or demographic metadata is included."
+  },
+  "arm_gold": {
+    "distractor": {
+      "expected_mode": "infer_C",
+      "binary_decision": true
+    }
+  },
+  "distractor_note": {
+    "replaced_session_id": 18,
+    "why_distractor": "Instant queue responsiveness does not establish that an interrupted denial review is accurate."
+  }
+}

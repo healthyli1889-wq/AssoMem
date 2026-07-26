@@ -1,0 +1,2489 @@
+{
+  "pair_id": "AMB_WV_S19_U04",
+  "scenario": "S19",
+  "uid": "U04",
+  "role": "supply chain analyst",
+  "query": "Why would I be comfortable joining the 15:30 freight escalation hour only when its evidence sheet and verification window are retained?",
+  "target": "Because those safeguards keep late-day uncertainty from becoming an unsupported operational commitment.",
+  "calibrated": "explain the guarded acceptance",
+  "relation": "The port-disruption review establishes this user's value in separating evidence categories before naming an owner, while the January call establishes why that same user needs the sheet and verification window at 15:30.",
+  "A": "During a port-disruption review, I sorted the carrier update, broker estimate, and confirmed delay into separate columns on the exception register before naming any shortage owner at the planning-cell call; the team held the reallocation until the customs record posted.",
+  "B": "On a January port-disruption call, I assigned a shortage to customs before separating the carrier update from the broker's estimate, and we diverted inventory unnecessarily.",
+  "E1": "The 15:30 freight office hour is on the peak-season calendar, and the three-column evidence sheet is due at 15:15.",
+  "E2": "Each case has a 24-hour verification window on the freight form, and the planning cell permits a narrow agenda for the office hour.",
+  "B_prime": "On a March port-disruption call, I read the carrier timestamps, tracked which columns were still blank, and recorded requested verifications; the duty planner named the shortage owner after the sheet was complete, and no cause was announced during my segment.",
+  "lure": "The regional lead said instant answers make the freight desk look decisive.",
+  "subset_gate": {
+    "full_supports_C": "",
+    "a_only_supports_C": "",
+    "b_only_supports_C": "",
+    "link_broken_supports_C": "",
+    "absence_supports_C": "",
+    "reviewer": "",
+    "notes": ""
+  },
+  "arms": {
+    "full": {
+      "expected_mode": "infer_C",
+      "lineage": {
+        "transform": "identity",
+        "retained_sessions": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ]
+      },
+      "changed_sessions": [],
+      "context": [
+        {
+          "session_id": 1,
+          "timestamp": "2028-07-15T11:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I spent the first hour tidying the exception register and closing stale entries."
+            },
+            {
+              "role": "assistant",
+              "content": "Anything still open?"
+            },
+            {
+              "role": "user",
+              "content": "Two items, both with owners."
+            }
+          ]
+        },
+        {
+          "session_id": 2,
+          "timestamp": "2028-07-16T14:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The freight calendar review wrapped early today."
+            },
+            {
+              "role": "assistant",
+              "content": "Any surprises in it?"
+            },
+            {
+              "role": "user",
+              "content": "None worth recording."
+            }
+          ]
+        },
+        {
+          "session_id": 3,
+          "timestamp": "2028-07-17T16:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I closed a routine carrier question on a late-afternoon status call."
+            },
+            {
+              "role": "assistant",
+              "content": "Was the delay cause still disputed?"
+            },
+            {
+              "role": "user",
+              "content": "No, the tracking record was complete."
+            }
+          ]
+        },
+        {
+          "session_id": 4,
+          "timestamp": "2028-07-18T18:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Someone new shadowed me in the planning cell this morning."
+            },
+            {
+              "role": "assistant",
+              "content": "Did that slow you down?"
+            },
+            {
+              "role": "user",
+              "content": "A little, but the questions were good ones."
+            }
+          ]
+        },
+        {
+          "session_id": 5,
+          "timestamp": "2028-07-19T09:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I batched my replies about the peak season into one message before lunch."
+            },
+            {
+              "role": "assistant",
+              "content": "Cleaner than drip-feeding answers."
+            },
+            {
+              "role": "user",
+              "content": "Much cleaner."
+            }
+          ]
+        },
+        {
+          "session_id": 6,
+          "timestamp": "2028-07-20T11:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "During a port-disruption review, I sorted the carrier update, broker estimate, and confirmed delay into separate columns on the exception register before naming any shortage owner at the planning-cell call; the team held the reallocation until the customs record posted."
+            },
+            {
+              "role": "assistant",
+              "content": "What was your aim?"
+            },
+            {
+              "role": "user",
+              "content": "Keep projected shortages from becoming operational commitments before the evidence categories were visible."
+            }
+          ]
+        },
+        {
+          "session_id": 7,
+          "timestamp": "2028-07-21T14:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I updated a berth hold in the freight calendar after a confirmed arrival."
+            },
+            {
+              "role": "assistant",
+              "content": "Did that require a shortage attribution?"
+            },
+            {
+              "role": "user",
+              "content": "No, it was a schedule correction."
+            }
+          ]
+        },
+        {
+          "session_id": 8,
+          "timestamp": "2028-07-22T16:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I archived last cycle's notes on the freight calendar and set up the new folder."
+            },
+            {
+              "role": "assistant",
+              "content": "A fresh start?"
+            },
+            {
+              "role": "user",
+              "content": "As fresh as these things get."
+            }
+          ]
+        },
+        {
+          "session_id": 9,
+          "timestamp": "2028-07-23T18:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The 15:30 freight office hour is on the peak-season calendar, and the three-column evidence sheet is due at 15:15."
+            },
+            {
+              "role": "assistant",
+              "content": "Are those deadlines fixed?"
+            },
+            {
+              "role": "user",
+              "content": "Yes, both are on the planning-cell roster."
+            }
+          ]
+        },
+        {
+          "session_id": 10,
+          "timestamp": "2028-07-24T09:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "A vendor call about the exception register ran long but ended well."
+            },
+            {
+              "role": "assistant",
+              "content": "Worth the time?"
+            },
+            {
+              "role": "user",
+              "content": "This one, yes."
+            }
+          ]
+        },
+        {
+          "session_id": 11,
+          "timestamp": "2028-07-25T11:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I walked through the planning cell checklist with the new starter."
+            },
+            {
+              "role": "assistant",
+              "content": "How did they do?"
+            },
+            {
+              "role": "user",
+              "content": "Careful and quick, a good sign."
+            }
+          ]
+        },
+        {
+          "session_id": 12,
+          "timestamp": "2028-07-26T14:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Quiet afternoon; I cleared the backlog around the peak season."
+            },
+            {
+              "role": "assistant",
+              "content": "A rare day."
+            },
+            {
+              "role": "user",
+              "content": "I did not waste it."
+            }
+          ]
+        },
+        {
+          "session_id": 13,
+          "timestamp": "2028-07-27T16:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I flagged a small inconsistency in the freight calendar records and fixed it at the source."
+            },
+            {
+              "role": "assistant",
+              "content": "Root cause or symptom?"
+            },
+            {
+              "role": "user",
+              "content": "Root cause, for once."
+            }
+          ]
+        },
+        {
+          "session_id": 14,
+          "timestamp": "2028-07-28T18:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "On a January port-disruption call, I assigned a shortage to customs before separating the carrier update from the broker's estimate, and we diverted inventory unnecessarily."
+            },
+            {
+              "role": "assistant",
+              "content": "What did the call require from you?"
+            },
+            {
+              "role": "user",
+              "content": "A live owner while the exception register still mixed confirmed and projected facts."
+            }
+          ]
+        },
+        {
+          "session_id": 15,
+          "timestamp": "2028-07-29T09:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I sketched next week's plan for the peak season before leaving."
+            },
+            {
+              "role": "assistant",
+              "content": "Ahead of schedule?"
+            },
+            {
+              "role": "user",
+              "content": "Ahead enough to sleep well."
+            }
+          ]
+        },
+        {
+          "session_id": 16,
+          "timestamp": "2028-07-30T11:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Lunch walk, then a clean pass through the exception register updates."
+            },
+            {
+              "role": "assistant",
+              "content": "Does the walk help?"
+            },
+            {
+              "role": "user",
+              "content": "It resets the afternoon."
+            }
+          ]
+        },
+        {
+          "session_id": 17,
+          "timestamp": "2028-07-31T14:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Each case has a 24-hour verification window on the freight form, and the planning cell permits a narrow agenda for the office hour."
+            },
+            {
+              "role": "assistant",
+              "content": "Are those controls available?"
+            },
+            {
+              "role": "user",
+              "content": "Yes, the verification window and agenda field are on the approved sheet."
+            }
+          ]
+        },
+        {
+          "session_id": 18,
+          "timestamp": "2028-08-01T16:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I compared two options for the freight calendar tooling and noted a mild preference."
+            },
+            {
+              "role": "assistant",
+              "content": "Decision made?"
+            },
+            {
+              "role": "user",
+              "content": "Deferred until the trial ends."
+            }
+          ]
+        },
+        {
+          "session_id": 19,
+          "timestamp": "2028-08-02T18:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I closed the week by updating the planning cell handover notes."
+            },
+            {
+              "role": "assistant",
+              "content": "Anything unusual to hand over?"
+            },
+            {
+              "role": "user",
+              "content": "Blessedly little."
+            }
+          ]
+        },
+        {
+          "session_id": 20,
+          "timestamp": "2028-08-03T09:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Why would I be comfortable joining the 15:30 freight escalation hour only when its evidence sheet and verification window are retained?"
+            }
+          ]
+        }
+      ],
+      "query": "Why would I be comfortable joining the 15:30 freight escalation hour only when its evidence sheet and verification window are retained?"
+    },
+    "a_only": {
+      "expected_mode": "withhold_C",
+      "lineage": {
+        "transform": "replace_ev_B_with_neutral",
+        "changed_sessions": [
+          14
+        ]
+      },
+      "changed_sessions": [
+        14
+      ],
+      "context": [
+        {
+          "session_id": 1,
+          "timestamp": "2028-07-15T11:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I spent the first hour tidying the exception register and closing stale entries."
+            },
+            {
+              "role": "assistant",
+              "content": "Anything still open?"
+            },
+            {
+              "role": "user",
+              "content": "Two items, both with owners."
+            }
+          ]
+        },
+        {
+          "session_id": 2,
+          "timestamp": "2028-07-16T14:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The freight calendar review wrapped early today."
+            },
+            {
+              "role": "assistant",
+              "content": "Any surprises in it?"
+            },
+            {
+              "role": "user",
+              "content": "None worth recording."
+            }
+          ]
+        },
+        {
+          "session_id": 3,
+          "timestamp": "2028-07-17T16:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I closed a routine carrier question on a late-afternoon status call."
+            },
+            {
+              "role": "assistant",
+              "content": "Was the delay cause still disputed?"
+            },
+            {
+              "role": "user",
+              "content": "No, the tracking record was complete."
+            }
+          ]
+        },
+        {
+          "session_id": 4,
+          "timestamp": "2028-07-18T18:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Someone new shadowed me in the planning cell this morning."
+            },
+            {
+              "role": "assistant",
+              "content": "Did that slow you down?"
+            },
+            {
+              "role": "user",
+              "content": "A little, but the questions were good ones."
+            }
+          ]
+        },
+        {
+          "session_id": 5,
+          "timestamp": "2028-07-19T09:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I batched my replies about the peak season into one message before lunch."
+            },
+            {
+              "role": "assistant",
+              "content": "Cleaner than drip-feeding answers."
+            },
+            {
+              "role": "user",
+              "content": "Much cleaner."
+            }
+          ]
+        },
+        {
+          "session_id": 6,
+          "timestamp": "2028-07-20T11:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "During a port-disruption review, I sorted the carrier update, broker estimate, and confirmed delay into separate columns on the exception register before naming any shortage owner at the planning-cell call; the team held the reallocation until the customs record posted."
+            },
+            {
+              "role": "assistant",
+              "content": "What was your aim?"
+            },
+            {
+              "role": "user",
+              "content": "Keep projected shortages from becoming operational commitments before the evidence categories were visible."
+            }
+          ]
+        },
+        {
+          "session_id": 7,
+          "timestamp": "2028-07-21T14:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I updated a berth hold in the freight calendar after a confirmed arrival."
+            },
+            {
+              "role": "assistant",
+              "content": "Did that require a shortage attribution?"
+            },
+            {
+              "role": "user",
+              "content": "No, it was a schedule correction."
+            }
+          ]
+        },
+        {
+          "session_id": 8,
+          "timestamp": "2028-07-22T16:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I archived last cycle's notes on the freight calendar and set up the new folder."
+            },
+            {
+              "role": "assistant",
+              "content": "A fresh start?"
+            },
+            {
+              "role": "user",
+              "content": "As fresh as these things get."
+            }
+          ]
+        },
+        {
+          "session_id": 9,
+          "timestamp": "2028-07-23T18:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The 15:30 freight office hour is on the peak-season calendar, and the three-column evidence sheet is due at 15:15."
+            },
+            {
+              "role": "assistant",
+              "content": "Are those deadlines fixed?"
+            },
+            {
+              "role": "user",
+              "content": "Yes, both are on the planning-cell roster."
+            }
+          ]
+        },
+        {
+          "session_id": 10,
+          "timestamp": "2028-07-24T09:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "A vendor call about the exception register ran long but ended well."
+            },
+            {
+              "role": "assistant",
+              "content": "Worth the time?"
+            },
+            {
+              "role": "user",
+              "content": "This one, yes."
+            }
+          ]
+        },
+        {
+          "session_id": 11,
+          "timestamp": "2028-07-25T11:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I walked through the planning cell checklist with the new starter."
+            },
+            {
+              "role": "assistant",
+              "content": "How did they do?"
+            },
+            {
+              "role": "user",
+              "content": "Careful and quick, a good sign."
+            }
+          ]
+        },
+        {
+          "session_id": 12,
+          "timestamp": "2028-07-26T14:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Quiet afternoon; I cleared the backlog around the peak season."
+            },
+            {
+              "role": "assistant",
+              "content": "A rare day."
+            },
+            {
+              "role": "user",
+              "content": "I did not waste it."
+            }
+          ]
+        },
+        {
+          "session_id": 13,
+          "timestamp": "2028-07-27T16:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I flagged a small inconsistency in the freight calendar records and fixed it at the source."
+            },
+            {
+              "role": "assistant",
+              "content": "Root cause or symptom?"
+            },
+            {
+              "role": "user",
+              "content": "Root cause, for once."
+            }
+          ]
+        },
+        {
+          "session_id": 14,
+          "timestamp": "2028-07-28T18:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I filed the routine peak season paperwork and confirmed the owner list."
+            },
+            {
+              "role": "assistant",
+              "content": "Anything unusual in it?"
+            },
+            {
+              "role": "user",
+              "content": "A routine cycle, happily."
+            }
+          ]
+        },
+        {
+          "session_id": 15,
+          "timestamp": "2028-07-29T09:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I sketched next week's plan for the peak season before leaving."
+            },
+            {
+              "role": "assistant",
+              "content": "Ahead of schedule?"
+            },
+            {
+              "role": "user",
+              "content": "Ahead enough to sleep well."
+            }
+          ]
+        },
+        {
+          "session_id": 16,
+          "timestamp": "2028-07-30T11:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Lunch walk, then a clean pass through the exception register updates."
+            },
+            {
+              "role": "assistant",
+              "content": "Does the walk help?"
+            },
+            {
+              "role": "user",
+              "content": "It resets the afternoon."
+            }
+          ]
+        },
+        {
+          "session_id": 17,
+          "timestamp": "2028-07-31T14:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Each case has a 24-hour verification window on the freight form, and the planning cell permits a narrow agenda for the office hour."
+            },
+            {
+              "role": "assistant",
+              "content": "Are those controls available?"
+            },
+            {
+              "role": "user",
+              "content": "Yes, the verification window and agenda field are on the approved sheet."
+            }
+          ]
+        },
+        {
+          "session_id": 18,
+          "timestamp": "2028-08-01T16:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I compared two options for the freight calendar tooling and noted a mild preference."
+            },
+            {
+              "role": "assistant",
+              "content": "Decision made?"
+            },
+            {
+              "role": "user",
+              "content": "Deferred until the trial ends."
+            }
+          ]
+        },
+        {
+          "session_id": 19,
+          "timestamp": "2028-08-02T18:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I closed the week by updating the planning cell handover notes."
+            },
+            {
+              "role": "assistant",
+              "content": "Anything unusual to hand over?"
+            },
+            {
+              "role": "user",
+              "content": "Blessedly little."
+            }
+          ]
+        },
+        {
+          "session_id": 20,
+          "timestamp": "2028-08-03T09:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Why would I be comfortable joining the 15:30 freight escalation hour only when its evidence sheet and verification window are retained?"
+            }
+          ]
+        }
+      ],
+      "query": "Why would I be comfortable joining the 15:30 freight escalation hour only when its evidence sheet and verification window are retained?"
+    },
+    "b_only": {
+      "expected_mode": "withhold_C",
+      "lineage": {
+        "transform": "replace_ev_A_with_neutral",
+        "changed_sessions": [
+          6
+        ]
+      },
+      "changed_sessions": [
+        6
+      ],
+      "context": [
+        {
+          "session_id": 1,
+          "timestamp": "2028-07-15T11:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I spent the first hour tidying the exception register and closing stale entries."
+            },
+            {
+              "role": "assistant",
+              "content": "Anything still open?"
+            },
+            {
+              "role": "user",
+              "content": "Two items, both with owners."
+            }
+          ]
+        },
+        {
+          "session_id": 2,
+          "timestamp": "2028-07-16T14:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The freight calendar review wrapped early today."
+            },
+            {
+              "role": "assistant",
+              "content": "Any surprises in it?"
+            },
+            {
+              "role": "user",
+              "content": "None worth recording."
+            }
+          ]
+        },
+        {
+          "session_id": 3,
+          "timestamp": "2028-07-17T16:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I closed a routine carrier question on a late-afternoon status call."
+            },
+            {
+              "role": "assistant",
+              "content": "Was the delay cause still disputed?"
+            },
+            {
+              "role": "user",
+              "content": "No, the tracking record was complete."
+            }
+          ]
+        },
+        {
+          "session_id": 4,
+          "timestamp": "2028-07-18T18:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Someone new shadowed me in the planning cell this morning."
+            },
+            {
+              "role": "assistant",
+              "content": "Did that slow you down?"
+            },
+            {
+              "role": "user",
+              "content": "A little, but the questions were good ones."
+            }
+          ]
+        },
+        {
+          "session_id": 5,
+          "timestamp": "2028-07-19T09:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I batched my replies about the peak season into one message before lunch."
+            },
+            {
+              "role": "assistant",
+              "content": "Cleaner than drip-feeding answers."
+            },
+            {
+              "role": "user",
+              "content": "Much cleaner."
+            }
+          ]
+        },
+        {
+          "session_id": 6,
+          "timestamp": "2028-07-20T11:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I did a standard pass over the freight calendar records this morning."
+            },
+            {
+              "role": "assistant",
+              "content": "Any exceptions?"
+            },
+            {
+              "role": "user",
+              "content": "None worth a note."
+            }
+          ]
+        },
+        {
+          "session_id": 7,
+          "timestamp": "2028-07-21T14:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I updated a berth hold in the freight calendar after a confirmed arrival."
+            },
+            {
+              "role": "assistant",
+              "content": "Did that require a shortage attribution?"
+            },
+            {
+              "role": "user",
+              "content": "No, it was a schedule correction."
+            }
+          ]
+        },
+        {
+          "session_id": 8,
+          "timestamp": "2028-07-22T16:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I archived last cycle's notes on the freight calendar and set up the new folder."
+            },
+            {
+              "role": "assistant",
+              "content": "A fresh start?"
+            },
+            {
+              "role": "user",
+              "content": "As fresh as these things get."
+            }
+          ]
+        },
+        {
+          "session_id": 9,
+          "timestamp": "2028-07-23T18:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The 15:30 freight office hour is on the peak-season calendar, and the three-column evidence sheet is due at 15:15."
+            },
+            {
+              "role": "assistant",
+              "content": "Are those deadlines fixed?"
+            },
+            {
+              "role": "user",
+              "content": "Yes, both are on the planning-cell roster."
+            }
+          ]
+        },
+        {
+          "session_id": 10,
+          "timestamp": "2028-07-24T09:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "A vendor call about the exception register ran long but ended well."
+            },
+            {
+              "role": "assistant",
+              "content": "Worth the time?"
+            },
+            {
+              "role": "user",
+              "content": "This one, yes."
+            }
+          ]
+        },
+        {
+          "session_id": 11,
+          "timestamp": "2028-07-25T11:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I walked through the planning cell checklist with the new starter."
+            },
+            {
+              "role": "assistant",
+              "content": "How did they do?"
+            },
+            {
+              "role": "user",
+              "content": "Careful and quick, a good sign."
+            }
+          ]
+        },
+        {
+          "session_id": 12,
+          "timestamp": "2028-07-26T14:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Quiet afternoon; I cleared the backlog around the peak season."
+            },
+            {
+              "role": "assistant",
+              "content": "A rare day."
+            },
+            {
+              "role": "user",
+              "content": "I did not waste it."
+            }
+          ]
+        },
+        {
+          "session_id": 13,
+          "timestamp": "2028-07-27T16:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I flagged a small inconsistency in the freight calendar records and fixed it at the source."
+            },
+            {
+              "role": "assistant",
+              "content": "Root cause or symptom?"
+            },
+            {
+              "role": "user",
+              "content": "Root cause, for once."
+            }
+          ]
+        },
+        {
+          "session_id": 14,
+          "timestamp": "2028-07-28T18:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "On a January port-disruption call, I assigned a shortage to customs before separating the carrier update from the broker's estimate, and we diverted inventory unnecessarily."
+            },
+            {
+              "role": "assistant",
+              "content": "What did the call require from you?"
+            },
+            {
+              "role": "user",
+              "content": "A live owner while the exception register still mixed confirmed and projected facts."
+            }
+          ]
+        },
+        {
+          "session_id": 15,
+          "timestamp": "2028-07-29T09:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I sketched next week's plan for the peak season before leaving."
+            },
+            {
+              "role": "assistant",
+              "content": "Ahead of schedule?"
+            },
+            {
+              "role": "user",
+              "content": "Ahead enough to sleep well."
+            }
+          ]
+        },
+        {
+          "session_id": 16,
+          "timestamp": "2028-07-30T11:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Lunch walk, then a clean pass through the exception register updates."
+            },
+            {
+              "role": "assistant",
+              "content": "Does the walk help?"
+            },
+            {
+              "role": "user",
+              "content": "It resets the afternoon."
+            }
+          ]
+        },
+        {
+          "session_id": 17,
+          "timestamp": "2028-07-31T14:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Each case has a 24-hour verification window on the freight form, and the planning cell permits a narrow agenda for the office hour."
+            },
+            {
+              "role": "assistant",
+              "content": "Are those controls available?"
+            },
+            {
+              "role": "user",
+              "content": "Yes, the verification window and agenda field are on the approved sheet."
+            }
+          ]
+        },
+        {
+          "session_id": 18,
+          "timestamp": "2028-08-01T16:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I compared two options for the freight calendar tooling and noted a mild preference."
+            },
+            {
+              "role": "assistant",
+              "content": "Decision made?"
+            },
+            {
+              "role": "user",
+              "content": "Deferred until the trial ends."
+            }
+          ]
+        },
+        {
+          "session_id": 19,
+          "timestamp": "2028-08-02T18:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I closed the week by updating the planning cell handover notes."
+            },
+            {
+              "role": "assistant",
+              "content": "Anything unusual to hand over?"
+            },
+            {
+              "role": "user",
+              "content": "Blessedly little."
+            }
+          ]
+        },
+        {
+          "session_id": 20,
+          "timestamp": "2028-08-03T09:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Why would I be comfortable joining the 15:30 freight escalation hour only when its evidence sheet and verification window are retained?"
+            }
+          ]
+        }
+      ],
+      "query": "Why would I be comfortable joining the 15:30 freight escalation hour only when its evidence sheet and verification window are retained?"
+    },
+    "link_broken": {
+      "expected_mode": "withhold_C",
+      "lineage": {
+        "transform": "replace_relation_in_ev_B",
+        "changed_sessions": [
+          14
+        ],
+        "source_owner_preserved": true
+      },
+      "changed_sessions": [
+        14
+      ],
+      "context": [
+        {
+          "session_id": 1,
+          "timestamp": "2028-07-15T11:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I spent the first hour tidying the exception register and closing stale entries."
+            },
+            {
+              "role": "assistant",
+              "content": "Anything still open?"
+            },
+            {
+              "role": "user",
+              "content": "Two items, both with owners."
+            }
+          ]
+        },
+        {
+          "session_id": 2,
+          "timestamp": "2028-07-16T14:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The freight calendar review wrapped early today."
+            },
+            {
+              "role": "assistant",
+              "content": "Any surprises in it?"
+            },
+            {
+              "role": "user",
+              "content": "None worth recording."
+            }
+          ]
+        },
+        {
+          "session_id": 3,
+          "timestamp": "2028-07-17T16:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I closed a routine carrier question on a late-afternoon status call."
+            },
+            {
+              "role": "assistant",
+              "content": "Was the delay cause still disputed?"
+            },
+            {
+              "role": "user",
+              "content": "No, the tracking record was complete."
+            }
+          ]
+        },
+        {
+          "session_id": 4,
+          "timestamp": "2028-07-18T18:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Someone new shadowed me in the planning cell this morning."
+            },
+            {
+              "role": "assistant",
+              "content": "Did that slow you down?"
+            },
+            {
+              "role": "user",
+              "content": "A little, but the questions were good ones."
+            }
+          ]
+        },
+        {
+          "session_id": 5,
+          "timestamp": "2028-07-19T09:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I batched my replies about the peak season into one message before lunch."
+            },
+            {
+              "role": "assistant",
+              "content": "Cleaner than drip-feeding answers."
+            },
+            {
+              "role": "user",
+              "content": "Much cleaner."
+            }
+          ]
+        },
+        {
+          "session_id": 6,
+          "timestamp": "2028-07-20T11:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "During a port-disruption review, I sorted the carrier update, broker estimate, and confirmed delay into separate columns on the exception register before naming any shortage owner at the planning-cell call; the team held the reallocation until the customs record posted."
+            },
+            {
+              "role": "assistant",
+              "content": "What was your aim?"
+            },
+            {
+              "role": "user",
+              "content": "Keep projected shortages from becoming operational commitments before the evidence categories were visible."
+            }
+          ]
+        },
+        {
+          "session_id": 7,
+          "timestamp": "2028-07-21T14:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I updated a berth hold in the freight calendar after a confirmed arrival."
+            },
+            {
+              "role": "assistant",
+              "content": "Did that require a shortage attribution?"
+            },
+            {
+              "role": "user",
+              "content": "No, it was a schedule correction."
+            }
+          ]
+        },
+        {
+          "session_id": 8,
+          "timestamp": "2028-07-22T16:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I archived last cycle's notes on the freight calendar and set up the new folder."
+            },
+            {
+              "role": "assistant",
+              "content": "A fresh start?"
+            },
+            {
+              "role": "user",
+              "content": "As fresh as these things get."
+            }
+          ]
+        },
+        {
+          "session_id": 9,
+          "timestamp": "2028-07-23T18:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The 15:30 freight office hour is on the peak-season calendar, and the three-column evidence sheet is due at 15:15."
+            },
+            {
+              "role": "assistant",
+              "content": "Are those deadlines fixed?"
+            },
+            {
+              "role": "user",
+              "content": "Yes, both are on the planning-cell roster."
+            }
+          ]
+        },
+        {
+          "session_id": 10,
+          "timestamp": "2028-07-24T09:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "A vendor call about the exception register ran long but ended well."
+            },
+            {
+              "role": "assistant",
+              "content": "Worth the time?"
+            },
+            {
+              "role": "user",
+              "content": "This one, yes."
+            }
+          ]
+        },
+        {
+          "session_id": 11,
+          "timestamp": "2028-07-25T11:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I walked through the planning cell checklist with the new starter."
+            },
+            {
+              "role": "assistant",
+              "content": "How did they do?"
+            },
+            {
+              "role": "user",
+              "content": "Careful and quick, a good sign."
+            }
+          ]
+        },
+        {
+          "session_id": 12,
+          "timestamp": "2028-07-26T14:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Quiet afternoon; I cleared the backlog around the peak season."
+            },
+            {
+              "role": "assistant",
+              "content": "A rare day."
+            },
+            {
+              "role": "user",
+              "content": "I did not waste it."
+            }
+          ]
+        },
+        {
+          "session_id": 13,
+          "timestamp": "2028-07-27T16:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I flagged a small inconsistency in the freight calendar records and fixed it at the source."
+            },
+            {
+              "role": "assistant",
+              "content": "Root cause or symptom?"
+            },
+            {
+              "role": "user",
+              "content": "Root cause, for once."
+            }
+          ]
+        },
+        {
+          "session_id": 14,
+          "timestamp": "2028-07-28T18:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "On a March port-disruption call, I read the carrier timestamps, tracked which columns were still blank, and recorded requested verifications; the duty planner named the shortage owner after the sheet was complete, and no cause was announced during my segment."
+            },
+            {
+              "role": "assistant",
+              "content": "Did you assign blame to customs?"
+            },
+            {
+              "role": "user",
+              "content": "No, I maintained the register while the planner handled attribution."
+            }
+          ]
+        },
+        {
+          "session_id": 15,
+          "timestamp": "2028-07-29T09:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I sketched next week's plan for the peak season before leaving."
+            },
+            {
+              "role": "assistant",
+              "content": "Ahead of schedule?"
+            },
+            {
+              "role": "user",
+              "content": "Ahead enough to sleep well."
+            }
+          ]
+        },
+        {
+          "session_id": 16,
+          "timestamp": "2028-07-30T11:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Lunch walk, then a clean pass through the exception register updates."
+            },
+            {
+              "role": "assistant",
+              "content": "Does the walk help?"
+            },
+            {
+              "role": "user",
+              "content": "It resets the afternoon."
+            }
+          ]
+        },
+        {
+          "session_id": 17,
+          "timestamp": "2028-07-31T14:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Each case has a 24-hour verification window on the freight form, and the planning cell permits a narrow agenda for the office hour."
+            },
+            {
+              "role": "assistant",
+              "content": "Are those controls available?"
+            },
+            {
+              "role": "user",
+              "content": "Yes, the verification window and agenda field are on the approved sheet."
+            }
+          ]
+        },
+        {
+          "session_id": 18,
+          "timestamp": "2028-08-01T16:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I compared two options for the freight calendar tooling and noted a mild preference."
+            },
+            {
+              "role": "assistant",
+              "content": "Decision made?"
+            },
+            {
+              "role": "user",
+              "content": "Deferred until the trial ends."
+            }
+          ]
+        },
+        {
+          "session_id": 19,
+          "timestamp": "2028-08-02T18:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I closed the week by updating the planning cell handover notes."
+            },
+            {
+              "role": "assistant",
+              "content": "Anything unusual to hand over?"
+            },
+            {
+              "role": "user",
+              "content": "Blessedly little."
+            }
+          ]
+        },
+        {
+          "session_id": 20,
+          "timestamp": "2028-08-03T09:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Why would I be comfortable joining the 15:30 freight escalation hour only when its evidence sheet and verification window are retained?"
+            }
+          ]
+        }
+      ],
+      "query": "Why would I be comfortable joining the 15:30 freight escalation hour only when its evidence sheet and verification window are retained?"
+    },
+    "distractor": {
+      "expected_mode": "infer_C",
+      "lineage": {
+        "transform": "shipped",
+        "changed_sessions": [
+          18
+        ]
+      },
+      "changed_sessions": [
+        18
+      ],
+      "context": [
+        {
+          "session_id": 1,
+          "timestamp": "2028-07-15T11:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I spent the first hour tidying the exception register and closing stale entries."
+            },
+            {
+              "role": "assistant",
+              "content": "Anything still open?"
+            },
+            {
+              "role": "user",
+              "content": "Two items, both with owners."
+            }
+          ]
+        },
+        {
+          "session_id": 2,
+          "timestamp": "2028-07-16T14:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The freight calendar review wrapped early today."
+            },
+            {
+              "role": "assistant",
+              "content": "Any surprises in it?"
+            },
+            {
+              "role": "user",
+              "content": "None worth recording."
+            }
+          ]
+        },
+        {
+          "session_id": 3,
+          "timestamp": "2028-07-17T16:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I closed a routine carrier question on a late-afternoon status call."
+            },
+            {
+              "role": "assistant",
+              "content": "Was the delay cause still disputed?"
+            },
+            {
+              "role": "user",
+              "content": "No, the tracking record was complete."
+            }
+          ]
+        },
+        {
+          "session_id": 4,
+          "timestamp": "2028-07-18T18:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Someone new shadowed me in the planning cell this morning."
+            },
+            {
+              "role": "assistant",
+              "content": "Did that slow you down?"
+            },
+            {
+              "role": "user",
+              "content": "A little, but the questions were good ones."
+            }
+          ]
+        },
+        {
+          "session_id": 5,
+          "timestamp": "2028-07-19T09:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I batched my replies about the peak season into one message before lunch."
+            },
+            {
+              "role": "assistant",
+              "content": "Cleaner than drip-feeding answers."
+            },
+            {
+              "role": "user",
+              "content": "Much cleaner."
+            }
+          ]
+        },
+        {
+          "session_id": 6,
+          "timestamp": "2028-07-20T11:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "During a port-disruption review, I sorted the carrier update, broker estimate, and confirmed delay into separate columns on the exception register before naming any shortage owner at the planning-cell call; the team held the reallocation until the customs record posted."
+            },
+            {
+              "role": "assistant",
+              "content": "What was your aim?"
+            },
+            {
+              "role": "user",
+              "content": "Keep projected shortages from becoming operational commitments before the evidence categories were visible."
+            }
+          ]
+        },
+        {
+          "session_id": 7,
+          "timestamp": "2028-07-21T14:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I updated a berth hold in the freight calendar after a confirmed arrival."
+            },
+            {
+              "role": "assistant",
+              "content": "Did that require a shortage attribution?"
+            },
+            {
+              "role": "user",
+              "content": "No, it was a schedule correction."
+            }
+          ]
+        },
+        {
+          "session_id": 8,
+          "timestamp": "2028-07-22T16:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I archived last cycle's notes on the freight calendar and set up the new folder."
+            },
+            {
+              "role": "assistant",
+              "content": "A fresh start?"
+            },
+            {
+              "role": "user",
+              "content": "As fresh as these things get."
+            }
+          ]
+        },
+        {
+          "session_id": 9,
+          "timestamp": "2028-07-23T18:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The 15:30 freight office hour is on the peak-season calendar, and the three-column evidence sheet is due at 15:15."
+            },
+            {
+              "role": "assistant",
+              "content": "Are those deadlines fixed?"
+            },
+            {
+              "role": "user",
+              "content": "Yes, both are on the planning-cell roster."
+            }
+          ]
+        },
+        {
+          "session_id": 10,
+          "timestamp": "2028-07-24T09:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "A vendor call about the exception register ran long but ended well."
+            },
+            {
+              "role": "assistant",
+              "content": "Worth the time?"
+            },
+            {
+              "role": "user",
+              "content": "This one, yes."
+            }
+          ]
+        },
+        {
+          "session_id": 11,
+          "timestamp": "2028-07-25T11:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I walked through the planning cell checklist with the new starter."
+            },
+            {
+              "role": "assistant",
+              "content": "How did they do?"
+            },
+            {
+              "role": "user",
+              "content": "Careful and quick, a good sign."
+            }
+          ]
+        },
+        {
+          "session_id": 12,
+          "timestamp": "2028-07-26T14:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Quiet afternoon; I cleared the backlog around the peak season."
+            },
+            {
+              "role": "assistant",
+              "content": "A rare day."
+            },
+            {
+              "role": "user",
+              "content": "I did not waste it."
+            }
+          ]
+        },
+        {
+          "session_id": 13,
+          "timestamp": "2028-07-27T16:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I flagged a small inconsistency in the freight calendar records and fixed it at the source."
+            },
+            {
+              "role": "assistant",
+              "content": "Root cause or symptom?"
+            },
+            {
+              "role": "user",
+              "content": "Root cause, for once."
+            }
+          ]
+        },
+        {
+          "session_id": 14,
+          "timestamp": "2028-07-28T18:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "On a January port-disruption call, I assigned a shortage to customs before separating the carrier update from the broker's estimate, and we diverted inventory unnecessarily."
+            },
+            {
+              "role": "assistant",
+              "content": "What did the call require from you?"
+            },
+            {
+              "role": "user",
+              "content": "A live owner while the exception register still mixed confirmed and projected facts."
+            }
+          ]
+        },
+        {
+          "session_id": 15,
+          "timestamp": "2028-07-29T09:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I sketched next week's plan for the peak season before leaving."
+            },
+            {
+              "role": "assistant",
+              "content": "Ahead of schedule?"
+            },
+            {
+              "role": "user",
+              "content": "Ahead enough to sleep well."
+            }
+          ]
+        },
+        {
+          "session_id": 16,
+          "timestamp": "2028-07-30T11:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Lunch walk, then a clean pass through the exception register updates."
+            },
+            {
+              "role": "assistant",
+              "content": "Does the walk help?"
+            },
+            {
+              "role": "user",
+              "content": "It resets the afternoon."
+            }
+          ]
+        },
+        {
+          "session_id": 17,
+          "timestamp": "2028-07-31T14:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Each case has a 24-hour verification window on the freight form, and the planning cell permits a narrow agenda for the office hour."
+            },
+            {
+              "role": "assistant",
+              "content": "Are those controls available?"
+            },
+            {
+              "role": "user",
+              "content": "Yes, the verification window and agenda field are on the approved sheet."
+            }
+          ]
+        },
+        {
+          "session_id": 18,
+          "timestamp": "2028-08-01T16:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The regional lead said instant answers make the freight desk look decisive."
+            },
+            {
+              "role": "assistant",
+              "content": "Did that add port records?"
+            },
+            {
+              "role": "user",
+              "content": "No, it was about appearing decisive."
+            }
+          ]
+        },
+        {
+          "session_id": 19,
+          "timestamp": "2028-08-02T18:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I closed the week by updating the planning cell handover notes."
+            },
+            {
+              "role": "assistant",
+              "content": "Anything unusual to hand over?"
+            },
+            {
+              "role": "user",
+              "content": "Blessedly little."
+            }
+          ]
+        },
+        {
+          "session_id": 20,
+          "timestamp": "2028-08-03T09:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Why would I be comfortable joining the 15:30 freight escalation hour only when its evidence sheet and verification window are retained?"
+            }
+          ]
+        }
+      ],
+      "query": "Why would I be comfortable joining the 15:30 freight escalation hour only when its evidence sheet and verification window are retained?"
+    },
+    "absence": {
+      "expected_mode": "withhold_C",
+      "lineage": {
+        "transform": "replace_ev_A_and_ev_B_only",
+        "changed_sessions": [
+          6,
+          14
+        ]
+      },
+      "changed_sessions": [
+        6,
+        14
+      ],
+      "context": [
+        {
+          "session_id": 1,
+          "timestamp": "2028-07-15T11:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I spent the first hour tidying the exception register and closing stale entries."
+            },
+            {
+              "role": "assistant",
+              "content": "Anything still open?"
+            },
+            {
+              "role": "user",
+              "content": "Two items, both with owners."
+            }
+          ]
+        },
+        {
+          "session_id": 2,
+          "timestamp": "2028-07-16T14:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The freight calendar review wrapped early today."
+            },
+            {
+              "role": "assistant",
+              "content": "Any surprises in it?"
+            },
+            {
+              "role": "user",
+              "content": "None worth recording."
+            }
+          ]
+        },
+        {
+          "session_id": 3,
+          "timestamp": "2028-07-17T16:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I closed a routine carrier question on a late-afternoon status call."
+            },
+            {
+              "role": "assistant",
+              "content": "Was the delay cause still disputed?"
+            },
+            {
+              "role": "user",
+              "content": "No, the tracking record was complete."
+            }
+          ]
+        },
+        {
+          "session_id": 4,
+          "timestamp": "2028-07-18T18:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Someone new shadowed me in the planning cell this morning."
+            },
+            {
+              "role": "assistant",
+              "content": "Did that slow you down?"
+            },
+            {
+              "role": "user",
+              "content": "A little, but the questions were good ones."
+            }
+          ]
+        },
+        {
+          "session_id": 5,
+          "timestamp": "2028-07-19T09:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I batched my replies about the peak season into one message before lunch."
+            },
+            {
+              "role": "assistant",
+              "content": "Cleaner than drip-feeding answers."
+            },
+            {
+              "role": "user",
+              "content": "Much cleaner."
+            }
+          ]
+        },
+        {
+          "session_id": 6,
+          "timestamp": "2028-07-20T11:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I did a standard pass over the freight calendar records this morning."
+            },
+            {
+              "role": "assistant",
+              "content": "Any exceptions in there?"
+            },
+            {
+              "role": "user",
+              "content": "None worth a note."
+            }
+          ]
+        },
+        {
+          "session_id": 7,
+          "timestamp": "2028-07-21T14:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I updated a berth hold in the freight calendar after a confirmed arrival."
+            },
+            {
+              "role": "assistant",
+              "content": "Did that require a shortage attribution?"
+            },
+            {
+              "role": "user",
+              "content": "No, it was a schedule correction."
+            }
+          ]
+        },
+        {
+          "session_id": 8,
+          "timestamp": "2028-07-22T16:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I archived last cycle's notes on the freight calendar and set up the new folder."
+            },
+            {
+              "role": "assistant",
+              "content": "A fresh start?"
+            },
+            {
+              "role": "user",
+              "content": "As fresh as these things get."
+            }
+          ]
+        },
+        {
+          "session_id": 9,
+          "timestamp": "2028-07-23T18:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The 15:30 freight office hour is on the peak-season calendar, and the three-column evidence sheet is due at 15:15."
+            },
+            {
+              "role": "assistant",
+              "content": "Are those deadlines fixed?"
+            },
+            {
+              "role": "user",
+              "content": "Yes, both are on the planning-cell roster."
+            }
+          ]
+        },
+        {
+          "session_id": 10,
+          "timestamp": "2028-07-24T09:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "A vendor call about the exception register ran long but ended well."
+            },
+            {
+              "role": "assistant",
+              "content": "Worth the time?"
+            },
+            {
+              "role": "user",
+              "content": "This one, yes."
+            }
+          ]
+        },
+        {
+          "session_id": 11,
+          "timestamp": "2028-07-25T11:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I walked through the planning cell checklist with the new starter."
+            },
+            {
+              "role": "assistant",
+              "content": "How did they do?"
+            },
+            {
+              "role": "user",
+              "content": "Careful and quick, a good sign."
+            }
+          ]
+        },
+        {
+          "session_id": 12,
+          "timestamp": "2028-07-26T14:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Quiet afternoon; I cleared the backlog around the peak season."
+            },
+            {
+              "role": "assistant",
+              "content": "A rare day."
+            },
+            {
+              "role": "user",
+              "content": "I did not waste it."
+            }
+          ]
+        },
+        {
+          "session_id": 13,
+          "timestamp": "2028-07-27T16:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I flagged a small inconsistency in the freight calendar records and fixed it at the source."
+            },
+            {
+              "role": "assistant",
+              "content": "Root cause or symptom?"
+            },
+            {
+              "role": "user",
+              "content": "Root cause, for once."
+            }
+          ]
+        },
+        {
+          "session_id": 14,
+          "timestamp": "2028-07-28T18:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I closed a routine peak season cycle without surprises."
+            },
+            {
+              "role": "assistant",
+              "content": "Follow-up needed?"
+            },
+            {
+              "role": "user",
+              "content": "A note for the next cycle, nothing more."
+            }
+          ]
+        },
+        {
+          "session_id": 15,
+          "timestamp": "2028-07-29T09:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I sketched next week's plan for the peak season before leaving."
+            },
+            {
+              "role": "assistant",
+              "content": "Ahead of schedule?"
+            },
+            {
+              "role": "user",
+              "content": "Ahead enough to sleep well."
+            }
+          ]
+        },
+        {
+          "session_id": 16,
+          "timestamp": "2028-07-30T11:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Lunch walk, then a clean pass through the exception register updates."
+            },
+            {
+              "role": "assistant",
+              "content": "Does the walk help?"
+            },
+            {
+              "role": "user",
+              "content": "It resets the afternoon."
+            }
+          ]
+        },
+        {
+          "session_id": 17,
+          "timestamp": "2028-07-31T14:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Each case has a 24-hour verification window on the freight form, and the planning cell permits a narrow agenda for the office hour."
+            },
+            {
+              "role": "assistant",
+              "content": "Are those controls available?"
+            },
+            {
+              "role": "user",
+              "content": "Yes, the verification window and agenda field are on the approved sheet."
+            }
+          ]
+        },
+        {
+          "session_id": 18,
+          "timestamp": "2028-08-01T16:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I compared two options for the freight calendar tooling and noted a mild preference."
+            },
+            {
+              "role": "assistant",
+              "content": "Decision made?"
+            },
+            {
+              "role": "user",
+              "content": "Deferred until the trial ends."
+            }
+          ]
+        },
+        {
+          "session_id": 19,
+          "timestamp": "2028-08-02T18:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I closed the week by updating the planning cell handover notes."
+            },
+            {
+              "role": "assistant",
+              "content": "Anything unusual to hand over?"
+            },
+            {
+              "role": "user",
+              "content": "Blessedly little."
+            }
+          ]
+        },
+        {
+          "session_id": 20,
+          "timestamp": "2028-08-03T09:00:00Z",
+          "speaker_id": "work_s19_u04",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Why would I be comfortable joining the 15:30 freight escalation hour only when its evidence sheet and verification window are retained?"
+            }
+          ]
+        }
+      ],
+      "query": "Why would I be comfortable joining the 15:30 freight escalation hour only when its evidence sheet and verification window are retained?"
+    }
+  }
+}

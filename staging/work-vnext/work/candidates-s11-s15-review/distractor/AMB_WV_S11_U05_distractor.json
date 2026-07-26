@@ -1,0 +1,579 @@
+{
+  "schema_version": "work-vnext-2.0",
+  "candidate_id": "AMB_WV_S11_U05_distractor",
+  "pair_id": "AMB_WV_S11_U05",
+  "data_arm": "distractor",
+  "domain": "work",
+  "user_id": "work_s11_u05",
+  "sub_scenario": {
+    "family": "offsite confirmation under recovery stack",
+    "role": "research administration officer",
+    "one_line": "research administration officer: request another block before agreeing"
+  },
+  "query_type": "preference_generalization",
+  "polarity": "accept",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2032-05-30T11:00:00Z",
+      "speaker_id": "work_s11_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I spent the first hour tidying the grant tracker and closing stale entries."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything still open?"
+        },
+        {
+          "role": "user",
+          "content": "Two items, both with owners."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2032-05-31T14:00:00Z",
+      "speaker_id": "work_s11_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The faculty diary review wrapped early today."
+        },
+        {
+          "role": "assistant",
+          "content": "Any surprises in it?"
+        },
+        {
+          "role": "user",
+          "content": "None worth recording."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2032-06-01T16:00:00Z",
+      "speaker_id": "work_s11_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I manage ordinary afternoon faculty meetings well. Case-note 97."
+        },
+        {
+          "role": "assistant",
+          "content": "Daytime meetings are familiar. Case-note 98."
+        },
+        {
+          "role": "user",
+          "content": "They are not post-on-call. Case-note 99."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2032-06-02T18:00:00Z",
+      "speaker_id": "work_s11_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Someone new shadowed me in the research office this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Did that slow you down?"
+        },
+        {
+          "role": "user",
+          "content": "A little, but the questions were good ones."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2032-06-03T09:00:00Z",
+      "speaker_id": "work_s11_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I batched my replies about the deadline weeks into one message before lunch."
+        },
+        {
+          "role": "assistant",
+          "content": "Cleaner than drip-feeding answers."
+        },
+        {
+          "role": "user",
+          "content": "Much cleaner."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2032-06-04T11:00:00Z",
+      "speaker_id": "work_s11_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "After emergency ethics-system coverage overnight, I updated the grant tracker at 10:50. Case-note 103."
+        },
+        {
+          "role": "assistant",
+          "content": "You had a night duty. Case-note 104."
+        },
+        {
+          "role": "user",
+          "content": "I was not restored by afternoon. Case-note 105."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2032-06-05T14:00:00Z",
+      "speaker_id": "work_s11_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A casual coffee with colleagues is easy. Case-note 100."
+        },
+        {
+          "role": "assistant",
+          "content": "Social contact is not the issue. Case-note 101."
+        },
+        {
+          "role": "user",
+          "content": "Recovery is. Case-note 102."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2032-06-06T16:00:00Z",
+      "speaker_id": "work_s11_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I archived last cycle's notes on the faculty diary and set up the new folder."
+        },
+        {
+          "role": "assistant",
+          "content": "A fresh start?"
+        },
+        {
+          "role": "user",
+          "content": "As fresh as these things get."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2032-06-07T18:00:00Z",
+      "speaker_id": "work_s11_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Urgent night messages have worsened my jaw tension and sleep. Case-note 106."
+        },
+        {
+          "role": "assistant",
+          "content": "The health effect is current. Case-note 107."
+        },
+        {
+          "role": "user",
+          "content": "It makes late concentration fragile. Case-note 108."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2032-06-08T09:00:00Z",
+      "speaker_id": "work_s11_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A vendor call about the grant tracker ran long but ended well."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth the time?"
+        },
+        {
+          "role": "user",
+          "content": "This one, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2032-06-09T11:00:00Z",
+      "speaker_id": "work_s11_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I walked through the research office checklist with the new starter."
+        },
+        {
+          "role": "assistant",
+          "content": "How did they do?"
+        },
+        {
+          "role": "user",
+          "content": "Careful and quick, a good sign."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2032-06-10T14:00:00Z",
+      "speaker_id": "work_s11_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Quiet afternoon; I cleared the backlog around the deadline weeks."
+        },
+        {
+          "role": "assistant",
+          "content": "A rare day."
+        },
+        {
+          "role": "user",
+          "content": "I did not waste it."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2032-06-11T16:00:00Z",
+      "speaker_id": "work_s11_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I flagged a small inconsistency in the faculty diary records and fixed it at the source."
+        },
+        {
+          "role": "assistant",
+          "content": "Root cause or symptom?"
+        },
+        {
+          "role": "user",
+          "content": "Root cause, for once."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2032-06-12T18:00:00Z",
+      "speaker_id": "work_s11_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Thursday at 17:30 is my counseling appointment. Case-note 109."
+        },
+        {
+          "role": "assistant",
+          "content": "The appointment is protected. Case-note 110."
+        },
+        {
+          "role": "user",
+          "content": "It cannot be moved this week. Case-note 111."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2032-06-13T09:00:00Z",
+      "speaker_id": "work_s11_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I sketched next week's plan for the deadline weeks before leaving."
+        },
+        {
+          "role": "assistant",
+          "content": "Ahead of schedule?"
+        },
+        {
+          "role": "user",
+          "content": "Ahead enough to sleep well."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2032-06-14T11:00:00Z",
+      "speaker_id": "work_s11_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Lunch walk, then a clean pass through the grant tracker updates."
+        },
+        {
+          "role": "assistant",
+          "content": "Does the walk help?"
+        },
+        {
+          "role": "user",
+          "content": "It resets the afternoon."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2032-06-15T14:00:00Z",
+      "speaker_id": "work_s11_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I keep a no-caffeine sleep routine after anxious nights. Case-note 112."
+        },
+        {
+          "role": "assistant",
+          "content": "So coffee is not an escape hatch. Case-note 113."
+        },
+        {
+          "role": "user",
+          "content": "I rely on a quiet walk. Case-note 114."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2032-06-16T16:00:00Z",
+      "speaker_id": "work_s11_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The dean says the offsite would broaden my committee network. Case-note 115."
+        },
+        {
+          "role": "assistant",
+          "content": "Networking is the lure. Case-note 116."
+        },
+        {
+          "role": "user",
+          "content": "It does not change the booked care. Case-note 117."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2032-06-17T18:00:00Z",
+      "speaker_id": "work_s11_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I closed the week by updating the research office handover notes."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual to hand over?"
+        },
+        {
+          "role": "user",
+          "content": "Blessedly little."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2032-06-18T09:00:00Z",
+      "speaker_id": "work_s11_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "An invitation asks for my Thursday offsite confirmation after ethics-system night cover. What is the sound reply?"
+        }
+      ]
+    }
+  ],
+  "query": "An invitation asks for my Thursday offsite confirmation after ethics-system night cover. What is the sound reply?",
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "work_s11_u05",
+      "fact": "After emergency ethics-system coverage overnight, I updated the grant tracker at 10:50. Case-note 103."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "work_s11_u05",
+      "fact": "Thursday at 17:30 is my counseling appointment. Case-note 109."
+    }
+  },
+  "supporting_constraints": {
+    "E1": {
+      "session_id": 9,
+      "fact": "Urgent night messages have worsened my jaw tension and sleep. Case-note 106."
+    },
+    "E2": {
+      "session_id": 17,
+      "fact": "I keep a no-caffeine sleep routine after anxious nights. Case-note 112."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "work_s11_u05",
+        "context": "ethics-system coverage",
+        "goal_or_prediction": "update the grant tracker",
+        "action": "worked overnight before filing",
+        "outcome_or_affect": "afternoon capacity reduced"
+      }
+    },
+    "7": {
+      "role": "nearby_counterexample"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "supporting_constraint",
+      "fact_id": "E1"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "work_s11_u05",
+        "context": "counseling appointment",
+        "goal_or_prediction": "attend protected care",
+        "action": "kept Thursday at 17:30",
+        "outcome_or_affect": "care continuity maintained"
+      }
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "supporting_constraint",
+      "fact_id": "E2"
+    },
+    "18": {
+      "role": "distractor",
+      "distractor_id": "dist_1",
+      "why_distractor": "Committee networking says nothing about the dated care and fatigue facts."
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "Night cover, disrupted sleep, protected counseling, and a recovery routine together call for accommodation.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": [
+      "E1",
+      "E2"
+    ]
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "After emergency ethics-system coverage overnight, I updated the grant tracker at 10:50"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "Thursday at 17:30 is my counseling appointment"
+    }
+  ],
+  "retrieval_cue": {
+    "cue_type": "preference_generalization",
+    "why_it_naturally_retrieves_R": "A realistic work request forces a personalized decision without naming either episode or the relation between them."
+  },
+  "relation_specificity": {
+    "nearby_relation": "The user does well in ordinary faculty meetings and casual coffees.",
+    "why_it_does_not_license_C": "Neither event includes the complete recovery stack."
+  },
+  "coactivation_bridge": "A shows the operating condition; B shows the demand or failure that makes it decisive. Night cover, disrupted sleep, protected counseling, and a recovery routine together call for accommodation. E1 and E2 calibrate the practical recommendation without opening a second route to the conclusion.",
+  "latent_C": {
+    "inference": "Ask to attend a different block or decline Thursday afternoon.",
+    "calibrated_language": "request another block before agreeing"
+  },
+  "answer_contract": {
+    "target_proposition": "Ask to attend a different block or decline Thursday afternoon.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "decision",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "work_u05",
+    "status": "review_candidate_only",
+    "anonymization": "External persona material was used only during authoring; no corpus, name, country, or demographic metadata is included."
+  },
+  "arm_gold": {
+    "distractor": {
+      "expected_mode": "infer_C",
+      "binary_decision": true
+    }
+  },
+  "distractor_note": {
+    "replaced_session_id": 18,
+    "why_distractor": "Committee networking says nothing about the dated care and fatigue facts."
+  }
+}

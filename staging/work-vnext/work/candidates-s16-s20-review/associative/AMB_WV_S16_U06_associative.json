@@ -1,0 +1,638 @@
+{
+  "schema_version": "work-vnext-2.0",
+  "candidate_id": "AMB_WV_S16_U06_associative",
+  "pair_id": "AMB_WV_S16_U06",
+  "data_arm": "associative",
+  "domain": "work",
+  "user_id": "work_s16_u06",
+  "sub_scenario": {
+    "family": "rapid live troubleshooting leadership versus careful asynchronous incident analysis",
+    "role": "pharmaceutical cold-chain investigator",
+    "one_line": "pharmaceutical cold-chain investigator: decline unprepared disposition leadership"
+  },
+  "query_type": "conditional_recommendation",
+  "polarity": "reject",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2028-01-23T11:00:00Z",
+      "speaker_id": "work_s16_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I spent the first hour tidying the temperature excursion ledger and closing stale entries."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything still open?"
+        },
+        {
+          "role": "user",
+          "content": "Two items, both with owners."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2028-01-24T14:00:00Z",
+      "speaker_id": "work_s16_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The shipment register review wrapped early today."
+        },
+        {
+          "role": "assistant",
+          "content": "Any surprises in it?"
+        },
+        {
+          "role": "user",
+          "content": "None worth recording."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2028-01-25T16:00:00Z",
+      "speaker_id": "work_s16_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I can summarize a completed temperature review for warehouse staff."
+        },
+        {
+          "role": "assistant",
+          "content": "Are factual updates a problem?"
+        },
+        {
+          "role": "user",
+          "content": "No, once the sensor sequence is reconciled."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2028-01-26T18:00:00Z",
+      "speaker_id": "work_s16_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Someone new shadowed me in the quality review room this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Did that slow you down?"
+        },
+        {
+          "role": "user",
+          "content": "A little, but the questions were good ones."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2028-01-27T09:00:00Z",
+      "speaker_id": "work_s16_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I batched my replies about the distribution alerts into one message before lunch."
+        },
+        {
+          "role": "assistant",
+          "content": "Cleaner than drip-feeding answers."
+        },
+        {
+          "role": "user",
+          "content": "Much cleaner."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2028-01-28T11:00:00Z",
+      "speaker_id": "work_s16_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "For a vaccine excursion, I aligned logger downloads, door records, and carrier scans before recommending testing; the batch passed after the actual warm interval was isolated."
+        },
+        {
+          "role": "assistant",
+          "content": "What made that conclusion sound?"
+        },
+        {
+          "role": "user",
+          "content": "The timing connection was verified across records."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2028-01-29T14:00:00Z",
+      "speaker_id": "work_s16_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I can write a disposition memo after examining a full shipment packet."
+        },
+        {
+          "role": "assistant",
+          "content": "Why does that help?"
+        },
+        {
+          "role": "user",
+          "content": "I can compare transit events with the product limits."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2028-01-30T16:00:00Z",
+      "speaker_id": "work_s16_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I archived last cycle's notes on the shipment register and set up the new folder."
+        },
+        {
+          "role": "assistant",
+          "content": "A fresh start?"
+        },
+        {
+          "role": "user",
+          "content": "As fresh as these things get."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2028-01-31T18:00:00Z",
+      "speaker_id": "work_s16_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A hospital chain wants a disposition during its urgent procurement call because replacement doses must be ordered before noon."
+        },
+        {
+          "role": "assistant",
+          "content": "Can the batch wait for normal review?"
+        },
+        {
+          "role": "user",
+          "content": "No, the hospital needs an immediate operational direction."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2028-02-01T09:00:00Z",
+      "speaker_id": "work_s16_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A vendor call about the temperature excursion ledger ran long but ended well."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth the time?"
+        },
+        {
+          "role": "user",
+          "content": "This one, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2028-02-02T11:00:00Z",
+      "speaker_id": "work_s16_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I walked through the quality review room checklist with the new starter."
+        },
+        {
+          "role": "assistant",
+          "content": "How did they do?"
+        },
+        {
+          "role": "user",
+          "content": "Careful and quick, a good sign."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2028-02-03T14:00:00Z",
+      "speaker_id": "work_s16_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Quiet afternoon; I cleared the backlog around the distribution alerts."
+        },
+        {
+          "role": "assistant",
+          "content": "A rare day."
+        },
+        {
+          "role": "user",
+          "content": "I did not waste it."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2028-02-04T16:00:00Z",
+      "speaker_id": "work_s16_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I flagged a small inconsistency in the shipment register records and fixed it at the source."
+        },
+        {
+          "role": "assistant",
+          "content": "Root cause or symptom?"
+        },
+        {
+          "role": "user",
+          "content": "Root cause, for once."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2028-02-05T18:00:00Z",
+      "speaker_id": "work_s16_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "On a rapid distribution call, I advised destruction from a single high sensor reading; later data showed the logger sat by an open loading door, and usable doses had been discarded."
+        },
+        {
+          "role": "assistant",
+          "content": "What was the error?"
+        },
+        {
+          "role": "user",
+          "content": "I made the reading stand for the shipment history."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2028-02-06T09:00:00Z",
+      "speaker_id": "work_s16_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I sketched next week's plan for the distribution alerts before leaving."
+        },
+        {
+          "role": "assistant",
+          "content": "Ahead of schedule?"
+        },
+        {
+          "role": "user",
+          "content": "Ahead enough to sleep well."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2028-02-07T11:00:00Z",
+      "speaker_id": "work_s16_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Lunch walk, then a clean pass through the temperature excursion ledger updates."
+        },
+        {
+          "role": "assistant",
+          "content": "Does the walk help?"
+        },
+        {
+          "role": "user",
+          "content": "It resets the afternoon."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2028-02-08T14:00:00Z",
+      "speaker_id": "work_s16_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The carrier can send synchronized logger and door records before the hospital call, but only if the shipment is flagged the prior evening."
+        },
+        {
+          "role": "assistant",
+          "content": "Would that affect your answer?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, I could provide a defensible interim direction then."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2028-02-09T16:00:00Z",
+      "speaker_id": "work_s16_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I compared two options for the shipment register tooling and noted a mild preference."
+        },
+        {
+          "role": "assistant",
+          "content": "Decision made?"
+        },
+        {
+          "role": "user",
+          "content": "Deferred until the trial ends."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2028-02-10T18:00:00Z",
+      "speaker_id": "work_s16_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I closed the week by updating the quality review room handover notes."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual to hand over?"
+        },
+        {
+          "role": "user",
+          "content": "Blessedly little."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2028-02-11T09:00:00Z",
+      "speaker_id": "work_s16_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Quality asks whether I will chair tomorrow's hospital disposition call. What should I say?"
+        }
+      ]
+    }
+  ],
+  "query": "Quality asks whether I will chair tomorrow's hospital disposition call. What should I say?",
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "work_s16_u06",
+      "fact": "For a vaccine excursion, I aligned logger downloads, door records, and carrier scans before recommending testing; the batch passed after the actual warm interval was isolated."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "work_s16_u06",
+      "fact": "On a rapid distribution call, I advised destruction from a single high sensor reading; later data showed the logger sat by an open loading door, and usable doses had been discarded."
+    }
+  },
+  "supporting_constraints": {
+    "E1": {
+      "session_id": 9,
+      "fact": "A hospital chain wants a disposition during its urgent procurement call because replacement doses must be ordered before noon."
+    },
+    "E2": {
+      "session_id": 17,
+      "fact": "The carrier can send synchronized logger and door records before the hospital call, but only if the shipment is flagged the prior evening."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "work_s16_u06",
+        "context": "vaccine excursion",
+        "goal_or_prediction": "determine whether testing was needed",
+        "action": "aligned logger, door, and carrier records",
+        "outcome_or_affect": "usable batch retained"
+      }
+    },
+    "7": {
+      "role": "nearby_counterexample"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "supporting_constraint",
+      "fact_id": "E1"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "work_s16_u06",
+        "context": "rapid distribution call",
+        "goal_or_prediction": "decide a batch disposition",
+        "action": "used one sensor reading as shipment history",
+        "outcome_or_affect": "usable doses discarded"
+      }
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "supporting_constraint",
+      "fact_id": "E2"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "The user reaches defensible cold-chain conclusions through record reconciliation and previously discarded usable stock after treating one live signal as the whole exposure history.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": [
+      "E1",
+      "E2"
+    ]
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "For a vaccine excursion, I aligned logger downloads, door records, and carrier scans before recommending testing; the batch passed after the actual warm interval was isolated"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "On a rapid distribution call, I advised destruction from a single high sensor reading; later data showed the logger sat by an open loading door, and usable doses had been discarded"
+    }
+  ],
+  "retrieval_cue": {
+    "cue_type": "conditional_recommendation",
+    "why_it_naturally_retrieves_R": "A realistic work request forces a personalized decision without naming either episode or the relation between them."
+  },
+  "relation_specificity": {
+    "nearby_relation": "The user can summarize completed reviews and write from full shipment packets.",
+    "why_it_does_not_license_C": "Those examples omit the need to decide a batch disposition from incomplete live data."
+  },
+  "coactivation_bridge": "A shows the operating condition; B shows the demand or failure that makes it decisive. The user reaches defensible cold-chain conclusions through record reconciliation and previously discarded usable stock after treating one live signal as the whole exposure history. E1 and E2 calibrate the practical recommendation without opening a second route to the conclusion.",
+  "latent_C": {
+    "inference": "Reject chairing an unflagged rapid call; accept only when the synchronized shipment records have been assembled beforehand.",
+    "calibrated_language": "decline unprepared disposition leadership"
+  },
+  "answer_contract": {
+    "target_proposition": "Reject chairing an unflagged rapid call; accept only when the synchronized shipment records have been assembled beforehand.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "decision",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "work_u06",
+    "status": "review_candidate_only",
+    "anonymization": "External persona material was used only during authoring; no corpus, name, country, or demographic metadata is included."
+  },
+  "arm_gold": {
+    "full": {
+      "expected_mode": "infer_C",
+      "binary_decision": true
+    },
+    "a_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    },
+    "b_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    },
+    "link_broken": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    }
+  },
+  "single_evidence_replacements": {
+    "a_only": {
+      "replaced_session_id": 14,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "I filed the routine distribution alerts paperwork and confirmed the owner list."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual in it?"
+        },
+        {
+          "role": "user",
+          "content": "A routine cycle, happily."
+        }
+      ]
+    },
+    "b_only": {
+      "replaced_session_id": 6,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "I did a standard pass over the shipment register records this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Any exceptions?"
+        },
+        {
+          "role": "user",
+          "content": "None worth a note."
+        }
+      ]
+    }
+  },
+  "link_broken": {
+    "replaced_session_id": 14,
+    "replacement_dialogue": [
+      {
+        "role": "user",
+        "content": "On a rapid distribution call, I advised destruction after synchronized logger and door records showed the high reading represented the shipment; the affected doses were removed and the others retained."
+      },
+      {
+        "role": "assistant",
+        "content": "What was established?"
+      },
+      {
+        "role": "user",
+        "content": "The sensor reading was connected to the actual exposure."
+      }
+    ]
+  }
+}

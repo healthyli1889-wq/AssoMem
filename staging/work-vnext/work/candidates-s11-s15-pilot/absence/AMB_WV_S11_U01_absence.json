@@ -1,0 +1,572 @@
+{
+  "schema_version": "work-vnext-2.0",
+  "candidate_id": "AMB_WV_S11_U01_absence",
+  "pair_id": "AMB_WV_S11_U01",
+  "data_arm": "absence",
+  "domain": "work",
+  "user_id": "work_s11_u01",
+  "sub_scenario": {
+    "family": "offsite response under recovery, health, calendar, and messaging constraints",
+    "role": "operations specialist",
+    "one_line": "operations specialist: request a remote, morning, or shorter alternative before confirming"
+  },
+  "query_type": "conditional_recommendation",
+  "polarity": "conditional",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2026-08-03T09:00:00Z",
+      "speaker_id": "work_s11_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I wrapped the supplier-status notes before lunch instead of leaving them for Friday."
+        },
+        {
+          "role": "assistant",
+          "content": "Did the shorter list make the afternoon easier to protect?"
+        },
+        {
+          "role": "user",
+          "content": "Yes. I can see what actually needs a response now."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2026-08-04T00:00:00Z",
+      "speaker_id": "work_s11_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The analytics group asked for a quick check on dashboard copy, so I gave comments in the document rather than adding another meeting."
+        },
+        {
+          "role": "assistant",
+          "content": "Was the written pass enough?"
+        },
+        {
+          "role": "user",
+          "content": "For this one, yes. They only needed the wording tightened."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2026-08-05T01:00:00Z",
+      "speaker_id": "work_s11_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I took a twenty-minute walking catch-up after lunch and felt better afterward."
+        },
+        {
+          "role": "assistant",
+          "content": "So a short, low-stakes afternoon conversation is manageable?"
+        },
+        {
+          "role": "user",
+          "content": "Usually. It is not the same as needing to stay switched on for hours."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2026-08-06T02:00:00Z",
+      "speaker_id": "work_s11_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I moved the renewal spreadsheet into one tab per vendor."
+        },
+        {
+          "role": "assistant",
+          "content": "Easier to review?"
+        },
+        {
+          "role": "user",
+          "content": "Much. I stop losing the small exceptions."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2026-08-07T03:00:00Z",
+      "speaker_id": "work_s11_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I asked the team to send agenda questions before Wednesday planning."
+        },
+        {
+          "role": "assistant",
+          "content": "Why collect them beforehand?"
+        },
+        {
+          "role": "user",
+          "content": "I make better decisions when I can sort dependencies before people start talking over each other."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2026-08-08T04:00:00Z",
+      "speaker_id": "work_s11_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I did a standard pass over the offsite reply records this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Any exceptions in there?"
+        },
+        {
+          "role": "user",
+          "content": "None worth a note."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2026-08-09T05:00:00Z",
+      "speaker_id": "work_s11_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I went to last month's product-demo social because it lasted an hour and I could leave when I needed to."
+        },
+        {
+          "role": "assistant",
+          "content": "How did that go?"
+        },
+        {
+          "role": "user",
+          "content": "Fine. It did not cost recovery time or collide with anything else."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2026-08-10T06:00:00Z",
+      "speaker_id": "work_s11_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I turned off most group-chat badges for the weekend."
+        },
+        {
+          "role": "assistant",
+          "content": "Keeping only urgent alerts?"
+        },
+        {
+          "role": "user",
+          "content": "Exactly. I do not want routine chatter to feel like an incident."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2026-08-11T07:00:00Z",
+      "speaker_id": "work_s11_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I confirmed next week's offsite reply slots with the team."
+        },
+        {
+          "role": "assistant",
+          "content": "Any conflicts?"
+        },
+        {
+          "role": "user",
+          "content": "None that survived five minutes."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2026-08-12T08:00:00Z",
+      "speaker_id": "work_s11_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I sent the client a concise update instead of trying to solve every question in one call."
+        },
+        {
+          "role": "assistant",
+          "content": "Did that lower the pressure?"
+        },
+        {
+          "role": "user",
+          "content": "A lot. It gave me a clean next step."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2026-08-13T09:00:00Z",
+      "speaker_id": "work_s11_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I asked Jamie to cover the first fifteen minutes of Friday's status call if I am delayed."
+        },
+        {
+          "role": "assistant",
+          "content": "Does that make the call less brittle?"
+        },
+        {
+          "role": "user",
+          "content": "Yes. One small delay will not derail everyone."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2026-08-14T00:00:00Z",
+      "speaker_id": "work_s11_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I drafted the offsite packing list but have not replied to the invite."
+        },
+        {
+          "role": "assistant",
+          "content": "What is still undecided?"
+        },
+        {
+          "role": "user",
+          "content": "Whether the timing is realistic after the rotation."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2026-08-15T01:00:00Z",
+      "speaker_id": "work_s11_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I finished the procurement notes before the afternoon got busy."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything left that needs a decision?"
+        },
+        {
+          "role": "user",
+          "content": "Just a small vendor question. I can handle it tomorrow."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2026-08-16T02:00:00Z",
+      "speaker_id": "work_s11_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I closed a routine handoff schedule cycle without surprises."
+        },
+        {
+          "role": "assistant",
+          "content": "Follow-up needed?"
+        },
+        {
+          "role": "user",
+          "content": "A note for the next cycle, nothing more."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2026-08-17T03:00:00Z",
+      "speaker_id": "work_s11_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I packed non-caffeinated tea for the monitoring night."
+        },
+        {
+          "role": "assistant",
+          "content": "Still holding the no-late-coffee rule?"
+        },
+        {
+          "role": "user",
+          "content": "Yes. I would rather be slower than spend another night with my heart racing."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2026-08-18T04:00:00Z",
+      "speaker_id": "work_s11_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The rotation was quieter than the last one, but the alarm still woke me twice."
+        },
+        {
+          "role": "assistant",
+          "content": "Are you keeping the morning open?"
+        },
+        {
+          "role": "user",
+          "content": "Yes. I can handle handover and then need to reset before anything demanding."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2026-08-19T05:00:00Z",
+      "speaker_id": "work_s11_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I moved my reminders so the supplier-status notes review lands before the weekly sync."
+        },
+        {
+          "role": "assistant",
+          "content": "Small automation helps."
+        },
+        {
+          "role": "user",
+          "content": "It adds up over a quarter."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2026-08-20T06:00:00Z",
+      "speaker_id": "work_s11_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Maya says the Thursday offsite is where the leadership team notices people and thinks I should confirm immediately."
+        },
+        {
+          "role": "assistant",
+          "content": "Visibility is not the same as whether the timing works."
+        },
+        {
+          "role": "user",
+          "content": "That is why I have not answered yet."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2026-08-21T07:00:00Z",
+      "speaker_id": "work_s11_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I wrote down the two possible offsite alternatives before replying."
+        },
+        {
+          "role": "assistant",
+          "content": "What are you considering?"
+        },
+        {
+          "role": "user",
+          "content": "A morning slot or joining remotely for the part that needs me."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2026-08-22T08:00:00Z",
+      "speaker_id": "work_s11_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I just got this email: “Team offsite announced for Thursday afternoon, 14:00–16:30. Attendance expected. Please confirm.” What should I reply, and what should I prepare?"
+        }
+      ]
+    }
+  ],
+  "query": "I just got this email: “Team offsite announced for Thursday afternoon, 14:00–16:30. Attendance expected. Please confirm.” What should I reply, and what should I prepare?",
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "work_s11_u01",
+      "fact": "I agreed to cover the monitoring rotation next Tuesday night. If nothing escalates, handover ends Thursday at eleven, so I blocked Thursday morning for recovery."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "work_s11_u01",
+      "fact": "The physio clinic had one opening this week: Thursday at 17:30 for the lower-back flare from overnight desk coverage, so I took it."
+    }
+  },
+  "supporting_constraints": {
+    "E1": {
+      "session_id": 9,
+      "fact": "Since I switched to the louder alarm for monitoring nights, my sleep has stayed unsettled. Even after a quiet shift I wake up braced for another alert."
+    },
+    "E2": {
+      "session_id": 17,
+      "fact": "I had coffee around three to finish the QBR slides and the palpitations were back by bedtime. I do not want to repeat that."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "background_memory"
+    },
+    "7": {
+      "role": "nearby_counterexample"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "background_memory"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "background_memory"
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "background_memory"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "The user preserves capacity after overnight monitoring by holding recovery time, and the proposed afternoon also collides with scarce treatment; ongoing alarm-linked sleep disruption and the no-late-caffeine boundary rule out the obvious way to push through.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": [
+      "E1",
+      "E2"
+    ]
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "I agreed to cover the monitoring rotation next Tuesday night"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "The physio clinic had one opening this week: Thursday at 17:30 for the lower-back flare from overnight desk coverage, so I took it"
+    }
+  ],
+  "retrieval_cue": {
+    "cue_type": "conditional_recommendation",
+    "why_it_naturally_retrieves_R": "A realistic work request forces a personalized decision without naming either episode or the relation between them."
+  },
+  "relation_specificity": {
+    "nearby_relation": "The user can take short, bounded afternoon conversations and an optional one-hour social event after ordinary work.",
+    "why_it_does_not_license_C": "Those events have neither a post-rotation recovery demand nor a fixed treatment collision."
+  },
+  "coactivation_bridge": "A shows the operating condition; B shows the demand or failure that makes it decisive. The user preserves capacity after overnight monitoring by holding recovery time, and the proposed afternoon also collides with scarce treatment; ongoing alarm-linked sleep disruption and the no-late-caffeine boundary rule out the obvious way to push through. E1 and E2 calibrate the practical recommendation without opening a second route to the conclusion.",
+  "latent_C": {
+    "inference": "Confirming the Thursday-afternoon offsite without accommodation is not supported for this user.",
+    "calibrated_language": "request a remote, morning, or shorter alternative before confirming"
+  },
+  "answer_contract": {
+    "target_proposition": "Confirming the Thursday-afternoon offsite without accommodation is not supported for this user.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "decision",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "work_u01",
+    "status": "review_candidate_only",
+    "anonymization": "External persona material was used only during authoring; no corpus, name, country, or demographic metadata is included."
+  },
+  "target_evidence_ids": [],
+  "arm_gold": {
+    "absence": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    }
+  },
+  "absence_note": {
+    "replaced_session_ids": [
+      6,
+      9,
+      14,
+      17
+    ],
+    "withheld_evidence_ids": [
+      "ev_A",
+      "ev_B",
+      "E1",
+      "E2"
+    ]
+  }
+}

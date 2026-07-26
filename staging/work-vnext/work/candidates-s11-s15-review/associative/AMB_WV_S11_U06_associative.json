@@ -1,0 +1,638 @@
+{
+  "schema_version": "work-vnext-2.0",
+  "candidate_id": "AMB_WV_S11_U06_associative",
+  "pair_id": "AMB_WV_S11_U06",
+  "data_arm": "associative",
+  "domain": "work",
+  "user_id": "work_s11_u06",
+  "sub_scenario": {
+    "family": "offsite confirmation under recovery stack",
+    "role": "transit control supervisor",
+    "one_line": "transit control supervisor: request an alternative offsite time"
+  },
+  "query_type": "preference_generalization",
+  "polarity": "accept",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2032-07-06T11:00:00Z",
+      "speaker_id": "work_s11_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I spent the first hour tidying the signal board and closing stale entries."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything still open?"
+        },
+        {
+          "role": "user",
+          "content": "Two items, both with owners."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2032-07-07T14:00:00Z",
+      "speaker_id": "work_s11_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The dispatch calendar review wrapped early today."
+        },
+        {
+          "role": "assistant",
+          "content": "Any surprises in it?"
+        },
+        {
+          "role": "user",
+          "content": "None worth recording."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2032-07-08T16:00:00Z",
+      "speaker_id": "work_s11_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Normal afternoon dispatch briefings are manageable. Case-note 121."
+        },
+        {
+          "role": "assistant",
+          "content": "Routine briefings are fine. Case-note 122."
+        },
+        {
+          "role": "user",
+          "content": "Night incident recovery differs. Case-note 123."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2032-07-09T18:00:00Z",
+      "speaker_id": "work_s11_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Someone new shadowed me in the control room this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Did that slow you down?"
+        },
+        {
+          "role": "user",
+          "content": "A little, but the questions were good ones."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2032-07-10T09:00:00Z",
+      "speaker_id": "work_s11_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I batched my replies about the service disruptions into one message before lunch."
+        },
+        {
+          "role": "assistant",
+          "content": "Cleaner than drip-feeding answers."
+        },
+        {
+          "role": "user",
+          "content": "Much cleaner."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2032-07-11T11:00:00Z",
+      "speaker_id": "work_s11_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "After the signal-priority incident rotation, I closed the signal board at 11:15. Case-note 127."
+        },
+        {
+          "role": "assistant",
+          "content": "The rotation ended late. Case-note 128."
+        },
+        {
+          "role": "user",
+          "content": "I was carrying sleep debt. Case-note 129."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2032-07-12T14:00:00Z",
+      "speaker_id": "work_s11_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I can take a brief walk-and-talk after a regular shift. Case-note 124."
+        },
+        {
+          "role": "assistant",
+          "content": "Movement helps on normal days. Case-note 125."
+        },
+        {
+          "role": "user",
+          "content": "Not after radio alerts all night. Case-note 126."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2032-07-13T16:00:00Z",
+      "speaker_id": "work_s11_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I archived last cycle's notes on the dispatch calendar and set up the new folder."
+        },
+        {
+          "role": "assistant",
+          "content": "A fresh start?"
+        },
+        {
+          "role": "user",
+          "content": "As fresh as these things get."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2032-07-14T18:00:00Z",
+      "speaker_id": "work_s11_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Radio alerts have broken my sleep for several consecutive nights. Case-note 130."
+        },
+        {
+          "role": "assistant",
+          "content": "The sleep debt is real. Case-note 131."
+        },
+        {
+          "role": "user",
+          "content": "It shows up in long afternoon sessions. Case-note 132."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2032-07-15T09:00:00Z",
+      "speaker_id": "work_s11_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A vendor call about the signal board ran long but ended well."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth the time?"
+        },
+        {
+          "role": "user",
+          "content": "This one, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2032-07-16T11:00:00Z",
+      "speaker_id": "work_s11_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I walked through the control room checklist with the new starter."
+        },
+        {
+          "role": "assistant",
+          "content": "How did they do?"
+        },
+        {
+          "role": "user",
+          "content": "Careful and quick, a good sign."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2032-07-17T14:00:00Z",
+      "speaker_id": "work_s11_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Quiet afternoon; I cleared the backlog around the service disruptions."
+        },
+        {
+          "role": "assistant",
+          "content": "A rare day."
+        },
+        {
+          "role": "user",
+          "content": "I did not waste it."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2032-07-18T16:00:00Z",
+      "speaker_id": "work_s11_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I flagged a small inconsistency in the dispatch calendar records and fixed it at the source."
+        },
+        {
+          "role": "assistant",
+          "content": "Root cause or symptom?"
+        },
+        {
+          "role": "user",
+          "content": "Root cause, for once."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2032-07-19T18:00:00Z",
+      "speaker_id": "work_s11_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "My medication review is fixed Thursday at 17:30. Case-note 133."
+        },
+        {
+          "role": "assistant",
+          "content": "The clinic booked it months ago. Case-note 134."
+        },
+        {
+          "role": "user",
+          "content": "It cannot be missed. Case-note 135."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2032-07-20T09:00:00Z",
+      "speaker_id": "work_s11_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I sketched next week's plan for the service disruptions before leaving."
+        },
+        {
+          "role": "assistant",
+          "content": "Ahead of schedule?"
+        },
+        {
+          "role": "user",
+          "content": "Ahead enough to sleep well."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2032-07-21T11:00:00Z",
+      "speaker_id": "work_s11_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Lunch walk, then a clean pass through the signal board updates."
+        },
+        {
+          "role": "assistant",
+          "content": "Does the walk help?"
+        },
+        {
+          "role": "user",
+          "content": "It resets the afternoon."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2032-07-22T14:00:00Z",
+      "speaker_id": "work_s11_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "After palpitations I replaced late coffee with mint tea. Case-note 136."
+        },
+        {
+          "role": "assistant",
+          "content": "You cannot use caffeine to compensate. Case-note 137."
+        },
+        {
+          "role": "user",
+          "content": "I protect the recovery window. Case-note 138."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2032-07-23T16:00:00Z",
+      "speaker_id": "work_s11_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I compared two options for the dispatch calendar tooling and noted a mild preference."
+        },
+        {
+          "role": "assistant",
+          "content": "Decision made?"
+        },
+        {
+          "role": "user",
+          "content": "Deferred until the trial ends."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2032-07-24T18:00:00Z",
+      "speaker_id": "work_s11_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I closed the week by updating the control room handover notes."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual to hand over?"
+        },
+        {
+          "role": "user",
+          "content": "Blessedly little."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2032-07-25T09:00:00Z",
+      "speaker_id": "work_s11_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The city team wants a Thursday afternoon offsite confirmation after my night incident rotation. What should I write?"
+        }
+      ]
+    }
+  ],
+  "query": "The city team wants a Thursday afternoon offsite confirmation after my night incident rotation. What should I write?",
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "work_s11_u06",
+      "fact": "After the signal-priority incident rotation, I closed the signal board at 11:15. Case-note 127."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "work_s11_u06",
+      "fact": "My medication review is fixed Thursday at 17:30. Case-note 133."
+    }
+  },
+  "supporting_constraints": {
+    "E1": {
+      "session_id": 9,
+      "fact": "Radio alerts have broken my sleep for several consecutive nights. Case-note 130."
+    },
+    "E2": {
+      "session_id": 17,
+      "fact": "After palpitations I replaced late coffee with mint tea. Case-note 136."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "work_s11_u06",
+        "context": "signal incident rotation",
+        "goal_or_prediction": "restore priority sequencing",
+        "action": "closed the board after overnight radio alerts",
+        "outcome_or_affect": "sleep debt carried forward"
+      }
+    },
+    "7": {
+      "role": "nearby_counterexample"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "supporting_constraint",
+      "fact_id": "E1"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "work_s11_u06",
+        "context": "medication review",
+        "goal_or_prediction": "review treatment safely",
+        "action": "kept Thursday clinic slot",
+        "outcome_or_affect": "care requirement met"
+      }
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "supporting_constraint",
+      "fact_id": "E2"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "Late incident work, sleep debt, a fixed review, and no stimulant workaround jointly rule out an automatic confirmation.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": [
+      "E1",
+      "E2"
+    ]
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "After the signal-priority incident rotation, I closed the signal board at 11:15"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "My medication review is fixed Thursday at 17:30"
+    }
+  ],
+  "retrieval_cue": {
+    "cue_type": "preference_generalization",
+    "why_it_naturally_retrieves_R": "A realistic work request forces a personalized decision without naming either episode or the relation between them."
+  },
+  "relation_specificity": {
+    "nearby_relation": "The user handles normal briefings and regular-shift walks.",
+    "why_it_does_not_license_C": "Neither resembles an overnight incident day with treatment."
+  },
+  "coactivation_bridge": "A shows the operating condition; B shows the demand or failure that makes it decisive. Late incident work, sleep debt, a fixed review, and no stimulant workaround jointly rule out an automatic confirmation. E1 and E2 calibrate the practical recommendation without opening a second route to the conclusion.",
+  "latent_C": {
+    "inference": "Request an accommodation before confirming.",
+    "calibrated_language": "request an alternative offsite time"
+  },
+  "answer_contract": {
+    "target_proposition": "Request an accommodation before confirming.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "decision",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "work_u06",
+    "status": "review_candidate_only",
+    "anonymization": "External persona material was used only during authoring; no corpus, name, country, or demographic metadata is included."
+  },
+  "arm_gold": {
+    "full": {
+      "expected_mode": "infer_C",
+      "binary_decision": true
+    },
+    "a_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    },
+    "b_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    },
+    "link_broken": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    }
+  },
+  "single_evidence_replacements": {
+    "a_only": {
+      "replaced_session_id": 14,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "I filed the routine service disruptions paperwork and confirmed the owner list."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual in it?"
+        },
+        {
+          "role": "user",
+          "content": "A routine cycle, happily."
+        }
+      ]
+    },
+    "b_only": {
+      "replaced_session_id": 6,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "I did a standard pass over the dispatch calendar records this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Any exceptions?"
+        },
+        {
+          "role": "user",
+          "content": "None worth a note."
+        }
+      ]
+    }
+  },
+  "link_broken": {
+    "replaced_session_id": 14,
+    "replacement_dialogue": [
+      {
+        "role": "user",
+        "content": "The medication review was moved to Saturday by the clinic. Case-note 142."
+      },
+      {
+        "role": "assistant",
+        "content": "The hard Thursday clash ends. Case-note 143."
+      },
+      {
+        "role": "user",
+        "content": "Then an adjusted answer is possible. Case-note 144."
+      }
+    ]
+  }
+}

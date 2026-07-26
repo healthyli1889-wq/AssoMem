@@ -1,0 +1,579 @@
+{
+  "schema_version": "work-vnext-2.0",
+  "candidate_id": "AMB_WV_S03_U05_distractor",
+  "pair_id": "AMB_WV_S03_U05",
+  "data_arm": "distractor",
+  "domain": "work",
+  "user_id": "work_s03_u05",
+  "sub_scenario": {
+    "family": "interrupt-driven task switching",
+    "role": "hospital pharmacist",
+    "one_line": "hospital pharmacist: a strong fit for verification work"
+  },
+  "query_type": "situational_fit",
+  "polarity": "accept",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2026-06-08T11:00:00Z",
+      "speaker_id": "work_s03_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I spent the first hour tidying the check sheet and closing stale entries."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything still open?"
+        },
+        {
+          "role": "user",
+          "content": "Two items, both with owners."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2026-06-09T14:00:00Z",
+      "speaker_id": "work_s03_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The compounding run review wrapped early today."
+        },
+        {
+          "role": "assistant",
+          "content": "Any surprises in it?"
+        },
+        {
+          "role": "user",
+          "content": "None worth recording."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2026-06-10T16:00:00Z",
+      "speaker_id": "work_s03_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Counter consultations between windows are enjoyable; talking to patients is why I chose this."
+        },
+        {
+          "role": "assistant",
+          "content": "Interaction is not the problem."
+        },
+        {
+          "role": "user",
+          "content": "Interruption of verification is."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2026-06-11T18:00:00Z",
+      "speaker_id": "work_s03_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Someone new shadowed me in the dispensary this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Did that slow you down?"
+        },
+        {
+          "role": "user",
+          "content": "A little, but the questions were good ones."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2026-06-12T09:00:00Z",
+      "speaker_id": "work_s03_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I batched my replies about the dose verification into one message before lunch."
+        },
+        {
+          "role": "assistant",
+          "content": "Cleaner than drip-feeding answers."
+        },
+        {
+          "role": "user",
+          "content": "Much cleaner."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2026-06-13T11:00:00Z",
+      "speaker_id": "work_s03_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "During Tuesday's compounding run the technician held all calls, and my double-check protocol caught a decimal error before it reached a syringe."
+        },
+        {
+          "role": "assistant",
+          "content": "The held calls made the check possible."
+        },
+        {
+          "role": "user",
+          "content": "The check needs unbroken minutes; that is its anatomy."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2026-06-14T14:00:00Z",
+      "speaker_id": "work_s03_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "True emergencies override everything and should."
+        },
+        {
+          "role": "assistant",
+          "content": "Exceptions stay exceptions."
+        },
+        {
+          "role": "user",
+          "content": "Always."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2026-06-15T16:00:00Z",
+      "speaker_id": "work_s03_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I archived last cycle's notes on the compounding run and set up the new folder."
+        },
+        {
+          "role": "assistant",
+          "content": "A fresh start?"
+        },
+        {
+          "role": "user",
+          "content": "As fresh as these things get."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2026-06-16T18:00:00Z",
+      "speaker_id": "work_s03_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Our error near-misses cluster between 11:00 and 12:30, the walk-in peak."
+        },
+        {
+          "role": "assistant",
+          "content": "The data locates the risk."
+        },
+        {
+          "role": "user",
+          "content": "Precisely where interruptions peak."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2026-06-17T09:00:00Z",
+      "speaker_id": "work_s03_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A vendor call about the check sheet ran long but ended well."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth the time?"
+        },
+        {
+          "role": "user",
+          "content": "This one, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2026-06-18T11:00:00Z",
+      "speaker_id": "work_s03_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I walked through the dispensary checklist with the new starter."
+        },
+        {
+          "role": "assistant",
+          "content": "How did they do?"
+        },
+        {
+          "role": "user",
+          "content": "Careful and quick, a good sign."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2026-06-19T14:00:00Z",
+      "speaker_id": "work_s03_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Quiet afternoon; I cleared the backlog around the dose verification."
+        },
+        {
+          "role": "assistant",
+          "content": "A rare day."
+        },
+        {
+          "role": "user",
+          "content": "I did not waste it."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2026-06-20T16:00:00Z",
+      "speaker_id": "work_s03_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I flagged a small inconsistency in the compounding run records and fixed it at the source."
+        },
+        {
+          "role": "assistant",
+          "content": "Root cause or symptom?"
+        },
+        {
+          "role": "user",
+          "content": "Root cause, for once."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2026-06-21T18:00:00Z",
+      "speaker_id": "work_s03_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The redesigned workflow schedules a protected forty-minute compounding window twice a day with calls routed away; the pilot store's error log dropped to zero after adopting it."
+        },
+        {
+          "role": "assistant",
+          "content": "The design encodes exactly your protection."
+        },
+        {
+          "role": "user",
+          "content": "Better than I improvised it."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2026-06-22T09:00:00Z",
+      "speaker_id": "work_s03_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I sketched next week's plan for the dose verification before leaving."
+        },
+        {
+          "role": "assistant",
+          "content": "Ahead of schedule?"
+        },
+        {
+          "role": "user",
+          "content": "Ahead enough to sleep well."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2026-06-23T11:00:00Z",
+      "speaker_id": "work_s03_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Lunch walk, then a clean pass through the check sheet updates."
+        },
+        {
+          "role": "assistant",
+          "content": "Does the walk help?"
+        },
+        {
+          "role": "user",
+          "content": "It resets the afternoon."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2026-06-24T14:00:00Z",
+      "speaker_id": "work_s03_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "My wrist brace makes task-switching physically slow right now; re-gloving after each phone call adds minutes."
+        },
+        {
+          "role": "assistant",
+          "content": "A bodily cost stacked on the cognitive one."
+        },
+        {
+          "role": "user",
+          "content": "Both real, both daily."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2026-06-25T16:00:00Z",
+      "speaker_id": "work_s03_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A locum told me protected windows are career quicksand because managers value visible busyness."
+        },
+        {
+          "role": "assistant",
+          "content": "Busyness theater."
+        },
+        {
+          "role": "user",
+          "content": "He performs it beautifully."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2026-06-26T18:00:00Z",
+      "speaker_id": "work_s03_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I closed the week by updating the dispensary handover notes."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual to hand over?"
+        },
+        {
+          "role": "user",
+          "content": "Blessedly little."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2026-06-27T09:00:00Z",
+      "speaker_id": "work_s03_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The redesigned workflow rollout reaches our branch next month. For how I actually verify doses, is it the right environment for me?"
+        }
+      ]
+    }
+  ],
+  "query": "The redesigned workflow rollout reaches our branch next month. For how I actually verify doses, is it the right environment for me?",
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "work_s03_u05",
+      "fact": "During Tuesday's compounding run the technician held all calls, and my double-check protocol caught a decimal error before it reached a syringe."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "work_s03_u05",
+      "fact": "The redesigned workflow schedules a protected forty-minute compounding window twice a day with calls routed away; the pilot store's error log dropped to zero after adopting it."
+    }
+  },
+  "supporting_constraints": {
+    "E1": {
+      "session_id": 9,
+      "fact": "Our error near-misses cluster between 11:00 and 12:30, the walk-in peak."
+    },
+    "E2": {
+      "session_id": 17,
+      "fact": "My wrist brace makes task-switching physically slow right now; re-gloving after each phone call adds minutes."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "work_s03_u05",
+        "context": "Tuesday compounding run",
+        "goal_or_prediction": "verify doses without error",
+        "action": "ran the double-check with calls held",
+        "outcome_or_affect": "caught a decimal error pre-syringe"
+      }
+    },
+    "7": {
+      "role": "nearby_counterexample"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "supporting_constraint",
+      "fact_id": "E1"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "work_s03_u05",
+        "context": "redesigned workflow pilot",
+        "goal_or_prediction": "verify under the new schedule",
+        "action": "worked inside protected windows",
+        "outcome_or_affect": "pilot error log dropped to zero"
+      }
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "supporting_constraint",
+      "fact_id": "E2"
+    },
+    "18": {
+      "role": "distractor",
+      "distractor_id": "dist_1",
+      "why_distractor": "Career-quicksand talk is about optics and ignores the pilot's error-log result."
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "This user's double-check protocol works in unbroken minutes, and the workflow schedules protected windows exactly around that protocol.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": [
+      "E1",
+      "E2"
+    ]
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "During Tuesday's compounding run the technician held all calls, and my double-check protocol caught a decimal error before it reached a syringe"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "The redesigned workflow schedules a protected forty-minute compounding window twice a day with calls routed away; the pilot store's error log dropped to zero after adopting it"
+    }
+  ],
+  "retrieval_cue": {
+    "cue_type": "situational_fit",
+    "why_it_naturally_retrieves_R": "A realistic work request forces a personalized decision without naming either episode or the relation between them."
+  },
+  "relation_specificity": {
+    "nearby_relation": "The user enjoys counter consultations and accepts emergency overrides.",
+    "why_it_does_not_license_C": "Neither concerns scheduled protection of the verification minutes themselves."
+  },
+  "coactivation_bridge": "A shows the operating condition; B shows the demand or failure that makes it decisive. This user's double-check protocol works in unbroken minutes, and the workflow schedules protected windows exactly around that protocol. E1 and E2 calibrate the practical recommendation without opening a second route to the conclusion.",
+  "latent_C": {
+    "inference": "The redesigned workflow, with protected compounding windows during this user's verification work, is a strong fit.",
+    "calibrated_language": "a strong fit for verification work"
+  },
+  "answer_contract": {
+    "target_proposition": "The redesigned workflow, with protected compounding windows during this user's verification work, is a strong fit.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "decision",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "work_u05",
+    "status": "review_candidate_only",
+    "anonymization": "External persona material was used only during authoring; no corpus, name, country, or demographic metadata is included."
+  },
+  "arm_gold": {
+    "distractor": {
+      "expected_mode": "infer_C",
+      "binary_decision": true
+    }
+  },
+  "distractor_note": {
+    "replaced_session_id": 18,
+    "why_distractor": "Career-quicksand talk is about optics and ignores the pilot's error-log result."
+  }
+}

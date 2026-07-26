@@ -50,6 +50,20 @@ python3 experiments/assomem_harness/run.py --execute --max-items 10 \
 执行顺序固定为：E1 pre-run intervention audit → execute → E2 post-run
 judgment audit → aggregate。聚合器会拒绝含重复 scored attempt 的输入。
 
+## Work-vNext (S1–S20 staging)
+
+Work-domain vNext gold JSON lives under `staging/work-vnext/work/`
+(`candidates-*`, `harness-root-*`, specs, generators). Use profile
+`profiles/work-vnext-1.json` and config template
+`config.work-vnext.example.sh`.
+
+Full file inventory + generate/run steps:
+`staging/work-vnext/work/WORK_DATA_AND_HARNESS.md`.
+
+Pilot arms for work-vnext-1: `full,a_only,b_only,link_broken,distractor,absence`
+plus a query-only `--zero-evidence` gate. Solver returns
+`mode` / `answer` / `evidence_session_ids`.
+
 ## 统计
 
 - Table A：单个 solver 的 FULL / no-target / broken-link REA、配对 bootstrap 的 Δ_mem / Δ_assoc。

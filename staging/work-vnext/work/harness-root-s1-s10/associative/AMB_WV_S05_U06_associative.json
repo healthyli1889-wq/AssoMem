@@ -1,0 +1,638 @@
+{
+  "schema_version": "work-vnext-2.0",
+  "candidate_id": "AMB_WV_S05_U06_associative",
+  "pair_id": "AMB_WV_S05_U06",
+  "data_arm": "associative",
+  "domain": "work",
+  "user_id": "work_s05_u06",
+  "sub_scenario": {
+    "family": "deadline compression with quality tradeoffs",
+    "role": "kitchen production manager",
+    "one_line": "kitchen production manager: yes only with the check station contractually staffed"
+  },
+  "query_type": "conditional_recommendation",
+  "polarity": "conditional",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2026-09-08T11:00:00Z",
+      "speaker_id": "work_s05_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I spent the first hour tidying the plating check and closing stale entries."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything still open?"
+        },
+        {
+          "role": "user",
+          "content": "Two items, both with owners."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2026-09-09T14:00:00Z",
+      "speaker_id": "work_s05_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The cover plan review wrapped early today."
+        },
+        {
+          "role": "assistant",
+          "content": "Any surprises in it?"
+        },
+        {
+          "role": "user",
+          "content": "None worth recording."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2026-09-10T16:00:00Z",
+      "speaker_id": "work_s05_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Compressing prep timelines with batch pre-portioning is routine and safe."
+        },
+        {
+          "role": "assistant",
+          "content": "Prep compresses; checking does not."
+        },
+        {
+          "role": "user",
+          "content": "The kitchen constitution."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2026-09-11T18:00:00Z",
+      "speaker_id": "work_s05_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Someone new shadowed me in the kitchen line this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Did that slow you down?"
+        },
+        {
+          "role": "user",
+          "content": "A little, but the questions were good ones."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2026-09-12T09:00:00Z",
+      "speaker_id": "work_s05_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I batched my replies about the allergy tickets into one message before lunch."
+        },
+        {
+          "role": "assistant",
+          "content": "Cleaner than drip-feeding answers."
+        },
+        {
+          "role": "user",
+          "content": "Much cleaner."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2026-09-13T11:00:00Z",
+      "speaker_id": "work_s05_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The two-hundred-cover wedding ran clean because the plating-check station stayed staffed; it caught a shellfish garnish headed to the allergy table."
+        },
+        {
+          "role": "assistant",
+          "content": "The station caught a dangerous plate."
+        },
+        {
+          "role": "user",
+          "content": "The only plate that mattered that night."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2026-09-14T14:00:00Z",
+      "speaker_id": "work_s05_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Small drop-off caterings run without a checker defensibly."
+        },
+        {
+          "role": "assistant",
+          "content": "Scale gates the requirement."
+        },
+        {
+          "role": "user",
+          "content": "Scale and allergy load."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2026-09-15T16:00:00Z",
+      "speaker_id": "work_s05_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I archived last cycle's notes on the cover plan and set up the new folder."
+        },
+        {
+          "role": "assistant",
+          "content": "A fresh start?"
+        },
+        {
+          "role": "user",
+          "content": "As fresh as these things get."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2026-09-16T18:00:00Z",
+      "speaker_id": "work_s05_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Gala season triples covers exactly when staffing agencies run dry."
+        },
+        {
+          "role": "assistant",
+          "content": "Compression and short-staffing co-arrive."
+        },
+        {
+          "role": "user",
+          "content": "Punctually, every year."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2026-09-17T09:00:00Z",
+      "speaker_id": "work_s05_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A vendor call about the plating check ran long but ended well."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth the time?"
+        },
+        {
+          "role": "user",
+          "content": "This one, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2026-09-18T11:00:00Z",
+      "speaker_id": "work_s05_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I walked through the kitchen line checklist with the new starter."
+        },
+        {
+          "role": "assistant",
+          "content": "How did they do?"
+        },
+        {
+          "role": "user",
+          "content": "Careful and quick, a good sign."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2026-09-19T14:00:00Z",
+      "speaker_id": "work_s05_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Quiet afternoon; I cleared the backlog around the allergy tickets."
+        },
+        {
+          "role": "assistant",
+          "content": "A rare day."
+        },
+        {
+          "role": "user",
+          "content": "I did not waste it."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2026-09-20T16:00:00Z",
+      "speaker_id": "work_s05_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I flagged a small inconsistency in the cover plan records and fixed it at the source."
+        },
+        {
+          "role": "assistant",
+          "content": "Root cause or symptom?"
+        },
+        {
+          "role": "user",
+          "content": "Root cause, for once."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2026-09-21T18:00:00Z",
+      "speaker_id": "work_s05_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The compressed corporate lunch in May pulled the plating checker onto the line to hit service time, and a dairy dessert reached a lactose-intolerant guest; the client's HR called us."
+        },
+        {
+          "role": "assistant",
+          "content": "The reassignment reached HR."
+        },
+        {
+          "role": "user",
+          "content": "Via a guest's very bad afternoon."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2026-09-22T09:00:00Z",
+      "speaker_id": "work_s05_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I sketched next week's plan for the allergy tickets before leaving."
+        },
+        {
+          "role": "assistant",
+          "content": "Ahead of schedule?"
+        },
+        {
+          "role": "user",
+          "content": "Ahead enough to sleep well."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2026-09-23T11:00:00Z",
+      "speaker_id": "work_s05_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Lunch walk, then a clean pass through the plating check updates."
+        },
+        {
+          "role": "assistant",
+          "content": "Does the walk help?"
+        },
+        {
+          "role": "user",
+          "content": "It resets the afternoon."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2026-09-24T14:00:00Z",
+      "speaker_id": "work_s05_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The three-hundred-cover gala inquiry is the biggest booking of our year."
+        },
+        {
+          "role": "assistant",
+          "content": "The stakes are commercial as well as safety."
+        },
+        {
+          "role": "user",
+          "content": "Both at maximum."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2026-09-25T16:00:00Z",
+      "speaker_id": "work_s05_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I compared two options for the cover plan tooling and noted a mild preference."
+        },
+        {
+          "role": "assistant",
+          "content": "Decision made?"
+        },
+        {
+          "role": "user",
+          "content": "Deferred until the trial ends."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2026-09-26T18:00:00Z",
+      "speaker_id": "work_s05_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I closed the week by updating the kitchen line handover notes."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual to hand over?"
+        },
+        {
+          "role": "user",
+          "content": "Blessedly little."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2026-09-27T09:00:00Z",
+      "speaker_id": "work_s05_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Do we take the three-hundred-cover gala? What condition do I put in the contract before yes?"
+        }
+      ]
+    }
+  ],
+  "query": "Do we take the three-hundred-cover gala? What condition do I put in the contract before yes?",
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "work_s05_u06",
+      "fact": "The two-hundred-cover wedding ran clean because the plating-check station stayed staffed; it caught a shellfish garnish headed to the allergy table."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "work_s05_u06",
+      "fact": "The compressed corporate lunch in May pulled the plating checker onto the line to hit service time, and a dairy dessert reached a lactose-intolerant guest; the client's HR called us."
+    }
+  },
+  "supporting_constraints": {
+    "E1": {
+      "session_id": 9,
+      "fact": "Gala season triples covers exactly when staffing agencies run dry."
+    },
+    "E2": {
+      "session_id": 17,
+      "fact": "The three-hundred-cover gala inquiry is the biggest booking of our year."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "work_s05_u06",
+        "context": "two-hundred-cover wedding",
+        "goal_or_prediction": "serve safely at scale",
+        "action": "kept the plating-check station staffed",
+        "outcome_or_affect": "shellfish garnish intercepted"
+      }
+    },
+    "7": {
+      "role": "nearby_counterexample"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "supporting_constraint",
+      "fact_id": "E1"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "work_s05_u06",
+        "context": "May compressed lunch",
+        "goal_or_prediction": "hit service time",
+        "action": "pulled the checker onto the line",
+        "outcome_or_affect": "allergen reached a guest; HR call"
+      }
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "supporting_constraint",
+      "fact_id": "E2"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "This user's clean large services keep the plating check staffed, and the one compression that pulled the checker sent an allergen to a guest.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": [
+      "E1",
+      "E2"
+    ]
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "The two-hundred-cover wedding ran clean because the plating-check station stayed staffed; it caught a shellfish garnish headed to the allergy table"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "The compressed corporate lunch in May pulled the plating checker onto the line to hit service time, and a dairy dessert reached a lactose-intolerant guest; the client's HR called us"
+    }
+  ],
+  "retrieval_cue": {
+    "cue_type": "conditional_recommendation",
+    "why_it_naturally_retrieves_R": "A realistic work request forces a personalized decision without naming either episode or the relation between them."
+  },
+  "relation_specificity": {
+    "nearby_relation": "The user compresses prep safely and runs small drop-offs without a checker.",
+    "why_it_does_not_license_C": "Neither involves unstaffing the check at full scale and allergy load."
+  },
+  "coactivation_bridge": "A shows the operating condition; B shows the demand or failure that makes it decisive. This user's clean large services keep the plating check staffed, and the one compression that pulled the checker sent an allergen to a guest. E1 and E2 calibrate the practical recommendation without opening a second route to the conclusion.",
+  "latent_C": {
+    "inference": "This user should take the gala only if the plating-check station is contractually staffed through service.",
+    "calibrated_language": "yes only with the check station contractually staffed"
+  },
+  "answer_contract": {
+    "target_proposition": "This user should take the gala only if the plating-check station is contractually staffed through service.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "decision",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "work_u06",
+    "status": "review_candidate_only",
+    "anonymization": "External persona material was used only during authoring; no corpus, name, country, or demographic metadata is included."
+  },
+  "arm_gold": {
+    "full": {
+      "expected_mode": "infer_C",
+      "binary_decision": true
+    },
+    "a_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    },
+    "b_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    },
+    "link_broken": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    }
+  },
+  "single_evidence_replacements": {
+    "a_only": {
+      "replaced_session_id": 14,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "I filed the routine allergy tickets paperwork and confirmed the owner list."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual in it?"
+        },
+        {
+          "role": "user",
+          "content": "A routine cycle, happily."
+        }
+      ]
+    },
+    "b_only": {
+      "replaced_session_id": 6,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "I did a standard pass over the cover plan records this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Any exceptions?"
+        },
+        {
+          "role": "user",
+          "content": "None worth a note."
+        }
+      ]
+    }
+  },
+  "link_broken": {
+    "replaced_session_id": 14,
+    "replacement_dialogue": [
+      {
+        "role": "user",
+        "content": "The gala contract draft arrived: the venue provides its own dedicated allergy-check officer at the pass, independent of our staffing."
+      },
+      {
+        "role": "assistant",
+        "content": "The check survives your staffing decisions."
+      },
+      {
+        "role": "user",
+        "content": "Independently guaranteed."
+      }
+    ]
+  }
+}

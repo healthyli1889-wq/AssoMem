@@ -1,0 +1,579 @@
+{
+  "schema_version": "work-vnext-2.0",
+  "candidate_id": "AMB_WV_S16_U01_distractor",
+  "pair_id": "AMB_WV_S16_U01",
+  "data_arm": "distractor",
+  "domain": "work",
+  "user_id": "work_s16_u01",
+  "sub_scenario": {
+    "family": "rapid live troubleshooting leadership versus careful asynchronous incident analysis",
+    "role": "digital forensics shift lead",
+    "one_line": "digital forensics shift lead: accept the evidence-analyst assignment"
+  },
+  "query_type": "preference_generalization",
+  "polarity": "accept",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2028-01-08T11:00:00Z",
+      "speaker_id": "work_s16_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I spent the first hour tidying the evidence timeline and closing stale entries."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything still open?"
+        },
+        {
+          "role": "user",
+          "content": "Two items, both with owners."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2028-01-09T14:00:00Z",
+      "speaker_id": "work_s16_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The custody queue review wrapped early today."
+        },
+        {
+          "role": "assistant",
+          "content": "Any surprises in it?"
+        },
+        {
+          "role": "user",
+          "content": "None worth recording."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2028-01-10T16:00:00Z",
+      "speaker_id": "work_s16_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I gave the audit team a short update from last month's closed intrusion file."
+        },
+        {
+          "role": "assistant",
+          "content": "Was that a live investigation?"
+        },
+        {
+          "role": "user",
+          "content": "No, it was a routine summary after the finding was settled."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2028-01-11T18:00:00Z",
+      "speaker_id": "work_s16_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Someone new shadowed me in the response alcove this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Did that slow you down?"
+        },
+        {
+          "role": "user",
+          "content": "A little, but the questions were good ones."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2028-01-12T09:00:00Z",
+      "speaker_id": "work_s16_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I batched my replies about the breach rotations into one message before lunch."
+        },
+        {
+          "role": "assistant",
+          "content": "Cleaner than drip-feeding answers."
+        },
+        {
+          "role": "user",
+          "content": "Much cleaner."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2028-01-13T11:00:00Z",
+      "speaker_id": "work_s16_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "During the April payroll-access inquiry, I spent the afternoon aligning endpoint logs, badge entries, and account records so the response team could identify the compromised account; my written timeline was adopted without correction."
+        },
+        {
+          "role": "assistant",
+          "content": "What part did you own?"
+        },
+        {
+          "role": "user",
+          "content": "I built and checked the cross-record evidence chain before the team met."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2028-01-14T14:00:00Z",
+      "speaker_id": "work_s16_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I answered a custody question yesterday using the signed evidence register."
+        },
+        {
+          "role": "assistant",
+          "content": "Did you have to choose a containment action?"
+        },
+        {
+          "role": "user",
+          "content": "No, I only located the recorded transfer."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2028-01-15T16:00:00Z",
+      "speaker_id": "work_s16_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I archived last cycle's notes on the custody queue and set up the new folder."
+        },
+        {
+          "role": "assistant",
+          "content": "A fresh start?"
+        },
+        {
+          "role": "user",
+          "content": "As fresh as these things get."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2028-01-16T18:00:00Z",
+      "speaker_id": "work_s16_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Nominations close today at 17:00, and tomorrow's response call begins at 08:15."
+        },
+        {
+          "role": "assistant",
+          "content": "Is either time movable?"
+        },
+        {
+          "role": "user",
+          "content": "No, both are fixed on the incident calendar."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2028-01-17T09:00:00Z",
+      "speaker_id": "work_s16_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A vendor call about the evidence timeline ran long but ended well."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth the time?"
+        },
+        {
+          "role": "user",
+          "content": "This one, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2028-01-18T11:00:00Z",
+      "speaker_id": "work_s16_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I walked through the response alcove checklist with the new starter."
+        },
+        {
+          "role": "assistant",
+          "content": "How did they do?"
+        },
+        {
+          "role": "user",
+          "content": "Careful and quick, a good sign."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2028-01-19T14:00:00Z",
+      "speaker_id": "work_s16_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Quiet afternoon; I cleared the backlog around the breach rotations."
+        },
+        {
+          "role": "assistant",
+          "content": "A rare day."
+        },
+        {
+          "role": "user",
+          "content": "I did not waste it."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2028-01-20T16:00:00Z",
+      "speaker_id": "work_s16_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I flagged a small inconsistency in the custody queue records and fixed it at the source."
+        },
+        {
+          "role": "assistant",
+          "content": "Root cause or symptom?"
+        },
+        {
+          "role": "user",
+          "content": "Root cause, for once."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2028-01-21T18:00:00Z",
+      "speaker_id": "work_s16_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "On a June ransomware bridge, I chaired the live triage and named a contractor laptop as the entry point from the first alert stream; later disk records showed it was only a relay, and the premature isolation delayed containment."
+        },
+        {
+          "role": "assistant",
+          "content": "What had you been trying to do?"
+        },
+        {
+          "role": "user",
+          "content": "I was trying to give the responders one source while raw signals were still arriving."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2028-01-22T09:00:00Z",
+      "speaker_id": "work_s16_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I sketched next week's plan for the breach rotations before leaving."
+        },
+        {
+          "role": "assistant",
+          "content": "Ahead of schedule?"
+        },
+        {
+          "role": "user",
+          "content": "Ahead enough to sleep well."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2028-01-23T11:00:00Z",
+      "speaker_id": "work_s16_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Lunch walk, then a clean pass through the evidence timeline updates."
+        },
+        {
+          "role": "assistant",
+          "content": "Does the walk help?"
+        },
+        {
+          "role": "user",
+          "content": "It resets the afternoon."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2028-01-24T14:00:00Z",
+      "speaker_id": "work_s16_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The system can export a combined host-and-badge file at 07:45, and the staffing form lists bridge chair, evidence analyst, and liaison scribe as separate fields."
+        },
+        {
+          "role": "assistant",
+          "content": "Are those arrangements confirmed?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, the export slot and all three roster fields are available."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2028-01-25T16:00:00Z",
+      "speaker_id": "work_s16_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Chief counsel called the chair assignment a high-visibility opportunity."
+        },
+        {
+          "role": "assistant",
+          "content": "Did counsel add incident evidence?"
+        },
+        {
+          "role": "user",
+          "content": "No, that was only a comment about exposure."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2028-01-26T18:00:00Z",
+      "speaker_id": "work_s16_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I closed the week by updating the response alcove handover notes."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual to hand over?"
+        },
+        {
+          "role": "user",
+          "content": "Blessedly little."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2028-01-27T09:00:00Z",
+      "speaker_id": "work_s16_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Tomorrow's roster lists bridge chair, evidence analyst, and liaison scribe. How should I rank those three assignments for myself?"
+        }
+      ]
+    }
+  ],
+  "query": "Tomorrow's roster lists bridge chair, evidence analyst, and liaison scribe. How should I rank those three assignments for myself?",
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "work_s16_u01",
+      "fact": "During the April payroll-access inquiry, I spent the afternoon aligning endpoint logs, badge entries, and account records so the response team could identify the compromised account; my written timeline was adopted without correction."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "work_s16_u01",
+      "fact": "On a June ransomware bridge, I chaired the live triage and named a contractor laptop as the entry point from the first alert stream; later disk records showed it was only a relay, and the premature isolation delayed containment."
+    }
+  },
+  "supporting_constraints": {
+    "E1": {
+      "session_id": 9,
+      "fact": "Nominations close today at 17:00, and tomorrow's response call begins at 08:15."
+    },
+    "E2": {
+      "session_id": 17,
+      "fact": "The system can export a combined host-and-badge file at 07:45, and the staffing form lists bridge chair, evidence analyst, and liaison scribe as separate fields."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "work_s16_u01",
+        "context": "April payroll-access inquiry",
+        "goal_or_prediction": "identify the compromised account",
+        "action": "aligned endpoint, badge, and account records into a checked timeline",
+        "outcome_or_affect": "timeline adopted without correction"
+      }
+    },
+    "7": {
+      "role": "nearby_counterexample"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "supporting_constraint",
+      "fact_id": "E1"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "work_s16_u01",
+        "context": "June ransomware bridge",
+        "goal_or_prediction": "direct containment toward the entry point",
+        "action": "chaired triage and named a source from the first alert stream",
+        "outcome_or_affect": "premature isolation delayed containment"
+      }
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "supporting_constraint",
+      "fact_id": "E2"
+    },
+    "18": {
+      "role": "distractor",
+      "distractor_id": "dist_1",
+      "why_distractor": "Visibility says nothing about how to order all three assignments from the user's episode history."
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "The payroll inquiry shows that this user contributes a viable cross-record synthesis contribution, while the ransomware bridge shows why this user should rank live chairing last among the three posted roles.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": [
+      "E1",
+      "E2"
+    ]
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "During the April payroll-access inquiry, I spent the afternoon aligning endpoint logs, badge entries, and account records so the response team could identify the compromised account; my written timeline was adopted without correction"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "On a June ransomware bridge, I chaired the live triage and named a contractor laptop as the entry point from the first alert stream; later disk records showed it was only a relay, and the premature isolation delayed containment"
+    }
+  ],
+  "retrieval_cue": {
+    "cue_type": "preference_generalization",
+    "why_it_naturally_retrieves_R": "A realistic work request forces a personalized decision without naming either episode or the relation between them."
+  },
+  "relation_specificity": {
+    "nearby_relation": "The user can summarize closed findings and locate entries in a custody register.",
+    "why_it_does_not_license_C": "Those routine tasks establish neither the cross-record synthesis contribution nor the reason to rank live chairing last."
+  },
+  "coactivation_bridge": "A and B form the only intervention pair. The payroll inquiry shows that this user contributes a viable cross-record synthesis contribution, while the ransomware bridge shows why this user should rank live chairing last among the three posted roles. E1 and E2 are logistical calibration only and do not open a second route to C.",
+  "latent_C": {
+    "inference": "Rank the evidence-analyst assignment first and the bridge-chair assignment last, with liaison scribe between them.",
+    "calibrated_language": "accept the evidence-analyst assignment"
+  },
+  "answer_contract": {
+    "target_proposition": "Rank the evidence-analyst assignment first and the bridge-chair assignment last, with liaison scribe between them.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "work_u01",
+    "status": "review_candidate_only",
+    "anonymization": "External persona material was used only during authoring; no corpus, name, country, or demographic metadata is included."
+  },
+  "arm_gold": {
+    "distractor": {
+      "expected_mode": "infer_C",
+      "binary_decision": true
+    }
+  },
+  "distractor_note": {
+    "replaced_session_id": 18,
+    "why_distractor": "Visibility says nothing about how to order all three assignments from the user's episode history."
+  }
+}

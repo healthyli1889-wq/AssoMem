@@ -1,0 +1,638 @@
+{
+  "schema_version": "work-vnext-2.0",
+  "candidate_id": "AMB_WV_S06_U05_associative",
+  "pair_id": "AMB_WV_S06_U05",
+  "data_arm": "associative",
+  "domain": "work",
+  "user_id": "work_s06_u05",
+  "sub_scenario": {
+    "family": "physical constraint versus sustained work commitment",
+    "role": "flight paramedic",
+    "one_line": "flight paramedic: a good fit under the equipment list"
+  },
+  "query_type": "situational_fit",
+  "polarity": "accept",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2025-08-12T11:00:00Z",
+      "speaker_id": "work_s06_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I spent the first hour tidying the equipment checklist and closing stale entries."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything still open?"
+        },
+        {
+          "role": "user",
+          "content": "Two items, both with owners."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2025-08-13T14:00:00Z",
+      "speaker_id": "work_s06_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The crew roster review wrapped early today."
+        },
+        {
+          "role": "assistant",
+          "content": "Any surprises in it?"
+        },
+        {
+          "role": "user",
+          "content": "None worth recording."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2025-08-14T16:00:00Z",
+      "speaker_id": "work_s06_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Ground-ambulance shifts, even long ones, have been unremarkable for my back since the surgery."
+        },
+        {
+          "role": "assistant",
+          "content": "Ground work is fully cleared."
+        },
+        {
+          "role": "user",
+          "content": "Cleared and comfortable."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2025-08-15T18:00:00Z",
+      "speaker_id": "work_s06_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Someone new shadowed me in the helicopter base this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Did that slow you down?"
+        },
+        {
+          "role": "user",
+          "content": "A little, but the questions were good ones."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2025-08-16T09:00:00Z",
+      "speaker_id": "work_s06_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I batched my replies about the lift protocols into one message before lunch."
+        },
+        {
+          "role": "assistant",
+          "content": "Cleaner than drip-feeding answers."
+        },
+        {
+          "role": "user",
+          "content": "Much cleaner."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2025-08-17T11:00:00Z",
+      "speaker_id": "work_s06_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Since the new harness protocol and the lift-assist drills, my back has handled full helicopter shifts cleanly; the last audit cycle logged me at full duties with zero restrictions triggered."
+        },
+        {
+          "role": "assistant",
+          "content": "The assist equipment closed the gap."
+        },
+        {
+          "role": "user",
+          "content": "Closed it completely, per the audit."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2025-08-18T14:00:00Z",
+      "speaker_id": "work_s06_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The one thing I still avoid is repeated unassisted stretcher lifting; a single assisted lift is nothing."
+        },
+        {
+          "role": "assistant",
+          "content": "Assistance is the hinge."
+        },
+        {
+          "role": "user",
+          "content": "The whole hinge."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2025-08-19T16:00:00Z",
+      "speaker_id": "work_s06_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I archived last cycle's notes on the crew roster and set up the new folder."
+        },
+        {
+          "role": "assistant",
+          "content": "A fresh start?"
+        },
+        {
+          "role": "user",
+          "content": "As fresh as these things get."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2025-08-20T18:00:00Z",
+      "speaker_id": "work_s06_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "My surgeon's five-year review cleared me for all duties where mechanical lift assistance is available."
+        },
+        {
+          "role": "assistant",
+          "content": "A conditional clearance, formally recorded."
+        },
+        {
+          "role": "user",
+          "content": "Formally, with the condition named."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2025-08-21T09:00:00Z",
+      "speaker_id": "work_s06_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A vendor call about the equipment checklist ran long but ended well."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth the time?"
+        },
+        {
+          "role": "user",
+          "content": "This one, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2025-08-22T11:00:00Z",
+      "speaker_id": "work_s06_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I walked through the helicopter base checklist with the new starter."
+        },
+        {
+          "role": "assistant",
+          "content": "How did they do?"
+        },
+        {
+          "role": "user",
+          "content": "Careful and quick, a good sign."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2025-08-23T14:00:00Z",
+      "speaker_id": "work_s06_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Quiet afternoon; I cleared the backlog around the lift protocols."
+        },
+        {
+          "role": "assistant",
+          "content": "A rare day."
+        },
+        {
+          "role": "user",
+          "content": "I did not waste it."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2025-08-24T16:00:00Z",
+      "speaker_id": "work_s06_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I flagged a small inconsistency in the crew roster records and fixed it at the source."
+        },
+        {
+          "role": "assistant",
+          "content": "Root cause or symptom?"
+        },
+        {
+          "role": "user",
+          "content": "Root cause, for once."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2025-08-25T18:00:00Z",
+      "speaker_id": "work_s06_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The new base being staffed runs powered stretcher loaders and winch lift-assists on both airframes; the equipment list is exactly the condition my clearance names."
+        },
+        {
+          "role": "assistant",
+          "content": "The base is built to your clearance."
+        },
+        {
+          "role": "user",
+          "content": "Down to the loader model."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2025-08-26T09:00:00Z",
+      "speaker_id": "work_s06_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I sketched next week's plan for the lift protocols before leaving."
+        },
+        {
+          "role": "assistant",
+          "content": "Ahead of schedule?"
+        },
+        {
+          "role": "user",
+          "content": "Ahead enough to sleep well."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2025-08-27T11:00:00Z",
+      "speaker_id": "work_s06_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Lunch walk, then a clean pass through the equipment checklist updates."
+        },
+        {
+          "role": "assistant",
+          "content": "Does the walk help?"
+        },
+        {
+          "role": "user",
+          "content": "It resets the afternoon."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2025-08-28T14:00:00Z",
+      "speaker_id": "work_s06_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The base is twenty minutes from home and the rotation matches my custody weekends."
+        },
+        {
+          "role": "assistant",
+          "content": "Logistics align as well."
+        },
+        {
+          "role": "user",
+          "content": "Everything aligns, for once."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2025-08-29T16:00:00Z",
+      "speaker_id": "work_s06_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I compared two options for the crew roster tooling and noted a mild preference."
+        },
+        {
+          "role": "assistant",
+          "content": "Decision made?"
+        },
+        {
+          "role": "user",
+          "content": "Deferred until the trial ends."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2025-08-30T18:00:00Z",
+      "speaker_id": "work_s06_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I closed the week by updating the helicopter base handover notes."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual to hand over?"
+        },
+        {
+          "role": "user",
+          "content": "Blessedly little."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2025-08-31T09:00:00Z",
+      "speaker_id": "work_s06_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Volunteers are wanted for the new base roster. Given my history, is it the right posting for me?"
+        }
+      ]
+    }
+  ],
+  "query": "Volunteers are wanted for the new base roster. Given my history, is it the right posting for me?",
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "work_s06_u05",
+      "fact": "Since the new harness protocol and the lift-assist drills, my back has handled full helicopter shifts cleanly; the last audit cycle logged me at full duties with zero restrictions triggered."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "work_s06_u05",
+      "fact": "The new base being staffed runs powered stretcher loaders and winch lift-assists on both airframes; the equipment list is exactly the condition my clearance names."
+    }
+  },
+  "supporting_constraints": {
+    "E1": {
+      "session_id": 9,
+      "fact": "My surgeon's five-year review cleared me for all duties where mechanical lift assistance is available."
+    },
+    "E2": {
+      "session_id": 17,
+      "fact": "The base is twenty minutes from home and the rotation matches my custody weekends."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "work_s06_u05",
+        "context": "post-protocol flight shifts",
+        "goal_or_prediction": "work full duties safely",
+        "action": "used harness protocol and lift assists",
+        "outcome_or_affect": "zero restrictions triggered in audit"
+      }
+    },
+    "7": {
+      "role": "nearby_counterexample"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "supporting_constraint",
+      "fact_id": "E1"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "work_s06_u05",
+        "context": "new base equipment list",
+        "goal_or_prediction": "staff the new roster",
+        "action": "powered loaders and winch assists on both airframes",
+        "outcome_or_affect": "clearance condition met by design"
+      }
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "supporting_constraint",
+      "fact_id": "E2"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "This user is cleared for full duties where mechanical lift assistance exists, and the new base's equipment list provides exactly that assistance.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": [
+      "E1",
+      "E2"
+    ]
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "Since the new harness protocol and the lift-assist drills, my back has handled full helicopter shifts cleanly; the last audit cycle logged me at full duties with zero restrictions triggered"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "The new base being staffed runs powered stretcher loaders and winch lift-assists on both airframes; the equipment list is exactly the condition my clearance names"
+    }
+  ],
+  "retrieval_cue": {
+    "cue_type": "situational_fit",
+    "why_it_naturally_retrieves_R": "A realistic work request forces a personalized decision without naming either episode or the relation between them."
+  },
+  "relation_specificity": {
+    "nearby_relation": "The user handles ground shifts fully and manages single assisted lifts.",
+    "why_it_does_not_license_C": "Neither addresses a posting whose equipment list matches the clearance condition."
+  },
+  "coactivation_bridge": "A shows the operating condition; B shows the demand or failure that makes it decisive. This user is cleared for full duties where mechanical lift assistance exists, and the new base's equipment list provides exactly that assistance. E1 and E2 calibrate the practical recommendation without opening a second route to the conclusion.",
+  "latent_C": {
+    "inference": "The new base posting, equipped with the powered lift assistance this user's clearance requires, is a good fit.",
+    "calibrated_language": "a good fit under the equipment list"
+  },
+  "answer_contract": {
+    "target_proposition": "The new base posting, equipped with the powered lift assistance this user's clearance requires, is a good fit.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "decision",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "work_u05",
+    "status": "review_candidate_only",
+    "anonymization": "External persona material was used only during authoring; no corpus, name, country, or demographic metadata is included."
+  },
+  "arm_gold": {
+    "full": {
+      "expected_mode": "infer_C",
+      "binary_decision": true
+    },
+    "a_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    },
+    "b_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    },
+    "link_broken": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    }
+  },
+  "single_evidence_replacements": {
+    "a_only": {
+      "replaced_session_id": 14,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "I filed the routine lift protocols paperwork and confirmed the owner list."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual in it?"
+        },
+        {
+          "role": "user",
+          "content": "A routine cycle, happily."
+        }
+      ]
+    },
+    "b_only": {
+      "replaced_session_id": 6,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "I did a standard pass over the crew roster records this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Any exceptions?"
+        },
+        {
+          "role": "user",
+          "content": "None worth a note."
+        }
+      ]
+    }
+  },
+  "link_broken": {
+    "replaced_session_id": 14,
+    "replacement_dialogue": [
+      {
+        "role": "user",
+        "content": "The powered loader on the primary airframe failed certification; the base confirmed manual stretcher lifting for at least the first quarter."
+      },
+      {
+        "role": "assistant",
+        "content": "The clearance condition disappears for a quarter."
+      },
+      {
+        "role": "user",
+        "content": "The exact condition, gone."
+      }
+    ]
+  }
+}

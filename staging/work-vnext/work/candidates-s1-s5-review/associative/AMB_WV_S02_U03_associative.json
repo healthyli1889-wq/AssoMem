@@ -1,0 +1,638 @@
+{
+  "schema_version": "work-vnext-2.0",
+  "candidate_id": "AMB_WV_S02_U03_associative",
+  "pair_id": "AMB_WV_S02_U03",
+  "data_arm": "associative",
+  "domain": "work",
+  "user_id": "work_s02_u03",
+  "sub_scenario": {
+    "family": "escalation ownership under ambiguous evidence",
+    "role": "hospital bed-flow coordinator",
+    "one_line": "hospital bed-flow coordinator: likely to go badly before confirmations arrive"
+  },
+  "query_type": "predicted_reaction",
+  "polarity": "reject",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2026-04-20T11:00:00Z",
+      "speaker_id": "work_s02_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I spent the first hour tidying the unknowns list and closing stale entries."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything still open?"
+        },
+        {
+          "role": "user",
+          "content": "Two items, both with owners."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2026-04-21T14:00:00Z",
+      "speaker_id": "work_s02_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The bed board review wrapped early today."
+        },
+        {
+          "role": "assistant",
+          "content": "Any surprises in it?"
+        },
+        {
+          "role": "user",
+          "content": "None worth recording."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2026-04-22T16:00:00Z",
+      "speaker_id": "work_s02_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Verbal commitments in the afternoon, after confirmations, are painless."
+        },
+        {
+          "role": "assistant",
+          "content": "So it is timing, not format."
+        },
+        {
+          "role": "user",
+          "content": "Mostly timing."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2026-04-23T18:00:00Z",
+      "speaker_id": "work_s02_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Someone new shadowed me in the flow office this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Did that slow you down?"
+        },
+        {
+          "role": "user",
+          "content": "A little, but the questions were good ones."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2026-04-24T09:00:00Z",
+      "speaker_id": "work_s02_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I batched my replies about the discharge confirmations into one message before lunch."
+        },
+        {
+          "role": "assistant",
+          "content": "Cleaner than drip-feeding answers."
+        },
+        {
+          "role": "user",
+          "content": "Much cleaner."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2026-04-25T11:00:00Z",
+      "speaker_id": "work_s02_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "During the winter surge I listed which wards' discharges were confirmed versus assumed before committing beds, and we placed forty patients without a single collision."
+        },
+        {
+          "role": "assistant",
+          "content": "The unknowns list carried it."
+        },
+        {
+          "role": "user",
+          "content": "It is the only tool that matters at scale."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2026-04-26T14:00:00Z",
+      "speaker_id": "work_s02_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "In a true emergency I will commit on partial data and live with it; that is the job."
+        },
+        {
+          "role": "assistant",
+          "content": "Exception cases exist."
+        },
+        {
+          "role": "user",
+          "content": "And I own them."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2026-04-27T16:00:00Z",
+      "speaker_id": "work_s02_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I archived last cycle's notes on the bed board and set up the new folder."
+        },
+        {
+          "role": "assistant",
+          "content": "A fresh start?"
+        },
+        {
+          "role": "user",
+          "content": "As fresh as these things get."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2026-04-28T18:00:00Z",
+      "speaker_id": "work_s02_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Confirmations flow in between 08:40 and 09:10; the proposed huddle change moves commitments to 08:30."
+        },
+        {
+          "role": "assistant",
+          "content": "Ten minutes ahead of the data, structurally."
+        },
+        {
+          "role": "user",
+          "content": "Every single morning."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2026-04-29T09:00:00Z",
+      "speaker_id": "work_s02_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A vendor call about the unknowns list ran long but ended well."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth the time?"
+        },
+        {
+          "role": "user",
+          "content": "This one, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2026-04-30T11:00:00Z",
+      "speaker_id": "work_s02_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I walked through the flow office checklist with the new starter."
+        },
+        {
+          "role": "assistant",
+          "content": "How did they do?"
+        },
+        {
+          "role": "user",
+          "content": "Careful and quick, a good sign."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2026-05-01T14:00:00Z",
+      "speaker_id": "work_s02_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Quiet afternoon; I cleared the backlog around the discharge confirmations."
+        },
+        {
+          "role": "assistant",
+          "content": "A rare day."
+        },
+        {
+          "role": "user",
+          "content": "I did not waste it."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2026-05-02T16:00:00Z",
+      "speaker_id": "work_s02_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I flagged a small inconsistency in the bed board records and fixed it at the source."
+        },
+        {
+          "role": "assistant",
+          "content": "Root cause or symptom?"
+        },
+        {
+          "role": "user",
+          "content": "Root cause, for once."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2026-05-03T18:00:00Z",
+      "speaker_id": "work_s02_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "At rounds in January I was pressed to commit beds verbally before discharge confirmations came back, and I double-booked the isolation room on an assumption."
+        },
+        {
+          "role": "assistant",
+          "content": "The assumption felt safe?"
+        },
+        {
+          "role": "user",
+          "content": "It felt confirmed. It was not."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2026-05-04T09:00:00Z",
+      "speaker_id": "work_s02_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I sketched next week's plan for the discharge confirmations before leaving."
+        },
+        {
+          "role": "assistant",
+          "content": "Ahead of schedule?"
+        },
+        {
+          "role": "user",
+          "content": "Ahead enough to sleep well."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2026-05-05T11:00:00Z",
+      "speaker_id": "work_s02_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Lunch walk, then a clean pass through the unknowns list updates."
+        },
+        {
+          "role": "assistant",
+          "content": "Does the walk help?"
+        },
+        {
+          "role": "user",
+          "content": "It resets the afternoon."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2026-05-06T14:00:00Z",
+      "speaker_id": "work_s02_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "My night-shift recovery is still shaky and early mornings are when I most need external checklists."
+        },
+        {
+          "role": "assistant",
+          "content": "Another layer on the same hours."
+        },
+        {
+          "role": "user",
+          "content": "It compounds, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2026-05-07T16:00:00Z",
+      "speaker_id": "work_s02_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I compared two options for the bed board tooling and noted a mild preference."
+        },
+        {
+          "role": "assistant",
+          "content": "Decision made?"
+        },
+        {
+          "role": "user",
+          "content": "Deferred until the trial ends."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2026-05-08T18:00:00Z",
+      "speaker_id": "work_s02_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I closed the week by updating the flow office handover notes."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual to hand over?"
+        },
+        {
+          "role": "user",
+          "content": "Blessedly little."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2026-05-09T09:00:00Z",
+      "speaker_id": "work_s02_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "If the morning huddle switches next week to on-the-spot bed commitments at 08:30, what is the most realistic picture of how my first crunch morning goes?"
+        }
+      ]
+    }
+  ],
+  "query": "If the morning huddle switches next week to on-the-spot bed commitments at 08:30, what is the most realistic picture of how my first crunch morning goes?",
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "work_s02_u03",
+      "fact": "During the winter surge I listed which wards' discharges were confirmed versus assumed before committing beds, and we placed forty patients without a single collision."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "work_s02_u03",
+      "fact": "At rounds in January I was pressed to commit beds verbally before discharge confirmations came back, and I double-booked the isolation room on an assumption."
+    }
+  },
+  "supporting_constraints": {
+    "E1": {
+      "session_id": 9,
+      "fact": "Confirmations flow in between 08:40 and 09:10; the proposed huddle change moves commitments to 08:30."
+    },
+    "E2": {
+      "session_id": 17,
+      "fact": "My night-shift recovery is still shaky and early mornings are when I most need external checklists."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "work_s02_u03",
+        "context": "winter surge placement",
+        "goal_or_prediction": "place forty patients safely",
+        "action": "listed confirmed versus assumed discharges first",
+        "outcome_or_affect": "zero collisions"
+      }
+    },
+    "7": {
+      "role": "nearby_counterexample"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "supporting_constraint",
+      "fact_id": "E1"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "work_s02_u03",
+        "context": "January rounds pressure",
+        "goal_or_prediction": "commit beds verbally at once",
+        "action": "committed on an assumed discharge",
+        "outcome_or_affect": "double-booked the isolation room"
+      }
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "supporting_constraint",
+      "fact_id": "E2"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "This user places beds safely from a confirmed-versus-assumed list, and the 08:30 format commits beds minutes before confirmations exist.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": [
+      "E1",
+      "E2"
+    ]
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "During the winter surge I listed which wards' discharges were confirmed versus assumed before committing beds, and we placed forty patients without a single collision"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "At rounds in January I was pressed to commit beds verbally before discharge confirmations came back, and I double-booked the isolation room on an assumption"
+    }
+  ],
+  "retrieval_cue": {
+    "cue_type": "predicted_reaction",
+    "why_it_naturally_retrieves_R": "A realistic work request forces a personalized decision without naming either episode or the relation between them."
+  },
+  "relation_specificity": {
+    "nearby_relation": "The user commits verbally after confirmations and handles true emergencies on partial data.",
+    "why_it_does_not_license_C": "Neither shows routine commitments structurally scheduled ahead of the data."
+  },
+  "coactivation_bridge": "A shows the operating condition; B shows the demand or failure that makes it decisive. This user places beds safely from a confirmed-versus-assumed list, and the 08:30 format commits beds minutes before confirmations exist. E1 and E2 calibrate the practical recommendation without opening a second route to the conclusion.",
+  "latent_C": {
+    "inference": "This user's first crunch morning under 08:30 on-the-spot commitments, made before confirmations arrive, would likely go badly.",
+    "calibrated_language": "likely to go badly before confirmations arrive"
+  },
+  "answer_contract": {
+    "target_proposition": "This user's first crunch morning under 08:30 on-the-spot commitments, made before confirmations arrive, would likely go badly.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "decision",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "work_u03",
+    "status": "review_candidate_only",
+    "anonymization": "External persona material was used only during authoring; no corpus, name, country, or demographic metadata is included."
+  },
+  "arm_gold": {
+    "full": {
+      "expected_mode": "infer_C",
+      "binary_decision": true
+    },
+    "a_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    },
+    "b_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    },
+    "link_broken": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    }
+  },
+  "single_evidence_replacements": {
+    "a_only": {
+      "replaced_session_id": 14,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "I filed the routine discharge confirmations paperwork and confirmed the owner list."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual in it?"
+        },
+        {
+          "role": "user",
+          "content": "A routine cycle, happily."
+        }
+      ]
+    },
+    "b_only": {
+      "replaced_session_id": 6,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "I did a standard pass over the bed board records this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Any exceptions?"
+        },
+        {
+          "role": "user",
+          "content": "None worth a note."
+        }
+      ]
+    }
+  },
+  "link_broken": {
+    "replaced_session_id": 14,
+    "replacement_dialogue": [
+      {
+        "role": "user",
+        "content": "The lab and transport teams moved their reporting: discharge confirmations now land by 08:15, before the 08:30 commitments."
+      },
+      {
+        "role": "assistant",
+        "content": "The data precedes the decision now."
+      },
+      {
+        "role": "user",
+        "content": "That reverses the whole problem."
+      }
+    ]
+  }
+}

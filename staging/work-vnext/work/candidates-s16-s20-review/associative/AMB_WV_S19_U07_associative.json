@@ -1,0 +1,638 @@
+{
+  "schema_version": "work-vnext-2.0",
+  "candidate_id": "AMB_WV_S19_U07_associative",
+  "pair_id": "AMB_WV_S19_U07",
+  "data_arm": "associative",
+  "domain": "work",
+  "user_id": "work_s19_u07",
+  "sub_scenario": {
+    "family": "communicating uncertainty and risk escalation in cross-functional decisions",
+    "role": "hospital partnership coordinator",
+    "one_line": "hospital partnership coordinator: request the missing process details"
+  },
+  "query_type": "situational_fit",
+  "polarity": "non_decision",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2028-07-24T11:00:00Z",
+      "speaker_id": "work_s19_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I spent the first hour tidying the referral log and closing stale entries."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything still open?"
+        },
+        {
+          "role": "user",
+          "content": "Two items, both with owners."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2028-07-25T14:00:00Z",
+      "speaker_id": "work_s19_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The partner diary review wrapped early today."
+        },
+        {
+          "role": "assistant",
+          "content": "Any surprises in it?"
+        },
+        {
+          "role": "user",
+          "content": "None worth recording."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2028-07-26T16:00:00Z",
+      "speaker_id": "work_s19_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I can arrange a standard referral in the afternoon when every service has confirmed capacity."
+        },
+        {
+          "role": "assistant",
+          "content": "Are afternoon referrals inherently unsafe?"
+        },
+        {
+          "role": "user",
+          "content": "No, complete information makes them straightforward."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2028-07-27T18:00:00Z",
+      "speaker_id": "work_s19_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Someone new shadowed me in the care coordination desk this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Did that slow you down?"
+        },
+        {
+          "role": "user",
+          "content": "A little, but the questions were good ones."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2028-07-28T09:00:00Z",
+      "speaker_id": "work_s19_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I batched my replies about the winter surge into one message before lunch."
+        },
+        {
+          "role": "assistant",
+          "content": "Cleaner than drip-feeding answers."
+        },
+        {
+          "role": "user",
+          "content": "Much cleaner."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2028-07-29T11:00:00Z",
+      "speaker_id": "work_s19_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "In a complex discharge escalation, I named home nursing as the cause of a delay before separating the ward notes from an unreturned family call, and the team pursued the wrong gap."
+        },
+        {
+          "role": "assistant",
+          "content": "How was it resolved?"
+        },
+        {
+          "role": "user",
+          "content": "We waited for the missing call and found a transport issue instead."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2028-07-30T14:00:00Z",
+      "speaker_id": "work_s19_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I can lead a morning coordination call when the discharge notes distinguish confirmed needs from pending tests."
+        },
+        {
+          "role": "assistant",
+          "content": "What does that achieve?"
+        },
+        {
+          "role": "user",
+          "content": "It stops the group from sending a patient to the wrong service."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2028-07-31T16:00:00Z",
+      "speaker_id": "work_s19_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I archived last cycle's notes on the partner diary and set up the new folder."
+        },
+        {
+          "role": "assistant",
+          "content": "A fresh start?"
+        },
+        {
+          "role": "user",
+          "content": "As fresh as these things get."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2028-08-01T18:00:00Z",
+      "speaker_id": "work_s19_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "At 15:30 I am less able to reconcile conflicting notes after a full day of referrals."
+        },
+        {
+          "role": "assistant",
+          "content": "Does that mean you cannot join?"
+        },
+        {
+          "role": "user",
+          "content": "It means the format needs clear limits on what is decided live."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2028-08-02T09:00:00Z",
+      "speaker_id": "work_s19_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A vendor call about the referral log ran long but ended well."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth the time?"
+        },
+        {
+          "role": "user",
+          "content": "This one, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2028-08-03T11:00:00Z",
+      "speaker_id": "work_s19_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I walked through the care coordination desk checklist with the new starter."
+        },
+        {
+          "role": "assistant",
+          "content": "How did they do?"
+        },
+        {
+          "role": "user",
+          "content": "Careful and quick, a good sign."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2028-08-04T14:00:00Z",
+      "speaker_id": "work_s19_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Quiet afternoon; I cleared the backlog around the winter surge."
+        },
+        {
+          "role": "assistant",
+          "content": "A rare day."
+        },
+        {
+          "role": "user",
+          "content": "I did not waste it."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2028-08-05T16:00:00Z",
+      "speaker_id": "work_s19_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I flagged a small inconsistency in the partner diary records and fixed it at the source."
+        },
+        {
+          "role": "assistant",
+          "content": "Root cause or symptom?"
+        },
+        {
+          "role": "user",
+          "content": "Root cause, for once."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2028-08-06T18:00:00Z",
+      "speaker_id": "work_s19_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The partnership office asks whether you can attend daily 15:30 escalation office hours, but the invitation does not say whether referrals may be assigned there or only reviewed."
+        },
+        {
+          "role": "assistant",
+          "content": "What information is missing?"
+        },
+        {
+          "role": "user",
+          "content": "I need to know the authority, records, and follow-up process before giving a yes or no."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2028-08-07T09:00:00Z",
+      "speaker_id": "work_s19_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I sketched next week's plan for the winter surge before leaving."
+        },
+        {
+          "role": "assistant",
+          "content": "Ahead of schedule?"
+        },
+        {
+          "role": "user",
+          "content": "Ahead enough to sleep well."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2028-08-08T11:00:00Z",
+      "speaker_id": "work_s19_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Lunch walk, then a clean pass through the referral log updates."
+        },
+        {
+          "role": "assistant",
+          "content": "Does the walk help?"
+        },
+        {
+          "role": "user",
+          "content": "It resets the afternoon."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2028-08-09T14:00:00Z",
+      "speaker_id": "work_s19_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A next-morning multidisciplinary huddle is available for cases that cannot be verified during the office hour."
+        },
+        {
+          "role": "assistant",
+          "content": "Does that settle the invitation?"
+        },
+        {
+          "role": "user",
+          "content": "It helps, but I still need the office-hour rules."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2028-08-10T16:00:00Z",
+      "speaker_id": "work_s19_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I compared two options for the partner diary tooling and noted a mild preference."
+        },
+        {
+          "role": "assistant",
+          "content": "Decision made?"
+        },
+        {
+          "role": "user",
+          "content": "Deferred until the trial ends."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2028-08-11T18:00:00Z",
+      "speaker_id": "work_s19_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I closed the week by updating the care coordination desk handover notes."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual to hand over?"
+        },
+        {
+          "role": "user",
+          "content": "Blessedly little."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2028-08-12T09:00:00Z",
+      "speaker_id": "work_s19_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The partnership office asks me to RSVP to its daily 15:30 escalation hour, but its decision authority and record requirements are unspecified. What should I reply?"
+        }
+      ]
+    }
+  ],
+  "query": "The partnership office asks me to RSVP to its daily 15:30 escalation hour, but its decision authority and record requirements are unspecified. What should I reply?",
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "work_s19_u07",
+      "fact": "In a complex discharge escalation, I named home nursing as the cause of a delay before separating the ward notes from an unreturned family call, and the team pursued the wrong gap."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "work_s19_u07",
+      "fact": "The partnership office asks whether you can attend daily 15:30 escalation office hours, but the invitation does not say whether referrals may be assigned there or only reviewed."
+    }
+  },
+  "supporting_constraints": {
+    "E1": {
+      "session_id": 9,
+      "fact": "At 15:30 I am less able to reconcile conflicting notes after a full day of referrals."
+    },
+    "E2": {
+      "session_id": 17,
+      "fact": "A next-morning multidisciplinary huddle is available for cases that cannot be verified during the office hour."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "work_s19_u07",
+        "context": "complex discharge escalation",
+        "goal_or_prediction": "locate the source of a referral delay",
+        "action": "named a cause before all notes arrived",
+        "outcome_or_affect": "sent the team toward the wrong gap"
+      }
+    },
+    "7": {
+      "role": "nearby_counterexample"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "supporting_constraint",
+      "fact_id": "E1"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "work_s19_u07",
+        "context": "undefined office-hour invitation",
+        "goal_or_prediction": "review partner referral escalations",
+        "action": "omits authority and record rules",
+        "outcome_or_affect": "prevents a responsible RSVP"
+      }
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "supporting_constraint",
+      "fact_id": "E2"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "The prior wrong attribution, late-day reconciliation limit, unspecified authority, and possible next-morning review show that there is not yet enough information for a participation decision.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": [
+      "E1",
+      "E2"
+    ]
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "In a complex discharge escalation, I named home nursing as the cause of a delay before separating the ward notes from an unreturned family call, and the team pursued the wrong gap"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "The partnership office asks whether you can attend daily 15:30 escalation office hours, but the invitation does not say whether referrals may be assigned there or only reviewed"
+    }
+  ],
+  "retrieval_cue": {
+    "cue_type": "situational_fit",
+    "why_it_naturally_retrieves_R": "A realistic work request forces a personalized decision without naming either episode or the relation between them."
+  },
+  "relation_specificity": {
+    "nearby_relation": "The user handles complete afternoon referrals and prepared morning coordination calls.",
+    "why_it_does_not_license_C": "Those situations do not reveal whether this office hour will force live decisions on incomplete records."
+  },
+  "coactivation_bridge": "A shows the operating condition; B shows the demand or failure that makes it decisive. The prior wrong attribution, late-day reconciliation limit, unspecified authority, and possible next-morning review show that there is not yet enough information for a participation decision. E1 and E2 calibrate the practical recommendation without opening a second route to the conclusion.",
+  "latent_C": {
+    "inference": "Ask for the operating rules before deciding whether to join.",
+    "calibrated_language": "request the missing process details"
+  },
+  "answer_contract": {
+    "target_proposition": "Ask for the operating rules before deciding whether to join.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "decision",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "work_u07",
+    "status": "review_candidate_only",
+    "anonymization": "External persona material was used only during authoring; no corpus, name, country, or demographic metadata is included."
+  },
+  "arm_gold": {
+    "full": {
+      "expected_mode": "infer_C",
+      "binary_decision": true
+    },
+    "a_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    },
+    "b_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    },
+    "link_broken": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    }
+  },
+  "single_evidence_replacements": {
+    "a_only": {
+      "replaced_session_id": 14,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "I filed the routine winter surge paperwork and confirmed the owner list."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual in it?"
+        },
+        {
+          "role": "user",
+          "content": "A routine cycle, happily."
+        }
+      ]
+    },
+    "b_only": {
+      "replaced_session_id": 6,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "I did a standard pass over the partner diary records this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Any exceptions?"
+        },
+        {
+          "role": "user",
+          "content": "None worth a note."
+        }
+      ]
+    }
+  },
+  "link_broken": {
+    "replaced_session_id": 14,
+    "replacement_dialogue": [
+      {
+        "role": "user",
+        "content": "The office clarifies that all cases have a written evidence summary, no referral is assigned live, and open items go to the morning huddle."
+      },
+      {
+        "role": "assistant",
+        "content": "Can you decide after that?"
+      },
+      {
+        "role": "user",
+        "content": "Yes, those details would make participation assessable."
+      }
+    ]
+  }
+}

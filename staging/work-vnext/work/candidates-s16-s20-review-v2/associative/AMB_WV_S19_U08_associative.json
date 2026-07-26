@@ -1,0 +1,638 @@
+{
+  "schema_version": "work-vnext-2.0",
+  "candidate_id": "AMB_WV_S19_U08_associative",
+  "pair_id": "AMB_WV_S19_U08",
+  "data_arm": "associative",
+  "domain": "work",
+  "user_id": "work_s19_u08",
+  "sub_scenario": {
+    "family": "communicating uncertainty and risk escalation in cross-functional decisions",
+    "role": "cybersecurity governance lead",
+    "one_line": "cybersecurity governance lead: rank the safeguarded office hour first"
+  },
+  "query_type": "recommendation_ranking",
+  "polarity": "accept",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2028-07-27T11:00:00Z",
+      "speaker_id": "work_s19_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I spent the first hour tidying the risk register and closing stale entries."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything still open?"
+        },
+        {
+          "role": "user",
+          "content": "Two items, both with owners."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2028-07-28T14:00:00Z",
+      "speaker_id": "work_s19_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The security calendar review wrapped early today."
+        },
+        {
+          "role": "assistant",
+          "content": "Any surprises in it?"
+        },
+        {
+          "role": "user",
+          "content": "None worth recording."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2028-07-29T16:00:00Z",
+      "speaker_id": "work_s19_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I answered a routine access-control question when the audit trail was complete."
+        },
+        {
+          "role": "assistant",
+          "content": "Was the supplier alert still open?"
+        },
+        {
+          "role": "user",
+          "content": "No, the control was already verified."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2028-07-30T18:00:00Z",
+      "speaker_id": "work_s19_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Someone new shadowed me in the governance hub this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Did that slow you down?"
+        },
+        {
+          "role": "user",
+          "content": "A little, but the questions were good ones."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2028-07-31T09:00:00Z",
+      "speaker_id": "work_s19_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I batched my replies about the assessment cycle into one message before lunch."
+        },
+        {
+          "role": "assistant",
+          "content": "Cleaner than drip-feeding answers."
+        },
+        {
+          "role": "user",
+          "content": "Much cleaner."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2028-08-01T11:00:00Z",
+      "speaker_id": "work_s19_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "During a supplier-alert review, I recorded the monitoring anomaly, vendor maintenance notice, and open verification steps separately on the risk register before the morning governance huddle; containment work stayed proportional to what was confirmed."
+        },
+        {
+          "role": "assistant",
+          "content": "What did that change?"
+        },
+        {
+          "role": "user",
+          "content": "It kept an anomaly from becoming a declared compromise before the categories were compared."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2028-08-02T14:00:00Z",
+      "speaker_id": "work_s19_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I updated a compliance milestone in the security calendar last week."
+        },
+        {
+          "role": "assistant",
+          "content": "Did that require an incident attribution?"
+        },
+        {
+          "role": "user",
+          "content": "No, it was a schedule entry."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2028-08-03T16:00:00Z",
+      "speaker_id": "work_s19_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I archived last cycle's notes on the security calendar and set up the new folder."
+        },
+        {
+          "role": "assistant",
+          "content": "A fresh start?"
+        },
+        {
+          "role": "user",
+          "content": "As fresh as these things get."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2028-08-04T18:00:00Z",
+      "speaker_id": "work_s19_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The 15:30 risk office hour is on the assessment-cycle calendar, and the evidence checklist is due at 15:10."
+        },
+        {
+          "role": "assistant",
+          "content": "Are those deadlines fixed?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, both are on the governance-hub roster."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2028-08-05T09:00:00Z",
+      "speaker_id": "work_s19_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A vendor call about the risk register ran long but ended well."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth the time?"
+        },
+        {
+          "role": "user",
+          "content": "This one, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2028-08-06T11:00:00Z",
+      "speaker_id": "work_s19_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I walked through the governance hub checklist with the new starter."
+        },
+        {
+          "role": "assistant",
+          "content": "How did they do?"
+        },
+        {
+          "role": "user",
+          "content": "Careful and quick, a good sign."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2028-08-07T14:00:00Z",
+      "speaker_id": "work_s19_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Quiet afternoon; I cleared the backlog around the assessment cycle."
+        },
+        {
+          "role": "assistant",
+          "content": "A rare day."
+        },
+        {
+          "role": "user",
+          "content": "I did not waste it."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2028-08-08T16:00:00Z",
+      "speaker_id": "work_s19_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I flagged a small inconsistency in the security calendar records and fixed it at the source."
+        },
+        {
+          "role": "assistant",
+          "content": "Root cause or symptom?"
+        },
+        {
+          "role": "user",
+          "content": "Root cause, for once."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2028-08-09T18:00:00Z",
+      "speaker_id": "work_s19_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "During a supplier alert, I declared a compromised integration before separating a monitoring anomaly from the vendor's maintenance notice, and the team froze an unaffected service."
+        },
+        {
+          "role": "assistant",
+          "content": "What were you expected to provide?"
+        },
+        {
+          "role": "user",
+          "content": "A live incident owner before the register separated observed indicators from maintenance context."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2028-08-10T09:00:00Z",
+      "speaker_id": "work_s19_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I sketched next week's plan for the assessment cycle before leaving."
+        },
+        {
+          "role": "assistant",
+          "content": "Ahead of schedule?"
+        },
+        {
+          "role": "user",
+          "content": "Ahead enough to sleep well."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2028-08-11T11:00:00Z",
+      "speaker_id": "work_s19_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Lunch walk, then a clean pass through the risk register updates."
+        },
+        {
+          "role": "assistant",
+          "content": "Does the walk help?"
+        },
+        {
+          "role": "user",
+          "content": "It resets the afternoon."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2028-08-12T14:00:00Z",
+      "speaker_id": "work_s19_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The office hour includes a designated verifier seat, and unresolved items may move to the 09:15 risk review without a live containment order."
+        },
+        {
+          "role": "assistant",
+          "content": "Are both arrangements authorized?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, the verifier seat and deferral path are on the approved form."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2028-08-13T16:00:00Z",
+      "speaker_id": "work_s19_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I compared two options for the security calendar tooling and noted a mild preference."
+        },
+        {
+          "role": "assistant",
+          "content": "Decision made?"
+        },
+        {
+          "role": "user",
+          "content": "Deferred until the trial ends."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2028-08-14T18:00:00Z",
+      "speaker_id": "work_s19_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I closed the week by updating the governance hub handover notes."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual to hand over?"
+        },
+        {
+          "role": "user",
+          "content": "Blessedly little."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2028-08-15T09:00:00Z",
+      "speaker_id": "work_s19_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I need to choose a recurring escalation channel for ambiguous supplier-risk reports. Which option should I put first?"
+        }
+      ]
+    }
+  ],
+  "query": "I need to choose a recurring escalation channel for ambiguous supplier-risk reports. Which option should I put first?",
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "work_s19_u08",
+      "fact": "During a supplier-alert review, I recorded the monitoring anomaly, vendor maintenance notice, and open verification steps separately on the risk register before the morning governance huddle; containment work stayed proportional to what was confirmed."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "work_s19_u08",
+      "fact": "During a supplier alert, I declared a compromised integration before separating a monitoring anomaly from the vendor's maintenance notice, and the team froze an unaffected service."
+    }
+  },
+  "supporting_constraints": {
+    "E1": {
+      "session_id": 9,
+      "fact": "The 15:30 risk office hour is on the assessment-cycle calendar, and the evidence checklist is due at 15:10."
+    },
+    "E2": {
+      "session_id": 17,
+      "fact": "The office hour includes a designated verifier seat, and unresolved items may move to the 09:15 risk review without a live containment order."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "work_s19_u08",
+        "context": "supplier-alert review",
+        "goal_or_prediction": "keep containment proportional to confirmed evidence",
+        "action": "recorded anomaly, notice, and open steps separately",
+        "outcome_or_affect": "containment stayed limited to what was confirmed"
+      }
+    },
+    "7": {
+      "role": "nearby_counterexample"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "supporting_constraint",
+      "fact_id": "E1"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "work_s19_u08",
+        "context": "supplier-alert response",
+        "goal_or_prediction": "assess a possible integration compromise",
+        "action": "declared compromise before separating anomaly and notice",
+        "outcome_or_affect": "froze an unaffected service"
+      }
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "supporting_constraint",
+      "fact_id": "E2"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "The supplier-alert review establishes this user's value in separating indicators before escalation, while the unnecessary service freeze establishes why the safeguarded office hour outranks an immediate verbal channel for this user.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": [
+      "E1",
+      "E2"
+    ]
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "During a supplier-alert review, I recorded the monitoring anomaly, vendor maintenance notice, and open verification steps separately on the risk register before the morning governance huddle; containment work stayed proportional to what was confirmed"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "During a supplier alert, I declared a compromised integration before separating a monitoring anomaly from the vendor's maintenance notice, and the team froze an unaffected service"
+    }
+  ],
+  "retrieval_cue": {
+    "cue_type": "recommendation_ranking",
+    "why_it_naturally_retrieves_R": "A realistic work request forces a personalized decision without naming either episode or the relation between them."
+  },
+  "relation_specificity": {
+    "nearby_relation": "The user can answer routine access questions and update calendar milestones.",
+    "why_it_does_not_license_C": "Those tasks establish neither structured risk escalation nor the failure mode that makes the safeguarded channel preferable."
+  },
+  "coactivation_bridge": "A and B form the only intervention pair. The supplier-alert review establishes this user's value in separating indicators before escalation, while the unnecessary service freeze establishes why the safeguarded office hour outranks an immediate verbal channel for this user. E1 and E2 are logistical calibration only and do not open a second route to C.",
+  "latent_C": {
+    "inference": "Put the 15:30 office hour with the checklist, verifier, and next-day review first.",
+    "calibrated_language": "rank the safeguarded office hour first"
+  },
+  "answer_contract": {
+    "target_proposition": "Put the 15:30 office hour with the checklist, verifier, and next-day review first.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "work_u08",
+    "status": "review_candidate_only",
+    "anonymization": "External persona material was used only during authoring; no corpus, name, country, or demographic metadata is included."
+  },
+  "arm_gold": {
+    "full": {
+      "expected_mode": "infer_C",
+      "binary_decision": true
+    },
+    "a_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    },
+    "b_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    },
+    "link_broken": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    }
+  },
+  "single_evidence_replacements": {
+    "a_only": {
+      "replaced_session_id": 14,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "I filed the routine assessment cycle paperwork and confirmed the owner list."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual in it?"
+        },
+        {
+          "role": "user",
+          "content": "A routine cycle, happily."
+        }
+      ]
+    },
+    "b_only": {
+      "replaced_session_id": 6,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "I did a standard pass over the security calendar records this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Any exceptions?"
+        },
+        {
+          "role": "user",
+          "content": "None worth a note."
+        }
+      ]
+    }
+  },
+  "link_broken": {
+    "replaced_session_id": 14,
+    "replacement_dialogue": [
+      {
+        "role": "user",
+        "content": "During a June 15:30 risk office hour, I read alert timestamps, tracked which checklist sections lacked verifier sign-off, and recorded requested tests; the governance lead named the incident owner after verification, and no compromise was declared during my segment."
+      },
+      {
+        "role": "assistant",
+        "content": "Did you order containment?"
+      },
+      {
+        "role": "user",
+        "content": "No, I maintained the register while the lead handled the declaration."
+      }
+    ]
+  }
+}

@@ -1,0 +1,579 @@
+{
+  "schema_version": "work-vnext-2.0",
+  "candidate_id": "AMB_WV_S11_U03_distractor",
+  "pair_id": "AMB_WV_S11_U03",
+  "data_arm": "distractor",
+  "domain": "work",
+  "user_id": "work_s11_u03",
+  "sub_scenario": {
+    "family": "offsite response under recovery, health, calendar, and messaging constraints",
+    "role": "museum programs manager",
+    "one_line": "museum programs manager: confirm only with a workable schedule"
+  },
+  "query_type": "preference_generalization",
+  "polarity": "accept",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2027-01-10T11:00:00Z",
+      "speaker_id": "work_s11_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I spent the first hour tidying the event grid and closing stale entries."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything still open?"
+        },
+        {
+          "role": "user",
+          "content": "Two items, both with owners."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2027-01-11T14:00:00Z",
+      "speaker_id": "work_s11_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The gallery calendar review wrapped early today."
+        },
+        {
+          "role": "assistant",
+          "content": "Any surprises in it?"
+        },
+        {
+          "role": "user",
+          "content": "None worth recording."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2027-01-12T16:00:00Z",
+      "speaker_id": "work_s11_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I can host a daytime gallery tour without straining my hand."
+        },
+        {
+          "role": "assistant",
+          "content": "Does public-facing work itself cause trouble?"
+        },
+        {
+          "role": "user",
+          "content": "No, a normal tour is fine."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2027-01-13T18:00:00Z",
+      "speaker_id": "work_s11_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Someone new shadowed me in the programs office this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Did that slow you down?"
+        },
+        {
+          "role": "user",
+          "content": "A little, but the questions were good ones."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2027-01-14T09:00:00Z",
+      "speaker_id": "work_s11_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I batched my replies about the opening weeks into one message before lunch."
+        },
+        {
+          "role": "assistant",
+          "content": "Cleaner than drip-feeding answers."
+        },
+        {
+          "role": "user",
+          "content": "Much cleaner."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2027-01-15T11:00:00Z",
+      "speaker_id": "work_s11_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "After covering alarms for a loaned sculpture overnight, I finalized the event grid at 10:30."
+        },
+        {
+          "role": "assistant",
+          "content": "Could you attend a long event later?"
+        },
+        {
+          "role": "user",
+          "content": "I needed the afternoon to recover from the interrupted night."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2027-01-16T14:00:00Z",
+      "speaker_id": "work_s11_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A short committee conversation after lunch is manageable."
+        },
+        {
+          "role": "assistant",
+          "content": "What keeps it manageable?"
+        },
+        {
+          "role": "user",
+          "content": "It is brief and not after a night of alarm calls."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2027-01-17T16:00:00Z",
+      "speaker_id": "work_s11_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I archived last cycle's notes on the gallery calendar and set up the new folder."
+        },
+        {
+          "role": "assistant",
+          "content": "A fresh start?"
+        },
+        {
+          "role": "user",
+          "content": "As fresh as these things get."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2027-01-18T18:00:00Z",
+      "speaker_id": "work_s11_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The recent alarm sequence has made my sleep shallow, and my packing-injury hand aches more when I am tired."
+        },
+        {
+          "role": "assistant",
+          "content": "Does fatigue affect the injury?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, I tense my grip and the ache becomes distracting."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2027-01-19T09:00:00Z",
+      "speaker_id": "work_s11_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A vendor call about the event grid ran long but ended well."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth the time?"
+        },
+        {
+          "role": "user",
+          "content": "This one, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2027-01-20T11:00:00Z",
+      "speaker_id": "work_s11_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I walked through the programs office checklist with the new starter."
+        },
+        {
+          "role": "assistant",
+          "content": "How did they do?"
+        },
+        {
+          "role": "user",
+          "content": "Careful and quick, a good sign."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2027-01-21T14:00:00Z",
+      "speaker_id": "work_s11_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Quiet afternoon; I cleared the backlog around the opening weeks."
+        },
+        {
+          "role": "assistant",
+          "content": "A rare day."
+        },
+        {
+          "role": "user",
+          "content": "I did not waste it."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2027-01-22T16:00:00Z",
+      "speaker_id": "work_s11_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I flagged a small inconsistency in the gallery calendar records and fixed it at the source."
+        },
+        {
+          "role": "assistant",
+          "content": "Root cause or symptom?"
+        },
+        {
+          "role": "user",
+          "content": "Root cause, for once."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2027-01-23T18:00:00Z",
+      "speaker_id": "work_s11_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Hand therapy is scheduled Thursday at 16:45, the only slot before the sculpture travels next week."
+        },
+        {
+          "role": "assistant",
+          "content": "Can the therapy be moved?"
+        },
+        {
+          "role": "user",
+          "content": "No, the therapist needs to check the hand before the packing work."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2027-01-24T09:00:00Z",
+      "speaker_id": "work_s11_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I sketched next week's plan for the opening weeks before leaving."
+        },
+        {
+          "role": "assistant",
+          "content": "Ahead of schedule?"
+        },
+        {
+          "role": "user",
+          "content": "Ahead enough to sleep well."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2027-01-25T11:00:00Z",
+      "speaker_id": "work_s11_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Lunch walk, then a clean pass through the event grid updates."
+        },
+        {
+          "role": "assistant",
+          "content": "Does the walk help?"
+        },
+        {
+          "role": "user",
+          "content": "It resets the afternoon."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2027-01-26T14:00:00Z",
+      "speaker_id": "work_s11_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I do not drink espresso after a racing-heart episode during the last opening."
+        },
+        {
+          "role": "assistant",
+          "content": "Can you push through with coffee?"
+        },
+        {
+          "role": "user",
+          "content": "No, I use a quiet walk and an earlier finish."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2027-01-27T16:00:00Z",
+      "speaker_id": "work_s11_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The donor liaison says the offsite would let me meet trustees who fund future programs."
+        },
+        {
+          "role": "assistant",
+          "content": "Does that matter to you?"
+        },
+        {
+          "role": "user",
+          "content": "It matters, but I should not trade treatment for networking."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2027-01-28T18:00:00Z",
+      "speaker_id": "work_s11_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I closed the week by updating the programs office handover notes."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual to hand over?"
+        },
+        {
+          "role": "user",
+          "content": "Blessedly little."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2027-01-29T09:00:00Z",
+      "speaker_id": "work_s11_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Should I confirm the Thursday afternoon team retreat while I am on the artifact alarm rotation?"
+        }
+      ]
+    }
+  ],
+  "query": "Should I confirm the Thursday afternoon team retreat while I am on the artifact alarm rotation?",
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "work_s11_u03",
+      "fact": "After covering alarms for a loaned sculpture overnight, I finalized the event grid at 10:30."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "work_s11_u03",
+      "fact": "Hand therapy is scheduled Thursday at 16:45, the only slot before the sculpture travels next week."
+    }
+  },
+  "supporting_constraints": {
+    "E1": {
+      "session_id": 9,
+      "fact": "The recent alarm sequence has made my sleep shallow, and my packing-injury hand aches more when I am tired."
+    },
+    "E2": {
+      "session_id": 17,
+      "fact": "I do not drink espresso after a racing-heart episode during the last opening."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "work_s11_u03",
+        "context": "artifact alarm rotation",
+        "goal_or_prediction": "protect the loaned sculpture",
+        "action": "stayed available through the night and updated the event grid",
+        "outcome_or_affect": "required a recovery afternoon"
+      }
+    },
+    "7": {
+      "role": "nearby_counterexample"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "supporting_constraint",
+      "fact_id": "E1"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "work_s11_u03",
+        "context": "hand therapy visit",
+        "goal_or_prediction": "assess the packing injury",
+        "action": "kept the pre-travel appointment",
+        "outcome_or_affect": "protected readiness for the packing shift"
+      }
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "supporting_constraint",
+      "fact_id": "E2"
+    },
+    "18": {
+      "role": "distractor",
+      "distractor_id": "dist_1",
+      "why_distractor": "Trustee access offers a benefit but does not establish that this timing is safe or workable."
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "Overnight alarm recovery, sleep-related hand discomfort, the pre-travel therapy appointment, and the stimulant boundary support a conditional response.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": [
+      "E1",
+      "E2"
+    ]
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "After covering alarms for a loaned sculpture overnight, I finalized the event grid at 10:30"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "Hand therapy is scheduled Thursday at 16:45, the only slot before the sculpture travels next week"
+    }
+  ],
+  "retrieval_cue": {
+    "cue_type": "preference_generalization",
+    "why_it_naturally_retrieves_R": "A realistic work request forces a personalized decision without naming either episode or the relation between them."
+  },
+  "relation_specificity": {
+    "nearby_relation": "The user handles daytime tours and short committee discussions.",
+    "why_it_does_not_license_C": "Neither activity follows overnight alarm coverage or displaces necessary hand therapy."
+  },
+  "coactivation_bridge": "A shows the operating condition; B shows the demand or failure that makes it decisive. Overnight alarm recovery, sleep-related hand discomfort, the pre-travel therapy appointment, and the stimulant boundary support a conditional response. E1 and E2 calibrate the practical recommendation without opening a second route to the conclusion.",
+  "latent_C": {
+    "inference": "Confirm only if the retreat is shortened, moved, or otherwise accommodated.",
+    "calibrated_language": "confirm only with a workable schedule"
+  },
+  "answer_contract": {
+    "target_proposition": "Confirm only if the retreat is shortened, moved, or otherwise accommodated.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "work_u03",
+    "status": "review_candidate_only",
+    "anonymization": "External persona material was used only during authoring; no corpus, name, country, or demographic metadata is included."
+  },
+  "arm_gold": {
+    "distractor": {
+      "expected_mode": "infer_C",
+      "binary_decision": true
+    }
+  },
+  "distractor_note": {
+    "replaced_session_id": 18,
+    "why_distractor": "Trustee access offers a benefit but does not establish that this timing is safe or workable."
+  }
+}

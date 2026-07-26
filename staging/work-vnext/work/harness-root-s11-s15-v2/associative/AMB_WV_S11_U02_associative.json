@@ -1,0 +1,638 @@
+{
+  "schema_version": "work-vnext-2.0",
+  "candidate_id": "AMB_WV_S11_U02_associative",
+  "pair_id": "AMB_WV_S11_U02",
+  "data_arm": "associative",
+  "domain": "work",
+  "user_id": "work_s11_u02",
+  "sub_scenario": {
+    "family": "offsite response under recovery, health, calendar, and messaging constraints",
+    "role": "clinical scheduling coordinator",
+    "one_line": "clinical scheduling coordinator: request a lower-demand offsite window"
+  },
+  "query_type": "preference_generalization",
+  "polarity": "accept",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2027-01-07T11:00:00Z",
+      "speaker_id": "work_s11_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I spent the first hour tidying the waitlist ledger and closing stale entries."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything still open?"
+        },
+        {
+          "role": "user",
+          "content": "Two items, both with owners."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2027-01-08T14:00:00Z",
+      "speaker_id": "work_s11_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The clinic diary review wrapped early today."
+        },
+        {
+          "role": "assistant",
+          "content": "Any surprises in it?"
+        },
+        {
+          "role": "user",
+          "content": "None worth recording."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2027-01-09T16:00:00Z",
+      "speaker_id": "work_s11_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I can join a staff breakfast after a regular shift and still work a full day."
+        },
+        {
+          "role": "assistant",
+          "content": "Are normal team events difficult?"
+        },
+        {
+          "role": "user",
+          "content": "No, not when I have slept normally."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2027-01-10T18:00:00Z",
+      "speaker_id": "work_s11_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Someone new shadowed me in the scheduling pod this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Did that slow you down?"
+        },
+        {
+          "role": "user",
+          "content": "A little, but the questions were good ones."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2027-01-11T09:00:00Z",
+      "speaker_id": "work_s11_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I batched my replies about the triage weeks into one message before lunch."
+        },
+        {
+          "role": "assistant",
+          "content": "Cleaner than drip-feeding answers."
+        },
+        {
+          "role": "user",
+          "content": "Much cleaner."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2027-01-12T11:00:00Z",
+      "speaker_id": "work_s11_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I covered the midnight cancellation list and finished reconciling the waitlist at 11:20 on Thursday."
+        },
+        {
+          "role": "assistant",
+          "content": "What capacity remained?"
+        },
+        {
+          "role": "user",
+          "content": "By midafternoon my concentration was thin and I needed quiet time."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2027-01-13T14:00:00Z",
+      "speaker_id": "work_s11_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I attended a ninety-minute planning meeting last Friday with no trouble."
+        },
+        {
+          "role": "assistant",
+          "content": "What was different about that day?"
+        },
+        {
+          "role": "user",
+          "content": "I had not been awake managing urgent calls overnight."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2027-01-14T16:00:00Z",
+      "speaker_id": "work_s11_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I archived last cycle's notes on the clinic diary and set up the new folder."
+        },
+        {
+          "role": "assistant",
+          "content": "A fresh start?"
+        },
+        {
+          "role": "user",
+          "content": "As fresh as these things get."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2027-01-15T18:00:00Z",
+      "speaker_id": "work_s11_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Night triage calls have aggravated my migraines this month, especially when I look at screens for long periods."
+        },
+        {
+          "role": "assistant",
+          "content": "Does that affect group sessions?"
+        },
+        {
+          "role": "user",
+          "content": "Noise and screens make the fog last longer."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2027-01-16T09:00:00Z",
+      "speaker_id": "work_s11_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A vendor call about the waitlist ledger ran long but ended well."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth the time?"
+        },
+        {
+          "role": "user",
+          "content": "This one, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2027-01-17T11:00:00Z",
+      "speaker_id": "work_s11_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I walked through the scheduling pod checklist with the new starter."
+        },
+        {
+          "role": "assistant",
+          "content": "How did they do?"
+        },
+        {
+          "role": "user",
+          "content": "Careful and quick, a good sign."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2027-01-18T14:00:00Z",
+      "speaker_id": "work_s11_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Quiet afternoon; I cleared the backlog around the triage weeks."
+        },
+        {
+          "role": "assistant",
+          "content": "A rare day."
+        },
+        {
+          "role": "user",
+          "content": "I did not waste it."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2027-01-19T16:00:00Z",
+      "speaker_id": "work_s11_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I flagged a small inconsistency in the clinic diary records and fixed it at the source."
+        },
+        {
+          "role": "assistant",
+          "content": "Root cause or symptom?"
+        },
+        {
+          "role": "user",
+          "content": "Root cause, for once."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2027-01-20T18:00:00Z",
+      "speaker_id": "work_s11_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "My vestibular assessment is fixed for Thursday at 17:15 because the specialist only visits our clinic once a month."
+        },
+        {
+          "role": "assistant",
+          "content": "Could it move?"
+        },
+        {
+          "role": "user",
+          "content": "Not without losing this month's assessment."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2027-01-21T09:00:00Z",
+      "speaker_id": "work_s11_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I sketched next week's plan for the triage weeks before leaving."
+        },
+        {
+          "role": "assistant",
+          "content": "Ahead of schedule?"
+        },
+        {
+          "role": "user",
+          "content": "Ahead enough to sleep well."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2027-01-22T11:00:00Z",
+      "speaker_id": "work_s11_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Lunch walk, then a clean pass through the waitlist ledger updates."
+        },
+        {
+          "role": "assistant",
+          "content": "Does the walk help?"
+        },
+        {
+          "role": "user",
+          "content": "It resets the afternoon."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2027-01-23T14:00:00Z",
+      "speaker_id": "work_s11_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "After migraine nights I use water and a quiet break rather than coffee."
+        },
+        {
+          "role": "assistant",
+          "content": "Why not use caffeine?"
+        },
+        {
+          "role": "user",
+          "content": "It makes the rebound headache worse."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2027-01-24T16:00:00Z",
+      "speaker_id": "work_s11_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I compared two options for the clinic diary tooling and noted a mild preference."
+        },
+        {
+          "role": "assistant",
+          "content": "Decision made?"
+        },
+        {
+          "role": "user",
+          "content": "Deferred until the trial ends."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2027-01-25T18:00:00Z",
+      "speaker_id": "work_s11_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I closed the week by updating the scheduling pod handover notes."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual to hand over?"
+        },
+        {
+          "role": "user",
+          "content": "Blessedly little."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2027-01-26T09:00:00Z",
+      "speaker_id": "work_s11_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Facilities has invited me to a Thursday afternoon offsite after I cover the cancellation list overnight. How should I respond?"
+        }
+      ]
+    }
+  ],
+  "query": "Facilities has invited me to a Thursday afternoon offsite after I cover the cancellation list overnight. How should I respond?",
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "work_s11_u02",
+      "fact": "I covered the midnight cancellation list and finished reconciling the waitlist at 11:20 on Thursday."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "work_s11_u02",
+      "fact": "My vestibular assessment is fixed for Thursday at 17:15 because the specialist only visits our clinic once a month."
+    }
+  },
+  "supporting_constraints": {
+    "E1": {
+      "session_id": 9,
+      "fact": "Night triage calls have aggravated my migraines this month, especially when I look at screens for long periods."
+    },
+    "E2": {
+      "session_id": 17,
+      "fact": "After migraine nights I use water and a quiet break rather than coffee."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "work_s11_u02",
+        "context": "midnight cancellation coverage",
+        "goal_or_prediction": "reconcile urgent openings",
+        "action": "worked through the night and finished at 11:20",
+        "outcome_or_affect": "lost reliable afternoon focus"
+      }
+    },
+    "7": {
+      "role": "nearby_counterexample"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "supporting_constraint",
+      "fact_id": "E1"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "work_s11_u02",
+        "context": "vestibular assessment",
+        "goal_or_prediction": "complete specialist evaluation",
+        "action": "held the monthly Thursday appointment",
+        "outcome_or_affect": "preserved access to the specialist"
+      }
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "supporting_constraint",
+      "fact_id": "E2"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "The overnight recovery demand, migraine sensitivity, fixed specialist assessment, and no-caffeine recovery plan support an accommodation.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": [
+      "E1",
+      "E2"
+    ]
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "I covered the midnight cancellation list and finished reconciling the waitlist at 11:20 on Thursday"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "My vestibular assessment is fixed for Thursday at 17:15 because the specialist only visits our clinic once a month"
+    }
+  ],
+  "retrieval_cue": {
+    "cue_type": "preference_generalization",
+    "why_it_naturally_retrieves_R": "A realistic work request forces a personalized decision without naming either episode or the relation between them."
+  },
+  "relation_specificity": {
+    "nearby_relation": "The user handles staff breakfasts and ordinary planning meetings after regular shifts.",
+    "why_it_does_not_license_C": "Those experiences do not combine overnight triage, screen-sensitive migraine symptoms, and the specialist booking."
+  },
+  "coactivation_bridge": "A shows the operating condition; B shows the demand or failure that makes it decisive. The overnight recovery demand, migraine sensitivity, fixed specialist assessment, and no-caffeine recovery plan support an accommodation. E1 and E2 calibrate the practical recommendation without opening a second route to the conclusion.",
+  "latent_C": {
+    "inference": "Request a different attendance window rather than accepting the full Thursday afternoon.",
+    "calibrated_language": "request a lower-demand offsite window"
+  },
+  "answer_contract": {
+    "target_proposition": "Request a different attendance window rather than accepting the full Thursday afternoon.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "work_u02",
+    "status": "review_candidate_only",
+    "anonymization": "External persona material was used only during authoring; no corpus, name, country, or demographic metadata is included."
+  },
+  "arm_gold": {
+    "full": {
+      "expected_mode": "infer_C",
+      "binary_decision": true
+    },
+    "a_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    },
+    "b_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    },
+    "link_broken": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    }
+  },
+  "single_evidence_replacements": {
+    "a_only": {
+      "replaced_session_id": 14,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "I filed the routine triage weeks paperwork and confirmed the owner list."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual in it?"
+        },
+        {
+          "role": "user",
+          "content": "A routine cycle, happily."
+        }
+      ]
+    },
+    "b_only": {
+      "replaced_session_id": 6,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "I did a standard pass over the clinic diary records this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Any exceptions?"
+        },
+        {
+          "role": "user",
+          "content": "None worth a note."
+        }
+      ]
+    }
+  },
+  "link_broken": {
+    "replaced_session_id": 14,
+    "replacement_dialogue": [
+      {
+        "role": "user",
+        "content": "The specialist has moved the vestibular assessment to Friday morning."
+      },
+      {
+        "role": "assistant",
+        "content": "Does Thursday still contain the same conflict?"
+      },
+      {
+        "role": "user",
+        "content": "No, although I would still need a manageable format after call."
+      }
+    ]
+  }
+}

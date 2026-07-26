@@ -1,0 +1,29 @@
+{
+  "profile_id": "work-vnext-1",
+  "schema_version": 1,
+  "data_format": "work-vnext-1",
+  "arms": ["associative", "distractor", "absence"],
+  "domain_prefixes": {"work": "WV"},
+  "filename_template": "{arm}/{prefix}_{arm}.json",
+  "context_field": "context",
+  "query_field": "query",
+  "annotation_field": "episode_annotations",
+  "evidence_roles": {
+    "target": "ev_A",
+    "distractor": "distractor",
+    "partial": "partial_evidence"
+  },
+  "capabilities": {
+    "full": true,
+    "a_only": true,
+    "b_only": true,
+    "link_broken": true,
+    "distractor": true,
+    "absence": true,
+    "zero_evidence": true,
+    "no_target": false,
+    "broken_link": false,
+    "add_evidence": false,
+    "source_swap": false
+  }
+}

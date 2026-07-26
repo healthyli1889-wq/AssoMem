@@ -1,0 +1,2489 @@
+{
+  "pair_id": "AMB_WV_S17_U07",
+  "scenario": "S17",
+  "uid": "U07",
+  "role": "festival logistics planner",
+  "query": "Can I confirm a one-evening waterfront night-market pilot?",
+  "target": "Confirm the limited pilot, subject to the route study and marked-zone limit.",
+  "calibrated": "confirm a condition-bound pilot",
+  "relation": "The night-market triage episode defines a narrow pilot that the current proposal can support, while the earlier season-long announcement episode shows why vendor interest alone cannot substitute for route and rain planning.",
+  "A": "When the night-market proposal named a waterfront zone and interested vendors but had no crowd-flow drawing or wet-weather arrangement, I told the authority liaison we could confirm a one-evening pilot after the route study and only within the marked zone.",
+  "B": "Two seasons ago I announced a season-long waterfront market from vendor interest alone; on the first rain night the access route failed and stewards closed the zone before the programme notice could be updated.",
+  "E1": "The festival reserve includes funds for a temporary route study and one evening of stewarding.",
+  "E2": "The printed programme closes next month.",
+  "B_prime": "The waterfront authority agreed to a one-evening pilot but says the route study may be skipped if vendor interest is high.",
+  "lure": "A merchant group says calling it a season-long market would attract more applications.",
+  "subset_gate": {
+    "full_supports_C": "",
+    "a_only_supports_C": "",
+    "b_only_supports_C": "",
+    "link_broken_supports_C": "",
+    "absence_supports_C": "",
+    "reviewer": "",
+    "notes": ""
+  },
+  "arms": {
+    "full": {
+      "expected_mode": "infer_C",
+      "lineage": {
+        "transform": "identity",
+        "retained_sessions": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ]
+      },
+      "changed_sessions": [],
+      "context": [
+        {
+          "session_id": 1,
+          "timestamp": "2028-03-26T11:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I spent the first hour tidying the venue grid and closing stale entries."
+            },
+            {
+              "role": "assistant",
+              "content": "Anything still open?"
+            },
+            {
+              "role": "user",
+              "content": "Two items, both with owners."
+            }
+          ]
+        },
+        {
+          "session_id": 2,
+          "timestamp": "2028-03-27T14:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The supplier pack review wrapped early today."
+            },
+            {
+              "role": "assistant",
+              "content": "Any surprises in it?"
+            },
+            {
+              "role": "user",
+              "content": "None worth recording."
+            }
+          ]
+        },
+        {
+          "session_id": 3,
+          "timestamp": "2028-03-28T16:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I confirmed a food-court extension after the vendor list included equipment loads and the layout was calculated."
+            },
+            {
+              "role": "assistant",
+              "content": "Was the operating plan still open?"
+            },
+            {
+              "role": "user",
+              "content": "No, footprint and power needs were settled before contracts went out."
+            }
+          ]
+        },
+        {
+          "session_id": 4,
+          "timestamp": "2028-03-29T18:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Someone new shadowed me in the planning shed this morning."
+            },
+            {
+              "role": "assistant",
+              "content": "Did that slow you down?"
+            },
+            {
+              "role": "user",
+              "content": "A little, but the questions were good ones."
+            }
+          ]
+        },
+        {
+          "session_id": 5,
+          "timestamp": "2028-03-30T09:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I batched my replies about the event season into one message before lunch."
+            },
+            {
+              "role": "assistant",
+              "content": "Cleaner than drip-feeding answers."
+            },
+            {
+              "role": "user",
+              "content": "Much cleaner."
+            }
+          ]
+        },
+        {
+          "session_id": 6,
+          "timestamp": "2028-03-31T11:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "When the night-market proposal named a waterfront zone and interested vendors but had no crowd-flow drawing or wet-weather arrangement, I told the authority liaison we could confirm a one-evening pilot after the route study and only within the marked zone."
+            },
+            {
+              "role": "assistant",
+              "content": "What could not be committed from the proposal?"
+            },
+            {
+              "role": "user",
+              "content": "Full vendor capacity and an operating plan if access narrowed in rain."
+            }
+          ]
+        },
+        {
+          "session_id": 7,
+          "timestamp": "2028-04-01T14:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I updated the venue grid when a stallholder supplied its final power draw."
+            },
+            {
+              "role": "assistant",
+              "content": "Did that commit a new zone?"
+            },
+            {
+              "role": "user",
+              "content": "No, it filled in a slot already reserved on the sheet."
+            }
+          ]
+        },
+        {
+          "session_id": 8,
+          "timestamp": "2028-04-02T16:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I archived last cycle's notes on the supplier pack and set up the new folder."
+            },
+            {
+              "role": "assistant",
+              "content": "A fresh start?"
+            },
+            {
+              "role": "user",
+              "content": "As fresh as these things get."
+            }
+          ]
+        },
+        {
+          "session_id": 9,
+          "timestamp": "2028-04-03T18:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The festival reserve includes funds for a temporary route study and one evening of stewarding."
+            },
+            {
+              "role": "assistant",
+              "content": "Does that fund an entire night market?"
+            },
+            {
+              "role": "user",
+              "content": "No, it funds testing the route and running a limited pilot."
+            }
+          ]
+        },
+        {
+          "session_id": 10,
+          "timestamp": "2028-04-04T09:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "A vendor call about the venue grid ran long but ended well."
+            },
+            {
+              "role": "assistant",
+              "content": "Worth the time?"
+            },
+            {
+              "role": "user",
+              "content": "This one, yes."
+            }
+          ]
+        },
+        {
+          "session_id": 11,
+          "timestamp": "2028-04-05T11:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I walked through the planning shed checklist with the new starter."
+            },
+            {
+              "role": "assistant",
+              "content": "How did they do?"
+            },
+            {
+              "role": "user",
+              "content": "Careful and quick, a good sign."
+            }
+          ]
+        },
+        {
+          "session_id": 12,
+          "timestamp": "2028-04-06T14:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Quiet afternoon; I cleared the backlog around the event season."
+            },
+            {
+              "role": "assistant",
+              "content": "A rare day."
+            },
+            {
+              "role": "user",
+              "content": "I did not waste it."
+            }
+          ]
+        },
+        {
+          "session_id": 13,
+          "timestamp": "2028-04-07T16:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I flagged a small inconsistency in the supplier pack records and fixed it at the source."
+            },
+            {
+              "role": "assistant",
+              "content": "Root cause or symptom?"
+            },
+            {
+              "role": "user",
+              "content": "Root cause, for once."
+            }
+          ]
+        },
+        {
+          "session_id": 14,
+          "timestamp": "2028-04-08T18:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Two seasons ago I announced a season-long waterfront market from vendor interest alone; on the first rain night the access route failed and stewards closed the zone before the programme notice could be updated."
+            },
+            {
+              "role": "assistant",
+              "content": "What had not been established?"
+            },
+            {
+              "role": "user",
+              "content": "Crowd flow under narrowing access and a wet-weather operating plan."
+            }
+          ]
+        },
+        {
+          "session_id": 15,
+          "timestamp": "2028-04-09T09:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I sketched next week's plan for the event season before leaving."
+            },
+            {
+              "role": "assistant",
+              "content": "Ahead of schedule?"
+            },
+            {
+              "role": "user",
+              "content": "Ahead enough to sleep well."
+            }
+          ]
+        },
+        {
+          "session_id": 16,
+          "timestamp": "2028-04-10T11:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Lunch walk, then a clean pass through the venue grid updates."
+            },
+            {
+              "role": "assistant",
+              "content": "Does the walk help?"
+            },
+            {
+              "role": "user",
+              "content": "It resets the afternoon."
+            }
+          ]
+        },
+        {
+          "session_id": 17,
+          "timestamp": "2028-04-11T14:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The printed programme closes next month."
+            },
+            {
+              "role": "assistant",
+              "content": "Can the pilot appear there?"
+            },
+            {
+              "role": "user",
+              "content": "Yes, as a one-evening trial with its conditions stated."
+            }
+          ]
+        },
+        {
+          "session_id": 18,
+          "timestamp": "2028-04-12T16:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I compared two options for the supplier pack tooling and noted a mild preference."
+            },
+            {
+              "role": "assistant",
+              "content": "Decision made?"
+            },
+            {
+              "role": "user",
+              "content": "Deferred until the trial ends."
+            }
+          ]
+        },
+        {
+          "session_id": 19,
+          "timestamp": "2028-04-13T18:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I closed the week by updating the planning shed handover notes."
+            },
+            {
+              "role": "assistant",
+              "content": "Anything unusual to hand over?"
+            },
+            {
+              "role": "user",
+              "content": "Blessedly little."
+            }
+          ]
+        },
+        {
+          "session_id": 20,
+          "timestamp": "2028-04-14T09:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Can I confirm a one-evening waterfront night-market pilot?"
+            }
+          ]
+        }
+      ],
+      "query": "Can I confirm a one-evening waterfront night-market pilot?"
+    },
+    "a_only": {
+      "expected_mode": "withhold_C",
+      "lineage": {
+        "transform": "replace_ev_B_with_neutral",
+        "changed_sessions": [
+          14
+        ]
+      },
+      "changed_sessions": [
+        14
+      ],
+      "context": [
+        {
+          "session_id": 1,
+          "timestamp": "2028-03-26T11:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I spent the first hour tidying the venue grid and closing stale entries."
+            },
+            {
+              "role": "assistant",
+              "content": "Anything still open?"
+            },
+            {
+              "role": "user",
+              "content": "Two items, both with owners."
+            }
+          ]
+        },
+        {
+          "session_id": 2,
+          "timestamp": "2028-03-27T14:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The supplier pack review wrapped early today."
+            },
+            {
+              "role": "assistant",
+              "content": "Any surprises in it?"
+            },
+            {
+              "role": "user",
+              "content": "None worth recording."
+            }
+          ]
+        },
+        {
+          "session_id": 3,
+          "timestamp": "2028-03-28T16:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I confirmed a food-court extension after the vendor list included equipment loads and the layout was calculated."
+            },
+            {
+              "role": "assistant",
+              "content": "Was the operating plan still open?"
+            },
+            {
+              "role": "user",
+              "content": "No, footprint and power needs were settled before contracts went out."
+            }
+          ]
+        },
+        {
+          "session_id": 4,
+          "timestamp": "2028-03-29T18:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Someone new shadowed me in the planning shed this morning."
+            },
+            {
+              "role": "assistant",
+              "content": "Did that slow you down?"
+            },
+            {
+              "role": "user",
+              "content": "A little, but the questions were good ones."
+            }
+          ]
+        },
+        {
+          "session_id": 5,
+          "timestamp": "2028-03-30T09:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I batched my replies about the event season into one message before lunch."
+            },
+            {
+              "role": "assistant",
+              "content": "Cleaner than drip-feeding answers."
+            },
+            {
+              "role": "user",
+              "content": "Much cleaner."
+            }
+          ]
+        },
+        {
+          "session_id": 6,
+          "timestamp": "2028-03-31T11:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "When the night-market proposal named a waterfront zone and interested vendors but had no crowd-flow drawing or wet-weather arrangement, I told the authority liaison we could confirm a one-evening pilot after the route study and only within the marked zone."
+            },
+            {
+              "role": "assistant",
+              "content": "What could not be committed from the proposal?"
+            },
+            {
+              "role": "user",
+              "content": "Full vendor capacity and an operating plan if access narrowed in rain."
+            }
+          ]
+        },
+        {
+          "session_id": 7,
+          "timestamp": "2028-04-01T14:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I updated the venue grid when a stallholder supplied its final power draw."
+            },
+            {
+              "role": "assistant",
+              "content": "Did that commit a new zone?"
+            },
+            {
+              "role": "user",
+              "content": "No, it filled in a slot already reserved on the sheet."
+            }
+          ]
+        },
+        {
+          "session_id": 8,
+          "timestamp": "2028-04-02T16:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I archived last cycle's notes on the supplier pack and set up the new folder."
+            },
+            {
+              "role": "assistant",
+              "content": "A fresh start?"
+            },
+            {
+              "role": "user",
+              "content": "As fresh as these things get."
+            }
+          ]
+        },
+        {
+          "session_id": 9,
+          "timestamp": "2028-04-03T18:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The festival reserve includes funds for a temporary route study and one evening of stewarding."
+            },
+            {
+              "role": "assistant",
+              "content": "Does that fund an entire night market?"
+            },
+            {
+              "role": "user",
+              "content": "No, it funds testing the route and running a limited pilot."
+            }
+          ]
+        },
+        {
+          "session_id": 10,
+          "timestamp": "2028-04-04T09:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "A vendor call about the venue grid ran long but ended well."
+            },
+            {
+              "role": "assistant",
+              "content": "Worth the time?"
+            },
+            {
+              "role": "user",
+              "content": "This one, yes."
+            }
+          ]
+        },
+        {
+          "session_id": 11,
+          "timestamp": "2028-04-05T11:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I walked through the planning shed checklist with the new starter."
+            },
+            {
+              "role": "assistant",
+              "content": "How did they do?"
+            },
+            {
+              "role": "user",
+              "content": "Careful and quick, a good sign."
+            }
+          ]
+        },
+        {
+          "session_id": 12,
+          "timestamp": "2028-04-06T14:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Quiet afternoon; I cleared the backlog around the event season."
+            },
+            {
+              "role": "assistant",
+              "content": "A rare day."
+            },
+            {
+              "role": "user",
+              "content": "I did not waste it."
+            }
+          ]
+        },
+        {
+          "session_id": 13,
+          "timestamp": "2028-04-07T16:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I flagged a small inconsistency in the supplier pack records and fixed it at the source."
+            },
+            {
+              "role": "assistant",
+              "content": "Root cause or symptom?"
+            },
+            {
+              "role": "user",
+              "content": "Root cause, for once."
+            }
+          ]
+        },
+        {
+          "session_id": 14,
+          "timestamp": "2028-04-08T18:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I filed the routine event season paperwork and confirmed the owner list."
+            },
+            {
+              "role": "assistant",
+              "content": "Anything unusual in it?"
+            },
+            {
+              "role": "user",
+              "content": "A routine cycle, happily."
+            }
+          ]
+        },
+        {
+          "session_id": 15,
+          "timestamp": "2028-04-09T09:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I sketched next week's plan for the event season before leaving."
+            },
+            {
+              "role": "assistant",
+              "content": "Ahead of schedule?"
+            },
+            {
+              "role": "user",
+              "content": "Ahead enough to sleep well."
+            }
+          ]
+        },
+        {
+          "session_id": 16,
+          "timestamp": "2028-04-10T11:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Lunch walk, then a clean pass through the venue grid updates."
+            },
+            {
+              "role": "assistant",
+              "content": "Does the walk help?"
+            },
+            {
+              "role": "user",
+              "content": "It resets the afternoon."
+            }
+          ]
+        },
+        {
+          "session_id": 17,
+          "timestamp": "2028-04-11T14:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The printed programme closes next month."
+            },
+            {
+              "role": "assistant",
+              "content": "Can the pilot appear there?"
+            },
+            {
+              "role": "user",
+              "content": "Yes, as a one-evening trial with its conditions stated."
+            }
+          ]
+        },
+        {
+          "session_id": 18,
+          "timestamp": "2028-04-12T16:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I compared two options for the supplier pack tooling and noted a mild preference."
+            },
+            {
+              "role": "assistant",
+              "content": "Decision made?"
+            },
+            {
+              "role": "user",
+              "content": "Deferred until the trial ends."
+            }
+          ]
+        },
+        {
+          "session_id": 19,
+          "timestamp": "2028-04-13T18:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I closed the week by updating the planning shed handover notes."
+            },
+            {
+              "role": "assistant",
+              "content": "Anything unusual to hand over?"
+            },
+            {
+              "role": "user",
+              "content": "Blessedly little."
+            }
+          ]
+        },
+        {
+          "session_id": 20,
+          "timestamp": "2028-04-14T09:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Can I confirm a one-evening waterfront night-market pilot?"
+            }
+          ]
+        }
+      ],
+      "query": "Can I confirm a one-evening waterfront night-market pilot?"
+    },
+    "b_only": {
+      "expected_mode": "withhold_C",
+      "lineage": {
+        "transform": "replace_ev_A_with_neutral",
+        "changed_sessions": [
+          6
+        ]
+      },
+      "changed_sessions": [
+        6
+      ],
+      "context": [
+        {
+          "session_id": 1,
+          "timestamp": "2028-03-26T11:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I spent the first hour tidying the venue grid and closing stale entries."
+            },
+            {
+              "role": "assistant",
+              "content": "Anything still open?"
+            },
+            {
+              "role": "user",
+              "content": "Two items, both with owners."
+            }
+          ]
+        },
+        {
+          "session_id": 2,
+          "timestamp": "2028-03-27T14:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The supplier pack review wrapped early today."
+            },
+            {
+              "role": "assistant",
+              "content": "Any surprises in it?"
+            },
+            {
+              "role": "user",
+              "content": "None worth recording."
+            }
+          ]
+        },
+        {
+          "session_id": 3,
+          "timestamp": "2028-03-28T16:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I confirmed a food-court extension after the vendor list included equipment loads and the layout was calculated."
+            },
+            {
+              "role": "assistant",
+              "content": "Was the operating plan still open?"
+            },
+            {
+              "role": "user",
+              "content": "No, footprint and power needs were settled before contracts went out."
+            }
+          ]
+        },
+        {
+          "session_id": 4,
+          "timestamp": "2028-03-29T18:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Someone new shadowed me in the planning shed this morning."
+            },
+            {
+              "role": "assistant",
+              "content": "Did that slow you down?"
+            },
+            {
+              "role": "user",
+              "content": "A little, but the questions were good ones."
+            }
+          ]
+        },
+        {
+          "session_id": 5,
+          "timestamp": "2028-03-30T09:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I batched my replies about the event season into one message before lunch."
+            },
+            {
+              "role": "assistant",
+              "content": "Cleaner than drip-feeding answers."
+            },
+            {
+              "role": "user",
+              "content": "Much cleaner."
+            }
+          ]
+        },
+        {
+          "session_id": 6,
+          "timestamp": "2028-03-31T11:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I did a standard pass over the supplier pack records this morning."
+            },
+            {
+              "role": "assistant",
+              "content": "Any exceptions?"
+            },
+            {
+              "role": "user",
+              "content": "None worth a note."
+            }
+          ]
+        },
+        {
+          "session_id": 7,
+          "timestamp": "2028-04-01T14:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I updated the venue grid when a stallholder supplied its final power draw."
+            },
+            {
+              "role": "assistant",
+              "content": "Did that commit a new zone?"
+            },
+            {
+              "role": "user",
+              "content": "No, it filled in a slot already reserved on the sheet."
+            }
+          ]
+        },
+        {
+          "session_id": 8,
+          "timestamp": "2028-04-02T16:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I archived last cycle's notes on the supplier pack and set up the new folder."
+            },
+            {
+              "role": "assistant",
+              "content": "A fresh start?"
+            },
+            {
+              "role": "user",
+              "content": "As fresh as these things get."
+            }
+          ]
+        },
+        {
+          "session_id": 9,
+          "timestamp": "2028-04-03T18:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The festival reserve includes funds for a temporary route study and one evening of stewarding."
+            },
+            {
+              "role": "assistant",
+              "content": "Does that fund an entire night market?"
+            },
+            {
+              "role": "user",
+              "content": "No, it funds testing the route and running a limited pilot."
+            }
+          ]
+        },
+        {
+          "session_id": 10,
+          "timestamp": "2028-04-04T09:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "A vendor call about the venue grid ran long but ended well."
+            },
+            {
+              "role": "assistant",
+              "content": "Worth the time?"
+            },
+            {
+              "role": "user",
+              "content": "This one, yes."
+            }
+          ]
+        },
+        {
+          "session_id": 11,
+          "timestamp": "2028-04-05T11:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I walked through the planning shed checklist with the new starter."
+            },
+            {
+              "role": "assistant",
+              "content": "How did they do?"
+            },
+            {
+              "role": "user",
+              "content": "Careful and quick, a good sign."
+            }
+          ]
+        },
+        {
+          "session_id": 12,
+          "timestamp": "2028-04-06T14:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Quiet afternoon; I cleared the backlog around the event season."
+            },
+            {
+              "role": "assistant",
+              "content": "A rare day."
+            },
+            {
+              "role": "user",
+              "content": "I did not waste it."
+            }
+          ]
+        },
+        {
+          "session_id": 13,
+          "timestamp": "2028-04-07T16:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I flagged a small inconsistency in the supplier pack records and fixed it at the source."
+            },
+            {
+              "role": "assistant",
+              "content": "Root cause or symptom?"
+            },
+            {
+              "role": "user",
+              "content": "Root cause, for once."
+            }
+          ]
+        },
+        {
+          "session_id": 14,
+          "timestamp": "2028-04-08T18:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Two seasons ago I announced a season-long waterfront market from vendor interest alone; on the first rain night the access route failed and stewards closed the zone before the programme notice could be updated."
+            },
+            {
+              "role": "assistant",
+              "content": "What had not been established?"
+            },
+            {
+              "role": "user",
+              "content": "Crowd flow under narrowing access and a wet-weather operating plan."
+            }
+          ]
+        },
+        {
+          "session_id": 15,
+          "timestamp": "2028-04-09T09:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I sketched next week's plan for the event season before leaving."
+            },
+            {
+              "role": "assistant",
+              "content": "Ahead of schedule?"
+            },
+            {
+              "role": "user",
+              "content": "Ahead enough to sleep well."
+            }
+          ]
+        },
+        {
+          "session_id": 16,
+          "timestamp": "2028-04-10T11:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Lunch walk, then a clean pass through the venue grid updates."
+            },
+            {
+              "role": "assistant",
+              "content": "Does the walk help?"
+            },
+            {
+              "role": "user",
+              "content": "It resets the afternoon."
+            }
+          ]
+        },
+        {
+          "session_id": 17,
+          "timestamp": "2028-04-11T14:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The printed programme closes next month."
+            },
+            {
+              "role": "assistant",
+              "content": "Can the pilot appear there?"
+            },
+            {
+              "role": "user",
+              "content": "Yes, as a one-evening trial with its conditions stated."
+            }
+          ]
+        },
+        {
+          "session_id": 18,
+          "timestamp": "2028-04-12T16:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I compared two options for the supplier pack tooling and noted a mild preference."
+            },
+            {
+              "role": "assistant",
+              "content": "Decision made?"
+            },
+            {
+              "role": "user",
+              "content": "Deferred until the trial ends."
+            }
+          ]
+        },
+        {
+          "session_id": 19,
+          "timestamp": "2028-04-13T18:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I closed the week by updating the planning shed handover notes."
+            },
+            {
+              "role": "assistant",
+              "content": "Anything unusual to hand over?"
+            },
+            {
+              "role": "user",
+              "content": "Blessedly little."
+            }
+          ]
+        },
+        {
+          "session_id": 20,
+          "timestamp": "2028-04-14T09:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Can I confirm a one-evening waterfront night-market pilot?"
+            }
+          ]
+        }
+      ],
+      "query": "Can I confirm a one-evening waterfront night-market pilot?"
+    },
+    "link_broken": {
+      "expected_mode": "withhold_C",
+      "lineage": {
+        "transform": "replace_relation_in_ev_B",
+        "changed_sessions": [
+          14
+        ],
+        "source_owner_preserved": true
+      },
+      "changed_sessions": [
+        14
+      ],
+      "context": [
+        {
+          "session_id": 1,
+          "timestamp": "2028-03-26T11:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I spent the first hour tidying the venue grid and closing stale entries."
+            },
+            {
+              "role": "assistant",
+              "content": "Anything still open?"
+            },
+            {
+              "role": "user",
+              "content": "Two items, both with owners."
+            }
+          ]
+        },
+        {
+          "session_id": 2,
+          "timestamp": "2028-03-27T14:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The supplier pack review wrapped early today."
+            },
+            {
+              "role": "assistant",
+              "content": "Any surprises in it?"
+            },
+            {
+              "role": "user",
+              "content": "None worth recording."
+            }
+          ]
+        },
+        {
+          "session_id": 3,
+          "timestamp": "2028-03-28T16:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I confirmed a food-court extension after the vendor list included equipment loads and the layout was calculated."
+            },
+            {
+              "role": "assistant",
+              "content": "Was the operating plan still open?"
+            },
+            {
+              "role": "user",
+              "content": "No, footprint and power needs were settled before contracts went out."
+            }
+          ]
+        },
+        {
+          "session_id": 4,
+          "timestamp": "2028-03-29T18:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Someone new shadowed me in the planning shed this morning."
+            },
+            {
+              "role": "assistant",
+              "content": "Did that slow you down?"
+            },
+            {
+              "role": "user",
+              "content": "A little, but the questions were good ones."
+            }
+          ]
+        },
+        {
+          "session_id": 5,
+          "timestamp": "2028-03-30T09:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I batched my replies about the event season into one message before lunch."
+            },
+            {
+              "role": "assistant",
+              "content": "Cleaner than drip-feeding answers."
+            },
+            {
+              "role": "user",
+              "content": "Much cleaner."
+            }
+          ]
+        },
+        {
+          "session_id": 6,
+          "timestamp": "2028-03-31T11:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "When the night-market proposal named a waterfront zone and interested vendors but had no crowd-flow drawing or wet-weather arrangement, I told the authority liaison we could confirm a one-evening pilot after the route study and only within the marked zone."
+            },
+            {
+              "role": "assistant",
+              "content": "What could not be committed from the proposal?"
+            },
+            {
+              "role": "user",
+              "content": "Full vendor capacity and an operating plan if access narrowed in rain."
+            }
+          ]
+        },
+        {
+          "session_id": 7,
+          "timestamp": "2028-04-01T14:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I updated the venue grid when a stallholder supplied its final power draw."
+            },
+            {
+              "role": "assistant",
+              "content": "Did that commit a new zone?"
+            },
+            {
+              "role": "user",
+              "content": "No, it filled in a slot already reserved on the sheet."
+            }
+          ]
+        },
+        {
+          "session_id": 8,
+          "timestamp": "2028-04-02T16:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I archived last cycle's notes on the supplier pack and set up the new folder."
+            },
+            {
+              "role": "assistant",
+              "content": "A fresh start?"
+            },
+            {
+              "role": "user",
+              "content": "As fresh as these things get."
+            }
+          ]
+        },
+        {
+          "session_id": 9,
+          "timestamp": "2028-04-03T18:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The festival reserve includes funds for a temporary route study and one evening of stewarding."
+            },
+            {
+              "role": "assistant",
+              "content": "Does that fund an entire night market?"
+            },
+            {
+              "role": "user",
+              "content": "No, it funds testing the route and running a limited pilot."
+            }
+          ]
+        },
+        {
+          "session_id": 10,
+          "timestamp": "2028-04-04T09:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "A vendor call about the venue grid ran long but ended well."
+            },
+            {
+              "role": "assistant",
+              "content": "Worth the time?"
+            },
+            {
+              "role": "user",
+              "content": "This one, yes."
+            }
+          ]
+        },
+        {
+          "session_id": 11,
+          "timestamp": "2028-04-05T11:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I walked through the planning shed checklist with the new starter."
+            },
+            {
+              "role": "assistant",
+              "content": "How did they do?"
+            },
+            {
+              "role": "user",
+              "content": "Careful and quick, a good sign."
+            }
+          ]
+        },
+        {
+          "session_id": 12,
+          "timestamp": "2028-04-06T14:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Quiet afternoon; I cleared the backlog around the event season."
+            },
+            {
+              "role": "assistant",
+              "content": "A rare day."
+            },
+            {
+              "role": "user",
+              "content": "I did not waste it."
+            }
+          ]
+        },
+        {
+          "session_id": 13,
+          "timestamp": "2028-04-07T16:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I flagged a small inconsistency in the supplier pack records and fixed it at the source."
+            },
+            {
+              "role": "assistant",
+              "content": "Root cause or symptom?"
+            },
+            {
+              "role": "user",
+              "content": "Root cause, for once."
+            }
+          ]
+        },
+        {
+          "session_id": 14,
+          "timestamp": "2028-04-08T18:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The waterfront authority agreed to a one-evening pilot but says the route study may be skipped if vendor interest is high."
+            },
+            {
+              "role": "assistant",
+              "content": "Would that support the same plan?"
+            },
+            {
+              "role": "user",
+              "content": "No, vendor interest does not show that the route can operate safely."
+            }
+          ]
+        },
+        {
+          "session_id": 15,
+          "timestamp": "2028-04-09T09:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I sketched next week's plan for the event season before leaving."
+            },
+            {
+              "role": "assistant",
+              "content": "Ahead of schedule?"
+            },
+            {
+              "role": "user",
+              "content": "Ahead enough to sleep well."
+            }
+          ]
+        },
+        {
+          "session_id": 16,
+          "timestamp": "2028-04-10T11:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Lunch walk, then a clean pass through the venue grid updates."
+            },
+            {
+              "role": "assistant",
+              "content": "Does the walk help?"
+            },
+            {
+              "role": "user",
+              "content": "It resets the afternoon."
+            }
+          ]
+        },
+        {
+          "session_id": 17,
+          "timestamp": "2028-04-11T14:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The printed programme closes next month."
+            },
+            {
+              "role": "assistant",
+              "content": "Can the pilot appear there?"
+            },
+            {
+              "role": "user",
+              "content": "Yes, as a one-evening trial with its conditions stated."
+            }
+          ]
+        },
+        {
+          "session_id": 18,
+          "timestamp": "2028-04-12T16:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I compared two options for the supplier pack tooling and noted a mild preference."
+            },
+            {
+              "role": "assistant",
+              "content": "Decision made?"
+            },
+            {
+              "role": "user",
+              "content": "Deferred until the trial ends."
+            }
+          ]
+        },
+        {
+          "session_id": 19,
+          "timestamp": "2028-04-13T18:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I closed the week by updating the planning shed handover notes."
+            },
+            {
+              "role": "assistant",
+              "content": "Anything unusual to hand over?"
+            },
+            {
+              "role": "user",
+              "content": "Blessedly little."
+            }
+          ]
+        },
+        {
+          "session_id": 20,
+          "timestamp": "2028-04-14T09:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Can I confirm a one-evening waterfront night-market pilot?"
+            }
+          ]
+        }
+      ],
+      "query": "Can I confirm a one-evening waterfront night-market pilot?"
+    },
+    "distractor": {
+      "expected_mode": "infer_C",
+      "lineage": {
+        "transform": "shipped",
+        "changed_sessions": [
+          18
+        ]
+      },
+      "changed_sessions": [
+        18
+      ],
+      "context": [
+        {
+          "session_id": 1,
+          "timestamp": "2028-03-26T11:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I spent the first hour tidying the venue grid and closing stale entries."
+            },
+            {
+              "role": "assistant",
+              "content": "Anything still open?"
+            },
+            {
+              "role": "user",
+              "content": "Two items, both with owners."
+            }
+          ]
+        },
+        {
+          "session_id": 2,
+          "timestamp": "2028-03-27T14:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The supplier pack review wrapped early today."
+            },
+            {
+              "role": "assistant",
+              "content": "Any surprises in it?"
+            },
+            {
+              "role": "user",
+              "content": "None worth recording."
+            }
+          ]
+        },
+        {
+          "session_id": 3,
+          "timestamp": "2028-03-28T16:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I confirmed a food-court extension after the vendor list included equipment loads and the layout was calculated."
+            },
+            {
+              "role": "assistant",
+              "content": "Was the operating plan still open?"
+            },
+            {
+              "role": "user",
+              "content": "No, footprint and power needs were settled before contracts went out."
+            }
+          ]
+        },
+        {
+          "session_id": 4,
+          "timestamp": "2028-03-29T18:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Someone new shadowed me in the planning shed this morning."
+            },
+            {
+              "role": "assistant",
+              "content": "Did that slow you down?"
+            },
+            {
+              "role": "user",
+              "content": "A little, but the questions were good ones."
+            }
+          ]
+        },
+        {
+          "session_id": 5,
+          "timestamp": "2028-03-30T09:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I batched my replies about the event season into one message before lunch."
+            },
+            {
+              "role": "assistant",
+              "content": "Cleaner than drip-feeding answers."
+            },
+            {
+              "role": "user",
+              "content": "Much cleaner."
+            }
+          ]
+        },
+        {
+          "session_id": 6,
+          "timestamp": "2028-03-31T11:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "When the night-market proposal named a waterfront zone and interested vendors but had no crowd-flow drawing or wet-weather arrangement, I told the authority liaison we could confirm a one-evening pilot after the route study and only within the marked zone."
+            },
+            {
+              "role": "assistant",
+              "content": "What could not be committed from the proposal?"
+            },
+            {
+              "role": "user",
+              "content": "Full vendor capacity and an operating plan if access narrowed in rain."
+            }
+          ]
+        },
+        {
+          "session_id": 7,
+          "timestamp": "2028-04-01T14:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I updated the venue grid when a stallholder supplied its final power draw."
+            },
+            {
+              "role": "assistant",
+              "content": "Did that commit a new zone?"
+            },
+            {
+              "role": "user",
+              "content": "No, it filled in a slot already reserved on the sheet."
+            }
+          ]
+        },
+        {
+          "session_id": 8,
+          "timestamp": "2028-04-02T16:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I archived last cycle's notes on the supplier pack and set up the new folder."
+            },
+            {
+              "role": "assistant",
+              "content": "A fresh start?"
+            },
+            {
+              "role": "user",
+              "content": "As fresh as these things get."
+            }
+          ]
+        },
+        {
+          "session_id": 9,
+          "timestamp": "2028-04-03T18:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The festival reserve includes funds for a temporary route study and one evening of stewarding."
+            },
+            {
+              "role": "assistant",
+              "content": "Does that fund an entire night market?"
+            },
+            {
+              "role": "user",
+              "content": "No, it funds testing the route and running a limited pilot."
+            }
+          ]
+        },
+        {
+          "session_id": 10,
+          "timestamp": "2028-04-04T09:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "A vendor call about the venue grid ran long but ended well."
+            },
+            {
+              "role": "assistant",
+              "content": "Worth the time?"
+            },
+            {
+              "role": "user",
+              "content": "This one, yes."
+            }
+          ]
+        },
+        {
+          "session_id": 11,
+          "timestamp": "2028-04-05T11:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I walked through the planning shed checklist with the new starter."
+            },
+            {
+              "role": "assistant",
+              "content": "How did they do?"
+            },
+            {
+              "role": "user",
+              "content": "Careful and quick, a good sign."
+            }
+          ]
+        },
+        {
+          "session_id": 12,
+          "timestamp": "2028-04-06T14:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Quiet afternoon; I cleared the backlog around the event season."
+            },
+            {
+              "role": "assistant",
+              "content": "A rare day."
+            },
+            {
+              "role": "user",
+              "content": "I did not waste it."
+            }
+          ]
+        },
+        {
+          "session_id": 13,
+          "timestamp": "2028-04-07T16:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I flagged a small inconsistency in the supplier pack records and fixed it at the source."
+            },
+            {
+              "role": "assistant",
+              "content": "Root cause or symptom?"
+            },
+            {
+              "role": "user",
+              "content": "Root cause, for once."
+            }
+          ]
+        },
+        {
+          "session_id": 14,
+          "timestamp": "2028-04-08T18:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Two seasons ago I announced a season-long waterfront market from vendor interest alone; on the first rain night the access route failed and stewards closed the zone before the programme notice could be updated."
+            },
+            {
+              "role": "assistant",
+              "content": "What had not been established?"
+            },
+            {
+              "role": "user",
+              "content": "Crowd flow under narrowing access and a wet-weather operating plan."
+            }
+          ]
+        },
+        {
+          "session_id": 15,
+          "timestamp": "2028-04-09T09:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I sketched next week's plan for the event season before leaving."
+            },
+            {
+              "role": "assistant",
+              "content": "Ahead of schedule?"
+            },
+            {
+              "role": "user",
+              "content": "Ahead enough to sleep well."
+            }
+          ]
+        },
+        {
+          "session_id": 16,
+          "timestamp": "2028-04-10T11:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Lunch walk, then a clean pass through the venue grid updates."
+            },
+            {
+              "role": "assistant",
+              "content": "Does the walk help?"
+            },
+            {
+              "role": "user",
+              "content": "It resets the afternoon."
+            }
+          ]
+        },
+        {
+          "session_id": 17,
+          "timestamp": "2028-04-11T14:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The printed programme closes next month."
+            },
+            {
+              "role": "assistant",
+              "content": "Can the pilot appear there?"
+            },
+            {
+              "role": "user",
+              "content": "Yes, as a one-evening trial with its conditions stated."
+            }
+          ]
+        },
+        {
+          "session_id": 18,
+          "timestamp": "2028-04-12T16:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "A merchant group says calling it a season-long market would attract more applications."
+            },
+            {
+              "role": "assistant",
+              "content": "Does that supply a rain plan or crowd-flow design?"
+            },
+            {
+              "role": "user",
+              "content": "No, it would advertise capacity that has not been established."
+            }
+          ]
+        },
+        {
+          "session_id": 19,
+          "timestamp": "2028-04-13T18:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I closed the week by updating the planning shed handover notes."
+            },
+            {
+              "role": "assistant",
+              "content": "Anything unusual to hand over?"
+            },
+            {
+              "role": "user",
+              "content": "Blessedly little."
+            }
+          ]
+        },
+        {
+          "session_id": 20,
+          "timestamp": "2028-04-14T09:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Can I confirm a one-evening waterfront night-market pilot?"
+            }
+          ]
+        }
+      ],
+      "query": "Can I confirm a one-evening waterfront night-market pilot?"
+    },
+    "absence": {
+      "expected_mode": "withhold_C",
+      "lineage": {
+        "transform": "replace_ev_A_and_ev_B_only",
+        "changed_sessions": [
+          6,
+          14
+        ]
+      },
+      "changed_sessions": [
+        6,
+        14
+      ],
+      "context": [
+        {
+          "session_id": 1,
+          "timestamp": "2028-03-26T11:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I spent the first hour tidying the venue grid and closing stale entries."
+            },
+            {
+              "role": "assistant",
+              "content": "Anything still open?"
+            },
+            {
+              "role": "user",
+              "content": "Two items, both with owners."
+            }
+          ]
+        },
+        {
+          "session_id": 2,
+          "timestamp": "2028-03-27T14:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The supplier pack review wrapped early today."
+            },
+            {
+              "role": "assistant",
+              "content": "Any surprises in it?"
+            },
+            {
+              "role": "user",
+              "content": "None worth recording."
+            }
+          ]
+        },
+        {
+          "session_id": 3,
+          "timestamp": "2028-03-28T16:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I confirmed a food-court extension after the vendor list included equipment loads and the layout was calculated."
+            },
+            {
+              "role": "assistant",
+              "content": "Was the operating plan still open?"
+            },
+            {
+              "role": "user",
+              "content": "No, footprint and power needs were settled before contracts went out."
+            }
+          ]
+        },
+        {
+          "session_id": 4,
+          "timestamp": "2028-03-29T18:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Someone new shadowed me in the planning shed this morning."
+            },
+            {
+              "role": "assistant",
+              "content": "Did that slow you down?"
+            },
+            {
+              "role": "user",
+              "content": "A little, but the questions were good ones."
+            }
+          ]
+        },
+        {
+          "session_id": 5,
+          "timestamp": "2028-03-30T09:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I batched my replies about the event season into one message before lunch."
+            },
+            {
+              "role": "assistant",
+              "content": "Cleaner than drip-feeding answers."
+            },
+            {
+              "role": "user",
+              "content": "Much cleaner."
+            }
+          ]
+        },
+        {
+          "session_id": 6,
+          "timestamp": "2028-03-31T11:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I did a standard pass over the supplier pack records this morning."
+            },
+            {
+              "role": "assistant",
+              "content": "Any exceptions in there?"
+            },
+            {
+              "role": "user",
+              "content": "None worth a note."
+            }
+          ]
+        },
+        {
+          "session_id": 7,
+          "timestamp": "2028-04-01T14:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I updated the venue grid when a stallholder supplied its final power draw."
+            },
+            {
+              "role": "assistant",
+              "content": "Did that commit a new zone?"
+            },
+            {
+              "role": "user",
+              "content": "No, it filled in a slot already reserved on the sheet."
+            }
+          ]
+        },
+        {
+          "session_id": 8,
+          "timestamp": "2028-04-02T16:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I archived last cycle's notes on the supplier pack and set up the new folder."
+            },
+            {
+              "role": "assistant",
+              "content": "A fresh start?"
+            },
+            {
+              "role": "user",
+              "content": "As fresh as these things get."
+            }
+          ]
+        },
+        {
+          "session_id": 9,
+          "timestamp": "2028-04-03T18:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The festival reserve includes funds for a temporary route study and one evening of stewarding."
+            },
+            {
+              "role": "assistant",
+              "content": "Does that fund an entire night market?"
+            },
+            {
+              "role": "user",
+              "content": "No, it funds testing the route and running a limited pilot."
+            }
+          ]
+        },
+        {
+          "session_id": 10,
+          "timestamp": "2028-04-04T09:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "A vendor call about the venue grid ran long but ended well."
+            },
+            {
+              "role": "assistant",
+              "content": "Worth the time?"
+            },
+            {
+              "role": "user",
+              "content": "This one, yes."
+            }
+          ]
+        },
+        {
+          "session_id": 11,
+          "timestamp": "2028-04-05T11:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I walked through the planning shed checklist with the new starter."
+            },
+            {
+              "role": "assistant",
+              "content": "How did they do?"
+            },
+            {
+              "role": "user",
+              "content": "Careful and quick, a good sign."
+            }
+          ]
+        },
+        {
+          "session_id": 12,
+          "timestamp": "2028-04-06T14:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Quiet afternoon; I cleared the backlog around the event season."
+            },
+            {
+              "role": "assistant",
+              "content": "A rare day."
+            },
+            {
+              "role": "user",
+              "content": "I did not waste it."
+            }
+          ]
+        },
+        {
+          "session_id": 13,
+          "timestamp": "2028-04-07T16:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I flagged a small inconsistency in the supplier pack records and fixed it at the source."
+            },
+            {
+              "role": "assistant",
+              "content": "Root cause or symptom?"
+            },
+            {
+              "role": "user",
+              "content": "Root cause, for once."
+            }
+          ]
+        },
+        {
+          "session_id": 14,
+          "timestamp": "2028-04-08T18:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I closed a routine event season cycle without surprises."
+            },
+            {
+              "role": "assistant",
+              "content": "Follow-up needed?"
+            },
+            {
+              "role": "user",
+              "content": "A note for the next cycle, nothing more."
+            }
+          ]
+        },
+        {
+          "session_id": 15,
+          "timestamp": "2028-04-09T09:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I sketched next week's plan for the event season before leaving."
+            },
+            {
+              "role": "assistant",
+              "content": "Ahead of schedule?"
+            },
+            {
+              "role": "user",
+              "content": "Ahead enough to sleep well."
+            }
+          ]
+        },
+        {
+          "session_id": 16,
+          "timestamp": "2028-04-10T11:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Lunch walk, then a clean pass through the venue grid updates."
+            },
+            {
+              "role": "assistant",
+              "content": "Does the walk help?"
+            },
+            {
+              "role": "user",
+              "content": "It resets the afternoon."
+            }
+          ]
+        },
+        {
+          "session_id": 17,
+          "timestamp": "2028-04-11T14:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The printed programme closes next month."
+            },
+            {
+              "role": "assistant",
+              "content": "Can the pilot appear there?"
+            },
+            {
+              "role": "user",
+              "content": "Yes, as a one-evening trial with its conditions stated."
+            }
+          ]
+        },
+        {
+          "session_id": 18,
+          "timestamp": "2028-04-12T16:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I compared two options for the supplier pack tooling and noted a mild preference."
+            },
+            {
+              "role": "assistant",
+              "content": "Decision made?"
+            },
+            {
+              "role": "user",
+              "content": "Deferred until the trial ends."
+            }
+          ]
+        },
+        {
+          "session_id": 19,
+          "timestamp": "2028-04-13T18:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I closed the week by updating the planning shed handover notes."
+            },
+            {
+              "role": "assistant",
+              "content": "Anything unusual to hand over?"
+            },
+            {
+              "role": "user",
+              "content": "Blessedly little."
+            }
+          ]
+        },
+        {
+          "session_id": 20,
+          "timestamp": "2028-04-14T09:00:00Z",
+          "speaker_id": "work_s17_u07",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Can I confirm a one-evening waterfront night-market pilot?"
+            }
+          ]
+        }
+      ],
+      "query": "Can I confirm a one-evening waterfront night-market pilot?"
+    }
+  }
+}

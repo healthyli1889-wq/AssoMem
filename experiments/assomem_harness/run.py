@@ -15,13 +15,14 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
-from arms import materialize_arms
-from dataset import discover_items, solver_input
+from arms import materialize_arms, materialize_vnext_arms
+from dataset import discover_items, discover_vnext_items
 from manifest import build_stratified_manifest, select_manifest_items
 from models import load_roles, validate_solver_validator_independence
 from profile import load_profile
 from protocol import score_prompt, solver_prompt
-from workflow import score_solver_answer, validate_solver_answer
+from workflow import score_solver_answer, validate_solver_answer, validate_validator_answer
+from zero_evidence import run_zero_evidence_check
 
 sys_path = Path(__file__).resolve().parents[1] / "query_validity"
 import sys
@@ -29,14 +30,35 @@ sys.path.insert(0, str(sys_path))
 from clients import call_model_with_usage  # noqa: E402
 
 EVALUATION_ARMS = ("full", "no_target", "broken_link", "distractor", "absence", "add_evidence")
+VNEXT_EVALUATION_ARMS = ("full", "a_only", "b_only", "link_broken", "distractor", "absence")
 
 
 def parse_arms(value: str) -> tuple[str, ...]:
     arms = tuple(part.strip() for part in value.split(",") if part.strip())
-    unknown = set(arms) - set(EVALUATION_ARMS)
+    unknown = set(arms) - set(EVALUATION_ARMS) - set(VNEXT_EVALUATION_ARMS)
     if not arms or unknown:
         raise ValueError(f"Unsupported evaluation arms: {', '.join(sorted(unknown)) or value}")
     return arms
+
+
+def _evaluation_arms(profile: Any) -> tuple[str, ...]:
+    return VNEXT_EVALUATION_ARMS if profile.data_format == "work-vnext-1" else EVALUATION_ARMS
+
+
+def _discover(data_root: Path, profile: Any, domain: str):
+    return (
+        discover_vnext_items(data_root, profile, domain)
+        if profile.data_format == "work-vnext-1"
+        else discover_items(data_root, profile, domain)
+    )
+
+
+def _materialize(item: Any, profile: Any):
+    return (
+        materialize_vnext_arms(item, profile)
+        if profile.data_format == "work-vnext-1"
+        else materialize_arms(item, profile, item.arms["associative"]["query"])
+    )
 
 
 def _now() -> str:
@@ -64,17 +86,15 @@ def _write_e1_template(path: Path, inventory: list[dict[str, Any]]) -> None:
         )
         writer.writeheader()
         for row in inventory:
-            for arm in ("full", "no_target", "broken_link", "distractor", "absence"):
-                evaluation = row["evaluation_arms"].get(arm)
-                if evaluation:
-                    writer.writerow({
-                        "item_id": row["item_id"],
-                        "arm": arm,
-                        "source": evaluation["lineage"]["source"],
-                        "human_pass": "",
-                        "reviewer": "",
-                        "notes": "",
-                    })
+            for arm, evaluation in row["evaluation_arms"].items():
+                writer.writerow({
+                    "item_id": row["item_id"],
+                    "arm": arm,
+                    "source": evaluation["lineage"]["source"],
+                    "human_pass": "",
+                    "reviewer": "",
+                    "notes": "",
+                })
 
 
 def _write_e2_template(path: Path, inventory: list[dict[str, Any]]) -> None:
@@ -83,17 +103,19 @@ def _write_e2_template(path: Path, inventory: list[dict[str, Any]]) -> None:
         writer = csv.DictWriter(
             handle,
             fieldnames=(
-                "item_id", "arm", "human_rea", "human_h_k",
-                "human_source_misattribution", "judge_agrees", "reviewer", "notes",
+                "item_id", "arm", "human_binary_correct", "human_target_asserted",
+                "human_h_k", "human_source_misattribution", "judge_agrees",
+                "reviewer", "notes",
             ),
         )
         writer.writeheader()
         for row in inventory:
-            for arm in ("full", "no_target", "broken_link"):
+            for arm in row["evaluation_arms"]:
                 writer.writerow({
                     "item_id": row["item_id"],
                     "arm": arm,
-                    "human_rea": "",
+                    "human_binary_correct": "",
+                    "human_target_asserted": "",
                     "human_h_k": "",
                     "human_source_misattribution": "",
                     "judge_agrees": "",
@@ -129,7 +151,7 @@ def _record_path(records_dir: Path, checkpoint_id: str) -> Path:
     return records_dir / f"{digest}.json"
 
 
-def _write_record(records_dir: Path, record: dict[str, Any]) -> None:
+def _write_record(records_dir: Path, record: dict[str, Any]) -> dict[str, Any]:
     records_dir.mkdir(parents=True, exist_ok=True)
     persisted = {**record, "attempt_id": str(uuid.uuid4()), "recorded_at": _now()}
     attempts_dir = records_dir.parent / "attempts"
@@ -149,6 +171,49 @@ def _write_record(records_dir: Path, record: dict[str, Any]) -> None:
         temporary.write(json.dumps(persisted, ensure_ascii=False) + "\n")
         temporary_path = Path(temporary.name)
     os.replace(temporary_path, destination)
+    return persisted
+
+
+def _canonical_records(records_dir: Path) -> list[dict[str, Any]]:
+    if not records_dir.is_dir():
+        return []
+    return sorted(
+        (
+            json.loads(path.read_text(encoding="utf-8"))
+            for path in records_dir.glob("*.json")
+        ),
+        key=lambda record: record["checkpoint_id"],
+    )
+
+
+def _refresh_run_views(
+    run_root: Path, records_dir: Path, *, target: int, current_stage: str
+) -> None:
+    """Rebuild compatibility views from atomic canonical records."""
+    records = _canonical_records(records_dir)
+    _write_jsonl(run_root / "checkpoint.jsonl", records)
+    log_dir = run_root / "log"
+    log_dir.mkdir(parents=True, exist_ok=True)
+    _write_jsonl(log_dir / "results.jsonl", records)
+    by_condition = run_root / "by_condition"
+    for arm in VNEXT_EVALUATION_ARMS:
+        destination = by_condition / arm
+        destination.mkdir(parents=True, exist_ok=True)
+        _write_jsonl(
+            destination / "trials.jsonl",
+            [record for record in records if record.get("arm") == arm],
+        )
+    scored = sum(record.get("status") == "scored" for record in records)
+    failed = sum(record.get("status") != "scored" for record in records)
+    (run_root / "PROGRESS.txt").write_text(
+        f"{scored}/{target}\nscored={scored}\nfailed={failed}\n"
+        f"target={target}\nstage={current_stage}\n",
+        encoding="utf-8",
+    )
+
+
+def _stage(name: str, status: str = "complete", **details: Any) -> dict[str, Any]:
+    return {"stage": name, "status": status, "timestamp": _now(), **details}
 
 
 def completed_checkpoint_ids(records_dir: Path) -> set[str]:
@@ -183,7 +248,7 @@ def prepare_run(
 ) -> dict[str, Any]:
     """Create only experiment artifacts; all gold JSON stays read-only."""
     profile = load_profile(profile_path)
-    all_items = discover_items(data_root, profile, domain)
+    all_items = _discover(data_root, profile, domain)
     selection_manifest = None
     if max_items is not None:
         if max_items > 20:
@@ -199,8 +264,8 @@ def prepare_run(
     log_dir.mkdir(parents=True, exist_ok=True)
     inventory: list[dict[str, Any]] = []
     for item in items:
+        arms = _materialize(item, profile)
         query = item.arms["associative"]["query"]
-        arms = materialize_arms(item, profile, query)
         inventory.append({
             "item_id": item.item_id,
             "domain": domain,
@@ -231,10 +296,14 @@ def prepare_run(
         "domain": domain,
         "run_id": run_id,
         "base_items": len(items),
-        "shipped_conversations": len(items) * len(profile.arms),
+        "shipped_conversations": len(items) * (
+            len(_evaluation_arms(profile))
+            if profile.data_format == "work-vnext-1"
+            else len(profile.arms)
+        ),
         "profile_sha256": _sha256_file(profile_path),
         "prompt_contract_version": 3,
-        "evaluation_arms": list(EVALUATION_ARMS),
+        "evaluation_arms": list(_evaluation_arms(profile)),
         "generated_at": _now(),
         "mode": "dry-run",
     }
@@ -245,9 +314,61 @@ def prepare_run(
     return manifest
 
 
+def run_zero_evidence(
+    data_root: Path, profile_path: Path, domain: str, run_id: str, log_root: Path,
+    *, item_manifest_path: Path, trials: int = 10,
+) -> dict[str, Any]:
+    """Execute the query-only shortcut screen and persist one artifact per item."""
+    profile = load_profile(profile_path)
+    if profile.data_format != "work-vnext-1":
+        raise ValueError("zero-evidence is currently defined only for work-vnext-1")
+    roles = load_roles()
+    manifest = json.loads(item_manifest_path.read_text(encoding="utf-8"))
+    if manifest["profile_id"] != profile.profile_id or manifest["domain"] != domain:
+        raise ValueError("Item manifest does not match the selected profile/domain")
+    items = select_manifest_items(_discover(data_root, profile, domain), manifest, data_root)
+    destination = log_root / domain / run_id / "zero_evidence"
+    destination.mkdir(parents=True, exist_ok=True)
+    results = []
+    for item in items:
+        result = run_zero_evidence_check(
+            item.arms["associative"], profile, roles["solver"], roles["validator"],
+            call_model_with_usage, trials=trials,
+        )
+        (destination / f"{item.item_id}.json").write_text(
+            json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+        )
+        results.append(result)
+        if not result["pass"]:
+            raise RuntimeError(f"{item.item_id}: zero-evidence gate failed")
+    return {
+        "run_id": run_id,
+        "domain": domain,
+        "items": len(results),
+        "passed": all(result["pass"] for result in results),
+        "artifact_dir": str(destination),
+    }
+
+
+def _validate_zero_evidence_gate(run_root: Path, item_ids: set[str]) -> None:
+    missing_or_failed = []
+    for item_id in item_ids:
+        path = run_root / "zero_evidence" / f"{item_id}.json"
+        if not path.is_file():
+            missing_or_failed.append(f"{item_id}:missing")
+            continue
+        result = json.loads(path.read_text(encoding="utf-8"))
+        if not result.get("pass"):
+            missing_or_failed.append(f"{item_id}:failed")
+    if missing_or_failed:
+        raise ValueError(
+            "zero-evidence gate is incomplete or failed: " + ", ".join(sorted(missing_or_failed))
+        )
+
+
 def execute_run(
     data_root: Path, profile_path: Path, domain: str, run_id: str, log_root: Path,
-    *, max_items: int | None = None, arms: tuple[str, ...] = EVALUATION_ARMS,
+    *, max_items: int | None = None, arms: tuple[str, ...] | None = None,
     item_manifest_path: Path | None = None,
     e1_review_path: Path | None = None,
 ) -> dict[str, Any]:
@@ -262,12 +383,16 @@ def execute_run(
 
 def _execute_run_unlocked(
     data_root: Path, profile_path: Path, domain: str, run_id: str, log_root: Path,
-    *, max_items: int | None = None, arms: tuple[str, ...] = EVALUATION_ARMS,
+    *, max_items: int | None = None, arms: tuple[str, ...] | None = None,
     item_manifest_path: Path | None = None,
     e1_review_path: Path | None = None,
 ) -> dict[str, Any]:
     """Run one solver against frozen gold and score with an independent validator."""
     profile = load_profile(profile_path)
+    selected_arms = arms or _evaluation_arms(profile)
+    unsupported = set(selected_arms) - set(_evaluation_arms(profile))
+    if unsupported:
+        raise ValueError(f"Arms are unsupported by {profile.profile_id}: {', '.join(sorted(unsupported))}")
     roles = load_roles()
     validate_solver_validator_independence(roles)
     if item_manifest_path is None:
@@ -275,13 +400,15 @@ def _execute_run_unlocked(
     manifest = json.loads(item_manifest_path.read_text(encoding="utf-8"))
     if manifest["profile_id"] != profile.profile_id or manifest["domain"] != domain:
         raise ValueError("Item manifest does not match the selected profile/domain")
-    items = select_manifest_items(discover_items(data_root, profile, domain), manifest, data_root)
+    items = select_manifest_items(_discover(data_root, profile, domain), manifest, data_root)
     if max_items is not None and max_items != len(items):
         raise ValueError("execute max-items must match the frozen item manifest")
     if e1_review_path is None:
         raise ValueError("execute requires an approved --e1-review CSV")
-    validate_e1_gate(e1_review_path, {item.item_id for item in items}, arms)
+    validate_e1_gate(e1_review_path, {item.item_id for item in items}, selected_arms)
     run_root = log_root / domain / run_id
+    if profile.data_format == "work-vnext-1":
+        _validate_zero_evidence_gate(run_root, {item.item_id for item in items})
     log_dir = run_root / "log"
     log_dir.mkdir(parents=True, exist_ok=True)
     checkpoint_path = run_root / "checkpoint.jsonl"
@@ -294,63 +421,112 @@ def _execute_run_unlocked(
             if json.loads(line).get("status") == "scored"
         }
 
+    target = len(items) * len(selected_arms)
+    _refresh_run_views(run_root, records_dir, target=target, current_stage="execute")
     records: list[dict[str, Any]] = []
     for paired in items:
-        frozen_query = paired.arms["associative"]["query"]
-        for arm_name, arm in materialize_arms(paired, profile, frozen_query).items():
-            if arm_name not in arms:
+        for arm_name, arm in _materialize(paired, profile).items():
+            if arm_name not in selected_arms:
                 continue
             checkpoint_id = f"{paired.item_id}:{arm_name}:solver"
             if checkpoint_id in completed:
                 continue
+            trace = [_stage(
+                "materialized",
+                arm=arm_name,
+                source=arm.lineage["source"],
+                prompt_hash=arm.visible["prompt_hash"],
+            )]
             if arm_name == "no_target" and not arm.lineage["leakage_audit"]["passed"]:
                 record = {
                     "checkpoint_id": checkpoint_id, "item_id": paired.item_id,
                     "arm": arm_name, "status": "invalid_arm",
+                    "error_stage": "materialized",
                     "error": "no_target leakage audit failed", "lineage": arm.lineage,
+                    "stage_trace": trace + [_stage("materialized", "failed")],
                 }
                 _write_record(records_dir, record)
-                records.append(record)
-                continue
+                _refresh_run_views(run_root, records_dir, target=target, current_stage="failed")
+                raise RuntimeError(record["error"])
             try:
                 answer, solver_usage = call_model_with_usage(
-                    roles["solver"], solver_prompt(arm.visible)
+                    roles["solver"], solver_prompt(arm.visible, profile)
                 )
-            except RuntimeError as exc:
+            except (OSError, RuntimeError, ValueError) as exc:
                 record = {
                     "checkpoint_id": checkpoint_id, "item_id": paired.item_id,
                     "arm": arm_name, "status": "solver_error",
+                    "error_stage": "solver_called",
                     "error": str(exc), "lineage": arm.lineage,
+                    "stage_trace": trace + [_stage("solver_called", "failed")],
                 }
                 _write_record(records_dir, record)
-                records.append(record)
-                continue
-            schema_error = validate_solver_answer(answer)
+                _refresh_run_views(run_root, records_dir, target=target, current_stage="failed")
+                raise RuntimeError(f"{checkpoint_id}: {record['error']}") from exc
+            trace.append(_stage("solver_called", usage=solver_usage))
+            schema_error = validate_solver_answer(answer, profile)
             if schema_error:
                 record = {
                     "checkpoint_id": checkpoint_id, "item_id": paired.item_id,
                     "arm": arm_name, "status": "invalid_response",
+                    "error_stage": "solver_validated",
                     "error": schema_error, "response": answer,
                     "solver_usage": solver_usage, "lineage": arm.lineage,
+                    "stage_trace": trace + [_stage("solver_validated", "failed")],
                 }
                 _write_record(records_dir, record)
-                records.append(record)
-                continue
+                _refresh_run_views(run_root, records_dir, target=target, current_stage="failed")
+                raise RuntimeError(f"{checkpoint_id}: {schema_error}")
+            trace.append(_stage("solver_validated"))
             try:
                 judgment, validator_usage = call_model_with_usage(
-                    roles["validator"], score_prompt(answer, arm.ground_truth)
+                    roles["validator"],
+                    score_prompt(answer, arm.ground_truth, profile, visible=arm.visible),
                 )
-            except RuntimeError as exc:
+            except (OSError, RuntimeError, ValueError) as exc:
                 record = {
                     "checkpoint_id": checkpoint_id, "item_id": paired.item_id,
                     "arm": arm_name, "status": "validator_error",
+                    "error_stage": "validator_called",
                     "error": str(exc), "response": answer,
                     "solver_usage": solver_usage, "lineage": arm.lineage,
+                    "stage_trace": trace + [_stage("validator_called", "failed")],
                 }
                 _write_record(records_dir, record)
-                records.append(record)
-                continue
-            metric = score_solver_answer(judgment)
+                _refresh_run_views(run_root, records_dir, target=target, current_stage="failed")
+                raise RuntimeError(f"{checkpoint_id}: {record['error']}") from exc
+            trace.append(_stage("validator_called", usage=validator_usage))
+            validator_error = validate_validator_answer(judgment, profile)
+            if validator_error:
+                record = {
+                    "checkpoint_id": checkpoint_id, "item_id": paired.item_id,
+                    "arm": arm_name, "status": "invalid_validator_response",
+                    "error_stage": "validator_validated",
+                    "error": validator_error, "response": answer,
+                    "validator": judgment, "solver_usage": solver_usage,
+                    "validator_usage": validator_usage, "lineage": arm.lineage,
+                    "stage_trace": trace + [_stage("validator_validated", "failed")],
+                }
+                _write_record(records_dir, record)
+                _refresh_run_views(run_root, records_dir, target=target, current_stage="failed")
+                raise RuntimeError(f"{checkpoint_id}: {validator_error}")
+            trace.append(_stage("validator_validated"))
+            try:
+                metric = score_solver_answer(judgment, answer, arm.ground_truth, profile)
+            except (KeyError, TypeError, ValueError) as exc:
+                record = {
+                    "checkpoint_id": checkpoint_id, "item_id": paired.item_id,
+                    "arm": arm_name, "status": "scoring_error",
+                    "error_stage": "scored", "error": str(exc),
+                    "response": answer, "validator": judgment,
+                    "solver_usage": solver_usage, "validator_usage": validator_usage,
+                    "lineage": arm.lineage,
+                    "stage_trace": trace + [_stage("scored", "failed")],
+                }
+                _write_record(records_dir, record)
+                _refresh_run_views(run_root, records_dir, target=target, current_stage="failed")
+                raise RuntimeError(f"{checkpoint_id}: {record['error']}") from exc
+            trace.append(_stage("scored", metrics=metric))
             record = {
                 "checkpoint_id": checkpoint_id,
                 "item_id": paired.item_id,
@@ -367,10 +543,12 @@ def _execute_run_unlocked(
                 "status": "scored",
                 **metric,
                 "lineage": arm.lineage,
+                "stage_trace": trace + [_stage("persisted")],
             }
             records.append(record)
             _write_record(records_dir, record)
-    _write_jsonl(log_dir / "results.jsonl", records)
+            _refresh_run_views(run_root, records_dir, target=target, current_stage="execute")
+    _refresh_run_views(run_root, records_dir, target=target, current_stage="complete")
     return {
         "run_id": run_id, "domain": domain, "answer_records": len(records),
         "run_root": str(run_root), "query_source": "frozen_gold_json",
@@ -386,17 +564,29 @@ def main() -> int:
     parser.add_argument("--log-root", type=Path, default=os.getenv("ASSOMEM_LOG_ROOT", "logs"))
     parser.add_argument("--dry-run", action="store_true")
     parser.add_argument("--execute", action="store_true")
+    parser.add_argument("--zero-evidence", action="store_true")
+    parser.add_argument("--zero-evidence-trials", type=int, default=10)
     parser.add_argument("--max-items", type=int, help="Limit an inspection or real execution run.")
-    parser.add_argument("--arms", default=",".join(EVALUATION_ARMS), help="Comma-separated evaluation arms.")
+    parser.add_argument("--arms", help="Comma-separated evaluation arms.")
     parser.add_argument("--item-manifest", type=Path, help="Frozen manifest generated by dry-run.")
     parser.add_argument("--e1-review", type=Path, help="Completed E1 intervention audit CSV.")
     args = parser.parse_args()
     if args.data_root is None or args.profile is None:
         parser.error("--data-root and --profile (or corresponding environment variables) are required")
-    if args.execute:
+    if args.execute and args.zero_evidence:
+        parser.error("--execute and --zero-evidence are separate stages")
+    parsed_arms = parse_arms(args.arms) if args.arms else None
+    if args.zero_evidence:
+        if args.item_manifest is None:
+            parser.error("--zero-evidence requires --item-manifest")
+        manifest = run_zero_evidence(
+            args.data_root, args.profile, args.domain, args.run_id, args.log_root,
+            item_manifest_path=args.item_manifest, trials=args.zero_evidence_trials,
+        )
+    elif args.execute:
         manifest = execute_run(
             args.data_root, args.profile, args.domain, args.run_id, args.log_root,
-            max_items=args.max_items, arms=parse_arms(args.arms),
+            max_items=args.max_items, arms=parsed_arms,
             item_manifest_path=args.item_manifest,
             e1_review_path=args.e1_review,
         )

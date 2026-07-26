@@ -1,0 +1,638 @@
+{
+  "schema_version": "work-vnext-2.0",
+  "candidate_id": "AMB_WV_S06_U03_associative",
+  "pair_id": "AMB_WV_S06_U03",
+  "data_arm": "associative",
+  "domain": "work",
+  "user_id": "work_s06_u03",
+  "sub_scenario": {
+    "family": "physical constraint versus sustained work commitment",
+    "role": "dental hygienist",
+    "one_line": "dental hygienist: likely a flare within two weeks"
+  },
+  "query_type": "predicted_reaction",
+  "polarity": "reject",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2025-08-08T11:00:00Z",
+      "speaker_id": "work_s06_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I spent the first hour tidying the instrument tray and closing stale entries."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything still open?"
+        },
+        {
+          "role": "user",
+          "content": "Two items, both with owners."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2025-08-09T14:00:00Z",
+      "speaker_id": "work_s06_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The appointment book review wrapped early today."
+        },
+        {
+          "role": "assistant",
+          "content": "Any surprises in it?"
+        },
+        {
+          "role": "user",
+          "content": "None worth recording."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2025-08-10T16:00:00Z",
+      "speaker_id": "work_s06_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Long single procedures never trouble my forearm; one deep cleaning in a stretch is easy."
+        },
+        {
+          "role": "assistant",
+          "content": "Single sustained cases are fine."
+        },
+        {
+          "role": "user",
+          "content": "Fine and familiar."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2025-08-11T18:00:00Z",
+      "speaker_id": "work_s06_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Someone new shadowed me in the hygiene operatory this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Did that slow you down?"
+        },
+        {
+          "role": "user",
+          "content": "A little, but the questions were good ones."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2025-08-12T09:00:00Z",
+      "speaker_id": "work_s06_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I batched my replies about the patient turnover into one message before lunch."
+        },
+        {
+          "role": "assistant",
+          "content": "Cleaner than drip-feeding answers."
+        },
+        {
+          "role": "user",
+          "content": "Much cleaner."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2025-08-13T11:00:00Z",
+      "speaker_id": "work_s06_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "With ten-minute spacing between patients my forearm stays quiet all week; the spacing is when the tendon actually recovers."
+        },
+        {
+          "role": "assistant",
+          "content": "The gaps are doing the work."
+        },
+        {
+          "role": "user",
+          "content": "The gaps are the treatment plan, effectively."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2025-08-14T14:00:00Z",
+      "speaker_id": "work_s06_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Admin afternoons between patients give my hands all the recovery they need."
+        },
+        {
+          "role": "assistant",
+          "content": "Mixed days manage themselves."
+        },
+        {
+          "role": "user",
+          "content": "They always have."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2025-08-15T16:00:00Z",
+      "speaker_id": "work_s06_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I archived last cycle's notes on the appointment book and set up the new folder."
+        },
+        {
+          "role": "assistant",
+          "content": "A fresh start?"
+        },
+        {
+          "role": "user",
+          "content": "As fresh as these things get."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2025-08-16T18:00:00Z",
+      "speaker_id": "work_s06_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "My occupational health review recorded forearm tendinopathy and recommended micro-breaks between instrument-heavy appointments."
+        },
+        {
+          "role": "assistant",
+          "content": "A documented condition with a documented mitigation."
+        },
+        {
+          "role": "user",
+          "content": "Both on file."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2025-08-17T09:00:00Z",
+      "speaker_id": "work_s06_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A vendor call about the instrument tray ran long but ended well."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth the time?"
+        },
+        {
+          "role": "user",
+          "content": "This one, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2025-08-18T11:00:00Z",
+      "speaker_id": "work_s06_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I walked through the hygiene operatory checklist with the new starter."
+        },
+        {
+          "role": "assistant",
+          "content": "How did they do?"
+        },
+        {
+          "role": "user",
+          "content": "Careful and quick, a good sign."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2025-08-19T14:00:00Z",
+      "speaker_id": "work_s06_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Quiet afternoon; I cleared the backlog around the patient turnover."
+        },
+        {
+          "role": "assistant",
+          "content": "A rare day."
+        },
+        {
+          "role": "user",
+          "content": "I did not waste it."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2025-08-20T16:00:00Z",
+      "speaker_id": "work_s06_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I flagged a small inconsistency in the appointment book records and fixed it at the source."
+        },
+        {
+          "role": "assistant",
+          "content": "Root cause or symptom?"
+        },
+        {
+          "role": "user",
+          "content": "Root cause, for once."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2025-08-21T18:00:00Z",
+      "speaker_id": "work_s06_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The one compressed morning I covered, eight scaling patients back to back with no buffers, my forearm was burning by patient six and I had to book physio that evening."
+        },
+        {
+          "role": "assistant",
+          "content": "Back-to-back load triggered it within one morning."
+        },
+        {
+          "role": "user",
+          "content": "Within one morning, reliably."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2025-08-22T09:00:00Z",
+      "speaker_id": "work_s06_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I sketched next week's plan for the patient turnover before leaving."
+        },
+        {
+          "role": "assistant",
+          "content": "Ahead of schedule?"
+        },
+        {
+          "role": "user",
+          "content": "Ahead enough to sleep well."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2025-08-23T11:00:00Z",
+      "speaker_id": "work_s06_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Lunch walk, then a clean pass through the instrument tray updates."
+        },
+        {
+          "role": "assistant",
+          "content": "Does the walk help?"
+        },
+        {
+          "role": "user",
+          "content": "It resets the afternoon."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2025-08-24T14:00:00Z",
+      "speaker_id": "work_s06_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The compressed-schedule pilot removes all buffers to add two patients per day, and joining it is this month's decision."
+        },
+        {
+          "role": "assistant",
+          "content": "The pilot is exactly the trigger format."
+        },
+        {
+          "role": "user",
+          "content": "Exactly, and for a full month."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2025-08-25T16:00:00Z",
+      "speaker_id": "work_s06_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I compared two options for the appointment book tooling and noted a mild preference."
+        },
+        {
+          "role": "assistant",
+          "content": "Decision made?"
+        },
+        {
+          "role": "user",
+          "content": "Deferred until the trial ends."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2025-08-26T18:00:00Z",
+      "speaker_id": "work_s06_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I closed the week by updating the hygiene operatory handover notes."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual to hand over?"
+        },
+        {
+          "role": "user",
+          "content": "Blessedly little."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2025-08-27T09:00:00Z",
+      "speaker_id": "work_s06_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "If I join the compressed-schedule pilot next month, how will my first two weeks realistically go?"
+        }
+      ]
+    }
+  ],
+  "query": "If I join the compressed-schedule pilot next month, how will my first two weeks realistically go?",
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "work_s06_u03",
+      "fact": "With ten-minute spacing between patients my forearm stays quiet all week; the spacing is when the tendon actually recovers."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "work_s06_u03",
+      "fact": "The one compressed morning I covered, eight scaling patients back to back with no buffers, my forearm was burning by patient six and I had to book physio that evening."
+    }
+  },
+  "supporting_constraints": {
+    "E1": {
+      "session_id": 9,
+      "fact": "My occupational health review recorded forearm tendinopathy and recommended micro-breaks between instrument-heavy appointments."
+    },
+    "E2": {
+      "session_id": 17,
+      "fact": "The compressed-schedule pilot removes all buffers to add two patients per day, and joining it is this month's decision."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "work_s06_u03",
+        "context": "spaced schedule weeks",
+        "goal_or_prediction": "work instrument-heavy days sustainably",
+        "action": "kept ten-minute gaps between patients",
+        "outcome_or_affect": "quiet forearm all week"
+      }
+    },
+    "7": {
+      "role": "nearby_counterexample"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "supporting_constraint",
+      "fact_id": "E1"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "work_s06_u03",
+        "context": "compressed morning cover",
+        "goal_or_prediction": "treat eight patients back to back",
+        "action": "worked without any buffers",
+        "outcome_or_affect": "forearm burning by patient six"
+      }
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "supporting_constraint",
+      "fact_id": "E2"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "This user's tendon recovers in the ten-minute gaps between patients, and the pilot removes exactly those gaps for a month.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": [
+      "E1",
+      "E2"
+    ]
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "With ten-minute spacing between patients my forearm stays quiet all week; the spacing is when the tendon actually recovers"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "The one compressed morning I covered, eight scaling patients back to back with no buffers, my forearm was burning by patient six and I had to book physio that evening"
+    }
+  ],
+  "retrieval_cue": {
+    "cue_type": "predicted_reaction",
+    "why_it_naturally_retrieves_R": "A realistic work request forces a personalized decision without naming either episode or the relation between them."
+  },
+  "relation_specificity": {
+    "nearby_relation": "The user handles long single procedures and mixed admin days easily.",
+    "why_it_does_not_license_C": "Neither shows eight instrument-heavy patients back to back for weeks."
+  },
+  "coactivation_bridge": "A shows the operating condition; B shows the demand or failure that makes it decisive. This user's tendon recovers in the ten-minute gaps between patients, and the pilot removes exactly those gaps for a month. E1 and E2 calibrate the practical recommendation without opening a second route to the conclusion.",
+  "latent_C": {
+    "inference": "This user's first two weeks on the buffer-free compressed schedule would likely end in a forearm flare.",
+    "calibrated_language": "likely a flare within two weeks"
+  },
+  "answer_contract": {
+    "target_proposition": "This user's first two weeks on the buffer-free compressed schedule would likely end in a forearm flare.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "decision",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "work_u03",
+    "status": "review_candidate_only",
+    "anonymization": "External persona material was used only during authoring; no corpus, name, country, or demographic metadata is included."
+  },
+  "arm_gold": {
+    "full": {
+      "expected_mode": "infer_C",
+      "binary_decision": true
+    },
+    "a_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    },
+    "b_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    },
+    "link_broken": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    }
+  },
+  "single_evidence_replacements": {
+    "a_only": {
+      "replaced_session_id": 14,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "I filed the routine patient turnover paperwork and confirmed the owner list."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual in it?"
+        },
+        {
+          "role": "user",
+          "content": "A routine cycle, happily."
+        }
+      ]
+    },
+    "b_only": {
+      "replaced_session_id": 6,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "I did a standard pass over the appointment book records this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Any exceptions?"
+        },
+        {
+          "role": "user",
+          "content": "None worth a note."
+        }
+      ]
+    }
+  },
+  "link_broken": {
+    "replaced_session_id": 14,
+    "replacement_dialogue": [
+      {
+        "role": "user",
+        "content": "The pilot was amended: a mandatory ten-minute instrument-reprocessing gap now sits between every patient, buffers restored in all but name."
+      },
+      {
+        "role": "assistant",
+        "content": "The trigger is engineered out."
+      },
+      {
+        "role": "user",
+        "content": "Then the pilot is just a normal week with better marketing."
+      }
+    ]
+  }
+}

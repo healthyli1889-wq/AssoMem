@@ -5,11 +5,18 @@ from __future__ import annotations
 import copy
 import hashlib
 import re
+import sys
+from pathlib import Path
 from dataclasses import dataclass
 from typing import Any
 
 from dataset import PairedItem, solver_input
 from profile import DatasetProfile
+
+EXPERIMENTS_ROOT = Path(__file__).resolve().parents[1]
+if str(EXPERIMENTS_ROOT) not in sys.path:
+    sys.path.insert(0, str(EXPERIMENTS_ROOT))
+from assomem_vnext.schema import render_arms  # noqa: E402
 
 
 @dataclass(frozen=True)
@@ -158,3 +165,65 @@ def materialize_arms(
             _visible(base, query), _gold(base, "answer", full_contract),
         ),
     }
+
+
+def _vnext_gold(candidate: dict[str, Any], arm_name: str) -> dict[str, Any]:
+    """work-vnext-2.0 arm_gold carries only expected_mode + binary_decision;
+    required_elements/rationale existed only in the retired 1.x pilot data."""
+    arm_gold = candidate["arm_gold"][arm_name]
+    contract = candidate["answer_contract"]
+    allowed_evidence = {
+        "full": ["ev_A", "ev_B"],
+        "a_only": ["ev_A"],
+        "b_only": ["ev_B"],
+        "link_broken": ["ev_A"],
+        "distractor": ["ev_A", "ev_B"],
+        "absence": [],
+    }[arm_name]
+    evidence_contract = {
+        evidence_id: evidence
+        for evidence_id, evidence in candidate.get("evidence", {}).items()
+        if evidence_id in allowed_evidence
+    }
+    return {
+        "target_proposition": contract["target_proposition"],
+        "allowed_decisions": contract["allowed_decisions"],
+        "decision_semantics": contract.get("decision_semantics", {}),
+        "required_output_fields": contract["required_output_fields"],
+        "expected_mode": arm_gold["expected_mode"],
+        "binary_decision": arm_gold["binary_decision"],
+        "required_elements": list(arm_gold.get("required_elements", [])),
+        "rationale": arm_gold.get("rationale", ""),
+        "evidence_contract": evidence_contract,
+        "allowed_evidence_ids": allowed_evidence,
+    }
+
+
+def materialize_vnext_arms(
+    paired: PairedItem, profile: DatasetProfile
+) -> dict[str, EvaluationArm]:
+    """Materialize approved vNext conditions without reusing legacy controls."""
+    if profile.data_format != "work-vnext-1":
+        raise ValueError("materialize_vnext_arms requires a work-vnext-1 profile")
+    associative = paired.arms["associative"]
+    rendered = render_arms(associative)
+    arms: dict[str, EvaluationArm] = {}
+    for arm_name, rendered_arm in rendered.items():
+        arms[arm_name] = EvaluationArm(
+            arm_name,
+            {
+                "source": paired.filenames["associative"],
+                **rendered_arm["lineage"],
+            },
+            _visible({"context": rendered_arm["context"]}, rendered_arm["query"]),
+            _vnext_gold(associative, arm_name),
+        )
+    for arm_name in ("distractor", "absence"):
+        candidate = paired.arms[arm_name]
+        arms[arm_name] = EvaluationArm(
+            arm_name,
+            {"source": paired.filenames[arm_name], "transform": "shipped"},
+            _visible(candidate, candidate["query"]),
+            _vnext_gold(candidate, arm_name),
+        )
+    return arms

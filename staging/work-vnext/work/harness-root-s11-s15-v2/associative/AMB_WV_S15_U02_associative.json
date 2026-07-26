@@ -1,0 +1,638 @@
+{
+  "schema_version": "work-vnext-2.0",
+  "candidate_id": "AMB_WV_S15_U02_associative",
+  "pair_id": "AMB_WV_S15_U02",
+  "data_arm": "associative",
+  "domain": "work",
+  "user_id": "work_s15_u02",
+  "sub_scenario": {
+    "family": "night war-room leadership, dependency maps, and recovery debt",
+    "role": "emergency department flow lead",
+    "one_line": "emergency department flow lead: ask another lead to cover the first hour and chair the mapped morning review"
+  },
+  "query_type": "conditional_recommendation",
+  "polarity": "accept",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2027-09-04T11:00:00Z",
+      "speaker_id": "work_s15_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I spent the first hour tidying the patient-flow board and closing stale entries."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything still open?"
+        },
+        {
+          "role": "user",
+          "content": "Two items, both with owners."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2027-09-05T14:00:00Z",
+      "speaker_id": "work_s15_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The night rota review wrapped early today."
+        },
+        {
+          "role": "assistant",
+          "content": "Any surprises in it?"
+        },
+        {
+          "role": "user",
+          "content": "None worth recording."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2027-09-06T16:00:00Z",
+      "speaker_id": "work_s15_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I lead scheduled daytime bed huddles well when the flow board is current."
+        },
+        {
+          "role": "assistant",
+          "content": "What makes those huddles workable?"
+        },
+        {
+          "role": "user",
+          "content": "The board shows which discharge, imaging, and staffing steps release each bed."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2027-09-07T18:00:00Z",
+      "speaker_id": "work_s15_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Someone new shadowed me in the command room this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Did that slow you down?"
+        },
+        {
+          "role": "user",
+          "content": "A little, but the questions were good ones."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2027-09-08T09:00:00Z",
+      "speaker_id": "work_s15_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I batched my replies about the surge coverage into one message before lunch."
+        },
+        {
+          "role": "assistant",
+          "content": "Cleaner than drip-feeding answers."
+        },
+        {
+          "role": "user",
+          "content": "Much cleaner."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2027-09-09T11:00:00Z",
+      "speaker_id": "work_s15_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "During the winter influenza surge, I traced the bottleneck from discharge pharmacy to transport before opening overflow bays."
+        },
+        {
+          "role": "assistant",
+          "content": "What followed?"
+        },
+        {
+          "role": "user",
+          "content": "We released beds without sending patients into a blocked transport queue."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2027-09-10T14:00:00Z",
+      "speaker_id": "work_s15_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I can cover a brief evening handover after a regular day."
+        },
+        {
+          "role": "assistant",
+          "content": "Does that mean every late command call works?"
+        },
+        {
+          "role": "user",
+          "content": "No. A handover is not a live surge decision after a night shift."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2027-09-11T16:00:00Z",
+      "speaker_id": "work_s15_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I archived last cycle's notes on the night rota and set up the new folder."
+        },
+        {
+          "role": "assistant",
+          "content": "A fresh start?"
+        },
+        {
+          "role": "user",
+          "content": "As fresh as these things get."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2027-09-12T18:00:00Z",
+      "speaker_id": "work_s15_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "This week I have covered three overnight ambulance-diversion calls, and I protect the next morning for sleep."
+        },
+        {
+          "role": "assistant",
+          "content": "Why protect it?"
+        },
+        {
+          "role": "user",
+          "content": "My judgment in competing admission paths is slower until I recover."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2027-09-13T09:00:00Z",
+      "speaker_id": "work_s15_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A vendor call about the patient-flow board ran long but ended well."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth the time?"
+        },
+        {
+          "role": "user",
+          "content": "This one, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2027-09-14T11:00:00Z",
+      "speaker_id": "work_s15_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I walked through the command room checklist with the new starter."
+        },
+        {
+          "role": "assistant",
+          "content": "How did they do?"
+        },
+        {
+          "role": "user",
+          "content": "Careful and quick, a good sign."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2027-09-15T14:00:00Z",
+      "speaker_id": "work_s15_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Quiet afternoon; I cleared the backlog around the surge coverage."
+        },
+        {
+          "role": "assistant",
+          "content": "A rare day."
+        },
+        {
+          "role": "user",
+          "content": "I did not waste it."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2027-09-16T16:00:00Z",
+      "speaker_id": "work_s15_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I flagged a small inconsistency in the night rota records and fixed it at the source."
+        },
+        {
+          "role": "assistant",
+          "content": "Root cause or symptom?"
+        },
+        {
+          "role": "user",
+          "content": "Root cause, for once."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2027-09-17T18:00:00Z",
+      "speaker_id": "work_s15_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "On the March surge call, I opened observation beds before confirming radiology capacity, and patients waited in the wrong stream."
+        },
+        {
+          "role": "assistant",
+          "content": "Was there a board available?"
+        },
+        {
+          "role": "user",
+          "content": "No. I was working from shouted updates after a night on duty."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2027-09-18T09:00:00Z",
+      "speaker_id": "work_s15_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I sketched next week's plan for the surge coverage before leaving."
+        },
+        {
+          "role": "assistant",
+          "content": "Ahead of schedule?"
+        },
+        {
+          "role": "user",
+          "content": "Ahead enough to sleep well."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2027-09-19T11:00:00Z",
+      "speaker_id": "work_s15_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Lunch walk, then a clean pass through the patient-flow board updates."
+        },
+        {
+          "role": "assistant",
+          "content": "Does the walk help?"
+        },
+        {
+          "role": "user",
+          "content": "It resets the afternoon."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2027-09-20T14:00:00Z",
+      "speaker_id": "work_s15_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Migraine medication leaves me foggy if I use it after midnight; a rested morning command slot is the safer alternative."
+        },
+        {
+          "role": "assistant",
+          "content": "Can a stimulant solve that?"
+        },
+        {
+          "role": "user",
+          "content": "No. Bright screens and caffeine make the rebound worse."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2027-09-21T16:00:00Z",
+      "speaker_id": "work_s15_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I compared two options for the night rota tooling and noted a mild preference."
+        },
+        {
+          "role": "assistant",
+          "content": "Decision made?"
+        },
+        {
+          "role": "user",
+          "content": "Deferred until the trial ends."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2027-09-22T18:00:00Z",
+      "speaker_id": "work_s15_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I closed the week by updating the command room handover notes."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual to hand over?"
+        },
+        {
+          "role": "user",
+          "content": "Blessedly little."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2027-09-23T09:00:00Z",
+      "speaker_id": "work_s15_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The chief nurse wants me to chair tonight's 01:00 surge war room. What should I propose?"
+        }
+      ]
+    }
+  ],
+  "query": "The chief nurse wants me to chair tonight's 01:00 surge war room. What should I propose?",
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "work_s15_u02",
+      "fact": "During the winter influenza surge, I traced the bottleneck from discharge pharmacy to transport before opening overflow bays."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "work_s15_u02",
+      "fact": "On the March surge call, I opened observation beds before confirming radiology capacity, and patients waited in the wrong stream."
+    }
+  },
+  "supporting_constraints": {
+    "E1": {
+      "session_id": 9,
+      "fact": "This week I have covered three overnight ambulance-diversion calls, and I protect the next morning for sleep."
+    },
+    "E2": {
+      "session_id": 17,
+      "fact": "Migraine medication leaves me foggy if I use it after midnight; a rested morning command slot is the safer alternative."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "work_s15_u02",
+        "context": "winter influenza surge",
+        "goal_or_prediction": "release beds safely",
+        "action": "traced pharmacy, transport, and staffing dependencies",
+        "outcome_or_affect": "overflow opened in the right order"
+      }
+    },
+    "7": {
+      "role": "nearby_counterexample"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "supporting_constraint",
+      "fact_id": "E1"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "work_s15_u02",
+        "context": "March surge call",
+        "goal_or_prediction": "place patients during a spike",
+        "action": "opened beds before checking radiology capacity",
+        "outcome_or_affect": "patients waited in the wrong stream"
+      }
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "supporting_constraint",
+      "fact_id": "E2"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "The user has led a mapped surge successfully, but a night, board-free call sent patients into the wrong stream.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": [
+      "E1",
+      "E2"
+    ]
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "During the winter influenza surge, I traced the bottleneck from discharge pharmacy to transport before opening overflow bays"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "On the March surge call, I opened observation beds before confirming radiology capacity, and patients waited in the wrong stream"
+    }
+  ],
+  "retrieval_cue": {
+    "cue_type": "conditional_recommendation",
+    "why_it_naturally_retrieves_R": "A realistic work request forces a personalized decision without naming either episode or the relation between them."
+  },
+  "relation_specificity": {
+    "nearby_relation": "The user handles scheduled bed huddles and short regular-day handovers.",
+    "why_it_does_not_license_C": "Those do not test real-time bed allocation after overnight diversion work."
+  },
+  "coactivation_bridge": "A shows the operating condition; B shows the demand or failure that makes it decisive. The user has led a mapped surge successfully, but a night, board-free call sent patients into the wrong stream. E1 and E2 calibrate the practical recommendation without opening a second route to the conclusion.",
+  "latent_C": {
+    "inference": "Accept leadership only with a live patient-flow board and a recovered handoff into the decision role.",
+    "calibrated_language": "ask another lead to cover the first hour and chair the mapped morning review"
+  },
+  "answer_contract": {
+    "target_proposition": "Accept leadership only with a live patient-flow board and a recovered handoff into the decision role.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "work_u02",
+    "status": "review_candidate_only",
+    "anonymization": "External persona material was used only during authoring; no corpus, name, country, or demographic metadata is included."
+  },
+  "arm_gold": {
+    "full": {
+      "expected_mode": "infer_C",
+      "binary_decision": true
+    },
+    "a_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    },
+    "b_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    },
+    "link_broken": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    }
+  },
+  "single_evidence_replacements": {
+    "a_only": {
+      "replaced_session_id": 14,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "I filed the routine surge coverage paperwork and confirmed the owner list."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual in it?"
+        },
+        {
+          "role": "user",
+          "content": "A routine cycle, happily."
+        }
+      ]
+    },
+    "b_only": {
+      "replaced_session_id": 6,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "I did a standard pass over the night rota records this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Any exceptions?"
+        },
+        {
+          "role": "user",
+          "content": "None worth a note."
+        }
+      ]
+    }
+  },
+  "link_broken": {
+    "replaced_session_id": 14,
+    "replacement_dialogue": [
+      {
+        "role": "user",
+        "content": "If the bed-management analyst maintains the board and another lead takes the first hour, I can chair the recovered morning review."
+      },
+      {
+        "role": "assistant",
+        "content": "Would that be enough?"
+      },
+      {
+        "role": "user",
+        "content": "Yes. The map and recovery period address the two known failure points."
+      }
+    ]
+  }
+}

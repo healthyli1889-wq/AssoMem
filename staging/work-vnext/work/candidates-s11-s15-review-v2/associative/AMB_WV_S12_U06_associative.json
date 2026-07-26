@@ -1,0 +1,638 @@
+{
+  "schema_version": "work-vnext-2.0",
+  "candidate_id": "AMB_WV_S12_U06_associative",
+  "pair_id": "AMB_WV_S12_U06",
+  "data_arm": "associative",
+  "domain": "work",
+  "user_id": "work_s12_u06",
+  "sub_scenario": {
+    "family": "rehearsal load versus protected voice clarity",
+    "role": "aviation safety instructor",
+    "one_line": "aviation safety instructor: reject the late session; hand off coaching with the annotated script"
+  },
+  "query_type": "situational_fit",
+  "polarity": "reject",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2027-03-20T11:00:00Z",
+      "speaker_id": "work_s12_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I spent the first hour tidying the simulator script and closing stale entries."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything still open?"
+        },
+        {
+          "role": "user",
+          "content": "Two items, both with owners."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2027-03-21T14:00:00Z",
+      "speaker_id": "work_s12_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The flight roster review wrapped early today."
+        },
+        {
+          "role": "assistant",
+          "content": "Any surprises in it?"
+        },
+        {
+          "role": "user",
+          "content": "None worth recording."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2027-03-22T16:00:00Z",
+      "speaker_id": "work_s12_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I can conduct a ten-minute preflight briefing clearly."
+        },
+        {
+          "role": "assistant",
+          "content": "That is bounded and uses normal speaking volume."
+        },
+        {
+          "role": "user",
+          "content": "It is not simulator coaching for hours."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2027-03-23T18:00:00Z",
+      "speaker_id": "work_s12_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Someone new shadowed me in the training center this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Did that slow you down?"
+        },
+        {
+          "role": "user",
+          "content": "A little, but the questions were good ones."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2027-03-24T09:00:00Z",
+      "speaker_id": "work_s12_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I batched my replies about the checkride weeks into one message before lunch."
+        },
+        {
+          "role": "assistant",
+          "content": "Cleaner than drip-feeding answers."
+        },
+        {
+          "role": "user",
+          "content": "Much cleaner."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2027-03-25T11:00:00Z",
+      "speaker_id": "work_s12_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "On 11 February, I used an annotated script for one afternoon simulator rehearsal before a 08:15 checkride."
+        },
+        {
+          "role": "assistant",
+          "content": "How was your instruction at the checkride?"
+        },
+        {
+          "role": "user",
+          "content": "Direct and audible; I had not spent the evening coaching."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2027-03-26T14:00:00Z",
+      "speaker_id": "work_s12_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I prepare scenarios by annotating the simulator script with the pilot's weak points."
+        },
+        {
+          "role": "assistant",
+          "content": "Can the candidate study that before the run?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, it lets us reserve speech for decisions that need discussion."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2027-03-27T16:00:00Z",
+      "speaker_id": "work_s12_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I archived last cycle's notes on the flight roster and set up the new folder."
+        },
+        {
+          "role": "assistant",
+          "content": "A fresh start?"
+        },
+        {
+          "role": "user",
+          "content": "As fresh as these things get."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2027-03-28T18:00:00Z",
+      "speaker_id": "work_s12_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "You gave a conference talk last year without trouble."
+        },
+        {
+          "role": "assistant",
+          "content": "That was midmorning, with amplification, and no dawn checkride after it."
+        },
+        {
+          "role": "user",
+          "content": "The schedule made it easier."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2027-03-29T09:00:00Z",
+      "speaker_id": "work_s12_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A vendor call about the simulator script ran long but ended well."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth the time?"
+        },
+        {
+          "role": "user",
+          "content": "This one, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2027-03-30T11:00:00Z",
+      "speaker_id": "work_s12_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I walked through the training center checklist with the new starter."
+        },
+        {
+          "role": "assistant",
+          "content": "How did they do?"
+        },
+        {
+          "role": "user",
+          "content": "Careful and quick, a good sign."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2027-03-31T14:00:00Z",
+      "speaker_id": "work_s12_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Quiet afternoon; I cleared the backlog around the checkride weeks."
+        },
+        {
+          "role": "assistant",
+          "content": "A rare day."
+        },
+        {
+          "role": "user",
+          "content": "I did not waste it."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2027-04-01T16:00:00Z",
+      "speaker_id": "work_s12_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I flagged a small inconsistency in the flight roster records and fixed it at the source."
+        },
+        {
+          "role": "assistant",
+          "content": "Root cause or symptom?"
+        },
+        {
+          "role": "user",
+          "content": "Root cause, for once."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2027-04-02T18:00:00Z",
+      "speaker_id": "work_s12_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "On 5 May, a delayed simulator session kept me coaching emergency calls until 21:15 before a 07:30 checkride."
+        },
+        {
+          "role": "assistant",
+          "content": "What did you notice the next morning?"
+        },
+        {
+          "role": "user",
+          "content": "My instructions became hoarse during the engine-failure sequence, and a colleague took the radio prompts."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2027-04-03T09:00:00Z",
+      "speaker_id": "work_s12_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I sketched next week's plan for the checkride weeks before leaving."
+        },
+        {
+          "role": "assistant",
+          "content": "Ahead of schedule?"
+        },
+        {
+          "role": "user",
+          "content": "Ahead enough to sleep well."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2027-04-04T11:00:00Z",
+      "speaker_id": "work_s12_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Lunch walk, then a clean pass through the simulator script updates."
+        },
+        {
+          "role": "assistant",
+          "content": "Does the walk help?"
+        },
+        {
+          "role": "user",
+          "content": "It resets the afternoon."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2027-04-05T14:00:00Z",
+      "speaker_id": "work_s12_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "My sleep has been interrupted by tinnitus recently, so I recover less well from late headset work."
+        },
+        {
+          "role": "assistant",
+          "content": "Does that make written scenario preparation useful?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, it keeps the evening quiet."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2027-04-06T16:00:00Z",
+      "speaker_id": "work_s12_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I compared two options for the flight roster tooling and noted a mild preference."
+        },
+        {
+          "role": "assistant",
+          "content": "Decision made?"
+        },
+        {
+          "role": "user",
+          "content": "Deferred until the trial ends."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2027-04-07T18:00:00Z",
+      "speaker_id": "work_s12_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I closed the week by updating the training center handover notes."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual to hand over?"
+        },
+        {
+          "role": "user",
+          "content": "Blessedly little."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2027-04-08T09:00:00Z",
+      "speaker_id": "work_s12_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Is it sensible for me to cover the delayed Thursday simulator session before Friday's 07:30 checkride?"
+        }
+      ]
+    }
+  ],
+  "query": "Is it sensible for me to cover the delayed Thursday simulator session before Friday's 07:30 checkride?",
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "work_s12_u06",
+      "fact": "On 11 February, I used an annotated script for one afternoon simulator rehearsal before a 08:15 checkride."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "work_s12_u06",
+      "fact": "On 5 May, a delayed simulator session kept me coaching emergency calls until 21:15 before a 07:30 checkride."
+    }
+  },
+  "supporting_constraints": {
+    "E1": {
+      "session_id": 9,
+      "fact": "You gave a conference talk last year without trouble."
+    },
+    "E2": {
+      "session_id": 17,
+      "fact": "My sleep has been interrupted by tinnitus recently, so I recover less well from late headset work."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "work_s12_u06",
+        "context": "11 February simulator rehearsal",
+        "goal_or_prediction": "prepare candidate decisions",
+        "action": "annotated the script before one live run",
+        "outcome_or_affect": "gave clear checkride instruction"
+      }
+    },
+    "7": {
+      "role": "nearby_counterexample"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "supporting_constraint",
+      "fact_id": "E1"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "work_s12_u06",
+        "context": "5 May delayed simulator",
+        "goal_or_prediction": "coach emergency calls",
+        "action": "spoke over headsets until 21:15",
+        "outcome_or_affect": "colleague covered radio prompts"
+      }
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "supporting_constraint",
+      "fact_id": "E2"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "A single prepared rehearsal has supported the user's checkride instruction, while late sustained headset coaching before an early checkride has made their voice unreliable.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": [
+      "E1",
+      "E2"
+    ]
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "On 11 February, I used an annotated script for one afternoon simulator rehearsal before a 08:15 checkride"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "On 5 May, a delayed simulator session kept me coaching emergency calls until 21:15 before a 07:30 checkride"
+    }
+  ],
+  "retrieval_cue": {
+    "cue_type": "situational_fit",
+    "why_it_naturally_retrieves_R": "A realistic work request forces a personalized decision without naming either episode or the relation between them."
+  },
+  "relation_specificity": {
+    "nearby_relation": "The user handles short preflight briefings and amplified conference talks.",
+    "why_it_does_not_license_C": "Neither involves hours of headset coaching followed by a dawn practical examination."
+  },
+  "coactivation_bridge": "A shows the operating condition; B shows the demand or failure that makes it decisive. A single prepared rehearsal has supported the user's checkride instruction, while late sustained headset coaching before an early checkride has made their voice unreliable. E1 and E2 calibrate the practical recommendation without opening a second route to the conclusion.",
+  "latent_C": {
+    "inference": "No. Covering the delayed evening simulator session is a poor fit before the early checkride.",
+    "calibrated_language": "reject the late session; hand off coaching with the annotated script"
+  },
+  "answer_contract": {
+    "target_proposition": "No. Covering the delayed evening simulator session is a poor fit before the early checkride.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "decision",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "work_u06",
+    "status": "review_candidate_only",
+    "anonymization": "External persona material was used only during authoring; no corpus, name, country, or demographic metadata is included."
+  },
+  "arm_gold": {
+    "full": {
+      "expected_mode": "infer_C",
+      "binary_decision": true
+    },
+    "a_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    },
+    "b_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    },
+    "link_broken": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    }
+  },
+  "single_evidence_replacements": {
+    "a_only": {
+      "replaced_session_id": 14,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "I filed the routine checkride weeks paperwork and confirmed the owner list."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual in it?"
+        },
+        {
+          "role": "user",
+          "content": "A routine cycle, happily."
+        }
+      ]
+    },
+    "b_only": {
+      "replaced_session_id": 6,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "I did a standard pass over the flight roster records this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Any exceptions?"
+        },
+        {
+          "role": "user",
+          "content": "None worth a note."
+        }
+      ]
+    }
+  },
+  "link_broken": {
+    "replaced_session_id": 14,
+    "replacement_dialogue": [
+      {
+        "role": "user",
+        "content": "If Friday's checkride were scheduled after lunch instead, would you decide differently?"
+      },
+      {
+        "role": "assistant",
+        "content": "I would have a substantial recovery window."
+      },
+      {
+        "role": "user",
+        "content": "The early fixed demand is material here."
+      }
+    ]
+  }
+}

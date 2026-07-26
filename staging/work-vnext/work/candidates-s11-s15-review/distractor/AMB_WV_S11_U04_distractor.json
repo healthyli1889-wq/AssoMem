@@ -1,0 +1,579 @@
+{
+  "schema_version": "work-vnext-2.0",
+  "candidate_id": "AMB_WV_S11_U04_distractor",
+  "pair_id": "AMB_WV_S11_U04",
+  "data_arm": "distractor",
+  "domain": "work",
+  "user_id": "work_s11_u04",
+  "sub_scenario": {
+    "family": "offsite confirmation under recovery stack",
+    "role": "manufacturing planner",
+    "one_line": "manufacturing planner: decline the afternoon block unless it moves"
+  },
+  "query_type": "preference_generalization",
+  "polarity": "accept",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2032-04-23T11:00:00Z",
+      "speaker_id": "work_s11_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I spent the first hour tidying the changeover map and closing stale entries."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything still open?"
+        },
+        {
+          "role": "user",
+          "content": "Two items, both with owners."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2032-04-24T14:00:00Z",
+      "speaker_id": "work_s11_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The plant roster review wrapped early today."
+        },
+        {
+          "role": "assistant",
+          "content": "Any surprises in it?"
+        },
+        {
+          "role": "user",
+          "content": "None worth recording."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2032-04-25T16:00:00Z",
+      "speaker_id": "work_s11_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I can attend a normal late-afternoon toolbox talk. Case-note 73."
+        },
+        {
+          "role": "assistant",
+          "content": "Ordinary talks are fine. Case-note 74."
+        },
+        {
+          "role": "user",
+          "content": "They do not trail a control-room night. Case-note 75."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2032-04-26T18:00:00Z",
+      "speaker_id": "work_s11_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Someone new shadowed me in the planning bay this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Did that slow you down?"
+        },
+        {
+          "role": "user",
+          "content": "A little, but the questions were good ones."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2032-04-27T09:00:00Z",
+      "speaker_id": "work_s11_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I batched my replies about the shutdown cycles into one message before lunch."
+        },
+        {
+          "role": "assistant",
+          "content": "Cleaner than drip-feeding answers."
+        },
+        {
+          "role": "user",
+          "content": "Much cleaner."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2032-04-28T11:00:00Z",
+      "speaker_id": "work_s11_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "After the unplanned furnace monitoring rotation, I completed the changeover map at 11:05. Case-note 79."
+        },
+        {
+          "role": "assistant",
+          "content": "The night was operationally intense. Case-note 80."
+        },
+        {
+          "role": "user",
+          "content": "I needed the afternoon to reset. Case-note 81."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2032-04-29T14:00:00Z",
+      "speaker_id": "work_s11_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "One short team check-in after lunch is harmless. Case-note 76."
+        },
+        {
+          "role": "assistant",
+          "content": "Short duration helps. Case-note 77."
+        },
+        {
+          "role": "user",
+          "content": "The offsite is not a check-in. Case-note 78."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2032-04-30T16:00:00Z",
+      "speaker_id": "work_s11_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I archived last cycle's notes on the plant roster and set up the new folder."
+        },
+        {
+          "role": "assistant",
+          "content": "A fresh start?"
+        },
+        {
+          "role": "user",
+          "content": "As fresh as these things get."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2032-05-01T18:00:00Z",
+      "speaker_id": "work_s11_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Repeated alarm drills have left me sleeping lightly. Case-note 82."
+        },
+        {
+          "role": "assistant",
+          "content": "The sleep loss is cumulative. Case-note 83."
+        },
+        {
+          "role": "user",
+          "content": "It weakens long conversations. Case-note 84."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2032-05-02T09:00:00Z",
+      "speaker_id": "work_s11_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A vendor call about the changeover map ran long but ended well."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth the time?"
+        },
+        {
+          "role": "user",
+          "content": "This one, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2032-05-03T11:00:00Z",
+      "speaker_id": "work_s11_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I walked through the planning bay checklist with the new starter."
+        },
+        {
+          "role": "assistant",
+          "content": "How did they do?"
+        },
+        {
+          "role": "user",
+          "content": "Careful and quick, a good sign."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2032-05-04T14:00:00Z",
+      "speaker_id": "work_s11_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Quiet afternoon; I cleared the backlog around the shutdown cycles."
+        },
+        {
+          "role": "assistant",
+          "content": "A rare day."
+        },
+        {
+          "role": "user",
+          "content": "I did not waste it."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2032-05-05T16:00:00Z",
+      "speaker_id": "work_s11_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I flagged a small inconsistency in the plant roster records and fixed it at the source."
+        },
+        {
+          "role": "assistant",
+          "content": "Root cause or symptom?"
+        },
+        {
+          "role": "user",
+          "content": "Root cause, for once."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2032-05-06T18:00:00Z",
+      "speaker_id": "work_s11_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "My Thursday 17:30 rehabilitation session for the knee is locked. Case-note 85."
+        },
+        {
+          "role": "assistant",
+          "content": "The clinic cannot move it. Case-note 86."
+        },
+        {
+          "role": "user",
+          "content": "It is part of my return-to-work plan. Case-note 87."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2032-05-07T09:00:00Z",
+      "speaker_id": "work_s11_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I sketched next week's plan for the shutdown cycles before leaving."
+        },
+        {
+          "role": "assistant",
+          "content": "Ahead of schedule?"
+        },
+        {
+          "role": "user",
+          "content": "Ahead enough to sleep well."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2032-05-08T11:00:00Z",
+      "speaker_id": "work_s11_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Lunch walk, then a clean pass through the changeover map updates."
+        },
+        {
+          "role": "assistant",
+          "content": "Does the walk help?"
+        },
+        {
+          "role": "user",
+          "content": "It resets the afternoon."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2032-05-09T14:00:00Z",
+      "speaker_id": "work_s11_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I avoid stimulants after the cardiology warning. Case-note 88."
+        },
+        {
+          "role": "assistant",
+          "content": "That limits compensation. Case-note 89."
+        },
+        {
+          "role": "user",
+          "content": "I use fruit and water at break. Case-note 90."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2032-05-10T16:00:00Z",
+      "speaker_id": "work_s11_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The plant manager says the retreat identifies future shift leaders. Case-note 91."
+        },
+        {
+          "role": "assistant",
+          "content": "That is a status appeal. Case-note 92."
+        },
+        {
+          "role": "user",
+          "content": "It does not alter the recovery facts. Case-note 93."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2032-05-11T18:00:00Z",
+      "speaker_id": "work_s11_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I closed the week by updating the planning bay handover notes."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual to hand over?"
+        },
+        {
+          "role": "user",
+          "content": "Blessedly little."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2032-05-12T09:00:00Z",
+      "speaker_id": "work_s11_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The plant asks me to confirm an afternoon offsite after a furnace-monitoring night. How should I answer?"
+        }
+      ]
+    }
+  ],
+  "query": "The plant asks me to confirm an afternoon offsite after a furnace-monitoring night. How should I answer?",
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "work_s11_u04",
+      "fact": "After the unplanned furnace monitoring rotation, I completed the changeover map at 11:05. Case-note 79."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "work_s11_u04",
+      "fact": "My Thursday 17:30 rehabilitation session for the knee is locked. Case-note 85."
+    }
+  },
+  "supporting_constraints": {
+    "E1": {
+      "session_id": 9,
+      "fact": "Repeated alarm drills have left me sleeping lightly. Case-note 82."
+    },
+    "E2": {
+      "session_id": 17,
+      "fact": "I avoid stimulants after the cardiology warning. Case-note 88."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "work_s11_u04",
+        "context": "furnace monitoring night",
+        "goal_or_prediction": "complete a changeover map",
+        "action": "worked overnight before planning",
+        "outcome_or_affect": "reset time required"
+      }
+    },
+    "7": {
+      "role": "nearby_counterexample"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "supporting_constraint",
+      "fact_id": "E1"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "work_s11_u04",
+        "context": "knee rehabilitation",
+        "goal_or_prediction": "continue return-to-work treatment",
+        "action": "kept the fixed Thursday session",
+        "outcome_or_affect": "care plan uninterrupted"
+      }
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "supporting_constraint",
+      "fact_id": "E2"
+    },
+    "18": {
+      "role": "distractor",
+      "distractor_id": "dist_1",
+      "why_distractor": "Leadership prospects do not repair the practical collision."
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "The night rotation, light sleep, fixed rehabilitation, and restricted stimulant use make the requested block a poor fit.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": [
+      "E1",
+      "E2"
+    ]
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "After the unplanned furnace monitoring rotation, I completed the changeover map at 11:05"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "My Thursday 17:30 rehabilitation session for the knee is locked"
+    }
+  ],
+  "retrieval_cue": {
+    "cue_type": "preference_generalization",
+    "why_it_naturally_retrieves_R": "A realistic work request forces a personalized decision without naming either episode or the relation between them."
+  },
+  "relation_specificity": {
+    "nearby_relation": "The user attends ordinary toolbox talks and brief check-ins.",
+    "why_it_does_not_license_C": "Those do not pair night recovery with treatment."
+  },
+  "coactivation_bridge": "A shows the operating condition; B shows the demand or failure that makes it decisive. The night rotation, light sleep, fixed rehabilitation, and restricted stimulant use make the requested block a poor fit. E1 and E2 calibrate the practical recommendation without opening a second route to the conclusion.",
+  "latent_C": {
+    "inference": "Do not accept the offsite as scheduled.",
+    "calibrated_language": "decline the afternoon block unless it moves"
+  },
+  "answer_contract": {
+    "target_proposition": "Do not accept the offsite as scheduled.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "decision",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "work_u04",
+    "status": "review_candidate_only",
+    "anonymization": "External persona material was used only during authoring; no corpus, name, country, or demographic metadata is included."
+  },
+  "arm_gold": {
+    "distractor": {
+      "expected_mode": "infer_C",
+      "binary_decision": true
+    }
+  },
+  "distractor_note": {
+    "replaced_session_id": 18,
+    "why_distractor": "Leadership prospects do not repair the practical collision."
+  }
+}

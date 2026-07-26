@@ -1,0 +1,638 @@
+{
+  "schema_version": "work-vnext-2.0",
+  "candidate_id": "AMB_WV_S15_U08_associative",
+  "pair_id": "AMB_WV_S15_U08",
+  "data_arm": "associative",
+  "domain": "work",
+  "user_id": "work_s15_u08",
+  "sub_scenario": {
+    "family": "night war-room leadership, dependency maps, and recovery debt",
+    "role": "data center manager",
+    "one_line": "data center manager: provide the transfer sequence now and lead the 13:00 review"
+  },
+  "query_type": "conditional_recommendation",
+  "polarity": "conditional",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2027-09-22T11:00:00Z",
+      "speaker_id": "work_s15_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I spent the first hour tidying the power-chain diagram and closing stale entries."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything still open?"
+        },
+        {
+          "role": "user",
+          "content": "Two items, both with owners."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2027-09-23T14:00:00Z",
+      "speaker_id": "work_s15_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The facility rota review wrapped early today."
+        },
+        {
+          "role": "assistant",
+          "content": "Any surprises in it?"
+        },
+        {
+          "role": "user",
+          "content": "None worth recording."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2027-09-24T16:00:00Z",
+      "speaker_id": "work_s15_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I lead scheduled daytime resilience tests well when the power-chain diagram is current."
+        },
+        {
+          "role": "assistant",
+          "content": "What does that diagram provide?"
+        },
+        {
+          "role": "user",
+          "content": "It shows the generator, UPS, cooling, and load-transfer order."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2027-09-25T18:00:00Z",
+      "speaker_id": "work_s15_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Someone new shadowed me in the incident suite this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Did that slow you down?"
+        },
+        {
+          "role": "user",
+          "content": "A little, but the questions were good ones."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2027-09-26T09:00:00Z",
+      "speaker_id": "work_s15_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I batched my replies about the cooling alarms into one message before lunch."
+        },
+        {
+          "role": "assistant",
+          "content": "Cleaner than drip-feeding answers."
+        },
+        {
+          "role": "user",
+          "content": "Much cleaner."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2027-09-27T11:00:00Z",
+      "speaker_id": "work_s15_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "During a chiller fault, I traced cooling dependency through the UPS room before moving load to the backup plant."
+        },
+        {
+          "role": "assistant",
+          "content": "What did that avoid?"
+        },
+        {
+          "role": "user",
+          "content": "We kept the battery room from overheating during the transfer."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2027-09-28T14:00:00Z",
+      "speaker_id": "work_s15_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I can read a normal evening facilities report without trouble."
+        },
+        {
+          "role": "assistant",
+          "content": "Is that equivalent to an overnight thermal event?"
+        },
+        {
+          "role": "user",
+          "content": "No. Reading a report is not choosing a live transfer sequence."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2027-09-29T16:00:00Z",
+      "speaker_id": "work_s15_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I archived last cycle's notes on the facility rota and set up the new folder."
+        },
+        {
+          "role": "assistant",
+          "content": "A fresh start?"
+        },
+        {
+          "role": "user",
+          "content": "As fresh as these things get."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2027-09-30T18:00:00Z",
+      "speaker_id": "work_s15_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The last two cooling alarms woke me at 01:00 and 03:30; I am scheduled for protected recovery until noon."
+        },
+        {
+          "role": "assistant",
+          "content": "Can you simply start later?"
+        },
+        {
+          "role": "user",
+          "content": "Not if the room begins at 02:00 and needs a decision immediately."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2027-10-01T09:00:00Z",
+      "speaker_id": "work_s15_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A vendor call about the power-chain diagram ran long but ended well."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth the time?"
+        },
+        {
+          "role": "user",
+          "content": "This one, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2027-10-02T11:00:00Z",
+      "speaker_id": "work_s15_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I walked through the incident suite checklist with the new starter."
+        },
+        {
+          "role": "assistant",
+          "content": "How did they do?"
+        },
+        {
+          "role": "user",
+          "content": "Careful and quick, a good sign."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2027-10-03T14:00:00Z",
+      "speaker_id": "work_s15_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Quiet afternoon; I cleared the backlog around the cooling alarms."
+        },
+        {
+          "role": "assistant",
+          "content": "A rare day."
+        },
+        {
+          "role": "user",
+          "content": "I did not waste it."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2027-10-04T16:00:00Z",
+      "speaker_id": "work_s15_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I flagged a small inconsistency in the facility rota records and fixed it at the source."
+        },
+        {
+          "role": "assistant",
+          "content": "Root cause or symptom?"
+        },
+        {
+          "role": "user",
+          "content": "Root cause, for once."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2027-10-05T18:00:00Z",
+      "speaker_id": "work_s15_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "On a previous night without the diagram, I shifted load before confirming the backup chiller and tripped a rack row."
+        },
+        {
+          "role": "assistant",
+          "content": "What was the key error?"
+        },
+        {
+          "role": "user",
+          "content": "I acted on temperature alarms without seeing the full power-and-cooling chain."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2027-10-06T09:00:00Z",
+      "speaker_id": "work_s15_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I sketched next week's plan for the cooling alarms before leaving."
+        },
+        {
+          "role": "assistant",
+          "content": "Ahead of schedule?"
+        },
+        {
+          "role": "user",
+          "content": "Ahead enough to sleep well."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2027-10-07T11:00:00Z",
+      "speaker_id": "work_s15_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Lunch walk, then a clean pass through the power-chain diagram updates."
+        },
+        {
+          "role": "assistant",
+          "content": "Does the walk help?"
+        },
+        {
+          "role": "user",
+          "content": "It resets the afternoon."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2027-10-08T14:00:00Z",
+      "speaker_id": "work_s15_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "My clinician has limited overnight screen work during vestibular treatment; an annotated diagram for the on-call manager is the alternative."
+        },
+        {
+          "role": "assistant",
+          "content": "Can you contribute without chairing?"
+        },
+        {
+          "role": "user",
+          "content": "Yes. I can leave the transfer sequence and join the recovered afternoon review."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2027-10-09T16:00:00Z",
+      "speaker_id": "work_s15_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I compared two options for the facility rota tooling and noted a mild preference."
+        },
+        {
+          "role": "assistant",
+          "content": "Decision made?"
+        },
+        {
+          "role": "user",
+          "content": "Deferred until the trial ends."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2027-10-10T18:00:00Z",
+      "speaker_id": "work_s15_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I closed the week by updating the incident suite handover notes."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual to hand over?"
+        },
+        {
+          "role": "user",
+          "content": "Blessedly little."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2027-10-11T09:00:00Z",
+      "speaker_id": "work_s15_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "How should I answer the request to lead a 02:00 cooling-failure war room?"
+        }
+      ]
+    }
+  ],
+  "query": "How should I answer the request to lead a 02:00 cooling-failure war room?",
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "work_s15_u08",
+      "fact": "During a chiller fault, I traced cooling dependency through the UPS room before moving load to the backup plant."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "work_s15_u08",
+      "fact": "On a previous night without the diagram, I shifted load before confirming the backup chiller and tripped a rack row."
+    }
+  },
+  "supporting_constraints": {
+    "E1": {
+      "session_id": 9,
+      "fact": "The last two cooling alarms woke me at 01:00 and 03:30; I am scheduled for protected recovery until noon."
+    },
+    "E2": {
+      "session_id": 17,
+      "fact": "My clinician has limited overnight screen work during vestibular treatment; an annotated diagram for the on-call manager is the alternative."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "work_s15_u08",
+        "context": "chiller fault",
+        "goal_or_prediction": "transfer load safely",
+        "action": "traced cooling through the UPS room",
+        "outcome_or_affect": "battery room protected"
+      }
+    },
+    "7": {
+      "role": "nearby_counterexample"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "supporting_constraint",
+      "fact_id": "E1"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "work_s15_u08",
+        "context": "diagram-free night transfer",
+        "goal_or_prediction": "respond to rising temperature",
+        "action": "shifted load before backup chiller confirmation",
+        "outcome_or_affect": "rack row tripped"
+      }
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "supporting_constraint",
+      "fact_id": "E2"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "The successful chiller response followed a diagram; a diagram-free night transfer tripped a rack row, while recovery and vestibular treatment limit overnight command.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": [
+      "E1",
+      "E2"
+    ]
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "During a chiller fault, I traced cooling dependency through the UPS room before moving load to the backup plant"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "On a previous night without the diagram, I shifted load before confirming the backup chiller and tripped a rack row"
+    }
+  ],
+  "retrieval_cue": {
+    "cue_type": "conditional_recommendation",
+    "why_it_naturally_retrieves_R": "A realistic work request forces a personalized decision without naming either episode or the relation between them."
+  },
+  "relation_specificity": {
+    "nearby_relation": "The user can lead daytime tests and read ordinary evening reports.",
+    "why_it_does_not_license_C": "Neither is a real-time thermal transfer after interrupted sleep."
+  },
+  "coactivation_bridge": "A shows the operating condition; B shows the demand or failure that makes it decisive. The successful chiller response followed a diagram; a diagram-free night transfer tripped a rack row, while recovery and vestibular treatment limit overnight command. E1 and E2 calibrate the practical recommendation without opening a second route to the conclusion.",
+  "latent_C": {
+    "inference": "Accept only with an on-call manager using a current power-chain diagram overnight and a recovered daytime leadership review.",
+    "calibrated_language": "provide the transfer sequence now and lead the 13:00 review"
+  },
+  "answer_contract": {
+    "target_proposition": "Accept only with an on-call manager using a current power-chain diagram overnight and a recovered daytime leadership review.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "work_u08",
+    "status": "review_candidate_only",
+    "anonymization": "External persona material was used only during authoring; no corpus, name, country, or demographic metadata is included."
+  },
+  "arm_gold": {
+    "full": {
+      "expected_mode": "infer_C",
+      "binary_decision": true
+    },
+    "a_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    },
+    "b_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    },
+    "link_broken": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    }
+  },
+  "single_evidence_replacements": {
+    "a_only": {
+      "replaced_session_id": 14,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "I filed the routine cooling alarms paperwork and confirmed the owner list."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual in it?"
+        },
+        {
+          "role": "user",
+          "content": "A routine cycle, happily."
+        }
+      ]
+    },
+    "b_only": {
+      "replaced_session_id": 6,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "I did a standard pass over the facility rota records this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Any exceptions?"
+        },
+        {
+          "role": "user",
+          "content": "None worth a note."
+        }
+      ]
+    }
+  },
+  "link_broken": {
+    "replaced_session_id": 14,
+    "replacement_dialogue": [
+      {
+        "role": "user",
+        "content": "If the on-call manager has the annotated diagram and the decision review moves to 13:00, I can lead the follow-up after recovery."
+      },
+      {
+        "role": "assistant",
+        "content": "What has to be true?"
+      },
+      {
+        "role": "user",
+        "content": "The diagram must be current and the overnight screen restriction must be respected."
+      }
+    ]
+  }
+}

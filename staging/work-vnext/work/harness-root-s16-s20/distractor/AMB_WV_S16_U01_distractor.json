@@ -1,0 +1,579 @@
+{
+  "schema_version": "work-vnext-2.0",
+  "candidate_id": "AMB_WV_S16_U01_distractor",
+  "pair_id": "AMB_WV_S16_U01",
+  "data_arm": "distractor",
+  "domain": "work",
+  "user_id": "work_s16_u01",
+  "sub_scenario": {
+    "family": "rapid live troubleshooting leadership versus careful asynchronous incident analysis",
+    "role": "digital forensics shift lead",
+    "one_line": "digital forensics shift lead: lead when pre-brief evidence is ready"
+  },
+  "query_type": "preference_generalization",
+  "polarity": "accept",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2028-01-08T11:00:00Z",
+      "speaker_id": "work_s16_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I spent the first hour tidying the evidence timeline and closing stale entries."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything still open?"
+        },
+        {
+          "role": "user",
+          "content": "Two items, both with owners."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2028-01-09T14:00:00Z",
+      "speaker_id": "work_s16_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The custody queue review wrapped early today."
+        },
+        {
+          "role": "assistant",
+          "content": "Any surprises in it?"
+        },
+        {
+          "role": "user",
+          "content": "None worth recording."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2028-01-10T16:00:00Z",
+      "speaker_id": "work_s16_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I can give a concise update on a settled intrusion finding."
+        },
+        {
+          "role": "assistant",
+          "content": "Are ordinary updates hard?"
+        },
+        {
+          "role": "user",
+          "content": "No, once the evidence is already linked."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2028-01-11T18:00:00Z",
+      "speaker_id": "work_s16_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Someone new shadowed me in the response alcove this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Did that slow you down?"
+        },
+        {
+          "role": "user",
+          "content": "A little, but the questions were good ones."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2028-01-12T09:00:00Z",
+      "speaker_id": "work_s16_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I batched my replies about the breach rotations into one message before lunch."
+        },
+        {
+          "role": "assistant",
+          "content": "Cleaner than drip-feeding answers."
+        },
+        {
+          "role": "user",
+          "content": "Much cleaner."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2028-01-13T11:00:00Z",
+      "speaker_id": "work_s16_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "During the payroll-access inquiry, I compared endpoint logs and badge records asynchronously, then sent a timeline that led the team to the compromised account."
+        },
+        {
+          "role": "assistant",
+          "content": "What made that useful?"
+        },
+        {
+          "role": "user",
+          "content": "I could test each connection before naming it."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2028-01-14T14:00:00Z",
+      "speaker_id": "work_s16_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I can answer a colleague's question after reviewing a finished investigation packet."
+        },
+        {
+          "role": "assistant",
+          "content": "Does time to review matter?"
+        },
+        {
+          "role": "user",
+          "content": "It lets me distinguish what is known from what is merely reported."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2028-01-15T16:00:00Z",
+      "speaker_id": "work_s16_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I archived last cycle's notes on the custody queue and set up the new folder."
+        },
+        {
+          "role": "assistant",
+          "content": "A fresh start?"
+        },
+        {
+          "role": "user",
+          "content": "As fresh as these things get."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2028-01-16T18:00:00Z",
+      "speaker_id": "work_s16_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The executive response call opens at 08:15 and the board expects a containment recommendation before the first customer notice."
+        },
+        {
+          "role": "assistant",
+          "content": "Can the choice wait?"
+        },
+        {
+          "role": "user",
+          "content": "No, the notice is drafted immediately afterward."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2028-01-17T09:00:00Z",
+      "speaker_id": "work_s16_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A vendor call about the evidence timeline ran long but ended well."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth the time?"
+        },
+        {
+          "role": "user",
+          "content": "This one, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2028-01-18T11:00:00Z",
+      "speaker_id": "work_s16_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I walked through the response alcove checklist with the new starter."
+        },
+        {
+          "role": "assistant",
+          "content": "How did they do?"
+        },
+        {
+          "role": "user",
+          "content": "Careful and quick, a good sign."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2028-01-19T14:00:00Z",
+      "speaker_id": "work_s16_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Quiet afternoon; I cleared the backlog around the breach rotations."
+        },
+        {
+          "role": "assistant",
+          "content": "A rare day."
+        },
+        {
+          "role": "user",
+          "content": "I did not waste it."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2028-01-20T16:00:00Z",
+      "speaker_id": "work_s16_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I flagged a small inconsistency in the custody queue records and fixed it at the source."
+        },
+        {
+          "role": "assistant",
+          "content": "Root cause or symptom?"
+        },
+        {
+          "role": "user",
+          "content": "Root cause, for once."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2028-01-21T18:00:00Z",
+      "speaker_id": "work_s16_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "On a live ransomware bridge, I called a contractor laptop the entry point from one alert stream; later disk records showed it was a relay, and isolation delayed the real containment."
+        },
+        {
+          "role": "assistant",
+          "content": "What failed?"
+        },
+        {
+          "role": "user",
+          "content": "I treated the first plausible link as the full path."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2028-01-22T09:00:00Z",
+      "speaker_id": "work_s16_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I sketched next week's plan for the breach rotations before leaving."
+        },
+        {
+          "role": "assistant",
+          "content": "Ahead of schedule?"
+        },
+        {
+          "role": "user",
+          "content": "Ahead enough to sleep well."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2028-01-23T11:00:00Z",
+      "speaker_id": "work_s16_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Lunch walk, then a clean pass through the evidence timeline updates."
+        },
+        {
+          "role": "assistant",
+          "content": "Does the walk help?"
+        },
+        {
+          "role": "user",
+          "content": "It resets the afternoon."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2028-01-24T14:00:00Z",
+      "speaker_id": "work_s16_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The incident recorder can deliver a correlated host-and-badge timeline at 07:45, thirty minutes before the call."
+        },
+        {
+          "role": "assistant",
+          "content": "Would that change your approach?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, I could arrive with the competing explanations checked."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2028-01-25T16:00:00Z",
+      "speaker_id": "work_s16_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The chief counsel says leading the bridge would be a visible stretch assignment."
+        },
+        {
+          "role": "assistant",
+          "content": "Does visibility establish the cause?"
+        },
+        {
+          "role": "user",
+          "content": "No, it only raises the stakes."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2028-01-26T18:00:00Z",
+      "speaker_id": "work_s16_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I closed the week by updating the response alcove handover notes."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual to hand over?"
+        },
+        {
+          "role": "user",
+          "content": "Blessedly little."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2028-01-27T09:00:00Z",
+      "speaker_id": "work_s16_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The security director is assigning tomorrow's first-response lead. How should I put myself forward?"
+        }
+      ]
+    }
+  ],
+  "query": "The security director is assigning tomorrow's first-response lead. How should I put myself forward?",
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "work_s16_u01",
+      "fact": "During the payroll-access inquiry, I compared endpoint logs and badge records asynchronously, then sent a timeline that led the team to the compromised account."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "work_s16_u01",
+      "fact": "On a live ransomware bridge, I called a contractor laptop the entry point from one alert stream; later disk records showed it was a relay, and isolation delayed the real containment."
+    }
+  },
+  "supporting_constraints": {
+    "E1": {
+      "session_id": 9,
+      "fact": "The executive response call opens at 08:15 and the board expects a containment recommendation before the first customer notice."
+    },
+    "E2": {
+      "session_id": 17,
+      "fact": "The incident recorder can deliver a correlated host-and-badge timeline at 07:45, thirty minutes before the call."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "work_s16_u01",
+        "context": "payroll-access inquiry",
+        "goal_or_prediction": "identify the compromised account",
+        "action": "compared endpoint and badge records before concluding",
+        "outcome_or_affect": "confirmed account identified"
+      }
+    },
+    "7": {
+      "role": "nearby_counterexample"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "supporting_constraint",
+      "fact_id": "E1"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "work_s16_u01",
+        "context": "live ransomware bridge",
+        "goal_or_prediction": "name the entry point",
+        "action": "relied on one alert stream before records were linked",
+        "outcome_or_affect": "real containment delayed"
+      }
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "supporting_constraint",
+      "fact_id": "E2"
+    },
+    "18": {
+      "role": "distractor",
+      "distractor_id": "dist_1",
+      "why_distractor": "The stretch-assignment appeal does not supply the missing evidence connection."
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "The user makes strong causal calls after independently connecting records, while an unprepared live bridge previously encouraged a premature conclusion.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": [
+      "E1",
+      "E2"
+    ]
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "During the payroll-access inquiry, I compared endpoint logs and badge records asynchronously, then sent a timeline that led the team to the compromised account"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "On a live ransomware bridge, I called a contractor laptop the entry point from one alert stream; later disk records showed it was a relay, and isolation delayed the real containment"
+    }
+  ],
+  "retrieval_cue": {
+    "cue_type": "preference_generalization",
+    "why_it_naturally_retrieves_R": "A realistic work request forces a personalized decision without naming either episode or the relation between them."
+  },
+  "relation_specificity": {
+    "nearby_relation": "The user can communicate settled findings and answer questions from completed investigations.",
+    "why_it_does_not_license_C": "Those tasks do not require selecting a containment path from incomplete signals in real time."
+  },
+  "coactivation_bridge": "A shows the operating condition; B shows the demand or failure that makes it decisive. The user makes strong causal calls after independently connecting records, while an unprepared live bridge previously encouraged a premature conclusion. E1 and E2 calibrate the practical recommendation without opening a second route to the conclusion.",
+  "latent_C": {
+    "inference": "Volunteer to lead if the correlated timeline is available before the call; otherwise offer the asynchronous evidence lead role.",
+    "calibrated_language": "lead when pre-brief evidence is ready"
+  },
+  "answer_contract": {
+    "target_proposition": "Volunteer to lead if the correlated timeline is available before the call; otherwise offer the asynchronous evidence lead role.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "decision",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "work_u01",
+    "status": "review_candidate_only",
+    "anonymization": "External persona material was used only during authoring; no corpus, name, country, or demographic metadata is included."
+  },
+  "arm_gold": {
+    "distractor": {
+      "expected_mode": "infer_C",
+      "binary_decision": true
+    }
+  },
+  "distractor_note": {
+    "replaced_session_id": 18,
+    "why_distractor": "The stretch-assignment appeal does not supply the missing evidence connection."
+  }
+}

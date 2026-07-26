@@ -7,3 +7,11 @@ rubbish/
 .env.*
 !.env.example
 experiments/query_validity/results/
+
+# Local harness secrets and run artifacts (never commit API keys / scored logs)
+**/my_config.sh
+experiments/assomem_harness/*config*.sh
+!experiments/assomem_harness/config.example.sh
+!experiments/assomem_harness/config.work-vnext*.example.sh
+experiments/assomem_harness/runs-vnext/
+experiments/assomem_harness/runs/

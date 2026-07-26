@@ -51,3 +51,35 @@ def build_table_b(rows: list[dict[str, Any]]) -> str:
             f"{_cell(row['abc'])} | deferred (no source-swap/T6 profile capability) |"
         )
     return "\n".join(lines) + "\n"
+
+
+def build_vnext_table_a(rows: list[dict[str, Any]], *, seed: int, draws: int = 10_000) -> str:
+    lines = [
+        "| Model | FULL binary accuracy [95% CI] | A-only | B-only | link-broken | Δ_A-only | Δ_B-only | Δ_link-broken |",
+        "|---|---:|---:|---:|---:|---:|---:|---:|",
+    ]
+    for index, row in enumerate(rows):
+        lines.append(
+            f"| {row['solver']} | {_cell(row['full'])} | {_cell(row['a_only'])} | "
+            f"{_cell(row['b_only'])} | {_cell(row['link_broken'])} | "
+            f"{_delta(row['full'], row['a_only'], seed + index, draws)} | "
+            f"{_delta(row['full'], row['b_only'], seed + index + 100, draws)} | "
+            f"{_delta(row['full'], row['link_broken'], seed + index + 200, draws)} |"
+        )
+    return "\n".join(lines) + "\n"
+
+
+def build_vnext_table_b(rows: list[dict[str, Any]]) -> str:
+    lines = [
+        "| Model | distractor binary accuracy [95% CI] | absence false-positive rate | zero-evidence gate |",
+        "|---|---:|---:|---|",
+    ]
+    for row in rows:
+        absence_fpr = 1 - sum(row["absence"]) / len(row["absence"])
+        zero_fpr = float(row["zero_evidence_fpr"])
+        zero_status = "pass" if bool(row["zero_evidence_pass"]) else "fail"
+        lines.append(
+            f"| {row['solver']} | {_cell(row['distractor'])} | {absence_fpr:.2f} | "
+            f"{zero_status} (FPR {zero_fpr:.2f}) |"
+        )
+    return "\n".join(lines) + "\n"

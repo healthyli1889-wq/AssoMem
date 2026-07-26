@@ -39,6 +39,40 @@ def build_stratified_manifest(
 ) -> dict:
     if count > 20 or count < 1:
         raise ValueError("Pilot manifest count must be between 1 and 20")
+    if profile.data_format == "work-vnext-1":
+        ordered = sorted(items, key=lambda item: item.item_id)
+        if len(ordered) < count:
+            raise ValueError(f"Only {len(ordered)} vNext pairs are available")
+        # Even stride over the sorted pair list so a small pilot spans all
+        # scenario families instead of exhausting S01 first.
+        stride = len(ordered) / count
+        selected_items = [ordered[int(index * stride)] for index in range(count)]
+        selected = [{
+            "item_id": item.item_id,
+            "user_id": item.user_id,
+            "scenario_id": item.scenario_id,
+            "arms": item.filenames,
+            "source_hashes": {
+                arm: _hash_file(data_root / filename)
+                for arm, filename in item.filenames.items()
+            },
+            "difficulty": {
+                "context_chars": sum(
+                    len(turn["content"])
+                    for session in item.arms["associative"]["context"]
+                    for turn in session["dialogue"]
+                ),
+                "relation_specificity": item.arms["associative"].get("relation_specificity", 0),
+            },
+        } for item in selected_items]
+        return {
+            "manifest_version": 1,
+            "selection_method": "pair_id_even_stride",
+            "selection_seed": seed,
+            "profile_id": profile.profile_id,
+            "domain": "work",
+            "items": selected,
+        }
     by_key = {(item.user_id, item.scenario_id): item for item in items}
     users = sorted({item.user_id for item in items})
     rng = random.Random(seed)

@@ -1,0 +1,638 @@
+{
+  "schema_version": "work-vnext-2.0",
+  "candidate_id": "AMB_WV_S13_U01_associative",
+  "pair_id": "AMB_WV_S13_U01",
+  "data_arm": "associative",
+  "domain": "work",
+  "user_id": "work_s13_u01",
+  "sub_scenario": {
+    "family": "APAC verbal ownership under incomplete records",
+    "role": "database reliability engineer",
+    "one_line": "database reliability engineer: require written observed, reasonred, and unconfirmed notes first"
+  },
+  "query_type": "recommendation_ranking",
+  "polarity": "reject",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2034-01-12T11:00:00Z",
+      "speaker_id": "work_s13_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I spent the first hour tidying the database reliability engineer and closing stale entries."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything still open?"
+        },
+        {
+          "role": "user",
+          "content": "Two items, both with owners."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2034-01-13T14:00:00Z",
+      "speaker_id": "work_s13_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The calendar review wrapped early today."
+        },
+        {
+          "role": "assistant",
+          "content": "Any surprises in it?"
+        },
+        {
+          "role": "user",
+          "content": "None worth recording."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2034-01-14T16:00:00Z",
+      "speaker_id": "work_s13_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I give routine status updates calmly from a checklist. Case-note 481."
+        },
+        {
+          "role": "assistant",
+          "content": "Routine reporting is not ownership. Case-note 482."
+        },
+        {
+          "role": "user",
+          "content": "Ownership under ambiguity is different. Case-note 483."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2034-01-15T18:00:00Z",
+      "speaker_id": "work_s13_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Someone new shadowed me in the workplace this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Did that slow you down?"
+        },
+        {
+          "role": "user",
+          "content": "A little, but the questions were good ones."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2034-01-16T09:00:00Z",
+      "speaker_id": "work_s13_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I batched my replies about the review cycle into one message before lunch."
+        },
+        {
+          "role": "assistant",
+          "content": "Cleaner than drip-feeding answers."
+        },
+        {
+          "role": "user",
+          "content": "Much cleaner."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2034-01-17T11:00:00Z",
+      "speaker_id": "work_s13_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "For a replication incident, I write observed versus reasonred notes before accepting ownership. Case-note 487."
+        },
+        {
+          "role": "assistant",
+          "content": "The written separation prevents overclaiming. Case-note 488."
+        },
+        {
+          "role": "user",
+          "content": "It makes the handoff carefully bounded. Case-note 489."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2034-01-18T14:00:00Z",
+      "speaker_id": "work_s13_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A normal daytime update has plenty of follow-up time. Case-note 484."
+        },
+        {
+          "role": "assistant",
+          "content": "The bridge has no spare discussion window. Case-note 485."
+        },
+        {
+          "role": "user",
+          "content": "That is why format matters. Case-note 486."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2034-01-19T16:00:00Z",
+      "speaker_id": "work_s13_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I archived last cycle's notes on the calendar and set up the new folder."
+        },
+        {
+          "role": "assistant",
+          "content": "A fresh start?"
+        },
+        {
+          "role": "user",
+          "content": "As fresh as these things get."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2034-01-20T18:00:00Z",
+      "speaker_id": "work_s13_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Only the 06:00 APAC bridge overlaps this week. Case-note 490."
+        },
+        {
+          "role": "assistant",
+          "content": "The early bridge is the sole demand slot. Case-note 491."
+        },
+        {
+          "role": "user",
+          "content": "There is no later repair conversation. Case-note 492."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2034-01-21T09:00:00Z",
+      "speaker_id": "work_s13_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A vendor call about the database reliability engineer ran long but ended well."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth the time?"
+        },
+        {
+          "role": "user",
+          "content": "This one, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2034-01-22T11:00:00Z",
+      "speaker_id": "work_s13_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I walked through the workplace checklist with the new starter."
+        },
+        {
+          "role": "assistant",
+          "content": "How did they do?"
+        },
+        {
+          "role": "user",
+          "content": "Careful and quick, a good sign."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2034-01-23T14:00:00Z",
+      "speaker_id": "work_s13_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Quiet afternoon; I cleared the backlog around the review cycle."
+        },
+        {
+          "role": "assistant",
+          "content": "A rare day."
+        },
+        {
+          "role": "user",
+          "content": "I did not waste it."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2034-01-24T16:00:00Z",
+      "speaker_id": "work_s13_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I flagged a small inconsistency in the calendar records and fixed it at the source."
+        },
+        {
+          "role": "assistant",
+          "content": "Root cause or symptom?"
+        },
+        {
+          "role": "user",
+          "content": "Root cause, for once."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2034-01-25T18:00:00Z",
+      "speaker_id": "work_s13_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "When logs were absent during a prior replication incident, verbal ownership named the wrong cause. Case-note 493."
+        },
+        {
+          "role": "assistant",
+          "content": "That decision triggered an unnecessary rollback. Case-note 494."
+        },
+        {
+          "role": "user",
+          "content": "I had spoken before the record arrived. Case-note 495."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2034-01-26T09:00:00Z",
+      "speaker_id": "work_s13_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I sketched next week's plan for the review cycle before leaving."
+        },
+        {
+          "role": "assistant",
+          "content": "Ahead of schedule?"
+        },
+        {
+          "role": "user",
+          "content": "Ahead enough to sleep well."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2034-01-27T11:00:00Z",
+      "speaker_id": "work_s13_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Lunch walk, then a clean pass through the database reliability engineer updates."
+        },
+        {
+          "role": "assistant",
+          "content": "Does the walk help?"
+        },
+        {
+          "role": "user",
+          "content": "It resets the afternoon."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2034-01-28T14:00:00Z",
+      "speaker_id": "work_s13_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A written handoff lets the partner see what is known and unknown. Case-note 496."
+        },
+        {
+          "role": "assistant",
+          "content": "The document changes the handoff method. Case-note 497."
+        },
+        {
+          "role": "user",
+          "content": "It is not merely a preference. Case-note 498."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2034-01-29T16:00:00Z",
+      "speaker_id": "work_s13_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I compared two options for the calendar tooling and noted a mild preference."
+        },
+        {
+          "role": "assistant",
+          "content": "Decision made?"
+        },
+        {
+          "role": "user",
+          "content": "Deferred until the trial ends."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2034-01-30T18:00:00Z",
+      "speaker_id": "work_s13_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I closed the week by updating the workplace handover notes."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual to hand over?"
+        },
+        {
+          "role": "user",
+          "content": "Blessedly little."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2034-01-31T09:00:00Z",
+      "speaker_id": "work_s13_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The partner lead asks me to take 06:00 APAC bridge verbal ownership of a replication incident while missing logs may remain. How should I reply?"
+        }
+      ]
+    }
+  ],
+  "query": "The partner lead asks me to take 06:00 APAC bridge verbal ownership of a replication incident while missing logs may remain. How should I reply?",
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "work_s13_u01",
+      "fact": "For a replication incident, I write observed versus reasonred notes before accepting ownership. Case-note 487."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "work_s13_u01",
+      "fact": "When logs were absent during a prior replication incident, verbal ownership named the wrong cause. Case-note 493."
+    }
+  },
+  "supporting_constraints": {
+    "E1": {
+      "session_id": 9,
+      "fact": "Only the 06:00 APAC bridge overlaps this week. Case-note 490."
+    },
+    "E2": {
+      "session_id": 17,
+      "fact": "A written handoff lets the partner see what is known and unknown. Case-note 496."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "work_s13_u01",
+        "context": "replication incident",
+        "goal_or_prediction": "take responsibility safely",
+        "action": "observed versus reasonred notes",
+        "outcome_or_affect": "carefully bounded ownership"
+      }
+    },
+    "7": {
+      "role": "nearby_counterexample"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "supporting_constraint",
+      "fact_id": "E1"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "work_s13_u01",
+        "context": "earlier verbal handoff",
+        "goal_or_prediction": "identify cause",
+        "action": "missing logs",
+        "outcome_or_affect": "wrong cause and rollback"
+      }
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "supporting_constraint",
+      "fact_id": "E2"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "The written method, short bridge, prior verbal-first error, and incomplete record jointly support a documented uncertainty handoff.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": [
+      "E1",
+      "E2"
+    ]
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "For a replication incident, I write observed versus reasonred notes before accepting ownership"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "When logs were absent during a prior replication incident, verbal ownership named the wrong cause"
+    }
+  ],
+  "retrieval_cue": {
+    "cue_type": "recommendation_ranking",
+    "why_it_naturally_retrieves_R": "A realistic work request forces a personalized decision without naming either episode or the relation between them."
+  },
+  "relation_specificity": {
+    "nearby_relation": "The user gives routine checklist updates clearly.",
+    "why_it_does_not_license_C": "Routine reporting does not require ownership under incomplete material."
+  },
+  "coactivation_bridge": "A shows the operating condition; B shows the demand or failure that makes it decisive. The written method, short bridge, prior verbal-first error, and incomplete record jointly support a documented uncertainty handoff. E1 and E2 calibrate the practical recommendation without opening a second route to the conclusion.",
+  "latent_C": {
+    "inference": "Pure verbal ownership should not be accepted without a written uncertainty handoff.",
+    "calibrated_language": "require written observed, reasonred, and unconfirmed notes first"
+  },
+  "answer_contract": {
+    "target_proposition": "Pure verbal ownership should not be accepted without a written uncertainty handoff.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "decision",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "work_u01",
+    "status": "review_candidate_only",
+    "anonymization": "External persona material was used only during authoring; no corpus, name, country, or demographic metadata is included."
+  },
+  "arm_gold": {
+    "full": {
+      "expected_mode": "infer_C",
+      "binary_decision": true
+    },
+    "a_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    },
+    "b_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    },
+    "link_broken": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    }
+  },
+  "single_evidence_replacements": {
+    "a_only": {
+      "replaced_session_id": 14,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "I filed the routine review cycle paperwork and confirmed the owner list."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual in it?"
+        },
+        {
+          "role": "user",
+          "content": "A routine cycle, happily."
+        }
+      ]
+    },
+    "b_only": {
+      "replaced_session_id": 6,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "I did a standard pass over the calendar records this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Any exceptions?"
+        },
+        {
+          "role": "user",
+          "content": "None worth a note."
+        }
+      ]
+    }
+  },
+  "link_broken": {
+    "replaced_session_id": 14,
+    "replacement_dialogue": [
+      {
+        "role": "user",
+        "content": "The prior missing material was restored before the verbal handoff. Case-note 502."
+      },
+      {
+        "role": "assistant",
+        "content": "The earlier failure link would then break. Case-note 503."
+      },
+      {
+        "role": "user",
+        "content": "Complete records make a different case. Case-note 504."
+      }
+    ]
+  }
+}

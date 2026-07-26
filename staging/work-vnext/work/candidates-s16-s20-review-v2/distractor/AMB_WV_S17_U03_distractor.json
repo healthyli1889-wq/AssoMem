@@ -1,0 +1,579 @@
+{
+  "schema_version": "work-vnext-2.0",
+  "candidate_id": "AMB_WV_S17_U03_distractor",
+  "pair_id": "AMB_WV_S17_U03",
+  "data_arm": "distractor",
+  "domain": "work",
+  "user_id": "work_s17_u03",
+  "sub_scenario": {
+    "family": "negotiating scope commitments when project evidence is incomplete",
+    "role": "community archive lead",
+    "one_line": "community archive lead: accept a bounded initial transfer"
+  },
+  "query_type": "conditional_recommendation",
+  "polarity": "accept",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2028-03-14T11:00:00Z",
+      "speaker_id": "work_s17_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I spent the first hour tidying the collection log and closing stale entries."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything still open?"
+        },
+        {
+          "role": "user",
+          "content": "Two items, both with owners."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2028-03-15T14:00:00Z",
+      "speaker_id": "work_s17_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The donor folder review wrapped early today."
+        },
+        {
+          "role": "assistant",
+          "content": "Any surprises in it?"
+        },
+        {
+          "role": "user",
+          "content": "None worth recording."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2028-03-16T16:00:00Z",
+      "speaker_id": "work_s17_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I accepted a club photograph donation once the numbered inventory and signed permission arrived."
+        },
+        {
+          "role": "assistant",
+          "content": "Was the collection fully described?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, every item and public-use limit was listed."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2028-03-17T18:00:00Z",
+      "speaker_id": "work_s17_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Someone new shadowed me in the archive studio this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Did that slow you down?"
+        },
+        {
+          "role": "user",
+          "content": "A little, but the questions were good ones."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2028-03-18T09:00:00Z",
+      "speaker_id": "work_s17_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I batched my replies about the intake months into one message before lunch."
+        },
+        {
+          "role": "assistant",
+          "content": "Cleaner than drip-feeding answers."
+        },
+        {
+          "role": "user",
+          "content": "Much cleaner."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2028-03-19T11:00:00Z",
+      "speaker_id": "work_s17_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "When the riverworks folders arrived with decade labels but no item count, I told the donor committee we could schedule an inspection visit and accept up to two boxes after rights confirmations, not the whole collection."
+        },
+        {
+          "role": "assistant",
+          "content": "What could not be planned from the inventory?"
+        },
+        {
+          "role": "user",
+          "content": "Storage demand, cataloguing effort, and any public display schedule."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2028-03-20T14:00:00Z",
+      "speaker_id": "work_s17_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I logged a returned folder after a donor supplied the missing accession note."
+        },
+        {
+          "role": "assistant",
+          "content": "Did that change intake scope?"
+        },
+        {
+          "role": "user",
+          "content": "No, it completed one record already on the shelf."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2028-03-21T16:00:00Z",
+      "speaker_id": "work_s17_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I archived last cycle's notes on the donor folder and set up the new folder."
+        },
+        {
+          "role": "assistant",
+          "content": "A fresh start?"
+        },
+        {
+          "role": "user",
+          "content": "As fresh as these things get."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2028-03-22T18:00:00Z",
+      "speaker_id": "work_s17_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The archive has an empty flat-file cabinet and two volunteers available on alternate Saturdays."
+        },
+        {
+          "role": "assistant",
+          "content": "Does that support unrestricted intake?"
+        },
+        {
+          "role": "user",
+          "content": "No, it supports an initial review and a small selected transfer."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2028-03-23T09:00:00Z",
+      "speaker_id": "work_s17_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A vendor call about the collection log ran long but ended well."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth the time?"
+        },
+        {
+          "role": "user",
+          "content": "This one, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2028-03-24T11:00:00Z",
+      "speaker_id": "work_s17_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I walked through the archive studio checklist with the new starter."
+        },
+        {
+          "role": "assistant",
+          "content": "How did they do?"
+        },
+        {
+          "role": "user",
+          "content": "Careful and quick, a good sign."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2028-03-25T14:00:00Z",
+      "speaker_id": "work_s17_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Quiet afternoon; I cleared the backlog around the intake months."
+        },
+        {
+          "role": "assistant",
+          "content": "A rare day."
+        },
+        {
+          "role": "user",
+          "content": "I did not waste it."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2028-03-26T16:00:00Z",
+      "speaker_id": "work_s17_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I flagged a small inconsistency in the donor folder records and fixed it at the source."
+        },
+        {
+          "role": "assistant",
+          "content": "Root cause or symptom?"
+        },
+        {
+          "role": "user",
+          "content": "Root cause, for once."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2028-03-27T18:00:00Z",
+      "speaker_id": "work_s17_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Two years ago I accepted an entire parish map collection on a verbal promise of future inventory; within a month the stacks overflowed and public access hours were cut while we counted unsorted material."
+        },
+        {
+          "role": "assistant",
+          "content": "What was missing at acceptance?"
+        },
+        {
+          "role": "user",
+          "content": "A counted inventory and confirmed rights before anything crossed the threshold."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2028-03-28T09:00:00Z",
+      "speaker_id": "work_s17_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I sketched next week's plan for the intake months before leaving."
+        },
+        {
+          "role": "assistant",
+          "content": "Ahead of schedule?"
+        },
+        {
+          "role": "user",
+          "content": "Ahead enough to sleep well."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2028-03-29T11:00:00Z",
+      "speaker_id": "work_s17_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Lunch walk, then a clean pass through the collection log updates."
+        },
+        {
+          "role": "assistant",
+          "content": "Does the walk help?"
+        },
+        {
+          "role": "user",
+          "content": "It resets the afternoon."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2028-03-30T14:00:00Z",
+      "speaker_id": "work_s17_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The annual exhibition programme is printed in three months."
+        },
+        {
+          "role": "assistant",
+          "content": "Does that force a display promise?"
+        },
+        {
+          "role": "user",
+          "content": "No, the programme can describe the work as under review."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2028-03-31T16:00:00Z",
+      "speaker_id": "work_s17_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A councillor says announcing the entire collection would attract visitors to the exhibition."
+        },
+        {
+          "role": "assistant",
+          "content": "Does visitor interest establish contents?"
+        },
+        {
+          "role": "user",
+          "content": "No, interest is different from a counted, rights-cleared inventory."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2028-04-01T18:00:00Z",
+      "speaker_id": "work_s17_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I closed the week by updating the archive studio handover notes."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual to hand over?"
+        },
+        {
+          "role": "user",
+          "content": "Blessedly little."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2028-04-02T09:00:00Z",
+      "speaker_id": "work_s17_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "May I accept the riverworks collection for a first, limited intake?"
+        }
+      ]
+    }
+  ],
+  "query": "May I accept the riverworks collection for a first, limited intake?",
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "work_s17_u03",
+      "fact": "When the riverworks folders arrived with decade labels but no item count, I told the donor committee we could schedule an inspection visit and accept up to two boxes after rights confirmations, not the whole collection."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "work_s17_u03",
+      "fact": "Two years ago I accepted an entire parish map collection on a verbal promise of future inventory; within a month the stacks overflowed and public access hours were cut while we counted unsorted material."
+    }
+  },
+  "supporting_constraints": {
+    "E1": {
+      "session_id": 9,
+      "fact": "The archive has an empty flat-file cabinet and two volunteers available on alternate Saturdays."
+    },
+    "E2": {
+      "session_id": 17,
+      "fact": "The annual exhibition programme is printed in three months."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "work_s17_u03",
+        "context": "riverworks decade-labelled folders",
+        "goal_or_prediction": "plan an archive intake",
+        "action": "lists broad periods without item counts",
+        "outcome_or_affect": "supports inspection and a two-box ceiling only"
+      }
+    },
+    "7": {
+      "role": "nearby_counterexample"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "supporting_constraint",
+      "fact_id": "E1"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "work_s17_u03",
+        "context": "parish map verbal acceptance",
+        "goal_or_prediction": "take in a map collection",
+        "action": "accepted the full set before inventory or rights",
+        "outcome_or_affect": "stack overflow forced access cuts"
+      }
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "supporting_constraint",
+      "fact_id": "E2"
+    },
+    "18": {
+      "role": "distractor",
+      "distractor_id": "dist_1",
+      "why_distractor": "Potential exhibition interest is not evidence of storage needs, contents, or rights."
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "The riverworks inspection episode defines a defensible first boundary, while the parish map intake episode shows why accepting the whole collection without counts and rights would repeat a storage failure.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": [
+      "E1",
+      "E2"
+    ]
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "When the riverworks folders arrived with decade labels but no item count, I told the donor committee we could schedule an inspection visit and accept up to two boxes after rights confirmations, not the whole collection"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "Two years ago I accepted an entire parish map collection on a verbal promise of future inventory; within a month the stacks overflowed and public access hours were cut while we counted unsorted material"
+    }
+  ],
+  "retrieval_cue": {
+    "cue_type": "conditional_recommendation",
+    "why_it_naturally_retrieves_R": "A realistic work request forces a personalized decision without naming either episode or the relation between them."
+  },
+  "relation_specificity": {
+    "nearby_relation": "The user accepts documented donations and completes standard accession records.",
+    "why_it_does_not_license_C": "Those cases already had item counts and permission for public use."
+  },
+  "coactivation_bridge": "A and B form the only intervention pair. The riverworks inspection episode defines a defensible first boundary, while the parish map intake episode shows why accepting the whole collection without counts and rights would repeat a storage failure. E1 and E2 are logistical calibration only and do not open a second route to C.",
+  "latent_C": {
+    "inference": "Accept a review visit and up to two rights-cleared boxes, with no promise beyond that.",
+    "calibrated_language": "accept a bounded initial transfer"
+  },
+  "answer_contract": {
+    "target_proposition": "Accept a review visit and up to two rights-cleared boxes, with no promise beyond that.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "work_u03",
+    "status": "review_candidate_only",
+    "anonymization": "External persona material was used only during authoring; no corpus, name, country, or demographic metadata is included."
+  },
+  "arm_gold": {
+    "distractor": {
+      "expected_mode": "infer_C",
+      "binary_decision": true
+    }
+  },
+  "distractor_note": {
+    "replaced_session_id": 18,
+    "why_distractor": "Potential exhibition interest is not evidence of storage needs, contents, or rights."
+  }
+}
