@@ -1,0 +1,573 @@
+{
+  "schema_version": "work-vnext-2.0",
+  "candidate_id": "AMB_WV_S13_U06_distractor",
+  "pair_id": "AMB_WV_S13_U06",
+  "data_arm": "distractor",
+  "domain": "work",
+  "user_id": "work_s13_u06",
+  "sub_scenario": {
+    "family": "APAC verbal ownership under incomplete records",
+    "role": "semiconductor yield engineer",
+    "one_line": "semiconductor yield engineer: avoid assigning a cause from uncalibrated measurements"
+  },
+  "query_type": "predicted_reaction",
+  "polarity": "reject",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2027-05-19T11:00:00Z",
+      "speaker_id": "work_s13_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I spent the first hour tidying the semiconductor yield engineer and closing stale entries."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything still open?"
+        },
+        {
+          "role": "user",
+          "content": "Two items, both with owners."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2027-05-20T14:00:00Z",
+      "speaker_id": "work_s13_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The fab yield log review wrapped early today."
+        },
+        {
+          "role": "assistant",
+          "content": "Any surprises in it?"
+        },
+        {
+          "role": "user",
+          "content": "None worth recording."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2027-05-21T16:00:00Z",
+      "speaker_id": "work_s13_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I can read a completed wafer count from the yield log."
+        },
+        {
+          "role": "assistant",
+          "content": "Does that explain a yield drop?"
+        },
+        {
+          "role": "user",
+          "content": "No, counts do not determine cause."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2027-05-22T18:00:00Z",
+      "speaker_id": "work_s13_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Someone new shadowed me in the APAC bridge this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Did that slow you down?"
+        },
+        {
+          "role": "user",
+          "content": "A little, but the questions were good ones."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2027-05-23T09:00:00Z",
+      "speaker_id": "work_s13_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I batched my replies about the wafer-disposition handoff into one message before lunch."
+        },
+        {
+          "role": "assistant",
+          "content": "Cleaner than drip-feeding answers."
+        },
+        {
+          "role": "user",
+          "content": "Much cleaner."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2027-05-24T11:00:00Z",
+      "speaker_id": "work_s13_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "For an abrupt yield decline, I write a provenance sheet separating tool readings, operator observations, and uncalibrated metrology results."
+        },
+        {
+          "role": "assistant",
+          "content": "Why preserve provenance?"
+        },
+        {
+          "role": "user",
+          "content": "So the receiving engineer can judge what supports a disposition."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2027-05-25T14:00:00Z",
+      "speaker_id": "work_s13_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I can request a metrology rerun."
+        },
+        {
+          "role": "assistant",
+          "content": "Does a rerun itself identify the defect?"
+        },
+        {
+          "role": "user",
+          "content": "No, it only obtains another measurement."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2027-05-26T16:00:00Z",
+      "speaker_id": "work_s13_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I archived last cycle's notes on the fab yield log and set up the new folder."
+        },
+        {
+          "role": "assistant",
+          "content": "A fresh start?"
+        },
+        {
+          "role": "user",
+          "content": "As fresh as these things get."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2027-05-27T18:00:00Z",
+      "speaker_id": "work_s13_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The 06:30 Taipei bridge occurs before the lot reaches the next lithography stage at 07:05."
+        },
+        {
+          "role": "assistant",
+          "content": "Can disposition be reconsidered later?"
+        },
+        {
+          "role": "user",
+          "content": "Not before the lot advances."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2027-05-28T09:00:00Z",
+      "speaker_id": "work_s13_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A vendor call about the semiconductor yield engineer ran long but ended well."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth the time?"
+        },
+        {
+          "role": "user",
+          "content": "This one, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2027-05-29T11:00:00Z",
+      "speaker_id": "work_s13_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I walked through the APAC bridge checklist with the new starter."
+        },
+        {
+          "role": "assistant",
+          "content": "How did they do?"
+        },
+        {
+          "role": "user",
+          "content": "Careful and quick, a good sign."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2027-05-30T14:00:00Z",
+      "speaker_id": "work_s13_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Quiet afternoon; I cleared the backlog around the wafer-disposition handoff."
+        },
+        {
+          "role": "assistant",
+          "content": "A rare day."
+        },
+        {
+          "role": "user",
+          "content": "I did not waste it."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2027-05-31T16:00:00Z",
+      "speaker_id": "work_s13_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I flagged a small inconsistency in the fab yield log records and fixed it at the source."
+        },
+        {
+          "role": "assistant",
+          "content": "Root cause or symptom?"
+        },
+        {
+          "role": "user",
+          "content": "Root cause, for once."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2027-06-01T18:00:00Z",
+      "speaker_id": "work_s13_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I once verbally blamed a coating tool from an operator remark and held three lots; calibration later showed the metrology baseline had drifted."
+        },
+        {
+          "role": "assistant",
+          "content": "What was the impact?"
+        },
+        {
+          "role": "user",
+          "content": "Good lots missed their processing window."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2027-06-02T09:00:00Z",
+      "speaker_id": "work_s13_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I sketched next week's plan for the wafer-disposition handoff before leaving."
+        },
+        {
+          "role": "assistant",
+          "content": "Ahead of schedule?"
+        },
+        {
+          "role": "user",
+          "content": "Ahead enough to sleep well."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2027-06-03T11:00:00Z",
+      "speaker_id": "work_s13_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Lunch walk, then a clean pass through the semiconductor yield engineer updates."
+        },
+        {
+          "role": "assistant",
+          "content": "Does the walk help?"
+        },
+        {
+          "role": "user",
+          "content": "It resets the afternoon."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2027-06-04T14:00:00Z",
+      "speaker_id": "work_s13_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The fab lobby is displaying a new safety poster."
+        },
+        {
+          "role": "assistant",
+          "content": "Does the poster bear on the yield cause?"
+        },
+        {
+          "role": "user",
+          "content": "No, it is only workplace context."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2027-06-05T16:00:00Z",
+      "speaker_id": "work_s13_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The production manager says a firm answer will reduce line congestion."
+        },
+        {
+          "role": "assistant",
+          "content": "Does congestion identify the faulty tool?"
+        },
+        {
+          "role": "user",
+          "content": "No, it cannot validate the attribution."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2027-06-06T18:00:00Z",
+      "speaker_id": "work_s13_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I closed the week by updating the APAC bridge handover notes."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual to hand over?"
+        },
+        {
+          "role": "user",
+          "content": "Blessedly little."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2027-06-07T09:00:00Z",
+      "speaker_id": "work_s13_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "How will I respond to a request for verbal wafer-disposition ownership on the Taipei bridge?"
+        }
+      ]
+    }
+  ],
+  "query": "How will I respond to a request for verbal wafer-disposition ownership on the Taipei bridge?",
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "work_s13_u06",
+      "fact": "For an abrupt yield decline, I write a provenance sheet separating tool readings, operator observations, and uncalibrated metrology results."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "work_s13_u06",
+      "fact": "I once verbally blamed a coating tool from an operator remark and held three lots; calibration later showed the metrology baseline had drifted."
+    }
+  },
+  "supporting_constraints": {
+    "E1": {
+      "session_id": 9,
+      "fact": "The 06:30 Taipei bridge occurs before the lot reaches the next lithography stage at 07:05."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "work_s13_u06",
+        "context": "yield decline",
+        "goal_or_prediction": "write provenance sheet",
+        "action": "tool readings and uncalibrated results",
+        "outcome_or_affect": "deferred disposition"
+      }
+    },
+    "7": {
+      "role": "nearby_counterexample"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "supporting_constraint",
+      "fact_id": "E1"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "work_s13_u06",
+        "context": "previous lot hold",
+        "goal_or_prediction": "blame coating tool",
+        "action": "drifted metrology baseline",
+        "outcome_or_affect": "missed processing window"
+      }
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "background_memory"
+    },
+    "18": {
+      "role": "distractor",
+      "distractor_id": "dist_1",
+      "why_distractor": "Line congestion does not make a tool attribution reliable."
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "The advancing-lot constraint makes the decision consequential, and the earlier unnecessary hold shows why provenance is required.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": [
+      "E1"
+    ]
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "For an abrupt yield decline, I write a provenance sheet separating tool readings, operator observations, and uncalibrated metrology results"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "I once verbally blamed a coating tool from an operator remark and held three lots; calibration later showed the metrology baseline had drifted"
+    }
+  ],
+  "retrieval_cue": {
+    "cue_type": "predicted_reaction",
+    "why_it_naturally_retrieves_R": "A realistic work request forces a personalized decision without naming either episode or the relation between them."
+  },
+  "relation_specificity": {
+    "nearby_relation": "The user can read a completed count.",
+    "why_it_does_not_license_C": "A count is not a causal diagnosis."
+  },
+  "coactivation_bridge": "A and B form the intervention pair. The advancing-lot constraint makes the decision consequential, and the earlier unnecessary hold shows why provenance is required. The short APAC overlap is E1; session 17 is ordinary background, not decision evidence.",
+  "latent_C": {
+    "inference": "I will reject it until the provenance sheet accompanies the handoff.",
+    "calibrated_language": "avoid assigning a cause from uncalibrated measurements"
+  },
+  "answer_contract": {
+    "target_proposition": "I will reject it until the provenance sheet accompanies the handoff.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "work_u06",
+    "status": "review_candidate_only",
+    "anonymization": "External persona material was used only during authoring; no corpus, name, country, or demographic metadata is included."
+  },
+  "arm_gold": {
+    "distractor": {
+      "expected_mode": "infer_C",
+      "binary_decision": true
+    }
+  },
+  "distractor_note": {
+    "replaced_session_id": 18,
+    "why_distractor": "Line congestion does not make a tool attribution reliable."
+  }
+}

@@ -1,0 +1,228 @@
+{
+  "audit_id": "pilot10_construct_audit_v3",
+  "batch": "S16-S20 hand-authored v2 (re-audit after latest hand fixes)",
+  "data_sources": [
+    "assomem/staging/work-vnext/work/candidates-s16-s20-review-v2/",
+    "assomem/staging/work-vnext/work/review/s16-s20-v2/arm_packets/"
+  ],
+  "pairs_audited": [
+    "AMB_WV_S16_U01",
+    "AMB_WV_S16_U06",
+    "AMB_WV_S17_U01",
+    "AMB_WV_S17_U06",
+    "AMB_WV_S18_U01",
+    "AMB_WV_S18_U06",
+    "AMB_WV_S19_U01",
+    "AMB_WV_S19_U06",
+    "AMB_WV_S20_U01",
+    "AMB_WV_S20_U06"
+  ],
+  "auditor": "independent_construct_validity_subagent",
+  "audit_date": "2026-07-25",
+  "strict_conditions": [
+    "full A+B+E1+E2 MUST support complete C",
+    "A alone, B alone, E1+E2, A+E1+E2, B+E1+E2, A+Bprime+E1+E2 must NOT support complete C",
+    "E1/E2 logistical only",
+    "absence retains E1/E2, withholds A/B, must not support personalized C"
+  ],
+  "structural_preflight": {
+    "status": "PASS",
+    "notes": "All 10 pairs pass deterministic_arm_audit (session placement, ablation diffs, E1/E2 retention in absence, packet/rendered parity)."
+  },
+  "items": [
+    {
+      "pair_id": "AMB_WV_S16_U01",
+      "scenario": "S16",
+      "uid": "U01",
+      "verdict": "PASS",
+      "gates": {
+        "full_supports_C": {"pass": true, "reason": "A (cross-record synthesis) plus B (failed live chairing) jointly license ranking evidence analyst first and bridge chair last, with liaison scribe between."},
+        "a_only_supports_C": {"pass": true, "reason": "A alone shows synthesis competence but does not establish ranking bridge chair last or placing scribe in the middle."},
+        "b_only_supports_C": {"pass": true, "reason": "B alone shows chair misfit but does not specify analyst-first or scribe-middle ordering."},
+        "e1_e2_only_supports_C": {"pass": true, "reason": "E1/E2 are nomination timing and form-field availability only."},
+        "a_e1_e2_supports_C": {"pass": true, "reason": "Same as a_only; logistics do not complete the three-way ranking."},
+        "b_e1_e2_supports_C": {"pass": true, "reason": "Same as b_only; logistics do not complete the three-way ranking."},
+        "link_broken_supports_C": {"pass": true, "reason": "B' shows competent bridge mechanics without chair failure; with A alone there is no basis to rank bridge chair last."},
+        "e1_e2_logistical_only": {"pass": true, "reason": "E1/E2 are deadlines and roster-form availability without preference."},
+        "absence_withholds_personalized_C": {"pass": true, "reason": "Without A/B, remaining context cannot personalize the three-way ranking."}
+      },
+      "proposed_fixes": []
+    },
+    {
+      "pair_id": "AMB_WV_S16_U06",
+      "scenario": "S16",
+      "uid": "U06",
+      "verdict": "PASS",
+      "gates": {
+        "full_supports_C": {"pass": true, "reason": "A (careful packet review) plus B (destructive rapid-chair call) support ranking afternoon packet review first and urgent hospital chair last."},
+        "a_only_supports_C": {"pass": true, "reason": "A alone supports packet-review fit but not ranking hospital chair last or roster update in the middle."},
+        "b_only_supports_C": {"pass": true, "reason": "B alone supports avoiding disposition leadership but not the full three-slot ordering."},
+        "e1_e2_only_supports_C": {"pass": true, "reason": "E1/E2 are call times and room booking only."},
+        "a_e1_e2_supports_C": {"pass": true, "reason": "A-only leakage does not extend to the complete three-way ranking."},
+        "b_e1_e2_supports_C": {"pass": true, "reason": "B-only leakage does not extend to the complete three-way ranking."},
+        "link_broken_supports_C": {"pass": true, "reason": "B' removes chair-failure evidence; A alone cannot justify ranking hospital chair last."},
+        "e1_e2_logistical_only": {"pass": true, "reason": "E1/E2 are scheduling logistics without role preference."},
+        "absence_withholds_personalized_C": {"pass": true, "reason": "No A/B means no personalized disposition-leadership inference."}
+      },
+      "proposed_fixes": []
+    },
+    {
+      "pair_id": "AMB_WV_S17_U01",
+      "scenario": "S17",
+      "uid": "U01",
+      "verdict": "PASS",
+      "gates": {
+        "full_supports_C": {"pass": true, "reason": "A (withhold delivery volume until inputs) plus B (premature regional pledge) jointly license declining coastal rollout while offering funded discovery."},
+        "a_only_supports_C": {"pass": true, "reason": "A alone shows bounded planning and interviews but not decline-plus-discovery for the coastal query."},
+        "b_only_supports_C": {"pass": true, "reason": "B alone counsels against overcommitment but does not supply the positive funded-discovery offer."},
+        "e1_e2_only_supports_C": {"pass": true, "reason": "E1/E2 impose deadline and blank form-field facts only."},
+        "a_e1_e2_supports_C": {"pass": true, "reason": "A withholds volume but does not complete decline-plus-offer without B."},
+        "b_e1_e2_supports_C": {"pass": true, "reason": "B plus E1/E2 support declining full rollout but not the positive discovery-phase offer."},
+        "link_broken_supports_C": {"pass": true, "reason": "B' breaks premature-pledge link; A alone still lacks the funded-discovery half of C."},
+        "e1_e2_logistical_only": {"pass": true, "reason": "E2 is a required ceiling form field and finance release gate, not scope prescription."},
+        "absence_withholds_personalized_C": {"pass": true, "reason": "E1/E2 alone yield generic planning constraints, not the full decline-plus-offer recommendation."}
+      },
+      "proposed_fixes": []
+    },
+    {
+      "pair_id": "AMB_WV_S17_U06",
+      "scenario": "S17",
+      "uid": "U06",
+      "verdict": "PASS",
+      "gates": {
+        "full_supports_C": {"pass": true, "reason": "A (withhold recurring until handling facts) plus B (recurring access without sample details) support one supervised conditional trial rather than recurring access."},
+        "a_only_supports_C": {"pass": true, "reason": "A alone withholds recurring booking but does not specify the conditional one-trial offer for the materials group."},
+        "b_only_supports_C": {"pass": true, "reason": "B alone argues against recurring access without advance safeguards but not the conditional one-trial format."},
+        "e1_e2_only_supports_C": {"pass": true, "reason": "E1/E2 are capacity timing and term-start calendar facts."},
+        "a_e1_e2_supports_C": {"pass": true, "reason": "A plus logistics do not complete the positive conditional-trial offer."},
+        "b_e1_e2_supports_C": {"pass": true, "reason": "B plus logistics do not specify the conditional trial format."},
+        "link_broken_supports_C": {"pass": true, "reason": "B' breaks the no-advance-facts failure link; A alone still lacks the supervised one-trial offer."},
+        "e1_e2_logistical_only": {"pass": true, "reason": "E1/E2 are unused-slot timing and calendar facts."},
+        "absence_withholds_personalized_C": {"pass": true, "reason": "E1/E2 alone cannot personalize a conditional trial recommendation."}
+      },
+      "proposed_fixes": []
+    },
+    {
+      "pair_id": "AMB_WV_S18_U01",
+      "scenario": "S18",
+      "uid": "U01",
+      "verdict": "PASS",
+      "gates": {
+        "full_supports_C": {"pass": true, "reason": "A (protected comparison block) plus B (chat-interrupted miss) support batching nonurgent questions and protecting review time."},
+        "a_only_supports_C": {"pass": true, "reason": "A shows protected-block value but does not prescribe batching colleagues' questions."},
+        "b_only_supports_C": {"pass": true, "reason": "B alone shows live-chat harm but not the batching-plus-protected-block protocol."},
+        "e1_e2_only_supports_C": {"pass": true, "reason": "E1/E2 are calendar blocking and a neutral coordinator time slot."},
+        "a_e1_e2_supports_C": {"pass": true, "reason": "A plus logistics support protected time but not the full batching intervention."},
+        "b_e1_e2_supports_C": {"pass": true, "reason": "B plus logistics do not complete the batching recommendation."},
+        "link_broken_supports_C": {"pass": true, "reason": "B' removes the missed-exception outcome; A plus neutral E2 do not prescribe batching."},
+        "e1_e2_logistical_only": {"pass": true, "reason": "E1/E2 are schedule availability without workflow prescription."},
+        "absence_withholds_personalized_C": {"pass": true, "reason": "E1/E2 alone cannot personalize the batching workflow."}
+      },
+      "proposed_fixes": []
+    },
+    {
+      "pair_id": "AMB_WV_S18_U06",
+      "scenario": "S18",
+      "uid": "U06",
+      "verdict": "PASS",
+      "gates": {
+        "full_supports_C": {"pass": true, "reason": "A (no-message privilege block) plus B (ping-interrupted release) jointly support protected review with court/cutoff/security-only escalations."},
+        "a_only_supports_C": {"pass": true, "reason": "A supports protected blocks but not the named escalation-only rule alone."},
+        "b_only_supports_C": {"pass": true, "reason": "B alone shows open-channel harm but not the complete escalation-only protocol."},
+        "e1_e2_only_supports_C": {"pass": true, "reason": "E2 is a timed inbox window only; it does not name court/cutoff/security exceptions."},
+        "a_e1_e2_supports_C": {"pass": true, "reason": "A plus logistics do not supply the named escalation-only rule."},
+        "b_e1_e2_supports_C": {"pass": true, "reason": "B plus E2 suggest deferring progress but not the complete court/cutoff/security criterion."},
+        "link_broken_supports_C": {"pass": true, "reason": "B' removes the privilege miss; remaining evidence does not complete the named escalation rule."},
+        "e1_e2_logistical_only": {"pass": true, "reason": "E2 is a timed coordinator inbox window on the case calendar, not a workflow prescription."},
+        "absence_withholds_personalized_C": {"pass": true, "reason": "E1/E2 alone cannot personalize the privilege interruption rule."}
+      },
+      "proposed_fixes": []
+    },
+    {
+      "pair_id": "AMB_WV_S19_U01",
+      "scenario": "S19",
+      "uid": "U01",
+      "verdict": "PASS",
+      "gates": {
+        "full_supports_C": {"pass": true, "reason": "A (structured worksheet before ownership) plus B (premature attribution) support accepting the worksheet-gated morning rotation."},
+        "a_only_supports_C": {"pass": true, "reason": "A alone builds an evidence board without taking the ownership seat; it does not recommend accepting the 10:00 rotation."},
+        "b_only_supports_C": {"pass": true, "reason": "B alone warns against unstructured escalation but does not recommend accepting this rotation."},
+        "e1_e2_only_supports_C": {"pass": true, "reason": "E1/E2 describe the offered schedule and worksheet mechanics without recommending acceptance."},
+        "a_e1_e2_supports_C": {"pass": true, "reason": "A-only worksheet discipline does not yield accept-with-worksheet without B."},
+        "b_e1_e2_supports_C": {"pass": true, "reason": "B plus process description does not yield accept-with-worksheet without A."},
+        "link_broken_supports_C": {"pass": true, "reason": "B' shows worksheet use that still failed; A alone still does not recommend accepting the rotation."},
+        "e1_e2_logistical_only": {"pass": true, "reason": "E1/E2 are schedule, template, and form-field logistics."},
+        "absence_withholds_personalized_C": {"pass": true, "reason": "Without A/B there is no basis to infer this user's acceptance preference."}
+      },
+      "proposed_fixes": []
+    },
+    {
+      "pair_id": "AMB_WV_S19_U06",
+      "scenario": "S19",
+      "uid": "U06",
+      "verdict": "PASS",
+      "gates": {
+        "full_supports_C": {"pass": true, "reason": "A (evidence-before-ownership on rollout) plus B (premature repair commitment) support conditional provisional forum acceptance."},
+        "a_only_supports_C": {"pass": true, "reason": "A alone defers ownership during source separation but does not answer openness to the office hour."},
+        "b_only_supports_C": {"pass": true, "reason": "B alone counsels caution but not conditional yes."},
+        "e1_e2_only_supports_C": {"pass": true, "reason": "E1/E2 confirm calendar and form availability without answering openness."},
+        "a_e1_e2_supports_C": {"pass": true, "reason": "A plus logistics do not yield conditional yes without B."},
+        "b_e1_e2_supports_C": {"pass": true, "reason": "B plus logistics do not yield conditional yes without A."},
+        "link_broken_supports_C": {"pass": true, "reason": "B' breaks premature-commitment link; A alone still does not complete conditional willingness."},
+        "e1_e2_logistical_only": {"pass": true, "reason": "E1/E2 are calendar and form-field logistics."},
+        "absence_withholds_personalized_C": {"pass": true, "reason": "E1/E2 alone cannot personalize conditional willingness."}
+      },
+      "proposed_fixes": []
+    },
+    {
+      "pair_id": "AMB_WV_S20_U01",
+      "scenario": "S20",
+      "uid": "U01",
+      "verdict": "PASS",
+      "gates": {
+        "full_supports_C": {"pass": true, "reason": "A (ledger-linked written summary) plus B (premature verbal handoff error) support async reconciled handoff after courier count."},
+        "a_only_supports_C": {"pass": true, "reason": "A supports written reconciliation but not the after-courier timing or rejection of early live leadership alone."},
+        "b_only_supports_C": {"pass": true, "reason": "B alone warns against early verbal handoff but does not specify written reconciled format."},
+        "e1_e2_only_supports_C": {"pass": true, "reason": "E1/E2 are huddle, courier, channel, and room-slot timing only."},
+        "a_e1_e2_supports_C": {"pass": true, "reason": "A supports draft reconciliation but E2 bare channel/room times do not complete after-courier written release without B."},
+        "b_e1_e2_supports_C": {"pass": true, "reason": "B warns against early verbal handoff but E2 logistics alone do not specify written reconciled format."},
+        "link_broken_supports_C": {"pass": true, "reason": "B' retains courier-dependent correction but A plus neutral E2 still require B for the early-live rejection half."},
+        "e1_e2_logistical_only": {"pass": true, "reason": "E1/E2 are schedule and channel/room availability facts without workflow labels."},
+        "absence_withholds_personalized_C": {"pass": true, "reason": "E1/E2 alone cannot personalize the handoff format choice."}
+      },
+      "proposed_fixes": []
+    },
+    {
+      "pair_id": "AMB_WV_S20_U06",
+      "scenario": "S20",
+      "uid": "U06",
+      "verdict": "PASS",
+      "gates": {
+        "full_supports_C": {"pass": true, "reason": "A (signed-plan matched archive) plus B (old-diagram premature access) support hold-until-signed-plan then narrow boundary bridge."},
+        "a_only_supports_C": {"pass": true, "reason": "A alone is a post-authorization archive match on a completed renewal, not hold-then-bridge for pending night access."},
+        "b_only_supports_C": {"pass": true, "reason": "B alone supports withholding authorization but not the narrow boundary-bridge format."},
+        "e1_e2_only_supports_C": {"pass": true, "reason": "E1/E2 are authority publish time and channel/room availability only."},
+        "a_e1_e2_supports_C": {"pass": true, "reason": "A plus E2 timing do not complete hold-then-narrow-bridge without B."},
+        "b_e1_e2_supports_C": {"pass": true, "reason": "B plus E2 logistics warn against early authorization but do not specify the narrow bridge format."},
+        "link_broken_supports_C": {"pass": true, "reason": "B' removes premature-authorization failure; A and neutral E2 do not complete the hold-then-bridge answer."},
+        "e1_e2_logistical_only": {"pass": true, "reason": "E1/E2 are publish time and roster channel/room availability."},
+        "absence_withholds_personalized_C": {"pass": true, "reason": "E1/E2 alone cannot personalize the authorization handoff."}
+      },
+      "proposed_fixes": []
+    }
+  ],
+  "summary": {
+    "total": 10,
+    "pass": 10,
+    "fail": 0,
+    "failures": [],
+    "dominant_failure_modes": [],
+    "fixes_verified": [
+      "S17_U01/S17_U06: A episodes reframed to withhold or bound without restating target answer.",
+      "S18_U06: E2 reduced to neutral timed inbox window.",
+      "S19_U01/S19_U06: A episodes show worksheet/evidence discipline without mirroring accept/conditional-yes behavior.",
+      "S20_U01/S20_U06: E2 reduced to bare channel/room times; S20_U06 A shifted to post-authorization archive context."
+    ]
+  },
+  "overall_gate": "PASS"
+}

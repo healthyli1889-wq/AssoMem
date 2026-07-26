@@ -1,0 +1,579 @@
+{
+  "schema_version": "work-vnext-2.0",
+  "candidate_id": "AMB_WV_S18_U07_distractor",
+  "pair_id": "AMB_WV_S18_U07",
+  "data_arm": "distractor",
+  "domain": "work",
+  "user_id": "work_s18_u07",
+  "sub_scenario": {
+    "family": "review and decision quality under interruption density versus protected focused work",
+    "role": "distribution exception supervisor",
+    "one_line": "distribution exception supervisor: delegate routine radio traffic during planning"
+  },
+  "query_type": "recommendation_ranking",
+  "polarity": "reject",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2028-05-25T11:00:00Z",
+      "speaker_id": "work_s18_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I spent the first hour tidying the exception board and closing stale entries."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything still open?"
+        },
+        {
+          "role": "user",
+          "content": "Two items, both with owners."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2028-05-26T14:00:00Z",
+      "speaker_id": "work_s18_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The dock schedule review wrapped early today."
+        },
+        {
+          "role": "assistant",
+          "content": "Any surprises in it?"
+        },
+        {
+          "role": "user",
+          "content": "None worth recording."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2028-05-27T16:00:00Z",
+      "speaker_id": "work_s18_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I directed a driver to an open dock while radios were active."
+        },
+        {
+          "role": "assistant",
+          "content": "Did that require a system-wide reroute?"
+        },
+        {
+          "role": "user",
+          "content": "No, it was one assignment to an available bay."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2028-05-28T18:00:00Z",
+      "speaker_id": "work_s18_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Someone new shadowed me in the dispatch office this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Did that slow you down?"
+        },
+        {
+          "role": "user",
+          "content": "A little, but the questions were good ones."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2028-05-29T09:00:00Z",
+      "speaker_id": "work_s18_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I batched my replies about the peak weeks into one message before lunch."
+        },
+        {
+          "role": "assistant",
+          "content": "Cleaner than drip-feeding answers."
+        },
+        {
+          "role": "user",
+          "content": "Much cleaner."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2028-05-30T11:00:00Z",
+      "speaker_id": "work_s18_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "When snow closed two depots, I stepped into the planning room for an hour, matched priority medical deliveries to driver hours and road restrictions, and reassigned routes without sending a driver beyond legal limits."
+        },
+        {
+          "role": "assistant",
+          "content": "Why leave the radio desk?"
+        },
+        {
+          "role": "user",
+          "content": "The route dependencies needed one stable view."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2028-05-31T14:00:00Z",
+      "speaker_id": "work_s18_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I handled a brief late-day package trace for one customer order."
+        },
+        {
+          "role": "assistant",
+          "content": "Was a driver-hours calculation involved?"
+        },
+        {
+          "role": "user",
+          "content": "No, the scan history was short and bounded."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2028-06-01T16:00:00Z",
+      "speaker_id": "work_s18_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I archived last cycle's notes on the dock schedule and set up the new folder."
+        },
+        {
+          "role": "assistant",
+          "content": "A fresh start?"
+        },
+        {
+          "role": "user",
+          "content": "As fresh as these things get."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2028-06-02T18:00:00Z",
+      "speaker_id": "work_s18_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "During weather exceptions, dispatch now sends only road closures, vehicle safety issues, or medical-delivery changes into the planning room."
+        },
+        {
+          "role": "assistant",
+          "content": "Why those categories?"
+        },
+        {
+          "role": "user",
+          "content": "They can alter the route plan; ordinary location requests do not."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2028-06-03T09:00:00Z",
+      "speaker_id": "work_s18_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A vendor call about the exception board ran long but ended well."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth the time?"
+        },
+        {
+          "role": "user",
+          "content": "This one, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2028-06-04T11:00:00Z",
+      "speaker_id": "work_s18_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I walked through the dispatch office checklist with the new starter."
+        },
+        {
+          "role": "assistant",
+          "content": "How did they do?"
+        },
+        {
+          "role": "user",
+          "content": "Careful and quick, a good sign."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2028-06-05T14:00:00Z",
+      "speaker_id": "work_s18_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Quiet afternoon; I cleared the backlog around the peak weeks."
+        },
+        {
+          "role": "assistant",
+          "content": "A rare day."
+        },
+        {
+          "role": "user",
+          "content": "I did not waste it."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2028-06-06T16:00:00Z",
+      "speaker_id": "work_s18_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I flagged a small inconsistency in the dock schedule records and fixed it at the source."
+        },
+        {
+          "role": "assistant",
+          "content": "Root cause or symptom?"
+        },
+        {
+          "role": "user",
+          "content": "Root cause, for once."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2028-06-07T18:00:00Z",
+      "speaker_id": "work_s18_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Last December I took radio calls between each reassignment and moved a driver toward a late pickup without noticing that the detour would exhaust the driver's remaining hours."
+        },
+        {
+          "role": "assistant",
+          "content": "What did that create?"
+        },
+        {
+          "role": "user",
+          "content": "A second reroute and a delayed medical shipment."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2028-06-08T09:00:00Z",
+      "speaker_id": "work_s18_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I sketched next week's plan for the peak weeks before leaving."
+        },
+        {
+          "role": "assistant",
+          "content": "Ahead of schedule?"
+        },
+        {
+          "role": "user",
+          "content": "Ahead enough to sleep well."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2028-06-09T11:00:00Z",
+      "speaker_id": "work_s18_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Lunch walk, then a clean pass through the exception board updates."
+        },
+        {
+          "role": "assistant",
+          "content": "Does the walk help?"
+        },
+        {
+          "role": "user",
+          "content": "It resets the afternoon."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2028-06-10T14:00:00Z",
+      "speaker_id": "work_s18_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The radio operator can keep the live board and relay the three route-changing exceptions at a scheduled check."
+        },
+        {
+          "role": "assistant",
+          "content": "Can operations still respond?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, urgent facts remain immediate without turning every query into a restart."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2028-06-11T16:00:00Z",
+      "speaker_id": "work_s18_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The depot manager says a supervisor should be visibly available on the radio all day."
+        },
+        {
+          "role": "assistant",
+          "content": "Does visibility establish a safe routing process?"
+        },
+        {
+          "role": "user",
+          "content": "No, the driver-hour calculation still has to be completed."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2028-06-12T18:00:00Z",
+      "speaker_id": "work_s18_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I closed the week by updating the dispatch office handover notes."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual to hand over?"
+        },
+        {
+          "role": "user",
+          "content": "Blessedly little."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2028-06-13T09:00:00Z",
+      "speaker_id": "work_s18_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Should I remain on the radio while building tomorrow's weather-exception route plan?"
+        }
+      ]
+    }
+  ],
+  "query": "Should I remain on the radio while building tomorrow's weather-exception route plan?",
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "work_s18_u07",
+      "fact": "When snow closed two depots, I stepped into the planning room for an hour, matched priority medical deliveries to driver hours and road restrictions, and reassigned routes without sending a driver beyond legal limits."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "work_s18_u07",
+      "fact": "Last December I took radio calls between each reassignment and moved a driver toward a late pickup without noticing that the detour would exhaust the driver's remaining hours."
+    }
+  },
+  "supporting_constraints": {
+    "E1": {
+      "session_id": 9,
+      "fact": "During weather exceptions, dispatch now sends only road closures, vehicle safety issues, or medical-delivery changes into the planning room."
+    },
+    "E2": {
+      "session_id": 17,
+      "fact": "The radio operator can keep the live board and relay the three route-changing exceptions at a scheduled check."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "work_s18_u07",
+        "context": "snow depot closure planning",
+        "goal_or_prediction": "reassign priority routes",
+        "action": "matched roads, driver hours, and medical deliveries in a quiet room",
+        "outcome_or_affect": "legal routes preserved"
+      }
+    },
+    "7": {
+      "role": "nearby_counterexample"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "supporting_constraint",
+      "fact_id": "E1"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "work_s18_u07",
+        "context": "December weather reassignment",
+        "goal_or_prediction": "reroute a late pickup",
+        "action": "took radio calls between each change",
+        "outcome_or_affect": "driver-hours conflict missed"
+      }
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "supporting_constraint",
+      "fact_id": "E2"
+    },
+    "18": {
+      "role": "distractor",
+      "distractor_id": "dist_1",
+      "why_distractor": "Visible radio availability does not show that continual interruptions are safe for constrained routing."
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "The snow-closure planning episode shows that protected reconciliation preserves driver-hour and medical constraints, while the December radio episode shows why this user's interrupted reassignment missed an hours-limit conflict.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": [
+      "E1",
+      "E2"
+    ]
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "When snow closed two depots, I stepped into the planning room for an hour, matched priority medical deliveries to driver hours and road restrictions, and reassigned routes without sending a driver beyond legal limits"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "Last December I took radio calls between each reassignment and moved a driver toward a late pickup without noticing that the detour would exhaust the driver's remaining hours"
+    }
+  ],
+  "retrieval_cue": {
+    "cue_type": "recommendation_ranking",
+    "why_it_naturally_retrieves_R": "A realistic work request forces a personalized decision without naming either episode or the relation between them."
+  },
+  "relation_specificity": {
+    "nearby_relation": "The user can assign a dock and trace one package amid normal radio traffic.",
+    "why_it_does_not_license_C": "Neither involves reconciling a system-wide reroute against driver hours, roads, and delivery priority."
+  },
+  "coactivation_bridge": "A and B form the only intervention pair. The snow-closure planning episode shows that protected reconciliation preserves driver-hour and medical constraints, while the December radio episode shows why this user's interrupted reassignment missed an hours-limit conflict. E1 and E2 are logistical calibration only and do not open a second route to C.",
+  "latent_C": {
+    "inference": "Reject that arrangement; delegate routine radio traffic and receive only route-changing exceptions.",
+    "calibrated_language": "delegate routine radio traffic during planning"
+  },
+  "answer_contract": {
+    "target_proposition": "Reject that arrangement; delegate routine radio traffic and receive only route-changing exceptions.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "work_u07",
+    "status": "review_candidate_only",
+    "anonymization": "External persona material was used only during authoring; no corpus, name, country, or demographic metadata is included."
+  },
+  "arm_gold": {
+    "distractor": {
+      "expected_mode": "infer_C",
+      "binary_decision": true
+    }
+  },
+  "distractor_note": {
+    "replaced_session_id": 18,
+    "why_distractor": "Visible radio availability does not show that continual interruptions are safe for constrained routing."
+  }
+}

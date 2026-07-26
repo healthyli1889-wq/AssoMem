@@ -1,0 +1,638 @@
+{
+  "schema_version": "work-vnext-2.0",
+  "candidate_id": "AMB_WV_S20_U09_associative",
+  "pair_id": "AMB_WV_S20_U09",
+  "data_arm": "associative",
+  "domain": "work",
+  "user_id": "work_s20_u09",
+  "sub_scenario": {
+    "family": "choosing synchronous versus asynchronous collaboration for complex handoffs",
+    "role": "municipal records archivist",
+    "one_line": "municipal records archivist: circulate current hold markings before resolving disputes"
+  },
+  "query_type": "situational_fit",
+  "polarity": "accept",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2028-09-28T11:00:00Z",
+      "speaker_id": "work_s20_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I spent the first hour tidying the retention index and closing stale entries."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything still open?"
+        },
+        {
+          "role": "user",
+          "content": "Two items, both with owners."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2028-09-29T14:00:00Z",
+      "speaker_id": "work_s20_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The transfer register review wrapped early today."
+        },
+        {
+          "role": "assistant",
+          "content": "Any surprises in it?"
+        },
+        {
+          "role": "user",
+          "content": "None worth recording."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2028-09-30T16:00:00Z",
+      "speaker_id": "work_s20_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I answered a standard retrieval request on a short call."
+        },
+        {
+          "role": "assistant",
+          "content": "Was a disposal list still pending counsel review?"
+        },
+        {
+          "role": "user",
+          "content": "No, the retention category was obvious."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2028-10-01T18:00:00Z",
+      "speaker_id": "work_s20_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Someone new shadowed me in the records channel this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Did that slow you down?"
+        },
+        {
+          "role": "user",
+          "content": "A little, but the questions were good ones."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2028-10-02T09:00:00Z",
+      "speaker_id": "work_s20_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I batched my replies about the audit requests into one message before lunch."
+        },
+        {
+          "role": "assistant",
+          "content": "Cleaner than drip-feeding answers."
+        },
+        {
+          "role": "user",
+          "content": "Much cleaner."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2028-10-03T11:00:00Z",
+      "speaker_id": "work_s20_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "For a zoning-record transfer, I cross-referenced the retention index with the litigation-hold notice and sent the department a hold-marked transfer register; the team kept the records that could not be destroyed."
+        },
+        {
+          "role": "assistant",
+          "content": "What did the register provide?"
+        },
+        {
+          "role": "user",
+          "content": "A hold-linked written handoff before any disposal action."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2028-10-04T14:00:00Z",
+      "speaker_id": "work_s20_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I prepared a routine transfer list without a meeting yesterday."
+        },
+        {
+          "role": "assistant",
+          "content": "Did that authorize destruction of held boxes?"
+        },
+        {
+          "role": "user",
+          "content": "No, it covered straightforward transfers."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2028-10-05T16:00:00Z",
+      "speaker_id": "work_s20_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I archived last cycle's notes on the transfer register and set up the new folder."
+        },
+        {
+          "role": "assistant",
+          "content": "A fresh start?"
+        },
+        {
+          "role": "user",
+          "content": "As fresh as these things get."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2028-10-06T18:00:00Z",
+      "speaker_id": "work_s20_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The weekly records meeting is at 15:00, and counsel posts hold-notice updates by Thursday noon."
+        },
+        {
+          "role": "assistant",
+          "content": "Are those times fixed?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, both are on the audit-request calendar."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2028-10-07T09:00:00Z",
+      "speaker_id": "work_s20_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A vendor call about the retention index ran long but ended well."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth the time?"
+        },
+        {
+          "role": "user",
+          "content": "This one, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2028-10-08T11:00:00Z",
+      "speaker_id": "work_s20_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I walked through the records channel checklist with the new starter."
+        },
+        {
+          "role": "assistant",
+          "content": "How did they do?"
+        },
+        {
+          "role": "user",
+          "content": "Careful and quick, a good sign."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2028-10-09T14:00:00Z",
+      "speaker_id": "work_s20_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Quiet afternoon; I cleared the backlog around the audit requests."
+        },
+        {
+          "role": "assistant",
+          "content": "A rare day."
+        },
+        {
+          "role": "user",
+          "content": "I did not waste it."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2028-10-10T16:00:00Z",
+      "speaker_id": "work_s20_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I flagged a small inconsistency in the transfer register records and fixed it at the source."
+        },
+        {
+          "role": "assistant",
+          "content": "Root cause or symptom?"
+        },
+        {
+          "role": "user",
+          "content": "Root cause, for once."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2028-10-11T18:00:00Z",
+      "speaker_id": "work_s20_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "At a previous live meeting, a supervisor approved a box purge from an old index, and the records staff later discovered a new hold covering that address range."
+        },
+        {
+          "role": "assistant",
+          "content": "What had the meeting required?"
+        },
+        {
+          "role": "user",
+          "content": "A disposal decision before the current legal notice was on the register."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2028-10-12T09:00:00Z",
+      "speaker_id": "work_s20_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I sketched next week's plan for the audit requests before leaving."
+        },
+        {
+          "role": "assistant",
+          "content": "Ahead of schedule?"
+        },
+        {
+          "role": "user",
+          "content": "Ahead enough to sleep well."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2028-10-13T11:00:00Z",
+      "speaker_id": "work_s20_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Lunch walk, then a clean pass through the retention index updates."
+        },
+        {
+          "role": "assistant",
+          "content": "Does the walk help?"
+        },
+        {
+          "role": "user",
+          "content": "It resets the afternoon."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2028-10-14T14:00:00Z",
+      "speaker_id": "work_s20_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A marked register can be distributed on the records channel when counsel posts the update, and the roster permits a live call only if departments dispute a retention boundary."
+        },
+        {
+          "role": "assistant",
+          "content": "Are both channels available?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, the register release and dispute-call slot are on the approved form."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2028-10-15T16:00:00Z",
+      "speaker_id": "work_s20_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I compared two options for the transfer register tooling and noted a mild preference."
+        },
+        {
+          "role": "assistant",
+          "content": "Decision made?"
+        },
+        {
+          "role": "user",
+          "content": "Deferred until the trial ends."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2028-10-16T18:00:00Z",
+      "speaker_id": "work_s20_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I closed the week by updating the records channel handover notes."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual to hand over?"
+        },
+        {
+          "role": "user",
+          "content": "Blessedly little."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2028-10-17T09:00:00Z",
+      "speaker_id": "work_s20_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The departments want a decision on the pending zoning boxes before counsel's update arrives. How should I handle it?"
+        }
+      ]
+    }
+  ],
+  "query": "The departments want a decision on the pending zoning boxes before counsel's update arrives. How should I handle it?",
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "work_s20_u09",
+      "fact": "For a zoning-record transfer, I cross-referenced the retention index with the litigation-hold notice and sent the department a hold-marked transfer register; the team kept the records that could not be destroyed."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "work_s20_u09",
+      "fact": "At a previous live meeting, a supervisor approved a box purge from an old index, and the records staff later discovered a new hold covering that address range."
+    }
+  },
+  "supporting_constraints": {
+    "E1": {
+      "session_id": 9,
+      "fact": "The weekly records meeting is at 15:00, and counsel posts hold-notice updates by Thursday noon."
+    },
+    "E2": {
+      "session_id": 17,
+      "fact": "A marked register can be distributed on the records channel when counsel posts the update, and the roster permits a live call only if departments dispute a retention boundary."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "work_s20_u09",
+        "context": "zoning-record transfer",
+        "goal_or_prediction": "preserve records covered by an active hold",
+        "action": "cross-referenced retention index with litigation-hold notice",
+        "outcome_or_affect": "the team kept records that could not be destroyed"
+      }
+    },
+    "7": {
+      "role": "nearby_counterexample"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "supporting_constraint",
+      "fact_id": "E1"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "work_s20_u09",
+        "context": "old-index purge",
+        "goal_or_prediction": "approve box disposal",
+        "action": "relied on a category without the current legal notice",
+        "outcome_or_affect": "risked destroying covered records"
+      }
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "supporting_constraint",
+      "fact_id": "E2"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "The zoning-record transfer establishes this user's value in connecting retention categories to active holds before circulation, while the old-index purge establishes why this user should wait for counsel's update before any live disposal decision.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": [
+      "E1",
+      "E2"
+    ]
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "For a zoning-record transfer, I cross-referenced the retention index with the litigation-hold notice and sent the department a hold-marked transfer register; the team kept the records that could not be destroyed"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "At a previous live meeting, a supervisor approved a box purge from an old index, and the records staff later discovered a new hold covering that address range"
+    }
+  ],
+  "retrieval_cue": {
+    "cue_type": "situational_fit",
+    "why_it_naturally_retrieves_R": "A realistic work request forces a personalized decision without naming either episode or the relation between them."
+  },
+  "relation_specificity": {
+    "nearby_relation": "The user can handle clear retrieval calls and prepare routine transfer lists.",
+    "why_it_does_not_license_C": "Those tasks establish neither hold-marked asynchronous registers nor the reason to defer live disposal until the notice updates."
+  },
+  "coactivation_bridge": "A and B form the only intervention pair. The zoning-record transfer establishes this user's value in connecting retention categories to active holds before circulation, while the old-index purge establishes why this user should wait for counsel's update before any live disposal decision. E1 and E2 are logistical calibration only and do not open a second route to C.",
+  "latent_C": {
+    "inference": "Wait to send a hold-marked register, then use live discussion only for genuine classification disputes.",
+    "calibrated_language": "circulate current hold markings before resolving disputes"
+  },
+  "answer_contract": {
+    "target_proposition": "Wait to send a hold-marked register, then use live discussion only for genuine classification disputes.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "work_u09",
+    "status": "review_candidate_only",
+    "anonymization": "External persona material was used only during authoring; no corpus, name, country, or demographic metadata is included."
+  },
+  "arm_gold": {
+    "full": {
+      "expected_mode": "infer_C",
+      "binary_decision": true
+    },
+    "a_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    },
+    "b_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    },
+    "link_broken": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    }
+  },
+  "single_evidence_replacements": {
+    "a_only": {
+      "replaced_session_id": 14,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "I filed the routine audit requests paperwork and confirmed the owner list."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual in it?"
+        },
+        {
+          "role": "user",
+          "content": "A routine cycle, happily."
+        }
+      ]
+    },
+    "b_only": {
+      "replaced_session_id": 6,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "I did a standard pass over the transfer register records this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Any exceptions?"
+        },
+        {
+          "role": "user",
+          "content": "None worth a note."
+        }
+      ]
+    }
+  },
+  "link_broken": {
+    "replaced_session_id": 14,
+    "replacement_dialogue": [
+      {
+        "role": "user",
+        "content": "During a July records meeting, I read transfer timestamps, tracked which hold fields were still blank, and recorded department questions; the records supervisor authorized disposal after the notice posted, and no box purge was approved during my segment."
+      },
+      {
+        "role": "assistant",
+        "content": "Did you approve disposal from the old index?"
+      },
+      {
+        "role": "user",
+        "content": "No, I maintained the meeting record while the supervisor handled authorization."
+      }
+    ]
+  }
+}

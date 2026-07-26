@@ -1,0 +1,579 @@
+{
+  "schema_version": "work-vnext-2.0",
+  "candidate_id": "AMB_WV_S03_U01_distractor",
+  "pair_id": "AMB_WV_S03_U01",
+  "data_arm": "distractor",
+  "domain": "work",
+  "user_id": "work_s03_u01",
+  "sub_scenario": {
+    "family": "interrupt-driven task switching",
+    "role": "backend engineer",
+    "one_line": "backend engineer: poor fit as currently specced"
+  },
+  "query_type": "situational_fit",
+  "polarity": "reject",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2026-05-31T11:00:00Z",
+      "speaker_id": "work_s03_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I spent the first hour tidying the decision ledger and closing stale entries."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything still open?"
+        },
+        {
+          "role": "user",
+          "content": "Two items, both with owners."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2026-06-01T14:00:00Z",
+      "speaker_id": "work_s03_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The migration plan review wrapped early today."
+        },
+        {
+          "role": "assistant",
+          "content": "Any surprises in it?"
+        },
+        {
+          "role": "user",
+          "content": "None worth recording."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2026-06-02T16:00:00Z",
+      "speaker_id": "work_s03_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Scheduled interruptions are fine; my 11:00 sync never hurts the afternoon."
+        },
+        {
+          "role": "assistant",
+          "content": "Predictability defuses it."
+        },
+        {
+          "role": "user",
+          "content": "Entirely."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2026-06-03T18:00:00Z",
+      "speaker_id": "work_s03_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Someone new shadowed me in the engineering channel this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Did that slow you down?"
+        },
+        {
+          "role": "user",
+          "content": "A little, but the questions were good ones."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2026-06-04T09:00:00Z",
+      "speaker_id": "work_s03_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I batched my replies about the index decisions into one message before lunch."
+        },
+        {
+          "role": "assistant",
+          "content": "Cleaner than drip-feeding answers."
+        },
+        {
+          "role": "user",
+          "content": "Much cleaner."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2026-06-05T11:00:00Z",
+      "speaker_id": "work_s03_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "For the schema migration review I blocked two hours, kept a decision ledger, and closed all nine open questions in one sitting."
+        },
+        {
+          "role": "assistant",
+          "content": "The ledger holds your state."
+        },
+        {
+          "role": "user",
+          "content": "It is my working memory on paper."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2026-06-06T14:00:00Z",
+      "speaker_id": "work_s03_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Crunch-day pairing sessions, oddly, work for me; one partner, one thread."
+        },
+        {
+          "role": "assistant",
+          "content": "A single sustained channel."
+        },
+        {
+          "role": "user",
+          "content": "One channel is not switching."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2026-06-07T16:00:00Z",
+      "speaker_id": "work_s03_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I archived last cycle's notes on the migration plan and set up the new folder."
+        },
+        {
+          "role": "assistant",
+          "content": "A fresh start?"
+        },
+        {
+          "role": "user",
+          "content": "As fresh as these things get."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2026-06-08T18:00:00Z",
+      "speaker_id": "work_s03_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "My tracker says I average ninety seconds of refocus per interruption; I measured a full week once."
+        },
+        {
+          "role": "assistant",
+          "content": "Quantified switching cost."
+        },
+        {
+          "role": "user",
+          "content": "Painfully quantified."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2026-06-09T09:00:00Z",
+      "speaker_id": "work_s03_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A vendor call about the decision ledger ran long but ended well."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth the time?"
+        },
+        {
+          "role": "user",
+          "content": "This one, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2026-06-10T11:00:00Z",
+      "speaker_id": "work_s03_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I walked through the engineering channel checklist with the new starter."
+        },
+        {
+          "role": "assistant",
+          "content": "How did they do?"
+        },
+        {
+          "role": "user",
+          "content": "Careful and quick, a good sign."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2026-06-11T14:00:00Z",
+      "speaker_id": "work_s03_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Quiet afternoon; I cleared the backlog around the index decisions."
+        },
+        {
+          "role": "assistant",
+          "content": "A rare day."
+        },
+        {
+          "role": "user",
+          "content": "I did not waste it."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2026-06-12T16:00:00Z",
+      "speaker_id": "work_s03_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I flagged a small inconsistency in the migration plan records and fixed it at the source."
+        },
+        {
+          "role": "assistant",
+          "content": "Root cause or symptom?"
+        },
+        {
+          "role": "user",
+          "content": "Root cause, for once."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2026-06-13T18:00:00Z",
+      "speaker_id": "work_s03_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "On desk-duty Tuesday, pings every few minutes had me reopen a settled index decision, and I shipped a migration that ignored my own ledger entry from an hour earlier."
+        },
+        {
+          "role": "assistant",
+          "content": "You overrode your own note?"
+        },
+        {
+          "role": "user",
+          "content": "I never saw it; my head was six conversations deep."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2026-06-14T09:00:00Z",
+      "speaker_id": "work_s03_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I sketched next week's plan for the index decisions before leaving."
+        },
+        {
+          "role": "assistant",
+          "content": "Ahead of schedule?"
+        },
+        {
+          "role": "user",
+          "content": "Ahead enough to sleep well."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2026-06-15T11:00:00Z",
+      "speaker_id": "work_s03_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Lunch walk, then a clean pass through the decision ledger updates."
+        },
+        {
+          "role": "assistant",
+          "content": "Does the walk help?"
+        },
+        {
+          "role": "user",
+          "content": "It resets the afternoon."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2026-06-16T14:00:00Z",
+      "speaker_id": "work_s03_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Desk duty as specced answers pings live all day; batching is explicitly disallowed in the rota document."
+        },
+        {
+          "role": "assistant",
+          "content": "The format forbids your mitigation."
+        },
+        {
+          "role": "user",
+          "content": "In writing."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2026-06-17T16:00:00Z",
+      "speaker_id": "work_s03_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The desk-duty rotation is being sold as the fastest way to know every system."
+        },
+        {
+          "role": "assistant",
+          "content": "Breadth as bait."
+        },
+        {
+          "role": "user",
+          "content": "Effective bait for engineers."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2026-06-18T18:00:00Z",
+      "speaker_id": "work_s03_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I closed the week by updating the engineering channel handover notes."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual to hand over?"
+        },
+        {
+          "role": "user",
+          "content": "Blessedly little."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2026-06-19T09:00:00Z",
+      "speaker_id": "work_s03_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The rota needs my answer on desk-duty Tuesdays. Knowing how I work, is that duty a place I would do it well?"
+        }
+      ]
+    }
+  ],
+  "query": "The rota needs my answer on desk-duty Tuesdays. Knowing how I work, is that duty a place I would do it well?",
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "work_s03_u01",
+      "fact": "For the schema migration review I blocked two hours, kept a decision ledger, and closed all nine open questions in one sitting."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "work_s03_u01",
+      "fact": "On desk-duty Tuesday, pings every few minutes had me reopen a settled index decision, and I shipped a migration that ignored my own ledger entry from an hour earlier."
+    }
+  },
+  "supporting_constraints": {
+    "E1": {
+      "session_id": 9,
+      "fact": "My tracker says I average ninety seconds of refocus per interruption; I measured a full week once."
+    },
+    "E2": {
+      "session_id": 17,
+      "fact": "Desk duty as specced answers pings live all day; batching is explicitly disallowed in the rota document."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "work_s03_u01",
+        "context": "schema migration review",
+        "goal_or_prediction": "close nine open questions",
+        "action": "worked a protected block with a decision ledger",
+        "outcome_or_affect": "all closed in one sitting"
+      }
+    },
+    "7": {
+      "role": "nearby_counterexample"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "supporting_constraint",
+      "fact_id": "E1"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "work_s03_u01",
+        "context": "desk-duty Tuesday",
+        "goal_or_prediction": "answer pings while migrating",
+        "action": "switched between pings and the migration",
+        "outcome_or_affect": "shipped against their own ledger entry"
+      }
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "supporting_constraint",
+      "fact_id": "E2"
+    },
+    "18": {
+      "role": "distractor",
+      "distractor_id": "dist_1",
+      "why_distractor": "Know-every-system breadth is a real benefit that says nothing about the switching cost."
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "This user's correctness depends on sustained blocks with a decision ledger, and desk duty forbids the batching that protects that ledger.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": [
+      "E1",
+      "E2"
+    ]
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "For the schema migration review I blocked two hours, kept a decision ledger, and closed all nine open questions in one sitting"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "On desk-duty Tuesday, pings every few minutes had me reopen a settled index decision, and I shipped a migration that ignored my own ledger entry from an hour earlier"
+    }
+  ],
+  "retrieval_cue": {
+    "cue_type": "situational_fit",
+    "why_it_naturally_retrieves_R": "A realistic work request forces a personalized decision without naming either episode or the relation between them."
+  },
+  "relation_specificity": {
+    "nearby_relation": "The user absorbs scheduled syncs and single-thread pairing easily.",
+    "why_it_does_not_license_C": "Neither involves unpredictable all-day switching with batching disallowed."
+  },
+  "coactivation_bridge": "A shows the operating condition; B shows the demand or failure that makes it decisive. This user's correctness depends on sustained blocks with a decision ledger, and desk duty forbids the batching that protects that ledger. E1 and E2 calibrate the practical recommendation without opening a second route to the conclusion.",
+  "latent_C": {
+    "inference": "Desk duty as currently specced, with live all-day ping response and batching disallowed, is a poor fit for this user.",
+    "calibrated_language": "poor fit as currently specced"
+  },
+  "answer_contract": {
+    "target_proposition": "Desk duty as currently specced, with live all-day ping response and batching disallowed, is a poor fit for this user.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "decision",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "work_u01",
+    "status": "review_candidate_only",
+    "anonymization": "External persona material was used only during authoring; no corpus, name, country, or demographic metadata is included."
+  },
+  "arm_gold": {
+    "distractor": {
+      "expected_mode": "infer_C",
+      "binary_decision": true
+    }
+  },
+  "distractor_note": {
+    "replaced_session_id": 18,
+    "why_distractor": "Know-every-system breadth is a real benefit that says nothing about the switching cost."
+  }
+}

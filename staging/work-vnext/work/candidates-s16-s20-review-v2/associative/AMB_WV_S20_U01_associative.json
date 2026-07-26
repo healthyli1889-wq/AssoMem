@@ -1,0 +1,638 @@
+{
+  "schema_version": "work-vnext-2.0",
+  "candidate_id": "AMB_WV_S20_U01_associative",
+  "pair_id": "AMB_WV_S20_U01",
+  "data_arm": "associative",
+  "domain": "work",
+  "user_id": "work_s20_u01",
+  "sub_scenario": {
+    "family": "choosing synchronous versus asynchronous collaboration for complex handoffs",
+    "role": "pharmacy operations coordinator",
+    "one_line": "pharmacy operations coordinator: post a reconciled asynchronous handoff"
+  },
+  "query_type": "conditional_recommendation",
+  "polarity": "reject",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2028-09-04T11:00:00Z",
+      "speaker_id": "work_s20_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I spent the first hour tidying the dispensing ledger and closing stale entries."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything still open?"
+        },
+        {
+          "role": "user",
+          "content": "Two items, both with owners."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2028-09-05T14:00:00Z",
+      "speaker_id": "work_s20_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The coverage grid review wrapped early today."
+        },
+        {
+          "role": "assistant",
+          "content": "Any surprises in it?"
+        },
+        {
+          "role": "user",
+          "content": "None worth recording."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2028-09-06T16:00:00Z",
+      "speaker_id": "work_s20_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I reviewed a routine refill queue in the afternoon without needing a call."
+        },
+        {
+          "role": "assistant",
+          "content": "Was a substitution decision pending?"
+        },
+        {
+          "role": "user",
+          "content": "No, the orders were already reconciled."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2028-09-07T18:00:00Z",
+      "speaker_id": "work_s20_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Someone new shadowed me in the clinical huddle this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Did that slow you down?"
+        },
+        {
+          "role": "user",
+          "content": "A little, but the questions were good ones."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2028-09-08T09:00:00Z",
+      "speaker_id": "work_s20_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I batched my replies about the formulary changes into one message before lunch."
+        },
+        {
+          "role": "assistant",
+          "content": "Cleaner than drip-feeding answers."
+        },
+        {
+          "role": "user",
+          "content": "Much cleaner."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2028-09-09T11:00:00Z",
+      "speaker_id": "work_s20_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "When an antibiotic substitution changed overnight, I compared the dispensing ledger with the prescriber notes and prepared a numbered discrepancy list that stayed in draft until the clinical pharmacist reviewed it; no ward instruction was issued from my draft."
+        },
+        {
+          "role": "assistant",
+          "content": "What stayed unpublished?"
+        },
+        {
+          "role": "user",
+          "content": "Any ward-facing instruction until the ledger-prescriber comparison was checked."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2028-09-10T14:00:00Z",
+      "speaker_id": "work_s20_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I joined a short daytime huddle when the order sheet was complete."
+        },
+        {
+          "role": "assistant",
+          "content": "Did that settle an overnight change?"
+        },
+        {
+          "role": "user",
+          "content": "No, the facts were fixed before the huddle began."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2028-09-11T16:00:00Z",
+      "speaker_id": "work_s20_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I archived last cycle's notes on the coverage grid and set up the new folder."
+        },
+        {
+          "role": "assistant",
+          "content": "A fresh start?"
+        },
+        {
+          "role": "user",
+          "content": "As fresh as these things get."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2028-09-12T18:00:00Z",
+      "speaker_id": "work_s20_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The early huddle begins at 07:00, and the courier report upload is scheduled for 09:30."
+        },
+        {
+          "role": "assistant",
+          "content": "Are those times fixed?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, both are on the coverage grid."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2028-09-13T09:00:00Z",
+      "speaker_id": "work_s20_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A vendor call about the dispensing ledger ran long but ended well."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth the time?"
+        },
+        {
+          "role": "user",
+          "content": "This one, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2028-09-14T11:00:00Z",
+      "speaker_id": "work_s20_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I walked through the clinical huddle checklist with the new starter."
+        },
+        {
+          "role": "assistant",
+          "content": "How did they do?"
+        },
+        {
+          "role": "user",
+          "content": "Careful and quick, a good sign."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2028-09-15T14:00:00Z",
+      "speaker_id": "work_s20_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Quiet afternoon; I cleared the backlog around the formulary changes."
+        },
+        {
+          "role": "assistant",
+          "content": "A rare day."
+        },
+        {
+          "role": "user",
+          "content": "I did not waste it."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2028-09-16T16:00:00Z",
+      "speaker_id": "work_s20_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I flagged a small inconsistency in the coverage grid records and fixed it at the source."
+        },
+        {
+          "role": "assistant",
+          "content": "Root cause or symptom?"
+        },
+        {
+          "role": "user",
+          "content": "Root cause, for once."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2028-09-17T18:00:00Z",
+      "speaker_id": "work_s20_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Last month, a verbal handoff before the courier count arrived led the next team to hold the wrong concentration for two wards."
+        },
+        {
+          "role": "assistant",
+          "content": "What had the handoff required?"
+        },
+        {
+          "role": "user",
+          "content": "A live ward decision before the returned-stock record was visible."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2028-09-18T09:00:00Z",
+      "speaker_id": "work_s20_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I sketched next week's plan for the formulary changes before leaving."
+        },
+        {
+          "role": "assistant",
+          "content": "Ahead of schedule?"
+        },
+        {
+          "role": "user",
+          "content": "Ahead enough to sleep well."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2028-09-19T11:00:00Z",
+      "speaker_id": "work_s20_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Lunch walk, then a clean pass through the dispensing ledger updates."
+        },
+        {
+          "role": "assistant",
+          "content": "Does the walk help?"
+        },
+        {
+          "role": "user",
+          "content": "It resets the afternoon."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2028-09-20T14:00:00Z",
+      "speaker_id": "work_s20_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The clinical chat channel opens at 09:45, and a side room is booked from 10:00 to 10:15."
+        },
+        {
+          "role": "assistant",
+          "content": "Are those resources on the roster?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, both appear on the coverage grid."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2028-09-21T16:00:00Z",
+      "speaker_id": "work_s20_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I compared two options for the coverage grid tooling and noted a mild preference."
+        },
+        {
+          "role": "assistant",
+          "content": "Decision made?"
+        },
+        {
+          "role": "user",
+          "content": "Deferred until the trial ends."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2028-09-22T18:00:00Z",
+      "speaker_id": "work_s20_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I closed the week by updating the clinical huddle handover notes."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual to hand over?"
+        },
+        {
+          "role": "user",
+          "content": "Blessedly little."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2028-09-23T09:00:00Z",
+      "speaker_id": "work_s20_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The team has asked whether I should lead the early handoff about the substitution change. What format should I use?"
+        }
+      ]
+    }
+  ],
+  "query": "The team has asked whether I should lead the early handoff about the substitution change. What format should I use?",
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "work_s20_u01",
+      "fact": "When an antibiotic substitution changed overnight, I compared the dispensing ledger with the prescriber notes and prepared a numbered discrepancy list that stayed in draft until the clinical pharmacist reviewed it; no ward instruction was issued from my draft."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "work_s20_u01",
+      "fact": "Last month, a verbal handoff before the courier count arrived led the next team to hold the wrong concentration for two wards."
+    }
+  },
+  "supporting_constraints": {
+    "E1": {
+      "session_id": 9,
+      "fact": "The early huddle begins at 07:00, and the courier report upload is scheduled for 09:30."
+    },
+    "E2": {
+      "session_id": 17,
+      "fact": "The clinical chat channel opens at 09:45, and a side room is booked from 10:00 to 10:15."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "work_s20_u01",
+        "context": "antibiotic substitution",
+        "goal_or_prediction": "prepare a checked discrepancy list without issuing ward instructions",
+        "action": "compared ledger with prescriber notes and kept the list in draft",
+        "outcome_or_affect": "no ward instruction issued from the draft"
+      }
+    },
+    "7": {
+      "role": "nearby_counterexample"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "supporting_constraint",
+      "fact_id": "E1"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "work_s20_u01",
+        "context": "premature verbal handoff",
+        "goal_or_prediction": "choose ward concentrations",
+        "action": "spoke before courier counts arrived",
+        "outcome_or_affect": "held the wrong concentration for two wards"
+      }
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "supporting_constraint",
+      "fact_id": "E2"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "The antibiotic episode shows this user can prepare a ledger-linked draft without issuing ward instructions, while the premature verbal handoff shows the cost of live ward decisions before courier counts; only both justify a post-courier written handoff instead of early live leadership.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": [
+      "E1",
+      "E2"
+    ]
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "When an antibiotic substitution changed overnight, I compared the dispensing ledger with the prescriber notes and prepared a numbered discrepancy list that stayed in draft until the clinical pharmacist reviewed it; no ward instruction was issued from my draft"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "Last month, a verbal handoff before the courier count arrived led the next team to hold the wrong concentration for two wards"
+    }
+  ],
+  "retrieval_cue": {
+    "cue_type": "conditional_recommendation",
+    "why_it_naturally_retrieves_R": "A realistic work request forces a personalized decision without naming either episode or the relation between them."
+  },
+  "relation_specificity": {
+    "nearby_relation": "The user can review routine refill queues and join huddles with complete order sheets.",
+    "why_it_does_not_license_C": "Those tasks establish neither a reconciled asynchronous handoff nor the reason to reject leading the early live decision."
+  },
+  "coactivation_bridge": "A and B form the only intervention pair. The antibiotic episode shows this user can prepare a ledger-linked draft without issuing ward instructions, while the premature verbal handoff shows the cost of live ward decisions before courier counts; only both justify a post-courier written handoff instead of early live leadership. E1 and E2 are logistical calibration only and do not open a second route to C.",
+  "latent_C": {
+    "inference": "Send a reconciled written handoff after the courier count instead of leading the early live decision.",
+    "calibrated_language": "post a reconciled asynchronous handoff"
+  },
+  "answer_contract": {
+    "target_proposition": "Send a reconciled written handoff after the courier count instead of leading the early live decision.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "work_u01",
+    "status": "review_candidate_only",
+    "anonymization": "External persona material was used only during authoring; no corpus, name, country, or demographic metadata is included."
+  },
+  "arm_gold": {
+    "full": {
+      "expected_mode": "infer_C",
+      "binary_decision": true
+    },
+    "a_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    },
+    "b_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    },
+    "link_broken": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    }
+  },
+  "single_evidence_replacements": {
+    "a_only": {
+      "replaced_session_id": 14,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "I filed the routine formulary changes paperwork and confirmed the owner list."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual in it?"
+        },
+        {
+          "role": "user",
+          "content": "A routine cycle, happily."
+        }
+      ]
+    },
+    "b_only": {
+      "replaced_session_id": 6,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "I did a standard pass over the coverage grid records this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Any exceptions?"
+        },
+        {
+          "role": "user",
+          "content": "None worth a note."
+        }
+      ]
+    }
+  },
+  "link_broken": {
+    "replaced_session_id": 14,
+    "replacement_dialogue": [
+      {
+        "role": "user",
+        "content": "During a July substitution huddle, I posted a verbal summary from an overnight ledger read but misread which ward group the concentration change affected; the clinical lead corrected it after the courier report arrived."
+      },
+      {
+        "role": "assistant",
+        "content": "Did you wait for the courier count?"
+      },
+      {
+        "role": "user",
+        "content": "No, I spoke from the ledger alone and named the wrong ward group."
+      }
+    ]
+  }
+}

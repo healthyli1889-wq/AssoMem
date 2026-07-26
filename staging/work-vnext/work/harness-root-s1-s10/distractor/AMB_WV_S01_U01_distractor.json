@@ -1,0 +1,579 @@
+{
+  "schema_version": "work-vnext-2.0",
+  "candidate_id": "AMB_WV_S01_U01_distractor",
+  "pair_id": "AMB_WV_S01_U01",
+  "data_arm": "distractor",
+  "domain": "work",
+  "user_id": "work_s01_u01",
+  "sub_scenario": {
+    "family": "fixed early live dependency prioritization",
+    "role": "platform operations coordinator",
+    "one_line": "platform operations coordinator: poor fit as currently run"
+  },
+  "query_type": "situational_fit",
+  "polarity": "reject",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2026-03-02T11:00:00Z",
+      "speaker_id": "work_s01_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I spent the first hour tidying the runbook index and closing stale entries."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything still open?"
+        },
+        {
+          "role": "user",
+          "content": "Two items, both with owners."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2026-03-03T14:00:00Z",
+      "speaker_id": "work_s01_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The service inventory review wrapped early today."
+        },
+        {
+          "role": "assistant",
+          "content": "Any surprises in it?"
+        },
+        {
+          "role": "user",
+          "content": "None worth recording."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2026-03-04T16:00:00Z",
+      "speaker_id": "work_s01_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I took the 07:00 routine status readout this week and it went smoothly."
+        },
+        {
+          "role": "assistant",
+          "content": "So early itself is not a problem?"
+        },
+        {
+          "role": "user",
+          "content": "Not when I am reading from a prepared sheet."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2026-03-05T18:00:00Z",
+      "speaker_id": "work_s01_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Someone new shadowed me in the operations bay this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Did that slow you down?"
+        },
+        {
+          "role": "user",
+          "content": "A little, but the questions were good ones."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2026-03-06T09:00:00Z",
+      "speaker_id": "work_s01_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I batched my replies about the incident handoffs into one message before lunch."
+        },
+        {
+          "role": "assistant",
+          "content": "Cleaner than drip-feeding answers."
+        },
+        {
+          "role": "user",
+          "content": "Much cleaner."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2026-03-07T11:00:00Z",
+      "speaker_id": "work_s01_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "During the payments outage I sketched the service dependency map from the handoff notes before the review call, and the restore order came out right: storage first, then the API tier."
+        },
+        {
+          "role": "assistant",
+          "content": "The written map came before the live decision?"
+        },
+        {
+          "role": "user",
+          "content": "Yes. Without it I would have been guessing under pressure."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2026-03-08T14:00:00Z",
+      "speaker_id": "work_s01_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I led a complex restore-sequencing call at noon last month and it went well."
+        },
+        {
+          "role": "assistant",
+          "content": "What made it work?"
+        },
+        {
+          "role": "user",
+          "content": "The dependency notes were in front of me before we started."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2026-03-09T16:00:00Z",
+      "speaker_id": "work_s01_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I archived last cycle's notes on the service inventory and set up the new folder."
+        },
+        {
+          "role": "assistant",
+          "content": "A fresh start?"
+        },
+        {
+          "role": "user",
+          "content": "As fresh as these things get."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2026-03-10T18:00:00Z",
+      "speaker_id": "work_s01_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "My alarm has been dragging me up at five for the gym trial, and I have noticed my judgment before eight is slower even when I feel awake."
+        },
+        {
+          "role": "assistant",
+          "content": "Does routine work suffer too?"
+        },
+        {
+          "role": "user",
+          "content": "No, reading and filing are fine. It is the weighing of options that lags."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2026-03-11T09:00:00Z",
+      "speaker_id": "work_s01_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A vendor call about the runbook index ran long but ended well."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth the time?"
+        },
+        {
+          "role": "user",
+          "content": "This one, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2026-03-12T11:00:00Z",
+      "speaker_id": "work_s01_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I walked through the operations bay checklist with the new starter."
+        },
+        {
+          "role": "assistant",
+          "content": "How did they do?"
+        },
+        {
+          "role": "user",
+          "content": "Careful and quick, a good sign."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2026-03-13T14:00:00Z",
+      "speaker_id": "work_s01_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Quiet afternoon; I cleared the backlog around the incident handoffs."
+        },
+        {
+          "role": "assistant",
+          "content": "A rare day."
+        },
+        {
+          "role": "user",
+          "content": "I did not waste it."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2026-03-14T16:00:00Z",
+      "speaker_id": "work_s01_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I flagged a small inconsistency in the service inventory records and fixed it at the source."
+        },
+        {
+          "role": "assistant",
+          "content": "Root cause or symptom?"
+        },
+        {
+          "role": "user",
+          "content": "Root cause, for once."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2026-03-15T18:00:00Z",
+      "speaker_id": "work_s01_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "On Tuesday's 06:00 bridge the overnight notes were not posted yet, and I ordered the cache restore ahead of account recovery. Sam had to stop me and resequence it live."
+        },
+        {
+          "role": "assistant",
+          "content": "What was missing?"
+        },
+        {
+          "role": "user",
+          "content": "The dependency picture. I could see every alert but not how they chained."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2026-03-16T09:00:00Z",
+      "speaker_id": "work_s01_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I sketched next week's plan for the incident handoffs before leaving."
+        },
+        {
+          "role": "assistant",
+          "content": "Ahead of schedule?"
+        },
+        {
+          "role": "user",
+          "content": "Ahead enough to sleep well."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2026-03-17T11:00:00Z",
+      "speaker_id": "work_s01_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Lunch walk, then a clean pass through the runbook index updates."
+        },
+        {
+          "role": "assistant",
+          "content": "Does the walk help?"
+        },
+        {
+          "role": "user",
+          "content": "It resets the afternoon."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2026-03-18T14:00:00Z",
+      "speaker_id": "work_s01_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I asked the overnight shift to post their handoff summary by 05:30 going forward, but the tooling only publishes at 06:30."
+        },
+        {
+          "role": "assistant",
+          "content": "So the notes arrive after the bridge starts."
+        },
+        {
+          "role": "user",
+          "content": "Exactly, an hour too late."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2026-03-19T16:00:00Z",
+      "speaker_id": "work_s01_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A teammate keeps saying the sunrise bridge is where leadership notices people, and that I should grab it before someone else does."
+        },
+        {
+          "role": "assistant",
+          "content": "Visibility and fit are separate questions."
+        },
+        {
+          "role": "user",
+          "content": "That is why I have not answered yet."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2026-03-20T18:00:00Z",
+      "speaker_id": "work_s01_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I closed the week by updating the operations bay handover notes."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual to hand over?"
+        },
+        {
+          "role": "user",
+          "content": "Blessedly little."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2026-03-21T09:00:00Z",
+      "speaker_id": "work_s01_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "My manager asked me point blank whether the standing 06:00 incident bridge is a slot where I would do my best work. What should I tell her?"
+        }
+      ]
+    }
+  ],
+  "query": "My manager asked me point blank whether the standing 06:00 incident bridge is a slot where I would do my best work. What should I tell her?",
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "work_s01_u01",
+      "fact": "During the payments outage I sketched the service dependency map from the handoff notes before the review call, and the restore order came out right: storage first, then the API tier."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "work_s01_u01",
+      "fact": "On Tuesday's 06:00 bridge the overnight notes were not posted yet, and I ordered the cache restore ahead of account recovery. Sam had to stop me and resequence it live."
+    }
+  },
+  "supporting_constraints": {
+    "E1": {
+      "session_id": 9,
+      "fact": "My alarm has been dragging me up at five for the gym trial, and I have noticed my judgment before eight is slower even when I feel awake."
+    },
+    "E2": {
+      "session_id": 17,
+      "fact": "I asked the overnight shift to post their handoff summary by 05:30 going forward, but the tooling only publishes at 06:30."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "work_s01_u01",
+        "context": "payments outage review",
+        "goal_or_prediction": "restore services in the right order",
+        "action": "mapped dependencies from the handoff notes first",
+        "outcome_or_affect": "correct restore order, calm review"
+      }
+    },
+    "7": {
+      "role": "nearby_counterexample"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "supporting_constraint",
+      "fact_id": "E1"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "work_s01_u01",
+        "context": "06:00 bridge with notes unposted",
+        "goal_or_prediction": "order restores live",
+        "action": "sequenced from raw alerts alone",
+        "outcome_or_affect": "wrong order, corrected by a colleague"
+      }
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "supporting_constraint",
+      "fact_id": "E2"
+    },
+    "18": {
+      "role": "distractor",
+      "distractor_id": "dist_1",
+      "why_distractor": "Leadership-visibility hype mentions the same bridge but says nothing about the notes gap or the sequencing pattern."
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "This user's live restore ordering is reliable only after a written dependency map, and the 06:00 bridge as scheduled begins before that map can exist.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": [
+      "E1",
+      "E2"
+    ]
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "During the payments outage I sketched the service dependency map from the handoff notes before the review call, and the restore order came out right: storage first, then the API tier"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "On Tuesday's 06:00 bridge the overnight notes were not posted yet, and I ordered the cache restore ahead of account recovery"
+    }
+  ],
+  "retrieval_cue": {
+    "cue_type": "situational_fit",
+    "why_it_naturally_retrieves_R": "A realistic work request forces a personalized decision without naming either episode or the relation between them."
+  },
+  "relation_specificity": {
+    "nearby_relation": "The user handles early routine readouts and midday complex calls well.",
+    "why_it_does_not_license_C": "Neither shows what happens when live sequencing is demanded before any written dependency picture exists."
+  },
+  "coactivation_bridge": "A shows the operating condition; B shows the demand or failure that makes it decisive. This user's live restore ordering is reliable only after a written dependency map, and the 06:00 bridge as scheduled begins before that map can exist. E1 and E2 calibrate the practical recommendation without opening a second route to the conclusion.",
+  "latent_C": {
+    "inference": "Taking the standing 06:00 incident bridge as currently run, with overnight notes arriving after it starts, is a poor fit for this user.",
+    "calibrated_language": "poor fit as currently run"
+  },
+  "answer_contract": {
+    "target_proposition": "Taking the standing 06:00 incident bridge as currently run, with overnight notes arriving after it starts, is a poor fit for this user.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "decision",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "work_u01",
+    "status": "review_candidate_only",
+    "anonymization": "External persona material was used only during authoring; no corpus, name, country, or demographic metadata is included."
+  },
+  "arm_gold": {
+    "distractor": {
+      "expected_mode": "infer_C",
+      "binary_decision": true
+    }
+  },
+  "distractor_note": {
+    "replaced_session_id": 18,
+    "why_distractor": "Leadership-visibility hype mentions the same bridge but says nothing about the notes gap or the sequencing pattern."
+  }
+}

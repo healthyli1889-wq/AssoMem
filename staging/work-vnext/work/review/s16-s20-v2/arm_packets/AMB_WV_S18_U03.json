@@ -1,0 +1,2489 @@
+{
+  "pair_id": "AMB_WV_S18_U03",
+  "scenario": "S18",
+  "uid": "U03",
+  "role": "airworthiness records reviewer",
+  "query": "Why do I insist on a closed-door review period before signing an airworthiness discrepancy?",
+  "target": "Because reliable discrepancy decisions require uninterrupted tracing of the full maintenance record chain.",
+  "calibrated": "require protected record tracing",
+  "relation": "The landing-gear trace shows that uninterrupted dossier review catches suffix errors before release, while the shared-desk episode shows why call-driven restarts led this user to clear a superseded interval.",
+  "A": "For a landing-gear return, I closed the door, traced the serial history through three repair records, and found that one life-limited part had been entered under the wrong suffix.",
+  "B": "During a noisy shared-desk review, I took calls from the hangar between records and cleared a component whose inspection interval had been superseded by a later bulletin.",
+  "E1": "Our records protocol now gives discrepancy reviews a closed-door hour unless an aircraft safety event requires immediate contact.",
+  "E2": "The shift lead can hold ordinary paperwork questions and bring them to me after the discrepancy decision is documented.",
+  "B_prime": "During a noisy shared-desk review, I took calls from the hangar between records, logged timestamps, and passed the stack to the certifying inspector for the clearance decision.",
+  "lure": "A manager says an open desk keeps the maintenance team agile.",
+  "subset_gate": {
+    "full_supports_C": "",
+    "a_only_supports_C": "",
+    "b_only_supports_C": "",
+    "link_broken_supports_C": "",
+    "absence_supports_C": "",
+    "reviewer": "",
+    "notes": ""
+  },
+  "arms": {
+    "full": {
+      "expected_mode": "infer_C",
+      "lineage": {
+        "transform": "identity",
+        "retained_sessions": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ]
+      },
+      "changed_sessions": [],
+      "context": [
+        {
+          "session_id": 1,
+          "timestamp": "2028-05-13T11:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I spent the first hour tidying the maintenance dossier and closing stale entries."
+            },
+            {
+              "role": "assistant",
+              "content": "Anything still open?"
+            },
+            {
+              "role": "user",
+              "content": "Two items, both with owners."
+            }
+          ]
+        },
+        {
+          "session_id": 2,
+          "timestamp": "2028-05-14T14:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The inspection roster review wrapped early today."
+            },
+            {
+              "role": "assistant",
+              "content": "Any surprises in it?"
+            },
+            {
+              "role": "user",
+              "content": "None worth recording."
+            }
+          ]
+        },
+        {
+          "session_id": 3,
+          "timestamp": "2028-05-15T16:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I logged a completed inspection while mechanics asked routine questions nearby."
+            },
+            {
+              "role": "assistant",
+              "content": "Was a release decision pending?"
+            },
+            {
+              "role": "user",
+              "content": "No, I was recording an item already signed off."
+            }
+          ]
+        },
+        {
+          "session_id": 4,
+          "timestamp": "2028-05-16T18:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Someone new shadowed me in the records bay this morning."
+            },
+            {
+              "role": "assistant",
+              "content": "Did that slow you down?"
+            },
+            {
+              "role": "user",
+              "content": "A little, but the questions were good ones."
+            }
+          ]
+        },
+        {
+          "session_id": 5,
+          "timestamp": "2028-05-17T09:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I batched my replies about the return-to-service days into one message before lunch."
+            },
+            {
+              "role": "assistant",
+              "content": "Cleaner than drip-feeding answers."
+            },
+            {
+              "role": "user",
+              "content": "Much cleaner."
+            }
+          ]
+        },
+        {
+          "session_id": 6,
+          "timestamp": "2028-05-18T11:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "For a landing-gear return, I closed the door, traced the serial history through three repair records, and found that one life-limited part had been entered under the wrong suffix."
+            },
+            {
+              "role": "assistant",
+              "content": "What did that prevent?"
+            },
+            {
+              "role": "user",
+              "content": "The aircraft was held until the part record was corrected."
+            }
+          ]
+        },
+        {
+          "session_id": 7,
+          "timestamp": "2028-05-19T14:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I attended a short daily stand-up after lunch."
+            },
+            {
+              "role": "assistant",
+              "content": "Did that involve reconciling superseding records?"
+            },
+            {
+              "role": "user",
+              "content": "No, it was a schedule and parts update."
+            }
+          ]
+        },
+        {
+          "session_id": 8,
+          "timestamp": "2028-05-20T16:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I archived last cycle's notes on the inspection roster and set up the new folder."
+            },
+            {
+              "role": "assistant",
+              "content": "A fresh start?"
+            },
+            {
+              "role": "user",
+              "content": "As fresh as these things get."
+            }
+          ]
+        },
+        {
+          "session_id": 9,
+          "timestamp": "2028-05-21T18:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Our records protocol now gives discrepancy reviews a closed-door hour unless an aircraft safety event requires immediate contact."
+            },
+            {
+              "role": "assistant",
+              "content": "Why such a specific rule?"
+            },
+            {
+              "role": "user",
+              "content": "The review depends on following one chain without importing unrelated tasks."
+            }
+          ]
+        },
+        {
+          "session_id": 10,
+          "timestamp": "2028-05-22T09:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "A vendor call about the maintenance dossier ran long but ended well."
+            },
+            {
+              "role": "assistant",
+              "content": "Worth the time?"
+            },
+            {
+              "role": "user",
+              "content": "This one, yes."
+            }
+          ]
+        },
+        {
+          "session_id": 11,
+          "timestamp": "2028-05-23T11:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I walked through the records bay checklist with the new starter."
+            },
+            {
+              "role": "assistant",
+              "content": "How did they do?"
+            },
+            {
+              "role": "user",
+              "content": "Careful and quick, a good sign."
+            }
+          ]
+        },
+        {
+          "session_id": 12,
+          "timestamp": "2028-05-24T14:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Quiet afternoon; I cleared the backlog around the return-to-service days."
+            },
+            {
+              "role": "assistant",
+              "content": "A rare day."
+            },
+            {
+              "role": "user",
+              "content": "I did not waste it."
+            }
+          ]
+        },
+        {
+          "session_id": 13,
+          "timestamp": "2028-05-25T16:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I flagged a small inconsistency in the inspection roster records and fixed it at the source."
+            },
+            {
+              "role": "assistant",
+              "content": "Root cause or symptom?"
+            },
+            {
+              "role": "user",
+              "content": "Root cause, for once."
+            }
+          ]
+        },
+        {
+          "session_id": 14,
+          "timestamp": "2028-05-26T18:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "During a noisy shared-desk review, I took calls from the hangar between records and cleared a component whose inspection interval had been superseded by a later bulletin."
+            },
+            {
+              "role": "assistant",
+              "content": "Why was it cleared?"
+            },
+            {
+              "role": "user",
+              "content": "I resumed from the old page and treated the newer bulletin as already checked."
+            }
+          ]
+        },
+        {
+          "session_id": 15,
+          "timestamp": "2028-05-27T09:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I sketched next week's plan for the return-to-service days before leaving."
+            },
+            {
+              "role": "assistant",
+              "content": "Ahead of schedule?"
+            },
+            {
+              "role": "user",
+              "content": "Ahead enough to sleep well."
+            }
+          ]
+        },
+        {
+          "session_id": 16,
+          "timestamp": "2028-05-28T11:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Lunch walk, then a clean pass through the maintenance dossier updates."
+            },
+            {
+              "role": "assistant",
+              "content": "Does the walk help?"
+            },
+            {
+              "role": "user",
+              "content": "It resets the afternoon."
+            }
+          ]
+        },
+        {
+          "session_id": 17,
+          "timestamp": "2028-05-29T14:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The shift lead can hold ordinary paperwork questions and bring them to me after the discrepancy decision is documented."
+            },
+            {
+              "role": "assistant",
+              "content": "Does that preserve operations?"
+            },
+            {
+              "role": "user",
+              "content": "Yes, mechanics still receive a single, complete answer."
+            }
+          ]
+        },
+        {
+          "session_id": 18,
+          "timestamp": "2028-05-30T16:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I compared two options for the inspection roster tooling and noted a mild preference."
+            },
+            {
+              "role": "assistant",
+              "content": "Decision made?"
+            },
+            {
+              "role": "user",
+              "content": "Deferred until the trial ends."
+            }
+          ]
+        },
+        {
+          "session_id": 19,
+          "timestamp": "2028-05-31T18:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I closed the week by updating the records bay handover notes."
+            },
+            {
+              "role": "assistant",
+              "content": "Anything unusual to hand over?"
+            },
+            {
+              "role": "user",
+              "content": "Blessedly little."
+            }
+          ]
+        },
+        {
+          "session_id": 20,
+          "timestamp": "2028-06-01T09:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Why do I insist on a closed-door review period before signing an airworthiness discrepancy?"
+            }
+          ]
+        }
+      ],
+      "query": "Why do I insist on a closed-door review period before signing an airworthiness discrepancy?"
+    },
+    "a_only": {
+      "expected_mode": "withhold_C",
+      "lineage": {
+        "transform": "replace_ev_B_with_neutral",
+        "changed_sessions": [
+          14
+        ]
+      },
+      "changed_sessions": [
+        14
+      ],
+      "context": [
+        {
+          "session_id": 1,
+          "timestamp": "2028-05-13T11:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I spent the first hour tidying the maintenance dossier and closing stale entries."
+            },
+            {
+              "role": "assistant",
+              "content": "Anything still open?"
+            },
+            {
+              "role": "user",
+              "content": "Two items, both with owners."
+            }
+          ]
+        },
+        {
+          "session_id": 2,
+          "timestamp": "2028-05-14T14:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The inspection roster review wrapped early today."
+            },
+            {
+              "role": "assistant",
+              "content": "Any surprises in it?"
+            },
+            {
+              "role": "user",
+              "content": "None worth recording."
+            }
+          ]
+        },
+        {
+          "session_id": 3,
+          "timestamp": "2028-05-15T16:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I logged a completed inspection while mechanics asked routine questions nearby."
+            },
+            {
+              "role": "assistant",
+              "content": "Was a release decision pending?"
+            },
+            {
+              "role": "user",
+              "content": "No, I was recording an item already signed off."
+            }
+          ]
+        },
+        {
+          "session_id": 4,
+          "timestamp": "2028-05-16T18:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Someone new shadowed me in the records bay this morning."
+            },
+            {
+              "role": "assistant",
+              "content": "Did that slow you down?"
+            },
+            {
+              "role": "user",
+              "content": "A little, but the questions were good ones."
+            }
+          ]
+        },
+        {
+          "session_id": 5,
+          "timestamp": "2028-05-17T09:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I batched my replies about the return-to-service days into one message before lunch."
+            },
+            {
+              "role": "assistant",
+              "content": "Cleaner than drip-feeding answers."
+            },
+            {
+              "role": "user",
+              "content": "Much cleaner."
+            }
+          ]
+        },
+        {
+          "session_id": 6,
+          "timestamp": "2028-05-18T11:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "For a landing-gear return, I closed the door, traced the serial history through three repair records, and found that one life-limited part had been entered under the wrong suffix."
+            },
+            {
+              "role": "assistant",
+              "content": "What did that prevent?"
+            },
+            {
+              "role": "user",
+              "content": "The aircraft was held until the part record was corrected."
+            }
+          ]
+        },
+        {
+          "session_id": 7,
+          "timestamp": "2028-05-19T14:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I attended a short daily stand-up after lunch."
+            },
+            {
+              "role": "assistant",
+              "content": "Did that involve reconciling superseding records?"
+            },
+            {
+              "role": "user",
+              "content": "No, it was a schedule and parts update."
+            }
+          ]
+        },
+        {
+          "session_id": 8,
+          "timestamp": "2028-05-20T16:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I archived last cycle's notes on the inspection roster and set up the new folder."
+            },
+            {
+              "role": "assistant",
+              "content": "A fresh start?"
+            },
+            {
+              "role": "user",
+              "content": "As fresh as these things get."
+            }
+          ]
+        },
+        {
+          "session_id": 9,
+          "timestamp": "2028-05-21T18:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Our records protocol now gives discrepancy reviews a closed-door hour unless an aircraft safety event requires immediate contact."
+            },
+            {
+              "role": "assistant",
+              "content": "Why such a specific rule?"
+            },
+            {
+              "role": "user",
+              "content": "The review depends on following one chain without importing unrelated tasks."
+            }
+          ]
+        },
+        {
+          "session_id": 10,
+          "timestamp": "2028-05-22T09:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "A vendor call about the maintenance dossier ran long but ended well."
+            },
+            {
+              "role": "assistant",
+              "content": "Worth the time?"
+            },
+            {
+              "role": "user",
+              "content": "This one, yes."
+            }
+          ]
+        },
+        {
+          "session_id": 11,
+          "timestamp": "2028-05-23T11:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I walked through the records bay checklist with the new starter."
+            },
+            {
+              "role": "assistant",
+              "content": "How did they do?"
+            },
+            {
+              "role": "user",
+              "content": "Careful and quick, a good sign."
+            }
+          ]
+        },
+        {
+          "session_id": 12,
+          "timestamp": "2028-05-24T14:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Quiet afternoon; I cleared the backlog around the return-to-service days."
+            },
+            {
+              "role": "assistant",
+              "content": "A rare day."
+            },
+            {
+              "role": "user",
+              "content": "I did not waste it."
+            }
+          ]
+        },
+        {
+          "session_id": 13,
+          "timestamp": "2028-05-25T16:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I flagged a small inconsistency in the inspection roster records and fixed it at the source."
+            },
+            {
+              "role": "assistant",
+              "content": "Root cause or symptom?"
+            },
+            {
+              "role": "user",
+              "content": "Root cause, for once."
+            }
+          ]
+        },
+        {
+          "session_id": 14,
+          "timestamp": "2028-05-26T18:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I filed the routine return-to-service days paperwork and confirmed the owner list."
+            },
+            {
+              "role": "assistant",
+              "content": "Anything unusual in it?"
+            },
+            {
+              "role": "user",
+              "content": "A routine cycle, happily."
+            }
+          ]
+        },
+        {
+          "session_id": 15,
+          "timestamp": "2028-05-27T09:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I sketched next week's plan for the return-to-service days before leaving."
+            },
+            {
+              "role": "assistant",
+              "content": "Ahead of schedule?"
+            },
+            {
+              "role": "user",
+              "content": "Ahead enough to sleep well."
+            }
+          ]
+        },
+        {
+          "session_id": 16,
+          "timestamp": "2028-05-28T11:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Lunch walk, then a clean pass through the maintenance dossier updates."
+            },
+            {
+              "role": "assistant",
+              "content": "Does the walk help?"
+            },
+            {
+              "role": "user",
+              "content": "It resets the afternoon."
+            }
+          ]
+        },
+        {
+          "session_id": 17,
+          "timestamp": "2028-05-29T14:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The shift lead can hold ordinary paperwork questions and bring them to me after the discrepancy decision is documented."
+            },
+            {
+              "role": "assistant",
+              "content": "Does that preserve operations?"
+            },
+            {
+              "role": "user",
+              "content": "Yes, mechanics still receive a single, complete answer."
+            }
+          ]
+        },
+        {
+          "session_id": 18,
+          "timestamp": "2028-05-30T16:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I compared two options for the inspection roster tooling and noted a mild preference."
+            },
+            {
+              "role": "assistant",
+              "content": "Decision made?"
+            },
+            {
+              "role": "user",
+              "content": "Deferred until the trial ends."
+            }
+          ]
+        },
+        {
+          "session_id": 19,
+          "timestamp": "2028-05-31T18:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I closed the week by updating the records bay handover notes."
+            },
+            {
+              "role": "assistant",
+              "content": "Anything unusual to hand over?"
+            },
+            {
+              "role": "user",
+              "content": "Blessedly little."
+            }
+          ]
+        },
+        {
+          "session_id": 20,
+          "timestamp": "2028-06-01T09:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Why do I insist on a closed-door review period before signing an airworthiness discrepancy?"
+            }
+          ]
+        }
+      ],
+      "query": "Why do I insist on a closed-door review period before signing an airworthiness discrepancy?"
+    },
+    "b_only": {
+      "expected_mode": "withhold_C",
+      "lineage": {
+        "transform": "replace_ev_A_with_neutral",
+        "changed_sessions": [
+          6
+        ]
+      },
+      "changed_sessions": [
+        6
+      ],
+      "context": [
+        {
+          "session_id": 1,
+          "timestamp": "2028-05-13T11:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I spent the first hour tidying the maintenance dossier and closing stale entries."
+            },
+            {
+              "role": "assistant",
+              "content": "Anything still open?"
+            },
+            {
+              "role": "user",
+              "content": "Two items, both with owners."
+            }
+          ]
+        },
+        {
+          "session_id": 2,
+          "timestamp": "2028-05-14T14:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The inspection roster review wrapped early today."
+            },
+            {
+              "role": "assistant",
+              "content": "Any surprises in it?"
+            },
+            {
+              "role": "user",
+              "content": "None worth recording."
+            }
+          ]
+        },
+        {
+          "session_id": 3,
+          "timestamp": "2028-05-15T16:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I logged a completed inspection while mechanics asked routine questions nearby."
+            },
+            {
+              "role": "assistant",
+              "content": "Was a release decision pending?"
+            },
+            {
+              "role": "user",
+              "content": "No, I was recording an item already signed off."
+            }
+          ]
+        },
+        {
+          "session_id": 4,
+          "timestamp": "2028-05-16T18:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Someone new shadowed me in the records bay this morning."
+            },
+            {
+              "role": "assistant",
+              "content": "Did that slow you down?"
+            },
+            {
+              "role": "user",
+              "content": "A little, but the questions were good ones."
+            }
+          ]
+        },
+        {
+          "session_id": 5,
+          "timestamp": "2028-05-17T09:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I batched my replies about the return-to-service days into one message before lunch."
+            },
+            {
+              "role": "assistant",
+              "content": "Cleaner than drip-feeding answers."
+            },
+            {
+              "role": "user",
+              "content": "Much cleaner."
+            }
+          ]
+        },
+        {
+          "session_id": 6,
+          "timestamp": "2028-05-18T11:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I did a standard pass over the inspection roster records this morning."
+            },
+            {
+              "role": "assistant",
+              "content": "Any exceptions?"
+            },
+            {
+              "role": "user",
+              "content": "None worth a note."
+            }
+          ]
+        },
+        {
+          "session_id": 7,
+          "timestamp": "2028-05-19T14:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I attended a short daily stand-up after lunch."
+            },
+            {
+              "role": "assistant",
+              "content": "Did that involve reconciling superseding records?"
+            },
+            {
+              "role": "user",
+              "content": "No, it was a schedule and parts update."
+            }
+          ]
+        },
+        {
+          "session_id": 8,
+          "timestamp": "2028-05-20T16:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I archived last cycle's notes on the inspection roster and set up the new folder."
+            },
+            {
+              "role": "assistant",
+              "content": "A fresh start?"
+            },
+            {
+              "role": "user",
+              "content": "As fresh as these things get."
+            }
+          ]
+        },
+        {
+          "session_id": 9,
+          "timestamp": "2028-05-21T18:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Our records protocol now gives discrepancy reviews a closed-door hour unless an aircraft safety event requires immediate contact."
+            },
+            {
+              "role": "assistant",
+              "content": "Why such a specific rule?"
+            },
+            {
+              "role": "user",
+              "content": "The review depends on following one chain without importing unrelated tasks."
+            }
+          ]
+        },
+        {
+          "session_id": 10,
+          "timestamp": "2028-05-22T09:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "A vendor call about the maintenance dossier ran long but ended well."
+            },
+            {
+              "role": "assistant",
+              "content": "Worth the time?"
+            },
+            {
+              "role": "user",
+              "content": "This one, yes."
+            }
+          ]
+        },
+        {
+          "session_id": 11,
+          "timestamp": "2028-05-23T11:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I walked through the records bay checklist with the new starter."
+            },
+            {
+              "role": "assistant",
+              "content": "How did they do?"
+            },
+            {
+              "role": "user",
+              "content": "Careful and quick, a good sign."
+            }
+          ]
+        },
+        {
+          "session_id": 12,
+          "timestamp": "2028-05-24T14:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Quiet afternoon; I cleared the backlog around the return-to-service days."
+            },
+            {
+              "role": "assistant",
+              "content": "A rare day."
+            },
+            {
+              "role": "user",
+              "content": "I did not waste it."
+            }
+          ]
+        },
+        {
+          "session_id": 13,
+          "timestamp": "2028-05-25T16:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I flagged a small inconsistency in the inspection roster records and fixed it at the source."
+            },
+            {
+              "role": "assistant",
+              "content": "Root cause or symptom?"
+            },
+            {
+              "role": "user",
+              "content": "Root cause, for once."
+            }
+          ]
+        },
+        {
+          "session_id": 14,
+          "timestamp": "2028-05-26T18:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "During a noisy shared-desk review, I took calls from the hangar between records and cleared a component whose inspection interval had been superseded by a later bulletin."
+            },
+            {
+              "role": "assistant",
+              "content": "Why was it cleared?"
+            },
+            {
+              "role": "user",
+              "content": "I resumed from the old page and treated the newer bulletin as already checked."
+            }
+          ]
+        },
+        {
+          "session_id": 15,
+          "timestamp": "2028-05-27T09:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I sketched next week's plan for the return-to-service days before leaving."
+            },
+            {
+              "role": "assistant",
+              "content": "Ahead of schedule?"
+            },
+            {
+              "role": "user",
+              "content": "Ahead enough to sleep well."
+            }
+          ]
+        },
+        {
+          "session_id": 16,
+          "timestamp": "2028-05-28T11:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Lunch walk, then a clean pass through the maintenance dossier updates."
+            },
+            {
+              "role": "assistant",
+              "content": "Does the walk help?"
+            },
+            {
+              "role": "user",
+              "content": "It resets the afternoon."
+            }
+          ]
+        },
+        {
+          "session_id": 17,
+          "timestamp": "2028-05-29T14:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The shift lead can hold ordinary paperwork questions and bring them to me after the discrepancy decision is documented."
+            },
+            {
+              "role": "assistant",
+              "content": "Does that preserve operations?"
+            },
+            {
+              "role": "user",
+              "content": "Yes, mechanics still receive a single, complete answer."
+            }
+          ]
+        },
+        {
+          "session_id": 18,
+          "timestamp": "2028-05-30T16:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I compared two options for the inspection roster tooling and noted a mild preference."
+            },
+            {
+              "role": "assistant",
+              "content": "Decision made?"
+            },
+            {
+              "role": "user",
+              "content": "Deferred until the trial ends."
+            }
+          ]
+        },
+        {
+          "session_id": 19,
+          "timestamp": "2028-05-31T18:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I closed the week by updating the records bay handover notes."
+            },
+            {
+              "role": "assistant",
+              "content": "Anything unusual to hand over?"
+            },
+            {
+              "role": "user",
+              "content": "Blessedly little."
+            }
+          ]
+        },
+        {
+          "session_id": 20,
+          "timestamp": "2028-06-01T09:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Why do I insist on a closed-door review period before signing an airworthiness discrepancy?"
+            }
+          ]
+        }
+      ],
+      "query": "Why do I insist on a closed-door review period before signing an airworthiness discrepancy?"
+    },
+    "link_broken": {
+      "expected_mode": "withhold_C",
+      "lineage": {
+        "transform": "replace_relation_in_ev_B",
+        "changed_sessions": [
+          14
+        ],
+        "source_owner_preserved": true
+      },
+      "changed_sessions": [
+        14
+      ],
+      "context": [
+        {
+          "session_id": 1,
+          "timestamp": "2028-05-13T11:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I spent the first hour tidying the maintenance dossier and closing stale entries."
+            },
+            {
+              "role": "assistant",
+              "content": "Anything still open?"
+            },
+            {
+              "role": "user",
+              "content": "Two items, both with owners."
+            }
+          ]
+        },
+        {
+          "session_id": 2,
+          "timestamp": "2028-05-14T14:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The inspection roster review wrapped early today."
+            },
+            {
+              "role": "assistant",
+              "content": "Any surprises in it?"
+            },
+            {
+              "role": "user",
+              "content": "None worth recording."
+            }
+          ]
+        },
+        {
+          "session_id": 3,
+          "timestamp": "2028-05-15T16:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I logged a completed inspection while mechanics asked routine questions nearby."
+            },
+            {
+              "role": "assistant",
+              "content": "Was a release decision pending?"
+            },
+            {
+              "role": "user",
+              "content": "No, I was recording an item already signed off."
+            }
+          ]
+        },
+        {
+          "session_id": 4,
+          "timestamp": "2028-05-16T18:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Someone new shadowed me in the records bay this morning."
+            },
+            {
+              "role": "assistant",
+              "content": "Did that slow you down?"
+            },
+            {
+              "role": "user",
+              "content": "A little, but the questions were good ones."
+            }
+          ]
+        },
+        {
+          "session_id": 5,
+          "timestamp": "2028-05-17T09:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I batched my replies about the return-to-service days into one message before lunch."
+            },
+            {
+              "role": "assistant",
+              "content": "Cleaner than drip-feeding answers."
+            },
+            {
+              "role": "user",
+              "content": "Much cleaner."
+            }
+          ]
+        },
+        {
+          "session_id": 6,
+          "timestamp": "2028-05-18T11:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "For a landing-gear return, I closed the door, traced the serial history through three repair records, and found that one life-limited part had been entered under the wrong suffix."
+            },
+            {
+              "role": "assistant",
+              "content": "What did that prevent?"
+            },
+            {
+              "role": "user",
+              "content": "The aircraft was held until the part record was corrected."
+            }
+          ]
+        },
+        {
+          "session_id": 7,
+          "timestamp": "2028-05-19T14:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I attended a short daily stand-up after lunch."
+            },
+            {
+              "role": "assistant",
+              "content": "Did that involve reconciling superseding records?"
+            },
+            {
+              "role": "user",
+              "content": "No, it was a schedule and parts update."
+            }
+          ]
+        },
+        {
+          "session_id": 8,
+          "timestamp": "2028-05-20T16:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I archived last cycle's notes on the inspection roster and set up the new folder."
+            },
+            {
+              "role": "assistant",
+              "content": "A fresh start?"
+            },
+            {
+              "role": "user",
+              "content": "As fresh as these things get."
+            }
+          ]
+        },
+        {
+          "session_id": 9,
+          "timestamp": "2028-05-21T18:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Our records protocol now gives discrepancy reviews a closed-door hour unless an aircraft safety event requires immediate contact."
+            },
+            {
+              "role": "assistant",
+              "content": "Why such a specific rule?"
+            },
+            {
+              "role": "user",
+              "content": "The review depends on following one chain without importing unrelated tasks."
+            }
+          ]
+        },
+        {
+          "session_id": 10,
+          "timestamp": "2028-05-22T09:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "A vendor call about the maintenance dossier ran long but ended well."
+            },
+            {
+              "role": "assistant",
+              "content": "Worth the time?"
+            },
+            {
+              "role": "user",
+              "content": "This one, yes."
+            }
+          ]
+        },
+        {
+          "session_id": 11,
+          "timestamp": "2028-05-23T11:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I walked through the records bay checklist with the new starter."
+            },
+            {
+              "role": "assistant",
+              "content": "How did they do?"
+            },
+            {
+              "role": "user",
+              "content": "Careful and quick, a good sign."
+            }
+          ]
+        },
+        {
+          "session_id": 12,
+          "timestamp": "2028-05-24T14:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Quiet afternoon; I cleared the backlog around the return-to-service days."
+            },
+            {
+              "role": "assistant",
+              "content": "A rare day."
+            },
+            {
+              "role": "user",
+              "content": "I did not waste it."
+            }
+          ]
+        },
+        {
+          "session_id": 13,
+          "timestamp": "2028-05-25T16:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I flagged a small inconsistency in the inspection roster records and fixed it at the source."
+            },
+            {
+              "role": "assistant",
+              "content": "Root cause or symptom?"
+            },
+            {
+              "role": "user",
+              "content": "Root cause, for once."
+            }
+          ]
+        },
+        {
+          "session_id": 14,
+          "timestamp": "2028-05-26T18:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "During a noisy shared-desk review, I took calls from the hangar between records, logged timestamps, and passed the stack to the certifying inspector for the clearance decision."
+            },
+            {
+              "role": "assistant",
+              "content": "Did you authorize the release?"
+            },
+            {
+              "role": "user",
+              "content": "No, I maintained the record flow while the inspector owned the interval check."
+            }
+          ]
+        },
+        {
+          "session_id": 15,
+          "timestamp": "2028-05-27T09:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I sketched next week's plan for the return-to-service days before leaving."
+            },
+            {
+              "role": "assistant",
+              "content": "Ahead of schedule?"
+            },
+            {
+              "role": "user",
+              "content": "Ahead enough to sleep well."
+            }
+          ]
+        },
+        {
+          "session_id": 16,
+          "timestamp": "2028-05-28T11:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Lunch walk, then a clean pass through the maintenance dossier updates."
+            },
+            {
+              "role": "assistant",
+              "content": "Does the walk help?"
+            },
+            {
+              "role": "user",
+              "content": "It resets the afternoon."
+            }
+          ]
+        },
+        {
+          "session_id": 17,
+          "timestamp": "2028-05-29T14:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The shift lead can hold ordinary paperwork questions and bring them to me after the discrepancy decision is documented."
+            },
+            {
+              "role": "assistant",
+              "content": "Does that preserve operations?"
+            },
+            {
+              "role": "user",
+              "content": "Yes, mechanics still receive a single, complete answer."
+            }
+          ]
+        },
+        {
+          "session_id": 18,
+          "timestamp": "2028-05-30T16:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I compared two options for the inspection roster tooling and noted a mild preference."
+            },
+            {
+              "role": "assistant",
+              "content": "Decision made?"
+            },
+            {
+              "role": "user",
+              "content": "Deferred until the trial ends."
+            }
+          ]
+        },
+        {
+          "session_id": 19,
+          "timestamp": "2028-05-31T18:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I closed the week by updating the records bay handover notes."
+            },
+            {
+              "role": "assistant",
+              "content": "Anything unusual to hand over?"
+            },
+            {
+              "role": "user",
+              "content": "Blessedly little."
+            }
+          ]
+        },
+        {
+          "session_id": 20,
+          "timestamp": "2028-06-01T09:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Why do I insist on a closed-door review period before signing an airworthiness discrepancy?"
+            }
+          ]
+        }
+      ],
+      "query": "Why do I insist on a closed-door review period before signing an airworthiness discrepancy?"
+    },
+    "distractor": {
+      "expected_mode": "infer_C",
+      "lineage": {
+        "transform": "shipped",
+        "changed_sessions": [
+          18
+        ]
+      },
+      "changed_sessions": [
+        18
+      ],
+      "context": [
+        {
+          "session_id": 1,
+          "timestamp": "2028-05-13T11:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I spent the first hour tidying the maintenance dossier and closing stale entries."
+            },
+            {
+              "role": "assistant",
+              "content": "Anything still open?"
+            },
+            {
+              "role": "user",
+              "content": "Two items, both with owners."
+            }
+          ]
+        },
+        {
+          "session_id": 2,
+          "timestamp": "2028-05-14T14:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The inspection roster review wrapped early today."
+            },
+            {
+              "role": "assistant",
+              "content": "Any surprises in it?"
+            },
+            {
+              "role": "user",
+              "content": "None worth recording."
+            }
+          ]
+        },
+        {
+          "session_id": 3,
+          "timestamp": "2028-05-15T16:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I logged a completed inspection while mechanics asked routine questions nearby."
+            },
+            {
+              "role": "assistant",
+              "content": "Was a release decision pending?"
+            },
+            {
+              "role": "user",
+              "content": "No, I was recording an item already signed off."
+            }
+          ]
+        },
+        {
+          "session_id": 4,
+          "timestamp": "2028-05-16T18:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Someone new shadowed me in the records bay this morning."
+            },
+            {
+              "role": "assistant",
+              "content": "Did that slow you down?"
+            },
+            {
+              "role": "user",
+              "content": "A little, but the questions were good ones."
+            }
+          ]
+        },
+        {
+          "session_id": 5,
+          "timestamp": "2028-05-17T09:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I batched my replies about the return-to-service days into one message before lunch."
+            },
+            {
+              "role": "assistant",
+              "content": "Cleaner than drip-feeding answers."
+            },
+            {
+              "role": "user",
+              "content": "Much cleaner."
+            }
+          ]
+        },
+        {
+          "session_id": 6,
+          "timestamp": "2028-05-18T11:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "For a landing-gear return, I closed the door, traced the serial history through three repair records, and found that one life-limited part had been entered under the wrong suffix."
+            },
+            {
+              "role": "assistant",
+              "content": "What did that prevent?"
+            },
+            {
+              "role": "user",
+              "content": "The aircraft was held until the part record was corrected."
+            }
+          ]
+        },
+        {
+          "session_id": 7,
+          "timestamp": "2028-05-19T14:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I attended a short daily stand-up after lunch."
+            },
+            {
+              "role": "assistant",
+              "content": "Did that involve reconciling superseding records?"
+            },
+            {
+              "role": "user",
+              "content": "No, it was a schedule and parts update."
+            }
+          ]
+        },
+        {
+          "session_id": 8,
+          "timestamp": "2028-05-20T16:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I archived last cycle's notes on the inspection roster and set up the new folder."
+            },
+            {
+              "role": "assistant",
+              "content": "A fresh start?"
+            },
+            {
+              "role": "user",
+              "content": "As fresh as these things get."
+            }
+          ]
+        },
+        {
+          "session_id": 9,
+          "timestamp": "2028-05-21T18:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Our records protocol now gives discrepancy reviews a closed-door hour unless an aircraft safety event requires immediate contact."
+            },
+            {
+              "role": "assistant",
+              "content": "Why such a specific rule?"
+            },
+            {
+              "role": "user",
+              "content": "The review depends on following one chain without importing unrelated tasks."
+            }
+          ]
+        },
+        {
+          "session_id": 10,
+          "timestamp": "2028-05-22T09:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "A vendor call about the maintenance dossier ran long but ended well."
+            },
+            {
+              "role": "assistant",
+              "content": "Worth the time?"
+            },
+            {
+              "role": "user",
+              "content": "This one, yes."
+            }
+          ]
+        },
+        {
+          "session_id": 11,
+          "timestamp": "2028-05-23T11:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I walked through the records bay checklist with the new starter."
+            },
+            {
+              "role": "assistant",
+              "content": "How did they do?"
+            },
+            {
+              "role": "user",
+              "content": "Careful and quick, a good sign."
+            }
+          ]
+        },
+        {
+          "session_id": 12,
+          "timestamp": "2028-05-24T14:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Quiet afternoon; I cleared the backlog around the return-to-service days."
+            },
+            {
+              "role": "assistant",
+              "content": "A rare day."
+            },
+            {
+              "role": "user",
+              "content": "I did not waste it."
+            }
+          ]
+        },
+        {
+          "session_id": 13,
+          "timestamp": "2028-05-25T16:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I flagged a small inconsistency in the inspection roster records and fixed it at the source."
+            },
+            {
+              "role": "assistant",
+              "content": "Root cause or symptom?"
+            },
+            {
+              "role": "user",
+              "content": "Root cause, for once."
+            }
+          ]
+        },
+        {
+          "session_id": 14,
+          "timestamp": "2028-05-26T18:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "During a noisy shared-desk review, I took calls from the hangar between records and cleared a component whose inspection interval had been superseded by a later bulletin."
+            },
+            {
+              "role": "assistant",
+              "content": "Why was it cleared?"
+            },
+            {
+              "role": "user",
+              "content": "I resumed from the old page and treated the newer bulletin as already checked."
+            }
+          ]
+        },
+        {
+          "session_id": 15,
+          "timestamp": "2028-05-27T09:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I sketched next week's plan for the return-to-service days before leaving."
+            },
+            {
+              "role": "assistant",
+              "content": "Ahead of schedule?"
+            },
+            {
+              "role": "user",
+              "content": "Ahead enough to sleep well."
+            }
+          ]
+        },
+        {
+          "session_id": 16,
+          "timestamp": "2028-05-28T11:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Lunch walk, then a clean pass through the maintenance dossier updates."
+            },
+            {
+              "role": "assistant",
+              "content": "Does the walk help?"
+            },
+            {
+              "role": "user",
+              "content": "It resets the afternoon."
+            }
+          ]
+        },
+        {
+          "session_id": 17,
+          "timestamp": "2028-05-29T14:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The shift lead can hold ordinary paperwork questions and bring them to me after the discrepancy decision is documented."
+            },
+            {
+              "role": "assistant",
+              "content": "Does that preserve operations?"
+            },
+            {
+              "role": "user",
+              "content": "Yes, mechanics still receive a single, complete answer."
+            }
+          ]
+        },
+        {
+          "session_id": 18,
+          "timestamp": "2028-05-30T16:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "A manager says an open desk keeps the maintenance team agile."
+            },
+            {
+              "role": "assistant",
+              "content": "Does agility justify the release method?"
+            },
+            {
+              "role": "user",
+              "content": "No, a release must rest on the complete record chain."
+            }
+          ]
+        },
+        {
+          "session_id": 19,
+          "timestamp": "2028-05-31T18:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I closed the week by updating the records bay handover notes."
+            },
+            {
+              "role": "assistant",
+              "content": "Anything unusual to hand over?"
+            },
+            {
+              "role": "user",
+              "content": "Blessedly little."
+            }
+          ]
+        },
+        {
+          "session_id": 20,
+          "timestamp": "2028-06-01T09:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Why do I insist on a closed-door review period before signing an airworthiness discrepancy?"
+            }
+          ]
+        }
+      ],
+      "query": "Why do I insist on a closed-door review period before signing an airworthiness discrepancy?"
+    },
+    "absence": {
+      "expected_mode": "withhold_C",
+      "lineage": {
+        "transform": "replace_ev_A_and_ev_B_only",
+        "changed_sessions": [
+          6,
+          14
+        ]
+      },
+      "changed_sessions": [
+        6,
+        14
+      ],
+      "context": [
+        {
+          "session_id": 1,
+          "timestamp": "2028-05-13T11:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I spent the first hour tidying the maintenance dossier and closing stale entries."
+            },
+            {
+              "role": "assistant",
+              "content": "Anything still open?"
+            },
+            {
+              "role": "user",
+              "content": "Two items, both with owners."
+            }
+          ]
+        },
+        {
+          "session_id": 2,
+          "timestamp": "2028-05-14T14:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The inspection roster review wrapped early today."
+            },
+            {
+              "role": "assistant",
+              "content": "Any surprises in it?"
+            },
+            {
+              "role": "user",
+              "content": "None worth recording."
+            }
+          ]
+        },
+        {
+          "session_id": 3,
+          "timestamp": "2028-05-15T16:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I logged a completed inspection while mechanics asked routine questions nearby."
+            },
+            {
+              "role": "assistant",
+              "content": "Was a release decision pending?"
+            },
+            {
+              "role": "user",
+              "content": "No, I was recording an item already signed off."
+            }
+          ]
+        },
+        {
+          "session_id": 4,
+          "timestamp": "2028-05-16T18:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Someone new shadowed me in the records bay this morning."
+            },
+            {
+              "role": "assistant",
+              "content": "Did that slow you down?"
+            },
+            {
+              "role": "user",
+              "content": "A little, but the questions were good ones."
+            }
+          ]
+        },
+        {
+          "session_id": 5,
+          "timestamp": "2028-05-17T09:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I batched my replies about the return-to-service days into one message before lunch."
+            },
+            {
+              "role": "assistant",
+              "content": "Cleaner than drip-feeding answers."
+            },
+            {
+              "role": "user",
+              "content": "Much cleaner."
+            }
+          ]
+        },
+        {
+          "session_id": 6,
+          "timestamp": "2028-05-18T11:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I did a standard pass over the inspection roster records this morning."
+            },
+            {
+              "role": "assistant",
+              "content": "Any exceptions in there?"
+            },
+            {
+              "role": "user",
+              "content": "None worth a note."
+            }
+          ]
+        },
+        {
+          "session_id": 7,
+          "timestamp": "2028-05-19T14:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I attended a short daily stand-up after lunch."
+            },
+            {
+              "role": "assistant",
+              "content": "Did that involve reconciling superseding records?"
+            },
+            {
+              "role": "user",
+              "content": "No, it was a schedule and parts update."
+            }
+          ]
+        },
+        {
+          "session_id": 8,
+          "timestamp": "2028-05-20T16:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I archived last cycle's notes on the inspection roster and set up the new folder."
+            },
+            {
+              "role": "assistant",
+              "content": "A fresh start?"
+            },
+            {
+              "role": "user",
+              "content": "As fresh as these things get."
+            }
+          ]
+        },
+        {
+          "session_id": 9,
+          "timestamp": "2028-05-21T18:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Our records protocol now gives discrepancy reviews a closed-door hour unless an aircraft safety event requires immediate contact."
+            },
+            {
+              "role": "assistant",
+              "content": "Why such a specific rule?"
+            },
+            {
+              "role": "user",
+              "content": "The review depends on following one chain without importing unrelated tasks."
+            }
+          ]
+        },
+        {
+          "session_id": 10,
+          "timestamp": "2028-05-22T09:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "A vendor call about the maintenance dossier ran long but ended well."
+            },
+            {
+              "role": "assistant",
+              "content": "Worth the time?"
+            },
+            {
+              "role": "user",
+              "content": "This one, yes."
+            }
+          ]
+        },
+        {
+          "session_id": 11,
+          "timestamp": "2028-05-23T11:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I walked through the records bay checklist with the new starter."
+            },
+            {
+              "role": "assistant",
+              "content": "How did they do?"
+            },
+            {
+              "role": "user",
+              "content": "Careful and quick, a good sign."
+            }
+          ]
+        },
+        {
+          "session_id": 12,
+          "timestamp": "2028-05-24T14:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Quiet afternoon; I cleared the backlog around the return-to-service days."
+            },
+            {
+              "role": "assistant",
+              "content": "A rare day."
+            },
+            {
+              "role": "user",
+              "content": "I did not waste it."
+            }
+          ]
+        },
+        {
+          "session_id": 13,
+          "timestamp": "2028-05-25T16:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I flagged a small inconsistency in the inspection roster records and fixed it at the source."
+            },
+            {
+              "role": "assistant",
+              "content": "Root cause or symptom?"
+            },
+            {
+              "role": "user",
+              "content": "Root cause, for once."
+            }
+          ]
+        },
+        {
+          "session_id": 14,
+          "timestamp": "2028-05-26T18:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I closed a routine return-to-service days cycle without surprises."
+            },
+            {
+              "role": "assistant",
+              "content": "Follow-up needed?"
+            },
+            {
+              "role": "user",
+              "content": "A note for the next cycle, nothing more."
+            }
+          ]
+        },
+        {
+          "session_id": 15,
+          "timestamp": "2028-05-27T09:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I sketched next week's plan for the return-to-service days before leaving."
+            },
+            {
+              "role": "assistant",
+              "content": "Ahead of schedule?"
+            },
+            {
+              "role": "user",
+              "content": "Ahead enough to sleep well."
+            }
+          ]
+        },
+        {
+          "session_id": 16,
+          "timestamp": "2028-05-28T11:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Lunch walk, then a clean pass through the maintenance dossier updates."
+            },
+            {
+              "role": "assistant",
+              "content": "Does the walk help?"
+            },
+            {
+              "role": "user",
+              "content": "It resets the afternoon."
+            }
+          ]
+        },
+        {
+          "session_id": 17,
+          "timestamp": "2028-05-29T14:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The shift lead can hold ordinary paperwork questions and bring them to me after the discrepancy decision is documented."
+            },
+            {
+              "role": "assistant",
+              "content": "Does that preserve operations?"
+            },
+            {
+              "role": "user",
+              "content": "Yes, mechanics still receive a single, complete answer."
+            }
+          ]
+        },
+        {
+          "session_id": 18,
+          "timestamp": "2028-05-30T16:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I compared two options for the inspection roster tooling and noted a mild preference."
+            },
+            {
+              "role": "assistant",
+              "content": "Decision made?"
+            },
+            {
+              "role": "user",
+              "content": "Deferred until the trial ends."
+            }
+          ]
+        },
+        {
+          "session_id": 19,
+          "timestamp": "2028-05-31T18:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I closed the week by updating the records bay handover notes."
+            },
+            {
+              "role": "assistant",
+              "content": "Anything unusual to hand over?"
+            },
+            {
+              "role": "user",
+              "content": "Blessedly little."
+            }
+          ]
+        },
+        {
+          "session_id": 20,
+          "timestamp": "2028-06-01T09:00:00Z",
+          "speaker_id": "work_s18_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Why do I insist on a closed-door review period before signing an airworthiness discrepancy?"
+            }
+          ]
+        }
+      ],
+      "query": "Why do I insist on a closed-door review period before signing an airworthiness discrepancy?"
+    }
+  }
+}

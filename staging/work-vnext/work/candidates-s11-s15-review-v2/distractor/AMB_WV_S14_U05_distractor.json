@@ -1,0 +1,579 @@
+{
+  "schema_version": "work-vnext-2.0",
+  "candidate_id": "AMB_WV_S14_U05_distractor",
+  "pair_id": "AMB_WV_S14_U05",
+  "data_arm": "distractor",
+  "domain": "work",
+  "user_id": "work_s14_u05",
+  "sub_scenario": {
+    "family": "hot-desking versus protected compliance drafting",
+    "role": "urban planning analyst",
+    "one_line": "urban planning analyst: reject until the records alcove is available"
+  },
+  "query_type": "behavior_explanation",
+  "polarity": "reject",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2027-07-15T11:00:00Z",
+      "speaker_id": "work_s14_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I spent the first hour tidying the zoning impact assessment and closing stale entries."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything still open?"
+        },
+        {
+          "role": "user",
+          "content": "Two items, both with owners."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2027-07-16T14:00:00Z",
+      "speaker_id": "work_s14_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The permit-counter hot desks review wrapped early today."
+        },
+        {
+          "role": "assistant",
+          "content": "Any surprises in it?"
+        },
+        {
+          "role": "user",
+          "content": "None worth recording."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2027-07-17T16:00:00Z",
+      "speaker_id": "work_s14_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I wrote the riverfront zoning assessment in the records alcove after mapping every parcel comment to the ordinance."
+        },
+        {
+          "role": "assistant",
+          "content": "How did the setting affect it?"
+        },
+        {
+          "role": "user",
+          "content": "The uninterrupted map check kept the recommendation consistent."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2027-07-18T18:00:00Z",
+      "speaker_id": "work_s14_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Someone new shadowed me in the Wednesday council packet this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Did that slow you down?"
+        },
+        {
+          "role": "user",
+          "content": "A little, but the questions were good ones."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2027-07-19T09:00:00Z",
+      "speaker_id": "work_s14_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I batched my replies about the municipal records alcove into one message before lunch."
+        },
+        {
+          "role": "assistant",
+          "content": "Cleaner than drip-feeding answers."
+        },
+        {
+          "role": "user",
+          "content": "Much cleaner."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2027-07-20T11:00:00Z",
+      "speaker_id": "work_s14_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I once revised a density assessment at the permit counter while applicants queued beside me."
+        },
+        {
+          "role": "assistant",
+          "content": "What went wrong?"
+        },
+        {
+          "role": "user",
+          "content": "I omitted the school-capacity condition and the packet had to be withdrawn."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2027-07-21T14:00:00Z",
+      "speaker_id": "work_s14_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I can explain permit steps to residents from the public counter."
+        },
+        {
+          "role": "assistant",
+          "content": "Does that counter work for your day-to-day service?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, for a single question at a time."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2027-07-22T16:00:00Z",
+      "speaker_id": "work_s14_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I archived last cycle's notes on the permit-counter hot desks and set up the new folder."
+        },
+        {
+          "role": "assistant",
+          "content": "A fresh start?"
+        },
+        {
+          "role": "user",
+          "content": "As fresh as these things get."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2027-07-23T18:00:00Z",
+      "speaker_id": "work_s14_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The records alcove is reserved for scanning all Wednesday, and the council packet locks at 14:00."
+        },
+        {
+          "role": "assistant",
+          "content": "Can the assessment move elsewhere quietly?"
+        },
+        {
+          "role": "user",
+          "content": "No other room has the parcel map archive."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2027-07-24T09:00:00Z",
+      "speaker_id": "work_s14_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A vendor call about the zoning impact assessment ran long but ended well."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth the time?"
+        },
+        {
+          "role": "user",
+          "content": "This one, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2027-07-25T11:00:00Z",
+      "speaker_id": "work_s14_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I walked through the Wednesday council packet checklist with the new starter."
+        },
+        {
+          "role": "assistant",
+          "content": "How did they do?"
+        },
+        {
+          "role": "user",
+          "content": "Careful and quick, a good sign."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2027-07-26T14:00:00Z",
+      "speaker_id": "work_s14_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Quiet afternoon; I cleared the backlog around the municipal records alcove."
+        },
+        {
+          "role": "assistant",
+          "content": "A rare day."
+        },
+        {
+          "role": "user",
+          "content": "I did not waste it."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2027-07-27T16:00:00Z",
+      "speaker_id": "work_s14_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I flagged a small inconsistency in the permit-counter hot desks records and fixed it at the source."
+        },
+        {
+          "role": "assistant",
+          "content": "Root cause or symptom?"
+        },
+        {
+          "role": "user",
+          "content": "Root cause, for once."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2027-07-28T18:00:00Z",
+      "speaker_id": "work_s14_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "At the permit counter during the transit-overlay revision, I answered walk-up questions between map checks and left a flood-zone parcel out of the impact table."
+        },
+        {
+          "role": "assistant",
+          "content": "What followed?"
+        },
+        {
+          "role": "user",
+          "content": "The planning manager sent the table back for a complete rebuild."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2027-07-29T09:00:00Z",
+      "speaker_id": "work_s14_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I sketched next week's plan for the municipal records alcove before leaving."
+        },
+        {
+          "role": "assistant",
+          "content": "Ahead of schedule?"
+        },
+        {
+          "role": "user",
+          "content": "Ahead enough to sleep well."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2027-07-30T11:00:00Z",
+      "speaker_id": "work_s14_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Lunch walk, then a clean pass through the zoning impact assessment updates."
+        },
+        {
+          "role": "assistant",
+          "content": "Does the walk help?"
+        },
+        {
+          "role": "user",
+          "content": "It resets the afternoon."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2027-07-31T14:00:00Z",
+      "speaker_id": "work_s14_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The city clerk requires the packet in the publishing queue by 13:00, an hour before the council lock."
+        },
+        {
+          "role": "assistant",
+          "content": "Is there time for a later rewrite?"
+        },
+        {
+          "role": "user",
+          "content": "No, a missing condition would carry into the public packet."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2027-08-01T16:00:00Z",
+      "speaker_id": "work_s14_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The department head says the public counter would demonstrate responsiveness."
+        },
+        {
+          "role": "assistant",
+          "content": "Does responsiveness answer the packet risk?"
+        },
+        {
+          "role": "user",
+          "content": "No, the council needs a complete analysis."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2027-08-02T18:00:00Z",
+      "speaker_id": "work_s14_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I closed the week by updating the Wednesday council packet handover notes."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual to hand over?"
+        },
+        {
+          "role": "user",
+          "content": "Blessedly little."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2027-08-03T09:00:00Z",
+      "speaker_id": "work_s14_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Why should I turn down the permit-counter hot desk before the zoning impact assessment goes into Wednesday's council packet?"
+        }
+      ]
+    }
+  ],
+  "query": "Why should I turn down the permit-counter hot desk before the zoning impact assessment goes into Wednesday's council packet?",
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "work_s14_u05",
+      "fact": "I once revised a density assessment at the permit counter while applicants queued beside me."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "work_s14_u05",
+      "fact": "At the permit counter during the transit-overlay revision, I answered walk-up questions between map checks and left a flood-zone parcel out of the impact table."
+    }
+  },
+  "supporting_constraints": {
+    "E1": {
+      "session_id": 9,
+      "fact": "The records alcove is reserved for scanning all Wednesday, and the council packet locks at 14:00."
+    },
+    "E2": {
+      "session_id": 17,
+      "fact": "The city clerk requires the packet in the publishing queue by 13:00, an hour before the council lock."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "work_s14_u05",
+        "context": "riverfront assessment",
+        "goal_or_prediction": "map parcel comments to ordinance",
+        "action": "records alcove",
+        "outcome_or_affect": "consistent recommendation"
+      }
+    },
+    "7": {
+      "role": "nearby_counterexample"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "supporting_constraint",
+      "fact_id": "E1"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "work_s14_u05",
+        "context": "density assessment",
+        "goal_or_prediction": "include all conditions",
+        "action": "queued applicants",
+        "outcome_or_affect": "omitted condition and withdrawn packet"
+      }
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "supporting_constraint",
+      "fact_id": "E2"
+    },
+    "18": {
+      "role": "distractor",
+      "distractor_id": "dist_1",
+      "why_distractor": "Public responsiveness does not show that interruptions preserve a complete zoning analysis."
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "A prior counter-based draft omitted a material condition, and the assessment needs the unavailable quiet alcove and map archive before a fixed packet deadline.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": [
+      "E1",
+      "E2"
+    ]
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "I once revised a density assessment at the permit counter while applicants queued beside me"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "At the permit counter during the transit-overlay revision, I answered walk-up questions between map checks and left a flood-zone parcel out of the impact table"
+    }
+  ],
+  "retrieval_cue": {
+    "cue_type": "behavior_explanation",
+    "why_it_naturally_retrieves_R": "A realistic work request forces a personalized decision without naming either episode or the relation between them."
+  },
+  "relation_specificity": {
+    "nearby_relation": "The user handles individual resident permit questions at the counter.",
+    "why_it_does_not_license_C": "Individual service questions are not equivalent to integrating parcel evidence into a council assessment."
+  },
+  "coactivation_bridge": "A shows the operating condition; B shows the demand or failure that makes it decisive. A prior counter-based draft omitted a material condition, and the assessment needs the unavailable quiet alcove and map archive before a fixed packet deadline. E1 and E2 calibrate the practical recommendation without opening a second route to the conclusion.",
+  "latent_C": {
+    "inference": "The user should reject it because the required records alcove is unavailable before the packet locks.",
+    "calibrated_language": "reject until the records alcove is available"
+  },
+  "answer_contract": {
+    "target_proposition": "The user should reject it because the required records alcove is unavailable before the packet locks.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "decision",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "work_u05",
+    "status": "review_candidate_only",
+    "anonymization": "External persona material was used only during authoring; no corpus, name, country, or demographic metadata is included."
+  },
+  "arm_gold": {
+    "distractor": {
+      "expected_mode": "infer_C",
+      "binary_decision": true
+    }
+  },
+  "distractor_note": {
+    "replaced_session_id": 18,
+    "why_distractor": "Public responsiveness does not show that interruptions preserve a complete zoning analysis."
+  }
+}

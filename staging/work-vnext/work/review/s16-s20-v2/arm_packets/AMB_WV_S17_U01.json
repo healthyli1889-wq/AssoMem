@@ -1,0 +1,2489 @@
+{
+  "pair_id": "AMB_WV_S17_U01",
+  "scenario": "S17",
+  "uid": "U01",
+  "role": "grant portfolio coordinator",
+  "query": "Should I commit our office to delivering the full coastal learning rollout?",
+  "target": "Decline the full rollout commitment and offer the funded discovery phase.",
+  "calibrated": "limit the commitment to evidence gathering",
+  "relation": "The inland skills episode shows this user can withhold delivery volume until missing inputs are collected, while the literacy expansion shows the cost of promising full regional delivery before demand is verified; only both justify declining coastal rollout while offering funded discovery.",
+  "A": "When an inland skills pilot arrived with only a concept sheet and no employer counts or delivery sites, I refused to put any delivery volume on the partner calendar and instead scheduled interviews to collect those missing inputs first.",
+  "B": "On last year's literacy expansion, I told the partner forum we would deliver the full regional programme before usage figures arrived; when the reconciled data showed half the expected uptake, we had to revise the public commitment.",
+  "E1": "The funding round closes in six weeks.",
+  "E2": "The award form has a required ceiling field, and finance will not release funds until that field is filled.",
+  "B_prime": "On last year's literacy expansion, I arranged a partner workshop and waited for attendance figures before naming a delivery scope; when the reconciled data arrived, the workshop confirmed interest but the counts still did not support a regional rollout.",
+  "lure": "The programme director says an ambitious public announcement would strengthen the application.",
+  "subset_gate": {
+    "full_supports_C": "",
+    "a_only_supports_C": "",
+    "b_only_supports_C": "",
+    "link_broken_supports_C": "",
+    "absence_supports_C": "",
+    "reviewer": "",
+    "notes": ""
+  },
+  "arms": {
+    "full": {
+      "expected_mode": "infer_C",
+      "lineage": {
+        "transform": "identity",
+        "retained_sessions": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ]
+      },
+      "changed_sessions": [],
+      "context": [
+        {
+          "session_id": 1,
+          "timestamp": "2028-03-08T11:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I spent the first hour tidying the award register and closing stale entries."
+            },
+            {
+              "role": "assistant",
+              "content": "Anything still open?"
+            },
+            {
+              "role": "user",
+              "content": "Two items, both with owners."
+            }
+          ]
+        },
+        {
+          "session_id": 2,
+          "timestamp": "2028-03-09T14:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The partner brief review wrapped early today."
+            },
+            {
+              "role": "assistant",
+              "content": "Any surprises in it?"
+            },
+            {
+              "role": "user",
+              "content": "None worth recording."
+            }
+          ]
+        },
+        {
+          "session_id": 3,
+          "timestamp": "2028-03-10T16:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I summarized a closed partner report for the quarterly desk update."
+            },
+            {
+              "role": "assistant",
+              "content": "Was the programme still open?"
+            },
+            {
+              "role": "user",
+              "content": "No, the figures had already been reconciled."
+            }
+          ]
+        },
+        {
+          "session_id": 4,
+          "timestamp": "2028-03-11T18:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Someone new shadowed me in the funding desk this morning."
+            },
+            {
+              "role": "assistant",
+              "content": "Did that slow you down?"
+            },
+            {
+              "role": "user",
+              "content": "A little, but the questions were good ones."
+            }
+          ]
+        },
+        {
+          "session_id": 5,
+          "timestamp": "2028-03-12T09:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I batched my replies about the proposal windows into one message before lunch."
+            },
+            {
+              "role": "assistant",
+              "content": "Cleaner than drip-feeding answers."
+            },
+            {
+              "role": "user",
+              "content": "Much cleaner."
+            }
+          ]
+        },
+        {
+          "session_id": 6,
+          "timestamp": "2028-03-13T11:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "When an inland skills pilot arrived with only a concept sheet and no employer counts or delivery sites, I refused to put any delivery volume on the partner calendar and instead scheduled interviews to collect those missing inputs first."
+            },
+            {
+              "role": "assistant",
+              "content": "What did you withhold?"
+            },
+            {
+              "role": "user",
+              "content": "Any promise about how many sites or cohorts we would run."
+            }
+          ]
+        },
+        {
+          "session_id": 7,
+          "timestamp": "2028-03-14T14:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I arranged a one-afternoon discovery outline once the deliverable list was fixed."
+            },
+            {
+              "role": "assistant",
+              "content": "Did that need new evidence?"
+            },
+            {
+              "role": "user",
+              "content": "No, the partner had supplied the scope sheet."
+            }
+          ]
+        },
+        {
+          "session_id": 8,
+          "timestamp": "2028-03-15T16:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I archived last cycle's notes on the partner brief and set up the new folder."
+            },
+            {
+              "role": "assistant",
+              "content": "A fresh start?"
+            },
+            {
+              "role": "user",
+              "content": "As fresh as these things get."
+            }
+          ]
+        },
+        {
+          "session_id": 9,
+          "timestamp": "2028-03-16T18:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The funding round closes in six weeks."
+            },
+            {
+              "role": "assistant",
+              "content": "Does that deadline cover implementation?"
+            },
+            {
+              "role": "user",
+              "content": "No, it only sets when the application must be submitted."
+            }
+          ]
+        },
+        {
+          "session_id": 10,
+          "timestamp": "2028-03-17T09:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "A vendor call about the award register ran long but ended well."
+            },
+            {
+              "role": "assistant",
+              "content": "Worth the time?"
+            },
+            {
+              "role": "user",
+              "content": "This one, yes."
+            }
+          ]
+        },
+        {
+          "session_id": 11,
+          "timestamp": "2028-03-18T11:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I walked through the funding desk checklist with the new starter."
+            },
+            {
+              "role": "assistant",
+              "content": "How did they do?"
+            },
+            {
+              "role": "user",
+              "content": "Careful and quick, a good sign."
+            }
+          ]
+        },
+        {
+          "session_id": 12,
+          "timestamp": "2028-03-19T14:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Quiet afternoon; I cleared the backlog around the proposal windows."
+            },
+            {
+              "role": "assistant",
+              "content": "A rare day."
+            },
+            {
+              "role": "user",
+              "content": "I did not waste it."
+            }
+          ]
+        },
+        {
+          "session_id": 13,
+          "timestamp": "2028-03-20T16:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I flagged a small inconsistency in the partner brief records and fixed it at the source."
+            },
+            {
+              "role": "assistant",
+              "content": "Root cause or symptom?"
+            },
+            {
+              "role": "user",
+              "content": "Root cause, for once."
+            }
+          ]
+        },
+        {
+          "session_id": 14,
+          "timestamp": "2028-03-21T18:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "On last year's literacy expansion, I told the partner forum we would deliver the full regional programme before usage figures arrived; when the reconciled data showed half the expected uptake, we had to revise the public commitment."
+            },
+            {
+              "role": "assistant",
+              "content": "What had you assumed?"
+            },
+            {
+              "role": "user",
+              "content": "That early enthusiasm could stand in for verified demand."
+            }
+          ]
+        },
+        {
+          "session_id": 15,
+          "timestamp": "2028-03-22T09:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I sketched next week's plan for the proposal windows before leaving."
+            },
+            {
+              "role": "assistant",
+              "content": "Ahead of schedule?"
+            },
+            {
+              "role": "user",
+              "content": "Ahead enough to sleep well."
+            }
+          ]
+        },
+        {
+          "session_id": 16,
+          "timestamp": "2028-03-23T11:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Lunch walk, then a clean pass through the award register updates."
+            },
+            {
+              "role": "assistant",
+              "content": "Does the walk help?"
+            },
+            {
+              "role": "user",
+              "content": "It resets the afternoon."
+            }
+          ]
+        },
+        {
+          "session_id": 17,
+          "timestamp": "2028-03-24T14:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The award form has a required ceiling field, and finance will not release funds until that field is filled."
+            },
+            {
+              "role": "assistant",
+              "content": "Has a ceiling been entered?"
+            },
+            {
+              "role": "user",
+              "content": "Not yet; the field is still blank."
+            }
+          ]
+        },
+        {
+          "session_id": 18,
+          "timestamp": "2028-03-25T16:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I compared two options for the partner brief tooling and noted a mild preference."
+            },
+            {
+              "role": "assistant",
+              "content": "Decision made?"
+            },
+            {
+              "role": "user",
+              "content": "Deferred until the trial ends."
+            }
+          ]
+        },
+        {
+          "session_id": 19,
+          "timestamp": "2028-03-26T18:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I closed the week by updating the funding desk handover notes."
+            },
+            {
+              "role": "assistant",
+              "content": "Anything unusual to hand over?"
+            },
+            {
+              "role": "user",
+              "content": "Blessedly little."
+            }
+          ]
+        },
+        {
+          "session_id": 20,
+          "timestamp": "2028-03-27T09:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Should I commit our office to delivering the full coastal learning rollout?"
+            }
+          ]
+        }
+      ],
+      "query": "Should I commit our office to delivering the full coastal learning rollout?"
+    },
+    "a_only": {
+      "expected_mode": "withhold_C",
+      "lineage": {
+        "transform": "replace_ev_B_with_neutral",
+        "changed_sessions": [
+          14
+        ]
+      },
+      "changed_sessions": [
+        14
+      ],
+      "context": [
+        {
+          "session_id": 1,
+          "timestamp": "2028-03-08T11:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I spent the first hour tidying the award register and closing stale entries."
+            },
+            {
+              "role": "assistant",
+              "content": "Anything still open?"
+            },
+            {
+              "role": "user",
+              "content": "Two items, both with owners."
+            }
+          ]
+        },
+        {
+          "session_id": 2,
+          "timestamp": "2028-03-09T14:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The partner brief review wrapped early today."
+            },
+            {
+              "role": "assistant",
+              "content": "Any surprises in it?"
+            },
+            {
+              "role": "user",
+              "content": "None worth recording."
+            }
+          ]
+        },
+        {
+          "session_id": 3,
+          "timestamp": "2028-03-10T16:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I summarized a closed partner report for the quarterly desk update."
+            },
+            {
+              "role": "assistant",
+              "content": "Was the programme still open?"
+            },
+            {
+              "role": "user",
+              "content": "No, the figures had already been reconciled."
+            }
+          ]
+        },
+        {
+          "session_id": 4,
+          "timestamp": "2028-03-11T18:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Someone new shadowed me in the funding desk this morning."
+            },
+            {
+              "role": "assistant",
+              "content": "Did that slow you down?"
+            },
+            {
+              "role": "user",
+              "content": "A little, but the questions were good ones."
+            }
+          ]
+        },
+        {
+          "session_id": 5,
+          "timestamp": "2028-03-12T09:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I batched my replies about the proposal windows into one message before lunch."
+            },
+            {
+              "role": "assistant",
+              "content": "Cleaner than drip-feeding answers."
+            },
+            {
+              "role": "user",
+              "content": "Much cleaner."
+            }
+          ]
+        },
+        {
+          "session_id": 6,
+          "timestamp": "2028-03-13T11:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "When an inland skills pilot arrived with only a concept sheet and no employer counts or delivery sites, I refused to put any delivery volume on the partner calendar and instead scheduled interviews to collect those missing inputs first."
+            },
+            {
+              "role": "assistant",
+              "content": "What did you withhold?"
+            },
+            {
+              "role": "user",
+              "content": "Any promise about how many sites or cohorts we would run."
+            }
+          ]
+        },
+        {
+          "session_id": 7,
+          "timestamp": "2028-03-14T14:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I arranged a one-afternoon discovery outline once the deliverable list was fixed."
+            },
+            {
+              "role": "assistant",
+              "content": "Did that need new evidence?"
+            },
+            {
+              "role": "user",
+              "content": "No, the partner had supplied the scope sheet."
+            }
+          ]
+        },
+        {
+          "session_id": 8,
+          "timestamp": "2028-03-15T16:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I archived last cycle's notes on the partner brief and set up the new folder."
+            },
+            {
+              "role": "assistant",
+              "content": "A fresh start?"
+            },
+            {
+              "role": "user",
+              "content": "As fresh as these things get."
+            }
+          ]
+        },
+        {
+          "session_id": 9,
+          "timestamp": "2028-03-16T18:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The funding round closes in six weeks."
+            },
+            {
+              "role": "assistant",
+              "content": "Does that deadline cover implementation?"
+            },
+            {
+              "role": "user",
+              "content": "No, it only sets when the application must be submitted."
+            }
+          ]
+        },
+        {
+          "session_id": 10,
+          "timestamp": "2028-03-17T09:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "A vendor call about the award register ran long but ended well."
+            },
+            {
+              "role": "assistant",
+              "content": "Worth the time?"
+            },
+            {
+              "role": "user",
+              "content": "This one, yes."
+            }
+          ]
+        },
+        {
+          "session_id": 11,
+          "timestamp": "2028-03-18T11:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I walked through the funding desk checklist with the new starter."
+            },
+            {
+              "role": "assistant",
+              "content": "How did they do?"
+            },
+            {
+              "role": "user",
+              "content": "Careful and quick, a good sign."
+            }
+          ]
+        },
+        {
+          "session_id": 12,
+          "timestamp": "2028-03-19T14:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Quiet afternoon; I cleared the backlog around the proposal windows."
+            },
+            {
+              "role": "assistant",
+              "content": "A rare day."
+            },
+            {
+              "role": "user",
+              "content": "I did not waste it."
+            }
+          ]
+        },
+        {
+          "session_id": 13,
+          "timestamp": "2028-03-20T16:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I flagged a small inconsistency in the partner brief records and fixed it at the source."
+            },
+            {
+              "role": "assistant",
+              "content": "Root cause or symptom?"
+            },
+            {
+              "role": "user",
+              "content": "Root cause, for once."
+            }
+          ]
+        },
+        {
+          "session_id": 14,
+          "timestamp": "2028-03-21T18:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I filed the routine proposal windows paperwork and confirmed the owner list."
+            },
+            {
+              "role": "assistant",
+              "content": "Anything unusual in it?"
+            },
+            {
+              "role": "user",
+              "content": "A routine cycle, happily."
+            }
+          ]
+        },
+        {
+          "session_id": 15,
+          "timestamp": "2028-03-22T09:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I sketched next week's plan for the proposal windows before leaving."
+            },
+            {
+              "role": "assistant",
+              "content": "Ahead of schedule?"
+            },
+            {
+              "role": "user",
+              "content": "Ahead enough to sleep well."
+            }
+          ]
+        },
+        {
+          "session_id": 16,
+          "timestamp": "2028-03-23T11:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Lunch walk, then a clean pass through the award register updates."
+            },
+            {
+              "role": "assistant",
+              "content": "Does the walk help?"
+            },
+            {
+              "role": "user",
+              "content": "It resets the afternoon."
+            }
+          ]
+        },
+        {
+          "session_id": 17,
+          "timestamp": "2028-03-24T14:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The award form has a required ceiling field, and finance will not release funds until that field is filled."
+            },
+            {
+              "role": "assistant",
+              "content": "Has a ceiling been entered?"
+            },
+            {
+              "role": "user",
+              "content": "Not yet; the field is still blank."
+            }
+          ]
+        },
+        {
+          "session_id": 18,
+          "timestamp": "2028-03-25T16:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I compared two options for the partner brief tooling and noted a mild preference."
+            },
+            {
+              "role": "assistant",
+              "content": "Decision made?"
+            },
+            {
+              "role": "user",
+              "content": "Deferred until the trial ends."
+            }
+          ]
+        },
+        {
+          "session_id": 19,
+          "timestamp": "2028-03-26T18:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I closed the week by updating the funding desk handover notes."
+            },
+            {
+              "role": "assistant",
+              "content": "Anything unusual to hand over?"
+            },
+            {
+              "role": "user",
+              "content": "Blessedly little."
+            }
+          ]
+        },
+        {
+          "session_id": 20,
+          "timestamp": "2028-03-27T09:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Should I commit our office to delivering the full coastal learning rollout?"
+            }
+          ]
+        }
+      ],
+      "query": "Should I commit our office to delivering the full coastal learning rollout?"
+    },
+    "b_only": {
+      "expected_mode": "withhold_C",
+      "lineage": {
+        "transform": "replace_ev_A_with_neutral",
+        "changed_sessions": [
+          6
+        ]
+      },
+      "changed_sessions": [
+        6
+      ],
+      "context": [
+        {
+          "session_id": 1,
+          "timestamp": "2028-03-08T11:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I spent the first hour tidying the award register and closing stale entries."
+            },
+            {
+              "role": "assistant",
+              "content": "Anything still open?"
+            },
+            {
+              "role": "user",
+              "content": "Two items, both with owners."
+            }
+          ]
+        },
+        {
+          "session_id": 2,
+          "timestamp": "2028-03-09T14:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The partner brief review wrapped early today."
+            },
+            {
+              "role": "assistant",
+              "content": "Any surprises in it?"
+            },
+            {
+              "role": "user",
+              "content": "None worth recording."
+            }
+          ]
+        },
+        {
+          "session_id": 3,
+          "timestamp": "2028-03-10T16:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I summarized a closed partner report for the quarterly desk update."
+            },
+            {
+              "role": "assistant",
+              "content": "Was the programme still open?"
+            },
+            {
+              "role": "user",
+              "content": "No, the figures had already been reconciled."
+            }
+          ]
+        },
+        {
+          "session_id": 4,
+          "timestamp": "2028-03-11T18:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Someone new shadowed me in the funding desk this morning."
+            },
+            {
+              "role": "assistant",
+              "content": "Did that slow you down?"
+            },
+            {
+              "role": "user",
+              "content": "A little, but the questions were good ones."
+            }
+          ]
+        },
+        {
+          "session_id": 5,
+          "timestamp": "2028-03-12T09:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I batched my replies about the proposal windows into one message before lunch."
+            },
+            {
+              "role": "assistant",
+              "content": "Cleaner than drip-feeding answers."
+            },
+            {
+              "role": "user",
+              "content": "Much cleaner."
+            }
+          ]
+        },
+        {
+          "session_id": 6,
+          "timestamp": "2028-03-13T11:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I did a standard pass over the partner brief records this morning."
+            },
+            {
+              "role": "assistant",
+              "content": "Any exceptions?"
+            },
+            {
+              "role": "user",
+              "content": "None worth a note."
+            }
+          ]
+        },
+        {
+          "session_id": 7,
+          "timestamp": "2028-03-14T14:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I arranged a one-afternoon discovery outline once the deliverable list was fixed."
+            },
+            {
+              "role": "assistant",
+              "content": "Did that need new evidence?"
+            },
+            {
+              "role": "user",
+              "content": "No, the partner had supplied the scope sheet."
+            }
+          ]
+        },
+        {
+          "session_id": 8,
+          "timestamp": "2028-03-15T16:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I archived last cycle's notes on the partner brief and set up the new folder."
+            },
+            {
+              "role": "assistant",
+              "content": "A fresh start?"
+            },
+            {
+              "role": "user",
+              "content": "As fresh as these things get."
+            }
+          ]
+        },
+        {
+          "session_id": 9,
+          "timestamp": "2028-03-16T18:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The funding round closes in six weeks."
+            },
+            {
+              "role": "assistant",
+              "content": "Does that deadline cover implementation?"
+            },
+            {
+              "role": "user",
+              "content": "No, it only sets when the application must be submitted."
+            }
+          ]
+        },
+        {
+          "session_id": 10,
+          "timestamp": "2028-03-17T09:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "A vendor call about the award register ran long but ended well."
+            },
+            {
+              "role": "assistant",
+              "content": "Worth the time?"
+            },
+            {
+              "role": "user",
+              "content": "This one, yes."
+            }
+          ]
+        },
+        {
+          "session_id": 11,
+          "timestamp": "2028-03-18T11:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I walked through the funding desk checklist with the new starter."
+            },
+            {
+              "role": "assistant",
+              "content": "How did they do?"
+            },
+            {
+              "role": "user",
+              "content": "Careful and quick, a good sign."
+            }
+          ]
+        },
+        {
+          "session_id": 12,
+          "timestamp": "2028-03-19T14:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Quiet afternoon; I cleared the backlog around the proposal windows."
+            },
+            {
+              "role": "assistant",
+              "content": "A rare day."
+            },
+            {
+              "role": "user",
+              "content": "I did not waste it."
+            }
+          ]
+        },
+        {
+          "session_id": 13,
+          "timestamp": "2028-03-20T16:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I flagged a small inconsistency in the partner brief records and fixed it at the source."
+            },
+            {
+              "role": "assistant",
+              "content": "Root cause or symptom?"
+            },
+            {
+              "role": "user",
+              "content": "Root cause, for once."
+            }
+          ]
+        },
+        {
+          "session_id": 14,
+          "timestamp": "2028-03-21T18:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "On last year's literacy expansion, I told the partner forum we would deliver the full regional programme before usage figures arrived; when the reconciled data showed half the expected uptake, we had to revise the public commitment."
+            },
+            {
+              "role": "assistant",
+              "content": "What had you assumed?"
+            },
+            {
+              "role": "user",
+              "content": "That early enthusiasm could stand in for verified demand."
+            }
+          ]
+        },
+        {
+          "session_id": 15,
+          "timestamp": "2028-03-22T09:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I sketched next week's plan for the proposal windows before leaving."
+            },
+            {
+              "role": "assistant",
+              "content": "Ahead of schedule?"
+            },
+            {
+              "role": "user",
+              "content": "Ahead enough to sleep well."
+            }
+          ]
+        },
+        {
+          "session_id": 16,
+          "timestamp": "2028-03-23T11:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Lunch walk, then a clean pass through the award register updates."
+            },
+            {
+              "role": "assistant",
+              "content": "Does the walk help?"
+            },
+            {
+              "role": "user",
+              "content": "It resets the afternoon."
+            }
+          ]
+        },
+        {
+          "session_id": 17,
+          "timestamp": "2028-03-24T14:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The award form has a required ceiling field, and finance will not release funds until that field is filled."
+            },
+            {
+              "role": "assistant",
+              "content": "Has a ceiling been entered?"
+            },
+            {
+              "role": "user",
+              "content": "Not yet; the field is still blank."
+            }
+          ]
+        },
+        {
+          "session_id": 18,
+          "timestamp": "2028-03-25T16:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I compared two options for the partner brief tooling and noted a mild preference."
+            },
+            {
+              "role": "assistant",
+              "content": "Decision made?"
+            },
+            {
+              "role": "user",
+              "content": "Deferred until the trial ends."
+            }
+          ]
+        },
+        {
+          "session_id": 19,
+          "timestamp": "2028-03-26T18:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I closed the week by updating the funding desk handover notes."
+            },
+            {
+              "role": "assistant",
+              "content": "Anything unusual to hand over?"
+            },
+            {
+              "role": "user",
+              "content": "Blessedly little."
+            }
+          ]
+        },
+        {
+          "session_id": 20,
+          "timestamp": "2028-03-27T09:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Should I commit our office to delivering the full coastal learning rollout?"
+            }
+          ]
+        }
+      ],
+      "query": "Should I commit our office to delivering the full coastal learning rollout?"
+    },
+    "link_broken": {
+      "expected_mode": "withhold_C",
+      "lineage": {
+        "transform": "replace_relation_in_ev_B",
+        "changed_sessions": [
+          14
+        ],
+        "source_owner_preserved": true
+      },
+      "changed_sessions": [
+        14
+      ],
+      "context": [
+        {
+          "session_id": 1,
+          "timestamp": "2028-03-08T11:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I spent the first hour tidying the award register and closing stale entries."
+            },
+            {
+              "role": "assistant",
+              "content": "Anything still open?"
+            },
+            {
+              "role": "user",
+              "content": "Two items, both with owners."
+            }
+          ]
+        },
+        {
+          "session_id": 2,
+          "timestamp": "2028-03-09T14:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The partner brief review wrapped early today."
+            },
+            {
+              "role": "assistant",
+              "content": "Any surprises in it?"
+            },
+            {
+              "role": "user",
+              "content": "None worth recording."
+            }
+          ]
+        },
+        {
+          "session_id": 3,
+          "timestamp": "2028-03-10T16:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I summarized a closed partner report for the quarterly desk update."
+            },
+            {
+              "role": "assistant",
+              "content": "Was the programme still open?"
+            },
+            {
+              "role": "user",
+              "content": "No, the figures had already been reconciled."
+            }
+          ]
+        },
+        {
+          "session_id": 4,
+          "timestamp": "2028-03-11T18:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Someone new shadowed me in the funding desk this morning."
+            },
+            {
+              "role": "assistant",
+              "content": "Did that slow you down?"
+            },
+            {
+              "role": "user",
+              "content": "A little, but the questions were good ones."
+            }
+          ]
+        },
+        {
+          "session_id": 5,
+          "timestamp": "2028-03-12T09:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I batched my replies about the proposal windows into one message before lunch."
+            },
+            {
+              "role": "assistant",
+              "content": "Cleaner than drip-feeding answers."
+            },
+            {
+              "role": "user",
+              "content": "Much cleaner."
+            }
+          ]
+        },
+        {
+          "session_id": 6,
+          "timestamp": "2028-03-13T11:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "When an inland skills pilot arrived with only a concept sheet and no employer counts or delivery sites, I refused to put any delivery volume on the partner calendar and instead scheduled interviews to collect those missing inputs first."
+            },
+            {
+              "role": "assistant",
+              "content": "What did you withhold?"
+            },
+            {
+              "role": "user",
+              "content": "Any promise about how many sites or cohorts we would run."
+            }
+          ]
+        },
+        {
+          "session_id": 7,
+          "timestamp": "2028-03-14T14:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I arranged a one-afternoon discovery outline once the deliverable list was fixed."
+            },
+            {
+              "role": "assistant",
+              "content": "Did that need new evidence?"
+            },
+            {
+              "role": "user",
+              "content": "No, the partner had supplied the scope sheet."
+            }
+          ]
+        },
+        {
+          "session_id": 8,
+          "timestamp": "2028-03-15T16:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I archived last cycle's notes on the partner brief and set up the new folder."
+            },
+            {
+              "role": "assistant",
+              "content": "A fresh start?"
+            },
+            {
+              "role": "user",
+              "content": "As fresh as these things get."
+            }
+          ]
+        },
+        {
+          "session_id": 9,
+          "timestamp": "2028-03-16T18:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The funding round closes in six weeks."
+            },
+            {
+              "role": "assistant",
+              "content": "Does that deadline cover implementation?"
+            },
+            {
+              "role": "user",
+              "content": "No, it only sets when the application must be submitted."
+            }
+          ]
+        },
+        {
+          "session_id": 10,
+          "timestamp": "2028-03-17T09:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "A vendor call about the award register ran long but ended well."
+            },
+            {
+              "role": "assistant",
+              "content": "Worth the time?"
+            },
+            {
+              "role": "user",
+              "content": "This one, yes."
+            }
+          ]
+        },
+        {
+          "session_id": 11,
+          "timestamp": "2028-03-18T11:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I walked through the funding desk checklist with the new starter."
+            },
+            {
+              "role": "assistant",
+              "content": "How did they do?"
+            },
+            {
+              "role": "user",
+              "content": "Careful and quick, a good sign."
+            }
+          ]
+        },
+        {
+          "session_id": 12,
+          "timestamp": "2028-03-19T14:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Quiet afternoon; I cleared the backlog around the proposal windows."
+            },
+            {
+              "role": "assistant",
+              "content": "A rare day."
+            },
+            {
+              "role": "user",
+              "content": "I did not waste it."
+            }
+          ]
+        },
+        {
+          "session_id": 13,
+          "timestamp": "2028-03-20T16:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I flagged a small inconsistency in the partner brief records and fixed it at the source."
+            },
+            {
+              "role": "assistant",
+              "content": "Root cause or symptom?"
+            },
+            {
+              "role": "user",
+              "content": "Root cause, for once."
+            }
+          ]
+        },
+        {
+          "session_id": 14,
+          "timestamp": "2028-03-21T18:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "On last year's literacy expansion, I arranged a partner workshop and waited for attendance figures before naming a delivery scope; when the reconciled data arrived, the workshop confirmed interest but the counts still did not support a regional rollout."
+            },
+            {
+              "role": "assistant",
+              "content": "Would that support the same pledge?"
+            },
+            {
+              "role": "user",
+              "content": "No, waiting for figures did not make the counts sufficient for a delivery promise."
+            }
+          ]
+        },
+        {
+          "session_id": 15,
+          "timestamp": "2028-03-22T09:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I sketched next week's plan for the proposal windows before leaving."
+            },
+            {
+              "role": "assistant",
+              "content": "Ahead of schedule?"
+            },
+            {
+              "role": "user",
+              "content": "Ahead enough to sleep well."
+            }
+          ]
+        },
+        {
+          "session_id": 16,
+          "timestamp": "2028-03-23T11:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Lunch walk, then a clean pass through the award register updates."
+            },
+            {
+              "role": "assistant",
+              "content": "Does the walk help?"
+            },
+            {
+              "role": "user",
+              "content": "It resets the afternoon."
+            }
+          ]
+        },
+        {
+          "session_id": 17,
+          "timestamp": "2028-03-24T14:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The award form has a required ceiling field, and finance will not release funds until that field is filled."
+            },
+            {
+              "role": "assistant",
+              "content": "Has a ceiling been entered?"
+            },
+            {
+              "role": "user",
+              "content": "Not yet; the field is still blank."
+            }
+          ]
+        },
+        {
+          "session_id": 18,
+          "timestamp": "2028-03-25T16:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I compared two options for the partner brief tooling and noted a mild preference."
+            },
+            {
+              "role": "assistant",
+              "content": "Decision made?"
+            },
+            {
+              "role": "user",
+              "content": "Deferred until the trial ends."
+            }
+          ]
+        },
+        {
+          "session_id": 19,
+          "timestamp": "2028-03-26T18:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I closed the week by updating the funding desk handover notes."
+            },
+            {
+              "role": "assistant",
+              "content": "Anything unusual to hand over?"
+            },
+            {
+              "role": "user",
+              "content": "Blessedly little."
+            }
+          ]
+        },
+        {
+          "session_id": 20,
+          "timestamp": "2028-03-27T09:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Should I commit our office to delivering the full coastal learning rollout?"
+            }
+          ]
+        }
+      ],
+      "query": "Should I commit our office to delivering the full coastal learning rollout?"
+    },
+    "distractor": {
+      "expected_mode": "infer_C",
+      "lineage": {
+        "transform": "shipped",
+        "changed_sessions": [
+          18
+        ]
+      },
+      "changed_sessions": [
+        18
+      ],
+      "context": [
+        {
+          "session_id": 1,
+          "timestamp": "2028-03-08T11:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I spent the first hour tidying the award register and closing stale entries."
+            },
+            {
+              "role": "assistant",
+              "content": "Anything still open?"
+            },
+            {
+              "role": "user",
+              "content": "Two items, both with owners."
+            }
+          ]
+        },
+        {
+          "session_id": 2,
+          "timestamp": "2028-03-09T14:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The partner brief review wrapped early today."
+            },
+            {
+              "role": "assistant",
+              "content": "Any surprises in it?"
+            },
+            {
+              "role": "user",
+              "content": "None worth recording."
+            }
+          ]
+        },
+        {
+          "session_id": 3,
+          "timestamp": "2028-03-10T16:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I summarized a closed partner report for the quarterly desk update."
+            },
+            {
+              "role": "assistant",
+              "content": "Was the programme still open?"
+            },
+            {
+              "role": "user",
+              "content": "No, the figures had already been reconciled."
+            }
+          ]
+        },
+        {
+          "session_id": 4,
+          "timestamp": "2028-03-11T18:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Someone new shadowed me in the funding desk this morning."
+            },
+            {
+              "role": "assistant",
+              "content": "Did that slow you down?"
+            },
+            {
+              "role": "user",
+              "content": "A little, but the questions were good ones."
+            }
+          ]
+        },
+        {
+          "session_id": 5,
+          "timestamp": "2028-03-12T09:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I batched my replies about the proposal windows into one message before lunch."
+            },
+            {
+              "role": "assistant",
+              "content": "Cleaner than drip-feeding answers."
+            },
+            {
+              "role": "user",
+              "content": "Much cleaner."
+            }
+          ]
+        },
+        {
+          "session_id": 6,
+          "timestamp": "2028-03-13T11:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "When an inland skills pilot arrived with only a concept sheet and no employer counts or delivery sites, I refused to put any delivery volume on the partner calendar and instead scheduled interviews to collect those missing inputs first."
+            },
+            {
+              "role": "assistant",
+              "content": "What did you withhold?"
+            },
+            {
+              "role": "user",
+              "content": "Any promise about how many sites or cohorts we would run."
+            }
+          ]
+        },
+        {
+          "session_id": 7,
+          "timestamp": "2028-03-14T14:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I arranged a one-afternoon discovery outline once the deliverable list was fixed."
+            },
+            {
+              "role": "assistant",
+              "content": "Did that need new evidence?"
+            },
+            {
+              "role": "user",
+              "content": "No, the partner had supplied the scope sheet."
+            }
+          ]
+        },
+        {
+          "session_id": 8,
+          "timestamp": "2028-03-15T16:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I archived last cycle's notes on the partner brief and set up the new folder."
+            },
+            {
+              "role": "assistant",
+              "content": "A fresh start?"
+            },
+            {
+              "role": "user",
+              "content": "As fresh as these things get."
+            }
+          ]
+        },
+        {
+          "session_id": 9,
+          "timestamp": "2028-03-16T18:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The funding round closes in six weeks."
+            },
+            {
+              "role": "assistant",
+              "content": "Does that deadline cover implementation?"
+            },
+            {
+              "role": "user",
+              "content": "No, it only sets when the application must be submitted."
+            }
+          ]
+        },
+        {
+          "session_id": 10,
+          "timestamp": "2028-03-17T09:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "A vendor call about the award register ran long but ended well."
+            },
+            {
+              "role": "assistant",
+              "content": "Worth the time?"
+            },
+            {
+              "role": "user",
+              "content": "This one, yes."
+            }
+          ]
+        },
+        {
+          "session_id": 11,
+          "timestamp": "2028-03-18T11:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I walked through the funding desk checklist with the new starter."
+            },
+            {
+              "role": "assistant",
+              "content": "How did they do?"
+            },
+            {
+              "role": "user",
+              "content": "Careful and quick, a good sign."
+            }
+          ]
+        },
+        {
+          "session_id": 12,
+          "timestamp": "2028-03-19T14:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Quiet afternoon; I cleared the backlog around the proposal windows."
+            },
+            {
+              "role": "assistant",
+              "content": "A rare day."
+            },
+            {
+              "role": "user",
+              "content": "I did not waste it."
+            }
+          ]
+        },
+        {
+          "session_id": 13,
+          "timestamp": "2028-03-20T16:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I flagged a small inconsistency in the partner brief records and fixed it at the source."
+            },
+            {
+              "role": "assistant",
+              "content": "Root cause or symptom?"
+            },
+            {
+              "role": "user",
+              "content": "Root cause, for once."
+            }
+          ]
+        },
+        {
+          "session_id": 14,
+          "timestamp": "2028-03-21T18:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "On last year's literacy expansion, I told the partner forum we would deliver the full regional programme before usage figures arrived; when the reconciled data showed half the expected uptake, we had to revise the public commitment."
+            },
+            {
+              "role": "assistant",
+              "content": "What had you assumed?"
+            },
+            {
+              "role": "user",
+              "content": "That early enthusiasm could stand in for verified demand."
+            }
+          ]
+        },
+        {
+          "session_id": 15,
+          "timestamp": "2028-03-22T09:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I sketched next week's plan for the proposal windows before leaving."
+            },
+            {
+              "role": "assistant",
+              "content": "Ahead of schedule?"
+            },
+            {
+              "role": "user",
+              "content": "Ahead enough to sleep well."
+            }
+          ]
+        },
+        {
+          "session_id": 16,
+          "timestamp": "2028-03-23T11:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Lunch walk, then a clean pass through the award register updates."
+            },
+            {
+              "role": "assistant",
+              "content": "Does the walk help?"
+            },
+            {
+              "role": "user",
+              "content": "It resets the afternoon."
+            }
+          ]
+        },
+        {
+          "session_id": 17,
+          "timestamp": "2028-03-24T14:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The award form has a required ceiling field, and finance will not release funds until that field is filled."
+            },
+            {
+              "role": "assistant",
+              "content": "Has a ceiling been entered?"
+            },
+            {
+              "role": "user",
+              "content": "Not yet; the field is still blank."
+            }
+          ]
+        },
+        {
+          "session_id": 18,
+          "timestamp": "2028-03-25T16:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The programme director says an ambitious public announcement would strengthen the application."
+            },
+            {
+              "role": "assistant",
+              "content": "Does that add participant evidence?"
+            },
+            {
+              "role": "user",
+              "content": "No, publicity does not supply counts, sites, or an approved ceiling."
+            }
+          ]
+        },
+        {
+          "session_id": 19,
+          "timestamp": "2028-03-26T18:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I closed the week by updating the funding desk handover notes."
+            },
+            {
+              "role": "assistant",
+              "content": "Anything unusual to hand over?"
+            },
+            {
+              "role": "user",
+              "content": "Blessedly little."
+            }
+          ]
+        },
+        {
+          "session_id": 20,
+          "timestamp": "2028-03-27T09:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Should I commit our office to delivering the full coastal learning rollout?"
+            }
+          ]
+        }
+      ],
+      "query": "Should I commit our office to delivering the full coastal learning rollout?"
+    },
+    "absence": {
+      "expected_mode": "withhold_C",
+      "lineage": {
+        "transform": "replace_ev_A_and_ev_B_only",
+        "changed_sessions": [
+          6,
+          14
+        ]
+      },
+      "changed_sessions": [
+        6,
+        14
+      ],
+      "context": [
+        {
+          "session_id": 1,
+          "timestamp": "2028-03-08T11:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I spent the first hour tidying the award register and closing stale entries."
+            },
+            {
+              "role": "assistant",
+              "content": "Anything still open?"
+            },
+            {
+              "role": "user",
+              "content": "Two items, both with owners."
+            }
+          ]
+        },
+        {
+          "session_id": 2,
+          "timestamp": "2028-03-09T14:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The partner brief review wrapped early today."
+            },
+            {
+              "role": "assistant",
+              "content": "Any surprises in it?"
+            },
+            {
+              "role": "user",
+              "content": "None worth recording."
+            }
+          ]
+        },
+        {
+          "session_id": 3,
+          "timestamp": "2028-03-10T16:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I summarized a closed partner report for the quarterly desk update."
+            },
+            {
+              "role": "assistant",
+              "content": "Was the programme still open?"
+            },
+            {
+              "role": "user",
+              "content": "No, the figures had already been reconciled."
+            }
+          ]
+        },
+        {
+          "session_id": 4,
+          "timestamp": "2028-03-11T18:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Someone new shadowed me in the funding desk this morning."
+            },
+            {
+              "role": "assistant",
+              "content": "Did that slow you down?"
+            },
+            {
+              "role": "user",
+              "content": "A little, but the questions were good ones."
+            }
+          ]
+        },
+        {
+          "session_id": 5,
+          "timestamp": "2028-03-12T09:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I batched my replies about the proposal windows into one message before lunch."
+            },
+            {
+              "role": "assistant",
+              "content": "Cleaner than drip-feeding answers."
+            },
+            {
+              "role": "user",
+              "content": "Much cleaner."
+            }
+          ]
+        },
+        {
+          "session_id": 6,
+          "timestamp": "2028-03-13T11:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I did a standard pass over the partner brief records this morning."
+            },
+            {
+              "role": "assistant",
+              "content": "Any exceptions in there?"
+            },
+            {
+              "role": "user",
+              "content": "None worth a note."
+            }
+          ]
+        },
+        {
+          "session_id": 7,
+          "timestamp": "2028-03-14T14:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I arranged a one-afternoon discovery outline once the deliverable list was fixed."
+            },
+            {
+              "role": "assistant",
+              "content": "Did that need new evidence?"
+            },
+            {
+              "role": "user",
+              "content": "No, the partner had supplied the scope sheet."
+            }
+          ]
+        },
+        {
+          "session_id": 8,
+          "timestamp": "2028-03-15T16:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I archived last cycle's notes on the partner brief and set up the new folder."
+            },
+            {
+              "role": "assistant",
+              "content": "A fresh start?"
+            },
+            {
+              "role": "user",
+              "content": "As fresh as these things get."
+            }
+          ]
+        },
+        {
+          "session_id": 9,
+          "timestamp": "2028-03-16T18:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The funding round closes in six weeks."
+            },
+            {
+              "role": "assistant",
+              "content": "Does that deadline cover implementation?"
+            },
+            {
+              "role": "user",
+              "content": "No, it only sets when the application must be submitted."
+            }
+          ]
+        },
+        {
+          "session_id": 10,
+          "timestamp": "2028-03-17T09:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "A vendor call about the award register ran long but ended well."
+            },
+            {
+              "role": "assistant",
+              "content": "Worth the time?"
+            },
+            {
+              "role": "user",
+              "content": "This one, yes."
+            }
+          ]
+        },
+        {
+          "session_id": 11,
+          "timestamp": "2028-03-18T11:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I walked through the funding desk checklist with the new starter."
+            },
+            {
+              "role": "assistant",
+              "content": "How did they do?"
+            },
+            {
+              "role": "user",
+              "content": "Careful and quick, a good sign."
+            }
+          ]
+        },
+        {
+          "session_id": 12,
+          "timestamp": "2028-03-19T14:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Quiet afternoon; I cleared the backlog around the proposal windows."
+            },
+            {
+              "role": "assistant",
+              "content": "A rare day."
+            },
+            {
+              "role": "user",
+              "content": "I did not waste it."
+            }
+          ]
+        },
+        {
+          "session_id": 13,
+          "timestamp": "2028-03-20T16:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I flagged a small inconsistency in the partner brief records and fixed it at the source."
+            },
+            {
+              "role": "assistant",
+              "content": "Root cause or symptom?"
+            },
+            {
+              "role": "user",
+              "content": "Root cause, for once."
+            }
+          ]
+        },
+        {
+          "session_id": 14,
+          "timestamp": "2028-03-21T18:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I closed a routine proposal windows cycle without surprises."
+            },
+            {
+              "role": "assistant",
+              "content": "Follow-up needed?"
+            },
+            {
+              "role": "user",
+              "content": "A note for the next cycle, nothing more."
+            }
+          ]
+        },
+        {
+          "session_id": 15,
+          "timestamp": "2028-03-22T09:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I sketched next week's plan for the proposal windows before leaving."
+            },
+            {
+              "role": "assistant",
+              "content": "Ahead of schedule?"
+            },
+            {
+              "role": "user",
+              "content": "Ahead enough to sleep well."
+            }
+          ]
+        },
+        {
+          "session_id": 16,
+          "timestamp": "2028-03-23T11:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Lunch walk, then a clean pass through the award register updates."
+            },
+            {
+              "role": "assistant",
+              "content": "Does the walk help?"
+            },
+            {
+              "role": "user",
+              "content": "It resets the afternoon."
+            }
+          ]
+        },
+        {
+          "session_id": 17,
+          "timestamp": "2028-03-24T14:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The award form has a required ceiling field, and finance will not release funds until that field is filled."
+            },
+            {
+              "role": "assistant",
+              "content": "Has a ceiling been entered?"
+            },
+            {
+              "role": "user",
+              "content": "Not yet; the field is still blank."
+            }
+          ]
+        },
+        {
+          "session_id": 18,
+          "timestamp": "2028-03-25T16:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I compared two options for the partner brief tooling and noted a mild preference."
+            },
+            {
+              "role": "assistant",
+              "content": "Decision made?"
+            },
+            {
+              "role": "user",
+              "content": "Deferred until the trial ends."
+            }
+          ]
+        },
+        {
+          "session_id": 19,
+          "timestamp": "2028-03-26T18:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I closed the week by updating the funding desk handover notes."
+            },
+            {
+              "role": "assistant",
+              "content": "Anything unusual to hand over?"
+            },
+            {
+              "role": "user",
+              "content": "Blessedly little."
+            }
+          ]
+        },
+        {
+          "session_id": 20,
+          "timestamp": "2028-03-27T09:00:00Z",
+          "speaker_id": "work_s17_u01",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Should I commit our office to delivering the full coastal learning rollout?"
+            }
+          ]
+        }
+      ],
+      "query": "Should I commit our office to delivering the full coastal learning rollout?"
+    }
+  }
+}

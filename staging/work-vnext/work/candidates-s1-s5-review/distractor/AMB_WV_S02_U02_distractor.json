@@ -1,0 +1,579 @@
+{
+  "schema_version": "work-vnext-2.0",
+  "candidate_id": "AMB_WV_S02_U02_distractor",
+  "pair_id": "AMB_WV_S02_U02",
+  "data_arm": "distractor",
+  "domain": "work",
+  "user_id": "work_s02_u02",
+  "sub_scenario": {
+    "family": "escalation ownership under ambiguous evidence",
+    "role": "customer success manager",
+    "one_line": "customer success manager: triage-first above phone-first"
+  },
+  "query_type": "recommendation_ranking",
+  "polarity": "accept",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2026-04-18T11:00:00Z",
+      "speaker_id": "work_s02_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I spent the first hour tidying the intake summary and closing stale entries."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything still open?"
+        },
+        {
+          "role": "user",
+          "content": "Two items, both with owners."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2026-04-19T14:00:00Z",
+      "speaker_id": "work_s02_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The account review review wrapped early today."
+        },
+        {
+          "role": "assistant",
+          "content": "Any surprises in it?"
+        },
+        {
+          "role": "user",
+          "content": "None worth recording."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2026-04-20T16:00:00Z",
+      "speaker_id": "work_s02_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I can absolutely carry a tense live call; renewals season is all live calls."
+        },
+        {
+          "role": "assistant",
+          "content": "So live is not the enemy."
+        },
+        {
+          "role": "user",
+          "content": "Unprepared inference is."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2026-04-21T18:00:00Z",
+      "speaker_id": "work_s02_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Someone new shadowed me in the success desk this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Did that slow you down?"
+        },
+        {
+          "role": "user",
+          "content": "A little, but the questions were good ones."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2026-04-22T09:00:00Z",
+      "speaker_id": "work_s02_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I batched my replies about the escalation notes into one message before lunch."
+        },
+        {
+          "role": "assistant",
+          "content": "Cleaner than drip-feeding answers."
+        },
+        {
+          "role": "user",
+          "content": "Much cleaner."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2026-04-23T11:00:00Z",
+      "speaker_id": "work_s02_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "For the enterprise churn scare I drafted an evidence table from the usage logs before the exec call, and the save plan matched the real problem."
+        },
+        {
+          "role": "assistant",
+          "content": "Written first, then owned."
+        },
+        {
+          "role": "user",
+          "content": "In that order, always."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2026-04-24T14:00:00Z",
+      "speaker_id": "work_s02_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Clear-cut cases I will own on the spot happily."
+        },
+        {
+          "role": "assistant",
+          "content": "Ambiguity is the trigger, then."
+        },
+        {
+          "role": "user",
+          "content": "Only ambiguity."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2026-04-25T16:00:00Z",
+      "speaker_id": "work_s02_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I archived last cycle's notes on the account review and set up the new folder."
+        },
+        {
+          "role": "assistant",
+          "content": "A fresh start?"
+        },
+        {
+          "role": "user",
+          "content": "As fresh as these things get."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2026-04-26T18:00:00Z",
+      "speaker_id": "work_s02_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Support already fills an intake summary for the triage-first rotation; I have seen the template and it is exactly the table I make by hand."
+        },
+        {
+          "role": "assistant",
+          "content": "The rotation embeds your method."
+        },
+        {
+          "role": "user",
+          "content": "Down to the column names."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2026-04-27T09:00:00Z",
+      "speaker_id": "work_s02_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A vendor call about the intake summary ran long but ended well."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth the time?"
+        },
+        {
+          "role": "user",
+          "content": "This one, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2026-04-28T11:00:00Z",
+      "speaker_id": "work_s02_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I walked through the success desk checklist with the new starter."
+        },
+        {
+          "role": "assistant",
+          "content": "How did they do?"
+        },
+        {
+          "role": "user",
+          "content": "Careful and quick, a good sign."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2026-04-29T14:00:00Z",
+      "speaker_id": "work_s02_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Quiet afternoon; I cleared the backlog around the escalation notes."
+        },
+        {
+          "role": "assistant",
+          "content": "A rare day."
+        },
+        {
+          "role": "user",
+          "content": "I did not waste it."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2026-04-30T16:00:00Z",
+      "speaker_id": "work_s02_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I flagged a small inconsistency in the account review records and fixed it at the source."
+        },
+        {
+          "role": "assistant",
+          "content": "Root cause or symptom?"
+        },
+        {
+          "role": "user",
+          "content": "Root cause, for once."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2026-05-01T18:00:00Z",
+      "speaker_id": "work_s02_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The phone-first trial in March had me promising a root cause on live calls; I told one customer their SSO was misconfigured when the fault was our token expiry, and the apology tour lasted a week."
+        },
+        {
+          "role": "assistant",
+          "content": "Live inference went wrong."
+        },
+        {
+          "role": "user",
+          "content": "Confidently wrong, which is worse."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2026-05-02T09:00:00Z",
+      "speaker_id": "work_s02_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I sketched next week's plan for the escalation notes before leaving."
+        },
+        {
+          "role": "assistant",
+          "content": "Ahead of schedule?"
+        },
+        {
+          "role": "user",
+          "content": "Ahead enough to sleep well."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2026-05-03T11:00:00Z",
+      "speaker_id": "work_s02_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Lunch walk, then a clean pass through the intake summary updates."
+        },
+        {
+          "role": "assistant",
+          "content": "Does the walk help?"
+        },
+        {
+          "role": "user",
+          "content": "It resets the afternoon."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2026-05-04T14:00:00Z",
+      "speaker_id": "work_s02_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "My call-quality scores are strong when I work from notes; my manager reads them out at reviews."
+        },
+        {
+          "role": "assistant",
+          "content": "Documented strength."
+        },
+        {
+          "role": "user",
+          "content": "Two years running."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2026-05-05T16:00:00Z",
+      "speaker_id": "work_s02_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The phone-first desk is being pitched internally as the hero desk with its own channel and shout-outs."
+        },
+        {
+          "role": "assistant",
+          "content": "Branding."
+        },
+        {
+          "role": "user",
+          "content": "Extremely effective branding."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2026-05-06T18:00:00Z",
+      "speaker_id": "work_s02_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I closed the week by updating the success desk handover notes."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual to hand over?"
+        },
+        {
+          "role": "user",
+          "content": "Blessedly little."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2026-05-07T09:00:00Z",
+      "speaker_id": "work_s02_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Both escalation rotations are open and I can only pick one first: phone-first or triage-first. Rank them for me with reasons I can put in the form."
+        }
+      ]
+    }
+  ],
+  "query": "Both escalation rotations are open and I can only pick one first: phone-first or triage-first. Rank them for me with reasons I can put in the form.",
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "work_s02_u02",
+      "fact": "For the enterprise churn scare I drafted an evidence table from the usage logs before the exec call, and the save plan matched the real problem."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "work_s02_u02",
+      "fact": "The phone-first trial in March had me promising a root cause on live calls; I told one customer their SSO was misconfigured when the fault was our token expiry, and the apology tour lasted a week."
+    }
+  },
+  "supporting_constraints": {
+    "E1": {
+      "session_id": 9,
+      "fact": "Support already fills an intake summary for the triage-first rotation; I have seen the template and it is exactly the table I make by hand."
+    },
+    "E2": {
+      "session_id": 17,
+      "fact": "My call-quality scores are strong when I work from notes; my manager reads them out at reviews."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "work_s02_u02",
+        "context": "enterprise churn scare",
+        "goal_or_prediction": "own the save plan",
+        "action": "drafted an evidence table from usage logs first",
+        "outcome_or_affect": "plan matched the real problem"
+      }
+    },
+    "7": {
+      "role": "nearby_counterexample"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "supporting_constraint",
+      "fact_id": "E1"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "work_s02_u02",
+        "context": "March phone-first trial",
+        "goal_or_prediction": "promise a root cause live",
+        "action": "blamed the customer's SSO unverified",
+        "outcome_or_affect": "week-long apology tour"
+      }
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "supporting_constraint",
+      "fact_id": "E2"
+    },
+    "18": {
+      "role": "distractor",
+      "distractor_id": "dist_1",
+      "why_distractor": "Hero-desk branding sells the phone-first rotation without touching the intake difference."
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "This user diagnoses ambiguous accounts correctly from a written evidence table, and only the triage-first rotation supplies one before ownership.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": [
+      "E1",
+      "E2"
+    ]
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "For the enterprise churn scare I drafted an evidence table from the usage logs before the exec call, and the save plan matched the real problem"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "The phone-first trial in March had me promising a root cause on live calls; I told one customer their SSO was misconfigured when the fault was our token expiry, and the apology tour lasted a week"
+    }
+  ],
+  "retrieval_cue": {
+    "cue_type": "recommendation_ranking",
+    "why_it_naturally_retrieves_R": "A realistic work request forces a personalized decision without naming either episode or the relation between them."
+  },
+  "relation_specificity": {
+    "nearby_relation": "The user carries tense live calls well and owns clear cases on the spot.",
+    "why_it_does_not_license_C": "Neither shows root-cause promises on live calls without any written intake."
+  },
+  "coactivation_bridge": "A shows the operating condition; B shows the demand or failure that makes it decisive. This user diagnoses ambiguous accounts correctly from a written evidence table, and only the triage-first rotation supplies one before ownership. E1 and E2 calibrate the practical recommendation without opening a second route to the conclusion.",
+  "latent_C": {
+    "inference": "This user should rank the triage-first rotation, which delivers a written intake summary, above the phone-first rotation.",
+    "calibrated_language": "triage-first above phone-first"
+  },
+  "answer_contract": {
+    "target_proposition": "This user should rank the triage-first rotation, which delivers a written intake summary, above the phone-first rotation.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "decision",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "work_u02",
+    "status": "review_candidate_only",
+    "anonymization": "External persona material was used only during authoring; no corpus, name, country, or demographic metadata is included."
+  },
+  "arm_gold": {
+    "distractor": {
+      "expected_mode": "infer_C",
+      "binary_decision": true
+    }
+  },
+  "distractor_note": {
+    "replaced_session_id": 18,
+    "why_distractor": "Hero-desk branding sells the phone-first rotation without touching the intake difference."
+  }
+}

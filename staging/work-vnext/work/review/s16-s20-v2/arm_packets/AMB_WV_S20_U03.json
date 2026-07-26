@@ -1,0 +1,2489 @@
+{
+  "pair_id": "AMB_WV_S20_U03",
+  "scenario": "S20",
+  "uid": "U03",
+  "role": "documentary post-production editor",
+  "query": "What is the best way to move the archive sequence forward while counsel is finishing its review?",
+  "target": "Send the rights-linked change packet first, then hold a narrow live choice after clearance.",
+  "calibrated": "share a cleared packet before live selection",
+  "relation": "The archival-interview cut establishes this user's value in linking edits to clearance before sharing, while the uncleared room review establishes why this user should send the packet before any live selection.",
+  "A": "For the archival-interview cut, I linked each removed line in the edit decision list to its rights status before sharing the change packet with the producer; the packet showed which replacements were cleared.",
+  "B": "In an earlier live review, the group restored a compelling clip that later proved restricted, requiring a weekend recut.",
+  "E1": "The morning producer review is at 10:00, and clearance counsel posts tracker updates in batches by 11:30.",
+  "E2": "The rights-cleared packet can be sent on the review channel after counsel updates the tracker, and the roster reserves a ten-minute live slot only for competing cut versions.",
+  "B_prime": "During a July archive review, I read the decision-list timestamps, tracked which tracker entries were still blank, and recorded producer questions; the clearance lead approved replacements after the tracker updated, and no clip was selected during my segment.",
+  "lure": "The executive producer prefers everyone in the review room because it feels decisive.",
+  "subset_gate": {
+    "full_supports_C": "",
+    "a_only_supports_C": "",
+    "b_only_supports_C": "",
+    "link_broken_supports_C": "",
+    "absence_supports_C": "",
+    "reviewer": "",
+    "notes": ""
+  },
+  "arms": {
+    "full": {
+      "expected_mode": "infer_C",
+      "lineage": {
+        "transform": "identity",
+        "retained_sessions": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ]
+      },
+      "changed_sessions": [],
+      "context": [
+        {
+          "session_id": 1,
+          "timestamp": "2028-09-10T11:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I spent the first hour tidying the edit decision list and closing stale entries."
+            },
+            {
+              "role": "assistant",
+              "content": "Anything still open?"
+            },
+            {
+              "role": "user",
+              "content": "Two items, both with owners."
+            }
+          ]
+        },
+        {
+          "session_id": 2,
+          "timestamp": "2028-09-11T14:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The rights tracker review wrapped early today."
+            },
+            {
+              "role": "assistant",
+              "content": "Any surprises in it?"
+            },
+            {
+              "role": "user",
+              "content": "None worth recording."
+            }
+          ]
+        },
+        {
+          "session_id": 3,
+          "timestamp": "2028-09-12T16:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I took notes in a routine edit review without losing context."
+            },
+            {
+              "role": "assistant",
+              "content": "Was a rights replacement still open?"
+            },
+            {
+              "role": "user",
+              "content": "No, the cut and notes were already aligned."
+            }
+          ]
+        },
+        {
+          "session_id": 4,
+          "timestamp": "2028-09-13T18:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Someone new shadowed me in the review room this morning."
+            },
+            {
+              "role": "assistant",
+              "content": "Did that slow you down?"
+            },
+            {
+              "role": "user",
+              "content": "A little, but the questions were good ones."
+            }
+          ]
+        },
+        {
+          "session_id": 5,
+          "timestamp": "2028-09-14T09:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I batched my replies about the delivery weeks into one message before lunch."
+            },
+            {
+              "role": "assistant",
+              "content": "Cleaner than drip-feeding answers."
+            },
+            {
+              "role": "user",
+              "content": "Much cleaner."
+            }
+          ]
+        },
+        {
+          "session_id": 6,
+          "timestamp": "2028-09-15T11:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "For the archival-interview cut, I linked each removed line in the edit decision list to its rights status before sharing the change packet with the producer; the packet showed which replacements were cleared."
+            },
+            {
+              "role": "assistant",
+              "content": "What did the producer receive?"
+            },
+            {
+              "role": "user",
+              "content": "A rights-linked handoff that connected every edit to its clearance record."
+            }
+          ]
+        },
+        {
+          "session_id": 7,
+          "timestamp": "2028-09-16T14:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I joined a short live check when one sound cue needed clarification."
+            },
+            {
+              "role": "assistant",
+              "content": "Did that approve replacement footage?"
+            },
+            {
+              "role": "user",
+              "content": "No, it settled a contained cue question."
+            }
+          ]
+        },
+        {
+          "session_id": 8,
+          "timestamp": "2028-09-17T16:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I archived last cycle's notes on the rights tracker and set up the new folder."
+            },
+            {
+              "role": "assistant",
+              "content": "A fresh start?"
+            },
+            {
+              "role": "user",
+              "content": "As fresh as these things get."
+            }
+          ]
+        },
+        {
+          "session_id": 9,
+          "timestamp": "2028-09-18T18:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The morning producer review is at 10:00, and clearance counsel posts tracker updates in batches by 11:30."
+            },
+            {
+              "role": "assistant",
+              "content": "Are those times fixed?"
+            },
+            {
+              "role": "user",
+              "content": "Yes, both are on the delivery-week schedule."
+            }
+          ]
+        },
+        {
+          "session_id": 10,
+          "timestamp": "2028-09-19T09:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "A vendor call about the edit decision list ran long but ended well."
+            },
+            {
+              "role": "assistant",
+              "content": "Worth the time?"
+            },
+            {
+              "role": "user",
+              "content": "This one, yes."
+            }
+          ]
+        },
+        {
+          "session_id": 11,
+          "timestamp": "2028-09-20T11:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I walked through the review room checklist with the new starter."
+            },
+            {
+              "role": "assistant",
+              "content": "How did they do?"
+            },
+            {
+              "role": "user",
+              "content": "Careful and quick, a good sign."
+            }
+          ]
+        },
+        {
+          "session_id": 12,
+          "timestamp": "2028-09-21T14:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Quiet afternoon; I cleared the backlog around the delivery weeks."
+            },
+            {
+              "role": "assistant",
+              "content": "A rare day."
+            },
+            {
+              "role": "user",
+              "content": "I did not waste it."
+            }
+          ]
+        },
+        {
+          "session_id": 13,
+          "timestamp": "2028-09-22T16:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I flagged a small inconsistency in the rights tracker records and fixed it at the source."
+            },
+            {
+              "role": "assistant",
+              "content": "Root cause or symptom?"
+            },
+            {
+              "role": "user",
+              "content": "Root cause, for once."
+            }
+          ]
+        },
+        {
+          "session_id": 14,
+          "timestamp": "2028-09-23T18:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "In an earlier live review, the group restored a compelling clip that later proved restricted, requiring a weekend recut."
+            },
+            {
+              "role": "assistant",
+              "content": "What was missing from the room?"
+            },
+            {
+              "role": "user",
+              "content": "The rights tracker had not yet recorded clearance for that replacement."
+            }
+          ]
+        },
+        {
+          "session_id": 15,
+          "timestamp": "2028-09-24T09:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I sketched next week's plan for the delivery weeks before leaving."
+            },
+            {
+              "role": "assistant",
+              "content": "Ahead of schedule?"
+            },
+            {
+              "role": "user",
+              "content": "Ahead enough to sleep well."
+            }
+          ]
+        },
+        {
+          "session_id": 16,
+          "timestamp": "2028-09-25T11:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Lunch walk, then a clean pass through the edit decision list updates."
+            },
+            {
+              "role": "assistant",
+              "content": "Does the walk help?"
+            },
+            {
+              "role": "user",
+              "content": "It resets the afternoon."
+            }
+          ]
+        },
+        {
+          "session_id": 17,
+          "timestamp": "2028-09-26T14:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The rights-cleared packet can be sent on the review channel after counsel updates the tracker, and the roster reserves a ten-minute live slot only for competing cut versions."
+            },
+            {
+              "role": "assistant",
+              "content": "Are both channels available?"
+            },
+            {
+              "role": "user",
+              "content": "Yes, the packet release and narrow live slot are on the approved form."
+            }
+          ]
+        },
+        {
+          "session_id": 18,
+          "timestamp": "2028-09-27T16:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I compared two options for the rights tracker tooling and noted a mild preference."
+            },
+            {
+              "role": "assistant",
+              "content": "Decision made?"
+            },
+            {
+              "role": "user",
+              "content": "Deferred until the trial ends."
+            }
+          ]
+        },
+        {
+          "session_id": 19,
+          "timestamp": "2028-09-28T18:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I closed the week by updating the review room handover notes."
+            },
+            {
+              "role": "assistant",
+              "content": "Anything unusual to hand over?"
+            },
+            {
+              "role": "user",
+              "content": "Blessedly little."
+            }
+          ]
+        },
+        {
+          "session_id": 20,
+          "timestamp": "2028-09-29T09:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "What is the best way to move the archive sequence forward while counsel is finishing its review?"
+            }
+          ]
+        }
+      ],
+      "query": "What is the best way to move the archive sequence forward while counsel is finishing its review?"
+    },
+    "a_only": {
+      "expected_mode": "withhold_C",
+      "lineage": {
+        "transform": "replace_ev_B_with_neutral",
+        "changed_sessions": [
+          14
+        ]
+      },
+      "changed_sessions": [
+        14
+      ],
+      "context": [
+        {
+          "session_id": 1,
+          "timestamp": "2028-09-10T11:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I spent the first hour tidying the edit decision list and closing stale entries."
+            },
+            {
+              "role": "assistant",
+              "content": "Anything still open?"
+            },
+            {
+              "role": "user",
+              "content": "Two items, both with owners."
+            }
+          ]
+        },
+        {
+          "session_id": 2,
+          "timestamp": "2028-09-11T14:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The rights tracker review wrapped early today."
+            },
+            {
+              "role": "assistant",
+              "content": "Any surprises in it?"
+            },
+            {
+              "role": "user",
+              "content": "None worth recording."
+            }
+          ]
+        },
+        {
+          "session_id": 3,
+          "timestamp": "2028-09-12T16:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I took notes in a routine edit review without losing context."
+            },
+            {
+              "role": "assistant",
+              "content": "Was a rights replacement still open?"
+            },
+            {
+              "role": "user",
+              "content": "No, the cut and notes were already aligned."
+            }
+          ]
+        },
+        {
+          "session_id": 4,
+          "timestamp": "2028-09-13T18:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Someone new shadowed me in the review room this morning."
+            },
+            {
+              "role": "assistant",
+              "content": "Did that slow you down?"
+            },
+            {
+              "role": "user",
+              "content": "A little, but the questions were good ones."
+            }
+          ]
+        },
+        {
+          "session_id": 5,
+          "timestamp": "2028-09-14T09:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I batched my replies about the delivery weeks into one message before lunch."
+            },
+            {
+              "role": "assistant",
+              "content": "Cleaner than drip-feeding answers."
+            },
+            {
+              "role": "user",
+              "content": "Much cleaner."
+            }
+          ]
+        },
+        {
+          "session_id": 6,
+          "timestamp": "2028-09-15T11:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "For the archival-interview cut, I linked each removed line in the edit decision list to its rights status before sharing the change packet with the producer; the packet showed which replacements were cleared."
+            },
+            {
+              "role": "assistant",
+              "content": "What did the producer receive?"
+            },
+            {
+              "role": "user",
+              "content": "A rights-linked handoff that connected every edit to its clearance record."
+            }
+          ]
+        },
+        {
+          "session_id": 7,
+          "timestamp": "2028-09-16T14:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I joined a short live check when one sound cue needed clarification."
+            },
+            {
+              "role": "assistant",
+              "content": "Did that approve replacement footage?"
+            },
+            {
+              "role": "user",
+              "content": "No, it settled a contained cue question."
+            }
+          ]
+        },
+        {
+          "session_id": 8,
+          "timestamp": "2028-09-17T16:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I archived last cycle's notes on the rights tracker and set up the new folder."
+            },
+            {
+              "role": "assistant",
+              "content": "A fresh start?"
+            },
+            {
+              "role": "user",
+              "content": "As fresh as these things get."
+            }
+          ]
+        },
+        {
+          "session_id": 9,
+          "timestamp": "2028-09-18T18:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The morning producer review is at 10:00, and clearance counsel posts tracker updates in batches by 11:30."
+            },
+            {
+              "role": "assistant",
+              "content": "Are those times fixed?"
+            },
+            {
+              "role": "user",
+              "content": "Yes, both are on the delivery-week schedule."
+            }
+          ]
+        },
+        {
+          "session_id": 10,
+          "timestamp": "2028-09-19T09:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "A vendor call about the edit decision list ran long but ended well."
+            },
+            {
+              "role": "assistant",
+              "content": "Worth the time?"
+            },
+            {
+              "role": "user",
+              "content": "This one, yes."
+            }
+          ]
+        },
+        {
+          "session_id": 11,
+          "timestamp": "2028-09-20T11:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I walked through the review room checklist with the new starter."
+            },
+            {
+              "role": "assistant",
+              "content": "How did they do?"
+            },
+            {
+              "role": "user",
+              "content": "Careful and quick, a good sign."
+            }
+          ]
+        },
+        {
+          "session_id": 12,
+          "timestamp": "2028-09-21T14:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Quiet afternoon; I cleared the backlog around the delivery weeks."
+            },
+            {
+              "role": "assistant",
+              "content": "A rare day."
+            },
+            {
+              "role": "user",
+              "content": "I did not waste it."
+            }
+          ]
+        },
+        {
+          "session_id": 13,
+          "timestamp": "2028-09-22T16:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I flagged a small inconsistency in the rights tracker records and fixed it at the source."
+            },
+            {
+              "role": "assistant",
+              "content": "Root cause or symptom?"
+            },
+            {
+              "role": "user",
+              "content": "Root cause, for once."
+            }
+          ]
+        },
+        {
+          "session_id": 14,
+          "timestamp": "2028-09-23T18:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I filed the routine delivery weeks paperwork and confirmed the owner list."
+            },
+            {
+              "role": "assistant",
+              "content": "Anything unusual in it?"
+            },
+            {
+              "role": "user",
+              "content": "A routine cycle, happily."
+            }
+          ]
+        },
+        {
+          "session_id": 15,
+          "timestamp": "2028-09-24T09:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I sketched next week's plan for the delivery weeks before leaving."
+            },
+            {
+              "role": "assistant",
+              "content": "Ahead of schedule?"
+            },
+            {
+              "role": "user",
+              "content": "Ahead enough to sleep well."
+            }
+          ]
+        },
+        {
+          "session_id": 16,
+          "timestamp": "2028-09-25T11:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Lunch walk, then a clean pass through the edit decision list updates."
+            },
+            {
+              "role": "assistant",
+              "content": "Does the walk help?"
+            },
+            {
+              "role": "user",
+              "content": "It resets the afternoon."
+            }
+          ]
+        },
+        {
+          "session_id": 17,
+          "timestamp": "2028-09-26T14:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The rights-cleared packet can be sent on the review channel after counsel updates the tracker, and the roster reserves a ten-minute live slot only for competing cut versions."
+            },
+            {
+              "role": "assistant",
+              "content": "Are both channels available?"
+            },
+            {
+              "role": "user",
+              "content": "Yes, the packet release and narrow live slot are on the approved form."
+            }
+          ]
+        },
+        {
+          "session_id": 18,
+          "timestamp": "2028-09-27T16:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I compared two options for the rights tracker tooling and noted a mild preference."
+            },
+            {
+              "role": "assistant",
+              "content": "Decision made?"
+            },
+            {
+              "role": "user",
+              "content": "Deferred until the trial ends."
+            }
+          ]
+        },
+        {
+          "session_id": 19,
+          "timestamp": "2028-09-28T18:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I closed the week by updating the review room handover notes."
+            },
+            {
+              "role": "assistant",
+              "content": "Anything unusual to hand over?"
+            },
+            {
+              "role": "user",
+              "content": "Blessedly little."
+            }
+          ]
+        },
+        {
+          "session_id": 20,
+          "timestamp": "2028-09-29T09:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "What is the best way to move the archive sequence forward while counsel is finishing its review?"
+            }
+          ]
+        }
+      ],
+      "query": "What is the best way to move the archive sequence forward while counsel is finishing its review?"
+    },
+    "b_only": {
+      "expected_mode": "withhold_C",
+      "lineage": {
+        "transform": "replace_ev_A_with_neutral",
+        "changed_sessions": [
+          6
+        ]
+      },
+      "changed_sessions": [
+        6
+      ],
+      "context": [
+        {
+          "session_id": 1,
+          "timestamp": "2028-09-10T11:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I spent the first hour tidying the edit decision list and closing stale entries."
+            },
+            {
+              "role": "assistant",
+              "content": "Anything still open?"
+            },
+            {
+              "role": "user",
+              "content": "Two items, both with owners."
+            }
+          ]
+        },
+        {
+          "session_id": 2,
+          "timestamp": "2028-09-11T14:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The rights tracker review wrapped early today."
+            },
+            {
+              "role": "assistant",
+              "content": "Any surprises in it?"
+            },
+            {
+              "role": "user",
+              "content": "None worth recording."
+            }
+          ]
+        },
+        {
+          "session_id": 3,
+          "timestamp": "2028-09-12T16:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I took notes in a routine edit review without losing context."
+            },
+            {
+              "role": "assistant",
+              "content": "Was a rights replacement still open?"
+            },
+            {
+              "role": "user",
+              "content": "No, the cut and notes were already aligned."
+            }
+          ]
+        },
+        {
+          "session_id": 4,
+          "timestamp": "2028-09-13T18:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Someone new shadowed me in the review room this morning."
+            },
+            {
+              "role": "assistant",
+              "content": "Did that slow you down?"
+            },
+            {
+              "role": "user",
+              "content": "A little, but the questions were good ones."
+            }
+          ]
+        },
+        {
+          "session_id": 5,
+          "timestamp": "2028-09-14T09:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I batched my replies about the delivery weeks into one message before lunch."
+            },
+            {
+              "role": "assistant",
+              "content": "Cleaner than drip-feeding answers."
+            },
+            {
+              "role": "user",
+              "content": "Much cleaner."
+            }
+          ]
+        },
+        {
+          "session_id": 6,
+          "timestamp": "2028-09-15T11:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I did a standard pass over the rights tracker records this morning."
+            },
+            {
+              "role": "assistant",
+              "content": "Any exceptions?"
+            },
+            {
+              "role": "user",
+              "content": "None worth a note."
+            }
+          ]
+        },
+        {
+          "session_id": 7,
+          "timestamp": "2028-09-16T14:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I joined a short live check when one sound cue needed clarification."
+            },
+            {
+              "role": "assistant",
+              "content": "Did that approve replacement footage?"
+            },
+            {
+              "role": "user",
+              "content": "No, it settled a contained cue question."
+            }
+          ]
+        },
+        {
+          "session_id": 8,
+          "timestamp": "2028-09-17T16:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I archived last cycle's notes on the rights tracker and set up the new folder."
+            },
+            {
+              "role": "assistant",
+              "content": "A fresh start?"
+            },
+            {
+              "role": "user",
+              "content": "As fresh as these things get."
+            }
+          ]
+        },
+        {
+          "session_id": 9,
+          "timestamp": "2028-09-18T18:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The morning producer review is at 10:00, and clearance counsel posts tracker updates in batches by 11:30."
+            },
+            {
+              "role": "assistant",
+              "content": "Are those times fixed?"
+            },
+            {
+              "role": "user",
+              "content": "Yes, both are on the delivery-week schedule."
+            }
+          ]
+        },
+        {
+          "session_id": 10,
+          "timestamp": "2028-09-19T09:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "A vendor call about the edit decision list ran long but ended well."
+            },
+            {
+              "role": "assistant",
+              "content": "Worth the time?"
+            },
+            {
+              "role": "user",
+              "content": "This one, yes."
+            }
+          ]
+        },
+        {
+          "session_id": 11,
+          "timestamp": "2028-09-20T11:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I walked through the review room checklist with the new starter."
+            },
+            {
+              "role": "assistant",
+              "content": "How did they do?"
+            },
+            {
+              "role": "user",
+              "content": "Careful and quick, a good sign."
+            }
+          ]
+        },
+        {
+          "session_id": 12,
+          "timestamp": "2028-09-21T14:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Quiet afternoon; I cleared the backlog around the delivery weeks."
+            },
+            {
+              "role": "assistant",
+              "content": "A rare day."
+            },
+            {
+              "role": "user",
+              "content": "I did not waste it."
+            }
+          ]
+        },
+        {
+          "session_id": 13,
+          "timestamp": "2028-09-22T16:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I flagged a small inconsistency in the rights tracker records and fixed it at the source."
+            },
+            {
+              "role": "assistant",
+              "content": "Root cause or symptom?"
+            },
+            {
+              "role": "user",
+              "content": "Root cause, for once."
+            }
+          ]
+        },
+        {
+          "session_id": 14,
+          "timestamp": "2028-09-23T18:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "In an earlier live review, the group restored a compelling clip that later proved restricted, requiring a weekend recut."
+            },
+            {
+              "role": "assistant",
+              "content": "What was missing from the room?"
+            },
+            {
+              "role": "user",
+              "content": "The rights tracker had not yet recorded clearance for that replacement."
+            }
+          ]
+        },
+        {
+          "session_id": 15,
+          "timestamp": "2028-09-24T09:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I sketched next week's plan for the delivery weeks before leaving."
+            },
+            {
+              "role": "assistant",
+              "content": "Ahead of schedule?"
+            },
+            {
+              "role": "user",
+              "content": "Ahead enough to sleep well."
+            }
+          ]
+        },
+        {
+          "session_id": 16,
+          "timestamp": "2028-09-25T11:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Lunch walk, then a clean pass through the edit decision list updates."
+            },
+            {
+              "role": "assistant",
+              "content": "Does the walk help?"
+            },
+            {
+              "role": "user",
+              "content": "It resets the afternoon."
+            }
+          ]
+        },
+        {
+          "session_id": 17,
+          "timestamp": "2028-09-26T14:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The rights-cleared packet can be sent on the review channel after counsel updates the tracker, and the roster reserves a ten-minute live slot only for competing cut versions."
+            },
+            {
+              "role": "assistant",
+              "content": "Are both channels available?"
+            },
+            {
+              "role": "user",
+              "content": "Yes, the packet release and narrow live slot are on the approved form."
+            }
+          ]
+        },
+        {
+          "session_id": 18,
+          "timestamp": "2028-09-27T16:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I compared two options for the rights tracker tooling and noted a mild preference."
+            },
+            {
+              "role": "assistant",
+              "content": "Decision made?"
+            },
+            {
+              "role": "user",
+              "content": "Deferred until the trial ends."
+            }
+          ]
+        },
+        {
+          "session_id": 19,
+          "timestamp": "2028-09-28T18:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I closed the week by updating the review room handover notes."
+            },
+            {
+              "role": "assistant",
+              "content": "Anything unusual to hand over?"
+            },
+            {
+              "role": "user",
+              "content": "Blessedly little."
+            }
+          ]
+        },
+        {
+          "session_id": 20,
+          "timestamp": "2028-09-29T09:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "What is the best way to move the archive sequence forward while counsel is finishing its review?"
+            }
+          ]
+        }
+      ],
+      "query": "What is the best way to move the archive sequence forward while counsel is finishing its review?"
+    },
+    "link_broken": {
+      "expected_mode": "withhold_C",
+      "lineage": {
+        "transform": "replace_relation_in_ev_B",
+        "changed_sessions": [
+          14
+        ],
+        "source_owner_preserved": true
+      },
+      "changed_sessions": [
+        14
+      ],
+      "context": [
+        {
+          "session_id": 1,
+          "timestamp": "2028-09-10T11:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I spent the first hour tidying the edit decision list and closing stale entries."
+            },
+            {
+              "role": "assistant",
+              "content": "Anything still open?"
+            },
+            {
+              "role": "user",
+              "content": "Two items, both with owners."
+            }
+          ]
+        },
+        {
+          "session_id": 2,
+          "timestamp": "2028-09-11T14:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The rights tracker review wrapped early today."
+            },
+            {
+              "role": "assistant",
+              "content": "Any surprises in it?"
+            },
+            {
+              "role": "user",
+              "content": "None worth recording."
+            }
+          ]
+        },
+        {
+          "session_id": 3,
+          "timestamp": "2028-09-12T16:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I took notes in a routine edit review without losing context."
+            },
+            {
+              "role": "assistant",
+              "content": "Was a rights replacement still open?"
+            },
+            {
+              "role": "user",
+              "content": "No, the cut and notes were already aligned."
+            }
+          ]
+        },
+        {
+          "session_id": 4,
+          "timestamp": "2028-09-13T18:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Someone new shadowed me in the review room this morning."
+            },
+            {
+              "role": "assistant",
+              "content": "Did that slow you down?"
+            },
+            {
+              "role": "user",
+              "content": "A little, but the questions were good ones."
+            }
+          ]
+        },
+        {
+          "session_id": 5,
+          "timestamp": "2028-09-14T09:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I batched my replies about the delivery weeks into one message before lunch."
+            },
+            {
+              "role": "assistant",
+              "content": "Cleaner than drip-feeding answers."
+            },
+            {
+              "role": "user",
+              "content": "Much cleaner."
+            }
+          ]
+        },
+        {
+          "session_id": 6,
+          "timestamp": "2028-09-15T11:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "For the archival-interview cut, I linked each removed line in the edit decision list to its rights status before sharing the change packet with the producer; the packet showed which replacements were cleared."
+            },
+            {
+              "role": "assistant",
+              "content": "What did the producer receive?"
+            },
+            {
+              "role": "user",
+              "content": "A rights-linked handoff that connected every edit to its clearance record."
+            }
+          ]
+        },
+        {
+          "session_id": 7,
+          "timestamp": "2028-09-16T14:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I joined a short live check when one sound cue needed clarification."
+            },
+            {
+              "role": "assistant",
+              "content": "Did that approve replacement footage?"
+            },
+            {
+              "role": "user",
+              "content": "No, it settled a contained cue question."
+            }
+          ]
+        },
+        {
+          "session_id": 8,
+          "timestamp": "2028-09-17T16:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I archived last cycle's notes on the rights tracker and set up the new folder."
+            },
+            {
+              "role": "assistant",
+              "content": "A fresh start?"
+            },
+            {
+              "role": "user",
+              "content": "As fresh as these things get."
+            }
+          ]
+        },
+        {
+          "session_id": 9,
+          "timestamp": "2028-09-18T18:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The morning producer review is at 10:00, and clearance counsel posts tracker updates in batches by 11:30."
+            },
+            {
+              "role": "assistant",
+              "content": "Are those times fixed?"
+            },
+            {
+              "role": "user",
+              "content": "Yes, both are on the delivery-week schedule."
+            }
+          ]
+        },
+        {
+          "session_id": 10,
+          "timestamp": "2028-09-19T09:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "A vendor call about the edit decision list ran long but ended well."
+            },
+            {
+              "role": "assistant",
+              "content": "Worth the time?"
+            },
+            {
+              "role": "user",
+              "content": "This one, yes."
+            }
+          ]
+        },
+        {
+          "session_id": 11,
+          "timestamp": "2028-09-20T11:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I walked through the review room checklist with the new starter."
+            },
+            {
+              "role": "assistant",
+              "content": "How did they do?"
+            },
+            {
+              "role": "user",
+              "content": "Careful and quick, a good sign."
+            }
+          ]
+        },
+        {
+          "session_id": 12,
+          "timestamp": "2028-09-21T14:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Quiet afternoon; I cleared the backlog around the delivery weeks."
+            },
+            {
+              "role": "assistant",
+              "content": "A rare day."
+            },
+            {
+              "role": "user",
+              "content": "I did not waste it."
+            }
+          ]
+        },
+        {
+          "session_id": 13,
+          "timestamp": "2028-09-22T16:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I flagged a small inconsistency in the rights tracker records and fixed it at the source."
+            },
+            {
+              "role": "assistant",
+              "content": "Root cause or symptom?"
+            },
+            {
+              "role": "user",
+              "content": "Root cause, for once."
+            }
+          ]
+        },
+        {
+          "session_id": 14,
+          "timestamp": "2028-09-23T18:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "During a July archive review, I read the decision-list timestamps, tracked which tracker entries were still blank, and recorded producer questions; the clearance lead approved replacements after the tracker updated, and no clip was selected during my segment."
+            },
+            {
+              "role": "assistant",
+              "content": "Did you restore restricted footage live?"
+            },
+            {
+              "role": "user",
+              "content": "No, I maintained the review record while the lead handled approval."
+            }
+          ]
+        },
+        {
+          "session_id": 15,
+          "timestamp": "2028-09-24T09:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I sketched next week's plan for the delivery weeks before leaving."
+            },
+            {
+              "role": "assistant",
+              "content": "Ahead of schedule?"
+            },
+            {
+              "role": "user",
+              "content": "Ahead enough to sleep well."
+            }
+          ]
+        },
+        {
+          "session_id": 16,
+          "timestamp": "2028-09-25T11:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Lunch walk, then a clean pass through the edit decision list updates."
+            },
+            {
+              "role": "assistant",
+              "content": "Does the walk help?"
+            },
+            {
+              "role": "user",
+              "content": "It resets the afternoon."
+            }
+          ]
+        },
+        {
+          "session_id": 17,
+          "timestamp": "2028-09-26T14:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The rights-cleared packet can be sent on the review channel after counsel updates the tracker, and the roster reserves a ten-minute live slot only for competing cut versions."
+            },
+            {
+              "role": "assistant",
+              "content": "Are both channels available?"
+            },
+            {
+              "role": "user",
+              "content": "Yes, the packet release and narrow live slot are on the approved form."
+            }
+          ]
+        },
+        {
+          "session_id": 18,
+          "timestamp": "2028-09-27T16:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I compared two options for the rights tracker tooling and noted a mild preference."
+            },
+            {
+              "role": "assistant",
+              "content": "Decision made?"
+            },
+            {
+              "role": "user",
+              "content": "Deferred until the trial ends."
+            }
+          ]
+        },
+        {
+          "session_id": 19,
+          "timestamp": "2028-09-28T18:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I closed the week by updating the review room handover notes."
+            },
+            {
+              "role": "assistant",
+              "content": "Anything unusual to hand over?"
+            },
+            {
+              "role": "user",
+              "content": "Blessedly little."
+            }
+          ]
+        },
+        {
+          "session_id": 20,
+          "timestamp": "2028-09-29T09:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "What is the best way to move the archive sequence forward while counsel is finishing its review?"
+            }
+          ]
+        }
+      ],
+      "query": "What is the best way to move the archive sequence forward while counsel is finishing its review?"
+    },
+    "distractor": {
+      "expected_mode": "infer_C",
+      "lineage": {
+        "transform": "shipped",
+        "changed_sessions": [
+          18
+        ]
+      },
+      "changed_sessions": [
+        18
+      ],
+      "context": [
+        {
+          "session_id": 1,
+          "timestamp": "2028-09-10T11:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I spent the first hour tidying the edit decision list and closing stale entries."
+            },
+            {
+              "role": "assistant",
+              "content": "Anything still open?"
+            },
+            {
+              "role": "user",
+              "content": "Two items, both with owners."
+            }
+          ]
+        },
+        {
+          "session_id": 2,
+          "timestamp": "2028-09-11T14:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The rights tracker review wrapped early today."
+            },
+            {
+              "role": "assistant",
+              "content": "Any surprises in it?"
+            },
+            {
+              "role": "user",
+              "content": "None worth recording."
+            }
+          ]
+        },
+        {
+          "session_id": 3,
+          "timestamp": "2028-09-12T16:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I took notes in a routine edit review without losing context."
+            },
+            {
+              "role": "assistant",
+              "content": "Was a rights replacement still open?"
+            },
+            {
+              "role": "user",
+              "content": "No, the cut and notes were already aligned."
+            }
+          ]
+        },
+        {
+          "session_id": 4,
+          "timestamp": "2028-09-13T18:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Someone new shadowed me in the review room this morning."
+            },
+            {
+              "role": "assistant",
+              "content": "Did that slow you down?"
+            },
+            {
+              "role": "user",
+              "content": "A little, but the questions were good ones."
+            }
+          ]
+        },
+        {
+          "session_id": 5,
+          "timestamp": "2028-09-14T09:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I batched my replies about the delivery weeks into one message before lunch."
+            },
+            {
+              "role": "assistant",
+              "content": "Cleaner than drip-feeding answers."
+            },
+            {
+              "role": "user",
+              "content": "Much cleaner."
+            }
+          ]
+        },
+        {
+          "session_id": 6,
+          "timestamp": "2028-09-15T11:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "For the archival-interview cut, I linked each removed line in the edit decision list to its rights status before sharing the change packet with the producer; the packet showed which replacements were cleared."
+            },
+            {
+              "role": "assistant",
+              "content": "What did the producer receive?"
+            },
+            {
+              "role": "user",
+              "content": "A rights-linked handoff that connected every edit to its clearance record."
+            }
+          ]
+        },
+        {
+          "session_id": 7,
+          "timestamp": "2028-09-16T14:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I joined a short live check when one sound cue needed clarification."
+            },
+            {
+              "role": "assistant",
+              "content": "Did that approve replacement footage?"
+            },
+            {
+              "role": "user",
+              "content": "No, it settled a contained cue question."
+            }
+          ]
+        },
+        {
+          "session_id": 8,
+          "timestamp": "2028-09-17T16:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I archived last cycle's notes on the rights tracker and set up the new folder."
+            },
+            {
+              "role": "assistant",
+              "content": "A fresh start?"
+            },
+            {
+              "role": "user",
+              "content": "As fresh as these things get."
+            }
+          ]
+        },
+        {
+          "session_id": 9,
+          "timestamp": "2028-09-18T18:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The morning producer review is at 10:00, and clearance counsel posts tracker updates in batches by 11:30."
+            },
+            {
+              "role": "assistant",
+              "content": "Are those times fixed?"
+            },
+            {
+              "role": "user",
+              "content": "Yes, both are on the delivery-week schedule."
+            }
+          ]
+        },
+        {
+          "session_id": 10,
+          "timestamp": "2028-09-19T09:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "A vendor call about the edit decision list ran long but ended well."
+            },
+            {
+              "role": "assistant",
+              "content": "Worth the time?"
+            },
+            {
+              "role": "user",
+              "content": "This one, yes."
+            }
+          ]
+        },
+        {
+          "session_id": 11,
+          "timestamp": "2028-09-20T11:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I walked through the review room checklist with the new starter."
+            },
+            {
+              "role": "assistant",
+              "content": "How did they do?"
+            },
+            {
+              "role": "user",
+              "content": "Careful and quick, a good sign."
+            }
+          ]
+        },
+        {
+          "session_id": 12,
+          "timestamp": "2028-09-21T14:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Quiet afternoon; I cleared the backlog around the delivery weeks."
+            },
+            {
+              "role": "assistant",
+              "content": "A rare day."
+            },
+            {
+              "role": "user",
+              "content": "I did not waste it."
+            }
+          ]
+        },
+        {
+          "session_id": 13,
+          "timestamp": "2028-09-22T16:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I flagged a small inconsistency in the rights tracker records and fixed it at the source."
+            },
+            {
+              "role": "assistant",
+              "content": "Root cause or symptom?"
+            },
+            {
+              "role": "user",
+              "content": "Root cause, for once."
+            }
+          ]
+        },
+        {
+          "session_id": 14,
+          "timestamp": "2028-09-23T18:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "In an earlier live review, the group restored a compelling clip that later proved restricted, requiring a weekend recut."
+            },
+            {
+              "role": "assistant",
+              "content": "What was missing from the room?"
+            },
+            {
+              "role": "user",
+              "content": "The rights tracker had not yet recorded clearance for that replacement."
+            }
+          ]
+        },
+        {
+          "session_id": 15,
+          "timestamp": "2028-09-24T09:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I sketched next week's plan for the delivery weeks before leaving."
+            },
+            {
+              "role": "assistant",
+              "content": "Ahead of schedule?"
+            },
+            {
+              "role": "user",
+              "content": "Ahead enough to sleep well."
+            }
+          ]
+        },
+        {
+          "session_id": 16,
+          "timestamp": "2028-09-25T11:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Lunch walk, then a clean pass through the edit decision list updates."
+            },
+            {
+              "role": "assistant",
+              "content": "Does the walk help?"
+            },
+            {
+              "role": "user",
+              "content": "It resets the afternoon."
+            }
+          ]
+        },
+        {
+          "session_id": 17,
+          "timestamp": "2028-09-26T14:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The rights-cleared packet can be sent on the review channel after counsel updates the tracker, and the roster reserves a ten-minute live slot only for competing cut versions."
+            },
+            {
+              "role": "assistant",
+              "content": "Are both channels available?"
+            },
+            {
+              "role": "user",
+              "content": "Yes, the packet release and narrow live slot are on the approved form."
+            }
+          ]
+        },
+        {
+          "session_id": 18,
+          "timestamp": "2028-09-27T16:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The executive producer prefers everyone in the review room because it feels decisive."
+            },
+            {
+              "role": "assistant",
+              "content": "Did that update the rights tracker?"
+            },
+            {
+              "role": "user",
+              "content": "No, it was about room presence."
+            }
+          ]
+        },
+        {
+          "session_id": 19,
+          "timestamp": "2028-09-28T18:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I closed the week by updating the review room handover notes."
+            },
+            {
+              "role": "assistant",
+              "content": "Anything unusual to hand over?"
+            },
+            {
+              "role": "user",
+              "content": "Blessedly little."
+            }
+          ]
+        },
+        {
+          "session_id": 20,
+          "timestamp": "2028-09-29T09:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "What is the best way to move the archive sequence forward while counsel is finishing its review?"
+            }
+          ]
+        }
+      ],
+      "query": "What is the best way to move the archive sequence forward while counsel is finishing its review?"
+    },
+    "absence": {
+      "expected_mode": "withhold_C",
+      "lineage": {
+        "transform": "replace_ev_A_and_ev_B_only",
+        "changed_sessions": [
+          6,
+          14
+        ]
+      },
+      "changed_sessions": [
+        6,
+        14
+      ],
+      "context": [
+        {
+          "session_id": 1,
+          "timestamp": "2028-09-10T11:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I spent the first hour tidying the edit decision list and closing stale entries."
+            },
+            {
+              "role": "assistant",
+              "content": "Anything still open?"
+            },
+            {
+              "role": "user",
+              "content": "Two items, both with owners."
+            }
+          ]
+        },
+        {
+          "session_id": 2,
+          "timestamp": "2028-09-11T14:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The rights tracker review wrapped early today."
+            },
+            {
+              "role": "assistant",
+              "content": "Any surprises in it?"
+            },
+            {
+              "role": "user",
+              "content": "None worth recording."
+            }
+          ]
+        },
+        {
+          "session_id": 3,
+          "timestamp": "2028-09-12T16:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I took notes in a routine edit review without losing context."
+            },
+            {
+              "role": "assistant",
+              "content": "Was a rights replacement still open?"
+            },
+            {
+              "role": "user",
+              "content": "No, the cut and notes were already aligned."
+            }
+          ]
+        },
+        {
+          "session_id": 4,
+          "timestamp": "2028-09-13T18:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Someone new shadowed me in the review room this morning."
+            },
+            {
+              "role": "assistant",
+              "content": "Did that slow you down?"
+            },
+            {
+              "role": "user",
+              "content": "A little, but the questions were good ones."
+            }
+          ]
+        },
+        {
+          "session_id": 5,
+          "timestamp": "2028-09-14T09:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I batched my replies about the delivery weeks into one message before lunch."
+            },
+            {
+              "role": "assistant",
+              "content": "Cleaner than drip-feeding answers."
+            },
+            {
+              "role": "user",
+              "content": "Much cleaner."
+            }
+          ]
+        },
+        {
+          "session_id": 6,
+          "timestamp": "2028-09-15T11:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I did a standard pass over the rights tracker records this morning."
+            },
+            {
+              "role": "assistant",
+              "content": "Any exceptions in there?"
+            },
+            {
+              "role": "user",
+              "content": "None worth a note."
+            }
+          ]
+        },
+        {
+          "session_id": 7,
+          "timestamp": "2028-09-16T14:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I joined a short live check when one sound cue needed clarification."
+            },
+            {
+              "role": "assistant",
+              "content": "Did that approve replacement footage?"
+            },
+            {
+              "role": "user",
+              "content": "No, it settled a contained cue question."
+            }
+          ]
+        },
+        {
+          "session_id": 8,
+          "timestamp": "2028-09-17T16:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I archived last cycle's notes on the rights tracker and set up the new folder."
+            },
+            {
+              "role": "assistant",
+              "content": "A fresh start?"
+            },
+            {
+              "role": "user",
+              "content": "As fresh as these things get."
+            }
+          ]
+        },
+        {
+          "session_id": 9,
+          "timestamp": "2028-09-18T18:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The morning producer review is at 10:00, and clearance counsel posts tracker updates in batches by 11:30."
+            },
+            {
+              "role": "assistant",
+              "content": "Are those times fixed?"
+            },
+            {
+              "role": "user",
+              "content": "Yes, both are on the delivery-week schedule."
+            }
+          ]
+        },
+        {
+          "session_id": 10,
+          "timestamp": "2028-09-19T09:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "A vendor call about the edit decision list ran long but ended well."
+            },
+            {
+              "role": "assistant",
+              "content": "Worth the time?"
+            },
+            {
+              "role": "user",
+              "content": "This one, yes."
+            }
+          ]
+        },
+        {
+          "session_id": 11,
+          "timestamp": "2028-09-20T11:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I walked through the review room checklist with the new starter."
+            },
+            {
+              "role": "assistant",
+              "content": "How did they do?"
+            },
+            {
+              "role": "user",
+              "content": "Careful and quick, a good sign."
+            }
+          ]
+        },
+        {
+          "session_id": 12,
+          "timestamp": "2028-09-21T14:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Quiet afternoon; I cleared the backlog around the delivery weeks."
+            },
+            {
+              "role": "assistant",
+              "content": "A rare day."
+            },
+            {
+              "role": "user",
+              "content": "I did not waste it."
+            }
+          ]
+        },
+        {
+          "session_id": 13,
+          "timestamp": "2028-09-22T16:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I flagged a small inconsistency in the rights tracker records and fixed it at the source."
+            },
+            {
+              "role": "assistant",
+              "content": "Root cause or symptom?"
+            },
+            {
+              "role": "user",
+              "content": "Root cause, for once."
+            }
+          ]
+        },
+        {
+          "session_id": 14,
+          "timestamp": "2028-09-23T18:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I closed a routine delivery weeks cycle without surprises."
+            },
+            {
+              "role": "assistant",
+              "content": "Follow-up needed?"
+            },
+            {
+              "role": "user",
+              "content": "A note for the next cycle, nothing more."
+            }
+          ]
+        },
+        {
+          "session_id": 15,
+          "timestamp": "2028-09-24T09:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I sketched next week's plan for the delivery weeks before leaving."
+            },
+            {
+              "role": "assistant",
+              "content": "Ahead of schedule?"
+            },
+            {
+              "role": "user",
+              "content": "Ahead enough to sleep well."
+            }
+          ]
+        },
+        {
+          "session_id": 16,
+          "timestamp": "2028-09-25T11:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "Lunch walk, then a clean pass through the edit decision list updates."
+            },
+            {
+              "role": "assistant",
+              "content": "Does the walk help?"
+            },
+            {
+              "role": "user",
+              "content": "It resets the afternoon."
+            }
+          ]
+        },
+        {
+          "session_id": 17,
+          "timestamp": "2028-09-26T14:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "The rights-cleared packet can be sent on the review channel after counsel updates the tracker, and the roster reserves a ten-minute live slot only for competing cut versions."
+            },
+            {
+              "role": "assistant",
+              "content": "Are both channels available?"
+            },
+            {
+              "role": "user",
+              "content": "Yes, the packet release and narrow live slot are on the approved form."
+            }
+          ]
+        },
+        {
+          "session_id": 18,
+          "timestamp": "2028-09-27T16:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I compared two options for the rights tracker tooling and noted a mild preference."
+            },
+            {
+              "role": "assistant",
+              "content": "Decision made?"
+            },
+            {
+              "role": "user",
+              "content": "Deferred until the trial ends."
+            }
+          ]
+        },
+        {
+          "session_id": 19,
+          "timestamp": "2028-09-28T18:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "I closed the week by updating the review room handover notes."
+            },
+            {
+              "role": "assistant",
+              "content": "Anything unusual to hand over?"
+            },
+            {
+              "role": "user",
+              "content": "Blessedly little."
+            }
+          ]
+        },
+        {
+          "session_id": 20,
+          "timestamp": "2028-09-29T09:00:00Z",
+          "speaker_id": "work_s20_u03",
+          "speaker_label": "User",
+          "dialogue": [
+            {
+              "role": "user",
+              "content": "What is the best way to move the archive sequence forward while counsel is finishing its review?"
+            }
+          ]
+        }
+      ],
+      "query": "What is the best way to move the archive sequence forward while counsel is finishing its review?"
+    }
+  }
+}

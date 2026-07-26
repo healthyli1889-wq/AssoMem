@@ -1,0 +1,638 @@
+{
+  "schema_version": "work-vnext-2.0",
+  "candidate_id": "AMB_WV_S03_U04_associative",
+  "pair_id": "AMB_WV_S03_U04",
+  "data_arm": "associative",
+  "domain": "work",
+  "user_id": "work_s03_u04",
+  "sub_scenario": {
+    "family": "interrupt-driven task switching",
+    "role": "technical translator",
+    "one_line": "technical translator: batch replies; live chat only if batched"
+  },
+  "query_type": "preference_generalization",
+  "polarity": "conditional",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2026-06-06T11:00:00Z",
+      "speaker_id": "work_s03_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I spent the first hour tidying the term log and closing stale entries."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything still open?"
+        },
+        {
+          "role": "user",
+          "content": "Two items, both with owners."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2026-06-07T14:00:00Z",
+      "speaker_id": "work_s03_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The chapter queue review wrapped early today."
+        },
+        {
+          "role": "assistant",
+          "content": "Any surprises in it?"
+        },
+        {
+          "role": "user",
+          "content": "None worth recording."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2026-06-08T16:00:00Z",
+      "speaker_id": "work_s03_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Interpreting assignments, pure live work, go fine; that is a different mode entirely."
+        },
+        {
+          "role": "assistant",
+          "content": "Live is a mode, not a threat."
+        },
+        {
+          "role": "user",
+          "content": "A mode I can enter deliberately."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2026-06-09T18:00:00Z",
+      "speaker_id": "work_s03_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Someone new shadowed me in the translation desk this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Did that slow you down?"
+        },
+        {
+          "role": "user",
+          "content": "A little, but the questions were good ones."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2026-06-10T09:00:00Z",
+      "speaker_id": "work_s03_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I batched my replies about the terminology choices into one message before lunch."
+        },
+        {
+          "role": "assistant",
+          "content": "Cleaner than drip-feeding answers."
+        },
+        {
+          "role": "user",
+          "content": "Much cleaner."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2026-06-11T11:00:00Z",
+      "speaker_id": "work_s03_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The device-manual project went flawlessly because I translated in two-hour sealed sessions and logged terminology decisions in one file."
+        },
+        {
+          "role": "assistant",
+          "content": "Sealed sessions plus a term log."
+        },
+        {
+          "role": "user",
+          "content": "That combination is my entire quality system."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2026-06-12T14:00:00Z",
+      "speaker_id": "work_s03_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Urgent one-off calls between sessions are absorbable."
+        },
+        {
+          "role": "assistant",
+          "content": "Rarity again."
+        },
+        {
+          "role": "user",
+          "content": "Rarity is the entire question."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2026-06-13T16:00:00Z",
+      "speaker_id": "work_s03_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I archived last cycle's notes on the chapter queue and set up the new folder."
+        },
+        {
+          "role": "assistant",
+          "content": "A fresh start?"
+        },
+        {
+          "role": "user",
+          "content": "As fresh as these things get."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2026-06-14T18:00:00Z",
+      "speaker_id": "work_s03_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Term consistency is the single metric my agency scores hardest."
+        },
+        {
+          "role": "assistant",
+          "content": "The stakes concentrate exactly where switching hurts."
+        },
+        {
+          "role": "user",
+          "content": "Exactly there."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2026-06-15T09:00:00Z",
+      "speaker_id": "work_s03_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A vendor call about the term log ran long but ended well."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth the time?"
+        },
+        {
+          "role": "user",
+          "content": "This one, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2026-06-16T11:00:00Z",
+      "speaker_id": "work_s03_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I walked through the translation desk checklist with the new starter."
+        },
+        {
+          "role": "assistant",
+          "content": "How did they do?"
+        },
+        {
+          "role": "user",
+          "content": "Careful and quick, a good sign."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2026-06-17T14:00:00Z",
+      "speaker_id": "work_s03_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Quiet afternoon; I cleared the backlog around the terminology choices."
+        },
+        {
+          "role": "assistant",
+          "content": "A rare day."
+        },
+        {
+          "role": "user",
+          "content": "I did not waste it."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2026-06-18T16:00:00Z",
+      "speaker_id": "work_s03_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I flagged a small inconsistency in the chapter queue records and fixed it at the source."
+        },
+        {
+          "role": "assistant",
+          "content": "Root cause or symptom?"
+        },
+        {
+          "role": "user",
+          "content": "Root cause, for once."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2026-06-19T18:00:00Z",
+      "speaker_id": "work_s03_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The agency chat pilot expected instant replies; toggling between translation and chat, I let two inconsistent term choices ship in one chapter."
+        },
+        {
+          "role": "assistant",
+          "content": "The log could not save you mid-toggle?"
+        },
+        {
+          "role": "user",
+          "content": "I stopped consulting it; there was no time between pings."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2026-06-20T09:00:00Z",
+      "speaker_id": "work_s03_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I sketched next week's plan for the terminology choices before leaving."
+        },
+        {
+          "role": "assistant",
+          "content": "Ahead of schedule?"
+        },
+        {
+          "role": "user",
+          "content": "Ahead enough to sleep well."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2026-06-21T11:00:00Z",
+      "speaker_id": "work_s03_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Lunch walk, then a clean pass through the term log updates."
+        },
+        {
+          "role": "assistant",
+          "content": "Does the walk help?"
+        },
+        {
+          "role": "user",
+          "content": "It resets the afternoon."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2026-06-22T14:00:00Z",
+      "speaker_id": "work_s03_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I already answer all client queries daily at 14:00 in one batch, and clients have never complained."
+        },
+        {
+          "role": "assistant",
+          "content": "A working alternative exists."
+        },
+        {
+          "role": "user",
+          "content": "Documented and running."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2026-06-23T16:00:00Z",
+      "speaker_id": "work_s03_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I compared two options for the chapter queue tooling and noted a mild preference."
+        },
+        {
+          "role": "assistant",
+          "content": "Decision made?"
+        },
+        {
+          "role": "user",
+          "content": "Deferred until the trial ends."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2026-06-24T18:00:00Z",
+      "speaker_id": "work_s03_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I closed the week by updating the translation desk handover notes."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual to hand over?"
+        },
+        {
+          "role": "user",
+          "content": "Blessedly little."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2026-06-25T09:00:00Z",
+      "speaker_id": "work_s03_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A new agency asks how I prefer to handle client communication while translating. What should I tell them my track record supports?"
+        }
+      ]
+    }
+  ],
+  "query": "A new agency asks how I prefer to handle client communication while translating. What should I tell them my track record supports?",
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "work_s03_u04",
+      "fact": "The device-manual project went flawlessly because I translated in two-hour sealed sessions and logged terminology decisions in one file."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "work_s03_u04",
+      "fact": "The agency chat pilot expected instant replies; toggling between translation and chat, I let two inconsistent term choices ship in one chapter."
+    }
+  },
+  "supporting_constraints": {
+    "E1": {
+      "session_id": 9,
+      "fact": "Term consistency is the single metric my agency scores hardest."
+    },
+    "E2": {
+      "session_id": 17,
+      "fact": "I already answer all client queries daily at 14:00 in one batch, and clients have never complained."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "work_s03_u04",
+        "context": "device-manual project",
+        "goal_or_prediction": "keep terminology consistent",
+        "action": "translated in sealed sessions with a term log",
+        "outcome_or_affect": "flawless delivery"
+      }
+    },
+    "7": {
+      "role": "nearby_counterexample"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "supporting_constraint",
+      "fact_id": "E1"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "work_s03_u04",
+        "context": "agency chat pilot",
+        "goal_or_prediction": "translate while replying instantly",
+        "action": "toggled between chapter and chat",
+        "outcome_or_affect": "two inconsistent terms shipped"
+      }
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "supporting_constraint",
+      "fact_id": "E2"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "This user's term consistency survives sealed sessions with a log and broke when instant chat toggling displaced the log.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": [
+      "E1",
+      "E2"
+    ]
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "The device-manual project went flawlessly because I translated in two-hour sealed sessions and logged terminology decisions in one file"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "The agency chat pilot expected instant replies; toggling between translation and chat, I let two inconsistent term choices ship in one chapter"
+    }
+  ],
+  "retrieval_cue": {
+    "cue_type": "preference_generalization",
+    "why_it_naturally_retrieves_R": "A realistic work request forces a personalized decision without naming either episode or the relation between them."
+  },
+  "relation_specificity": {
+    "nearby_relation": "The user interprets live deliberately and absorbs rare urgent calls.",
+    "why_it_does_not_license_C": "Neither shows sustained translation under an instant-reply expectation."
+  },
+  "coactivation_bridge": "A shows the operating condition; B shows the demand or failure that makes it decisive. This user's term consistency survives sealed sessions with a log and broke when instant chat toggling displaced the log. E1 and E2 calibrate the practical recommendation without opening a second route to the conclusion.",
+  "latent_C": {
+    "inference": "This user should describe batch-based client communication, accepting live-chat duty only when replies can be batched.",
+    "calibrated_language": "batch replies; live chat only if batched"
+  },
+  "answer_contract": {
+    "target_proposition": "This user should describe batch-based client communication, accepting live-chat duty only when replies can be batched.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "decision",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "work_u04",
+    "status": "review_candidate_only",
+    "anonymization": "External persona material was used only during authoring; no corpus, name, country, or demographic metadata is included."
+  },
+  "arm_gold": {
+    "full": {
+      "expected_mode": "infer_C",
+      "binary_decision": true
+    },
+    "a_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    },
+    "b_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    },
+    "link_broken": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    }
+  },
+  "single_evidence_replacements": {
+    "a_only": {
+      "replaced_session_id": 14,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "I filed the routine terminology choices paperwork and confirmed the owner list."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual in it?"
+        },
+        {
+          "role": "user",
+          "content": "A routine cycle, happily."
+        }
+      ]
+    },
+    "b_only": {
+      "replaced_session_id": 6,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "I did a standard pass over the chapter queue records this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Any exceptions?"
+        },
+        {
+          "role": "user",
+          "content": "None worth a note."
+        }
+      ]
+    }
+  },
+  "link_broken": {
+    "replaced_session_id": 14,
+    "replacement_dialogue": [
+      {
+        "role": "user",
+        "content": "The chat pilot added a translating-now status that clients see, with replies expected at 14:00 rather than instantly."
+      },
+      {
+        "role": "assistant",
+        "content": "The pilot now matches your batch habit."
+      },
+      {
+        "role": "user",
+        "content": "It matches it exactly."
+      }
+    ]
+  }
+}

@@ -1,0 +1,638 @@
+{
+  "schema_version": "work-vnext-2.0",
+  "candidate_id": "AMB_WV_S06_U08_associative",
+  "pair_id": "AMB_WV_S06_U08",
+  "data_arm": "associative",
+  "domain": "work",
+  "user_id": "work_s06_u08",
+  "sub_scenario": {
+    "family": "physical constraint versus sustained work commitment",
+    "role": "field geologist",
+    "one_line": "field geologist: plateau first for the staged ascent"
+  },
+  "query_type": "recommendation_ranking",
+  "polarity": "accept",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2025-08-18T11:00:00Z",
+      "speaker_id": "work_s06_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I spent the first hour tidying the sampling plan and closing stale entries."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything still open?"
+        },
+        {
+          "role": "user",
+          "content": "Two items, both with owners."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2025-08-19T14:00:00Z",
+      "speaker_id": "work_s06_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The expedition calendar review wrapped early today."
+        },
+        {
+          "role": "assistant",
+          "content": "Any surprises in it?"
+        },
+        {
+          "role": "user",
+          "content": "None worth recording."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2025-08-20T16:00:00Z",
+      "speaker_id": "work_s06_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Low-altitude campaigns of any length are physically uneventful for me."
+        },
+        {
+          "role": "assistant",
+          "content": "Altitude is the only variable that matters."
+        },
+        {
+          "role": "user",
+          "content": "The only one on my chart."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2025-08-21T18:00:00Z",
+      "speaker_id": "work_s06_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Someone new shadowed me in the field station this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Did that slow you down?"
+        },
+        {
+          "role": "user",
+          "content": "A little, but the questions were good ones."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2025-08-22T09:00:00Z",
+      "speaker_id": "work_s06_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I batched my replies about the ascent profiles into one message before lunch."
+        },
+        {
+          "role": "assistant",
+          "content": "Cleaner than drip-feeding answers."
+        },
+        {
+          "role": "user",
+          "content": "Much cleaner."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2025-08-23T11:00:00Z",
+      "speaker_id": "work_s06_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "On the last high-plateau survey I staged two acclimatization nights on the way up, and I logged full sampling days at four thousand meters with clean data and no symptoms."
+        },
+        {
+          "role": "assistant",
+          "content": "The staged protocol held under real work."
+        },
+        {
+          "role": "user",
+          "content": "Held for three straight weeks."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2025-08-24T14:00:00Z",
+      "speaker_id": "work_s06_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Even at elevation, short summit days after proper staging have been fine."
+        },
+        {
+          "role": "assistant",
+          "content": "Staged exposure works at any intensity."
+        },
+        {
+          "role": "user",
+          "content": "So far without exception."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2025-08-25T16:00:00Z",
+      "speaker_id": "work_s06_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I archived last cycle's notes on the expedition calendar and set up the new folder."
+        },
+        {
+          "role": "assistant",
+          "content": "A fresh start?"
+        },
+        {
+          "role": "user",
+          "content": "As fresh as these things get."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2025-08-26T18:00:00Z",
+      "speaker_id": "work_s06_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "My altitude physician recommends staged ascent with two overnight stops for any work above three thousand five hundred meters."
+        },
+        {
+          "role": "assistant",
+          "content": "A written staging protocol."
+        },
+        {
+          "role": "user",
+          "content": "Written after my one bad episode years ago."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2025-08-27T09:00:00Z",
+      "speaker_id": "work_s06_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A vendor call about the sampling plan ran long but ended well."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth the time?"
+        },
+        {
+          "role": "user",
+          "content": "This one, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2025-08-28T11:00:00Z",
+      "speaker_id": "work_s06_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I walked through the field station checklist with the new starter."
+        },
+        {
+          "role": "assistant",
+          "content": "How did they do?"
+        },
+        {
+          "role": "user",
+          "content": "Careful and quick, a good sign."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2025-08-29T14:00:00Z",
+      "speaker_id": "work_s06_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Quiet afternoon; I cleared the backlog around the ascent profiles."
+        },
+        {
+          "role": "assistant",
+          "content": "A rare day."
+        },
+        {
+          "role": "user",
+          "content": "I did not waste it."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2025-08-30T16:00:00Z",
+      "speaker_id": "work_s06_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I flagged a small inconsistency in the expedition calendar records and fixed it at the source."
+        },
+        {
+          "role": "assistant",
+          "content": "Root cause or symptom?"
+        },
+        {
+          "role": "user",
+          "content": "Root cause, for once."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2025-08-31T18:00:00Z",
+      "speaker_id": "work_s06_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Two spring campaigns are open: the plateau campaign builds the two staged nights into its logistics, while the canyon campaign helicopters crews to elevation the same day they arrive."
+        },
+        {
+          "role": "assistant",
+          "content": "One itinerary contains your protocol; one deletes it."
+        },
+        {
+          "role": "user",
+          "content": "That is the entire difference between them."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2025-09-01T09:00:00Z",
+      "speaker_id": "work_s06_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I sketched next week's plan for the ascent profiles before leaving."
+        },
+        {
+          "role": "assistant",
+          "content": "Ahead of schedule?"
+        },
+        {
+          "role": "user",
+          "content": "Ahead enough to sleep well."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2025-09-02T11:00:00Z",
+      "speaker_id": "work_s06_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Lunch walk, then a clean pass through the sampling plan updates."
+        },
+        {
+          "role": "assistant",
+          "content": "Does the walk help?"
+        },
+        {
+          "role": "user",
+          "content": "It resets the afternoon."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2025-09-03T14:00:00Z",
+      "speaker_id": "work_s06_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Both campaigns run the same weeks and pay identical field allowances."
+        },
+        {
+          "role": "assistant",
+          "content": "The externals cancel out."
+        },
+        {
+          "role": "user",
+          "content": "To the last line item."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2025-09-04T16:00:00Z",
+      "speaker_id": "work_s06_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I compared two options for the expedition calendar tooling and noted a mild preference."
+        },
+        {
+          "role": "assistant",
+          "content": "Decision made?"
+        },
+        {
+          "role": "user",
+          "content": "Deferred until the trial ends."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2025-09-05T18:00:00Z",
+      "speaker_id": "work_s06_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I closed the week by updating the field station handover notes."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual to hand over?"
+        },
+        {
+          "role": "user",
+          "content": "Blessedly little."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2025-09-06T09:00:00Z",
+      "speaker_id": "work_s06_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Expedition sign-ups close Monday: plateau campaign or canyon campaign first on my list?"
+        }
+      ]
+    }
+  ],
+  "query": "Expedition sign-ups close Monday: plateau campaign or canyon campaign first on my list?",
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "work_s06_u08",
+      "fact": "On the last high-plateau survey I staged two acclimatization nights on the way up, and I logged full sampling days at four thousand meters with clean data and no symptoms."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "work_s06_u08",
+      "fact": "Two spring campaigns are open: the plateau campaign builds the two staged nights into its logistics, while the canyon campaign helicopters crews to elevation the same day they arrive."
+    }
+  },
+  "supporting_constraints": {
+    "E1": {
+      "session_id": 9,
+      "fact": "My altitude physician recommends staged ascent with two overnight stops for any work above three thousand five hundred meters."
+    },
+    "E2": {
+      "session_id": 17,
+      "fact": "Both campaigns run the same weeks and pay identical field allowances."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "work_s06_u08",
+        "context": "high-plateau survey",
+        "goal_or_prediction": "sample at four thousand meters",
+        "action": "staged two acclimatization nights",
+        "outcome_or_affect": "three clean symptom-free weeks"
+      }
+    },
+    "7": {
+      "role": "nearby_counterexample"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "supporting_constraint",
+      "fact_id": "E1"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "work_s06_u08",
+        "context": "spring campaign options",
+        "goal_or_prediction": "choose an itinerary",
+        "action": "plateau builds in staged nights; canyon flies same-day",
+        "outcome_or_affect": "only one matches the protocol"
+      }
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "supporting_constraint",
+      "fact_id": "E2"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "This user works cleanly at elevation after staged acclimatization, and only the plateau itinerary builds that staging into its logistics.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": [
+      "E1",
+      "E2"
+    ]
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "On the last high-plateau survey I staged two acclimatization nights on the way up, and I logged full sampling days at four thousand meters with clean data and no symptoms"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "Two spring campaigns are open: the plateau campaign builds the two staged nights into its logistics, while the canyon campaign helicopters crews to elevation the same day they arrive"
+    }
+  ],
+  "retrieval_cue": {
+    "cue_type": "recommendation_ranking",
+    "why_it_naturally_retrieves_R": "A realistic work request forces a personalized decision without naming either episode or the relation between them."
+  },
+  "relation_specificity": {
+    "nearby_relation": "The user is untroubled at low altitude and after properly staged exposure.",
+    "why_it_does_not_license_C": "Neither shows same-day helicopter insertion to elevation without staging."
+  },
+  "coactivation_bridge": "A shows the operating condition; B shows the demand or failure that makes it decisive. This user works cleanly at elevation after staged acclimatization, and only the plateau itinerary builds that staging into its logistics. E1 and E2 calibrate the practical recommendation without opening a second route to the conclusion.",
+  "latent_C": {
+    "inference": "This user should rank the plateau campaign, whose logistics include the staged acclimatization nights, above the canyon campaign.",
+    "calibrated_language": "plateau first for the staged ascent"
+  },
+  "answer_contract": {
+    "target_proposition": "This user should rank the plateau campaign, whose logistics include the staged acclimatization nights, above the canyon campaign.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "decision",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "work_u08",
+    "status": "review_candidate_only",
+    "anonymization": "External persona material was used only during authoring; no corpus, name, country, or demographic metadata is included."
+  },
+  "arm_gold": {
+    "full": {
+      "expected_mode": "infer_C",
+      "binary_decision": true
+    },
+    "a_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    },
+    "b_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    },
+    "link_broken": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    }
+  },
+  "single_evidence_replacements": {
+    "a_only": {
+      "replaced_session_id": 14,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "I filed the routine ascent profiles paperwork and confirmed the owner list."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual in it?"
+        },
+        {
+          "role": "user",
+          "content": "A routine cycle, happily."
+        }
+      ]
+    },
+    "b_only": {
+      "replaced_session_id": 6,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "I did a standard pass over the expedition calendar records this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Any exceptions?"
+        },
+        {
+          "role": "user",
+          "content": "None worth a note."
+        }
+      ]
+    }
+  },
+  "link_broken": {
+    "replaced_session_id": 14,
+    "replacement_dialogue": [
+      {
+        "role": "user",
+        "content": "The plateau campaign's charter schedule changed: direct fly-in to elevation, staged nights cut for cost."
+      },
+      {
+        "role": "assistant",
+        "content": "The protocol vanishes from that itinerary too."
+      },
+      {
+        "role": "user",
+        "content": "Then the two campaigns stop differing where it matters."
+      }
+    ]
+  }
+}

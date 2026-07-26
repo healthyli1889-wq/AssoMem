@@ -1,0 +1,638 @@
+{
+  "schema_version": "work-vnext-2.0",
+  "candidate_id": "AMB_WV_S01_U08_associative",
+  "pair_id": "AMB_WV_S01_U08",
+  "data_arm": "associative",
+  "domain": "work",
+  "user_id": "work_s01_u08",
+  "sub_scenario": {
+    "family": "fixed early live dependency prioritization",
+    "role": "finance reconciliation analyst",
+    "one_line": "finance reconciliation analyst: rank the file-first rotation above the live dawn call"
+  },
+  "query_type": "recommendation_ranking",
+  "polarity": "accept",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2026-03-16T11:00:00Z",
+      "speaker_id": "work_s01_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I spent the first hour tidying the break ledger and closing stale entries."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything still open?"
+        },
+        {
+          "role": "user",
+          "content": "Two items, both with owners."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2026-03-17T14:00:00Z",
+      "speaker_id": "work_s01_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The settlement review review wrapped early today."
+        },
+        {
+          "role": "assistant",
+          "content": "Any surprises in it?"
+        },
+        {
+          "role": "user",
+          "content": "None worth recording."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2026-03-18T16:00:00Z",
+      "speaker_id": "work_s01_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Early itself is not the issue; I clear e-mail at 06:30 happily from home."
+        },
+        {
+          "role": "assistant",
+          "content": "Routine early work is fine, then."
+        },
+        {
+          "role": "user",
+          "content": "Completely."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2026-03-19T18:00:00Z",
+      "speaker_id": "work_s01_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Someone new shadowed me in the treasury desk this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Did that slow you down?"
+        },
+        {
+          "role": "user",
+          "content": "A little, but the questions were good ones."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2026-03-20T09:00:00Z",
+      "speaker_id": "work_s01_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I batched my replies about the cash positions into one message before lunch."
+        },
+        {
+          "role": "assistant",
+          "content": "Cleaner than drip-feeding answers."
+        },
+        {
+          "role": "user",
+          "content": "Much cleaner."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2026-03-21T11:00:00Z",
+      "speaker_id": "work_s01_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "At month-end I wrote out the ledger dependency order before posting corrections, and the close balanced on the first pass."
+        },
+        {
+          "role": "assistant",
+          "content": "Order on paper first."
+        },
+        {
+          "role": "user",
+          "content": "It is the only way the corrections do not fight each other."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2026-03-22T14:00:00Z",
+      "speaker_id": "work_s01_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Put the settlement file in front of me and I will rank breaks fast, live audience or not; the 11:00 committee never rattles me."
+        },
+        {
+          "role": "assistant",
+          "content": "Live pressure with data suits you."
+        },
+        {
+          "role": "user",
+          "content": "It genuinely does."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2026-03-23T16:00:00Z",
+      "speaker_id": "work_s01_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I archived last cycle's notes on the settlement review and set up the new folder."
+        },
+        {
+          "role": "assistant",
+          "content": "A fresh start?"
+        },
+        {
+          "role": "user",
+          "content": "As fresh as these things get."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2026-03-24T18:00:00Z",
+      "speaker_id": "work_s01_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "My commute train gets in at 08:05; the 06:45 call means dialing in from the platform."
+        },
+        {
+          "role": "assistant",
+          "content": "A logistics squeeze on top."
+        },
+        {
+          "role": "user",
+          "content": "Every single day of it."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2026-03-25T09:00:00Z",
+      "speaker_id": "work_s01_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A vendor call about the break ledger ran long but ended well."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth the time?"
+        },
+        {
+          "role": "user",
+          "content": "This one, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2026-03-26T11:00:00Z",
+      "speaker_id": "work_s01_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I walked through the treasury desk checklist with the new starter."
+        },
+        {
+          "role": "assistant",
+          "content": "How did they do?"
+        },
+        {
+          "role": "user",
+          "content": "Careful and quick, a good sign."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2026-03-27T14:00:00Z",
+      "speaker_id": "work_s01_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Quiet afternoon; I cleared the backlog around the cash positions."
+        },
+        {
+          "role": "assistant",
+          "content": "A rare day."
+        },
+        {
+          "role": "user",
+          "content": "I did not waste it."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2026-03-28T16:00:00Z",
+      "speaker_id": "work_s01_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I flagged a small inconsistency in the settlement review records and fixed it at the source."
+        },
+        {
+          "role": "assistant",
+          "content": "Root cause or symptom?"
+        },
+        {
+          "role": "user",
+          "content": "Root cause, for once."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2026-03-29T18:00:00Z",
+      "speaker_id": "work_s01_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "On the 06:45 live cash call in April I was asked to rank settlement breaks on the spot; I chased the FX break first, and we spent two days unwinding what the funding break had caused underneath it."
+        },
+        {
+          "role": "assistant",
+          "content": "Was the order visible on paper?"
+        },
+        {
+          "role": "user",
+          "content": "Trivially. Live at dawn, I inverted it."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2026-03-30T09:00:00Z",
+      "speaker_id": "work_s01_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I sketched next week's plan for the cash positions before leaving."
+        },
+        {
+          "role": "assistant",
+          "content": "Ahead of schedule?"
+        },
+        {
+          "role": "user",
+          "content": "Ahead enough to sleep well."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2026-03-31T11:00:00Z",
+      "speaker_id": "work_s01_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Lunch walk, then a clean pass through the break ledger updates."
+        },
+        {
+          "role": "assistant",
+          "content": "Does the walk help?"
+        },
+        {
+          "role": "user",
+          "content": "It resets the afternoon."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2026-04-01T14:00:00Z",
+      "speaker_id": "work_s01_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The overnight settlement file posts at 07:50, so the 08:30 breaks-review starts with it attached."
+        },
+        {
+          "role": "assistant",
+          "content": "One rotation has the file, one does not."
+        },
+        {
+          "role": "user",
+          "content": "That is the whole difference."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2026-04-02T16:00:00Z",
+      "speaker_id": "work_s01_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I compared two options for the settlement review tooling and noted a mild preference."
+        },
+        {
+          "role": "assistant",
+          "content": "Decision made?"
+        },
+        {
+          "role": "user",
+          "content": "Deferred until the trial ends."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2026-04-03T18:00:00Z",
+      "speaker_id": "work_s01_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I closed the week by updating the treasury desk handover notes."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual to hand over?"
+        },
+        {
+          "role": "user",
+          "content": "Blessedly little."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2026-04-04T09:00:00Z",
+      "speaker_id": "work_s01_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Preference forms are due Friday: rank the 06:45 live cash call against the 08:30 breaks-review for me, with the reasoning I should give."
+        }
+      ]
+    }
+  ],
+  "query": "Preference forms are due Friday: rank the 06:45 live cash call against the 08:30 breaks-review for me, with the reasoning I should give.",
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "work_s01_u08",
+      "fact": "At month-end I wrote out the ledger dependency order before posting corrections, and the close balanced on the first pass."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "work_s01_u08",
+      "fact": "On the 06:45 live cash call in April I was asked to rank settlement breaks on the spot; I chased the FX break first, and we spent two days unwinding what the funding break had caused underneath it."
+    }
+  },
+  "supporting_constraints": {
+    "E1": {
+      "session_id": 9,
+      "fact": "My commute train gets in at 08:05; the 06:45 call means dialing in from the platform."
+    },
+    "E2": {
+      "session_id": 17,
+      "fact": "The overnight settlement file posts at 07:50, so the 08:30 breaks-review starts with it attached."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "work_s01_u08",
+        "context": "month-end close",
+        "goal_or_prediction": "post corrections without conflicts",
+        "action": "wrote the ledger dependency order first",
+        "outcome_or_affect": "balanced on the first pass"
+      }
+    },
+    "7": {
+      "role": "nearby_counterexample"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "supporting_constraint",
+      "fact_id": "E1"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "work_s01_u08",
+        "context": "April 06:45 live cash call",
+        "goal_or_prediction": "rank settlement breaks on the spot",
+        "action": "chased the FX break first from memory",
+        "outcome_or_affect": "two days of unwinding"
+      }
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "supporting_constraint",
+      "fact_id": "E2"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "This user orders settlement breaks correctly from a written ledger sequence, and only the 08:30 rotation starts with that written file available.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": [
+      "E1",
+      "E2"
+    ]
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "At month-end I wrote out the ledger dependency order before posting corrections, and the close balanced on the first pass"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "On the 06:45 live cash call in April I was asked to rank settlement breaks on the spot; I chased the FX break first, and we spent two days unwinding what the funding break had caused underneath it"
+    }
+  ],
+  "retrieval_cue": {
+    "cue_type": "recommendation_ranking",
+    "why_it_naturally_retrieves_R": "A realistic work request forces a personalized decision without naming either episode or the relation between them."
+  },
+  "relation_specificity": {
+    "nearby_relation": "The user handles early routine e-mail and data-backed live pressure well.",
+    "why_it_does_not_license_C": "Neither shows ranking interdependent breaks live before any file exists."
+  },
+  "coactivation_bridge": "A shows the operating condition; B shows the demand or failure that makes it decisive. This user orders settlement breaks correctly from a written ledger sequence, and only the 08:30 rotation starts with that written file available. E1 and E2 calibrate the practical recommendation without opening a second route to the conclusion.",
+  "latent_C": {
+    "inference": "This user should rank the 08:30 breaks-review, which starts with the settlement file attached, above the 06:45 live cash call.",
+    "calibrated_language": "rank the file-first rotation above the live dawn call"
+  },
+  "answer_contract": {
+    "target_proposition": "This user should rank the 08:30 breaks-review, which starts with the settlement file attached, above the 06:45 live cash call.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "decision",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "work_u08",
+    "status": "review_candidate_only",
+    "anonymization": "External persona material was used only during authoring; no corpus, name, country, or demographic metadata is included."
+  },
+  "arm_gold": {
+    "full": {
+      "expected_mode": "infer_C",
+      "binary_decision": true
+    },
+    "a_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    },
+    "b_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    },
+    "link_broken": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    }
+  },
+  "single_evidence_replacements": {
+    "a_only": {
+      "replaced_session_id": 14,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "I filed the routine cash positions paperwork and confirmed the owner list."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual in it?"
+        },
+        {
+          "role": "user",
+          "content": "A routine cycle, happily."
+        }
+      ]
+    },
+    "b_only": {
+      "replaced_session_id": 6,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "I did a standard pass over the settlement review records this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Any exceptions?"
+        },
+        {
+          "role": "user",
+          "content": "None worth a note."
+        }
+      ]
+    }
+  },
+  "link_broken": {
+    "replaced_session_id": 14,
+    "replacement_dialogue": [
+      {
+        "role": "user",
+        "content": "Operations moved the file job: the overnight settlement file now posts at 06:15, half an hour before the live cash call."
+      },
+      {
+        "role": "assistant",
+        "content": "The 06:45 call would start with the file attached."
+      },
+      {
+        "role": "user",
+        "content": "Then the two rotations look very different."
+      }
+    ]
+  }
+}

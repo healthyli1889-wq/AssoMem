@@ -1,0 +1,638 @@
+{
+  "schema_version": "work-vnext-2.0",
+  "candidate_id": "AMB_WV_S20_U06_associative",
+  "pair_id": "AMB_WV_S20_U06",
+  "data_arm": "associative",
+  "domain": "work",
+  "user_id": "work_s20_u06",
+  "sub_scenario": {
+    "family": "choosing synchronous versus asynchronous collaboration for complex handoffs",
+    "role": "rail maintenance scheduler",
+    "one_line": "rail maintenance scheduler: post signed access details before targeted coordination"
+  },
+  "query_type": "behavior_explanation",
+  "polarity": "accept",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2028-09-19T11:00:00Z",
+      "speaker_id": "work_s20_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I spent the first hour tidying the possession plan and closing stale entries."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything still open?"
+        },
+        {
+          "role": "user",
+          "content": "Two items, both with owners."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2028-09-20T14:00:00Z",
+      "speaker_id": "work_s20_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The crew ledger review wrapped early today."
+        },
+        {
+          "role": "assistant",
+          "content": "Any surprises in it?"
+        },
+        {
+          "role": "user",
+          "content": "None worth recording."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2028-09-21T16:00:00Z",
+      "speaker_id": "work_s20_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I made a routine crew confirmation on a live planning bridge."
+        },
+        {
+          "role": "assistant",
+          "content": "Was an adjacent possession boundary unsettled?"
+        },
+        {
+          "role": "user",
+          "content": "No, the limits were already signed off."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2028-09-22T18:00:00Z",
+      "speaker_id": "work_s20_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Someone new shadowed me in the planning bridge this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Did that slow you down?"
+        },
+        {
+          "role": "user",
+          "content": "A little, but the questions were good ones."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2028-09-23T09:00:00Z",
+      "speaker_id": "work_s20_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I batched my replies about the track renewals into one message before lunch."
+        },
+        {
+          "role": "assistant",
+          "content": "Cleaner than drip-feeding answers."
+        },
+        {
+          "role": "user",
+          "content": "Much cleaner."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2028-09-24T11:00:00Z",
+      "speaker_id": "work_s20_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "For a completed depot turnout renewal, I matched each crew ledger entry to the already-signed possession plan and filed a marked-up archive copy for the audit folder; no live access was issued during that filing."
+        },
+        {
+          "role": "assistant",
+          "content": "What was the purpose?"
+        },
+        {
+          "role": "user",
+          "content": "To leave an auditable match between crews and the signed boundary after the work was already authorized."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2028-09-25T14:00:00Z",
+      "speaker_id": "work_s20_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I posted a written crew list for day work yesterday."
+        },
+        {
+          "role": "assistant",
+          "content": "Did that authorize night access across a shared boundary?"
+        },
+        {
+          "role": "user",
+          "content": "No, it covered isolated day jobs."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2028-09-26T16:00:00Z",
+      "speaker_id": "work_s20_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I archived last cycle's notes on the crew ledger and set up the new folder."
+        },
+        {
+          "role": "assistant",
+          "content": "A fresh start?"
+        },
+        {
+          "role": "user",
+          "content": "As fresh as these things get."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2028-09-27T18:00:00Z",
+      "speaker_id": "work_s20_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The afternoon planning bridge is at 15:30, and the signal authority publishes revised possession edges at 16:00."
+        },
+        {
+          "role": "assistant",
+          "content": "Can either time move?"
+        },
+        {
+          "role": "user",
+          "content": "No, both are fixed on the renewal calendar."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2028-09-28T09:00:00Z",
+      "speaker_id": "work_s20_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A vendor call about the possession plan ran long but ended well."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth the time?"
+        },
+        {
+          "role": "user",
+          "content": "This one, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2028-09-29T11:00:00Z",
+      "speaker_id": "work_s20_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I walked through the planning bridge checklist with the new starter."
+        },
+        {
+          "role": "assistant",
+          "content": "How did they do?"
+        },
+        {
+          "role": "user",
+          "content": "Careful and quick, a good sign."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2028-09-30T14:00:00Z",
+      "speaker_id": "work_s20_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Quiet afternoon; I cleared the backlog around the track renewals."
+        },
+        {
+          "role": "assistant",
+          "content": "A rare day."
+        },
+        {
+          "role": "user",
+          "content": "I did not waste it."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2028-10-01T16:00:00Z",
+      "speaker_id": "work_s20_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I flagged a small inconsistency in the crew ledger records and fixed it at the source."
+        },
+        {
+          "role": "assistant",
+          "content": "Root cause or symptom?"
+        },
+        {
+          "role": "user",
+          "content": "Root cause, for once."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2028-10-02T18:00:00Z",
+      "speaker_id": "work_s20_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A previous live bridge allocated welders from an old possession diagram, and they arrived while an inspection crew still held the adjacent section."
+        },
+        {
+          "role": "assistant",
+          "content": "What were you trying to authorize?"
+        },
+        {
+          "role": "user",
+          "content": "Night crew access from a diagram that had already been superseded."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2028-10-03T09:00:00Z",
+      "speaker_id": "work_s20_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I sketched next week's plan for the track renewals before leaving."
+        },
+        {
+          "role": "assistant",
+          "content": "Ahead of schedule?"
+        },
+        {
+          "role": "user",
+          "content": "Ahead enough to sleep well."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2028-10-04T11:00:00Z",
+      "speaker_id": "work_s20_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Lunch walk, then a clean pass through the possession plan updates."
+        },
+        {
+          "role": "assistant",
+          "content": "Does the walk help?"
+        },
+        {
+          "role": "user",
+          "content": "It resets the afternoon."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2028-10-05T14:00:00Z",
+      "speaker_id": "work_s20_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The crew channel opens at 16:15, and a side room is booked from 16:20 to 16:25."
+        },
+        {
+          "role": "assistant",
+          "content": "Are those resources on the roster?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, both appear on the renewal calendar."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2028-10-06T16:00:00Z",
+      "speaker_id": "work_s20_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I compared two options for the crew ledger tooling and noted a mild preference."
+        },
+        {
+          "role": "assistant",
+          "content": "Decision made?"
+        },
+        {
+          "role": "user",
+          "content": "Deferred until the trial ends."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2028-10-07T18:00:00Z",
+      "speaker_id": "work_s20_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I closed the week by updating the planning bridge handover notes."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual to hand over?"
+        },
+        {
+          "role": "user",
+          "content": "Blessedly little."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2028-10-08T09:00:00Z",
+      "speaker_id": "work_s20_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The night shift wants access assignments before the revised possession authority arrives. What handoff should I give?"
+        }
+      ]
+    }
+  ],
+  "query": "The night shift wants access assignments before the revised possession authority arrives. What handoff should I give?",
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "work_s20_u06",
+      "fact": "For a completed depot turnout renewal, I matched each crew ledger entry to the already-signed possession plan and filed a marked-up archive copy for the audit folder; no live access was issued during that filing."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "work_s20_u06",
+      "fact": "A previous live bridge allocated welders from an old possession diagram, and they arrived while an inspection crew still held the adjacent section."
+    }
+  },
+  "supporting_constraints": {
+    "E1": {
+      "session_id": 9,
+      "fact": "The afternoon planning bridge is at 15:30, and the signal authority publishes revised possession edges at 16:00."
+    },
+    "E2": {
+      "session_id": 17,
+      "fact": "The crew channel opens at 16:15, and a side room is booked from 16:20 to 16:25."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "work_s20_u06",
+        "context": "depot turnout renewal archive",
+        "goal_or_prediction": "file an auditable crew-to-plan match after authorization",
+        "action": "matched ledger entries to the signed plan without issuing live access",
+        "outcome_or_affect": "archive copy filed; no live access issued during filing"
+      }
+    },
+    "7": {
+      "role": "nearby_counterexample"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "supporting_constraint",
+      "fact_id": "E1"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "work_s20_u06",
+        "context": "superseded-diagram bridge",
+        "goal_or_prediction": "allocate welders for night access",
+        "action": "used an old possession edge before revision posted",
+        "outcome_or_affect": "overlapped an inspection crew on the adjacent section"
+      }
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "supporting_constraint",
+      "fact_id": "E2"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "The depot archive episode shows this user can match crews to a signed plan without issuing live access, while the superseded-diagram bridge shows the cost of authorizing from an old edge; only both justify holding night authorization until the revised plan posts, then using a narrow boundary bridge.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": [
+      "E1",
+      "E2"
+    ]
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "For a completed depot turnout renewal, I matched each crew ledger entry to the already-signed possession plan and filed a marked-up archive copy for the audit folder; no live access was issued during that filing"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "A previous live bridge allocated welders from an old possession diagram, and they arrived while an inspection crew still held the adjacent section"
+    }
+  ],
+  "retrieval_cue": {
+    "cue_type": "behavior_explanation",
+    "why_it_naturally_retrieves_R": "A realistic work request forces a personalized decision without naming either episode or the relation between them."
+  },
+  "relation_specificity": {
+    "nearby_relation": "The user can confirm routine bridge assignments and post simple day crew lists.",
+    "why_it_does_not_license_C": "Those tasks establish neither signed-plan asynchronous handoffs nor the cost of allocating from a superseded diagram."
+  },
+  "coactivation_bridge": "A and B form the only intervention pair. The depot archive episode shows this user can match crews to a signed plan without issuing live access, while the superseded-diagram bridge shows the cost of authorizing from an old edge; only both justify holding night authorization until the revised plan posts, then using a narrow boundary bridge. E1 and E2 are logistical calibration only and do not open a second route to C.",
+  "latent_C": {
+    "inference": "Hold authorization until the signed plan is posted, then use a narrow bridge for crews sharing a boundary.",
+    "calibrated_language": "post signed access details before targeted coordination"
+  },
+  "answer_contract": {
+    "target_proposition": "Hold authorization until the signed plan is posted, then use a narrow bridge for crews sharing a boundary.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "work_u06",
+    "status": "review_candidate_only",
+    "anonymization": "External persona material was used only during authoring; no corpus, name, country, or demographic metadata is included."
+  },
+  "arm_gold": {
+    "full": {
+      "expected_mode": "infer_C",
+      "binary_decision": true
+    },
+    "a_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    },
+    "b_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    },
+    "link_broken": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    }
+  },
+  "single_evidence_replacements": {
+    "a_only": {
+      "replaced_session_id": 14,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "I filed the routine track renewals paperwork and confirmed the owner list."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual in it?"
+        },
+        {
+          "role": "user",
+          "content": "A routine cycle, happily."
+        }
+      ]
+    },
+    "b_only": {
+      "replaced_session_id": 6,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "I did a standard pass over the crew ledger records this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Any exceptions?"
+        },
+        {
+          "role": "user",
+          "content": "None worth a note."
+        }
+      ]
+    }
+  },
+  "link_broken": {
+    "replaced_session_id": 14,
+    "replacement_dialogue": [
+      {
+        "role": "user",
+        "content": "During a June planning bridge, I read crew headcounts from the ledger, relayed tool requests, and recorded which isolation fields were still blank; the duty planner reconciled the counts with the revised diagram, and no access decision was made during my segment."
+      },
+      {
+        "role": "assistant",
+        "content": "Did you authorize track entry?"
+      },
+      {
+        "role": "user",
+        "content": "No, I tracked logistics while the planner handled authorization."
+      }
+    ]
+  }
+}

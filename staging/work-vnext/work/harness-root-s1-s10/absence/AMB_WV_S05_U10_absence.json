@@ -1,0 +1,572 @@
+{
+  "schema_version": "work-vnext-2.0",
+  "candidate_id": "AMB_WV_S05_U10_absence",
+  "pair_id": "AMB_WV_S05_U10",
+  "data_arm": "absence",
+  "domain": "work",
+  "user_id": "work_s05_u10",
+  "sub_scenario": {
+    "family": "deadline compression with quality tradeoffs",
+    "role": "event AV technician",
+    "one_line": "event AV technician: take it, with the window enforced"
+  },
+  "query_type": "conditional_recommendation",
+  "polarity": "accept",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2026-09-16T11:00:00Z",
+      "speaker_id": "work_s05_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I spent the first hour tidying the line-check list and closing stale entries."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything still open?"
+        },
+        {
+          "role": "user",
+          "content": "Two items, both with owners."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2026-09-17T14:00:00Z",
+      "speaker_id": "work_s05_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The run of show review wrapped early today."
+        },
+        {
+          "role": "assistant",
+          "content": "Any surprises in it?"
+        },
+        {
+          "role": "user",
+          "content": "None worth recording."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2026-09-18T16:00:00Z",
+      "speaker_id": "work_s05_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Skipping rehearsal-recording setup under time pressure is fine."
+        },
+        {
+          "role": "assistant",
+          "content": "Peripheral compression again."
+        },
+        {
+          "role": "user",
+          "content": "Peripheral and painless."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2026-09-19T18:00:00Z",
+      "speaker_id": "work_s05_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Someone new shadowed me in the AV booth this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Did that slow you down?"
+        },
+        {
+          "role": "user",
+          "content": "A little, but the questions were good ones."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2026-09-20T09:00:00Z",
+      "speaker_id": "work_s05_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I batched my replies about the mic channels into one message before lunch."
+        },
+        {
+          "role": "assistant",
+          "content": "Cleaner than drip-feeding answers."
+        },
+        {
+          "role": "user",
+          "content": "Much cleaner."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2026-09-21T11:00:00Z",
+      "speaker_id": "work_s05_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I did a standard pass over the run of show records this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Any exceptions in there?"
+        },
+        {
+          "role": "user",
+          "content": "None worth a note."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2026-09-22T14:00:00Z",
+      "speaker_id": "work_s05_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Guerrilla-style street events run checkless by nature; I do them with eyes open."
+        },
+        {
+          "role": "assistant",
+          "content": "A different genre with a different covenant."
+        },
+        {
+          "role": "user",
+          "content": "Known covenants, both."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2026-09-23T16:00:00Z",
+      "speaker_id": "work_s05_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I archived last cycle's notes on the run of show and set up the new folder."
+        },
+        {
+          "role": "assistant",
+          "content": "A fresh start?"
+        },
+        {
+          "role": "user",
+          "content": "As fresh as these things get."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2026-09-24T18:00:00Z",
+      "speaker_id": "work_s05_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I confirmed next week's run of show slots with the team."
+        },
+        {
+          "role": "assistant",
+          "content": "Any conflicts?"
+        },
+        {
+          "role": "user",
+          "content": "None that survived five minutes."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2026-09-25T09:00:00Z",
+      "speaker_id": "work_s05_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A vendor call about the line-check list ran long but ended well."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth the time?"
+        },
+        {
+          "role": "user",
+          "content": "This one, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2026-09-26T11:00:00Z",
+      "speaker_id": "work_s05_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I walked through the AV booth checklist with the new starter."
+        },
+        {
+          "role": "assistant",
+          "content": "How did they do?"
+        },
+        {
+          "role": "user",
+          "content": "Careful and quick, a good sign."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2026-09-27T14:00:00Z",
+      "speaker_id": "work_s05_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Quiet afternoon; I cleared the backlog around the mic channels."
+        },
+        {
+          "role": "assistant",
+          "content": "A rare day."
+        },
+        {
+          "role": "user",
+          "content": "I did not waste it."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2026-09-28T16:00:00Z",
+      "speaker_id": "work_s05_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I flagged a small inconsistency in the run of show records and fixed it at the source."
+        },
+        {
+          "role": "assistant",
+          "content": "Root cause or symptom?"
+        },
+        {
+          "role": "user",
+          "content": "Root cause, for once."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2026-09-29T18:00:00Z",
+      "speaker_id": "work_s05_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I closed a routine mic channels cycle without surprises."
+        },
+        {
+          "role": "assistant",
+          "content": "Follow-up needed?"
+        },
+        {
+          "role": "user",
+          "content": "A note for the next cycle, nothing more."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2026-09-30T09:00:00Z",
+      "speaker_id": "work_s05_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I sketched next week's plan for the mic channels before leaving."
+        },
+        {
+          "role": "assistant",
+          "content": "Ahead of schedule?"
+        },
+        {
+          "role": "user",
+          "content": "Ahead enough to sleep well."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2026-10-01T11:00:00Z",
+      "speaker_id": "work_s05_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Lunch walk, then a clean pass through the line-check list updates."
+        },
+        {
+          "role": "assistant",
+          "content": "Does the walk help?"
+        },
+        {
+          "role": "user",
+          "content": "It resets the afternoon."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2026-10-02T14:00:00Z",
+      "speaker_id": "work_s05_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I moved my reminders so the line-check list review lands before the weekly sync."
+        },
+        {
+          "role": "assistant",
+          "content": "Small automation helps."
+        },
+        {
+          "role": "user",
+          "content": "It adds up over a quarter."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2026-10-03T16:00:00Z",
+      "speaker_id": "work_s05_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I compared two options for the run of show tooling and noted a mild preference."
+        },
+        {
+          "role": "assistant",
+          "content": "Decision made?"
+        },
+        {
+          "role": "user",
+          "content": "Deferred until the trial ends."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2026-10-04T18:00:00Z",
+      "speaker_id": "work_s05_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I closed the week by updating the AV booth handover notes."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual to hand over?"
+        },
+        {
+          "role": "user",
+          "content": "Blessedly little."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2026-10-05T09:00:00Z",
+      "speaker_id": "work_s05_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The awards-night offer expires Friday. Do I take it, and on what condition?"
+        }
+      ]
+    }
+  ],
+  "query": "The awards-night offer expires Friday. Do I take it, and on what condition?",
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "work_s05_u10",
+      "fact": "The keynote went flawlessly because my thirty-minute line-check found a dead lavalier before doors; the backup mic was live before anyone noticed."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "work_s05_u10",
+      "fact": "The awards-night contract guarantees a written line-check window before doors; the venue schedules it, staffs it, and fines itself if the window slips."
+    }
+  },
+  "supporting_constraints": {
+    "E1": {
+      "session_id": 9,
+      "fact": "Awards season pays triple and books out a year ahead."
+    },
+    "E2": {
+      "session_id": 17,
+      "fact": "My tinnitus protocol requires the in-ear check happening in that same window; it fits."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "background_memory"
+    },
+    "7": {
+      "role": "nearby_counterexample"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "background_memory"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "background_memory"
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "background_memory"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "This user's flawless shows run through the pre-doors line check, and the awards contract schedules and guarantees exactly that window.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": [
+      "E1",
+      "E2"
+    ]
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "The keynote went flawlessly because my thirty-minute line-check found a dead lavalier before doors; the backup mic was live before anyone noticed"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "The awards-night contract guarantees a written line-check window before doors; the venue schedules it, staffs it, and fines itself if the window slips"
+    }
+  ],
+  "retrieval_cue": {
+    "cue_type": "conditional_recommendation",
+    "why_it_naturally_retrieves_R": "A realistic work request forces a personalized decision without naming either episode or the relation between them."
+  },
+  "relation_specificity": {
+    "nearby_relation": "The user skips peripheral setup freely and accepts checkless street genres knowingly.",
+    "why_it_does_not_license_C": "Neither concerns a high-stakes show whose contract encodes the check window."
+  },
+  "coactivation_bridge": "A shows the operating condition; B shows the demand or failure that makes it decisive. This user's flawless shows run through the pre-doors line check, and the awards contract schedules and guarantees exactly that window. E1 and E2 calibrate the practical recommendation without opening a second route to the conclusion.",
+  "latent_C": {
+    "inference": "This user should take the awards night, conditional on the contractual line-check window being enforced.",
+    "calibrated_language": "take it, with the window enforced"
+  },
+  "answer_contract": {
+    "target_proposition": "This user should take the awards night, conditional on the contractual line-check window being enforced.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "decision",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "work_u10",
+    "status": "review_candidate_only",
+    "anonymization": "External persona material was used only during authoring; no corpus, name, country, or demographic metadata is included."
+  },
+  "target_evidence_ids": [],
+  "arm_gold": {
+    "absence": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    }
+  },
+  "absence_note": {
+    "replaced_session_ids": [
+      6,
+      9,
+      14,
+      17
+    ],
+    "withheld_evidence_ids": [
+      "ev_A",
+      "ev_B",
+      "E1",
+      "E2"
+    ]
+  }
+}
