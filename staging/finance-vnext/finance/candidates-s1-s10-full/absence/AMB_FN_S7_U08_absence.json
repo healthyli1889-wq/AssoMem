@@ -1,0 +1,573 @@
+{
+  "schema_version": "finance-vnext-2.0",
+  "candidate_id": "AMB_FN_S7_U08_absence",
+  "pair_id": "AMB_FN_S7_U08",
+  "data_arm": "absence",
+  "domain": "finance",
+  "user_id": "finance_s7_u08",
+  "sub_scenario": {
+    "family": "weekend remittance fees versus weekday rent wires",
+    "role": "ethical investing learner",
+    "one_line": "ethical investing learner: only if timing clears first; otherwise rent autopay before saturday FX remits"
+  },
+  "query_type": "recommendation_ranking",
+  "polarity": "conditional",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2028-02-17T11:00:00Z",
+      "speaker_id": "finance_s7_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "skimmed the fx text for five minutes then closed it."
+        },
+        {
+          "role": "assistant",
+          "content": "anything?"
+        },
+        {
+          "role": "user",
+          "content": "nah, just noise."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2028-02-18T14:00:00Z",
+      "speaker_id": "finance_s7_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "half-did the rent autopay and called it a win."
+        },
+        {
+          "role": "assistant",
+          "content": "honest."
+        },
+        {
+          "role": "user",
+          "content": "deeply honest."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2028-02-19T16:00:00Z",
+      "speaker_id": "finance_s7_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "parking prepaid. small joy."
+        },
+        {
+          "role": "assistant",
+          "content": "cherish it."
+        },
+        {
+          "role": "user",
+          "content": "I am."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2028-02-20T18:00:00Z",
+      "speaker_id": "finance_s7_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "moved a cable on the locker shelf desk like that fixes my life."
+        },
+        {
+          "role": "assistant",
+          "content": "did it?"
+        },
+        {
+          "role": "user",
+          "content": "spiritually."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2028-02-21T09:00:00Z",
+      "speaker_id": "finance_s7_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "muted a thread about peer remit before lunch."
+        },
+        {
+          "role": "assistant",
+          "content": "smart."
+        },
+        {
+          "role": "user",
+          "content": "self-defense."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2028-02-22T11:00:00Z",
+      "speaker_id": "finance_s7_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "did a nothing-burger pass on the rent autopay this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "anything?"
+        },
+        {
+          "role": "user",
+          "content": "nah."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2028-02-23T14:00:00Z",
+      "speaker_id": "finance_s7_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "stipend course = money that didn't hurt."
+        },
+        {
+          "role": "assistant",
+          "content": "best kind."
+        },
+        {
+          "role": "user",
+          "content": "top tier."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2028-02-24T16:00:00Z",
+      "speaker_id": "finance_s7_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "renamed a folder for the rent autopay because chaos."
+        },
+        {
+          "role": "assistant",
+          "content": "progress?"
+        },
+        {
+          "role": "user",
+          "content": "cosmetic progress."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2028-02-25T18:00:00Z",
+      "speaker_id": "finance_s7_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "rent autopay pulls monday; peer remit thread is live saturday."
+        },
+        {
+          "role": "assistant",
+          "content": "overlap alert."
+        },
+        {
+          "role": "user",
+          "content": "sirens."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2028-02-26T09:00:00Z",
+      "speaker_id": "finance_s7_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "short call about the fx text, brain melted a little."
+        },
+        {
+          "role": "assistant",
+          "content": "worth it?"
+        },
+        {
+          "role": "user",
+          "content": "barely."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2028-02-27T11:00:00Z",
+      "speaker_id": "finance_s7_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "walked around the block then poked the peer remit again."
+        },
+        {
+          "role": "assistant",
+          "content": "reset?"
+        },
+        {
+          "role": "user",
+          "content": "kinda."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2028-02-28T14:00:00Z",
+      "speaker_id": "finance_s7_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "cleared two tiny rent autopay leftovers."
+        },
+        {
+          "role": "assistant",
+          "content": "momentum."
+        },
+        {
+          "role": "user",
+          "content": "micro momentum."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2028-02-29T16:00:00Z",
+      "speaker_id": "finance_s7_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "fixed a dumb typo in the fx text notes."
+        },
+        {
+          "role": "assistant",
+          "content": "root cause?"
+        },
+        {
+          "role": "user",
+          "content": "user error (me)."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2028-03-01T18:00:00Z",
+      "speaker_id": "finance_s7_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "closed a boring peer remit loop."
+        },
+        {
+          "role": "assistant",
+          "content": "follow-up?"
+        },
+        {
+          "role": "user",
+          "content": "just a note for next time."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2028-03-02T09:00:00Z",
+      "speaker_id": "finance_s7_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "sketched next week for the peer remit then got distracted."
+        },
+        {
+          "role": "assistant",
+          "content": "classic."
+        },
+        {
+          "role": "user",
+          "content": "classic."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2028-03-03T11:00:00Z",
+      "speaker_id": "finance_s7_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "ate lunch cold and updated the fx text anyway."
+        },
+        {
+          "role": "assistant",
+          "content": "dedication."
+        },
+        {
+          "role": "user",
+          "content": "or spite."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2028-03-04T14:00:00Z",
+      "speaker_id": "finance_s7_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "portal shows rent autopay still armed for monday."
+        },
+        {
+          "role": "assistant",
+          "content": "not optional."
+        },
+        {
+          "role": "user",
+          "content": "very armed."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2028-03-05T16:00:00Z",
+      "speaker_id": "finance_s7_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "compared two boring options for the rent autopay."
+        },
+        {
+          "role": "assistant",
+          "content": "picked?"
+        },
+        {
+          "role": "user",
+          "content": "deferred, obviously."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2028-03-06T18:00:00Z",
+      "speaker_id": "finance_s7_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "closed the week updating locker shelf notes nobody will read."
+        },
+        {
+          "role": "assistant",
+          "content": "iconic."
+        },
+        {
+          "role": "user",
+          "content": "quietly iconic."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2028-03-07T09:00:00Z",
+      "speaker_id": "finance_s7_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "under what conditions would that ask actually fit how I run money — rank monday rent autopay vs joining saturday's peer foreign remit."
+        }
+      ]
+    }
+  ],
+  "query": "under what conditions would that ask actually fit how I run money — rank monday rent autopay vs joining saturday's peer foreign remit.",
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "finance_s7_u08",
+      "fact": "weekend peer remits abroad are where my fees go to die — weekday autopay funding has been the only clean path for rent."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "finance_s7_u08",
+      "fact": "I covered a saturday peer remit once before rent... fee + autopay week = I still side-eye that chat."
+    }
+  },
+  "supporting_constraints": {
+    "E1": {
+      "session_id": 9,
+      "fact": "rent autopay pulls monday; peer remit thread is live saturday."
+    },
+    "E2": {
+      "session_id": 17,
+      "fact": "portal shows rent autopay still armed for monday."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "background_memory"
+    },
+    "7": {
+      "role": "nearby_counterexample"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "supporting_constraint",
+      "fact_id": "E1"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "background_memory"
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "supporting_constraint",
+      "fact_id": "E2"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "Weekend peer foreign remits create fee damage, and a prior saturday remit before rent autopay left lasting side-eye for a reason.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": [
+      "E1",
+      "E2"
+    ]
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "weekend peer remits abroad are where my fees go to die — weekday autopay funding has been the only clean path for rent"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "I covered a saturday peer remit once before rent"
+    }
+  ],
+  "retrieval_cue": {
+    "cue_type": "recommendation_ranking",
+    "why_it_naturally_retrieves_R": "A realistic personal-finance ask forces a personalized call without naming either episode or the link between them."
+  },
+  "relation_specificity": {
+    "nearby_relation": "Prepaid parking and stipend courses are fine.",
+    "why_it_does_not_license_C": "Neither is saturday FX vs monday autopay."
+  },
+  "coactivation_bridge": "A and B form the only intervention pair. Weekend peer foreign remits create fee damage, and a prior saturday remit before rent autopay left lasting side-eye for a reason. E1 and E2 are logistical calibration only and do not open a second route to C.",
+  "latent_C": {
+    "inference": "This user can consider the ask only after the hard cash timing in E1/E2 no longer collides; otherwise rent autopay before saturday FX remits.",
+    "calibrated_language": "only if timing clears first; otherwise rent autopay before saturday FX remits"
+  },
+  "answer_contract": {
+    "target_proposition": "This user can consider the ask only after the hard cash timing in E1/E2 no longer collides; otherwise rent autopay before saturday FX remits.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "mq_user35",
+    "external_folder_tag": "user35",
+    "external_source": "memoryquest",
+    "status": "review_candidate_only",
+    "tone": "natural_chat_v1",
+    "anonymization": "External MemoryQuest persona material was used only during authoring; no corpus, legal name, country, or demographic metadata is in visible dialogue."
+  },
+  "target_evidence_ids": [],
+  "arm_gold": {
+    "absence": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    }
+  },
+  "absence_note": {
+    "replaced_session_ids": [
+      6,
+      14
+    ],
+    "withheld_evidence_ids": [
+      "ev_A",
+      "ev_B"
+    ]
+  }
+}

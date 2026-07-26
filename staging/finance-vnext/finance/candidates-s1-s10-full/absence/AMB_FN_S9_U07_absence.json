@@ -1,0 +1,573 @@
+{
+  "schema_version": "finance-vnext-2.0",
+  "candidate_id": "AMB_FN_S9_U07_absence",
+  "pair_id": "AMB_FN_S9_U07",
+  "data_arm": "absence",
+  "domain": "finance",
+  "user_id": "finance_s9_u07",
+  "sub_scenario": {
+    "family": "open HSA contribution room versus after-tax speculative signups",
+    "role": "working market follower",
+    "one_line": "working market follower: protect hsa + clinic first"
+  },
+  "query_type": "preference_generalization",
+  "polarity": "reject",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2028-05-04T11:00:00Z",
+      "speaker_id": "finance_s9_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "skimmed the hsa screenshot for five minutes then closed it."
+        },
+        {
+          "role": "assistant",
+          "content": "anything?"
+        },
+        {
+          "role": "user",
+          "content": "nah, just noise."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2028-05-05T14:00:00Z",
+      "speaker_id": "finance_s9_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "half-did the clinic reminder and called it a win."
+        },
+        {
+          "role": "assistant",
+          "content": "honest."
+        },
+        {
+          "role": "user",
+          "content": "deeply honest."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2028-05-06T16:00:00Z",
+      "speaker_id": "finance_s9_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "venmo lunch ok. social battery low."
+        },
+        {
+          "role": "assistant",
+          "content": "relatable."
+        },
+        {
+          "role": "user",
+          "content": "painfully."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2028-05-07T18:00:00Z",
+      "speaker_id": "finance_s9_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "moved a cable on the commute desk desk like that fixes my life."
+        },
+        {
+          "role": "assistant",
+          "content": "did it?"
+        },
+        {
+          "role": "user",
+          "content": "spiritually."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2028-05-08T09:00:00Z",
+      "speaker_id": "finance_s9_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "muted a thread about crew tip before lunch."
+        },
+        {
+          "role": "assistant",
+          "content": "smart."
+        },
+        {
+          "role": "user",
+          "content": "self-defense."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2028-05-09T11:00:00Z",
+      "speaker_id": "finance_s9_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "did a nothing-burger pass on the clinic reminder this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "anything?"
+        },
+        {
+          "role": "user",
+          "content": "nah."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2028-05-10T14:00:00Z",
+      "speaker_id": "finance_s9_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "skipped buy-in. still breathing."
+        },
+        {
+          "role": "assistant",
+          "content": "win."
+        },
+        {
+          "role": "user",
+          "content": "micro win."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2028-05-11T16:00:00Z",
+      "speaker_id": "finance_s9_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "renamed a folder for the clinic reminder because chaos."
+        },
+        {
+          "role": "assistant",
+          "content": "progress?"
+        },
+        {
+          "role": "user",
+          "content": "cosmetic progress."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2028-05-12T18:00:00Z",
+      "speaker_id": "finance_s9_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "clinic is booked eligible; crew tip chat is optional noise."
+        },
+        {
+          "role": "assistant",
+          "content": "noise lost."
+        },
+        {
+          "role": "user",
+          "content": "noise can lose."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2028-05-13T09:00:00Z",
+      "speaker_id": "finance_s9_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "short call about the hsa screenshot, brain melted a little."
+        },
+        {
+          "role": "assistant",
+          "content": "worth it?"
+        },
+        {
+          "role": "user",
+          "content": "barely."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2028-05-14T11:00:00Z",
+      "speaker_id": "finance_s9_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "walked around the block then poked the crew tip again."
+        },
+        {
+          "role": "assistant",
+          "content": "reset?"
+        },
+        {
+          "role": "user",
+          "content": "kinda."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2028-05-15T14:00:00Z",
+      "speaker_id": "finance_s9_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "cleared two tiny clinic reminder leftovers."
+        },
+        {
+          "role": "assistant",
+          "content": "momentum."
+        },
+        {
+          "role": "user",
+          "content": "micro momentum."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2028-05-16T16:00:00Z",
+      "speaker_id": "finance_s9_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "fixed a dumb typo in the hsa screenshot notes."
+        },
+        {
+          "role": "assistant",
+          "content": "root cause?"
+        },
+        {
+          "role": "user",
+          "content": "user error (me)."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2028-05-17T18:00:00Z",
+      "speaker_id": "finance_s9_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "closed a boring crew tip loop."
+        },
+        {
+          "role": "assistant",
+          "content": "follow-up?"
+        },
+        {
+          "role": "user",
+          "content": "just a note for next time."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2028-05-18T09:00:00Z",
+      "speaker_id": "finance_s9_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "sketched next week for the crew tip then got distracted."
+        },
+        {
+          "role": "assistant",
+          "content": "classic."
+        },
+        {
+          "role": "user",
+          "content": "classic."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2028-05-19T11:00:00Z",
+      "speaker_id": "finance_s9_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "ate lunch cold and updated the hsa screenshot anyway."
+        },
+        {
+          "role": "assistant",
+          "content": "dedication."
+        },
+        {
+          "role": "user",
+          "content": "or spite."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2028-05-20T14:00:00Z",
+      "speaker_id": "finance_s9_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "crew tip again; clinic reminder still yelling."
+        },
+        {
+          "role": "assistant",
+          "content": "reminder wins."
+        },
+        {
+          "role": "user",
+          "content": "reminder wins."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2028-05-21T16:00:00Z",
+      "speaker_id": "finance_s9_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "compared two boring options for the clinic reminder."
+        },
+        {
+          "role": "assistant",
+          "content": "picked?"
+        },
+        {
+          "role": "user",
+          "content": "deferred, obviously."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2028-05-22T18:00:00Z",
+      "speaker_id": "finance_s9_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "closed the week updating commute desk notes nobody will read."
+        },
+        {
+          "role": "assistant",
+          "content": "iconic."
+        },
+        {
+          "role": "user",
+          "content": "quietly iconic."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2028-05-23T09:00:00Z",
+      "speaker_id": "finance_s9_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "when crew tips and hsa/clinic collide, what do I protect?"
+        }
+      ]
+    }
+  ],
+  "query": "when crew tips and hsa/clinic collide, what do I protect?",
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "finance_s9_u07",
+      "fact": "hsa room open + clinic reminder on my phone = leftover isn't crew-tip money until those are handled."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "finance_s9_u07",
+      "fact": "crew tip got leftover once... clinic week felt dumber than it needed to."
+    }
+  },
+  "supporting_constraints": {
+    "E1": {
+      "session_id": 9,
+      "fact": "clinic is booked eligible; crew tip chat is optional noise."
+    },
+    "E2": {
+      "session_id": 17,
+      "fact": "crew tip again; clinic reminder still yelling."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "background_memory"
+    },
+    "7": {
+      "role": "nearby_counterexample"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "supporting_constraint",
+      "fact_id": "E1"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "background_memory"
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "supporting_constraint",
+      "fact_id": "E2"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "Open HSA and clinic reminders mean leftover isn't crew-tip money yet, and a prior crew tip made clinic week unnecessarily dumb.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": [
+      "E1",
+      "E2"
+    ]
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "hsa room open + clinic reminder on my phone = leftover isn't crew-tip money until those are handled"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "crew tip got leftover once"
+    }
+  ],
+  "retrieval_cue": {
+    "cue_type": "preference_generalization",
+    "why_it_naturally_retrieves_R": "A realistic personal-finance ask forces a personalized call without naming either episode or the link between them."
+  },
+  "relation_specificity": {
+    "nearby_relation": "Lunch Venmos and skipped buy-ins are fine.",
+    "why_it_does_not_license_C": "Neither is crew tip vs open HSA + clinic."
+  },
+  "coactivation_bridge": "A and B form the only intervention pair. Open HSA and clinic reminders mean leftover isn't crew-tip money yet, and a prior crew tip made clinic week unnecessarily dumb. E1 and E2 are logistical calibration only and do not open a second route to C.",
+  "latent_C": {
+    "inference": "This user protects open HSA room and the booked eligible clinic before optional crew tip signups.",
+    "calibrated_language": "protect hsa + clinic first"
+  },
+  "answer_contract": {
+    "target_proposition": "This user protects open HSA room and the booked eligible clinic before optional crew tip signups.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "mq_user30",
+    "external_folder_tag": "user30",
+    "external_source": "memoryquest",
+    "status": "review_candidate_only",
+    "tone": "natural_chat_v1",
+    "anonymization": "External MemoryQuest persona material was used only during authoring; no corpus, legal name, country, or demographic metadata is in visible dialogue."
+  },
+  "target_evidence_ids": [],
+  "arm_gold": {
+    "absence": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    }
+  },
+  "absence_note": {
+    "replaced_session_ids": [
+      6,
+      14
+    ],
+    "withheld_evidence_ids": [
+      "ev_A",
+      "ev_B"
+    ]
+  }
+}

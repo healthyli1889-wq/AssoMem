@@ -1,0 +1,582 @@
+{
+  "schema_version": "finance-vnext-2.0",
+  "candidate_id": "AMB_FN_S7_U02_distractor",
+  "pair_id": "AMB_FN_S7_U02",
+  "data_arm": "distractor",
+  "domain": "finance",
+  "user_id": "finance_s7_u02",
+  "sub_scenario": {
+    "family": "weekend remittance fees versus weekday rent wires",
+    "role": "student investor",
+    "one_line": "student investor: weekday rent wire first"
+  },
+  "query_type": "recommendation_ranking",
+  "polarity": "reject",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2028-01-30T11:00:00Z",
+      "speaker_id": "finance_s7_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "skimmed the sepa sheet for five minutes then closed it."
+        },
+        {
+          "role": "assistant",
+          "content": "anything?"
+        },
+        {
+          "role": "user",
+          "content": "nah, just noise."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2028-01-31T14:00:00Z",
+      "speaker_id": "finance_s7_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "half-did the rent note and called it a win."
+        },
+        {
+          "role": "assistant",
+          "content": "honest."
+        },
+        {
+          "role": "user",
+          "content": "deeply honest."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2028-02-01T16:00:00Z",
+      "speaker_id": "finance_s7_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "grocery log done. thrill level: 2."
+        },
+        {
+          "role": "assistant",
+          "content": "consistent though."
+        },
+        {
+          "role": "user",
+          "content": "painfully."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2028-02-02T18:00:00Z",
+      "speaker_id": "finance_s7_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "moved a cable on the flat desk desk like that fixes my life."
+        },
+        {
+          "role": "assistant",
+          "content": "did it?"
+        },
+        {
+          "role": "user",
+          "content": "spiritually."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2028-02-03T09:00:00Z",
+      "speaker_id": "finance_s7_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "muted a thread about investment club before lunch."
+        },
+        {
+          "role": "assistant",
+          "content": "smart."
+        },
+        {
+          "role": "user",
+          "content": "self-defense."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2028-02-04T11:00:00Z",
+      "speaker_id": "finance_s7_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "sunday person-to-person FX remittances are a fee trap for me — weekday sepa/wire has been cleaner every single time I've compared."
+        },
+        {
+          "role": "assistant",
+          "content": "so weekends are expensive on purpose."
+        },
+        {
+          "role": "user",
+          "content": "expensive and somehow still tempting."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2028-02-05T14:00:00Z",
+      "speaker_id": "finance_s7_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "tiny transfer to rainy jar. I am stable."
+        },
+        {
+          "role": "assistant",
+          "content": "icon."
+        },
+        {
+          "role": "user",
+          "content": "temporary icon."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2028-02-06T16:00:00Z",
+      "speaker_id": "finance_s7_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "renamed a folder for the rent note because chaos."
+        },
+        {
+          "role": "assistant",
+          "content": "progress?"
+        },
+        {
+          "role": "user",
+          "content": "cosmetic progress."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2028-02-07T18:00:00Z",
+      "speaker_id": "finance_s7_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "first-workday rent draft is locked — I need weekday rails, not a sunday adventure."
+        },
+        {
+          "role": "assistant",
+          "content": "spoken for."
+        },
+        {
+          "role": "user",
+          "content": "very spoken for."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2028-02-08T09:00:00Z",
+      "speaker_id": "finance_s7_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "short call about the sepa sheet, brain melted a little."
+        },
+        {
+          "role": "assistant",
+          "content": "worth it?"
+        },
+        {
+          "role": "user",
+          "content": "barely."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2028-02-09T11:00:00Z",
+      "speaker_id": "finance_s7_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "walked around the block then poked the investment club again."
+        },
+        {
+          "role": "assistant",
+          "content": "reset?"
+        },
+        {
+          "role": "user",
+          "content": "kinda."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2028-02-10T14:00:00Z",
+      "speaker_id": "finance_s7_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "cleared two tiny rent note leftovers."
+        },
+        {
+          "role": "assistant",
+          "content": "momentum."
+        },
+        {
+          "role": "user",
+          "content": "micro momentum."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2028-02-11T16:00:00Z",
+      "speaker_id": "finance_s7_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "fixed a dumb typo in the sepa sheet notes."
+        },
+        {
+          "role": "assistant",
+          "content": "root cause?"
+        },
+        {
+          "role": "user",
+          "content": "user error (me)."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2028-02-12T18:00:00Z",
+      "speaker_id": "finance_s7_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "investment club wanted a sunday pot top-up once... I did it, FX fee hit, rent buffer looked thinner by monday."
+        },
+        {
+          "role": "assistant",
+          "content": "that tracks."
+        },
+        {
+          "role": "user",
+          "content": "unfortunately."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2028-02-13T09:00:00Z",
+      "speaker_id": "finance_s7_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "sketched next week for the investment club then got distracted."
+        },
+        {
+          "role": "assistant",
+          "content": "classic."
+        },
+        {
+          "role": "user",
+          "content": "classic."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2028-02-14T11:00:00Z",
+      "speaker_id": "finance_s7_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "ate lunch cold and updated the sepa sheet anyway."
+        },
+        {
+          "role": "assistant",
+          "content": "dedication."
+        },
+        {
+          "role": "user",
+          "content": "or spite."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2028-02-15T14:00:00Z",
+      "speaker_id": "finance_s7_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "club ping is for tonight (weekend-ish hours); rent draft is first workday."
+        },
+        {
+          "role": "assistant",
+          "content": "same cash story."
+        },
+        {
+          "role": "user",
+          "content": "same stupid story."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2028-02-16T16:00:00Z",
+      "speaker_id": "finance_s7_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "muted thread is loud about 'everyone chips in before markets open monday'."
+        },
+        {
+          "role": "assistant",
+          "content": "dramatic."
+        },
+        {
+          "role": "user",
+          "content": "and fee-blind."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2028-02-17T18:00:00Z",
+      "speaker_id": "finance_s7_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "closed the week updating flat desk notes nobody will read."
+        },
+        {
+          "role": "assistant",
+          "content": "iconic."
+        },
+        {
+          "role": "user",
+          "content": "quietly iconic."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2028-02-18T09:00:00Z",
+      "speaker_id": "finance_s7_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "rank for me: keep cash for the weekday rent wire, sunday club top-up, or split?"
+        }
+      ]
+    }
+  ],
+  "query": "rank for me: keep cash for the weekday rent wire, sunday club top-up, or split?",
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "finance_s7_u02",
+      "fact": "sunday person-to-person FX remittances are a fee trap for me — weekday sepa/wire has been cleaner every single time I've compared."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "finance_s7_u02",
+      "fact": "investment club wanted a sunday pot top-up once... I did it, FX fee hit, rent buffer looked thinner by monday."
+    }
+  },
+  "supporting_constraints": {
+    "E1": {
+      "session_id": 9,
+      "fact": "first-workday rent draft is locked — I need weekday rails, not a sunday adventure."
+    },
+    "E2": {
+      "session_id": 17,
+      "fact": "club ping is for tonight (weekend-ish hours); rent draft is first workday."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "finance_s7_u02",
+        "context": "weekday sepa rent",
+        "goal_or_prediction": "avoid FX fee trap",
+        "action": "wired on a workday before draft",
+        "outcome_or_affect": "draft cleared clean"
+      }
+    },
+    "7": {
+      "role": "nearby_counterexample"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "supporting_constraint",
+      "fact_id": "E1"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "finance_s7_u02",
+        "context": "sunday club top-up",
+        "goal_or_prediction": "chip in before monday",
+        "action": "sent FX p2p on sunday",
+        "outcome_or_affect": "fee hit; rent buffer thinner"
+      }
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "supporting_constraint",
+      "fact_id": "E2"
+    },
+    "18": {
+      "role": "distractor",
+      "distractor_id": "dist_1",
+      "why_distractor": "Markets-open hype isn't a sepa plan."
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "Sunday FX remittances cost this user steep fees, and a prior club top-up before the rent draft thinned the monday buffer.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": [
+      "E1",
+      "E2"
+    ]
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "sunday person-to-person FX remittances are a fee trap for me — weekday sepa/wire has been cleaner every single time I've compared"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "investment club wanted a sunday pot top-up once"
+    }
+  ],
+  "retrieval_cue": {
+    "cue_type": "recommendation_ranking",
+    "why_it_naturally_retrieves_R": "A realistic personal-finance ask forces a personalized call without naming either episode or the link between them."
+  },
+  "relation_specificity": {
+    "nearby_relation": "Grocery logs and rainy-jar transfers are fine.",
+    "why_it_does_not_license_C": "Neither tests a sunday club send against a locked first-workday draft."
+  },
+  "coactivation_bridge": "A and B form the only intervention pair. Sunday FX remittances cost this user steep fees, and a prior club top-up before the rent draft thinned the monday buffer. E1 and E2 are logistical calibration only and do not open a second route to C.",
+  "latent_C": {
+    "inference": "This user should rank the weekday rent wire above a sunday club top-up.",
+    "calibrated_language": "weekday rent wire first"
+  },
+  "answer_contract": {
+    "target_proposition": "This user should rank the weekday rent wire above a sunday club top-up.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "mq_user5",
+    "external_folder_tag": "user5",
+    "external_source": "memoryquest",
+    "status": "review_candidate_only",
+    "tone": "natural_chat_v1",
+    "anonymization": "External MemoryQuest persona material was used only during authoring; no corpus, legal name, country, or demographic metadata is in visible dialogue."
+  },
+  "arm_gold": {
+    "distractor": {
+      "expected_mode": "infer_C",
+      "binary_decision": true
+    }
+  },
+  "distractor_note": {
+    "replaced_session_id": 18,
+    "why_distractor": "Markets-open hype isn't a sepa plan."
+  }
+}

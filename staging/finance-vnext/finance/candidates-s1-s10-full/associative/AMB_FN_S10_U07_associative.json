@@ -1,0 +1,641 @@
+{
+  "schema_version": "finance-vnext-2.0",
+  "candidate_id": "AMB_FN_S10_U07_associative",
+  "pair_id": "AMB_FN_S10_U07",
+  "data_arm": "associative",
+  "domain": "finance",
+  "user_id": "finance_s10_u07",
+  "sub_scenario": {
+    "family": "deductible repair cash versus high-APR emergency-envelope chases",
+    "role": "working market follower",
+    "one_line": "working market follower: protect sleepy repair cash first"
+  },
+  "query_type": "preference_generalization",
+  "polarity": "reject",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2028-06-13T11:00:00Z",
+      "speaker_id": "finance_s10_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "skimmed the insurance text for five minutes then closed it."
+        },
+        {
+          "role": "assistant",
+          "content": "anything?"
+        },
+        {
+          "role": "user",
+          "content": "nah, just noise."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2028-06-14T14:00:00Z",
+      "speaker_id": "finance_s10_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "half-did the shop booking and called it a win."
+        },
+        {
+          "role": "assistant",
+          "content": "honest."
+        },
+        {
+          "role": "user",
+          "content": "deeply honest."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2028-06-15T16:00:00Z",
+      "speaker_id": "finance_s10_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "lunch squared. social min done."
+        },
+        {
+          "role": "assistant",
+          "content": "efficient."
+        },
+        {
+          "role": "user",
+          "content": "barely."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2028-06-16T18:00:00Z",
+      "speaker_id": "finance_s10_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "moved a cable on the commute desk desk like that fixes my life."
+        },
+        {
+          "role": "assistant",
+          "content": "did it?"
+        },
+        {
+          "role": "user",
+          "content": "spiritually."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2028-06-17T09:00:00Z",
+      "speaker_id": "finance_s10_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "muted a thread about crew apr pot before lunch."
+        },
+        {
+          "role": "assistant",
+          "content": "smart."
+        },
+        {
+          "role": "user",
+          "content": "self-defense."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2028-06-18T11:00:00Z",
+      "speaker_id": "finance_s10_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "crew apr pots love calling repair cash 'sleepy money' — sleepy money paid my deductible repair when I left it alone."
+        },
+        {
+          "role": "assistant",
+          "content": "sleepy = good?"
+        },
+        {
+          "role": "user",
+          "content": "sleepy = employed car."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2028-06-19T14:00:00Z",
+      "speaker_id": "finance_s10_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "skipped buy-in. alive."
+        },
+        {
+          "role": "assistant",
+          "content": "alive."
+        },
+        {
+          "role": "user",
+          "content": "barely alive."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2028-06-20T16:00:00Z",
+      "speaker_id": "finance_s10_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "renamed a folder for the shop booking because chaos."
+        },
+        {
+          "role": "assistant",
+          "content": "progress?"
+        },
+        {
+          "role": "user",
+          "content": "cosmetic progress."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2028-06-21T18:00:00Z",
+      "speaker_id": "finance_s10_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "shop booking is real; crew pot is optional hype."
+        },
+        {
+          "role": "assistant",
+          "content": "hype lost."
+        },
+        {
+          "role": "user",
+          "content": "lost."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2028-06-22T09:00:00Z",
+      "speaker_id": "finance_s10_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "short call about the insurance text, brain melted a little."
+        },
+        {
+          "role": "assistant",
+          "content": "worth it?"
+        },
+        {
+          "role": "user",
+          "content": "barely."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2028-06-23T11:00:00Z",
+      "speaker_id": "finance_s10_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "walked around the block then poked the crew apr pot again."
+        },
+        {
+          "role": "assistant",
+          "content": "reset?"
+        },
+        {
+          "role": "user",
+          "content": "kinda."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2028-06-24T14:00:00Z",
+      "speaker_id": "finance_s10_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "cleared two tiny shop booking leftovers."
+        },
+        {
+          "role": "assistant",
+          "content": "momentum."
+        },
+        {
+          "role": "user",
+          "content": "micro momentum."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2028-06-25T16:00:00Z",
+      "speaker_id": "finance_s10_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "fixed a dumb typo in the insurance text notes."
+        },
+        {
+          "role": "assistant",
+          "content": "root cause?"
+        },
+        {
+          "role": "user",
+          "content": "user error (me)."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2028-06-26T18:00:00Z",
+      "speaker_id": "finance_s10_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "fed sleepy money to a crew apr pot once... shop week was not sleepy."
+        },
+        {
+          "role": "assistant",
+          "content": "ironic."
+        },
+        {
+          "role": "user",
+          "content": "painfully."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2028-06-27T09:00:00Z",
+      "speaker_id": "finance_s10_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "sketched next week for the crew apr pot then got distracted."
+        },
+        {
+          "role": "assistant",
+          "content": "classic."
+        },
+        {
+          "role": "user",
+          "content": "classic."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2028-06-28T11:00:00Z",
+      "speaker_id": "finance_s10_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "ate lunch cold and updated the insurance text anyway."
+        },
+        {
+          "role": "assistant",
+          "content": "dedication."
+        },
+        {
+          "role": "user",
+          "content": "or spite."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2028-06-29T14:00:00Z",
+      "speaker_id": "finance_s10_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "pot again; booking stands."
+        },
+        {
+          "role": "assistant",
+          "content": "you already muted."
+        },
+        {
+          "role": "user",
+          "content": "muted."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2028-06-30T16:00:00Z",
+      "speaker_id": "finance_s10_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "compared two boring options for the shop booking."
+        },
+        {
+          "role": "assistant",
+          "content": "picked?"
+        },
+        {
+          "role": "user",
+          "content": "deferred, obviously."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2028-07-01T18:00:00Z",
+      "speaker_id": "finance_s10_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "closed the week updating commute desk notes nobody will read."
+        },
+        {
+          "role": "assistant",
+          "content": "iconic."
+        },
+        {
+          "role": "user",
+          "content": "quietly iconic."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2028-07-02T09:00:00Z",
+      "speaker_id": "finance_s10_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "when crew apr pots and shop bookings collide, what do I protect?"
+        }
+      ]
+    }
+  ],
+  "query": "when crew apr pots and shop bookings collide, what do I protect?",
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "finance_s10_u07",
+      "fact": "crew apr pots love calling repair cash 'sleepy money' — sleepy money paid my deductible repair when I left it alone."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "finance_s10_u07",
+      "fact": "fed sleepy money to a crew apr pot once... shop week was not sleepy."
+    }
+  },
+  "supporting_constraints": {
+    "E1": {
+      "session_id": 9,
+      "fact": "shop booking is real; crew pot is optional hype."
+    },
+    "E2": {
+      "session_id": 17,
+      "fact": "pot again; booking stands."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "finance_s10_u07",
+        "context": "sleepy cash till shop",
+        "goal_or_prediction": "avoid not-sleepy shop week",
+        "action": "left deductible cash liquid",
+        "outcome_or_affect": "shop without drama"
+      }
+    },
+    "7": {
+      "role": "nearby_counterexample"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "supporting_constraint",
+      "fact_id": "E1"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "finance_s10_u07",
+        "context": "crew apr pot early",
+        "goal_or_prediction": "wake sleepy money",
+        "action": "potted repair cash before shop",
+        "outcome_or_affect": "not-sleepy shop week"
+      }
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "supporting_constraint",
+      "fact_id": "E2"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "Sleepy repair cash paid deductible repairs when left alone, and a crew APR pot made shop week not sleepy.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": [
+      "E1",
+      "E2"
+    ]
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "crew apr pots love calling repair cash 'sleepy money' — sleepy money paid my deductible repair when I left it alone"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "fed sleepy money to a crew apr pot once"
+    }
+  ],
+  "retrieval_cue": {
+    "cue_type": "preference_generalization",
+    "why_it_naturally_retrieves_R": "A realistic personal-finance ask forces a personalized call without naming either episode or the link between them."
+  },
+  "relation_specificity": {
+    "nearby_relation": "Lunch Venmos and skipped buy-ins are fine.",
+    "why_it_does_not_license_C": "Neither is a crew pot vs a real shop booking."
+  },
+  "coactivation_bridge": "A and B form the only intervention pair. Sleepy repair cash paid deductible repairs when left alone, and a crew APR pot made shop week not sleepy. E1 and E2 are logistical calibration only and do not open a second route to C.",
+  "latent_C": {
+    "inference": "This user protects liquid deductible repair cash for the shop booking before crew APR pots.",
+    "calibrated_language": "protect sleepy repair cash first"
+  },
+  "answer_contract": {
+    "target_proposition": "This user protects liquid deductible repair cash for the shop booking before crew APR pots.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "mq_user30",
+    "external_folder_tag": "user30",
+    "external_source": "memoryquest",
+    "status": "review_candidate_only",
+    "tone": "natural_chat_v1",
+    "anonymization": "External MemoryQuest persona material was used only during authoring; no corpus, legal name, country, or demographic metadata is in visible dialogue."
+  },
+  "arm_gold": {
+    "full": {
+      "expected_mode": "infer_C",
+      "binary_decision": true
+    },
+    "a_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    },
+    "b_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    },
+    "link_broken": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    }
+  },
+  "single_evidence_replacements": {
+    "a_only": {
+      "replaced_session_id": 14,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "filed some boring crew apr pot stuff and moved on."
+        },
+        {
+          "role": "assistant",
+          "content": "anything weird?"
+        },
+        {
+          "role": "user",
+          "content": "nah, routine."
+        }
+      ]
+    },
+    "b_only": {
+      "replaced_session_id": 6,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "did a nothing pass on the shop booking."
+        },
+        {
+          "role": "assistant",
+          "content": "exceptions?"
+        },
+        {
+          "role": "user",
+          "content": "none worth typing."
+        }
+      ]
+    }
+  },
+  "link_broken": {
+    "replaced_session_id": 14,
+    "replacement_dialogue": [
+      {
+        "role": "user",
+        "content": "pot after shop week."
+      },
+      {
+        "role": "assistant",
+        "content": "then maybe wake it?"
+      },
+      {
+        "role": "user",
+        "content": "then maybe."
+      }
+    ]
+  }
+}
