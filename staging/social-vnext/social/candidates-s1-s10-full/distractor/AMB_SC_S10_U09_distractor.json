@@ -7,7 +7,7 @@
     "family": "arriving fresh versus arriving talked-out at an in-person reunion",
     "role": "indie-gig and gallery regular who prefers text to calls",
     "bridge_type": "prediction_calibration",
-    "one_line": "indie-gig and gallery regular who prefers text to calls: worth it only in so far as it produces the nothing-queued-up state"
+    "one_line": "indie-gig and gallery regular who prefers text to calls: only when the week leaves this user with nothing of their own queued up"
   },
   "query_type": "behavior_explanation",
   "polarity": "conditional",
@@ -22,11 +22,11 @@
     "why_it_does_not_license_C": "A single ordinary call and a quiet cleared weekend both passed without consequence, so neither bounds the failed prediction, and neither says which state this user actually hears anything in."
   },
   "latent_C": {
-    "inference": "four gallery calls the same week is worth it before the studio reunion only in so far as it actually puts this user into the nothing-queued-up state; without that it buys them nothing.",
-    "calibrated_language": "worth it only in so far as it produces the nothing-queued-up state"
+    "inference": "four gallery calls the same week is worth doing before the studio reunion only when the week leaves this user with nothing of their own queued up; outside that it buys this user nothing.",
+    "calibrated_language": "only when the week leaves this user with nothing of their own queued up"
   },
   "answer_contract": {
-    "target_proposition": "four gallery calls the same week is worth it before the studio reunion only in so far as it actually puts this user into the nothing-queued-up state; without that it buys them nothing.",
+    "target_proposition": "four gallery calls the same week is worth doing before the studio reunion only when the week leaves this user with nothing of their own queued up; outside that it buys this user nothing.",
     "allowed_decisions": [
       "yes",
       "no"

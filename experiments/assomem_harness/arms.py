@@ -35,8 +35,10 @@ def _target_sessions(item: dict[str, Any], profile: DatasetProfile) -> list[int]
     ]
 
 
-def _visible(item: dict[str, Any], query: str) -> dict[str, Any]:
-    return solver_input(item, query)
+def _visible(
+    item: dict[str, Any], query: str, target_proposition: str | None = None
+) -> dict[str, Any]:
+    return solver_input(item, query, target_proposition)
 
 
 def _evidence_contract(
@@ -193,6 +195,10 @@ def materialize_vnext_arms(
             f"got {profile.data_format!r}"
         )
     associative = paired.arms["associative"]
+    # Every arm of a pair is judged against the same proposition; that is what
+    # makes the arms comparable, so it is taken from the associative source rather
+    # than re-read per arm.
+    proposition = associative["answer_contract"]["target_proposition"]
     rendered = render_arms(associative)
     arms: dict[str, EvaluationArm] = {}
     for arm_name, rendered_arm in rendered.items():
@@ -202,7 +208,7 @@ def materialize_vnext_arms(
                 "source": paired.filenames["associative"],
                 **rendered_arm["lineage"],
             },
-            _visible({"context": rendered_arm["context"]}, rendered_arm["query"]),
+            _visible({"context": rendered_arm["context"]}, rendered_arm["query"], proposition),
             _vnext_gold(associative, arm_name),
         )
     for arm_name in ("distractor", "absence"):
@@ -210,7 +216,7 @@ def materialize_vnext_arms(
         arms[arm_name] = EvaluationArm(
             arm_name,
             {"source": paired.filenames[arm_name], "transform": "shipped"},
-            _visible(candidate, candidate["query"]),
+            _visible(candidate, candidate["query"], proposition),
             _vnext_gold(candidate, arm_name),
         )
     return arms

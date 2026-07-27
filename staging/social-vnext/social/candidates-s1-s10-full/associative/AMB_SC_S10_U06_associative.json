@@ -7,7 +7,7 @@
     "family": "arriving fresh versus arriving talked-out at an in-person reunion",
     "role": "student small-group meetup planner",
     "bridge_type": "prediction_calibration",
-    "one_line": "student small-group meetup planner: turns on the nothing-queued-up state, which the record does not settle here"
+    "one_line": "student small-group meetup planner: turns on the week leaves this user with nothing of their own queued up, which the record leaves open here"
   },
   "query_type": "conditional_recommendation",
   "polarity": "non_decision",
@@ -22,11 +22,11 @@
     "why_it_does_not_license_C": "A single ordinary call and a quiet cleared weekend both passed without consequence, so neither bounds the failed prediction, and neither says which state this user actually hears anything in."
   },
   "latent_C": {
-    "inference": "Whether five course calls that week helps before the course reunion turns on whether it puts this user into the nothing-queued-up state, which the visible record does not settle for this occasion.",
-    "calibrated_language": "turns on the nothing-queued-up state, which the record does not settle here"
+    "inference": "Whether five course calls that week helps before the course reunion turns on the week leaves this user with nothing of their own queued up, which the visible record does not settle for this occasion.",
+    "calibrated_language": "turns on the week leaves this user with nothing of their own queued up, which the record leaves open here"
   },
   "answer_contract": {
-    "target_proposition": "Whether five course calls that week helps before the course reunion turns on whether it puts this user into the nothing-queued-up state, which the visible record does not settle for this occasion.",
+    "target_proposition": "Whether five course calls that week helps before the course reunion turns on the week leaves this user with nothing of their own queued up, which the visible record does not settle for this occasion.",
     "allowed_decisions": [
       "yes",
       "no"
@@ -563,7 +563,7 @@
         "answer yes",
         "connect the session 5 pattern with the session 15 episode",
         "cite both session 5 and session 15",
-        "stay inside the calibrated claim (turns on the nothing-queued-up state, which the record does not settle here) rather than a broader claim about the user"
+        "stay inside the calibrated claim (turns on the week leaves this user with nothing of their own queued up, which the record leaves open here) rather than a broader claim about the user"
       ],
       "rationale": "ev_A and ev_B jointly support the target proposition; neither does alone."
     },

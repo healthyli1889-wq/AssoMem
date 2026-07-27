@@ -189,6 +189,7 @@ SCENARIOS: tuple[dict, ...] = (
     {
         "s": 1,
         "slug": "group_night_before_repair_talk",
+        "scope": "it is the large-group kind and the conversation falls before early afternoon",
         "family": "large-group warm-up versus a rested start before a repair conversation",
         "bridge_type": "state_dependent_operation",
         "convention": "Do not go out the night before a difficult conversation; arrive rested.",
@@ -274,6 +275,7 @@ SCENARIOS: tuple[dict, ...] = (
     {
         "s": 2,
         "slug": "tidy_digest_over_rambling_note",
+        "scope": "it stays unedited rather than tidied into headlines",
         "family": "efficient broadcast updates versus unedited one-to-one rambling",
         "bridge_type": "strategy_outcome_contingency",
         "convention": "Keeping people updated clearly and regularly is how you stay close.",
@@ -359,6 +361,7 @@ SCENARIOS: tuple[dict, ...] = (
     {
         "s": 3,
         "slug": "stacked_short_hangs_over_one_dinner",
+        "scope": "it is the third or later catch-up inside the same week",
         "family": "one planned proper sit-down versus several unpolished short catch-ups",
         "bridge_type": "threshold_context_interaction",
         "convention": "One proper unhurried dinner beats several rushed coffees.",
@@ -444,6 +447,7 @@ SCENARIOS: tuple[dict, ...] = (
     {
         "s": 4,
         "slug": "unprepared_toast_over_written_card",
+        "scope": "the words go unrevised rather than being drafted in advance",
         "family": "a carefully written card versus speaking unprepared",
         "bridge_type": "preference_constraint_fit",
         "convention": "If you are not a natural speaker, write it down; a written note is safer and more personal.",
@@ -534,6 +538,7 @@ SCENARIOS: tuple[dict, ...] = (
     {
         "s": 5,
         "slug": "long_visit_over_protected_solo_time",
+        "scope": "the stay is long enough to keep the house occupied continuously",
         "family": "protected solo recharge versus a house with people in it",
         "bridge_type": "prediction_calibration",
         "convention": "Protect your alone time; a long houseguest stay will drain you.",
@@ -617,6 +622,7 @@ SCENARIOS: tuple[dict, ...] = (
     {
         "s": 6,
         "slug": "late_night_before_early_favour",
+        "scope": "the night is genuinely short rather than merely late",
         "family": "an early night versus short sleep before an early commitment to someone",
         "bridge_type": "state_dependent_operation",
         "convention": "Get an early night before an early start you have promised someone.",
@@ -702,6 +708,7 @@ SCENARIOS: tuple[dict, ...] = (
     {
         "s": 7,
         "slug": "drop_in_before_standing_call",
+        "scope": "the day's plan actually breaks rather than merely shifting",
         "family": "a protected clear day versus a day whose plan has already broken",
         "bridge_type": "threshold_context_interaction",
         "convention": "Keep the day clear so you can give the call your full attention.",
@@ -787,6 +794,7 @@ SCENARIOS: tuple[dict, ...] = (
     {
         "s": 8,
         "slug": "daily_reactions_over_long_letter",
+        "scope": "the contact stays uncomposed rather than merely frequent",
         "family": "the composed monthly letter versus uncomposed daily reactions",
         "bridge_type": "strategy_outcome_contingency",
         "convention": "A proper long letter shows real care; throwaway reactions are shallow.",
@@ -872,6 +880,7 @@ SCENARIOS: tuple[dict, ...] = (
     {
         "s": 9,
         "slug": "overnight_guest_before_mentoring",
+        "scope": "the evening is spent talking to a real person rather than merely occupied",
         "family": "an empty house versus company the night before giving guidance",
         "bridge_type": "preference_constraint_fit",
         "convention": "Clear your evening and rest so you can give someone your best advice.",
@@ -957,6 +966,7 @@ SCENARIOS: tuple[dict, ...] = (
     {
         "s": 10,
         "slug": "stacked_video_hangs_before_reunion",
+        "scope": "the week leaves this user with nothing of their own queued up",
         "family": "arriving fresh versus arriving talked-out at an in-person reunion",
         "bridge_type": "prediction_calibration",
         "convention": "Clear your week so you arrive fresh and energetic for the reunion.",
@@ -1063,15 +1073,19 @@ C_TEMPLATES: dict[str, tuple[str, str]] = {
         "{conv} before {commit} is a poor fit for this user.",
         "do not rely on {conv}",
     ),
+    # The condition is drawn from ev_A, which is the only place the scope of the
+    # state is fixed. Phrasing it in terms of the mediator instead made ev_B alone
+    # sufficient - B is precisely what establishes that the mediator decides the
+    # outcome - and b_only ran at 0.75-1.00 target-positive.
     "conditional": (
-        "{unconv} is worth it before {commit} only in so far as it actually puts this user into "
-        "{mediator}; without that it buys them nothing.",
-        "worth it only in so far as it produces {mediator}",
+        "{unconv} is worth doing before {commit} only when {scope}; outside that it buys this "
+        "user nothing.",
+        "only when {scope}",
     ),
     "non_decision": (
-        "Whether {unconv} helps before {commit} turns on whether it puts this user into "
-        "{mediator}, which the visible record does not settle for this occasion.",
-        "turns on {mediator}, which the record does not settle here",
+        "Whether {unconv} helps before {commit} turns on {scope}, which the visible record does "
+        "not settle for this occasion.",
+        "turns on {scope}, which the record leaves open here",
     ),
 }
 

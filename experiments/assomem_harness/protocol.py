@@ -14,13 +14,23 @@ def _dump(value: Any) -> str:
 
 def solver_prompt(visible: dict[str, Any], profile: DatasetProfile | None = None) -> str:
     if profile and profile.is_vnext():
-        return f"""Answer the target proposition using only the supplied conversation.
+        return f"""Decide whether the supplied conversation history supports `target_proposition`.
+
 Return exactly one JSON object with exactly these keys:
 {{"decision":"yes"|"no","answer":string,"evidence_session_ids":[integer]}}.
-`decision` must be yes only when the visible evidence supports the target proposition;
-otherwise return no. `answer` must briefly justify that binary decision. Cite only
-visible session IDs. Do not mention benchmark metadata or hidden labels.
-Conversation input: {_dump(visible)}
+
+Answer `yes` only if specific dated episodes in this person's own history support
+the proposition. Answer `no` if the history does not contain what the proposition
+needs, even when the proposition sounds sensible in general: general social,
+practical or common-sense plausibility is not evidence, and `no` does not assert
+that the opposite is true.
+
+Several sessions may look topically relevant without bearing on the proposition.
+Cite in `evidence_session_ids` only the sessions your decision actually rests on,
+and only IDs visible in the input. `answer` must briefly justify the decision by
+reference to those sessions. Do not mention benchmark metadata or hidden labels.
+
+Input: {_dump(visible)}
 """
     return f"""Answer the user's final query using only the supplied conversation.
 If the evidence is insufficient, explicitly abstain. Do not mention benchmark metadata.

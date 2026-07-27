@@ -88,7 +88,11 @@ def main() -> int:
             "scenario": associative["pair_id"].split("_")[2],
             "target": associative["answer_contract"]["target_proposition"],
         }
-        zero, _ = _decide(solver, profile, {"context": [], "query": associative["query"]})
+        zero, _ = _decide(solver, profile, {
+            "context": [],
+            "query": associative["query"],
+            "target_proposition": associative["answer_contract"]["target_proposition"],
+        })
         row["zero_evidence"] = zero
         for arm_name in LADDER:
             arm = rendered[arm_name]

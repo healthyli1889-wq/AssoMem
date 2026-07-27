@@ -157,6 +157,7 @@ def build_unit(scenario_index: int, user_index: int) -> dict[str, dict[str, Any]
         "commit": scenario["commits"][user_index - 1],
         "b_obj": scenario.get("b_objs", [""] * 10)[user_index - 1],
         "mediator": scenario["mediator"],
+        "scope": scenario["scope"],
         "circle": profile.circle,
         "role": profile.role,
     }

@@ -19,7 +19,11 @@ def run_zero_evidence_check(
     """Call the solver with no memories and reject target-positive guessing."""
     if trials < 1:
         raise ValueError("zero-evidence trials must be positive")
-    visible = {"context": [], "query": candidate["query"]}
+    visible = {
+        "context": [],
+        "query": candidate["query"],
+        "target_proposition": candidate["answer_contract"]["target_proposition"],
+    }
     attempts: list[dict[str, Any]] = []
     target_yes = 0
     valid = 0

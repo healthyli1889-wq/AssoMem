@@ -7,7 +7,7 @@
     "family": "arriving fresh versus arriving talked-out at an in-person reunion",
     "role": "weekend food-fair and match-day organizer",
     "bridge_type": "prediction_calibration",
-    "one_line": "weekend food-fair and match-day organizer: worth it only in so far as it produces the nothing-queued-up state"
+    "one_line": "weekend food-fair and match-day organizer: only when the week leaves this user with nothing of their own queued up"
   },
   "query_type": "preference_generalization",
   "polarity": "conditional",
@@ -22,11 +22,11 @@
     "why_it_does_not_license_C": "A single ordinary call and a quiet cleared weekend both passed without consequence, so neither bounds the failed prediction, and neither says which state this user actually hears anything in."
   },
   "latent_C": {
-    "inference": "six long calls the week before is worth it before the family reunion only in so far as it actually puts this user into the nothing-queued-up state; without that it buys them nothing.",
-    "calibrated_language": "worth it only in so far as it produces the nothing-queued-up state"
+    "inference": "six long calls the week before is worth doing before the family reunion only when the week leaves this user with nothing of their own queued up; outside that it buys this user nothing.",
+    "calibrated_language": "only when the week leaves this user with nothing of their own queued up"
   },
   "answer_contract": {
-    "target_proposition": "six long calls the week before is worth it before the family reunion only in so far as it actually puts this user into the nothing-queued-up state; without that it buys them nothing.",
+    "target_proposition": "six long calls the week before is worth doing before the family reunion only when the week leaves this user with nothing of their own queued up; outside that it buys this user nothing.",
     "allowed_decisions": [
       "yes",
       "no"
@@ -563,7 +563,7 @@
         "answer yes",
         "connect the session 5 pattern with the session 15 episode",
         "cite both session 5 and session 15",
-        "stay inside the calibrated claim (worth it only in so far as it produces the nothing-queued-up state) rather than a broader claim about the user"
+        "stay inside the calibrated claim (only when the week leaves this user with nothing of their own queued up) rather than a broader claim about the user"
       ],
       "rationale": "ev_A and ev_B jointly support the target proposition; neither does alone."
     },

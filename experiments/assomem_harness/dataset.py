@@ -125,15 +125,26 @@ def _validate_pair(
         raise ValueError(f"{domain} u{user:02d} S{scenario}: scenario metadata mismatch")
 
 
-def solver_input(item: dict[str, Any], query: str) -> dict[str, Any]:
-    """Construct the exact visible payload; no ground truth can cross this boundary."""
+def solver_input(
+    item: dict[str, Any], query: str, target_proposition: str | None = None
+) -> dict[str, Any]:
+    """Construct the exact visible payload; no ground truth can cross this boundary.
+
+    `target_proposition` is the question, not the answer: the solver is asked to
+    decide yes/no on it. Withholding it makes the binary decision undefined,
+    because the solver then has to guess which proposition it is being scored
+    against from the query alone. The gold direction, arm gold, required elements
+    and every annotation stay on this side of the boundary.
+    """
     context = copy.deepcopy(item["context"])
     for session in context:
         session.pop("annotation", None)
+    visible: dict[str, Any] = {"context": context, "query": query}
+    if target_proposition:
+        visible["target_proposition"] = target_proposition
     return {
-        "context": context,
-        "query": query,
+        **visible,
         "prompt_hash": hashlib.sha256(
-            json.dumps({"context": context, "query": query}, sort_keys=True).encode()
+            json.dumps(visible, sort_keys=True).encode()
         ).hexdigest(),
     }
