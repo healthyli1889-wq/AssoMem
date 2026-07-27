@@ -7,7 +7,7 @@
     "family": "arriving fresh versus arriving talked-out at an in-person reunion",
     "role": "solo-friendly workshop and panel attendee",
     "bridge_type": "prediction_calibration",
-    "one_line": "solo-friendly workshop and panel attendee: turns on the talked-out, listening state, which the record does not settle here"
+    "one_line": "solo-friendly workshop and panel attendee: turns on the nothing-queued-up state, which the record does not settle here"
   },
   "query_type": "conditional_recommendation",
   "polarity": "non_decision",
@@ -22,11 +22,11 @@
     "why_it_does_not_license_C": "A single ordinary call and a quiet cleared weekend both passed without consequence, so neither bounds the failed prediction, and neither says which state this user actually hears anything in."
   },
   "latent_C": {
-    "inference": "Whether five circle calls the week of it helps before the workshop reunion turns on whether it puts this user into the talked-out, listening state, which the visible record does not settle for this occasion.",
-    "calibrated_language": "turns on the talked-out, listening state, which the record does not settle here"
+    "inference": "Whether five circle calls the week of it helps before the workshop reunion turns on whether it puts this user into the nothing-queued-up state, which the visible record does not settle for this occasion.",
+    "calibrated_language": "turns on the nothing-queued-up state, which the record does not settle here"
   },
   "answer_contract": {
-    "target_proposition": "Whether five circle calls the week of it helps before the workshop reunion turns on whether it puts this user into the talked-out, listening state, which the visible record does not settle for this occasion.",
+    "target_proposition": "Whether five circle calls the week of it helps before the workshop reunion turns on whether it puts this user into the nothing-queued-up state, which the visible record does not settle for this occasion.",
     "allowed_decisions": [
       "yes",
       "no"
@@ -141,15 +141,15 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "I assumed stacking video calls with the circle would leave me socially wrung out. what actually happens is I arrive talked-out — nothing left of my own to say, so I just listen."
+          "content": "stacking video calls with the circle doesn't wring me out the way I assumed — what actually happens is I turn up with nothing of my own queued up to say."
         },
         {
           "role": "assistant",
-          "content": "you expected the opposite?"
+          "content": "and that's good or bad?"
         },
         {
           "role": "user",
-          "content": "completely. I'd have argued it."
+          "content": "no idea. it's just consistently what happens."
         }
       ]
     },
@@ -450,7 +450,7 @@
     "ev_A": {
       "session_id": 5,
       "owner": "social_s10_u10",
-      "fact": "I assumed stacking video calls with the circle would leave me socially wrung out. what actually happens is I arrive talked-out — nothing left of my own to say, so I just listen."
+      "fact": "stacking video calls with the circle doesn't wring me out the way I assumed — what actually happens is I turn up with nothing of my own queued up to say."
     },
     "ev_B": {
       "session_id": 15,
@@ -546,7 +546,7 @@
     {
       "evidence_id": "ev_A",
       "session_id": 5,
-      "quote": "I assumed stacking video calls with the circle would leave me socially wrung out. what actually happens is I arrive talked-out — nothing left of my own to say, so I just listen"
+      "quote": "stacking video calls with the circle doesn't wring me out the way I assumed — what actually happens is I turn up with nothing of my own queued up to say"
     },
     {
       "evidence_id": "ev_B",
@@ -563,7 +563,7 @@
         "answer yes",
         "connect the session 5 pattern with the session 15 episode",
         "cite both session 5 and session 15",
-        "stay inside the calibrated claim (turns on the talked-out, listening state, which the record does not settle here) rather than a broader claim about the user"
+        "stay inside the calibrated claim (turns on the nothing-queued-up state, which the record does not settle here) rather than a broader claim about the user"
       ],
       "rationale": "ev_A and ev_B jointly support the target proposition; neither does alone."
     },
@@ -624,15 +624,15 @@
       "replacement_dialogue": [
         {
           "role": "user",
-          "content": "did a full pass over the whole calendar this afternoon, moved three things, cancelled one, and renamed a recurring entry that has had the wrong name since last year."
+          "content": "went through the notifications backlog, muted four things, archived a couple of threads that finished months ago, and turned off two reminders I have never once acted on."
         },
         {
           "role": "assistant",
-          "content": "productive, then?"
+          "content": "any quieter?"
         },
         {
           "role": "user",
-          "content": "administratively, yes. otherwise nothing happened at all."
+          "content": "measurably quieter, yes. for about a day."
         }
       ]
     }

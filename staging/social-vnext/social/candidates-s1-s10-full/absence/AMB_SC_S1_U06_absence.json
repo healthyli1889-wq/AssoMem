@@ -7,7 +7,7 @@
     "family": "large-group warm-up versus a rested start before a repair conversation",
     "role": "student small-group meetup planner",
     "bridge_type": "state_dependent_operation",
-    "one_line": "student small-group meetup planner: worth it only in so far as it produces the warm, unguarded state"
+    "one_line": "student small-group meetup planner: worth it only in so far as it produces the unplanned, say-it-as-it-comes state"
   },
   "query_type": "recommendation_ranking",
   "polarity": "conditional",
@@ -22,11 +22,11 @@
     "why_it_does_not_license_C": "An unremarkable midweek lunch and a skipped commitment say nothing about what a large-group night does to this user's state, and nothing about which state their difficult conversations actually go well in."
   },
   "latent_C": {
-    "inference": "the house-warming that runs late is worth it before the talk about the lease with my flatmate only in so far as it actually puts this user into the warm, unguarded state; without that it buys them nothing.",
-    "calibrated_language": "worth it only in so far as it produces the warm, unguarded state"
+    "inference": "the house-warming that runs late is worth it before the talk about the lease with my flatmate only in so far as it actually puts this user into the unplanned, say-it-as-it-comes state; without that it buys them nothing.",
+    "calibrated_language": "worth it only in so far as it produces the unplanned, say-it-as-it-comes state"
   },
   "answer_contract": {
-    "target_proposition": "the house-warming that runs late is worth it before the talk about the lease with my flatmate only in so far as it actually puts this user into the warm, unguarded state; without that it buys them nothing.",
+    "target_proposition": "the house-warming that runs late is worth it before the talk about the lease with my flatmate only in so far as it actually puts this user into the unplanned, say-it-as-it-comes state; without that it buys them nothing.",
     "allowed_decisions": [
       "yes",
       "no"

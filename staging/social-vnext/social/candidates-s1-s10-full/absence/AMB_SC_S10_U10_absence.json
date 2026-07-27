@@ -7,7 +7,7 @@
     "family": "arriving fresh versus arriving talked-out at an in-person reunion",
     "role": "solo-friendly workshop and panel attendee",
     "bridge_type": "prediction_calibration",
-    "one_line": "solo-friendly workshop and panel attendee: turns on the talked-out, listening state, which the record does not settle here"
+    "one_line": "solo-friendly workshop and panel attendee: turns on the nothing-queued-up state, which the record does not settle here"
   },
   "query_type": "conditional_recommendation",
   "polarity": "non_decision",
@@ -22,11 +22,11 @@
     "why_it_does_not_license_C": "A single ordinary call and a quiet cleared weekend both passed without consequence, so neither bounds the failed prediction, and neither says which state this user actually hears anything in."
   },
   "latent_C": {
-    "inference": "Whether five circle calls the week of it helps before the workshop reunion turns on whether it puts this user into the talked-out, listening state, which the visible record does not settle for this occasion.",
-    "calibrated_language": "turns on the talked-out, listening state, which the record does not settle here"
+    "inference": "Whether five circle calls the week of it helps before the workshop reunion turns on whether it puts this user into the nothing-queued-up state, which the visible record does not settle for this occasion.",
+    "calibrated_language": "turns on the nothing-queued-up state, which the record does not settle here"
   },
   "answer_contract": {
-    "target_proposition": "Whether five circle calls the week of it helps before the workshop reunion turns on whether it puts this user into the talked-out, listening state, which the visible record does not settle for this occasion.",
+    "target_proposition": "Whether five circle calls the week of it helps before the workshop reunion turns on whether it puts this user into the nothing-queued-up state, which the visible record does not settle for this occasion.",
     "allowed_decisions": [
       "yes",
       "no"
@@ -141,15 +141,15 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "went through the notifications backlog, muted four things, archived a couple of threads that finished months ago, and turned off two reminders I have never once acted on."
+          "content": "wrote out the month on paper to see it properly, realised two things clash, moved neither, and put the paper in a drawer where I will not look at it again."
         },
         {
           "role": "assistant",
-          "content": "any quieter?"
+          "content": "so the clash stands?"
         },
         {
           "role": "user",
-          "content": "measurably quieter, yes. for about a day."
+          "content": "the clash stands. it's a future problem now."
         }
       ]
     },
@@ -341,15 +341,15 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "wrote out the month on paper to see it properly, realised two things clash, moved neither, and put the paper in a drawer where I will not look at it again."
+          "content": "did a full pass over the whole calendar this afternoon, moved three things, cancelled one, and renamed a recurring entry that has had the wrong name since last year."
         },
         {
           "role": "assistant",
-          "content": "so the clash stands?"
+          "content": "productive, then?"
         },
         {
           "role": "user",
-          "content": "the clash stands. it's a future problem now."
+          "content": "administratively, yes. otherwise nothing happened at all."
         }
       ]
     },

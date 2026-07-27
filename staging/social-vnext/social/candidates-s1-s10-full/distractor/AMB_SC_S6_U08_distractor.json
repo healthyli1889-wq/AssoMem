@@ -7,7 +7,7 @@
     "family": "an early night versus short sleep before an early commitment to someone",
     "role": "community-event and career-meetup attendee",
     "bridge_type": "state_dependent_operation",
-    "one_line": "community-event and career-meetup attendee: turns on the short-sleep, unhesitating state, which the record does not settle here"
+    "one_line": "community-event and career-meetup attendee: turns on the non-deliberating state, which the record does not settle here"
   },
   "query_type": "conditional_recommendation",
   "polarity": "non_decision",
@@ -22,11 +22,11 @@
     "why_it_does_not_license_C": "A late night with an empty next day and a full night before an ordinary Tuesday both cost nothing and reveal nothing about whether this user actually turns up for things they have promised."
   },
   "latent_C": {
-    "inference": "Whether the long fundraiser night before helps before the early shift at the food bank turns on whether it puts this user into the short-sleep, unhesitating state, which the visible record does not settle for this occasion.",
-    "calibrated_language": "turns on the short-sleep, unhesitating state, which the record does not settle here"
+    "inference": "Whether the long fundraiser night before helps before the early shift at the food bank turns on whether it puts this user into the non-deliberating state, which the visible record does not settle for this occasion.",
+    "calibrated_language": "turns on the non-deliberating state, which the record does not settle here"
   },
   "answer_contract": {
-    "target_proposition": "Whether the long fundraiser night before helps before the early shift at the food bank turns on whether it puts this user into the short-sleep, unhesitating state, which the visible record does not settle for this occasion.",
+    "target_proposition": "Whether the long fundraiser night before helps before the early shift at the food bank turns on whether it puts this user into the non-deliberating state, which the visible record does not settle for this occasion.",
     "allowed_decisions": [
       "yes",
       "no"
@@ -141,7 +141,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "on about five hours I lose the part of me that hesitates. blunt, decisive, no rehearsing — I just do the thing and think about it later."
+          "content": "on about five hours at most I lose the part of me that deliberates. I just move — no rehearsing, no weighing it up, act first and think about it later."
         },
         {
           "role": "assistant",
@@ -149,7 +149,7 @@
         },
         {
           "role": "user",
-          "content": "reliably. it's the most useful I get, oddly."
+          "content": "reliably. couldn't tell you if that's a good or a bad way to be."
         }
       ]
     },
@@ -450,7 +450,7 @@
     "ev_A": {
       "session_id": 5,
       "owner": "social_s6_u08",
-      "fact": "on about five hours I lose the part of me that hesitates. blunt, decisive, no rehearsing — I just do the thing and think about it later."
+      "fact": "on about five hours at most I lose the part of me that deliberates. I just move — no rehearsing, no weighing it up, act first and think about it later."
     },
     "ev_B": {
       "session_id": 14,
@@ -548,7 +548,7 @@
     {
       "evidence_id": "ev_A",
       "session_id": 5,
-      "quote": "on about five hours I lose the part of me that hesitates. blunt, decisive, no rehearsing — I just do the thing and think about it later"
+      "quote": "on about five hours at most I lose the part of me that deliberates. I just move — no rehearsing, no weighing it up, act first and think about it later"
     },
     {
       "evidence_id": "ev_B",

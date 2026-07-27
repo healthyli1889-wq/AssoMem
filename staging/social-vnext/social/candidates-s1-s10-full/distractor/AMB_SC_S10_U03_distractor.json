@@ -7,7 +7,7 @@
     "family": "arriving fresh versus arriving talked-out at an in-person reunion",
     "role": "weekend food-fair and match-day organizer",
     "bridge_type": "prediction_calibration",
-    "one_line": "weekend food-fair and match-day organizer: worth it only in so far as it produces the talked-out, listening state"
+    "one_line": "weekend food-fair and match-day organizer: worth it only in so far as it produces the nothing-queued-up state"
   },
   "query_type": "preference_generalization",
   "polarity": "conditional",
@@ -22,11 +22,11 @@
     "why_it_does_not_license_C": "A single ordinary call and a quiet cleared weekend both passed without consequence, so neither bounds the failed prediction, and neither says which state this user actually hears anything in."
   },
   "latent_C": {
-    "inference": "six long calls the week before is worth it before the family reunion only in so far as it actually puts this user into the talked-out, listening state; without that it buys them nothing.",
-    "calibrated_language": "worth it only in so far as it produces the talked-out, listening state"
+    "inference": "six long calls the week before is worth it before the family reunion only in so far as it actually puts this user into the nothing-queued-up state; without that it buys them nothing.",
+    "calibrated_language": "worth it only in so far as it produces the nothing-queued-up state"
   },
   "answer_contract": {
-    "target_proposition": "six long calls the week before is worth it before the family reunion only in so far as it actually puts this user into the talked-out, listening state; without that it buys them nothing.",
+    "target_proposition": "six long calls the week before is worth it before the family reunion only in so far as it actually puts this user into the nothing-queued-up state; without that it buys them nothing.",
     "allowed_decisions": [
       "yes",
       "no"
@@ -141,15 +141,15 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "I assumed stacking long video calls would leave me socially wrung out. what actually happens is I arrive talked-out — nothing left of my own to say, so I just listen."
+          "content": "stacking long video calls doesn't wring me out the way I assumed — what actually happens is I turn up with nothing of my own queued up to say."
         },
         {
           "role": "assistant",
-          "content": "you expected the opposite?"
+          "content": "and that's good or bad?"
         },
         {
           "role": "user",
-          "content": "completely. I'd have argued it."
+          "content": "no idea. it's just consistently what happens."
         }
       ]
     },
@@ -450,7 +450,7 @@
     "ev_A": {
       "session_id": 5,
       "owner": "social_s10_u03",
-      "fact": "I assumed stacking long video calls would leave me socially wrung out. what actually happens is I arrive talked-out — nothing left of my own to say, so I just listen."
+      "fact": "stacking long video calls doesn't wring me out the way I assumed — what actually happens is I turn up with nothing of my own queued up to say."
     },
     "ev_B": {
       "session_id": 15,
@@ -548,7 +548,7 @@
     {
       "evidence_id": "ev_A",
       "session_id": 5,
-      "quote": "I assumed stacking long video calls would leave me socially wrung out. what actually happens is I arrive talked-out — nothing left of my own to say, so I just listen"
+      "quote": "stacking long video calls doesn't wring me out the way I assumed — what actually happens is I turn up with nothing of my own queued up to say"
     },
     {
       "evidence_id": "ev_B",

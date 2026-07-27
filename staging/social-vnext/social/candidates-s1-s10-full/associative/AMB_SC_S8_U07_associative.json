@@ -7,7 +7,7 @@
     "family": "the composed monthly letter versus uncomposed daily reactions",
     "role": "theatre-for-two planner who batches long threads",
     "bridge_type": "strategy_outcome_contingency",
-    "one_line": "theatre-for-two planner who batches long threads: worth it only in so far as it produces the uncomposed daily register"
+    "one_line": "theatre-for-two planner who batches long threads: worth it only in so far as it produces the uncomposed register"
   },
   "query_type": "behavior_explanation",
   "polarity": "conditional",
@@ -22,11 +22,11 @@
     "why_it_does_not_license_C": "A well-received trip write-up and some idle reactions in a queue show both registers are available; neither says which one this user's distance friendships actually survive on."
   },
   "latent_C": {
-    "inference": "quick uncomposed daily reacts is worth it before the friend from the book group who moved countries only in so far as it actually puts this user into the uncomposed daily register; without that it buys them nothing.",
-    "calibrated_language": "worth it only in so far as it produces the uncomposed daily register"
+    "inference": "quick uncomposed daily reacts is worth it before the friend from the book group who moved countries only in so far as it actually puts this user into the uncomposed register; without that it buys them nothing.",
+    "calibrated_language": "worth it only in so far as it produces the uncomposed register"
   },
   "answer_contract": {
-    "target_proposition": "quick uncomposed daily reacts is worth it before the friend from the book group who moved countries only in so far as it actually puts this user into the uncomposed daily register; without that it buys them nothing.",
+    "target_proposition": "quick uncomposed daily reacts is worth it before the friend from the book group who moved countries only in so far as it actually puts this user into the uncomposed register; without that it buys them nothing.",
     "allowed_decisions": [
       "yes",
       "no"
@@ -121,7 +121,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "when I sit down to write the long email I perform. it turns into an essay about my life with all the hard parts edited out and a neat ending stuck on."
+          "content": "when I sit down to write the long email it comes out shaped — an account of my life with an arc to it and a proper ending, rather than whatever was actually going on."
         },
         {
           "role": "assistant",
@@ -129,7 +129,7 @@
         },
         {
           "role": "user",
-          "content": "not deliberately. it just happens once I'm composing something."
+          "content": "not deliberately. it just happens once I'm composing something. no view on whether that's better."
         }
       ]
     },
@@ -450,7 +450,7 @@
     "ev_A": {
       "session_id": 4,
       "owner": "social_s8_u07",
-      "fact": "when I sit down to write the long email I perform. it turns into an essay about my life with all the hard parts edited out and a neat ending stuck on."
+      "fact": "when I sit down to write the long email it comes out shaped — an account of my life with an arc to it and a proper ending, rather than whatever was actually going on."
     },
     "ev_B": {
       "session_id": 13,
@@ -546,7 +546,7 @@
     {
       "evidence_id": "ev_A",
       "session_id": 4,
-      "quote": "when I sit down to write the long email I perform. it turns into an essay about my life with all the hard parts edited out and a neat ending stuck on"
+      "quote": "when I sit down to write the long email it comes out shaped — an account of my life with an arc to it and a proper ending, rather than whatever was actually going on"
     },
     {
       "evidence_id": "ev_B",
@@ -563,7 +563,7 @@
         "answer yes",
         "connect the session 4 pattern with the session 13 episode",
         "cite both session 4 and session 13",
-        "stay inside the calibrated claim (worth it only in so far as it produces the uncomposed daily register) rather than a broader claim about the user"
+        "stay inside the calibrated claim (worth it only in so far as it produces the uncomposed register) rather than a broader claim about the user"
       ],
       "rationale": "ev_A and ev_B jointly support the target proposition; neither does alone."
     },
@@ -624,15 +624,15 @@
       "replacement_dialogue": [
         {
           "role": "user",
-          "content": "went through the notifications backlog, muted four things, archived a couple of threads that finished months ago, and turned off two reminders I have never once acted on."
+          "content": "did a full pass over the whole calendar this afternoon, moved three things, cancelled one, and renamed a recurring entry that has had the wrong name since last year."
         },
         {
           "role": "assistant",
-          "content": "any quieter?"
+          "content": "productive, then?"
         },
         {
           "role": "user",
-          "content": "measurably quieter, yes. for about a day."
+          "content": "administratively, yes. otherwise nothing happened at all."
         }
       ]
     }

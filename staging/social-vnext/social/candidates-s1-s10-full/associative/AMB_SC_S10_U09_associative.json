@@ -7,7 +7,7 @@
     "family": "arriving fresh versus arriving talked-out at an in-person reunion",
     "role": "indie-gig and gallery regular who prefers text to calls",
     "bridge_type": "prediction_calibration",
-    "one_line": "indie-gig and gallery regular who prefers text to calls: worth it only in so far as it produces the talked-out, listening state"
+    "one_line": "indie-gig and gallery regular who prefers text to calls: worth it only in so far as it produces the nothing-queued-up state"
   },
   "query_type": "behavior_explanation",
   "polarity": "conditional",
@@ -22,11 +22,11 @@
     "why_it_does_not_license_C": "A single ordinary call and a quiet cleared weekend both passed without consequence, so neither bounds the failed prediction, and neither says which state this user actually hears anything in."
   },
   "latent_C": {
-    "inference": "four gallery calls the same week is worth it before the studio reunion only in so far as it actually puts this user into the talked-out, listening state; without that it buys them nothing.",
-    "calibrated_language": "worth it only in so far as it produces the talked-out, listening state"
+    "inference": "four gallery calls the same week is worth it before the studio reunion only in so far as it actually puts this user into the nothing-queued-up state; without that it buys them nothing.",
+    "calibrated_language": "worth it only in so far as it produces the nothing-queued-up state"
   },
   "answer_contract": {
-    "target_proposition": "four gallery calls the same week is worth it before the studio reunion only in so far as it actually puts this user into the talked-out, listening state; without that it buys them nothing.",
+    "target_proposition": "four gallery calls the same week is worth it before the studio reunion only in so far as it actually puts this user into the nothing-queued-up state; without that it buys them nothing.",
     "allowed_decisions": [
       "yes",
       "no"
@@ -141,15 +141,15 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "I assumed stacking video hangs with the gallery friends would leave me socially wrung out. what actually happens is I arrive talked-out — nothing left of my own to say, so I just listen."
+          "content": "stacking video hangs with the gallery friends doesn't wring me out the way I assumed — what actually happens is I turn up with nothing of my own queued up to say."
         },
         {
           "role": "assistant",
-          "content": "you expected the opposite?"
+          "content": "and that's good or bad?"
         },
         {
           "role": "user",
-          "content": "completely. I'd have argued it."
+          "content": "no idea. it's just consistently what happens."
         }
       ]
     },
@@ -450,7 +450,7 @@
     "ev_A": {
       "session_id": 5,
       "owner": "social_s10_u09",
-      "fact": "I assumed stacking video hangs with the gallery friends would leave me socially wrung out. what actually happens is I arrive talked-out — nothing left of my own to say, so I just listen."
+      "fact": "stacking video hangs with the gallery friends doesn't wring me out the way I assumed — what actually happens is I turn up with nothing of my own queued up to say."
     },
     "ev_B": {
       "session_id": 15,
@@ -546,7 +546,7 @@
     {
       "evidence_id": "ev_A",
       "session_id": 5,
-      "quote": "I assumed stacking video hangs with the gallery friends would leave me socially wrung out. what actually happens is I arrive talked-out — nothing left of my own to say, so I just listen"
+      "quote": "stacking video hangs with the gallery friends doesn't wring me out the way I assumed — what actually happens is I turn up with nothing of my own queued up to say"
     },
     {
       "evidence_id": "ev_B",
@@ -563,7 +563,7 @@
         "answer yes",
         "connect the session 5 pattern with the session 15 episode",
         "cite both session 5 and session 15",
-        "stay inside the calibrated claim (worth it only in so far as it produces the talked-out, listening state) rather than a broader claim about the user"
+        "stay inside the calibrated claim (worth it only in so far as it produces the nothing-queued-up state) rather than a broader claim about the user"
       ],
       "rationale": "ev_A and ev_B jointly support the target proposition; neither does alone."
     },
@@ -624,15 +624,15 @@
       "replacement_dialogue": [
         {
           "role": "user",
-          "content": "did a full pass over the whole calendar this afternoon, moved three things, cancelled one, and renamed a recurring entry that has had the wrong name since last year."
+          "content": "went through the notifications backlog, muted four things, archived a couple of threads that finished months ago, and turned off two reminders I have never once acted on."
         },
         {
           "role": "assistant",
-          "content": "productive, then?"
+          "content": "any quieter?"
         },
         {
           "role": "user",
-          "content": "administratively, yes. otherwise nothing happened at all."
+          "content": "measurably quieter, yes. for about a day."
         }
       ]
     }

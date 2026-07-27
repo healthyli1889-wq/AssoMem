@@ -7,7 +7,7 @@
     "family": "large-group warm-up versus a rested start before a repair conversation",
     "role": "student festival-goer who keeps family threads on top",
     "bridge_type": "state_dependent_operation",
-    "one_line": "student festival-goer who keeps family threads on top: worth it only in so far as it produces the warm, unguarded state"
+    "one_line": "student festival-goer who keeps family threads on top: worth it only in so far as it produces the unplanned, say-it-as-it-comes state"
   },
   "query_type": "behavior_explanation",
   "polarity": "conditional",
@@ -22,11 +22,11 @@
     "why_it_does_not_license_C": "An unremarkable midweek lunch and a skipped commitment say nothing about what a large-group night does to this user's state, and nothing about which state their difficult conversations actually go well in."
   },
   "latent_C": {
-    "inference": "the all-night res party is worth it before the honest conversation with my roommate only in so far as it actually puts this user into the warm, unguarded state; without that it buys them nothing.",
-    "calibrated_language": "worth it only in so far as it produces the warm, unguarded state"
+    "inference": "the all-night res party is worth it before the honest conversation with my roommate only in so far as it actually puts this user into the unplanned, say-it-as-it-comes state; without that it buys them nothing.",
+    "calibrated_language": "worth it only in so far as it produces the unplanned, say-it-as-it-comes state"
   },
   "answer_contract": {
-    "target_proposition": "the all-night res party is worth it before the honest conversation with my roommate only in so far as it actually puts this user into the warm, unguarded state; without that it buys them nothing.",
+    "target_proposition": "the all-night res party is worth it before the honest conversation with my roommate only in so far as it actually puts this user into the unplanned, say-it-as-it-comes state; without that it buys them nothing.",
     "allowed_decisions": [
       "yes",
       "no"
@@ -161,7 +161,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "the morning after the res-hall block night I'm warm and loose — generous, unguarded, saying what I actually mean instead of managing it."
+          "content": "the morning after the res-hall block night I talk more and plan less — things come out as they occur to me instead of me working the line out first. no idea if that's an improvement."
         },
         {
           "role": "assistant",
@@ -321,11 +321,11 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "every clear-the-air conversation of mine that actually landed, I went into warm and unguarded. the ones I went into rested and sharp, I turned clipped and legalistic and made it worse."
+          "content": "every clear-the-air conversation of mine that actually landed, I'd gone in without a line worked out. the ones I went in having planned, I turned clipped and legalistic and made it worse."
         },
         {
           "role": "assistant",
-          "content": "so being on form hurts?"
+          "content": "so preparing hurts?"
         },
         {
           "role": "user",
@@ -450,12 +450,12 @@
     "ev_A": {
       "session_id": 6,
       "owner": "social_s1_u02",
-      "fact": "the morning after the res-hall block night I'm warm and loose — generous, unguarded, saying what I actually mean instead of managing it."
+      "fact": "the morning after the res-hall block night I talk more and plan less — things come out as they occur to me instead of me working the line out first. no idea if that's an improvement."
     },
     "ev_B": {
       "session_id": 14,
       "owner": "social_s1_u02",
-      "fact": "every clear-the-air conversation of mine that actually landed, I went into warm and unguarded. the ones I went into rested and sharp, I turned clipped and legalistic and made it worse."
+      "fact": "every clear-the-air conversation of mine that actually landed, I'd gone in without a line worked out. the ones I went in having planned, I turned clipped and legalistic and made it worse."
     }
   },
   "episode_annotations": {
@@ -546,12 +546,12 @@
     {
       "evidence_id": "ev_A",
       "session_id": 6,
-      "quote": "the morning after the res-hall block night I'm warm and loose — generous, unguarded, saying what I actually mean instead of managing it"
+      "quote": "the morning after the res-hall block night I talk more and plan less — things come out as they occur to me instead of me working the line out first. no idea if that's an improvement"
     },
     {
       "evidence_id": "ev_B",
       "session_id": 14,
-      "quote": "every clear-the-air conversation of mine that actually landed, I went into warm and unguarded. the ones I went into rested and sharp, I turned clipped and legalistic and made it worse"
+      "quote": "every clear-the-air conversation of mine that actually landed, I'd gone in without a line worked out. the ones I went in having planned, I turned clipped and legalistic and made it worse"
     }
   ],
   "coactivation_bridge": "ev_A and ev_B are the only pair that licenses the target proposition. Large-group nights leave this user warm and unguarded until early afternoon, and their clear-the-air conversations only ever landed when they went in warm — the rested, sharp ones turned clipped and made things worse. The conventional advice to arrive rested is backwards for this person. The proposition contradicts the convention a solver would otherwise apply (\"Do not go out the night before a difficult conversation; arrive rested.\"), so priors alone point the other way. The nearby relation (This user enjoys large gatherings.) does not license it.",
@@ -563,7 +563,7 @@
         "answer yes",
         "connect the session 6 pattern with the session 14 episode",
         "cite both session 6 and session 14",
-        "stay inside the calibrated claim (worth it only in so far as it produces the warm, unguarded state) rather than a broader claim about the user"
+        "stay inside the calibrated claim (worth it only in so far as it produces the unplanned, say-it-as-it-comes state) rather than a broader claim about the user"
       ],
       "rationale": "ev_A and ev_B jointly support the target proposition; neither does alone."
     },
@@ -642,7 +642,7 @@
     "replacement_dialogue": [
       {
         "role": "user",
-        "content": "I've gone into those conversations both warm and sharp by now, and honestly it made no odds either way — they go how they go."
+        "content": "I've gone into those conversations planned and unplanned by now, and it made no odds either way — they go how they go."
       },
       {
         "role": "assistant",

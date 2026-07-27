@@ -7,7 +7,7 @@
     "family": "an early night versus short sleep before an early commitment to someone",
     "role": "theatre-for-two planner who batches long threads",
     "bridge_type": "state_dependent_operation",
-    "one_line": "theatre-for-two planner who batches long threads: worth it only in so far as it produces the short-sleep, unhesitating state"
+    "one_line": "theatre-for-two planner who batches long threads: worth it only in so far as it produces the non-deliberating state"
   },
   "query_type": "behavior_explanation",
   "polarity": "conditional",
@@ -22,11 +22,11 @@
     "why_it_does_not_license_C": "A late night with an empty next day and a full night before an ordinary Tuesday both cost nothing and reveal nothing about whether this user actually turns up for things they have promised."
   },
   "latent_C": {
-    "inference": "the late closing-night dinner before it is worth it before the early drive to my friend's ceremony only in so far as it actually puts this user into the short-sleep, unhesitating state; without that it buys them nothing.",
-    "calibrated_language": "worth it only in so far as it produces the short-sleep, unhesitating state"
+    "inference": "the late closing-night dinner before it is worth it before the early drive to my friend's ceremony only in so far as it actually puts this user into the non-deliberating state; without that it buys them nothing.",
+    "calibrated_language": "worth it only in so far as it produces the non-deliberating state"
   },
   "answer_contract": {
-    "target_proposition": "the late closing-night dinner before it is worth it before the early drive to my friend's ceremony only in so far as it actually puts this user into the short-sleep, unhesitating state; without that it buys them nothing.",
+    "target_proposition": "the late closing-night dinner before it is worth it before the early drive to my friend's ceremony only in so far as it actually puts this user into the non-deliberating state; without that it buys them nothing.",
     "allowed_decisions": [
       "yes",
       "no"
@@ -141,15 +141,15 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "ended up rearranging the shelf instead of doing the thing I sat down to do, and then rearranged it back because the first version was better."
+          "content": "sat down and worked out who I actually owe a reply to, wrote the list out, then answered exactly none of them because it was late by the time the list existed."
         },
         {
           "role": "assistant",
-          "content": "net progress?"
+          "content": "the list helped?"
         },
         {
           "role": "user",
-          "content": "net zero, with extra steps."
+          "content": "the list existed. that's as far as it got."
         }
       ]
     },
