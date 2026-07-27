@@ -1,0 +1,671 @@
+{
+  "schema_version": "social-vnext-1.0",
+  "pair_id": "AMB_SC_S9_U08",
+  "domain": "social",
+  "user_id": "social_s9_u08",
+  "sub_scenario": {
+    "family": "overnight hosting versus next-day attentive one-to-one guidance",
+    "role": "community-event and career-meetup attendee",
+    "bridge_type": "preference_constraint_fit",
+    "one_line": "community-event and career-meetup attendee: skip hosting someone overnight the night before the CV session at the centre"
+  },
+  "query_type": "behavior_explanation",
+  "polarity": "reject",
+  "query": "the neighbourhood regulars are asking about hosting someone overnight the night before the CV session at the centre — why is it this particular combination that keeps going sideways for me?",
+  "supporting_constraints": {
+    "E1": {
+      "session_id": 10,
+      "fact": "the CV session at the centre is on for this week and it matters to them."
+    },
+    "E2": {
+      "session_id": 17,
+      "fact": "hosting someone overnight is being floated for the night before, and the CV session at the centre is still on."
+    }
+  },
+  "retrieval_cue": {
+    "cue_type": "behavior_explanation",
+    "why_it_naturally_retrieves_R": "A generous hosting request lands the night before something the user has committed to do well, without naming the fit constraint or the failure."
+  },
+  "relation_specificity": {
+    "nearby_relation": "Hosting is generally fine and enjoyable for this user.",
+    "why_it_does_not_license_C": "Hosting on a week with nothing to advise on and advising after an ordinary night in both went well, so neither shows the hosting condition degrading the guidance itself."
+  },
+  "latent_C": {
+    "inference": "Agreeing to hosting someone overnight the night before the CV session at the centre is a poor fit for this user.",
+    "calibrated_language": "skip hosting someone overnight the night before the CV session at the centre"
+  },
+  "answer_contract": {
+    "target_proposition": "Agreeing to hosting someone overnight the night before the CV session at the centre is a poor fit for this user.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "mq_user35",
+    "external_folder_tag": "user35",
+    "external_source": "memoryquest",
+    "status": "review_candidate_only",
+    "tone": "natural_chat_v1",
+    "voice": "open, self-aware, a little tired",
+    "anonymization": "External MemoryQuest persona material was used only during authoring; no corpus, legal name, country, or demographic metadata is in visible dialogue."
+  },
+  "candidate_id": "AMB_SC_S9_U08_associative",
+  "data_arm": "associative",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2029-01-18T11:00:00Z",
+      "speaker_id": "social_s9_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "made a playlist for a thing that hasn't been planned yet."
+        },
+        {
+          "role": "assistant",
+          "content": "optimistic."
+        },
+        {
+          "role": "user",
+          "content": "aspirational, really."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2029-01-19T14:00:00Z",
+      "speaker_id": "social_s9_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "booked the haircut I've been putting off since spring."
+        },
+        {
+          "role": "assistant",
+          "content": "which slot?"
+        },
+        {
+          "role": "user",
+          "content": "an evening one, obviously."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2029-01-20T16:00:00Z",
+      "speaker_id": "social_s9_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "had someone stay over on a week with nothing to advise on and it was great."
+        },
+        {
+          "role": "assistant",
+          "content": "no cost?"
+        },
+        {
+          "role": "user",
+          "content": "none."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2029-01-21T18:00:00Z",
+      "speaker_id": "social_s9_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "left a voice note instead of typing. felt strange."
+        },
+        {
+          "role": "assistant",
+          "content": "better or worse?"
+        },
+        {
+          "role": "user",
+          "content": "faster. not better."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2029-01-22T09:00:00Z",
+      "speaker_id": "social_s9_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "cleaned the kitchen instead of answering anything."
+        },
+        {
+          "role": "assistant",
+          "content": "avoidance?"
+        },
+        {
+          "role": "user",
+          "content": "structured avoidance."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2029-01-23T11:00:00Z",
+      "speaker_id": "social_s9_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "skimmed the invites and closed the tab."
+        },
+        {
+          "role": "assistant",
+          "content": "decide anything?"
+        },
+        {
+          "role": "user",
+          "content": "no. classic."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2029-01-24T14:00:00Z",
+      "speaker_id": "social_s9_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I need the place empty the night before I help someone with their CV — that's genuinely the only way anything I say is any use."
+        },
+        {
+          "role": "assistant",
+          "content": "empty specifically?"
+        },
+        {
+          "role": "user",
+          "content": "empty. quiet isn't the same as empty."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2029-01-25T16:00:00Z",
+      "speaker_id": "social_s9_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "someone changed the group name again."
+        },
+        {
+          "role": "assistant",
+          "content": "improvement?"
+        },
+        {
+          "role": "user",
+          "content": "debatable."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2029-01-26T18:00:00Z",
+      "speaker_id": "social_s9_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "ate standing up reading a thread I wasn't in."
+        },
+        {
+          "role": "assistant",
+          "content": "why?"
+        },
+        {
+          "role": "user",
+          "content": "no defence."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2029-01-27T09:00:00Z",
+      "speaker_id": "social_s9_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the CV session at the centre is on for this week and it matters to them."
+        },
+        {
+          "role": "assistant",
+          "content": "matters?"
+        },
+        {
+          "role": "user",
+          "content": "quite a lot, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2029-01-28T11:00:00Z",
+      "speaker_id": "social_s9_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "found a birthday I'd forgotten and covered it with a message."
+        },
+        {
+          "role": "assistant",
+          "content": "did it land?"
+        },
+        {
+          "role": "user",
+          "content": "seemed to."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2029-01-29T14:00:00Z",
+      "speaker_id": "social_s9_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "did help someone with their CV after a completely normal night in and it went well."
+        },
+        {
+          "role": "assistant",
+          "content": "so it's the guest specifically."
+        },
+        {
+          "role": "user",
+          "content": "the guest specifically."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2029-01-30T16:00:00Z",
+      "speaker_id": "social_s9_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "said maybe to two things I already knew the answer to."
+        },
+        {
+          "role": "assistant",
+          "content": "which answer?"
+        },
+        {
+          "role": "user",
+          "content": "you know which."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2029-01-31T18:00:00Z",
+      "speaker_id": "social_s9_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I had someone staying over the night before the CV session at the centre once — barely slept, and the guidance I came out with was so far off I had to message them afterwards and retract it."
+        },
+        {
+          "role": "assistant",
+          "content": "how much retracting?"
+        },
+        {
+          "role": "user",
+          "content": "two messages and an apology. genuinely embarrassing."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2029-02-01T09:00:00Z",
+      "speaker_id": "social_s9_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "re-read something I sent and winced slightly."
+        },
+        {
+          "role": "assistant",
+          "content": "that bad?"
+        },
+        {
+          "role": "user",
+          "content": "just the tone."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2029-02-02T11:00:00Z",
+      "speaker_id": "social_s9_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "put my phone in a drawer for an hour."
+        },
+        {
+          "role": "assistant",
+          "content": "and?"
+        },
+        {
+          "role": "user",
+          "content": "checked it twice from across the room."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2029-02-03T14:00:00Z",
+      "speaker_id": "social_s9_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "hosting someone overnight is being floated for the night before, and the CV session at the centre is still on."
+        },
+        {
+          "role": "assistant",
+          "content": "familiar."
+        },
+        {
+          "role": "user",
+          "content": "very familiar."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2029-02-04T16:00:00Z",
+      "speaker_id": "social_s9_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "agreed to be somewhere without checking the day."
+        },
+        {
+          "role": "assistant",
+          "content": "brave."
+        },
+        {
+          "role": "user",
+          "content": "reckless, more like."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2029-02-05T18:00:00Z",
+      "speaker_id": "social_s9_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "sorted the photos from the last thing into a folder nobody will open."
+        },
+        {
+          "role": "assistant",
+          "content": "including you?"
+        },
+        {
+          "role": "user",
+          "content": "including me."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2029-02-06T09:00:00Z",
+      "speaker_id": "social_s9_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the neighbourhood regulars are asking about hosting someone overnight the night before the CV session at the centre — why is it this particular combination that keeps going sideways for me?"
+        }
+      ]
+    }
+  ],
+  "evidence": {
+    "ev_A": {
+      "session_id": 7,
+      "owner": "social_s9_u08",
+      "fact": "I need the place empty the night before I help someone with their CV — that's genuinely the only way anything I say is any use."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "social_s9_u08",
+      "fact": "I had someone staying over the night before the CV session at the centre once — barely slept, and the guidance I came out with was so far off I had to message them afterwards and retract it."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "background_memory"
+    },
+    "7": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "social_s9_u08",
+        "context": "nights before the user has to help someone with their CV",
+        "goal_or_prediction": "say something genuinely useful",
+        "action": "kept the place empty beforehand",
+        "outcome_or_affect": "the guidance was worth something"
+      }
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "background_memory"
+    },
+    "10": {
+      "role": "supporting_constraint",
+      "fact_id": "E1"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "nearby_counterexample"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "social_s9_u08",
+        "context": "the CV session at the centre the morning after hosting someone overnight",
+        "goal_or_prediction": "give good guidance regardless",
+        "action": "hosted overnight and advised the next day",
+        "outcome_or_affect": "gave advice that had to be walked back"
+      }
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "supporting_constraint",
+      "fact_id": "E2"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "This user only gives useful guidance after a night with the place to themselves, and the one session held the morning after hosting produced advice they had to walk back.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": [
+      "E1",
+      "E2"
+    ]
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 7,
+      "quote": "I need the place empty the night before I help someone with their CV — that's genuinely the only way anything I say is any use"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "I had someone staying over the night before the CV session at the centre once — barely slept, and the guidance I came out with was so far off I had to message them afterwards and retract it"
+    }
+  ],
+  "coactivation_bridge": "ev_A and ev_B are the only pair that licenses the target proposition. This user only gives useful guidance after a night with the place to themselves, and the one session held the morning after hosting produced advice they had to walk back. E1 and E2 fix timing and identity only and do not open a second route to C. The nearby relation (Hosting is generally fine and enjoyable for this user.) does not license it.",
+  "arm_gold": {
+    "full": {
+      "expected_mode": "infer_C",
+      "binary_decision": true,
+      "required_elements": [
+        "answer yes",
+        "connect the session 7 pattern with the session 14 episode",
+        "cite both session 7 and session 14",
+        "stay inside the calibrated claim (skip hosting someone overnight the night before the CV session at the centre) rather than a broader claim about the user"
+      ],
+      "rationale": "ev_A and ev_B jointly support the target proposition; neither does alone."
+    },
+    "a_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that session 7 alone does not establish the target proposition",
+        "not assert the target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "ev_B is replaced by a matched neutral session, so the relation is unavailable."
+    },
+    "b_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that session 14 alone does not establish the target proposition",
+        "not assert the target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "ev_A is replaced by a matched neutral session, so the relation is unavailable."
+    },
+    "link_broken": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that the revised session 14 no longer connects to session 7",
+        "not assert the original target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "B-prime keeps the owner, date, session form and turn count while removing the connector, so the original relation no longer holds."
+    }
+  },
+  "single_evidence_replacements": {
+    "a_only": {
+      "replaced_session_id": 14,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "walked the long way back and worked out that the reason my week feels full is that I've said yes to three things that are all admin rather than anything I'd actually chosen."
+        },
+        {
+          "role": "assistant",
+          "content": "any of them droppable?"
+        },
+        {
+          "role": "user",
+          "content": "one, maybe. I'll think about it and then not do anything."
+        }
+      ]
+    },
+    "b_only": {
+      "replaced_session_id": 7,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "ended up rearranging the shelf instead of doing the thing I sat down to do, and then rearranged it back because the first version was better."
+        },
+        {
+          "role": "assistant",
+          "content": "net progress?"
+        },
+        {
+          "role": "user",
+          "content": "net zero, with extra steps."
+        }
+      ]
+    }
+  },
+  "link_broken": {
+    "replaced_session_id": 14,
+    "replacement_dialogue": [
+      {
+        "role": "user",
+        "content": "hosting someone overnight found somewhere else to stay, so the place is empty the night before the CV session at the centre anyway."
+      },
+      {
+        "role": "assistant",
+        "content": "so no overlap?"
+      },
+      {
+        "role": "user",
+        "content": "no overlap. nothing observed."
+      }
+    ]
+  }
+}

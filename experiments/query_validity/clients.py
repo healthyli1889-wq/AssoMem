@@ -23,12 +23,18 @@ class ModelConfig:
     temperature: float = 0.0
     timeout: float = 120.0
     max_retries: int = 3
+    # Reasoning models spend this budget on hidden thinking before emitting any
+    # answer, so a cap sized for the answer alone returns an empty `content` with
+    # `finish_reason: length`. Configure per role via `{PREFIX}_MAX_TOKENS`.
+    max_tokens: int = 2048
 
     def __post_init__(self) -> None:
         if self.provider not in SUPPORTED_PROVIDERS:
             raise ValueError(f"Unsupported provider: {self.provider}")
         if not self.model or not self.api_key or not self.base_url:
             raise ValueError("model, api_key, and base_url are required")
+        if self.max_tokens < 1:
+            raise ValueError("max_tokens must be positive")
 
 
 def config_from_env(prefix: str) -> ModelConfig:
@@ -40,6 +46,7 @@ def config_from_env(prefix: str) -> ModelConfig:
         "temperature": float(os.environ.get(f"{prefix}_TEMPERATURE", "0")),
         "timeout": float(os.environ.get(f"{prefix}_TIMEOUT", "120")),
         "max_retries": int(os.environ.get(f"{prefix}_MAX_RETRIES", "3")),
+        "max_tokens": int(os.environ.get(f"{prefix}_MAX_TOKENS", "2048")),
     }
     return ModelConfig(**values)
 
@@ -56,13 +63,13 @@ def request_payload(config: ModelConfig, prompt: str) -> dict[str, Any]:
             "model": config.model,
             "messages": [{"role": "user", "content": prompt}],
             "temperature": config.temperature,
-            "max_tokens": 512,
+            "max_tokens": config.max_tokens,
             "response_format": {"type": "json_object"},
         }
     if config.provider == "anthropic":
         return {
             "model": config.model,
-            "max_tokens": 4096,
+            "max_tokens": config.max_tokens,
             "temperature": config.temperature,
             "system": "Return only valid JSON.",
             "messages": [{"role": "user", "content": prompt}],

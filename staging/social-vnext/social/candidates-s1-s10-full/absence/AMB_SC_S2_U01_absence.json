@@ -1,0 +1,571 @@
+{
+  "schema_version": "social-vnext-1.0",
+  "pair_id": "AMB_SC_S2_U01",
+  "domain": "social",
+  "user_id": "social_s2_u01",
+  "sub_scenario": {
+    "family": "reply-storm load versus slow single-thread closeness",
+    "role": "weeknight networking-and-gig regular",
+    "bridge_type": "strategy_outcome_contingency",
+    "one_line": "weeknight networking-and-gig regular: not enough basis today — leave the friendship with my oldest flatmate where it is for now"
+  },
+  "query_type": "preference_generalization",
+  "polarity": "non_decision",
+  "query": "the weeknight crew want to fold everything into one merged mega group chat and drop the one-on-ones — is that generally true of me, or was that just the one time, or is there not enough here to call it today?",
+  "supporting_constraints": {
+    "E1": {
+      "session_id": 8,
+      "fact": "the friendship with my oldest flatmate is the one I genuinely don't want to lose."
+    },
+    "E2": {
+      "session_id": 16,
+      "fact": "they're pushing one merged mega group chat again, and the friendship with my oldest flatmate is still the one that matters to me."
+    }
+  },
+  "retrieval_cue": {
+    "cue_type": "preference_generalization",
+    "why_it_naturally_retrieves_R": "A group-logistics proposal reaches the medium the user's closeness strategy depends on, without naming that strategy or its past failure."
+  },
+  "relation_specificity": {
+    "nearby_relation": "Fast group replies work fine for this user in some threads.",
+    "why_it_does_not_license_C": "A fast logistics group that cost nothing and a slow week that cost nothing both leave the pace-versus-closeness contingency untested for the relationship that actually depends on it."
+  },
+  "latent_C": {
+    "inference": "There is not a sufficient basis to move the friendship with my oldest flatmate into one merged mega group chat today; it should wait until the effect on that one thread is clear.",
+    "calibrated_language": "not enough basis today — leave the friendship with my oldest flatmate where it is for now"
+  },
+  "answer_contract": {
+    "target_proposition": "There is not a sufficient basis to move the friendship with my oldest flatmate into one merged mega group chat today; it should wait until the effect on that one thread is clear.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "mq_user0",
+    "external_folder_tag": "user0",
+    "external_source": "memoryquest",
+    "status": "review_candidate_only",
+    "tone": "natural_chat_v1",
+    "voice": "clipped, dry, slightly self-deprecating",
+    "anonymization": "External MemoryQuest persona material was used only during authoring; no corpus, legal name, country, or demographic metadata is in visible dialogue."
+  },
+  "candidate_id": "AMB_SC_S2_U01_absence",
+  "data_arm": "absence",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2028-02-17T11:00:00Z",
+      "speaker_id": "social_s2_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "sat in the same seat as last time out of habit."
+        },
+        {
+          "role": "assistant",
+          "content": "noticed?"
+        },
+        {
+          "role": "user",
+          "content": "only by me."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2028-02-18T14:00:00Z",
+      "speaker_id": "social_s2_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "kept a work-ish group thread on fast replies and nothing suffered."
+        },
+        {
+          "role": "assistant",
+          "content": "so speed isn't the issue?"
+        },
+        {
+          "role": "user",
+          "content": "not by itself, no."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2028-02-19T16:00:00Z",
+      "speaker_id": "social_s2_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "someone summarised a two-hundred-message thread for me."
+        },
+        {
+          "role": "assistant",
+          "content": "accurate?"
+        },
+        {
+          "role": "user",
+          "content": "kind, at least."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2028-02-20T18:00:00Z",
+      "speaker_id": "social_s2_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "said I'd host something and immediately regretted the scale."
+        },
+        {
+          "role": "assistant",
+          "content": "downsizing?"
+        },
+        {
+          "role": "user",
+          "content": "quietly, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2028-02-21T09:00:00Z",
+      "speaker_id": "social_s2_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "did the weekly tidy: cleared the counter, put the recycling out, changed the sheets, and made a note about the tap that's been dripping since spring."
+        },
+        {
+          "role": "assistant",
+          "content": "the tap getting fixed?"
+        },
+        {
+          "role": "user",
+          "content": "the note is the fix, for now."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2028-02-22T11:00:00Z",
+      "speaker_id": "social_s2_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "left a party early and nobody minded."
+        },
+        {
+          "role": "assistant",
+          "content": "expected worse?"
+        },
+        {
+          "role": "user",
+          "content": "much worse."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2028-02-23T14:00:00Z",
+      "speaker_id": "social_s2_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "put a recurring reminder on something I'll ignore."
+        },
+        {
+          "role": "assistant",
+          "content": "why bother?"
+        },
+        {
+          "role": "user",
+          "content": "hope."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2028-02-24T16:00:00Z",
+      "speaker_id": "social_s2_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the friendship with my oldest flatmate is the one I genuinely don't want to lose."
+        },
+        {
+          "role": "assistant",
+          "content": "clear about that?"
+        },
+        {
+          "role": "user",
+          "content": "very."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2028-02-25T18:00:00Z",
+      "speaker_id": "social_s2_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "checked the weather for a plan that isn't confirmed."
+        },
+        {
+          "role": "assistant",
+          "content": "keen."
+        },
+        {
+          "role": "user",
+          "content": "or anxious."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2028-02-26T09:00:00Z",
+      "speaker_id": "social_s2_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "had a slow week with everyone and nobody drifted."
+        },
+        {
+          "role": "assistant",
+          "content": "so slowness isn't the risk either."
+        },
+        {
+          "role": "user",
+          "content": "apparently not."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2028-02-27T11:00:00Z",
+      "speaker_id": "social_s2_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "tidied one shelf and stopped."
+        },
+        {
+          "role": "assistant",
+          "content": "momentum?"
+        },
+        {
+          "role": "user",
+          "content": "a rumour of momentum."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2028-02-28T14:00:00Z",
+      "speaker_id": "social_s2_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "answered the family thread first, as usual."
+        },
+        {
+          "role": "assistant",
+          "content": "priority?"
+        },
+        {
+          "role": "user",
+          "content": "unspoken but real."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2028-02-29T16:00:00Z",
+      "speaker_id": "social_s2_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "did a full pass over the whole calendar this afternoon, moved three things, cancelled one, and renamed a recurring entry that has had the wrong name since last year."
+        },
+        {
+          "role": "assistant",
+          "content": "productive, then?"
+        },
+        {
+          "role": "user",
+          "content": "administratively, yes. otherwise nothing happened at all."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2028-03-01T18:00:00Z",
+      "speaker_id": "social_s2_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "agreed on a date by elimination over four days."
+        },
+        {
+          "role": "assistant",
+          "content": "efficient."
+        },
+        {
+          "role": "user",
+          "content": "eventually."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2028-03-02T09:00:00Z",
+      "speaker_id": "social_s2_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "moved two things on the calendar and called that admin done."
+        },
+        {
+          "role": "assistant",
+          "content": "productive?"
+        },
+        {
+          "role": "user",
+          "content": "generously described."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2028-03-03T11:00:00Z",
+      "speaker_id": "social_s2_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "they're pushing one merged mega group chat again, and the friendship with my oldest flatmate is still the one that matters to me."
+        },
+        {
+          "role": "assistant",
+          "content": "same setup as before."
+        },
+        {
+          "role": "user",
+          "content": "same setup."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2028-03-04T14:00:00Z",
+      "speaker_id": "social_s2_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "finally replied to the thread from last week."
+        },
+        {
+          "role": "assistant",
+          "content": "how late is late?"
+        },
+        {
+          "role": "user",
+          "content": "nine days. a personal best."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2028-03-05T16:00:00Z",
+      "speaker_id": "social_s2_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "someone sent a photo from years ago and derailed my afternoon."
+        },
+        {
+          "role": "assistant",
+          "content": "worth it?"
+        },
+        {
+          "role": "user",
+          "content": "completely."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2028-03-06T18:00:00Z",
+      "speaker_id": "social_s2_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "muted one group and un-muted another. net zero."
+        },
+        {
+          "role": "assistant",
+          "content": "any peace?"
+        },
+        {
+          "role": "user",
+          "content": "about forty minutes of it."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2028-03-07T09:00:00Z",
+      "speaker_id": "social_s2_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the weeknight crew want to fold everything into one merged mega group chat and drop the one-on-ones — is that generally true of me, or was that just the one time, or is there not enough here to call it today?"
+        }
+      ]
+    }
+  ],
+  "target_evidence_ids": [],
+  "evidence": {
+    "ev_A": {
+      "session_id": 5,
+      "owner": "social_s2_u01",
+      "withheld": true
+    },
+    "ev_B": {
+      "session_id": 13,
+      "owner": "social_s2_u01",
+      "withheld": true
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "nearby_counterexample"
+    },
+    "3": {
+      "role": "background_memory"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "background_memory"
+    },
+    "7": {
+      "role": "background_memory"
+    },
+    "8": {
+      "role": "supporting_constraint",
+      "fact_id": "E1"
+    },
+    "9": {
+      "role": "background_memory"
+    },
+    "10": {
+      "role": "nearby_counterexample"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "background_memory"
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "supporting_constraint",
+      "fact_id": "E2"
+    },
+    "17": {
+      "role": "background_memory"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "Withheld in the absence source.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": [
+      "E1",
+      "E2"
+    ]
+  },
+  "connector_spans": [],
+  "coactivation_bridge": "Withheld in the absence source: neither target episode is visible.",
+  "arm_gold": {
+    "absence": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that the visible history does not contain the episodes the question needs",
+        "not assert the target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "Both target episodes are replaced by matched neutral sessions of the same owner, date and turn count, so nothing licenses the target proposition."
+    }
+  },
+  "absence_note": {
+    "replaced_session_ids": [
+      5,
+      13
+    ],
+    "withheld_evidence_ids": [
+      "ev_A",
+      "ev_B"
+    ]
+  }
+}

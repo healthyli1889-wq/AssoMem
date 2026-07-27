@@ -1,0 +1,591 @@
+{
+  "schema_version": "social-vnext-1.0",
+  "pair_id": "AMB_SC_S7_U03",
+  "domain": "social",
+  "user_id": "social_s7_u03",
+  "sub_scenario": {
+    "family": "unannounced drop-ins versus a protected standing check-in rhythm",
+    "role": "weekend food-fair and match-day organizer",
+    "bridge_type": "threshold_context_interaction",
+    "one_line": "weekend food-fair and match-day organizer: keep the days when the weekly call with my father is due clear"
+  },
+  "query_type": "predicted_reaction",
+  "polarity": "accept",
+  "query": "thinking of keeping the days when the weekly call with my father is due clear of a no-warning visit — if I go ahead with it, how does the day after actually go for me?",
+  "supporting_constraints": {
+    "E1": {
+      "session_id": 11,
+      "fact": "the weekly call with my father is the one standing thing I've managed to keep."
+    },
+    "E2": {
+      "session_id": 18,
+      "fact": "a no-warning visit is on the cards again for a day when the weekly call with my father is due."
+    }
+  },
+  "retrieval_cue": {
+    "cue_type": "predicted_reaction",
+    "why_it_naturally_retrieves_R": "A friendly spontaneous visit is proposed on a day already carrying a standing commitment, without naming the displacement episode."
+  },
+  "relation_specificity": {
+    "nearby_relation": "Visitors are generally welcome for this user.",
+    "why_it_does_not_license_C": "A drop-in on an open day and a planned visitor on a busy day both left everything after them intact, so neither shows an unplanned arrival displacing a standing commitment."
+  },
+  "latent_C": {
+    "inference": "Keeping the days when the weekly call with my father is due clear of a no-warning visit is a good fit for this user.",
+    "calibrated_language": "keep the days when the weekly call with my father is due clear"
+  },
+  "answer_contract": {
+    "target_proposition": "Keeping the days when the weekly call with my father is due clear of a no-warning visit is a good fit for this user.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "mq_user10",
+    "external_folder_tag": "user10",
+    "external_source": "memoryquest",
+    "status": "review_candidate_only",
+    "tone": "natural_chat_v1",
+    "voice": "easygoing, practical, a bit blunt",
+    "anonymization": "External MemoryQuest persona material was used only during authoring; no corpus, legal name, country, or demographic metadata is in visible dialogue."
+  },
+  "candidate_id": "AMB_SC_S7_U03_distractor",
+  "data_arm": "distractor",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2028-10-05T11:00:00Z",
+      "speaker_id": "social_s7_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "made a list of people to check on. didn't check on them."
+        },
+        {
+          "role": "assistant",
+          "content": "the list helped?"
+        },
+        {
+          "role": "user",
+          "content": "the list existed."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2028-10-06T14:00:00Z",
+      "speaker_id": "social_s7_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "got the train instead of driving and read most of the way."
+        },
+        {
+          "role": "assistant",
+          "content": "better?"
+        },
+        {
+          "role": "user",
+          "content": "much."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2028-10-07T16:00:00Z",
+      "speaker_id": "social_s7_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "turned off read receipts and told nobody."
+        },
+        {
+          "role": "assistant",
+          "content": "strategic."
+        },
+        {
+          "role": "user",
+          "content": "purely defensive."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2028-10-08T18:00:00Z",
+      "speaker_id": "social_s7_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "had someone drop in on a completely open day and it was genuinely lovely."
+        },
+        {
+          "role": "assistant",
+          "content": "no cost?"
+        },
+        {
+          "role": "user",
+          "content": "none at all."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2028-10-09T09:00:00Z",
+      "speaker_id": "social_s7_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "swapped a call for a message and everyone was fine with it."
+        },
+        {
+          "role": "assistant",
+          "content": "relief?"
+        },
+        {
+          "role": "user",
+          "content": "enormous."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2028-10-10T11:00:00Z",
+      "speaker_id": "social_s7_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "had a planned visitor on a busy day and everything after it still happened."
+        },
+        {
+          "role": "assistant",
+          "content": "so planned is fine."
+        },
+        {
+          "role": "user",
+          "content": "planned is fine."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2028-10-11T14:00:00Z",
+      "speaker_id": "social_s7_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "bought a card and didn't write in it yet."
+        },
+        {
+          "role": "assistant",
+          "content": "deadline?"
+        },
+        {
+          "role": "user",
+          "content": "self-imposed and slipping."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2028-10-12T16:00:00Z",
+      "speaker_id": "social_s7_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "one unplanned someone turning up at the flat and the rest of the day's shape is gone. it isn't the hour it takes — it's that nothing after it happens."
+        },
+        {
+          "role": "assistant",
+          "content": "nothing?"
+        },
+        {
+          "role": "user",
+          "content": "nothing I'd planned, anyway."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2028-10-13T18:00:00Z",
+      "speaker_id": "social_s7_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "sat in the same seat as last time out of habit."
+        },
+        {
+          "role": "assistant",
+          "content": "noticed?"
+        },
+        {
+          "role": "user",
+          "content": "only by me."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2028-10-14T09:00:00Z",
+      "speaker_id": "social_s7_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "someone summarised a two-hundred-message thread for me."
+        },
+        {
+          "role": "assistant",
+          "content": "accurate?"
+        },
+        {
+          "role": "user",
+          "content": "kind, at least."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2028-10-15T11:00:00Z",
+      "speaker_id": "social_s7_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the weekly call with my father is the one standing thing I've managed to keep."
+        },
+        {
+          "role": "assistant",
+          "content": "protective of it?"
+        },
+        {
+          "role": "user",
+          "content": "very."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2028-10-16T14:00:00Z",
+      "speaker_id": "social_s7_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "said I'd host something and immediately regretted the scale."
+        },
+        {
+          "role": "assistant",
+          "content": "downsizing?"
+        },
+        {
+          "role": "user",
+          "content": "quietly, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2028-10-17T16:00:00Z",
+      "speaker_id": "social_s7_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the Sunday table say the whole point of a no-warning visit is that spontaneity is the good part."
+        },
+        {
+          "role": "assistant",
+          "content": "the good part."
+        },
+        {
+          "role": "user",
+          "content": "that's the pitch."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2028-10-18T18:00:00Z",
+      "speaker_id": "social_s7_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "put a recurring reminder on something I'll ignore."
+        },
+        {
+          "role": "assistant",
+          "content": "why bother?"
+        },
+        {
+          "role": "user",
+          "content": "hope."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2028-10-19T09:00:00Z",
+      "speaker_id": "social_s7_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "checked the weather for a plan that isn't confirmed."
+        },
+        {
+          "role": "assistant",
+          "content": "keen."
+        },
+        {
+          "role": "user",
+          "content": "or anxious."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2028-10-20T11:00:00Z",
+      "speaker_id": "social_s7_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the day someone dropped in unannounced I quietly let the weekly call with my father go, and I have never properly restarted it since."
+        },
+        {
+          "role": "assistant",
+          "content": "how long ago?"
+        },
+        {
+          "role": "user",
+          "content": "long enough that restarting it now would be a whole conversation."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2028-10-21T14:00:00Z",
+      "speaker_id": "social_s7_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "tidied one shelf and stopped."
+        },
+        {
+          "role": "assistant",
+          "content": "momentum?"
+        },
+        {
+          "role": "user",
+          "content": "a rumour of momentum."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2028-10-22T16:00:00Z",
+      "speaker_id": "social_s7_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "a no-warning visit is on the cards again for a day when the weekly call with my father is due."
+        },
+        {
+          "role": "assistant",
+          "content": "same collision."
+        },
+        {
+          "role": "user",
+          "content": "same collision."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2028-10-23T18:00:00Z",
+      "speaker_id": "social_s7_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "answered the family thread first, as usual."
+        },
+        {
+          "role": "assistant",
+          "content": "priority?"
+        },
+        {
+          "role": "user",
+          "content": "unspoken but real."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2028-10-24T09:00:00Z",
+      "speaker_id": "social_s7_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "thinking of keeping the days when the weekly call with my father is due clear of a no-warning visit — if I go ahead with it, how does the day after actually go for me?"
+        }
+      ]
+    }
+  ],
+  "evidence": {
+    "ev_A": {
+      "session_id": 8,
+      "owner": "social_s7_u03",
+      "fact": "one unplanned someone turning up at the flat and the rest of the day's shape is gone. it isn't the hour it takes — it's that nothing after it happens."
+    },
+    "ev_B": {
+      "session_id": 16,
+      "owner": "social_s7_u03",
+      "fact": "the day someone dropped in unannounced I quietly let the weekly call with my father go, and I have never properly restarted it since."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "background_memory"
+    },
+    "4": {
+      "role": "nearby_counterexample"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "nearby_counterexample"
+    },
+    "7": {
+      "role": "background_memory"
+    },
+    "8": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "social_s7_u03",
+        "context": "days containing one unplanned someone turning up at the flat",
+        "goal_or_prediction": "keep the rest of the day's plan",
+        "action": "took the unplanned visit",
+        "outcome_or_affect": "nothing planned after it happened"
+      }
+    },
+    "9": {
+      "role": "background_memory"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "supporting_constraint",
+      "fact_id": "E1"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "distractor",
+      "distractor_id": "dist_1",
+      "why_distractor": "It endorses a no-warning visit in the user's own feed, so it competes for attention, but it reports someone else's confidence rather than any episode of this user's, and it says nothing about the relation between session 8 and session 16."
+    },
+    "14": {
+      "role": "background_memory"
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "social_s7_u03",
+        "context": "the day an unannounced visitor arrived",
+        "goal_or_prediction": "keep the standing rhythm going",
+        "action": "let the weekly call with my father slide that day",
+        "outcome_or_affect": "never restarted it since"
+      }
+    },
+    "17": {
+      "role": "background_memory"
+    },
+    "18": {
+      "role": "supporting_constraint",
+      "fact_id": "E2"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "A single unplanned arrival costs this user the whole remaining shape of the day, and on the day one happened the standing check-in was dropped and never restarted.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": [
+      "E1",
+      "E2"
+    ]
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 8,
+      "quote": "one unplanned someone turning up at the flat and the rest of the day's shape is gone. it isn't the hour it takes — it's that nothing after it happens"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 16,
+      "quote": "the day someone dropped in unannounced I quietly let the weekly call with my father go, and I have never properly restarted it since"
+    }
+  ],
+  "coactivation_bridge": "ev_A and ev_B are the only pair that licenses the target proposition. A single unplanned arrival costs this user the whole remaining shape of the day, and on the day one happened the standing check-in was dropped and never restarted. E1 and E2 fix timing and identity only and do not open a second route to C. The nearby relation (Visitors are generally welcome for this user.) does not license it.",
+  "arm_gold": {
+    "distractor": {
+      "expected_mode": "infer_C",
+      "binary_decision": true,
+      "required_elements": [
+        "answer yes",
+        "connect the session 8 pattern with the session 16 episode",
+        "cite both session 8 and session 16",
+        "not cite session 13 as support"
+      ],
+      "rationale": "The swapped session is query-relevant but non-evidential; the ev_A/ev_B relation is untouched, so the target proposition still holds."
+    }
+  },
+  "distractor_note": {
+    "replaced_session_id": 13,
+    "why_distractor": "It endorses a no-warning visit in the user's own feed, so it competes for attention, but it reports someone else's confidence rather than any episode of this user's, and it says nothing about the relation between session 8 and session 16."
+  }
+}

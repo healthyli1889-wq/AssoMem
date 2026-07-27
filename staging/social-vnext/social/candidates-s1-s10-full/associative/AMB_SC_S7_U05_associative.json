@@ -1,0 +1,671 @@
+{
+  "schema_version": "social-vnext-1.0",
+  "pair_id": "AMB_SC_S7_U05",
+  "domain": "social",
+  "user_id": "social_s7_u05",
+  "sub_scenario": {
+    "family": "unannounced drop-ins versus a protected standing check-in rhythm",
+    "role": "retired culture-series attendee who goes as a couple",
+    "bridge_type": "threshold_context_interaction",
+    "one_line": "retired culture-series attendee who goes as a couple: keep the days when the standing call with my sister is due clear"
+  },
+  "query_type": "conditional_recommendation",
+  "polarity": "accept",
+  "query": "thinking of keeping the days when the standing call with my sister is due clear of an unannounced afternoon caller — under what conditions should I be saying yes to this?",
+  "supporting_constraints": {
+    "E1": {
+      "session_id": 11,
+      "fact": "the standing call with my sister is the one standing thing I've managed to keep."
+    },
+    "E2": {
+      "session_id": 18,
+      "fact": "an unannounced afternoon caller is on the cards again for a day when the standing call with my sister is due."
+    }
+  },
+  "retrieval_cue": {
+    "cue_type": "conditional_recommendation",
+    "why_it_naturally_retrieves_R": "A friendly spontaneous visit is proposed on a day already carrying a standing commitment, without naming the displacement episode."
+  },
+  "relation_specificity": {
+    "nearby_relation": "Visitors are generally welcome for this user.",
+    "why_it_does_not_license_C": "A drop-in on an open day and a planned visitor on a busy day both left everything after them intact, so neither shows an unplanned arrival displacing a standing commitment."
+  },
+  "latent_C": {
+    "inference": "Keeping the days when the standing call with my sister is due clear of an unannounced afternoon caller is a good fit for this user.",
+    "calibrated_language": "keep the days when the standing call with my sister is due clear"
+  },
+  "answer_contract": {
+    "target_proposition": "Keeping the days when the standing call with my sister is due clear of an unannounced afternoon caller is a good fit for this user.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "mq_user20",
+    "external_folder_tag": "user20",
+    "external_source": "memoryquest",
+    "status": "review_candidate_only",
+    "tone": "natural_chat_v1",
+    "voice": "measured, precise, a little formal",
+    "anonymization": "External MemoryQuest persona material was used only during authoring; no corpus, legal name, country, or demographic metadata is in visible dialogue."
+  },
+  "candidate_id": "AMB_SC_S7_U05_associative",
+  "data_arm": "associative",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2028-10-11T11:00:00Z",
+      "speaker_id": "social_s7_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "moved two things on the calendar and called that admin done."
+        },
+        {
+          "role": "assistant",
+          "content": "productive?"
+        },
+        {
+          "role": "user",
+          "content": "generously described."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2028-10-12T14:00:00Z",
+      "speaker_id": "social_s7_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "finally replied to the thread from last week."
+        },
+        {
+          "role": "assistant",
+          "content": "how late is late?"
+        },
+        {
+          "role": "user",
+          "content": "nine days. a personal best."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2028-10-13T16:00:00Z",
+      "speaker_id": "social_s7_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "someone sent a photo from years ago and derailed my afternoon."
+        },
+        {
+          "role": "assistant",
+          "content": "worth it?"
+        },
+        {
+          "role": "user",
+          "content": "completely."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2028-10-14T18:00:00Z",
+      "speaker_id": "social_s7_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "had someone drop in on a completely open day and it was genuinely lovely."
+        },
+        {
+          "role": "assistant",
+          "content": "no cost?"
+        },
+        {
+          "role": "user",
+          "content": "none at all."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2028-10-15T09:00:00Z",
+      "speaker_id": "social_s7_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "muted one group and un-muted another. net zero."
+        },
+        {
+          "role": "assistant",
+          "content": "any peace?"
+        },
+        {
+          "role": "user",
+          "content": "about forty minutes of it."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2028-10-16T11:00:00Z",
+      "speaker_id": "social_s7_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "had a planned visitor on a busy day and everything after it still happened."
+        },
+        {
+          "role": "assistant",
+          "content": "so planned is fine."
+        },
+        {
+          "role": "user",
+          "content": "planned is fine."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2028-10-17T14:00:00Z",
+      "speaker_id": "social_s7_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "walked the long way home and didn't check my phone."
+        },
+        {
+          "role": "assistant",
+          "content": "deliberate?"
+        },
+        {
+          "role": "user",
+          "content": "half deliberate."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2028-10-18T16:00:00Z",
+      "speaker_id": "social_s7_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "one unplanned unannounced caller and the rest of the day's shape is gone. it isn't the hour it takes — it's that nothing after it happens."
+        },
+        {
+          "role": "assistant",
+          "content": "nothing?"
+        },
+        {
+          "role": "user",
+          "content": "nothing I'd planned, anyway."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2028-10-19T18:00:00Z",
+      "speaker_id": "social_s7_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "made a playlist for a thing that hasn't been planned yet."
+        },
+        {
+          "role": "assistant",
+          "content": "optimistic."
+        },
+        {
+          "role": "user",
+          "content": "aspirational, really."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2028-10-20T09:00:00Z",
+      "speaker_id": "social_s7_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "booked the haircut I've been putting off since spring."
+        },
+        {
+          "role": "assistant",
+          "content": "which slot?"
+        },
+        {
+          "role": "user",
+          "content": "an evening one, obviously."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2028-10-21T11:00:00Z",
+      "speaker_id": "social_s7_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the standing call with my sister is the one standing thing I've managed to keep."
+        },
+        {
+          "role": "assistant",
+          "content": "protective of it?"
+        },
+        {
+          "role": "user",
+          "content": "very."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2028-10-22T14:00:00Z",
+      "speaker_id": "social_s7_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "left a voice note instead of typing. felt strange."
+        },
+        {
+          "role": "assistant",
+          "content": "better or worse?"
+        },
+        {
+          "role": "user",
+          "content": "faster. not better."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2028-10-23T16:00:00Z",
+      "speaker_id": "social_s7_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "cleaned the kitchen instead of answering anything."
+        },
+        {
+          "role": "assistant",
+          "content": "avoidance?"
+        },
+        {
+          "role": "user",
+          "content": "structured avoidance."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2028-10-24T18:00:00Z",
+      "speaker_id": "social_s7_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "skimmed the invites and closed the tab."
+        },
+        {
+          "role": "assistant",
+          "content": "decide anything?"
+        },
+        {
+          "role": "user",
+          "content": "no. classic."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2028-10-25T09:00:00Z",
+      "speaker_id": "social_s7_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "someone changed the group name again."
+        },
+        {
+          "role": "assistant",
+          "content": "improvement?"
+        },
+        {
+          "role": "user",
+          "content": "debatable."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2028-10-26T11:00:00Z",
+      "speaker_id": "social_s7_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the day someone dropped in unannounced I quietly let the standing call with my sister go, and I have never properly restarted it since."
+        },
+        {
+          "role": "assistant",
+          "content": "how long ago?"
+        },
+        {
+          "role": "user",
+          "content": "long enough that restarting it now would be a whole conversation."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2028-10-27T14:00:00Z",
+      "speaker_id": "social_s7_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "ate standing up reading a thread I wasn't in."
+        },
+        {
+          "role": "assistant",
+          "content": "why?"
+        },
+        {
+          "role": "user",
+          "content": "no defence."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2028-10-28T16:00:00Z",
+      "speaker_id": "social_s7_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "an unannounced afternoon caller is on the cards again for a day when the standing call with my sister is due."
+        },
+        {
+          "role": "assistant",
+          "content": "same collision."
+        },
+        {
+          "role": "user",
+          "content": "same collision."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2028-10-29T18:00:00Z",
+      "speaker_id": "social_s7_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "found a birthday I'd forgotten and covered it with a message."
+        },
+        {
+          "role": "assistant",
+          "content": "did it land?"
+        },
+        {
+          "role": "user",
+          "content": "seemed to."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2028-10-30T09:00:00Z",
+      "speaker_id": "social_s7_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "thinking of keeping the days when the standing call with my sister is due clear of an unannounced afternoon caller — under what conditions should I be saying yes to this?"
+        }
+      ]
+    }
+  ],
+  "evidence": {
+    "ev_A": {
+      "session_id": 8,
+      "owner": "social_s7_u05",
+      "fact": "one unplanned unannounced caller and the rest of the day's shape is gone. it isn't the hour it takes — it's that nothing after it happens."
+    },
+    "ev_B": {
+      "session_id": 16,
+      "owner": "social_s7_u05",
+      "fact": "the day someone dropped in unannounced I quietly let the standing call with my sister go, and I have never properly restarted it since."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "background_memory"
+    },
+    "4": {
+      "role": "nearby_counterexample"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "nearby_counterexample"
+    },
+    "7": {
+      "role": "background_memory"
+    },
+    "8": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "social_s7_u05",
+        "context": "days containing one unplanned unannounced caller",
+        "goal_or_prediction": "keep the rest of the day's plan",
+        "action": "took the unplanned visit",
+        "outcome_or_affect": "nothing planned after it happened"
+      }
+    },
+    "9": {
+      "role": "background_memory"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "supporting_constraint",
+      "fact_id": "E1"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "background_memory"
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "social_s7_u05",
+        "context": "the day an unannounced visitor arrived",
+        "goal_or_prediction": "keep the standing rhythm going",
+        "action": "let the standing call with my sister slide that day",
+        "outcome_or_affect": "never restarted it since"
+      }
+    },
+    "17": {
+      "role": "background_memory"
+    },
+    "18": {
+      "role": "supporting_constraint",
+      "fact_id": "E2"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "A single unplanned arrival costs this user the whole remaining shape of the day, and on the day one happened the standing check-in was dropped and never restarted.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": [
+      "E1",
+      "E2"
+    ]
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 8,
+      "quote": "one unplanned unannounced caller and the rest of the day's shape is gone. it isn't the hour it takes — it's that nothing after it happens"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 16,
+      "quote": "the day someone dropped in unannounced I quietly let the standing call with my sister go, and I have never properly restarted it since"
+    }
+  ],
+  "coactivation_bridge": "ev_A and ev_B are the only pair that licenses the target proposition. A single unplanned arrival costs this user the whole remaining shape of the day, and on the day one happened the standing check-in was dropped and never restarted. E1 and E2 fix timing and identity only and do not open a second route to C. The nearby relation (Visitors are generally welcome for this user.) does not license it.",
+  "arm_gold": {
+    "full": {
+      "expected_mode": "infer_C",
+      "binary_decision": true,
+      "required_elements": [
+        "answer yes",
+        "connect the session 8 pattern with the session 16 episode",
+        "cite both session 8 and session 16",
+        "stay inside the calibrated claim (keep the days when the standing call with my sister is due clear) rather than a broader claim about the user"
+      ],
+      "rationale": "ev_A and ev_B jointly support the target proposition; neither does alone."
+    },
+    "a_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that session 8 alone does not establish the target proposition",
+        "not assert the target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "ev_B is replaced by a matched neutral session, so the relation is unavailable."
+    },
+    "b_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that session 16 alone does not establish the target proposition",
+        "not assert the target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "ev_A is replaced by a matched neutral session, so the relation is unavailable."
+    },
+    "link_broken": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that the revised session 16 no longer connects to session 8",
+        "not assert the original target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "B-prime keeps the owner, date, session form and turn count while removing the connector, so the original relation no longer holds."
+    }
+  },
+  "single_evidence_replacements": {
+    "a_only": {
+      "replaced_session_id": 16,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "sat down and worked out who I actually owe a reply to, wrote the list out, then answered exactly none of them because it was late by the time the list existed."
+        },
+        {
+          "role": "assistant",
+          "content": "the list helped?"
+        },
+        {
+          "role": "user",
+          "content": "the list existed. that's as far as it got."
+        }
+      ]
+    },
+    "b_only": {
+      "replaced_session_id": 8,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "ended up rearranging the shelf instead of doing the thing I sat down to do, and then rearranged it back because the first version was better."
+        },
+        {
+          "role": "assistant",
+          "content": "net progress?"
+        },
+        {
+          "role": "user",
+          "content": "net zero, with extra steps."
+        }
+      ]
+    }
+  },
+  "link_broken": {
+    "replaced_session_id": 16,
+    "replacement_dialogue": [
+      {
+        "role": "user",
+        "content": "an unannounced afternoon caller turned into a planned thing for a different day, so it isn't landing on a the standing call with my sister day at all."
+      },
+      {
+        "role": "assistant",
+        "content": "so no overlap?"
+      },
+      {
+        "role": "user",
+        "content": "no overlap. nothing came of it either way."
+      }
+    ]
+  }
+}

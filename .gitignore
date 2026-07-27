@@ -3,3 +3,13 @@ __pycache__/
 *.pyc
 .assomem_push/
 rubbish/
+
+# Filled-in model configuration. Only the *.example.sh templates are tracked;
+# a copy carrying real endpoints and keys must never be committed.
+my_config.sh
+config.*.local.sh
+.env
+
+# Runtime logs and run artifacts stay out of the gold/staging history.
+experiments/assomem_harness/runs-vnext/
+experiments/assomem_harness/runs/

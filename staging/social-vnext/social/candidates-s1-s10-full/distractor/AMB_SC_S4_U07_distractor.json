@@ -1,0 +1,591 @@
+{
+  "schema_version": "social-vnext-1.0",
+  "pair_id": "AMB_SC_S4_U07",
+  "domain": "social",
+  "user_id": "social_s4_u07",
+  "sub_scenario": {
+    "family": "public recognition discomfort versus private written appreciation",
+    "role": "theatre-for-two planner who batches long threads",
+    "bridge_type": "preference_constraint_fit",
+    "one_line": "theatre-for-two planner who batches long threads: skip a toast in front of the book group for the friend who founded the book group"
+  },
+  "query_type": "recommendation_ranking",
+  "polarity": "reject",
+  "query": "the two of us plus the old book group want me to do a toast in front of the book group for the friend who founded the book group, or just a written note tucked into a book for the friend who founded the book group — of those two, which should I be putting first?",
+  "supporting_constraints": {
+    "E1": {
+      "session_id": 8,
+      "fact": "the friend who founded the book group is the one I'm trying to thank properly this time."
+    },
+    "E2": {
+      "session_id": 17,
+      "fact": "a toast in front of the book group is what's being suggested, and the friend who founded the book group is still the person it's for."
+    }
+  },
+  "retrieval_cue": {
+    "cue_type": "recommendation_ranking",
+    "why_it_naturally_retrieves_R": "A group planning a thank-you asks a natural format question that runs straight at the user's fit constraint without naming it or the failure that established it."
+  },
+  "relation_specificity": {
+    "nearby_relation": "This user can speak in front of people in general.",
+    "why_it_does_not_license_C": "A few words in a kitchen and reading someone else's text both went fine, so neither shows the cost of delivering the user's own appreciation live and unscripted."
+  },
+  "latent_C": {
+    "inference": "Doing a toast in front of the book group for the friend who founded the book group is a poor fit for this user.",
+    "calibrated_language": "skip a toast in front of the book group for the friend who founded the book group"
+  },
+  "answer_contract": {
+    "target_proposition": "Doing a toast in front of the book group for the friend who founded the book group is a poor fit for this user.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "mq_user30",
+    "external_folder_tag": "user30",
+    "external_source": "memoryquest",
+    "status": "review_candidate_only",
+    "tone": "natural_chat_v1",
+    "voice": "organized, gently ironic",
+    "anonymization": "External MemoryQuest persona material was used only during authoring; no corpus, legal name, country, or demographic metadata is in visible dialogue."
+  },
+  "candidate_id": "AMB_SC_S4_U07_distractor",
+  "data_arm": "distractor",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2028-06-04T11:00:00Z",
+      "speaker_id": "social_s4_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "sorted the photos from the last thing into a folder nobody will open."
+        },
+        {
+          "role": "assistant",
+          "content": "including you?"
+        },
+        {
+          "role": "user",
+          "content": "including me."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2028-06-05T14:00:00Z",
+      "speaker_id": "social_s4_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "said a couple of words to three people in a kitchen and it was completely fine."
+        },
+        {
+          "role": "assistant",
+          "content": "so it's not speaking?"
+        },
+        {
+          "role": "user",
+          "content": "not in a kitchen, no."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2028-06-06T16:00:00Z",
+      "speaker_id": "social_s4_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "had a coffee alone and it was the best part of the day."
+        },
+        {
+          "role": "assistant",
+          "content": "low bar?"
+        },
+        {
+          "role": "user",
+          "content": "comfortable bar."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2028-06-07T18:00:00Z",
+      "speaker_id": "social_s4_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the thing that actually lands from me is a written note tucked into a book — people quote mine back to me years later."
+        },
+        {
+          "role": "assistant",
+          "content": "years?"
+        },
+        {
+          "role": "user",
+          "content": "years. I've had two read out to me."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2028-06-08T09:00:00Z",
+      "speaker_id": "social_s4_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "someone asked how I was and I answered honestly by accident."
+        },
+        {
+          "role": "assistant",
+          "content": "how did that go?"
+        },
+        {
+          "role": "user",
+          "content": "surprisingly fine."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2028-06-09T11:00:00Z",
+      "speaker_id": "social_s4_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "declined a thing politely and then felt weird about it for an hour."
+        },
+        {
+          "role": "assistant",
+          "content": "regret?"
+        },
+        {
+          "role": "user",
+          "content": "not really. just weird."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2028-06-10T14:00:00Z",
+      "speaker_id": "social_s4_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "wrote half a message and left it in the box."
+        },
+        {
+          "role": "assistant",
+          "content": "sending it?"
+        },
+        {
+          "role": "user",
+          "content": "eventually. probably."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2028-06-11T16:00:00Z",
+      "speaker_id": "social_s4_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the friend who founded the book group is the one I'm trying to thank properly this time."
+        },
+        {
+          "role": "assistant",
+          "content": "specifically them?"
+        },
+        {
+          "role": "user",
+          "content": "specifically them."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2028-06-12T18:00:00Z",
+      "speaker_id": "social_s4_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "read something out that someone else had written and had no trouble at all."
+        },
+        {
+          "role": "assistant",
+          "content": "so not reading either."
+        },
+        {
+          "role": "user",
+          "content": "not when it isn't mine."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2028-06-13T09:00:00Z",
+      "speaker_id": "social_s4_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "looked up how far away a place is instead of asking."
+        },
+        {
+          "role": "assistant",
+          "content": "and?"
+        },
+        {
+          "role": "user",
+          "content": "further than the invite implied."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2028-06-14T11:00:00Z",
+      "speaker_id": "social_s4_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "borrowed a charger and forgot to give it back. again."
+        },
+        {
+          "role": "assistant",
+          "content": "same person?"
+        },
+        {
+          "role": "user",
+          "content": "same person, third time."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2028-06-15T14:00:00Z",
+      "speaker_id": "social_s4_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I got talked into doing the live version at the book-group anniversary and froze halfway, and the friend who founded the book group sat there being embarrassed on my behalf."
+        },
+        {
+          "role": "assistant",
+          "content": "how bad?"
+        },
+        {
+          "role": "user",
+          "content": "bad enough that we both pretend it didn't happen."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2028-06-16T16:00:00Z",
+      "speaker_id": "social_s4_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "watched something everyone had already discussed."
+        },
+        {
+          "role": "assistant",
+          "content": "spoiled?"
+        },
+        {
+          "role": "user",
+          "content": "thoroughly."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2028-06-17T18:00:00Z",
+      "speaker_id": "social_s4_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "did the laundry and answered nothing for three hours."
+        },
+        {
+          "role": "assistant",
+          "content": "restorative?"
+        },
+        {
+          "role": "user",
+          "content": "quietly, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2028-06-18T09:00:00Z",
+      "speaker_id": "social_s4_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "someone rescheduled and I was more relieved than I should admit."
+        },
+        {
+          "role": "assistant",
+          "content": "admitting it now."
+        },
+        {
+          "role": "user",
+          "content": "under duress."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2028-06-19T11:00:00Z",
+      "speaker_id": "social_s4_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "stood outside a place for ten minutes before going in."
+        },
+        {
+          "role": "assistant",
+          "content": "nerves?"
+        },
+        {
+          "role": "user",
+          "content": "just gathering."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2028-06-20T14:00:00Z",
+      "speaker_id": "social_s4_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "a toast in front of the book group is what's being suggested, and the friend who founded the book group is still the person it's for."
+        },
+        {
+          "role": "assistant",
+          "content": "same shape as before."
+        },
+        {
+          "role": "user",
+          "content": "same shape."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2028-06-21T16:00:00Z",
+      "speaker_id": "social_s4_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "made a list of people to check on. didn't check on them."
+        },
+        {
+          "role": "assistant",
+          "content": "the list helped?"
+        },
+        {
+          "role": "user",
+          "content": "the list existed."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2028-06-22T18:00:00Z",
+      "speaker_id": "social_s4_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the two of us plus the old book group are convinced a toast in front of the book group is the warmest possible way to do this."
+        },
+        {
+          "role": "assistant",
+          "content": "warmest?"
+        },
+        {
+          "role": "user",
+          "content": "their framing. they're quite sure."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2028-06-23T09:00:00Z",
+      "speaker_id": "social_s4_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the two of us plus the old book group want me to do a toast in front of the book group for the friend who founded the book group, or just a written note tucked into a book for the friend who founded the book group — of those two, which should I be putting first?"
+        }
+      ]
+    }
+  ],
+  "evidence": {
+    "ev_A": {
+      "session_id": 4,
+      "owner": "social_s4_u07",
+      "fact": "the thing that actually lands from me is a written note tucked into a book — people quote mine back to me years later."
+    },
+    "ev_B": {
+      "session_id": 12,
+      "owner": "social_s4_u07",
+      "fact": "I got talked into doing the live version at the book-group anniversary and froze halfway, and the friend who founded the book group sat there being embarrassed on my behalf."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "nearby_counterexample"
+    },
+    "3": {
+      "role": "background_memory"
+    },
+    "4": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "social_s4_u07",
+        "context": "years of thanking people in writing",
+        "goal_or_prediction": "have the appreciation actually land",
+        "action": "wrote a written note tucked into a book rather than speaking",
+        "outcome_or_affect": "quoted back years later"
+      }
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "background_memory"
+    },
+    "7": {
+      "role": "background_memory"
+    },
+    "8": {
+      "role": "supporting_constraint",
+      "fact_id": "E1"
+    },
+    "9": {
+      "role": "nearby_counterexample"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "social_s4_u07",
+        "context": "the live version at the book-group anniversary",
+        "goal_or_prediction": "deliver the same appreciation out loud",
+        "action": "went up and spoke unscripted",
+        "outcome_or_affect": "froze; the friend who founded the book group embarrassed on their behalf"
+      }
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "background_memory"
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "supporting_constraint",
+      "fact_id": "E2"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "distractor",
+      "distractor_id": "dist_1",
+      "why_distractor": "It endorses a toast in front of the book group in the user's own feed, so it competes for attention, but it reports someone else's confidence rather than any episode of this user's, and it says nothing about the relation between session 4 and session 12."
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "This user's appreciation lands when it is written, and the one time they delivered it live and unscripted they froze and the recipient was embarrassed on their behalf.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": [
+      "E1",
+      "E2"
+    ]
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 4,
+      "quote": "the thing that actually lands from me is a written note tucked into a book — people quote mine back to me years later"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 12,
+      "quote": "I got talked into doing the live version at the book-group anniversary and froze halfway, and the friend who founded the book group sat there being embarrassed on my behalf"
+    }
+  ],
+  "coactivation_bridge": "ev_A and ev_B are the only pair that licenses the target proposition. This user's appreciation lands when it is written, and the one time they delivered it live and unscripted they froze and the recipient was embarrassed on their behalf. E1 and E2 fix timing and identity only and do not open a second route to C. The nearby relation (This user can speak in front of people in general.) does not license it.",
+  "arm_gold": {
+    "distractor": {
+      "expected_mode": "infer_C",
+      "binary_decision": true,
+      "required_elements": [
+        "answer yes",
+        "connect the session 4 pattern with the session 12 episode",
+        "cite both session 4 and session 12",
+        "not cite session 19 as support"
+      ],
+      "rationale": "The swapped session is query-relevant but non-evidential; the ev_A/ev_B relation is untouched, so the target proposition still holds."
+    }
+  },
+  "distractor_note": {
+    "replaced_session_id": 19,
+    "why_distractor": "It endorses a toast in front of the book group in the user's own feed, so it competes for attention, but it reports someone else's confidence rather than any episode of this user's, and it says nothing about the relation between session 4 and session 12."
+  }
+}

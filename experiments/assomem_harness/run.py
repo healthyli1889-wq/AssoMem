@@ -42,13 +42,13 @@ def parse_arms(value: str) -> tuple[str, ...]:
 
 
 def _evaluation_arms(profile: Any) -> tuple[str, ...]:
-    return VNEXT_EVALUATION_ARMS if profile.data_format == "work-vnext-1" else EVALUATION_ARMS
+    return VNEXT_EVALUATION_ARMS if profile.is_vnext() else EVALUATION_ARMS
 
 
 def _discover(data_root: Path, profile: Any, domain: str):
     return (
         discover_vnext_items(data_root, profile, domain)
-        if profile.data_format == "work-vnext-1"
+        if profile.is_vnext()
         else discover_items(data_root, profile, domain)
     )
 
@@ -56,7 +56,7 @@ def _discover(data_root: Path, profile: Any, domain: str):
 def _materialize(item: Any, profile: Any):
     return (
         materialize_vnext_arms(item, profile)
-        if profile.data_format == "work-vnext-1"
+        if profile.is_vnext()
         else materialize_arms(item, profile, item.arms["associative"]["query"])
     )
 
@@ -253,7 +253,7 @@ def prepare_run(
         "base_items": len(items),
         "shipped_conversations": len(items) * (
             len(_evaluation_arms(profile))
-            if profile.data_format == "work-vnext-1"
+            if profile.is_vnext()
             else len(profile.arms)
         ),
         "profile_sha256": _sha256_file(profile_path),
@@ -275,8 +275,8 @@ def run_zero_evidence(
 ) -> dict[str, Any]:
     """Execute the query-only shortcut screen and persist one artifact per item."""
     profile = load_profile(profile_path)
-    if profile.data_format != "work-vnext-1":
-        raise ValueError("zero-evidence is currently defined only for work-vnext-1")
+    if not profile.is_vnext():
+        raise ValueError("zero-evidence is defined only for vNext profiles")
     roles = load_roles()
     manifest = json.loads(item_manifest_path.read_text(encoding="utf-8"))
     if manifest["profile_id"] != profile.profile_id or manifest["domain"] != domain:
@@ -359,7 +359,7 @@ def _execute_run_unlocked(
         raise ValueError("execute requires an approved --e1-review CSV")
     validate_e1_gate(e1_review_path, {item.item_id for item in items}, selected_arms)
     run_root = log_root / domain / run_id
-    if profile.data_format == "work-vnext-1":
+    if profile.is_vnext():
         _validate_zero_evidence_gate(run_root, {item.item_id for item in items})
     log_dir = run_root / "log"
     log_dir.mkdir(parents=True, exist_ok=True)

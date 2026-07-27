@@ -39,7 +39,7 @@ def build_stratified_manifest(
 ) -> dict:
     if count > 20 or count < 1:
         raise ValueError("Pilot manifest count must be between 1 and 20")
-    if profile.data_format == "work-vnext-1":
+    if profile.is_vnext():
         selected_items = sorted(items, key=lambda item: item.item_id)[:count]
         if len(selected_items) != count:
             raise ValueError(f"Only {len(selected_items)} vNext pairs are available")

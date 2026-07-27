@@ -7,7 +7,7 @@ from profile import DatasetProfile
 
 
 def validate_solver_answer(answer: dict, profile: DatasetProfile | None = None) -> str | None:
-    if profile and profile.data_format == "work-vnext-1":
+    if profile and profile.is_vnext():
         decision = answer.get("decision")
         if decision not in {"yes", "no"}:
             return "response decision must be exactly yes or no"
@@ -55,7 +55,7 @@ def score_solver_answer(
         "condition_correct": condition_correct,
         "abc": int(abstains and not absent_assertion),
     }
-    if profile and profile.data_format == "work-vnext-1":
+    if profile and profile.is_vnext():
         if answer is None or ground_truth is None:
             raise ValueError("vNext scoring requires solver answer and binary ground truth")
         expected = "yes" if ground_truth["binary_decision"] else "no"

@@ -10,6 +10,18 @@ from typing import Any
 
 CORE_ARMS = ("full", "a_only", "b_only", "link_broken")
 SUPPLEMENTARY_ARMS = ("distractor", "absence")
+# Domains that ship a vNext batch. The construct is domain-independent; this set
+# exists only so a typo in `domain` still fails loudly.
+VNEXT_DOMAINS = {"work", "social", "finance", "health", "hobby"}
+# Schema versions that must satisfy the full field/annotation/span contract
+# below, not just the shared minimum.
+STRICT_SCHEMA_VERSIONS = {"work-vnext-1.1", "work-vnext-1.2", "social-vnext-1.0"}
+# Schema versions that must additionally author matched neutral replacements for
+# a_only and b_only. Applied only from social-vnext-1.0 on: the work-vnext-1.2
+# exemplar was authored and human-gated before this contract existed, and
+# `render_arms` still handles it by deleting the session and recording
+# `session_count_preserved: False` in the lineage rather than failing.
+LENGTH_MATCHED_SCHEMA_VERSIONS = {"social-vnext-1.0"}
 QUERY_TYPES = {
     "preference_generalization",
     "situational_fit",
@@ -62,8 +74,8 @@ def validate_candidate(candidate: dict[str, Any]) -> list[str]:
     missing = required - candidate.keys()
     if missing:
         return [f"missing required fields: {', '.join(sorted(missing))}"]
-    if candidate["domain"] != "work":
-        errors.append("vNext exemplar must be in domain=work")
+    if candidate["domain"] not in VNEXT_DOMAINS:
+        errors.append(f"domain must be one of {sorted(VNEXT_DOMAINS)}")
     if candidate["query_type"] not in QUERY_TYPES:
         errors.append("unknown query_type")
     if candidate["polarity"] not in POLARITIES:
@@ -140,7 +152,7 @@ def validate_candidate(candidate: dict[str, Any]) -> list[str]:
         if not candidate.get("source_swap", {}).get("speaker_id"):
             errors.append("source_swap needs a non-user speaker_id")
 
-    if candidate["schema_version"] in {"work-vnext-1.1", "work-vnext-1.2"}:
+    if candidate["schema_version"] in STRICT_SCHEMA_VERSIONS:
         required_v11 = {
             "episode_annotations",
             "relational_connector",
@@ -183,6 +195,16 @@ def validate_candidate(candidate: dict[str, Any]) -> list[str]:
                     continue
                 if not isinstance(arm_gold.get(arm, {}).get("binary_decision"), bool):
                     errors.append(f"{arm} must define a boolean binary_decision")
+            if data_arm == "associative" and candidate["schema_version"] in LENGTH_MATCHED_SCHEMA_VERSIONS:
+                # Without these, `render_arms` has to delete the session instead of
+                # swapping it, and a_only/b_only end up shorter than full.
+                replacements = candidate.get("single_evidence_replacements") or {}
+                for arm, expected_session in (("a_only", b_session), ("b_only", a_session)):
+                    block = replacements.get(arm)
+                    if not block or not block.get("replacement_dialogue"):
+                        errors.append(f"{arm} needs a matched neutral replacement_dialogue")
+                    elif block.get("replaced_session_id") != expected_session:
+                        errors.append(f"{arm} must replace session {expected_session}")
     return errors
 
 
@@ -192,6 +214,51 @@ def _remove_sessions(candidate: dict[str, Any], removed: set[int]) -> list[dict[
         for session in candidate["context"]
         if int(session["session_id"]) not in removed
     ]
+
+
+def _replace_dialogue(
+    candidate: dict[str, Any], session_id: int, dialogue: list[dict[str, str]]
+) -> list[dict[str, Any]]:
+    """Swap one session's turns, keeping its id, timestamp, owner and position."""
+    sessions = _remove_sessions(candidate, set())
+    for session in sessions:
+        if int(session["session_id"]) == session_id:
+            session["dialogue"] = copy.deepcopy(dialogue)
+    return sessions
+
+
+def _single_evidence_arm(
+    candidate: dict[str, Any], arm: str, replaced_id: int
+) -> tuple[list[dict[str, Any]], dict[str, Any]]:
+    """Render `a_only` / `b_only` under the section 3 length-control contract.
+
+    DATA CRITERIA section 3: "any removed or changed session must be replaced with
+    a dated, same-user, non-target session of comparable turn count and length. A
+    condition may not gain or lose sessions merely because of the intervention."
+    Deleting the session outright makes the ablation shorter than `full`, so a
+    measured drop could be a reaction to context length rather than to the missing
+    evidence. Candidates that author `single_evidence_replacements` therefore get a
+    matched swap; older exemplars without that block fall back to deletion and say
+    so in their lineage.
+    """
+    block = (candidate.get("single_evidence_replacements") or {}).get(arm)
+    if not block or not block.get("replacement_dialogue"):
+        return (
+            _remove_sessions(candidate, {replaced_id}),
+            {
+                "transform": f"remove_{'ev_B' if arm == 'a_only' else 'ev_A'}",
+                "removed_sessions": [replaced_id],
+                "session_count_preserved": False,
+            },
+        )
+    return (
+        _replace_dialogue(candidate, replaced_id, block["replacement_dialogue"]),
+        {
+            "transform": f"replace_{'ev_B' if arm == 'a_only' else 'ev_A'}_with_neutral",
+            "changed_sessions": [replaced_id],
+            "session_count_preserved": True,
+        },
+    )
 
 
 def render_arms(candidate: dict[str, Any]) -> dict[str, dict[str, Any]]:
@@ -207,10 +274,9 @@ def render_arms(candidate: dict[str, Any]) -> dict[str, dict[str, Any]]:
     user_id = candidate["user_id"]
     full = _remove_sessions(candidate, set())
 
-    broken = _remove_sessions(candidate, set())
-    for session in broken:
-        if int(session["session_id"]) == b_id:
-            session["dialogue"] = copy.deepcopy(candidate["link_broken"]["replacement_dialogue"])
+    broken = _replace_dialogue(candidate, b_id, candidate["link_broken"]["replacement_dialogue"])
+    a_only_context, a_only_lineage = _single_evidence_arm(candidate, "a_only", b_id)
+    b_only_context, b_only_lineage = _single_evidence_arm(candidate, "b_only", a_id)
 
     arms = {
         "full": {
@@ -221,18 +287,18 @@ def render_arms(candidate: dict[str, Any]) -> dict[str, dict[str, Any]]:
             "lineage": {"transform": "identity", "retained_sessions": [s["session_id"] for s in full]},
         },
         "a_only": {
-            "context": _remove_sessions(candidate, {b_id}),
+            "context": a_only_context,
             "query": candidate["query"],
             "owner": user_id,
             "expected_mode": "withhold_C",
-            "lineage": {"transform": "remove_ev_B", "removed_sessions": [b_id]},
+            "lineage": a_only_lineage,
         },
         "b_only": {
-            "context": _remove_sessions(candidate, {a_id}),
+            "context": b_only_context,
             "query": candidate["query"],
             "owner": user_id,
             "expected_mode": "withhold_C",
-            "lineage": {"transform": "remove_ev_A", "removed_sessions": [a_id]},
+            "lineage": b_only_lineage,
         },
         "link_broken": {
             "context": broken,

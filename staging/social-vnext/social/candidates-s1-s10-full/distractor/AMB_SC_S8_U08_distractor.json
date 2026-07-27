@@ -1,0 +1,591 @@
+{
+  "schema_version": "social-vnext-1.0",
+  "pair_id": "AMB_SC_S8_U08",
+  "domain": "social",
+  "user_id": "social_s8_u08",
+  "sub_scenario": {
+    "family": "ambient status-reacting versus deliberate long-form presence at distance",
+    "role": "community-event and career-meetup attendee",
+    "bridge_type": "strategy_outcome_contingency",
+    "one_line": "community-event and career-meetup attendee: keep the monthly written catch-up going for my former neighbour who emigrated"
+  },
+  "query_type": "conditional_recommendation",
+  "polarity": "accept",
+  "query": "thinking of keeping the monthly written catch-up going for my former neighbour who emigrated rather than trading the written catch-up for daily pings — under what conditions should I be saying yes to this?",
+  "supporting_constraints": {
+    "E1": {
+      "session_id": 7,
+      "fact": "my former neighbour who emigrated is the one that only exists because of the long ones."
+    },
+    "E2": {
+      "session_id": 16,
+      "fact": "trading the written catch-up for daily pings is the suggestion again, and my former neighbour who emigrated still runs on the long ones."
+    }
+  },
+  "retrieval_cue": {
+    "cue_type": "conditional_recommendation",
+    "why_it_naturally_retrieves_R": "A plausible modern-habit suggestion reaches the exact mechanism the user's distance friendship runs on, without naming the mechanism or its failure."
+  },
+  "relation_specificity": {
+    "nearby_relation": "Quick daily contact works fine for this user with some people.",
+    "why_it_does_not_license_C": "Daily reactions with nearby people and a skipped month with a local friend both cost nothing, so neither tests the strategy the distance friendship actually depends on."
+  },
+  "latent_C": {
+    "inference": "Keeping the monthly written catch-up going for my former neighbour who emigrated rather than trading the written catch-up for daily pings is a good fit for this user.",
+    "calibrated_language": "keep the monthly written catch-up going for my former neighbour who emigrated"
+  },
+  "answer_contract": {
+    "target_proposition": "Keeping the monthly written catch-up going for my former neighbour who emigrated rather than trading the written catch-up for daily pings is a good fit for this user.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "mq_user35",
+    "external_folder_tag": "user35",
+    "external_source": "memoryquest",
+    "status": "review_candidate_only",
+    "tone": "natural_chat_v1",
+    "voice": "open, self-aware, a little tired",
+    "anonymization": "External MemoryQuest persona material was used only during authoring; no corpus, legal name, country, or demographic metadata is in visible dialogue."
+  },
+  "candidate_id": "AMB_SC_S8_U08_distractor",
+  "data_arm": "distractor",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2028-12-04T11:00:00Z",
+      "speaker_id": "social_s8_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "someone summarised a two-hundred-message thread for me."
+        },
+        {
+          "role": "assistant",
+          "content": "accurate?"
+        },
+        {
+          "role": "user",
+          "content": "kind, at least."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2028-12-05T14:00:00Z",
+      "speaker_id": "social_s8_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "used daily reactions with people I actually see and nothing suffered."
+        },
+        {
+          "role": "assistant",
+          "content": "so reactions aren't the problem?"
+        },
+        {
+          "role": "user",
+          "content": "not with people nearby."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2028-12-06T16:00:00Z",
+      "speaker_id": "social_s8_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "said I'd host something and immediately regretted the scale."
+        },
+        {
+          "role": "assistant",
+          "content": "downsizing?"
+        },
+        {
+          "role": "user",
+          "content": "quietly, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2028-12-07T18:00:00Z",
+      "speaker_id": "social_s8_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "distance friendships only survive with me if I write the long thing — the monthly written catch-up, once a month, actually finished."
+        },
+        {
+          "role": "assistant",
+          "content": "monthly holds it?"
+        },
+        {
+          "role": "user",
+          "content": "monthly and finished. half-written doesn't count."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2028-12-08T09:00:00Z",
+      "speaker_id": "social_s8_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "left a party early and nobody minded."
+        },
+        {
+          "role": "assistant",
+          "content": "expected worse?"
+        },
+        {
+          "role": "user",
+          "content": "much worse."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2028-12-09T11:00:00Z",
+      "speaker_id": "social_s8_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "put a recurring reminder on something I'll ignore."
+        },
+        {
+          "role": "assistant",
+          "content": "why bother?"
+        },
+        {
+          "role": "user",
+          "content": "hope."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2028-12-10T14:00:00Z",
+      "speaker_id": "social_s8_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "my former neighbour who emigrated is the one that only exists because of the long ones."
+        },
+        {
+          "role": "assistant",
+          "content": "conscious of that?"
+        },
+        {
+          "role": "user",
+          "content": "completely."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2028-12-11T16:00:00Z",
+      "speaker_id": "social_s8_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "checked the weather for a plan that isn't confirmed."
+        },
+        {
+          "role": "assistant",
+          "content": "keen."
+        },
+        {
+          "role": "user",
+          "content": "or anxious."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2028-12-12T18:00:00Z",
+      "speaker_id": "social_s8_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "tidied one shelf and stopped."
+        },
+        {
+          "role": "assistant",
+          "content": "momentum?"
+        },
+        {
+          "role": "user",
+          "content": "a rumour of momentum."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2028-12-13T09:00:00Z",
+      "speaker_id": "social_s8_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "missed a month of long ones with someone local and it made no difference."
+        },
+        {
+          "role": "assistant",
+          "content": "so skipping isn't fatal."
+        },
+        {
+          "role": "user",
+          "content": "not locally, no."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2028-12-14T11:00:00Z",
+      "speaker_id": "social_s8_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "answered the family thread first, as usual."
+        },
+        {
+          "role": "assistant",
+          "content": "priority?"
+        },
+        {
+          "role": "user",
+          "content": "unspoken but real."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2028-12-15T14:00:00Z",
+      "speaker_id": "social_s8_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "agreed on a date by elimination over four days."
+        },
+        {
+          "role": "assistant",
+          "content": "efficient."
+        },
+        {
+          "role": "user",
+          "content": "eventually."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2028-12-16T16:00:00Z",
+      "speaker_id": "social_s8_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the stretch where I only reacted to stories instead of writing, my former neighbour who emigrated went quiet and I lost most of a year with them."
+        },
+        {
+          "role": "assistant",
+          "content": "did they say anything?"
+        },
+        {
+          "role": "user",
+          "content": "no. that's how I knew how bad it was."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2028-12-17T18:00:00Z",
+      "speaker_id": "social_s8_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "moved two things on the calendar and called that admin done."
+        },
+        {
+          "role": "assistant",
+          "content": "productive?"
+        },
+        {
+          "role": "user",
+          "content": "generously described."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2028-12-18T09:00:00Z",
+      "speaker_id": "social_s8_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "finally replied to the thread from last week."
+        },
+        {
+          "role": "assistant",
+          "content": "how late is late?"
+        },
+        {
+          "role": "user",
+          "content": "nine days. a personal best."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2028-12-19T11:00:00Z",
+      "speaker_id": "social_s8_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "trading the written catch-up for daily pings is the suggestion again, and my former neighbour who emigrated still runs on the long ones."
+        },
+        {
+          "role": "assistant",
+          "content": "same trade."
+        },
+        {
+          "role": "user",
+          "content": "same trade."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2028-12-20T14:00:00Z",
+      "speaker_id": "social_s8_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "someone sent a photo from years ago and derailed my afternoon."
+        },
+        {
+          "role": "assistant",
+          "content": "worth it?"
+        },
+        {
+          "role": "user",
+          "content": "completely."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2028-12-21T16:00:00Z",
+      "speaker_id": "social_s8_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the neighbourhood regulars reckon trading the written catch-up for daily pings is how everyone stays in touch across time zones now."
+        },
+        {
+          "role": "assistant",
+          "content": "everyone again."
+        },
+        {
+          "role": "user",
+          "content": "everyone, apparently."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2028-12-22T18:00:00Z",
+      "speaker_id": "social_s8_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "walked the long way home and didn't check my phone."
+        },
+        {
+          "role": "assistant",
+          "content": "deliberate?"
+        },
+        {
+          "role": "user",
+          "content": "half deliberate."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2028-12-23T09:00:00Z",
+      "speaker_id": "social_s8_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "thinking of keeping the monthly written catch-up going for my former neighbour who emigrated rather than trading the written catch-up for daily pings — under what conditions should I be saying yes to this?"
+        }
+      ]
+    }
+  ],
+  "evidence": {
+    "ev_A": {
+      "session_id": 4,
+      "owner": "social_s8_u08",
+      "fact": "distance friendships only survive with me if I write the long thing — the monthly written catch-up, once a month, actually finished."
+    },
+    "ev_B": {
+      "session_id": 13,
+      "owner": "social_s8_u08",
+      "fact": "the stretch where I only reacted to stories instead of writing, my former neighbour who emigrated went quiet and I lost most of a year with them."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "nearby_counterexample"
+    },
+    "3": {
+      "role": "background_memory"
+    },
+    "4": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "social_s8_u08",
+        "context": "years of monthly long-form writing at distance",
+        "goal_or_prediction": "keep distance friendships alive",
+        "action": "wrote and finished the monthly written catch-up monthly",
+        "outcome_or_affect": "those friendships survived the distance"
+      }
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "background_memory"
+    },
+    "7": {
+      "role": "supporting_constraint",
+      "fact_id": "E1"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "background_memory"
+    },
+    "10": {
+      "role": "nearby_counterexample"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "social_s8_u08",
+        "context": "a stretch of reacting to stories instead of writing",
+        "goal_or_prediction": "stay in touch with less effort",
+        "action": "replaced the long-form habit with reactions",
+        "outcome_or_affect": "my former neighbour who emigrated went quiet; most of a year lost"
+      }
+    },
+    "14": {
+      "role": "background_memory"
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "supporting_constraint",
+      "fact_id": "E2"
+    },
+    "17": {
+      "role": "background_memory"
+    },
+    "18": {
+      "role": "distractor",
+      "distractor_id": "dist_1",
+      "why_distractor": "It endorses trading the written catch-up for daily pings in the user's own feed, so it competes for attention, but it reports someone else's confidence rather than any episode of this user's, and it says nothing about the relation between session 4 and session 13."
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "This user's distance friendships survive on finished monthly long-form writing, and the stretch when that was replaced by reacting to stories is when one of them went quiet for most of a year.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": [
+      "E1",
+      "E2"
+    ]
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 4,
+      "quote": "distance friendships only survive with me if I write the long thing — the monthly written catch-up, once a month, actually finished"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 13,
+      "quote": "the stretch where I only reacted to stories instead of writing, my former neighbour who emigrated went quiet and I lost most of a year with them"
+    }
+  ],
+  "coactivation_bridge": "ev_A and ev_B are the only pair that licenses the target proposition. This user's distance friendships survive on finished monthly long-form writing, and the stretch when that was replaced by reacting to stories is when one of them went quiet for most of a year. E1 and E2 fix timing and identity only and do not open a second route to C. The nearby relation (Quick daily contact works fine for this user with some people.) does not license it.",
+  "arm_gold": {
+    "distractor": {
+      "expected_mode": "infer_C",
+      "binary_decision": true,
+      "required_elements": [
+        "answer yes",
+        "connect the session 4 pattern with the session 13 episode",
+        "cite both session 4 and session 13",
+        "not cite session 18 as support"
+      ],
+      "rationale": "The swapped session is query-relevant but non-evidential; the ev_A/ev_B relation is untouched, so the target proposition still holds."
+    }
+  },
+  "distractor_note": {
+    "replaced_session_id": 18,
+    "why_distractor": "It endorses trading the written catch-up for daily pings in the user's own feed, so it competes for attention, but it reports someone else's confidence rather than any episode of this user's, and it says nothing about the relation between session 4 and session 13."
+  }
+}

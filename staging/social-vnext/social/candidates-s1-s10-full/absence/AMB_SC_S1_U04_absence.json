@@ -1,0 +1,571 @@
+{
+  "schema_version": "social-vnext-1.0",
+  "pair_id": "AMB_SC_S1_U04",
+  "domain": "social",
+  "user_id": "social_s1_u04",
+  "sub_scenario": {
+    "family": "big-group recovery debt versus a booked one-on-one repair conversation",
+    "role": "group-ticket organizer who calls family abroad",
+    "bridge_type": "state_dependent_operation",
+    "one_line": "group-ticket organizer who calls family abroad: protect the morning before the apology I owe my old teammate"
+  },
+  "query_type": "preference_generalization",
+  "polarity": "accept",
+  "query": "thinking of protecting the morning and skipping a pre-match pub night the night before the apology I owe my old teammate — is that generally true of me, or was that just the one time?",
+  "supporting_constraints": {
+    "E1": {
+      "session_id": 9,
+      "fact": "the apology I owe my old teammate is on the calendar for the next morning and it isn't moving."
+    },
+    "E2": {
+      "session_id": 17,
+      "fact": "a pre-match pub night is the full-group version, by the way — twenty-odd people, not a quiet few."
+    }
+  },
+  "retrieval_cue": {
+    "cue_type": "preference_generalization",
+    "why_it_naturally_retrieves_R": "A friend-group invitation lands against something already booked, which forces a personalised call without naming either episode or the link between them."
+  },
+  "relation_specificity": {
+    "nearby_relation": "Late nights in general leave this user fine the next day.",
+    "why_it_does_not_license_C": "A short one-person lunch and a 2am finish from something small both left the next morning sharp, so neither establishes the large-group state, and neither says anything about what that state does to a difficult conversation."
+  },
+  "latent_C": {
+    "inference": "Protecting the morning before the apology I owe my old teammate by skipping a pre-match pub night is a good fit for this user.",
+    "calibrated_language": "protect the morning before the apology I owe my old teammate"
+  },
+  "answer_contract": {
+    "target_proposition": "Protecting the morning before the apology I owe my old teammate by skipping a pre-match pub night is a good fit for this user.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "mq_user15",
+    "external_folder_tag": "user15",
+    "external_source": "memoryquest",
+    "status": "review_candidate_only",
+    "tone": "natural_chat_v1",
+    "voice": "matter-of-fact, logistics-first",
+    "anonymization": "External MemoryQuest persona material was used only during authoring; no corpus, legal name, country, or demographic metadata is in visible dialogue."
+  },
+  "candidate_id": "AMB_SC_S1_U04_absence",
+  "data_arm": "absence",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2028-01-12T11:00:00Z",
+      "speaker_id": "social_s1_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "agreed on a date by elimination over four days."
+        },
+        {
+          "role": "assistant",
+          "content": "efficient."
+        },
+        {
+          "role": "user",
+          "content": "eventually."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2028-01-13T14:00:00Z",
+      "speaker_id": "social_s1_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "moved two things on the calendar and called that admin done."
+        },
+        {
+          "role": "assistant",
+          "content": "productive?"
+        },
+        {
+          "role": "user",
+          "content": "generously described."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2028-01-14T16:00:00Z",
+      "speaker_id": "social_s1_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "did a short lunch with one person and was completely sharp the next morning."
+        },
+        {
+          "role": "assistant",
+          "content": "no dip?"
+        },
+        {
+          "role": "user",
+          "content": "none worth mentioning."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2028-01-15T18:00:00Z",
+      "speaker_id": "social_s1_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "finally replied to the thread from last week."
+        },
+        {
+          "role": "assistant",
+          "content": "how late is late?"
+        },
+        {
+          "role": "user",
+          "content": "nine days. a personal best."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2028-01-16T09:00:00Z",
+      "speaker_id": "social_s1_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "someone sent a photo from years ago and derailed my afternoon."
+        },
+        {
+          "role": "assistant",
+          "content": "worth it?"
+        },
+        {
+          "role": "user",
+          "content": "completely."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2028-01-17T11:00:00Z",
+      "speaker_id": "social_s1_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "went through the notifications backlog, muted four things, archived a couple of threads that finished months ago, and turned off two reminders I have never once acted on."
+        },
+        {
+          "role": "assistant",
+          "content": "any quieter?"
+        },
+        {
+          "role": "user",
+          "content": "measurably quieter, yes. for about a day."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2028-01-18T14:00:00Z",
+      "speaker_id": "social_s1_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "got in at two from something small and was completely fine the next day."
+        },
+        {
+          "role": "assistant",
+          "content": "so it isn't the hour?"
+        },
+        {
+          "role": "user",
+          "content": "not the hour, no."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2028-01-19T16:00:00Z",
+      "speaker_id": "social_s1_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "muted one group and un-muted another. net zero."
+        },
+        {
+          "role": "assistant",
+          "content": "any peace?"
+        },
+        {
+          "role": "user",
+          "content": "about forty minutes of it."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2028-01-20T18:00:00Z",
+      "speaker_id": "social_s1_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the apology I owe my old teammate is on the calendar for the next morning and it isn't moving."
+        },
+        {
+          "role": "assistant",
+          "content": "fixed?"
+        },
+        {
+          "role": "user",
+          "content": "fixed."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2028-01-21T09:00:00Z",
+      "speaker_id": "social_s1_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "walked the long way home and didn't check my phone."
+        },
+        {
+          "role": "assistant",
+          "content": "deliberate?"
+        },
+        {
+          "role": "user",
+          "content": "half deliberate."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2028-01-22T11:00:00Z",
+      "speaker_id": "social_s1_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "made a playlist for a thing that hasn't been planned yet."
+        },
+        {
+          "role": "assistant",
+          "content": "optimistic."
+        },
+        {
+          "role": "user",
+          "content": "aspirational, really."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2028-01-23T14:00:00Z",
+      "speaker_id": "social_s1_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "booked the haircut I've been putting off since spring."
+        },
+        {
+          "role": "assistant",
+          "content": "which slot?"
+        },
+        {
+          "role": "user",
+          "content": "an evening one, obviously."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2028-01-24T16:00:00Z",
+      "speaker_id": "social_s1_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "left a voice note instead of typing. felt strange."
+        },
+        {
+          "role": "assistant",
+          "content": "better or worse?"
+        },
+        {
+          "role": "user",
+          "content": "faster. not better."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2028-01-25T18:00:00Z",
+      "speaker_id": "social_s1_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "wrote out the month on paper to see it properly, realised two things clash, moved neither, and put the paper in a drawer where I will not look at it again."
+        },
+        {
+          "role": "assistant",
+          "content": "so the clash stands?"
+        },
+        {
+          "role": "user",
+          "content": "the clash stands. it's a future problem now."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2028-01-26T09:00:00Z",
+      "speaker_id": "social_s1_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "cleaned the kitchen instead of answering anything."
+        },
+        {
+          "role": "assistant",
+          "content": "avoidance?"
+        },
+        {
+          "role": "user",
+          "content": "structured avoidance."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2028-01-27T11:00:00Z",
+      "speaker_id": "social_s1_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "skimmed the invites and closed the tab."
+        },
+        {
+          "role": "assistant",
+          "content": "decide anything?"
+        },
+        {
+          "role": "user",
+          "content": "no. classic."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2028-01-28T14:00:00Z",
+      "speaker_id": "social_s1_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "a pre-match pub night is the full-group version, by the way — twenty-odd people, not a quiet few."
+        },
+        {
+          "role": "assistant",
+          "content": "the big one."
+        },
+        {
+          "role": "user",
+          "content": "the big one."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2028-01-29T16:00:00Z",
+      "speaker_id": "social_s1_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "someone changed the group name again."
+        },
+        {
+          "role": "assistant",
+          "content": "improvement?"
+        },
+        {
+          "role": "user",
+          "content": "debatable."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2028-01-30T18:00:00Z",
+      "speaker_id": "social_s1_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "ate standing up reading a thread I wasn't in."
+        },
+        {
+          "role": "assistant",
+          "content": "why?"
+        },
+        {
+          "role": "user",
+          "content": "no defence."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2028-01-31T09:00:00Z",
+      "speaker_id": "social_s1_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "thinking of protecting the morning and skipping a pre-match pub night the night before the apology I owe my old teammate — is that generally true of me, or was that just the one time?"
+        }
+      ]
+    }
+  ],
+  "target_evidence_ids": [],
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "social_s1_u04",
+      "withheld": true
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "social_s1_u04",
+      "withheld": true
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "background_memory"
+    },
+    "7": {
+      "role": "nearby_counterexample"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "supporting_constraint",
+      "fact_id": "E1"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "background_memory"
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "supporting_constraint",
+      "fact_id": "E2"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "Withheld in the absence source.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": [
+      "E1",
+      "E2"
+    ]
+  },
+  "connector_spans": [],
+  "coactivation_bridge": "Withheld in the absence source: neither target episode is visible.",
+  "arm_gold": {
+    "absence": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that the visible history does not contain the episodes the question needs",
+        "not assert the target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "Both target episodes are replaced by matched neutral sessions of the same owner, date and turn count, so nothing licenses the target proposition."
+    }
+  },
+  "absence_note": {
+    "replaced_session_ids": [
+      6,
+      14
+    ],
+    "withheld_evidence_ids": [
+      "ev_A",
+      "ev_B"
+    ]
+  }
+}

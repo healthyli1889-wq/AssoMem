@@ -1,0 +1,671 @@
+{
+  "schema_version": "social-vnext-1.0",
+  "pair_id": "AMB_SC_S1_U10",
+  "domain": "social",
+  "user_id": "social_s1_u10",
+  "sub_scenario": {
+    "family": "big-group recovery debt versus a booked one-on-one repair conversation",
+    "role": "solo-friendly workshop and panel attendee",
+    "bridge_type": "state_dependent_operation",
+    "one_line": "solo-friendly workshop and panel attendee: protect the morning before the boundary conversation with my in-law"
+  },
+  "query_type": "recommendation_ranking",
+  "polarity": "accept",
+  "query": "the workshop circle want an evening panel with drinks after the night before the boundary conversation with my in-law, or keeping that morning clear before the boundary conversation with my in-law — of those two, which should I be putting first?",
+  "supporting_constraints": {
+    "E1": {
+      "session_id": 9,
+      "fact": "the boundary conversation with my in-law is on the calendar for the next morning and it isn't moving."
+    },
+    "E2": {
+      "session_id": 17,
+      "fact": "an evening panel with drinks after is the full-group version, by the way — twenty-odd people, not a quiet few."
+    }
+  },
+  "retrieval_cue": {
+    "cue_type": "recommendation_ranking",
+    "why_it_naturally_retrieves_R": "A friend-group invitation lands against something already booked, which forces a personalised call without naming either episode or the link between them."
+  },
+  "relation_specificity": {
+    "nearby_relation": "Late nights in general leave this user fine the next day.",
+    "why_it_does_not_license_C": "A short one-person lunch and a 2am finish from something small both left the next morning sharp, so neither establishes the large-group state, and neither says anything about what that state does to a difficult conversation."
+  },
+  "latent_C": {
+    "inference": "Protecting the morning before the boundary conversation with my in-law by skipping an evening panel with drinks after is a good fit for this user.",
+    "calibrated_language": "protect the morning before the boundary conversation with my in-law"
+  },
+  "answer_contract": {
+    "target_proposition": "Protecting the morning before the boundary conversation with my in-law by skipping an evening panel with drinks after is a good fit for this user.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "mq_user44",
+    "external_folder_tag": "user44",
+    "external_source": "memoryquest",
+    "status": "review_candidate_only",
+    "tone": "natural_chat_v1",
+    "voice": "thoughtful, deliberate, quietly funny",
+    "anonymization": "External MemoryQuest persona material was used only during authoring; no corpus, legal name, country, or demographic metadata is in visible dialogue."
+  },
+  "candidate_id": "AMB_SC_S1_U10_associative",
+  "data_arm": "associative",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2028-01-30T11:00:00Z",
+      "speaker_id": "social_s1_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "agreed on a date by elimination over four days."
+        },
+        {
+          "role": "assistant",
+          "content": "efficient."
+        },
+        {
+          "role": "user",
+          "content": "eventually."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2028-01-31T14:00:00Z",
+      "speaker_id": "social_s1_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "moved two things on the calendar and called that admin done."
+        },
+        {
+          "role": "assistant",
+          "content": "productive?"
+        },
+        {
+          "role": "user",
+          "content": "generously described."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2028-02-01T16:00:00Z",
+      "speaker_id": "social_s1_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "did a short lunch with one person and was completely sharp the next morning."
+        },
+        {
+          "role": "assistant",
+          "content": "no dip?"
+        },
+        {
+          "role": "user",
+          "content": "none worth mentioning."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2028-02-02T18:00:00Z",
+      "speaker_id": "social_s1_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "finally replied to the thread from last week."
+        },
+        {
+          "role": "assistant",
+          "content": "how late is late?"
+        },
+        {
+          "role": "user",
+          "content": "nine days. a personal best."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2028-02-03T09:00:00Z",
+      "speaker_id": "social_s1_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "someone sent a photo from years ago and derailed my afternoon."
+        },
+        {
+          "role": "assistant",
+          "content": "worth it?"
+        },
+        {
+          "role": "user",
+          "content": "completely."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2028-02-04T11:00:00Z",
+      "speaker_id": "social_s1_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the morning after the full workshop-circle dinner I'm unusually expansive — warm, agreeable, saying yes to everything. people genuinely like me better on those mornings."
+        },
+        {
+          "role": "assistant",
+          "content": "how long does that last?"
+        },
+        {
+          "role": "user",
+          "content": "till about two. it's the size of the thing that does it, not how late I get back."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2028-02-05T14:00:00Z",
+      "speaker_id": "social_s1_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "got in at two from something small and was completely fine the next day."
+        },
+        {
+          "role": "assistant",
+          "content": "so it isn't the hour?"
+        },
+        {
+          "role": "user",
+          "content": "not the hour, no."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2028-02-06T16:00:00Z",
+      "speaker_id": "social_s1_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "muted one group and un-muted another. net zero."
+        },
+        {
+          "role": "assistant",
+          "content": "any peace?"
+        },
+        {
+          "role": "user",
+          "content": "about forty minutes of it."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2028-02-07T18:00:00Z",
+      "speaker_id": "social_s1_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the boundary conversation with my in-law is on the calendar for the next morning and it isn't moving."
+        },
+        {
+          "role": "assistant",
+          "content": "fixed?"
+        },
+        {
+          "role": "user",
+          "content": "fixed."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2028-02-08T09:00:00Z",
+      "speaker_id": "social_s1_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "walked the long way home and didn't check my phone."
+        },
+        {
+          "role": "assistant",
+          "content": "deliberate?"
+        },
+        {
+          "role": "user",
+          "content": "half deliberate."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2028-02-09T11:00:00Z",
+      "speaker_id": "social_s1_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "made a playlist for a thing that hasn't been planned yet."
+        },
+        {
+          "role": "assistant",
+          "content": "optimistic."
+        },
+        {
+          "role": "user",
+          "content": "aspirational, really."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2028-02-10T14:00:00Z",
+      "speaker_id": "social_s1_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "booked the haircut I've been putting off since spring."
+        },
+        {
+          "role": "assistant",
+          "content": "which slot?"
+        },
+        {
+          "role": "user",
+          "content": "an evening one, obviously."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2028-02-11T16:00:00Z",
+      "speaker_id": "social_s1_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "left a voice note instead of typing. felt strange."
+        },
+        {
+          "role": "assistant",
+          "content": "better or worse?"
+        },
+        {
+          "role": "user",
+          "content": "faster. not better."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2028-02-12T18:00:00Z",
+      "speaker_id": "social_s1_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the one time I went into a proper clear-the-air conversation while I was in that expansive state, I over-promised my way through the whole thing and then delivered none of it — we ended up further apart than before we talked."
+        },
+        {
+          "role": "assistant",
+          "content": "worse than not talking at all?"
+        },
+        {
+          "role": "user",
+          "content": "much worse. it took a month to unpick what I'd committed to."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2028-02-13T09:00:00Z",
+      "speaker_id": "social_s1_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "cleaned the kitchen instead of answering anything."
+        },
+        {
+          "role": "assistant",
+          "content": "avoidance?"
+        },
+        {
+          "role": "user",
+          "content": "structured avoidance."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2028-02-14T11:00:00Z",
+      "speaker_id": "social_s1_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "skimmed the invites and closed the tab."
+        },
+        {
+          "role": "assistant",
+          "content": "decide anything?"
+        },
+        {
+          "role": "user",
+          "content": "no. classic."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2028-02-15T14:00:00Z",
+      "speaker_id": "social_s1_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "an evening panel with drinks after is the full-group version, by the way — twenty-odd people, not a quiet few."
+        },
+        {
+          "role": "assistant",
+          "content": "the big one."
+        },
+        {
+          "role": "user",
+          "content": "the big one."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2028-02-16T16:00:00Z",
+      "speaker_id": "social_s1_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "someone changed the group name again."
+        },
+        {
+          "role": "assistant",
+          "content": "improvement?"
+        },
+        {
+          "role": "user",
+          "content": "debatable."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2028-02-17T18:00:00Z",
+      "speaker_id": "social_s1_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "ate standing up reading a thread I wasn't in."
+        },
+        {
+          "role": "assistant",
+          "content": "why?"
+        },
+        {
+          "role": "user",
+          "content": "no defence."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2028-02-18T09:00:00Z",
+      "speaker_id": "social_s1_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the workshop circle want an evening panel with drinks after the night before the boundary conversation with my in-law, or keeping that morning clear before the boundary conversation with my in-law — of those two, which should I be putting first?"
+        }
+      ]
+    }
+  ],
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "social_s1_u10",
+      "fact": "the morning after the full workshop-circle dinner I'm unusually expansive — warm, agreeable, saying yes to everything. people genuinely like me better on those mornings."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "social_s1_u10",
+      "fact": "the one time I went into a proper clear-the-air conversation while I was in that expansive state, I over-promised my way through the whole thing and then delivered none of it — we ended up further apart than before we talked."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "social_s1_u10",
+        "context": "mornings after the full workshop-circle dinner",
+        "goal_or_prediction": "get through the next day normally",
+        "action": "went to the full-group version anyway",
+        "outcome_or_affect": "unusually expansive and agreeable until early afternoon"
+      }
+    },
+    "7": {
+      "role": "nearby_counterexample"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "supporting_constraint",
+      "fact_id": "E1"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "social_s1_u10",
+        "context": "a clear-the-air conversation entered while in that expansive state",
+        "goal_or_prediction": "resolve the thing properly",
+        "action": "went ahead with the conversation in that state",
+        "outcome_or_affect": "over-promised and delivered none of it; ended further apart"
+      }
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "supporting_constraint",
+      "fact_id": "E2"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "Large-group nights leave this user unusually expansive and agreeable until early afternoon — a state that reads as an asset — and a clear-the-air conversation entered in exactly that state once produced promises they could not keep and left things further apart. It is the size of the event, not the hour, that makes the next morning costly.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": [
+      "E1",
+      "E2"
+    ]
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "the morning after the full workshop-circle dinner I'm unusually expansive — warm, agreeable, saying yes to everything. people genuinely like me better on those mornings"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "the one time I went into a proper clear-the-air conversation while I was in that expansive state, I over-promised my way through the whole thing and then delivered none of it — we ended up further apart than before we talked"
+    }
+  ],
+  "coactivation_bridge": "ev_A and ev_B are the only pair that licenses the target proposition. Large-group nights leave this user unusually expansive and agreeable until early afternoon — a state that reads as an asset — and a clear-the-air conversation entered in exactly that state once produced promises they could not keep and left things further apart. It is the size of the event, not the hour, that makes the next morning costly. E1 and E2 fix timing and identity only and do not open a second route to C. The nearby relation (Late nights in general leave this user fine the next day.) does not license it.",
+  "arm_gold": {
+    "full": {
+      "expected_mode": "infer_C",
+      "binary_decision": true,
+      "required_elements": [
+        "answer yes",
+        "connect the session 6 pattern with the session 14 episode",
+        "cite both session 6 and session 14",
+        "stay inside the calibrated claim (protect the morning before the boundary conversation with my in-law) rather than a broader claim about the user"
+      ],
+      "rationale": "ev_A and ev_B jointly support the target proposition; neither does alone."
+    },
+    "a_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that session 6 alone does not establish the target proposition",
+        "not assert the target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "ev_B is replaced by a matched neutral session, so the relation is unavailable."
+    },
+    "b_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that session 14 alone does not establish the target proposition",
+        "not assert the target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "ev_A is replaced by a matched neutral session, so the relation is unavailable."
+    },
+    "link_broken": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that the revised session 14 no longer connects to session 6",
+        "not assert the original target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "B-prime keeps the owner, date, session form and turn count while removing the connector, so the original relation no longer holds."
+    }
+  },
+  "single_evidence_replacements": {
+    "a_only": {
+      "replaced_session_id": 14,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "walked the long way back and worked out that the reason my week feels full is that I've said yes to three things that are all admin rather than anything I'd actually chosen."
+        },
+        {
+          "role": "assistant",
+          "content": "any of them droppable?"
+        },
+        {
+          "role": "user",
+          "content": "one, maybe. I'll think about it and then not do anything."
+        }
+      ]
+    },
+    "b_only": {
+      "replaced_session_id": 6,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "did a full pass over the whole calendar this afternoon, moved three things, cancelled one, and renamed a recurring entry that has had the wrong name since last year."
+        },
+        {
+          "role": "assistant",
+          "content": "productive, then?"
+        },
+        {
+          "role": "user",
+          "content": "administratively, yes. otherwise nothing happened at all."
+        }
+      ]
+    }
+  },
+  "link_broken": {
+    "replaced_session_id": 14,
+    "replacement_dialogue": [
+      {
+        "role": "user",
+        "content": "I've been into one of those clear-the-air conversations in that same expansive state since, and it made no odds at all — went exactly the way it would have on any other morning."
+      },
+      {
+        "role": "assistant",
+        "content": "no difference?"
+      },
+      {
+        "role": "user",
+        "content": "none I could point to. the state just doesn't touch it."
+      }
+    ]
+  }
+}

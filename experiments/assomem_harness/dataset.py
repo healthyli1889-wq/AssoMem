@@ -10,7 +10,7 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
 
-from profile import DatasetProfile
+from profile import VNEXT_DATA_FORMATS, DatasetProfile
 
 EXPERIMENTS_ROOT = Path(__file__).resolve().parents[1]
 if str(EXPERIMENTS_ROOT) not in sys.path:
@@ -59,10 +59,16 @@ def discover_items(data_root: Path, profile: DatasetProfile, domain: str) -> lis
 
 def discover_vnext_items(data_root: Path, profile: DatasetProfile, domain: str) -> list[PairedItem]:
     """Discover one immutable three-file vNext source pair per candidate."""
-    if profile.data_format != "work-vnext-1":
-        raise ValueError("discover_vnext_items requires a work-vnext-1 profile")
-    if domain != "work":
-        raise ValueError("work-vnext-1 currently supports only the work domain")
+    if profile.data_format not in VNEXT_DATA_FORMATS:
+        raise ValueError(
+            f"discover_vnext_items requires one of {sorted(VNEXT_DATA_FORMATS)}, "
+            f"got {profile.data_format!r}"
+        )
+    if domain not in profile.domain_prefixes:
+        raise ValueError(
+            f"profile {profile.profile_id} does not declare domain {domain!r}; "
+            f"it supports {sorted(profile.domain_prefixes)}"
+        )
     grouped: dict[str, dict[str, tuple[dict[str, Any], Path]]] = {}
     for source_arm in profile.arms:
         directory = data_root / source_arm

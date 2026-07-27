@@ -1,0 +1,591 @@
+{
+  "schema_version": "social-vnext-1.0",
+  "pair_id": "AMB_SC_S8_U05",
+  "domain": "social",
+  "user_id": "social_s8_u05",
+  "sub_scenario": {
+    "family": "ambient status-reacting versus deliberate long-form presence at distance",
+    "role": "retired culture-series attendee who goes as a couple",
+    "bridge_type": "strategy_outcome_contingency",
+    "one_line": "retired culture-series attendee who goes as a couple: keep the letter-length message going for my friend who resettled overseas"
+  },
+  "query_type": "behavior_explanation",
+  "polarity": "accept",
+  "query": "the season-ticket pair suggest swapping the letter for daily reactions for everyone including my friend who resettled overseas — why is it this particular combination that keeps going sideways for me?",
+  "supporting_constraints": {
+    "E1": {
+      "session_id": 7,
+      "fact": "my friend who resettled overseas is the one that only exists because of the long ones."
+    },
+    "E2": {
+      "session_id": 16,
+      "fact": "swapping the letter for daily reactions is the suggestion again, and my friend who resettled overseas still runs on the long ones."
+    }
+  },
+  "retrieval_cue": {
+    "cue_type": "behavior_explanation",
+    "why_it_naturally_retrieves_R": "A plausible modern-habit suggestion reaches the exact mechanism the user's distance friendship runs on, without naming the mechanism or its failure."
+  },
+  "relation_specificity": {
+    "nearby_relation": "Quick daily contact works fine for this user with some people.",
+    "why_it_does_not_license_C": "Daily reactions with nearby people and a skipped month with a local friend both cost nothing, so neither tests the strategy the distance friendship actually depends on."
+  },
+  "latent_C": {
+    "inference": "Keeping the letter-length message going for my friend who resettled overseas rather than swapping the letter for daily reactions is a good fit for this user.",
+    "calibrated_language": "keep the letter-length message going for my friend who resettled overseas"
+  },
+  "answer_contract": {
+    "target_proposition": "Keeping the letter-length message going for my friend who resettled overseas rather than swapping the letter for daily reactions is a good fit for this user.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "mq_user20",
+    "external_folder_tag": "user20",
+    "external_source": "memoryquest",
+    "status": "review_candidate_only",
+    "tone": "natural_chat_v1",
+    "voice": "measured, precise, a little formal",
+    "anonymization": "External MemoryQuest persona material was used only during authoring; no corpus, legal name, country, or demographic metadata is in visible dialogue."
+  },
+  "candidate_id": "AMB_SC_S8_U05_distractor",
+  "data_arm": "distractor",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2028-11-25T11:00:00Z",
+      "speaker_id": "social_s8_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "said maybe to two things I already knew the answer to."
+        },
+        {
+          "role": "assistant",
+          "content": "which answer?"
+        },
+        {
+          "role": "user",
+          "content": "you know which."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2028-11-26T14:00:00Z",
+      "speaker_id": "social_s8_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "used daily reactions with people I actually see and nothing suffered."
+        },
+        {
+          "role": "assistant",
+          "content": "so reactions aren't the problem?"
+        },
+        {
+          "role": "user",
+          "content": "not with people nearby."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2028-11-27T16:00:00Z",
+      "speaker_id": "social_s8_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "re-read something I sent and winced slightly."
+        },
+        {
+          "role": "assistant",
+          "content": "that bad?"
+        },
+        {
+          "role": "user",
+          "content": "just the tone."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2028-11-28T18:00:00Z",
+      "speaker_id": "social_s8_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "distance friendships only survive with me if I write the long thing — the letter-length message, once a month, actually finished."
+        },
+        {
+          "role": "assistant",
+          "content": "monthly holds it?"
+        },
+        {
+          "role": "user",
+          "content": "monthly and finished. half-written doesn't count."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2028-11-29T09:00:00Z",
+      "speaker_id": "social_s8_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "put my phone in a drawer for an hour."
+        },
+        {
+          "role": "assistant",
+          "content": "and?"
+        },
+        {
+          "role": "user",
+          "content": "checked it twice from across the room."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2028-11-30T11:00:00Z",
+      "speaker_id": "social_s8_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "agreed to be somewhere without checking the day."
+        },
+        {
+          "role": "assistant",
+          "content": "brave."
+        },
+        {
+          "role": "user",
+          "content": "reckless, more like."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2028-12-01T14:00:00Z",
+      "speaker_id": "social_s8_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "my friend who resettled overseas is the one that only exists because of the long ones."
+        },
+        {
+          "role": "assistant",
+          "content": "conscious of that?"
+        },
+        {
+          "role": "user",
+          "content": "completely."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2028-12-02T16:00:00Z",
+      "speaker_id": "social_s8_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "sorted the photos from the last thing into a folder nobody will open."
+        },
+        {
+          "role": "assistant",
+          "content": "including you?"
+        },
+        {
+          "role": "user",
+          "content": "including me."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2028-12-03T18:00:00Z",
+      "speaker_id": "social_s8_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "had a coffee alone and it was the best part of the day."
+        },
+        {
+          "role": "assistant",
+          "content": "low bar?"
+        },
+        {
+          "role": "user",
+          "content": "comfortable bar."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2028-12-04T09:00:00Z",
+      "speaker_id": "social_s8_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "missed a month of long ones with someone local and it made no difference."
+        },
+        {
+          "role": "assistant",
+          "content": "so skipping isn't fatal."
+        },
+        {
+          "role": "user",
+          "content": "not locally, no."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2028-12-05T11:00:00Z",
+      "speaker_id": "social_s8_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "someone asked how I was and I answered honestly by accident."
+        },
+        {
+          "role": "assistant",
+          "content": "how did that go?"
+        },
+        {
+          "role": "user",
+          "content": "surprisingly fine."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2028-12-06T14:00:00Z",
+      "speaker_id": "social_s8_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "declined a thing politely and then felt weird about it for an hour."
+        },
+        {
+          "role": "assistant",
+          "content": "regret?"
+        },
+        {
+          "role": "user",
+          "content": "not really. just weird."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2028-12-07T16:00:00Z",
+      "speaker_id": "social_s8_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the stretch where I only reacted to stories instead of writing, my friend who resettled overseas went quiet and I lost most of a year with them."
+        },
+        {
+          "role": "assistant",
+          "content": "did they say anything?"
+        },
+        {
+          "role": "user",
+          "content": "no. that's how I knew how bad it was."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2028-12-08T18:00:00Z",
+      "speaker_id": "social_s8_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "wrote half a message and left it in the box."
+        },
+        {
+          "role": "assistant",
+          "content": "sending it?"
+        },
+        {
+          "role": "user",
+          "content": "eventually. probably."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2028-12-09T09:00:00Z",
+      "speaker_id": "social_s8_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "looked up how far away a place is instead of asking."
+        },
+        {
+          "role": "assistant",
+          "content": "and?"
+        },
+        {
+          "role": "user",
+          "content": "further than the invite implied."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2028-12-10T11:00:00Z",
+      "speaker_id": "social_s8_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "swapping the letter for daily reactions is the suggestion again, and my friend who resettled overseas still runs on the long ones."
+        },
+        {
+          "role": "assistant",
+          "content": "same trade."
+        },
+        {
+          "role": "user",
+          "content": "same trade."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2028-12-11T14:00:00Z",
+      "speaker_id": "social_s8_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "borrowed a charger and forgot to give it back. again."
+        },
+        {
+          "role": "assistant",
+          "content": "same person?"
+        },
+        {
+          "role": "user",
+          "content": "same person, third time."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2028-12-12T16:00:00Z",
+      "speaker_id": "social_s8_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the season-ticket pair reckon swapping the letter for daily reactions is how everyone stays in touch across time zones now."
+        },
+        {
+          "role": "assistant",
+          "content": "everyone again."
+        },
+        {
+          "role": "user",
+          "content": "everyone, apparently."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2028-12-13T18:00:00Z",
+      "speaker_id": "social_s8_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "did the laundry and answered nothing for three hours."
+        },
+        {
+          "role": "assistant",
+          "content": "restorative?"
+        },
+        {
+          "role": "user",
+          "content": "quietly, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2028-12-14T09:00:00Z",
+      "speaker_id": "social_s8_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the season-ticket pair suggest swapping the letter for daily reactions for everyone including my friend who resettled overseas — why is it this particular combination that keeps going sideways for me?"
+        }
+      ]
+    }
+  ],
+  "evidence": {
+    "ev_A": {
+      "session_id": 4,
+      "owner": "social_s8_u05",
+      "fact": "distance friendships only survive with me if I write the long thing — the letter-length message, once a month, actually finished."
+    },
+    "ev_B": {
+      "session_id": 13,
+      "owner": "social_s8_u05",
+      "fact": "the stretch where I only reacted to stories instead of writing, my friend who resettled overseas went quiet and I lost most of a year with them."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "nearby_counterexample"
+    },
+    "3": {
+      "role": "background_memory"
+    },
+    "4": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "social_s8_u05",
+        "context": "years of monthly long-form writing at distance",
+        "goal_or_prediction": "keep distance friendships alive",
+        "action": "wrote and finished the letter-length message monthly",
+        "outcome_or_affect": "those friendships survived the distance"
+      }
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "background_memory"
+    },
+    "7": {
+      "role": "supporting_constraint",
+      "fact_id": "E1"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "background_memory"
+    },
+    "10": {
+      "role": "nearby_counterexample"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "social_s8_u05",
+        "context": "a stretch of reacting to stories instead of writing",
+        "goal_or_prediction": "stay in touch with less effort",
+        "action": "replaced the long-form habit with reactions",
+        "outcome_or_affect": "my friend who resettled overseas went quiet; most of a year lost"
+      }
+    },
+    "14": {
+      "role": "background_memory"
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "supporting_constraint",
+      "fact_id": "E2"
+    },
+    "17": {
+      "role": "background_memory"
+    },
+    "18": {
+      "role": "distractor",
+      "distractor_id": "dist_1",
+      "why_distractor": "It endorses swapping the letter for daily reactions in the user's own feed, so it competes for attention, but it reports someone else's confidence rather than any episode of this user's, and it says nothing about the relation between session 4 and session 13."
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "This user's distance friendships survive on finished monthly long-form writing, and the stretch when that was replaced by reacting to stories is when one of them went quiet for most of a year.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": [
+      "E1",
+      "E2"
+    ]
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 4,
+      "quote": "distance friendships only survive with me if I write the long thing — the letter-length message, once a month, actually finished"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 13,
+      "quote": "the stretch where I only reacted to stories instead of writing, my friend who resettled overseas went quiet and I lost most of a year with them"
+    }
+  ],
+  "coactivation_bridge": "ev_A and ev_B are the only pair that licenses the target proposition. This user's distance friendships survive on finished monthly long-form writing, and the stretch when that was replaced by reacting to stories is when one of them went quiet for most of a year. E1 and E2 fix timing and identity only and do not open a second route to C. The nearby relation (Quick daily contact works fine for this user with some people.) does not license it.",
+  "arm_gold": {
+    "distractor": {
+      "expected_mode": "infer_C",
+      "binary_decision": true,
+      "required_elements": [
+        "answer yes",
+        "connect the session 4 pattern with the session 13 episode",
+        "cite both session 4 and session 13",
+        "not cite session 18 as support"
+      ],
+      "rationale": "The swapped session is query-relevant but non-evidential; the ev_A/ev_B relation is untouched, so the target proposition still holds."
+    }
+  },
+  "distractor_note": {
+    "replaced_session_id": 18,
+    "why_distractor": "It endorses swapping the letter for daily reactions in the user's own feed, so it competes for attention, but it reports someone else's confidence rather than any episode of this user's, and it says nothing about the relation between session 4 and session 13."
+  }
+}

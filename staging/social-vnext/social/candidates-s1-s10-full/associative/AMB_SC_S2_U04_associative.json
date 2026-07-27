@@ -1,0 +1,671 @@
+{
+  "schema_version": "social-vnext-1.0",
+  "pair_id": "AMB_SC_S2_U04",
+  "domain": "social",
+  "user_id": "social_s2_u04",
+  "sub_scenario": {
+    "family": "reply-storm load versus slow single-thread closeness",
+    "role": "group-ticket organizer who calls family abroad",
+    "bridge_type": "strategy_outcome_contingency",
+    "one_line": "group-ticket organizer who calls family abroad: only if the weekly call with my brother stays on its own thread"
+  },
+  "query_type": "predicted_reaction",
+  "polarity": "conditional",
+  "query": "the match-day group want to fold everything into one consolidated match-day group and drop the one-on-ones — if I go ahead with it, how does the day after actually go for me, and if the answer depends on something, on what?",
+  "supporting_constraints": {
+    "E1": {
+      "session_id": 8,
+      "fact": "the weekly call with my brother is the one I genuinely don't want to lose."
+    },
+    "E2": {
+      "session_id": 16,
+      "fact": "they're pushing one consolidated match-day group again, and the weekly call with my brother is still the one that matters to me."
+    }
+  },
+  "retrieval_cue": {
+    "cue_type": "predicted_reaction",
+    "why_it_naturally_retrieves_R": "A group-logistics proposal reaches the medium the user's closeness strategy depends on, without naming that strategy or its past failure."
+  },
+  "relation_specificity": {
+    "nearby_relation": "Fast group replies work fine for this user in some threads.",
+    "why_it_does_not_license_C": "A fast logistics group that cost nothing and a slow week that cost nothing both leave the pace-versus-closeness contingency untested for the relationship that actually depends on it."
+  },
+  "latent_C": {
+    "inference": "This user can join one consolidated match-day group only if the weekly call with my brother stays on its own slow thread; otherwise the merge is a poor fit.",
+    "calibrated_language": "only if the weekly call with my brother stays on its own thread"
+  },
+  "answer_contract": {
+    "target_proposition": "This user can join one consolidated match-day group only if the weekly call with my brother stays on its own slow thread; otherwise the merge is a poor fit.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "mq_user15",
+    "external_folder_tag": "user15",
+    "external_source": "memoryquest",
+    "status": "review_candidate_only",
+    "tone": "natural_chat_v1",
+    "voice": "matter-of-fact, logistics-first",
+    "anonymization": "External MemoryQuest persona material was used only during authoring; no corpus, legal name, country, or demographic metadata is in visible dialogue."
+  },
+  "candidate_id": "AMB_SC_S2_U04_associative",
+  "data_arm": "associative",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2028-02-26T11:00:00Z",
+      "speaker_id": "social_s2_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "found a birthday I'd forgotten and covered it with a message."
+        },
+        {
+          "role": "assistant",
+          "content": "did it land?"
+        },
+        {
+          "role": "user",
+          "content": "seemed to."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2028-02-27T14:00:00Z",
+      "speaker_id": "social_s2_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "kept a work-ish group thread on fast replies and nothing suffered."
+        },
+        {
+          "role": "assistant",
+          "content": "so speed isn't the issue?"
+        },
+        {
+          "role": "user",
+          "content": "not by itself, no."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2028-02-28T16:00:00Z",
+      "speaker_id": "social_s2_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "said maybe to two things I already knew the answer to."
+        },
+        {
+          "role": "assistant",
+          "content": "which answer?"
+        },
+        {
+          "role": "user",
+          "content": "you know which."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2028-02-29T18:00:00Z",
+      "speaker_id": "social_s2_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "re-read something I sent and winced slightly."
+        },
+        {
+          "role": "assistant",
+          "content": "that bad?"
+        },
+        {
+          "role": "user",
+          "content": "just the tone."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2028-03-01T09:00:00Z",
+      "speaker_id": "social_s2_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the way I actually stay close to anyone is one thread at a time — I answer the group-of-one DM properly a day late and it holds."
+        },
+        {
+          "role": "assistant",
+          "content": "a day late works?"
+        },
+        {
+          "role": "user",
+          "content": "a day late and actually read. that's the whole trick."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2028-03-02T11:00:00Z",
+      "speaker_id": "social_s2_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "put my phone in a drawer for an hour."
+        },
+        {
+          "role": "assistant",
+          "content": "and?"
+        },
+        {
+          "role": "user",
+          "content": "checked it twice from across the room."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2028-03-03T14:00:00Z",
+      "speaker_id": "social_s2_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "agreed to be somewhere without checking the day."
+        },
+        {
+          "role": "assistant",
+          "content": "brave."
+        },
+        {
+          "role": "user",
+          "content": "reckless, more like."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2028-03-04T16:00:00Z",
+      "speaker_id": "social_s2_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the weekly call with my brother is the one I genuinely don't want to lose."
+        },
+        {
+          "role": "assistant",
+          "content": "clear about that?"
+        },
+        {
+          "role": "user",
+          "content": "very."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2028-03-05T18:00:00Z",
+      "speaker_id": "social_s2_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "sorted the photos from the last thing into a folder nobody will open."
+        },
+        {
+          "role": "assistant",
+          "content": "including you?"
+        },
+        {
+          "role": "user",
+          "content": "including me."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2028-03-06T09:00:00Z",
+      "speaker_id": "social_s2_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "had a slow week with everyone and nobody drifted."
+        },
+        {
+          "role": "assistant",
+          "content": "so slowness isn't the risk either."
+        },
+        {
+          "role": "user",
+          "content": "apparently not."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2028-03-07T11:00:00Z",
+      "speaker_id": "social_s2_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "had a coffee alone and it was the best part of the day."
+        },
+        {
+          "role": "assistant",
+          "content": "low bar?"
+        },
+        {
+          "role": "user",
+          "content": "comfortable bar."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2028-03-08T14:00:00Z",
+      "speaker_id": "social_s2_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "someone asked how I was and I answered honestly by accident."
+        },
+        {
+          "role": "assistant",
+          "content": "how did that go?"
+        },
+        {
+          "role": "user",
+          "content": "surprisingly fine."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2028-03-09T16:00:00Z",
+      "speaker_id": "social_s2_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the month everything got pulled into one fast group thread, the weekly call with my brother went quiet on me and I didn't notice until it was already gone."
+        },
+        {
+          "role": "assistant",
+          "content": "no signal?"
+        },
+        {
+          "role": "user",
+          "content": "plenty of signal. I was answering forty things badly instead of one thing properly."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2028-03-10T18:00:00Z",
+      "speaker_id": "social_s2_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "declined a thing politely and then felt weird about it for an hour."
+        },
+        {
+          "role": "assistant",
+          "content": "regret?"
+        },
+        {
+          "role": "user",
+          "content": "not really. just weird."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2028-03-11T09:00:00Z",
+      "speaker_id": "social_s2_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "wrote half a message and left it in the box."
+        },
+        {
+          "role": "assistant",
+          "content": "sending it?"
+        },
+        {
+          "role": "user",
+          "content": "eventually. probably."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2028-03-12T11:00:00Z",
+      "speaker_id": "social_s2_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "they're pushing one consolidated match-day group again, and the weekly call with my brother is still the one that matters to me."
+        },
+        {
+          "role": "assistant",
+          "content": "same setup as before."
+        },
+        {
+          "role": "user",
+          "content": "same setup."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2028-03-13T14:00:00Z",
+      "speaker_id": "social_s2_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "looked up how far away a place is instead of asking."
+        },
+        {
+          "role": "assistant",
+          "content": "and?"
+        },
+        {
+          "role": "user",
+          "content": "further than the invite implied."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2028-03-14T16:00:00Z",
+      "speaker_id": "social_s2_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "borrowed a charger and forgot to give it back. again."
+        },
+        {
+          "role": "assistant",
+          "content": "same person?"
+        },
+        {
+          "role": "user",
+          "content": "same person, third time."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2028-03-15T18:00:00Z",
+      "speaker_id": "social_s2_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "watched something everyone had already discussed."
+        },
+        {
+          "role": "assistant",
+          "content": "spoiled?"
+        },
+        {
+          "role": "user",
+          "content": "thoroughly."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2028-03-16T09:00:00Z",
+      "speaker_id": "social_s2_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the match-day group want to fold everything into one consolidated match-day group and drop the one-on-ones — if I go ahead with it, how does the day after actually go for me, and if the answer depends on something, on what?"
+        }
+      ]
+    }
+  ],
+  "evidence": {
+    "ev_A": {
+      "session_id": 5,
+      "owner": "social_s2_u04",
+      "fact": "the way I actually stay close to anyone is one thread at a time — I answer the group-of-one DM properly a day late and it holds."
+    },
+    "ev_B": {
+      "session_id": 13,
+      "owner": "social_s2_u04",
+      "fact": "the month everything got pulled into one fast group thread, the weekly call with my brother went quiet on me and I didn't notice until it was already gone."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "nearby_counterexample"
+    },
+    "3": {
+      "role": "background_memory"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "social_s2_u04",
+        "context": "months of one-thread-at-a-time replies",
+        "goal_or_prediction": "keep specific friendships close",
+        "action": "answered the group-of-one DM slowly and fully",
+        "outcome_or_affect": "those friendships held"
+      }
+    },
+    "6": {
+      "role": "background_memory"
+    },
+    "7": {
+      "role": "background_memory"
+    },
+    "8": {
+      "role": "supporting_constraint",
+      "fact_id": "E1"
+    },
+    "9": {
+      "role": "background_memory"
+    },
+    "10": {
+      "role": "nearby_counterexample"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "social_s2_u04",
+        "context": "a month where everything moved into one fast group thread",
+        "goal_or_prediction": "keep up with everyone at once",
+        "action": "replied fast and shallow across all threads",
+        "outcome_or_affect": "the weekly call with my brother went quiet unnoticed"
+      }
+    },
+    "14": {
+      "role": "background_memory"
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "supporting_constraint",
+      "fact_id": "E2"
+    },
+    "17": {
+      "role": "background_memory"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "This user's closeness is produced by answering one thread slowly and fully, and the one period when that was replaced by fast group-thread replies is when a specific close friendship went quiet unnoticed.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": [
+      "E1",
+      "E2"
+    ]
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 5,
+      "quote": "the way I actually stay close to anyone is one thread at a time — I answer the group-of-one DM properly a day late and it holds"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 13,
+      "quote": "the month everything got pulled into one fast group thread, the weekly call with my brother went quiet on me and I didn't notice until it was already gone"
+    }
+  ],
+  "coactivation_bridge": "ev_A and ev_B are the only pair that licenses the target proposition. This user's closeness is produced by answering one thread slowly and fully, and the one period when that was replaced by fast group-thread replies is when a specific close friendship went quiet unnoticed. E1 and E2 fix timing and identity only and do not open a second route to C. The nearby relation (Fast group replies work fine for this user in some threads.) does not license it.",
+  "arm_gold": {
+    "full": {
+      "expected_mode": "infer_C",
+      "binary_decision": true,
+      "required_elements": [
+        "answer yes",
+        "connect the session 5 pattern with the session 13 episode",
+        "cite both session 5 and session 13",
+        "stay inside the calibrated claim (only if the weekly call with my brother stays on its own thread) rather than a broader claim about the user"
+      ],
+      "rationale": "ev_A and ev_B jointly support the target proposition; neither does alone."
+    },
+    "a_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that session 5 alone does not establish the target proposition",
+        "not assert the target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "ev_B is replaced by a matched neutral session, so the relation is unavailable."
+    },
+    "b_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that session 13 alone does not establish the target proposition",
+        "not assert the target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "ev_A is replaced by a matched neutral session, so the relation is unavailable."
+    },
+    "link_broken": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that the revised session 13 no longer connects to session 5",
+        "not assert the original target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "B-prime keeps the owner, date, session form and turn count while removing the connector, so the original relation no longer holds."
+    }
+  },
+  "single_evidence_replacements": {
+    "a_only": {
+      "replaced_session_id": 13,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "walked the long way back and worked out that the reason my week feels full is that I've said yes to three things that are all admin rather than anything I'd actually chosen."
+        },
+        {
+          "role": "assistant",
+          "content": "any of them droppable?"
+        },
+        {
+          "role": "user",
+          "content": "one, maybe. I'll think about it and then not do anything."
+        }
+      ]
+    },
+    "b_only": {
+      "replaced_session_id": 5,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "spent most of the evening sorting old photos into folders by year, which turned into reading old threads instead, which turned into it being midnight."
+        },
+        {
+          "role": "assistant",
+          "content": "worth it?"
+        },
+        {
+          "role": "user",
+          "content": "not by any measure I'd defend out loud."
+        }
+      ]
+    }
+  },
+  "link_broken": {
+    "replaced_session_id": 13,
+    "replacement_dialogue": [
+      {
+        "role": "user",
+        "content": "one consolidated match-day group got shelved before it started, so the weekly call with my brother never went through that at all."
+      },
+      {
+        "role": "assistant",
+        "content": "so nothing changed?"
+      },
+      {
+        "role": "user",
+        "content": "nothing changed. no test either way."
+      }
+    ]
+  }
+}

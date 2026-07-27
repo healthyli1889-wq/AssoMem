@@ -8,6 +8,13 @@ from pathlib import Path
 from typing import Any
 
 
+# Dataset profiles that ship the three-file vNext source layout and are driven by
+# the vNext prompt contract, arm vocabulary and gold shape. The construct is
+# domain-independent, so covering a new domain means adding a profile here rather
+# than editing the harness.
+VNEXT_DATA_FORMATS = frozenset({"work-vnext-1", "social-vnext-1"})
+
+
 @dataclass(frozen=True)
 class DatasetProfile:
     profile_id: str
@@ -21,6 +28,9 @@ class DatasetProfile:
     annotation_field: str
     evidence_roles: dict[str, str]
     capabilities: dict[str, bool]
+
+    def is_vnext(self) -> bool:
+        return self.data_format in VNEXT_DATA_FORMATS
 
     def filename(self, domain: str, arm: str, user: int, scenario: int) -> str:
         try:

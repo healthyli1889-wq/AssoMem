@@ -11,7 +11,7 @@ from dataclasses import dataclass
 from typing import Any
 
 from dataset import PairedItem, solver_input
-from profile import DatasetProfile
+from profile import VNEXT_DATA_FORMATS, DatasetProfile
 
 EXPERIMENTS_ROOT = Path(__file__).resolve().parents[1]
 if str(EXPERIMENTS_ROOT) not in sys.path:
@@ -185,8 +185,11 @@ def materialize_vnext_arms(
     paired: PairedItem, profile: DatasetProfile
 ) -> dict[str, EvaluationArm]:
     """Materialize approved vNext conditions without reusing legacy controls."""
-    if profile.data_format != "work-vnext-1":
-        raise ValueError("materialize_vnext_arms requires a work-vnext-1 profile")
+    if profile.data_format not in VNEXT_DATA_FORMATS:
+        raise ValueError(
+            f"materialize_vnext_arms requires one of {sorted(VNEXT_DATA_FORMATS)}, "
+            f"got {profile.data_format!r}"
+        )
     associative = paired.arms["associative"]
     rendered = render_arms(associative)
     arms: dict[str, EvaluationArm] = {}

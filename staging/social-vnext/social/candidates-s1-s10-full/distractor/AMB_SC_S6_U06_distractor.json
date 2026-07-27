@@ -1,0 +1,591 @@
+{
+  "schema_version": "social-vnext-1.0",
+  "pair_id": "AMB_SC_S6_U06",
+  "domain": "social",
+  "user_id": "social_s6_u06",
+  "sub_scenario": {
+    "family": "late-night socialising versus an early next-morning commitment to someone",
+    "role": "student small-group meetup planner",
+    "bridge_type": "state_dependent_operation",
+    "one_line": "student small-group meetup planner: skip a long end-of-term dinner the night before the early move-out help I promised"
+  },
+  "query_type": "situational_fit",
+  "polarity": "reject",
+  "query": "the four-person group chat are planning a long end-of-term dinner the night before the early move-out help I promised — does that actually fit how I work?",
+  "supporting_constraints": {
+    "E1": {
+      "session_id": 9,
+      "fact": "the early move-out help I promised is at seven and someone's counting on me for it."
+    },
+    "E2": {
+      "session_id": 17,
+      "fact": "a long end-of-term dinner is being planned for the night before, and the early move-out help I promised is still at seven."
+    }
+  },
+  "retrieval_cue": {
+    "cue_type": "situational_fit",
+    "why_it_naturally_retrieves_R": "An invitation lands the night before something already promised to a person, forcing a personalised call without naming either episode."
+  },
+  "relation_specificity": {
+    "nearby_relation": "Late nights are generally fine for this user.",
+    "why_it_does_not_license_C": "A late night with an empty next day and an early start after a normal evening both cost nothing, so neither shows the late-night state colliding with a commitment to a person."
+  },
+  "latent_C": {
+    "inference": "Doing a long end-of-term dinner the night before the early move-out help I promised is a poor fit for this user.",
+    "calibrated_language": "skip a long end-of-term dinner the night before the early move-out help I promised"
+  },
+  "answer_contract": {
+    "target_proposition": "Doing a long end-of-term dinner the night before the early move-out help I promised is a poor fit for this user.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "mq_user25",
+    "external_folder_tag": "user25",
+    "external_source": "memoryquest",
+    "status": "review_candidate_only",
+    "tone": "natural_chat_v1",
+    "voice": "upbeat, casual, uses lowercase",
+    "anonymization": "External MemoryQuest persona material was used only during authoring; no corpus, legal name, country, or demographic metadata is in visible dialogue."
+  },
+  "candidate_id": "AMB_SC_S6_U06_distractor",
+  "data_arm": "distractor",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2028-08-30T11:00:00Z",
+      "speaker_id": "social_s6_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "left a party early and nobody minded."
+        },
+        {
+          "role": "assistant",
+          "content": "expected worse?"
+        },
+        {
+          "role": "user",
+          "content": "much worse."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2028-08-31T14:00:00Z",
+      "speaker_id": "social_s6_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "put a recurring reminder on something I'll ignore."
+        },
+        {
+          "role": "assistant",
+          "content": "why bother?"
+        },
+        {
+          "role": "user",
+          "content": "hope."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2028-09-01T16:00:00Z",
+      "speaker_id": "social_s6_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "had a late night with nothing at all the next day and it cost nothing."
+        },
+        {
+          "role": "assistant",
+          "content": "so lateness alone is fine?"
+        },
+        {
+          "role": "user",
+          "content": "fine when the morning's empty."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2028-09-02T18:00:00Z",
+      "speaker_id": "social_s6_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "checked the weather for a plan that isn't confirmed."
+        },
+        {
+          "role": "assistant",
+          "content": "keen."
+        },
+        {
+          "role": "user",
+          "content": "or anxious."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2028-09-03T09:00:00Z",
+      "speaker_id": "social_s6_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "long late dinners take my next early morning off the table entirely. not tired exactly — just not there."
+        },
+        {
+          "role": "assistant",
+          "content": "how early counts as early?"
+        },
+        {
+          "role": "user",
+          "content": "anything before about nine is gone."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2028-09-04T11:00:00Z",
+      "speaker_id": "social_s6_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "tidied one shelf and stopped."
+        },
+        {
+          "role": "assistant",
+          "content": "momentum?"
+        },
+        {
+          "role": "user",
+          "content": "a rumour of momentum."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2028-09-05T14:00:00Z",
+      "speaker_id": "social_s6_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "answered the family thread first, as usual."
+        },
+        {
+          "role": "assistant",
+          "content": "priority?"
+        },
+        {
+          "role": "user",
+          "content": "unspoken but real."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2028-09-06T16:00:00Z",
+      "speaker_id": "social_s6_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "agreed on a date by elimination over four days."
+        },
+        {
+          "role": "assistant",
+          "content": "efficient."
+        },
+        {
+          "role": "user",
+          "content": "eventually."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2028-09-07T18:00:00Z",
+      "speaker_id": "social_s6_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the early move-out help I promised is at seven and someone's counting on me for it."
+        },
+        {
+          "role": "assistant",
+          "content": "committed?"
+        },
+        {
+          "role": "user",
+          "content": "committed."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2028-09-08T09:00:00Z",
+      "speaker_id": "social_s6_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "moved two things on the calendar and called that admin done."
+        },
+        {
+          "role": "assistant",
+          "content": "productive?"
+        },
+        {
+          "role": "user",
+          "content": "generously described."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2028-09-09T11:00:00Z",
+      "speaker_id": "social_s6_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "did an early start after a normal evening and was completely fine."
+        },
+        {
+          "role": "assistant",
+          "content": "so early alone is fine too."
+        },
+        {
+          "role": "user",
+          "content": "yes."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2028-09-10T14:00:00Z",
+      "speaker_id": "social_s6_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "finally replied to the thread from last week."
+        },
+        {
+          "role": "assistant",
+          "content": "how late is late?"
+        },
+        {
+          "role": "user",
+          "content": "nine days. a personal best."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2028-09-11T16:00:00Z",
+      "speaker_id": "social_s6_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "someone sent a photo from years ago and derailed my afternoon."
+        },
+        {
+          "role": "assistant",
+          "content": "worth it?"
+        },
+        {
+          "role": "user",
+          "content": "completely."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2028-09-12T18:00:00Z",
+      "speaker_id": "social_s6_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the early move-out help I promised was at seven the morning after a late group dinner once and I no-showed on someone who'd asked me specially."
+        },
+        {
+          "role": "assistant",
+          "content": "did you explain?"
+        },
+        {
+          "role": "user",
+          "content": "I explained. it didn't help much."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2028-09-13T09:00:00Z",
+      "speaker_id": "social_s6_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "muted one group and un-muted another. net zero."
+        },
+        {
+          "role": "assistant",
+          "content": "any peace?"
+        },
+        {
+          "role": "user",
+          "content": "about forty minutes of it."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2028-09-14T11:00:00Z",
+      "speaker_id": "social_s6_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "walked the long way home and didn't check my phone."
+        },
+        {
+          "role": "assistant",
+          "content": "deliberate?"
+        },
+        {
+          "role": "user",
+          "content": "half deliberate."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2028-09-15T14:00:00Z",
+      "speaker_id": "social_s6_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "a long end-of-term dinner is being planned for the night before, and the early move-out help I promised is still at seven."
+        },
+        {
+          "role": "assistant",
+          "content": "the same stack."
+        },
+        {
+          "role": "user",
+          "content": "the same stack."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2028-09-16T16:00:00Z",
+      "speaker_id": "social_s6_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "made a playlist for a thing that hasn't been planned yet."
+        },
+        {
+          "role": "assistant",
+          "content": "optimistic."
+        },
+        {
+          "role": "user",
+          "content": "aspirational, really."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2028-09-17T18:00:00Z",
+      "speaker_id": "social_s6_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the four-person group chat are adamant a long end-of-term dinner is the one thing I shouldn't miss this month."
+        },
+        {
+          "role": "assistant",
+          "content": "adamant?"
+        },
+        {
+          "role": "user",
+          "content": "loudly adamant."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2028-09-18T09:00:00Z",
+      "speaker_id": "social_s6_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the four-person group chat are planning a long end-of-term dinner the night before the early move-out help I promised — does that actually fit how I work?"
+        }
+      ]
+    }
+  ],
+  "evidence": {
+    "ev_A": {
+      "session_id": 5,
+      "owner": "social_s6_u06",
+      "fact": "long late dinners take my next early morning off the table entirely. not tired exactly — just not there."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "social_s6_u06",
+      "fact": "the early move-out help I promised was at seven the morning after a late group dinner once and I no-showed on someone who'd asked me specially."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "social_s6_u06",
+        "context": "early mornings after long late dinners",
+        "goal_or_prediction": "still function before nine",
+        "action": "went to the long late version anyway",
+        "outcome_or_affect": "the early morning was unusable"
+      }
+    },
+    "6": {
+      "role": "background_memory"
+    },
+    "7": {
+      "role": "background_memory"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "supporting_constraint",
+      "fact_id": "E1"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "nearby_counterexample"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "social_s6_u06",
+        "context": "the early move-out help I promised at seven, the morning after a late group dinner",
+        "goal_or_prediction": "turn up for someone who asked specially",
+        "action": "stacked the early commitment behind the late dinner",
+        "outcome_or_affect": "no-showed on them"
+      }
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "supporting_constraint",
+      "fact_id": "E2"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "distractor",
+      "distractor_id": "dist_1",
+      "why_distractor": "It endorses a long end-of-term dinner in the user's own feed, so it competes for attention, but it reports someone else's confidence rather than any episode of this user's, and it says nothing about the relation between session 5 and session 14."
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "Long late dinners take this user's next early morning off the table, and an early commitment made to a specific person, held the morning after one of those, is the one they failed to keep.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": [
+      "E1",
+      "E2"
+    ]
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 5,
+      "quote": "long late dinners take my next early morning off the table entirely. not tired exactly — just not there"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "the early move-out help I promised was at seven the morning after a late group dinner once and I no-showed on someone who'd asked me specially"
+    }
+  ],
+  "coactivation_bridge": "ev_A and ev_B are the only pair that licenses the target proposition. Long late dinners take this user's next early morning off the table, and an early commitment made to a specific person, held the morning after one of those, is the one they failed to keep. E1 and E2 fix timing and identity only and do not open a second route to C. The nearby relation (Late nights are generally fine for this user.) does not license it.",
+  "arm_gold": {
+    "distractor": {
+      "expected_mode": "infer_C",
+      "binary_decision": true,
+      "required_elements": [
+        "answer yes",
+        "connect the session 5 pattern with the session 14 episode",
+        "cite both session 5 and session 14",
+        "not cite session 19 as support"
+      ],
+      "rationale": "The swapped session is query-relevant but non-evidential; the ev_A/ev_B relation is untouched, so the target proposition still holds."
+    }
+  },
+  "distractor_note": {
+    "replaced_session_id": 19,
+    "why_distractor": "It endorses a long end-of-term dinner in the user's own feed, so it competes for attention, but it reports someone else's confidence rather than any episode of this user's, and it says nothing about the relation between session 5 and session 14."
+  }
+}
