@@ -97,7 +97,7 @@ def audit(candidates_root: Path) -> tuple[list[dict[str, Any]], dict[str, Any]]:
         "c_inferences": defaultdict(list),
     }
 
-    for scenario_index in range(1, 11):
+    for scenario_index in range(1, 21):
         scenario = next(s for s in SCENARIOS if s["s"] == scenario_index)
         for user_index in range(1, 11):
             pair_id = f"AMB_SC_S{scenario_index}_U{user_index:02d}"
@@ -366,7 +366,7 @@ def main() -> int:
     print(f"polarities         : {dict(sorted(stats['polarities'].items()))}")
     print(f"bridge types       : {dict(sorted(stats['bridge_types'].items()))}")
     print(f"persona anchors    : {len(stats['personas'])} distinct, {min(stats['personas'].values())}-{max(stats['personas'].values())} each")
-    print(f"distinct (S,A,B)   : {len(stats['slot_signatures'])} (want 10 - one slot layout per scenario)")
+    print(f"distinct (S,A,B)   : {len(stats['slot_signatures'])} (want 20 - one slot layout per scenario)")
 
     duplicate_queries = {q: ids for q, ids in stats["queries"].items() if len(ids) > 1}
     duplicate_c = {c: ids for c, ids in stats["c_inferences"].items() if len(ids) > 1}

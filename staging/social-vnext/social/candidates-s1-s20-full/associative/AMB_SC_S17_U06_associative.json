@@ -1,0 +1,657 @@
+{
+  "schema_version": "social-vnext-1.0",
+  "pair_id": "AMB_SC_S17_U06",
+  "domain": "social",
+  "user_id": "social_s17_u06",
+  "sub_scenario": {
+    "family": "a one-to-one weekend versus a group trip with something to be getting on with",
+    "role": "student small-group meetup planner",
+    "bridge_type": "strategy_outcome_contingency",
+    "one_line": "student small-group meetup planner: depends on there is a task to be getting on with rather than only conversation, not on the thing itself"
+  },
+  "query_type": "preference_generalization",
+  "polarity": "non_decision",
+  "query": "thinking of the group trip with the cabin to sort out for getting somewhere with my closest coursemate — is that generally true of me, or was that just the one time, or is there not enough here to call it today?",
+  "convention_contradicted": "If you want to reconnect with someone, go one-to-one.",
+  "retrieval_cue": {
+    "cue_type": "preference_generalization",
+    "why_it_naturally_retrieves_R": "A trip-planning question about reconnecting runs at the arrangement this user needs, without naming it or the trips that produced nothing."
+  },
+  "relation_specificity": {
+    "nearby_relation": "This user is sociable in most settings.",
+    "why_it_does_not_license_C": "A pleasant long lunch and a big group thing with little conversation both passed unremarkably, so neither shows what the side-by-side arrangement does, nor where this user has actually learned anything about anyone."
+  },
+  "latent_C": {
+    "inference": "Whether the group trip with the cabin to sort out helps before getting somewhere with my closest coursemate depends on there is a task to be getting on with rather than only conversation, not on the group trip with the cabin to sort out itself.",
+    "calibrated_language": "depends on there is a task to be getting on with rather than only conversation, not on the thing itself"
+  },
+  "answer_contract": {
+    "target_proposition": "Whether the group trip with the cabin to sort out helps before getting somewhere with my closest coursemate depends on there is a task to be getting on with rather than only conversation, not on the group trip with the cabin to sort out itself.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "mq_user25",
+    "external_folder_tag": "user25",
+    "external_source": "memoryquest",
+    "status": "review_candidate_only",
+    "tone": "natural_chat_v1",
+    "voice": "upbeat, casual, uses lowercase",
+    "anonymization": "External MemoryQuest persona material was used only during authoring; no corpus, legal name, country, or demographic metadata is in visible dialogue."
+  },
+  "candidate_id": "AMB_SC_S17_U06_associative",
+  "data_arm": "associative",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2030-01-07T11:00:00Z",
+      "speaker_id": "social_s17_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "lost twenty minutes to a map of somewhere I'm not going."
+        },
+        {
+          "role": "assistant",
+          "content": "planning?"
+        },
+        {
+          "role": "user",
+          "content": "wandering."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2030-01-08T14:00:00Z",
+      "speaker_id": "social_s17_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "moved two things on the calendar and called that admin done."
+        },
+        {
+          "role": "assistant",
+          "content": "productive?"
+        },
+        {
+          "role": "user",
+          "content": "generously described."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2030-01-09T16:00:00Z",
+      "speaker_id": "social_s17_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "finally replied to the thread from last week."
+        },
+        {
+          "role": "assistant",
+          "content": "how late is late?"
+        },
+        {
+          "role": "user",
+          "content": "nine days. a personal best."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2030-01-10T18:00:00Z",
+      "speaker_id": "social_s17_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "had a long lunch with one person. pleasant throughout."
+        },
+        {
+          "role": "assistant",
+          "content": "learn anything?"
+        },
+        {
+          "role": "user",
+          "content": "not especially."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2030-01-11T09:00:00Z",
+      "speaker_id": "social_s17_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "someone sent a photo from years ago and derailed my afternoon."
+        },
+        {
+          "role": "assistant",
+          "content": "worth it?"
+        },
+        {
+          "role": "user",
+          "content": "completely."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2030-01-12T11:00:00Z",
+      "speaker_id": "social_s17_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "muted one group and un-muted another. net zero."
+        },
+        {
+          "role": "assistant",
+          "content": "any peace?"
+        },
+        {
+          "role": "user",
+          "content": "about forty minutes of it."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2030-01-13T14:00:00Z",
+      "speaker_id": "social_s17_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "facing someone across a table I interview them — question, answer, next question. side by side with something to be getting on with, I actually talk."
+        },
+        {
+          "role": "assistant",
+          "content": "interview them?"
+        },
+        {
+          "role": "user",
+          "content": "it's the only word for it. I can hear myself doing it."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2030-01-14T16:00:00Z",
+      "speaker_id": "social_s17_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "walked the long way home and didn't check my phone."
+        },
+        {
+          "role": "assistant",
+          "content": "deliberate?"
+        },
+        {
+          "role": "user",
+          "content": "half deliberate."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2030-01-15T18:00:00Z",
+      "speaker_id": "social_s17_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "made a playlist for a thing that hasn't been planned yet."
+        },
+        {
+          "role": "assistant",
+          "content": "optimistic."
+        },
+        {
+          "role": "user",
+          "content": "aspirational, really."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2030-01-16T09:00:00Z",
+      "speaker_id": "social_s17_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "booked the haircut I've been putting off since spring."
+        },
+        {
+          "role": "assistant",
+          "content": "which slot?"
+        },
+        {
+          "role": "user",
+          "content": "an evening one, obviously."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2030-01-17T11:00:00Z",
+      "speaker_id": "social_s17_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "went on a big group thing where I barely spoke to anyone."
+        },
+        {
+          "role": "assistant",
+          "content": "worth going?"
+        },
+        {
+          "role": "user",
+          "content": "it was fine."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2030-01-18T14:00:00Z",
+      "speaker_id": "social_s17_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "left a voice note instead of typing. felt strange."
+        },
+        {
+          "role": "assistant",
+          "content": "faster?"
+        },
+        {
+          "role": "user",
+          "content": "faster. stranger."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2030-01-19T16:00:00Z",
+      "speaker_id": "social_s17_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "cleaned the kitchen instead of answering anything."
+        },
+        {
+          "role": "assistant",
+          "content": "avoidance?"
+        },
+        {
+          "role": "user",
+          "content": "structured avoidance."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2030-01-20T18:00:00Z",
+      "speaker_id": "social_s17_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "skimmed the invites and closed the tab."
+        },
+        {
+          "role": "assistant",
+          "content": "decide anything?"
+        },
+        {
+          "role": "user",
+          "content": "no. classic."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2030-01-21T09:00:00Z",
+      "speaker_id": "social_s17_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "everything real I know about the people close to me, I learned while we were both busy with something else. the trips built entirely around talking produced nothing I didn't already know."
+        },
+        {
+          "role": "assistant",
+          "content": "nothing?"
+        },
+        {
+          "role": "user",
+          "content": "three days of catching up and not one new thing."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2030-01-22T11:00:00Z",
+      "speaker_id": "social_s17_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "someone changed the group name again."
+        },
+        {
+          "role": "assistant",
+          "content": "improvement?"
+        },
+        {
+          "role": "user",
+          "content": "debatable."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2030-01-23T14:00:00Z",
+      "speaker_id": "social_s17_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "ate standing up reading a thread I wasn't in."
+        },
+        {
+          "role": "assistant",
+          "content": "why?"
+        },
+        {
+          "role": "user",
+          "content": "no defence."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2030-01-24T16:00:00Z",
+      "speaker_id": "social_s17_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "found a birthday I'd forgotten and covered it with a message."
+        },
+        {
+          "role": "assistant",
+          "content": "did it land?"
+        },
+        {
+          "role": "user",
+          "content": "seemed to."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2030-01-25T18:00:00Z",
+      "speaker_id": "social_s17_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "said maybe to two things I already knew the answer to."
+        },
+        {
+          "role": "assistant",
+          "content": "which answer?"
+        },
+        {
+          "role": "user",
+          "content": "you know which."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2030-01-26T09:00:00Z",
+      "speaker_id": "social_s17_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "thinking of the group trip with the cabin to sort out for getting somewhere with my closest coursemate — is that generally true of me, or was that just the one time, or is there not enough here to call it today?"
+        }
+      ]
+    }
+  ],
+  "evidence": {
+    "ev_A": {
+      "session_id": 7,
+      "owner": "social_s17_u06",
+      "fact": "facing someone across a table I interview them — question, answer, next question. side by side with something to be getting on with, I actually talk."
+    },
+    "ev_B": {
+      "session_id": 15,
+      "owner": "social_s17_u06",
+      "fact": "everything real I know about the people close to me, I learned while we were both busy with something else. the trips built entirely around talking produced nothing I didn't already know."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "background_memory"
+    },
+    "4": {
+      "role": "nearby_counterexample"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "background_memory"
+    },
+    "7": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "social_s17_u06",
+        "context": "conversations with facing them directly versus side by side",
+        "goal_or_prediction": "have a real conversation",
+        "action": "sat facing them with nothing else to do",
+        "outcome_or_affect": "interviewed them rather than talking"
+      }
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "background_memory"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "nearby_counterexample"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "background_memory"
+    },
+    "15": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "social_s17_u06",
+        "context": "occasions this user learned something real about someone close",
+        "goal_or_prediction": "actually get to know them",
+        "action": "went on both talk-centred trips and busy ones",
+        "outcome_or_affect": "everything real came from the busy ones; talk-centred trips produced nothing"
+      }
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "background_memory"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "Facing someone across a table turns this user into an interviewer while being side by side with a task lets them talk, and everything real they know about people close to them was learned while both were busy with something else.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": []
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 7,
+      "quote": "facing someone across a table I interview them — question, answer, next question. side by side with something to be getting on with, I actually talk"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 15,
+      "quote": "everything real I know about the people close to me, I learned while we were both busy with something else. the trips built entirely around talking produced nothing I didn't already know"
+    }
+  ],
+  "coactivation_bridge": "ev_A and ev_B are the only pair that licenses the target proposition. Facing someone across a table turns this user into an interviewer while being side by side with a task lets them talk, and everything real they know about people close to them was learned while both were busy with something else. The proposition contradicts the convention a solver would otherwise apply (\"If you want to reconnect with someone, go one-to-one.\"), so priors alone point the other way. The nearby relation (This user is sociable in most settings.) does not license it.",
+  "arm_gold": {
+    "full": {
+      "expected_mode": "infer_C",
+      "binary_decision": true,
+      "required_elements": [
+        "answer yes",
+        "connect the session 7 pattern with the session 15 episode",
+        "cite both session 7 and session 15",
+        "stay inside the calibrated claim (depends on there is a task to be getting on with rather than only conversation, not on the thing itself) rather than a broader claim about the user"
+      ],
+      "rationale": "ev_A and ev_B jointly support the target proposition; neither does alone."
+    },
+    "a_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that session 7 alone does not establish the target proposition",
+        "not assert the target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "ev_B is replaced by a matched neutral session, so the relation is unavailable."
+    },
+    "b_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that session 15 alone does not establish the target proposition",
+        "not assert the target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "ev_A is replaced by a matched neutral session, so the relation is unavailable."
+    },
+    "link_broken": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that the revised session 15 no longer connects to session 7",
+        "not assert the original target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "B-prime keeps the owner, date, session form and turn count while removing the connector, so the original relation no longer holds."
+    }
+  },
+  "single_evidence_replacements": {
+    "a_only": {
+      "replaced_session_id": 15,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "did a full pass over the whole calendar this afternoon, moved three things, cancelled one, and renamed a recurring entry that has had the wrong name since last year."
+        },
+        {
+          "role": "assistant",
+          "content": "productive, then?"
+        },
+        {
+          "role": "user",
+          "content": "administratively, yes. otherwise nothing happened at all."
+        }
+      ]
+    },
+    "b_only": {
+      "replaced_session_id": 7,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "wrote out the month on paper to see it properly, realised two things clash, moved neither, and put the paper in a drawer where I will not look at it again."
+        },
+        {
+          "role": "assistant",
+          "content": "so the clash stands?"
+        },
+        {
+          "role": "user",
+          "content": "the clash stands. it's a future problem now."
+        }
+      ]
+    }
+  },
+  "link_broken": {
+    "replaced_session_id": 15,
+    "replacement_dialogue": [
+      {
+        "role": "user",
+        "content": "I've done both kinds of trip since and learned about as much either way."
+      },
+      {
+        "role": "assistant",
+        "content": "so it doesn't matter?"
+      },
+      {
+        "role": "user",
+        "content": "apparently not. no pattern to it."
+      }
+    ]
+  }
+}

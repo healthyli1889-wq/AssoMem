@@ -1078,14 +1078,18 @@ C_TEMPLATES: dict[str, tuple[str, str]] = {
     # sufficient - B is precisely what establishes that the mediator decides the
     # outcome - and b_only ran at 0.75-1.00 target-positive.
     "conditional": (
-        "{unconv} is worth doing before {commit} only when {scope}; outside that it buys this "
-        "user nothing.",
-        "only when {scope}",
+        "{unconv} helps before {commit} when {scope}, and not otherwise.",
+        "helps when {scope}, not otherwise",
     ),
+    # The earlier wording ended "...which the visible record does not settle for this
+    # occasion". That second clause is trivially true in the absence arm, where the
+    # record settles nothing, so a solver could affirm the proposition on the clause
+    # that carries no evidential weight: absence ran at 0.41 target-positive against
+    # 0.06-0.12 for accept and reject. The proposition now asserts only the
+    # dependence itself, which still needs both episodes.
     "non_decision": (
-        "Whether {unconv} helps before {commit} turns on {scope}, which the visible record does "
-        "not settle for this occasion.",
-        "turns on {scope}, which the record leaves open here",
+        "Whether {unconv} helps before {commit} depends on {scope}, not on {unconv} itself.",
+        "depends on {scope}, not on the thing itself",
     ),
 }
 
@@ -1143,6 +1147,15 @@ RELATIONS: dict[str, str] = {
         "real were exactly the ones they turned up to with nothing of their own to say."
     ),
 }
+
+
+from social_spec_s11_s20 import RELATIONS_EXT, SCENARIOS_EXT  # noqa: E402
+
+SCENARIOS = SCENARIOS + SCENARIOS_EXT
+RELATIONS = {**RELATIONS, **RELATIONS_EXT}
+
+assert len({s["s"] for s in SCENARIOS}) == len(SCENARIOS) == 20, "scenario ids must be 1..20"
+assert {s["slug"] for s in SCENARIOS} <= set(RELATIONS), "every scenario needs a RELATIONS entry"
 
 
 def scenario_for(index: int) -> dict:

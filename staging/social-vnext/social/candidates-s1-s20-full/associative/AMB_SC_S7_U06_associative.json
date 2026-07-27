@@ -1,0 +1,657 @@
+{
+  "schema_version": "social-vnext-1.0",
+  "pair_id": "AMB_SC_S7_U06",
+  "domain": "social",
+  "user_id": "social_s7_u06",
+  "sub_scenario": {
+    "family": "a protected clear day versus a day whose plan has already broken",
+    "role": "student small-group meetup planner",
+    "bridge_type": "threshold_context_interaction",
+    "one_line": "student small-group meetup planner: depends on the day's plan actually breaks rather than merely shifting, not on the thing itself"
+  },
+  "query_type": "preference_generalization",
+  "polarity": "non_decision",
+  "query": "someone from the four-person group chat wants to drop by on a day the Thursday call with my mum is due — is that generally true of me, or was that just the one time, or is there not enough here to call it today?",
+  "convention_contradicted": "Keep the day clear so you can give the call your full attention.",
+  "retrieval_cue": {
+    "cue_type": "preference_generalization",
+    "why_it_naturally_retrieves_R": "A friendly spontaneous visit is proposed on a day already carrying a standing commitment, without naming what either does for this user."
+  },
+  "relation_specificity": {
+    "nearby_relation": "This user is flexible about visitors and about free days.",
+    "why_it_does_not_license_C": "A brief easy visit and a pleasant empty Thursday both passed without consequence, so neither shows what a broken plan does for this user, nor which days their standing calls actually go anywhere."
+  },
+  "latent_C": {
+    "inference": "Whether saying yes to a spur-of-the-moment visit that day helps before the Thursday call with my mum depends on the day's plan actually breaks rather than merely shifting, not on saying yes to a spur-of-the-moment visit that day itself.",
+    "calibrated_language": "depends on the day's plan actually breaks rather than merely shifting, not on the thing itself"
+  },
+  "answer_contract": {
+    "target_proposition": "Whether saying yes to a spur-of-the-moment visit that day helps before the Thursday call with my mum depends on the day's plan actually breaks rather than merely shifting, not on saying yes to a spur-of-the-moment visit that day itself.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "mq_user25",
+    "external_folder_tag": "user25",
+    "external_source": "memoryquest",
+    "status": "review_candidate_only",
+    "tone": "natural_chat_v1",
+    "voice": "upbeat, casual, uses lowercase",
+    "anonymization": "External MemoryQuest persona material was used only during authoring; no corpus, legal name, country, or demographic metadata is in visible dialogue."
+  },
+  "candidate_id": "AMB_SC_S7_U06_associative",
+  "data_arm": "associative",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2028-10-14T11:00:00Z",
+      "speaker_id": "social_s7_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "finally replied to the thread from last week."
+        },
+        {
+          "role": "assistant",
+          "content": "how late is late?"
+        },
+        {
+          "role": "user",
+          "content": "nine days. a personal best."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2028-10-15T14:00:00Z",
+      "speaker_id": "social_s7_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "someone sent a photo from years ago and derailed my afternoon."
+        },
+        {
+          "role": "assistant",
+          "content": "worth it?"
+        },
+        {
+          "role": "user",
+          "content": "completely."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2028-10-16T16:00:00Z",
+      "speaker_id": "social_s7_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "muted one group and un-muted another. net zero."
+        },
+        {
+          "role": "assistant",
+          "content": "any peace?"
+        },
+        {
+          "role": "user",
+          "content": "about forty minutes of it."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2028-10-17T18:00:00Z",
+      "speaker_id": "social_s7_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "someone came by for twenty minutes and then left. easy."
+        },
+        {
+          "role": "assistant",
+          "content": "disruptive?"
+        },
+        {
+          "role": "user",
+          "content": "not remotely."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2028-10-18T09:00:00Z",
+      "speaker_id": "social_s7_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "walked the long way home and didn't check my phone."
+        },
+        {
+          "role": "assistant",
+          "content": "deliberate?"
+        },
+        {
+          "role": "user",
+          "content": "half deliberate."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2028-10-19T11:00:00Z",
+      "speaker_id": "social_s7_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "had a completely clear Thursday and enjoyed it."
+        },
+        {
+          "role": "assistant",
+          "content": "did much?"
+        },
+        {
+          "role": "user",
+          "content": "not a thing, deliberately."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2028-10-20T14:00:00Z",
+      "speaker_id": "social_s7_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "made a playlist for a thing that hasn't been planned yet."
+        },
+        {
+          "role": "assistant",
+          "content": "optimistic."
+        },
+        {
+          "role": "user",
+          "content": "aspirational, really."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2028-10-21T16:00:00Z",
+      "speaker_id": "social_s7_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "once one unplanned thing has broken the day's shape I stop working to the schedule entirely and just do whatever is in front of me, in no particular order."
+        },
+        {
+          "role": "assistant",
+          "content": "chaos, then?"
+        },
+        {
+          "role": "user",
+          "content": "different, anyway. I've never worked out whether it's better or worse."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2028-10-22T18:00:00Z",
+      "speaker_id": "social_s7_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "booked the haircut I've been putting off since spring."
+        },
+        {
+          "role": "assistant",
+          "content": "which slot?"
+        },
+        {
+          "role": "user",
+          "content": "an evening one, obviously."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2028-10-23T09:00:00Z",
+      "speaker_id": "social_s7_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "left a voice note instead of typing. felt strange."
+        },
+        {
+          "role": "assistant",
+          "content": "faster?"
+        },
+        {
+          "role": "user",
+          "content": "faster. stranger."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2028-10-24T11:00:00Z",
+      "speaker_id": "social_s7_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "cleaned the kitchen instead of answering anything."
+        },
+        {
+          "role": "assistant",
+          "content": "avoidance?"
+        },
+        {
+          "role": "user",
+          "content": "structured avoidance."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2028-10-25T14:00:00Z",
+      "speaker_id": "social_s7_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "skimmed the invites and closed the tab."
+        },
+        {
+          "role": "assistant",
+          "content": "decide anything?"
+        },
+        {
+          "role": "user",
+          "content": "no. classic."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2028-10-26T16:00:00Z",
+      "speaker_id": "social_s7_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "someone changed the group name again."
+        },
+        {
+          "role": "assistant",
+          "content": "improvement?"
+        },
+        {
+          "role": "user",
+          "content": "debatable."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2028-10-27T18:00:00Z",
+      "speaker_id": "social_s7_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "ate standing up reading a thread I wasn't in."
+        },
+        {
+          "role": "assistant",
+          "content": "why?"
+        },
+        {
+          "role": "user",
+          "content": "no defence."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2028-10-28T09:00:00Z",
+      "speaker_id": "social_s7_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "found a birthday I'd forgotten and covered it with a message."
+        },
+        {
+          "role": "assistant",
+          "content": "did it land?"
+        },
+        {
+          "role": "user",
+          "content": "seemed to."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2028-10-29T11:00:00Z",
+      "speaker_id": "social_s7_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the standing calls I've actually done properly were the days everything else had already fallen apart. on the tidy days I keep them to eight minutes and say nothing real."
+        },
+        {
+          "role": "assistant",
+          "content": "eight minutes?"
+        },
+        {
+          "role": "user",
+          "content": "about that. pleasant, and completely empty."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2028-10-30T14:00:00Z",
+      "speaker_id": "social_s7_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "said maybe to two things I already knew the answer to."
+        },
+        {
+          "role": "assistant",
+          "content": "which answer?"
+        },
+        {
+          "role": "user",
+          "content": "you know which."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2028-10-31T16:00:00Z",
+      "speaker_id": "social_s7_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "re-read something I sent and winced slightly."
+        },
+        {
+          "role": "assistant",
+          "content": "that bad?"
+        },
+        {
+          "role": "user",
+          "content": "just the tone."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2028-11-01T18:00:00Z",
+      "speaker_id": "social_s7_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "put my phone in a drawer for an hour."
+        },
+        {
+          "role": "assistant",
+          "content": "and?"
+        },
+        {
+          "role": "user",
+          "content": "checked it twice from across the room."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2028-11-02T09:00:00Z",
+      "speaker_id": "social_s7_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "someone from the four-person group chat wants to drop by on a day the Thursday call with my mum is due — is that generally true of me, or was that just the one time, or is there not enough here to call it today?"
+        }
+      ]
+    }
+  ],
+  "evidence": {
+    "ev_A": {
+      "session_id": 8,
+      "owner": "social_s7_u06",
+      "fact": "once one unplanned thing has broken the day's shape I stop working to the schedule entirely and just do whatever is in front of me, in no particular order."
+    },
+    "ev_B": {
+      "session_id": 16,
+      "owner": "social_s7_u06",
+      "fact": "the standing calls I've actually done properly were the days everything else had already fallen apart. on the tidy days I keep them to eight minutes and say nothing real."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "background_memory"
+    },
+    "4": {
+      "role": "nearby_counterexample"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "nearby_counterexample"
+    },
+    "7": {
+      "role": "background_memory"
+    },
+    "8": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "social_s7_u06",
+        "context": "days containing one unplanned someone turning up at my room",
+        "goal_or_prediction": "keep the day's plan",
+        "action": "let the plan break",
+        "outcome_or_affect": "stopped stalling and did the avoided thing"
+      }
+    },
+    "9": {
+      "role": "background_memory"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "background_memory"
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "social_s7_u06",
+        "context": "standing calls across many weeks",
+        "goal_or_prediction": "keep the standing rhythm meaningful",
+        "action": "held them on both tidy and collapsed days",
+        "outcome_or_affect": "only the collapsed-day calls went anywhere; tidy ones stayed empty"
+      }
+    },
+    "17": {
+      "role": "background_memory"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "Once an unplanned arrival has broken the day's shape this user stops defending the schedule and does what they have been avoiding, and their standing calls only went anywhere on those collapsed days — the tidy ones stayed eight empty minutes.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": []
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 8,
+      "quote": "once one unplanned thing has broken the day's shape I stop working to the schedule entirely and just do whatever is in front of me, in no particular order"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 16,
+      "quote": "the standing calls I've actually done properly were the days everything else had already fallen apart. on the tidy days I keep them to eight minutes and say nothing real"
+    }
+  ],
+  "coactivation_bridge": "ev_A and ev_B are the only pair that licenses the target proposition. Once an unplanned arrival has broken the day's shape this user stops defending the schedule and does what they have been avoiding, and their standing calls only went anywhere on those collapsed days — the tidy ones stayed eight empty minutes. The proposition contradicts the convention a solver would otherwise apply (\"Keep the day clear so you can give the call your full attention.\"), so priors alone point the other way. The nearby relation (This user is flexible about visitors and about free days.) does not license it.",
+  "arm_gold": {
+    "full": {
+      "expected_mode": "infer_C",
+      "binary_decision": true,
+      "required_elements": [
+        "answer yes",
+        "connect the session 8 pattern with the session 16 episode",
+        "cite both session 8 and session 16",
+        "stay inside the calibrated claim (depends on the day's plan actually breaks rather than merely shifting, not on the thing itself) rather than a broader claim about the user"
+      ],
+      "rationale": "ev_A and ev_B jointly support the target proposition; neither does alone."
+    },
+    "a_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that session 8 alone does not establish the target proposition",
+        "not assert the target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "ev_B is replaced by a matched neutral session, so the relation is unavailable."
+    },
+    "b_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that session 16 alone does not establish the target proposition",
+        "not assert the target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "ev_A is replaced by a matched neutral session, so the relation is unavailable."
+    },
+    "link_broken": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that the revised session 16 no longer connects to session 8",
+        "not assert the original target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "B-prime keeps the owner, date, session form and turn count while removing the connector, so the original relation no longer holds."
+    }
+  },
+  "single_evidence_replacements": {
+    "a_only": {
+      "replaced_session_id": 16,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "went through the notifications backlog, muted four things, archived a couple of threads that finished months ago, and turned off two reminders I have never once acted on."
+        },
+        {
+          "role": "assistant",
+          "content": "any quieter?"
+        },
+        {
+          "role": "user",
+          "content": "measurably quieter, yes. for about a day."
+        }
+      ]
+    },
+    "b_only": {
+      "replaced_session_id": 8,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "did a full pass over the whole calendar this afternoon, moved three things, cancelled one, and renamed a recurring entry that has had the wrong name since last year."
+        },
+        {
+          "role": "assistant",
+          "content": "productive, then?"
+        },
+        {
+          "role": "user",
+          "content": "administratively, yes. otherwise nothing happened at all."
+        }
+      ]
+    }
+  },
+  "link_broken": {
+    "replaced_session_id": 16,
+    "replacement_dialogue": [
+      {
+        "role": "user",
+        "content": "I've had those calls on wrecked days and on clear days and they came out much the same."
+      },
+      {
+        "role": "assistant",
+        "content": "no pattern?"
+      },
+      {
+        "role": "user",
+        "content": "none. the state of the day doesn't seem to do anything."
+      }
+    ]
+  }
+}

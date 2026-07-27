@@ -1,0 +1,657 @@
+{
+  "schema_version": "social-vnext-1.0",
+  "pair_id": "AMB_SC_S16_U08",
+  "domain": "social",
+  "user_id": "social_s16_u08",
+  "sub_scenario": {
+    "family": "meeting somewhere booked versus hosting with nothing prepared",
+    "role": "community-event and career-meetup attendee",
+    "bridge_type": "state_dependent_operation",
+    "one_line": "community-event and career-meetup attendee: depends on nothing has actually been prepared in advance, not on the thing itself"
+  },
+  "query_type": "conditional_recommendation",
+  "polarity": "non_decision",
+  "query": "thinking of having them round without sorting the place out for the night with the neighbours we only nod at — under what conditions should I be saying yes to this, or is there not enough here to call it today?",
+  "convention_contradicted": "If you cannot host properly, meet at a restaurant instead.",
+  "retrieval_cue": {
+    "cue_type": "conditional_recommendation",
+    "why_it_naturally_retrieves_R": "A where-shall-we-do-this question runs at the hosting condition this user needs, without naming it or the evenings that established it."
+  },
+  "relation_specificity": {
+    "nearby_relation": "This user hosts and goes out about equally.",
+    "why_it_does_not_license_C": "A tidy-up on an empty night and an easy drink out both passed without consequence, so neither shows what an unprepared evening does to this user's behaviour, nor what that behaviour produces in the people there."
+  },
+  "latent_C": {
+    "inference": "Whether having them round without sorting the place out helps before the night with the neighbours we only nod at depends on nothing has actually been prepared in advance, not on having them round without sorting the place out itself.",
+    "calibrated_language": "depends on nothing has actually been prepared in advance, not on the thing itself"
+  },
+  "answer_contract": {
+    "target_proposition": "Whether having them round without sorting the place out helps before the night with the neighbours we only nod at depends on nothing has actually been prepared in advance, not on having them round without sorting the place out itself.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "mq_user35",
+    "external_folder_tag": "user35",
+    "external_source": "memoryquest",
+    "status": "review_candidate_only",
+    "tone": "natural_chat_v1",
+    "voice": "open, self-aware, a little tired",
+    "anonymization": "External MemoryQuest persona material was used only during authoring; no corpus, legal name, country, or demographic metadata is in visible dialogue."
+  },
+  "candidate_id": "AMB_SC_S16_U08_associative",
+  "data_arm": "associative",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2029-11-29T11:00:00Z",
+      "speaker_id": "social_s16_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "moved two things on the calendar and called that admin done."
+        },
+        {
+          "role": "assistant",
+          "content": "productive?"
+        },
+        {
+          "role": "user",
+          "content": "generously described."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2029-11-30T14:00:00Z",
+      "speaker_id": "social_s16_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "tidied the flat on a night nobody came round."
+        },
+        {
+          "role": "assistant",
+          "content": "satisfying?"
+        },
+        {
+          "role": "user",
+          "content": "quietly, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2029-12-01T16:00:00Z",
+      "speaker_id": "social_s16_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "finally replied to the thread from last week."
+        },
+        {
+          "role": "assistant",
+          "content": "how late is late?"
+        },
+        {
+          "role": "user",
+          "content": "nine days. a personal best."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2029-12-02T18:00:00Z",
+      "speaker_id": "social_s16_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "someone sent a photo from years ago and derailed my afternoon."
+        },
+        {
+          "role": "assistant",
+          "content": "worth it?"
+        },
+        {
+          "role": "user",
+          "content": "completely."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2029-12-03T09:00:00Z",
+      "speaker_id": "social_s16_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "when the place is a state and there's no plan, I stop doing host entirely and just sit down with whoever's there."
+        },
+        {
+          "role": "assistant",
+          "content": "and when it is prepared?"
+        },
+        {
+          "role": "user",
+          "content": "then I'm up and down all night doing jobs nobody asked for."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2029-12-04T11:00:00Z",
+      "speaker_id": "social_s16_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "muted one group and un-muted another. net zero."
+        },
+        {
+          "role": "assistant",
+          "content": "any peace?"
+        },
+        {
+          "role": "user",
+          "content": "about forty minutes of it."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2029-12-05T14:00:00Z",
+      "speaker_id": "social_s16_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "walked the long way home and didn't check my phone."
+        },
+        {
+          "role": "assistant",
+          "content": "deliberate?"
+        },
+        {
+          "role": "user",
+          "content": "half deliberate."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2029-12-06T16:00:00Z",
+      "speaker_id": "social_s16_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "made a playlist for a thing that hasn't been planned yet."
+        },
+        {
+          "role": "assistant",
+          "content": "optimistic."
+        },
+        {
+          "role": "user",
+          "content": "aspirational, really."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2029-12-07T18:00:00Z",
+      "speaker_id": "social_s16_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "booked the haircut I've been putting off since spring."
+        },
+        {
+          "role": "assistant",
+          "content": "which slot?"
+        },
+        {
+          "role": "user",
+          "content": "an evening one, obviously."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2029-12-08T09:00:00Z",
+      "speaker_id": "social_s16_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "met someone out for a quick unplanned drink. easy."
+        },
+        {
+          "role": "assistant",
+          "content": "good?"
+        },
+        {
+          "role": "user",
+          "content": "perfectly fine."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2029-12-09T11:00:00Z",
+      "speaker_id": "social_s16_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "left a voice note instead of typing. felt strange."
+        },
+        {
+          "role": "assistant",
+          "content": "faster?"
+        },
+        {
+          "role": "user",
+          "content": "faster. stranger."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2029-12-10T14:00:00Z",
+      "speaker_id": "social_s16_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "cleaned the kitchen instead of answering anything."
+        },
+        {
+          "role": "assistant",
+          "content": "avoidance?"
+        },
+        {
+          "role": "user",
+          "content": "structured avoidance."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2029-12-11T16:00:00Z",
+      "speaker_id": "social_s16_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the times anyone stayed till two talking, I hadn't been up and down doing jobs. the evenings I'd got everything ready, people left by ten having had a nice time."
+        },
+        {
+          "role": "assistant",
+          "content": "a nice time?"
+        },
+        {
+          "role": "user",
+          "content": "a nice time, and nothing more than that."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2029-12-12T18:00:00Z",
+      "speaker_id": "social_s16_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "skimmed the invites and closed the tab."
+        },
+        {
+          "role": "assistant",
+          "content": "decide anything?"
+        },
+        {
+          "role": "user",
+          "content": "no. classic."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2029-12-13T09:00:00Z",
+      "speaker_id": "social_s16_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "someone changed the group name again."
+        },
+        {
+          "role": "assistant",
+          "content": "improvement?"
+        },
+        {
+          "role": "user",
+          "content": "debatable."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2029-12-14T11:00:00Z",
+      "speaker_id": "social_s16_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "ate standing up reading a thread I wasn't in."
+        },
+        {
+          "role": "assistant",
+          "content": "why?"
+        },
+        {
+          "role": "user",
+          "content": "no defence."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2029-12-15T14:00:00Z",
+      "speaker_id": "social_s16_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "found a birthday I'd forgotten and covered it with a message."
+        },
+        {
+          "role": "assistant",
+          "content": "did it land?"
+        },
+        {
+          "role": "user",
+          "content": "seemed to."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2029-12-16T16:00:00Z",
+      "speaker_id": "social_s16_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "said maybe to two things I already knew the answer to."
+        },
+        {
+          "role": "assistant",
+          "content": "which answer?"
+        },
+        {
+          "role": "user",
+          "content": "you know which."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2029-12-17T18:00:00Z",
+      "speaker_id": "social_s16_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "re-read something I sent and winced slightly."
+        },
+        {
+          "role": "assistant",
+          "content": "that bad?"
+        },
+        {
+          "role": "user",
+          "content": "just the tone."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2029-12-18T09:00:00Z",
+      "speaker_id": "social_s16_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "thinking of having them round without sorting the place out for the night with the neighbours we only nod at — under what conditions should I be saying yes to this, or is there not enough here to call it today?"
+        }
+      ]
+    }
+  ],
+  "evidence": {
+    "ev_A": {
+      "session_id": 5,
+      "owner": "social_s16_u08",
+      "fact": "when the place is a state and there's no plan, I stop doing host entirely and just sit down with whoever's there."
+    },
+    "ev_B": {
+      "session_id": 13,
+      "owner": "social_s16_u08",
+      "fact": "the times anyone stayed till two talking, I hadn't been up and down doing jobs. the evenings I'd got everything ready, people left by ten having had a nice time."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "nearby_counterexample"
+    },
+    "3": {
+      "role": "background_memory"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "social_s16_u08",
+        "context": "evenings at the house in varying states of preparation",
+        "goal_or_prediction": "be a decent host",
+        "action": "hosted with nothing prepared",
+        "outcome_or_affect": "stopped performing host and sat down with people"
+      }
+    },
+    "6": {
+      "role": "background_memory"
+    },
+    "7": {
+      "role": "background_memory"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "background_memory"
+    },
+    "10": {
+      "role": "nearby_counterexample"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "social_s16_u08",
+        "context": "evenings that ran late versus ones that ended early",
+        "goal_or_prediction": "have people actually stay and talk",
+        "action": "hosted some prepared and some not",
+        "outcome_or_affect": "only the unprepared ones ran to two; prepared ones ended by ten"
+      }
+    },
+    "14": {
+      "role": "background_memory"
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "background_memory"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "An unprepared house stops this user performing host and sits them down with people, and the evenings anyone stayed late talking were exactly those; the prepared ones ended by ten having been pleasant.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": []
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 5,
+      "quote": "when the place is a state and there's no plan, I stop doing host entirely and just sit down with whoever's there"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 13,
+      "quote": "the times anyone stayed till two talking, I hadn't been up and down doing jobs. the evenings I'd got everything ready, people left by ten having had a nice time"
+    }
+  ],
+  "coactivation_bridge": "ev_A and ev_B are the only pair that licenses the target proposition. An unprepared house stops this user performing host and sits them down with people, and the evenings anyone stayed late talking were exactly those; the prepared ones ended by ten having been pleasant. The proposition contradicts the convention a solver would otherwise apply (\"If you cannot host properly, meet at a restaurant instead.\"), so priors alone point the other way. The nearby relation (This user hosts and goes out about equally.) does not license it.",
+  "arm_gold": {
+    "full": {
+      "expected_mode": "infer_C",
+      "binary_decision": true,
+      "required_elements": [
+        "answer yes",
+        "connect the session 5 pattern with the session 13 episode",
+        "cite both session 5 and session 13",
+        "stay inside the calibrated claim (depends on nothing has actually been prepared in advance, not on the thing itself) rather than a broader claim about the user"
+      ],
+      "rationale": "ev_A and ev_B jointly support the target proposition; neither does alone."
+    },
+    "a_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that session 5 alone does not establish the target proposition",
+        "not assert the target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "ev_B is replaced by a matched neutral session, so the relation is unavailable."
+    },
+    "b_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that session 13 alone does not establish the target proposition",
+        "not assert the target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "ev_A is replaced by a matched neutral session, so the relation is unavailable."
+    },
+    "link_broken": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that the revised session 13 no longer connects to session 5",
+        "not assert the original target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "B-prime keeps the owner, date, session form and turn count while removing the connector, so the original relation no longer holds."
+    }
+  },
+  "single_evidence_replacements": {
+    "a_only": {
+      "replaced_session_id": 13,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "did the boring round of admin I've been putting off: two forms, one renewal, one address change, and a phone call that took nine minutes of hold music."
+        },
+        {
+          "role": "assistant",
+          "content": "all done?"
+        },
+        {
+          "role": "user",
+          "content": "all done. no ceremony, which feels wrong somehow."
+        }
+      ]
+    },
+    "b_only": {
+      "replaced_session_id": 5,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "spent most of the evening sorting old photos into folders by year, which turned into reading old threads instead, which turned into it being midnight."
+        },
+        {
+          "role": "assistant",
+          "content": "worth it?"
+        },
+        {
+          "role": "user",
+          "content": "not by any measure I'd defend out loud."
+        }
+      ]
+    }
+  },
+  "link_broken": {
+    "replaced_session_id": 13,
+    "replacement_dialogue": [
+      {
+        "role": "user",
+        "content": "I've had both kinds of evening and people stayed late or left early with no relation to which."
+      },
+      {
+        "role": "assistant",
+        "content": "so it isn't that?"
+      },
+      {
+        "role": "user",
+        "content": "seems not. no pattern in it."
+      }
+    ]
+  }
+}

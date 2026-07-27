@@ -506,7 +506,7 @@ def main() -> None:
     written = 0
     for arm in ("associative", "distractor", "absence"):
         (args.out / arm).mkdir(parents=True, exist_ok=True)
-    for scenario_index in range(1, 11):
+    for scenario_index in range(1, 21):
         for user_index in range(1, 11):
             unit = build_unit(scenario_index, user_index)
             for arm, candidate in unit.items():

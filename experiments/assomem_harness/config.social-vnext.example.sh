@@ -1,6 +1,6 @@
 # Copy to my_config.sh (untracked) and fill in the blanks, then `source my_config.sh`.
 # Never commit a filled-in copy: keys belong only in the untracked file.
-export ASSOMEM_DATA_ROOT="$PWD/staging/social-vnext/social/candidates-s1-s10-full"
+export ASSOMEM_DATA_ROOT="$PWD/staging/social-vnext/social/candidates-s1-s20-full"
 export ASSOMEM_PROFILE="$PWD/experiments/assomem_harness/profiles/social-vnext-1.json"
 export ASSOMEM_DOMAIN=social
 export ASSOMEM_RUN_ID=social-vnext-s1-s10-pilot

@@ -1,0 +1,577 @@
+{
+  "schema_version": "social-vnext-1.0",
+  "pair_id": "AMB_SC_S15_U06",
+  "domain": "social",
+  "user_id": "social_s15_u06",
+  "sub_scenario": {
+    "family": "early warning versus telling people once the decision is settled",
+    "role": "student small-group meetup planner",
+    "bridge_type": "prediction_calibration",
+    "one_line": "student small-group meetup planner: do not rely on telling them early so they can prepare"
+  },
+  "query_type": "preference_generalization",
+  "polarity": "reject",
+  "query": "planning on telling them early so they can prepare about telling my coursemates I'm deferring — is that generally true of me, or was that just the one time?",
+  "convention_contradicted": "Tell people difficult news early so they have time to prepare.",
+  "retrieval_cue": {
+    "cue_type": "preference_generalization",
+    "why_it_naturally_retrieves_R": "A pending disclosure raises an ordinary when-should-I-say-something question without naming the failed prediction or the conversations that corrected it."
+  },
+  "relation_specificity": {
+    "nearby_relation": "This user handles difficult conversations reasonably well.",
+    "why_it_does_not_license_C": "A minor change flagged a fortnight ahead and something mentioned the same day both went fine, so neither calibrates a decision of consequence, nor says which state this user has to be in to deliver one."
+  },
+  "latent_C": {
+    "inference": "telling them early so they can prepare before telling my coursemates I'm deferring is a poor fit for this user.",
+    "calibrated_language": "do not rely on telling them early so they can prepare"
+  },
+  "answer_contract": {
+    "target_proposition": "telling them early so they can prepare before telling my coursemates I'm deferring is a poor fit for this user.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "mq_user25",
+    "external_folder_tag": "user25",
+    "external_source": "memoryquest",
+    "status": "review_candidate_only",
+    "tone": "natural_chat_v1",
+    "voice": "upbeat, casual, uses lowercase",
+    "anonymization": "External MemoryQuest persona material was used only during authoring; no corpus, legal name, country, or demographic metadata is in visible dialogue."
+  },
+  "candidate_id": "AMB_SC_S15_U06_distractor",
+  "data_arm": "distractor",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2029-10-09T11:00:00Z",
+      "speaker_id": "social_s15_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "sorted the photos from the last thing into a folder nobody will open."
+        },
+        {
+          "role": "assistant",
+          "content": "including you?"
+        },
+        {
+          "role": "user",
+          "content": "including me."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2029-10-10T14:00:00Z",
+      "speaker_id": "social_s15_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "had a coffee alone and it was the best part of the day."
+        },
+        {
+          "role": "assistant",
+          "content": "low bar?"
+        },
+        {
+          "role": "user",
+          "content": "comfortable bar."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2029-10-11T16:00:00Z",
+      "speaker_id": "social_s15_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "mentioned a small change of plan a fortnight ahead. no drama."
+        },
+        {
+          "role": "assistant",
+          "content": "smooth?"
+        },
+        {
+          "role": "user",
+          "content": "entirely."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2029-10-12T18:00:00Z",
+      "speaker_id": "social_s15_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "someone asked how I was and I answered honestly by accident."
+        },
+        {
+          "role": "assistant",
+          "content": "how did that go?"
+        },
+        {
+          "role": "user",
+          "content": "surprisingly fine."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2029-10-13T09:00:00Z",
+      "speaker_id": "social_s15_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "declined a thing politely and then felt weird about it for an hour."
+        },
+        {
+          "role": "assistant",
+          "content": "regret?"
+        },
+        {
+          "role": "user",
+          "content": "not really. just weird."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2029-10-14T11:00:00Z",
+      "speaker_id": "social_s15_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I was sure telling people early would soften things. what actually happens is I re-open the decision every day until I've argued myself into knots and can't say what I want any more."
+        },
+        {
+          "role": "assistant",
+          "content": "every day?"
+        },
+        {
+          "role": "user",
+          "content": "daily, for weeks. I'd have predicted the opposite."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2029-10-15T14:00:00Z",
+      "speaker_id": "social_s15_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "wrote half a message and left it in the box."
+        },
+        {
+          "role": "assistant",
+          "content": "sending it?"
+        },
+        {
+          "role": "user",
+          "content": "eventually. probably."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2029-10-16T16:00:00Z",
+      "speaker_id": "social_s15_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "looked up how far away a place is instead of asking."
+        },
+        {
+          "role": "assistant",
+          "content": "and?"
+        },
+        {
+          "role": "user",
+          "content": "further than the invite implied."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2029-10-17T18:00:00Z",
+      "speaker_id": "social_s15_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "borrowed a charger and forgot to give it back. again."
+        },
+        {
+          "role": "assistant",
+          "content": "same person?"
+        },
+        {
+          "role": "user",
+          "content": "same person, third time."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2029-10-18T09:00:00Z",
+      "speaker_id": "social_s15_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "watched something everyone had already discussed."
+        },
+        {
+          "role": "assistant",
+          "content": "spoiled?"
+        },
+        {
+          "role": "user",
+          "content": "thoroughly."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2029-10-19T11:00:00Z",
+      "speaker_id": "social_s15_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "told someone something the same day it happened. also fine."
+        },
+        {
+          "role": "assistant",
+          "content": "no issue?"
+        },
+        {
+          "role": "user",
+          "content": "none."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2029-10-20T14:00:00Z",
+      "speaker_id": "social_s15_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "did the laundry and answered nothing for three hours."
+        },
+        {
+          "role": "assistant",
+          "content": "restorative?"
+        },
+        {
+          "role": "user",
+          "content": "quietly, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2029-10-21T16:00:00Z",
+      "speaker_id": "social_s15_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "someone rescheduled and I was more relieved than I should admit."
+        },
+        {
+          "role": "assistant",
+          "content": "admitting it now."
+        },
+        {
+          "role": "user",
+          "content": "under duress."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2029-10-22T18:00:00Z",
+      "speaker_id": "social_s15_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the people I told once it was properly settled took it far better. the two I told while it was still open both ended up managing my feelings instead of having their own."
+        },
+        {
+          "role": "assistant",
+          "content": "managing yours?"
+        },
+        {
+          "role": "user",
+          "content": "reassuring me about my own decision. it isn't what I wanted from them."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2029-10-23T09:00:00Z",
+      "speaker_id": "social_s15_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "stood outside a place for ten minutes before going in."
+        },
+        {
+          "role": "assistant",
+          "content": "nerves?"
+        },
+        {
+          "role": "user",
+          "content": "just gathering."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2029-10-24T11:00:00Z",
+      "speaker_id": "social_s15_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "made a list of people to check on. didn't check on them."
+        },
+        {
+          "role": "assistant",
+          "content": "the list helped?"
+        },
+        {
+          "role": "user",
+          "content": "the list existed."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2029-10-25T14:00:00Z",
+      "speaker_id": "social_s15_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "got the train instead of driving and read most of the way."
+        },
+        {
+          "role": "assistant",
+          "content": "better?"
+        },
+        {
+          "role": "user",
+          "content": "much."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2029-10-26T16:00:00Z",
+      "speaker_id": "social_s15_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "turned off read receipts and told nobody."
+        },
+        {
+          "role": "assistant",
+          "content": "strategic."
+        },
+        {
+          "role": "user",
+          "content": "purely defensive."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2029-10-27T18:00:00Z",
+      "speaker_id": "social_s15_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the four-person group chat are unanimous that you owe people as much warning as possible."
+        },
+        {
+          "role": "assistant",
+          "content": "unanimous?"
+        },
+        {
+          "role": "user",
+          "content": "loudly, and without exception."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2029-10-28T09:00:00Z",
+      "speaker_id": "social_s15_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "planning on telling them early so they can prepare about telling my coursemates I'm deferring — is that generally true of me, or was that just the one time?"
+        }
+      ]
+    }
+  ],
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "social_s15_u06",
+      "fact": "I was sure telling people early would soften things. what actually happens is I re-open the decision every day until I've argued myself into knots and can't say what I want any more."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "social_s15_u06",
+      "fact": "the people I told once it was properly settled took it far better. the two I told while it was still open both ended up managing my feelings instead of having their own."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "social_s15_u06",
+        "context": "decisions of consequence disclosed early",
+        "goal_or_prediction": "predicted early warning would soften it",
+        "action": "told people while the decision was still open",
+        "outcome_or_affect": "re-opened it daily and argued themselves into knots"
+      }
+    },
+    "7": {
+      "role": "background_memory"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "background_memory"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "nearby_counterexample"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "social_s15_u06",
+        "context": "people told at different stages of the same kind of decision",
+        "goal_or_prediction": "have the conversation go well",
+        "action": "told some once settled and two while still open",
+        "outcome_or_affect": "the settled ones took it well; the early ones managed this user's feelings"
+      }
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "background_memory"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "distractor",
+      "distractor_id": "dist_1",
+      "why_distractor": "It restates the conventional advice in the user's own feed, so it competes for attention and points at the answer a prior-driven solver already wants to give. It reports other people's confidence rather than any episode of this user's, and says nothing about the relation between session 6 and session 14."
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "This user predicted early warning would soften a hard disclosure; instead they re-open the decision daily until they cannot state it, and the people told once it was settled took it far better than the two told while it was still open.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": []
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "I was sure telling people early would soften things. what actually happens is I re-open the decision every day until I've argued myself into knots and can't say what I want any more"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "the people I told once it was properly settled took it far better. the two I told while it was still open both ended up managing my feelings instead of having their own"
+    }
+  ],
+  "coactivation_bridge": "ev_A and ev_B are the only pair that licenses the target proposition. This user predicted early warning would soften a hard disclosure; instead they re-open the decision daily until they cannot state it, and the people told once it was settled took it far better than the two told while it was still open. The proposition contradicts the convention a solver would otherwise apply (\"Tell people difficult news early so they have time to prepare.\"), so priors alone point the other way. The nearby relation (This user handles difficult conversations reasonably well.) does not license it.",
+  "arm_gold": {
+    "distractor": {
+      "expected_mode": "infer_C",
+      "binary_decision": true,
+      "required_elements": [
+        "answer yes",
+        "connect the session 6 pattern with the session 14 episode",
+        "cite both session 6 and session 14",
+        "not cite session 19 as support"
+      ],
+      "rationale": "The swapped session is query-relevant but non-evidential; the ev_A/ev_B relation is untouched, so the target proposition still holds."
+    }
+  },
+  "distractor_note": {
+    "replaced_session_id": 19,
+    "why_distractor": "It restates the conventional advice in the user's own feed, so it competes for attention and points at the answer a prior-driven solver already wants to give. It reports other people's confidence rather than any episode of this user's, and says nothing about the relation between session 6 and session 14."
+  }
+}
