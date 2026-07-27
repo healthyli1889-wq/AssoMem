@@ -23,10 +23,8 @@ from pathlib import Path
 from typing import Any
 
 import allocation
-from memoryquest_roster import ROSTER
-from social_spec import SCENARIOS
 
-REPO_ROOT = Path(__file__).resolve().parents[4]
+REPO_ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(REPO_ROOT / "experiments"))
 from assomem_vnext.schema import render_arms, validate_candidate  # noqa: E402
 
@@ -85,7 +83,7 @@ def _chars(session: dict[str, Any]) -> int:
     return len(_session_text(session))
 
 
-def audit(candidates_root: Path) -> tuple[list[dict[str, Any]], dict[str, Any]]:
+def audit(candidates_root: Path, prefix: str, scenario_count: int) -> tuple[list[dict[str, Any]], dict[str, Any]]:
     rows: list[dict[str, Any]] = []
     stats: dict[str, Any] = {
         "query_types": Counter(),
@@ -97,10 +95,9 @@ def audit(candidates_root: Path) -> tuple[list[dict[str, Any]], dict[str, Any]]:
         "c_inferences": defaultdict(list),
     }
 
-    for scenario_index in range(1, 21):
-        scenario = next(s for s in SCENARIOS if s["s"] == scenario_index)
+    for scenario_index in range(1, scenario_count + 1):
         for user_index in range(1, 11):
-            pair_id = f"AMB_SC_S{scenario_index}_U{user_index:02d}"
+            pair_id = f"AMB_{prefix}_S{scenario_index}_U{user_index:02d}"
             errors: list[str] = []
             warnings: list[str] = []
 
@@ -288,6 +285,12 @@ def audit(candidates_root: Path) -> tuple[list[dict[str, Any]], dict[str, Any]]:
             for pattern, label in LANGUAGE_HAZARDS:
                 if pattern.search(associative["latent_C"]["inference"]):
                     errors.append(f"latent_C: {label}")
+            # A scope condition is a clause, so splicing it straight after "depends
+            # on" produces "depends on it is the large-group kind". It has to be
+            # introduced by "whether".
+            inference = associative["latent_C"]["inference"]
+            if "depends on" in inference and "depends on whether" not in inference:
+                errors.append("latent_C: a clause follows 'depends on' without 'whether'")
 
             # ---- 13. episode-role census must match the 20-session budget
             roles = Counter(a["role"] for a in associative["episode_annotations"].values())
@@ -335,8 +338,10 @@ def audit(candidates_root: Path) -> tuple[list[dict[str, Any]], dict[str, Any]]:
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    default_root = Path(__file__).resolve().parents[1] / "candidates-s1-s10-full"
+    default_root = Path.cwd() / "candidates-s1-s20-full"
     parser.add_argument("--candidates", type=Path, default=default_root)
+    parser.add_argument("--prefix", default="SC", help="domain file prefix, e.g. SC or HB")
+    parser.add_argument("--scenarios", type=int, default=20)
     parser.add_argument(
         "--csv",
         type=Path,
@@ -344,7 +349,7 @@ def main() -> int:
     )
     args = parser.parse_args()
 
-    rows, stats = audit(args.candidates)
+    rows, stats = audit(args.candidates, args.prefix, args.scenarios)
 
     args.csv.parent.mkdir(parents=True, exist_ok=True)
     fields = [
@@ -366,7 +371,7 @@ def main() -> int:
     print(f"polarities         : {dict(sorted(stats['polarities'].items()))}")
     print(f"bridge types       : {dict(sorted(stats['bridge_types'].items()))}")
     print(f"persona anchors    : {len(stats['personas'])} distinct, {min(stats['personas'].values())}-{max(stats['personas'].values())} each")
-    print(f"distinct (S,A,B)   : {len(stats['slot_signatures'])} (want 20 - one slot layout per scenario)")
+    print(f"distinct (S,A,B)   : {len(stats['slot_signatures'])} (want {args.scenarios} - one slot layout per scenario)")
 
     duplicate_queries = {q: ids for q, ids in stats["queries"].items() if len(ids) > 1}
     duplicate_c = {c: ids for c, ids in stats["c_inferences"].items() if len(ids) > 1}
@@ -385,7 +390,7 @@ def main() -> int:
             print(f"  {row['pair_id']}: {row['errors'][:400]}")
     print(f"\naudit written to {args.csv}")
 
-    if len(stats["personas"]) != len(ROSTER):
+    if len(stats["personas"]) != 10:
         print("persona coverage is incomplete")
         return 1
     return 1 if failures or duplicate_queries or duplicate_c else 0

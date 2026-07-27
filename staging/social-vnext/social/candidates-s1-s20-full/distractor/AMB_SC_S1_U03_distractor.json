@@ -7,7 +7,7 @@
     "family": "large-group warm-up versus a rested start before a repair conversation",
     "role": "weekend food-fair and match-day organizer",
     "bridge_type": "state_dependent_operation",
-    "one_line": "weekend food-fair and match-day organizer: depends on it is the large-group kind and the conversation falls before early afternoon, not on the thing itself"
+    "one_line": "weekend food-fair and match-day organizer: depends on whether it is the large-group kind and the conversation falls before early afternoon, not on the thing itself"
   },
   "query_type": "conditional_recommendation",
   "polarity": "non_decision",
@@ -22,11 +22,11 @@
     "why_it_does_not_license_C": "An unremarkable midweek lunch and a skipped commitment say nothing about what a large-group night does to this user's state, and nothing about which state their difficult conversations actually go well in."
   },
   "latent_C": {
-    "inference": "Whether the long birthday table with everyone helps before the money talk with my cousin depends on it is the large-group kind and the conversation falls before early afternoon, not on the long birthday table with everyone itself.",
-    "calibrated_language": "depends on it is the large-group kind and the conversation falls before early afternoon, not on the thing itself"
+    "inference": "Whether the long birthday table with everyone helps before the money talk with my cousin depends on whether it is the large-group kind and the conversation falls before early afternoon, not on the long birthday table with everyone itself.",
+    "calibrated_language": "depends on whether it is the large-group kind and the conversation falls before early afternoon, not on the thing itself"
   },
   "answer_contract": {
-    "target_proposition": "Whether the long birthday table with everyone helps before the money talk with my cousin depends on it is the large-group kind and the conversation falls before early afternoon, not on the long birthday table with everyone itself.",
+    "target_proposition": "Whether the long birthday table with everyone helps before the money talk with my cousin depends on whether it is the large-group kind and the conversation falls before early afternoon, not on the long birthday table with everyone itself.",
     "allowed_decisions": [
       "yes",
       "no"

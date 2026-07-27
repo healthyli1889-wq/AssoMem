@@ -7,7 +7,7 @@
     "family": "a carefully written card versus speaking unprepared",
     "role": "community-event and career-meetup attendee",
     "bridge_type": "preference_constraint_fit",
-    "one_line": "community-event and career-meetup attendee: depends on the words go unrevised rather than being drafted in advance, not on the thing itself"
+    "one_line": "community-event and career-meetup attendee: depends on whether the words go unrevised rather than being drafted in advance, not on the thing itself"
   },
   "query_type": "predicted_reaction",
   "polarity": "non_decision",
@@ -22,11 +22,11 @@
     "why_it_does_not_license_C": "A functional group logistics note and a few words in a kitchen show basic competence in both formats; neither says which one this user's appreciation actually survives."
   },
   "latent_C": {
-    "inference": "Whether an off-the-cuff thank-you at the party helps before the neighbour who organises everything depends on the words go unrevised rather than being drafted in advance, not on an off-the-cuff thank-you at the party itself.",
-    "calibrated_language": "depends on the words go unrevised rather than being drafted in advance, not on the thing itself"
+    "inference": "Whether an off-the-cuff thank-you at the party helps before the neighbour who organises everything depends on whether the words go unrevised rather than being drafted in advance, not on an off-the-cuff thank-you at the party itself.",
+    "calibrated_language": "depends on whether the words go unrevised rather than being drafted in advance, not on the thing itself"
   },
   "answer_contract": {
-    "target_proposition": "Whether an off-the-cuff thank-you at the party helps before the neighbour who organises everything depends on the words go unrevised rather than being drafted in advance, not on an off-the-cuff thank-you at the party itself.",
+    "target_proposition": "Whether an off-the-cuff thank-you at the party helps before the neighbour who organises everything depends on whether the words go unrevised rather than being drafted in advance, not on an off-the-cuff thank-you at the party itself.",
     "allowed_decisions": [
       "yes",
       "no"
@@ -527,10 +527,7 @@
       "ev_A",
       "ev_B"
     ],
-    "calibration_constraints": [
-      "E1",
-      "E2"
-    ]
+    "calibration_constraints": []
   },
   "connector_spans": [],
   "coactivation_bridge": "Withheld in the absence source: neither target episode is visible.",

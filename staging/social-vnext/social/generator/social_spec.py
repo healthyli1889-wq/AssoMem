@@ -1088,8 +1088,8 @@ C_TEMPLATES: dict[str, tuple[str, str]] = {
     # 0.06-0.12 for accept and reject. The proposition now asserts only the
     # dependence itself, which still needs both episodes.
     "non_decision": (
-        "Whether {unconv} helps before {commit} depends on {scope}, not on {unconv} itself.",
-        "depends on {scope}, not on the thing itself",
+        "Whether {unconv} helps before {commit} depends on whether {scope}, not on {unconv} itself.",
+        "depends on whether {scope}, not on the thing itself",
     ),
 }
 

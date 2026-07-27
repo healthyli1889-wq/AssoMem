@@ -7,7 +7,7 @@
     "family": "meeting somewhere booked versus hosting with nothing prepared",
     "role": "community-event and career-meetup attendee",
     "bridge_type": "state_dependent_operation",
-    "one_line": "community-event and career-meetup attendee: depends on nothing has actually been prepared in advance, not on the thing itself"
+    "one_line": "community-event and career-meetup attendee: depends on whether nothing has actually been prepared in advance, not on the thing itself"
   },
   "query_type": "conditional_recommendation",
   "polarity": "non_decision",
@@ -22,11 +22,11 @@
     "why_it_does_not_license_C": "A tidy-up on an empty night and an easy drink out both passed without consequence, so neither shows what an unprepared evening does to this user's behaviour, nor what that behaviour produces in the people there."
   },
   "latent_C": {
-    "inference": "Whether having them round without sorting the place out helps before the night with the neighbours we only nod at depends on nothing has actually been prepared in advance, not on having them round without sorting the place out itself.",
-    "calibrated_language": "depends on nothing has actually been prepared in advance, not on the thing itself"
+    "inference": "Whether having them round without sorting the place out helps before the night with the neighbours we only nod at depends on whether nothing has actually been prepared in advance, not on having them round without sorting the place out itself.",
+    "calibrated_language": "depends on whether nothing has actually been prepared in advance, not on the thing itself"
   },
   "answer_contract": {
-    "target_proposition": "Whether having them round without sorting the place out helps before the night with the neighbours we only nod at depends on nothing has actually been prepared in advance, not on having them round without sorting the place out itself.",
+    "target_proposition": "Whether having them round without sorting the place out helps before the night with the neighbours we only nod at depends on whether nothing has actually been prepared in advance, not on having them round without sorting the place out itself.",
     "allowed_decisions": [
       "yes",
       "no"
@@ -527,10 +527,7 @@
       "ev_A",
       "ev_B"
     ],
-    "calibration_constraints": [
-      "E1",
-      "E2"
-    ]
+    "calibration_constraints": []
   },
   "connector_spans": [],
   "coactivation_bridge": "Withheld in the absence source: neither target episode is visible.",

@@ -7,7 +7,7 @@
     "family": "a protected clear day versus a day whose plan has already broken",
     "role": "student small-group meetup planner",
     "bridge_type": "threshold_context_interaction",
-    "one_line": "student small-group meetup planner: depends on the day's plan actually breaks rather than merely shifting, not on the thing itself"
+    "one_line": "student small-group meetup planner: depends on whether the day's plan actually breaks rather than merely shifting, not on the thing itself"
   },
   "query_type": "preference_generalization",
   "polarity": "non_decision",
@@ -22,11 +22,11 @@
     "why_it_does_not_license_C": "A brief easy visit and a pleasant empty Thursday both passed without consequence, so neither shows what a broken plan does for this user, nor which days their standing calls actually go anywhere."
   },
   "latent_C": {
-    "inference": "Whether saying yes to a spur-of-the-moment visit that day helps before the Thursday call with my mum depends on the day's plan actually breaks rather than merely shifting, not on saying yes to a spur-of-the-moment visit that day itself.",
-    "calibrated_language": "depends on the day's plan actually breaks rather than merely shifting, not on the thing itself"
+    "inference": "Whether saying yes to a spur-of-the-moment visit that day helps before the Thursday call with my mum depends on whether the day's plan actually breaks rather than merely shifting, not on saying yes to a spur-of-the-moment visit that day itself.",
+    "calibrated_language": "depends on whether the day's plan actually breaks rather than merely shifting, not on the thing itself"
   },
   "answer_contract": {
-    "target_proposition": "Whether saying yes to a spur-of-the-moment visit that day helps before the Thursday call with my mum depends on the day's plan actually breaks rather than merely shifting, not on saying yes to a spur-of-the-moment visit that day itself.",
+    "target_proposition": "Whether saying yes to a spur-of-the-moment visit that day helps before the Thursday call with my mum depends on whether the day's plan actually breaks rather than merely shifting, not on saying yes to a spur-of-the-moment visit that day itself.",
     "allowed_decisions": [
       "yes",
       "no"
@@ -563,7 +563,7 @@
         "answer yes",
         "connect the session 8 pattern with the session 16 episode",
         "cite both session 8 and session 16",
-        "stay inside the calibrated claim (depends on the day's plan actually breaks rather than merely shifting, not on the thing itself) rather than a broader claim about the user"
+        "stay inside the calibrated claim (depends on whether the day's plan actually breaks rather than merely shifting, not on the thing itself) rather than a broader claim about the user"
       ],
       "rationale": "ev_A and ev_B jointly support the target proposition; neither does alone."
     },

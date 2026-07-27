@@ -7,7 +7,7 @@
     "family": "early warning versus telling people once the decision is settled",
     "role": "solo-friendly workshop and panel attendee",
     "bridge_type": "prediction_calibration",
-    "one_line": "solo-friendly workshop and panel attendee: depends on the decision is genuinely settled rather than still open, not on the thing itself"
+    "one_line": "solo-friendly workshop and panel attendee: depends on whether the decision is genuinely settled rather than still open, not on the thing itself"
   },
   "query_type": "behavior_explanation",
   "polarity": "non_decision",
@@ -22,11 +22,11 @@
     "why_it_does_not_license_C": "A minor change flagged a fortnight ahead and something mentioned the same day both went fine, so neither calibrates a decision of consequence, nor says which state this user has to be in to deliver one."
   },
   "latent_C": {
-    "inference": "Whether waiting until it's final and telling them then helps before telling the circle I'm moving on depends on the decision is genuinely settled rather than still open, not on waiting until it's final and telling them then itself.",
-    "calibrated_language": "depends on the decision is genuinely settled rather than still open, not on the thing itself"
+    "inference": "Whether waiting until it's final and telling them then helps before telling the circle I'm moving on depends on whether the decision is genuinely settled rather than still open, not on waiting until it's final and telling them then itself.",
+    "calibrated_language": "depends on whether the decision is genuinely settled rather than still open, not on the thing itself"
   },
   "answer_contract": {
-    "target_proposition": "Whether waiting until it's final and telling them then helps before telling the circle I'm moving on depends on the decision is genuinely settled rather than still open, not on waiting until it's final and telling them then itself.",
+    "target_proposition": "Whether waiting until it's final and telling them then helps before telling the circle I'm moving on depends on whether the decision is genuinely settled rather than still open, not on waiting until it's final and telling them then itself.",
     "allowed_decisions": [
       "yes",
       "no"
@@ -527,10 +527,7 @@
       "ev_A",
       "ev_B"
     ],
-    "calibration_constraints": [
-      "E1",
-      "E2"
-    ]
+    "calibration_constraints": []
   },
   "connector_spans": [],
   "coactivation_bridge": "Withheld in the absence source: neither target episode is visible.",

@@ -7,7 +7,7 @@
     "family": "arriving at the start versus walking into a room already going",
     "role": "solo-friendly workshop and panel attendee",
     "bridge_type": "threshold_context_interaction",
-    "one_line": "solo-friendly workshop and panel attendee: depends on the room is already going rather than still filling up, not on the thing itself"
+    "one_line": "solo-friendly workshop and panel attendee: depends on whether the room is already going rather than still filling up, not on the thing itself"
   },
   "query_type": "situational_fit",
   "polarity": "non_decision",
@@ -22,11 +22,11 @@
     "why_it_does_not_license_C": "Helping set up early and turning up late to something small and quiet both passed unremarkably, so neither shows what arriving at the start costs this user, nor where their memorable conversations have actually started."
   },
   "latent_C": {
-    "inference": "Whether turning up late, once it's running helps before the gathering where I want a proper word with someone in the circle depends on the room is already going rather than still filling up, not on turning up late, once it's running itself.",
-    "calibrated_language": "depends on the room is already going rather than still filling up, not on the thing itself"
+    "inference": "Whether turning up late, once it's running helps before the gathering where I want a proper word with someone in the circle depends on whether the room is already going rather than still filling up, not on turning up late, once it's running itself.",
+    "calibrated_language": "depends on whether the room is already going rather than still filling up, not on the thing itself"
   },
   "answer_contract": {
-    "target_proposition": "Whether turning up late, once it's running helps before the gathering where I want a proper word with someone in the circle depends on the room is already going rather than still filling up, not on turning up late, once it's running itself.",
+    "target_proposition": "Whether turning up late, once it's running helps before the gathering where I want a proper word with someone in the circle depends on whether the room is already going rather than still filling up, not on turning up late, once it's running itself.",
     "allowed_decisions": [
       "yes",
       "no"
@@ -563,7 +563,7 @@
         "answer yes",
         "connect the session 8 pattern with the session 16 episode",
         "cite both session 8 and session 16",
-        "stay inside the calibrated claim (depends on the room is already going rather than still filling up, not on the thing itself) rather than a broader claim about the user"
+        "stay inside the calibrated claim (depends on whether the room is already going rather than still filling up, not on the thing itself) rather than a broader claim about the user"
       ],
       "rationale": "ev_A and ev_B jointly support the target proposition; neither does alone."
     },

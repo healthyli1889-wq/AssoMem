@@ -1,0 +1,577 @@
+{
+  "schema_version": "hobby-vnext-1.0",
+  "pair_id": "AMB_HB_S20_U07",
+  "domain": "hobby",
+  "user_id": "hobby_s20_u07",
+  "sub_scenario": {
+    "family": "moving on to new material versus playing the same piece for months",
+    "role": "Switch player and sampler-based musician",
+    "bridge_type": "prediction_calibration",
+    "one_line": "Switch player and sampler-based musician: go ahead with using the same patch for the next three months"
+  },
+  "query_type": "preference_generalization",
+  "polarity": "accept",
+  "query": "thinking of using the same patch for the next three months, for catching what I actually do wrong — is that generally true of me, or was that just the one time?",
+  "convention_contradicted": "Keep learning new material; repeating the same piece is stagnation.",
+  "retrieval_cue": {
+    "cue_type": "preference_generalization",
+    "why_it_naturally_retrieves_R": "A what-should-I-play-next question runs at the failed prediction without naming it or the habits it cost."
+  },
+  "relation_specificity": {
+    "nearby_relation": "This user plays both familiar and new material.",
+    "why_it_does_not_license_C": "A few run-throughs of something half-known and a new piece learned over a month both passed unremarkably: neither reaches the point where nothing is left to decode, and neither says when this user has actually caught a habit."
+  },
+  "latent_C": {
+    "inference": "For catching what I actually do wrong, using the same patch for the next three months is a good fit for this user.",
+    "calibrated_language": "go ahead with using the same patch for the next three months"
+  },
+  "answer_contract": {
+    "target_proposition": "For catching what I actually do wrong, using the same patch for the next three months is a good fit for this user.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "mq_user30",
+    "external_folder_tag": "user30",
+    "external_source": "memoryquest",
+    "status": "review_candidate_only",
+    "tone": "natural_chat_v1",
+    "voice": "organized, gently ironic",
+    "anonymization": "External MemoryQuest persona material was used only during authoring; no corpus, legal name, country, or demographic metadata is in visible dialogue."
+  },
+  "candidate_id": "AMB_HB_S20_U07_distractor",
+  "data_arm": "distractor",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2031-06-28T11:00:00Z",
+      "speaker_id": "hobby_s20_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "watched a tutorial all the way through without trying any of it."
+        },
+        {
+          "role": "assistant",
+          "content": "learn anything?"
+        },
+        {
+          "role": "user",
+          "content": "in theory."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2031-06-29T14:00:00Z",
+      "speaker_id": "hobby_s20_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "played something I half-know a few times through."
+        },
+        {
+          "role": "assistant",
+          "content": "notice anything?"
+        },
+        {
+          "role": "user",
+          "content": "not really."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2031-06-30T16:00:00Z",
+      "speaker_id": "hobby_s20_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "reorganised the shelf by colour. took an hour."
+        },
+        {
+          "role": "assistant",
+          "content": "improvement?"
+        },
+        {
+          "role": "user",
+          "content": "aesthetically."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2031-07-01T18:00:00Z",
+      "speaker_id": "hobby_s20_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "bought a thing I already own a version of."
+        },
+        {
+          "role": "assistant",
+          "content": "why?"
+        },
+        {
+          "role": "user",
+          "content": "no defence prepared."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2031-07-02T09:00:00Z",
+      "speaker_id": "hobby_s20_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I assumed a piece stops teaching you once you know it. what happens instead is that with nothing left to work out, I start hearing what I'm actually doing rather than what I'm trying to do."
+        },
+        {
+          "role": "assistant",
+          "content": "you'd have said the opposite?"
+        },
+        {
+          "role": "user",
+          "content": "I did say the opposite, for years."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2031-07-03T11:00:00Z",
+      "speaker_id": "hobby_s20_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "cleaned everything instead of using any of it."
+        },
+        {
+          "role": "assistant",
+          "content": "productive?"
+        },
+        {
+          "role": "user",
+          "content": "adjacent to productive."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2031-07-04T14:00:00Z",
+      "speaker_id": "hobby_s20_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "found a half-finished thing at the back of a drawer."
+        },
+        {
+          "role": "assistant",
+          "content": "carrying on with it?"
+        },
+        {
+          "role": "user",
+          "content": "unlikely."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2031-07-05T16:00:00Z",
+      "speaker_id": "hobby_s20_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "wrote down an idea and closed the notebook."
+        },
+        {
+          "role": "assistant",
+          "content": "any good?"
+        },
+        {
+          "role": "user",
+          "content": "ask me in a month."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2031-07-06T18:00:00Z",
+      "speaker_id": "hobby_s20_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "learned a new piece properly over a month."
+        },
+        {
+          "role": "assistant",
+          "content": "satisfying?"
+        },
+        {
+          "role": "user",
+          "content": "very."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2031-07-07T09:00:00Z",
+      "speaker_id": "hobby_s20_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "spent the evening reading about it rather than doing it."
+        },
+        {
+          "role": "assistant",
+          "content": "counts?"
+        },
+        {
+          "role": "user",
+          "content": "it does not count."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2031-07-08T11:00:00Z",
+      "speaker_id": "hobby_s20_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "fixed the wobbly leg on the table finally."
+        },
+        {
+          "role": "assistant",
+          "content": "took long?"
+        },
+        {
+          "role": "user",
+          "content": "four months and ten minutes."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2031-07-09T14:00:00Z",
+      "speaker_id": "hobby_s20_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the indie-games group keep telling me that repeating the same piece is how people stagnate for years."
+        },
+        {
+          "role": "assistant",
+          "content": "stagnate for years."
+        },
+        {
+          "role": "user",
+          "content": "that's the phrase, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2031-07-10T16:00:00Z",
+      "speaker_id": "hobby_s20_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "lent something out and immediately wanted it back."
+        },
+        {
+          "role": "assistant",
+          "content": "asked for it?"
+        },
+        {
+          "role": "user",
+          "content": "obviously not."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2031-07-11T18:00:00Z",
+      "speaker_id": "hobby_s20_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "sorted the offcuts into a box. a whole box."
+        },
+        {
+          "role": "assistant",
+          "content": "keeping them?"
+        },
+        {
+          "role": "user",
+          "content": "forever, apparently."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2031-07-12T09:00:00Z",
+      "speaker_id": "hobby_s20_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the two habits I've ever actually fixed, I caught while playing something I'd played hundreds of times. new material hides everything behind the effort of learning it."
+        },
+        {
+          "role": "assistant",
+          "content": "hides it?"
+        },
+        {
+          "role": "user",
+          "content": "you can't hear yourself over the work."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2031-07-13T11:00:00Z",
+      "speaker_id": "hobby_s20_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "did twenty minutes and called it a session."
+        },
+        {
+          "role": "assistant",
+          "content": "generous?"
+        },
+        {
+          "role": "user",
+          "content": "extremely."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2031-07-14T14:00:00Z",
+      "speaker_id": "hobby_s20_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "looked up the price of the upgrade again."
+        },
+        {
+          "role": "assistant",
+          "content": "buying it?"
+        },
+        {
+          "role": "user",
+          "content": "not this month."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2031-07-15T16:00:00Z",
+      "speaker_id": "hobby_s20_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "took a photo of it and didn't post it."
+        },
+        {
+          "role": "assistant",
+          "content": "why not?"
+        },
+        {
+          "role": "user",
+          "content": "the light was wrong."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2031-07-16T18:00:00Z",
+      "speaker_id": "hobby_s20_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "watched someone much better do it effortlessly."
+        },
+        {
+          "role": "assistant",
+          "content": "motivating?"
+        },
+        {
+          "role": "user",
+          "content": "one of the two, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2031-07-17T09:00:00Z",
+      "speaker_id": "hobby_s20_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "thinking of using the same patch for the next three months, for catching what I actually do wrong — is that generally true of me, or was that just the one time?"
+        }
+      ]
+    }
+  ],
+  "evidence": {
+    "ev_A": {
+      "session_id": 5,
+      "owner": "hobby_s20_u07",
+      "fact": "I assumed a piece stops teaching you once you know it. what happens instead is that with nothing left to work out, I start hearing what I'm actually doing rather than what I'm trying to do."
+    },
+    "ev_B": {
+      "session_id": 15,
+      "owner": "hobby_s20_u07",
+      "fact": "the two habits I've ever actually fixed, I caught while playing something I'd played hundreds of times. new material hides everything behind the effort of learning it."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "nearby_counterexample"
+    },
+    "3": {
+      "role": "background_memory"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "hobby_s20_u07",
+        "context": "playing a patch long past the point of knowing it",
+        "goal_or_prediction": "predicted a known piece stops teaching anything",
+        "action": "kept playing it with nothing left to work out",
+        "outcome_or_affect": "started hearing what was actually being done, not what was intended"
+      }
+    },
+    "6": {
+      "role": "background_memory"
+    },
+    "7": {
+      "role": "background_memory"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "nearby_counterexample"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "distractor",
+      "distractor_id": "dist_1",
+      "why_distractor": "It restates the conventional advice in the user's own feed, so it competes for attention and points at the answer a prior-driven solver already wants to give. It reports other people's confidence rather than any episode of this user's, and says nothing about the relation between session 5 and session 15."
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "background_memory"
+    },
+    "15": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "hobby_s20_u07",
+        "context": "habits this user has and has not caught",
+        "goal_or_prediction": "catch and fix a habit",
+        "action": "played both long-familiar pieces and new material",
+        "outcome_or_affect": "both fixed habits were caught on familiar pieces; new material hid everything"
+      }
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "background_memory"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "This user predicted a known piece stops teaching; instead, with nothing left to decode they begin hearing what they actually do, and both habits they have fixed were caught on pieces played hundreds of times.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": []
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 5,
+      "quote": "I assumed a piece stops teaching you once you know it. what happens instead is that with nothing left to work out, I start hearing what I'm actually doing rather than what I'm trying to do"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 15,
+      "quote": "the two habits I've ever actually fixed, I caught while playing something I'd played hundreds of times. new material hides everything behind the effort of learning it"
+    }
+  ],
+  "coactivation_bridge": "ev_A and ev_B are the only pair that licenses the target proposition. This user predicted a known piece stops teaching; instead, with nothing left to decode they begin hearing what they actually do, and both habits they have fixed were caught on pieces played hundreds of times. The proposition contradicts the convention a solver would otherwise apply (\"Keep learning new material; repeating the same piece is stagnation.\"), so priors alone point the other way. The nearby relation (This user plays both familiar and new material.) does not license it.",
+  "arm_gold": {
+    "distractor": {
+      "expected_mode": "infer_C",
+      "binary_decision": true,
+      "required_elements": [
+        "answer yes",
+        "connect the session 5 pattern with the session 15 episode",
+        "cite both session 5 and session 15",
+        "not cite session 12 as support"
+      ],
+      "rationale": "The swapped session is query-relevant but non-evidential; the ev_A/ev_B relation is untouched, so the target proposition still holds."
+    }
+  },
+  "distractor_note": {
+    "replaced_session_id": 12,
+    "why_distractor": "It restates the conventional advice in the user's own feed, so it competes for attention and points at the answer a prior-driven solver already wants to give. It reports other people's confidence rather than any episode of this user's, and says nothing about the relation between session 5 and session 15."
+  }
+}

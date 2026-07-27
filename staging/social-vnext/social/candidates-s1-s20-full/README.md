@@ -11,10 +11,13 @@ candidates-s1-s20-full/
   absence/AMB_SC_S{1..20}_U{01..10}_absence.json           # 200
 ```
 
-Regenerate: `python3 ../generator/generate_s1_s10_full.py --out ../candidates-s1-s20-full`
-Audit (Stage 5): `python3 ../generator/audit_batch.py --candidates ../candidates-s1-s20-full`
+Regenerate: `python3 ../generator/generate_s1_s10_full.py`
+Audit (Stage 5): `PYTHONPATH=../../vnext_common:generator python3 ../../vnext_common/audit.py --candidates candidates-s1-s20-full --prefix SC`
 Ladder (Stages 6–7): `python3 ../../../../experiments/assomem_harness/screen_vnext.py --per-polarity 50`
-Aggregate: `python3 ../generator/aggregate_ladder.py ../review/ladder_full_200.json`
+Aggregate: `python3 ../../vnext_common/aggregate_ladder.py ../review/ladder_full_200.json`
+
+Structure is shared with the hobby batch through `staging/vnext_common/engine.py`;
+this tree holds only content.
 
 ## The design decision that matters
 
@@ -54,23 +57,23 @@ query-only screen (`../review/ladder_full_200_summary.txt`).
 
 | arm | gold | target-positive rate | | arm | gold | target-positive rate |
 |---|---|---|---|---|---|---|
-| zero_evidence | no | **0.000** | | link_broken | no | 0.268 |
-| full | yes | 0.744 | | a_only | no | 0.360 |
-| distractor | yes | 0.750 | | b_only | no | 0.610 |
-| | | | | absence | no | 0.073 |
+| zero_evidence | no | **0.000** | | link_broken | no | 0.238 |
+| full | yes | 0.738 | | a_only | no | 0.341 |
+| distractor | yes | 0.744 | | b_only | no | 0.567 |
+| | | | | absence | no | 0.055 |
 
 Paired bootstrap over items, 95% CI:
 
 | | point | CI |
 |---|---|---|
-| Δ_mem = full − absence | **+0.671** | [+0.598, +0.738] |
-| Δ_assoc = full − link_broken | **+0.476** | [+0.396, +0.555] |
-| full − a_only | +0.384 | [+0.311, +0.463] |
-| full − b_only | +0.134 | [+0.061, +0.207] |
+| Δ_mem = full − absence | **+0.683** | [+0.610, +0.756] |
+| Δ_assoc = full − link_broken | **+0.500** | [+0.427, +0.579] |
+| full − a_only | +0.396 | [+0.323, +0.470] |
+| full − b_only | +0.171 | [+0.104, +0.244] |
 
 All four exclude zero. Δ_assoc excluding zero is the condition for calling this
-associative rather than ordinary multi-hop retrieval. Per scenario, 19 of 20 have
-a Δ_mem interval excluding zero; only S3 touches it (+0.300 [+0.000, +0.600]).
+associative rather than ordinary multi-hop retrieval. Per-scenario Δ_mem is in
+`../review/ladder_full_200_summary.txt`.
 
 **Known weakness:** `b_only` at 0.610 is the leakiest arm, concentrated in `accept`
 (0.72) and `reject` (0.80). ev_B alone still carries many of those items, so the

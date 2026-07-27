@@ -7,7 +7,7 @@
     "family": "constant availability versus scarce, batched attention",
     "role": "student small-group meetup planner",
     "bridge_type": "strategy_outcome_contingency",
-    "one_line": "student small-group meetup planner: depends on the contact stays batched rather than spread across the days, not on the thing itself"
+    "one_line": "student small-group meetup planner: depends on whether the contact stays batched rather than spread across the days, not on the thing itself"
   },
   "query_type": "conditional_recommendation",
   "polarity": "non_decision",
@@ -22,11 +22,11 @@
     "why_it_does_not_license_C": "A day of quick answers and an uneventful unreachable weekend both passed without consequence; neither says which pattern of attention the people who needed something actually received."
   },
   "latent_C": {
-    "inference": "Whether dropping off for two weeks then a whole afternoon of it helps before the coursemate who is falling apart depends on the contact stays batched rather than spread across the days, not on dropping off for two weeks then a whole afternoon of it itself.",
-    "calibrated_language": "depends on the contact stays batched rather than spread across the days, not on the thing itself"
+    "inference": "Whether dropping off for two weeks then a whole afternoon of it helps before the coursemate who is falling apart depends on whether the contact stays batched rather than spread across the days, not on dropping off for two weeks then a whole afternoon of it itself.",
+    "calibrated_language": "depends on whether the contact stays batched rather than spread across the days, not on the thing itself"
   },
   "answer_contract": {
-    "target_proposition": "Whether dropping off for two weeks then a whole afternoon of it helps before the coursemate who is falling apart depends on the contact stays batched rather than spread across the days, not on dropping off for two weeks then a whole afternoon of it itself.",
+    "target_proposition": "Whether dropping off for two weeks then a whole afternoon of it helps before the coursemate who is falling apart depends on whether the contact stays batched rather than spread across the days, not on dropping off for two weeks then a whole afternoon of it itself.",
     "allowed_decisions": [
       "yes",
       "no"
@@ -563,7 +563,7 @@
         "answer yes",
         "connect the session 5 pattern with the session 14 episode",
         "cite both session 5 and session 14",
-        "stay inside the calibrated claim (depends on the contact stays batched rather than spread across the days, not on the thing itself) rather than a broader claim about the user"
+        "stay inside the calibrated claim (depends on whether the contact stays batched rather than spread across the days, not on the thing itself) rather than a broader claim about the user"
       ],
       "rationale": "ev_A and ev_B jointly support the target proposition; neither does alone."
     },

@@ -7,7 +7,7 @@
     "family": "the composed monthly letter versus uncomposed daily reactions",
     "role": "group-ticket organizer who calls family abroad",
     "bridge_type": "strategy_outcome_contingency",
-    "one_line": "group-ticket organizer who calls family abroad: depends on the contact stays uncomposed rather than merely frequent, not on the thing itself"
+    "one_line": "group-ticket organizer who calls family abroad: depends on whether the contact stays uncomposed rather than merely frequent, not on the thing itself"
   },
   "query_type": "predicted_reaction",
   "polarity": "non_decision",
@@ -22,11 +22,11 @@
     "why_it_does_not_license_C": "A well-received trip write-up and some idle reactions in a queue show both registers are available; neither says which one this user's distance friendships actually survive on."
   },
   "latent_C": {
-    "inference": "Whether daily one-line reactions helps before my brother who moved overseas depends on the contact stays uncomposed rather than merely frequent, not on daily one-line reactions itself.",
-    "calibrated_language": "depends on the contact stays uncomposed rather than merely frequent, not on the thing itself"
+    "inference": "Whether daily one-line reactions helps before my brother who moved overseas depends on whether the contact stays uncomposed rather than merely frequent, not on daily one-line reactions itself.",
+    "calibrated_language": "depends on whether the contact stays uncomposed rather than merely frequent, not on the thing itself"
   },
   "answer_contract": {
-    "target_proposition": "Whether daily one-line reactions helps before my brother who moved overseas depends on the contact stays uncomposed rather than merely frequent, not on daily one-line reactions itself.",
+    "target_proposition": "Whether daily one-line reactions helps before my brother who moved overseas depends on whether the contact stays uncomposed rather than merely frequent, not on daily one-line reactions itself.",
     "allowed_decisions": [
       "yes",
       "no"
@@ -527,10 +527,7 @@
       "ev_A",
       "ev_B"
     ],
-    "calibration_constraints": [
-      "E1",
-      "E2"
-    ]
+    "calibration_constraints": []
   },
   "connector_spans": [],
   "coactivation_bridge": "Withheld in the absence source: neither target episode is visible.",

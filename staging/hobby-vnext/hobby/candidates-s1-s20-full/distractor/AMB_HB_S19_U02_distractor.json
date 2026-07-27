@@ -1,0 +1,577 @@
+{
+  "schema_version": "hobby-vnext-1.0",
+  "pair_id": "AMB_HB_S19_U02",
+  "domain": "hobby",
+  "user_id": "hobby_s19_u02",
+  "sub_scenario": {
+    "family": "keeping it purely enjoyable versus being judged by strangers",
+    "role": "student story-game player and bedroom producer",
+    "bridge_type": "preference_constraint_fit",
+    "one_line": "student story-game player and bedroom producer: do not rely on keeping it non-competitive as always"
+  },
+  "query_type": "recommendation_ranking",
+  "polarity": "reject",
+  "query": "planning on keeping it non-competitive as always, for finding out what's actually wrong with it, or putting it into the competition to be judged — of those two, which should I be putting first?",
+  "convention_contradicted": "Keep hobbies non-competitive; being judged takes the joy out.",
+  "retrieval_cue": {
+    "cue_type": "recommendation_ranking",
+    "why_it_naturally_retrieves_R": "A should-I-enter-this question runs at the feedback condition this user's improvement depends on, without naming it."
+  },
+  "relation_specificity": {
+    "nearby_relation": "This user gets feedback from several sources.",
+    "why_it_does_not_license_C": "A warm reception from the usual audience and a critical listen-back both passed unremarkably, so neither involves a stranger's judgement, and neither says where this user's actual faults have been found."
+  },
+  "latent_C": {
+    "inference": "For finding out what's actually wrong with it, keeping it non-competitive as always is a poor fit for this user.",
+    "calibrated_language": "do not rely on keeping it non-competitive as always"
+  },
+  "answer_contract": {
+    "target_proposition": "For finding out what's actually wrong with it, keeping it non-competitive as always is a poor fit for this user.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "mq_user5",
+    "external_folder_tag": "user5",
+    "external_source": "memoryquest",
+    "status": "review_candidate_only",
+    "tone": "natural_chat_v1",
+    "voice": "warm, chatty, quick to use shorthand",
+    "anonymization": "External MemoryQuest persona material was used only during authoring; no corpus, legal name, country, or demographic metadata is in visible dialogue."
+  },
+  "candidate_id": "AMB_HB_S19_U02_distractor",
+  "data_arm": "distractor",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2031-04-29T11:00:00Z",
+      "speaker_id": "hobby_s19_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "put a new string on and broke it immediately."
+        },
+        {
+          "role": "assistant",
+          "content": "spare?"
+        },
+        {
+          "role": "user",
+          "content": "one left."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2031-04-30T14:00:00Z",
+      "speaker_id": "hobby_s19_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "spent longer choosing what to work on than working."
+        },
+        {
+          "role": "assistant",
+          "content": "familiar?"
+        },
+        {
+          "role": "user",
+          "content": "chronic."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2031-05-01T16:00:00Z",
+      "speaker_id": "hobby_s19_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "played for the usual lot and got a good reception."
+        },
+        {
+          "role": "assistant",
+          "content": "useful?"
+        },
+        {
+          "role": "user",
+          "content": "encouraging, anyway."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2031-05-02T18:00:00Z",
+      "speaker_id": "hobby_s19_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "wrote the date on a thing so I'd remember when."
+        },
+        {
+          "role": "assistant",
+          "content": "will you?"
+        },
+        {
+          "role": "user",
+          "content": "the date will."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2031-05-03T09:00:00Z",
+      "speaker_id": "hobby_s19_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "restrung it and immediately put it down again."
+        },
+        {
+          "role": "assistant",
+          "content": "not playing?"
+        },
+        {
+          "role": "user",
+          "content": "admiring, mostly."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2031-05-04T11:00:00Z",
+      "speaker_id": "hobby_s19_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "when it's going in front of someone who doesn't know me, what comes back is about what's there rather than about what they've got used to from me."
+        },
+        {
+          "role": "assistant",
+          "content": "used to?"
+        },
+        {
+          "role": "user",
+          "content": "people who know me hear the version of me they already have."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2031-05-05T14:00:00Z",
+      "speaker_id": "hobby_s19_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "watched a tutorial all the way through without trying any of it."
+        },
+        {
+          "role": "assistant",
+          "content": "learn anything?"
+        },
+        {
+          "role": "user",
+          "content": "in theory."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2031-05-06T16:00:00Z",
+      "speaker_id": "hobby_s19_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "reorganised the shelf by colour. took an hour."
+        },
+        {
+          "role": "assistant",
+          "content": "improvement?"
+        },
+        {
+          "role": "user",
+          "content": "aesthetically."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2031-05-07T18:00:00Z",
+      "speaker_id": "hobby_s19_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "bought a thing I already own a version of."
+        },
+        {
+          "role": "assistant",
+          "content": "why?"
+        },
+        {
+          "role": "user",
+          "content": "no defence prepared."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2031-05-08T09:00:00Z",
+      "speaker_id": "hobby_s19_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "cleaned everything instead of using any of it."
+        },
+        {
+          "role": "assistant",
+          "content": "productive?"
+        },
+        {
+          "role": "user",
+          "content": "adjacent to productive."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2031-05-09T11:00:00Z",
+      "speaker_id": "hobby_s19_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "found a half-finished thing at the back of a drawer."
+        },
+        {
+          "role": "assistant",
+          "content": "carrying on with it?"
+        },
+        {
+          "role": "user",
+          "content": "unlikely."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2031-05-10T14:00:00Z",
+      "speaker_id": "hobby_s19_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "recorded myself and listened back critically."
+        },
+        {
+          "role": "assistant",
+          "content": "find anything?"
+        },
+        {
+          "role": "user",
+          "content": "the usual suspects."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2031-05-11T16:00:00Z",
+      "speaker_id": "hobby_s19_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "wrote down an idea and closed the notebook."
+        },
+        {
+          "role": "assistant",
+          "content": "any good?"
+        },
+        {
+          "role": "user",
+          "content": "ask me in a month."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2031-05-12T18:00:00Z",
+      "speaker_id": "hobby_s19_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "every fault I've actually fixed was found by a stranger. the people who know my playing have never once told me anything I didn't already know about it."
+        },
+        {
+          "role": "assistant",
+          "content": "not once?"
+        },
+        {
+          "role": "user",
+          "content": "not in years, and they've heard everything."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2031-05-13T09:00:00Z",
+      "speaker_id": "hobby_s19_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "spent the evening reading about it rather than doing it."
+        },
+        {
+          "role": "assistant",
+          "content": "counts?"
+        },
+        {
+          "role": "user",
+          "content": "it does not count."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2031-05-14T11:00:00Z",
+      "speaker_id": "hobby_s19_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "fixed the wobbly leg on the table finally."
+        },
+        {
+          "role": "assistant",
+          "content": "took long?"
+        },
+        {
+          "role": "user",
+          "content": "four months and ten minutes."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2031-05-15T14:00:00Z",
+      "speaker_id": "hobby_s19_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "listened back to something from last year and winced."
+        },
+        {
+          "role": "assistant",
+          "content": "that bad?"
+        },
+        {
+          "role": "user",
+          "content": "instructively bad."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2031-05-16T16:00:00Z",
+      "speaker_id": "hobby_s19_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the res-hall music lot keep saying the moment you make it competitive you lose why you started."
+        },
+        {
+          "role": "assistant",
+          "content": "why you started."
+        },
+        {
+          "role": "user",
+          "content": "that's the warning, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2031-05-17T18:00:00Z",
+      "speaker_id": "hobby_s19_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "sorted the offcuts into a box. a whole box."
+        },
+        {
+          "role": "assistant",
+          "content": "keeping them?"
+        },
+        {
+          "role": "user",
+          "content": "forever, apparently."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2031-05-18T09:00:00Z",
+      "speaker_id": "hobby_s19_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "planning on keeping it non-competitive as always, for finding out what's actually wrong with it, or putting it into the competition to be judged — of those two, which should I be putting first?"
+        }
+      ]
+    }
+  ],
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "hobby_s19_u02",
+      "fact": "when it's going in front of someone who doesn't know me, what comes back is about what's there rather than about what they've got used to from me."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "hobby_s19_u02",
+      "fact": "every fault I've actually fixed was found by a stranger. the people who know my playing have never once told me anything I didn't already know about it."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "hobby_s19_u02",
+        "context": "being heard by the people who always hear me versus by strangers",
+        "goal_or_prediction": "get a useful read on it",
+        "action": "put it in front of someone with no prior expectations",
+        "outcome_or_affect": "response was about what was there, not about the familiar version"
+      }
+    },
+    "7": {
+      "role": "background_memory"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "background_memory"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "nearby_counterexample"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "hobby_s19_u02",
+        "context": "faults this user has and has not fixed",
+        "goal_or_prediction": "find and fix what is wrong",
+        "action": "received feedback from both strangers and people who know them",
+        "outcome_or_affect": "every fixed fault was found by a stranger; familiar listeners found nothing new"
+      }
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "background_memory"
+    },
+    "18": {
+      "role": "distractor",
+      "distractor_id": "dist_1",
+      "why_distractor": "It restates the conventional advice in the user's own feed, so it competes for attention and points at the answer a prior-driven solver already wants to give. It reports other people's confidence rather than any episode of this user's, and says nothing about the relation between session 6 and session 14."
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "A stranger's judgement reports what is actually there rather than the familiar version of this user, and every fault they have fixed was found that way; familiar listeners have found nothing new in years.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": []
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "when it's going in front of someone who doesn't know me, what comes back is about what's there rather than about what they've got used to from me"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "every fault I've actually fixed was found by a stranger. the people who know my playing have never once told me anything I didn't already know about it"
+    }
+  ],
+  "coactivation_bridge": "ev_A and ev_B are the only pair that licenses the target proposition. A stranger's judgement reports what is actually there rather than the familiar version of this user, and every fault they have fixed was found that way; familiar listeners have found nothing new in years. The proposition contradicts the convention a solver would otherwise apply (\"Keep hobbies non-competitive; being judged takes the joy out.\"), so priors alone point the other way. The nearby relation (This user gets feedback from several sources.) does not license it.",
+  "arm_gold": {
+    "distractor": {
+      "expected_mode": "infer_C",
+      "binary_decision": true,
+      "required_elements": [
+        "answer yes",
+        "connect the session 6 pattern with the session 14 episode",
+        "cite both session 6 and session 14",
+        "not cite session 18 as support"
+      ],
+      "rationale": "The swapped session is query-relevant but non-evidential; the ev_A/ev_B relation is untouched, so the target proposition still holds."
+    }
+  },
+  "distractor_note": {
+    "replaced_session_id": 18,
+    "why_distractor": "It restates the conventional advice in the user's own feed, so it competes for attention and points at the answer a prior-driven solver already wants to give. It reports other people's confidence rather than any episode of this user's, and says nothing about the relation between session 6 and session 14."
+  }
+}

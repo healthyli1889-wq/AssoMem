@@ -15,13 +15,13 @@ SUPPLEMENTARY_ARMS = ("distractor", "absence")
 VNEXT_DOMAINS = {"work", "social", "finance", "health", "hobby"}
 # Schema versions that must satisfy the full field/annotation/span contract
 # below, not just the shared minimum.
-STRICT_SCHEMA_VERSIONS = {"work-vnext-1.1", "work-vnext-1.2", "social-vnext-1.0"}
+STRICT_SCHEMA_VERSIONS = {"work-vnext-1.1", "work-vnext-1.2", "social-vnext-1.0", "hobby-vnext-1.0"}
 # Schema versions that must additionally author matched neutral replacements for
 # a_only and b_only. Applied only from social-vnext-1.0 on: the work-vnext-1.2
 # exemplar was authored and human-gated before this contract existed, and
 # `render_arms` still handles it by deleting the session and recording
 # `session_count_preserved: False` in the lineage rather than failing.
-LENGTH_MATCHED_SCHEMA_VERSIONS = {"social-vnext-1.0"}
+LENGTH_MATCHED_SCHEMA_VERSIONS = {"social-vnext-1.0", "hobby-vnext-1.0"}
 QUERY_TYPES = {
     "preference_generalization",
     "situational_fit",

@@ -1,0 +1,657 @@
+{
+  "schema_version": "hobby-vnext-1.0",
+  "pair_id": "AMB_HB_S3_U09",
+  "domain": "hobby",
+  "user_id": "hobby_s3_u09",
+  "sub_scenario": {
+    "family": "thirty minutes daily versus one long block at the weekend",
+    "role": "student sim-and-puzzle player who plays keys",
+    "bridge_type": "threshold_context_interaction",
+    "one_line": "student sim-and-puzzle player who plays keys: depends on whether the session runs past the point where reloading is finished, not on the thing itself"
+  },
+  "query_type": "predicted_reaction",
+  "polarity": "non_decision",
+  "query": "thinking of one long unbroken Sunday session for the voicing I can't play cleanly — if I go ahead with it, how does it actually go for me, or is there not enough here to call it today?",
+  "convention_contradicted": "Little and often beats one long session.",
+  "retrieval_cue": {
+    "cue_type": "predicted_reaction",
+    "why_it_naturally_retrieves_R": "A how-should-I-schedule-this question runs at the session-length threshold this user needs, without naming it or the year it cost."
+  },
+  "relation_specificity": {
+    "nearby_relation": "This user practises in both short and long sessions.",
+    "why_it_does_not_license_C": "Two short sessions in a day and one long session on familiar material both passed unremarkably, so neither crosses the reloading threshold on something unlearned."
+  },
+  "latent_C": {
+    "inference": "Whether one long unbroken Sunday session helps this user with the voicing I can't play cleanly depends on whether the session runs past the point where reloading is finished, not on one long unbroken Sunday session itself.",
+    "calibrated_language": "depends on whether the session runs past the point where reloading is finished, not on the thing itself"
+  },
+  "answer_contract": {
+    "target_proposition": "Whether one long unbroken Sunday session helps this user with the voicing I can't play cleanly depends on whether the session runs past the point where reloading is finished, not on one long unbroken Sunday session itself.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "mq_user40",
+    "external_folder_tag": "user40",
+    "external_source": "memoryquest",
+    "status": "review_candidate_only",
+    "tone": "natural_chat_v1",
+    "voice": "observant, understated",
+    "anonymization": "External MemoryQuest persona material was used only during authoring; no corpus, legal name, country, or demographic metadata is in visible dialogue."
+  },
+  "candidate_id": "AMB_HB_S3_U09_associative",
+  "data_arm": "associative",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2029-05-30T11:00:00Z",
+      "speaker_id": "hobby_s3_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "took a photo of it and didn't post it."
+        },
+        {
+          "role": "assistant",
+          "content": "why not?"
+        },
+        {
+          "role": "user",
+          "content": "the light was wrong."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2029-05-31T14:00:00Z",
+      "speaker_id": "hobby_s3_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "watched someone much better do it effortlessly."
+        },
+        {
+          "role": "assistant",
+          "content": "motivating?"
+        },
+        {
+          "role": "user",
+          "content": "one of the two, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2029-06-01T16:00:00Z",
+      "speaker_id": "hobby_s3_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "did two short sessions in one day. both fine."
+        },
+        {
+          "role": "assistant",
+          "content": "tiring?"
+        },
+        {
+          "role": "user",
+          "content": "less than expected."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2029-06-02T18:00:00Z",
+      "speaker_id": "hobby_s3_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "labelled the boxes. all of them."
+        },
+        {
+          "role": "assistant",
+          "content": "satisfying?"
+        },
+        {
+          "role": "user",
+          "content": "unreasonably."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2029-06-03T09:00:00Z",
+      "speaker_id": "hobby_s3_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "found a setting I've had wrong for two years."
+        },
+        {
+          "role": "assistant",
+          "content": "fixed?"
+        },
+        {
+          "role": "user",
+          "content": "fixed and mildly annoyed."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2029-06-04T11:00:00Z",
+      "speaker_id": "hobby_s3_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "did the boring maintenance nobody talks about."
+        },
+        {
+          "role": "assistant",
+          "content": "necessary?"
+        },
+        {
+          "role": "user",
+          "content": "apparently every time."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2029-06-05T14:00:00Z",
+      "speaker_id": "hobby_s3_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the first forty minutes of anything is just me reloading where I was. past about ninety I'm somewhere I wasn't before."
+        },
+        {
+          "role": "assistant",
+          "content": "always forty?"
+        },
+        {
+          "role": "user",
+          "content": "roughly. it's the length of the session that decides it, not how often I turn up."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2029-06-06T16:00:00Z",
+      "speaker_id": "hobby_s3_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "moved the whole setup two feet to the left."
+        },
+        {
+          "role": "assistant",
+          "content": "better?"
+        },
+        {
+          "role": "user",
+          "content": "different."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2029-06-07T18:00:00Z",
+      "speaker_id": "hobby_s3_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "started something new before finishing the last thing."
+        },
+        {
+          "role": "assistant",
+          "content": "again?"
+        },
+        {
+          "role": "user",
+          "content": "as ever."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2029-06-08T09:00:00Z",
+      "speaker_id": "hobby_s3_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "read the manual for something I've used for years."
+        },
+        {
+          "role": "assistant",
+          "content": "surprises?"
+        },
+        {
+          "role": "user",
+          "content": "several."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2029-06-09T11:00:00Z",
+      "speaker_id": "hobby_s3_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "tried to explain it to someone and heard how odd it sounds."
+        },
+        {
+          "role": "assistant",
+          "content": "did they follow?"
+        },
+        {
+          "role": "user",
+          "content": "politely."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2029-06-10T14:00:00Z",
+      "speaker_id": "hobby_s3_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "had one long session on something I already know well."
+        },
+        {
+          "role": "assistant",
+          "content": "useful?"
+        },
+        {
+          "role": "user",
+          "content": "pleasant, not useful."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2029-06-11T16:00:00Z",
+      "speaker_id": "hobby_s3_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "gave up after ten minutes and made tea instead."
+        },
+        {
+          "role": "assistant",
+          "content": "back to it?"
+        },
+        {
+          "role": "user",
+          "content": "eventually."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2029-06-12T18:00:00Z",
+      "speaker_id": "hobby_s3_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "sharpened everything that could be sharpened."
+        },
+        {
+          "role": "assistant",
+          "content": "needed doing?"
+        },
+        {
+          "role": "user",
+          "content": "arguably not."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2029-06-13T09:00:00Z",
+      "speaker_id": "hobby_s3_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "every technique I actually own now, I got in a session that ran long. the year of daily half-hours left me exactly where I started, very consistently."
+        },
+        {
+          "role": "assistant",
+          "content": "exactly where?"
+        },
+        {
+          "role": "user",
+          "content": "note for note. I could prove it from the recordings."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2029-06-14T11:00:00Z",
+      "speaker_id": "hobby_s3_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "found an old recording I'd forgotten making."
+        },
+        {
+          "role": "assistant",
+          "content": "any good?"
+        },
+        {
+          "role": "user",
+          "content": "better than I remembered."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2029-06-15T14:00:00Z",
+      "speaker_id": "hobby_s3_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "swapped one component for a nearly identical one."
+        },
+        {
+          "role": "assistant",
+          "content": "difference?"
+        },
+        {
+          "role": "user",
+          "content": "imperceptible."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2029-06-16T16:00:00Z",
+      "speaker_id": "hobby_s3_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "spent the session on a bit nobody will ever notice."
+        },
+        {
+          "role": "assistant",
+          "content": "worth it?"
+        },
+        {
+          "role": "user",
+          "content": "to me."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2029-06-17T18:00:00Z",
+      "speaker_id": "hobby_s3_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "wrote a list of things to learn. filed the list."
+        },
+        {
+          "role": "assistant",
+          "content": "starting any?"
+        },
+        {
+          "role": "user",
+          "content": "the list is the start."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2029-06-18T09:00:00Z",
+      "speaker_id": "hobby_s3_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "thinking of one long unbroken Sunday session for the voicing I can't play cleanly — if I go ahead with it, how does it actually go for me, or is there not enough here to call it today?"
+        }
+      ]
+    }
+  ],
+  "evidence": {
+    "ev_A": {
+      "session_id": 7,
+      "owner": "hobby_s3_u09",
+      "fact": "the first forty minutes of anything is just me reloading where I was. past about ninety I'm somewhere I wasn't before."
+    },
+    "ev_B": {
+      "session_id": 15,
+      "owner": "hobby_s3_u09",
+      "fact": "every technique I actually own now, I got in a session that ran long. the year of daily half-hours left me exactly where I started, very consistently."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "background_memory"
+    },
+    "7": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "hobby_s3_u09",
+        "context": "sessions of varying length",
+        "goal_or_prediction": "get somewhere new",
+        "action": "kept going past the reloading point",
+        "outcome_or_affect": "forty minutes reloading, then somewhere genuinely new"
+      }
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "background_memory"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "nearby_counterexample"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "background_memory"
+    },
+    "15": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "hobby_s3_u09",
+        "context": "techniques this user has and has not acquired",
+        "goal_or_prediction": "actually acquire the technique",
+        "action": "worked at some in long sessions and some in daily half-hours",
+        "outcome_or_affect": "every acquired technique came from a long session; the daily year moved nothing"
+      }
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "background_memory"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "The first forty minutes of any session are spent reloading and only past about ninety does this user reach new ground, and every technique they actually own was acquired in a long session while a year of daily half-hours moved nothing.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": []
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 7,
+      "quote": "the first forty minutes of anything is just me reloading where I was. past about ninety I'm somewhere I wasn't before"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 15,
+      "quote": "every technique I actually own now, I got in a session that ran long. the year of daily half-hours left me exactly where I started, very consistently"
+    }
+  ],
+  "coactivation_bridge": "ev_A and ev_B are the only pair that licenses the target proposition. The first forty minutes of any session are spent reloading and only past about ninety does this user reach new ground, and every technique they actually own was acquired in a long session while a year of daily half-hours moved nothing. The proposition contradicts the convention a solver would otherwise apply (\"Little and often beats one long session.\"), so priors alone point the other way. The nearby relation (This user practises in both short and long sessions.) does not license it.",
+  "arm_gold": {
+    "full": {
+      "expected_mode": "infer_C",
+      "binary_decision": true,
+      "required_elements": [
+        "answer yes",
+        "connect the session 7 pattern with the session 15 episode",
+        "cite both session 7 and session 15",
+        "stay inside the calibrated claim (depends on whether the session runs past the point where reloading is finished, not on the thing itself) rather than a broader claim about the user"
+      ],
+      "rationale": "ev_A and ev_B jointly support the target proposition; neither does alone."
+    },
+    "a_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that session 7 alone does not establish the target proposition",
+        "not assert the target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "ev_B is replaced by a matched neutral session, so the relation is unavailable."
+    },
+    "b_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that session 15 alone does not establish the target proposition",
+        "not assert the target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "ev_A is replaced by a matched neutral session, so the relation is unavailable."
+    },
+    "link_broken": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that the revised session 15 no longer connects to session 7",
+        "not assert the original target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "B-prime keeps the owner, date, session form and turn count while removing the connector, so the original relation no longer holds."
+    }
+  },
+  "single_evidence_replacements": {
+    "a_only": {
+      "replaced_session_id": 15,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "wrote the month out on paper to see what time I actually have, realised two things clash, moved neither, and put the paper somewhere I will not look at it again."
+        },
+        {
+          "role": "assistant",
+          "content": "so the clash stands?"
+        },
+        {
+          "role": "user",
+          "content": "the clash stands. future problem."
+        }
+      ]
+    },
+    "b_only": {
+      "replaced_session_id": 7,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "did the weekly round: cleaned everything down, replaced the worn bit, put the spares back where they belong, and made a note about the thing that keeps loosening."
+        },
+        {
+          "role": "assistant",
+          "content": "getting fixed?"
+        },
+        {
+          "role": "user",
+          "content": "the note is the fix, for now."
+        }
+      ]
+    }
+  },
+  "link_broken": {
+    "replaced_session_id": 15,
+    "replacement_dialogue": [
+      {
+        "role": "user",
+        "content": "I've had long sessions and short ones and picked things up at about the same rate either way."
+      },
+      {
+        "role": "assistant",
+        "content": "so length isn't it?"
+      },
+      {
+        "role": "user",
+        "content": "seems not. no pattern in it."
+      }
+    ]
+  }
+}

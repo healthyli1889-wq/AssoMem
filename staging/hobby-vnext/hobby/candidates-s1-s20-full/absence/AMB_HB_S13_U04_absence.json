@@ -1,0 +1,557 @@
+{
+  "schema_version": "hobby-vnext-1.0",
+  "pair_id": "AMB_HB_S13_U04",
+  "domain": "hobby",
+  "user_id": "hobby_s13_u04",
+  "sub_scenario": {
+    "family": "sticking to one pursuit versus having several unrelated ones going",
+    "role": "strategy-game builder, mandolin player and cyclist",
+    "bridge_type": "threshold_context_interaction",
+    "one_line": "strategy-game builder, mandolin player and cyclist: depends on whether there are enough separate pursuits for one to reach into another, not on the thing itself"
+  },
+  "query_type": "recommendation_ranking",
+  "polarity": "non_decision",
+  "query": "thinking of adding a couple of unrelated hobbies, for making something that isn't derivative, or cutting everything else out and focusing — of those two, which should I be putting first, or is there not enough here to call it today?",
+  "convention_contradicted": "Pick one thing and stick with it; dabbling gets you nowhere.",
+  "retrieval_cue": {
+    "cue_type": "recommendation_ranking",
+    "why_it_naturally_retrieves_R": "A should-I-narrow-down question runs at the breadth threshold this user's original work needs, without naming it."
+  },
+  "relation_specificity": {
+    "nearby_relation": "This user has had both narrow and broad periods.",
+    "why_it_does_not_license_C": "A fruitless month with two things going and a solid month on one thing both passed unremarkably: neither crosses the threshold at which this user starts importing across, and neither says where original work has come from."
+  },
+  "latent_C": {
+    "inference": "Whether adding a couple of unrelated hobbies helps this user with making something that isn't derivative depends on whether there are enough separate pursuits for one to reach into another, not on adding a couple of unrelated hobbies itself.",
+    "calibrated_language": "depends on whether there are enough separate pursuits for one to reach into another, not on the thing itself"
+  },
+  "answer_contract": {
+    "target_proposition": "Whether adding a couple of unrelated hobbies helps this user with making something that isn't derivative depends on whether there are enough separate pursuits for one to reach into another, not on adding a couple of unrelated hobbies itself.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "mq_user15",
+    "external_folder_tag": "user15",
+    "external_source": "memoryquest",
+    "status": "review_candidate_only",
+    "tone": "natural_chat_v1",
+    "voice": "matter-of-fact, logistics-first",
+    "anonymization": "External MemoryQuest persona material was used only during authoring; no corpus, legal name, country, or demographic metadata is in visible dialogue."
+  },
+  "candidate_id": "AMB_HB_S13_U04_absence",
+  "data_arm": "absence",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2030-08-08T11:00:00Z",
+      "speaker_id": "hobby_s13_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "read the manual for something I've used for years."
+        },
+        {
+          "role": "assistant",
+          "content": "surprises?"
+        },
+        {
+          "role": "user",
+          "content": "several."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2030-08-09T14:00:00Z",
+      "speaker_id": "hobby_s13_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "tried to explain it to someone and heard how odd it sounds."
+        },
+        {
+          "role": "assistant",
+          "content": "did they follow?"
+        },
+        {
+          "role": "user",
+          "content": "politely."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2030-08-10T16:00:00Z",
+      "speaker_id": "hobby_s13_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "gave up after ten minutes and made tea instead."
+        },
+        {
+          "role": "assistant",
+          "content": "back to it?"
+        },
+        {
+          "role": "user",
+          "content": "eventually."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2030-08-11T18:00:00Z",
+      "speaker_id": "hobby_s13_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "had two things going and neither went anywhere that month."
+        },
+        {
+          "role": "assistant",
+          "content": "frustrating?"
+        },
+        {
+          "role": "user",
+          "content": "a bit."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2030-08-12T09:00:00Z",
+      "speaker_id": "hobby_s13_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "sharpened everything that could be sharpened."
+        },
+        {
+          "role": "assistant",
+          "content": "needed doing?"
+        },
+        {
+          "role": "user",
+          "content": "arguably not."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2030-08-13T11:00:00Z",
+      "speaker_id": "hobby_s13_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "found an old recording I'd forgotten making."
+        },
+        {
+          "role": "assistant",
+          "content": "any good?"
+        },
+        {
+          "role": "user",
+          "content": "better than I remembered."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2030-08-14T14:00:00Z",
+      "speaker_id": "hobby_s13_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "did the boring admin I have been putting off: two orders, one return, one warranty form, and a phone call that took nine minutes of hold music."
+        },
+        {
+          "role": "assistant",
+          "content": "all done?"
+        },
+        {
+          "role": "user",
+          "content": "all done. no ceremony, which feels wrong somehow."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2030-08-15T16:00:00Z",
+      "speaker_id": "hobby_s13_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "swapped one component for a nearly identical one."
+        },
+        {
+          "role": "assistant",
+          "content": "difference?"
+        },
+        {
+          "role": "user",
+          "content": "imperceptible."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2030-08-16T18:00:00Z",
+      "speaker_id": "hobby_s13_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "spent the session on a bit nobody will ever notice."
+        },
+        {
+          "role": "assistant",
+          "content": "worth it?"
+        },
+        {
+          "role": "user",
+          "content": "to me."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2030-08-17T09:00:00Z",
+      "speaker_id": "hobby_s13_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "wrote a list of things to learn. filed the list."
+        },
+        {
+          "role": "assistant",
+          "content": "starting any?"
+        },
+        {
+          "role": "user",
+          "content": "the list is the start."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2030-08-18T11:00:00Z",
+      "speaker_id": "hobby_s13_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "did it badly on purpose to see what happened."
+        },
+        {
+          "role": "assistant",
+          "content": "and?"
+        },
+        {
+          "role": "user",
+          "content": "informative."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2030-08-19T14:00:00Z",
+      "speaker_id": "hobby_s13_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "spent a month on one thing exclusively and got it solid."
+        },
+        {
+          "role": "assistant",
+          "content": "worth it?"
+        },
+        {
+          "role": "user",
+          "content": "for solidity, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2030-08-20T16:00:00Z",
+      "speaker_id": "hobby_s13_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "cleared the workspace properly for the first time in months."
+        },
+        {
+          "role": "assistant",
+          "content": "how bad?"
+        },
+        {
+          "role": "user",
+          "content": "archaeological."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2030-08-21T18:00:00Z",
+      "speaker_id": "hobby_s13_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "tried the thing everyone recommends. hated it."
+        },
+        {
+          "role": "assistant",
+          "content": "sticking with it?"
+        },
+        {
+          "role": "user",
+          "content": "no."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2030-08-22T09:00:00Z",
+      "speaker_id": "hobby_s13_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "counted how many of these I actually own."
+        },
+        {
+          "role": "assistant",
+          "content": "the number?"
+        },
+        {
+          "role": "user",
+          "content": "not saying."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2030-08-23T11:00:00Z",
+      "speaker_id": "hobby_s13_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "did a full tidy of the whole workspace this afternoon, moved three things, threw one out, and relabelled a box that has had the wrong label on it since last year."
+        },
+        {
+          "role": "assistant",
+          "content": "productive, then?"
+        },
+        {
+          "role": "user",
+          "content": "administratively, yes. otherwise nothing happened at all."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2030-08-24T14:00:00Z",
+      "speaker_id": "hobby_s13_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "did a slow warm-up and nothing else."
+        },
+        {
+          "role": "assistant",
+          "content": "session over?"
+        },
+        {
+          "role": "user",
+          "content": "session over."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2030-08-25T16:00:00Z",
+      "speaker_id": "hobby_s13_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "recorded it on my phone to hear it back."
+        },
+        {
+          "role": "assistant",
+          "content": "useful?"
+        },
+        {
+          "role": "user",
+          "content": "brutally."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2030-08-26T18:00:00Z",
+      "speaker_id": "hobby_s13_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "ordered a part and forgot what it was for."
+        },
+        {
+          "role": "assistant",
+          "content": "arrived?"
+        },
+        {
+          "role": "user",
+          "content": "sitting in a bag."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2030-08-27T09:00:00Z",
+      "speaker_id": "hobby_s13_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "thinking of adding a couple of unrelated hobbies, for making something that isn't derivative, or cutting everything else out and focusing — of those two, which should I be putting first, or is there not enough here to call it today?"
+        }
+      ]
+    }
+  ],
+  "target_evidence_ids": [],
+  "evidence": {
+    "ev_A": {
+      "session_id": 7,
+      "owner": "hobby_s13_u04",
+      "withheld": true
+    },
+    "ev_B": {
+      "session_id": 16,
+      "owner": "hobby_s13_u04",
+      "withheld": true
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "background_memory"
+    },
+    "4": {
+      "role": "nearby_counterexample"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "background_memory"
+    },
+    "7": {
+      "role": "background_memory"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "background_memory"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "nearby_counterexample"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "background_memory"
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "background_memory"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "Withheld in the absence source.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": []
+  },
+  "connector_spans": [],
+  "coactivation_bridge": "Withheld in the absence source: neither target episode is visible.",
+  "arm_gold": {
+    "absence": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that the visible history does not contain the episodes the question needs",
+        "not assert the target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "Both target episodes are replaced by matched neutral sessions of the same owner, date and turn count, so nothing licenses the target proposition."
+    }
+  },
+  "absence_note": {
+    "replaced_session_ids": [
+      7,
+      16
+    ],
+    "withheld_evidence_ids": [
+      "ev_A",
+      "ev_B"
+    ]
+  }
+}

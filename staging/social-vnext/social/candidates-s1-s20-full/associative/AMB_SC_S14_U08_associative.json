@@ -7,7 +7,7 @@
     "family": "turning up out of obligation versus declining once and choosing freely after",
     "role": "community-event and career-meetup attendee",
     "bridge_type": "preference_constraint_fit",
-    "one_line": "community-event and career-meetup attendee: depends on the decline is stated plainly rather than dressed up as an excuse, not on the thing itself"
+    "one_line": "community-event and career-meetup attendee: depends on whether the decline is stated plainly rather than dressed up as an excuse, not on the thing itself"
   },
   "query_type": "conditional_recommendation",
   "polarity": "non_decision",
@@ -22,11 +22,11 @@
     "why_it_does_not_license_C": "A night this user genuinely wanted and a vague last-minute cancellation both passed without consequence, so neither shows what obligation does to their presence, nor what a plain decline does to a friendship."
   },
   "latent_C": {
-    "inference": "Whether turning this one down plainly helps before the friendship with the neighbour who organises everything depends on the decline is stated plainly rather than dressed up as an excuse, not on turning this one down plainly itself.",
-    "calibrated_language": "depends on the decline is stated plainly rather than dressed up as an excuse, not on the thing itself"
+    "inference": "Whether turning this one down plainly helps before the friendship with the neighbour who organises everything depends on whether the decline is stated plainly rather than dressed up as an excuse, not on turning this one down plainly itself.",
+    "calibrated_language": "depends on whether the decline is stated plainly rather than dressed up as an excuse, not on the thing itself"
   },
   "answer_contract": {
-    "target_proposition": "Whether turning this one down plainly helps before the friendship with the neighbour who organises everything depends on the decline is stated plainly rather than dressed up as an excuse, not on turning this one down plainly itself.",
+    "target_proposition": "Whether turning this one down plainly helps before the friendship with the neighbour who organises everything depends on whether the decline is stated plainly rather than dressed up as an excuse, not on turning this one down plainly itself.",
     "allowed_decisions": [
       "yes",
       "no"
@@ -563,7 +563,7 @@
         "answer yes",
         "connect the session 4 pattern with the session 13 episode",
         "cite both session 4 and session 13",
-        "stay inside the calibrated claim (depends on the decline is stated plainly rather than dressed up as an excuse, not on the thing itself) rather than a broader claim about the user"
+        "stay inside the calibrated claim (depends on whether the decline is stated plainly rather than dressed up as an excuse, not on the thing itself) rather than a broader claim about the user"
       ],
       "rationale": "ev_A and ev_B jointly support the target proposition; neither does alone."
     },

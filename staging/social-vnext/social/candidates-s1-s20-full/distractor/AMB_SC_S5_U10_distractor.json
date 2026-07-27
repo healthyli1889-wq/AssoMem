@@ -7,7 +7,7 @@
     "family": "protected solo recharge versus a house with people in it",
     "role": "solo-friendly workshop and panel attendee",
     "bridge_type": "prediction_calibration",
-    "one_line": "solo-friendly workshop and panel attendee: depends on the stay is long enough to keep the house occupied continuously, not on the thing itself"
+    "one_line": "solo-friendly workshop and panel attendee: depends on whether the stay is long enough to keep the house occupied continuously, not on the thing itself"
   },
   "query_type": "behavior_explanation",
   "polarity": "non_decision",
@@ -22,11 +22,11 @@
     "why_it_does_not_license_C": "One easy evening guest and a Saturday spent out both cost nothing, so neither calibrates a multi-week stay, and neither says which arrangement this user actually comes out of steadier."
   },
   "latent_C": {
-    "inference": "Whether the month of overlapping guests helps before my friend's extended stay depends on the stay is long enough to keep the house occupied continuously, not on the month of overlapping guests itself.",
-    "calibrated_language": "depends on the stay is long enough to keep the house occupied continuously, not on the thing itself"
+    "inference": "Whether the month of overlapping guests helps before my friend's extended stay depends on whether the stay is long enough to keep the house occupied continuously, not on the month of overlapping guests itself.",
+    "calibrated_language": "depends on whether the stay is long enough to keep the house occupied continuously, not on the thing itself"
   },
   "answer_contract": {
-    "target_proposition": "Whether the month of overlapping guests helps before my friend's extended stay depends on the stay is long enough to keep the house occupied continuously, not on the month of overlapping guests itself.",
+    "target_proposition": "Whether the month of overlapping guests helps before my friend's extended stay depends on whether the stay is long enough to keep the house occupied continuously, not on the month of overlapping guests itself.",
     "allowed_decisions": [
       "yes",
       "no"

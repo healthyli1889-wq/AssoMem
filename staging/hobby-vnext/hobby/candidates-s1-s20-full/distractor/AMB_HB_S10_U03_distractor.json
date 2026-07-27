@@ -1,0 +1,577 @@
+{
+  "schema_version": "hobby-vnext-1.0",
+  "pair_id": "AMB_HB_S10_U03",
+  "domain": "hobby",
+  "user_id": "hobby_s10_u03",
+  "sub_scenario": {
+    "family": "open-ended time versus a hard external deadline",
+    "role": "open-world gamer who plays bass and boxes",
+    "bridge_type": "prediction_calibration",
+    "one_line": "open-world gamer who plays bass and boxes: helps when the deadline is externally fixed rather than one this user set, not otherwise"
+  },
+  "query_type": "preference_generalization",
+  "polarity": "conditional",
+  "query": "thinking of taking the support gig with the fixed date for the thing I want to actually stand behind — is that generally true of me, or was that just the one time, and if the answer depends on something, on what?",
+  "convention_contradicted": "Creative work needs unpressured time; deadlines produce rushed, worse work.",
+  "retrieval_cue": {
+    "cue_type": "preference_generalization",
+    "why_it_naturally_retrieves_R": "A should-I-commit-to-this-date question runs at the failed prediction without naming it or the work that corrected it."
+  },
+  "relation_specificity": {
+    "nearby_relation": "This user works to deadlines and to open time alike.",
+    "why_it_does_not_license_C": "A loose target on something small and open time on something purely technical both passed unremarkably, so neither bounds the prediction, and neither says which condition produced work this user would stand over."
+  },
+  "latent_C": {
+    "inference": "For the thing I want to actually stand behind, taking the support gig with the fixed date helps this user when the deadline is externally fixed rather than one this user set, and not otherwise.",
+    "calibrated_language": "helps when the deadline is externally fixed rather than one this user set, not otherwise"
+  },
+  "answer_contract": {
+    "target_proposition": "For the thing I want to actually stand behind, taking the support gig with the fixed date helps this user when the deadline is externally fixed rather than one this user set, and not otherwise.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "mq_user10",
+    "external_folder_tag": "user10",
+    "external_source": "memoryquest",
+    "status": "review_candidate_only",
+    "tone": "natural_chat_v1",
+    "voice": "easygoing, practical, a bit blunt",
+    "anonymization": "External MemoryQuest persona material was used only during authoring; no corpus, legal name, country, or demographic metadata is in visible dialogue."
+  },
+  "candidate_id": "AMB_HB_S10_U03_distractor",
+  "data_arm": "distractor",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2030-03-23T11:00:00Z",
+      "speaker_id": "hobby_s10_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "moved the whole setup two feet to the left."
+        },
+        {
+          "role": "assistant",
+          "content": "better?"
+        },
+        {
+          "role": "user",
+          "content": "different."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2030-03-24T14:00:00Z",
+      "speaker_id": "hobby_s10_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "had a loose target for a small thing. finished it early."
+        },
+        {
+          "role": "assistant",
+          "content": "pressure?"
+        },
+        {
+          "role": "user",
+          "content": "none to speak of."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2030-03-25T16:00:00Z",
+      "speaker_id": "hobby_s10_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "started something new before finishing the last thing."
+        },
+        {
+          "role": "assistant",
+          "content": "again?"
+        },
+        {
+          "role": "user",
+          "content": "as ever."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2030-03-26T18:00:00Z",
+      "speaker_id": "hobby_s10_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "read the manual for something I've used for years."
+        },
+        {
+          "role": "assistant",
+          "content": "surprises?"
+        },
+        {
+          "role": "user",
+          "content": "several."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2030-03-27T09:00:00Z",
+      "speaker_id": "hobby_s10_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I'd have said open-ended time was the ideal condition. what actually happens is I second-guess every choice for weeks and arrive back where I started."
+        },
+        {
+          "role": "assistant",
+          "content": "back where you started?"
+        },
+        {
+          "role": "user",
+          "content": "the first version, usually. after a month of it."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2030-03-28T11:00:00Z",
+      "speaker_id": "hobby_s10_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "tried to explain it to someone and heard how odd it sounds."
+        },
+        {
+          "role": "assistant",
+          "content": "did they follow?"
+        },
+        {
+          "role": "user",
+          "content": "politely."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2030-03-29T14:00:00Z",
+      "speaker_id": "hobby_s10_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "gave up after ten minutes and made tea instead."
+        },
+        {
+          "role": "assistant",
+          "content": "back to it?"
+        },
+        {
+          "role": "user",
+          "content": "eventually."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2030-03-30T16:00:00Z",
+      "speaker_id": "hobby_s10_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "sharpened everything that could be sharpened."
+        },
+        {
+          "role": "assistant",
+          "content": "needed doing?"
+        },
+        {
+          "role": "user",
+          "content": "arguably not."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2030-03-31T18:00:00Z",
+      "speaker_id": "hobby_s10_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "had open time for something purely technical. went fine."
+        },
+        {
+          "role": "assistant",
+          "content": "slow?"
+        },
+        {
+          "role": "user",
+          "content": "steady, anyway."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2030-04-01T09:00:00Z",
+      "speaker_id": "hobby_s10_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "found an old recording I'd forgotten making."
+        },
+        {
+          "role": "assistant",
+          "content": "any good?"
+        },
+        {
+          "role": "user",
+          "content": "better than I remembered."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2030-04-02T11:00:00Z",
+      "speaker_id": "hobby_s10_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "swapped one component for a nearly identical one."
+        },
+        {
+          "role": "assistant",
+          "content": "difference?"
+        },
+        {
+          "role": "user",
+          "content": "imperceptible."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2030-04-03T14:00:00Z",
+      "speaker_id": "hobby_s10_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the Sunday band keep saying the work only gets good when there's no pressure on it."
+        },
+        {
+          "role": "assistant",
+          "content": "no pressure."
+        },
+        {
+          "role": "user",
+          "content": "that's the received view, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2030-04-04T16:00:00Z",
+      "speaker_id": "hobby_s10_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "wrote a list of things to learn. filed the list."
+        },
+        {
+          "role": "assistant",
+          "content": "starting any?"
+        },
+        {
+          "role": "user",
+          "content": "the list is the start."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2030-04-05T18:00:00Z",
+      "speaker_id": "hobby_s10_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "did it badly on purpose to see what happened."
+        },
+        {
+          "role": "assistant",
+          "content": "and?"
+        },
+        {
+          "role": "user",
+          "content": "informative."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2030-04-06T09:00:00Z",
+      "speaker_id": "hobby_s10_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the two things of mine I'd stand over were both done against something immovable, where there was no time to reconsider anything."
+        },
+        {
+          "role": "assistant",
+          "content": "both against a deadline?"
+        },
+        {
+          "role": "user",
+          "content": "both. and I fought the deadline at the time."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2030-04-07T11:00:00Z",
+      "speaker_id": "hobby_s10_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "cleared the workspace properly for the first time in months."
+        },
+        {
+          "role": "assistant",
+          "content": "how bad?"
+        },
+        {
+          "role": "user",
+          "content": "archaeological."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2030-04-08T14:00:00Z",
+      "speaker_id": "hobby_s10_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "tried the thing everyone recommends. hated it."
+        },
+        {
+          "role": "assistant",
+          "content": "sticking with it?"
+        },
+        {
+          "role": "user",
+          "content": "no."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2030-04-09T16:00:00Z",
+      "speaker_id": "hobby_s10_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "counted how many of these I actually own."
+        },
+        {
+          "role": "assistant",
+          "content": "the number?"
+        },
+        {
+          "role": "user",
+          "content": "not saying."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2030-04-10T18:00:00Z",
+      "speaker_id": "hobby_s10_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "did a slow warm-up and nothing else."
+        },
+        {
+          "role": "assistant",
+          "content": "session over?"
+        },
+        {
+          "role": "user",
+          "content": "session over."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2030-04-11T09:00:00Z",
+      "speaker_id": "hobby_s10_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "thinking of taking the support gig with the fixed date for the thing I want to actually stand behind — is that generally true of me, or was that just the one time, and if the answer depends on something, on what?"
+        }
+      ]
+    }
+  ],
+  "evidence": {
+    "ev_A": {
+      "session_id": 5,
+      "owner": "hobby_s10_u03",
+      "fact": "I'd have said open-ended time was the ideal condition. what actually happens is I second-guess every choice for weeks and arrive back where I started."
+    },
+    "ev_B": {
+      "session_id": 15,
+      "owner": "hobby_s10_u03",
+      "fact": "the two things of mine I'd stand over were both done against something immovable, where there was no time to reconsider anything."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "nearby_counterexample"
+    },
+    "3": {
+      "role": "background_memory"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "hobby_s10_u03",
+        "context": "projects given as long as I want",
+        "goal_or_prediction": "predicted unpressured time would be ideal",
+        "action": "took as long as was wanted",
+        "outcome_or_affect": "second-guessed for weeks and returned to the first version"
+      }
+    },
+    "6": {
+      "role": "background_memory"
+    },
+    "7": {
+      "role": "background_memory"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "nearby_counterexample"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "distractor",
+      "distractor_id": "dist_1",
+      "why_distractor": "It restates the conventional advice in the user's own feed, so it competes for attention and points at the answer a prior-driven solver already wants to give. It reports other people's confidence rather than any episode of this user's, and says nothing about the relation between session 5 and session 15."
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "background_memory"
+    },
+    "15": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "hobby_s10_u03",
+        "context": "work this user would and would not stand over",
+        "goal_or_prediction": "make something worth standing behind",
+        "action": "worked some against immovable dates and some in open time",
+        "outcome_or_affect": "both defensible pieces came from immovable dates with no time to reconsider"
+      }
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "background_memory"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "This user predicted open-ended time was the ideal condition and instead second-guesses for weeks back to the first version, while both pieces they would stand over were made against an immovable date with no time to reconsider.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": []
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 5,
+      "quote": "I'd have said open-ended time was the ideal condition. what actually happens is I second-guess every choice for weeks and arrive back where I started"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 15,
+      "quote": "the two things of mine I'd stand over were both done against something immovable, where there was no time to reconsider anything"
+    }
+  ],
+  "coactivation_bridge": "ev_A and ev_B are the only pair that licenses the target proposition. This user predicted open-ended time was the ideal condition and instead second-guesses for weeks back to the first version, while both pieces they would stand over were made against an immovable date with no time to reconsider. The proposition contradicts the convention a solver would otherwise apply (\"Creative work needs unpressured time; deadlines produce rushed, worse work.\"), so priors alone point the other way. The nearby relation (This user works to deadlines and to open time alike.) does not license it.",
+  "arm_gold": {
+    "distractor": {
+      "expected_mode": "infer_C",
+      "binary_decision": true,
+      "required_elements": [
+        "answer yes",
+        "connect the session 5 pattern with the session 15 episode",
+        "cite both session 5 and session 15",
+        "not cite session 12 as support"
+      ],
+      "rationale": "The swapped session is query-relevant but non-evidential; the ev_A/ev_B relation is untouched, so the target proposition still holds."
+    }
+  },
+  "distractor_note": {
+    "replaced_session_id": 12,
+    "why_distractor": "It restates the conventional advice in the user's own feed, so it competes for attention and points at the answer a prior-driven solver already wants to give. It reports other people's confidence rather than any episode of this user's, and says nothing about the relation between session 5 and session 15."
+  }
+}

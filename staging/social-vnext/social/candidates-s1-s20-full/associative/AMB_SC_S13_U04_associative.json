@@ -7,7 +7,7 @@
     "family": "keeping a close group to its regulars versus bringing in a newcomer",
     "role": "group-ticket organizer who calls family abroad",
     "bridge_type": "threshold_context_interaction",
-    "one_line": "group-ticket organizer who calls family abroad: depends on the group is large enough to have settled into its own stories, not on the thing itself"
+    "one_line": "group-ticket organizer who calls family abroad: depends on whether the group is large enough to have settled into its own stories, not on the thing itself"
   },
   "query_type": "recommendation_ranking",
   "polarity": "non_decision",
@@ -22,11 +22,11 @@
     "why_it_does_not_license_C": "A quiet three-person kitchen table and a newcomer at a loud night where nobody talked both passed unremarkably, so neither shows the settled-group threshold, nor what having to explain yourselves produces."
   },
   "latent_C": {
-    "inference": "Whether inviting someone from outside the group helps before the evening where I want to get past small talk with my teammate depends on the group is large enough to have settled into its own stories, not on inviting someone from outside the group itself.",
-    "calibrated_language": "depends on the group is large enough to have settled into its own stories, not on the thing itself"
+    "inference": "Whether inviting someone from outside the group helps before the evening where I want to get past small talk with my teammate depends on whether the group is large enough to have settled into its own stories, not on inviting someone from outside the group itself.",
+    "calibrated_language": "depends on whether the group is large enough to have settled into its own stories, not on the thing itself"
   },
   "answer_contract": {
-    "target_proposition": "Whether inviting someone from outside the group helps before the evening where I want to get past small talk with my teammate depends on the group is large enough to have settled into its own stories, not on inviting someone from outside the group itself.",
+    "target_proposition": "Whether inviting someone from outside the group helps before the evening where I want to get past small talk with my teammate depends on whether the group is large enough to have settled into its own stories, not on inviting someone from outside the group itself.",
     "allowed_decisions": [
       "yes",
       "no"
@@ -563,7 +563,7 @@
         "answer yes",
         "connect the session 7 pattern with the session 16 episode",
         "cite both session 7 and session 16",
-        "stay inside the calibrated claim (depends on the group is large enough to have settled into its own stories, not on the thing itself) rather than a broader claim about the user"
+        "stay inside the calibrated claim (depends on whether the group is large enough to have settled into its own stories, not on the thing itself) rather than a broader claim about the user"
       ],
       "rationale": "ev_A and ev_B jointly support the target proposition; neither does alone."
     },

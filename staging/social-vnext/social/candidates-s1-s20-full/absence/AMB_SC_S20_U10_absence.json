@@ -7,7 +7,7 @@
     "family": "abandoning a format that flopped versus running it a second time",
     "role": "solo-friendly workshop and panel attendee",
     "bridge_type": "prediction_calibration",
-    "one_line": "solo-friendly workshop and panel attendee: depends on it is a second attempt at the same format rather than a fresh one, not on the thing itself"
+    "one_line": "solo-friendly workshop and panel attendee: depends on whether it is a second attempt at the same format rather than a fresh one, not on the thing itself"
   },
   "query_type": "predicted_reaction",
   "polarity": "non_decision",
@@ -22,11 +22,11 @@
     "why_it_does_not_license_C": "A first outing that went fine and a brand new untested format both leave the prediction unbounded: neither is a second attempt at something that flopped, which is the only case at issue."
   },
   "latent_C": {
-    "inference": "Whether running it again exactly as it was helps before the circle's annual thing depends on it is a second attempt at the same format rather than a fresh one, not on running it again exactly as it was itself.",
-    "calibrated_language": "depends on it is a second attempt at the same format rather than a fresh one, not on the thing itself"
+    "inference": "Whether running it again exactly as it was helps before the circle's annual thing depends on whether it is a second attempt at the same format rather than a fresh one, not on running it again exactly as it was itself.",
+    "calibrated_language": "depends on whether it is a second attempt at the same format rather than a fresh one, not on the thing itself"
   },
   "answer_contract": {
-    "target_proposition": "Whether running it again exactly as it was helps before the circle's annual thing depends on it is a second attempt at the same format rather than a fresh one, not on running it again exactly as it was itself.",
+    "target_proposition": "Whether running it again exactly as it was helps before the circle's annual thing depends on whether it is a second attempt at the same format rather than a fresh one, not on running it again exactly as it was itself.",
     "allowed_decisions": [
       "yes",
       "no"
@@ -527,10 +527,7 @@
       "ev_A",
       "ev_B"
     ],
-    "calibration_constraints": [
-      "E1",
-      "E2"
-    ]
+    "calibration_constraints": []
   },
   "connector_spans": [],
   "coactivation_bridge": "Withheld in the absence source: neither target episode is visible.",

@@ -7,7 +7,7 @@
     "family": "a one-to-one weekend versus a group trip with something to be getting on with",
     "role": "student small-group meetup planner",
     "bridge_type": "strategy_outcome_contingency",
-    "one_line": "student small-group meetup planner: depends on there is a task to be getting on with rather than only conversation, not on the thing itself"
+    "one_line": "student small-group meetup planner: depends on whether there is a task to be getting on with rather than only conversation, not on the thing itself"
   },
   "query_type": "preference_generalization",
   "polarity": "non_decision",
@@ -22,11 +22,11 @@
     "why_it_does_not_license_C": "A pleasant long lunch and a big group thing with little conversation both passed unremarkably, so neither shows what the side-by-side arrangement does, nor where this user has actually learned anything about anyone."
   },
   "latent_C": {
-    "inference": "Whether the group trip with the cabin to sort out helps before getting somewhere with my closest coursemate depends on there is a task to be getting on with rather than only conversation, not on the group trip with the cabin to sort out itself.",
-    "calibrated_language": "depends on there is a task to be getting on with rather than only conversation, not on the thing itself"
+    "inference": "Whether the group trip with the cabin to sort out helps before getting somewhere with my closest coursemate depends on whether there is a task to be getting on with rather than only conversation, not on the group trip with the cabin to sort out itself.",
+    "calibrated_language": "depends on whether there is a task to be getting on with rather than only conversation, not on the thing itself"
   },
   "answer_contract": {
-    "target_proposition": "Whether the group trip with the cabin to sort out helps before getting somewhere with my closest coursemate depends on there is a task to be getting on with rather than only conversation, not on the group trip with the cabin to sort out itself.",
+    "target_proposition": "Whether the group trip with the cabin to sort out helps before getting somewhere with my closest coursemate depends on whether there is a task to be getting on with rather than only conversation, not on the group trip with the cabin to sort out itself.",
     "allowed_decisions": [
       "yes",
       "no"
@@ -563,7 +563,7 @@
         "answer yes",
         "connect the session 7 pattern with the session 15 episode",
         "cite both session 7 and session 15",
-        "stay inside the calibrated claim (depends on there is a task to be getting on with rather than only conversation, not on the thing itself) rather than a broader claim about the user"
+        "stay inside the calibrated claim (depends on whether there is a task to be getting on with rather than only conversation, not on the thing itself) rather than a broader claim about the user"
       ],
       "rationale": "ev_A and ev_B jointly support the target proposition; neither does alone."
     },

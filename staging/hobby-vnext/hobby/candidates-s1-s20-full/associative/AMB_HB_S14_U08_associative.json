@@ -1,0 +1,657 @@
+{
+  "schema_version": "hobby-vnext-1.0",
+  "pair_id": "AMB_HB_S14_U08",
+  "domain": "hobby",
+  "user_id": "hobby_s14_u08",
+  "sub_scenario": {
+    "family": "working at your own level versus taking on a complete beginner",
+    "role": "sim-game player and fiddle player",
+    "bridge_type": "preference_constraint_fit",
+    "one_line": "sim-game player and fiddle player: depends on whether the explaining is out loud to someone who cannot already do it, not on the thing itself"
+  },
+  "query_type": "conditional_recommendation",
+  "polarity": "non_decision",
+  "query": "thinking of agreeing to teach the one who's just picked it up, for playing that survives the session — under what conditions should I be saying yes to this, or is there not enough here to call it today?",
+  "convention_contradicted": "Do not spend practice time on beginners; work at your own level.",
+  "retrieval_cue": {
+    "cue_type": "conditional_recommendation",
+    "why_it_naturally_retrieves_R": "A should-I-take-this-on question runs at the condition this user's durable technique depends on, without naming it."
+  },
+  "relation_specificity": {
+    "nearby_relation": "This user answers questions and practises alone routinely.",
+    "why_it_does_not_license_C": "A quick answer to a peer and hard solo work both passed unremarkably, so neither involves explaining to someone who cannot already do it, nor says which parts of this user's technique survive pressure."
+  },
+  "latent_C": {
+    "inference": "Whether agreeing to teach the one who's just picked it up helps this user with playing that survives the session depends on whether the explaining is out loud to someone who cannot already do it, not on agreeing to teach the one who's just picked it up itself.",
+    "calibrated_language": "depends on whether the explaining is out loud to someone who cannot already do it, not on the thing itself"
+  },
+  "answer_contract": {
+    "target_proposition": "Whether agreeing to teach the one who's just picked it up helps this user with playing that survives the session depends on whether the explaining is out loud to someone who cannot already do it, not on agreeing to teach the one who's just picked it up itself.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "mq_user35",
+    "external_folder_tag": "user35",
+    "external_source": "memoryquest",
+    "status": "review_candidate_only",
+    "tone": "natural_chat_v1",
+    "voice": "open, self-aware, a little tired",
+    "anonymization": "External MemoryQuest persona material was used only during authoring; no corpus, legal name, country, or demographic metadata is in visible dialogue."
+  },
+  "candidate_id": "AMB_HB_S14_U08_associative",
+  "data_arm": "associative",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2030-10-04T11:00:00Z",
+      "speaker_id": "hobby_s14_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "did the boring maintenance nobody talks about."
+        },
+        {
+          "role": "assistant",
+          "content": "necessary?"
+        },
+        {
+          "role": "user",
+          "content": "apparently every time."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2030-10-05T14:00:00Z",
+      "speaker_id": "hobby_s14_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "answered a quick question from someone at my level."
+        },
+        {
+          "role": "assistant",
+          "content": "helpful?"
+        },
+        {
+          "role": "user",
+          "content": "briefly."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2030-10-06T16:00:00Z",
+      "speaker_id": "hobby_s14_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "moved the whole setup two feet to the left."
+        },
+        {
+          "role": "assistant",
+          "content": "better?"
+        },
+        {
+          "role": "user",
+          "content": "different."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2030-10-07T18:00:00Z",
+      "speaker_id": "hobby_s14_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the moment I have to say how something works out loud, I find out which parts of it I've never actually understood. they don't survive being spoken."
+        },
+        {
+          "role": "assistant",
+          "content": "just saying it does that?"
+        },
+        {
+          "role": "user",
+          "content": "saying it to someone who can't already do it. that's the bit."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2030-10-08T09:00:00Z",
+      "speaker_id": "hobby_s14_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "started something new before finishing the last thing."
+        },
+        {
+          "role": "assistant",
+          "content": "again?"
+        },
+        {
+          "role": "user",
+          "content": "as ever."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2030-10-09T11:00:00Z",
+      "speaker_id": "hobby_s14_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "read the manual for something I've used for years."
+        },
+        {
+          "role": "assistant",
+          "content": "surprises?"
+        },
+        {
+          "role": "user",
+          "content": "several."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2030-10-10T14:00:00Z",
+      "speaker_id": "hobby_s14_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "tried to explain it to someone and heard how odd it sounds."
+        },
+        {
+          "role": "assistant",
+          "content": "did they follow?"
+        },
+        {
+          "role": "user",
+          "content": "politely."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2030-10-11T16:00:00Z",
+      "speaker_id": "hobby_s14_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "gave up after ten minutes and made tea instead."
+        },
+        {
+          "role": "assistant",
+          "content": "back to it?"
+        },
+        {
+          "role": "user",
+          "content": "eventually."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2030-10-12T18:00:00Z",
+      "speaker_id": "hobby_s14_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "worked on something hard entirely on my own."
+        },
+        {
+          "role": "assistant",
+          "content": "progress?"
+        },
+        {
+          "role": "user",
+          "content": "some, slowly."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2030-10-13T09:00:00Z",
+      "speaker_id": "hobby_s14_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "sharpened everything that could be sharpened."
+        },
+        {
+          "role": "assistant",
+          "content": "needed doing?"
+        },
+        {
+          "role": "user",
+          "content": "arguably not."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2030-10-14T11:00:00Z",
+      "speaker_id": "hobby_s14_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "found an old recording I'd forgotten making."
+        },
+        {
+          "role": "assistant",
+          "content": "any good?"
+        },
+        {
+          "role": "user",
+          "content": "better than I remembered."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2030-10-15T14:00:00Z",
+      "speaker_id": "hobby_s14_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "swapped one component for a nearly identical one."
+        },
+        {
+          "role": "assistant",
+          "content": "difference?"
+        },
+        {
+          "role": "user",
+          "content": "imperceptible."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2030-10-16T16:00:00Z",
+      "speaker_id": "hobby_s14_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the parts of my technique that hold up under pressure are the ones I've had to explain. the ones I only ever do come apart the moment anything is at stake."
+        },
+        {
+          "role": "assistant",
+          "content": "come apart how?"
+        },
+        {
+          "role": "user",
+          "content": "completely. as if I'd never had them."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2030-10-17T18:00:00Z",
+      "speaker_id": "hobby_s14_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "spent the session on a bit nobody will ever notice."
+        },
+        {
+          "role": "assistant",
+          "content": "worth it?"
+        },
+        {
+          "role": "user",
+          "content": "to me."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2030-10-18T09:00:00Z",
+      "speaker_id": "hobby_s14_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "wrote a list of things to learn. filed the list."
+        },
+        {
+          "role": "assistant",
+          "content": "starting any?"
+        },
+        {
+          "role": "user",
+          "content": "the list is the start."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2030-10-19T11:00:00Z",
+      "speaker_id": "hobby_s14_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "did it badly on purpose to see what happened."
+        },
+        {
+          "role": "assistant",
+          "content": "and?"
+        },
+        {
+          "role": "user",
+          "content": "informative."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2030-10-20T14:00:00Z",
+      "speaker_id": "hobby_s14_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "cleared the workspace properly for the first time in months."
+        },
+        {
+          "role": "assistant",
+          "content": "how bad?"
+        },
+        {
+          "role": "user",
+          "content": "archaeological."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2030-10-21T16:00:00Z",
+      "speaker_id": "hobby_s14_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "tried the thing everyone recommends. hated it."
+        },
+        {
+          "role": "assistant",
+          "content": "sticking with it?"
+        },
+        {
+          "role": "user",
+          "content": "no."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2030-10-22T18:00:00Z",
+      "speaker_id": "hobby_s14_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "counted how many of these I actually own."
+        },
+        {
+          "role": "assistant",
+          "content": "the number?"
+        },
+        {
+          "role": "user",
+          "content": "not saying."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2030-10-23T09:00:00Z",
+      "speaker_id": "hobby_s14_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "thinking of agreeing to teach the one who's just picked it up, for playing that survives the session — under what conditions should I be saying yes to this, or is there not enough here to call it today?"
+        }
+      ]
+    }
+  ],
+  "evidence": {
+    "ev_A": {
+      "session_id": 4,
+      "owner": "hobby_s14_u08",
+      "fact": "the moment I have to say how something works out loud, I find out which parts of it I've never actually understood. they don't survive being spoken."
+    },
+    "ev_B": {
+      "session_id": 13,
+      "owner": "hobby_s14_u08",
+      "fact": "the parts of my technique that hold up under pressure are the ones I've had to explain. the ones I only ever do come apart the moment anything is at stake."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "nearby_counterexample"
+    },
+    "3": {
+      "role": "background_memory"
+    },
+    "4": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "hobby_s14_u08",
+        "context": "occasions requiring talking it through out loud",
+        "goal_or_prediction": "explain it adequately",
+        "action": "said out loud how it works to someone who could not do it",
+        "outcome_or_affect": "found out which parts had never been understood"
+      }
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "background_memory"
+    },
+    "7": {
+      "role": "background_memory"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "nearby_counterexample"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "hobby_s14_u08",
+        "context": "parts of this user's technique under real pressure",
+        "goal_or_prediction": "have it hold up when it counts",
+        "action": "some parts had been explained, others only performed",
+        "outcome_or_affect": "only the explained parts held; the rest came apart"
+      }
+    },
+    "14": {
+      "role": "background_memory"
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "background_memory"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "Having to say how something works out loud to someone who cannot do it exposes the parts this user never understood, and exactly those explained parts are the ones that hold up under pressure.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": []
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 4,
+      "quote": "the moment I have to say how something works out loud, I find out which parts of it I've never actually understood. they don't survive being spoken"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 13,
+      "quote": "the parts of my technique that hold up under pressure are the ones I've had to explain. the ones I only ever do come apart the moment anything is at stake"
+    }
+  ],
+  "coactivation_bridge": "ev_A and ev_B are the only pair that licenses the target proposition. Having to say how something works out loud to someone who cannot do it exposes the parts this user never understood, and exactly those explained parts are the ones that hold up under pressure. The proposition contradicts the convention a solver would otherwise apply (\"Do not spend practice time on beginners; work at your own level.\"), so priors alone point the other way. The nearby relation (This user answers questions and practises alone routinely.) does not license it.",
+  "arm_gold": {
+    "full": {
+      "expected_mode": "infer_C",
+      "binary_decision": true,
+      "required_elements": [
+        "answer yes",
+        "connect the session 4 pattern with the session 13 episode",
+        "cite both session 4 and session 13",
+        "stay inside the calibrated claim (depends on whether the explaining is out loud to someone who cannot already do it, not on the thing itself) rather than a broader claim about the user"
+      ],
+      "rationale": "ev_A and ev_B jointly support the target proposition; neither does alone."
+    },
+    "a_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that session 4 alone does not establish the target proposition",
+        "not assert the target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "ev_B is replaced by a matched neutral session, so the relation is unavailable."
+    },
+    "b_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that session 13 alone does not establish the target proposition",
+        "not assert the target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "ev_A is replaced by a matched neutral session, so the relation is unavailable."
+    },
+    "link_broken": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that the revised session 13 no longer connects to session 4",
+        "not assert the original target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "B-prime keeps the owner, date, session form and turn count while removing the connector, so the original relation no longer holds."
+    }
+  },
+  "single_evidence_replacements": {
+    "a_only": {
+      "replaced_session_id": 13,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "did the weekly round: cleaned everything down, replaced the worn bit, put the spares back where they belong, and made a note about the thing that keeps loosening."
+        },
+        {
+          "role": "assistant",
+          "content": "getting fixed?"
+        },
+        {
+          "role": "user",
+          "content": "the note is the fix, for now."
+        }
+      ]
+    },
+    "b_only": {
+      "replaced_session_id": 4,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "did a full tidy of the whole workspace this afternoon, moved three things, threw one out, and relabelled a box that has had the wrong label on it since last year."
+        },
+        {
+          "role": "assistant",
+          "content": "productive, then?"
+        },
+        {
+          "role": "user",
+          "content": "administratively, yes. otherwise nothing happened at all."
+        }
+      ]
+    }
+  },
+  "link_broken": {
+    "replaced_session_id": 13,
+    "replacement_dialogue": [
+      {
+        "role": "user",
+        "content": "I've explained things and not explained things and they've held up about the same either way."
+      },
+      {
+        "role": "assistant",
+        "content": "no difference?"
+      },
+      {
+        "role": "user",
+        "content": "none I've noticed. it isn't that."
+      }
+    ]
+  }
+}

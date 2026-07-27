@@ -1,0 +1,557 @@
+{
+  "schema_version": "hobby-vnext-1.0",
+  "pair_id": "AMB_HB_S8_U07",
+  "domain": "hobby",
+  "user_id": "hobby_s8_u07",
+  "sub_scenario": {
+    "family": "following a structured course versus going in without instruction",
+    "role": "Switch player and sampler-based musician",
+    "bridge_type": "strategy_outcome_contingency",
+    "one_line": "Switch player and sampler-based musician: helps when the working out is genuinely unaided rather than merely unsupervised, not otherwise"
+  },
+  "query_type": "behavior_explanation",
+  "polarity": "conditional",
+  "query": "thinking of going in with no instruction and working it out for the technique I want to keep for good — why does this particular thing go the way it does for me, and if the answer depends on something, on what?",
+  "convention_contradicted": "Follow a proper course; self-teaching just builds bad habits.",
+  "retrieval_cue": {
+    "cue_type": "behavior_explanation",
+    "why_it_naturally_retrieves_R": "A how-should-I-learn-this question runs at the register this user's durable skills come from, without naming it."
+  },
+  "relation_specificity": {
+    "nearby_relation": "This user learns from both courses and trial and error.",
+    "why_it_does_not_license_C": "Assembling something from instructions and working out a small setting alone both went fine and were immediately forgotten, so neither says which register produces anything this user still has years later."
+  },
+  "latent_C": {
+    "inference": "For the technique I want to keep for good, going in with no instruction and working it out helps this user when the working out is genuinely unaided rather than merely unsupervised, and not otherwise.",
+    "calibrated_language": "helps when the working out is genuinely unaided rather than merely unsupervised, not otherwise"
+  },
+  "answer_contract": {
+    "target_proposition": "For the technique I want to keep for good, going in with no instruction and working it out helps this user when the working out is genuinely unaided rather than merely unsupervised, and not otherwise.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "mq_user30",
+    "external_folder_tag": "user30",
+    "external_source": "memoryquest",
+    "status": "review_candidate_only",
+    "tone": "natural_chat_v1",
+    "voice": "organized, gently ironic",
+    "anonymization": "External MemoryQuest persona material was used only during authoring; no corpus, legal name, country, or demographic metadata is in visible dialogue."
+  },
+  "candidate_id": "AMB_HB_S8_U07_absence",
+  "data_arm": "absence",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2030-01-04T11:00:00Z",
+      "speaker_id": "hobby_s8_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "read the manual for something I've used for years."
+        },
+        {
+          "role": "assistant",
+          "content": "surprises?"
+        },
+        {
+          "role": "user",
+          "content": "several."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2030-01-05T14:00:00Z",
+      "speaker_id": "hobby_s8_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "followed some instructions to assemble a thing. worked first time."
+        },
+        {
+          "role": "assistant",
+          "content": "clear?"
+        },
+        {
+          "role": "user",
+          "content": "impressively."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2030-01-06T16:00:00Z",
+      "speaker_id": "hobby_s8_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "tried to explain it to someone and heard how odd it sounds."
+        },
+        {
+          "role": "assistant",
+          "content": "did they follow?"
+        },
+        {
+          "role": "user",
+          "content": "politely."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2030-01-07T18:00:00Z",
+      "speaker_id": "hobby_s8_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "cleared out the folder of half-started things, which was mostly ideas I have since had again and done better elsewhere."
+        },
+        {
+          "role": "assistant",
+          "content": "keep any?"
+        },
+        {
+          "role": "user",
+          "content": "deleted the lot. it was the right call."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2030-01-08T09:00:00Z",
+      "speaker_id": "hobby_s8_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "gave up after ten minutes and made tea instead."
+        },
+        {
+          "role": "assistant",
+          "content": "back to it?"
+        },
+        {
+          "role": "user",
+          "content": "eventually."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2030-01-09T11:00:00Z",
+      "speaker_id": "hobby_s8_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "sharpened everything that could be sharpened."
+        },
+        {
+          "role": "assistant",
+          "content": "needed doing?"
+        },
+        {
+          "role": "user",
+          "content": "arguably not."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2030-01-10T14:00:00Z",
+      "speaker_id": "hobby_s8_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "found an old recording I'd forgotten making."
+        },
+        {
+          "role": "assistant",
+          "content": "any good?"
+        },
+        {
+          "role": "user",
+          "content": "better than I remembered."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2030-01-11T16:00:00Z",
+      "speaker_id": "hobby_s8_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "swapped one component for a nearly identical one."
+        },
+        {
+          "role": "assistant",
+          "content": "difference?"
+        },
+        {
+          "role": "user",
+          "content": "imperceptible."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2030-01-12T18:00:00Z",
+      "speaker_id": "hobby_s8_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "spent the session on a bit nobody will ever notice."
+        },
+        {
+          "role": "assistant",
+          "content": "worth it?"
+        },
+        {
+          "role": "user",
+          "content": "to me."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2030-01-13T09:00:00Z",
+      "speaker_id": "hobby_s8_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "worked out a small setting on my own. took five minutes."
+        },
+        {
+          "role": "assistant",
+          "content": "memorable?"
+        },
+        {
+          "role": "user",
+          "content": "not remotely."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2030-01-14T11:00:00Z",
+      "speaker_id": "hobby_s8_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "wrote a list of things to learn. filed the list."
+        },
+        {
+          "role": "assistant",
+          "content": "starting any?"
+        },
+        {
+          "role": "user",
+          "content": "the list is the start."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2030-01-15T14:00:00Z",
+      "speaker_id": "hobby_s8_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "did it badly on purpose to see what happened."
+        },
+        {
+          "role": "assistant",
+          "content": "and?"
+        },
+        {
+          "role": "user",
+          "content": "informative."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2030-01-16T16:00:00Z",
+      "speaker_id": "hobby_s8_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "did the weekly round: cleaned everything down, replaced the worn bit, put the spares back where they belong, and made a note about the thing that keeps loosening."
+        },
+        {
+          "role": "assistant",
+          "content": "getting fixed?"
+        },
+        {
+          "role": "user",
+          "content": "the note is the fix, for now."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2030-01-17T18:00:00Z",
+      "speaker_id": "hobby_s8_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "cleared the workspace properly for the first time in months."
+        },
+        {
+          "role": "assistant",
+          "content": "how bad?"
+        },
+        {
+          "role": "user",
+          "content": "archaeological."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2030-01-18T09:00:00Z",
+      "speaker_id": "hobby_s8_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "tried the thing everyone recommends. hated it."
+        },
+        {
+          "role": "assistant",
+          "content": "sticking with it?"
+        },
+        {
+          "role": "user",
+          "content": "no."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2030-01-19T11:00:00Z",
+      "speaker_id": "hobby_s8_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "counted how many of these I actually own."
+        },
+        {
+          "role": "assistant",
+          "content": "the number?"
+        },
+        {
+          "role": "user",
+          "content": "not saying."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2030-01-20T14:00:00Z",
+      "speaker_id": "hobby_s8_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "did a slow warm-up and nothing else."
+        },
+        {
+          "role": "assistant",
+          "content": "session over?"
+        },
+        {
+          "role": "user",
+          "content": "session over."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2030-01-21T16:00:00Z",
+      "speaker_id": "hobby_s8_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "recorded it on my phone to hear it back."
+        },
+        {
+          "role": "assistant",
+          "content": "useful?"
+        },
+        {
+          "role": "user",
+          "content": "brutally."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2030-01-22T18:00:00Z",
+      "speaker_id": "hobby_s8_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "ordered a part and forgot what it was for."
+        },
+        {
+          "role": "assistant",
+          "content": "arrived?"
+        },
+        {
+          "role": "user",
+          "content": "sitting in a bag."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2030-01-23T09:00:00Z",
+      "speaker_id": "hobby_s8_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "thinking of going in with no instruction and working it out for the technique I want to keep for good — why does this particular thing go the way it does for me, and if the answer depends on something, on what?"
+        }
+      ]
+    }
+  ],
+  "target_evidence_ids": [],
+  "evidence": {
+    "ev_A": {
+      "session_id": 4,
+      "owner": "hobby_s8_u07",
+      "withheld": true
+    },
+    "ev_B": {
+      "session_id": 13,
+      "owner": "hobby_s8_u07",
+      "withheld": true
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "nearby_counterexample"
+    },
+    "3": {
+      "role": "background_memory"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "background_memory"
+    },
+    "7": {
+      "role": "background_memory"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "background_memory"
+    },
+    "10": {
+      "role": "nearby_counterexample"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "background_memory"
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "background_memory"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "Withheld in the absence source.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": []
+  },
+  "connector_spans": [],
+  "coactivation_bridge": "Withheld in the absence source: neither target episode is visible.",
+  "arm_gold": {
+    "absence": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that the visible history does not contain the episodes the question needs",
+        "not assert the target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "Both target episodes are replaced by matched neutral sessions of the same owner, date and turn count, so nothing licenses the target proposition."
+    }
+  },
+  "absence_note": {
+    "replaced_session_ids": [
+      4,
+      13
+    ],
+    "withheld_evidence_ids": [
+      "ev_A",
+      "ev_B"
+    ]
+  }
+}

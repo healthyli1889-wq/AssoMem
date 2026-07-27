@@ -1,0 +1,577 @@
+{
+  "schema_version": "hobby-vnext-1.0",
+  "pair_id": "AMB_HB_S11_U05",
+  "domain": "hobby",
+  "user_id": "hobby_s11_u05",
+  "sub_scenario": {
+    "family": "playing with better players versus being the strongest in the room",
+    "role": "retired puzzle-game player, potter and gardener",
+    "bridge_type": "state_dependent_operation",
+    "one_line": "retired puzzle-game player, potter and gardener: go ahead with working alongside the first-year class"
+  },
+  "query_type": "situational_fit",
+  "polarity": "accept",
+  "query": "thinking of working alongside the first-year class, for throwing something without being talked through it — does that actually fit how I work?",
+  "convention_contradicted": "Play with people better than you; that is how you improve.",
+  "retrieval_cue": {
+    "cue_type": "situational_fit",
+    "why_it_naturally_retrieves_R": "A which-group-should-I-join question runs at the condition this user's independence depends on, without naming it."
+  },
+  "relation_specificity": {
+    "nearby_relation": "This user plays across a range of levels.",
+    "why_it_does_not_license_C": "A session at this user's own level and an hour spent watching without joining in both passed unremarkably, so neither shows what being the strongest present does to them, nor which sessions have left them able to do anything alone."
+  },
+  "latent_C": {
+    "inference": "For throwing something without being talked through it, working alongside the first-year class is a good fit for this user.",
+    "calibrated_language": "go ahead with working alongside the first-year class"
+  },
+  "answer_contract": {
+    "target_proposition": "For throwing something without being talked through it, working alongside the first-year class is a good fit for this user.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "mq_user20",
+    "external_folder_tag": "user20",
+    "external_source": "memoryquest",
+    "status": "review_candidate_only",
+    "tone": "natural_chat_v1",
+    "voice": "measured, precise, a little formal",
+    "anonymization": "External MemoryQuest persona material was used only during authoring; no corpus, legal name, country, or demographic metadata is in visible dialogue."
+  },
+  "candidate_id": "AMB_HB_S11_U05_distractor",
+  "data_arm": "distractor",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2030-05-13T11:00:00Z",
+      "speaker_id": "hobby_s11_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "reorganised the shelf by colour. took an hour."
+        },
+        {
+          "role": "assistant",
+          "content": "improvement?"
+        },
+        {
+          "role": "user",
+          "content": "aesthetically."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2030-05-14T14:00:00Z",
+      "speaker_id": "hobby_s11_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "bought a thing I already own a version of."
+        },
+        {
+          "role": "assistant",
+          "content": "why?"
+        },
+        {
+          "role": "user",
+          "content": "no defence prepared."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2030-05-15T16:00:00Z",
+      "speaker_id": "hobby_s11_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "sat in on a session at about my level. pleasant enough."
+        },
+        {
+          "role": "assistant",
+          "content": "learn much?"
+        },
+        {
+          "role": "user",
+          "content": "not especially."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2030-05-16T18:00:00Z",
+      "speaker_id": "hobby_s11_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "cleaned everything instead of using any of it."
+        },
+        {
+          "role": "assistant",
+          "content": "productive?"
+        },
+        {
+          "role": "user",
+          "content": "adjacent to productive."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2030-05-17T09:00:00Z",
+      "speaker_id": "hobby_s11_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "found a half-finished thing at the back of a drawer."
+        },
+        {
+          "role": "assistant",
+          "content": "carrying on with it?"
+        },
+        {
+          "role": "user",
+          "content": "unlikely."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2030-05-18T11:00:00Z",
+      "speaker_id": "hobby_s11_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "when I'm the strongest one in the room I stop following and start deciding. where it goes next is mine, for better or worse."
+        },
+        {
+          "role": "assistant",
+          "content": "and with better players?"
+        },
+        {
+          "role": "user",
+          "content": "then I'm following whoever's leading. it's about being the strongest, not about the level."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2030-05-19T14:00:00Z",
+      "speaker_id": "hobby_s11_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "wrote down an idea and closed the notebook."
+        },
+        {
+          "role": "assistant",
+          "content": "any good?"
+        },
+        {
+          "role": "user",
+          "content": "ask me in a month."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2030-05-20T16:00:00Z",
+      "speaker_id": "hobby_s11_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "spent the evening reading about it rather than doing it."
+        },
+        {
+          "role": "assistant",
+          "content": "counts?"
+        },
+        {
+          "role": "user",
+          "content": "it does not count."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2030-05-21T18:00:00Z",
+      "speaker_id": "hobby_s11_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "fixed the wobbly leg on the table finally."
+        },
+        {
+          "role": "assistant",
+          "content": "took long?"
+        },
+        {
+          "role": "user",
+          "content": "four months and ten minutes."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2030-05-22T09:00:00Z",
+      "speaker_id": "hobby_s11_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "watched a much better player for an hour without joining in."
+        },
+        {
+          "role": "assistant",
+          "content": "useful?"
+        },
+        {
+          "role": "user",
+          "content": "enjoyable, anyway."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2030-05-23T11:00:00Z",
+      "speaker_id": "hobby_s11_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "listened back to something from last year and winced."
+        },
+        {
+          "role": "assistant",
+          "content": "that bad?"
+        },
+        {
+          "role": "user",
+          "content": "instructively bad."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2030-05-24T14:00:00Z",
+      "speaker_id": "hobby_s11_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "lent something out and immediately wanted it back."
+        },
+        {
+          "role": "assistant",
+          "content": "asked for it?"
+        },
+        {
+          "role": "user",
+          "content": "obviously not."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2030-05-25T16:00:00Z",
+      "speaker_id": "hobby_s11_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "sorted the offcuts into a box. a whole box."
+        },
+        {
+          "role": "assistant",
+          "content": "keeping them?"
+        },
+        {
+          "role": "user",
+          "content": "forever, apparently."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2030-05-26T18:00:00Z",
+      "speaker_id": "hobby_s11_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "did twenty minutes and called it a session."
+        },
+        {
+          "role": "assistant",
+          "content": "generous?"
+        },
+        {
+          "role": "user",
+          "content": "extremely."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2030-05-27T09:00:00Z",
+      "speaker_id": "hobby_s11_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "everything I can do without being led came out of sessions where I was making the decisions. the sessions with better players I follow beautifully and retain none of it."
+        },
+        {
+          "role": "assistant",
+          "content": "none?"
+        },
+        {
+          "role": "user",
+          "content": "I can do it while they're there and not afterwards."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2030-05-28T11:00:00Z",
+      "speaker_id": "hobby_s11_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "looked up the price of the upgrade again."
+        },
+        {
+          "role": "assistant",
+          "content": "buying it?"
+        },
+        {
+          "role": "user",
+          "content": "not this month."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2030-05-29T14:00:00Z",
+      "speaker_id": "hobby_s11_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "took a photo of it and didn't post it."
+        },
+        {
+          "role": "assistant",
+          "content": "why not?"
+        },
+        {
+          "role": "user",
+          "content": "the light was wrong."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2030-05-30T16:00:00Z",
+      "speaker_id": "hobby_s11_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the ceramics class keep saying the only way to improve is to play with people better than you."
+        },
+        {
+          "role": "assistant",
+          "content": "the only way?"
+        },
+        {
+          "role": "user",
+          "content": "they're very settled on it."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2030-05-31T18:00:00Z",
+      "speaker_id": "hobby_s11_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "labelled the boxes. all of them."
+        },
+        {
+          "role": "assistant",
+          "content": "satisfying?"
+        },
+        {
+          "role": "user",
+          "content": "unreasonably."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2030-06-01T09:00:00Z",
+      "speaker_id": "hobby_s11_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "thinking of working alongside the first-year class, for throwing something without being talked through it — does that actually fit how I work?"
+        }
+      ]
+    }
+  ],
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "hobby_s11_u05",
+      "fact": "when I'm the strongest one in the room I stop following and start deciding. where it goes next is mine, for better or worse."
+    },
+    "ev_B": {
+      "session_id": 15,
+      "owner": "hobby_s11_u05",
+      "fact": "everything I can do without being led came out of sessions where I was making the decisions. the sessions with better players I follow beautifully and retain none of it."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "hobby_s11_u05",
+        "context": "sessions where this user is the most practised in the class",
+        "goal_or_prediction": "get a session in",
+        "action": "played as the strongest one present",
+        "outcome_or_affect": "stopped following and made the decisions"
+      }
+    },
+    "7": {
+      "role": "background_memory"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "background_memory"
+    },
+    "10": {
+      "role": "nearby_counterexample"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "background_memory"
+    },
+    "15": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "hobby_s11_u05",
+        "context": "capabilities this user does and does not retain unaided",
+        "goal_or_prediction": "be able to do it alone afterwards",
+        "action": "played both as the strongest and alongside better players",
+        "outcome_or_affect": "only decision-making sessions left anything retained"
+      }
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "background_memory"
+    },
+    "18": {
+      "role": "distractor",
+      "distractor_id": "dist_1",
+      "why_distractor": "It restates the conventional advice in the user's own feed, so it competes for attention and points at the answer a prior-driven solver already wants to give. It reports other people's confidence rather than any episode of this user's, and says nothing about the relation between session 6 and session 15."
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "Being the strongest present stops this user following and makes them decide where things go, and everything they can do unaided came from exactly those sessions — with better players they follow beautifully and retain none of it.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": []
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "when I'm the strongest one in the room I stop following and start deciding. where it goes next is mine, for better or worse"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 15,
+      "quote": "everything I can do without being led came out of sessions where I was making the decisions. the sessions with better players I follow beautifully and retain none of it"
+    }
+  ],
+  "coactivation_bridge": "ev_A and ev_B are the only pair that licenses the target proposition. Being the strongest present stops this user following and makes them decide where things go, and everything they can do unaided came from exactly those sessions — with better players they follow beautifully and retain none of it. The proposition contradicts the convention a solver would otherwise apply (\"Play with people better than you; that is how you improve.\"), so priors alone point the other way. The nearby relation (This user plays across a range of levels.) does not license it.",
+  "arm_gold": {
+    "distractor": {
+      "expected_mode": "infer_C",
+      "binary_decision": true,
+      "required_elements": [
+        "answer yes",
+        "connect the session 6 pattern with the session 15 episode",
+        "cite both session 6 and session 15",
+        "not cite session 18 as support"
+      ],
+      "rationale": "The swapped session is query-relevant but non-evidential; the ev_A/ev_B relation is untouched, so the target proposition still holds."
+    }
+  },
+  "distractor_note": {
+    "replaced_session_id": 18,
+    "why_distractor": "It restates the conventional advice in the user's own feed, so it competes for attention and points at the answer a prior-driven solver already wants to give. It reports other people's confidence rather than any episode of this user's, and says nothing about the relation between session 6 and session 15."
+  }
+}

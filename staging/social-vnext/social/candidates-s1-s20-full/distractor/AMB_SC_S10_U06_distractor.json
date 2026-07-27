@@ -7,7 +7,7 @@
     "family": "arriving fresh versus arriving talked-out at an in-person reunion",
     "role": "student small-group meetup planner",
     "bridge_type": "prediction_calibration",
-    "one_line": "student small-group meetup planner: depends on the week leaves this user with nothing of their own queued up, not on the thing itself"
+    "one_line": "student small-group meetup planner: depends on whether the week leaves this user with nothing of their own queued up, not on the thing itself"
   },
   "query_type": "conditional_recommendation",
   "polarity": "non_decision",
@@ -22,11 +22,11 @@
     "why_it_does_not_license_C": "A single ordinary call and a quiet cleared weekend both passed without consequence, so neither bounds the failed prediction, and neither says which state this user actually hears anything in."
   },
   "latent_C": {
-    "inference": "Whether five course calls that week helps before the course reunion depends on the week leaves this user with nothing of their own queued up, not on five course calls that week itself.",
-    "calibrated_language": "depends on the week leaves this user with nothing of their own queued up, not on the thing itself"
+    "inference": "Whether five course calls that week helps before the course reunion depends on whether the week leaves this user with nothing of their own queued up, not on five course calls that week itself.",
+    "calibrated_language": "depends on whether the week leaves this user with nothing of their own queued up, not on the thing itself"
   },
   "answer_contract": {
-    "target_proposition": "Whether five course calls that week helps before the course reunion depends on the week leaves this user with nothing of their own queued up, not on five course calls that week itself.",
+    "target_proposition": "Whether five course calls that week helps before the course reunion depends on whether the week leaves this user with nothing of their own queued up, not on five course calls that week itself.",
     "allowed_decisions": [
       "yes",
       "no"

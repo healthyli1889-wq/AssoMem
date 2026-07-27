@@ -7,7 +7,7 @@
     "family": "an early night versus short sleep before an early commitment to someone",
     "role": "group-ticket organizer who calls family abroad",
     "bridge_type": "state_dependent_operation",
-    "one_line": "group-ticket organizer who calls family abroad: depends on the night is genuinely short rather than merely late, not on the thing itself"
+    "one_line": "group-ticket organizer who calls family abroad: depends on whether the night is genuinely short rather than merely late, not on the thing itself"
   },
   "query_type": "conditional_recommendation",
   "polarity": "non_decision",
@@ -22,11 +22,11 @@
     "why_it_does_not_license_C": "A late night with an empty next day and a full night before an ordinary Tuesday both cost nothing and reveal nothing about whether this user actually turns up for things they have promised."
   },
   "latent_C": {
-    "inference": "Whether the late awards do the night before helps before the early lift for my teammate depends on the night is genuinely short rather than merely late, not on the late awards do the night before itself.",
-    "calibrated_language": "depends on the night is genuinely short rather than merely late, not on the thing itself"
+    "inference": "Whether the late awards do the night before helps before the early lift for my teammate depends on whether the night is genuinely short rather than merely late, not on the late awards do the night before itself.",
+    "calibrated_language": "depends on whether the night is genuinely short rather than merely late, not on the thing itself"
   },
   "answer_contract": {
-    "target_proposition": "Whether the late awards do the night before helps before the early lift for my teammate depends on the night is genuinely short rather than merely late, not on the late awards do the night before itself.",
+    "target_proposition": "Whether the late awards do the night before helps before the early lift for my teammate depends on whether the night is genuinely short rather than merely late, not on the late awards do the night before itself.",
     "allowed_decisions": [
       "yes",
       "no"
@@ -527,10 +527,7 @@
       "ev_A",
       "ev_B"
     ],
-    "calibration_constraints": [
-      "E1",
-      "E2"
-    ]
+    "calibration_constraints": []
   },
   "connector_spans": [],
   "coactivation_bridge": "Withheld in the absence source: neither target episode is visible.",

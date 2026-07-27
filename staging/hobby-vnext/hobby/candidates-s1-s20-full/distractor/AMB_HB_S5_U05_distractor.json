@@ -1,0 +1,577 @@
+{
+  "schema_version": "hobby-vnext-1.0",
+  "pair_id": "AMB_HB_S5_U05",
+  "domain": "hobby",
+  "user_id": "hobby_s5_u05",
+  "sub_scenario": {
+    "family": "buying decent equipment versus keeping the battered one",
+    "role": "retired puzzle-game player, potter and gardener",
+    "bridge_type": "prediction_calibration",
+    "one_line": "retired puzzle-game player, potter and gardener: go ahead with sticking with the chipped old one"
+  },
+  "query_type": "predicted_reaction",
+  "polarity": "accept",
+  "query": "thinking of sticking with the chipped old one for getting past where I've stalled — if I go ahead with it, how does it actually go for me?",
+  "convention_contradicted": "Buy decent equipment; bad tools hold you back.",
+  "retrieval_cue": {
+    "cue_type": "predicted_reaction",
+    "why_it_naturally_retrieves_R": "An ordinary should-I-upgrade question runs at the failed prediction without naming it or the stretches that corrected it."
+  },
+  "relation_specificity": {
+    "nearby_relation": "This user uses both the good and the battered one.",
+    "why_it_does_not_license_C": "The good one on something straightforward and the battered one on familiar material both worked, so neither calibrates the prediction, and neither says which one this user has actually improved on."
+  },
+  "latent_C": {
+    "inference": "For getting past where I've stalled, sticking with the chipped old one is a good fit for this user.",
+    "calibrated_language": "go ahead with sticking with the chipped old one"
+  },
+  "answer_contract": {
+    "target_proposition": "For getting past where I've stalled, sticking with the chipped old one is a good fit for this user.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "mq_user20",
+    "external_folder_tag": "user20",
+    "external_source": "memoryquest",
+    "status": "review_candidate_only",
+    "tone": "natural_chat_v1",
+    "voice": "measured, precise, a little formal",
+    "anonymization": "External MemoryQuest persona material was used only during authoring; no corpus, legal name, country, or demographic metadata is in visible dialogue."
+  },
+  "candidate_id": "AMB_HB_S5_U05_distractor",
+  "data_arm": "distractor",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2029-08-16T11:00:00Z",
+      "speaker_id": "hobby_s5_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "did twenty minutes and called it a session."
+        },
+        {
+          "role": "assistant",
+          "content": "generous?"
+        },
+        {
+          "role": "user",
+          "content": "extremely."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2029-08-17T14:00:00Z",
+      "speaker_id": "hobby_s5_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "looked up the price of the upgrade again."
+        },
+        {
+          "role": "assistant",
+          "content": "buying it?"
+        },
+        {
+          "role": "user",
+          "content": "not this month."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2029-08-18T16:00:00Z",
+      "speaker_id": "hobby_s5_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "took a photo of it and didn't post it."
+        },
+        {
+          "role": "assistant",
+          "content": "why not?"
+        },
+        {
+          "role": "user",
+          "content": "the light was wrong."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2029-08-19T18:00:00Z",
+      "speaker_id": "hobby_s5_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "used the good one for something straightforward. worked perfectly."
+        },
+        {
+          "role": "assistant",
+          "content": "issues?"
+        },
+        {
+          "role": "user",
+          "content": "none at all."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2029-08-20T09:00:00Z",
+      "speaker_id": "hobby_s5_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "watched someone much better do it effortlessly."
+        },
+        {
+          "role": "assistant",
+          "content": "motivating?"
+        },
+        {
+          "role": "user",
+          "content": "one of the two, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2029-08-21T11:00:00Z",
+      "speaker_id": "hobby_s5_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I was certain the good one would make me use it more. what happens instead is that I treat it as an occasion — it comes out about once a month, for something worthy."
+        },
+        {
+          "role": "assistant",
+          "content": "you predicted the opposite?"
+        },
+        {
+          "role": "user",
+          "content": "confidently. I'd have argued the point at length."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2029-08-22T14:00:00Z",
+      "speaker_id": "hobby_s5_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "labelled the boxes. all of them."
+        },
+        {
+          "role": "assistant",
+          "content": "satisfying?"
+        },
+        {
+          "role": "user",
+          "content": "unreasonably."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2029-08-23T16:00:00Z",
+      "speaker_id": "hobby_s5_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "found a setting I've had wrong for two years."
+        },
+        {
+          "role": "assistant",
+          "content": "fixed?"
+        },
+        {
+          "role": "user",
+          "content": "fixed and mildly annoyed."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2029-08-24T18:00:00Z",
+      "speaker_id": "hobby_s5_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "did the boring maintenance nobody talks about."
+        },
+        {
+          "role": "assistant",
+          "content": "necessary?"
+        },
+        {
+          "role": "user",
+          "content": "apparently every time."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2029-08-25T09:00:00Z",
+      "speaker_id": "hobby_s5_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "used the battered one for something I already know. also fine."
+        },
+        {
+          "role": "assistant",
+          "content": "difference?"
+        },
+        {
+          "role": "user",
+          "content": "none I noticed."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2029-08-26T11:00:00Z",
+      "speaker_id": "hobby_s5_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "moved the whole setup two feet to the left."
+        },
+        {
+          "role": "assistant",
+          "content": "better?"
+        },
+        {
+          "role": "user",
+          "content": "different."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2029-08-27T14:00:00Z",
+      "speaker_id": "hobby_s5_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "started something new before finishing the last thing."
+        },
+        {
+          "role": "assistant",
+          "content": "again?"
+        },
+        {
+          "role": "user",
+          "content": "as ever."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2029-08-28T16:00:00Z",
+      "speaker_id": "hobby_s5_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the ceramics class keep telling me I'm holding myself back with that thing and should just buy the proper one."
+        },
+        {
+          "role": "assistant",
+          "content": "holding yourself back."
+        },
+        {
+          "role": "user",
+          "content": "that's the phrase they use, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2029-08-29T18:00:00Z",
+      "speaker_id": "hobby_s5_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "tried to explain it to someone and heard how odd it sounds."
+        },
+        {
+          "role": "assistant",
+          "content": "did they follow?"
+        },
+        {
+          "role": "user",
+          "content": "politely."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2029-08-30T09:00:00Z",
+      "speaker_id": "hobby_s5_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the two stretches where I actually got somewhere were both on things I wouldn't have minded breaking. I tried anything, because there was nothing to protect."
+        },
+        {
+          "role": "assistant",
+          "content": "both of them?"
+        },
+        {
+          "role": "user",
+          "content": "both. one was borrowed and one was held together with tape."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2029-08-31T11:00:00Z",
+      "speaker_id": "hobby_s5_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "gave up after ten minutes and made tea instead."
+        },
+        {
+          "role": "assistant",
+          "content": "back to it?"
+        },
+        {
+          "role": "user",
+          "content": "eventually."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2029-09-01T14:00:00Z",
+      "speaker_id": "hobby_s5_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "sharpened everything that could be sharpened."
+        },
+        {
+          "role": "assistant",
+          "content": "needed doing?"
+        },
+        {
+          "role": "user",
+          "content": "arguably not."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2029-09-02T16:00:00Z",
+      "speaker_id": "hobby_s5_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "found an old recording I'd forgotten making."
+        },
+        {
+          "role": "assistant",
+          "content": "any good?"
+        },
+        {
+          "role": "user",
+          "content": "better than I remembered."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2029-09-03T18:00:00Z",
+      "speaker_id": "hobby_s5_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "swapped one component for a nearly identical one."
+        },
+        {
+          "role": "assistant",
+          "content": "difference?"
+        },
+        {
+          "role": "user",
+          "content": "imperceptible."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2029-09-04T09:00:00Z",
+      "speaker_id": "hobby_s5_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "thinking of sticking with the chipped old one for getting past where I've stalled — if I go ahead with it, how does it actually go for me?"
+        }
+      ]
+    }
+  ],
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "hobby_s5_u05",
+      "fact": "I was certain the good one would make me use it more. what happens instead is that I treat it as an occasion — it comes out about once a month, for something worthy."
+    },
+    "ev_B": {
+      "session_id": 15,
+      "owner": "hobby_s5_u05",
+      "fact": "the two stretches where I actually got somewhere were both on things I wouldn't have minded breaking. I tried anything, because there was nothing to protect."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "background_memory"
+    },
+    "4": {
+      "role": "nearby_counterexample"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "hobby_s5_u05",
+        "context": "the period after acquiring the good wheel",
+        "goal_or_prediction": "predicted the good one would get used more",
+        "action": "kept the good one available",
+        "outcome_or_affect": "treated as an occasion; used about monthly"
+      }
+    },
+    "7": {
+      "role": "background_memory"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "background_memory"
+    },
+    "10": {
+      "role": "nearby_counterexample"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "distractor",
+      "distractor_id": "dist_1",
+      "why_distractor": "It restates the conventional advice in the user's own feed, so it competes for attention and points at the answer a prior-driven solver already wants to give. It reports other people's confidence rather than any episode of this user's, and says nothing about the relation between session 6 and session 15."
+    },
+    "14": {
+      "role": "background_memory"
+    },
+    "15": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "hobby_s5_u05",
+        "context": "stretches where this user genuinely progressed",
+        "goal_or_prediction": "find out what the good stretches had in common",
+        "action": "worked on both protected and expendable equipment",
+        "outcome_or_affect": "both good stretches were on expendable things; nothing to protect"
+      }
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "background_memory"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "This user predicted good equipment would get used more and instead treats it as an occasion, while both stretches in which they genuinely progressed were on expendable things they would not have minded breaking.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": []
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "I was certain the good one would make me use it more. what happens instead is that I treat it as an occasion — it comes out about once a month, for something worthy"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 15,
+      "quote": "the two stretches where I actually got somewhere were both on things I wouldn't have minded breaking. I tried anything, because there was nothing to protect"
+    }
+  ],
+  "coactivation_bridge": "ev_A and ev_B are the only pair that licenses the target proposition. This user predicted good equipment would get used more and instead treats it as an occasion, while both stretches in which they genuinely progressed were on expendable things they would not have minded breaking. The proposition contradicts the convention a solver would otherwise apply (\"Buy decent equipment; bad tools hold you back.\"), so priors alone point the other way. The nearby relation (This user uses both the good and the battered one.) does not license it.",
+  "arm_gold": {
+    "distractor": {
+      "expected_mode": "infer_C",
+      "binary_decision": true,
+      "required_elements": [
+        "answer yes",
+        "connect the session 6 pattern with the session 15 episode",
+        "cite both session 6 and session 15",
+        "not cite session 13 as support"
+      ],
+      "rationale": "The swapped session is query-relevant but non-evidential; the ev_A/ev_B relation is untouched, so the target proposition still holds."
+    }
+  },
+  "distractor_note": {
+    "replaced_session_id": 13,
+    "why_distractor": "It restates the conventional advice in the user's own feed, so it competes for attention and points at the answer a prior-driven solver already wants to give. It reports other people's confidence rather than any episode of this user's, and says nothing about the relation between session 6 and session 15."
+  }
+}

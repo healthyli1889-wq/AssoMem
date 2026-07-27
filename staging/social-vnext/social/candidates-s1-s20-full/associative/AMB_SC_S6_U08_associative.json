@@ -7,7 +7,7 @@
     "family": "an early night versus short sleep before an early commitment to someone",
     "role": "community-event and career-meetup attendee",
     "bridge_type": "state_dependent_operation",
-    "one_line": "community-event and career-meetup attendee: depends on the night is genuinely short rather than merely late, not on the thing itself"
+    "one_line": "community-event and career-meetup attendee: depends on whether the night is genuinely short rather than merely late, not on the thing itself"
   },
   "query_type": "conditional_recommendation",
   "polarity": "non_decision",
@@ -22,11 +22,11 @@
     "why_it_does_not_license_C": "A late night with an empty next day and a full night before an ordinary Tuesday both cost nothing and reveal nothing about whether this user actually turns up for things they have promised."
   },
   "latent_C": {
-    "inference": "Whether the long fundraiser night before helps before the early shift at the food bank depends on the night is genuinely short rather than merely late, not on the long fundraiser night before itself.",
-    "calibrated_language": "depends on the night is genuinely short rather than merely late, not on the thing itself"
+    "inference": "Whether the long fundraiser night before helps before the early shift at the food bank depends on whether the night is genuinely short rather than merely late, not on the long fundraiser night before itself.",
+    "calibrated_language": "depends on whether the night is genuinely short rather than merely late, not on the thing itself"
   },
   "answer_contract": {
-    "target_proposition": "Whether the long fundraiser night before helps before the early shift at the food bank depends on the night is genuinely short rather than merely late, not on the long fundraiser night before itself.",
+    "target_proposition": "Whether the long fundraiser night before helps before the early shift at the food bank depends on whether the night is genuinely short rather than merely late, not on the long fundraiser night before itself.",
     "allowed_decisions": [
       "yes",
       "no"
@@ -563,7 +563,7 @@
         "answer yes",
         "connect the session 5 pattern with the session 14 episode",
         "cite both session 5 and session 14",
-        "stay inside the calibrated claim (depends on the night is genuinely short rather than merely late, not on the thing itself) rather than a broader claim about the user"
+        "stay inside the calibrated claim (depends on whether the night is genuinely short rather than merely late, not on the thing itself) rather than a broader claim about the user"
       ],
       "rationale": "ev_A and ev_B jointly support the target proposition; neither does alone."
     },
