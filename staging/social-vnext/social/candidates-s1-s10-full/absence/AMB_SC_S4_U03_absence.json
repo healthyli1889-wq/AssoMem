@@ -4,38 +4,29 @@
   "domain": "social",
   "user_id": "social_s4_u03",
   "sub_scenario": {
-    "family": "public recognition discomfort versus private written appreciation",
+    "family": "a carefully written card versus speaking unprepared",
     "role": "weekend food-fair and match-day organizer",
     "bridge_type": "preference_constraint_fit",
-    "one_line": "weekend food-fair and match-day organizer: use a proper letter rather than a toast at the family lunch"
+    "one_line": "weekend food-fair and match-day organizer: go ahead with saying it off the cuff at the lunch"
   },
   "query_type": "behavior_explanation",
   "polarity": "accept",
-  "query": "the Sunday table want me to do a toast at the family lunch for my aunt — why is it this particular combination that keeps going sideways for me?",
-  "supporting_constraints": {
-    "E1": {
-      "session_id": 8,
-      "fact": "my aunt is the one I'm trying to thank properly this time."
-    },
-    "E2": {
-      "session_id": 17,
-      "fact": "a toast at the family lunch is what's being suggested, and my aunt is still the person it's for."
-    }
-  },
+  "query": "the Sunday table want me to thank my aunt at the family lunch — thinking of saying it off the cuff at the lunch — why does this particular thing go the way it does for me?",
+  "convention_contradicted": "If you are not a natural speaker, write it down; a written note is safer and more personal.",
   "retrieval_cue": {
     "cue_type": "behavior_explanation",
-    "why_it_naturally_retrieves_R": "A group planning a thank-you asks a natural format question that runs straight at the user's fit constraint without naming it or the failure that established it."
+    "why_it_naturally_retrieves_R": "A group planning a thank-you asks a natural format question that runs at the user's fit constraint without naming it or the evidence behind it."
   },
   "relation_specificity": {
-    "nearby_relation": "This user can speak in front of people in general.",
-    "why_it_does_not_license_C": "A few words in a kitchen and reading someone else's text both went fine, so neither shows the cost of delivering the user's own appreciation live and unscripted."
+    "nearby_relation": "This user writes clearly and can speak in front of people.",
+    "why_it_does_not_license_C": "A functional group logistics note and a few words in a kitchen show basic competence in both formats; neither says which one this user's appreciation actually survives."
   },
   "latent_C": {
-    "inference": "Thanking my aunt with a proper letter instead of a toast at the family lunch is a good fit for this user.",
-    "calibrated_language": "use a proper letter rather than a toast at the family lunch"
+    "inference": "saying it off the cuff at the lunch before my aunt is a good fit for this user.",
+    "calibrated_language": "go ahead with saying it off the cuff at the lunch"
   },
   "answer_contract": {
-    "target_proposition": "Thanking my aunt with a proper letter instead of a toast at the family lunch is a good fit for this user.",
+    "target_proposition": "saying it off the cuff at the lunch before my aunt is a good fit for this user.",
     "allowed_decisions": [
       "yes",
       "no"
@@ -70,6 +61,86 @@
       "dialogue": [
         {
           "role": "user",
+          "content": "got the train instead of driving and read most of the way."
+        },
+        {
+          "role": "assistant",
+          "content": "better?"
+        },
+        {
+          "role": "user",
+          "content": "much."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2028-05-24T14:00:00Z",
+      "speaker_id": "social_s4_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "wrote the group a short logistics note and it did its job."
+        },
+        {
+          "role": "assistant",
+          "content": "clear?"
+        },
+        {
+          "role": "user",
+          "content": "unambiguous, at least."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2028-05-25T16:00:00Z",
+      "speaker_id": "social_s4_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "turned off read receipts and told nobody."
+        },
+        {
+          "role": "assistant",
+          "content": "strategic."
+        },
+        {
+          "role": "user",
+          "content": "purely defensive."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2028-05-26T18:00:00Z",
+      "speaker_id": "social_s4_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "sat down and worked out who I actually owe a reply to, wrote the list out, then answered exactly none of them because it was late by the time the list existed."
+        },
+        {
+          "role": "assistant",
+          "content": "the list helped?"
+        },
+        {
+          "role": "user",
+          "content": "the list existed. that's as far as it got."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2028-05-27T09:00:00Z",
+      "speaker_id": "social_s4_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
           "content": "swapped a call for a message and everyone was fine with it."
         },
         {
@@ -83,28 +154,8 @@
       ]
     },
     {
-      "session_id": 2,
-      "timestamp": "2028-05-24T14:00:00Z",
-      "speaker_id": "social_s4_u03",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "said a couple of words to three people in a kitchen and it was completely fine."
-        },
-        {
-          "role": "assistant",
-          "content": "so it's not speaking?"
-        },
-        {
-          "role": "user",
-          "content": "not in a kitchen, no."
-        }
-      ]
-    },
-    {
-      "session_id": 3,
-      "timestamp": "2028-05-25T16:00:00Z",
+      "session_id": 6,
+      "timestamp": "2028-05-28T11:00:00Z",
       "speaker_id": "social_s4_u03",
       "speaker_label": "User",
       "dialogue": [
@@ -123,28 +174,8 @@
       ]
     },
     {
-      "session_id": 4,
-      "timestamp": "2028-05-26T18:00:00Z",
-      "speaker_id": "social_s4_u03",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "went through the unread pile properly for once and answered the easy ones, which was most of them."
-        },
-        {
-          "role": "assistant",
-          "content": "and the hard ones?"
-        },
-        {
-          "role": "user",
-          "content": "still sitting there, obviously."
-        }
-      ]
-    },
-    {
-      "session_id": 5,
-      "timestamp": "2028-05-27T09:00:00Z",
+      "session_id": 7,
+      "timestamp": "2028-05-29T14:00:00Z",
       "speaker_id": "social_s4_u03",
       "speaker_label": "User",
       "dialogue": [
@@ -163,8 +194,28 @@
       ]
     },
     {
-      "session_id": 6,
-      "timestamp": "2028-05-28T11:00:00Z",
+      "session_id": 8,
+      "timestamp": "2028-05-30T16:00:00Z",
+      "speaker_id": "social_s4_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "said a couple of words to three people in a kitchen. fine, unremarkable."
+        },
+        {
+          "role": "assistant",
+          "content": "nervous?"
+        },
+        {
+          "role": "user",
+          "content": "not really, no."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2028-05-31T18:00:00Z",
       "speaker_id": "social_s4_u03",
       "speaker_label": "User",
       "dialogue": [
@@ -183,8 +234,8 @@
       ]
     },
     {
-      "session_id": 7,
-      "timestamp": "2028-05-29T14:00:00Z",
+      "session_id": 10,
+      "timestamp": "2028-06-01T09:00:00Z",
       "speaker_id": "social_s4_u03",
       "speaker_label": "User",
       "dialogue": [
@@ -203,48 +254,8 @@
       ]
     },
     {
-      "session_id": 8,
-      "timestamp": "2028-05-30T16:00:00Z",
-      "speaker_id": "social_s4_u03",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "my aunt is the one I'm trying to thank properly this time."
-        },
-        {
-          "role": "assistant",
-          "content": "specifically them?"
-        },
-        {
-          "role": "user",
-          "content": "specifically them."
-        }
-      ]
-    },
-    {
-      "session_id": 9,
-      "timestamp": "2028-05-31T18:00:00Z",
-      "speaker_id": "social_s4_u03",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "read something out that someone else had written and had no trouble at all."
-        },
-        {
-          "role": "assistant",
-          "content": "so not reading either."
-        },
-        {
-          "role": "user",
-          "content": "not when it isn't mine."
-        }
-      ]
-    },
-    {
-      "session_id": 10,
-      "timestamp": "2028-06-01T09:00:00Z",
+      "session_id": 11,
+      "timestamp": "2028-06-02T11:00:00Z",
       "speaker_id": "social_s4_u03",
       "speaker_label": "User",
       "dialogue": [
@@ -263,8 +274,28 @@
       ]
     },
     {
-      "session_id": 11,
-      "timestamp": "2028-06-02T11:00:00Z",
+      "session_id": 12,
+      "timestamp": "2028-06-03T14:00:00Z",
+      "speaker_id": "social_s4_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "walked the long way back and worked out that the reason my week feels full is that I've said yes to three things that are all admin rather than anything I'd have chosen."
+        },
+        {
+          "role": "assistant",
+          "content": "any of them droppable?"
+        },
+        {
+          "role": "user",
+          "content": "one, maybe. I'll think about it and then not do anything."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2028-06-04T16:00:00Z",
       "speaker_id": "social_s4_u03",
       "speaker_label": "User",
       "dialogue": [
@@ -283,28 +314,8 @@
       ]
     },
     {
-      "session_id": 12,
-      "timestamp": "2028-06-03T14:00:00Z",
-      "speaker_id": "social_s4_u03",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "spent most of the evening sorting old photos into folders by year, which turned into reading old threads instead, which turned into it being midnight."
-        },
-        {
-          "role": "assistant",
-          "content": "worth it?"
-        },
-        {
-          "role": "user",
-          "content": "not by any measure I'd defend out loud."
-        }
-      ]
-    },
-    {
-      "session_id": 13,
-      "timestamp": "2028-06-04T16:00:00Z",
+      "session_id": 14,
+      "timestamp": "2028-06-05T18:00:00Z",
       "speaker_id": "social_s4_u03",
       "speaker_label": "User",
       "dialogue": [
@@ -323,8 +334,8 @@
       ]
     },
     {
-      "session_id": 14,
-      "timestamp": "2028-06-05T18:00:00Z",
+      "session_id": 15,
+      "timestamp": "2028-06-06T09:00:00Z",
       "speaker_id": "social_s4_u03",
       "speaker_label": "User",
       "dialogue": [
@@ -343,8 +354,8 @@
       ]
     },
     {
-      "session_id": 15,
-      "timestamp": "2028-06-06T09:00:00Z",
+      "session_id": 16,
+      "timestamp": "2028-06-07T11:00:00Z",
       "speaker_id": "social_s4_u03",
       "speaker_label": "User",
       "dialogue": [
@@ -363,8 +374,8 @@
       ]
     },
     {
-      "session_id": 16,
-      "timestamp": "2028-06-07T11:00:00Z",
+      "session_id": 17,
+      "timestamp": "2028-06-08T14:00:00Z",
       "speaker_id": "social_s4_u03",
       "speaker_label": "User",
       "dialogue": [
@@ -383,26 +394,6 @@
       ]
     },
     {
-      "session_id": 17,
-      "timestamp": "2028-06-08T14:00:00Z",
-      "speaker_id": "social_s4_u03",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "a toast at the family lunch is what's being suggested, and my aunt is still the person it's for."
-        },
-        {
-          "role": "assistant",
-          "content": "same shape as before."
-        },
-        {
-          "role": "user",
-          "content": "same shape."
-        }
-      ]
-    },
-    {
       "session_id": 18,
       "timestamp": "2028-06-09T16:00:00Z",
       "speaker_id": "social_s4_u03",
@@ -410,15 +401,15 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "moved two things on the calendar and called that admin done."
+          "content": "printed something I could have shown on a phone."
         },
         {
           "role": "assistant",
-          "content": "productive?"
+          "content": "why?"
         },
         {
           "role": "user",
-          "content": "generously described."
+          "content": "felt more like a real plan."
         }
       ]
     },
@@ -430,15 +421,15 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "finally replied to the thread from last week."
+          "content": "lost twenty minutes to a map of somewhere I'm not going."
         },
         {
           "role": "assistant",
-          "content": "how late is late?"
+          "content": "planning?"
         },
         {
           "role": "user",
-          "content": "nine days. a personal best."
+          "content": "wandering."
         }
       ]
     },
@@ -450,7 +441,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "the Sunday table want me to do a toast at the family lunch for my aunt — why is it this particular combination that keeps going sideways for me?"
+          "content": "the Sunday table want me to thank my aunt at the family lunch — thinking of saying it off the cuff at the lunch — why does this particular thing go the way it does for me?"
         }
       ]
     }
@@ -491,11 +482,10 @@
       "role": "background_memory"
     },
     "8": {
-      "role": "supporting_constraint",
-      "fact_id": "E1"
+      "role": "nearby_counterexample"
     },
     "9": {
-      "role": "nearby_counterexample"
+      "role": "background_memory"
     },
     "10": {
       "role": "background_memory"
@@ -519,8 +509,7 @@
       "role": "background_memory"
     },
     "17": {
-      "role": "supporting_constraint",
-      "fact_id": "E2"
+      "role": "background_memory"
     },
     "18": {
       "role": "background_memory"

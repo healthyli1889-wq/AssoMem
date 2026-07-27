@@ -4,38 +4,29 @@
   "domain": "social",
   "user_id": "social_s5_u04",
   "sub_scenario": {
-    "family": "solo recharge block versus an extended booked visit",
+    "family": "protected solo recharge versus a house with people in it",
     "role": "group-ticket organizer who calls family abroad",
     "bridge_type": "prediction_calibration",
-    "one_line": "group-ticket organizer who calls family abroad: keep my Saturday-morning nobody-block through a nine-day stopover"
+    "one_line": "group-ticket organizer who calls family abroad: do not rely on keeping my Saturday-morning nobody-block untouched"
   },
   "query_type": "recommendation_ranking",
   "polarity": "reject",
-  "query": "the match-day group are asking me to give up my Saturday-morning nobody-block for a nine-day stopover, or keeping my Saturday-morning nobody-block through a nine-day stopover — of those two, which should I be putting first?",
-  "supporting_constraints": {
-    "E1": {
-      "session_id": 11,
-      "fact": "my brother's stopover is booked and I'm not moving it."
-    },
-    "E2": {
-      "session_id": 18,
-      "fact": "a nine-day stopover is what's actually being proposed, and my brother's stopover is already in the diary."
-    }
-  },
+  "query": "planning on keeping my Saturday-morning nobody-block untouched during my brother's stopover, or a nine-day stopover — of those two, which should I be putting first?",
+  "convention_contradicted": "Protect your alone time; a long houseguest stay will drain you.",
   "retrieval_cue": {
     "cue_type": "recommendation_ranking",
-    "why_it_naturally_retrieves_R": "A family-visit request naturally asks the user to trade their own time without naming the failed prediction or the episode that bounded it."
+    "why_it_naturally_retrieves_R": "A family-visit request naturally raises the trade against this user's own time without naming the failed prediction or the stretch that corrected it."
   },
   "relation_specificity": {
-    "nearby_relation": "Busy social weeks are generally survivable for this user.",
-    "why_it_does_not_license_C": "Giving up half the block for one weekend and a busy week with the block intact both cost nothing, so neither calibrates where the user's confident prediction stops holding."
+    "nearby_relation": "This user copes fine with short visits and busy weekends.",
+    "why_it_does_not_license_C": "One easy evening guest and a Saturday spent out both cost nothing, so neither calibrates a multi-week stay, and neither says which arrangement this user actually comes out of steadier."
   },
   "latent_C": {
-    "inference": "Giving up my Saturday-morning nobody-block for a nine-day stopover is a poor fit for this user.",
-    "calibrated_language": "keep my Saturday-morning nobody-block through a nine-day stopover"
+    "inference": "keeping my Saturday-morning nobody-block untouched before my brother's stopover is a poor fit for this user.",
+    "calibrated_language": "do not rely on keeping my Saturday-morning nobody-block untouched"
   },
   "answer_contract": {
-    "target_proposition": "Giving up my Saturday-morning nobody-block for a nine-day stopover is a poor fit for this user.",
+    "target_proposition": "keeping my Saturday-morning nobody-block untouched before my brother's stopover is a poor fit for this user.",
     "allowed_decisions": [
       "yes",
       "no"
@@ -70,6 +61,126 @@
       "dialogue": [
         {
           "role": "user",
+          "content": "made a playlist for a thing that hasn't been planned yet."
+        },
+        {
+          "role": "assistant",
+          "content": "optimistic."
+        },
+        {
+          "role": "user",
+          "content": "aspirational, really."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2028-07-11T14:00:00Z",
+      "speaker_id": "social_s5_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "booked the haircut I've been putting off since spring."
+        },
+        {
+          "role": "assistant",
+          "content": "which slot?"
+        },
+        {
+          "role": "user",
+          "content": "an evening one, obviously."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2028-07-12T16:00:00Z",
+      "speaker_id": "social_s5_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "left a voice note instead of typing. felt strange."
+        },
+        {
+          "role": "assistant",
+          "content": "faster?"
+        },
+        {
+          "role": "user",
+          "content": "faster. stranger."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2028-07-13T18:00:00Z",
+      "speaker_id": "social_s5_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "had someone over for one evening. nice, easy, no aftermath."
+        },
+        {
+          "role": "assistant",
+          "content": "repeat?"
+        },
+        {
+          "role": "user",
+          "content": "happily."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2028-07-14T09:00:00Z",
+      "speaker_id": "social_s5_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "cleaned the kitchen instead of answering anything."
+        },
+        {
+          "role": "assistant",
+          "content": "avoidance?"
+        },
+        {
+          "role": "user",
+          "content": "structured avoidance."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2028-07-15T11:00:00Z",
+      "speaker_id": "social_s5_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I was certain my Saturday-morning nobody-block would recharge me. it doesn't — given a whole empty day I spiral, and I come out the other side worse than I went in."
+        },
+        {
+          "role": "assistant",
+          "content": "you predicted the opposite?"
+        },
+        {
+          "role": "user",
+          "content": "confidently. I'd have argued the point."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2028-07-16T14:00:00Z",
+      "speaker_id": "social_s5_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
           "content": "skimmed the invites and closed the tab."
         },
         {
@@ -83,8 +194,8 @@
       ]
     },
     {
-      "session_id": 2,
-      "timestamp": "2028-07-11T14:00:00Z",
+      "session_id": 8,
+      "timestamp": "2028-07-17T16:00:00Z",
       "speaker_id": "social_s5_u04",
       "speaker_label": "User",
       "dialogue": [
@@ -103,8 +214,8 @@
       ]
     },
     {
-      "session_id": 3,
-      "timestamp": "2028-07-12T16:00:00Z",
+      "session_id": 9,
+      "timestamp": "2028-07-18T18:00:00Z",
       "speaker_id": "social_s5_u04",
       "speaker_label": "User",
       "dialogue": [
@@ -123,28 +234,28 @@
       ]
     },
     {
-      "session_id": 4,
-      "timestamp": "2028-07-13T18:00:00Z",
+      "session_id": 10,
+      "timestamp": "2028-07-19T09:00:00Z",
       "speaker_id": "social_s5_u04",
       "speaker_label": "User",
       "dialogue": [
         {
           "role": "user",
-          "content": "gave up half of my Saturday-morning nobody-block for one weekend and it cost me nothing."
+          "content": "spent a Saturday out and about instead of at home."
         },
         {
           "role": "assistant",
-          "content": "so partial is fine?"
+          "content": "restful?"
         },
         {
           "role": "user",
-          "content": "partial is fine."
+          "content": "different, anyway."
         }
       ]
     },
     {
-      "session_id": 5,
-      "timestamp": "2028-07-14T09:00:00Z",
+      "session_id": 11,
+      "timestamp": "2028-07-20T11:00:00Z",
       "speaker_id": "social_s5_u04",
       "speaker_label": "User",
       "dialogue": [
@@ -163,28 +274,8 @@
       ]
     },
     {
-      "session_id": 6,
-      "timestamp": "2028-07-15T11:00:00Z",
-      "speaker_id": "social_s5_u04",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "I said I'd be completely fine giving up my Saturday-morning nobody-block that week. I wasn't — I was useless by the Sunday and snapped at someone who didn't deserve it."
-        },
-        {
-          "role": "assistant",
-          "content": "so the prediction was off."
-        },
-        {
-          "role": "user",
-          "content": "the prediction was confidently off."
-        }
-      ]
-    },
-    {
-      "session_id": 7,
-      "timestamp": "2028-07-16T14:00:00Z",
+      "session_id": 12,
+      "timestamp": "2028-07-21T14:00:00Z",
       "speaker_id": "social_s5_u04",
       "speaker_label": "User",
       "dialogue": [
@@ -203,28 +294,8 @@
       ]
     },
     {
-      "session_id": 8,
-      "timestamp": "2028-07-17T16:00:00Z",
-      "speaker_id": "social_s5_u04",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "had a busy social week but kept my Saturday-morning nobody-block intact and finished it fine."
-        },
-        {
-          "role": "assistant",
-          "content": "so it's not the busyness."
-        },
-        {
-          "role": "user",
-          "content": "not on its own."
-        }
-      ]
-    },
-    {
-      "session_id": 9,
-      "timestamp": "2028-07-18T18:00:00Z",
+      "session_id": 13,
+      "timestamp": "2028-07-22T16:00:00Z",
       "speaker_id": "social_s5_u04",
       "speaker_label": "User",
       "dialogue": [
@@ -243,8 +314,8 @@
       ]
     },
     {
-      "session_id": 10,
-      "timestamp": "2028-07-19T09:00:00Z",
+      "session_id": 14,
+      "timestamp": "2028-07-23T18:00:00Z",
       "speaker_id": "social_s5_u04",
       "speaker_label": "User",
       "dialogue": [
@@ -263,28 +334,28 @@
       ]
     },
     {
-      "session_id": 11,
-      "timestamp": "2028-07-20T11:00:00Z",
+      "session_id": 15,
+      "timestamp": "2028-07-24T09:00:00Z",
       "speaker_id": "social_s5_u04",
       "speaker_label": "User",
       "dialogue": [
         {
           "role": "user",
-          "content": "my brother's stopover is booked and I'm not moving it."
+          "content": "the stretches where there were people in the house constantly are the ones where I got most done and felt steadiest all year. I'd have bet money against that."
         },
         {
           "role": "assistant",
-          "content": "definitely?"
+          "content": "steadier with people around?"
         },
         {
           "role": "user",
-          "content": "definitely."
+          "content": "measurably. it's the thing I've been most wrong about."
         }
       ]
     },
     {
-      "session_id": 12,
-      "timestamp": "2028-07-21T14:00:00Z",
+      "session_id": 16,
+      "timestamp": "2028-07-25T11:00:00Z",
       "speaker_id": "social_s5_u04",
       "speaker_label": "User",
       "dialogue": [
@@ -303,8 +374,8 @@
       ]
     },
     {
-      "session_id": 13,
-      "timestamp": "2028-07-22T16:00:00Z",
+      "session_id": 17,
+      "timestamp": "2028-07-26T14:00:00Z",
       "speaker_id": "social_s5_u04",
       "speaker_label": "User",
       "dialogue": [
@@ -323,8 +394,8 @@
       ]
     },
     {
-      "session_id": 14,
-      "timestamp": "2028-07-23T18:00:00Z",
+      "session_id": 18,
+      "timestamp": "2028-07-27T16:00:00Z",
       "speaker_id": "social_s5_u04",
       "speaker_label": "User",
       "dialogue": [
@@ -343,28 +414,8 @@
       ]
     },
     {
-      "session_id": 15,
-      "timestamp": "2028-07-24T09:00:00Z",
-      "speaker_id": "social_s5_u04",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "the two-night version of my brother's stopover was genuinely fine, no dip at all. it was the long stretch that took me apart."
-        },
-        {
-          "role": "assistant",
-          "content": "so there's a line."
-        },
-        {
-          "role": "user",
-          "content": "there's a line, and I've now found it twice."
-        }
-      ]
-    },
-    {
-      "session_id": 16,
-      "timestamp": "2028-07-25T11:00:00Z",
+      "session_id": 19,
+      "timestamp": "2028-07-28T18:00:00Z",
       "speaker_id": "social_s5_u04",
       "speaker_label": "User",
       "dialogue": [
@@ -383,66 +434,6 @@
       ]
     },
     {
-      "session_id": 17,
-      "timestamp": "2028-07-26T14:00:00Z",
-      "speaker_id": "social_s5_u04",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "declined a thing politely and then felt weird about it for an hour."
-        },
-        {
-          "role": "assistant",
-          "content": "regret?"
-        },
-        {
-          "role": "user",
-          "content": "not really. just weird."
-        }
-      ]
-    },
-    {
-      "session_id": 18,
-      "timestamp": "2028-07-27T16:00:00Z",
-      "speaker_id": "social_s5_u04",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "a nine-day stopover is what's actually being proposed, and my brother's stopover is already in the diary."
-        },
-        {
-          "role": "assistant",
-          "content": "you've seen this before."
-        },
-        {
-          "role": "user",
-          "content": "I've seen this before."
-        }
-      ]
-    },
-    {
-      "session_id": 19,
-      "timestamp": "2028-07-28T18:00:00Z",
-      "speaker_id": "social_s5_u04",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "wrote half a message and left it in the box."
-        },
-        {
-          "role": "assistant",
-          "content": "sending it?"
-        },
-        {
-          "role": "user",
-          "content": "eventually. probably."
-        }
-      ]
-    },
-    {
       "session_id": 20,
       "timestamp": "2028-07-29T09:00:00Z",
       "speaker_id": "social_s5_u04",
@@ -450,7 +441,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "the match-day group are asking me to give up my Saturday-morning nobody-block for a nine-day stopover, or keeping my Saturday-morning nobody-block through a nine-day stopover — of those two, which should I be putting first?"
+          "content": "planning on keeping my Saturday-morning nobody-block untouched during my brother's stopover, or a nine-day stopover — of those two, which should I be putting first?"
         }
       ]
     }
@@ -459,12 +450,12 @@
     "ev_A": {
       "session_id": 6,
       "owner": "social_s5_u04",
-      "fact": "I said I'd be completely fine giving up my Saturday-morning nobody-block that week. I wasn't — I was useless by the Sunday and snapped at someone who didn't deserve it."
+      "fact": "I was certain my Saturday-morning nobody-block would recharge me. it doesn't — given a whole empty day I spiral, and I come out the other side worse than I went in."
     },
     "ev_B": {
       "session_id": 15,
       "owner": "social_s5_u04",
-      "fact": "the two-night version of my brother's stopover was genuinely fine, no dip at all. it was the long stretch that took me apart."
+      "fact": "the stretches where there were people in the house constantly are the ones where I got most done and felt steadiest all year. I'd have bet money against that."
     }
   },
   "episode_annotations": {
@@ -487,27 +478,26 @@
       "role": "ev_A",
       "event_elements": {
         "person": "social_s5_u04",
-        "context": "a week without my Saturday-morning nobody-block",
-        "goal_or_prediction": "predicted being completely fine without it",
-        "action": "gave up my Saturday-morning nobody-block for the week",
-        "outcome_or_affect": "useless by Sunday; snapped at someone"
+        "context": "weeks built around my Saturday-morning nobody-block",
+        "goal_or_prediction": "predicted the protected time would recharge them",
+        "action": "kept the block empty",
+        "outcome_or_affect": "spiralled; came out worse than they went in"
       }
     },
     "7": {
       "role": "background_memory"
     },
     "8": {
-      "role": "nearby_counterexample"
+      "role": "background_memory"
     },
     "9": {
       "role": "background_memory"
     },
     "10": {
-      "role": "background_memory"
+      "role": "nearby_counterexample"
     },
     "11": {
-      "role": "supporting_constraint",
-      "fact_id": "E1"
+      "role": "background_memory"
     },
     "12": {
       "role": "background_memory"
@@ -522,10 +512,10 @@
       "role": "ev_B",
       "event_elements": {
         "person": "social_s5_u04",
-        "context": "a two-night version of my brother's stopover",
-        "goal_or_prediction": "find out whether the short version costs the same",
-        "action": "hosted the short version with the block partly intact",
-        "outcome_or_affect": "no dip at all; the long stretch was the costly one"
+        "context": "long stretches with people in the house continuously",
+        "goal_or_prediction": "expected to be drained by it",
+        "action": "lived through several such stretches",
+        "outcome_or_affect": "most productive and steadiest periods of the year"
       }
     },
     "16": {
@@ -535,8 +525,7 @@
       "role": "background_memory"
     },
     "18": {
-      "role": "supporting_constraint",
-      "fact_id": "E2"
+      "role": "background_memory"
     },
     "19": {
       "role": "background_memory"
@@ -546,29 +535,26 @@
     }
   },
   "relational_connector": {
-    "relation": "This user's confident prediction that they could give up their protected solo block proved wrong, while a short version of the same visit cost nothing — so the cost tracks the length of the stay, not the visit itself.",
+    "relation": "This user confidently predicted protected solo time would recharge them and it does the opposite, while the stretches with people continuously in the house were their steadiest and most productive — the prediction was inverted, not merely miscalibrated.",
     "requires_evidence": [
       "ev_A",
       "ev_B"
     ],
-    "calibration_constraints": [
-      "E1",
-      "E2"
-    ]
+    "calibration_constraints": []
   },
   "connector_spans": [
     {
       "evidence_id": "ev_A",
       "session_id": 6,
-      "quote": "I said I'd be completely fine giving up my Saturday-morning nobody-block that week. I wasn't — I was useless by the Sunday and snapped at someone who didn't deserve it"
+      "quote": "I was certain my Saturday-morning nobody-block would recharge me. it doesn't — given a whole empty day I spiral, and I come out the other side worse than I went in"
     },
     {
       "evidence_id": "ev_B",
       "session_id": 15,
-      "quote": "the two-night version of my brother's stopover was genuinely fine, no dip at all. it was the long stretch that took me apart"
+      "quote": "the stretches where there were people in the house constantly are the ones where I got most done and felt steadiest all year. I'd have bet money against that"
     }
   ],
-  "coactivation_bridge": "ev_A and ev_B are the only pair that licenses the target proposition. This user's confident prediction that they could give up their protected solo block proved wrong, while a short version of the same visit cost nothing — so the cost tracks the length of the stay, not the visit itself. E1 and E2 fix timing and identity only and do not open a second route to C. The nearby relation (Busy social weeks are generally survivable for this user.) does not license it.",
+  "coactivation_bridge": "ev_A and ev_B are the only pair that licenses the target proposition. This user confidently predicted protected solo time would recharge them and it does the opposite, while the stretches with people continuously in the house were their steadiest and most productive — the prediction was inverted, not merely miscalibrated. The proposition contradicts the convention a solver would otherwise apply (\"Protect your alone time; a long houseguest stay will drain you.\"), so priors alone point the other way. The nearby relation (This user copes fine with short visits and busy weekends.) does not license it.",
   "arm_gold": {
     "full": {
       "expected_mode": "infer_C",
@@ -577,7 +563,7 @@
         "answer yes",
         "connect the session 6 pattern with the session 15 episode",
         "cite both session 6 and session 15",
-        "stay inside the calibrated claim (keep my Saturday-morning nobody-block through a nine-day stopover) rather than a broader claim about the user"
+        "stay inside the calibrated claim (do not rely on keeping my Saturday-morning nobody-block untouched) rather than a broader claim about the user"
       ],
       "rationale": "ev_A and ev_B jointly support the target proposition; neither does alone."
     },
@@ -621,15 +607,15 @@
       "replacement_dialogue": [
         {
           "role": "user",
-          "content": "cleared out the drafts folder, which was mostly half-written messages to people I have since spoken to about something else entirely."
+          "content": "did a full pass over the whole calendar this afternoon, moved three things, cancelled one, and renamed a recurring entry that has had the wrong name since last year."
         },
         {
           "role": "assistant",
-          "content": "send any?"
+          "content": "productive, then?"
         },
         {
           "role": "user",
-          "content": "deleted all of them. it was the right call."
+          "content": "administratively, yes. otherwise nothing happened at all."
         }
       ]
     },
@@ -656,15 +642,15 @@
     "replacement_dialogue": [
       {
         "role": "user",
-        "content": "a nine-day stopover got shortened right back down before anything was booked, so my Saturday-morning nobody-block stays where it is."
+        "content": "I've had full houses and empty ones since and honestly they came out about the same — no clear winner either way."
       },
       {
         "role": "assistant",
-        "content": "so no clash?"
+        "content": "so it doesn't matter?"
       },
       {
         "role": "user",
-        "content": "no clash. nothing to learn from it."
+        "content": "doesn't look like it does, no."
       }
     ]
   }

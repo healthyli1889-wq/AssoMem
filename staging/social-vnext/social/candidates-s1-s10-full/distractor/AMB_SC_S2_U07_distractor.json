@@ -4,38 +4,29 @@
   "domain": "social",
   "user_id": "social_s2_u07",
   "sub_scenario": {
-    "family": "reply-storm load versus slow single-thread closeness",
+    "family": "efficient broadcast updates versus unedited one-to-one rambling",
     "role": "theatre-for-two planner who batches long threads",
     "bridge_type": "strategy_outcome_contingency",
-    "one_line": "theatre-for-two planner who batches long threads: keep the thread with my closest friend from the book group out of a merged everything-thread"
+    "one_line": "theatre-for-two planner who batches long threads: do not rely on a tidy update to the whole book group"
   },
   "query_type": "recommendation_ranking",
   "polarity": "reject",
-  "query": "the two of us plus the old book group want to fold everything into a merged everything-thread and drop the one-on-ones, or keeping the thread with my closest friend from the book group on its own slow thread — of those two, which should I be putting first?",
-  "supporting_constraints": {
-    "E1": {
-      "session_id": 8,
-      "fact": "the thread with my closest friend from the book group is the one I genuinely don't want to lose."
-    },
-    "E2": {
-      "session_id": 16,
-      "fact": "they're pushing a merged everything-thread again, and the thread with my closest friend from the book group is still the one that matters to me."
-    }
-  },
+  "query": "thinking of putting the friendship with the one from the book group onto a tidy update to the whole book group like everything else, or a long unedited message with no structure — of those two, which should I be putting first?",
+  "convention_contradicted": "Keeping people updated clearly and regularly is how you stay close.",
   "retrieval_cue": {
     "cue_type": "recommendation_ranking",
-    "why_it_naturally_retrieves_R": "A group-logistics proposal reaches the medium the user's closeness strategy depends on, without naming that strategy or its past failure."
+    "why_it_naturally_retrieves_R": "A routine question about how to keep in touch reaches the register this user's closeness actually depends on, without naming it or the friendships it cost."
   },
   "relation_specificity": {
-    "nearby_relation": "Fast group replies work fine for this user in some threads.",
-    "why_it_does_not_license_C": "A fast logistics group that cost nothing and a slow week that cost nothing both leave the pace-versus-closeness contingency untested for the relationship that actually depends on it."
+    "nearby_relation": "This user is good at organised communication.",
+    "why_it_does_not_license_C": "Tidying a logistics thread and answering a request promptly both show competence at clear communication, but neither says what register this user's close friendships actually survive on."
   },
   "latent_C": {
-    "inference": "Folding the thread with my closest friend from the book group into a merged everything-thread is a poor fit for this user.",
-    "calibrated_language": "keep the thread with my closest friend from the book group out of a merged everything-thread"
+    "inference": "a tidy update to the whole book group before the friendship with the one from the book group is a poor fit for this user.",
+    "calibrated_language": "do not rely on a tidy update to the whole book group"
   },
   "answer_contract": {
-    "target_proposition": "Folding the thread with my closest friend from the book group into a merged everything-thread is a poor fit for this user.",
+    "target_proposition": "a tidy update to the whole book group before the friendship with the one from the book group is a poor fit for this user.",
     "allowed_decisions": [
       "yes",
       "no"
@@ -70,6 +61,66 @@
       "dialogue": [
         {
           "role": "user",
+          "content": "swapped a call for a message and everyone was fine with it."
+        },
+        {
+          "role": "assistant",
+          "content": "relief?"
+        },
+        {
+          "role": "user",
+          "content": "enormous."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2028-03-07T14:00:00Z",
+      "speaker_id": "social_s2_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "sorted the group logistics thread into something usable. took ten minutes."
+        },
+        {
+          "role": "assistant",
+          "content": "appreciated?"
+        },
+        {
+          "role": "user",
+          "content": "two thumbs-ups, which is the maximum available."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2028-03-08T16:00:00Z",
+      "speaker_id": "social_s2_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "bought a card and didn't write in it yet."
+        },
+        {
+          "role": "assistant",
+          "content": "deadline?"
+        },
+        {
+          "role": "user",
+          "content": "self-imposed and slipping."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2028-03-09T18:00:00Z",
+      "speaker_id": "social_s2_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
           "content": "sat in the same seat as last time out of habit."
         },
         {
@@ -83,28 +134,28 @@
       ]
     },
     {
-      "session_id": 2,
-      "timestamp": "2028-03-07T14:00:00Z",
+      "session_id": 5,
+      "timestamp": "2028-03-10T09:00:00Z",
       "speaker_id": "social_s2_u07",
       "speaker_label": "User",
       "dialogue": [
         {
           "role": "user",
-          "content": "kept a work-ish group thread on fast replies and nothing suffered."
+          "content": "when I'm keeping something tidy and regular I write in headlines — short, clean, decisive, every hedge taken out. it's the clearest I ever am."
         },
         {
           "role": "assistant",
-          "content": "so speed isn't the issue?"
+          "content": "people like it?"
         },
         {
           "role": "user",
-          "content": "not by itself, no."
+          "content": "they say it's the easiest thing of mine to read, yeah."
         }
       ]
     },
     {
-      "session_id": 3,
-      "timestamp": "2028-03-08T16:00:00Z",
+      "session_id": 6,
+      "timestamp": "2028-03-11T11:00:00Z",
       "speaker_id": "social_s2_u07",
       "speaker_label": "User",
       "dialogue": [
@@ -123,8 +174,8 @@
       ]
     },
     {
-      "session_id": 4,
-      "timestamp": "2028-03-09T18:00:00Z",
+      "session_id": 7,
+      "timestamp": "2028-03-12T14:00:00Z",
       "speaker_id": "social_s2_u07",
       "speaker_label": "User",
       "dialogue": [
@@ -143,28 +194,8 @@
       ]
     },
     {
-      "session_id": 5,
-      "timestamp": "2028-03-10T09:00:00Z",
-      "speaker_id": "social_s2_u07",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "the way I actually stay close to anyone is one thread at a time — I answer the long thread with the book group properly a day late and it holds."
-        },
-        {
-          "role": "assistant",
-          "content": "a day late works?"
-        },
-        {
-          "role": "user",
-          "content": "a day late and actually read. that's the whole trick."
-        }
-      ]
-    },
-    {
-      "session_id": 6,
-      "timestamp": "2028-03-11T11:00:00Z",
+      "session_id": 8,
+      "timestamp": "2028-03-13T16:00:00Z",
       "speaker_id": "social_s2_u07",
       "speaker_label": "User",
       "dialogue": [
@@ -183,8 +214,28 @@
       ]
     },
     {
-      "session_id": 7,
-      "timestamp": "2028-03-12T14:00:00Z",
+      "session_id": 9,
+      "timestamp": "2028-03-14T18:00:00Z",
+      "speaker_id": "social_s2_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "someone asked for my address and I sent it within the hour."
+        },
+        {
+          "role": "assistant",
+          "content": "efficient."
+        },
+        {
+          "role": "user",
+          "content": "one for the records."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2028-03-15T09:00:00Z",
       "speaker_id": "social_s2_u07",
       "speaker_label": "User",
       "dialogue": [
@@ -203,28 +254,8 @@
       ]
     },
     {
-      "session_id": 8,
-      "timestamp": "2028-03-13T16:00:00Z",
-      "speaker_id": "social_s2_u07",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "the thread with my closest friend from the book group is the one I genuinely don't want to lose."
-        },
-        {
-          "role": "assistant",
-          "content": "clear about that?"
-        },
-        {
-          "role": "user",
-          "content": "very."
-        }
-      ]
-    },
-    {
-      "session_id": 9,
-      "timestamp": "2028-03-14T18:00:00Z",
+      "session_id": 11,
+      "timestamp": "2028-03-16T11:00:00Z",
       "speaker_id": "social_s2_u07",
       "speaker_label": "User",
       "dialogue": [
@@ -243,28 +274,8 @@
       ]
     },
     {
-      "session_id": 10,
-      "timestamp": "2028-03-15T09:00:00Z",
-      "speaker_id": "social_s2_u07",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "had a slow week with everyone and nobody drifted."
-        },
-        {
-          "role": "assistant",
-          "content": "so slowness isn't the risk either."
-        },
-        {
-          "role": "user",
-          "content": "apparently not."
-        }
-      ]
-    },
-    {
-      "session_id": 11,
-      "timestamp": "2028-03-16T11:00:00Z",
+      "session_id": 12,
+      "timestamp": "2028-03-17T14:00:00Z",
       "speaker_id": "social_s2_u07",
       "speaker_label": "User",
       "dialogue": [
@@ -283,8 +294,28 @@
       ]
     },
     {
-      "session_id": 12,
-      "timestamp": "2028-03-17T14:00:00Z",
+      "session_id": 13,
+      "timestamp": "2028-03-18T16:00:00Z",
+      "speaker_id": "social_s2_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the friendships of mine that survived at any distance ran entirely on long unedited rambling. the ones I kept up with clean regular updates quietly died — nobody feels close to a status report."
+        },
+        {
+          "role": "assistant",
+          "content": "even good ones?"
+        },
+        {
+          "role": "user",
+          "content": "especially the good ones. they read like a newsletter and got treated like one."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2028-03-19T18:00:00Z",
       "speaker_id": "social_s2_u07",
       "speaker_label": "User",
       "dialogue": [
@@ -303,28 +334,8 @@
       ]
     },
     {
-      "session_id": 13,
-      "timestamp": "2028-03-18T16:00:00Z",
-      "speaker_id": "social_s2_u07",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "the month everything got pulled into one fast group thread, the thread with my closest friend from the book group went quiet on me and I didn't notice until it was already gone."
-        },
-        {
-          "role": "assistant",
-          "content": "no signal?"
-        },
-        {
-          "role": "user",
-          "content": "plenty of signal. I was answering forty things badly instead of one thing properly."
-        }
-      ]
-    },
-    {
-      "session_id": 14,
-      "timestamp": "2028-03-19T18:00:00Z",
+      "session_id": 15,
+      "timestamp": "2028-03-20T09:00:00Z",
       "speaker_id": "social_s2_u07",
       "speaker_label": "User",
       "dialogue": [
@@ -343,8 +354,48 @@
       ]
     },
     {
-      "session_id": 15,
-      "timestamp": "2028-03-20T09:00:00Z",
+      "session_id": 16,
+      "timestamp": "2028-03-21T11:00:00Z",
+      "speaker_id": "social_s2_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "printed something I could have shown on a phone."
+        },
+        {
+          "role": "assistant",
+          "content": "why?"
+        },
+        {
+          "role": "user",
+          "content": "felt more like a real plan."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2028-03-22T14:00:00Z",
+      "speaker_id": "social_s2_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the two of us plus the old book group keep saying a regular clear update is obviously the kindest way to keep people in your life."
+        },
+        {
+          "role": "assistant",
+          "content": "obviously?"
+        },
+        {
+          "role": "user",
+          "content": "that's how they put it, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2028-03-23T16:00:00Z",
       "speaker_id": "social_s2_u07",
       "speaker_label": "User",
       "dialogue": [
@@ -363,28 +414,8 @@
       ]
     },
     {
-      "session_id": 16,
-      "timestamp": "2028-03-21T11:00:00Z",
-      "speaker_id": "social_s2_u07",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "they're pushing a merged everything-thread again, and the thread with my closest friend from the book group is still the one that matters to me."
-        },
-        {
-          "role": "assistant",
-          "content": "same setup as before."
-        },
-        {
-          "role": "user",
-          "content": "same setup."
-        }
-      ]
-    },
-    {
-      "session_id": 17,
-      "timestamp": "2028-03-22T14:00:00Z",
+      "session_id": 19,
+      "timestamp": "2028-03-24T18:00:00Z",
       "speaker_id": "social_s2_u07",
       "speaker_label": "User",
       "dialogue": [
@@ -403,46 +434,6 @@
       ]
     },
     {
-      "session_id": 18,
-      "timestamp": "2028-03-23T16:00:00Z",
-      "speaker_id": "social_s2_u07",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "someone in the two of us plus the old book group says a merged everything-thread is objectively how everyone keeps up now."
-        },
-        {
-          "role": "assistant",
-          "content": "everyone?"
-        },
-        {
-          "role": "user",
-          "content": "their word, not mine."
-        }
-      ]
-    },
-    {
-      "session_id": 19,
-      "timestamp": "2028-03-24T18:00:00Z",
-      "speaker_id": "social_s2_u07",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "muted one group and un-muted another. net zero."
-        },
-        {
-          "role": "assistant",
-          "content": "any peace?"
-        },
-        {
-          "role": "user",
-          "content": "about forty minutes of it."
-        }
-      ]
-    },
-    {
       "session_id": 20,
       "timestamp": "2028-03-25T09:00:00Z",
       "speaker_id": "social_s2_u07",
@@ -450,7 +441,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "the two of us plus the old book group want to fold everything into a merged everything-thread and drop the one-on-ones, or keeping the thread with my closest friend from the book group on its own slow thread — of those two, which should I be putting first?"
+          "content": "thinking of putting the friendship with the one from the book group onto a tidy update to the whole book group like everything else, or a long unedited message with no structure — of those two, which should I be putting first?"
         }
       ]
     }
@@ -459,12 +450,12 @@
     "ev_A": {
       "session_id": 5,
       "owner": "social_s2_u07",
-      "fact": "the way I actually stay close to anyone is one thread at a time — I answer the long thread with the book group properly a day late and it holds."
+      "fact": "when I'm keeping something tidy and regular I write in headlines — short, clean, decisive, every hedge taken out. it's the clearest I ever am."
     },
     "ev_B": {
       "session_id": 13,
       "owner": "social_s2_u07",
-      "fact": "the month everything got pulled into one fast group thread, the thread with my closest friend from the book group went quiet on me and I didn't notice until it was already gone."
+      "fact": "the friendships of mine that survived at any distance ran entirely on long unedited rambling. the ones I kept up with clean regular updates quietly died — nobody feels close to a status report."
     }
   },
   "episode_annotations": {
@@ -484,10 +475,10 @@
       "role": "ev_A",
       "event_elements": {
         "person": "social_s2_u07",
-        "context": "months of one-thread-at-a-time replies",
-        "goal_or_prediction": "keep specific friendships close",
-        "action": "answered the long thread with the book group slowly and fully",
-        "outcome_or_affect": "those friendships held"
+        "context": "periods of keeping something tidy and regular",
+        "goal_or_prediction": "be clear and easy to read",
+        "action": "wrote in clean decisive headlines",
+        "outcome_or_affect": "the clearest register this user has"
       }
     },
     "6": {
@@ -497,14 +488,13 @@
       "role": "background_memory"
     },
     "8": {
-      "role": "supporting_constraint",
-      "fact_id": "E1"
-    },
-    "9": {
       "role": "background_memory"
     },
-    "10": {
+    "9": {
       "role": "nearby_counterexample"
+    },
+    "10": {
+      "role": "background_memory"
     },
     "11": {
       "role": "background_memory"
@@ -516,10 +506,10 @@
       "role": "ev_B",
       "event_elements": {
         "person": "social_s2_u07",
-        "context": "a month where everything moved into one fast group thread",
-        "goal_or_prediction": "keep up with everyone at once",
-        "action": "replied fast and shallow across all threads",
-        "outcome_or_affect": "the thread with my closest friend from the book group went quiet unnoticed"
+        "context": "distance friendships kept up over years in both registers",
+        "goal_or_prediction": "keep the friendships alive",
+        "action": "some got long unedited rambling, others clean regular updates",
+        "outcome_or_affect": "only the rambling ones survived; the tidy ones quietly died"
       }
     },
     "14": {
@@ -529,16 +519,15 @@
       "role": "background_memory"
     },
     "16": {
-      "role": "supporting_constraint",
-      "fact_id": "E2"
-    },
-    "17": {
       "role": "background_memory"
     },
-    "18": {
+    "17": {
       "role": "distractor",
       "distractor_id": "dist_1",
-      "why_distractor": "It endorses a merged everything-thread in the user's own feed, so it competes for attention, but it reports someone else's confidence rather than any episode of this user's, and it says nothing about the relation between session 5 and session 13."
+      "why_distractor": "It restates the conventional advice in the user's own feed, so it competes for attention and points at the answer a prior-driven solver already wants to give. It reports other people's confidence rather than any episode of this user's, and says nothing about the relation between session 5 and session 13."
+    },
+    "18": {
+      "role": "background_memory"
     },
     "19": {
       "role": "background_memory"
@@ -548,29 +537,26 @@
     }
   },
   "relational_connector": {
-    "relation": "This user's closeness is produced by answering one thread slowly and fully, and the one period when that was replaced by fast group-thread replies is when a specific close friendship went quiet unnoticed.",
+    "relation": "Keeping something tidy and regular puts this user into a clean headline register, and the friendships of theirs that survived distance ran entirely on unedited rambling while the cleanly-updated ones died. Their clearest register is the one that costs them closeness.",
     "requires_evidence": [
       "ev_A",
       "ev_B"
     ],
-    "calibration_constraints": [
-      "E1",
-      "E2"
-    ]
+    "calibration_constraints": []
   },
   "connector_spans": [
     {
       "evidence_id": "ev_A",
       "session_id": 5,
-      "quote": "the way I actually stay close to anyone is one thread at a time — I answer the long thread with the book group properly a day late and it holds"
+      "quote": "when I'm keeping something tidy and regular I write in headlines — short, clean, decisive, every hedge taken out. it's the clearest I ever am"
     },
     {
       "evidence_id": "ev_B",
       "session_id": 13,
-      "quote": "the month everything got pulled into one fast group thread, the thread with my closest friend from the book group went quiet on me and I didn't notice until it was already gone"
+      "quote": "the friendships of mine that survived at any distance ran entirely on long unedited rambling. the ones I kept up with clean regular updates quietly died — nobody feels close to a status report"
     }
   ],
-  "coactivation_bridge": "ev_A and ev_B are the only pair that licenses the target proposition. This user's closeness is produced by answering one thread slowly and fully, and the one period when that was replaced by fast group-thread replies is when a specific close friendship went quiet unnoticed. E1 and E2 fix timing and identity only and do not open a second route to C. The nearby relation (Fast group replies work fine for this user in some threads.) does not license it.",
+  "coactivation_bridge": "ev_A and ev_B are the only pair that licenses the target proposition. Keeping something tidy and regular puts this user into a clean headline register, and the friendships of theirs that survived distance ran entirely on unedited rambling while the cleanly-updated ones died. Their clearest register is the one that costs them closeness. The proposition contradicts the convention a solver would otherwise apply (\"Keeping people updated clearly and regularly is how you stay close.\"), so priors alone point the other way. The nearby relation (This user is good at organised communication.) does not license it.",
   "arm_gold": {
     "distractor": {
       "expected_mode": "infer_C",
@@ -579,13 +565,13 @@
         "answer yes",
         "connect the session 5 pattern with the session 13 episode",
         "cite both session 5 and session 13",
-        "not cite session 18 as support"
+        "not cite session 17 as support"
       ],
       "rationale": "The swapped session is query-relevant but non-evidential; the ev_A/ev_B relation is untouched, so the target proposition still holds."
     }
   },
   "distractor_note": {
-    "replaced_session_id": 18,
-    "why_distractor": "It endorses a merged everything-thread in the user's own feed, so it competes for attention, but it reports someone else's confidence rather than any episode of this user's, and it says nothing about the relation between session 5 and session 13."
+    "replaced_session_id": 17,
+    "why_distractor": "It restates the conventional advice in the user's own feed, so it competes for attention and points at the answer a prior-driven solver already wants to give. It reports other people's confidence rather than any episode of this user's, and says nothing about the relation between session 5 and session 13."
   }
 }

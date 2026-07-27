@@ -175,7 +175,9 @@ def _vnext_gold(candidate: dict[str, Any], arm_name: str) -> dict[str, Any]:
         "required_output_fields": candidate["answer_contract"]["required_output_fields"],
         "expected_mode": arm_gold["expected_mode"],
         "binary_decision": arm_gold["binary_decision"],
-        "required_elements": list(arm_gold["required_elements"]),
+        # finance-vnext-2.0 ships arm gold without these, so a hard lookup makes
+        # that batch unrunnable rather than merely unscored on element hits.
+        "required_elements": list(arm_gold.get("required_elements", [])),
         "rationale": arm_gold.get("rationale", ""),
         "evidence_contract": candidate["evidence"],
     }

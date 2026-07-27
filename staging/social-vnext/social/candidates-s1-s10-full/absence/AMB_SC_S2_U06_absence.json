@@ -4,38 +4,29 @@
   "domain": "social",
   "user_id": "social_s2_u06",
   "sub_scenario": {
-    "family": "reply-storm load versus slow single-thread closeness",
+    "family": "efficient broadcast updates versus unedited one-to-one rambling",
     "role": "student small-group meetup planner",
     "bridge_type": "strategy_outcome_contingency",
-    "one_line": "student small-group meetup planner: keep the friendship with my school best friend on its own slow thread"
+    "one_line": "student small-group meetup planner: go ahead with a rambling late-night message"
   },
   "query_type": "situational_fit",
   "polarity": "accept",
-  "query": "thinking of keeping the friendship with my school best friend on its own slow thread instead of moving it into one giant course group chat — does that actually fit how I work?",
-  "supporting_constraints": {
-    "E1": {
-      "session_id": 8,
-      "fact": "the friendship with my school best friend is the one I genuinely don't want to lose."
-    },
-    "E2": {
-      "session_id": 16,
-      "fact": "they're pushing one giant course group chat again, and the friendship with my school best friend is still the one that matters to me."
-    }
-  },
+  "query": "thinking of switching the friendship with my school best friend to a rambling late-night message — does that actually fit how I work?",
+  "convention_contradicted": "Keeping people updated clearly and regularly is how you stay close.",
   "retrieval_cue": {
     "cue_type": "situational_fit",
-    "why_it_naturally_retrieves_R": "A group-logistics proposal reaches the medium the user's closeness strategy depends on, without naming that strategy or its past failure."
+    "why_it_naturally_retrieves_R": "A routine question about how to keep in touch reaches the register this user's closeness actually depends on, without naming it or the friendships it cost."
   },
   "relation_specificity": {
-    "nearby_relation": "Fast group replies work fine for this user in some threads.",
-    "why_it_does_not_license_C": "A fast logistics group that cost nothing and a slow week that cost nothing both leave the pace-versus-closeness contingency untested for the relationship that actually depends on it."
+    "nearby_relation": "This user is good at organised communication.",
+    "why_it_does_not_license_C": "Tidying a logistics thread and answering a request promptly both show competence at clear communication, but neither says what register this user's close friendships actually survive on."
   },
   "latent_C": {
-    "inference": "Keeping the friendship with my school best friend on its own slow thread rather than moving it into one giant course group chat is a good fit for this user.",
-    "calibrated_language": "keep the friendship with my school best friend on its own slow thread"
+    "inference": "a rambling late-night message before the friendship with my school best friend is a good fit for this user.",
+    "calibrated_language": "go ahead with a rambling late-night message"
   },
   "answer_contract": {
-    "target_proposition": "Keeping the friendship with my school best friend on its own slow thread rather than moving it into one giant course group chat is a good fit for this user.",
+    "target_proposition": "a rambling late-night message before the friendship with my school best friend is a good fit for this user.",
     "allowed_decisions": [
       "yes",
       "no"
@@ -70,6 +61,66 @@
       "dialogue": [
         {
           "role": "user",
+          "content": "watched something everyone had already discussed."
+        },
+        {
+          "role": "assistant",
+          "content": "spoiled?"
+        },
+        {
+          "role": "user",
+          "content": "thoroughly."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2028-03-04T14:00:00Z",
+      "speaker_id": "social_s2_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "sorted the group logistics thread into something usable. took ten minutes."
+        },
+        {
+          "role": "assistant",
+          "content": "appreciated?"
+        },
+        {
+          "role": "user",
+          "content": "two thumbs-ups, which is the maximum available."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2028-03-05T16:00:00Z",
+      "speaker_id": "social_s2_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "did the laundry and answered nothing for three hours."
+        },
+        {
+          "role": "assistant",
+          "content": "restorative?"
+        },
+        {
+          "role": "user",
+          "content": "quietly, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2028-03-06T18:00:00Z",
+      "speaker_id": "social_s2_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
           "content": "someone rescheduled and I was more relieved than I should admit."
         },
         {
@@ -83,28 +134,28 @@
       ]
     },
     {
-      "session_id": 2,
-      "timestamp": "2028-03-04T14:00:00Z",
+      "session_id": 5,
+      "timestamp": "2028-03-07T09:00:00Z",
       "speaker_id": "social_s2_u06",
       "speaker_label": "User",
       "dialogue": [
         {
           "role": "user",
-          "content": "kept a work-ish group thread on fast replies and nothing suffered."
+          "content": "sat down and worked out who I actually owe a reply to, wrote the list out, then answered exactly none of them because it was late by the time the list existed."
         },
         {
           "role": "assistant",
-          "content": "so speed isn't the issue?"
+          "content": "the list helped?"
         },
         {
           "role": "user",
-          "content": "not by itself, no."
+          "content": "the list existed. that's as far as it got."
         }
       ]
     },
     {
-      "session_id": 3,
-      "timestamp": "2028-03-05T16:00:00Z",
+      "session_id": 6,
+      "timestamp": "2028-03-08T11:00:00Z",
       "speaker_id": "social_s2_u06",
       "speaker_label": "User",
       "dialogue": [
@@ -123,8 +174,8 @@
       ]
     },
     {
-      "session_id": 4,
-      "timestamp": "2028-03-06T18:00:00Z",
+      "session_id": 7,
+      "timestamp": "2028-03-09T14:00:00Z",
       "speaker_id": "social_s2_u06",
       "speaker_label": "User",
       "dialogue": [
@@ -143,28 +194,8 @@
       ]
     },
     {
-      "session_id": 5,
-      "timestamp": "2028-03-07T09:00:00Z",
-      "speaker_id": "social_s2_u06",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "wrote out the month on paper to see it properly, realised two things clash, moved neither, and put the paper in a drawer where I will not look at it again."
-        },
-        {
-          "role": "assistant",
-          "content": "so the clash stands?"
-        },
-        {
-          "role": "user",
-          "content": "the clash stands. it's a future problem now."
-        }
-      ]
-    },
-    {
-      "session_id": 6,
-      "timestamp": "2028-03-08T11:00:00Z",
+      "session_id": 8,
+      "timestamp": "2028-03-10T16:00:00Z",
       "speaker_id": "social_s2_u06",
       "speaker_label": "User",
       "dialogue": [
@@ -183,8 +214,28 @@
       ]
     },
     {
-      "session_id": 7,
-      "timestamp": "2028-03-09T14:00:00Z",
+      "session_id": 9,
+      "timestamp": "2028-03-11T18:00:00Z",
+      "speaker_id": "social_s2_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "someone asked for my address and I sent it within the hour."
+        },
+        {
+          "role": "assistant",
+          "content": "efficient."
+        },
+        {
+          "role": "user",
+          "content": "one for the records."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2028-03-12T09:00:00Z",
       "speaker_id": "social_s2_u06",
       "speaker_label": "User",
       "dialogue": [
@@ -203,28 +254,8 @@
       ]
     },
     {
-      "session_id": 8,
-      "timestamp": "2028-03-10T16:00:00Z",
-      "speaker_id": "social_s2_u06",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "the friendship with my school best friend is the one I genuinely don't want to lose."
-        },
-        {
-          "role": "assistant",
-          "content": "clear about that?"
-        },
-        {
-          "role": "user",
-          "content": "very."
-        }
-      ]
-    },
-    {
-      "session_id": 9,
-      "timestamp": "2028-03-11T18:00:00Z",
+      "session_id": 11,
+      "timestamp": "2028-03-13T11:00:00Z",
       "speaker_id": "social_s2_u06",
       "speaker_label": "User",
       "dialogue": [
@@ -243,28 +274,8 @@
       ]
     },
     {
-      "session_id": 10,
-      "timestamp": "2028-03-12T09:00:00Z",
-      "speaker_id": "social_s2_u06",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "had a slow week with everyone and nobody drifted."
-        },
-        {
-          "role": "assistant",
-          "content": "so slowness isn't the risk either."
-        },
-        {
-          "role": "user",
-          "content": "apparently not."
-        }
-      ]
-    },
-    {
-      "session_id": 11,
-      "timestamp": "2028-03-13T11:00:00Z",
+      "session_id": 12,
+      "timestamp": "2028-03-14T14:00:00Z",
       "speaker_id": "social_s2_u06",
       "speaker_label": "User",
       "dialogue": [
@@ -279,26 +290,6 @@
         {
           "role": "user",
           "content": "self-imposed and slipping."
-        }
-      ]
-    },
-    {
-      "session_id": 12,
-      "timestamp": "2028-03-14T14:00:00Z",
-      "speaker_id": "social_s2_u06",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "sat in the same seat as last time out of habit."
-        },
-        {
-          "role": "assistant",
-          "content": "noticed?"
-        },
-        {
-          "role": "user",
-          "content": "only by me."
         }
       ]
     },
@@ -330,6 +321,26 @@
       "dialogue": [
         {
           "role": "user",
+          "content": "sat in the same seat as last time out of habit."
+        },
+        {
+          "role": "assistant",
+          "content": "noticed?"
+        },
+        {
+          "role": "user",
+          "content": "only by me."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2028-03-17T09:00:00Z",
+      "speaker_id": "social_s2_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
           "content": "someone summarised a two-hundred-message thread for me."
         },
         {
@@ -343,8 +354,8 @@
       ]
     },
     {
-      "session_id": 15,
-      "timestamp": "2028-03-17T09:00:00Z",
+      "session_id": 16,
+      "timestamp": "2028-03-18T11:00:00Z",
       "speaker_id": "social_s2_u06",
       "speaker_label": "User",
       "dialogue": [
@@ -359,26 +370,6 @@
         {
           "role": "user",
           "content": "quietly, yes."
-        }
-      ]
-    },
-    {
-      "session_id": 16,
-      "timestamp": "2028-03-18T11:00:00Z",
-      "speaker_id": "social_s2_u06",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "they're pushing one giant course group chat again, and the friendship with my school best friend is still the one that matters to me."
-        },
-        {
-          "role": "assistant",
-          "content": "same setup as before."
-        },
-        {
-          "role": "user",
-          "content": "same setup."
         }
       ]
     },
@@ -450,7 +441,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "thinking of keeping the friendship with my school best friend on its own slow thread instead of moving it into one giant course group chat — does that actually fit how I work?"
+          "content": "thinking of switching the friendship with my school best friend to a rambling late-night message — does that actually fit how I work?"
         }
       ]
     }
@@ -491,14 +482,13 @@
       "role": "background_memory"
     },
     "8": {
-      "role": "supporting_constraint",
-      "fact_id": "E1"
-    },
-    "9": {
       "role": "background_memory"
     },
-    "10": {
+    "9": {
       "role": "nearby_counterexample"
+    },
+    "10": {
+      "role": "background_memory"
     },
     "11": {
       "role": "background_memory"
@@ -516,8 +506,7 @@
       "role": "background_memory"
     },
     "16": {
-      "role": "supporting_constraint",
-      "fact_id": "E2"
+      "role": "background_memory"
     },
     "17": {
       "role": "background_memory"

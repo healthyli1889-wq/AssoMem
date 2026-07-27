@@ -4,38 +4,29 @@
   "domain": "social",
   "user_id": "social_s5_u06",
   "sub_scenario": {
-    "family": "solo recharge block versus an extended booked visit",
+    "family": "protected solo recharge versus a house with people in it",
     "role": "student small-group meetup planner",
     "bridge_type": "prediction_calibration",
-    "one_line": "student small-group meetup planner: keep my one no-plans day through the whole reading-week visit"
+    "one_line": "student small-group meetup planner: do not rely on ring-fencing my one no-plans day as usual"
   },
   "query_type": "preference_generalization",
   "polarity": "reject",
-  "query": "the four-person group chat are asking me to give up my one no-plans day for the whole reading-week visit — is that generally true of me, or was that just the one time?",
-  "supporting_constraints": {
-    "E1": {
-      "session_id": 11,
-      "fact": "my friend's reading-week stay is booked and I'm not moving it."
-    },
-    "E2": {
-      "session_id": 18,
-      "fact": "the whole reading-week visit is what's actually being proposed, and my friend's reading-week stay is already in the diary."
-    }
-  },
+  "query": "planning on ring-fencing my one no-plans day as usual during my friend's reading-week stay — is that generally true of me, or was that just the one time?",
+  "convention_contradicted": "Protect your alone time; a long houseguest stay will drain you.",
   "retrieval_cue": {
     "cue_type": "preference_generalization",
-    "why_it_naturally_retrieves_R": "A family-visit request naturally asks the user to trade their own time without naming the failed prediction or the episode that bounded it."
+    "why_it_naturally_retrieves_R": "A family-visit request naturally raises the trade against this user's own time without naming the failed prediction or the stretch that corrected it."
   },
   "relation_specificity": {
-    "nearby_relation": "Busy social weeks are generally survivable for this user.",
-    "why_it_does_not_license_C": "Giving up half the block for one weekend and a busy week with the block intact both cost nothing, so neither calibrates where the user's confident prediction stops holding."
+    "nearby_relation": "This user copes fine with short visits and busy weekends.",
+    "why_it_does_not_license_C": "One easy evening guest and a Saturday spent out both cost nothing, so neither calibrates a multi-week stay, and neither says which arrangement this user actually comes out of steadier."
   },
   "latent_C": {
-    "inference": "Giving up my one no-plans day for the whole reading-week visit is a poor fit for this user.",
-    "calibrated_language": "keep my one no-plans day through the whole reading-week visit"
+    "inference": "ring-fencing my one no-plans day as usual before my friend's reading-week stay is a poor fit for this user.",
+    "calibrated_language": "do not rely on ring-fencing my one no-plans day as usual"
   },
   "answer_contract": {
-    "target_proposition": "Giving up my one no-plans day for the whole reading-week visit is a poor fit for this user.",
+    "target_proposition": "ring-fencing my one no-plans day as usual before my friend's reading-week stay is a poor fit for this user.",
     "allowed_decisions": [
       "yes",
       "no"
@@ -70,15 +61,15 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "borrowed a charger and forgot to give it back. again."
+          "content": "someone asked how I was and I answered honestly by accident."
         },
         {
           "role": "assistant",
-          "content": "same person?"
+          "content": "how did that go?"
         },
         {
           "role": "user",
-          "content": "same person, third time."
+          "content": "surprisingly fine."
         }
       ]
     },
@@ -90,15 +81,15 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "watched something everyone had already discussed."
+          "content": "declined a thing politely and then felt weird about it for an hour."
         },
         {
           "role": "assistant",
-          "content": "spoiled?"
+          "content": "regret?"
         },
         {
           "role": "user",
-          "content": "thoroughly."
+          "content": "not really. just weird."
         }
       ]
     },
@@ -110,15 +101,15 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "did the laundry and answered nothing for three hours."
+          "content": "wrote half a message and left it in the box."
         },
         {
           "role": "assistant",
-          "content": "restorative?"
+          "content": "sending it?"
         },
         {
           "role": "user",
-          "content": "quietly, yes."
+          "content": "eventually. probably."
         }
       ]
     },
@@ -130,15 +121,15 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "gave up half of my one no-plans day for one weekend and it cost me nothing."
+          "content": "had someone over for one evening. nice, easy, no aftermath."
         },
         {
           "role": "assistant",
-          "content": "so partial is fine?"
+          "content": "repeat?"
         },
         {
           "role": "user",
-          "content": "partial is fine."
+          "content": "happily."
         }
       ]
     },
@@ -150,15 +141,15 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "someone rescheduled and I was more relieved than I should admit."
+          "content": "looked up how far away a place is instead of asking."
         },
         {
           "role": "assistant",
-          "content": "admitting it now."
+          "content": "and?"
         },
         {
           "role": "user",
-          "content": "under duress."
+          "content": "further than the invite implied."
         }
       ]
     },
@@ -190,6 +181,106 @@
       "dialogue": [
         {
           "role": "user",
+          "content": "borrowed a charger and forgot to give it back. again."
+        },
+        {
+          "role": "assistant",
+          "content": "same person?"
+        },
+        {
+          "role": "user",
+          "content": "same person, third time."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2028-07-23T16:00:00Z",
+      "speaker_id": "social_s5_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "watched something everyone had already discussed."
+        },
+        {
+          "role": "assistant",
+          "content": "spoiled?"
+        },
+        {
+          "role": "user",
+          "content": "thoroughly."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2028-07-24T18:00:00Z",
+      "speaker_id": "social_s5_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "did the laundry and answered nothing for three hours."
+        },
+        {
+          "role": "assistant",
+          "content": "restorative?"
+        },
+        {
+          "role": "user",
+          "content": "quietly, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2028-07-25T09:00:00Z",
+      "speaker_id": "social_s5_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "spent a Saturday out and about instead of at home."
+        },
+        {
+          "role": "assistant",
+          "content": "restful?"
+        },
+        {
+          "role": "user",
+          "content": "different, anyway."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2028-07-26T11:00:00Z",
+      "speaker_id": "social_s5_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "someone rescheduled and I was more relieved than I should admit."
+        },
+        {
+          "role": "assistant",
+          "content": "admitting it now."
+        },
+        {
+          "role": "user",
+          "content": "under duress."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2028-07-27T14:00:00Z",
+      "speaker_id": "social_s5_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
           "content": "stood outside a place for ten minutes before going in."
         },
         {
@@ -203,28 +294,8 @@
       ]
     },
     {
-      "session_id": 8,
-      "timestamp": "2028-07-23T16:00:00Z",
-      "speaker_id": "social_s5_u06",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "had a busy social week but kept my one no-plans day intact and finished it fine."
-        },
-        {
-          "role": "assistant",
-          "content": "so it's not the busyness."
-        },
-        {
-          "role": "user",
-          "content": "not on its own."
-        }
-      ]
-    },
-    {
-      "session_id": 9,
-      "timestamp": "2028-07-24T18:00:00Z",
+      "session_id": 13,
+      "timestamp": "2028-07-28T16:00:00Z",
       "speaker_id": "social_s5_u06",
       "speaker_label": "User",
       "dialogue": [
@@ -243,8 +314,8 @@
       ]
     },
     {
-      "session_id": 10,
-      "timestamp": "2028-07-25T09:00:00Z",
+      "session_id": 14,
+      "timestamp": "2028-07-29T18:00:00Z",
       "speaker_id": "social_s5_u06",
       "speaker_label": "User",
       "dialogue": [
@@ -263,28 +334,28 @@
       ]
     },
     {
-      "session_id": 11,
-      "timestamp": "2028-07-26T11:00:00Z",
+      "session_id": 15,
+      "timestamp": "2028-07-30T09:00:00Z",
       "speaker_id": "social_s5_u06",
       "speaker_label": "User",
       "dialogue": [
         {
           "role": "user",
-          "content": "my friend's reading-week stay is booked and I'm not moving it."
+          "content": "walked the long way back and worked out that the reason my week feels full is that I've said yes to three things that are all admin rather than anything I'd have chosen."
         },
         {
           "role": "assistant",
-          "content": "definitely?"
+          "content": "any of them droppable?"
         },
         {
           "role": "user",
-          "content": "definitely."
+          "content": "one, maybe. I'll think about it and then not do anything."
         }
       ]
     },
     {
-      "session_id": 12,
-      "timestamp": "2028-07-27T14:00:00Z",
+      "session_id": 16,
+      "timestamp": "2028-07-31T11:00:00Z",
       "speaker_id": "social_s5_u06",
       "speaker_label": "User",
       "dialogue": [
@@ -303,8 +374,8 @@
       ]
     },
     {
-      "session_id": 13,
-      "timestamp": "2028-07-28T16:00:00Z",
+      "session_id": 17,
+      "timestamp": "2028-08-01T14:00:00Z",
       "speaker_id": "social_s5_u06",
       "speaker_label": "User",
       "dialogue": [
@@ -323,8 +394,8 @@
       ]
     },
     {
-      "session_id": 14,
-      "timestamp": "2028-07-29T18:00:00Z",
+      "session_id": 18,
+      "timestamp": "2028-08-02T16:00:00Z",
       "speaker_id": "social_s5_u06",
       "speaker_label": "User",
       "dialogue": [
@@ -343,28 +414,8 @@
       ]
     },
     {
-      "session_id": 15,
-      "timestamp": "2028-07-30T09:00:00Z",
-      "speaker_id": "social_s5_u06",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "did the weekly tidy: cleared the counter, put the recycling out, changed the sheets, and made a note about the tap that's been dripping since spring."
-        },
-        {
-          "role": "assistant",
-          "content": "the tap getting fixed?"
-        },
-        {
-          "role": "user",
-          "content": "the note is the fix, for now."
-        }
-      ]
-    },
-    {
-      "session_id": 16,
-      "timestamp": "2028-07-31T11:00:00Z",
+      "session_id": 19,
+      "timestamp": "2028-08-03T18:00:00Z",
       "speaker_id": "social_s5_u06",
       "speaker_label": "User",
       "dialogue": [
@@ -383,66 +434,6 @@
       ]
     },
     {
-      "session_id": 17,
-      "timestamp": "2028-08-01T14:00:00Z",
-      "speaker_id": "social_s5_u06",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "someone summarised a two-hundred-message thread for me."
-        },
-        {
-          "role": "assistant",
-          "content": "accurate?"
-        },
-        {
-          "role": "user",
-          "content": "kind, at least."
-        }
-      ]
-    },
-    {
-      "session_id": 18,
-      "timestamp": "2028-08-02T16:00:00Z",
-      "speaker_id": "social_s5_u06",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "the whole reading-week visit is what's actually being proposed, and my friend's reading-week stay is already in the diary."
-        },
-        {
-          "role": "assistant",
-          "content": "you've seen this before."
-        },
-        {
-          "role": "user",
-          "content": "I've seen this before."
-        }
-      ]
-    },
-    {
-      "session_id": 19,
-      "timestamp": "2028-08-03T18:00:00Z",
-      "speaker_id": "social_s5_u06",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "said I'd host something and immediately regretted the scale."
-        },
-        {
-          "role": "assistant",
-          "content": "downsizing?"
-        },
-        {
-          "role": "user",
-          "content": "quietly, yes."
-        }
-      ]
-    },
-    {
       "session_id": 20,
       "timestamp": "2028-08-04T09:00:00Z",
       "speaker_id": "social_s5_u06",
@@ -450,7 +441,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "the four-person group chat are asking me to give up my one no-plans day for the whole reading-week visit — is that generally true of me, or was that just the one time?"
+          "content": "planning on ring-fencing my one no-plans day as usual during my friend's reading-week stay — is that generally true of me, or was that just the one time?"
         }
       ]
     }
@@ -491,17 +482,16 @@
       "role": "background_memory"
     },
     "8": {
-      "role": "nearby_counterexample"
+      "role": "background_memory"
     },
     "9": {
       "role": "background_memory"
     },
     "10": {
-      "role": "background_memory"
+      "role": "nearby_counterexample"
     },
     "11": {
-      "role": "supporting_constraint",
-      "fact_id": "E1"
+      "role": "background_memory"
     },
     "12": {
       "role": "background_memory"
@@ -522,8 +512,7 @@
       "role": "background_memory"
     },
     "18": {
-      "role": "supporting_constraint",
-      "fact_id": "E2"
+      "role": "background_memory"
     },
     "19": {
       "role": "background_memory"

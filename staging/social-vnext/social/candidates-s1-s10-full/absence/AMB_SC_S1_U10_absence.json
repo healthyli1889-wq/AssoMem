@@ -4,38 +4,29 @@
   "domain": "social",
   "user_id": "social_s1_u10",
   "sub_scenario": {
-    "family": "big-group recovery debt versus a booked one-on-one repair conversation",
+    "family": "large-group warm-up versus a rested start before a repair conversation",
     "role": "solo-friendly workshop and panel attendee",
     "bridge_type": "state_dependent_operation",
-    "one_line": "solo-friendly workshop and panel attendee: protect the morning before the boundary conversation with my in-law"
+    "one_line": "solo-friendly workshop and panel attendee: go ahead with the panel with drinks after for everyone"
   },
   "query_type": "recommendation_ranking",
   "polarity": "accept",
-  "query": "the workshop circle want an evening panel with drinks after the night before the boundary conversation with my in-law, or keeping that morning clear before the boundary conversation with my in-law — of those two, which should I be putting first?",
-  "supporting_constraints": {
-    "E1": {
-      "session_id": 9,
-      "fact": "the boundary conversation with my in-law is on the calendar for the next morning and it isn't moving."
-    },
-    "E2": {
-      "session_id": 17,
-      "fact": "an evening panel with drinks after is the full-group version, by the way — twenty-odd people, not a quiet few."
-    }
-  },
+  "query": "the workshop circle want me at the panel with drinks after for everyone the night before the boundary conversation with my in-law, or an early, deliberately quiet evening alone — of those two, which should I be putting first?",
+  "convention_contradicted": "Do not go out the night before a difficult conversation; arrive rested.",
   "retrieval_cue": {
     "cue_type": "recommendation_ranking",
     "why_it_naturally_retrieves_R": "A friend-group invitation lands against something already booked, which forces a personalised call without naming either episode or the link between them."
   },
   "relation_specificity": {
-    "nearby_relation": "Late nights in general leave this user fine the next day.",
-    "why_it_does_not_license_C": "A short one-person lunch and a 2am finish from something small both left the next morning sharp, so neither establishes the large-group state, and neither says anything about what that state does to a difficult conversation."
+    "nearby_relation": "This user enjoys large gatherings.",
+    "why_it_does_not_license_C": "An unremarkable midweek lunch and a skipped commitment say nothing about what a large-group night does to this user's state, and nothing about which state their difficult conversations actually go well in."
   },
   "latent_C": {
-    "inference": "Protecting the morning before the boundary conversation with my in-law by skipping an evening panel with drinks after is a good fit for this user.",
-    "calibrated_language": "protect the morning before the boundary conversation with my in-law"
+    "inference": "the panel with drinks after for everyone before the boundary conversation with my in-law is a good fit for this user.",
+    "calibrated_language": "go ahead with the panel with drinks after for everyone"
   },
   "answer_contract": {
-    "target_proposition": "Protecting the morning before the boundary conversation with my in-law by skipping an evening panel with drinks after is a good fit for this user.",
+    "target_proposition": "the panel with drinks after for everyone before the boundary conversation with my in-law is a good fit for this user.",
     "allowed_decisions": [
       "yes",
       "no"
@@ -70,6 +61,66 @@
       "dialogue": [
         {
           "role": "user",
+          "content": "tidied one shelf and stopped."
+        },
+        {
+          "role": "assistant",
+          "content": "momentum?"
+        },
+        {
+          "role": "user",
+          "content": "a rumour of momentum."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2028-01-31T14:00:00Z",
+      "speaker_id": "social_s1_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "answered the family thread first, as usual."
+        },
+        {
+          "role": "assistant",
+          "content": "priority?"
+        },
+        {
+          "role": "user",
+          "content": "unspoken but real."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2028-02-01T16:00:00Z",
+      "speaker_id": "social_s1_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "did a short lunch with one person midweek. pleasant, unremarkable."
+        },
+        {
+          "role": "assistant",
+          "content": "worth repeating?"
+        },
+        {
+          "role": "user",
+          "content": "probably, yeah."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2028-02-02T18:00:00Z",
+      "speaker_id": "social_s1_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
           "content": "agreed on a date by elimination over four days."
         },
         {
@@ -83,66 +134,6 @@
       ]
     },
     {
-      "session_id": 2,
-      "timestamp": "2028-01-31T14:00:00Z",
-      "speaker_id": "social_s1_u10",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "moved two things on the calendar and called that admin done."
-        },
-        {
-          "role": "assistant",
-          "content": "productive?"
-        },
-        {
-          "role": "user",
-          "content": "generously described."
-        }
-      ]
-    },
-    {
-      "session_id": 3,
-      "timestamp": "2028-02-01T16:00:00Z",
-      "speaker_id": "social_s1_u10",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "did a short lunch with one person and was completely sharp the next morning."
-        },
-        {
-          "role": "assistant",
-          "content": "no dip?"
-        },
-        {
-          "role": "user",
-          "content": "none worth mentioning."
-        }
-      ]
-    },
-    {
-      "session_id": 4,
-      "timestamp": "2028-02-02T18:00:00Z",
-      "speaker_id": "social_s1_u10",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "finally replied to the thread from last week."
-        },
-        {
-          "role": "assistant",
-          "content": "how late is late?"
-        },
-        {
-          "role": "user",
-          "content": "nine days. a personal best."
-        }
-      ]
-    },
-    {
       "session_id": 5,
       "timestamp": "2028-02-03T09:00:00Z",
       "speaker_id": "social_s1_u10",
@@ -150,15 +141,15 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "someone sent a photo from years ago and derailed my afternoon."
+          "content": "printed something I could have shown on a phone."
         },
         {
           "role": "assistant",
-          "content": "worth it?"
+          "content": "why?"
         },
         {
           "role": "user",
-          "content": "completely."
+          "content": "felt more like a real plan."
         }
       ]
     },
@@ -190,21 +181,101 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "got in at two from something small and was completely fine the next day."
+          "content": "lost twenty minutes to a map of somewhere I'm not going."
         },
         {
           "role": "assistant",
-          "content": "so it isn't the hour?"
+          "content": "planning?"
         },
         {
           "role": "user",
-          "content": "not the hour, no."
+          "content": "wandering."
         }
       ]
     },
     {
       "session_id": 8,
       "timestamp": "2028-02-06T16:00:00Z",
+      "speaker_id": "social_s1_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "moved two things on the calendar and called that admin done."
+        },
+        {
+          "role": "assistant",
+          "content": "productive?"
+        },
+        {
+          "role": "user",
+          "content": "generously described."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2028-02-07T18:00:00Z",
+      "speaker_id": "social_s1_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "finally replied to the thread from last week."
+        },
+        {
+          "role": "assistant",
+          "content": "how late is late?"
+        },
+        {
+          "role": "user",
+          "content": "nine days. a personal best."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2028-02-08T09:00:00Z",
+      "speaker_id": "social_s1_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "someone sent a photo from years ago and derailed my afternoon."
+        },
+        {
+          "role": "assistant",
+          "content": "worth it?"
+        },
+        {
+          "role": "user",
+          "content": "completely."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2028-02-09T11:00:00Z",
+      "speaker_id": "social_s1_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "skipped a thing I'd said yes to and nobody noticed."
+        },
+        {
+          "role": "assistant",
+          "content": "guilt?"
+        },
+        {
+          "role": "user",
+          "content": "briefly. then nothing."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2028-02-10T14:00:00Z",
       "speaker_id": "social_s1_u10",
       "speaker_label": "User",
       "dialogue": [
@@ -223,28 +294,8 @@
       ]
     },
     {
-      "session_id": 9,
-      "timestamp": "2028-02-07T18:00:00Z",
-      "speaker_id": "social_s1_u10",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "the boundary conversation with my in-law is on the calendar for the next morning and it isn't moving."
-        },
-        {
-          "role": "assistant",
-          "content": "fixed?"
-        },
-        {
-          "role": "user",
-          "content": "fixed."
-        }
-      ]
-    },
-    {
-      "session_id": 10,
-      "timestamp": "2028-02-08T09:00:00Z",
+      "session_id": 13,
+      "timestamp": "2028-02-11T16:00:00Z",
       "speaker_id": "social_s1_u10",
       "speaker_label": "User",
       "dialogue": [
@@ -259,66 +310,6 @@
         {
           "role": "user",
           "content": "half deliberate."
-        }
-      ]
-    },
-    {
-      "session_id": 11,
-      "timestamp": "2028-02-09T11:00:00Z",
-      "speaker_id": "social_s1_u10",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "made a playlist for a thing that hasn't been planned yet."
-        },
-        {
-          "role": "assistant",
-          "content": "optimistic."
-        },
-        {
-          "role": "user",
-          "content": "aspirational, really."
-        }
-      ]
-    },
-    {
-      "session_id": 12,
-      "timestamp": "2028-02-10T14:00:00Z",
-      "speaker_id": "social_s1_u10",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "booked the haircut I've been putting off since spring."
-        },
-        {
-          "role": "assistant",
-          "content": "which slot?"
-        },
-        {
-          "role": "user",
-          "content": "an evening one, obviously."
-        }
-      ]
-    },
-    {
-      "session_id": 13,
-      "timestamp": "2028-02-11T16:00:00Z",
-      "speaker_id": "social_s1_u10",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "left a voice note instead of typing. felt strange."
-        },
-        {
-          "role": "assistant",
-          "content": "better or worse?"
-        },
-        {
-          "role": "user",
-          "content": "faster. not better."
         }
       ]
     },
@@ -350,6 +341,66 @@
       "dialogue": [
         {
           "role": "user",
+          "content": "made a playlist for a thing that hasn't been planned yet."
+        },
+        {
+          "role": "assistant",
+          "content": "optimistic."
+        },
+        {
+          "role": "user",
+          "content": "aspirational, really."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2028-02-14T11:00:00Z",
+      "speaker_id": "social_s1_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "booked the haircut I've been putting off since spring."
+        },
+        {
+          "role": "assistant",
+          "content": "which slot?"
+        },
+        {
+          "role": "user",
+          "content": "an evening one, obviously."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2028-02-15T14:00:00Z",
+      "speaker_id": "social_s1_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "left a voice note instead of typing. felt strange."
+        },
+        {
+          "role": "assistant",
+          "content": "faster?"
+        },
+        {
+          "role": "user",
+          "content": "faster. stranger."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2028-02-16T16:00:00Z",
+      "speaker_id": "social_s1_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
           "content": "cleaned the kitchen instead of answering anything."
         },
         {
@@ -363,8 +414,8 @@
       ]
     },
     {
-      "session_id": 16,
-      "timestamp": "2028-02-14T11:00:00Z",
+      "session_id": 19,
+      "timestamp": "2028-02-17T18:00:00Z",
       "speaker_id": "social_s1_u10",
       "speaker_label": "User",
       "dialogue": [
@@ -383,66 +434,6 @@
       ]
     },
     {
-      "session_id": 17,
-      "timestamp": "2028-02-15T14:00:00Z",
-      "speaker_id": "social_s1_u10",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "an evening panel with drinks after is the full-group version, by the way — twenty-odd people, not a quiet few."
-        },
-        {
-          "role": "assistant",
-          "content": "the big one."
-        },
-        {
-          "role": "user",
-          "content": "the big one."
-        }
-      ]
-    },
-    {
-      "session_id": 18,
-      "timestamp": "2028-02-16T16:00:00Z",
-      "speaker_id": "social_s1_u10",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "someone changed the group name again."
-        },
-        {
-          "role": "assistant",
-          "content": "improvement?"
-        },
-        {
-          "role": "user",
-          "content": "debatable."
-        }
-      ]
-    },
-    {
-      "session_id": 19,
-      "timestamp": "2028-02-17T18:00:00Z",
-      "speaker_id": "social_s1_u10",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "ate standing up reading a thread I wasn't in."
-        },
-        {
-          "role": "assistant",
-          "content": "why?"
-        },
-        {
-          "role": "user",
-          "content": "no defence."
-        }
-      ]
-    },
-    {
       "session_id": 20,
       "timestamp": "2028-02-18T09:00:00Z",
       "speaker_id": "social_s1_u10",
@@ -450,7 +441,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "the workshop circle want an evening panel with drinks after the night before the boundary conversation with my in-law, or keeping that morning clear before the boundary conversation with my in-law — of those two, which should I be putting first?"
+          "content": "the workshop circle want me at the panel with drinks after for everyone the night before the boundary conversation with my in-law, or an early, deliberately quiet evening alone — of those two, which should I be putting first?"
         }
       ]
     }
@@ -488,20 +479,19 @@
       "role": "background_memory"
     },
     "7": {
-      "role": "nearby_counterexample"
+      "role": "background_memory"
     },
     "8": {
       "role": "background_memory"
     },
     "9": {
-      "role": "supporting_constraint",
-      "fact_id": "E1"
+      "role": "background_memory"
     },
     "10": {
       "role": "background_memory"
     },
     "11": {
-      "role": "background_memory"
+      "role": "nearby_counterexample"
     },
     "12": {
       "role": "background_memory"
@@ -519,8 +509,7 @@
       "role": "background_memory"
     },
     "17": {
-      "role": "supporting_constraint",
-      "fact_id": "E2"
+      "role": "background_memory"
     },
     "18": {
       "role": "background_memory"

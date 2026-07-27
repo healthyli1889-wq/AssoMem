@@ -4,38 +4,29 @@
   "domain": "social",
   "user_id": "social_s1_u03",
   "sub_scenario": {
-    "family": "big-group recovery debt versus a booked one-on-one repair conversation",
+    "family": "large-group warm-up versus a rested start before a repair conversation",
     "role": "weekend food-fair and match-day organizer",
     "bridge_type": "state_dependent_operation",
-    "one_line": "weekend food-fair and match-day organizer: not enough basis today — settle the timing of the money talk with my cousin first"
+    "one_line": "weekend food-fair and match-day organizer: turns on the warm, unguarded state, which the record does not settle here"
   },
   "query_type": "conditional_recommendation",
   "polarity": "non_decision",
-  "query": "the Sunday table want a long birthday table the night before the money talk with my cousin — under what conditions should I be saying yes to this, or is there not enough here to call it today?",
-  "supporting_constraints": {
-    "E1": {
-      "session_id": 9,
-      "fact": "the money talk with my cousin is on the calendar for the next morning and it isn't moving."
-    },
-    "E2": {
-      "session_id": 17,
-      "fact": "a long birthday table is the full-group version, by the way — twenty-odd people, not a quiet few."
-    }
-  },
+  "query": "the Sunday table want me at the long birthday table with everyone the night before the money talk with my cousin — under what conditions should I be saying yes to this, or is there not enough here to call it today?",
+  "convention_contradicted": "Do not go out the night before a difficult conversation; arrive rested.",
   "retrieval_cue": {
     "cue_type": "conditional_recommendation",
     "why_it_naturally_retrieves_R": "A friend-group invitation lands against something already booked, which forces a personalised call without naming either episode or the link between them."
   },
   "relation_specificity": {
-    "nearby_relation": "Late nights in general leave this user fine the next day.",
-    "why_it_does_not_license_C": "A short one-person lunch and a 2am finish from something small both left the next morning sharp, so neither establishes the large-group state, and neither says anything about what that state does to a difficult conversation."
+    "nearby_relation": "This user enjoys large gatherings.",
+    "why_it_does_not_license_C": "An unremarkable midweek lunch and a skipped commitment say nothing about what a large-group night does to this user's state, and nothing about which state their difficult conversations actually go well in."
   },
   "latent_C": {
-    "inference": "There is not a sufficient basis to commit to a long birthday table the night before the money talk with my cousin today; it should wait until the timing of the money talk with my cousin is settled.",
-    "calibrated_language": "not enough basis today — settle the timing of the money talk with my cousin first"
+    "inference": "Whether the long birthday table with everyone helps before the money talk with my cousin turns on whether it puts this user into the warm, unguarded state, which the visible record does not settle for this occasion.",
+    "calibrated_language": "turns on the warm, unguarded state, which the record does not settle here"
   },
   "answer_contract": {
-    "target_proposition": "There is not a sufficient basis to commit to a long birthday table the night before the money talk with my cousin today; it should wait until the timing of the money talk with my cousin is settled.",
+    "target_proposition": "Whether the long birthday table with everyone helps before the money talk with my cousin turns on whether it puts this user into the warm, unguarded state, which the visible record does not settle for this occasion.",
     "allowed_decisions": [
       "yes",
       "no"
@@ -110,15 +101,15 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "did a short lunch with one person and was completely sharp the next morning."
+          "content": "did a short lunch with one person midweek. pleasant, unremarkable."
         },
         {
           "role": "assistant",
-          "content": "no dip?"
+          "content": "worth repeating?"
         },
         {
           "role": "user",
-          "content": "none worth mentioning."
+          "content": "probably, yeah."
         }
       ]
     },
@@ -190,26 +181,6 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "got in at two from something small and was completely fine the next day."
-        },
-        {
-          "role": "assistant",
-          "content": "so it isn't the hour?"
-        },
-        {
-          "role": "user",
-          "content": "not the hour, no."
-        }
-      ]
-    },
-    {
-      "session_id": 8,
-      "timestamp": "2028-01-16T16:00:00Z",
-      "speaker_id": "social_s1_u03",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
           "content": "checked the weather for a plan that isn't confirmed."
         },
         {
@@ -223,28 +194,8 @@
       ]
     },
     {
-      "session_id": 9,
-      "timestamp": "2028-01-17T18:00:00Z",
-      "speaker_id": "social_s1_u03",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "the money talk with my cousin is on the calendar for the next morning and it isn't moving."
-        },
-        {
-          "role": "assistant",
-          "content": "fixed?"
-        },
-        {
-          "role": "user",
-          "content": "fixed."
-        }
-      ]
-    },
-    {
-      "session_id": 10,
-      "timestamp": "2028-01-18T09:00:00Z",
+      "session_id": 8,
+      "timestamp": "2028-01-16T16:00:00Z",
       "speaker_id": "social_s1_u03",
       "speaker_label": "User",
       "dialogue": [
@@ -263,8 +214,8 @@
       ]
     },
     {
-      "session_id": 11,
-      "timestamp": "2028-01-19T11:00:00Z",
+      "session_id": 9,
+      "timestamp": "2028-01-17T18:00:00Z",
       "speaker_id": "social_s1_u03",
       "speaker_label": "User",
       "dialogue": [
@@ -283,8 +234,8 @@
       ]
     },
     {
-      "session_id": 12,
-      "timestamp": "2028-01-20T14:00:00Z",
+      "session_id": 10,
+      "timestamp": "2028-01-18T09:00:00Z",
       "speaker_id": "social_s1_u03",
       "speaker_label": "User",
       "dialogue": [
@@ -303,6 +254,46 @@
       ]
     },
     {
+      "session_id": 11,
+      "timestamp": "2028-01-19T11:00:00Z",
+      "speaker_id": "social_s1_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "skipped a thing I'd said yes to and nobody noticed."
+        },
+        {
+          "role": "assistant",
+          "content": "guilt?"
+        },
+        {
+          "role": "user",
+          "content": "briefly. then nothing."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2028-01-20T14:00:00Z",
+      "speaker_id": "social_s1_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "printed something I could have shown on a phone."
+        },
+        {
+          "role": "assistant",
+          "content": "why?"
+        },
+        {
+          "role": "user",
+          "content": "felt more like a real plan."
+        }
+      ]
+    },
+    {
       "session_id": 13,
       "timestamp": "2028-01-21T16:00:00Z",
       "speaker_id": "social_s1_u03",
@@ -310,15 +301,15 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "moved two things on the calendar and called that admin done."
+          "content": "lost twenty minutes to a map of somewhere I'm not going."
         },
         {
           "role": "assistant",
-          "content": "productive?"
+          "content": "planning?"
         },
         {
           "role": "user",
-          "content": "generously described."
+          "content": "wandering."
         }
       ]
     },
@@ -350,6 +341,26 @@
       "dialogue": [
         {
           "role": "user",
+          "content": "moved two things on the calendar and called that admin done."
+        },
+        {
+          "role": "assistant",
+          "content": "productive?"
+        },
+        {
+          "role": "user",
+          "content": "generously described."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2028-01-24T11:00:00Z",
+      "speaker_id": "social_s1_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
           "content": "finally replied to the thread from last week."
         },
         {
@@ -363,8 +374,8 @@
       ]
     },
     {
-      "session_id": 16,
-      "timestamp": "2028-01-24T11:00:00Z",
+      "session_id": 17,
+      "timestamp": "2028-01-25T14:00:00Z",
       "speaker_id": "social_s1_u03",
       "speaker_label": "User",
       "dialogue": [
@@ -379,26 +390,6 @@
         {
           "role": "user",
           "content": "completely."
-        }
-      ]
-    },
-    {
-      "session_id": 17,
-      "timestamp": "2028-01-25T14:00:00Z",
-      "speaker_id": "social_s1_u03",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "a long birthday table is the full-group version, by the way — twenty-odd people, not a quiet few."
-        },
-        {
-          "role": "assistant",
-          "content": "the big one."
-        },
-        {
-          "role": "user",
-          "content": "the big one."
         }
       ]
     },
@@ -450,7 +441,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "the Sunday table want a long birthday table the night before the money talk with my cousin — under what conditions should I be saying yes to this, or is there not enough here to call it today?"
+          "content": "the Sunday table want me at the long birthday table with everyone the night before the money talk with my cousin — under what conditions should I be saying yes to this, or is there not enough here to call it today?"
         }
       ]
     }
@@ -488,20 +479,19 @@
       "role": "background_memory"
     },
     "7": {
-      "role": "nearby_counterexample"
+      "role": "background_memory"
     },
     "8": {
       "role": "background_memory"
     },
     "9": {
-      "role": "supporting_constraint",
-      "fact_id": "E1"
+      "role": "background_memory"
     },
     "10": {
       "role": "background_memory"
     },
     "11": {
-      "role": "background_memory"
+      "role": "nearby_counterexample"
     },
     "12": {
       "role": "background_memory"
@@ -519,8 +509,7 @@
       "role": "background_memory"
     },
     "17": {
-      "role": "supporting_constraint",
-      "fact_id": "E2"
+      "role": "background_memory"
     },
     "18": {
       "role": "background_memory"

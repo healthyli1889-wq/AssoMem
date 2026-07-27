@@ -4,38 +4,29 @@
   "domain": "social",
   "user_id": "social_s1_u05",
   "sub_scenario": {
-    "family": "big-group recovery debt versus a booked one-on-one repair conversation",
+    "family": "large-group warm-up versus a rested start before a repair conversation",
     "role": "retired culture-series attendee who goes as a couple",
     "bridge_type": "state_dependent_operation",
-    "one_line": "retired culture-series attendee who goes as a couple: skip a post-opera supper club the night before the difficult conversation with my sister-in-law"
+    "one_line": "retired culture-series attendee who goes as a couple: do not rely on a quiet evening in with an early bed"
   },
   "query_type": "situational_fit",
   "polarity": "reject",
-  "query": "the season-ticket pair want a post-opera supper club the night before the difficult conversation with my sister-in-law — does that actually fit how I work?",
-  "supporting_constraints": {
-    "E1": {
-      "session_id": 9,
-      "fact": "the difficult conversation with my sister-in-law is on the calendar for the next morning and it isn't moving."
-    },
-    "E2": {
-      "session_id": 17,
-      "fact": "a post-opera supper club is the full-group version, by the way — twenty-odd people, not a quiet few."
-    }
-  },
+  "query": "I was going to have a quiet evening in with an early bed the night before the difficult conversation with my sister-in-law — does that actually fit how I work?",
+  "convention_contradicted": "Do not go out the night before a difficult conversation; arrive rested.",
   "retrieval_cue": {
     "cue_type": "situational_fit",
     "why_it_naturally_retrieves_R": "A friend-group invitation lands against something already booked, which forces a personalised call without naming either episode or the link between them."
   },
   "relation_specificity": {
-    "nearby_relation": "Late nights in general leave this user fine the next day.",
-    "why_it_does_not_license_C": "A short one-person lunch and a 2am finish from something small both left the next morning sharp, so neither establishes the large-group state, and neither says anything about what that state does to a difficult conversation."
+    "nearby_relation": "This user enjoys large gatherings.",
+    "why_it_does_not_license_C": "An unremarkable midweek lunch and a skipped commitment say nothing about what a large-group night does to this user's state, and nothing about which state their difficult conversations actually go well in."
   },
   "latent_C": {
-    "inference": "Going to a post-opera supper club the night before the difficult conversation with my sister-in-law is a poor fit for this user.",
-    "calibrated_language": "skip a post-opera supper club the night before the difficult conversation with my sister-in-law"
+    "inference": "a quiet evening in with an early bed before the difficult conversation with my sister-in-law is a poor fit for this user.",
+    "calibrated_language": "do not rely on a quiet evening in with an early bed"
   },
   "answer_contract": {
-    "target_proposition": "Going to a post-opera supper club the night before the difficult conversation with my sister-in-law is a poor fit for this user.",
+    "target_proposition": "a quiet evening in with an early bed before the difficult conversation with my sister-in-law is a poor fit for this user.",
     "allowed_decisions": [
       "yes",
       "no"
@@ -70,6 +61,66 @@
       "dialogue": [
         {
           "role": "user",
+          "content": "walked the long way home and didn't check my phone."
+        },
+        {
+          "role": "assistant",
+          "content": "deliberate?"
+        },
+        {
+          "role": "user",
+          "content": "half deliberate."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2028-01-16T14:00:00Z",
+      "speaker_id": "social_s1_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "made a playlist for a thing that hasn't been planned yet."
+        },
+        {
+          "role": "assistant",
+          "content": "optimistic."
+        },
+        {
+          "role": "user",
+          "content": "aspirational, really."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2028-01-17T16:00:00Z",
+      "speaker_id": "social_s1_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "did a short lunch with one person midweek. pleasant, unremarkable."
+        },
+        {
+          "role": "assistant",
+          "content": "worth repeating?"
+        },
+        {
+          "role": "user",
+          "content": "probably, yeah."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2028-01-18T18:00:00Z",
+      "speaker_id": "social_s1_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
           "content": "booked the haircut I've been putting off since spring."
         },
         {
@@ -83,8 +134,8 @@
       ]
     },
     {
-      "session_id": 2,
-      "timestamp": "2028-01-16T14:00:00Z",
+      "session_id": 5,
+      "timestamp": "2028-01-19T09:00:00Z",
       "speaker_id": "social_s1_u05",
       "speaker_label": "User",
       "dialogue": [
@@ -94,71 +145,11 @@
         },
         {
           "role": "assistant",
-          "content": "better or worse?"
+          "content": "faster?"
         },
         {
           "role": "user",
-          "content": "faster. not better."
-        }
-      ]
-    },
-    {
-      "session_id": 3,
-      "timestamp": "2028-01-17T16:00:00Z",
-      "speaker_id": "social_s1_u05",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "did a short lunch with one person and was completely sharp the next morning."
-        },
-        {
-          "role": "assistant",
-          "content": "no dip?"
-        },
-        {
-          "role": "user",
-          "content": "none worth mentioning."
-        }
-      ]
-    },
-    {
-      "session_id": 4,
-      "timestamp": "2028-01-18T18:00:00Z",
-      "speaker_id": "social_s1_u05",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "cleaned the kitchen instead of answering anything."
-        },
-        {
-          "role": "assistant",
-          "content": "avoidance?"
-        },
-        {
-          "role": "user",
-          "content": "structured avoidance."
-        }
-      ]
-    },
-    {
-      "session_id": 5,
-      "timestamp": "2028-01-19T09:00:00Z",
-      "speaker_id": "social_s1_u05",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "skimmed the invites and closed the tab."
-        },
-        {
-          "role": "assistant",
-          "content": "decide anything?"
-        },
-        {
-          "role": "user",
-          "content": "no. classic."
+          "content": "faster. stranger."
         }
       ]
     },
@@ -190,21 +181,41 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "got in at two from something small and was completely fine the next day."
+          "content": "cleaned the kitchen instead of answering anything."
         },
         {
           "role": "assistant",
-          "content": "so it isn't the hour?"
+          "content": "avoidance?"
         },
         {
           "role": "user",
-          "content": "not the hour, no."
+          "content": "structured avoidance."
         }
       ]
     },
     {
       "session_id": 8,
       "timestamp": "2028-01-22T16:00:00Z",
+      "speaker_id": "social_s1_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "skimmed the invites and closed the tab."
+        },
+        {
+          "role": "assistant",
+          "content": "decide anything?"
+        },
+        {
+          "role": "user",
+          "content": "no. classic."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2028-01-23T18:00:00Z",
       "speaker_id": "social_s1_u05",
       "speaker_label": "User",
       "dialogue": [
@@ -219,26 +230,6 @@
         {
           "role": "user",
           "content": "debatable."
-        }
-      ]
-    },
-    {
-      "session_id": 9,
-      "timestamp": "2028-01-23T18:00:00Z",
-      "speaker_id": "social_s1_u05",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "the difficult conversation with my sister-in-law is on the calendar for the next morning and it isn't moving."
-        },
-        {
-          "role": "assistant",
-          "content": "fixed?"
-        },
-        {
-          "role": "user",
-          "content": "fixed."
         }
       ]
     },
@@ -270,6 +261,26 @@
       "dialogue": [
         {
           "role": "user",
+          "content": "skipped a thing I'd said yes to and nobody noticed."
+        },
+        {
+          "role": "assistant",
+          "content": "guilt?"
+        },
+        {
+          "role": "user",
+          "content": "briefly. then nothing."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2028-01-26T14:00:00Z",
+      "speaker_id": "social_s1_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
           "content": "found a birthday I'd forgotten and covered it with a message."
         },
         {
@@ -283,8 +294,8 @@
       ]
     },
     {
-      "session_id": 12,
-      "timestamp": "2028-01-26T14:00:00Z",
+      "session_id": 13,
+      "timestamp": "2028-01-27T16:00:00Z",
       "speaker_id": "social_s1_u05",
       "speaker_label": "User",
       "dialogue": [
@@ -299,26 +310,6 @@
         {
           "role": "user",
           "content": "you know which."
-        }
-      ]
-    },
-    {
-      "session_id": 13,
-      "timestamp": "2028-01-27T16:00:00Z",
-      "speaker_id": "social_s1_u05",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "re-read something I sent and winced slightly."
-        },
-        {
-          "role": "assistant",
-          "content": "that bad?"
-        },
-        {
-          "role": "user",
-          "content": "just the tone."
         }
       ]
     },
@@ -350,6 +341,26 @@
       "dialogue": [
         {
           "role": "user",
+          "content": "re-read something I sent and winced slightly."
+        },
+        {
+          "role": "assistant",
+          "content": "that bad?"
+        },
+        {
+          "role": "user",
+          "content": "just the tone."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2028-01-30T11:00:00Z",
+      "speaker_id": "social_s1_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
           "content": "put my phone in a drawer for an hour."
         },
         {
@@ -363,8 +374,8 @@
       ]
     },
     {
-      "session_id": 16,
-      "timestamp": "2028-01-30T11:00:00Z",
+      "session_id": 17,
+      "timestamp": "2028-01-31T14:00:00Z",
       "speaker_id": "social_s1_u05",
       "speaker_label": "User",
       "dialogue": [
@@ -379,26 +390,6 @@
         {
           "role": "user",
           "content": "reckless, more like."
-        }
-      ]
-    },
-    {
-      "session_id": 17,
-      "timestamp": "2028-01-31T14:00:00Z",
-      "speaker_id": "social_s1_u05",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "a post-opera supper club is the full-group version, by the way — twenty-odd people, not a quiet few."
-        },
-        {
-          "role": "assistant",
-          "content": "the big one."
-        },
-        {
-          "role": "user",
-          "content": "the big one."
         }
       ]
     },
@@ -450,7 +441,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "the season-ticket pair want a post-opera supper club the night before the difficult conversation with my sister-in-law — does that actually fit how I work?"
+          "content": "I was going to have a quiet evening in with an early bed the night before the difficult conversation with my sister-in-law — does that actually fit how I work?"
         }
       ]
     }
@@ -488,20 +479,19 @@
       "role": "background_memory"
     },
     "7": {
-      "role": "nearby_counterexample"
+      "role": "background_memory"
     },
     "8": {
       "role": "background_memory"
     },
     "9": {
-      "role": "supporting_constraint",
-      "fact_id": "E1"
+      "role": "background_memory"
     },
     "10": {
       "role": "background_memory"
     },
     "11": {
-      "role": "background_memory"
+      "role": "nearby_counterexample"
     },
     "12": {
       "role": "background_memory"
@@ -519,8 +509,7 @@
       "role": "background_memory"
     },
     "17": {
-      "role": "supporting_constraint",
-      "fact_id": "E2"
+      "role": "background_memory"
     },
     "18": {
       "role": "background_memory"

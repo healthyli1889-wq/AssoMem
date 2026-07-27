@@ -4,38 +4,29 @@
   "domain": "social",
   "user_id": "social_s2_u02",
   "sub_scenario": {
-    "family": "reply-storm load versus slow single-thread closeness",
+    "family": "efficient broadcast updates versus unedited one-to-one rambling",
     "role": "student festival-goer who keeps family threads on top",
     "bridge_type": "strategy_outcome_contingency",
-    "one_line": "student festival-goer who keeps family threads on top: keep the thread with my grandmother out of a single all-in channel"
+    "one_line": "student festival-goer who keeps family threads on top: do not rely on a clean regular family update"
   },
   "query_type": "situational_fit",
   "polarity": "reject",
-  "query": "the res-hall group want to fold everything into a single all-in channel and drop the one-on-ones — does that actually fit how I work?",
-  "supporting_constraints": {
-    "E1": {
-      "session_id": 8,
-      "fact": "the thread with my grandmother is the one I genuinely don't want to lose."
-    },
-    "E2": {
-      "session_id": 16,
-      "fact": "they're pushing a single all-in channel again, and the thread with my grandmother is still the one that matters to me."
-    }
-  },
+  "query": "thinking of putting the thread with my grandmother onto a clean regular family update like everything else — does that actually fit how I work?",
+  "convention_contradicted": "Keeping people updated clearly and regularly is how you stay close.",
   "retrieval_cue": {
     "cue_type": "situational_fit",
-    "why_it_naturally_retrieves_R": "A group-logistics proposal reaches the medium the user's closeness strategy depends on, without naming that strategy or its past failure."
+    "why_it_naturally_retrieves_R": "A routine question about how to keep in touch reaches the register this user's closeness actually depends on, without naming it or the friendships it cost."
   },
   "relation_specificity": {
-    "nearby_relation": "Fast group replies work fine for this user in some threads.",
-    "why_it_does_not_license_C": "A fast logistics group that cost nothing and a slow week that cost nothing both leave the pace-versus-closeness contingency untested for the relationship that actually depends on it."
+    "nearby_relation": "This user is good at organised communication.",
+    "why_it_does_not_license_C": "Tidying a logistics thread and answering a request promptly both show competence at clear communication, but neither says what register this user's close friendships actually survive on."
   },
   "latent_C": {
-    "inference": "Folding the thread with my grandmother into a single all-in channel is a poor fit for this user.",
-    "calibrated_language": "keep the thread with my grandmother out of a single all-in channel"
+    "inference": "a clean regular family update before the thread with my grandmother is a poor fit for this user.",
+    "calibrated_language": "do not rely on a clean regular family update"
   },
   "answer_contract": {
-    "target_proposition": "Folding the thread with my grandmother into a single all-in channel is a poor fit for this user.",
+    "target_proposition": "a clean regular family update before the thread with my grandmother is a poor fit for this user.",
     "allowed_decisions": [
       "yes",
       "no"
@@ -90,15 +81,15 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "kept a work-ish group thread on fast replies and nothing suffered."
+          "content": "sorted the group logistics thread into something usable. took ten minutes."
         },
         {
           "role": "assistant",
-          "content": "so speed isn't the issue?"
+          "content": "appreciated?"
         },
         {
           "role": "user",
-          "content": "not by itself, no."
+          "content": "two thumbs-ups, which is the maximum available."
         }
       ]
     },
@@ -130,6 +121,66 @@
       "dialogue": [
         {
           "role": "user",
+          "content": "printed something I could have shown on a phone."
+        },
+        {
+          "role": "assistant",
+          "content": "why?"
+        },
+        {
+          "role": "user",
+          "content": "felt more like a real plan."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2028-02-24T09:00:00Z",
+      "speaker_id": "social_s2_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "sat down and worked out who I actually owe a reply to, wrote the list out, then answered exactly none of them because it was late by the time the list existed."
+        },
+        {
+          "role": "assistant",
+          "content": "the list helped?"
+        },
+        {
+          "role": "user",
+          "content": "the list existed. that's as far as it got."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2028-02-25T11:00:00Z",
+      "speaker_id": "social_s2_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "lost twenty minutes to a map of somewhere I'm not going."
+        },
+        {
+          "role": "assistant",
+          "content": "planning?"
+        },
+        {
+          "role": "user",
+          "content": "wandering."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2028-02-26T14:00:00Z",
+      "speaker_id": "social_s2_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
           "content": "moved two things on the calendar and called that admin done."
         },
         {
@@ -143,28 +194,8 @@
       ]
     },
     {
-      "session_id": 5,
-      "timestamp": "2028-02-24T09:00:00Z",
-      "speaker_id": "social_s2_u02",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "spent most of the evening sorting old photos into folders by year, which turned into reading old threads instead, which turned into it being midnight."
-        },
-        {
-          "role": "assistant",
-          "content": "worth it?"
-        },
-        {
-          "role": "user",
-          "content": "not by any measure I'd defend out loud."
-        }
-      ]
-    },
-    {
-      "session_id": 6,
-      "timestamp": "2028-02-25T11:00:00Z",
+      "session_id": 8,
+      "timestamp": "2028-02-27T16:00:00Z",
       "speaker_id": "social_s2_u02",
       "speaker_label": "User",
       "dialogue": [
@@ -183,8 +214,28 @@
       ]
     },
     {
-      "session_id": 7,
-      "timestamp": "2028-02-26T14:00:00Z",
+      "session_id": 9,
+      "timestamp": "2028-02-28T18:00:00Z",
+      "speaker_id": "social_s2_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "someone asked for my address and I sent it within the hour."
+        },
+        {
+          "role": "assistant",
+          "content": "efficient."
+        },
+        {
+          "role": "user",
+          "content": "one for the records."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2028-02-29T09:00:00Z",
       "speaker_id": "social_s2_u02",
       "speaker_label": "User",
       "dialogue": [
@@ -203,28 +254,8 @@
       ]
     },
     {
-      "session_id": 8,
-      "timestamp": "2028-02-27T16:00:00Z",
-      "speaker_id": "social_s2_u02",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "the thread with my grandmother is the one I genuinely don't want to lose."
-        },
-        {
-          "role": "assistant",
-          "content": "clear about that?"
-        },
-        {
-          "role": "user",
-          "content": "very."
-        }
-      ]
-    },
-    {
-      "session_id": 9,
-      "timestamp": "2028-02-28T18:00:00Z",
+      "session_id": 11,
+      "timestamp": "2028-03-01T11:00:00Z",
       "speaker_id": "social_s2_u02",
       "speaker_label": "User",
       "dialogue": [
@@ -243,28 +274,8 @@
       ]
     },
     {
-      "session_id": 10,
-      "timestamp": "2028-02-29T09:00:00Z",
-      "speaker_id": "social_s2_u02",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "had a slow week with everyone and nobody drifted."
-        },
-        {
-          "role": "assistant",
-          "content": "so slowness isn't the risk either."
-        },
-        {
-          "role": "user",
-          "content": "apparently not."
-        }
-      ]
-    },
-    {
-      "session_id": 11,
-      "timestamp": "2028-03-01T11:00:00Z",
+      "session_id": 12,
+      "timestamp": "2028-03-02T14:00:00Z",
       "speaker_id": "social_s2_u02",
       "speaker_label": "User",
       "dialogue": [
@@ -279,26 +290,6 @@
         {
           "role": "user",
           "content": "half deliberate."
-        }
-      ]
-    },
-    {
-      "session_id": 12,
-      "timestamp": "2028-03-02T14:00:00Z",
-      "speaker_id": "social_s2_u02",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "made a playlist for a thing that hasn't been planned yet."
-        },
-        {
-          "role": "assistant",
-          "content": "optimistic."
-        },
-        {
-          "role": "user",
-          "content": "aspirational, really."
         }
       ]
     },
@@ -330,6 +321,26 @@
       "dialogue": [
         {
           "role": "user",
+          "content": "made a playlist for a thing that hasn't been planned yet."
+        },
+        {
+          "role": "assistant",
+          "content": "optimistic."
+        },
+        {
+          "role": "user",
+          "content": "aspirational, really."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2028-03-05T09:00:00Z",
+      "speaker_id": "social_s2_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
           "content": "booked the haircut I've been putting off since spring."
         },
         {
@@ -343,8 +354,8 @@
       ]
     },
     {
-      "session_id": 15,
-      "timestamp": "2028-03-05T09:00:00Z",
+      "session_id": 16,
+      "timestamp": "2028-03-06T11:00:00Z",
       "speaker_id": "social_s2_u02",
       "speaker_label": "User",
       "dialogue": [
@@ -354,31 +365,11 @@
         },
         {
           "role": "assistant",
-          "content": "better or worse?"
+          "content": "faster?"
         },
         {
           "role": "user",
-          "content": "faster. not better."
-        }
-      ]
-    },
-    {
-      "session_id": 16,
-      "timestamp": "2028-03-06T11:00:00Z",
-      "speaker_id": "social_s2_u02",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "they're pushing a single all-in channel again, and the thread with my grandmother is still the one that matters to me."
-        },
-        {
-          "role": "assistant",
-          "content": "same setup as before."
-        },
-        {
-          "role": "user",
-          "content": "same setup."
+          "content": "faster. stranger."
         }
       ]
     },
@@ -450,7 +441,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "the res-hall group want to fold everything into a single all-in channel and drop the one-on-ones — does that actually fit how I work?"
+          "content": "thinking of putting the thread with my grandmother onto a clean regular family update like everything else — does that actually fit how I work?"
         }
       ]
     }
@@ -491,14 +482,13 @@
       "role": "background_memory"
     },
     "8": {
-      "role": "supporting_constraint",
-      "fact_id": "E1"
-    },
-    "9": {
       "role": "background_memory"
     },
-    "10": {
+    "9": {
       "role": "nearby_counterexample"
+    },
+    "10": {
+      "role": "background_memory"
     },
     "11": {
       "role": "background_memory"
@@ -516,8 +506,7 @@
       "role": "background_memory"
     },
     "16": {
-      "role": "supporting_constraint",
-      "fact_id": "E2"
+      "role": "background_memory"
     },
     "17": {
       "role": "background_memory"

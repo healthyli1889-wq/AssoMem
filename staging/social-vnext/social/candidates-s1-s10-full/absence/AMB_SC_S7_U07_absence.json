@@ -4,38 +4,29 @@
   "domain": "social",
   "user_id": "social_s7_u07",
   "sub_scenario": {
-    "family": "unannounced drop-ins versus a protected standing check-in rhythm",
+    "family": "a protected clear day versus a day whose plan has already broken",
     "role": "theatre-for-two planner who batches long threads",
     "bridge_type": "threshold_context_interaction",
-    "one_line": "theatre-for-two planner who batches long threads: keep the days when the standing call with my closest friend is due clear of a spontaneous mid-week visit"
+    "one_line": "theatre-for-two planner who batches long threads: do not rely on keeping the whole day clear for it"
   },
   "query_type": "situational_fit",
   "polarity": "reject",
-  "query": "someone from the two of us plus the old book group wants a spontaneous mid-week visit on a day when the standing call with my closest friend is due — does that actually fit how I work?",
-  "supporting_constraints": {
-    "E1": {
-      "session_id": 11,
-      "fact": "the standing call with my closest friend is the one standing thing I've managed to keep."
-    },
-    "E2": {
-      "session_id": 18,
-      "fact": "a spontaneous mid-week visit is on the cards again for a day when the standing call with my closest friend is due."
-    }
-  },
+  "query": "planning on keeping the whole day clear for it on the day the standing call with my closest friend is due — does that actually fit how I work?",
+  "convention_contradicted": "Keep the day clear so you can give the call your full attention.",
   "retrieval_cue": {
     "cue_type": "situational_fit",
-    "why_it_naturally_retrieves_R": "A friendly spontaneous visit is proposed on a day already carrying a standing commitment, without naming the displacement episode."
+    "why_it_naturally_retrieves_R": "A friendly spontaneous visit is proposed on a day already carrying a standing commitment, without naming what either does for this user."
   },
   "relation_specificity": {
-    "nearby_relation": "Visitors are generally welcome for this user.",
-    "why_it_does_not_license_C": "A drop-in on an open day and a planned visitor on a busy day both left everything after them intact, so neither shows an unplanned arrival displacing a standing commitment."
+    "nearby_relation": "This user is flexible about visitors and about free days.",
+    "why_it_does_not_license_C": "A brief easy visit and a pleasant empty Thursday both passed without consequence, so neither shows what a broken plan does for this user, nor which days their standing calls actually go anywhere."
   },
   "latent_C": {
-    "inference": "Taking a spontaneous mid-week visit on a day when the standing call with my closest friend is due is a poor fit for this user.",
-    "calibrated_language": "keep the days when the standing call with my closest friend is due clear of a spontaneous mid-week visit"
+    "inference": "keeping the whole day clear for it before the standing call with my closest friend is a poor fit for this user.",
+    "calibrated_language": "do not rely on keeping the whole day clear for it"
   },
   "answer_contract": {
-    "target_proposition": "Taking a spontaneous mid-week visit on a day when the standing call with my closest friend is due is a poor fit for this user.",
+    "target_proposition": "keeping the whole day clear for it before the standing call with my closest friend is a poor fit for this user.",
     "allowed_decisions": [
       "yes",
       "no"
@@ -70,6 +61,186 @@
       "dialogue": [
         {
           "role": "user",
+          "content": "cleaned the kitchen instead of answering anything."
+        },
+        {
+          "role": "assistant",
+          "content": "avoidance?"
+        },
+        {
+          "role": "user",
+          "content": "structured avoidance."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2028-10-18T14:00:00Z",
+      "speaker_id": "social_s7_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "skimmed the invites and closed the tab."
+        },
+        {
+          "role": "assistant",
+          "content": "decide anything?"
+        },
+        {
+          "role": "user",
+          "content": "no. classic."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2028-10-19T16:00:00Z",
+      "speaker_id": "social_s7_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "someone changed the group name again."
+        },
+        {
+          "role": "assistant",
+          "content": "improvement?"
+        },
+        {
+          "role": "user",
+          "content": "debatable."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2028-10-20T18:00:00Z",
+      "speaker_id": "social_s7_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "someone came by for twenty minutes and then left. easy."
+        },
+        {
+          "role": "assistant",
+          "content": "disruptive?"
+        },
+        {
+          "role": "user",
+          "content": "not remotely."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2028-10-21T09:00:00Z",
+      "speaker_id": "social_s7_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "ate standing up reading a thread I wasn't in."
+        },
+        {
+          "role": "assistant",
+          "content": "why?"
+        },
+        {
+          "role": "user",
+          "content": "no defence."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2028-10-22T11:00:00Z",
+      "speaker_id": "social_s7_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "had a completely clear Thursday and enjoyed it."
+        },
+        {
+          "role": "assistant",
+          "content": "did much?"
+        },
+        {
+          "role": "user",
+          "content": "not a thing, deliberately."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2028-10-23T14:00:00Z",
+      "speaker_id": "social_s7_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "found a birthday I'd forgotten and covered it with a message."
+        },
+        {
+          "role": "assistant",
+          "content": "did it land?"
+        },
+        {
+          "role": "user",
+          "content": "seemed to."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2028-10-24T16:00:00Z",
+      "speaker_id": "social_s7_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "did a full pass over the whole calendar this afternoon, moved three things, cancelled one, and renamed a recurring entry that has had the wrong name since last year."
+        },
+        {
+          "role": "assistant",
+          "content": "productive, then?"
+        },
+        {
+          "role": "user",
+          "content": "administratively, yes. otherwise nothing happened at all."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2028-10-25T18:00:00Z",
+      "speaker_id": "social_s7_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "said maybe to two things I already knew the answer to."
+        },
+        {
+          "role": "assistant",
+          "content": "which answer?"
+        },
+        {
+          "role": "user",
+          "content": "you know which."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2028-10-26T09:00:00Z",
+      "speaker_id": "social_s7_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
           "content": "re-read something I sent and winced slightly."
         },
         {
@@ -83,8 +254,8 @@
       ]
     },
     {
-      "session_id": 2,
-      "timestamp": "2028-10-18T14:00:00Z",
+      "session_id": 11,
+      "timestamp": "2028-10-27T11:00:00Z",
       "speaker_id": "social_s7_u07",
       "speaker_label": "User",
       "dialogue": [
@@ -103,8 +274,8 @@
       ]
     },
     {
-      "session_id": 3,
-      "timestamp": "2028-10-19T16:00:00Z",
+      "session_id": 12,
+      "timestamp": "2028-10-28T14:00:00Z",
       "speaker_id": "social_s7_u07",
       "speaker_label": "User",
       "dialogue": [
@@ -123,28 +294,8 @@
       ]
     },
     {
-      "session_id": 4,
-      "timestamp": "2028-10-20T18:00:00Z",
-      "speaker_id": "social_s7_u07",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "had someone drop in on a completely open day and it was genuinely lovely."
-        },
-        {
-          "role": "assistant",
-          "content": "no cost?"
-        },
-        {
-          "role": "user",
-          "content": "none at all."
-        }
-      ]
-    },
-    {
-      "session_id": 5,
-      "timestamp": "2028-10-21T09:00:00Z",
+      "session_id": 13,
+      "timestamp": "2028-10-29T16:00:00Z",
       "speaker_id": "social_s7_u07",
       "speaker_label": "User",
       "dialogue": [
@@ -163,28 +314,8 @@
       ]
     },
     {
-      "session_id": 6,
-      "timestamp": "2028-10-22T11:00:00Z",
-      "speaker_id": "social_s7_u07",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "had a planned visitor on a busy day and everything after it still happened."
-        },
-        {
-          "role": "assistant",
-          "content": "so planned is fine."
-        },
-        {
-          "role": "user",
-          "content": "planned is fine."
-        }
-      ]
-    },
-    {
-      "session_id": 7,
-      "timestamp": "2028-10-23T14:00:00Z",
+      "session_id": 14,
+      "timestamp": "2028-10-30T18:00:00Z",
       "speaker_id": "social_s7_u07",
       "speaker_label": "User",
       "dialogue": [
@@ -203,28 +334,8 @@
       ]
     },
     {
-      "session_id": 8,
-      "timestamp": "2028-10-24T16:00:00Z",
-      "speaker_id": "social_s7_u07",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "ended up rearranging the shelf instead of doing the thing I sat down to do, and then rearranged it back because the first version was better."
-        },
-        {
-          "role": "assistant",
-          "content": "net progress?"
-        },
-        {
-          "role": "user",
-          "content": "net zero, with extra steps."
-        }
-      ]
-    },
-    {
-      "session_id": 9,
-      "timestamp": "2028-10-25T18:00:00Z",
+      "session_id": 15,
+      "timestamp": "2028-10-31T09:00:00Z",
       "speaker_id": "social_s7_u07",
       "speaker_label": "User",
       "dialogue": [
@@ -239,126 +350,6 @@
         {
           "role": "user",
           "content": "surprisingly fine."
-        }
-      ]
-    },
-    {
-      "session_id": 10,
-      "timestamp": "2028-10-26T09:00:00Z",
-      "speaker_id": "social_s7_u07",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "declined a thing politely and then felt weird about it for an hour."
-        },
-        {
-          "role": "assistant",
-          "content": "regret?"
-        },
-        {
-          "role": "user",
-          "content": "not really. just weird."
-        }
-      ]
-    },
-    {
-      "session_id": 11,
-      "timestamp": "2028-10-27T11:00:00Z",
-      "speaker_id": "social_s7_u07",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "the standing call with my closest friend is the one standing thing I've managed to keep."
-        },
-        {
-          "role": "assistant",
-          "content": "protective of it?"
-        },
-        {
-          "role": "user",
-          "content": "very."
-        }
-      ]
-    },
-    {
-      "session_id": 12,
-      "timestamp": "2028-10-28T14:00:00Z",
-      "speaker_id": "social_s7_u07",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "wrote half a message and left it in the box."
-        },
-        {
-          "role": "assistant",
-          "content": "sending it?"
-        },
-        {
-          "role": "user",
-          "content": "eventually. probably."
-        }
-      ]
-    },
-    {
-      "session_id": 13,
-      "timestamp": "2028-10-29T16:00:00Z",
-      "speaker_id": "social_s7_u07",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "looked up how far away a place is instead of asking."
-        },
-        {
-          "role": "assistant",
-          "content": "and?"
-        },
-        {
-          "role": "user",
-          "content": "further than the invite implied."
-        }
-      ]
-    },
-    {
-      "session_id": 14,
-      "timestamp": "2028-10-30T18:00:00Z",
-      "speaker_id": "social_s7_u07",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "borrowed a charger and forgot to give it back. again."
-        },
-        {
-          "role": "assistant",
-          "content": "same person?"
-        },
-        {
-          "role": "user",
-          "content": "same person, third time."
-        }
-      ]
-    },
-    {
-      "session_id": 15,
-      "timestamp": "2028-10-31T09:00:00Z",
-      "speaker_id": "social_s7_u07",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "watched something everyone had already discussed."
-        },
-        {
-          "role": "assistant",
-          "content": "spoiled?"
-        },
-        {
-          "role": "user",
-          "content": "thoroughly."
         }
       ]
     },
@@ -390,15 +381,15 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "did the laundry and answered nothing for three hours."
+          "content": "declined a thing politely and then felt weird about it for an hour."
         },
         {
           "role": "assistant",
-          "content": "restorative?"
+          "content": "regret?"
         },
         {
           "role": "user",
-          "content": "quietly, yes."
+          "content": "not really. just weird."
         }
       ]
     },
@@ -410,15 +401,15 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "a spontaneous mid-week visit is on the cards again for a day when the standing call with my closest friend is due."
+          "content": "wrote half a message and left it in the box."
         },
         {
           "role": "assistant",
-          "content": "same collision."
+          "content": "sending it?"
         },
         {
           "role": "user",
-          "content": "same collision."
+          "content": "eventually. probably."
         }
       ]
     },
@@ -430,15 +421,15 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "someone rescheduled and I was more relieved than I should admit."
+          "content": "looked up how far away a place is instead of asking."
         },
         {
           "role": "assistant",
-          "content": "admitting it now."
+          "content": "and?"
         },
         {
           "role": "user",
-          "content": "under duress."
+          "content": "further than the invite implied."
         }
       ]
     },
@@ -450,7 +441,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "someone from the two of us plus the old book group wants a spontaneous mid-week visit on a day when the standing call with my closest friend is due — does that actually fit how I work?"
+          "content": "planning on keeping the whole day clear for it on the day the standing call with my closest friend is due — does that actually fit how I work?"
         }
       ]
     }
@@ -500,8 +491,7 @@
       "role": "background_memory"
     },
     "11": {
-      "role": "supporting_constraint",
-      "fact_id": "E1"
+      "role": "background_memory"
     },
     "12": {
       "role": "background_memory"
@@ -522,8 +512,7 @@
       "role": "background_memory"
     },
     "18": {
-      "role": "supporting_constraint",
-      "fact_id": "E2"
+      "role": "background_memory"
     },
     "19": {
       "role": "background_memory"

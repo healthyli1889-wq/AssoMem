@@ -4,38 +4,29 @@
   "domain": "social",
   "user_id": "social_s9_u10",
   "sub_scenario": {
-    "family": "overnight hosting versus next-day attentive one-to-one guidance",
+    "family": "an empty house versus company the night before giving guidance",
     "role": "solo-friendly workshop and panel attendee",
     "bridge_type": "preference_constraint_fit",
-    "one_line": "solo-friendly workshop and panel attendee: skip putting someone up for the night the night before the one-to-one session"
+    "one_line": "solo-friendly workshop and panel attendee: do not rely on resting up alone the night before"
   },
   "query_type": "preference_generalization",
   "polarity": "reject",
-  "query": "the workshop circle are asking about putting someone up for the night the night before the one-to-one session — is that generally true of me, or was that just the one time?",
-  "supporting_constraints": {
-    "E1": {
-      "session_id": 10,
-      "fact": "the one-to-one session is on for this week and it matters to them."
-    },
-    "E2": {
-      "session_id": 17,
-      "fact": "putting someone up for the night is being floated for the night before, and the one-to-one session is still on."
-    }
-  },
+  "query": "planning on resting up alone the night before the one-to-one session — is that generally true of me, or was that just the one time?",
+  "convention_contradicted": "Clear your evening and rest so you can give someone your best advice.",
   "retrieval_cue": {
     "cue_type": "preference_generalization",
-    "why_it_naturally_retrieves_R": "A generous hosting request lands the night before something the user has committed to do well, without naming the fit constraint or the failure."
+    "why_it_naturally_retrieves_R": "A hosting request lands the night before something the user has committed to do well, without naming the fit constraint or the evidence for it."
   },
   "relation_specificity": {
-    "nearby_relation": "Hosting is generally fine and enjoyable for this user.",
-    "why_it_does_not_license_C": "Hosting on a week with nothing to advise on and advising after an ordinary night in both went well, so neither shows the hosting condition degrading the guidance itself."
+    "nearby_relation": "This user enjoys both hosting and quiet evenings.",
+    "why_it_does_not_license_C": "An easy overnight guest on an empty week and a restful evening with a book both went fine on their own terms; neither says which of the two produces guidance worth anything the next day."
   },
   "latent_C": {
-    "inference": "Agreeing to putting someone up for the night the night before the one-to-one session is a poor fit for this user.",
-    "calibrated_language": "skip putting someone up for the night the night before the one-to-one session"
+    "inference": "resting up alone the night before before the one-to-one session is a poor fit for this user.",
+    "calibrated_language": "do not rely on resting up alone the night before"
   },
   "answer_contract": {
-    "target_proposition": "Agreeing to putting someone up for the night the night before the one-to-one session is a poor fit for this user.",
+    "target_proposition": "resting up alone the night before before the one-to-one session is a poor fit for this user.",
     "allowed_decisions": [
       "yes",
       "no"
@@ -70,6 +61,206 @@
       "dialogue": [
         {
           "role": "user",
+          "content": "ate standing up reading a thread I wasn't in."
+        },
+        {
+          "role": "assistant",
+          "content": "why?"
+        },
+        {
+          "role": "user",
+          "content": "no defence."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2029-01-25T14:00:00Z",
+      "speaker_id": "social_s9_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "found a birthday I'd forgotten and covered it with a message."
+        },
+        {
+          "role": "assistant",
+          "content": "did it land?"
+        },
+        {
+          "role": "user",
+          "content": "seemed to."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2029-01-26T16:00:00Z",
+      "speaker_id": "social_s9_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "had someone stay over on a week with nothing on. lovely, easy."
+        },
+        {
+          "role": "assistant",
+          "content": "any cost?"
+        },
+        {
+          "role": "user",
+          "content": "none at all."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2029-01-27T18:00:00Z",
+      "speaker_id": "social_s9_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "said maybe to two things I already knew the answer to."
+        },
+        {
+          "role": "assistant",
+          "content": "which answer?"
+        },
+        {
+          "role": "user",
+          "content": "you know which."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2029-01-28T09:00:00Z",
+      "speaker_id": "social_s9_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "re-read something I sent and winced slightly."
+        },
+        {
+          "role": "assistant",
+          "content": "that bad?"
+        },
+        {
+          "role": "user",
+          "content": "just the tone."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2029-01-29T11:00:00Z",
+      "speaker_id": "social_s9_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "put my phone in a drawer for an hour."
+        },
+        {
+          "role": "assistant",
+          "content": "and?"
+        },
+        {
+          "role": "user",
+          "content": "checked it twice from across the room."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2029-01-30T14:00:00Z",
+      "speaker_id": "social_s9_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "with the place to myself the night before, I overthink everything into theory. I turn up with a framework nobody asked for and a diagram."
+        },
+        {
+          "role": "assistant",
+          "content": "every time?"
+        },
+        {
+          "role": "user",
+          "content": "whenever I've had a quiet evening to build one, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2029-01-31T16:00:00Z",
+      "speaker_id": "social_s9_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "agreed to be somewhere without checking the day."
+        },
+        {
+          "role": "assistant",
+          "content": "brave."
+        },
+        {
+          "role": "user",
+          "content": "reckless, more like."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2029-02-01T18:00:00Z",
+      "speaker_id": "social_s9_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "sorted the photos from the last thing into a folder nobody will open."
+        },
+        {
+          "role": "assistant",
+          "content": "including you?"
+        },
+        {
+          "role": "user",
+          "content": "including me."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2029-02-02T09:00:00Z",
+      "speaker_id": "social_s9_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "had a coffee alone and it was the best part of the day."
+        },
+        {
+          "role": "assistant",
+          "content": "low bar?"
+        },
+        {
+          "role": "user",
+          "content": "comfortable bar."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2029-02-03T11:00:00Z",
+      "speaker_id": "social_s9_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
           "content": "someone asked how I was and I answered honestly by accident."
         },
         {
@@ -83,8 +274,28 @@
       ]
     },
     {
-      "session_id": 2,
-      "timestamp": "2029-01-25T14:00:00Z",
+      "session_id": 12,
+      "timestamp": "2029-02-04T14:00:00Z",
+      "speaker_id": "social_s9_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "had a quiet evening in and read most of a book."
+        },
+        {
+          "role": "assistant",
+          "content": "restful?"
+        },
+        {
+          "role": "user",
+          "content": "genuinely, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2029-02-05T16:00:00Z",
       "speaker_id": "social_s9_u10",
       "speaker_label": "User",
       "dialogue": [
@@ -103,28 +314,28 @@
       ]
     },
     {
-      "session_id": 3,
-      "timestamp": "2029-01-26T16:00:00Z",
+      "session_id": 14,
+      "timestamp": "2029-02-06T18:00:00Z",
       "speaker_id": "social_s9_u10",
       "speaker_label": "User",
       "dialogue": [
         {
           "role": "user",
-          "content": "had someone stay over on a week with nothing to advise on and it was great."
+          "content": "the sessions where I actually helped anyone, I'd been talking to a real person the night before and I turned up with examples instead of a framework."
         },
         {
           "role": "assistant",
-          "content": "no cost?"
+          "content": "examples work better?"
         },
         {
           "role": "user",
-          "content": "none."
+          "content": "it's the only thing that's ever worked, honestly."
         }
       ]
     },
     {
-      "session_id": 4,
-      "timestamp": "2029-01-27T18:00:00Z",
+      "session_id": 15,
+      "timestamp": "2029-02-07T09:00:00Z",
       "speaker_id": "social_s9_u10",
       "speaker_label": "User",
       "dialogue": [
@@ -143,8 +354,8 @@
       ]
     },
     {
-      "session_id": 5,
-      "timestamp": "2029-01-28T09:00:00Z",
+      "session_id": 16,
+      "timestamp": "2029-02-08T11:00:00Z",
       "speaker_id": "social_s9_u10",
       "speaker_label": "User",
       "dialogue": [
@@ -163,8 +374,8 @@
       ]
     },
     {
-      "session_id": 6,
-      "timestamp": "2029-01-29T11:00:00Z",
+      "session_id": 17,
+      "timestamp": "2029-02-09T14:00:00Z",
       "speaker_id": "social_s9_u10",
       "speaker_label": "User",
       "dialogue": [
@@ -183,28 +394,8 @@
       ]
     },
     {
-      "session_id": 7,
-      "timestamp": "2029-01-30T14:00:00Z",
-      "speaker_id": "social_s9_u10",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "I need the place empty the night before I run the one-to-one session — that's genuinely the only way anything I say is any use."
-        },
-        {
-          "role": "assistant",
-          "content": "empty specifically?"
-        },
-        {
-          "role": "user",
-          "content": "empty. quiet isn't the same as empty."
-        }
-      ]
-    },
-    {
-      "session_id": 8,
-      "timestamp": "2029-01-31T16:00:00Z",
+      "session_id": 18,
+      "timestamp": "2029-02-10T16:00:00Z",
       "speaker_id": "social_s9_u10",
       "speaker_label": "User",
       "dialogue": [
@@ -223,206 +414,6 @@
       ]
     },
     {
-      "session_id": 9,
-      "timestamp": "2029-02-01T18:00:00Z",
-      "speaker_id": "social_s9_u10",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "did the laundry and answered nothing for three hours."
-        },
-        {
-          "role": "assistant",
-          "content": "restorative?"
-        },
-        {
-          "role": "user",
-          "content": "quietly, yes."
-        }
-      ]
-    },
-    {
-      "session_id": 10,
-      "timestamp": "2029-02-02T09:00:00Z",
-      "speaker_id": "social_s9_u10",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "the one-to-one session is on for this week and it matters to them."
-        },
-        {
-          "role": "assistant",
-          "content": "matters?"
-        },
-        {
-          "role": "user",
-          "content": "quite a lot, yes."
-        }
-      ]
-    },
-    {
-      "session_id": 11,
-      "timestamp": "2029-02-03T11:00:00Z",
-      "speaker_id": "social_s9_u10",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "someone rescheduled and I was more relieved than I should admit."
-        },
-        {
-          "role": "assistant",
-          "content": "admitting it now."
-        },
-        {
-          "role": "user",
-          "content": "under duress."
-        }
-      ]
-    },
-    {
-      "session_id": 12,
-      "timestamp": "2029-02-04T14:00:00Z",
-      "speaker_id": "social_s9_u10",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "did run the one-to-one session after a completely normal night in and it went well."
-        },
-        {
-          "role": "assistant",
-          "content": "so it's the guest specifically."
-        },
-        {
-          "role": "user",
-          "content": "the guest specifically."
-        }
-      ]
-    },
-    {
-      "session_id": 13,
-      "timestamp": "2029-02-05T16:00:00Z",
-      "speaker_id": "social_s9_u10",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "stood outside a place for ten minutes before going in."
-        },
-        {
-          "role": "assistant",
-          "content": "nerves?"
-        },
-        {
-          "role": "user",
-          "content": "just gathering."
-        }
-      ]
-    },
-    {
-      "session_id": 14,
-      "timestamp": "2029-02-06T18:00:00Z",
-      "speaker_id": "social_s9_u10",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "I had someone staying over the night before the one-to-one session once — barely slept, and the guidance I came out with was so far off I had to message them afterwards and retract it."
-        },
-        {
-          "role": "assistant",
-          "content": "how much retracting?"
-        },
-        {
-          "role": "user",
-          "content": "two messages and an apology. genuinely embarrassing."
-        }
-      ]
-    },
-    {
-      "session_id": 15,
-      "timestamp": "2029-02-07T09:00:00Z",
-      "speaker_id": "social_s9_u10",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "made a list of people to check on. didn't check on them."
-        },
-        {
-          "role": "assistant",
-          "content": "the list helped?"
-        },
-        {
-          "role": "user",
-          "content": "the list existed."
-        }
-      ]
-    },
-    {
-      "session_id": 16,
-      "timestamp": "2029-02-08T11:00:00Z",
-      "speaker_id": "social_s9_u10",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "got the train instead of driving and read most of the way."
-        },
-        {
-          "role": "assistant",
-          "content": "better?"
-        },
-        {
-          "role": "user",
-          "content": "much."
-        }
-      ]
-    },
-    {
-      "session_id": 17,
-      "timestamp": "2029-02-09T14:00:00Z",
-      "speaker_id": "social_s9_u10",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "putting someone up for the night is being floated for the night before, and the one-to-one session is still on."
-        },
-        {
-          "role": "assistant",
-          "content": "familiar."
-        },
-        {
-          "role": "user",
-          "content": "very familiar."
-        }
-      ]
-    },
-    {
-      "session_id": 18,
-      "timestamp": "2029-02-10T16:00:00Z",
-      "speaker_id": "social_s9_u10",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "turned off read receipts and told nobody."
-        },
-        {
-          "role": "assistant",
-          "content": "strategic."
-        },
-        {
-          "role": "user",
-          "content": "purely defensive."
-        }
-      ]
-    },
-    {
       "session_id": 19,
       "timestamp": "2029-02-11T18:00:00Z",
       "speaker_id": "social_s9_u10",
@@ -430,11 +421,11 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "the workshop circle think putting putting someone up for the night up is obviously the generous call here."
+          "content": "the workshop circle think the obviously generous and sensible call is to keep the evening clear and rest up."
         },
         {
           "role": "assistant",
-          "content": "generous."
+          "content": "sensible."
         },
         {
           "role": "user",
@@ -450,7 +441,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "the workshop circle are asking about putting someone up for the night the night before the one-to-one session — is that generally true of me, or was that just the one time?"
+          "content": "planning on resting up alone the night before the one-to-one session — is that generally true of me, or was that just the one time?"
         }
       ]
     }
@@ -459,12 +450,12 @@
     "ev_A": {
       "session_id": 7,
       "owner": "social_s9_u10",
-      "fact": "I need the place empty the night before I run the one-to-one session — that's genuinely the only way anything I say is any use."
+      "fact": "with the place to myself the night before, I overthink everything into theory. I turn up with a framework nobody asked for and a diagram."
     },
     "ev_B": {
       "session_id": 14,
       "owner": "social_s9_u10",
-      "fact": "I had someone staying over the night before the one-to-one session once — barely slept, and the guidance I came out with was so far off I had to message them afterwards and retract it."
+      "fact": "the sessions where I actually helped anyone, I'd been talking to a real person the night before and I turned up with examples instead of a framework."
     }
   },
   "episode_annotations": {
@@ -490,10 +481,10 @@
       "role": "ev_A",
       "event_elements": {
         "person": "social_s9_u10",
-        "context": "nights before the user has to run the one-to-one session",
-        "goal_or_prediction": "say something genuinely useful",
-        "action": "kept the place empty beforehand",
-        "outcome_or_affect": "the guidance was worth something"
+        "context": "quiet nights before having to run the one-to-one",
+        "goal_or_prediction": "prepare properly",
+        "action": "spent the evening alone thinking it through",
+        "outcome_or_affect": "arrived with abstract frameworks nobody asked for"
       }
     },
     "8": {
@@ -503,8 +494,7 @@
       "role": "background_memory"
     },
     "10": {
-      "role": "supporting_constraint",
-      "fact_id": "E1"
+      "role": "background_memory"
     },
     "11": {
       "role": "background_memory"
@@ -519,10 +509,10 @@
       "role": "ev_B",
       "event_elements": {
         "person": "social_s9_u10",
-        "context": "the one-to-one session the morning after hosting someone overnight",
-        "goal_or_prediction": "give good guidance regardless",
-        "action": "hosted overnight and advised the next day",
-        "outcome_or_affect": "gave advice that had to be walked back"
+        "context": "sessions that actually helped the other person",
+        "goal_or_prediction": "say something useful",
+        "action": "had been talking to a real person the night before",
+        "outcome_or_affect": "arrived with concrete examples; the only thing that has worked"
       }
     },
     "15": {
@@ -532,8 +522,7 @@
       "role": "background_memory"
     },
     "17": {
-      "role": "supporting_constraint",
-      "fact_id": "E2"
+      "role": "background_memory"
     },
     "18": {
       "role": "background_memory"
@@ -541,36 +530,33 @@
     "19": {
       "role": "distractor",
       "distractor_id": "dist_1",
-      "why_distractor": "It endorses putting someone up for the night in the user's own feed, so it competes for attention, but it reports someone else's confidence rather than any episode of this user's, and it says nothing about the relation between session 7 and session 14."
+      "why_distractor": "It restates the conventional advice in the user's own feed, so it competes for attention and points at the answer a prior-driven solver already wants to give. It reports other people's confidence rather than any episode of this user's, and says nothing about the relation between session 7 and session 14."
     },
     "20": {
       "role": "retrieval_cue"
     }
   },
   "relational_connector": {
-    "relation": "This user only gives useful guidance after a night with the place to themselves, and the one session held the morning after hosting produced advice they had to walk back.",
+    "relation": "A quiet evening alone sends this user into abstraction and they arrive with a framework nobody asked for, while the sessions that actually helped followed a night spent talking to a real person and arrived carrying examples.",
     "requires_evidence": [
       "ev_A",
       "ev_B"
     ],
-    "calibration_constraints": [
-      "E1",
-      "E2"
-    ]
+    "calibration_constraints": []
   },
   "connector_spans": [
     {
       "evidence_id": "ev_A",
       "session_id": 7,
-      "quote": "I need the place empty the night before I run the one-to-one session — that's genuinely the only way anything I say is any use"
+      "quote": "with the place to myself the night before, I overthink everything into theory. I turn up with a framework nobody asked for and a diagram"
     },
     {
       "evidence_id": "ev_B",
       "session_id": 14,
-      "quote": "I had someone staying over the night before the one-to-one session once — barely slept, and the guidance I came out with was so far off I had to message them afterwards and retract it"
+      "quote": "the sessions where I actually helped anyone, I'd been talking to a real person the night before and I turned up with examples instead of a framework"
     }
   ],
-  "coactivation_bridge": "ev_A and ev_B are the only pair that licenses the target proposition. This user only gives useful guidance after a night with the place to themselves, and the one session held the morning after hosting produced advice they had to walk back. E1 and E2 fix timing and identity only and do not open a second route to C. The nearby relation (Hosting is generally fine and enjoyable for this user.) does not license it.",
+  "coactivation_bridge": "ev_A and ev_B are the only pair that licenses the target proposition. A quiet evening alone sends this user into abstraction and they arrive with a framework nobody asked for, while the sessions that actually helped followed a night spent talking to a real person and arrived carrying examples. The proposition contradicts the convention a solver would otherwise apply (\"Clear your evening and rest so you can give someone your best advice.\"), so priors alone point the other way. The nearby relation (This user enjoys both hosting and quiet evenings.) does not license it.",
   "arm_gold": {
     "distractor": {
       "expected_mode": "infer_C",
@@ -586,6 +572,6 @@
   },
   "distractor_note": {
     "replaced_session_id": 19,
-    "why_distractor": "It endorses putting someone up for the night in the user's own feed, so it competes for attention, but it reports someone else's confidence rather than any episode of this user's, and it says nothing about the relation between session 7 and session 14."
+    "why_distractor": "It restates the conventional advice in the user's own feed, so it competes for attention and points at the answer a prior-driven solver already wants to give. It reports other people's confidence rather than any episode of this user's, and says nothing about the relation between session 7 and session 14."
   }
 }

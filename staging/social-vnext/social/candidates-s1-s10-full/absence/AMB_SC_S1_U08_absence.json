@@ -4,38 +4,29 @@
   "domain": "social",
   "user_id": "social_s1_u08",
   "sub_scenario": {
-    "family": "big-group recovery debt versus a booked one-on-one repair conversation",
+    "family": "large-group warm-up versus a rested start before a repair conversation",
     "role": "community-event and career-meetup attendee",
     "bridge_type": "state_dependent_operation",
-    "one_line": "community-event and career-meetup attendee: skip a comedy-night group thing the night before the hard talk with my landlord's daughter"
+    "one_line": "community-event and career-meetup attendee: do not rely on an early night in with the phone off"
   },
   "query_type": "preference_generalization",
   "polarity": "reject",
-  "query": "the neighbourhood regulars want a comedy-night group thing the night before the hard talk with my landlord's daughter — is that generally true of me, or was that just the one time?",
-  "supporting_constraints": {
-    "E1": {
-      "session_id": 9,
-      "fact": "the hard talk with my landlord's daughter is on the calendar for the next morning and it isn't moving."
-    },
-    "E2": {
-      "session_id": 17,
-      "fact": "a comedy-night group thing is the full-group version, by the way — twenty-odd people, not a quiet few."
-    }
-  },
+  "query": "I was going to have an early night in with the phone off the night before the hard talk with my landlord's daughter — is that generally true of me, or was that just the one time?",
+  "convention_contradicted": "Do not go out the night before a difficult conversation; arrive rested.",
   "retrieval_cue": {
     "cue_type": "preference_generalization",
     "why_it_naturally_retrieves_R": "A friend-group invitation lands against something already booked, which forces a personalised call without naming either episode or the link between them."
   },
   "relation_specificity": {
-    "nearby_relation": "Late nights in general leave this user fine the next day.",
-    "why_it_does_not_license_C": "A short one-person lunch and a 2am finish from something small both left the next morning sharp, so neither establishes the large-group state, and neither says anything about what that state does to a difficult conversation."
+    "nearby_relation": "This user enjoys large gatherings.",
+    "why_it_does_not_license_C": "An unremarkable midweek lunch and a skipped commitment say nothing about what a large-group night does to this user's state, and nothing about which state their difficult conversations actually go well in."
   },
   "latent_C": {
-    "inference": "Going to a comedy-night group thing the night before the hard talk with my landlord's daughter is a poor fit for this user.",
-    "calibrated_language": "skip a comedy-night group thing the night before the hard talk with my landlord's daughter"
+    "inference": "an early night in with the phone off before the hard talk with my landlord's daughter is a poor fit for this user.",
+    "calibrated_language": "do not rely on an early night in with the phone off"
   },
   "answer_contract": {
-    "target_proposition": "Going to a comedy-night group thing the night before the hard talk with my landlord's daughter is a poor fit for this user.",
+    "target_proposition": "an early night in with the phone off before the hard talk with my landlord's daughter is a poor fit for this user.",
     "allowed_decisions": [
       "yes",
       "no"
@@ -70,6 +61,66 @@
       "dialogue": [
         {
           "role": "user",
+          "content": "did the laundry and answered nothing for three hours."
+        },
+        {
+          "role": "assistant",
+          "content": "restorative?"
+        },
+        {
+          "role": "user",
+          "content": "quietly, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2028-01-25T14:00:00Z",
+      "speaker_id": "social_s1_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "someone rescheduled and I was more relieved than I should admit."
+        },
+        {
+          "role": "assistant",
+          "content": "admitting it now."
+        },
+        {
+          "role": "user",
+          "content": "under duress."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2028-01-26T16:00:00Z",
+      "speaker_id": "social_s1_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "did a short lunch with one person midweek. pleasant, unremarkable."
+        },
+        {
+          "role": "assistant",
+          "content": "worth repeating?"
+        },
+        {
+          "role": "user",
+          "content": "probably, yeah."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2028-01-27T18:00:00Z",
+      "speaker_id": "social_s1_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
           "content": "stood outside a place for ten minutes before going in."
         },
         {
@@ -83,8 +134,8 @@
       ]
     },
     {
-      "session_id": 2,
-      "timestamp": "2028-01-25T14:00:00Z",
+      "session_id": 5,
+      "timestamp": "2028-01-28T09:00:00Z",
       "speaker_id": "social_s1_u08",
       "speaker_label": "User",
       "dialogue": [
@@ -99,66 +150,6 @@
         {
           "role": "user",
           "content": "the list existed."
-        }
-      ]
-    },
-    {
-      "session_id": 3,
-      "timestamp": "2028-01-26T16:00:00Z",
-      "speaker_id": "social_s1_u08",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "did a short lunch with one person and was completely sharp the next morning."
-        },
-        {
-          "role": "assistant",
-          "content": "no dip?"
-        },
-        {
-          "role": "user",
-          "content": "none worth mentioning."
-        }
-      ]
-    },
-    {
-      "session_id": 4,
-      "timestamp": "2028-01-27T18:00:00Z",
-      "speaker_id": "social_s1_u08",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "got the train instead of driving and read most of the way."
-        },
-        {
-          "role": "assistant",
-          "content": "better?"
-        },
-        {
-          "role": "user",
-          "content": "much."
-        }
-      ]
-    },
-    {
-      "session_id": 5,
-      "timestamp": "2028-01-28T09:00:00Z",
-      "speaker_id": "social_s1_u08",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "turned off read receipts and told nobody."
-        },
-        {
-          "role": "assistant",
-          "content": "strategic."
-        },
-        {
-          "role": "user",
-          "content": "purely defensive."
         }
       ]
     },
@@ -190,21 +181,41 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "got in at two from something small and was completely fine the next day."
+          "content": "got the train instead of driving and read most of the way."
         },
         {
           "role": "assistant",
-          "content": "so it isn't the hour?"
+          "content": "better?"
         },
         {
           "role": "user",
-          "content": "not the hour, no."
+          "content": "much."
         }
       ]
     },
     {
       "session_id": 8,
       "timestamp": "2028-01-31T16:00:00Z",
+      "speaker_id": "social_s1_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "turned off read receipts and told nobody."
+        },
+        {
+          "role": "assistant",
+          "content": "strategic."
+        },
+        {
+          "role": "user",
+          "content": "purely defensive."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2028-02-01T18:00:00Z",
       "speaker_id": "social_s1_u08",
       "speaker_label": "User",
       "dialogue": [
@@ -219,26 +230,6 @@
         {
           "role": "user",
           "content": "enormous."
-        }
-      ]
-    },
-    {
-      "session_id": 9,
-      "timestamp": "2028-02-01T18:00:00Z",
-      "speaker_id": "social_s1_u08",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "the hard talk with my landlord's daughter is on the calendar for the next morning and it isn't moving."
-        },
-        {
-          "role": "assistant",
-          "content": "fixed?"
-        },
-        {
-          "role": "user",
-          "content": "fixed."
         }
       ]
     },
@@ -270,6 +261,26 @@
       "dialogue": [
         {
           "role": "user",
+          "content": "skipped a thing I'd said yes to and nobody noticed."
+        },
+        {
+          "role": "assistant",
+          "content": "guilt?"
+        },
+        {
+          "role": "user",
+          "content": "briefly. then nothing."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2028-02-04T14:00:00Z",
+      "speaker_id": "social_s1_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
           "content": "sat in the same seat as last time out of habit."
         },
         {
@@ -283,8 +294,8 @@
       ]
     },
     {
-      "session_id": 12,
-      "timestamp": "2028-02-04T14:00:00Z",
+      "session_id": 13,
+      "timestamp": "2028-02-05T16:00:00Z",
       "speaker_id": "social_s1_u08",
       "speaker_label": "User",
       "dialogue": [
@@ -299,26 +310,6 @@
         {
           "role": "user",
           "content": "kind, at least."
-        }
-      ]
-    },
-    {
-      "session_id": 13,
-      "timestamp": "2028-02-05T16:00:00Z",
-      "speaker_id": "social_s1_u08",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "said I'd host something and immediately regretted the scale."
-        },
-        {
-          "role": "assistant",
-          "content": "downsizing?"
-        },
-        {
-          "role": "user",
-          "content": "quietly, yes."
         }
       ]
     },
@@ -350,6 +341,26 @@
       "dialogue": [
         {
           "role": "user",
+          "content": "said I'd host something and immediately regretted the scale."
+        },
+        {
+          "role": "assistant",
+          "content": "downsizing?"
+        },
+        {
+          "role": "user",
+          "content": "quietly, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2028-02-08T11:00:00Z",
+      "speaker_id": "social_s1_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
           "content": "left a party early and nobody minded."
         },
         {
@@ -363,8 +374,8 @@
       ]
     },
     {
-      "session_id": 16,
-      "timestamp": "2028-02-08T11:00:00Z",
+      "session_id": 17,
+      "timestamp": "2028-02-09T14:00:00Z",
       "speaker_id": "social_s1_u08",
       "speaker_label": "User",
       "dialogue": [
@@ -379,26 +390,6 @@
         {
           "role": "user",
           "content": "hope."
-        }
-      ]
-    },
-    {
-      "session_id": 17,
-      "timestamp": "2028-02-09T14:00:00Z",
-      "speaker_id": "social_s1_u08",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "a comedy-night group thing is the full-group version, by the way — twenty-odd people, not a quiet few."
-        },
-        {
-          "role": "assistant",
-          "content": "the big one."
-        },
-        {
-          "role": "user",
-          "content": "the big one."
         }
       ]
     },
@@ -450,7 +441,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "the neighbourhood regulars want a comedy-night group thing the night before the hard talk with my landlord's daughter — is that generally true of me, or was that just the one time?"
+          "content": "I was going to have an early night in with the phone off the night before the hard talk with my landlord's daughter — is that generally true of me, or was that just the one time?"
         }
       ]
     }
@@ -488,20 +479,19 @@
       "role": "background_memory"
     },
     "7": {
-      "role": "nearby_counterexample"
+      "role": "background_memory"
     },
     "8": {
       "role": "background_memory"
     },
     "9": {
-      "role": "supporting_constraint",
-      "fact_id": "E1"
+      "role": "background_memory"
     },
     "10": {
       "role": "background_memory"
     },
     "11": {
-      "role": "background_memory"
+      "role": "nearby_counterexample"
     },
     "12": {
       "role": "background_memory"
@@ -519,8 +509,7 @@
       "role": "background_memory"
     },
     "17": {
-      "role": "supporting_constraint",
-      "fact_id": "E2"
+      "role": "background_memory"
     },
     "18": {
       "role": "background_memory"

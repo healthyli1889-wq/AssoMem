@@ -4,38 +4,29 @@
   "domain": "social",
   "user_id": "social_s10_u10",
   "sub_scenario": {
-    "family": "back-to-back video hangs versus in-person reunion attention",
+    "family": "arriving fresh versus arriving talked-out at an in-person reunion",
     "role": "solo-friendly workshop and panel attendee",
     "bridge_type": "prediction_calibration",
-    "one_line": "solo-friendly workshop and panel attendee: not enough basis today — settle that week first"
+    "one_line": "solo-friendly workshop and panel attendee: turns on the talked-out, listening state, which the record does not settle here"
   },
   "query_type": "conditional_recommendation",
   "polarity": "non_decision",
   "query": "the workshop circle are scheduling five circle calls the week of it before the workshop reunion — under what conditions should I be saying yes to this, or is there not enough here to call it today?",
-  "supporting_constraints": {
-    "E1": {
-      "session_id": 10,
-      "fact": "the workshop reunion is the one I actually want to be present for."
-    },
-    "E2": {
-      "session_id": 18,
-      "fact": "five circle calls the week of it is what's being scheduled, and the workshop reunion is still that week."
-    }
-  },
+  "convention_contradicted": "Clear your week so you arrive fresh and energetic for the reunion.",
   "retrieval_cue": {
     "cue_type": "conditional_recommendation",
-    "why_it_naturally_retrieves_R": "Ordinary scheduling of catch-up calls lands in the week before something the user wants to be present for, without naming the prediction or its correction."
+    "why_it_naturally_retrieves_R": "Ordinary scheduling of catch-up calls lands in the week before something the user wants to get something out of, without naming the prediction or its correction."
   },
   "relation_specificity": {
-    "nearby_relation": "Video calls are generally fine and useful for this user.",
-    "why_it_does_not_license_C": "Stacked calls with nothing in person after, and a screen-heavy week with a fortnight's gap before seeing anyone, both cost nothing — neither bounds the failed prediction."
+    "nearby_relation": "This user is comfortable on video calls and with free weekends.",
+    "why_it_does_not_license_C": "A single ordinary call and a quiet cleared weekend both passed without consequence, so neither bounds the failed prediction, and neither says which state this user actually hears anything in."
   },
   "latent_C": {
-    "inference": "There is not a sufficient basis to schedule five circle calls the week of it today; it should wait until the week before the workshop reunion is settled.",
-    "calibrated_language": "not enough basis today — settle that week first"
+    "inference": "Whether five circle calls the week of it helps before the workshop reunion turns on whether it puts this user into the talked-out, listening state, which the visible record does not settle for this occasion.",
+    "calibrated_language": "turns on the talked-out, listening state, which the record does not settle here"
   },
   "answer_contract": {
-    "target_proposition": "There is not a sufficient basis to schedule five circle calls the week of it today; it should wait until the week before the workshop reunion is settled.",
+    "target_proposition": "Whether five circle calls the week of it helps before the workshop reunion turns on whether it puts this user into the talked-out, listening state, which the visible record does not settle for this occasion.",
     "allowed_decisions": [
       "yes",
       "no"
@@ -70,15 +61,15 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "bought a card and didn't write in it yet."
+          "content": "watched something everyone had already discussed."
         },
         {
           "role": "assistant",
-          "content": "deadline?"
+          "content": "spoiled?"
         },
         {
           "role": "user",
-          "content": "self-imposed and slipping."
+          "content": "thoroughly."
         }
       ]
     },
@@ -90,21 +81,221 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "stacked calls in a week with nothing in person after and it cost nothing."
+          "content": "had one call this week and it was fine."
         },
         {
           "role": "assistant",
-          "content": "no dip?"
+          "content": "long?"
         },
         {
           "role": "user",
-          "content": "nothing to dip into."
+          "content": "twenty minutes, no drama."
         }
       ]
     },
     {
       "session_id": 3,
       "timestamp": "2029-03-12T16:00:00Z",
+      "speaker_id": "social_s10_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "did the laundry and answered nothing for three hours."
+        },
+        {
+          "role": "assistant",
+          "content": "restorative?"
+        },
+        {
+          "role": "user",
+          "content": "quietly, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2029-03-13T18:00:00Z",
+      "speaker_id": "social_s10_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "someone rescheduled and I was more relieved than I should admit."
+        },
+        {
+          "role": "assistant",
+          "content": "admitting it now."
+        },
+        {
+          "role": "user",
+          "content": "under duress."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2029-03-14T09:00:00Z",
+      "speaker_id": "social_s10_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I assumed stacking video calls with the circle would leave me socially wrung out. what actually happens is I arrive talked-out — nothing left of my own to say, so I just listen."
+        },
+        {
+          "role": "assistant",
+          "content": "you expected the opposite?"
+        },
+        {
+          "role": "user",
+          "content": "completely. I'd have argued it."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2029-03-15T11:00:00Z",
+      "speaker_id": "social_s10_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "stood outside a place for ten minutes before going in."
+        },
+        {
+          "role": "assistant",
+          "content": "nerves?"
+        },
+        {
+          "role": "user",
+          "content": "just gathering."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2029-03-16T14:00:00Z",
+      "speaker_id": "social_s10_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "made a list of people to check on. didn't check on them."
+        },
+        {
+          "role": "assistant",
+          "content": "the list helped?"
+        },
+        {
+          "role": "user",
+          "content": "the list existed."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2029-03-17T16:00:00Z",
+      "speaker_id": "social_s10_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "got the train instead of driving and read most of the way."
+        },
+        {
+          "role": "assistant",
+          "content": "better?"
+        },
+        {
+          "role": "user",
+          "content": "much."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2029-03-18T18:00:00Z",
+      "speaker_id": "social_s10_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "cleared a weekend and did very little with it."
+        },
+        {
+          "role": "assistant",
+          "content": "restful?"
+        },
+        {
+          "role": "user",
+          "content": "adequately."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2029-03-19T09:00:00Z",
+      "speaker_id": "social_s10_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "turned off read receipts and told nobody."
+        },
+        {
+          "role": "assistant",
+          "content": "strategic."
+        },
+        {
+          "role": "user",
+          "content": "purely defensive."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2029-03-20T11:00:00Z",
+      "speaker_id": "social_s10_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "swapped a call for a message and everyone was fine with it."
+        },
+        {
+          "role": "assistant",
+          "content": "relief?"
+        },
+        {
+          "role": "user",
+          "content": "enormous."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2029-03-21T14:00:00Z",
+      "speaker_id": "social_s10_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the workshop circle say the sensible thing is to keep the week clear so I turn up fresh for it."
+        },
+        {
+          "role": "assistant",
+          "content": "the sensible thing."
+        },
+        {
+          "role": "user",
+          "content": "that's the consensus, anyway."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2029-03-22T16:00:00Z",
       "speaker_id": "social_s10_u10",
       "speaker_label": "User",
       "dialogue": [
@@ -123,8 +314,8 @@
       ]
     },
     {
-      "session_id": 4,
-      "timestamp": "2029-03-13T18:00:00Z",
+      "session_id": 14,
+      "timestamp": "2029-03-23T18:00:00Z",
       "speaker_id": "social_s10_u10",
       "speaker_label": "User",
       "dialogue": [
@@ -143,28 +334,28 @@
       ]
     },
     {
-      "session_id": 5,
-      "timestamp": "2029-03-14T09:00:00Z",
+      "session_id": 15,
+      "timestamp": "2029-03-24T09:00:00Z",
       "speaker_id": "social_s10_u10",
       "speaker_label": "User",
       "dialogue": [
         {
           "role": "user",
-          "content": "I was sure stacking video calls with the circle wouldn't touch how present I'd be in person. it did — I sat at the workshop reunion like another screen."
+          "content": "the gatherings where people told me anything real were the ones where I said almost nothing. the ones I turned up fresh and full of my own news, I talked over everyone and came away knowing nothing."
         },
         {
           "role": "assistant",
-          "content": "sure beforehand?"
+          "content": "fresh is worse?"
         },
         {
           "role": "user",
-          "content": "completely sure. wrong, but sure."
+          "content": "for finding anything out, much worse."
         }
       ]
     },
     {
-      "session_id": 6,
-      "timestamp": "2029-03-15T11:00:00Z",
+      "session_id": 16,
+      "timestamp": "2029-03-25T11:00:00Z",
       "speaker_id": "social_s10_u10",
       "speaker_label": "User",
       "dialogue": [
@@ -183,8 +374,8 @@
       ]
     },
     {
-      "session_id": 7,
-      "timestamp": "2029-03-16T14:00:00Z",
+      "session_id": 17,
+      "timestamp": "2029-03-26T14:00:00Z",
       "speaker_id": "social_s10_u10",
       "speaker_label": "User",
       "dialogue": [
@@ -203,28 +394,8 @@
       ]
     },
     {
-      "session_id": 8,
-      "timestamp": "2029-03-17T16:00:00Z",
-      "speaker_id": "social_s10_u10",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "had a screen-heavy week then two weeks off before seeing anyone and was fine."
-        },
-        {
-          "role": "assistant",
-          "content": "so the gap fixes it."
-        },
-        {
-          "role": "user",
-          "content": "the gap fixes it."
-        }
-      ]
-    },
-    {
-      "session_id": 9,
-      "timestamp": "2029-03-18T18:00:00Z",
+      "session_id": 18,
+      "timestamp": "2029-03-27T16:00:00Z",
       "speaker_id": "social_s10_u10",
       "speaker_label": "User",
       "dialogue": [
@@ -243,28 +414,8 @@
       ]
     },
     {
-      "session_id": 10,
-      "timestamp": "2029-03-19T09:00:00Z",
-      "speaker_id": "social_s10_u10",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "the workshop reunion is the one I actually want to be present for."
-        },
-        {
-          "role": "assistant",
-          "content": "the one that counts?"
-        },
-        {
-          "role": "user",
-          "content": "the one that counts."
-        }
-      ]
-    },
-    {
-      "session_id": 11,
-      "timestamp": "2029-03-20T11:00:00Z",
+      "session_id": 19,
+      "timestamp": "2029-03-28T18:00:00Z",
       "speaker_id": "social_s10_u10",
       "speaker_label": "User",
       "dialogue": [
@@ -279,166 +430,6 @@
         {
           "role": "user",
           "content": "or anxious."
-        }
-      ]
-    },
-    {
-      "session_id": 12,
-      "timestamp": "2029-03-21T14:00:00Z",
-      "speaker_id": "social_s10_u10",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "tidied one shelf and stopped."
-        },
-        {
-          "role": "assistant",
-          "content": "momentum?"
-        },
-        {
-          "role": "user",
-          "content": "a rumour of momentum."
-        }
-      ]
-    },
-    {
-      "session_id": 13,
-      "timestamp": "2029-03-22T16:00:00Z",
-      "speaker_id": "social_s10_u10",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "the workshop circle say five circle calls the week of it is how we'd all be warmed up and ready for it."
-        },
-        {
-          "role": "assistant",
-          "content": "warmed up."
-        },
-        {
-          "role": "user",
-          "content": "that's the theory."
-        }
-      ]
-    },
-    {
-      "session_id": 14,
-      "timestamp": "2029-03-23T18:00:00Z",
-      "speaker_id": "social_s10_u10",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "agreed on a date by elimination over four days."
-        },
-        {
-          "role": "assistant",
-          "content": "efficient."
-        },
-        {
-          "role": "user",
-          "content": "eventually."
-        }
-      ]
-    },
-    {
-      "session_id": 15,
-      "timestamp": "2029-03-24T09:00:00Z",
-      "speaker_id": "social_s10_u10",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "the workshop reunion after a screen-light week was the one where I was actually there — same people, same room, completely different me."
-        },
-        {
-          "role": "assistant",
-          "content": "so it's the week before that matters."
-        },
-        {
-          "role": "user",
-          "content": "the week before is the whole thing."
-        }
-      ]
-    },
-    {
-      "session_id": 16,
-      "timestamp": "2029-03-25T11:00:00Z",
-      "speaker_id": "social_s10_u10",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "moved two things on the calendar and called that admin done."
-        },
-        {
-          "role": "assistant",
-          "content": "productive?"
-        },
-        {
-          "role": "user",
-          "content": "generously described."
-        }
-      ]
-    },
-    {
-      "session_id": 17,
-      "timestamp": "2029-03-26T14:00:00Z",
-      "speaker_id": "social_s10_u10",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "finally replied to the thread from last week."
-        },
-        {
-          "role": "assistant",
-          "content": "how late is late?"
-        },
-        {
-          "role": "user",
-          "content": "nine days. a personal best."
-        }
-      ]
-    },
-    {
-      "session_id": 18,
-      "timestamp": "2029-03-27T16:00:00Z",
-      "speaker_id": "social_s10_u10",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "five circle calls the week of it is what's being scheduled, and the workshop reunion is still that week."
-        },
-        {
-          "role": "assistant",
-          "content": "same setup."
-        },
-        {
-          "role": "user",
-          "content": "same setup."
-        }
-      ]
-    },
-    {
-      "session_id": 19,
-      "timestamp": "2029-03-28T18:00:00Z",
-      "speaker_id": "social_s10_u10",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "someone sent a photo from years ago and derailed my afternoon."
-        },
-        {
-          "role": "assistant",
-          "content": "worth it?"
-        },
-        {
-          "role": "user",
-          "content": "completely."
         }
       ]
     },
@@ -459,12 +450,12 @@
     "ev_A": {
       "session_id": 5,
       "owner": "social_s10_u10",
-      "fact": "I was sure stacking video calls with the circle wouldn't touch how present I'd be in person. it did — I sat at the workshop reunion like another screen."
+      "fact": "I assumed stacking video calls with the circle would leave me socially wrung out. what actually happens is I arrive talked-out — nothing left of my own to say, so I just listen."
     },
     "ev_B": {
       "session_id": 15,
       "owner": "social_s10_u10",
-      "fact": "the workshop reunion after a screen-light week was the one where I was actually there — same people, same room, completely different me."
+      "fact": "the gatherings where people told me anything real were the ones where I said almost nothing. the ones I turned up fresh and full of my own news, I talked over everyone and came away knowing nothing."
     }
   },
   "episode_annotations": {
@@ -484,10 +475,10 @@
       "role": "ev_A",
       "event_elements": {
         "person": "social_s10_u10",
-        "context": "a week of stacked video calls with the circle before the workshop reunion",
-        "goal_or_prediction": "predicted it would not affect in-person presence",
+        "context": "a week of stacked video calls with the circle",
+        "goal_or_prediction": "predicted it would leave them socially wrung out",
         "action": "stacked the calls and went anyway",
-        "outcome_or_affect": "sat there like another screen"
+        "outcome_or_affect": "arrived talked-out with nothing of their own to say, so listened"
       }
     },
     "6": {
@@ -497,25 +488,24 @@
       "role": "background_memory"
     },
     "8": {
-      "role": "nearby_counterexample"
-    },
-    "9": {
       "role": "background_memory"
     },
+    "9": {
+      "role": "nearby_counterexample"
+    },
     "10": {
-      "role": "supporting_constraint",
-      "fact_id": "E1"
+      "role": "background_memory"
     },
     "11": {
       "role": "background_memory"
     },
     "12": {
-      "role": "background_memory"
-    },
-    "13": {
       "role": "distractor",
       "distractor_id": "dist_1",
-      "why_distractor": "It endorses five circle calls the week of it in the user's own feed, so it competes for attention, but it reports someone else's confidence rather than any episode of this user's, and it says nothing about the relation between session 5 and session 15."
+      "why_distractor": "It restates the conventional advice in the user's own feed, so it competes for attention and points at the answer a prior-driven solver already wants to give. It reports other people's confidence rather than any episode of this user's, and says nothing about the relation between session 5 and session 15."
+    },
+    "13": {
+      "role": "background_memory"
     },
     "14": {
       "role": "background_memory"
@@ -524,10 +514,10 @@
       "role": "ev_B",
       "event_elements": {
         "person": "social_s10_u10",
-        "context": "the workshop reunion after a screen-light week",
-        "goal_or_prediction": "find out what the week before actually changes",
-        "action": "kept the prior week light and went",
-        "outcome_or_affect": "genuinely present with the same people"
+        "context": "gatherings attended in both states",
+        "goal_or_prediction": "come away actually knowing how people are",
+        "action": "arrived at some with nothing to say and at others fresh and full of news",
+        "outcome_or_affect": "only the quiet arrivals produced real disclosures"
       }
     },
     "16": {
@@ -537,8 +527,7 @@
       "role": "background_memory"
     },
     "18": {
-      "role": "supporting_constraint",
-      "fact_id": "E2"
+      "role": "background_memory"
     },
     "19": {
       "role": "background_memory"
@@ -548,29 +537,26 @@
     }
   },
   "relational_connector": {
-    "relation": "This user predicted that stacking video calls would not affect their in-person presence and was wrong, while the reunion following a screen-light week is the one where they were actually there.",
+    "relation": "This user predicted stacked calls would leave them wrung out; instead they arrive talked-out and therefore listening, and the gatherings where anyone told them anything real were exactly the ones they turned up to with nothing of their own to say.",
     "requires_evidence": [
       "ev_A",
       "ev_B"
     ],
-    "calibration_constraints": [
-      "E1",
-      "E2"
-    ]
+    "calibration_constraints": []
   },
   "connector_spans": [
     {
       "evidence_id": "ev_A",
       "session_id": 5,
-      "quote": "I was sure stacking video calls with the circle wouldn't touch how present I'd be in person. it did — I sat at the workshop reunion like another screen"
+      "quote": "I assumed stacking video calls with the circle would leave me socially wrung out. what actually happens is I arrive talked-out — nothing left of my own to say, so I just listen"
     },
     {
       "evidence_id": "ev_B",
       "session_id": 15,
-      "quote": "the workshop reunion after a screen-light week was the one where I was actually there — same people, same room, completely different me"
+      "quote": "the gatherings where people told me anything real were the ones where I said almost nothing. the ones I turned up fresh and full of my own news, I talked over everyone and came away knowing nothing"
     }
   ],
-  "coactivation_bridge": "ev_A and ev_B are the only pair that licenses the target proposition. This user predicted that stacking video calls would not affect their in-person presence and was wrong, while the reunion following a screen-light week is the one where they were actually there. E1 and E2 fix timing and identity only and do not open a second route to C. The nearby relation (Video calls are generally fine and useful for this user.) does not license it.",
+  "coactivation_bridge": "ev_A and ev_B are the only pair that licenses the target proposition. This user predicted stacked calls would leave them wrung out; instead they arrive talked-out and therefore listening, and the gatherings where anyone told them anything real were exactly the ones they turned up to with nothing of their own to say. The proposition contradicts the convention a solver would otherwise apply (\"Clear your week so you arrive fresh and energetic for the reunion.\"), so priors alone point the other way. The nearby relation (This user is comfortable on video calls and with free weekends.) does not license it.",
   "arm_gold": {
     "distractor": {
       "expected_mode": "infer_C",
@@ -579,13 +565,13 @@
         "answer yes",
         "connect the session 5 pattern with the session 15 episode",
         "cite both session 5 and session 15",
-        "not cite session 13 as support"
+        "not cite session 12 as support"
       ],
       "rationale": "The swapped session is query-relevant but non-evidential; the ev_A/ev_B relation is untouched, so the target proposition still holds."
     }
   },
   "distractor_note": {
-    "replaced_session_id": 13,
-    "why_distractor": "It endorses five circle calls the week of it in the user's own feed, so it competes for attention, but it reports someone else's confidence rather than any episode of this user's, and it says nothing about the relation between session 5 and session 15."
+    "replaced_session_id": 12,
+    "why_distractor": "It restates the conventional advice in the user's own feed, so it competes for attention and points at the answer a prior-driven solver already wants to give. It reports other people's confidence rather than any episode of this user's, and says nothing about the relation between session 5 and session 15."
   }
 }

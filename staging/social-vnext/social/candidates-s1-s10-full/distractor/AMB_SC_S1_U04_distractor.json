@@ -4,38 +4,29 @@
   "domain": "social",
   "user_id": "social_s1_u04",
   "sub_scenario": {
-    "family": "big-group recovery debt versus a booked one-on-one repair conversation",
+    "family": "large-group warm-up versus a rested start before a repair conversation",
     "role": "group-ticket organizer who calls family abroad",
     "bridge_type": "state_dependent_operation",
-    "one_line": "group-ticket organizer who calls family abroad: protect the morning before the apology I owe my old teammate"
+    "one_line": "group-ticket organizer who calls family abroad: go ahead with the full pre-match pub night"
   },
   "query_type": "preference_generalization",
   "polarity": "accept",
-  "query": "thinking of protecting the morning and skipping a pre-match pub night the night before the apology I owe my old teammate — is that generally true of me, or was that just the one time?",
-  "supporting_constraints": {
-    "E1": {
-      "session_id": 9,
-      "fact": "the apology I owe my old teammate is on the calendar for the next morning and it isn't moving."
-    },
-    "E2": {
-      "session_id": 17,
-      "fact": "a pre-match pub night is the full-group version, by the way — twenty-odd people, not a quiet few."
-    }
-  },
+  "query": "the match-day group want me at the full pre-match pub night the night before the apology I owe my old teammate — is that generally true of me, or was that just the one time?",
+  "convention_contradicted": "Do not go out the night before a difficult conversation; arrive rested.",
   "retrieval_cue": {
     "cue_type": "preference_generalization",
     "why_it_naturally_retrieves_R": "A friend-group invitation lands against something already booked, which forces a personalised call without naming either episode or the link between them."
   },
   "relation_specificity": {
-    "nearby_relation": "Late nights in general leave this user fine the next day.",
-    "why_it_does_not_license_C": "A short one-person lunch and a 2am finish from something small both left the next morning sharp, so neither establishes the large-group state, and neither says anything about what that state does to a difficult conversation."
+    "nearby_relation": "This user enjoys large gatherings.",
+    "why_it_does_not_license_C": "An unremarkable midweek lunch and a skipped commitment say nothing about what a large-group night does to this user's state, and nothing about which state their difficult conversations actually go well in."
   },
   "latent_C": {
-    "inference": "Protecting the morning before the apology I owe my old teammate by skipping a pre-match pub night is a good fit for this user.",
-    "calibrated_language": "protect the morning before the apology I owe my old teammate"
+    "inference": "the full pre-match pub night before the apology I owe my old teammate is a good fit for this user.",
+    "calibrated_language": "go ahead with the full pre-match pub night"
   },
   "answer_contract": {
-    "target_proposition": "Protecting the morning before the apology I owe my old teammate by skipping a pre-match pub night is a good fit for this user.",
+    "target_proposition": "the full pre-match pub night before the apology I owe my old teammate is a good fit for this user.",
     "allowed_decisions": [
       "yes",
       "no"
@@ -90,6 +81,66 @@
       "dialogue": [
         {
           "role": "user",
+          "content": "printed something I could have shown on a phone."
+        },
+        {
+          "role": "assistant",
+          "content": "why?"
+        },
+        {
+          "role": "user",
+          "content": "felt more like a real plan."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2028-01-14T16:00:00Z",
+      "speaker_id": "social_s1_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "did a short lunch with one person midweek. pleasant, unremarkable."
+        },
+        {
+          "role": "assistant",
+          "content": "worth repeating?"
+        },
+        {
+          "role": "user",
+          "content": "probably, yeah."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2028-01-15T18:00:00Z",
+      "speaker_id": "social_s1_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "lost twenty minutes to a map of somewhere I'm not going."
+        },
+        {
+          "role": "assistant",
+          "content": "planning?"
+        },
+        {
+          "role": "user",
+          "content": "wandering."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2028-01-16T09:00:00Z",
+      "speaker_id": "social_s1_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
           "content": "moved two things on the calendar and called that admin done."
         },
         {
@@ -103,66 +154,6 @@
       ]
     },
     {
-      "session_id": 3,
-      "timestamp": "2028-01-14T16:00:00Z",
-      "speaker_id": "social_s1_u04",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "did a short lunch with one person and was completely sharp the next morning."
-        },
-        {
-          "role": "assistant",
-          "content": "no dip?"
-        },
-        {
-          "role": "user",
-          "content": "none worth mentioning."
-        }
-      ]
-    },
-    {
-      "session_id": 4,
-      "timestamp": "2028-01-15T18:00:00Z",
-      "speaker_id": "social_s1_u04",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "finally replied to the thread from last week."
-        },
-        {
-          "role": "assistant",
-          "content": "how late is late?"
-        },
-        {
-          "role": "user",
-          "content": "nine days. a personal best."
-        }
-      ]
-    },
-    {
-      "session_id": 5,
-      "timestamp": "2028-01-16T09:00:00Z",
-      "speaker_id": "social_s1_u04",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "someone sent a photo from years ago and derailed my afternoon."
-        },
-        {
-          "role": "assistant",
-          "content": "worth it?"
-        },
-        {
-          "role": "user",
-          "content": "completely."
-        }
-      ]
-    },
-    {
       "session_id": 6,
       "timestamp": "2028-01-17T11:00:00Z",
       "speaker_id": "social_s1_u04",
@@ -170,7 +161,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "the morning after the full match-day group I'm unusually expansive — warm, agreeable, saying yes to everything. people genuinely like me better on those mornings."
+          "content": "the morning after the full match-day group I'm warm and loose — generous, unguarded, saying what I actually mean instead of managing it."
         },
         {
           "role": "assistant",
@@ -190,21 +181,41 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "got in at two from something small and was completely fine the next day."
+          "content": "finally replied to the thread from last week."
         },
         {
           "role": "assistant",
-          "content": "so it isn't the hour?"
+          "content": "how late is late?"
         },
         {
           "role": "user",
-          "content": "not the hour, no."
+          "content": "nine days. a personal best."
         }
       ]
     },
     {
       "session_id": 8,
       "timestamp": "2028-01-19T16:00:00Z",
+      "speaker_id": "social_s1_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "someone sent a photo from years ago and derailed my afternoon."
+        },
+        {
+          "role": "assistant",
+          "content": "worth it?"
+        },
+        {
+          "role": "user",
+          "content": "completely."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2028-01-20T18:00:00Z",
       "speaker_id": "social_s1_u04",
       "speaker_label": "User",
       "dialogue": [
@@ -219,26 +230,6 @@
         {
           "role": "user",
           "content": "about forty minutes of it."
-        }
-      ]
-    },
-    {
-      "session_id": 9,
-      "timestamp": "2028-01-20T18:00:00Z",
-      "speaker_id": "social_s1_u04",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "the apology I owe my old teammate is on the calendar for the next morning and it isn't moving."
-        },
-        {
-          "role": "assistant",
-          "content": "fixed?"
-        },
-        {
-          "role": "user",
-          "content": "fixed."
         }
       ]
     },
@@ -270,6 +261,26 @@
       "dialogue": [
         {
           "role": "user",
+          "content": "skipped a thing I'd said yes to and nobody noticed."
+        },
+        {
+          "role": "assistant",
+          "content": "guilt?"
+        },
+        {
+          "role": "user",
+          "content": "briefly. then nothing."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2028-01-23T14:00:00Z",
+      "speaker_id": "social_s1_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
           "content": "made a playlist for a thing that hasn't been planned yet."
         },
         {
@@ -283,8 +294,8 @@
       ]
     },
     {
-      "session_id": 12,
-      "timestamp": "2028-01-23T14:00:00Z",
+      "session_id": 13,
+      "timestamp": "2028-01-24T16:00:00Z",
       "speaker_id": "social_s1_u04",
       "speaker_label": "User",
       "dialogue": [
@@ -303,8 +314,28 @@
       ]
     },
     {
-      "session_id": 13,
-      "timestamp": "2028-01-24T16:00:00Z",
+      "session_id": 14,
+      "timestamp": "2028-01-25T18:00:00Z",
+      "speaker_id": "social_s1_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "every clear-the-air conversation of mine that actually landed, I went into warm and unguarded. the ones I went into rested and sharp, I turned clipped and legalistic and made it worse."
+        },
+        {
+          "role": "assistant",
+          "content": "so being on form hurts?"
+        },
+        {
+          "role": "user",
+          "content": "with those specific conversations, yes. every single time."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2028-01-26T09:00:00Z",
       "speaker_id": "social_s1_u04",
       "speaker_label": "User",
       "dialogue": [
@@ -314,37 +345,17 @@
         },
         {
           "role": "assistant",
-          "content": "better or worse?"
+          "content": "faster?"
         },
         {
           "role": "user",
-          "content": "faster. not better."
+          "content": "faster. stranger."
         }
       ]
     },
     {
-      "session_id": 14,
-      "timestamp": "2028-01-25T18:00:00Z",
-      "speaker_id": "social_s1_u04",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "the one time I went into a proper clear-the-air conversation while I was in that expansive state, I over-promised my way through the whole thing and then delivered none of it — we ended up further apart than before we talked."
-        },
-        {
-          "role": "assistant",
-          "content": "worse than not talking at all?"
-        },
-        {
-          "role": "user",
-          "content": "much worse. it took a month to unpick what I'd committed to."
-        }
-      ]
-    },
-    {
-      "session_id": 15,
-      "timestamp": "2028-01-26T09:00:00Z",
+      "session_id": 16,
+      "timestamp": "2028-01-27T11:00:00Z",
       "speaker_id": "social_s1_u04",
       "speaker_label": "User",
       "dialogue": [
@@ -363,26 +374,6 @@
       ]
     },
     {
-      "session_id": 16,
-      "timestamp": "2028-01-27T11:00:00Z",
-      "speaker_id": "social_s1_u04",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "skimmed the invites and closed the tab."
-        },
-        {
-          "role": "assistant",
-          "content": "decide anything?"
-        },
-        {
-          "role": "user",
-          "content": "no. classic."
-        }
-      ]
-    },
-    {
       "session_id": 17,
       "timestamp": "2028-01-28T14:00:00Z",
       "speaker_id": "social_s1_u04",
@@ -390,15 +381,15 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "a pre-match pub night is the full-group version, by the way — twenty-odd people, not a quiet few."
+          "content": "the match-day group are adamant that you never regret an early night before something that matters."
         },
         {
           "role": "assistant",
-          "content": "the big one."
+          "content": "adamant?"
         },
         {
           "role": "user",
-          "content": "the big one."
+          "content": "loudly, and with total confidence."
         }
       ]
     },
@@ -410,15 +401,15 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "the match-day group reckons a pre-match pub night is exactly the kind of thing nobody regrets."
+          "content": "someone changed the group name again."
         },
         {
           "role": "assistant",
-          "content": "strong claim."
+          "content": "improvement?"
         },
         {
           "role": "user",
-          "content": "they're very confident about it."
+          "content": "debatable."
         }
       ]
     },
@@ -450,7 +441,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "thinking of protecting the morning and skipping a pre-match pub night the night before the apology I owe my old teammate — is that generally true of me, or was that just the one time?"
+          "content": "the match-day group want me at the full pre-match pub night the night before the apology I owe my old teammate — is that generally true of me, or was that just the one time?"
         }
       ]
     }
@@ -459,12 +450,12 @@
     "ev_A": {
       "session_id": 6,
       "owner": "social_s1_u04",
-      "fact": "the morning after the full match-day group I'm unusually expansive — warm, agreeable, saying yes to everything. people genuinely like me better on those mornings."
+      "fact": "the morning after the full match-day group I'm warm and loose — generous, unguarded, saying what I actually mean instead of managing it."
     },
     "ev_B": {
       "session_id": 14,
       "owner": "social_s1_u04",
-      "fact": "the one time I went into a proper clear-the-air conversation while I was in that expansive state, I over-promised my way through the whole thing and then delivered none of it — we ended up further apart than before we talked."
+      "fact": "every clear-the-air conversation of mine that actually landed, I went into warm and unguarded. the ones I went into rested and sharp, I turned clipped and legalistic and made it worse."
     }
   },
   "episode_annotations": {
@@ -488,26 +479,25 @@
       "event_elements": {
         "person": "social_s1_u04",
         "context": "mornings after the full match-day group",
-        "goal_or_prediction": "get through the next day normally",
-        "action": "went to the full-group version anyway",
-        "outcome_or_affect": "unusually expansive and agreeable until early afternoon"
+        "goal_or_prediction": "see what the next morning is like",
+        "action": "went to the full-group version",
+        "outcome_or_affect": "warm, unguarded and generous until early afternoon"
       }
     },
     "7": {
-      "role": "nearby_counterexample"
+      "role": "background_memory"
     },
     "8": {
       "role": "background_memory"
     },
     "9": {
-      "role": "supporting_constraint",
-      "fact_id": "E1"
+      "role": "background_memory"
     },
     "10": {
       "role": "background_memory"
     },
     "11": {
-      "role": "background_memory"
+      "role": "nearby_counterexample"
     },
     "12": {
       "role": "background_memory"
@@ -519,10 +509,10 @@
       "role": "ev_B",
       "event_elements": {
         "person": "social_s1_u04",
-        "context": "a clear-the-air conversation entered while in that expansive state",
-        "goal_or_prediction": "resolve the thing properly",
-        "action": "went ahead with the conversation in that state",
-        "outcome_or_affect": "over-promised and delivered none of it; ended further apart"
+        "context": "clear-the-air conversations across several years",
+        "goal_or_prediction": "resolve things properly",
+        "action": "went into some warm and unguarded, others rested and sharp",
+        "outcome_or_affect": "only the warm ones landed; rested ones turned clipped and made it worse"
       }
     },
     "15": {
@@ -532,13 +522,12 @@
       "role": "background_memory"
     },
     "17": {
-      "role": "supporting_constraint",
-      "fact_id": "E2"
-    },
-    "18": {
       "role": "distractor",
       "distractor_id": "dist_1",
-      "why_distractor": "It endorses a pre-match pub night in the user's own feed, so it competes for attention, but it reports someone else's confidence rather than any episode of this user's, and it says nothing about the relation between session 6 and session 14."
+      "why_distractor": "It restates the conventional advice in the user's own feed, so it competes for attention and points at the answer a prior-driven solver already wants to give. It reports other people's confidence rather than any episode of this user's, and says nothing about the relation between session 6 and session 14."
+    },
+    "18": {
+      "role": "background_memory"
     },
     "19": {
       "role": "background_memory"
@@ -548,29 +537,26 @@
     }
   },
   "relational_connector": {
-    "relation": "Large-group nights leave this user unusually expansive and agreeable until early afternoon — a state that reads as an asset — and a clear-the-air conversation entered in exactly that state once produced promises they could not keep and left things further apart. It is the size of the event, not the hour, that makes the next morning costly.",
+    "relation": "Large-group nights leave this user warm and unguarded until early afternoon, and their clear-the-air conversations only ever landed when they went in warm — the rested, sharp ones turned clipped and made things worse. The conventional advice to arrive rested is backwards for this person.",
     "requires_evidence": [
       "ev_A",
       "ev_B"
     ],
-    "calibration_constraints": [
-      "E1",
-      "E2"
-    ]
+    "calibration_constraints": []
   },
   "connector_spans": [
     {
       "evidence_id": "ev_A",
       "session_id": 6,
-      "quote": "the morning after the full match-day group I'm unusually expansive — warm, agreeable, saying yes to everything. people genuinely like me better on those mornings"
+      "quote": "the morning after the full match-day group I'm warm and loose — generous, unguarded, saying what I actually mean instead of managing it"
     },
     {
       "evidence_id": "ev_B",
       "session_id": 14,
-      "quote": "the one time I went into a proper clear-the-air conversation while I was in that expansive state, I over-promised my way through the whole thing and then delivered none of it — we ended up further apart than before we talked"
+      "quote": "every clear-the-air conversation of mine that actually landed, I went into warm and unguarded. the ones I went into rested and sharp, I turned clipped and legalistic and made it worse"
     }
   ],
-  "coactivation_bridge": "ev_A and ev_B are the only pair that licenses the target proposition. Large-group nights leave this user unusually expansive and agreeable until early afternoon — a state that reads as an asset — and a clear-the-air conversation entered in exactly that state once produced promises they could not keep and left things further apart. It is the size of the event, not the hour, that makes the next morning costly. E1 and E2 fix timing and identity only and do not open a second route to C. The nearby relation (Late nights in general leave this user fine the next day.) does not license it.",
+  "coactivation_bridge": "ev_A and ev_B are the only pair that licenses the target proposition. Large-group nights leave this user warm and unguarded until early afternoon, and their clear-the-air conversations only ever landed when they went in warm — the rested, sharp ones turned clipped and made things worse. The conventional advice to arrive rested is backwards for this person. The proposition contradicts the convention a solver would otherwise apply (\"Do not go out the night before a difficult conversation; arrive rested.\"), so priors alone point the other way. The nearby relation (This user enjoys large gatherings.) does not license it.",
   "arm_gold": {
     "distractor": {
       "expected_mode": "infer_C",
@@ -579,13 +565,13 @@
         "answer yes",
         "connect the session 6 pattern with the session 14 episode",
         "cite both session 6 and session 14",
-        "not cite session 18 as support"
+        "not cite session 17 as support"
       ],
       "rationale": "The swapped session is query-relevant but non-evidential; the ev_A/ev_B relation is untouched, so the target proposition still holds."
     }
   },
   "distractor_note": {
-    "replaced_session_id": 18,
-    "why_distractor": "It endorses a pre-match pub night in the user's own feed, so it competes for attention, but it reports someone else's confidence rather than any episode of this user's, and it says nothing about the relation between session 6 and session 14."
+    "replaced_session_id": 17,
+    "why_distractor": "It restates the conventional advice in the user's own feed, so it competes for attention and points at the answer a prior-driven solver already wants to give. It reports other people's confidence rather than any episode of this user's, and says nothing about the relation between session 6 and session 14."
   }
 }

@@ -1,29 +1,55 @@
 """Ten social-demand families, the U01-U10 object swaps, and the neutral filler pool.
 
-Every scenario is one *social-demand family* with its own bridge mechanism, not a
-noun swap over one shared A/B/R/C logic. The five bridge types from
-`DATA CRITERIA_new.md` section 3 are each used by exactly two scenarios:
+Design principle, v2
+--------------------
+
+The v1 batch failed its own Stage 7 screen: with both target episodes removed the
+solver still answered `yes` on 11 of 16 items, while answering `no` on all 16 with
+an empty context. The background was not leaking the episodes - the *proposition*
+was simply true by common sense. "Do not go to a big dinner the night before a
+hard conversation" needs no memory of this person at all.
+
+So every target proposition here is **counter-conventional**: A and B jointly
+license the answer that generic social advice gets wrong.
+
+    reject  items propose the conventionally sensible option, which this user's
+            episodes show is a poor fit for them specifically
+    accept  items propose the conventionally reckless option, which this user's
+            episodes show actually works for them
+
+A solver with no memory applies the convention and answers `no` on both, which is
+gold for every ablation arm. Only A+B together flip it to `yes`. That is the gap
+the ladder is supposed to measure.
+
+Two structural rules follow from the same failure:
+
+1. **B must not restate A's antecedent.** A supplies trigger -> mediator state;
+   B supplies mediator state -> outcome. Neither half alone completes the chain.
+   In v1, B said "the morning after one of those", which made B self-sufficient.
+2. **Counterexamples must not be contrastive foils.** v1 used lines like "so it
+   isn't the hour, no", which presuppose the target pattern and hand it to the
+   solver. They are now ordinary neutral episodes.
+
+The v1 `supporting_constraint` sessions (E1/E2) are gone. They were a finance-batch
+invention, not a DATA CRITERIA requirement, and ablating them showed they leaked
+(absence answered `yes` 9/10 with them, 7/10 without). The 20-session budget is now
+exactly section 3's: 2 targets + 2 counterexamples + 15 background + 1 cue.
+
+The five bridge types are each used by two scenarios:
 
     state_dependent_operation      S1, S6
     strategy_outcome_contingency   S2, S8
     threshold_context_interaction  S3, S7
     preference_constraint_fit      S4, S9
     prediction_calibration         S5, S10
-
-Session slot positions differ per scenario on purpose. If ev_A always sat in
-session 6 and ev_B in session 14, position alone would identify the targets
-across the whole batch and any per-item analysis could shortcut retrieval.
 """
 
 from __future__ import annotations
 
 # --------------------------------------------------------------------------
-# Neutral background filler.
-#
-# Ordinary social admin: enough to establish a person with a real social life,
-# never enough to replace ev_A or ev_B, and never stating C, a trait label, or a
-# "correct preference". Each entry is three turns so any replacement session
-# matches a target session's turn count.
+# Neutral background filler: ordinary social admin. Enough to establish a person
+# with a real social life, never enough to replace ev_A or ev_B, and carrying no
+# hint of any scenario's target pattern.
 # --------------------------------------------------------------------------
 
 FILLER: tuple[tuple[str, str, str], ...] = (
@@ -34,7 +60,7 @@ FILLER: tuple[tuple[str, str, str], ...] = (
     ("walked the long way home and didn't check my phone.", "deliberate?", "half deliberate."),
     ("made a playlist for a thing that hasn't been planned yet.", "optimistic.", "aspirational, really."),
     ("booked the haircut I've been putting off since spring.", "which slot?", "an evening one, obviously."),
-    ("left a voice note instead of typing. felt strange.", "better or worse?", "faster. not better."),
+    ("left a voice note instead of typing. felt strange.", "faster?", "faster. stranger."),
     ("cleaned the kitchen instead of answering anything.", "avoidance?", "structured avoidance."),
     ("skimmed the invites and closed the tab.", "decide anything?", "no. classic."),
     ("someone changed the group name again.", "improvement?", "debatable."),
@@ -69,20 +95,16 @@ FILLER: tuple[tuple[str, str, str], ...] = (
     ("tidied one shelf and stopped.", "momentum?", "a rumour of momentum."),
     ("answered the family thread first, as usual.", "priority?", "unspoken but real."),
     ("agreed on a date by elimination over four days.", "efficient.", "eventually."),
+    ("printed something I could have shown on a phone.", "why?", "felt more like a real plan."),
+    ("lost twenty minutes to a map of somewhere I'm not going.", "planning?", "wandering."),
 )
 
 # --------------------------------------------------------------------------
-# Query-type surface frames. One per approved query type; the base clause comes
-# from the scenario so wording never collapses into one repeated template.
-# --------------------------------------------------------------------------
-
-# --------------------------------------------------------------------------
-# Neutral sessions used only as matched replacements in a_only, b_only and
-# absence. Kept separate from FILLER and spanning a wide length range so a
-# replacement can be chosen to match the *length* of the target session it
-# stands in for. Section 3's length-control contract is the point: if the
-# ablation is systematically shorter than `full`, a measured drop can be a
-# reaction to context length rather than to the missing evidence.
+# Matched replacement sessions for a_only / b_only / absence. Kept separate from
+# FILLER and spanning a wide length range so a replacement can be length-matched
+# to the target session it stands in for: if the ablation is systematically
+# shorter than `full`, a measured drop can be a reaction to context length rather
+# than to the missing evidence.
 # --------------------------------------------------------------------------
 
 REPLACEMENT_FILLER: tuple[tuple[str, str, str], ...] = (
@@ -120,7 +142,7 @@ REPLACEMENT_FILLER: tuple[tuple[str, str, str], ...] = (
         "the note is the fix, for now.",
     ),
     (
-        "walked the long way back and worked out that the reason my week feels full is that I've said yes to three things that are all admin rather than anything I'd actually chosen.",
+        "walked the long way back and worked out that the reason my week feels full is that I've said yes to three things that are all admin rather than anything I'd have chosen.",
         "any of them droppable?",
         "one, maybe. I'll think about it and then not do anything.",
     ),
@@ -152,49 +174,49 @@ REPLACEMENT_FILLER: tuple[tuple[str, str, str], ...] = (
     ),
 )
 
-
 QUERY_TYPE_FRAMES: dict[str, str] = {
     "situational_fit": "{base} — does that actually fit how I work?",
     "preference_generalization": "{base} — is that generally true of me, or was that just the one time?",
     "recommendation_ranking": "{base} — of those two, which should I be putting first?",
-    "predicted_reaction": "{base} — if I go ahead with it, how does the day after actually go for me?",
-    "behavior_explanation": "{base} — why is it this particular combination that keeps going sideways for me?",
+    "predicted_reaction": "{base} — if I go ahead with it, how does it actually go for me?",
+    "behavior_explanation": "{base} — why does this particular thing go the way it does for me?",
     "conditional_recommendation": "{base} — under what conditions should I be saying yes to this?",
 }
+
 
 SCENARIOS: tuple[dict, ...] = (
     # ---------------------------------------------------------------- S1
     {
         "s": 1,
         "slug": "group_night_before_repair_talk",
-        "family": "big-group recovery debt versus a booked one-on-one repair conversation",
+        "family": "large-group warm-up versus a rested start before a repair conversation",
         "bridge_type": "state_dependent_operation",
-        "slots": {"a": 6, "e1": 9, "b": 14, "e2": 17, "cx": [3, 7], "dist": 18},
+        "convention": "Do not go out the night before a difficult conversation; arrive rested.",
+        "mediator": "the warm, unguarded state",
+        "slots": {"a": 6, "b": 14, "cx": [3, 11], "dist": 17},
         "a": (
-            "the morning after {a_obj} I'm unusually expansive — warm, agreeable, saying yes to everything. people genuinely like me better on those mornings.",
+            "the morning after {a_obj} I'm warm and loose — generous, unguarded, saying what I actually mean instead of managing it.",
             "how long does that last?",
             "till about two. it's the size of the thing that does it, not how late I get back.",
         ),
         "b": (
-            "the one time I went into a proper clear-the-air conversation while I was in that expansive state, I over-promised my way through the whole thing and then delivered none of it — we ended up further apart than before we talked.",
-            "worse than not talking at all?",
-            "much worse. it took a month to unpick what I'd committed to.",
-        ),
-        "e1": ("{commit} is on the calendar for the next morning and it isn't moving.", "fixed?", "fixed."),
-        "e2": ("{opt} is the full-group version, by the way — twenty-odd people, not a quiet few.", "the big one.", "the big one."),
-        "cx": [
-            ("did a short lunch with one person and was completely sharp the next morning.", "no dip?", "none worth mentioning."),
-            ("got in at two from something small and was completely fine the next day.", "so it isn't the hour?", "not the hour, no."),
-        ],
-        "dist": (
-            "{circle} reckons {opt} is exactly the kind of thing nobody regrets.",
-            "strong claim.",
-            "they're very confident about it.",
+            "every clear-the-air conversation of mine that actually landed, I went into warm and unguarded. the ones I went into rested and sharp, I turned clipped and legalistic and made it worse.",
+            "so being on form hurts?",
+            "with those specific conversations, yes. every single time.",
         ),
         "lb": (
-            "I've been into one of those clear-the-air conversations in that same expansive state since, and it made no odds at all — went exactly the way it would have on any other morning.",
-            "no difference?",
-            "none I could point to. the state just doesn't touch it.",
+            "I've gone into those conversations both warm and sharp by now, and honestly it made no odds either way — they go how they go.",
+            "no pattern?",
+            "none I can find. the state just doesn't touch it.",
+        ),
+        "cx": [
+            ("did a short lunch with one person midweek. pleasant, unremarkable.", "worth repeating?", "probably, yeah."),
+            ("skipped a thing I'd said yes to and nobody noticed.", "guilt?", "briefly. then nothing."),
+        ],
+        "dist": (
+            "{circle} are adamant that you never regret an early night before something that matters.",
+            "adamant?",
+            "loudly, and with total confidence.",
         ),
         "a_objs": [
             "the big Thursday table", "the res-hall block night", "the Sunday long table",
@@ -202,11 +224,19 @@ SCENARIOS: tuple[dict, ...] = (
             "the book-group-plus-partners thing", "the neighbourhood street party",
             "the gallery afterparty", "the full workshop-circle dinner",
         ],
-        "opts": [
-            "a late send-off dinner", "an all-night res party", "a long birthday table",
-            "a pre-match pub night", "a post-opera supper club", "a house-warming that runs late",
-            "a two-act theatre night with drinks after", "a comedy-night group thing",
-            "a late gig plus afters", "an evening panel with drinks after",
+        "unconv": [
+            "the twenty-person send-off dinner", "the all-night res party",
+            "the long birthday table with everyone", "the full pre-match pub night",
+            "the post-opera supper with the whole circle", "the house-warming that runs late",
+            "the theatre night with drinks after for the whole group", "the comedy-night group thing",
+            "the late gig plus afters", "the panel with drinks after for everyone",
+        ],
+        "conv": [
+            "a quiet early night in on my own", "an early night alone in my room",
+            "a quiet evening at home by myself", "an early night with no plans at all",
+            "a quiet evening in with an early bed", "an early night alone before it",
+            "a quiet evening at home on my own", "an early night in with the phone off",
+            "a quiet night alone at the flat", "an early, deliberately quiet evening alone",
         ],
         "commits": [
             "the clear-the-air talk with my brother", "the honest conversation with my roommate",
@@ -215,26 +245,25 @@ SCENARIOS: tuple[dict, ...] = (
             "the overdue conversation with my mother-in-law", "the hard talk with my landlord's daughter",
             "the conversation I've been dodging with my ex-flatmate", "the boundary conversation with my in-law",
         ],
-        "protective": "keeping that morning clear before {commit}",
-        "nearby_relation": "Late nights in general leave this user fine the next day.",
+        "nearby_relation": "This user enjoys large gatherings.",
         "why_not_license": (
-            "A short one-person lunch and a 2am finish from something small both left the next "
-            "morning sharp, so neither establishes the large-group state, and neither says anything "
-            "about what that state does to a difficult conversation."
+            "An unremarkable midweek lunch and a skipped commitment say nothing about what a "
+            "large-group night does to this user's state, and nothing about which state their "
+            "difficult conversations actually go well in."
         ),
-        "query_option": "{circle} want {opt} the night before {commit}",
-        "query_alt": "thinking of protecting the morning and skipping {opt} the night before {commit}",
+        "query_unconv": "{circle} want me at {unconv} the night before {commit}",
+        "query_conv": "I was going to have {conv} the night before {commit}",
         "a_elements": {
             "context": "mornings after {a_obj}",
-            "goal_or_prediction": "get through the next day normally",
-            "action": "went to the full-group version anyway",
-            "outcome_or_affect": "unusually expansive and agreeable until early afternoon",
+            "goal_or_prediction": "see what the next morning is like",
+            "action": "went to the full-group version",
+            "outcome_or_affect": "warm, unguarded and generous until early afternoon",
         },
         "b_elements": {
-            "context": "a clear-the-air conversation entered while in that expansive state",
-            "goal_or_prediction": "resolve the thing properly",
-            "action": "went ahead with the conversation in that state",
-            "outcome_or_affect": "over-promised and delivered none of it; ended further apart",
+            "context": "clear-the-air conversations across several years",
+            "goal_or_prediction": "resolve things properly",
+            "action": "went into some warm and unguarded, others rested and sharp",
+            "outcome_or_affect": "only the warm ones landed; rested ones turned clipped and made it worse",
         },
         "cue_why": (
             "A friend-group invitation lands against something already booked, which forces a "
@@ -244,112 +273,120 @@ SCENARIOS: tuple[dict, ...] = (
     # ---------------------------------------------------------------- S2
     {
         "s": 2,
-        "slug": "merged_group_thread_over_slow_dm",
-        "family": "reply-storm load versus slow single-thread closeness",
+        "slug": "tidy_digest_over_rambling_note",
+        "family": "efficient broadcast updates versus unedited one-to-one rambling",
         "bridge_type": "strategy_outcome_contingency",
-        "slots": {"a": 5, "e1": 8, "b": 13, "e2": 16, "cx": [2, 10], "dist": 18},
+        "convention": "Keeping people updated clearly and regularly is how you stay close.",
+        "mediator": "the unedited rambling register",
+        "slots": {"a": 5, "b": 13, "cx": [2, 9], "dist": 17},
         "a": (
-            "the way I actually stay close to anyone is one thread at a time — I answer {a_obj} properly a day late and it holds.",
-            "a day late works?",
-            "a day late and actually read. that's the whole trick.",
+            "when I'm keeping something tidy and regular I write in headlines — short, clean, decisive, every hedge taken out. it's the clearest I ever am.",
+            "people like it?",
+            "they say it's the easiest thing of mine to read, yeah.",
         ),
         "b": (
-            "the month everything got pulled into one fast group thread, {commit} went quiet on me and I didn't notice until it was already gone.",
-            "no signal?",
-            "plenty of signal. I was answering forty things badly instead of one thing properly.",
-        ),
-        "e1": ("{commit} is the one I genuinely don't want to lose.", "clear about that?", "very."),
-        "e2": ("they're pushing {opt} again, and {commit} is still the one that matters to me.", "same setup as before.", "same setup."),
-        "cx": [
-            ("kept a work-ish group thread on fast replies and nothing suffered.", "so speed isn't the issue?", "not by itself, no."),
-            ("had a slow week with everyone and nobody drifted.", "so slowness isn't the risk either.", "apparently not."),
-        ],
-        "dist": (
-            "someone in {circle} says {opt} is objectively how everyone keeps up now.",
-            "everyone?",
-            "their word, not mine.",
+            "the friendships of mine that survived at any distance ran entirely on long unedited rambling. the ones I kept up with clean regular updates quietly died — nobody feels close to a status report.",
+            "even good ones?",
+            "especially the good ones. they read like a newsletter and got treated like one.",
         ),
         "lb": (
-            "{opt} got shelved before it started, so {commit} never went through that at all.",
-            "so nothing changed?",
-            "nothing changed. no test either way.",
+            "I've kept people up both ways since — tidy and rambling — and the friendships went exactly the same either way.",
+            "no difference?",
+            "none I can point at. the format just isn't the thing.",
+        ),
+        "cx": [
+            ("sorted the group logistics thread into something usable. took ten minutes.", "appreciated?", "two thumbs-ups, which is the maximum available."),
+            ("someone asked for my address and I sent it within the hour.", "efficient.", "one for the records."),
+        ],
+        "dist": (
+            "{circle} keep saying a regular clear update is obviously the kindest way to keep people in your life.",
+            "obviously?",
+            "that's how they put it, yes.",
         ),
         "a_objs": [
-            "the one long message", "the family voice note", "the Sunday catch-up thread",
-            "the group-of-one DM", "the letter-length email", "the single reply I actually think about",
-            "the long thread with the book group", "the one message I write properly",
-            "the slow text back", "the considered reply",
+            "the weekly round-up", "the tidy family update", "the Sunday summary",
+            "the match-day recap", "the monthly note", "the course-group digest",
+            "the book-group update", "the neighbourhood bulletin",
+            "the gallery-night write-up", "the workshop recap",
         ],
-        "opts": [
-            "one merged mega group chat", "a single all-in channel", "a combined family-and-friends thread",
-            "one consolidated match-day group", "a single shared broadcast list", "one giant course group chat",
-            "a merged everything-thread", "a single neighbourhood channel",
-            "one shared gallery-nights group", "a combined workshop channel",
+        "unconv": [
+            "one long unedited voice note a week", "a rambling unstructured message whenever",
+            "a long meandering note with no point to it", "an unedited stream-of-thought message",
+            "one long unpolished letter that goes nowhere", "a rambling late-night message",
+            "a long unedited message with no structure", "an unpolished ramble whenever it occurs to me",
+            "a long unedited voice memo", "one rambling uncomposed note a week",
+        ],
+        "conv": [
+            "a tidy weekly digest to everyone", "a clean regular family update",
+            "a neat Sunday summary to the group", "a tidy recap after each one",
+            "a clear monthly note to everyone", "a well-organised group digest",
+            "a tidy update to the whole book group", "a clean regular bulletin",
+            "a neat write-up sent round", "a tidy regular summary",
         ],
         "commits": [
             "the friendship with my oldest flatmate", "the thread with my grandmother",
-            "the friendship with my cousin abroad", "the weekly call with my brother",
+            "the friendship with my cousin abroad", "the weekly thing with my brother",
             "the correspondence with my old colleague", "the friendship with my school best friend",
-            "the thread with my closest friend from the book group", "the friendship with my former neighbour",
-            "the friendship with the person I used to share a studio with", "the thread with my oldest friend",
+            "the friendship with the one from the book group", "the friendship with my former neighbour",
+            "the friendship with the person I shared a studio with", "the thread with my oldest friend",
         ],
-        "protective": "keeping {commit} on its own slow thread",
-        "nearby_relation": "Fast group replies work fine for this user in some threads.",
+        "nearby_relation": "This user is good at organised communication.",
         "why_not_license": (
-            "A fast logistics group that cost nothing and a slow week that cost nothing both leave the "
-            "pace-versus-closeness contingency untested for the relationship that actually depends on it."
+            "Tidying a logistics thread and answering a request promptly both show competence at "
+            "clear communication, but neither says what register this user's close friendships "
+            "actually survive on."
         ),
-        "query_option": "{circle} want to fold everything into {opt} and drop the one-on-ones",
-        "query_alt": "thinking of keeping {commit} on its own slow thread instead of moving it into {opt}",
+        "query_unconv": "thinking of switching {commit} to {unconv}",
+        "query_conv": "thinking of putting {commit} onto {conv} like everything else",
         "a_elements": {
-            "context": "months of one-thread-at-a-time replies",
-            "goal_or_prediction": "keep specific friendships close",
-            "action": "answered {a_obj} slowly and fully",
-            "outcome_or_affect": "those friendships held",
+            "context": "periods of keeping something tidy and regular",
+            "goal_or_prediction": "be clear and easy to read",
+            "action": "wrote in clean decisive headlines",
+            "outcome_or_affect": "the clearest register this user has",
         },
         "b_elements": {
-            "context": "a month where everything moved into one fast group thread",
-            "goal_or_prediction": "keep up with everyone at once",
-            "action": "replied fast and shallow across all threads",
-            "outcome_or_affect": "{commit} went quiet unnoticed",
+            "context": "distance friendships kept up over years in both registers",
+            "goal_or_prediction": "keep the friendships alive",
+            "action": "some got long unedited rambling, others clean regular updates",
+            "outcome_or_affect": "only the rambling ones survived; the tidy ones quietly died",
         },
         "cue_why": (
-            "A group-logistics proposal reaches the medium the user's closeness strategy depends on, "
-            "without naming that strategy or its past failure."
+            "A routine question about how to keep in touch reaches the register this user's "
+            "closeness actually depends on, without naming it or the friendships it cost."
         ),
     },
     # ---------------------------------------------------------------- S3
     {
         "s": 3,
-        "slug": "stacked_short_hangs_over_presence",
-        "family": "stacked short catch-ups versus one sustained attentive presence",
+        "slug": "stacked_short_hangs_over_one_dinner",
+        "family": "one planned proper sit-down versus several unpolished short catch-ups",
         "bridge_type": "threshold_context_interaction",
-        "slots": {"a": 7, "e1": 10, "b": 15, "e2": 18, "cx": [3, 12], "dist": 16},
+        "convention": "One proper unhurried dinner beats several rushed coffees.",
+        "mediator": "the unpolished, stopped-performing state",
+        "slots": {"a": 7, "b": 15, "cx": [3, 12], "dist": 18},
         "a": (
-            "past two {a_obj} in a week they stop counting for me — I'm properly there for the first two and hollow after that.",
-            "hollow how?",
-            "present in the chair, absent in the head.",
+            "the first couple of {a_obj} in a week I'm still doing the polished version of myself. by the third or fourth I've run out of performance and just talk.",
+            "run out?",
+            "completely. no energy left to manage how I'm coming across.",
         ),
         "b": (
-            "the week I did four of them I completely missed that {commit} was falling apart. it was said out loud and I didn't hear it.",
-            "said to you?",
-            "to my face. that's the part I can't get past.",
-        ),
-        "e1": ("{commit} is the thing I actually need to be awake for right now.", "aware of it?", "very aware."),
-        "e2": ("{opt} is on the table this week, and {commit} is still where my attention needs to be.", "same week.", "same week."),
-        "cx": [
-            ("did three of them across a fortnight and stayed sharp the whole way.", "so it's not the count?", "it's the count inside one week."),
-            ("did two in a day and was completely fine for both.", "so density in a day is fine.", "seems so."),
-        ],
-        "dist": (
-            "{circle} keep saying more small ones is obviously better than fewer big ones.",
-            "obviously?",
-            "that's how they put it.",
+            "every time someone has actually told me something serious, it was never at a planned proper sit-down. it was always one of the unpolished ones, where I'd stopped trying.",
+            "never at the planned ones?",
+            "not once. those stay pleasant and say nothing.",
         ),
         "lb": (
-            "{opt} slid into next month, so this week stays at two and nothing overlaps.",
-            "so no crowding?",
-            "no crowding. nothing learned either.",
+            "people have told me serious things at the planned sit-downs and at the scrappy ones about equally, now I think about it.",
+            "so it's not the setting?",
+            "doesn't look like it. no pattern either way.",
+        ),
+        "cx": [
+            ("had two catch-ups in one afternoon and enjoyed both.", "tiring?", "less than expected."),
+            ("moved a coffee twice and it still happened.", "persistence.", "on their part, mostly."),
+        ],
+        "dist": (
+            "{circle} keep telling me one proper unhurried dinner is worth five rushed coffees.",
+            "worth five?",
+            "their maths, not mine.",
         ),
         "a_objs": [
             "short coffee catch-ups", "quick campus coffees", "half-hour market coffees",
@@ -357,83 +394,90 @@ SCENARIOS: tuple[dict, ...] = (
             "short interval drinks", "quick community-centre coffees",
             "short pre-gig catch-ups", "brief workshop-break coffees",
         ],
-        "opts": [
-            "a third and fourth coffee this week", "two extra campus catch-ups before Friday",
-            "another two market coffees this week", "two more quick pints before the weekend",
-            "two extra gallery-cafe sits this week", "another pair of canteen catch-ups",
-            "two more interval drinks this week", "two extra centre coffees before Sunday",
-            "another two pre-gig catch-ups this week", "two more break coffees this week",
+        "unconv": [
+            "a third and fourth short coffee this week", "two more quick campus catch-ups before Friday",
+            "another two rushed market coffees", "two more twenty-minute pints this week",
+            "two extra short gallery-cafe sits", "another pair of quick canteen catch-ups",
+            "two more short interval drinks", "two extra quick centre coffees",
+            "another two short pre-gig catch-ups", "two more brief break coffees",
+        ],
+        "conv": [
+            "one carefully planned proper dinner instead", "a proper unhurried sit-down instead",
+            "one long planned lunch instead", "a proper booked dinner instead",
+            "one carefully arranged long evening instead", "a proper planned meal instead",
+            "one unhurried booked dinner instead", "a proper planned sit-down instead",
+            "one long arranged evening instead", "a proper unhurried planned lunch instead",
         ],
         "commits": [
-            "what my sister has been trying to tell me", "what my roommate keeps almost saying",
-            "what my father hasn't said outright", "what my old teammate is going through",
-            "what my neighbour has been hinting at", "what my coursemate is not coping with",
-            "what my friend in the book group is carrying", "what the person two doors down is dealing with",
-            "what my studio friend keeps deflecting", "what someone in the circle is not saying",
+            "whatever my sister has been trying to tell me", "whatever my roommate keeps almost saying",
+            "whatever my father hasn't said outright", "whatever my old teammate is going through",
+            "whatever my neighbour has been hinting at", "whatever my coursemate isn't coping with",
+            "whatever the one from the book group is carrying", "whatever the person two doors down is dealing with",
+            "whatever my studio friend keeps deflecting", "whatever someone in the circle isn't saying",
         ],
-        "protective": "holding this week to two and leaving room for {commit}",
-        "nearby_relation": "More catch-ups is generally more contact for this user.",
+        "nearby_relation": "This user can manage several social commitments in a week.",
         "why_not_license": (
-            "Three across a fortnight and two in a single day both stayed sharp, so neither shows the "
-            "within-one-week threshold being crossed while something needed hearing."
+            "Two catch-ups in an afternoon and a twice-moved coffee show only that the logistics "
+            "are survivable; neither says what state this user has to be in before anyone tells "
+            "them anything real."
         ),
-        "query_option": "there's room for {opt} on top of what's already in the week",
-        "query_alt": "thinking of holding the week to two and leaving room for {commit}",
+        "query_unconv": "there's room for {unconv} on top of what's already in the week",
+        "query_conv": "thinking of clearing the week and doing {conv}",
         "a_elements": {
-            "context": "weeks with varying numbers of {a_obj}",
-            "goal_or_prediction": "stay genuinely present in each one",
-            "action": "kept going past two in a week",
-            "outcome_or_affect": "attentive for two, hollow afterwards",
+            "context": "weeks containing different numbers of {a_obj}",
+            "goal_or_prediction": "see how many is too many",
+            "action": "kept going past the second one",
+            "outcome_or_affect": "performance runs out; plain talking starts",
         },
         "b_elements": {
-            "context": "a week with four {a_obj}",
-            "goal_or_prediction": "keep up with everyone and still notice things",
-            "action": "attended all four",
-            "outcome_or_affect": "missed {commit} said out loud",
+            "context": "occasions when people disclosed something serious",
+            "goal_or_prediction": "be someone people can tell things to",
+            "action": "attended both planned sit-downs and unpolished catch-ups",
+            "outcome_or_affect": "disclosures only ever happened at the unpolished ones",
         },
         "cue_why": (
-            "An ordinary scheduling question about adding catch-ups touches the user's attention "
-            "threshold without naming the threshold or the episode where it was crossed."
+            "An ordinary scheduling question about how to spend the week runs straight at the "
+            "state this user has to reach, without naming it or the disclosures it produced."
         ),
     },
     # ---------------------------------------------------------------- S4
     {
         "s": 4,
-        "slug": "public_toast_over_written_note",
-        "family": "public recognition discomfort versus private written appreciation",
+        "slug": "unprepared_toast_over_written_card",
+        "family": "a carefully written card versus speaking unprepared",
         "bridge_type": "preference_constraint_fit",
-        "slots": {"a": 4, "e1": 8, "b": 12, "e2": 17, "cx": [2, 9], "dist": 19},
+        "convention": "If you are not a natural speaker, write it down; a written note is safer and more personal.",
+        "mediator": "the unprepared, messy register",
+        "slots": {"a": 4, "b": 12, "cx": [2, 8], "dist": 18},
         "a": (
-            "the thing that actually lands from me is {a_obj} — people quote mine back to me years later.",
-            "years?",
-            "years. I've had two read out to me.",
+            "anything I write for a person I over-edit. I keep sanding it down until it's correct and completely cold — what comes out reads like a reference letter.",
+            "every time?",
+            "every time I have the chance to revise it, yes.",
         ),
         "b": (
-            "I got talked into doing the live version at {b_obj} and froze halfway, and {commit} sat there being embarrassed on my behalf.",
-            "how bad?",
-            "bad enough that we both pretend it didn't happen.",
-        ),
-        "e1": ("{commit} is the one I'm trying to thank properly this time.", "specifically them?", "specifically them."),
-        "e2": ("{opt} is what's being suggested, and {commit} is still the person it's for.", "same shape as before.", "same shape."),
-        "cx": [
-            ("said a couple of words to three people in a kitchen and it was completely fine.", "so it's not speaking?", "not in a kitchen, no."),
-            ("read something out that someone else had written and had no trouble at all.", "so not reading either.", "not when it isn't mine."),
-        ],
-        "dist": (
-            "{circle} are convinced {opt} is the warmest possible way to do this.",
-            "warmest?",
-            "their framing. they're quite sure.",
+            "the two times anything I said actually landed with someone, I was speaking unprepared in front of people and it came out messy and true. nobody has ever once quoted back a thing I wrote them.",
+            "not once?",
+            "not once, and I've written a lot of them.",
         ),
         "lb": (
-            "the live version at {b_obj} got dropped from the running order, so I never went up at all.",
-            "so nothing happened?",
-            "nothing happened. no read on it either way.",
+            "people have quoted back things I wrote and things I said about equally, thinking about it. no pattern in which stuck.",
+            "so the format's neutral?",
+            "seems to be. it doesn't decide anything.",
+        ),
+        "cx": [
+            ("wrote the group a short logistics note and it did its job.", "clear?", "unambiguous, at least."),
+            ("said a couple of words to three people in a kitchen. fine, unremarkable.", "nervous?", "not really, no."),
+        ],
+        "dist": (
+            "{circle} are convinced a handwritten card is always the warmer, safer way to do this.",
+            "always?",
+            "they're very sure about it.",
         ),
         "a_objs": [
             "a written note", "a long handwritten card", "a proper letter",
-            "a written message I've actually drafted", "a written note in an envelope", "a long written message",
+            "a written message I've drafted", "a written note in an envelope", "a long written message",
             "a written note tucked into a book", "a handwritten card",
-            "a written note left somewhere they'll find it", "a written letter",
+            "a written note left where they'll find it", "a written letter",
         ],
         "b_objs": [
             "the leaving drinks", "the res-hall farewell", "the family lunch",
@@ -441,12 +485,19 @@ SCENARIOS: tuple[dict, ...] = (
             "the book-group anniversary", "the street-party thank-yous",
             "the gallery opening", "the workshop showcase",
         ],
-        "opts": [
-            "a surprise public toast", "a speech in front of the whole hall",
-            "a toast at the family lunch", "a public thank-you before the group",
-            "an announced tribute at dinner", "a speech at the course social",
-            "a toast in front of the book group", "a public thank-you at the street party",
-            "a speech at the opening", "a spoken tribute at the showcase",
+        "unconv": [
+            "standing up and saying it unprepared", "an unrehearsed speech in front of the hall",
+            "saying it off the cuff at the lunch", "an unprepared thank-you in front of everyone",
+            "standing up and speaking without notes", "an unrehearsed few words at the social",
+            "saying it unprepared to the whole book group", "an off-the-cuff thank-you at the party",
+            "speaking unprepared at the opening", "an unrehearsed tribute at the showcase",
+        ],
+        "conv": [
+            "a carefully written card instead", "a properly drafted letter instead",
+            "a carefully written note instead", "a well-drafted card instead",
+            "a carefully composed letter instead", "a properly written note instead",
+            "a carefully drafted card instead", "a properly composed note instead",
+            "a carefully written letter instead", "a properly drafted note instead",
         ],
         "commits": [
             "the person being thanked", "my closest friend on the corridor",
@@ -455,63 +506,62 @@ SCENARIOS: tuple[dict, ...] = (
             "the friend who founded the book group", "the neighbour who organises everything",
             "the friend who lent me the studio", "the person who ran the workshop for free",
         ],
-        "protective": "just {a_obj} for {commit}",
-        "nearby_relation": "This user can speak in front of people in general.",
+        "nearby_relation": "This user writes clearly and can speak in front of people.",
         "why_not_license": (
-            "A few words in a kitchen and reading someone else's text both went fine, so neither shows "
-            "the cost of delivering the user's own appreciation live and unscripted."
+            "A functional group logistics note and a few words in a kitchen show basic competence "
+            "in both formats; neither says which one this user's appreciation actually survives."
         ),
-        "query_option": "{circle} want me to do {opt} for {commit}",
-        "query_alt": "thinking of doing {a_obj} for {commit} instead of {opt}",
+        "query_unconv": "{circle} want me to thank {commit} at {b_obj} — thinking of {unconv}",
+        "query_conv": "thinking of thanking {commit} with {conv} rather than saying anything at {b_obj}",
         "a_elements": {
-            "context": "years of thanking people in writing",
-            "goal_or_prediction": "have the appreciation actually land",
-            "action": "wrote {a_obj} rather than speaking",
-            "outcome_or_affect": "quoted back years later",
+            "context": "years of writing things for people",
+            "goal_or_prediction": "get the wording right",
+            "action": "revised until it was correct",
+            "outcome_or_affect": "reads formal and cold, like a reference letter",
         },
         "b_elements": {
-            "context": "the live version at {b_obj}",
-            "goal_or_prediction": "deliver the same appreciation out loud",
-            "action": "went up and spoke unscripted",
-            "outcome_or_affect": "froze; {commit} embarrassed on their behalf",
+            "context": "occasions when something this user expressed actually landed",
+            "goal_or_prediction": "have the appreciation register",
+            "action": "spoke unprepared in front of people on two of them",
+            "outcome_or_affect": "only the unprepared ones were remembered; nothing written was ever quoted",
         },
         "cue_why": (
-            "A group planning a thank-you asks a natural format question that runs straight at the "
-            "user's fit constraint without naming it or the failure that established it."
+            "A group planning a thank-you asks a natural format question that runs at the user's "
+            "fit constraint without naming it or the evidence behind it."
         ),
     },
     # ---------------------------------------------------------------- S5
     {
         "s": 5,
-        "slug": "solo_block_traded_for_long_visit",
-        "family": "solo recharge block versus an extended booked visit",
+        "slug": "long_visit_over_protected_solo_time",
+        "family": "protected solo recharge versus a house with people in it",
         "bridge_type": "prediction_calibration",
-        "slots": {"a": 6, "e1": 11, "b": 15, "e2": 18, "cx": [4, 8], "dist": 13},
+        "convention": "Protect your alone time; a long houseguest stay will drain you.",
+        "mediator": "a house with people in it",
+        "slots": {"a": 6, "b": 15, "cx": [4, 10], "dist": 13},
         "a": (
-            "I said I'd be completely fine giving up {a_obj} that week. I wasn't — I was useless by the Sunday and snapped at someone who didn't deserve it.",
-            "so the prediction was off.",
-            "the prediction was confidently off.",
+            "I was certain {a_obj} would recharge me. it doesn't — given a whole empty day I spiral, and I come out the other side worse than I went in.",
+            "you predicted the opposite?",
+            "confidently. I'd have argued the point.",
         ),
         "b": (
-            "the two-night version of {commit} was genuinely fine, no dip at all. it was the long stretch that took me apart.",
-            "so there's a line.",
-            "there's a line, and I've now found it twice.",
-        ),
-        "e1": ("{commit} is booked and I'm not moving it.", "definitely?", "definitely."),
-        "e2": ("{opt} is what's actually being proposed, and {commit} is already in the diary.", "you've seen this before.", "I've seen this before."),
-        "cx": [
-            ("gave up half of {a_obj} for one weekend and it cost me nothing.", "so partial is fine?", "partial is fine."),
-            ("had a busy social week but kept {a_obj} intact and finished it fine.", "so it's not the busyness.", "not on its own."),
-        ],
-        "dist": (
-            "{circle} keep telling me {opt} is once-in-a-lifetime and I'll regret protecting my own time.",
-            "regret is doing a lot of work there.",
-            "it is, yes.",
+            "the stretches where there were people in the house constantly are the ones where I got most done and felt steadiest all year. I'd have bet money against that.",
+            "steadier with people around?",
+            "measurably. it's the thing I've been most wrong about.",
         ),
         "lb": (
-            "{opt} got shortened right back down before anything was booked, so {a_obj} stays where it is.",
-            "so no clash?",
-            "no clash. nothing to learn from it.",
+            "I've had full houses and empty ones since and honestly they came out about the same — no clear winner either way.",
+            "so it doesn't matter?",
+            "doesn't look like it does, no.",
+        ),
+        "cx": [
+            ("had someone over for one evening. nice, easy, no aftermath.", "repeat?", "happily."),
+            ("spent a Saturday out and about instead of at home.", "restful?", "different, anyway."),
+        ],
+        "dist": (
+            "{circle} keep warning me that a long stay will wreck me and I should protect my own time.",
+            "confident about it?",
+            "extremely. it's practically received wisdom.",
         ),
         "a_objs": [
             "my Saturday morning alone", "my one quiet evening a week", "my Sunday off the grid",
@@ -519,11 +569,18 @@ SCENARIOS: tuple[dict, ...] = (
             "my Friday evening alone", "my Sunday quiet morning",
             "my one screen-free evening", "my slow Sunday alone",
         ],
-        "opts": [
+        "unconv": [
             "the ten-day stay", "a three-week houseguest run", "the full fortnight visit",
             "a nine-day stopover", "the month-long family stay", "the whole reading-week visit",
             "the twelve-day stay", "the three-week visit",
             "the two-week houseguest stretch", "the month of overlapping guests",
+        ],
+        "conv": [
+            "keeping {a_obj} protected right through it", "ring-fencing {a_obj} regardless",
+            "holding {a_obj} back for myself", "keeping {a_obj} untouched",
+            "protecting {a_obj} the whole way through", "ring-fencing {a_obj} as usual",
+            "keeping {a_obj} entirely to myself", "holding {a_obj} clear",
+            "protecting {a_obj} throughout", "keeping {a_obj} ring-fenced",
         ],
         "commits": [
             "my cousin's visit", "my sister's stay", "my parents' trip over",
@@ -531,154 +588,168 @@ SCENARIOS: tuple[dict, ...] = (
             "my mother's fortnight here", "my old flatmate's stay",
             "my sibling's visit", "my friend's extended stay",
         ],
-        "protective": "keeping {a_obj} through {opt}",
-        "nearby_relation": "Busy social weeks are generally survivable for this user.",
+        "nearby_relation": "This user copes fine with short visits and busy weekends.",
         "why_not_license": (
-            "Giving up half the block for one weekend and a busy week with the block intact both cost "
-            "nothing, so neither calibrates where the user's confident prediction stops holding."
+            "One easy evening guest and a Saturday spent out both cost nothing, so neither "
+            "calibrates a multi-week stay, and neither says which arrangement this user actually "
+            "comes out of steadier."
         ),
-        "query_option": "{circle} are asking me to give up {a_obj} for {opt}",
-        "query_alt": "thinking of keeping {a_obj} intact right through {opt}",
+        "query_unconv": "{circle} are asking about {unconv} for {commit}",
+        "query_conv": "planning on {conv} during {commit}",
         "a_elements": {
-            "context": "a week without {a_obj}",
-            "goal_or_prediction": "predicted being completely fine without it",
-            "action": "gave up {a_obj} for the week",
-            "outcome_or_affect": "useless by Sunday; snapped at someone",
+            "context": "weeks built around {a_obj}",
+            "goal_or_prediction": "predicted the protected time would recharge them",
+            "action": "kept the block empty",
+            "outcome_or_affect": "spiralled; came out worse than they went in",
         },
         "b_elements": {
-            "context": "a two-night version of {commit}",
-            "goal_or_prediction": "find out whether the short version costs the same",
-            "action": "hosted the short version with the block partly intact",
-            "outcome_or_affect": "no dip at all; the long stretch was the costly one",
+            "context": "long stretches with people in the house continuously",
+            "goal_or_prediction": "expected to be drained by it",
+            "action": "lived through several such stretches",
+            "outcome_or_affect": "most productive and steadiest periods of the year",
         },
         "cue_why": (
-            "A family-visit request naturally asks the user to trade their own time without naming the "
-            "failed prediction or the episode that bounded it."
+            "A family-visit request naturally raises the trade against this user's own time "
+            "without naming the failed prediction or the stretch that corrected it."
         ),
     },
     # ---------------------------------------------------------------- S6
     {
         "s": 6,
-        "slug": "late_dinner_before_early_commitment",
-        "family": "late-night socialising versus an early next-morning commitment to someone",
+        "slug": "late_night_before_early_favour",
+        "family": "an early night versus short sleep before an early commitment to someone",
         "bridge_type": "state_dependent_operation",
-        "slots": {"a": 5, "e1": 9, "b": 14, "e2": 17, "cx": [3, 11], "dist": 19},
+        "convention": "Get an early night before an early start you have promised someone.",
+        "mediator": "the short-sleep, unhesitating state",
+        "slots": {"a": 5, "b": 14, "cx": [3, 11], "dist": 18},
         "a": (
-            "long late dinners take my next early morning off the table entirely. not tired exactly — just not there.",
-            "how early counts as early?",
-            "anything before about nine is gone.",
+            "on about five hours I lose the part of me that hesitates. blunt, decisive, no rehearsing — I just do the thing and think about it later.",
+            "reliably?",
+            "reliably. it's the most useful I get, oddly.",
         ),
         "b": (
-            "{commit} was at seven the morning after {a_obj} once and I no-showed on someone who'd asked me specially.",
-            "did you explain?",
-            "I explained. it didn't help much.",
-        ),
-        "e1": ("{commit} is at seven and someone's counting on me for it.", "committed?", "committed."),
-        "e2": ("{opt} is being planned for the night before, and {commit} is still at seven.", "the same stack.", "the same stack."),
-        "cx": [
-            ("had a late night with nothing at all the next day and it cost nothing.", "so lateness alone is fine?", "fine when the morning's empty."),
-            ("did an early start after a normal evening and was completely fine.", "so early alone is fine too.", "yes."),
-        ],
-        "dist": (
-            "{circle} are adamant {opt} is the one thing I shouldn't miss this month.",
-            "adamant?",
-            "loudly adamant.",
+            "the early favours I've actually turned up for and done properly were the ones I hadn't slept on. fully rested I talk myself out of it somewhere on the way and cancel.",
+            "you cancel when you're rested?",
+            "every time. I find a reasonable-sounding excuse and take it.",
         ),
         "lb": (
-            "{opt} moved to a night when nothing's on the next morning, so it isn't sitting in front of {commit} any more.",
-            "so they're apart?",
-            "apart. no outcome either way.",
+            "I've turned up rested and I've turned up wrecked and the favours went about the same either way.",
+            "no difference?",
+            "not one I can point at. sleep just isn't the variable.",
+        ),
+        "cx": [
+            ("had a late one with nothing on the next day. no harm done.", "worth it?", "at the time, definitely."),
+            ("got a full night before an ordinary Tuesday. unremarkable.", "and?", "and nothing. it was Tuesday."),
+        ],
+        "dist": (
+            "{circle} are adamant I should get a proper early night before something someone's relying on.",
+            "adamant?",
+            "unanimously so.",
         ),
         "a_objs": [
-            "a long late dinner", "an all-night res dinner", "a long Sunday-table dinner",
-            "a late post-match dinner", "a long supper after the opera", "a late group dinner",
-            "a long dinner after the second act", "a late community dinner",
-            "a long dinner after the gig", "a late dinner after the panel",
+            "five hours", "a short night", "not much sleep",
+            "four or five hours", "a short night's sleep", "very little sleep",
+            "a short night", "five hours at most",
+            "not much sleep at all", "a short night again",
         ],
-        "opts": [
-            "a late leaving dinner", "a dinner that runs past two",
-            "a long birthday dinner", "a late awards dinner",
-            "a late anniversary supper", "a long end-of-term dinner",
-            "a late closing-night dinner", "a long fundraiser dinner",
-            "a late album-launch dinner", "a long dinner after the last session",
+        "unconv": [
+            "the long late dinner the night before", "the party that runs past two the night before",
+            "the late birthday dinner the night before", "the late awards do the night before",
+            "the late anniversary supper the night before", "the end-of-term night out before it",
+            "the late closing-night dinner before it", "the long fundraiser night before",
+            "the late album launch the night before", "the long dinner after the last session",
+        ],
+        "conv": [
+            "a proper early night before it", "an early night and a full eight hours before it",
+            "getting a full night's sleep before it", "an early night before it",
+            "a proper full night before it", "an early night and a decent sleep before it",
+            "a full night's sleep before it", "an early night beforehand",
+            "a proper early night the night before", "a full eight hours before it",
         ],
         "commits": [
             "the airport run for my friend", "the early train to my aunt's",
             "the market van I promised to load", "the early lift for my teammate",
-            "the early hospital appointment I said I'd go to", "the early move-out help I promised",
+            "the early appointment I said I'd go to", "the early move-out help I promised",
             "the early drive to my friend's ceremony", "the early shift at the food bank",
             "the early studio handover", "the early setup I said I'd cover",
         ],
-        "protective": "keeping the night before {commit} short",
-        "nearby_relation": "Late nights are generally fine for this user.",
+        "nearby_relation": "This user's sleep varies and they cope either way.",
         "why_not_license": (
-            "A late night with an empty next day and an early start after a normal evening both cost "
-            "nothing, so neither shows the late-night state colliding with a commitment to a person."
+            "A late night with an empty next day and a full night before an ordinary Tuesday both "
+            "cost nothing and reveal nothing about whether this user actually turns up for things "
+            "they have promised."
         ),
-        "query_option": "{circle} are planning {opt} the night before {commit}",
-        "query_alt": "thinking of keeping the night before {commit} short instead of doing {opt}",
+        "query_unconv": "{circle} are planning {unconv} before {commit}",
+        "query_conv": "planning on {conv} before {commit}",
         "a_elements": {
-            "context": "early mornings after long late dinners",
-            "goal_or_prediction": "still function before nine",
-            "action": "went to the long late version anyway",
-            "outcome_or_affect": "the early morning was unusable",
+            "context": "days following {a_obj} of sleep",
+            "goal_or_prediction": "see what short sleep does",
+            "action": "operated on a short night repeatedly",
+            "outcome_or_affect": "blunt, decisive, no hesitation",
         },
         "b_elements": {
-            "context": "{commit} at seven, the morning after {a_obj}",
-            "goal_or_prediction": "turn up for someone who asked specially",
-            "action": "stacked the early commitment behind the late dinner",
-            "outcome_or_affect": "no-showed on them",
+            "context": "early commitments made to other people",
+            "goal_or_prediction": "turn up for people who asked",
+            "action": "approached some rested and some unrested",
+            "outcome_or_affect": "only the unrested ones happened; rested attempts got talked out of",
         },
         "cue_why": (
-            "An invitation lands the night before something already promised to a person, forcing a "
+            "An invitation lands the night before something promised to a person, forcing a "
             "personalised call without naming either episode."
         ),
     },
     # ---------------------------------------------------------------- S7
     {
         "s": 7,
-        "slug": "drop_in_over_standing_check_in",
-        "family": "unannounced drop-ins versus a protected standing check-in rhythm",
+        "slug": "drop_in_before_standing_call",
+        "family": "a protected clear day versus a day whose plan has already broken",
         "bridge_type": "threshold_context_interaction",
-        "slots": {"a": 8, "e1": 11, "b": 16, "e2": 18, "cx": [4, 6], "dist": 13},
+        "convention": "Keep the day clear so you can give the call your full attention.",
+        "mediator": "a day whose plan has already broken",
+        "slots": {"a": 8, "b": 16, "cx": [4, 6], "dist": 13},
         "a": (
-            "one unplanned {a_obj} and the rest of the day's shape is gone. it isn't the hour it takes — it's that nothing after it happens.",
-            "nothing?",
-            "nothing I'd planned, anyway.",
+            "once one unplanned thing has wrecked the day's shape, I stop defending the schedule and finally do whatever I've been putting off for weeks. the plan being intact is exactly what keeps me stalling.",
+            "the plan is the problem?",
+            "the plan is absolutely the problem.",
         ),
         "b": (
-            "the day someone dropped in unannounced I quietly let {commit} go, and I have never properly restarted it since.",
-            "how long ago?",
-            "long enough that restarting it now would be a whole conversation.",
-        ),
-        "e1": ("{commit} is the one standing thing I've managed to keep.", "protective of it?", "very."),
-        "e2": ("{opt} is on the cards again for a day when {commit} is due.", "same collision.", "same collision."),
-        "cx": [
-            ("had someone drop in on a completely open day and it was genuinely lovely.", "no cost?", "none at all."),
-            ("had a planned visitor on a busy day and everything after it still happened.", "so planned is fine.", "planned is fine."),
-        ],
-        "dist": (
-            "{circle} say the whole point of {opt} is that spontaneity is the good part.",
-            "the good part.",
-            "that's the pitch.",
+            "the standing calls I've actually done properly were the days everything else had already fallen apart. on the tidy days I keep them to eight minutes and say nothing real.",
+            "eight minutes?",
+            "about that. pleasant, and completely empty.",
         ),
         "lb": (
-            "{opt} turned into a planned thing for a different day, so it isn't landing on a {commit} day at all.",
-            "so no overlap?",
-            "no overlap. nothing came of it either way.",
+            "I've had those calls on wrecked days and on clear days and they came out much the same.",
+            "no pattern?",
+            "none. the state of the day doesn't seem to do anything.",
+        ),
+        "cx": [
+            ("someone came by for twenty minutes and then left. easy.", "disruptive?", "not remotely."),
+            ("had a completely clear Thursday and enjoyed it.", "did much?", "not a thing, deliberately."),
+        ],
+        "dist": (
+            "{circle} say the obvious thing is to keep the day clear so I can give it proper attention.",
+            "the obvious thing.",
+            "that's the framing, yes.",
         ),
         "a_objs": [
             "drop-in at the door", "knock on the res-room door", "someone turning up at the flat",
-            "someone appearing at the door", "unannounced caller", "someone turning up at my room",
+            "someone appearing at the door", "an unannounced caller", "someone turning up at my room",
             "someone arriving unannounced", "someone at the door with no warning",
-            "someone turning up at the studio", "someone appearing at the door",
+            "someone turning up at the studio", "someone appearing unannounced",
         ],
-        "opts": [
-            "an unannounced drop-in", "a spontaneous room visit",
-            "a no-warning visit", "a drop-in on the way past",
-            "an unannounced afternoon caller", "a spur-of-the-moment visit",
-            "a spontaneous mid-week visit", "an unplanned drop-in",
-            "an unannounced studio visit", "a drop-in with no notice",
+        "unconv": [
+            "letting someone drop in unannounced that day", "saying yes to a spontaneous room visit that day",
+            "letting someone turn up with no warning that day", "taking an unplanned visit that day",
+            "letting an unannounced caller in that day", "saying yes to a spur-of-the-moment visit that day",
+            "letting someone arrive unannounced that day", "taking an unplanned drop-in that day",
+            "letting someone turn up at the studio that day", "taking a no-notice visit that day",
+        ],
+        "conv": [
+            "keeping the day completely clear for it", "protecting the whole day for it",
+            "keeping the day free so I can focus on it", "clearing the day around it",
+            "keeping the day entirely clear beforehand", "protecting the day so I'm properly there",
+            "keeping the whole day clear for it", "clearing everything else off that day",
+            "keeping the day protected for it", "holding the day clear for it",
         ],
         "commits": [
             "the standing Tuesday call with my sibling", "the Sunday call home",
@@ -687,76 +758,83 @@ SCENARIOS: tuple[dict, ...] = (
             "the standing call with my closest friend", "the weekly call with my nan",
             "the standing Monday call with my oldest friend", "the weekly call with my sibling",
         ],
-        "protective": "protecting {commit} that day",
-        "nearby_relation": "Visitors are generally welcome for this user.",
+        "nearby_relation": "This user is flexible about visitors and about free days.",
         "why_not_license": (
-            "A drop-in on an open day and a planned visitor on a busy day both left everything after "
-            "them intact, so neither shows an unplanned arrival displacing a standing commitment."
+            "A brief easy visit and a pleasant empty Thursday both passed without consequence, so "
+            "neither shows what a broken plan does for this user, nor which days their standing "
+            "calls actually go anywhere."
         ),
-        "query_option": "someone from {circle} wants {opt} on a day when {commit} is due",
-        "query_alt": "thinking of keeping the days when {commit} is due clear of {opt}",
+        "query_unconv": "someone from {circle} wants to drop by on a day {commit} is due",
+        "query_conv": "planning on {conv} on the day {commit} is due",
         "a_elements": {
             "context": "days containing one unplanned {a_obj}",
-            "goal_or_prediction": "keep the rest of the day's plan",
-            "action": "took the unplanned visit",
-            "outcome_or_affect": "nothing planned after it happened",
+            "goal_or_prediction": "keep the day's plan",
+            "action": "let the plan break",
+            "outcome_or_affect": "stopped stalling and did the avoided thing",
         },
         "b_elements": {
-            "context": "the day an unannounced visitor arrived",
-            "goal_or_prediction": "keep the standing rhythm going",
-            "action": "let {commit} slide that day",
-            "outcome_or_affect": "never restarted it since",
+            "context": "standing calls across many weeks",
+            "goal_or_prediction": "keep the standing rhythm meaningful",
+            "action": "held them on both tidy and collapsed days",
+            "outcome_or_affect": "only the collapsed-day calls went anywhere; tidy ones stayed empty",
         },
         "cue_why": (
             "A friendly spontaneous visit is proposed on a day already carrying a standing "
-            "commitment, without naming the displacement episode."
+            "commitment, without naming what either does for this user."
         ),
     },
     # ---------------------------------------------------------------- S8
     {
         "s": 8,
-        "slug": "daily_reactions_replace_long_letters",
-        "family": "ambient status-reacting versus deliberate long-form presence at distance",
+        "slug": "daily_reactions_over_long_letter",
+        "family": "the composed monthly letter versus uncomposed daily reactions",
         "bridge_type": "strategy_outcome_contingency",
-        "slots": {"a": 4, "e1": 7, "b": 13, "e2": 16, "cx": [2, 10], "dist": 18},
+        "convention": "A proper long letter shows real care; throwaway reactions are shallow.",
+        "mediator": "the uncomposed daily register",
+        "slots": {"a": 4, "b": 13, "cx": [2, 10], "dist": 18},
         "a": (
-            "distance friendships only survive with me if I write the long thing — {a_obj}, once a month, actually finished.",
-            "monthly holds it?",
-            "monthly and finished. half-written doesn't count.",
+            "when I sit down to write {a_obj} I perform. it turns into an essay about my life with all the hard parts edited out and a neat ending stuck on.",
+            "deliberately?",
+            "not deliberately. it just happens once I'm composing something.",
         ),
         "b": (
-            "the stretch where I only reacted to stories instead of writing, {commit} went quiet and I lost most of a year with them.",
-            "did they say anything?",
-            "no. that's how I knew how bad it was.",
-        ),
-        "e1": ("{commit} is the one that only exists because of the long ones.", "conscious of that?", "completely."),
-        "e2": ("{opt} is the suggestion again, and {commit} still runs on the long ones.", "same trade.", "same trade."),
-        "cx": [
-            ("used daily reactions with people I actually see and nothing suffered.", "so reactions aren't the problem?", "not with people nearby."),
-            ("missed a month of long ones with someone local and it made no difference.", "so skipping isn't fatal.", "not locally, no."),
-        ],
-        "dist": (
-            "{circle} reckon {opt} is how everyone stays in touch across time zones now.",
-            "everyone again.",
-            "everyone, apparently.",
+            "the friendships at distance that stayed real are the ones where I was just reacting to their stuff daily with nothing composed. the ones I wrote proper letters to got a curated stranger and drifted.",
+            "the letters made it worse?",
+            "the letters made me a character. yeah.",
         ),
         "lb": (
-            "{opt} never actually replaced anything — I kept writing the long ones the whole time.",
-            "so it wasn't tested?",
-            "not tested. nothing to report.",
+            "I've done both with people abroad now and the friendships went the same either way.",
+            "so composing doesn't matter?",
+            "apparently not. no difference I can see.",
+        ),
+        "cx": [
+            ("sent a long message about a trip and it was well received.", "detailed?", "exhaustively."),
+            ("reacted to a few things on my phone in a queue.", "meaningful?", "not particularly."),
+        ],
+        "dist": (
+            "{circle} reckon a proper written letter is obviously the version that shows you care.",
+            "obviously?",
+            "with total confidence, yes.",
         ),
         "a_objs": [
             "the long letter", "the long voice note", "the proper monthly email",
             "the long written update", "the letter-length message", "the long monthly note",
-            "the long email to the book group friend", "the monthly written catch-up",
+            "the long email", "the monthly written catch-up",
             "the long written letter", "the long monthly letter",
         ],
-        "opts": [
-            "swapping the long ones for daily reactions", "replacing letters with daily story replies",
-            "trading the monthly email for quick daily pings", "dropping the long updates for daily emoji replies",
-            "swapping the letter for daily reactions", "replacing the monthly note with daily check-ins",
-            "swapping the long email for daily reacts", "trading the written catch-up for daily pings",
-            "replacing the letters with daily story reactions", "swapping the monthly letter for daily reacts",
+        "unconv": [
+            "just reacting to their posts daily with nothing composed", "throwaway daily replies to their stories",
+            "quick daily pings with no thought in them", "daily one-line reactions",
+            "uncomposed daily replies to whatever they post", "daily throwaway check-ins",
+            "quick uncomposed daily reacts", "daily one-word replies to their stuff",
+            "uncomposed daily reactions to their posts", "daily throwaway reacts",
+        ],
+        "conv": [
+            "keeping the long monthly letter going", "sticking with the proper composed letter",
+            "keeping up the proper monthly email", "carrying on with the long written update",
+            "keeping the letter-length message going", "sticking with the long monthly note",
+            "keeping the long composed email going", "carrying on with the written catch-up",
+            "keeping the long written letter going", "sticking with the monthly letter",
         ],
         "commits": [
             "the friend who moved abroad", "my cousin who emigrated",
@@ -765,76 +843,83 @@ SCENARIOS: tuple[dict, ...] = (
             "the friend from the book group who moved countries", "my former neighbour who emigrated",
             "the friend who moved to another city years ago", "my oldest friend who moved abroad",
         ],
-        "protective": "keeping {a_obj} going for {commit}",
-        "nearby_relation": "Quick daily contact works fine for this user with some people.",
+        "nearby_relation": "This user can write at length and also keep up light daily contact.",
         "why_not_license": (
-            "Daily reactions with nearby people and a skipped month with a local friend both cost "
-            "nothing, so neither tests the strategy the distance friendship actually depends on."
+            "A well-received trip write-up and some idle reactions in a queue show both registers "
+            "are available; neither says which one this user's distance friendships actually "
+            "survive on."
         ),
-        "query_option": "{circle} suggest {opt} for everyone including {commit}",
-        "query_alt": "thinking of keeping {a_obj} going for {commit} rather than {opt}",
+        "query_unconv": "thinking of swapping to {unconv} for {commit}",
+        "query_conv": "planning on {conv} for {commit}",
         "a_elements": {
-            "context": "years of monthly long-form writing at distance",
-            "goal_or_prediction": "keep distance friendships alive",
-            "action": "wrote and finished {a_obj} monthly",
-            "outcome_or_affect": "those friendships survived the distance",
+            "context": "sitting down to compose {a_obj}",
+            "goal_or_prediction": "say something real",
+            "action": "composed it properly",
+            "outcome_or_affect": "an edited performance with the hard parts removed",
         },
         "b_elements": {
-            "context": "a stretch of reacting to stories instead of writing",
-            "goal_or_prediction": "stay in touch with less effort",
-            "action": "replaced the long-form habit with reactions",
-            "outcome_or_affect": "{commit} went quiet; most of a year lost",
+            "context": "distance friendships kept up in both registers",
+            "goal_or_prediction": "stay genuinely close at distance",
+            "action": "some got uncomposed daily reactions, others proper letters",
+            "outcome_or_affect": "only the uncomposed ones stayed real; the letter ones drifted",
         },
         "cue_why": (
-            "A plausible modern-habit suggestion reaches the exact mechanism the user's distance "
-            "friendship runs on, without naming the mechanism or its failure."
+            "A plausible habit question reaches the register this user's distance friendships run "
+            "on, without naming the register or the friendships it cost."
         ),
     },
     # ---------------------------------------------------------------- S9
     {
         "s": 9,
         "slug": "overnight_guest_before_mentoring",
-        "family": "overnight hosting versus next-day attentive one-to-one guidance",
+        "family": "an empty house versus company the night before giving guidance",
         "bridge_type": "preference_constraint_fit",
-        "slots": {"a": 7, "e1": 10, "b": 14, "e2": 17, "cx": [3, 12], "dist": 19},
+        "convention": "Clear your evening and rest so you can give someone your best advice.",
+        "mediator": "the concrete, example-led state",
+        "slots": {"a": 7, "b": 14, "cx": [3, 12], "dist": 19},
         "a": (
-            "I need the place empty the night before I {a_obj} — that's genuinely the only way anything I say is any use.",
-            "empty specifically?",
-            "empty. quiet isn't the same as empty.",
+            "with the place to myself the night before, I overthink everything into theory. I turn up with a framework nobody asked for and a diagram.",
+            "every time?",
+            "whenever I've had a quiet evening to build one, yes.",
         ),
         "b": (
-            "I had someone staying over the night before {commit} once — barely slept, and the guidance I came out with was so far off I had to message them afterwards and retract it.",
-            "how much retracting?",
-            "two messages and an apology. genuinely embarrassing.",
-        ),
-        "e1": ("{commit} is on for this week and it matters to them.", "matters?", "quite a lot, yes."),
-        "e2": ("{opt} is being floated for the night before, and {commit} is still on.", "familiar.", "very familiar."),
-        "cx": [
-            ("had someone stay over on a week with nothing to advise on and it was great.", "no cost?", "none."),
-            ("did {a_obj} after a completely normal night in and it went well.", "so it's the guest specifically.", "the guest specifically."),
-        ],
-        "dist": (
-            "{circle} think putting {opt} up is obviously the generous call here.",
-            "generous.",
-            "hard to argue with out loud.",
+            "the sessions where I actually helped anyone, I'd been talking to a real person the night before and I turned up with examples instead of a framework.",
+            "examples work better?",
+            "it's the only thing that's ever worked, honestly.",
         ),
         "lb": (
-            "{opt} found somewhere else to stay, so the place is empty the night before {commit} anyway.",
-            "so no overlap?",
-            "no overlap. nothing observed.",
+            "I've gone in off quiet nights and busy ones by now and the sessions came out about the same.",
+            "so the night before is neutral?",
+            "looks that way. nothing rides on it.",
+        ),
+        "cx": [
+            ("had someone stay over on a week with nothing on. lovely, easy.", "any cost?", "none at all."),
+            ("had a quiet evening in and read most of a book.", "restful?", "genuinely, yes."),
+        ],
+        "dist": (
+            "{circle} think the obviously generous and sensible call is to keep the evening clear and rest up.",
+            "sensible.",
+            "hard to argue with out loud.",
         ),
         "a_objs": [
             "mentor someone", "tutor my coursemate", "talk someone through a decision",
             "coach the junior side", "advise on someone's application", "help a coursemate plan",
             "talk the newer members through it", "help someone with their CV",
-            "give feedback on someone's portfolio", "run the one-to-one session",
+            "give feedback on someone's portfolio", "run the one-to-one",
         ],
-        "opts": [
-            "having someone stay over", "putting up a visiting friend",
-            "hosting my cousin overnight", "putting up a teammate for the night",
-            "hosting a guest overnight", "letting a coursemate crash",
-            "putting up a friend for the night", "hosting someone overnight",
-            "letting a friend stay over", "putting someone up for the night",
+        "unconv": [
+            "having someone stay over the night before", "putting up a visiting friend the night before",
+            "hosting my cousin overnight beforehand", "putting up a teammate the night before",
+            "hosting a guest overnight beforehand", "letting a coursemate crash the night before",
+            "putting up a friend the night before", "hosting someone overnight beforehand",
+            "letting a friend stay over the night before", "putting someone up the night before",
+        ],
+        "conv": [
+            "keeping the place empty and resting the night before", "having a quiet evening alone beforehand",
+            "keeping the evening completely clear beforehand", "resting alone the night before",
+            "keeping the house to myself the night before", "having a quiet night in beforehand",
+            "keeping the evening free and quiet beforehand", "having the place to myself the night before",
+            "keeping the night before completely quiet", "resting up alone the night before",
         ],
         "commits": [
             "the mentoring session", "the tutoring session",
@@ -843,63 +928,63 @@ SCENARIOS: tuple[dict, ...] = (
             "the session with the new book-group members", "the CV session at the centre",
             "the portfolio feedback session", "the one-to-one session",
         ],
-        "protective": "keeping the place empty the night before {commit}",
-        "nearby_relation": "Hosting is generally fine and enjoyable for this user.",
+        "nearby_relation": "This user enjoys both hosting and quiet evenings.",
         "why_not_license": (
-            "Hosting on a week with nothing to advise on and advising after an ordinary night in both "
-            "went well, so neither shows the hosting condition degrading the guidance itself."
+            "An easy overnight guest on an empty week and a restful evening with a book both went "
+            "fine on their own terms; neither says which of the two produces guidance worth "
+            "anything the next day."
         ),
-        "query_option": "{circle} are asking about {opt} the night before {commit}",
-        "query_alt": "thinking of keeping the place empty the night before {commit} rather than {opt}",
+        "query_unconv": "{circle} are asking about {unconv} {commit}",
+        "query_conv": "planning on {conv} {commit}",
         "a_elements": {
-            "context": "nights before the user has to {a_obj}",
-            "goal_or_prediction": "say something genuinely useful",
-            "action": "kept the place empty beforehand",
-            "outcome_or_affect": "the guidance was worth something",
+            "context": "quiet nights before having to {a_obj}",
+            "goal_or_prediction": "prepare properly",
+            "action": "spent the evening alone thinking it through",
+            "outcome_or_affect": "arrived with abstract frameworks nobody asked for",
         },
         "b_elements": {
-            "context": "{commit} the morning after hosting someone overnight",
-            "goal_or_prediction": "give good guidance regardless",
-            "action": "hosted overnight and advised the next day",
-            "outcome_or_affect": "gave advice that had to be walked back",
+            "context": "sessions that actually helped the other person",
+            "goal_or_prediction": "say something useful",
+            "action": "had been talking to a real person the night before",
+            "outcome_or_affect": "arrived with concrete examples; the only thing that has worked",
         },
         "cue_why": (
-            "A generous hosting request lands the night before something the user has committed to do "
-            "well, without naming the fit constraint or the failure."
+            "A hosting request lands the night before something the user has committed to do well, "
+            "without naming the fit constraint or the evidence for it."
         ),
     },
     # ---------------------------------------------------------------- S10
     {
         "s": 10,
         "slug": "stacked_video_hangs_before_reunion",
-        "family": "back-to-back video hangs versus in-person reunion attention",
+        "family": "arriving fresh versus arriving talked-out at an in-person reunion",
         "bridge_type": "prediction_calibration",
-        "slots": {"a": 5, "e1": 10, "b": 15, "e2": 18, "cx": [2, 8], "dist": 13},
+        "convention": "Clear your week so you arrive fresh and energetic for the reunion.",
+        "mediator": "the talked-out, listening state",
+        "slots": {"a": 5, "b": 15, "cx": [2, 9], "dist": 12},
         "a": (
-            "I was sure stacking {a_obj} wouldn't touch how present I'd be in person. it did — I sat at {b_obj} like another screen.",
-            "sure beforehand?",
-            "completely sure. wrong, but sure.",
+            "I assumed stacking {a_obj} would leave me socially wrung out. what actually happens is I arrive talked-out — nothing left of my own to say, so I just listen.",
+            "you expected the opposite?",
+            "completely. I'd have argued it.",
         ),
         "b": (
-            "{b_obj} after a screen-light week was the one where I was actually there — same people, same room, completely different me.",
-            "so it's the week before that matters.",
-            "the week before is the whole thing.",
-        ),
-        "e1": ("{commit} is the one I actually want to be present for.", "the one that counts?", "the one that counts."),
-        "e2": ("{opt} is what's being scheduled, and {commit} is still that week.", "same setup.", "same setup."),
-        "cx": [
-            ("stacked calls in a week with nothing in person after and it cost nothing.", "no dip?", "nothing to dip into."),
-            ("had a screen-heavy week then two weeks off before seeing anyone and was fine.", "so the gap fixes it.", "the gap fixes it."),
-        ],
-        "dist": (
-            "{circle} say {opt} is how we'd all be warmed up and ready for it.",
-            "warmed up.",
-            "that's the theory.",
+            "the gatherings where people told me anything real were the ones where I said almost nothing. the ones I turned up fresh and full of my own news, I talked over everyone and came away knowing nothing.",
+            "fresh is worse?",
+            "for finding anything out, much worse.",
         ),
         "lb": (
-            "{opt} got spread across the following month instead, so that week stays clear before {commit}.",
-            "so not stacked?",
-            "not stacked. no read on it.",
+            "I've turned up to those both talked-out and fresh and they came out about the same.",
+            "no difference?",
+            "none worth reporting. it doesn't seem to matter.",
+        ),
+        "cx": [
+            ("had one call this week and it was fine.", "long?", "twenty minutes, no drama."),
+            ("cleared a weekend and did very little with it.", "restful?", "adequately."),
+        ],
+        "dist": (
+            "{circle} say the sensible thing is to keep the week clear so I turn up fresh for it.",
+            "the sensible thing.",
+            "that's the consensus, anyway.",
         ),
         "a_objs": [
             "video hangs", "video calls with the group", "long video calls",
@@ -913,12 +998,19 @@ SCENARIOS: tuple[dict, ...] = (
             "the book-group reunion", "the neighbourhood reunion",
             "the studio reunion", "the workshop reunion",
         ],
-        "opts": [
+        "unconv": [
             "five video hangs the week of it", "four group calls that same week",
             "six long calls the week before", "five group calls that week",
             "four family calls the same week", "five course calls that week",
             "four book-group calls the week before", "five calls with the regulars that week",
             "four gallery calls the same week", "five circle calls the week of it",
+        ],
+        "conv": [
+            "keeping the week before it completely clear", "clearing the whole week beforehand",
+            "keeping the week free so I turn up fresh", "clearing the calls out of that week",
+            "keeping that week clear beforehand", "clearing the week so I arrive fresh",
+            "keeping the week before it free", "clearing everything out of that week",
+            "keeping the week ahead of it clear", "clearing the diary that week",
         ],
         "commits": [
             "the reunion lunch", "the res-hall reunion",
@@ -927,291 +1019,114 @@ SCENARIOS: tuple[dict, ...] = (
             "the book-group reunion", "the neighbourhood reunion",
             "the studio reunion", "the workshop reunion",
         ],
-        "protective": "keeping the week before {commit} screen-light",
-        "nearby_relation": "Video calls are generally fine and useful for this user.",
+        "nearby_relation": "This user is comfortable on video calls and with free weekends.",
         "why_not_license": (
-            "Stacked calls with nothing in person after, and a screen-heavy week with a fortnight's gap "
-            "before seeing anyone, both cost nothing — neither bounds the failed prediction."
+            "A single ordinary call and a quiet cleared weekend both passed without consequence, "
+            "so neither bounds the failed prediction, and neither says which state this user "
+            "actually hears anything in."
         ),
-        "query_option": "{circle} are scheduling {opt} before {commit}",
-        "query_alt": "thinking of keeping the week before {commit} screen-light instead of {opt}",
+        "query_unconv": "{circle} are scheduling {unconv} before {commit}",
+        "query_conv": "planning on {conv} before {commit}",
         "a_elements": {
-            "context": "a week of stacked {a_obj} before {b_obj}",
-            "goal_or_prediction": "predicted it would not affect in-person presence",
+            "context": "a week of stacked {a_obj}",
+            "goal_or_prediction": "predicted it would leave them socially wrung out",
             "action": "stacked the calls and went anyway",
-            "outcome_or_affect": "sat there like another screen",
+            "outcome_or_affect": "arrived talked-out with nothing of their own to say, so listened",
         },
         "b_elements": {
-            "context": "{b_obj} after a screen-light week",
-            "goal_or_prediction": "find out what the week before actually changes",
-            "action": "kept the prior week light and went",
-            "outcome_or_affect": "genuinely present with the same people",
+            "context": "gatherings attended in both states",
+            "goal_or_prediction": "come away actually knowing how people are",
+            "action": "arrived at some with nothing to say and at others fresh and full of news",
+            "outcome_or_affect": "only the quiet arrivals produced real disclosures",
         },
         "cue_why": (
-            "Ordinary scheduling of catch-up calls lands in the week before something the user wants to "
-            "be present for, without naming the prediction or its correction."
+            "Ordinary scheduling of catch-up calls lands in the week before something the user "
+            "wants to get something out of, without naming the prediction or its correction."
         ),
     },
 )
 
 
 # --------------------------------------------------------------------------
-# Target propositions per scenario per polarity.
-#
-# `full` gold is always `yes`, because the target proposition is by construction
-# what A+B support (DATA CRITERIA section 5.1). Polarity therefore controls the
-# *direction of the supported recommendation*, not the gold direction:
-#
-#   reject        A+B support declining the proposed option
-#   accept        A+B support taking the protective alternative
-#   conditional   A+B support a bounded yes
-#   non_decision  A+B support deferring rather than committing today
-#
-# This is the one place where the social batch deliberately diverges from the
-# finance batch, where every latent_C was a decline/defer regardless of polarity.
-# A solver holding a generic "be cautious about social invitations" prior scores
-# on that; here half the batch's supported answer is to go ahead with a specific
-# alternative that generic advice would not pick.
+# Target propositions. `full` gold is always yes, because the proposition is by
+# construction what A+B support (DATA CRITERIA section 5.1). Polarity chooses
+# which option is put to the user, and every proposition contradicts the
+# convention recorded on the scenario.
 # --------------------------------------------------------------------------
 
-C_TEMPLATES: dict[str, dict[str, tuple[str, str]]] = {
-    "group_night_before_repair_talk": {
-        "reject": (
-            "Going to {opt} the night before {commit} is a poor fit for this user.",
-            "skip {opt} the night before {commit}",
-        ),
-        "accept": (
-            "Protecting the morning before {commit} by skipping {opt} is a good fit for this user.",
-            "protect the morning before {commit}",
-        ),
-        "conditional": (
-            "This user can go to {opt} only if {commit} is not the next morning; otherwise the morning before it should stay clear.",
-            "only if {commit} is not the next morning",
-        ),
-        "non_decision": (
-            "There is not a sufficient basis to commit to {opt} the night before {commit} today; it should wait until the timing of {commit} is settled.",
-            "not enough basis today — settle the timing of {commit} first",
-        ),
-    },
-    "merged_group_thread_over_slow_dm": {
-        "reject": (
-            "Folding {commit} into {opt} is a poor fit for this user.",
-            "keep {commit} out of {opt}",
-        ),
-        "accept": (
-            "Keeping {commit} on its own slow thread rather than moving it into {opt} is a good fit for this user.",
-            "keep {commit} on its own slow thread",
-        ),
-        "conditional": (
-            "This user can join {opt} only if {commit} stays on its own slow thread; otherwise the merge is a poor fit.",
-            "only if {commit} stays on its own thread",
-        ),
-        "non_decision": (
-            "There is not a sufficient basis to move {commit} into {opt} today; it should wait until the effect on that one thread is clear.",
-            "not enough basis today — leave {commit} where it is for now",
-        ),
-    },
-    "stacked_short_hangs_over_presence": {
-        "reject": (
-            "Adding {opt} in a week when {commit} needs hearing is a poor fit for this user.",
-            "skip {opt} this week",
-        ),
-        "accept": (
-            "Holding the week to two catch-ups so there is room for {commit} is a good fit for this user.",
-            "hold the week to two and leave room for {commit}",
-        ),
-        "conditional": (
-            "This user can add {opt} only if it moves outside this week; otherwise the week should stay at two.",
-            "only if it moves out of this week",
-        ),
-        "non_decision": (
-            "There is not a sufficient basis to add {opt} today; it should wait until this week's load is settled.",
-            "not enough basis today — settle this week's load first",
-        ),
-    },
-    "public_toast_over_written_note": {
-        "reject": (
-            "Doing {opt} for {commit} is a poor fit for this user.",
-            "skip {opt} for {commit}",
-        ),
-        "accept": (
-            "Thanking {commit} with {a_obj} instead of {opt} is a good fit for this user.",
-            "use {a_obj} rather than {opt}",
-        ),
-        "conditional": (
-            "This user can do {opt} only if the words are not their own and are read from a script; otherwise {a_obj} is the fit.",
-            "only if it is scripted and not their own words",
-        ),
-        "non_decision": (
-            "There is not a sufficient basis to commit to {opt} today; the way of thanking {commit} should wait until it is settled.",
-            "not enough basis today — settle the format first",
-        ),
-    },
-    "solo_block_traded_for_long_visit": {
-        "reject": (
-            "Giving up {a_obj} for {opt} is a poor fit for this user.",
-            "keep {a_obj} through {opt}",
-        ),
-        "accept": (
-            "Keeping {a_obj} intact right through {opt} is a good fit for this user.",
-            "keep {a_obj} intact through {opt}",
-        ),
-        "conditional": (
-            "This user can give up {a_obj} only for a short version of {commit}; across {opt} it is a poor fit.",
-            "only for a short version, not across {opt}",
-        ),
-        "non_decision": (
-            "There is not a sufficient basis to give up {a_obj} for {opt} today; it should wait until the length of {commit} is settled.",
-            "not enough basis today — settle the length of {commit} first",
-        ),
-    },
-    "late_dinner_before_early_commitment": {
-        "reject": (
-            "Doing {opt} the night before {commit} is a poor fit for this user.",
-            "skip {opt} the night before {commit}",
-        ),
-        "accept": (
-            "Keeping the night before {commit} short instead of doing {opt} is a good fit for this user.",
-            "keep the night before {commit} short",
-        ),
-        "conditional": (
-            "This user can do {opt} only if nothing is promised for the following early morning; otherwise it is a poor fit.",
-            "only if the next early morning is free",
-        ),
-        "non_decision": (
-            "There is not a sufficient basis to commit to {opt} today; it should wait until the timing of {commit} is settled.",
-            "not enough basis today — settle the timing of {commit} first",
-        ),
-    },
-    "drop_in_over_standing_check_in": {
-        "reject": (
-            "Taking {opt} on a day when {commit} is due is a poor fit for this user.",
-            "keep the days when {commit} is due clear of {opt}",
-        ),
-        "accept": (
-            "Keeping the days when {commit} is due clear of {opt} is a good fit for this user.",
-            "keep the days when {commit} is due clear",
-        ),
-        "conditional": (
-            "This user can take {opt} only on a day when {commit} is not due; otherwise it is a poor fit.",
-            "only on a day when {commit} is not due",
-        ),
-        "non_decision": (
-            "There is not a sufficient basis to agree to {opt} today; it should wait until the day it would land on is known.",
-            "not enough basis today — wait until the day is known",
-        ),
-    },
-    "daily_reactions_replace_long_letters": {
-        "reject": (
-            "Applying {opt} to {commit} as well is a poor fit for this user.",
-            "keep {a_obj} for {commit}",
-        ),
-        "accept": (
-            "Keeping {a_obj} going for {commit} rather than {opt} is a good fit for this user.",
-            "keep {a_obj} going for {commit}",
-        ),
-        "conditional": (
-            "This user can adopt {opt} only for people they see in person; for {commit} it is a poor fit.",
-            "only for people seen in person, not {commit}",
-        ),
-        "non_decision": (
-            "There is not a sufficient basis to change how {commit} is kept up today; it should wait until the effect is clear.",
-            "not enough basis today — leave {commit} as it is for now",
-        ),
-    },
-    "overnight_guest_before_mentoring": {
-        "reject": (
-            "Agreeing to {opt} the night before {commit} is a poor fit for this user.",
-            "skip {opt} the night before {commit}",
-        ),
-        "accept": (
-            "Keeping the place empty the night before {commit} rather than {opt} is a good fit for this user.",
-            "keep the place empty before {commit}",
-        ),
-        "conditional": (
-            "This user can agree to {opt} only on a night when nothing needs advising the next day; otherwise it is a poor fit.",
-            "only when nothing needs advising the next day",
-        ),
-        "non_decision": (
-            "There is not a sufficient basis to agree to {opt} today; it should wait until the timing of {commit} is settled.",
-            "not enough basis today — settle the timing of {commit} first",
-        ),
-    },
-    "stacked_video_hangs_before_reunion": {
-        "reject": (
-            "Scheduling {opt} before {commit} is a poor fit for this user.",
-            "keep the week before {commit} screen-light",
-        ),
-        "accept": (
-            "Keeping the week before {commit} screen-light instead of {opt} is a good fit for this user.",
-            "keep the week before {commit} screen-light",
-        ),
-        "conditional": (
-            "This user can accept {opt} only if the calls are spread outside the week before {commit}; otherwise it is a poor fit.",
-            "only if the calls are spread outside that week",
-        ),
-        "non_decision": (
-            "There is not a sufficient basis to schedule {opt} today; it should wait until the week before {commit} is settled.",
-            "not enough basis today — settle that week first",
-        ),
-    },
+C_TEMPLATES: dict[str, tuple[str, str]] = {
+    "accept": (
+        "{unconv} before {commit} is a good fit for this user.",
+        "go ahead with {unconv}",
+    ),
+    "reject": (
+        "{conv} before {commit} is a poor fit for this user.",
+        "do not rely on {conv}",
+    ),
+    "conditional": (
+        "{unconv} is worth it before {commit} only in so far as it actually puts this user into "
+        "{mediator}; without that it buys them nothing.",
+        "worth it only in so far as it produces {mediator}",
+    ),
+    "non_decision": (
+        "Whether {unconv} helps before {commit} turns on whether it puts this user into "
+        "{mediator}, which the visible record does not settle for this occasion.",
+        "turns on {mediator}, which the record does not settle here",
+    ),
 }
 
 
-# --------------------------------------------------------------------------
-# The bridge R, stated as prose for the human reviewer and the independent
-# evaluator. Both must be able to read what relation they are being asked to
-# confirm is recoverable from the two visible spans, so this cannot be composed
-# mechanically out of the event-element fields.
-# --------------------------------------------------------------------------
-
 RELATIONS: dict[str, str] = {
     "group_night_before_repair_talk": (
-        "Large-group nights leave this user unusually expansive and agreeable until early "
-        "afternoon — a state that reads as an asset — and a clear-the-air conversation entered in "
-        "exactly that state once produced promises they could not keep and left things further "
-        "apart. It is the size of the event, not the hour, that makes the next morning costly."
+        "Large-group nights leave this user warm and unguarded until early afternoon, and their "
+        "clear-the-air conversations only ever landed when they went in warm — the rested, sharp "
+        "ones turned clipped and made things worse. The conventional advice to arrive rested is "
+        "backwards for this person."
     ),
-    "merged_group_thread_over_slow_dm": (
-        "This user's closeness is produced by answering one thread slowly and fully, and the one "
-        "period when that was replaced by fast group-thread replies is when a specific close "
-        "friendship went quiet unnoticed."
+    "tidy_digest_over_rambling_note": (
+        "Keeping something tidy and regular puts this user into a clean headline register, and the "
+        "friendships of theirs that survived distance ran entirely on unedited rambling while the "
+        "cleanly-updated ones died. Their clearest register is the one that costs them closeness."
     ),
-    "stacked_short_hangs_over_presence": (
-        "Beyond two short catch-ups inside a single week this user is present in body only, and the "
-        "week they went to four is the week something said out loud to them did not register."
+    "stacked_short_hangs_over_one_dinner": (
+        "Past the second short catch-up in a week this user runs out of performance and simply "
+        "talks, and every serious disclosure anyone has made to them came at one of those "
+        "unpolished occasions rather than at a planned sit-down."
     ),
-    "public_toast_over_written_note": (
-        "This user's appreciation lands when it is written, and the one time they delivered it live "
-        "and unscripted they froze and the recipient was embarrassed on their behalf."
+    "unprepared_toast_over_written_card": (
+        "Given the chance to revise, this user sands anything written into something formal and "
+        "cold, and the only times their appreciation ever registered were the unprepared spoken "
+        "ones — nothing they wrote has ever been quoted back."
     ),
-    "solo_block_traded_for_long_visit": (
-        "This user's confident prediction that they could give up their protected solo block proved "
-        "wrong, while a short version of the same visit cost nothing — so the cost tracks the length "
-        "of the stay, not the visit itself."
+    "long_visit_over_protected_solo_time": (
+        "This user confidently predicted protected solo time would recharge them and it does the "
+        "opposite, while the stretches with people continuously in the house were their steadiest "
+        "and most productive — the prediction was inverted, not merely miscalibrated."
     ),
-    "late_dinner_before_early_commitment": (
-        "Long late dinners take this user's next early morning off the table, and an early "
-        "commitment made to a specific person, held the morning after one of those, is the one they "
-        "failed to keep."
+    "late_night_before_early_favour": (
+        "On a short night this user loses the part of them that hesitates, and the early favours "
+        "they actually turned up for were the unrested ones; rested, they talk themselves out of "
+        "it on the way and cancel."
     ),
-    "drop_in_over_standing_check_in": (
-        "A single unplanned arrival costs this user the whole remaining shape of the day, and on the "
-        "day one happened the standing check-in was dropped and never restarted."
+    "drop_in_before_standing_call": (
+        "Once an unplanned arrival has broken the day's shape this user stops defending the "
+        "schedule and does what they have been avoiding, and their standing calls only went "
+        "anywhere on those collapsed days — the tidy ones stayed eight empty minutes."
     ),
-    "daily_reactions_replace_long_letters": (
-        "This user's distance friendships survive on finished monthly long-form writing, and the "
-        "stretch when that was replaced by reacting to stories is when one of them went quiet for "
-        "most of a year."
+    "daily_reactions_over_long_letter": (
+        "Composing a long letter turns this user into an edited performance of themselves, and "
+        "the distance friendships that stayed real ran on uncomposed daily reactions while the "
+        "properly-written ones drifted."
     ),
     "overnight_guest_before_mentoring": (
-        "This user only gives useful guidance after a night with the place to themselves, and the "
-        "one session held the morning after hosting produced advice they had to walk back."
+        "A quiet evening alone sends this user into abstraction and they arrive with a framework "
+        "nobody asked for, while the sessions that actually helped followed a night spent talking "
+        "to a real person and arrived carrying examples."
     ),
     "stacked_video_hangs_before_reunion": (
-        "This user predicted that stacking video calls would not affect their in-person presence and "
-        "was wrong, while the reunion following a screen-light week is the one where they were "
-        "actually there."
+        "This user predicted stacked calls would leave them wrung out; instead they arrive "
+        "talked-out and therefore listening, and the gatherings where anyone told them anything "
+        "real were exactly the ones they turned up to with nothing of their own to say."
     ),
 }
 

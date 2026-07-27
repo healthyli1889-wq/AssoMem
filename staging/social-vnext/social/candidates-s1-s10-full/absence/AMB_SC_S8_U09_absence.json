@@ -4,38 +4,29 @@
   "domain": "social",
   "user_id": "social_s8_u09",
   "sub_scenario": {
-    "family": "ambient status-reacting versus deliberate long-form presence at distance",
+    "family": "the composed monthly letter versus uncomposed daily reactions",
     "role": "indie-gig and gallery regular who prefers text to calls",
     "bridge_type": "strategy_outcome_contingency",
-    "one_line": "indie-gig and gallery regular who prefers text to calls: keep the long written letter for the friend who moved to another city years ago"
+    "one_line": "indie-gig and gallery regular who prefers text to calls: do not rely on keeping the long written letter going"
   },
   "query_type": "preference_generalization",
   "polarity": "reject",
-  "query": "the gallery-night friends suggest replacing the letters with daily story reactions for everyone including the friend who moved to another city years ago — is that generally true of me, or was that just the one time?",
-  "supporting_constraints": {
-    "E1": {
-      "session_id": 7,
-      "fact": "the friend who moved to another city years ago is the one that only exists because of the long ones."
-    },
-    "E2": {
-      "session_id": 16,
-      "fact": "replacing the letters with daily story reactions is the suggestion again, and the friend who moved to another city years ago still runs on the long ones."
-    }
-  },
+  "query": "planning on keeping the long written letter going for the friend who moved to another city years ago — is that generally true of me, or was that just the one time?",
+  "convention_contradicted": "A proper long letter shows real care; throwaway reactions are shallow.",
   "retrieval_cue": {
     "cue_type": "preference_generalization",
-    "why_it_naturally_retrieves_R": "A plausible modern-habit suggestion reaches the exact mechanism the user's distance friendship runs on, without naming the mechanism or its failure."
+    "why_it_naturally_retrieves_R": "A plausible habit question reaches the register this user's distance friendships run on, without naming the register or the friendships it cost."
   },
   "relation_specificity": {
-    "nearby_relation": "Quick daily contact works fine for this user with some people.",
-    "why_it_does_not_license_C": "Daily reactions with nearby people and a skipped month with a local friend both cost nothing, so neither tests the strategy the distance friendship actually depends on."
+    "nearby_relation": "This user can write at length and also keep up light daily contact.",
+    "why_it_does_not_license_C": "A well-received trip write-up and some idle reactions in a queue show both registers are available; neither says which one this user's distance friendships actually survive on."
   },
   "latent_C": {
-    "inference": "Applying replacing the letters with daily story reactions to the friend who moved to another city years ago as well is a poor fit for this user.",
-    "calibrated_language": "keep the long written letter for the friend who moved to another city years ago"
+    "inference": "keeping the long written letter going before the friend who moved to another city years ago is a poor fit for this user.",
+    "calibrated_language": "do not rely on keeping the long written letter going"
   },
   "answer_contract": {
-    "target_proposition": "Applying replacing the letters with daily story reactions to the friend who moved to another city years ago as well is a poor fit for this user.",
+    "target_proposition": "keeping the long written letter going before the friend who moved to another city years ago is a poor fit for this user.",
     "allowed_decisions": [
       "yes",
       "no"
@@ -70,6 +61,166 @@
       "dialogue": [
         {
           "role": "user",
+          "content": "said I'd host something and immediately regretted the scale."
+        },
+        {
+          "role": "assistant",
+          "content": "downsizing?"
+        },
+        {
+          "role": "user",
+          "content": "quietly, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2028-12-08T14:00:00Z",
+      "speaker_id": "social_s8_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "sent a long message about a trip and it was well received."
+        },
+        {
+          "role": "assistant",
+          "content": "detailed?"
+        },
+        {
+          "role": "user",
+          "content": "exhaustively."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2028-12-09T16:00:00Z",
+      "speaker_id": "social_s8_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "left a party early and nobody minded."
+        },
+        {
+          "role": "assistant",
+          "content": "expected worse?"
+        },
+        {
+          "role": "user",
+          "content": "much worse."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2028-12-10T18:00:00Z",
+      "speaker_id": "social_s8_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "went through the notifications backlog, muted four things, archived a couple of threads that finished months ago, and turned off two reminders I have never once acted on."
+        },
+        {
+          "role": "assistant",
+          "content": "any quieter?"
+        },
+        {
+          "role": "user",
+          "content": "measurably quieter, yes. for about a day."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2028-12-11T09:00:00Z",
+      "speaker_id": "social_s8_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "put a recurring reminder on something I'll ignore."
+        },
+        {
+          "role": "assistant",
+          "content": "why bother?"
+        },
+        {
+          "role": "user",
+          "content": "hope."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2028-12-12T11:00:00Z",
+      "speaker_id": "social_s8_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "checked the weather for a plan that isn't confirmed."
+        },
+        {
+          "role": "assistant",
+          "content": "keen."
+        },
+        {
+          "role": "user",
+          "content": "or anxious."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2028-12-13T14:00:00Z",
+      "speaker_id": "social_s8_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "tidied one shelf and stopped."
+        },
+        {
+          "role": "assistant",
+          "content": "momentum?"
+        },
+        {
+          "role": "user",
+          "content": "a rumour of momentum."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2028-12-14T16:00:00Z",
+      "speaker_id": "social_s8_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "answered the family thread first, as usual."
+        },
+        {
+          "role": "assistant",
+          "content": "priority?"
+        },
+        {
+          "role": "user",
+          "content": "unspoken but real."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2028-12-15T18:00:00Z",
+      "speaker_id": "social_s8_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
           "content": "agreed on a date by elimination over four days."
         },
         {
@@ -83,166 +234,6 @@
       ]
     },
     {
-      "session_id": 2,
-      "timestamp": "2028-12-08T14:00:00Z",
-      "speaker_id": "social_s8_u09",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "used daily reactions with people I actually see and nothing suffered."
-        },
-        {
-          "role": "assistant",
-          "content": "so reactions aren't the problem?"
-        },
-        {
-          "role": "user",
-          "content": "not with people nearby."
-        }
-      ]
-    },
-    {
-      "session_id": 3,
-      "timestamp": "2028-12-09T16:00:00Z",
-      "speaker_id": "social_s8_u09",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "moved two things on the calendar and called that admin done."
-        },
-        {
-          "role": "assistant",
-          "content": "productive?"
-        },
-        {
-          "role": "user",
-          "content": "generously described."
-        }
-      ]
-    },
-    {
-      "session_id": 4,
-      "timestamp": "2028-12-10T18:00:00Z",
-      "speaker_id": "social_s8_u09",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "did the weekly tidy: cleared the counter, put the recycling out, changed the sheets, and made a note about the tap that's been dripping since spring."
-        },
-        {
-          "role": "assistant",
-          "content": "the tap getting fixed?"
-        },
-        {
-          "role": "user",
-          "content": "the note is the fix, for now."
-        }
-      ]
-    },
-    {
-      "session_id": 5,
-      "timestamp": "2028-12-11T09:00:00Z",
-      "speaker_id": "social_s8_u09",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "finally replied to the thread from last week."
-        },
-        {
-          "role": "assistant",
-          "content": "how late is late?"
-        },
-        {
-          "role": "user",
-          "content": "nine days. a personal best."
-        }
-      ]
-    },
-    {
-      "session_id": 6,
-      "timestamp": "2028-12-12T11:00:00Z",
-      "speaker_id": "social_s8_u09",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "someone sent a photo from years ago and derailed my afternoon."
-        },
-        {
-          "role": "assistant",
-          "content": "worth it?"
-        },
-        {
-          "role": "user",
-          "content": "completely."
-        }
-      ]
-    },
-    {
-      "session_id": 7,
-      "timestamp": "2028-12-13T14:00:00Z",
-      "speaker_id": "social_s8_u09",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "the friend who moved to another city years ago is the one that only exists because of the long ones."
-        },
-        {
-          "role": "assistant",
-          "content": "conscious of that?"
-        },
-        {
-          "role": "user",
-          "content": "completely."
-        }
-      ]
-    },
-    {
-      "session_id": 8,
-      "timestamp": "2028-12-14T16:00:00Z",
-      "speaker_id": "social_s8_u09",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "muted one group and un-muted another. net zero."
-        },
-        {
-          "role": "assistant",
-          "content": "any peace?"
-        },
-        {
-          "role": "user",
-          "content": "about forty minutes of it."
-        }
-      ]
-    },
-    {
-      "session_id": 9,
-      "timestamp": "2028-12-15T18:00:00Z",
-      "speaker_id": "social_s8_u09",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "walked the long way home and didn't check my phone."
-        },
-        {
-          "role": "assistant",
-          "content": "deliberate?"
-        },
-        {
-          "role": "user",
-          "content": "half deliberate."
-        }
-      ]
-    },
-    {
       "session_id": 10,
       "timestamp": "2028-12-16T09:00:00Z",
       "speaker_id": "social_s8_u09",
@@ -250,15 +241,15 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "missed a month of long ones with someone local and it made no difference."
+          "content": "reacted to a few things on my phone in a queue."
         },
         {
           "role": "assistant",
-          "content": "so skipping isn't fatal."
+          "content": "meaningful?"
         },
         {
           "role": "user",
-          "content": "not locally, no."
+          "content": "not particularly."
         }
       ]
     },
@@ -270,15 +261,15 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "made a playlist for a thing that hasn't been planned yet."
+          "content": "printed something I could have shown on a phone."
         },
         {
           "role": "assistant",
-          "content": "optimistic."
+          "content": "why?"
         },
         {
           "role": "user",
-          "content": "aspirational, really."
+          "content": "felt more like a real plan."
         }
       ]
     },
@@ -290,15 +281,15 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "booked the haircut I've been putting off since spring."
+          "content": "lost twenty minutes to a map of somewhere I'm not going."
         },
         {
           "role": "assistant",
-          "content": "which slot?"
+          "content": "planning?"
         },
         {
           "role": "user",
-          "content": "an evening one, obviously."
+          "content": "wandering."
         }
       ]
     },
@@ -330,15 +321,15 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "left a voice note instead of typing. felt strange."
+          "content": "moved two things on the calendar and called that admin done."
         },
         {
           "role": "assistant",
-          "content": "better or worse?"
+          "content": "productive?"
         },
         {
           "role": "user",
-          "content": "faster. not better."
+          "content": "generously described."
         }
       ]
     },
@@ -350,15 +341,15 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "cleaned the kitchen instead of answering anything."
+          "content": "finally replied to the thread from last week."
         },
         {
           "role": "assistant",
-          "content": "avoidance?"
+          "content": "how late is late?"
         },
         {
           "role": "user",
-          "content": "structured avoidance."
+          "content": "nine days. a personal best."
         }
       ]
     },
@@ -370,15 +361,15 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "replacing the letters with daily story reactions is the suggestion again, and the friend who moved to another city years ago still runs on the long ones."
+          "content": "someone sent a photo from years ago and derailed my afternoon."
         },
         {
           "role": "assistant",
-          "content": "same trade."
+          "content": "worth it?"
         },
         {
           "role": "user",
-          "content": "same trade."
+          "content": "completely."
         }
       ]
     },
@@ -390,15 +381,15 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "skimmed the invites and closed the tab."
+          "content": "muted one group and un-muted another. net zero."
         },
         {
           "role": "assistant",
-          "content": "decide anything?"
+          "content": "any peace?"
         },
         {
           "role": "user",
-          "content": "no. classic."
+          "content": "about forty minutes of it."
         }
       ]
     },
@@ -410,15 +401,15 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "someone changed the group name again."
+          "content": "walked the long way home and didn't check my phone."
         },
         {
           "role": "assistant",
-          "content": "improvement?"
+          "content": "deliberate?"
         },
         {
           "role": "user",
-          "content": "debatable."
+          "content": "half deliberate."
         }
       ]
     },
@@ -430,15 +421,15 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "ate standing up reading a thread I wasn't in."
+          "content": "made a playlist for a thing that hasn't been planned yet."
         },
         {
           "role": "assistant",
-          "content": "why?"
+          "content": "optimistic."
         },
         {
           "role": "user",
-          "content": "no defence."
+          "content": "aspirational, really."
         }
       ]
     },
@@ -450,7 +441,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "the gallery-night friends suggest replacing the letters with daily story reactions for everyone including the friend who moved to another city years ago — is that generally true of me, or was that just the one time?"
+          "content": "planning on keeping the long written letter going for the friend who moved to another city years ago — is that generally true of me, or was that just the one time?"
         }
       ]
     }
@@ -488,8 +479,7 @@
       "role": "background_memory"
     },
     "7": {
-      "role": "supporting_constraint",
-      "fact_id": "E1"
+      "role": "background_memory"
     },
     "8": {
       "role": "background_memory"
@@ -516,8 +506,7 @@
       "role": "background_memory"
     },
     "16": {
-      "role": "supporting_constraint",
-      "fact_id": "E2"
+      "role": "background_memory"
     },
     "17": {
       "role": "background_memory"

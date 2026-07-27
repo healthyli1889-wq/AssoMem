@@ -4,38 +4,29 @@
   "domain": "social",
   "user_id": "social_s3_u06",
   "sub_scenario": {
-    "family": "stacked short catch-ups versus one sustained attentive presence",
+    "family": "one planned proper sit-down versus several unpolished short catch-ups",
     "role": "student small-group meetup planner",
     "bridge_type": "threshold_context_interaction",
-    "one_line": "student small-group meetup planner: hold the week to two and leave room for what my coursemate is not coping with"
+    "one_line": "student small-group meetup planner: go ahead with another pair of quick canteen catch-ups"
   },
   "query_type": "behavior_explanation",
   "polarity": "accept",
-  "query": "there's room for another pair of canteen catch-ups on top of what's already in the week — why is it this particular combination that keeps going sideways for me?",
-  "supporting_constraints": {
-    "E1": {
-      "session_id": 10,
-      "fact": "what my coursemate is not coping with is the thing I actually need to be awake for right now."
-    },
-    "E2": {
-      "session_id": 18,
-      "fact": "another pair of canteen catch-ups is on the table this week, and what my coursemate is not coping with is still where my attention needs to be."
-    }
-  },
+  "query": "there's room for another pair of quick canteen catch-ups on top of what's already in the week — why does this particular thing go the way it does for me?",
+  "convention_contradicted": "One proper unhurried dinner beats several rushed coffees.",
   "retrieval_cue": {
     "cue_type": "behavior_explanation",
-    "why_it_naturally_retrieves_R": "An ordinary scheduling question about adding catch-ups touches the user's attention threshold without naming the threshold or the episode where it was crossed."
+    "why_it_naturally_retrieves_R": "An ordinary scheduling question about how to spend the week runs straight at the state this user has to reach, without naming it or the disclosures it produced."
   },
   "relation_specificity": {
-    "nearby_relation": "More catch-ups is generally more contact for this user.",
-    "why_it_does_not_license_C": "Three across a fortnight and two in a single day both stayed sharp, so neither shows the within-one-week threshold being crossed while something needed hearing."
+    "nearby_relation": "This user can manage several social commitments in a week.",
+    "why_it_does_not_license_C": "Two catch-ups in an afternoon and a twice-moved coffee show only that the logistics are survivable; neither says what state this user has to be in before anyone tells them anything real."
   },
   "latent_C": {
-    "inference": "Holding the week to two catch-ups so there is room for what my coursemate is not coping with is a good fit for this user.",
-    "calibrated_language": "hold the week to two and leave room for what my coursemate is not coping with"
+    "inference": "another pair of quick canteen catch-ups before whatever my coursemate isn't coping with is a good fit for this user.",
+    "calibrated_language": "go ahead with another pair of quick canteen catch-ups"
   },
   "answer_contract": {
-    "target_proposition": "Holding the week to two catch-ups so there is room for what my coursemate is not coping with is a good fit for this user.",
+    "target_proposition": "another pair of quick canteen catch-ups before whatever my coursemate isn't coping with is a good fit for this user.",
     "allowed_decisions": [
       "yes",
       "no"
@@ -70,6 +61,66 @@
       "dialogue": [
         {
           "role": "user",
+          "content": "put a recurring reminder on something I'll ignore."
+        },
+        {
+          "role": "assistant",
+          "content": "why bother?"
+        },
+        {
+          "role": "user",
+          "content": "hope."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2028-04-18T14:00:00Z",
+      "speaker_id": "social_s3_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "checked the weather for a plan that isn't confirmed."
+        },
+        {
+          "role": "assistant",
+          "content": "keen."
+        },
+        {
+          "role": "user",
+          "content": "or anxious."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2028-04-19T16:00:00Z",
+      "speaker_id": "social_s3_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "had two catch-ups in one afternoon and enjoyed both."
+        },
+        {
+          "role": "assistant",
+          "content": "tiring?"
+        },
+        {
+          "role": "user",
+          "content": "less than expected."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2028-04-20T18:00:00Z",
+      "speaker_id": "social_s3_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
           "content": "tidied one shelf and stopped."
         },
         {
@@ -83,8 +134,8 @@
       ]
     },
     {
-      "session_id": 2,
-      "timestamp": "2028-04-18T14:00:00Z",
+      "session_id": 5,
+      "timestamp": "2028-04-21T09:00:00Z",
       "speaker_id": "social_s3_u06",
       "speaker_label": "User",
       "dialogue": [
@@ -103,28 +154,8 @@
       ]
     },
     {
-      "session_id": 3,
-      "timestamp": "2028-04-19T16:00:00Z",
-      "speaker_id": "social_s3_u06",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "did three of them across a fortnight and stayed sharp the whole way."
-        },
-        {
-          "role": "assistant",
-          "content": "so it's not the count?"
-        },
-        {
-          "role": "user",
-          "content": "it's the count inside one week."
-        }
-      ]
-    },
-    {
-      "session_id": 4,
-      "timestamp": "2028-04-20T18:00:00Z",
+      "session_id": 6,
+      "timestamp": "2028-04-22T11:00:00Z",
       "speaker_id": "social_s3_u06",
       "speaker_label": "User",
       "dialogue": [
@@ -143,8 +174,68 @@
       ]
     },
     {
-      "session_id": 5,
-      "timestamp": "2028-04-21T09:00:00Z",
+      "session_id": 7,
+      "timestamp": "2028-04-23T14:00:00Z",
+      "speaker_id": "social_s3_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "walked the long way back and worked out that the reason my week feels full is that I've said yes to three things that are all admin rather than anything I'd have chosen."
+        },
+        {
+          "role": "assistant",
+          "content": "any of them droppable?"
+        },
+        {
+          "role": "user",
+          "content": "one, maybe. I'll think about it and then not do anything."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2028-04-24T16:00:00Z",
+      "speaker_id": "social_s3_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "printed something I could have shown on a phone."
+        },
+        {
+          "role": "assistant",
+          "content": "why?"
+        },
+        {
+          "role": "user",
+          "content": "felt more like a real plan."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2028-04-25T18:00:00Z",
+      "speaker_id": "social_s3_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "lost twenty minutes to a map of somewhere I'm not going."
+        },
+        {
+          "role": "assistant",
+          "content": "planning?"
+        },
+        {
+          "role": "user",
+          "content": "wandering."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2028-04-26T09:00:00Z",
       "speaker_id": "social_s3_u06",
       "speaker_label": "User",
       "dialogue": [
@@ -163,8 +254,8 @@
       ]
     },
     {
-      "session_id": 6,
-      "timestamp": "2028-04-22T11:00:00Z",
+      "session_id": 11,
+      "timestamp": "2028-04-27T11:00:00Z",
       "speaker_id": "social_s3_u06",
       "speaker_label": "User",
       "dialogue": [
@@ -183,28 +274,28 @@
       ]
     },
     {
-      "session_id": 7,
-      "timestamp": "2028-04-23T14:00:00Z",
+      "session_id": 12,
+      "timestamp": "2028-04-28T14:00:00Z",
       "speaker_id": "social_s3_u06",
       "speaker_label": "User",
       "dialogue": [
         {
           "role": "user",
-          "content": "cleared out the drafts folder, which was mostly half-written messages to people I have since spoken to about something else entirely."
+          "content": "moved a coffee twice and it still happened."
         },
         {
           "role": "assistant",
-          "content": "send any?"
+          "content": "persistence."
         },
         {
           "role": "user",
-          "content": "deleted all of them. it was the right call."
+          "content": "on their part, mostly."
         }
       ]
     },
     {
-      "session_id": 8,
-      "timestamp": "2028-04-24T16:00:00Z",
+      "session_id": 13,
+      "timestamp": "2028-04-29T16:00:00Z",
       "speaker_id": "social_s3_u06",
       "speaker_label": "User",
       "dialogue": [
@@ -223,8 +314,8 @@
       ]
     },
     {
-      "session_id": 9,
-      "timestamp": "2028-04-25T18:00:00Z",
+      "session_id": 14,
+      "timestamp": "2028-04-30T18:00:00Z",
       "speaker_id": "social_s3_u06",
       "speaker_label": "User",
       "dialogue": [
@@ -243,28 +334,28 @@
       ]
     },
     {
-      "session_id": 10,
-      "timestamp": "2028-04-26T09:00:00Z",
+      "session_id": 15,
+      "timestamp": "2028-05-01T09:00:00Z",
       "speaker_id": "social_s3_u06",
       "speaker_label": "User",
       "dialogue": [
         {
           "role": "user",
-          "content": "what my coursemate is not coping with is the thing I actually need to be awake for right now."
+          "content": "wrote out the month on paper to see it properly, realised two things clash, moved neither, and put the paper in a drawer where I will not look at it again."
         },
         {
           "role": "assistant",
-          "content": "aware of it?"
+          "content": "so the clash stands?"
         },
         {
           "role": "user",
-          "content": "very aware."
+          "content": "the clash stands. it's a future problem now."
         }
       ]
     },
     {
-      "session_id": 11,
-      "timestamp": "2028-04-27T11:00:00Z",
+      "session_id": 16,
+      "timestamp": "2028-05-02T11:00:00Z",
       "speaker_id": "social_s3_u06",
       "speaker_label": "User",
       "dialogue": [
@@ -283,28 +374,8 @@
       ]
     },
     {
-      "session_id": 12,
-      "timestamp": "2028-04-28T14:00:00Z",
-      "speaker_id": "social_s3_u06",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "did two in a day and was completely fine for both."
-        },
-        {
-          "role": "assistant",
-          "content": "so density in a day is fine."
-        },
-        {
-          "role": "user",
-          "content": "seems so."
-        }
-      ]
-    },
-    {
-      "session_id": 13,
-      "timestamp": "2028-04-29T16:00:00Z",
+      "session_id": 17,
+      "timestamp": "2028-05-03T14:00:00Z",
       "speaker_id": "social_s3_u06",
       "speaker_label": "User",
       "dialogue": [
@@ -323,8 +394,8 @@
       ]
     },
     {
-      "session_id": 14,
-      "timestamp": "2028-04-30T18:00:00Z",
+      "session_id": 18,
+      "timestamp": "2028-05-04T16:00:00Z",
       "speaker_id": "social_s3_u06",
       "speaker_label": "User",
       "dialogue": [
@@ -343,28 +414,8 @@
       ]
     },
     {
-      "session_id": 15,
-      "timestamp": "2028-05-01T09:00:00Z",
-      "speaker_id": "social_s3_u06",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "sat down and worked out who I actually owe a reply to, wrote the list out, then answered exactly none of them because it was late by the time the list existed."
-        },
-        {
-          "role": "assistant",
-          "content": "the list helped?"
-        },
-        {
-          "role": "user",
-          "content": "the list existed. that's as far as it got."
-        }
-      ]
-    },
-    {
-      "session_id": 16,
-      "timestamp": "2028-05-02T11:00:00Z",
+      "session_id": 19,
+      "timestamp": "2028-05-05T18:00:00Z",
       "speaker_id": "social_s3_u06",
       "speaker_label": "User",
       "dialogue": [
@@ -374,71 +425,11 @@
         },
         {
           "role": "assistant",
-          "content": "better or worse?"
+          "content": "faster?"
         },
         {
           "role": "user",
-          "content": "faster. not better."
-        }
-      ]
-    },
-    {
-      "session_id": 17,
-      "timestamp": "2028-05-03T14:00:00Z",
-      "speaker_id": "social_s3_u06",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "cleaned the kitchen instead of answering anything."
-        },
-        {
-          "role": "assistant",
-          "content": "avoidance?"
-        },
-        {
-          "role": "user",
-          "content": "structured avoidance."
-        }
-      ]
-    },
-    {
-      "session_id": 18,
-      "timestamp": "2028-05-04T16:00:00Z",
-      "speaker_id": "social_s3_u06",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "another pair of canteen catch-ups is on the table this week, and what my coursemate is not coping with is still where my attention needs to be."
-        },
-        {
-          "role": "assistant",
-          "content": "same week."
-        },
-        {
-          "role": "user",
-          "content": "same week."
-        }
-      ]
-    },
-    {
-      "session_id": 19,
-      "timestamp": "2028-05-05T18:00:00Z",
-      "speaker_id": "social_s3_u06",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "skimmed the invites and closed the tab."
-        },
-        {
-          "role": "assistant",
-          "content": "decide anything?"
-        },
-        {
-          "role": "user",
-          "content": "no. classic."
+          "content": "faster. stranger."
         }
       ]
     },
@@ -450,7 +441,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "there's room for another pair of canteen catch-ups on top of what's already in the week — why is it this particular combination that keeps going sideways for me?"
+          "content": "there's room for another pair of quick canteen catch-ups on top of what's already in the week — why does this particular thing go the way it does for me?"
         }
       ]
     }
@@ -497,8 +488,7 @@
       "role": "background_memory"
     },
     "10": {
-      "role": "supporting_constraint",
-      "fact_id": "E1"
+      "role": "background_memory"
     },
     "11": {
       "role": "background_memory"
@@ -522,8 +512,7 @@
       "role": "background_memory"
     },
     "18": {
-      "role": "supporting_constraint",
-      "fact_id": "E2"
+      "role": "background_memory"
     },
     "19": {
       "role": "background_memory"

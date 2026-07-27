@@ -4,38 +4,29 @@
   "domain": "social",
   "user_id": "social_s9_u07",
   "sub_scenario": {
-    "family": "overnight hosting versus next-day attentive one-to-one guidance",
+    "family": "an empty house versus company the night before giving guidance",
     "role": "theatre-for-two planner who batches long threads",
     "bridge_type": "preference_constraint_fit",
-    "one_line": "theatre-for-two planner who batches long threads: keep the place empty before the session with the new book-group members"
+    "one_line": "theatre-for-two planner who batches long threads: go ahead with putting up a friend the night before"
   },
   "query_type": "predicted_reaction",
   "polarity": "accept",
-  "query": "thinking of keeping the place empty the night before the session with the new book-group members rather than putting up a friend for the night — if I go ahead with it, how does the day after actually go for me?",
-  "supporting_constraints": {
-    "E1": {
-      "session_id": 10,
-      "fact": "the session with the new book-group members is on for this week and it matters to them."
-    },
-    "E2": {
-      "session_id": 17,
-      "fact": "putting up a friend for the night is being floated for the night before, and the session with the new book-group members is still on."
-    }
-  },
+  "query": "the two of us plus the old book group are asking about putting up a friend the night before the session with the new book-group members — if I go ahead with it, how does it actually go for me?",
+  "convention_contradicted": "Clear your evening and rest so you can give someone your best advice.",
   "retrieval_cue": {
     "cue_type": "predicted_reaction",
-    "why_it_naturally_retrieves_R": "A generous hosting request lands the night before something the user has committed to do well, without naming the fit constraint or the failure."
+    "why_it_naturally_retrieves_R": "A hosting request lands the night before something the user has committed to do well, without naming the fit constraint or the evidence for it."
   },
   "relation_specificity": {
-    "nearby_relation": "Hosting is generally fine and enjoyable for this user.",
-    "why_it_does_not_license_C": "Hosting on a week with nothing to advise on and advising after an ordinary night in both went well, so neither shows the hosting condition degrading the guidance itself."
+    "nearby_relation": "This user enjoys both hosting and quiet evenings.",
+    "why_it_does_not_license_C": "An easy overnight guest on an empty week and a restful evening with a book both went fine on their own terms; neither says which of the two produces guidance worth anything the next day."
   },
   "latent_C": {
-    "inference": "Keeping the place empty the night before the session with the new book-group members rather than putting up a friend for the night is a good fit for this user.",
-    "calibrated_language": "keep the place empty before the session with the new book-group members"
+    "inference": "putting up a friend the night before before the session with the new book-group members is a good fit for this user.",
+    "calibrated_language": "go ahead with putting up a friend the night before"
   },
   "answer_contract": {
-    "target_proposition": "Keeping the place empty the night before the session with the new book-group members rather than putting up a friend for the night is a good fit for this user.",
+    "target_proposition": "putting up a friend the night before before the session with the new book-group members is a good fit for this user.",
     "allowed_decisions": [
       "yes",
       "no"
@@ -70,15 +61,15 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "answered the family thread first, as usual."
+          "content": "someone summarised a two-hundred-message thread for me."
         },
         {
           "role": "assistant",
-          "content": "priority?"
+          "content": "accurate?"
         },
         {
           "role": "user",
-          "content": "unspoken but real."
+          "content": "kind, at least."
         }
       ]
     },
@@ -90,15 +81,15 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "agreed on a date by elimination over four days."
+          "content": "said I'd host something and immediately regretted the scale."
         },
         {
           "role": "assistant",
-          "content": "efficient."
+          "content": "downsizing?"
         },
         {
           "role": "user",
-          "content": "eventually."
+          "content": "quietly, yes."
         }
       ]
     },
@@ -110,15 +101,15 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "had someone stay over on a week with nothing to advise on and it was great."
+          "content": "had someone stay over on a week with nothing on. lovely, easy."
         },
         {
           "role": "assistant",
-          "content": "no cost?"
+          "content": "any cost?"
         },
         {
           "role": "user",
-          "content": "none."
+          "content": "none at all."
         }
       ]
     },
@@ -130,15 +121,15 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "moved two things on the calendar and called that admin done."
+          "content": "left a party early and nobody minded."
         },
         {
           "role": "assistant",
-          "content": "productive?"
+          "content": "expected worse?"
         },
         {
           "role": "user",
-          "content": "generously described."
+          "content": "much worse."
         }
       ]
     },
@@ -150,15 +141,15 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "finally replied to the thread from last week."
+          "content": "put a recurring reminder on something I'll ignore."
         },
         {
           "role": "assistant",
-          "content": "how late is late?"
+          "content": "why bother?"
         },
         {
           "role": "user",
-          "content": "nine days. a personal best."
+          "content": "hope."
         }
       ]
     },
@@ -170,15 +161,15 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "someone sent a photo from years ago and derailed my afternoon."
+          "content": "checked the weather for a plan that isn't confirmed."
         },
         {
           "role": "assistant",
-          "content": "worth it?"
+          "content": "keen."
         },
         {
           "role": "user",
-          "content": "completely."
+          "content": "or anxious."
         }
       ]
     },
@@ -210,6 +201,206 @@
       "dialogue": [
         {
           "role": "user",
+          "content": "tidied one shelf and stopped."
+        },
+        {
+          "role": "assistant",
+          "content": "momentum?"
+        },
+        {
+          "role": "user",
+          "content": "a rumour of momentum."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2029-01-23T18:00:00Z",
+      "speaker_id": "social_s9_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "answered the family thread first, as usual."
+        },
+        {
+          "role": "assistant",
+          "content": "priority?"
+        },
+        {
+          "role": "user",
+          "content": "unspoken but real."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2029-01-24T09:00:00Z",
+      "speaker_id": "social_s9_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "agreed on a date by elimination over four days."
+        },
+        {
+          "role": "assistant",
+          "content": "efficient."
+        },
+        {
+          "role": "user",
+          "content": "eventually."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2029-01-25T11:00:00Z",
+      "speaker_id": "social_s9_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "printed something I could have shown on a phone."
+        },
+        {
+          "role": "assistant",
+          "content": "why?"
+        },
+        {
+          "role": "user",
+          "content": "felt more like a real plan."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2029-01-26T14:00:00Z",
+      "speaker_id": "social_s9_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "had a quiet evening in and read most of a book."
+        },
+        {
+          "role": "assistant",
+          "content": "restful?"
+        },
+        {
+          "role": "user",
+          "content": "genuinely, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2029-01-27T16:00:00Z",
+      "speaker_id": "social_s9_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "lost twenty minutes to a map of somewhere I'm not going."
+        },
+        {
+          "role": "assistant",
+          "content": "planning?"
+        },
+        {
+          "role": "user",
+          "content": "wandering."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2029-01-28T18:00:00Z",
+      "speaker_id": "social_s9_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "sat down and worked out who I actually owe a reply to, wrote the list out, then answered exactly none of them because it was late by the time the list existed."
+        },
+        {
+          "role": "assistant",
+          "content": "the list helped?"
+        },
+        {
+          "role": "user",
+          "content": "the list existed. that's as far as it got."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2029-01-29T09:00:00Z",
+      "speaker_id": "social_s9_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "moved two things on the calendar and called that admin done."
+        },
+        {
+          "role": "assistant",
+          "content": "productive?"
+        },
+        {
+          "role": "user",
+          "content": "generously described."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2029-01-30T11:00:00Z",
+      "speaker_id": "social_s9_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "finally replied to the thread from last week."
+        },
+        {
+          "role": "assistant",
+          "content": "how late is late?"
+        },
+        {
+          "role": "user",
+          "content": "nine days. a personal best."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2029-01-31T14:00:00Z",
+      "speaker_id": "social_s9_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "someone sent a photo from years ago and derailed my afternoon."
+        },
+        {
+          "role": "assistant",
+          "content": "worth it?"
+        },
+        {
+          "role": "user",
+          "content": "completely."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2029-02-01T16:00:00Z",
+      "speaker_id": "social_s9_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
           "content": "muted one group and un-muted another. net zero."
         },
         {
@@ -223,8 +414,8 @@
       ]
     },
     {
-      "session_id": 9,
-      "timestamp": "2029-01-23T18:00:00Z",
+      "session_id": 19,
+      "timestamp": "2029-02-02T18:00:00Z",
       "speaker_id": "social_s9_u07",
       "speaker_label": "User",
       "dialogue": [
@@ -243,206 +434,6 @@
       ]
     },
     {
-      "session_id": 10,
-      "timestamp": "2029-01-24T09:00:00Z",
-      "speaker_id": "social_s9_u07",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "the session with the new book-group members is on for this week and it matters to them."
-        },
-        {
-          "role": "assistant",
-          "content": "matters?"
-        },
-        {
-          "role": "user",
-          "content": "quite a lot, yes."
-        }
-      ]
-    },
-    {
-      "session_id": 11,
-      "timestamp": "2029-01-25T11:00:00Z",
-      "speaker_id": "social_s9_u07",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "made a playlist for a thing that hasn't been planned yet."
-        },
-        {
-          "role": "assistant",
-          "content": "optimistic."
-        },
-        {
-          "role": "user",
-          "content": "aspirational, really."
-        }
-      ]
-    },
-    {
-      "session_id": 12,
-      "timestamp": "2029-01-26T14:00:00Z",
-      "speaker_id": "social_s9_u07",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "did talk the newer members through it after a completely normal night in and it went well."
-        },
-        {
-          "role": "assistant",
-          "content": "so it's the guest specifically."
-        },
-        {
-          "role": "user",
-          "content": "the guest specifically."
-        }
-      ]
-    },
-    {
-      "session_id": 13,
-      "timestamp": "2029-01-27T16:00:00Z",
-      "speaker_id": "social_s9_u07",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "booked the haircut I've been putting off since spring."
-        },
-        {
-          "role": "assistant",
-          "content": "which slot?"
-        },
-        {
-          "role": "user",
-          "content": "an evening one, obviously."
-        }
-      ]
-    },
-    {
-      "session_id": 14,
-      "timestamp": "2029-01-28T18:00:00Z",
-      "speaker_id": "social_s9_u07",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "did a full pass over the whole calendar this afternoon, moved three things, cancelled one, and renamed a recurring entry that has had the wrong name since last year."
-        },
-        {
-          "role": "assistant",
-          "content": "productive, then?"
-        },
-        {
-          "role": "user",
-          "content": "administratively, yes. otherwise nothing happened at all."
-        }
-      ]
-    },
-    {
-      "session_id": 15,
-      "timestamp": "2029-01-29T09:00:00Z",
-      "speaker_id": "social_s9_u07",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "left a voice note instead of typing. felt strange."
-        },
-        {
-          "role": "assistant",
-          "content": "better or worse?"
-        },
-        {
-          "role": "user",
-          "content": "faster. not better."
-        }
-      ]
-    },
-    {
-      "session_id": 16,
-      "timestamp": "2029-01-30T11:00:00Z",
-      "speaker_id": "social_s9_u07",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "cleaned the kitchen instead of answering anything."
-        },
-        {
-          "role": "assistant",
-          "content": "avoidance?"
-        },
-        {
-          "role": "user",
-          "content": "structured avoidance."
-        }
-      ]
-    },
-    {
-      "session_id": 17,
-      "timestamp": "2029-01-31T14:00:00Z",
-      "speaker_id": "social_s9_u07",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "putting up a friend for the night is being floated for the night before, and the session with the new book-group members is still on."
-        },
-        {
-          "role": "assistant",
-          "content": "familiar."
-        },
-        {
-          "role": "user",
-          "content": "very familiar."
-        }
-      ]
-    },
-    {
-      "session_id": 18,
-      "timestamp": "2029-02-01T16:00:00Z",
-      "speaker_id": "social_s9_u07",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "skimmed the invites and closed the tab."
-        },
-        {
-          "role": "assistant",
-          "content": "decide anything?"
-        },
-        {
-          "role": "user",
-          "content": "no. classic."
-        }
-      ]
-    },
-    {
-      "session_id": 19,
-      "timestamp": "2029-02-02T18:00:00Z",
-      "speaker_id": "social_s9_u07",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "someone changed the group name again."
-        },
-        {
-          "role": "assistant",
-          "content": "improvement?"
-        },
-        {
-          "role": "user",
-          "content": "debatable."
-        }
-      ]
-    },
-    {
       "session_id": 20,
       "timestamp": "2029-02-03T09:00:00Z",
       "speaker_id": "social_s9_u07",
@@ -450,7 +441,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "thinking of keeping the place empty the night before the session with the new book-group members rather than putting up a friend for the night — if I go ahead with it, how does the day after actually go for me?"
+          "content": "the two of us plus the old book group are asking about putting up a friend the night before the session with the new book-group members — if I go ahead with it, how does it actually go for me?"
         }
       ]
     }
@@ -497,8 +488,7 @@
       "role": "background_memory"
     },
     "10": {
-      "role": "supporting_constraint",
-      "fact_id": "E1"
+      "role": "background_memory"
     },
     "11": {
       "role": "background_memory"
@@ -519,8 +509,7 @@
       "role": "background_memory"
     },
     "17": {
-      "role": "supporting_constraint",
-      "fact_id": "E2"
+      "role": "background_memory"
     },
     "18": {
       "role": "background_memory"

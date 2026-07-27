@@ -228,8 +228,6 @@ def audit(candidates_root: Path) -> tuple[list[dict[str, Any]], dict[str, Any]]:
             # after removing everything the retained material already says - and
             # tests it per session, not against the concatenated context.
             retained = " ".join([
-                associative["supporting_constraints"]["E1"]["fact"],
-                associative["supporting_constraints"]["E2"]["fact"],
                 associative["query"],
                 associative["relation_specificity"]["nearby_relation"],
             ]).lower()
@@ -293,9 +291,11 @@ def audit(candidates_root: Path) -> tuple[list[dict[str, Any]], dict[str, Any]]:
 
             # ---- 13. episode-role census must match the 20-session budget
             roles = Counter(a["role"] for a in associative["episode_annotations"].values())
+            # Section 3's budget exactly: 2 targets + 2 counterexamples + 16 others
+            # (15 background + the retrieval cue).
             expected_roles = {
-                "background_memory": 13, "nearby_counterexample": 2,
-                "supporting_constraint": 2, "ev_A": 1, "ev_B": 1, "retrieval_cue": 1,
+                "background_memory": 15, "nearby_counterexample": 2,
+                "ev_A": 1, "ev_B": 1, "retrieval_cue": 1,
             }
             if dict(roles) != expected_roles:
                 errors.append(f"episode role census {dict(roles)} != {expected_roles}")

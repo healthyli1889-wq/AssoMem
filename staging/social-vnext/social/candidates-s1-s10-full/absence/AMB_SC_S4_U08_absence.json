@@ -4,38 +4,29 @@
   "domain": "social",
   "user_id": "social_s4_u08",
   "sub_scenario": {
-    "family": "public recognition discomfort versus private written appreciation",
+    "family": "a carefully written card versus speaking unprepared",
     "role": "community-event and career-meetup attendee",
     "bridge_type": "preference_constraint_fit",
-    "one_line": "community-event and career-meetup attendee: not enough basis today — settle the format first"
+    "one_line": "community-event and career-meetup attendee: turns on the unprepared, messy register, which the record does not settle here"
   },
   "query_type": "predicted_reaction",
   "polarity": "non_decision",
-  "query": "the neighbourhood regulars want me to do a public thank-you at the street party for the neighbour who organises everything — if I go ahead with it, how does the day after actually go for me, or is there not enough here to call it today?",
-  "supporting_constraints": {
-    "E1": {
-      "session_id": 8,
-      "fact": "the neighbour who organises everything is the one I'm trying to thank properly this time."
-    },
-    "E2": {
-      "session_id": 17,
-      "fact": "a public thank-you at the street party is what's being suggested, and the neighbour who organises everything is still the person it's for."
-    }
-  },
+  "query": "the neighbourhood regulars want me to thank the neighbour who organises everything at the street-party thank-yous — thinking of an off-the-cuff thank-you at the party — if I go ahead with it, how does it actually go for me, or is there not enough here to call it today?",
+  "convention_contradicted": "If you are not a natural speaker, write it down; a written note is safer and more personal.",
   "retrieval_cue": {
     "cue_type": "predicted_reaction",
-    "why_it_naturally_retrieves_R": "A group planning a thank-you asks a natural format question that runs straight at the user's fit constraint without naming it or the failure that established it."
+    "why_it_naturally_retrieves_R": "A group planning a thank-you asks a natural format question that runs at the user's fit constraint without naming it or the evidence behind it."
   },
   "relation_specificity": {
-    "nearby_relation": "This user can speak in front of people in general.",
-    "why_it_does_not_license_C": "A few words in a kitchen and reading someone else's text both went fine, so neither shows the cost of delivering the user's own appreciation live and unscripted."
+    "nearby_relation": "This user writes clearly and can speak in front of people.",
+    "why_it_does_not_license_C": "A functional group logistics note and a few words in a kitchen show basic competence in both formats; neither says which one this user's appreciation actually survives."
   },
   "latent_C": {
-    "inference": "There is not a sufficient basis to commit to a public thank-you at the street party today; the way of thanking the neighbour who organises everything should wait until it is settled.",
-    "calibrated_language": "not enough basis today — settle the format first"
+    "inference": "Whether an off-the-cuff thank-you at the party helps before the neighbour who organises everything turns on whether it puts this user into the unprepared, messy register, which the visible record does not settle for this occasion.",
+    "calibrated_language": "turns on the unprepared, messy register, which the record does not settle here"
   },
   "answer_contract": {
-    "target_proposition": "There is not a sufficient basis to commit to a public thank-you at the street party today; the way of thanking the neighbour who organises everything should wait until it is settled.",
+    "target_proposition": "Whether an off-the-cuff thank-you at the party helps before the neighbour who organises everything turns on whether it puts this user into the unprepared, messy register, which the visible record does not settle for this occasion.",
     "allowed_decisions": [
       "yes",
       "no"
@@ -70,6 +61,126 @@
       "dialogue": [
         {
           "role": "user",
+          "content": "declined a thing politely and then felt weird about it for an hour."
+        },
+        {
+          "role": "assistant",
+          "content": "regret?"
+        },
+        {
+          "role": "user",
+          "content": "not really. just weird."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2028-06-08T14:00:00Z",
+      "speaker_id": "social_s4_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "wrote the group a short logistics note and it did its job."
+        },
+        {
+          "role": "assistant",
+          "content": "clear?"
+        },
+        {
+          "role": "user",
+          "content": "unambiguous, at least."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2028-06-09T16:00:00Z",
+      "speaker_id": "social_s4_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "wrote half a message and left it in the box."
+        },
+        {
+          "role": "assistant",
+          "content": "sending it?"
+        },
+        {
+          "role": "user",
+          "content": "eventually. probably."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2028-06-10T18:00:00Z",
+      "speaker_id": "social_s4_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "sat down and worked out who I actually owe a reply to, wrote the list out, then answered exactly none of them because it was late by the time the list existed."
+        },
+        {
+          "role": "assistant",
+          "content": "the list helped?"
+        },
+        {
+          "role": "user",
+          "content": "the list existed. that's as far as it got."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2028-06-11T09:00:00Z",
+      "speaker_id": "social_s4_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "looked up how far away a place is instead of asking."
+        },
+        {
+          "role": "assistant",
+          "content": "and?"
+        },
+        {
+          "role": "user",
+          "content": "further than the invite implied."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2028-06-12T11:00:00Z",
+      "speaker_id": "social_s4_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "borrowed a charger and forgot to give it back. again."
+        },
+        {
+          "role": "assistant",
+          "content": "same person?"
+        },
+        {
+          "role": "user",
+          "content": "same person, third time."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2028-06-13T14:00:00Z",
+      "speaker_id": "social_s4_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
           "content": "watched something everyone had already discussed."
         },
         {
@@ -83,28 +194,28 @@
       ]
     },
     {
-      "session_id": 2,
-      "timestamp": "2028-06-08T14:00:00Z",
+      "session_id": 8,
+      "timestamp": "2028-06-14T16:00:00Z",
       "speaker_id": "social_s4_u08",
       "speaker_label": "User",
       "dialogue": [
         {
           "role": "user",
-          "content": "said a couple of words to three people in a kitchen and it was completely fine."
+          "content": "said a couple of words to three people in a kitchen. fine, unremarkable."
         },
         {
           "role": "assistant",
-          "content": "so it's not speaking?"
+          "content": "nervous?"
         },
         {
           "role": "user",
-          "content": "not in a kitchen, no."
+          "content": "not really, no."
         }
       ]
     },
     {
-      "session_id": 3,
-      "timestamp": "2028-06-09T16:00:00Z",
+      "session_id": 9,
+      "timestamp": "2028-06-15T18:00:00Z",
       "speaker_id": "social_s4_u08",
       "speaker_label": "User",
       "dialogue": [
@@ -123,28 +234,8 @@
       ]
     },
     {
-      "session_id": 4,
-      "timestamp": "2028-06-10T18:00:00Z",
-      "speaker_id": "social_s4_u08",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "went through the unread pile properly for once and answered the easy ones, which was most of them."
-        },
-        {
-          "role": "assistant",
-          "content": "and the hard ones?"
-        },
-        {
-          "role": "user",
-          "content": "still sitting there, obviously."
-        }
-      ]
-    },
-    {
-      "session_id": 5,
-      "timestamp": "2028-06-11T09:00:00Z",
+      "session_id": 10,
+      "timestamp": "2028-06-16T09:00:00Z",
       "speaker_id": "social_s4_u08",
       "speaker_label": "User",
       "dialogue": [
@@ -163,8 +254,8 @@
       ]
     },
     {
-      "session_id": 6,
-      "timestamp": "2028-06-12T11:00:00Z",
+      "session_id": 11,
+      "timestamp": "2028-06-17T11:00:00Z",
       "speaker_id": "social_s4_u08",
       "speaker_label": "User",
       "dialogue": [
@@ -183,8 +274,28 @@
       ]
     },
     {
-      "session_id": 7,
-      "timestamp": "2028-06-13T14:00:00Z",
+      "session_id": 12,
+      "timestamp": "2028-06-18T14:00:00Z",
+      "speaker_id": "social_s4_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "walked the long way back and worked out that the reason my week feels full is that I've said yes to three things that are all admin rather than anything I'd have chosen."
+        },
+        {
+          "role": "assistant",
+          "content": "any of them droppable?"
+        },
+        {
+          "role": "user",
+          "content": "one, maybe. I'll think about it and then not do anything."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2028-06-19T16:00:00Z",
       "speaker_id": "social_s4_u08",
       "speaker_label": "User",
       "dialogue": [
@@ -203,48 +314,8 @@
       ]
     },
     {
-      "session_id": 8,
-      "timestamp": "2028-06-14T16:00:00Z",
-      "speaker_id": "social_s4_u08",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "the neighbour who organises everything is the one I'm trying to thank properly this time."
-        },
-        {
-          "role": "assistant",
-          "content": "specifically them?"
-        },
-        {
-          "role": "user",
-          "content": "specifically them."
-        }
-      ]
-    },
-    {
-      "session_id": 9,
-      "timestamp": "2028-06-15T18:00:00Z",
-      "speaker_id": "social_s4_u08",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "read something out that someone else had written and had no trouble at all."
-        },
-        {
-          "role": "assistant",
-          "content": "so not reading either."
-        },
-        {
-          "role": "user",
-          "content": "not when it isn't mine."
-        }
-      ]
-    },
-    {
-      "session_id": 10,
-      "timestamp": "2028-06-16T09:00:00Z",
+      "session_id": 14,
+      "timestamp": "2028-06-20T18:00:00Z",
       "speaker_id": "social_s4_u08",
       "speaker_label": "User",
       "dialogue": [
@@ -263,8 +334,8 @@
       ]
     },
     {
-      "session_id": 11,
-      "timestamp": "2028-06-17T11:00:00Z",
+      "session_id": 15,
+      "timestamp": "2028-06-21T09:00:00Z",
       "speaker_id": "social_s4_u08",
       "speaker_label": "User",
       "dialogue": [
@@ -283,28 +354,8 @@
       ]
     },
     {
-      "session_id": 12,
-      "timestamp": "2028-06-18T14:00:00Z",
-      "speaker_id": "social_s4_u08",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "went through the notifications backlog, muted four things, archived a couple of threads that finished months ago, and turned off two reminders I have never once acted on."
-        },
-        {
-          "role": "assistant",
-          "content": "any quieter?"
-        },
-        {
-          "role": "user",
-          "content": "measurably quieter, yes. for about a day."
-        }
-      ]
-    },
-    {
-      "session_id": 13,
-      "timestamp": "2028-06-19T16:00:00Z",
+      "session_id": 16,
+      "timestamp": "2028-06-22T11:00:00Z",
       "speaker_id": "social_s4_u08",
       "speaker_label": "User",
       "dialogue": [
@@ -323,8 +374,8 @@
       ]
     },
     {
-      "session_id": 14,
-      "timestamp": "2028-06-20T18:00:00Z",
+      "session_id": 17,
+      "timestamp": "2028-06-23T14:00:00Z",
       "speaker_id": "social_s4_u08",
       "speaker_label": "User",
       "dialogue": [
@@ -343,8 +394,8 @@
       ]
     },
     {
-      "session_id": 15,
-      "timestamp": "2028-06-21T09:00:00Z",
+      "session_id": 18,
+      "timestamp": "2028-06-24T16:00:00Z",
       "speaker_id": "social_s4_u08",
       "speaker_label": "User",
       "dialogue": [
@@ -363,8 +414,8 @@
       ]
     },
     {
-      "session_id": 16,
-      "timestamp": "2028-06-22T11:00:00Z",
+      "session_id": 19,
+      "timestamp": "2028-06-25T18:00:00Z",
       "speaker_id": "social_s4_u08",
       "speaker_label": "User",
       "dialogue": [
@@ -383,66 +434,6 @@
       ]
     },
     {
-      "session_id": 17,
-      "timestamp": "2028-06-23T14:00:00Z",
-      "speaker_id": "social_s4_u08",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "a public thank-you at the street party is what's being suggested, and the neighbour who organises everything is still the person it's for."
-        },
-        {
-          "role": "assistant",
-          "content": "same shape as before."
-        },
-        {
-          "role": "user",
-          "content": "same shape."
-        }
-      ]
-    },
-    {
-      "session_id": 18,
-      "timestamp": "2028-06-24T16:00:00Z",
-      "speaker_id": "social_s4_u08",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "said I'd host something and immediately regretted the scale."
-        },
-        {
-          "role": "assistant",
-          "content": "downsizing?"
-        },
-        {
-          "role": "user",
-          "content": "quietly, yes."
-        }
-      ]
-    },
-    {
-      "session_id": 19,
-      "timestamp": "2028-06-25T18:00:00Z",
-      "speaker_id": "social_s4_u08",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "left a party early and nobody minded."
-        },
-        {
-          "role": "assistant",
-          "content": "expected worse?"
-        },
-        {
-          "role": "user",
-          "content": "much worse."
-        }
-      ]
-    },
-    {
       "session_id": 20,
       "timestamp": "2028-06-26T09:00:00Z",
       "speaker_id": "social_s4_u08",
@@ -450,7 +441,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "the neighbourhood regulars want me to do a public thank-you at the street party for the neighbour who organises everything — if I go ahead with it, how does the day after actually go for me, or is there not enough here to call it today?"
+          "content": "the neighbourhood regulars want me to thank the neighbour who organises everything at the street-party thank-yous — thinking of an off-the-cuff thank-you at the party — if I go ahead with it, how does it actually go for me, or is there not enough here to call it today?"
         }
       ]
     }
@@ -491,11 +482,10 @@
       "role": "background_memory"
     },
     "8": {
-      "role": "supporting_constraint",
-      "fact_id": "E1"
+      "role": "nearby_counterexample"
     },
     "9": {
-      "role": "nearby_counterexample"
+      "role": "background_memory"
     },
     "10": {
       "role": "background_memory"
@@ -519,8 +509,7 @@
       "role": "background_memory"
     },
     "17": {
-      "role": "supporting_constraint",
-      "fact_id": "E2"
+      "role": "background_memory"
     },
     "18": {
       "role": "background_memory"

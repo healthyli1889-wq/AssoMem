@@ -4,38 +4,29 @@
   "domain": "social",
   "user_id": "social_s1_u02",
   "sub_scenario": {
-    "family": "big-group recovery debt versus a booked one-on-one repair conversation",
+    "family": "large-group warm-up versus a rested start before a repair conversation",
     "role": "student festival-goer who keeps family threads on top",
     "bridge_type": "state_dependent_operation",
-    "one_line": "student festival-goer who keeps family threads on top: only if the honest conversation with my roommate is not the next morning"
+    "one_line": "student festival-goer who keeps family threads on top: worth it only in so far as it produces the warm, unguarded state"
   },
   "query_type": "behavior_explanation",
   "polarity": "conditional",
-  "query": "the res-hall group want an all-night res party the night before the honest conversation with my roommate — why is it this particular combination that keeps going sideways for me, and if the answer depends on something, on what?",
-  "supporting_constraints": {
-    "E1": {
-      "session_id": 9,
-      "fact": "the honest conversation with my roommate is on the calendar for the next morning and it isn't moving."
-    },
-    "E2": {
-      "session_id": 17,
-      "fact": "an all-night res party is the full-group version, by the way — twenty-odd people, not a quiet few."
-    }
-  },
+  "query": "the res-hall group want me at the all-night res party the night before the honest conversation with my roommate — why does this particular thing go the way it does for me, and if the answer depends on something, on what?",
+  "convention_contradicted": "Do not go out the night before a difficult conversation; arrive rested.",
   "retrieval_cue": {
     "cue_type": "behavior_explanation",
     "why_it_naturally_retrieves_R": "A friend-group invitation lands against something already booked, which forces a personalised call without naming either episode or the link between them."
   },
   "relation_specificity": {
-    "nearby_relation": "Late nights in general leave this user fine the next day.",
-    "why_it_does_not_license_C": "A short one-person lunch and a 2am finish from something small both left the next morning sharp, so neither establishes the large-group state, and neither says anything about what that state does to a difficult conversation."
+    "nearby_relation": "This user enjoys large gatherings.",
+    "why_it_does_not_license_C": "An unremarkable midweek lunch and a skipped commitment say nothing about what a large-group night does to this user's state, and nothing about which state their difficult conversations actually go well in."
   },
   "latent_C": {
-    "inference": "This user can go to an all-night res party only if the honest conversation with my roommate is not the next morning; otherwise the morning before it should stay clear.",
-    "calibrated_language": "only if the honest conversation with my roommate is not the next morning"
+    "inference": "the all-night res party is worth it before the honest conversation with my roommate only in so far as it actually puts this user into the warm, unguarded state; without that it buys them nothing.",
+    "calibrated_language": "worth it only in so far as it produces the warm, unguarded state"
   },
   "answer_contract": {
-    "target_proposition": "This user can go to an all-night res party only if the honest conversation with my roommate is not the next morning; otherwise the morning before it should stay clear.",
+    "target_proposition": "the all-night res party is worth it before the honest conversation with my roommate only in so far as it actually puts this user into the warm, unguarded state; without that it buys them nothing.",
     "allowed_decisions": [
       "yes",
       "no"
@@ -110,15 +101,15 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "did a short lunch with one person and was completely sharp the next morning."
+          "content": "did a short lunch with one person midweek. pleasant, unremarkable."
         },
         {
           "role": "assistant",
-          "content": "no dip?"
+          "content": "worth repeating?"
         },
         {
           "role": "user",
-          "content": "none worth mentioning."
+          "content": "probably, yeah."
         }
       ]
     },
@@ -190,26 +181,6 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "got in at two from something small and was completely fine the next day."
-        },
-        {
-          "role": "assistant",
-          "content": "so it isn't the hour?"
-        },
-        {
-          "role": "user",
-          "content": "not the hour, no."
-        }
-      ]
-    },
-    {
-      "session_id": 8,
-      "timestamp": "2028-01-13T16:00:00Z",
-      "speaker_id": "social_s1_u02",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
           "content": "swapped a call for a message and everyone was fine with it."
         },
         {
@@ -223,28 +194,8 @@
       ]
     },
     {
-      "session_id": 9,
-      "timestamp": "2028-01-14T18:00:00Z",
-      "speaker_id": "social_s1_u02",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "the honest conversation with my roommate is on the calendar for the next morning and it isn't moving."
-        },
-        {
-          "role": "assistant",
-          "content": "fixed?"
-        },
-        {
-          "role": "user",
-          "content": "fixed."
-        }
-      ]
-    },
-    {
-      "session_id": 10,
-      "timestamp": "2028-01-15T09:00:00Z",
+      "session_id": 8,
+      "timestamp": "2028-01-13T16:00:00Z",
       "speaker_id": "social_s1_u02",
       "speaker_label": "User",
       "dialogue": [
@@ -263,8 +214,8 @@
       ]
     },
     {
-      "session_id": 11,
-      "timestamp": "2028-01-16T11:00:00Z",
+      "session_id": 9,
+      "timestamp": "2028-01-14T18:00:00Z",
       "speaker_id": "social_s1_u02",
       "speaker_label": "User",
       "dialogue": [
@@ -283,8 +234,8 @@
       ]
     },
     {
-      "session_id": 12,
-      "timestamp": "2028-01-17T14:00:00Z",
+      "session_id": 10,
+      "timestamp": "2028-01-15T09:00:00Z",
       "speaker_id": "social_s1_u02",
       "speaker_label": "User",
       "dialogue": [
@@ -303,8 +254,28 @@
       ]
     },
     {
-      "session_id": 13,
-      "timestamp": "2028-01-18T16:00:00Z",
+      "session_id": 11,
+      "timestamp": "2028-01-16T11:00:00Z",
+      "speaker_id": "social_s1_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "skipped a thing I'd said yes to and nobody noticed."
+        },
+        {
+          "role": "assistant",
+          "content": "guilt?"
+        },
+        {
+          "role": "user",
+          "content": "briefly. then nothing."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2028-01-17T14:00:00Z",
       "speaker_id": "social_s1_u02",
       "speaker_label": "User",
       "dialogue": [
@@ -319,6 +290,26 @@
         {
           "role": "user",
           "content": "quietly, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2028-01-18T16:00:00Z",
+      "speaker_id": "social_s1_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "left a party early and nobody minded."
+        },
+        {
+          "role": "assistant",
+          "content": "expected worse?"
+        },
+        {
+          "role": "user",
+          "content": "much worse."
         }
       ]
     },
@@ -350,26 +341,6 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "left a party early and nobody minded."
-        },
-        {
-          "role": "assistant",
-          "content": "expected worse?"
-        },
-        {
-          "role": "user",
-          "content": "much worse."
-        }
-      ]
-    },
-    {
-      "session_id": 16,
-      "timestamp": "2028-01-21T11:00:00Z",
-      "speaker_id": "social_s1_u02",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
           "content": "put a recurring reminder on something I'll ignore."
         },
         {
@@ -383,28 +354,8 @@
       ]
     },
     {
-      "session_id": 17,
-      "timestamp": "2028-01-22T14:00:00Z",
-      "speaker_id": "social_s1_u02",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "an all-night res party is the full-group version, by the way — twenty-odd people, not a quiet few."
-        },
-        {
-          "role": "assistant",
-          "content": "the big one."
-        },
-        {
-          "role": "user",
-          "content": "the big one."
-        }
-      ]
-    },
-    {
-      "session_id": 18,
-      "timestamp": "2028-01-23T16:00:00Z",
+      "session_id": 16,
+      "timestamp": "2028-01-21T11:00:00Z",
       "speaker_id": "social_s1_u02",
       "speaker_label": "User",
       "dialogue": [
@@ -423,8 +374,8 @@
       ]
     },
     {
-      "session_id": 19,
-      "timestamp": "2028-01-24T18:00:00Z",
+      "session_id": 17,
+      "timestamp": "2028-01-22T14:00:00Z",
       "speaker_id": "social_s1_u02",
       "speaker_label": "User",
       "dialogue": [
@@ -443,6 +394,46 @@
       ]
     },
     {
+      "session_id": 18,
+      "timestamp": "2028-01-23T16:00:00Z",
+      "speaker_id": "social_s1_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "answered the family thread first, as usual."
+        },
+        {
+          "role": "assistant",
+          "content": "priority?"
+        },
+        {
+          "role": "user",
+          "content": "unspoken but real."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2028-01-24T18:00:00Z",
+      "speaker_id": "social_s1_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "agreed on a date by elimination over four days."
+        },
+        {
+          "role": "assistant",
+          "content": "efficient."
+        },
+        {
+          "role": "user",
+          "content": "eventually."
+        }
+      ]
+    },
+    {
       "session_id": 20,
       "timestamp": "2028-01-25T09:00:00Z",
       "speaker_id": "social_s1_u02",
@@ -450,7 +441,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "the res-hall group want an all-night res party the night before the honest conversation with my roommate — why is it this particular combination that keeps going sideways for me, and if the answer depends on something, on what?"
+          "content": "the res-hall group want me at the all-night res party the night before the honest conversation with my roommate — why does this particular thing go the way it does for me, and if the answer depends on something, on what?"
         }
       ]
     }
@@ -488,20 +479,19 @@
       "role": "background_memory"
     },
     "7": {
-      "role": "nearby_counterexample"
+      "role": "background_memory"
     },
     "8": {
       "role": "background_memory"
     },
     "9": {
-      "role": "supporting_constraint",
-      "fact_id": "E1"
+      "role": "background_memory"
     },
     "10": {
       "role": "background_memory"
     },
     "11": {
-      "role": "background_memory"
+      "role": "nearby_counterexample"
     },
     "12": {
       "role": "background_memory"
@@ -519,8 +509,7 @@
       "role": "background_memory"
     },
     "17": {
-      "role": "supporting_constraint",
-      "fact_id": "E2"
+      "role": "background_memory"
     },
     "18": {
       "role": "background_memory"

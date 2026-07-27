@@ -58,17 +58,17 @@ POLARITY_TAIL = {
 # An explanation question has to name the combination that goes wrong, so it uses
 # the proposed option even when the supported answer endorses the alternative.
 NEEDS_BOTH_OPTIONS = frozenset({"recommendation_ranking"})
-ALWAYS_PROPOSED_OPTION = frozenset({"behavior_explanation"})
 
 
 def _base_clause(scenario: dict, query_type: str, polarity: str, subs: dict[str, str]) -> str:
-    proposed = scenario["query_option"].format(**subs)
-    alternative = scenario["query_alt"].format(**subs)
+    """A ranking question has to name both candidates or it is not a ranking question."""
+    proposed = (
+        scenario["query_conv"] if polarity == "reject" else scenario["query_unconv"]
+    ).format(**subs)
     if query_type in NEEDS_BOTH_OPTIONS:
-        return f"{proposed}, or {subs['protective']}"
-    if query_type in ALWAYS_PROPOSED_OPTION:
-        return proposed
-    return alternative if polarity == "accept" else proposed
+        other = subs["unconv"] if polarity == "reject" else subs["conv"]
+        return f"{proposed}, or {other}"
+    return proposed
 
 
 # --------------------------------------------------------------------------
@@ -138,12 +138,11 @@ def build_unit(scenario_index: int, user_index: int) -> dict[str, dict[str, Any]
     slug = scenario["slug"]
     slots = scenario["slots"]
     a_sid, b_sid = slots["a"], slots["b"]
-    e1_sid, e2_sid = slots["e1"], slots["e2"]
     cx_sids = list(slots["cx"])
     dist_sid = slots["dist"]
 
-    reserved = {a_sid, b_sid, e1_sid, e2_sid, CUE_SESSION, *cx_sids}
-    if len(reserved) != 7:
+    reserved = {a_sid, b_sid, CUE_SESSION, *cx_sids}
+    if len(reserved) != 5:
         raise ValueError(f"S{scenario_index}: slot collision in {slots}")
     if dist_sid in reserved:
         raise ValueError(f"S{scenario_index}: distractor slot {dist_sid} is not a background slot")
@@ -155,15 +154,19 @@ def build_unit(scenario_index: int, user_index: int) -> dict[str, dict[str, Any]
 
     subs = {
         "a_obj": scenario["a_objs"][user_index - 1],
-        "opt": scenario["opts"][user_index - 1],
         "commit": scenario["commits"][user_index - 1],
         "b_obj": scenario.get("b_objs", [""] * 10)[user_index - 1],
+        "mediator": scenario["mediator"],
         "circle": profile.circle,
         "role": profile.role,
     }
-    subs["protective"] = scenario["protective"].format(**subs)
+    subs["unconv"] = scenario["unconv"][user_index - 1].format(**subs)
+    subs["conv"] = scenario["conv"][user_index - 1].format(**subs)
+    # The option actually put to the user: `reject` items propose the
+    # conventionally sensible one, everything else the conventionally reckless one.
+    subs["opt"] = subs["conv"] if polarity == "reject" else subs["unconv"]
 
-    inference_tmpl, calibrated_tmpl = C_TEMPLATES[slug][polarity]
+    inference_tmpl, calibrated_tmpl = C_TEMPLATES[polarity]
     inference = inference_tmpl.format(**subs)
     calibrated = calibrated_tmpl.format(**subs)
 
@@ -220,12 +223,6 @@ def build_unit(scenario_index: int, user_index: int) -> dict[str, dict[str, Any]
                     **{key: value.format(**subs) for key, value in scenario["b_elements"].items()},
                 },
             }
-        elif sid == e1_sid:
-            dialogue = _turns(scenario["e1"], subs)
-            annotations[str(sid)] = {"role": "supporting_constraint", "fact_id": "E1"}
-        elif sid == e2_sid:
-            dialogue = _turns(scenario["e2"], subs)
-            annotations[str(sid)] = {"role": "supporting_constraint", "fact_id": "E2"}
         elif sid in cx_sids:
             dialogue = _turns(scenario["cx"][cx_sids.index(sid)], subs)
             annotations[str(sid)] = {"role": "nearby_counterexample"}
@@ -251,10 +248,7 @@ def build_unit(scenario_index: int, user_index: int) -> dict[str, dict[str, Any]
         "query_type": query_type,
         "polarity": polarity,
         "query": query,
-        "supporting_constraints": {
-            "E1": {"session_id": e1_sid, "fact": scenario["e1"][0].format(**subs)},
-            "E2": {"session_id": e2_sid, "fact": scenario["e2"][0].format(**subs)},
-        },
+        "convention_contradicted": scenario["convention"],
         "retrieval_cue": {
             "cue_type": query_type,
             "why_it_naturally_retrieves_R": scenario["cue_why"].format(**subs),
@@ -298,11 +292,12 @@ def build_unit(scenario_index: int, user_index: int) -> dict[str, dict[str, Any]
     relational_connector = {
         "relation": relation,
         "requires_evidence": ["ev_A", "ev_B"],
-        "calibration_constraints": ["E1", "E2"],
+        "calibration_constraints": [],
     }
     coactivation_bridge = (
         f"ev_A and ev_B are the only pair that licenses the target proposition. {relation} "
-        f"E1 and E2 fix timing and identity only and do not open a second route to C. "
+        f"The proposition contradicts the convention a solver would otherwise apply "
+        f"(\"{scenario['convention']}\"), so priors alone point the other way. "
         f"The nearby relation ({nearby}) does not license it."
     )
 
@@ -385,9 +380,10 @@ def build_unit(scenario_index: int, user_index: int) -> dict[str, dict[str, Any]
 
     # ---- distractor: one background session swapped for a tempting non-evidence one
     why_distractor = (
-        f"It endorses {subs['opt']} in the user's own feed, so it competes for attention, but it "
-        f"reports someone else's confidence rather than any episode of this user's, and it says "
-        f"nothing about the relation between session {a_sid} and session {b_sid}."
+        "It restates the conventional advice in the user's own feed, so it competes for attention "
+        "and points at the answer a prior-driven solver already wants to give. It reports other "
+        f"people's confidence rather than any episode of this user's, and says nothing about the "
+        f"relation between session {a_sid} and session {b_sid}."
     )
     distractor_context = [dict(session) for session in context]
     distractor_annotations = {key: dict(value) for key, value in annotations.items()}

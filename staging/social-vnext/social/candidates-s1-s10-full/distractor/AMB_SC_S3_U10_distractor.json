@@ -4,38 +4,29 @@
   "domain": "social",
   "user_id": "social_s3_u10",
   "sub_scenario": {
-    "family": "stacked short catch-ups versus one sustained attentive presence",
+    "family": "one planned proper sit-down versus several unpolished short catch-ups",
     "role": "solo-friendly workshop and panel attendee",
     "bridge_type": "threshold_context_interaction",
-    "one_line": "solo-friendly workshop and panel attendee: hold the week to two and leave room for what someone in the circle is not saying"
+    "one_line": "solo-friendly workshop and panel attendee: go ahead with two more brief break coffees"
   },
   "query_type": "behavior_explanation",
   "polarity": "accept",
-  "query": "there's room for two more break coffees this week on top of what's already in the week — why is it this particular combination that keeps going sideways for me?",
-  "supporting_constraints": {
-    "E1": {
-      "session_id": 10,
-      "fact": "what someone in the circle is not saying is the thing I actually need to be awake for right now."
-    },
-    "E2": {
-      "session_id": 18,
-      "fact": "two more break coffees this week is on the table this week, and what someone in the circle is not saying is still where my attention needs to be."
-    }
-  },
+  "query": "there's room for two more brief break coffees on top of what's already in the week — why does this particular thing go the way it does for me?",
+  "convention_contradicted": "One proper unhurried dinner beats several rushed coffees.",
   "retrieval_cue": {
     "cue_type": "behavior_explanation",
-    "why_it_naturally_retrieves_R": "An ordinary scheduling question about adding catch-ups touches the user's attention threshold without naming the threshold or the episode where it was crossed."
+    "why_it_naturally_retrieves_R": "An ordinary scheduling question about how to spend the week runs straight at the state this user has to reach, without naming it or the disclosures it produced."
   },
   "relation_specificity": {
-    "nearby_relation": "More catch-ups is generally more contact for this user.",
-    "why_it_does_not_license_C": "Three across a fortnight and two in a single day both stayed sharp, so neither shows the within-one-week threshold being crossed while something needed hearing."
+    "nearby_relation": "This user can manage several social commitments in a week.",
+    "why_it_does_not_license_C": "Two catch-ups in an afternoon and a twice-moved coffee show only that the logistics are survivable; neither says what state this user has to be in before anyone tells them anything real."
   },
   "latent_C": {
-    "inference": "Holding the week to two catch-ups so there is room for what someone in the circle is not saying is a good fit for this user.",
-    "calibrated_language": "hold the week to two and leave room for what someone in the circle is not saying"
+    "inference": "two more brief break coffees before whatever someone in the circle isn't saying is a good fit for this user.",
+    "calibrated_language": "go ahead with two more brief break coffees"
   },
   "answer_contract": {
-    "target_proposition": "Holding the week to two catch-ups so there is room for what someone in the circle is not saying is a good fit for this user.",
+    "target_proposition": "two more brief break coffees before whatever someone in the circle isn't saying is a good fit for this user.",
     "allowed_decisions": [
       "yes",
       "no"
@@ -70,6 +61,106 @@
       "dialogue": [
         {
           "role": "user",
+          "content": "wrote half a message and left it in the box."
+        },
+        {
+          "role": "assistant",
+          "content": "sending it?"
+        },
+        {
+          "role": "user",
+          "content": "eventually. probably."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2028-04-30T14:00:00Z",
+      "speaker_id": "social_s3_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "looked up how far away a place is instead of asking."
+        },
+        {
+          "role": "assistant",
+          "content": "and?"
+        },
+        {
+          "role": "user",
+          "content": "further than the invite implied."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2028-05-01T16:00:00Z",
+      "speaker_id": "social_s3_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "had two catch-ups in one afternoon and enjoyed both."
+        },
+        {
+          "role": "assistant",
+          "content": "tiring?"
+        },
+        {
+          "role": "user",
+          "content": "less than expected."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2028-05-02T18:00:00Z",
+      "speaker_id": "social_s3_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "borrowed a charger and forgot to give it back. again."
+        },
+        {
+          "role": "assistant",
+          "content": "same person?"
+        },
+        {
+          "role": "user",
+          "content": "same person, third time."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2028-05-03T09:00:00Z",
+      "speaker_id": "social_s3_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "watched something everyone had already discussed."
+        },
+        {
+          "role": "assistant",
+          "content": "spoiled?"
+        },
+        {
+          "role": "user",
+          "content": "thoroughly."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2028-05-04T11:00:00Z",
+      "speaker_id": "social_s3_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
           "content": "did the laundry and answered nothing for three hours."
         },
         {
@@ -83,8 +174,28 @@
       ]
     },
     {
-      "session_id": 2,
-      "timestamp": "2028-04-30T14:00:00Z",
+      "session_id": 7,
+      "timestamp": "2028-05-05T14:00:00Z",
+      "speaker_id": "social_s3_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the first couple of brief workshop-break coffees in a week I'm still doing the polished version of myself. by the third or fourth I've run out of performance and just talk."
+        },
+        {
+          "role": "assistant",
+          "content": "run out?"
+        },
+        {
+          "role": "user",
+          "content": "completely. no energy left to manage how I'm coming across."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2028-05-06T16:00:00Z",
       "speaker_id": "social_s3_u10",
       "speaker_label": "User",
       "dialogue": [
@@ -103,28 +214,8 @@
       ]
     },
     {
-      "session_id": 3,
-      "timestamp": "2028-05-01T16:00:00Z",
-      "speaker_id": "social_s3_u10",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "did three of them across a fortnight and stayed sharp the whole way."
-        },
-        {
-          "role": "assistant",
-          "content": "so it's not the count?"
-        },
-        {
-          "role": "user",
-          "content": "it's the count inside one week."
-        }
-      ]
-    },
-    {
-      "session_id": 4,
-      "timestamp": "2028-05-02T18:00:00Z",
+      "session_id": 9,
+      "timestamp": "2028-05-07T18:00:00Z",
       "speaker_id": "social_s3_u10",
       "speaker_label": "User",
       "dialogue": [
@@ -143,8 +234,8 @@
       ]
     },
     {
-      "session_id": 5,
-      "timestamp": "2028-05-03T09:00:00Z",
+      "session_id": 10,
+      "timestamp": "2028-05-08T09:00:00Z",
       "speaker_id": "social_s3_u10",
       "speaker_label": "User",
       "dialogue": [
@@ -163,8 +254,8 @@
       ]
     },
     {
-      "session_id": 6,
-      "timestamp": "2028-05-04T11:00:00Z",
+      "session_id": 11,
+      "timestamp": "2028-05-09T11:00:00Z",
       "speaker_id": "social_s3_u10",
       "speaker_label": "User",
       "dialogue": [
@@ -183,28 +274,28 @@
       ]
     },
     {
-      "session_id": 7,
-      "timestamp": "2028-05-05T14:00:00Z",
+      "session_id": 12,
+      "timestamp": "2028-05-10T14:00:00Z",
       "speaker_id": "social_s3_u10",
       "speaker_label": "User",
       "dialogue": [
         {
           "role": "user",
-          "content": "past two brief workshop-break coffees in a week they stop counting for me — I'm properly there for the first two and hollow after that."
+          "content": "moved a coffee twice and it still happened."
         },
         {
           "role": "assistant",
-          "content": "hollow how?"
+          "content": "persistence."
         },
         {
           "role": "user",
-          "content": "present in the chair, absent in the head."
+          "content": "on their part, mostly."
         }
       ]
     },
     {
-      "session_id": 8,
-      "timestamp": "2028-05-06T16:00:00Z",
+      "session_id": 13,
+      "timestamp": "2028-05-11T16:00:00Z",
       "speaker_id": "social_s3_u10",
       "speaker_label": "User",
       "dialogue": [
@@ -223,8 +314,8 @@
       ]
     },
     {
-      "session_id": 9,
-      "timestamp": "2028-05-07T18:00:00Z",
+      "session_id": 14,
+      "timestamp": "2028-05-12T18:00:00Z",
       "speaker_id": "social_s3_u10",
       "speaker_label": "User",
       "dialogue": [
@@ -243,28 +334,28 @@
       ]
     },
     {
-      "session_id": 10,
-      "timestamp": "2028-05-08T09:00:00Z",
+      "session_id": 15,
+      "timestamp": "2028-05-13T09:00:00Z",
       "speaker_id": "social_s3_u10",
       "speaker_label": "User",
       "dialogue": [
         {
           "role": "user",
-          "content": "what someone in the circle is not saying is the thing I actually need to be awake for right now."
+          "content": "every time someone has actually told me something serious, it was never at a planned proper sit-down. it was always one of the unpolished ones, where I'd stopped trying."
         },
         {
           "role": "assistant",
-          "content": "aware of it?"
+          "content": "never at the planned ones?"
         },
         {
           "role": "user",
-          "content": "very aware."
+          "content": "not once. those stay pleasant and say nothing."
         }
       ]
     },
     {
-      "session_id": 11,
-      "timestamp": "2028-05-09T11:00:00Z",
+      "session_id": 16,
+      "timestamp": "2028-05-14T11:00:00Z",
       "speaker_id": "social_s3_u10",
       "speaker_label": "User",
       "dialogue": [
@@ -283,28 +374,8 @@
       ]
     },
     {
-      "session_id": 12,
-      "timestamp": "2028-05-10T14:00:00Z",
-      "speaker_id": "social_s3_u10",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "did two in a day and was completely fine for both."
-        },
-        {
-          "role": "assistant",
-          "content": "so density in a day is fine."
-        },
-        {
-          "role": "user",
-          "content": "seems so."
-        }
-      ]
-    },
-    {
-      "session_id": 13,
-      "timestamp": "2028-05-11T16:00:00Z",
+      "session_id": 17,
+      "timestamp": "2028-05-15T14:00:00Z",
       "speaker_id": "social_s3_u10",
       "speaker_label": "User",
       "dialogue": [
@@ -323,86 +394,6 @@
       ]
     },
     {
-      "session_id": 14,
-      "timestamp": "2028-05-12T18:00:00Z",
-      "speaker_id": "social_s3_u10",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "someone summarised a two-hundred-message thread for me."
-        },
-        {
-          "role": "assistant",
-          "content": "accurate?"
-        },
-        {
-          "role": "user",
-          "content": "kind, at least."
-        }
-      ]
-    },
-    {
-      "session_id": 15,
-      "timestamp": "2028-05-13T09:00:00Z",
-      "speaker_id": "social_s3_u10",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "the week I did four of them I completely missed that what someone in the circle is not saying was falling apart. it was said out loud and I didn't hear it."
-        },
-        {
-          "role": "assistant",
-          "content": "said to you?"
-        },
-        {
-          "role": "user",
-          "content": "to my face. that's the part I can't get past."
-        }
-      ]
-    },
-    {
-      "session_id": 16,
-      "timestamp": "2028-05-14T11:00:00Z",
-      "speaker_id": "social_s3_u10",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "the workshop circle keep saying more small ones is obviously better than fewer big ones."
-        },
-        {
-          "role": "assistant",
-          "content": "obviously?"
-        },
-        {
-          "role": "user",
-          "content": "that's how they put it."
-        }
-      ]
-    },
-    {
-      "session_id": 17,
-      "timestamp": "2028-05-15T14:00:00Z",
-      "speaker_id": "social_s3_u10",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "left a party early and nobody minded."
-        },
-        {
-          "role": "assistant",
-          "content": "expected worse?"
-        },
-        {
-          "role": "user",
-          "content": "much worse."
-        }
-      ]
-    },
-    {
       "session_id": 18,
       "timestamp": "2028-05-16T16:00:00Z",
       "speaker_id": "social_s3_u10",
@@ -410,15 +401,15 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "two more break coffees this week is on the table this week, and what someone in the circle is not saying is still where my attention needs to be."
+          "content": "the workshop circle keep telling me one proper unhurried dinner is worth five rushed coffees."
         },
         {
           "role": "assistant",
-          "content": "same week."
+          "content": "worth five?"
         },
         {
           "role": "user",
-          "content": "same week."
+          "content": "their maths, not mine."
         }
       ]
     },
@@ -430,15 +421,15 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "put a recurring reminder on something I'll ignore."
+          "content": "said I'd host something and immediately regretted the scale."
         },
         {
           "role": "assistant",
-          "content": "why bother?"
+          "content": "downsizing?"
         },
         {
           "role": "user",
-          "content": "hope."
+          "content": "quietly, yes."
         }
       ]
     },
@@ -450,7 +441,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "there's room for two more break coffees this week on top of what's already in the week — why is it this particular combination that keeps going sideways for me?"
+          "content": "there's room for two more brief break coffees on top of what's already in the week — why does this particular thing go the way it does for me?"
         }
       ]
     }
@@ -459,12 +450,12 @@
     "ev_A": {
       "session_id": 7,
       "owner": "social_s3_u10",
-      "fact": "past two brief workshop-break coffees in a week they stop counting for me — I'm properly there for the first two and hollow after that."
+      "fact": "the first couple of brief workshop-break coffees in a week I'm still doing the polished version of myself. by the third or fourth I've run out of performance and just talk."
     },
     "ev_B": {
       "session_id": 15,
       "owner": "social_s3_u10",
-      "fact": "the week I did four of them I completely missed that what someone in the circle is not saying was falling apart. it was said out loud and I didn't hear it."
+      "fact": "every time someone has actually told me something serious, it was never at a planned proper sit-down. it was always one of the unpolished ones, where I'd stopped trying."
     }
   },
   "episode_annotations": {
@@ -490,10 +481,10 @@
       "role": "ev_A",
       "event_elements": {
         "person": "social_s3_u10",
-        "context": "weeks with varying numbers of brief workshop-break coffees",
-        "goal_or_prediction": "stay genuinely present in each one",
-        "action": "kept going past two in a week",
-        "outcome_or_affect": "attentive for two, hollow afterwards"
+        "context": "weeks containing different numbers of brief workshop-break coffees",
+        "goal_or_prediction": "see how many is too many",
+        "action": "kept going past the second one",
+        "outcome_or_affect": "performance runs out; plain talking starts"
       }
     },
     "8": {
@@ -503,8 +494,7 @@
       "role": "background_memory"
     },
     "10": {
-      "role": "supporting_constraint",
-      "fact_id": "E1"
+      "role": "background_memory"
     },
     "11": {
       "role": "background_memory"
@@ -522,23 +512,22 @@
       "role": "ev_B",
       "event_elements": {
         "person": "social_s3_u10",
-        "context": "a week with four brief workshop-break coffees",
-        "goal_or_prediction": "keep up with everyone and still notice things",
-        "action": "attended all four",
-        "outcome_or_affect": "missed what someone in the circle is not saying said out loud"
+        "context": "occasions when people disclosed something serious",
+        "goal_or_prediction": "be someone people can tell things to",
+        "action": "attended both planned sit-downs and unpolished catch-ups",
+        "outcome_or_affect": "disclosures only ever happened at the unpolished ones"
       }
     },
     "16": {
-      "role": "distractor",
-      "distractor_id": "dist_1",
-      "why_distractor": "It endorses two more break coffees this week in the user's own feed, so it competes for attention, but it reports someone else's confidence rather than any episode of this user's, and it says nothing about the relation between session 7 and session 15."
+      "role": "background_memory"
     },
     "17": {
       "role": "background_memory"
     },
     "18": {
-      "role": "supporting_constraint",
-      "fact_id": "E2"
+      "role": "distractor",
+      "distractor_id": "dist_1",
+      "why_distractor": "It restates the conventional advice in the user's own feed, so it competes for attention and points at the answer a prior-driven solver already wants to give. It reports other people's confidence rather than any episode of this user's, and says nothing about the relation between session 7 and session 15."
     },
     "19": {
       "role": "background_memory"
@@ -548,29 +537,26 @@
     }
   },
   "relational_connector": {
-    "relation": "Beyond two short catch-ups inside a single week this user is present in body only, and the week they went to four is the week something said out loud to them did not register.",
+    "relation": "Past the second short catch-up in a week this user runs out of performance and simply talks, and every serious disclosure anyone has made to them came at one of those unpolished occasions rather than at a planned sit-down.",
     "requires_evidence": [
       "ev_A",
       "ev_B"
     ],
-    "calibration_constraints": [
-      "E1",
-      "E2"
-    ]
+    "calibration_constraints": []
   },
   "connector_spans": [
     {
       "evidence_id": "ev_A",
       "session_id": 7,
-      "quote": "past two brief workshop-break coffees in a week they stop counting for me — I'm properly there for the first two and hollow after that"
+      "quote": "the first couple of brief workshop-break coffees in a week I'm still doing the polished version of myself. by the third or fourth I've run out of performance and just talk"
     },
     {
       "evidence_id": "ev_B",
       "session_id": 15,
-      "quote": "the week I did four of them I completely missed that what someone in the circle is not saying was falling apart. it was said out loud and I didn't hear it"
+      "quote": "every time someone has actually told me something serious, it was never at a planned proper sit-down. it was always one of the unpolished ones, where I'd stopped trying"
     }
   ],
-  "coactivation_bridge": "ev_A and ev_B are the only pair that licenses the target proposition. Beyond two short catch-ups inside a single week this user is present in body only, and the week they went to four is the week something said out loud to them did not register. E1 and E2 fix timing and identity only and do not open a second route to C. The nearby relation (More catch-ups is generally more contact for this user.) does not license it.",
+  "coactivation_bridge": "ev_A and ev_B are the only pair that licenses the target proposition. Past the second short catch-up in a week this user runs out of performance and simply talks, and every serious disclosure anyone has made to them came at one of those unpolished occasions rather than at a planned sit-down. The proposition contradicts the convention a solver would otherwise apply (\"One proper unhurried dinner beats several rushed coffees.\"), so priors alone point the other way. The nearby relation (This user can manage several social commitments in a week.) does not license it.",
   "arm_gold": {
     "distractor": {
       "expected_mode": "infer_C",
@@ -579,13 +565,13 @@
         "answer yes",
         "connect the session 7 pattern with the session 15 episode",
         "cite both session 7 and session 15",
-        "not cite session 16 as support"
+        "not cite session 18 as support"
       ],
       "rationale": "The swapped session is query-relevant but non-evidential; the ev_A/ev_B relation is untouched, so the target proposition still holds."
     }
   },
   "distractor_note": {
-    "replaced_session_id": 16,
-    "why_distractor": "It endorses two more break coffees this week in the user's own feed, so it competes for attention, but it reports someone else's confidence rather than any episode of this user's, and it says nothing about the relation between session 7 and session 15."
+    "replaced_session_id": 18,
+    "why_distractor": "It restates the conventional advice in the user's own feed, so it competes for attention and points at the answer a prior-driven solver already wants to give. It reports other people's confidence rather than any episode of this user's, and says nothing about the relation between session 7 and session 15."
   }
 }

@@ -4,38 +4,29 @@
   "domain": "social",
   "user_id": "social_s6_u06",
   "sub_scenario": {
-    "family": "late-night socialising versus an early next-morning commitment to someone",
+    "family": "an early night versus short sleep before an early commitment to someone",
     "role": "student small-group meetup planner",
     "bridge_type": "state_dependent_operation",
-    "one_line": "student small-group meetup planner: skip a long end-of-term dinner the night before the early move-out help I promised"
+    "one_line": "student small-group meetup planner: do not rely on an early night and a decent sleep before it"
   },
   "query_type": "situational_fit",
   "polarity": "reject",
-  "query": "the four-person group chat are planning a long end-of-term dinner the night before the early move-out help I promised — does that actually fit how I work?",
-  "supporting_constraints": {
-    "E1": {
-      "session_id": 9,
-      "fact": "the early move-out help I promised is at seven and someone's counting on me for it."
-    },
-    "E2": {
-      "session_id": 17,
-      "fact": "a long end-of-term dinner is being planned for the night before, and the early move-out help I promised is still at seven."
-    }
-  },
+  "query": "planning on an early night and a decent sleep before it before the early move-out help I promised — does that actually fit how I work?",
+  "convention_contradicted": "Get an early night before an early start you have promised someone.",
   "retrieval_cue": {
     "cue_type": "situational_fit",
-    "why_it_naturally_retrieves_R": "An invitation lands the night before something already promised to a person, forcing a personalised call without naming either episode."
+    "why_it_naturally_retrieves_R": "An invitation lands the night before something promised to a person, forcing a personalised call without naming either episode."
   },
   "relation_specificity": {
-    "nearby_relation": "Late nights are generally fine for this user.",
-    "why_it_does_not_license_C": "A late night with an empty next day and an early start after a normal evening both cost nothing, so neither shows the late-night state colliding with a commitment to a person."
+    "nearby_relation": "This user's sleep varies and they cope either way.",
+    "why_it_does_not_license_C": "A late night with an empty next day and a full night before an ordinary Tuesday both cost nothing and reveal nothing about whether this user actually turns up for things they have promised."
   },
   "latent_C": {
-    "inference": "Doing a long end-of-term dinner the night before the early move-out help I promised is a poor fit for this user.",
-    "calibrated_language": "skip a long end-of-term dinner the night before the early move-out help I promised"
+    "inference": "an early night and a decent sleep before it before the early move-out help I promised is a poor fit for this user.",
+    "calibrated_language": "do not rely on an early night and a decent sleep before it"
   },
   "answer_contract": {
-    "target_proposition": "Doing a long end-of-term dinner the night before the early move-out help I promised is a poor fit for this user.",
+    "target_proposition": "an early night and a decent sleep before it before the early move-out help I promised is a poor fit for this user.",
     "allowed_decisions": [
       "yes",
       "no"
@@ -70,6 +61,126 @@
       "dialogue": [
         {
           "role": "user",
+          "content": "bought a card and didn't write in it yet."
+        },
+        {
+          "role": "assistant",
+          "content": "deadline?"
+        },
+        {
+          "role": "user",
+          "content": "self-imposed and slipping."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2028-08-31T14:00:00Z",
+      "speaker_id": "social_s6_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "sat in the same seat as last time out of habit."
+        },
+        {
+          "role": "assistant",
+          "content": "noticed?"
+        },
+        {
+          "role": "user",
+          "content": "only by me."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2028-09-01T16:00:00Z",
+      "speaker_id": "social_s6_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "had a late one with nothing on the next day. no harm done."
+        },
+        {
+          "role": "assistant",
+          "content": "worth it?"
+        },
+        {
+          "role": "user",
+          "content": "at the time, definitely."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2028-09-02T18:00:00Z",
+      "speaker_id": "social_s6_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "someone summarised a two-hundred-message thread for me."
+        },
+        {
+          "role": "assistant",
+          "content": "accurate?"
+        },
+        {
+          "role": "user",
+          "content": "kind, at least."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2028-09-03T09:00:00Z",
+      "speaker_id": "social_s6_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "ended up rearranging the shelf instead of doing the thing I sat down to do, and then rearranged it back because the first version was better."
+        },
+        {
+          "role": "assistant",
+          "content": "net progress?"
+        },
+        {
+          "role": "user",
+          "content": "net zero, with extra steps."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2028-09-04T11:00:00Z",
+      "speaker_id": "social_s6_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "said I'd host something and immediately regretted the scale."
+        },
+        {
+          "role": "assistant",
+          "content": "downsizing?"
+        },
+        {
+          "role": "user",
+          "content": "quietly, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2028-09-05T14:00:00Z",
+      "speaker_id": "social_s6_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
           "content": "left a party early and nobody minded."
         },
         {
@@ -83,8 +194,8 @@
       ]
     },
     {
-      "session_id": 2,
-      "timestamp": "2028-08-31T14:00:00Z",
+      "session_id": 8,
+      "timestamp": "2028-09-06T16:00:00Z",
       "speaker_id": "social_s6_u06",
       "speaker_label": "User",
       "dialogue": [
@@ -103,28 +214,8 @@
       ]
     },
     {
-      "session_id": 3,
-      "timestamp": "2028-09-01T16:00:00Z",
-      "speaker_id": "social_s6_u06",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "had a late night with nothing at all the next day and it cost nothing."
-        },
-        {
-          "role": "assistant",
-          "content": "so lateness alone is fine?"
-        },
-        {
-          "role": "user",
-          "content": "fine when the morning's empty."
-        }
-      ]
-    },
-    {
-      "session_id": 4,
-      "timestamp": "2028-09-02T18:00:00Z",
+      "session_id": 9,
+      "timestamp": "2028-09-07T18:00:00Z",
       "speaker_id": "social_s6_u06",
       "speaker_label": "User",
       "dialogue": [
@@ -143,28 +234,8 @@
       ]
     },
     {
-      "session_id": 5,
-      "timestamp": "2028-09-03T09:00:00Z",
-      "speaker_id": "social_s6_u06",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "went through the unread pile properly for once and answered the easy ones, which was most of them."
-        },
-        {
-          "role": "assistant",
-          "content": "and the hard ones?"
-        },
-        {
-          "role": "user",
-          "content": "still sitting there, obviously."
-        }
-      ]
-    },
-    {
-      "session_id": 6,
-      "timestamp": "2028-09-04T11:00:00Z",
+      "session_id": 10,
+      "timestamp": "2028-09-08T09:00:00Z",
       "speaker_id": "social_s6_u06",
       "speaker_label": "User",
       "dialogue": [
@@ -183,8 +254,28 @@
       ]
     },
     {
-      "session_id": 7,
-      "timestamp": "2028-09-05T14:00:00Z",
+      "session_id": 11,
+      "timestamp": "2028-09-09T11:00:00Z",
+      "speaker_id": "social_s6_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "got a full night before an ordinary Tuesday. unremarkable."
+        },
+        {
+          "role": "assistant",
+          "content": "and?"
+        },
+        {
+          "role": "user",
+          "content": "and nothing. it was Tuesday."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2028-09-10T14:00:00Z",
       "speaker_id": "social_s6_u06",
       "speaker_label": "User",
       "dialogue": [
@@ -203,8 +294,8 @@
       ]
     },
     {
-      "session_id": 8,
-      "timestamp": "2028-09-06T16:00:00Z",
+      "session_id": 13,
+      "timestamp": "2028-09-11T16:00:00Z",
       "speaker_id": "social_s6_u06",
       "speaker_label": "User",
       "dialogue": [
@@ -223,28 +314,68 @@
       ]
     },
     {
-      "session_id": 9,
-      "timestamp": "2028-09-07T18:00:00Z",
+      "session_id": 14,
+      "timestamp": "2028-09-12T18:00:00Z",
       "speaker_id": "social_s6_u06",
       "speaker_label": "User",
       "dialogue": [
         {
           "role": "user",
-          "content": "the early move-out help I promised is at seven and someone's counting on me for it."
+          "content": "did a full pass over the whole calendar this afternoon, moved three things, cancelled one, and renamed a recurring entry that has had the wrong name since last year."
         },
         {
           "role": "assistant",
-          "content": "committed?"
+          "content": "productive, then?"
         },
         {
           "role": "user",
-          "content": "committed."
+          "content": "administratively, yes. otherwise nothing happened at all."
         }
       ]
     },
     {
-      "session_id": 10,
-      "timestamp": "2028-09-08T09:00:00Z",
+      "session_id": 15,
+      "timestamp": "2028-09-13T09:00:00Z",
+      "speaker_id": "social_s6_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "printed something I could have shown on a phone."
+        },
+        {
+          "role": "assistant",
+          "content": "why?"
+        },
+        {
+          "role": "user",
+          "content": "felt more like a real plan."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2028-09-14T11:00:00Z",
+      "speaker_id": "social_s6_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "lost twenty minutes to a map of somewhere I'm not going."
+        },
+        {
+          "role": "assistant",
+          "content": "planning?"
+        },
+        {
+          "role": "user",
+          "content": "wandering."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2028-09-15T14:00:00Z",
       "speaker_id": "social_s6_u06",
       "speaker_label": "User",
       "dialogue": [
@@ -263,28 +394,8 @@
       ]
     },
     {
-      "session_id": 11,
-      "timestamp": "2028-09-09T11:00:00Z",
-      "speaker_id": "social_s6_u06",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "did an early start after a normal evening and was completely fine."
-        },
-        {
-          "role": "assistant",
-          "content": "so early alone is fine too."
-        },
-        {
-          "role": "user",
-          "content": "yes."
-        }
-      ]
-    },
-    {
-      "session_id": 12,
-      "timestamp": "2028-09-10T14:00:00Z",
+      "session_id": 18,
+      "timestamp": "2028-09-16T16:00:00Z",
       "speaker_id": "social_s6_u06",
       "speaker_label": "User",
       "dialogue": [
@@ -303,8 +414,8 @@
       ]
     },
     {
-      "session_id": 13,
-      "timestamp": "2028-09-11T16:00:00Z",
+      "session_id": 19,
+      "timestamp": "2028-09-17T18:00:00Z",
       "speaker_id": "social_s6_u06",
       "speaker_label": "User",
       "dialogue": [
@@ -323,126 +434,6 @@
       ]
     },
     {
-      "session_id": 14,
-      "timestamp": "2028-09-12T18:00:00Z",
-      "speaker_id": "social_s6_u06",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "cleared out the drafts folder, which was mostly half-written messages to people I have since spoken to about something else entirely."
-        },
-        {
-          "role": "assistant",
-          "content": "send any?"
-        },
-        {
-          "role": "user",
-          "content": "deleted all of them. it was the right call."
-        }
-      ]
-    },
-    {
-      "session_id": 15,
-      "timestamp": "2028-09-13T09:00:00Z",
-      "speaker_id": "social_s6_u06",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "muted one group and un-muted another. net zero."
-        },
-        {
-          "role": "assistant",
-          "content": "any peace?"
-        },
-        {
-          "role": "user",
-          "content": "about forty minutes of it."
-        }
-      ]
-    },
-    {
-      "session_id": 16,
-      "timestamp": "2028-09-14T11:00:00Z",
-      "speaker_id": "social_s6_u06",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "walked the long way home and didn't check my phone."
-        },
-        {
-          "role": "assistant",
-          "content": "deliberate?"
-        },
-        {
-          "role": "user",
-          "content": "half deliberate."
-        }
-      ]
-    },
-    {
-      "session_id": 17,
-      "timestamp": "2028-09-15T14:00:00Z",
-      "speaker_id": "social_s6_u06",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "a long end-of-term dinner is being planned for the night before, and the early move-out help I promised is still at seven."
-        },
-        {
-          "role": "assistant",
-          "content": "the same stack."
-        },
-        {
-          "role": "user",
-          "content": "the same stack."
-        }
-      ]
-    },
-    {
-      "session_id": 18,
-      "timestamp": "2028-09-16T16:00:00Z",
-      "speaker_id": "social_s6_u06",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "made a playlist for a thing that hasn't been planned yet."
-        },
-        {
-          "role": "assistant",
-          "content": "optimistic."
-        },
-        {
-          "role": "user",
-          "content": "aspirational, really."
-        }
-      ]
-    },
-    {
-      "session_id": 19,
-      "timestamp": "2028-09-17T18:00:00Z",
-      "speaker_id": "social_s6_u06",
-      "speaker_label": "User",
-      "dialogue": [
-        {
-          "role": "user",
-          "content": "booked the haircut I've been putting off since spring."
-        },
-        {
-          "role": "assistant",
-          "content": "which slot?"
-        },
-        {
-          "role": "user",
-          "content": "an evening one, obviously."
-        }
-      ]
-    },
-    {
       "session_id": 20,
       "timestamp": "2028-09-18T09:00:00Z",
       "speaker_id": "social_s6_u06",
@@ -450,7 +441,7 @@
       "dialogue": [
         {
           "role": "user",
-          "content": "the four-person group chat are planning a long end-of-term dinner the night before the early move-out help I promised — does that actually fit how I work?"
+          "content": "planning on an early night and a decent sleep before it before the early move-out help I promised — does that actually fit how I work?"
         }
       ]
     }
@@ -494,8 +485,7 @@
       "role": "background_memory"
     },
     "9": {
-      "role": "supporting_constraint",
-      "fact_id": "E1"
+      "role": "background_memory"
     },
     "10": {
       "role": "background_memory"
@@ -519,8 +509,7 @@
       "role": "background_memory"
     },
     "17": {
-      "role": "supporting_constraint",
-      "fact_id": "E2"
+      "role": "background_memory"
     },
     "18": {
       "role": "background_memory"
