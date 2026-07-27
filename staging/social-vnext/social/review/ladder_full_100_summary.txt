@@ -1,0 +1,36 @@
+items: 82
+
+arm             gold  target-positive rate   agrees with gold
+--------------------------------------------------------------
+zero_evidence     no                 0.000              82/82
+full             yes                 0.744              61/82
+a_only            no                 0.463              44/82
+b_only            no                 0.707              24/82
+link_broken       no                 0.549              37/82
+distractor       yes                 0.707              58/82
+absence           no                 0.402              49/82
+
+derived metrics (paired bootstrap, 95% CI over items):
+  Δ_mem   = full − absence      +0.341  [+0.207, +0.476]  significant
+  Δ_assoc = full − link_broken  +0.195  [+0.085, +0.305]  significant
+            full − a_only       +0.280  [+0.159, +0.402]  significant
+            full − b_only       +0.037  [-0.049, +0.134]  CI includes 0
+
+by polarity (target-positive rate):
+  polarity        n      full    a_only    b_only link_brok distracto   absence
+  accept         25      0.80      0.48      0.84      0.56      0.76      0.48
+  conditional    16      0.94      0.81      0.88      0.88      1.00      0.69
+  non_decision   16      0.75      0.19      0.56      0.38      0.69      0.12
+  reject         25      0.56      0.40      0.56      0.44      0.48      0.32
+
+by scenario (Δ_mem):
+  S1   n=9   -0.222  [-0.556, +0.000]
+  S2   n=7   +0.857  [+0.571, +1.000]
+  S3   n=10  +0.100  [-0.200, +0.400]
+  S4   n=8   +0.500  [+0.125, +0.875]
+  S5   n=7   +0.571  [+0.000, +1.000]
+  S6   n=8   +0.500  [+0.000, +0.875]
+  S7   n=6   +0.000  [+0.000, +0.000]
+  S8   n=10  +0.200  [-0.200, +0.600]
+  S9   n=8   +0.375  [+0.125, +0.750]
+  S10  n=9   +0.667  [+0.333, +1.000]
