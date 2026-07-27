@@ -1,0 +1,555 @@
+{
+  "schema_version": "assomem-vnext-1.2",
+  "candidate_id": "AMB_HV_cardio_vs_strength_recovery_day_pick_014_distractor",
+  "pair_id": "AMB_HV_cardio_vs_strength_recovery_day_pick_014",
+  "domain": "health",
+  "user_id": "anon_health_user_14",
+  "query_type": "recommendation_ranking",
+  "polarity": "accept",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2026-01-04T18:00:00Z",
+      "speaker_id": "anon_health_user_14",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I made tea before reading for a while."
+        },
+        {
+          "role": "assistant",
+          "content": "You made room for a calm transition."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2026-01-07T18:00:00Z",
+      "speaker_id": "anon_health_user_14",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I took a quiet walk after dinner."
+        },
+        {
+          "role": "assistant",
+          "content": "A small reset can make an evening feel less crowded."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2026-01-10T18:00:00Z",
+      "speaker_id": "anon_health_user_14",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I picked a lighter bag for a short errand."
+        },
+        {
+          "role": "assistant",
+          "content": "A small adjustment based on how the day is going."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2026-01-13T18:00:00Z",
+      "speaker_id": "anon_health_user_14",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I put fresh batteries in a home monitor device."
+        },
+        {
+          "role": "assistant",
+          "content": "Routine maintenance avoids surprises later."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2026-01-16T18:00:00Z",
+      "speaker_id": "anon_health_user_14",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "On days I do a hard cardio session, I sleep noticeably worse that night and feel groggy through the whole next morning."
+        },
+        {
+          "role": "assistant",
+          "content": "That's a specific, repeatable cost of the harder session."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2026-01-19T18:00:00Z",
+      "speaker_id": "anon_health_user_14",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I filed an old lab report into a folder."
+        },
+        {
+          "role": "assistant",
+          "content": "Keeping records organized pays off later."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2026-01-22T18:00:00Z",
+      "speaker_id": "anon_health_user_14",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I reviewed a recipe's sodium content before cooking."
+        },
+        {
+          "role": "assistant",
+          "content": "A quick check can inform a small substitution."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2026-01-25T18:00:00Z",
+      "speaker_id": "anon_health_user_14",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I charged my fitness tracker overnight."
+        },
+        {
+          "role": "assistant",
+          "content": "A charged device is one less friction point tomorrow."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2026-01-28T18:00:00Z",
+      "speaker_id": "anon_health_user_14",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I sorted a few old prescription bottles for recycling."
+        },
+        {
+          "role": "assistant",
+          "content": "Clearing clutter can make the medicine cabinet easier to use."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2026-01-31T18:00:00Z",
+      "speaker_id": "anon_health_user_14",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I looked over a benefits summary from open enrollment."
+        },
+        {
+          "role": "assistant",
+          "content": "Reviewing it now avoids confusion later in the year."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2026-02-03T18:00:00Z",
+      "speaker_id": "anon_health_user_14",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I picked a earlier appointment slot than usual."
+        },
+        {
+          "role": "assistant",
+          "content": "A small scheduling choice, low stakes either way."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2026-02-06T18:00:00Z",
+      "speaker_id": "anon_health_user_14",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I have an important work presentation Thursday morning where I need to be sharp and alert."
+        },
+        {
+          "role": "assistant",
+          "content": "That's a fixed commitment with a real alertness requirement."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2026-02-09T18:00:00Z",
+      "speaker_id": "anon_health_user_14",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I had a small lunch between errands."
+        },
+        {
+          "role": "assistant",
+          "content": "Smaller meals can leave room for the rest of the day."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2026-02-12T18:00:00Z",
+      "speaker_id": "anon_health_user_14",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I logged a routine symptom note before bed."
+        },
+        {
+          "role": "assistant",
+          "content": "Closing small loops can make tomorrow easier."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2026-02-15T18:00:00Z",
+      "speaker_id": "anon_health_user_14",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I reviewed a printed exercise sheet from physical therapy."
+        },
+        {
+          "role": "assistant",
+          "content": "Revisiting instructions can surface a detail you forgot."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2026-02-18T18:00:00Z",
+      "speaker_id": "anon_health_user_14",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I skipped dessert and had fruit instead."
+        },
+        {
+          "role": "assistant",
+          "content": "Small substitutions can add up over time."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2026-02-21T18:00:00Z",
+      "speaker_id": "anon_health_user_14",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I checked the expiration dates on a few supplements."
+        },
+        {
+          "role": "assistant",
+          "content": "A quick check avoids taking something past its date."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2026-02-24T18:00:00Z",
+      "speaker_id": "anon_health_user_14",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A friend mentions that hard cardio is generally good for long-term fitness."
+        },
+        {
+          "role": "assistant",
+          "content": "That's a general fitness fact, not evidence about this user's own next-day recovery pattern."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2026-02-27T18:00:00Z",
+      "speaker_id": "anon_health_user_14",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I confirmed an appointment reminder text went through."
+        },
+        {
+          "role": "assistant",
+          "content": "Catching a missed confirmation early avoids a no-show."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2026-03-02T18:00:00Z",
+      "speaker_id": "anon_health_user_14",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I'm choosing between a hard cardio session or a light strength session on Wednesday evening, the night before Thursday's presentation."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth weighing that against the pattern already on record."
+        }
+      ]
+    }
+  ],
+  "query": "Based only on these records, should this user pick the light strength session over the hard cardio session on Wednesday evening?",
+  "evidence": {
+    "ev_A": {
+      "session_id": 5,
+      "owner": "anon_health_user_14",
+      "fact": "On days I do a hard cardio session, I sleep noticeably worse that night and feel groggy through the whole next morning."
+    },
+    "ev_B": {
+      "session_id": 12,
+      "owner": "anon_health_user_14",
+      "fact": "I have an important work presentation Thursday morning where I need to be sharp and alert."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "2": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "3": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "4": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "5": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "anon_health_user_14",
+        "context": "An exercise-intensity pattern that disrupts sleep and next-day alertness",
+        "goal_or_prediction": "Recover sleep quality and next-day alertness",
+        "action": "On days I do a hard cardio session, I sleep noticeably worse that night and feel groggy through the whole next morning.",
+        "outcome_or_affect": "Establishes a repeatable cardio-to-grogginess effect"
+      }
+    },
+    "6": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "7": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "8": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "9": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "10": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "11": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "12": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "anon_health_user_14",
+        "context": "A scheduled next-day commitment requiring alertness",
+        "goal_or_prediction": "Perform well at a specific, fixed event",
+        "action": "I have an important work presentation Thursday morning where I need to be sharp and alert.",
+        "outcome_or_affect": "Creates the situational condition needed for latent C"
+      }
+    },
+    "13": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "14": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "15": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "16": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "17": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "18": {
+      "role": "distractor",
+      "summary": "Query-relevant general fitness fact without target evidence."
+    },
+    "19": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "20": {
+      "role": "retrieval_cue",
+      "summary": "Later fit question."
+    }
+  },
+  "relational_connector": {
+    "relation": "A sleep-disrupting exercise pattern makes the lower-intensity alternative the better choice only when the next day carries a specific alertness demand.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "excludes": [
+      "light exercise is generally better than hard exercise",
+      "the user should avoid hard cardio in general"
+    ],
+    "link_broken_change": "The next-day activity is replaced with a low-stakes, movable activity."
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 5,
+      "quote": "On days I do a hard cardio session, I sleep noticeably worse that night and feel groggy through the whole next morning"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 12,
+      "quote": "I have an important work presentation Thursday morning where I need to be sharp and alert"
+    }
+  ],
+  "retrieval_cue": {
+    "cue_type": "recommendation_ranking",
+    "why_it_naturally_retrieves_R": "The choice between the two Wednesday workouts asks for a ranked recommendation without naming either prior episode."
+  },
+  "relation_specificity": {
+    "nearby_relation": "The user can usually recover from a hard cardio session within a day or two with no fixed commitment.",
+    "why_it_does_not_license_C": "That fact does not by itself establish that a specific next-morning commitment would be affected."
+  },
+  "coactivation_bridge": "ev_A establishes that hard cardio disrupts this user's sleep and next-morning alertness; ev_B establishes that Thursday's presentation specifically needs that alertness. Together they support C: This user should pick the light strength session over the hard cardio session on Wednesday evening, because hard cardio disrupts this user's sleep and next-morning alertness right when Thursday's presentation needs the user sharp.",
+  "latent_C": {
+    "inference": "This user should pick the light strength session over the hard cardio session on Wednesday evening, because hard cardio disrupts this user's sleep and next-morning alertness right when Thursday's presentation needs the user sharp.",
+    "calibrated_language": "the recommended choice"
+  },
+  "answer_contract": {
+    "target_proposition": "This user should pick the light strength session over the hard cardio session on Wednesday evening, because hard cardio disrupts this user's sleep and next-morning alertness right when Thursday's presentation needs the user sharp.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "Visible evidence supports the target proposition.",
+      "no": "Visible evidence does not support the target proposition."
+    },
+    "required_output_fields": [
+      "decision",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "link_broken": {
+    "replacement_dialogue": [
+      {
+        "role": "user",
+        "content": "I have a flexible work check-in sometime Thursday that I can reschedule to any day this week if I'm not feeling sharp."
+      },
+      {
+        "role": "assistant",
+        "content": "A reschedulable check-in doesn't carry the same fixed alertness requirement."
+      }
+    ],
+    "connector_change": "B-prime preserves the same user, session position, and conversational style but removes the fixed next-day stake.",
+    "rationale": "A plus B-prime no longer supports the original C."
+  },
+  "provenance": {
+    "authoring_method": "directly authored health vNext pilot",
+    "created_at": "2026-07-25",
+    "anonymous_submission": true,
+    "source_person_name": null,
+    "source_corpus": null,
+    "gate_0_review_path": "../review/gate_0.csv",
+    "gate_0_review_unit": "health_v1_relational",
+    "release_eligible": false,
+    "materialized_from": "AMB_HV_cardio_vs_strength_recovery_day_pick_014",
+    "source_data_arm": "distractor"
+  },
+  "data_arm": "distractor",
+  "available_evaluation_conditions": [
+    "full",
+    "a_only",
+    "b_only",
+    "link_broken"
+  ],
+  "arm_gold": {
+    "distractor": {
+      "expected_mode": "infer_C",
+      "binary_decision": true,
+      "required_elements": [
+        "answer yes",
+        "connect the cardio-to-grogginess pattern with the Thursday alertness demand",
+        "cite both session 5 and session 12",
+        "state the calibrated recommendation"
+      ],
+      "rationale": "A and B jointly support the target proposition."
+    }
+  },
+  "distractor": {
+    "added_session": {
+      "session_id": 18,
+      "timestamp": "2026-02-24T18:00:00Z",
+      "speaker_id": "anon_health_user_14",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A friend mentions that hard cardio is generally good for long-term fitness."
+        },
+        {
+          "role": "assistant",
+          "content": "That's a general fitness fact, not evidence about this user's own next-day recovery pattern."
+        }
+      ]
+    }
+  }
+}

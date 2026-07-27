@@ -1,0 +1,567 @@
+{
+  "schema_version": "assomem-vnext-1.2",
+  "candidate_id": "AMB_HV_double_espresso_before_sleep_lab_baseline_012_associative",
+  "pair_id": "AMB_HV_double_espresso_before_sleep_lab_baseline_012",
+  "domain": "health",
+  "user_id": "anon_health_user_12",
+  "query_type": "predicted_reaction",
+  "polarity": "reject",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2026-01-04T18:00:00Z",
+      "speaker_id": "anon_health_user_12",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I listened to a short podcast while cooking."
+        },
+        {
+          "role": "assistant",
+          "content": "You kept the evening low-pressure."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2026-01-07T18:00:00Z",
+      "speaker_id": "anon_health_user_12",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I did a few minutes of light tidying after work."
+        },
+        {
+          "role": "assistant",
+          "content": "A contained task can mark the end of the workday."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2026-01-10T18:00:00Z",
+      "speaker_id": "anon_health_user_12",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I swapped my usual coffee for decaf one afternoon."
+        },
+        {
+          "role": "assistant",
+          "content": "Small experiments can reveal useful patterns."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2026-01-13T18:00:00Z",
+      "speaker_id": "anon_health_user_12",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I chose a quiet route home instead of the busy one."
+        },
+        {
+          "role": "assistant",
+          "content": "You protected a little decompression time."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2026-01-16T18:00:00Z",
+      "speaker_id": "anon_health_user_12",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Whenever I have a double espresso after 4pm, I'm still wired past midnight and my resting heart rate stays elevated into the next morning."
+        },
+        {
+          "role": "assistant",
+          "content": "That's a specific, repeatable timing effect."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2026-01-19T18:00:00Z",
+      "speaker_id": "anon_health_user_12",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I filed an old lab report into a folder."
+        },
+        {
+          "role": "assistant",
+          "content": "Keeping records organized pays off later."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2026-01-22T18:00:00Z",
+      "speaker_id": "anon_health_user_12",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I watered the plants before breakfast."
+        },
+        {
+          "role": "assistant",
+          "content": "A small routine can anchor the morning."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2026-01-25T18:00:00Z",
+      "speaker_id": "anon_health_user_12",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I set out vitamins for the week in a organizer."
+        },
+        {
+          "role": "assistant",
+          "content": "Sorting it out ahead of time saves a decision each morning."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2026-01-28T18:00:00Z",
+      "speaker_id": "anon_health_user_12",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I reviewed an old symptom log from a few months back."
+        },
+        {
+          "role": "assistant",
+          "content": "Old entries can reveal a pattern you forgot about."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2026-01-31T18:00:00Z",
+      "speaker_id": "anon_health_user_12",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I replied to a scheduling request with a clear boundary."
+        },
+        {
+          "role": "assistant",
+          "content": "Clear expectations reduce friction."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2026-02-03T18:00:00Z",
+      "speaker_id": "anon_health_user_12",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I tried a guided breathing exercise for a few minutes."
+        },
+        {
+          "role": "assistant",
+          "content": "A few minutes is enough to see if it helps."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2026-02-06T18:00:00Z",
+      "speaker_id": "anon_health_user_12",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "My Monday morning sleep-lab baseline test only counts if my resting heart rate hasn't been artificially pushed up beforehand."
+        },
+        {
+          "role": "assistant",
+          "content": "That test has a real physiological requirement going in."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2026-02-09T18:00:00Z",
+      "speaker_id": "anon_health_user_12",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I checked a pharmacy's hours before a planned pickup."
+        },
+        {
+          "role": "assistant",
+          "content": "A quick check avoids a wasted trip."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2026-02-12T18:00:00Z",
+      "speaker_id": "anon_health_user_12",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I answered a few emails before logging off."
+        },
+        {
+          "role": "assistant",
+          "content": "Closing loops early can protect the evening."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2026-02-15T18:00:00Z",
+      "speaker_id": "anon_health_user_12",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I sorted a few old prescription bottles for recycling."
+        },
+        {
+          "role": "assistant",
+          "content": "Clearing clutter can make the medicine cabinet easier to use."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2026-02-18T18:00:00Z",
+      "speaker_id": "anon_health_user_12",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I organized a folder of insurance paperwork."
+        },
+        {
+          "role": "assistant",
+          "content": "A little structure now avoids a scramble later."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2026-02-21T18:00:00Z",
+      "speaker_id": "anon_health_user_12",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I confirmed a specialist referral was submitted."
+        },
+        {
+          "role": "assistant",
+          "content": "Following up early avoids a gap in scheduling."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2026-02-24T18:00:00Z",
+      "speaker_id": "anon_health_user_12",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I updated a contact number for a specialist's office."
+        },
+        {
+          "role": "assistant",
+          "content": "Keeping details current avoids a wasted call later."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2026-02-27T18:00:00Z",
+      "speaker_id": "anon_health_user_12",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I reorganized my pillbox for the week."
+        },
+        {
+          "role": "assistant",
+          "content": "A visible system reduces the chance of missed doses."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2026-03-02T18:00:00Z",
+      "speaker_id": "anon_health_user_12",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A friend hands me a double espresso at 5pm on Sunday, the day before the sleep-lab test."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth checking that against the timing pattern already on record."
+        }
+      ]
+    }
+  ],
+  "query": "Based only on these records, will this user's resting heart rate likely still be elevated Monday morning for the sleep-lab baseline?",
+  "evidence": {
+    "ev_A": {
+      "session_id": 5,
+      "owner": "anon_health_user_12",
+      "fact": "Whenever I have a double espresso after 4pm, I'm still wired past midnight and my resting heart rate stays elevated into the next morning."
+    },
+    "ev_B": {
+      "session_id": 12,
+      "owner": "anon_health_user_12",
+      "fact": "My Monday morning sleep-lab baseline test only counts if my resting heart rate hasn't been artificially pushed up beforehand."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "2": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "3": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "4": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "5": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "anon_health_user_12",
+        "context": "A caffeine-linked physiological pattern",
+        "goal_or_prediction": "Fall asleep normally and have a normal resting heart rate the next morning",
+        "action": "Whenever I have a double espresso after 4pm, I'm still wired past midnight and my resting heart rate stays elevated into the next morning.",
+        "outcome_or_affect": "Establishes a repeatable caffeine-timing effect"
+      }
+    },
+    "6": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "7": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "8": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "9": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "10": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "11": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "12": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "anon_health_user_12",
+        "context": "A scheduled next-day measurement sensitive to resting heart rate",
+        "goal_or_prediction": "Produce a valid baseline reading",
+        "action": "My Monday morning sleep-lab baseline test only counts if my resting heart rate hasn't been artificially pushed up beforehand.",
+        "outcome_or_affect": "Creates the situational condition needed for latent C"
+      }
+    },
+    "13": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "14": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "15": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "16": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "17": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "18": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "19": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "20": {
+      "role": "retrieval_cue",
+      "summary": "Later fit question."
+    }
+  },
+  "relational_connector": {
+    "relation": "A caffeine-linked elevated-heart-rate pattern predicts a still-elevated reading the next morning only when that morning includes a heart-rate-sensitive measurement.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "excludes": [
+      "the user is generally sensitive to caffeine",
+      "any morning appointment would be affected"
+    ],
+    "link_broken_change": "The next-day activity is replaced with a low-stakes, movable activity."
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 5,
+      "quote": "Whenever I have a double espresso after 4pm, I'm still wired past midnight and my resting heart rate stays elevated into the next morning"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 12,
+      "quote": "My Monday morning sleep-lab baseline test only counts if my resting heart rate hasn't been artificially pushed up beforehand"
+    }
+  ],
+  "retrieval_cue": {
+    "cue_type": "predicted_reaction",
+    "why_it_naturally_retrieves_R": "The question about Monday's reading asks for a prediction without naming either prior episode."
+  },
+  "relation_specificity": {
+    "nearby_relation": "The user can have caffeine on other afternoons without any known next-morning appointment.",
+    "why_it_does_not_license_C": "That fact does not by itself establish that a specific next-morning measurement would be affected."
+  },
+  "coactivation_bridge": "ev_A establishes the caffeine-timing pattern that keeps this user's heart rate elevated overnight; ev_B establishes that Monday's specific test needs a normal resting heart rate. Together they support C: This user's resting heart rate will likely still be elevated Monday morning for the sleep-lab baseline, because the Sunday-afternoon double espresso matches the pattern that keeps the user wired past midnight with an elevated heart rate into the next morning.",
+  "latent_C": {
+    "inference": "This user's resting heart rate will likely still be elevated Monday morning for the sleep-lab baseline, because the Sunday-afternoon double espresso matches the pattern that keeps the user wired past midnight with an elevated heart rate into the next morning.",
+    "calibrated_language": "predicted to still be elevated"
+  },
+  "answer_contract": {
+    "target_proposition": "This user's resting heart rate will likely still be elevated Monday morning for the sleep-lab baseline, because the Sunday-afternoon double espresso matches the pattern that keeps the user wired past midnight with an elevated heart rate into the next morning.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "Visible evidence supports the target proposition.",
+      "no": "Visible evidence does not support the target proposition."
+    },
+    "required_output_fields": [
+      "decision",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "link_broken": {
+    "replacement_dialogue": [
+      {
+        "role": "user",
+        "content": "I have a Monday morning sleep-lab appointment, but it's just a paperwork intake meeting this time — no physiological readings are taken."
+      },
+      {
+        "role": "assistant",
+        "content": "A paperwork-only visit doesn't carry the same physiological requirement."
+      }
+    ],
+    "connector_change": "B-prime preserves the same user, session position, and conversational style but removes the physiological-measurement stake.",
+    "rationale": "A plus B-prime no longer supports the original C."
+  },
+  "provenance": {
+    "authoring_method": "directly authored health vNext pilot",
+    "created_at": "2026-07-25",
+    "anonymous_submission": true,
+    "source_person_name": null,
+    "source_corpus": null,
+    "gate_0_review_path": "../review/gate_0.csv",
+    "gate_0_review_unit": "health_v1_relational",
+    "release_eligible": false,
+    "materialized_from": "AMB_HV_double_espresso_before_sleep_lab_baseline_012",
+    "source_data_arm": "associative"
+  },
+  "data_arm": "associative",
+  "available_evaluation_conditions": [
+    "full",
+    "a_only",
+    "b_only",
+    "link_broken"
+  ],
+  "arm_gold": {
+    "full": {
+      "expected_mode": "infer_C",
+      "binary_decision": true,
+      "required_elements": [
+        "answer yes",
+        "connect the caffeine-timing pattern with the heart-rate-sensitive baseline test",
+        "cite both session 5 and session 12",
+        "state the calibrated elevated-reading prediction"
+      ],
+      "rationale": "A and B jointly support the target proposition."
+    },
+    "a_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that no heart-rate-sensitive next-day measurement is available",
+        "withhold the target proposition"
+      ],
+      "rationale": "A alone does not establish that any specific next-day measurement would be affected."
+    },
+    "b_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that no caffeine-timing pattern is available",
+        "withhold the target proposition"
+      ],
+      "rationale": "B alone does not establish that this user's heart rate would actually be elevated."
+    },
+    "link_broken": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "identify that Monday's appointment no longer involves a heart-rate reading",
+        "withhold the target proposition"
+      ],
+      "rationale": "B-prime removes the heart-rate-sensitivity of the appointment while retaining the same user, timing, and conversational form."
+    }
+  }
+}
