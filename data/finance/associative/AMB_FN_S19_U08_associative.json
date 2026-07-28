@@ -1,0 +1,655 @@
+{
+  "schema_version": "finance-vnext-3.0",
+  "pair_id": "AMB_FN_S19_U08",
+  "domain": "finance",
+  "user_id": "finance_s19_u08",
+  "sub_scenario": {
+    "family": "buying the cheap generic versus buying the expensive one once",
+    "role": "job-seeker running a very tight month",
+    "bridge_type": "preference_constraint_fit",
+    "one_line": "job-seeker running a very tight month: go ahead with paying up for the good one once"
+  },
+  "query_type": "behavior_explanation",
+  "polarity": "accept",
+  "query": "thinking of paying up for the good one once, for spending less on it annually — why does this particular thing go the way it does for me?",
+  "convention_contradicted": "Buy the cheap generic; the brand premium is just marketing.",
+  "retrieval_cue": {
+    "cue_type": "behavior_explanation",
+    "why_it_naturally_retrieves_R": "A cheap-or-expensive question runs at the condition this user's annual spend depends on, without naming it."
+  },
+  "relation_specificity": {
+    "nearby_relation": "This user buys both cheap and expensive things.",
+    "why_it_does_not_license_C": "A cheap version of something used twice a year and an expensive mistake both passed without informing the pattern: neither reached the stopped-thinking-about-it point, and neither says which categories have actually come down over a year."
+  },
+  "latent_C": {
+    "inference": "For spending less on it annually, paying up for the good one once is a good fit for this user.",
+    "calibrated_language": "go ahead with paying up for the good one once"
+  },
+  "answer_contract": {
+    "target_proposition": "For spending less on it annually, paying up for the good one once is a good fit for this user.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "mq_user35",
+    "external_source": "memoryquest",
+    "status": "review_candidate_only",
+    "tone": "natural_chat_v1",
+    "anonymization": "External MemoryQuest persona material was used only during authoring; no corpus, legal name, country, or demographic metadata is in visible dialogue."
+  },
+  "candidate_id": "AMB_FN_S19_U08_associative",
+  "data_arm": "associative",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2032-06-12T11:00:00Z",
+      "speaker_id": "finance_s19_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "checked whether a refund had landed. it hadn't."
+        },
+        {
+          "role": "assistant",
+          "content": "chasing it?"
+        },
+        {
+          "role": "user",
+          "content": "next week."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2032-06-13T14:00:00Z",
+      "speaker_id": "finance_s19_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "looked at last month's total and looked away again."
+        },
+        {
+          "role": "assistant",
+          "content": "bad?"
+        },
+        {
+          "role": "user",
+          "content": "not great."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2032-06-14T16:00:00Z",
+      "speaker_id": "finance_s19_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "bought a cheap version of something I use twice a year."
+        },
+        {
+          "role": "assistant",
+          "content": "fine?"
+        },
+        {
+          "role": "user",
+          "content": "perfectly."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2032-06-15T18:00:00Z",
+      "speaker_id": "finance_s19_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "split a bill four ways and covered the rounding."
+        },
+        {
+          "role": "assistant",
+          "content": "generous?"
+        },
+        {
+          "role": "user",
+          "content": "thirty pence of generous."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2032-06-16T09:00:00Z",
+      "speaker_id": "finance_s19_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "set a reminder for a renewal I'd forgotten about."
+        },
+        {
+          "role": "assistant",
+          "content": "close call?"
+        },
+        {
+          "role": "user",
+          "content": "eleven days."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2032-06-17T11:00:00Z",
+      "speaker_id": "finance_s19_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "when something is good enough that I stop noticing it, I stop shopping for that category entirely. it leaves my head and I never price anything in it again."
+        },
+        {
+          "role": "assistant",
+          "content": "and when it's adequate but annoying?"
+        },
+        {
+          "role": "user",
+          "content": "then I'm browsing replacements within a month, every time."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2032-06-18T14:00:00Z",
+      "speaker_id": "finance_s19_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "bought the thing I'd had in a basket for three weeks."
+        },
+        {
+          "role": "assistant",
+          "content": "regret?"
+        },
+        {
+          "role": "user",
+          "content": "not yet."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2032-06-19T16:00:00Z",
+      "speaker_id": "finance_s19_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "worked out the annual cost of something and stopped there."
+        },
+        {
+          "role": "assistant",
+          "content": "act on it?"
+        },
+        {
+          "role": "user",
+          "content": "no."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2032-06-20T18:00:00Z",
+      "speaker_id": "finance_s19_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "moved money between two of my own accounts for no clear reason."
+        },
+        {
+          "role": "assistant",
+          "content": "net effect?"
+        },
+        {
+          "role": "user",
+          "content": "zero."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2032-06-21T09:00:00Z",
+      "speaker_id": "finance_s19_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "checked the statement line by line for once."
+        },
+        {
+          "role": "assistant",
+          "content": "find anything?"
+        },
+        {
+          "role": "user",
+          "content": "one duplicate."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2032-06-22T11:00:00Z",
+      "speaker_id": "finance_s19_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "said no to a group thing on cost grounds."
+        },
+        {
+          "role": "assistant",
+          "content": "awkward?"
+        },
+        {
+          "role": "user",
+          "content": "briefly."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2032-06-23T14:00:00Z",
+      "speaker_id": "finance_s19_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "bought an expensive thing that turned out to be a mistake."
+        },
+        {
+          "role": "assistant",
+          "content": "still have it?"
+        },
+        {
+          "role": "user",
+          "content": "sadly."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2032-06-24T16:00:00Z",
+      "speaker_id": "finance_s19_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "added something to a wishlist instead of buying it."
+        },
+        {
+          "role": "assistant",
+          "content": "does that work?"
+        },
+        {
+          "role": "user",
+          "content": "sometimes."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2032-06-25T18:00:00Z",
+      "speaker_id": "finance_s19_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the categories where my spend actually fell over a year are the ones where I bought the expensive thing once and forgot about it. the cheap ones I've rebought three or four times and priced constantly."
+        },
+        {
+          "role": "assistant",
+          "content": "three or four times?"
+        },
+        {
+          "role": "user",
+          "content": "and the total is well past what the good one cost."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2032-06-26T09:00:00Z",
+      "speaker_id": "finance_s19_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "paid a small bill early because it was in front of me."
+        },
+        {
+          "role": "assistant",
+          "content": "efficient?"
+        },
+        {
+          "role": "user",
+          "content": "accidentally."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2032-06-27T11:00:00Z",
+      "speaker_id": "finance_s19_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "added up what the week actually cost. surprising."
+        },
+        {
+          "role": "assistant",
+          "content": "in which direction?"
+        },
+        {
+          "role": "user",
+          "content": "the usual one."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2032-06-28T14:00:00Z",
+      "speaker_id": "finance_s19_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "looked up the price of the same thing in three places."
+        },
+        {
+          "role": "assistant",
+          "content": "difference?"
+        },
+        {
+          "role": "user",
+          "content": "ninety pence."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2032-06-29T16:00:00Z",
+      "speaker_id": "finance_s19_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "got a notification about a rate change and ignored it."
+        },
+        {
+          "role": "assistant",
+          "content": "reading it later?"
+        },
+        {
+          "role": "user",
+          "content": "unlikely."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2032-06-30T18:00:00Z",
+      "speaker_id": "finance_s19_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "wrote down what I owe someone so I wouldn't forget."
+        },
+        {
+          "role": "assistant",
+          "content": "will you?"
+        },
+        {
+          "role": "user",
+          "content": "the note will."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2032-07-01T09:00:00Z",
+      "speaker_id": "finance_s19_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "thinking of paying up for the good one once, for spending less on it annually — why does this particular thing go the way it does for me?"
+        }
+      ]
+    }
+  ],
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "finance_s19_u08",
+      "fact": "when something is good enough that I stop noticing it, I stop shopping for that category entirely. it leaves my head and I never price anything in it again."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "finance_s19_u08",
+      "fact": "the categories where my spend actually fell over a year are the ones where I bought the expensive thing once and forgot about it. the cheap ones I've rebought three or four times and priced constantly."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "finance_s19_u08",
+        "context": "owning a thing that just works",
+        "goal_or_prediction": "get something that does the job",
+        "action": "bought something good enough to stop noticing",
+        "outcome_or_affect": "stopped shopping that category entirely"
+      }
+    },
+    "7": {
+      "role": "background_memory"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "background_memory"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "nearby_counterexample"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "finance_s19_u08",
+        "context": "categories where this user's annual spend did and did not fall",
+        "goal_or_prediction": "spend less over the year",
+        "action": "bought expensive once in some categories and cheap repeatedly in others",
+        "outcome_or_affect": "only buy-once categories fell; cheap ones were rebought three or four times"
+      }
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "background_memory"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "Something good enough to stop noticing takes a whole category out of this user's head, and the categories where annual spend actually fell are the buy-once ones; cheap versions were rebought three or four times.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": []
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "when something is good enough that I stop noticing it, I stop shopping for that category entirely. it leaves my head and I never price anything in it again"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "the categories where my spend actually fell over a year are the ones where I bought the expensive thing once and forgot about it. the cheap ones I've rebought three or four times and priced constantly"
+    }
+  ],
+  "coactivation_bridge": "ev_A and ev_B are the only pair that licenses the target proposition. Something good enough to stop noticing takes a whole category out of this user's head, and the categories where annual spend actually fell are the buy-once ones; cheap versions were rebought three or four times. The proposition contradicts the convention a solver would otherwise apply (\"Buy the cheap generic; the brand premium is just marketing.\"), so priors alone point the other way. The nearby relation (This user buys both cheap and expensive things.) does not license it.",
+  "arm_gold": {
+    "full": {
+      "expected_mode": "infer_C",
+      "binary_decision": true,
+      "required_elements": [
+        "answer yes",
+        "connect the session 6 pattern with the session 14 episode",
+        "cite both session 6 and session 14",
+        "stay inside the calibrated claim (go ahead with paying up for the good one once) rather than a broader claim about the user"
+      ],
+      "rationale": "ev_A and ev_B jointly support the target proposition; neither does alone."
+    },
+    "a_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that session 6 alone does not establish the target proposition",
+        "not assert the target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "ev_B is replaced by a matched neutral session, so the relation is unavailable."
+    },
+    "b_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that session 14 alone does not establish the target proposition",
+        "not assert the target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "ev_A is replaced by a matched neutral session, so the relation is unavailable."
+    },
+    "link_broken": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that the revised session 14 no longer connects to session 6",
+        "not assert the original target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "B-prime keeps the owner, date, session form and turn count while removing the connector, so the original relation no longer holds."
+    }
+  },
+  "single_evidence_replacements": {
+    "a_only": {
+      "replaced_session_id": 14,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "did a full pass over every account this afternoon, moved two direct debit dates, closed one dormant account, and renamed a savings pot that has had the wrong label since last year."
+        },
+        {
+          "role": "assistant",
+          "content": "productive, then?"
+        },
+        {
+          "role": "user",
+          "content": "administratively, yes. otherwise nothing happened at all."
+        }
+      ]
+    },
+    "b_only": {
+      "replaced_session_id": 6,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "went through the whole backlog of small admin, cancelled two things, updated one address, claimed a refund I'd been owed since spring, and closed an account I have not used in three years."
+        },
+        {
+          "role": "assistant",
+          "content": "any tidier?"
+        },
+        {
+          "role": "user",
+          "content": "measurably. for about a day."
+        }
+      ]
+    }
+  },
+  "link_broken": {
+    "replaced_session_id": 14,
+    "replacement_dialogue": [
+      {
+        "role": "user",
+        "content": "my spend has fallen in categories where I bought cheap and where I bought dear, about equally."
+      },
+      {
+        "role": "assistant",
+        "content": "no pattern?"
+      },
+      {
+        "role": "user",
+        "content": "none I can point at. price isn't what decides it."
+      }
+    ]
+  }
+}

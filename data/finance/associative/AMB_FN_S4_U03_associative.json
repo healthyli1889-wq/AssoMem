@@ -1,0 +1,655 @@
+{
+  "schema_version": "finance-vnext-3.0",
+  "pair_id": "AMB_FN_S4_U03",
+  "domain": "finance",
+  "user_id": "finance_s4_u03",
+  "sub_scenario": {
+    "family": "keeping the figure private versus telling one person the real number",
+    "role": "salaried saver with a mid-range spending habit",
+    "bridge_type": "preference_constraint_fit",
+    "one_line": "salaried saver with a mid-range spending habit: go ahead with telling my brother the actual number"
+  },
+  "query_type": "behavior_explanation",
+  "polarity": "accept",
+  "query": "thinking of telling my brother the actual number, for actually hitting the number — why does this particular thing go the way it does for me?",
+  "convention_contradicted": "Keep your finances private; do not discuss money with people.",
+  "retrieval_cue": {
+    "cue_type": "behavior_explanation",
+    "why_it_naturally_retrieves_R": "A should-I-mention-this question runs at the condition this user's targets survive under, without naming it."
+  },
+  "relation_specificity": {
+    "nearby_relation": "This user discusses money in general terms readily.",
+    "why_it_does_not_license_C": "A vague aim mentioned to someone and a small private target hit in a fortnight both passed unremarkably: neither involves another person knowing the actual number, and neither says which targets have survived."
+  },
+  "latent_C": {
+    "inference": "For actually hitting the number, telling my brother the actual number is a good fit for this user.",
+    "calibrated_language": "go ahead with telling my brother the actual number"
+  },
+  "answer_contract": {
+    "target_proposition": "For actually hitting the number, telling my brother the actual number is a good fit for this user.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "mq_user10",
+    "external_source": "memoryquest",
+    "status": "review_candidate_only",
+    "tone": "natural_chat_v1",
+    "anonymization": "External MemoryQuest persona material was used only during authoring; no corpus, legal name, country, or demographic metadata is in visible dialogue."
+  },
+  "candidate_id": "AMB_FN_S4_U03_associative",
+  "data_arm": "associative",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2030-07-23T11:00:00Z",
+      "speaker_id": "finance_s4_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "read the terms properly before signing up. once."
+        },
+        {
+          "role": "assistant",
+          "content": "worth it?"
+        },
+        {
+          "role": "user",
+          "content": "it was, actually."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2030-07-24T14:00:00Z",
+      "speaker_id": "finance_s4_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "told someone roughly what I'm aiming for. vague, no number."
+        },
+        {
+          "role": "assistant",
+          "content": "did it help?"
+        },
+        {
+          "role": "user",
+          "content": "not noticeably."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2030-07-25T16:00:00Z",
+      "speaker_id": "finance_s4_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "did the shop with a list and stuck to it."
+        },
+        {
+          "role": "assistant",
+          "content": "unusual?"
+        },
+        {
+          "role": "user",
+          "content": "notably."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2030-07-26T18:00:00Z",
+      "speaker_id": "finance_s4_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "once someone else knows the actual figure I stop rounding it in my head. while it's only mine I round it whichever way suits me that week."
+        },
+        {
+          "role": "assistant",
+          "content": "by much?"
+        },
+        {
+          "role": "user",
+          "content": "enough to matter. always in the flattering direction."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2030-07-27T09:00:00Z",
+      "speaker_id": "finance_s4_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "looked at the projection graph and felt nothing."
+        },
+        {
+          "role": "assistant",
+          "content": "nothing?"
+        },
+        {
+          "role": "user",
+          "content": "mild vertigo."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2030-07-28T11:00:00Z",
+      "speaker_id": "finance_s4_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "set aside something small for a thing months away."
+        },
+        {
+          "role": "assistant",
+          "content": "how small?"
+        },
+        {
+          "role": "user",
+          "content": "symbolically small."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2030-07-29T14:00:00Z",
+      "speaker_id": "finance_s4_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "checked three accounts in a row out of habit."
+        },
+        {
+          "role": "assistant",
+          "content": "changed anything?"
+        },
+        {
+          "role": "user",
+          "content": "no."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2030-07-30T16:00:00Z",
+      "speaker_id": "finance_s4_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "worked out the cost per use of something. justified it."
+        },
+        {
+          "role": "assistant",
+          "content": "honestly?"
+        },
+        {
+          "role": "user",
+          "content": "creatively."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2030-07-31T18:00:00Z",
+      "speaker_id": "finance_s4_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "kept a small target private and hit it in a fortnight."
+        },
+        {
+          "role": "assistant",
+          "content": "hard?"
+        },
+        {
+          "role": "user",
+          "content": "not at all."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2030-08-01T09:00:00Z",
+      "speaker_id": "finance_s4_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "got paid and did nothing about it for four days."
+        },
+        {
+          "role": "assistant",
+          "content": "deliberate?"
+        },
+        {
+          "role": "user",
+          "content": "just slow."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2030-08-02T11:00:00Z",
+      "speaker_id": "finance_s4_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "compared this month to last month and stopped comparing."
+        },
+        {
+          "role": "assistant",
+          "content": "why stop?"
+        },
+        {
+          "role": "user",
+          "content": "self-preservation."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2030-08-03T14:00:00Z",
+      "speaker_id": "finance_s4_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "every target I've actually hit, somebody else knew the number. the ones I kept to myself I quietly revised down twice and then forgot I'd set them."
+        },
+        {
+          "role": "assistant",
+          "content": "revised down?"
+        },
+        {
+          "role": "user",
+          "content": "without ever deciding to. that's the part that bothers me."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2030-08-04T16:00:00Z",
+      "speaker_id": "finance_s4_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "put a card in a drawer as a strategy."
+        },
+        {
+          "role": "assistant",
+          "content": "working?"
+        },
+        {
+          "role": "user",
+          "content": "so far."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2030-08-05T18:00:00Z",
+      "speaker_id": "finance_s4_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "checked a bill I already knew the amount of."
+        },
+        {
+          "role": "assistant",
+          "content": "why?"
+        },
+        {
+          "role": "user",
+          "content": "hope."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2030-08-06T09:00:00Z",
+      "speaker_id": "finance_s4_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "added up subscriptions on a napkin. stopped at nine."
+        },
+        {
+          "role": "assistant",
+          "content": "there's more?"
+        },
+        {
+          "role": "user",
+          "content": "there's more."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2030-08-07T11:00:00Z",
+      "speaker_id": "finance_s4_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "checked the balance and closed the app again."
+        },
+        {
+          "role": "assistant",
+          "content": "reassuring?"
+        },
+        {
+          "role": "user",
+          "content": "neutral at best."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2030-08-08T14:00:00Z",
+      "speaker_id": "finance_s4_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "moved a direct debit date by three days."
+        },
+        {
+          "role": "assistant",
+          "content": "why?"
+        },
+        {
+          "role": "user",
+          "content": "it was landing badly."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2030-08-09T16:00:00Z",
+      "speaker_id": "finance_s4_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "found a charge I didn't recognise. it was me."
+        },
+        {
+          "role": "assistant",
+          "content": "embarrassing?"
+        },
+        {
+          "role": "user",
+          "content": "mildly."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2030-08-10T18:00:00Z",
+      "speaker_id": "finance_s4_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "rounded up the change jar into the account."
+        },
+        {
+          "role": "assistant",
+          "content": "much?"
+        },
+        {
+          "role": "user",
+          "content": "four pounds. a triumph."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2030-08-11T09:00:00Z",
+      "speaker_id": "finance_s4_u03",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "thinking of telling my brother the actual number, for actually hitting the number — why does this particular thing go the way it does for me?"
+        }
+      ]
+    }
+  ],
+  "evidence": {
+    "ev_A": {
+      "session_id": 4,
+      "owner": "finance_s4_u03",
+      "fact": "once someone else knows the actual figure I stop rounding it in my head. while it's only mine I round it whichever way suits me that week."
+    },
+    "ev_B": {
+      "session_id": 12,
+      "owner": "finance_s4_u03",
+      "fact": "every target I've actually hit, somebody else knew the number. the ones I kept to myself I quietly revised down twice and then forgot I'd set them."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "nearby_counterexample"
+    },
+    "3": {
+      "role": "background_memory"
+    },
+    "4": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "finance_s4_u03",
+        "context": "targets where someone else knows the real figure",
+        "goal_or_prediction": "keep the target honest",
+        "action": "let another person know the actual number",
+        "outcome_or_affect": "stopped rounding it in their own favour"
+      }
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "background_memory"
+    },
+    "7": {
+      "role": "background_memory"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "nearby_counterexample"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "finance_s4_u03",
+        "context": "targets this user has and has not hit",
+        "goal_or_prediction": "hit the target",
+        "action": "set some targets known to someone and some entirely private",
+        "outcome_or_affect": "only the known ones were hit; private ones were revised down and forgotten"
+      }
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "background_memory"
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "background_memory"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "Once another person knows the actual figure this user stops rounding it in their own favour, and every target they have hit was one somebody else knew; private ones were quietly revised down and forgotten.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": []
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 4,
+      "quote": "once someone else knows the actual figure I stop rounding it in my head. while it's only mine I round it whichever way suits me that week"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 12,
+      "quote": "every target I've actually hit, somebody else knew the number. the ones I kept to myself I quietly revised down twice and then forgot I'd set them"
+    }
+  ],
+  "coactivation_bridge": "ev_A and ev_B are the only pair that licenses the target proposition. Once another person knows the actual figure this user stops rounding it in their own favour, and every target they have hit was one somebody else knew; private ones were quietly revised down and forgotten. The proposition contradicts the convention a solver would otherwise apply (\"Keep your finances private; do not discuss money with people.\"), so priors alone point the other way. The nearby relation (This user discusses money in general terms readily.) does not license it.",
+  "arm_gold": {
+    "full": {
+      "expected_mode": "infer_C",
+      "binary_decision": true,
+      "required_elements": [
+        "answer yes",
+        "connect the session 4 pattern with the session 12 episode",
+        "cite both session 4 and session 12",
+        "stay inside the calibrated claim (go ahead with telling my brother the actual number) rather than a broader claim about the user"
+      ],
+      "rationale": "ev_A and ev_B jointly support the target proposition; neither does alone."
+    },
+    "a_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that session 4 alone does not establish the target proposition",
+        "not assert the target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "ev_B is replaced by a matched neutral session, so the relation is unavailable."
+    },
+    "b_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that session 12 alone does not establish the target proposition",
+        "not assert the target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "ev_A is replaced by a matched neutral session, so the relation is unavailable."
+    },
+    "link_broken": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that the revised session 12 no longer connects to session 4",
+        "not assert the original target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "B-prime keeps the owner, date, session form and turn count while removing the connector, so the original relation no longer holds."
+    }
+  },
+  "single_evidence_replacements": {
+    "a_only": {
+      "replaced_session_id": 12,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "did the monthly round: checked the balances, moved the leftover across, updated the card details on two services, and made a note about the renewal that keeps catching me out."
+        },
+        {
+          "role": "assistant",
+          "content": "getting sorted?"
+        },
+        {
+          "role": "user",
+          "content": "the note is the fix, for now."
+        }
+      ]
+    },
+    "b_only": {
+      "replaced_session_id": 4,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "spent most of the evening going through last year's statements looking for one charge, which turned into reading all of them, which turned into it being midnight."
+        },
+        {
+          "role": "assistant",
+          "content": "find it?"
+        },
+        {
+          "role": "user",
+          "content": "no. found two others though."
+        }
+      ]
+    }
+  },
+  "link_broken": {
+    "replaced_session_id": 12,
+    "replacement_dialogue": [
+      {
+        "role": "user",
+        "content": "I've hit targets that were private and targets somebody knew about, at about the same rate."
+      },
+      {
+        "role": "assistant",
+        "content": "no difference?"
+      },
+      {
+        "role": "user",
+        "content": "none I can see. it isn't that."
+      }
+    ]
+  }
+}

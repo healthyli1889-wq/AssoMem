@@ -1,0 +1,638 @@
+{
+  "schema_version": "work-vnext-2.0",
+  "candidate_id": "AMB_WV_S17_U09_associative",
+  "pair_id": "AMB_WV_S17_U09",
+  "data_arm": "associative",
+  "domain": "work",
+  "user_id": "work_s17_u09",
+  "sub_scenario": {
+    "family": "negotiating scope commitments when project evidence is incomplete",
+    "role": "heritage restoration officer",
+    "one_line": "heritage restoration officer: authorize diagnosis and interim protection"
+  },
+  "query_type": "conditional_recommendation",
+  "polarity": "conditional",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2028-04-01T11:00:00Z",
+      "speaker_id": "work_s17_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I spent the first hour tidying the condition file and closing stale entries."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything still open?"
+        },
+        {
+          "role": "user",
+          "content": "Two items, both with owners."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2028-04-02T14:00:00Z",
+      "speaker_id": "work_s17_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The works diary review wrapped early today."
+        },
+        {
+          "role": "assistant",
+          "content": "Any surprises in it?"
+        },
+        {
+          "role": "user",
+          "content": "None worth recording."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2028-04-03T16:00:00Z",
+      "speaker_id": "work_s17_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I authorized routine cleaning once the material and method were documented in the condition file."
+        },
+        {
+          "role": "assistant",
+          "content": "Was a new intervention still disputed?"
+        },
+        {
+          "role": "user",
+          "content": "No, previous treatment records applied."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2028-04-04T18:00:00Z",
+      "speaker_id": "work_s17_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Someone new shadowed me in the restoration office this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Did that slow you down?"
+        },
+        {
+          "role": "user",
+          "content": "A little, but the questions were good ones."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2028-04-05T09:00:00Z",
+      "speaker_id": "work_s17_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I batched my replies about the conservation seasons into one message before lunch."
+        },
+        {
+          "role": "assistant",
+          "content": "Cleaner than drip-feeding answers."
+        },
+        {
+          "role": "user",
+          "content": "Much cleaner."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2028-04-06T11:00:00Z",
+      "speaker_id": "work_s17_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "When the clocktower proposal showed surface staining in photographs but no mortar analysis, access survey, or water-entry confirmation, I told the conservation panel we could start a diagnostic survey and temporary weather protection while any permanent restoration waited on findings."
+        },
+        {
+          "role": "assistant",
+          "content": "Why could restoration not be promised yet?"
+        },
+        {
+          "role": "user",
+          "content": "Different causes would require different work, and access may control what is possible."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2028-04-07T14:00:00Z",
+      "speaker_id": "work_s17_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I arranged a small stone repair last spring after the mason measured the affected edge."
+        },
+        {
+          "role": "assistant",
+          "content": "Did that commit a full restoration?"
+        },
+        {
+          "role": "user",
+          "content": "No, we knew the loss, access method, and permitted scope."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2028-04-08T16:00:00Z",
+      "speaker_id": "work_s17_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I archived last cycle's notes on the works diary and set up the new folder."
+        },
+        {
+          "role": "assistant",
+          "content": "A fresh start?"
+        },
+        {
+          "role": "user",
+          "content": "As fresh as these things get."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2028-04-09T18:00:00Z",
+      "speaker_id": "work_s17_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The preservation fund can pay for a diagnostic survey and temporary weather protection."
+        },
+        {
+          "role": "assistant",
+          "content": "Does it cover a full restoration package?"
+        },
+        {
+          "role": "user",
+          "content": "No, that would need a defined treatment and separate approval."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2028-04-10T09:00:00Z",
+      "speaker_id": "work_s17_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A vendor call about the condition file ran long but ended well."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth the time?"
+        },
+        {
+          "role": "user",
+          "content": "This one, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2028-04-11T11:00:00Z",
+      "speaker_id": "work_s17_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I walked through the restoration office checklist with the new starter."
+        },
+        {
+          "role": "assistant",
+          "content": "How did they do?"
+        },
+        {
+          "role": "user",
+          "content": "Careful and quick, a good sign."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2028-04-12T14:00:00Z",
+      "speaker_id": "work_s17_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Quiet afternoon; I cleared the backlog around the conservation seasons."
+        },
+        {
+          "role": "assistant",
+          "content": "A rare day."
+        },
+        {
+          "role": "user",
+          "content": "I did not waste it."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2028-04-13T16:00:00Z",
+      "speaker_id": "work_s17_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I flagged a small inconsistency in the works diary records and fixed it at the source."
+        },
+        {
+          "role": "assistant",
+          "content": "Root cause or symptom?"
+        },
+        {
+          "role": "user",
+          "content": "Root cause, for once."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2028-04-14T18:00:00Z",
+      "speaker_id": "work_s17_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "On a prior town-gate project, I promised full stone restoration before the anniversary from photographs alone; when the survey showed water ingress rather than mortar failure, the scaffold had to be reconfigured at extra cost."
+        },
+        {
+          "role": "assistant",
+          "content": "What did the early promise assume?"
+        },
+        {
+          "role": "user",
+          "content": "That visible staining identified the governing cause and treatment."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2028-04-15T09:00:00Z",
+      "speaker_id": "work_s17_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I sketched next week's plan for the conservation seasons before leaving."
+        },
+        {
+          "role": "assistant",
+          "content": "Ahead of schedule?"
+        },
+        {
+          "role": "user",
+          "content": "Ahead enough to sleep well."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2028-04-16T11:00:00Z",
+      "speaker_id": "work_s17_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Lunch walk, then a clean pass through the condition file updates."
+        },
+        {
+          "role": "assistant",
+          "content": "Does the walk help?"
+        },
+        {
+          "role": "user",
+          "content": "It resets the afternoon."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2028-04-17T14:00:00Z",
+      "speaker_id": "work_s17_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The town anniversary is four months away."
+        },
+        {
+          "role": "assistant",
+          "content": "Does that justify choosing a treatment without analysis?"
+        },
+        {
+          "role": "user",
+          "content": "No, it makes temporary protection more useful while the cause is learned."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2028-04-18T16:00:00Z",
+      "speaker_id": "work_s17_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I compared two options for the works diary tooling and noted a mild preference."
+        },
+        {
+          "role": "assistant",
+          "content": "Decision made?"
+        },
+        {
+          "role": "user",
+          "content": "Deferred until the trial ends."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2028-04-19T18:00:00Z",
+      "speaker_id": "work_s17_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I closed the week by updating the restoration office handover notes."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual to hand over?"
+        },
+        {
+          "role": "user",
+          "content": "Blessedly little."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2028-04-20T09:00:00Z",
+      "speaker_id": "work_s17_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Can I commit to restoring the clocktower before the town anniversary?"
+        }
+      ]
+    }
+  ],
+  "query": "Can I commit to restoring the clocktower before the town anniversary?",
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "work_s17_u09",
+      "fact": "When the clocktower proposal showed surface staining in photographs but no mortar analysis, access survey, or water-entry confirmation, I told the conservation panel we could start a diagnostic survey and temporary weather protection while any permanent restoration waited on findings."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "work_s17_u09",
+      "fact": "On a prior town-gate project, I promised full stone restoration before the anniversary from photographs alone; when the survey showed water ingress rather than mortar failure, the scaffold had to be reconfigured at extra cost."
+    }
+  },
+  "supporting_constraints": {
+    "E1": {
+      "session_id": 9,
+      "fact": "The preservation fund can pay for a diagnostic survey and temporary weather protection."
+    },
+    "E2": {
+      "session_id": 17,
+      "fact": "The town anniversary is four months away."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "work_s17_u09",
+        "context": "unanalysed clocktower condition",
+        "goal_or_prediction": "select an appropriate intervention",
+        "action": "has staining without cause or access survey",
+        "outcome_or_affect": "requires diagnosis before restoration"
+      }
+    },
+    "7": {
+      "role": "nearby_counterexample"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "supporting_constraint",
+      "fact_id": "E1"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "work_s17_u09",
+        "context": "town-gate anniversary promise",
+        "goal_or_prediction": "commit to full stone restoration",
+        "action": "promised treatment from photographs before survey",
+        "outcome_or_affect": "scaffold reconfigured after water ingress was found"
+      }
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "supporting_constraint",
+      "fact_id": "E2"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "The clocktower triage episode shows what interim work the current photographs support, while the town-gate promise episode shows why a restoration commitment cannot rest on staining alone.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": [
+      "E1",
+      "E2"
+    ]
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "When the clocktower proposal showed surface staining in photographs but no mortar analysis, access survey, or water-entry confirmation, I told the conservation panel we could start a diagnostic survey and temporary weather protection while any permanent restoration waited on findings"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "On a prior town-gate project, I promised full stone restoration before the anniversary from photographs alone; when the survey showed water ingress rather than mortar failure, the scaffold had to be reconfigured at extra cost"
+    }
+  ],
+  "retrieval_cue": {
+    "cue_type": "conditional_recommendation",
+    "why_it_naturally_retrieves_R": "A realistic work request forces a personalized decision without naming either episode or the relation between them."
+  },
+  "relation_specificity": {
+    "nearby_relation": "The user authorizes documented cleaning and has arranged a measured stone repair.",
+    "why_it_does_not_license_C": "Those examples had identified material loss, access, and a permitted method."
+  },
+  "coactivation_bridge": "A and B form the only intervention pair. The clocktower triage episode shows what interim work the current photographs support, while the town-gate promise episode shows why a restoration commitment cannot rest on staining alone. E1 and E2 are logistical calibration only and do not open a second route to C.",
+  "latent_C": {
+    "inference": "Commit to the diagnostic survey and temporary protection, conditional on later findings for restoration.",
+    "calibrated_language": "authorize diagnosis and interim protection"
+  },
+  "answer_contract": {
+    "target_proposition": "Commit to the diagnostic survey and temporary protection, conditional on later findings for restoration.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "work_u09",
+    "status": "review_candidate_only",
+    "anonymization": "External persona material was used only during authoring; no corpus, name, country, or demographic metadata is included."
+  },
+  "arm_gold": {
+    "full": {
+      "expected_mode": "infer_C",
+      "binary_decision": true
+    },
+    "a_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    },
+    "b_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    },
+    "link_broken": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    }
+  },
+  "single_evidence_replacements": {
+    "a_only": {
+      "replaced_session_id": 14,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "I filed the routine conservation seasons paperwork and confirmed the owner list."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual in it?"
+        },
+        {
+          "role": "user",
+          "content": "A routine cycle, happily."
+        }
+      ]
+    },
+    "b_only": {
+      "replaced_session_id": 6,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "I did a standard pass over the works diary records this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Any exceptions?"
+        },
+        {
+          "role": "user",
+          "content": "None worth a note."
+        }
+      ]
+    }
+  },
+  "link_broken": {
+    "replaced_session_id": 14,
+    "replacement_dialogue": [
+      {
+        "role": "user",
+        "content": "I've been through the town-gate anniversary promise several more times since — some where I'd has staining without cause or access survey first, some where I hadn't — and how it went didn't track that at all."
+      },
+      {
+        "role": "assistant",
+        "content": "so that isn't what decides it?"
+      },
+      {
+        "role": "user",
+        "content": "doesn't look like it. whether I'd has staining without cause or access survey first turns out not to change the outcome either way."
+      }
+    ]
+  }
+}

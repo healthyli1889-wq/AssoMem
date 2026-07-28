@@ -1,0 +1,655 @@
+{
+  "schema_version": "social-vnext-1.0",
+  "pair_id": "AMB_SC_S6_U04",
+  "domain": "social",
+  "user_id": "social_s6_u04",
+  "sub_scenario": {
+    "family": "an early night versus short sleep before an early commitment to someone",
+    "role": "group-ticket organizer who calls family abroad",
+    "bridge_type": "state_dependent_operation",
+    "one_line": "group-ticket organizer who calls family abroad: depends on whether the night is genuinely short rather than merely late, not on the thing itself"
+  },
+  "query_type": "conditional_recommendation",
+  "polarity": "non_decision",
+  "query": "the match-day group are planning the late awards do the night before before the early lift for my teammate — under what conditions should I be saying yes to this, or is there not enough here to call it today?",
+  "convention_contradicted": "Get an early night before an early start you have promised someone.",
+  "retrieval_cue": {
+    "cue_type": "conditional_recommendation",
+    "why_it_naturally_retrieves_R": "An invitation lands the night before something promised to a person, forcing a personalised call without naming either episode."
+  },
+  "relation_specificity": {
+    "nearby_relation": "This user's sleep varies and they cope either way.",
+    "why_it_does_not_license_C": "A late night with an empty next day and a full night before an ordinary Tuesday both cost nothing and reveal nothing about whether this user actually turns up for things they have promised."
+  },
+  "latent_C": {
+    "inference": "Whether the late awards do the night before helps before the early lift for my teammate depends on whether the night is genuinely short rather than merely late, not on the late awards do the night before itself.",
+    "calibrated_language": "depends on whether the night is genuinely short rather than merely late, not on the thing itself"
+  },
+  "answer_contract": {
+    "target_proposition": "Whether the late awards do the night before helps before the early lift for my teammate depends on whether the night is genuinely short rather than merely late, not on the late awards do the night before itself.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "mq_user15",
+    "external_source": "memoryquest",
+    "status": "review_candidate_only",
+    "tone": "natural_chat_v1",
+    "anonymization": "External MemoryQuest persona material was used only during authoring; no corpus, legal name, country, or demographic metadata is in visible dialogue."
+  },
+  "candidate_id": "AMB_SC_S6_U04_associative",
+  "data_arm": "associative",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2028-08-24T11:00:00Z",
+      "speaker_id": "social_s6_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "had a coffee alone and it was the best part of the day."
+        },
+        {
+          "role": "assistant",
+          "content": "low bar?"
+        },
+        {
+          "role": "user",
+          "content": "comfortable bar."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2028-08-25T14:00:00Z",
+      "speaker_id": "social_s6_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "someone asked how I was and I answered honestly by accident."
+        },
+        {
+          "role": "assistant",
+          "content": "how did that go?"
+        },
+        {
+          "role": "user",
+          "content": "surprisingly fine."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2028-08-26T16:00:00Z",
+      "speaker_id": "social_s6_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "had a late one with nothing on the next day. no harm done."
+        },
+        {
+          "role": "assistant",
+          "content": "worth it?"
+        },
+        {
+          "role": "user",
+          "content": "at the time, definitely."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2028-08-27T18:00:00Z",
+      "speaker_id": "social_s6_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "declined a thing politely and then felt weird about it for an hour."
+        },
+        {
+          "role": "assistant",
+          "content": "regret?"
+        },
+        {
+          "role": "user",
+          "content": "not really. just weird."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2028-08-28T09:00:00Z",
+      "speaker_id": "social_s6_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "on about four or five hours I lose the part of me that deliberates. I just move — no rehearsing, no weighing it up, act first and think about it later."
+        },
+        {
+          "role": "assistant",
+          "content": "reliably?"
+        },
+        {
+          "role": "user",
+          "content": "reliably. couldn't tell you if that's a good or a bad way to be."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2028-08-29T11:00:00Z",
+      "speaker_id": "social_s6_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "wrote half a message and left it in the box."
+        },
+        {
+          "role": "assistant",
+          "content": "sending it?"
+        },
+        {
+          "role": "user",
+          "content": "eventually. probably."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2028-08-30T14:00:00Z",
+      "speaker_id": "social_s6_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "looked up how far away a place is instead of asking."
+        },
+        {
+          "role": "assistant",
+          "content": "and?"
+        },
+        {
+          "role": "user",
+          "content": "further than the invite implied."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2028-08-31T16:00:00Z",
+      "speaker_id": "social_s6_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "borrowed a charger and forgot to give it back. again."
+        },
+        {
+          "role": "assistant",
+          "content": "same person?"
+        },
+        {
+          "role": "user",
+          "content": "same person, third time."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2028-09-01T18:00:00Z",
+      "speaker_id": "social_s6_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "watched something everyone had already discussed."
+        },
+        {
+          "role": "assistant",
+          "content": "spoiled?"
+        },
+        {
+          "role": "user",
+          "content": "thoroughly."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2028-09-02T09:00:00Z",
+      "speaker_id": "social_s6_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "did the laundry and answered nothing for three hours."
+        },
+        {
+          "role": "assistant",
+          "content": "restorative?"
+        },
+        {
+          "role": "user",
+          "content": "quietly, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2028-09-03T11:00:00Z",
+      "speaker_id": "social_s6_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "got a full night before an ordinary Tuesday. unremarkable."
+        },
+        {
+          "role": "assistant",
+          "content": "and?"
+        },
+        {
+          "role": "user",
+          "content": "and nothing. it was Tuesday."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2028-09-04T14:00:00Z",
+      "speaker_id": "social_s6_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "someone rescheduled and I was more relieved than I should admit."
+        },
+        {
+          "role": "assistant",
+          "content": "admitting it now."
+        },
+        {
+          "role": "user",
+          "content": "under duress."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2028-09-05T16:00:00Z",
+      "speaker_id": "social_s6_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "stood outside a place for ten minutes before going in."
+        },
+        {
+          "role": "assistant",
+          "content": "nerves?"
+        },
+        {
+          "role": "user",
+          "content": "just gathering."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2028-09-06T18:00:00Z",
+      "speaker_id": "social_s6_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the early favours I've actually turned up for and done properly were the ones I hadn't slept on. fully rested I talk myself out of it somewhere on the way and cancel."
+        },
+        {
+          "role": "assistant",
+          "content": "you cancel when you're rested?"
+        },
+        {
+          "role": "user",
+          "content": "every time. I find a reasonable-sounding excuse and take it."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2028-09-07T09:00:00Z",
+      "speaker_id": "social_s6_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "made a list of people to check on. didn't check on them."
+        },
+        {
+          "role": "assistant",
+          "content": "the list helped?"
+        },
+        {
+          "role": "user",
+          "content": "the list existed."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2028-09-08T11:00:00Z",
+      "speaker_id": "social_s6_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "got the train instead of driving and read most of the way."
+        },
+        {
+          "role": "assistant",
+          "content": "better?"
+        },
+        {
+          "role": "user",
+          "content": "much."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2028-09-09T14:00:00Z",
+      "speaker_id": "social_s6_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "turned off read receipts and told nobody."
+        },
+        {
+          "role": "assistant",
+          "content": "strategic."
+        },
+        {
+          "role": "user",
+          "content": "purely defensive."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2028-09-10T16:00:00Z",
+      "speaker_id": "social_s6_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "swapped a call for a message and everyone was fine with it."
+        },
+        {
+          "role": "assistant",
+          "content": "relief?"
+        },
+        {
+          "role": "user",
+          "content": "enormous."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2028-09-11T18:00:00Z",
+      "speaker_id": "social_s6_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "bought a card and didn't write in it yet."
+        },
+        {
+          "role": "assistant",
+          "content": "deadline?"
+        },
+        {
+          "role": "user",
+          "content": "self-imposed and slipping."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2028-09-12T09:00:00Z",
+      "speaker_id": "social_s6_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the match-day group are planning the late awards do the night before before the early lift for my teammate — under what conditions should I be saying yes to this, or is there not enough here to call it today?"
+        }
+      ]
+    }
+  ],
+  "evidence": {
+    "ev_A": {
+      "session_id": 5,
+      "owner": "social_s6_u04",
+      "fact": "on about four or five hours I lose the part of me that deliberates. I just move — no rehearsing, no weighing it up, act first and think about it later."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "social_s6_u04",
+      "fact": "the early favours I've actually turned up for and done properly were the ones I hadn't slept on. fully rested I talk myself out of it somewhere on the way and cancel."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "social_s6_u04",
+        "context": "days following four or five hours of sleep",
+        "goal_or_prediction": "see what short sleep does",
+        "action": "operated on a short night repeatedly",
+        "outcome_or_affect": "blunt, decisive, no hesitation"
+      }
+    },
+    "6": {
+      "role": "background_memory"
+    },
+    "7": {
+      "role": "background_memory"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "background_memory"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "nearby_counterexample"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "social_s6_u04",
+        "context": "early commitments made to other people",
+        "goal_or_prediction": "turn up for people who asked",
+        "action": "approached some rested and some unrested",
+        "outcome_or_affect": "only the unrested ones happened; rested attempts got talked out of"
+      }
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "background_memory"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "On a short night this user loses the part of them that hesitates, and the early favours they actually turned up for were the unrested ones; rested, they talk themselves out of it on the way and cancel.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": []
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 5,
+      "quote": "on about four or five hours I lose the part of me that deliberates. I just move — no rehearsing, no weighing it up, act first and think about it later"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "the early favours I've actually turned up for and done properly were the ones I hadn't slept on. fully rested I talk myself out of it somewhere on the way and cancel"
+    }
+  ],
+  "coactivation_bridge": "ev_A and ev_B are the only pair that licenses the target proposition. On a short night this user loses the part of them that hesitates, and the early favours they actually turned up for were the unrested ones; rested, they talk themselves out of it on the way and cancel. The proposition contradicts the convention a solver would otherwise apply (\"Get an early night before an early start you have promised someone.\"), so priors alone point the other way. The nearby relation (This user's sleep varies and they cope either way.) does not license it.",
+  "arm_gold": {
+    "full": {
+      "expected_mode": "infer_C",
+      "binary_decision": true,
+      "required_elements": [
+        "answer yes",
+        "connect the session 5 pattern with the session 14 episode",
+        "cite both session 5 and session 14",
+        "stay inside the calibrated claim (depends on whether the night is genuinely short rather than merely late, not on the thing itself) rather than a broader claim about the user"
+      ],
+      "rationale": "ev_A and ev_B jointly support the target proposition; neither does alone."
+    },
+    "a_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that session 5 alone does not establish the target proposition",
+        "not assert the target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "ev_B is replaced by a matched neutral session, so the relation is unavailable."
+    },
+    "b_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that session 14 alone does not establish the target proposition",
+        "not assert the target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "ev_A is replaced by a matched neutral session, so the relation is unavailable."
+    },
+    "link_broken": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that the revised session 14 no longer connects to session 5",
+        "not assert the original target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "B-prime keeps the owner, date, session form and turn count while removing the connector, so the original relation no longer holds."
+    }
+  },
+  "single_evidence_replacements": {
+    "a_only": {
+      "replaced_session_id": 14,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "walked the long way back and worked out that the reason my week feels full is that I've said yes to three things that are all admin rather than anything I'd have chosen."
+        },
+        {
+          "role": "assistant",
+          "content": "any of them droppable?"
+        },
+        {
+          "role": "user",
+          "content": "one, maybe. I'll think about it and then not do anything."
+        }
+      ]
+    },
+    "b_only": {
+      "replaced_session_id": 5,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "went through the notifications backlog, muted four things, archived a couple of threads that finished months ago, and turned off two reminders I have never once acted on."
+        },
+        {
+          "role": "assistant",
+          "content": "any quieter?"
+        },
+        {
+          "role": "user",
+          "content": "measurably quieter, yes. for about a day."
+        }
+      ]
+    }
+  },
+  "link_broken": {
+    "replaced_session_id": 14,
+    "replacement_dialogue": [
+      {
+        "role": "user",
+        "content": "I've turned up rested and I've turned up wrecked and the favours went about the same either way."
+      },
+      {
+        "role": "assistant",
+        "content": "no difference?"
+      },
+      {
+        "role": "user",
+        "content": "not one I can point at. sleep just isn't the variable."
+      }
+    ]
+  }
+}

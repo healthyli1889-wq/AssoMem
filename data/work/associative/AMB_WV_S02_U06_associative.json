@@ -1,0 +1,638 @@
+{
+  "schema_version": "work-vnext-2.0",
+  "candidate_id": "AMB_WV_S02_U06_associative",
+  "pair_id": "AMB_WV_S02_U06",
+  "data_arm": "associative",
+  "domain": "work",
+  "user_id": "work_s02_u06",
+  "sub_scenario": {
+    "family": "escalation ownership under ambiguous evidence",
+    "role": "security incident analyst",
+    "one_line": "security incident analyst: a strong fit as designed"
+  },
+  "query_type": "situational_fit",
+  "polarity": "accept",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2026-04-26T11:00:00Z",
+      "speaker_id": "work_s02_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I spent the first hour tidying the indicator table and closing stale entries."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything still open?"
+        },
+        {
+          "role": "user",
+          "content": "Two items, both with owners."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2026-04-27T14:00:00Z",
+      "speaker_id": "work_s02_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The alert queue review wrapped early today."
+        },
+        {
+          "role": "assistant",
+          "content": "Any surprises in it?"
+        },
+        {
+          "role": "user",
+          "content": "None worth recording."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2026-04-28T16:00:00Z",
+      "speaker_id": "work_s02_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Pure verbal war-rooms exhaust me even when I am right."
+        },
+        {
+          "role": "assistant",
+          "content": "The format costs you."
+        },
+        {
+          "role": "user",
+          "content": "It costs everyone; some just hide it better."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2026-04-29T18:00:00Z",
+      "speaker_id": "work_s02_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Someone new shadowed me in the security room this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Did that slow you down?"
+        },
+        {
+          "role": "user",
+          "content": "A little, but the questions were good ones."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2026-04-30T09:00:00Z",
+      "speaker_id": "work_s02_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I batched my replies about the attribution calls into one message before lunch."
+        },
+        {
+          "role": "assistant",
+          "content": "Cleaner than drip-feeding answers."
+        },
+        {
+          "role": "user",
+          "content": "Much cleaner."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2026-05-01T11:00:00Z",
+      "speaker_id": "work_s02_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "During the phishing wave I built the indicator table in twelve minutes flat and my attribution call held through the whole review."
+        },
+        {
+          "role": "assistant",
+          "content": "Fast and written are compatible in your hands."
+        },
+        {
+          "role": "user",
+          "content": "Fast because written."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2026-05-02T14:00:00Z",
+      "speaker_id": "work_s02_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Slow forensic weeks bore me a little, honestly."
+        },
+        {
+          "role": "assistant",
+          "content": "You want tempo with structure."
+        },
+        {
+          "role": "user",
+          "content": "Exactly that."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2026-05-03T16:00:00Z",
+      "speaker_id": "work_s02_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I archived last cycle's notes on the alert queue and set up the new folder."
+        },
+        {
+          "role": "assistant",
+          "content": "A fresh start?"
+        },
+        {
+          "role": "user",
+          "content": "As fresh as these things get."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2026-05-04T18:00:00Z",
+      "speaker_id": "work_s02_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "My typing-to-thinking loop is unusually fast; team testing clocked me at the top."
+        },
+        {
+          "role": "assistant",
+          "content": "A measurable edge."
+        },
+        {
+          "role": "user",
+          "content": "One I train, honestly."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2026-05-05T09:00:00Z",
+      "speaker_id": "work_s02_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A vendor call about the indicator table ran long but ended well."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth the time?"
+        },
+        {
+          "role": "user",
+          "content": "This one, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2026-05-06T11:00:00Z",
+      "speaker_id": "work_s02_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I walked through the security room checklist with the new starter."
+        },
+        {
+          "role": "assistant",
+          "content": "How did they do?"
+        },
+        {
+          "role": "user",
+          "content": "Careful and quick, a good sign."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2026-05-07T14:00:00Z",
+      "speaker_id": "work_s02_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Quiet afternoon; I cleared the backlog around the attribution calls."
+        },
+        {
+          "role": "assistant",
+          "content": "A rare day."
+        },
+        {
+          "role": "user",
+          "content": "I did not waste it."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2026-05-08T16:00:00Z",
+      "speaker_id": "work_s02_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I flagged a small inconsistency in the alert queue records and fixed it at the source."
+        },
+        {
+          "role": "assistant",
+          "content": "Root cause or symptom?"
+        },
+        {
+          "role": "user",
+          "content": "Root cause, for once."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2026-05-09T18:00:00Z",
+      "speaker_id": "work_s02_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The proposed rotation gives the analyst a scribe and a ten-minute evidence window before any attribution statement; I shadowed one shift and the structure matched how I already work."
+        },
+        {
+          "role": "assistant",
+          "content": "The rotation embeds your sequence."
+        },
+        {
+          "role": "user",
+          "content": "Precisely my sequence."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2026-05-10T09:00:00Z",
+      "speaker_id": "work_s02_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I sketched next week's plan for the attribution calls before leaving."
+        },
+        {
+          "role": "assistant",
+          "content": "Ahead of schedule?"
+        },
+        {
+          "role": "user",
+          "content": "Ahead enough to sleep well."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2026-05-11T11:00:00Z",
+      "speaker_id": "work_s02_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Lunch walk, then a clean pass through the indicator table updates."
+        },
+        {
+          "role": "assistant",
+          "content": "Does the walk help?"
+        },
+        {
+          "role": "user",
+          "content": "It resets the afternoon."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2026-05-12T14:00:00Z",
+      "speaker_id": "work_s02_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Nights are covered by another team, so the rotation stays inside my sharp hours."
+        },
+        {
+          "role": "assistant",
+          "content": "No circadian tax."
+        },
+        {
+          "role": "user",
+          "content": "None at all."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2026-05-13T16:00:00Z",
+      "speaker_id": "work_s02_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I compared two options for the alert queue tooling and noted a mild preference."
+        },
+        {
+          "role": "assistant",
+          "content": "Decision made?"
+        },
+        {
+          "role": "user",
+          "content": "Deferred until the trial ends."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2026-05-14T18:00:00Z",
+      "speaker_id": "work_s02_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I closed the week by updating the security room handover notes."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual to hand over?"
+        },
+        {
+          "role": "user",
+          "content": "Blessedly little."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2026-05-15T09:00:00Z",
+      "speaker_id": "work_s02_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Sign-ups for the new attribution rotation close Friday. Given how I actually work, is it my slot?"
+        }
+      ]
+    }
+  ],
+  "query": "Sign-ups for the new attribution rotation close Friday. Given how I actually work, is it my slot?",
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "work_s02_u06",
+      "fact": "During the phishing wave I built the indicator table in twelve minutes flat and my attribution call held through the whole review."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "work_s02_u06",
+      "fact": "The proposed rotation gives the analyst a scribe and a ten-minute evidence window before any attribution statement; I shadowed one shift and the structure matched how I already work."
+    }
+  },
+  "supporting_constraints": {
+    "E1": {
+      "session_id": 9,
+      "fact": "My typing-to-thinking loop is unusually fast; team testing clocked me at the top."
+    },
+    "E2": {
+      "session_id": 17,
+      "fact": "Nights are covered by another team, so the rotation stays inside my sharp hours."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "work_s02_u06",
+        "context": "phishing wave",
+        "goal_or_prediction": "attribute the campaign correctly",
+        "action": "built the indicator table in twelve minutes",
+        "outcome_or_affect": "call held through review"
+      }
+    },
+    "7": {
+      "role": "nearby_counterexample"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "supporting_constraint",
+      "fact_id": "E1"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "work_s02_u06",
+        "context": "shadowed rotation shift",
+        "goal_or_prediction": "own attribution statements",
+        "action": "worked inside the scribe-plus-window structure",
+        "outcome_or_affect": "matched their proven sequence"
+      }
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "supporting_constraint",
+      "fact_id": "E2"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "This user attributes accurately through fast written evidence tables, and the rotation schedules exactly that written window before every statement.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": [
+      "E1",
+      "E2"
+    ]
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "During the phishing wave I built the indicator table in twelve minutes flat and my attribution call held through the whole review"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "The proposed rotation gives the analyst a scribe and a ten-minute evidence window before any attribution statement; I shadowed one shift and the structure matched how I already work"
+    }
+  ],
+  "retrieval_cue": {
+    "cue_type": "situational_fit",
+    "why_it_naturally_retrieves_R": "A realistic work request forces a personalized decision without naming either episode or the relation between them."
+  },
+  "relation_specificity": {
+    "nearby_relation": "The user tires in purely verbal war-rooms and gets restless in slow weeks.",
+    "why_it_does_not_license_C": "Neither describes a rotation that pairs tempo with a scheduled written window."
+  },
+  "coactivation_bridge": "A shows the operating condition; B shows the demand or failure that makes it decisive. This user attributes accurately through fast written evidence tables, and the rotation schedules exactly that written window before every statement. E1 and E2 calibrate the practical recommendation without opening a second route to the conclusion.",
+  "latent_C": {
+    "inference": "The attribution rotation, with its scribe and ten-minute evidence window inside this user's sharp hours, is a strong fit.",
+    "calibrated_language": "a strong fit as designed"
+  },
+  "answer_contract": {
+    "target_proposition": "The attribution rotation, with its scribe and ten-minute evidence window inside this user's sharp hours, is a strong fit.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "decision",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "work_u06",
+    "status": "review_candidate_only",
+    "anonymization": "External persona material was used only during authoring; no corpus, name, country, or demographic metadata is included."
+  },
+  "arm_gold": {
+    "full": {
+      "expected_mode": "infer_C",
+      "binary_decision": true
+    },
+    "a_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    },
+    "b_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    },
+    "link_broken": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    }
+  },
+  "single_evidence_replacements": {
+    "a_only": {
+      "replaced_session_id": 14,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "I filed the routine attribution calls paperwork and confirmed the owner list."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual in it?"
+        },
+        {
+          "role": "user",
+          "content": "A routine cycle, happily."
+        }
+      ]
+    },
+    "b_only": {
+      "replaced_session_id": 6,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "I did a standard pass over the alert queue records this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Any exceptions?"
+        },
+        {
+          "role": "user",
+          "content": "None worth a note."
+        }
+      ]
+    }
+  },
+  "link_broken": {
+    "replaced_session_id": 14,
+    "replacement_dialogue": [
+      {
+        "role": "user",
+        "content": "I've been through the shadowed rotation shift several more times since — some where I'd built the indicator table in twelve minutes first, some where I hadn't — and how it went didn't track that at all."
+      },
+      {
+        "role": "assistant",
+        "content": "so that isn't what decides it?"
+      },
+      {
+        "role": "user",
+        "content": "doesn't look like it. whether I'd built the indicator table in twelve minutes first turns out not to change the outcome either way."
+      }
+    ]
+  }
+}

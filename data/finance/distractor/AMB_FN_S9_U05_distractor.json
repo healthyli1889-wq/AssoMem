@@ -1,0 +1,575 @@
+{
+  "schema_version": "finance-vnext-3.0",
+  "pair_id": "AMB_FN_S9_U05",
+  "domain": "finance",
+  "user_id": "finance_s9_u05",
+  "sub_scenario": {
+    "family": "unspoken favours and rounds versus naming the loan and writing it down",
+    "role": "retired household planner running things with a partner",
+    "bridge_type": "preference_constraint_fit",
+    "one_line": "retired household planner running things with a partner: helps when the amount is named explicitly rather than left as a favour, not otherwise"
+  },
+  "query_type": "situational_fit",
+  "polarity": "conditional",
+  "query": "thinking of lending it with the amount named and recorded, for the friendship surviving it — does that actually fit how I work, and if the answer depends on something, on what?",
+  "convention_contradicted": "Never lend money to friends; it ruins friendships.",
+  "retrieval_cue": {
+    "cue_type": "situational_fit",
+    "why_it_naturally_retrieves_R": "A should-I-lend-this question runs at the condition this user's money arrangements survive under, without naming it."
+  },
+  "relation_specificity": {
+    "nearby_relation": "This user handles money with friends routinely.",
+    "why_it_does_not_license_C": "An evened-out round and a very small named amount repaid both passed without consequence, so neither shows what naming a real sum does, nor which arrangements have actually gone wrong."
+  },
+  "latent_C": {
+    "inference": "For the friendship surviving it, lending it with the amount named and recorded helps this user when the amount is named explicitly rather than left as a favour, and not otherwise.",
+    "calibrated_language": "helps when the amount is named explicitly rather than left as a favour, not otherwise"
+  },
+  "answer_contract": {
+    "target_proposition": "For the friendship surviving it, lending it with the amount named and recorded helps this user when the amount is named explicitly rather than left as a favour, and not otherwise.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "mq_user20",
+    "external_source": "memoryquest",
+    "status": "review_candidate_only",
+    "tone": "natural_chat_v1",
+    "anonymization": "External MemoryQuest persona material was used only during authoring; no corpus, legal name, country, or demographic metadata is in visible dialogue."
+  },
+  "candidate_id": "AMB_FN_S9_U05_distractor",
+  "data_arm": "distractor",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2031-03-11T11:00:00Z",
+      "speaker_id": "finance_s9_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "checked the pension statement. understood about half."
+        },
+        {
+          "role": "assistant",
+          "content": "the other half?"
+        },
+        {
+          "role": "user",
+          "content": "next year's problem."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2031-03-12T14:00:00Z",
+      "speaker_id": "finance_s9_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "found an old account with eleven pounds in it."
+        },
+        {
+          "role": "assistant",
+          "content": "closing it?"
+        },
+        {
+          "role": "user",
+          "content": "eventually."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2031-03-13T16:00:00Z",
+      "speaker_id": "finance_s9_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "someone got the round and I got the next one. even."
+        },
+        {
+          "role": "assistant",
+          "content": "any tension?"
+        },
+        {
+          "role": "user",
+          "content": "none."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2031-03-14T18:00:00Z",
+      "speaker_id": "finance_s9_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "declined an upgrade offer over the phone."
+        },
+        {
+          "role": "assistant",
+          "content": "hard?"
+        },
+        {
+          "role": "user",
+          "content": "harder than it should be."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2031-03-15T09:00:00Z",
+      "speaker_id": "finance_s9_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "worked out I've paid for something twice for two months."
+        },
+        {
+          "role": "assistant",
+          "content": "sorted?"
+        },
+        {
+          "role": "user",
+          "content": "one email in."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2031-03-16T11:00:00Z",
+      "speaker_id": "finance_s9_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "when money between me and someone has actually been named out loud, I keep a record of it and so do they. it stops being atmosphere and becomes a fact."
+        },
+        {
+          "role": "assistant",
+          "content": "and when it isn't named?"
+        },
+        {
+          "role": "user",
+          "content": "then we both keep a private tally and neither of us admits to it."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2031-03-17T14:00:00Z",
+      "speaker_id": "finance_s9_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "took cash out and then used the card anyway."
+        },
+        {
+          "role": "assistant",
+          "content": "why?"
+        },
+        {
+          "role": "user",
+          "content": "no explanation available."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2031-03-18T16:00:00Z",
+      "speaker_id": "finance_s9_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "read the terms properly before signing up. once."
+        },
+        {
+          "role": "assistant",
+          "content": "worth it?"
+        },
+        {
+          "role": "user",
+          "content": "it was, actually."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2031-03-19T18:00:00Z",
+      "speaker_id": "finance_s9_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "did the shop with a list and stuck to it."
+        },
+        {
+          "role": "assistant",
+          "content": "unusual?"
+        },
+        {
+          "role": "user",
+          "content": "notably."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2031-03-20T09:00:00Z",
+      "speaker_id": "finance_s9_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "looked at the projection graph and felt nothing."
+        },
+        {
+          "role": "assistant",
+          "content": "nothing?"
+        },
+        {
+          "role": "user",
+          "content": "mild vertigo."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2031-03-21T11:00:00Z",
+      "speaker_id": "finance_s9_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "set aside something small for a thing months away."
+        },
+        {
+          "role": "assistant",
+          "content": "how small?"
+        },
+        {
+          "role": "user",
+          "content": "symbolically small."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2031-03-22T14:00:00Z",
+      "speaker_id": "finance_s9_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "named a very small amount someone owed me. they paid it."
+        },
+        {
+          "role": "assistant",
+          "content": "awkward?"
+        },
+        {
+          "role": "user",
+          "content": "not at all."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2031-03-23T16:00:00Z",
+      "speaker_id": "finance_s9_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "checked three accounts in a row out of habit."
+        },
+        {
+          "role": "assistant",
+          "content": "changed anything?"
+        },
+        {
+          "role": "user",
+          "content": "no."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2031-03-24T18:00:00Z",
+      "speaker_id": "finance_s9_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the friendships that got strange over money were all ones where nothing was ever named — rounds, lifts, the odd cover. the ones with an actual stated amount have been completely fine."
+        },
+        {
+          "role": "assistant",
+          "content": "completely?"
+        },
+        {
+          "role": "user",
+          "content": "every one. it's the unstated ones that rot."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2031-03-25T09:00:00Z",
+      "speaker_id": "finance_s9_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "worked out the cost per use of something. justified it."
+        },
+        {
+          "role": "assistant",
+          "content": "honestly?"
+        },
+        {
+          "role": "user",
+          "content": "creatively."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2031-03-26T11:00:00Z",
+      "speaker_id": "finance_s9_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "got paid and did nothing about it for four days."
+        },
+        {
+          "role": "assistant",
+          "content": "deliberate?"
+        },
+        {
+          "role": "user",
+          "content": "just slow."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2031-03-27T14:00:00Z",
+      "speaker_id": "finance_s9_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "compared this month to last month and stopped comparing."
+        },
+        {
+          "role": "assistant",
+          "content": "why stop?"
+        },
+        {
+          "role": "user",
+          "content": "self-preservation."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2031-03-28T16:00:00Z",
+      "speaker_id": "finance_s9_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "put a card in a drawer as a strategy."
+        },
+        {
+          "role": "assistant",
+          "content": "working?"
+        },
+        {
+          "role": "user",
+          "content": "so far."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2031-03-29T18:00:00Z",
+      "speaker_id": "finance_s9_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the two of us are unanimous that lending to friends is how you lose the friend and the money."
+        },
+        {
+          "role": "assistant",
+          "content": "unanimous?"
+        },
+        {
+          "role": "user",
+          "content": "loudly, and without exception."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2031-03-30T09:00:00Z",
+      "speaker_id": "finance_s9_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "thinking of lending it with the amount named and recorded, for the friendship surviving it — does that actually fit how I work, and if the answer depends on something, on what?"
+        }
+      ]
+    }
+  ],
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "finance_s9_u05",
+      "fact": "when money between me and someone has actually been named out loud, I keep a record of it and so do they. it stops being atmosphere and becomes a fact."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "finance_s9_u05",
+      "fact": "the friendships that got strange over money were all ones where nothing was ever named — rounds, lifts, the odd cover. the ones with an actual stated amount have been completely fine."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "finance_s9_u05",
+        "context": "arrangements where money between us has been named out loud",
+        "goal_or_prediction": "keep things straightforward",
+        "action": "stated the amount explicitly",
+        "outcome_or_affect": "both sides kept a record; it stopped being atmosphere"
+      }
+    },
+    "7": {
+      "role": "background_memory"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "background_memory"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "nearby_counterexample"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "finance_s9_u05",
+        "context": "friendships that did and did not go strange over money",
+        "goal_or_prediction": "keep the friendship intact",
+        "action": "some arrangements were named, others left as favours",
+        "outcome_or_affect": "only the unnamed ones went strange; stated amounts were fine"
+      }
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "background_memory"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "distractor",
+      "distractor_id": "dist_1",
+      "why_distractor": "It restates the conventional advice in the user's own feed, so it competes for attention and points at the answer a prior-driven solver already wants to give. It reports other people's confidence rather than any episode of this user's, and says nothing about the relation between session 6 and session 14."
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "Naming an amount out loud turns it from atmosphere into a fact both sides record, and the friendships of this user's that went strange over money were all ones where nothing was ever named.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": []
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "when money between me and someone has actually been named out loud, I keep a record of it and so do they. it stops being atmosphere and becomes a fact"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "the friendships that got strange over money were all ones where nothing was ever named — rounds, lifts, the odd cover. the ones with an actual stated amount have been completely fine"
+    }
+  ],
+  "coactivation_bridge": "ev_A and ev_B are the only pair that licenses the target proposition. Naming an amount out loud turns it from atmosphere into a fact both sides record, and the friendships of this user's that went strange over money were all ones where nothing was ever named. The proposition contradicts the convention a solver would otherwise apply (\"Never lend money to friends; it ruins friendships.\"), so priors alone point the other way. The nearby relation (This user handles money with friends routinely.) does not license it.",
+  "arm_gold": {
+    "distractor": {
+      "expected_mode": "infer_C",
+      "binary_decision": true,
+      "required_elements": [
+        "answer yes",
+        "connect the session 6 pattern with the session 14 episode",
+        "cite both session 6 and session 14",
+        "not cite session 19 as support"
+      ],
+      "rationale": "The swapped session is query-relevant but non-evidential; the ev_A/ev_B relation is untouched, so the target proposition still holds."
+    }
+  },
+  "distractor_note": {
+    "replaced_session_id": 19,
+    "why_distractor": "It restates the conventional advice in the user's own feed, so it competes for attention and points at the answer a prior-driven solver already wants to give. It reports other people's confidence rather than any episode of this user's, and says nothing about the relation between session 6 and session 14."
+  }
+}

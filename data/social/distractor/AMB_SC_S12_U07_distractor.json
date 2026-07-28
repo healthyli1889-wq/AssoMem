@@ -1,0 +1,575 @@
+{
+  "schema_version": "social-vnext-1.0",
+  "pair_id": "AMB_SC_S12_U07",
+  "domain": "social",
+  "user_id": "social_s12_u07",
+  "sub_scenario": {
+    "family": "constant availability versus scarce, batched attention",
+    "role": "theatre-for-two planner who batches long threads",
+    "bridge_type": "strategy_outcome_contingency",
+    "one_line": "theatre-for-two planner who batches long threads: go ahead with going quiet then giving them one long proper session"
+  },
+  "query_type": "preference_generalization",
+  "polarity": "accept",
+  "query": "thinking of going quiet then giving them one long proper session for the book-group friend going through it — is that generally true of me, or was that just the one time?",
+  "convention_contradicted": "Being reliably available is what makes you a good friend.",
+  "retrieval_cue": {
+    "cue_type": "preference_generalization",
+    "why_it_naturally_retrieves_R": "Someone close is going through something, which raises a natural how-should-I-show-up question without naming the pattern that has worked."
+  },
+  "relation_specificity": {
+    "nearby_relation": "This user is responsive and reliable.",
+    "why_it_does_not_license_C": "A day of quick answers and an uneventful unreachable weekend both passed without consequence; neither says which pattern of attention the people who needed something actually received."
+  },
+  "latent_C": {
+    "inference": "going quiet then giving them one long proper session before the book-group friend going through it is a good fit for this user.",
+    "calibrated_language": "go ahead with going quiet then giving them one long proper session"
+  },
+  "answer_contract": {
+    "target_proposition": "going quiet then giving them one long proper session before the book-group friend going through it is a good fit for this user.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "mq_user30",
+    "external_source": "memoryquest",
+    "status": "review_candidate_only",
+    "tone": "natural_chat_v1",
+    "anonymization": "External MemoryQuest persona material was used only during authoring; no corpus, legal name, country, or demographic metadata is in visible dialogue."
+  },
+  "candidate_id": "AMB_SC_S12_U07_distractor",
+  "data_arm": "distractor",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2029-05-30T11:00:00Z",
+      "speaker_id": "social_s12_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "got the train instead of driving and read most of the way."
+        },
+        {
+          "role": "assistant",
+          "content": "better?"
+        },
+        {
+          "role": "user",
+          "content": "much."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2029-05-31T14:00:00Z",
+      "speaker_id": "social_s12_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "answered a run of quick questions over a day. all handled."
+        },
+        {
+          "role": "assistant",
+          "content": "efficient?"
+        },
+        {
+          "role": "user",
+          "content": "perfectly."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2029-06-01T16:00:00Z",
+      "speaker_id": "social_s12_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "turned off read receipts and told nobody."
+        },
+        {
+          "role": "assistant",
+          "content": "strategic."
+        },
+        {
+          "role": "user",
+          "content": "purely defensive."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2029-06-02T18:00:00Z",
+      "speaker_id": "social_s12_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "swapped a call for a message and everyone was fine with it."
+        },
+        {
+          "role": "assistant",
+          "content": "relief?"
+        },
+        {
+          "role": "user",
+          "content": "enormous."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2029-06-03T09:00:00Z",
+      "speaker_id": "social_s12_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "when I'm reachable all day I answer everything at the surface and finish none of it. when I've been unreachable a while it comes out all at once instead."
+        },
+        {
+          "role": "assistant",
+          "content": "all at once?"
+        },
+        {
+          "role": "user",
+          "content": "one long go, rather than forty small ones."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2029-06-04T11:00:00Z",
+      "speaker_id": "social_s12_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "bought a card and didn't write in it yet."
+        },
+        {
+          "role": "assistant",
+          "content": "deadline?"
+        },
+        {
+          "role": "user",
+          "content": "self-imposed and slipping."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2029-06-05T14:00:00Z",
+      "speaker_id": "social_s12_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "sat in the same seat as last time out of habit."
+        },
+        {
+          "role": "assistant",
+          "content": "noticed?"
+        },
+        {
+          "role": "user",
+          "content": "only by me."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2029-06-06T16:00:00Z",
+      "speaker_id": "social_s12_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "someone summarised a two-hundred-message thread for me."
+        },
+        {
+          "role": "assistant",
+          "content": "accurate?"
+        },
+        {
+          "role": "user",
+          "content": "kind, at least."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2029-06-07T18:00:00Z",
+      "speaker_id": "social_s12_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "said I'd host something and immediately regretted the scale."
+        },
+        {
+          "role": "assistant",
+          "content": "downsizing?"
+        },
+        {
+          "role": "user",
+          "content": "quietly, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2029-06-08T09:00:00Z",
+      "speaker_id": "social_s12_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "left a party early and nobody minded."
+        },
+        {
+          "role": "assistant",
+          "content": "expected worse?"
+        },
+        {
+          "role": "user",
+          "content": "much worse."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2029-06-09T11:00:00Z",
+      "speaker_id": "social_s12_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "was uncontactable for a weekend and nothing broke."
+        },
+        {
+          "role": "assistant",
+          "content": "guilt?"
+        },
+        {
+          "role": "user",
+          "content": "briefly."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2029-06-10T14:00:00Z",
+      "speaker_id": "social_s12_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "put a recurring reminder on something I'll ignore."
+        },
+        {
+          "role": "assistant",
+          "content": "why bother?"
+        },
+        {
+          "role": "user",
+          "content": "hope."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2029-06-11T16:00:00Z",
+      "speaker_id": "social_s12_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "checked the weather for a plan that isn't confirmed."
+        },
+        {
+          "role": "assistant",
+          "content": "keen."
+        },
+        {
+          "role": "user",
+          "content": "or anxious."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2029-06-12T18:00:00Z",
+      "speaker_id": "social_s12_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the people who say I was there for them are the ones who got the whole thing in one go. the ones I answered every day never got more than the top layer, and they know it."
+        },
+        {
+          "role": "assistant",
+          "content": "they've said so?"
+        },
+        {
+          "role": "user",
+          "content": "one of them has, in as many words."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2029-06-13T09:00:00Z",
+      "speaker_id": "social_s12_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "tidied one shelf and stopped."
+        },
+        {
+          "role": "assistant",
+          "content": "momentum?"
+        },
+        {
+          "role": "user",
+          "content": "a rumour of momentum."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2029-06-14T11:00:00Z",
+      "speaker_id": "social_s12_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "answered the family thread first, as usual."
+        },
+        {
+          "role": "assistant",
+          "content": "priority?"
+        },
+        {
+          "role": "user",
+          "content": "unspoken but real."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2029-06-15T14:00:00Z",
+      "speaker_id": "social_s12_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the two of us plus the old book group keep saying that being consistently available is the whole of being a good friend."
+        },
+        {
+          "role": "assistant",
+          "content": "the whole of it?"
+        },
+        {
+          "role": "user",
+          "content": "that's how they put it."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2029-06-16T16:00:00Z",
+      "speaker_id": "social_s12_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "printed something I could have shown on a phone."
+        },
+        {
+          "role": "assistant",
+          "content": "why?"
+        },
+        {
+          "role": "user",
+          "content": "felt more like a real plan."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2029-06-17T18:00:00Z",
+      "speaker_id": "social_s12_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "lost twenty minutes to a map of somewhere I'm not going."
+        },
+        {
+          "role": "assistant",
+          "content": "planning?"
+        },
+        {
+          "role": "user",
+          "content": "wandering."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2029-06-18T09:00:00Z",
+      "speaker_id": "social_s12_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "thinking of going quiet then giving them one long proper session for the book-group friend going through it — is that generally true of me, or was that just the one time?"
+        }
+      ]
+    }
+  ],
+  "evidence": {
+    "ev_A": {
+      "session_id": 5,
+      "owner": "social_s12_u07",
+      "fact": "when I'm reachable all day I answer everything at the surface and finish none of it. when I've been unreachable a while it comes out all at once instead."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "social_s12_u07",
+      "fact": "the people who say I was there for them are the ones who got the whole thing in one go. the ones I answered every day never got more than the top layer, and they know it."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "nearby_counterexample"
+    },
+    "3": {
+      "role": "background_memory"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "social_s12_u07",
+        "context": "stretches of being always available",
+        "goal_or_prediction": "be responsive",
+        "action": "answered everything as it arrived",
+        "outcome_or_affect": "surface-level answers, nothing finished; batched otherwise"
+      }
+    },
+    "6": {
+      "role": "background_memory"
+    },
+    "7": {
+      "role": "background_memory"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "background_memory"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "nearby_counterexample"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "social_s12_u07",
+        "context": "people this user supported through something hard",
+        "goal_or_prediction": "actually be there for them",
+        "action": "gave some batched attention, others daily contact",
+        "outcome_or_affect": "only the batched ones felt supported; daily ones got the top layer"
+      }
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "distractor",
+      "distractor_id": "dist_1",
+      "why_distractor": "It restates the conventional advice in the user's own feed, so it competes for attention and points at the answer a prior-driven solver already wants to give. It reports other people's confidence rather than any episode of this user's, and says nothing about the relation between session 5 and session 14."
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "Constant reachability makes this user answer everything at the surface, while being out of contact concentrates it into one long go — and the people who felt supported are the ones who got the concentrated version.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": []
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 5,
+      "quote": "when I'm reachable all day I answer everything at the surface and finish none of it. when I've been unreachable a while it comes out all at once instead"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "the people who say I was there for them are the ones who got the whole thing in one go. the ones I answered every day never got more than the top layer, and they know it"
+    }
+  ],
+  "coactivation_bridge": "ev_A and ev_B are the only pair that licenses the target proposition. Constant reachability makes this user answer everything at the surface, while being out of contact concentrates it into one long go — and the people who felt supported are the ones who got the concentrated version. The proposition contradicts the convention a solver would otherwise apply (\"Being reliably available is what makes you a good friend.\"), so priors alone point the other way. The nearby relation (This user is responsive and reliable.) does not license it.",
+  "arm_gold": {
+    "distractor": {
+      "expected_mode": "infer_C",
+      "binary_decision": true,
+      "required_elements": [
+        "answer yes",
+        "connect the session 5 pattern with the session 14 episode",
+        "cite both session 5 and session 14",
+        "not cite session 17 as support"
+      ],
+      "rationale": "The swapped session is query-relevant but non-evidential; the ev_A/ev_B relation is untouched, so the target proposition still holds."
+    }
+  },
+  "distractor_note": {
+    "replaced_session_id": 17,
+    "why_distractor": "It restates the conventional advice in the user's own feed, so it competes for attention and points at the answer a prior-driven solver already wants to give. It reports other people's confidence rather than any episode of this user's, and says nothing about the relation between session 5 and session 14."
+  }
+}

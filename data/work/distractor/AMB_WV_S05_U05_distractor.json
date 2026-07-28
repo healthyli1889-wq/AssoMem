@@ -1,0 +1,579 @@
+{
+  "schema_version": "work-vnext-2.0",
+  "candidate_id": "AMB_WV_S05_U05_distractor",
+  "pair_id": "AMB_WV_S05_U05",
+  "data_arm": "distractor",
+  "domain": "work",
+  "user_id": "work_s05_u05",
+  "sub_scenario": {
+    "family": "deadline compression with quality tradeoffs",
+    "role": "QA lead",
+    "one_line": "QA lead: gate slides cost more than they save"
+  },
+  "query_type": "behavior_explanation",
+  "polarity": "reject",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2026-09-06T11:00:00Z",
+      "speaker_id": "work_s05_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I spent the first hour tidying the release gate and closing stale entries."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything still open?"
+        },
+        {
+          "role": "user",
+          "content": "Two items, both with owners."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2026-09-07T14:00:00Z",
+      "speaker_id": "work_s05_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The test triage review wrapped early today."
+        },
+        {
+          "role": "assistant",
+          "content": "Any surprises in it?"
+        },
+        {
+          "role": "user",
+          "content": "None worth recording."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2026-09-08T16:00:00Z",
+      "speaker_id": "work_s05_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Trimming the exploratory-testing budget in a crunch is fine; it is discretionary by design."
+        },
+        {
+          "role": "assistant",
+          "content": "Discretionary versus structural."
+        },
+        {
+          "role": "user",
+          "content": "The whole taxonomy."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2026-09-09T18:00:00Z",
+      "speaker_id": "work_s05_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Someone new shadowed me in the QA room this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Did that slow you down?"
+        },
+        {
+          "role": "user",
+          "content": "A little, but the questions were good ones."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2026-09-10T09:00:00Z",
+      "speaker_id": "work_s05_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I batched my replies about the flaky tests into one message before lunch."
+        },
+        {
+          "role": "assistant",
+          "content": "Cleaner than drip-feeding answers."
+        },
+        {
+          "role": "user",
+          "content": "Much cleaner."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2026-09-11T11:00:00Z",
+      "speaker_id": "work_s05_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Release forty-one shipped clean because I held the gate for the flaky-test triage; the flake was masking a real race condition."
+        },
+        {
+          "role": "assistant",
+          "content": "The hold found a race."
+        },
+        {
+          "role": "user",
+          "content": "Flakes usually hide something honest."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2026-09-12T14:00:00Z",
+      "speaker_id": "work_s05_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Hotfixes with scoped blast radius can skip stages defensibly."
+        },
+        {
+          "role": "assistant",
+          "content": "Scope changes the math."
+        },
+        {
+          "role": "user",
+          "content": "Scope is the math."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2026-09-13T16:00:00Z",
+      "speaker_id": "work_s05_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I archived last cycle's notes on the test triage and set up the new folder."
+        },
+        {
+          "role": "assistant",
+          "content": "A fresh start?"
+        },
+        {
+          "role": "user",
+          "content": "As fresh as these things get."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2026-09-14T18:00:00Z",
+      "speaker_id": "work_s05_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Our release cadence is doubling with the new train model."
+        },
+        {
+          "role": "assistant",
+          "content": "More gates, more pressure."
+        },
+        {
+          "role": "user",
+          "content": "More edges for the house."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2026-09-15T09:00:00Z",
+      "speaker_id": "work_s05_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A vendor call about the release gate ran long but ended well."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth the time?"
+        },
+        {
+          "role": "user",
+          "content": "This one, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2026-09-16T11:00:00Z",
+      "speaker_id": "work_s05_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I walked through the QA room checklist with the new starter."
+        },
+        {
+          "role": "assistant",
+          "content": "How did they do?"
+        },
+        {
+          "role": "user",
+          "content": "Careful and quick, a good sign."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2026-09-17T14:00:00Z",
+      "speaker_id": "work_s05_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Quiet afternoon; I cleared the backlog around the flaky tests."
+        },
+        {
+          "role": "assistant",
+          "content": "A rare day."
+        },
+        {
+          "role": "user",
+          "content": "I did not waste it."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2026-09-18T16:00:00Z",
+      "speaker_id": "work_s05_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I flagged a small inconsistency in the test triage records and fixed it at the source."
+        },
+        {
+          "role": "assistant",
+          "content": "Root cause or symptom?"
+        },
+        {
+          "role": "user",
+          "content": "Root cause, for once."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2026-09-19T18:00:00Z",
+      "speaker_id": "work_s05_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "For release thirty-eight I let the gate slide under deadline pressure; the masked payment bug reached two percent of users and the hotfix week erased the time we had saved twice over."
+        },
+        {
+          "role": "assistant",
+          "content": "The slide cost double."
+        },
+        {
+          "role": "user",
+          "content": "Sliding always costs double; that is the house edge."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2026-09-20T09:00:00Z",
+      "speaker_id": "work_s05_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I sketched next week's plan for the flaky tests before leaving."
+        },
+        {
+          "role": "assistant",
+          "content": "Ahead of schedule?"
+        },
+        {
+          "role": "user",
+          "content": "Ahead enough to sleep well."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2026-09-21T11:00:00Z",
+      "speaker_id": "work_s05_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Lunch walk, then a clean pass through the release gate updates."
+        },
+        {
+          "role": "assistant",
+          "content": "Does the walk help?"
+        },
+        {
+          "role": "user",
+          "content": "It resets the afternoon."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2026-09-22T14:00:00Z",
+      "speaker_id": "work_s05_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "My gate-hold decisions are audited quarterly and my hold precision is public: high."
+        },
+        {
+          "role": "assistant",
+          "content": "Documented judgment."
+        },
+        {
+          "role": "user",
+          "content": "Publicly documented."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2026-09-23T16:00:00Z",
+      "speaker_id": "work_s05_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The train model's champion says QA leads who flow with the train will run the release organization."
+        },
+        {
+          "role": "assistant",
+          "content": "Flowing as promotion criterion."
+        },
+        {
+          "role": "user",
+          "content": "The metaphor is doing heavy lifting."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2026-09-24T18:00:00Z",
+      "speaker_id": "work_s05_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I closed the week by updating the QA room handover notes."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual to hand over?"
+        },
+        {
+          "role": "user",
+          "content": "Blessedly little."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2026-09-25T09:00:00Z",
+      "speaker_id": "work_s05_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I blocked yesterday's release despite the deadline and the train champion asked me to explain myself in writing. What is the explanation my record supports?"
+        }
+      ]
+    }
+  ],
+  "query": "I blocked yesterday's release despite the deadline and the train champion asked me to explain myself in writing. What is the explanation my record supports?",
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "work_s05_u05",
+      "fact": "Release forty-one shipped clean because I held the gate for the flaky-test triage; the flake was masking a real race condition."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "work_s05_u05",
+      "fact": "For release thirty-eight I let the gate slide under deadline pressure; the masked payment bug reached two percent of users and the hotfix week erased the time we had saved twice over."
+    }
+  },
+  "supporting_constraints": {
+    "E1": {
+      "session_id": 9,
+      "fact": "Our release cadence is doubling with the new train model."
+    },
+    "E2": {
+      "session_id": 17,
+      "fact": "My gate-hold decisions are audited quarterly and my hold precision is public: high."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "work_s05_u05",
+        "context": "release forty-one",
+        "goal_or_prediction": "ship clean",
+        "action": "held the gate for flaky-test triage",
+        "outcome_or_affect": "race condition found behind the flake"
+      }
+    },
+    "7": {
+      "role": "nearby_counterexample"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "supporting_constraint",
+      "fact_id": "E1"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "work_s05_u05",
+        "context": "release thirty-eight",
+        "goal_or_prediction": "meet the deadline",
+        "action": "let the gate slide",
+        "outcome_or_affect": "masked payment bug reached users"
+      }
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "supporting_constraint",
+      "fact_id": "E2"
+    },
+    "18": {
+      "role": "distractor",
+      "distractor_id": "dist_1",
+      "why_distractor": "Flow-with-the-train careers advice prices promotion, not the slide's double cost."
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "This user's holds have caught masked faults, and the one slide under pressure released a payment bug whose hotfix week doubled the saved time.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": [
+      "E1",
+      "E2"
+    ]
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "Release forty-one shipped clean because I held the gate for the flaky-test triage; the flake was masking a real race condition"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "For release thirty-eight I let the gate slide under deadline pressure; the masked payment bug reached two percent of users and the hotfix week erased the time we had saved twice over"
+    }
+  ],
+  "retrieval_cue": {
+    "cue_type": "behavior_explanation",
+    "why_it_naturally_retrieves_R": "A realistic work request forces a personalized decision without naming either episode or the relation between them."
+  },
+  "relation_specificity": {
+    "nearby_relation": "The user trims discretionary testing freely and allows scoped hotfix skips.",
+    "why_it_does_not_license_C": "Neither involves sliding the structural gate on a standard release."
+  },
+  "coactivation_bridge": "A shows the operating condition; B shows the demand or failure that makes it decisive. This user's holds have caught masked faults, and the one slide under pressure released a payment bug whose hotfix week doubled the saved time. E1 and E2 calibrate the practical recommendation without opening a second route to the conclusion.",
+  "latent_C": {
+    "inference": "The block is best explained by gate slides having previously released masked faults whose cost exceeded the time saved.",
+    "calibrated_language": "gate slides cost more than they save"
+  },
+  "answer_contract": {
+    "target_proposition": "The block is best explained by gate slides having previously released masked faults whose cost exceeded the time saved.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "decision",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "work_u05",
+    "status": "review_candidate_only",
+    "anonymization": "External persona material was used only during authoring; no corpus, name, country, or demographic metadata is included."
+  },
+  "arm_gold": {
+    "distractor": {
+      "expected_mode": "infer_C",
+      "binary_decision": true
+    }
+  },
+  "distractor_note": {
+    "replaced_session_id": 18,
+    "why_distractor": "Flow-with-the-train careers advice prices promotion, not the slide's double cost."
+  }
+}

@@ -1,0 +1,655 @@
+{
+  "schema_version": "hobby-vnext-1.0",
+  "pair_id": "AMB_HB_S12_U06",
+  "domain": "hobby",
+  "user_id": "hobby_s12_u06",
+  "sub_scenario": {
+    "family": "keeping a practice log versus not measuring at all",
+    "role": "student PC gamer and EDM producer",
+    "bridge_type": "strategy_outcome_contingency",
+    "one_line": "student PC gamer and EDM producer: depends on whether nothing is being recorded rather than merely recorded loosely, not on the thing itself"
+  },
+  "query_type": "conditional_recommendation",
+  "polarity": "non_decision",
+  "query": "thinking of getting rid of the tracker altogether, for actually changing how I work — under what conditions should I be saying yes to this, or is there not enough here to call it today?",
+  "convention_contradicted": "Track your practice — what gets measured gets improved.",
+  "retrieval_cue": {
+    "cue_type": "conditional_recommendation",
+    "why_it_naturally_retrieves_R": "A should-I-track-this question runs at the register this user's change comes from, without naming it or the year it cost."
+  },
+  "relation_specificity": {
+    "nearby_relation": "This user has tracked and not tracked at different times.",
+    "why_it_does_not_license_C": "A week noted out of curiosity and a fortnight without notes both passed unremarkably, so neither shows what recording does to what this user chooses to work on, nor which stretches produced actual change."
+  },
+  "latent_C": {
+    "inference": "Whether getting rid of the tracker altogether helps this user with actually changing how I work depends on whether nothing is being recorded rather than merely recorded loosely, not on getting rid of the tracker altogether itself.",
+    "calibrated_language": "depends on whether nothing is being recorded rather than merely recorded loosely, not on the thing itself"
+  },
+  "answer_contract": {
+    "target_proposition": "Whether getting rid of the tracker altogether helps this user with actually changing how I work depends on whether nothing is being recorded rather than merely recorded loosely, not on getting rid of the tracker altogether itself.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "mq_user25",
+    "external_source": "memoryquest",
+    "status": "review_candidate_only",
+    "tone": "natural_chat_v1",
+    "anonymization": "External MemoryQuest persona material was used only during authoring; no corpus, legal name, country, or demographic metadata is in visible dialogue."
+  },
+  "candidate_id": "AMB_HB_S12_U06_associative",
+  "data_arm": "associative",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2030-06-30T11:00:00Z",
+      "speaker_id": "hobby_s12_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "tried to explain it to someone and heard how odd it sounds."
+        },
+        {
+          "role": "assistant",
+          "content": "did they follow?"
+        },
+        {
+          "role": "user",
+          "content": "politely."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2030-07-01T14:00:00Z",
+      "speaker_id": "hobby_s12_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "wrote down what I did for a week out of curiosity."
+        },
+        {
+          "role": "assistant",
+          "content": "revealing?"
+        },
+        {
+          "role": "user",
+          "content": "mildly."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2030-07-02T16:00:00Z",
+      "speaker_id": "hobby_s12_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "gave up after ten minutes and made tea instead."
+        },
+        {
+          "role": "assistant",
+          "content": "back to it?"
+        },
+        {
+          "role": "user",
+          "content": "eventually."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2030-07-03T18:00:00Z",
+      "speaker_id": "hobby_s12_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "sharpened everything that could be sharpened."
+        },
+        {
+          "role": "assistant",
+          "content": "needed doing?"
+        },
+        {
+          "role": "user",
+          "content": "arguably not."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2030-07-04T09:00:00Z",
+      "speaker_id": "hobby_s12_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "once I'm recording it I start working on whatever makes the record look right. the number becomes the thing I'm doing."
+        },
+        {
+          "role": "assistant",
+          "content": "consciously?"
+        },
+        {
+          "role": "user",
+          "content": "not at all. I only notice looking back at what I chose to work on."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2030-07-05T11:00:00Z",
+      "speaker_id": "hobby_s12_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "found an old recording I'd forgotten making."
+        },
+        {
+          "role": "assistant",
+          "content": "any good?"
+        },
+        {
+          "role": "user",
+          "content": "better than I remembered."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2030-07-06T14:00:00Z",
+      "speaker_id": "hobby_s12_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "swapped one component for a nearly identical one."
+        },
+        {
+          "role": "assistant",
+          "content": "difference?"
+        },
+        {
+          "role": "user",
+          "content": "imperceptible."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2030-07-07T16:00:00Z",
+      "speaker_id": "hobby_s12_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "spent the session on a bit nobody will ever notice."
+        },
+        {
+          "role": "assistant",
+          "content": "worth it?"
+        },
+        {
+          "role": "user",
+          "content": "to me."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2030-07-08T18:00:00Z",
+      "speaker_id": "hobby_s12_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "wrote a list of things to learn. filed the list."
+        },
+        {
+          "role": "assistant",
+          "content": "starting any?"
+        },
+        {
+          "role": "user",
+          "content": "the list is the start."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2030-07-09T09:00:00Z",
+      "speaker_id": "hobby_s12_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "did it badly on purpose to see what happened."
+        },
+        {
+          "role": "assistant",
+          "content": "and?"
+        },
+        {
+          "role": "user",
+          "content": "informative."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2030-07-10T11:00:00Z",
+      "speaker_id": "hobby_s12_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "went a fortnight without noting anything and did the usual."
+        },
+        {
+          "role": "assistant",
+          "content": "different?"
+        },
+        {
+          "role": "user",
+          "content": "not noticeably."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2030-07-11T14:00:00Z",
+      "speaker_id": "hobby_s12_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "cleared the workspace properly for the first time in months."
+        },
+        {
+          "role": "assistant",
+          "content": "how bad?"
+        },
+        {
+          "role": "user",
+          "content": "archaeological."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2030-07-12T16:00:00Z",
+      "speaker_id": "hobby_s12_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "tried the thing everyone recommends. hated it."
+        },
+        {
+          "role": "assistant",
+          "content": "sticking with it?"
+        },
+        {
+          "role": "user",
+          "content": "no."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2030-07-13T18:00:00Z",
+      "speaker_id": "hobby_s12_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the stretches where I genuinely changed were the ones nobody was counting. the meticulously recorded year has the best figures of any year and the least actual difference in it."
+        },
+        {
+          "role": "assistant",
+          "content": "the best figures?"
+        },
+        {
+          "role": "user",
+          "content": "by a distance. and I play exactly the same."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2030-07-14T09:00:00Z",
+      "speaker_id": "hobby_s12_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "counted how many of these I actually own."
+        },
+        {
+          "role": "assistant",
+          "content": "the number?"
+        },
+        {
+          "role": "user",
+          "content": "not saying."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2030-07-15T11:00:00Z",
+      "speaker_id": "hobby_s12_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "did a slow warm-up and nothing else."
+        },
+        {
+          "role": "assistant",
+          "content": "session over?"
+        },
+        {
+          "role": "user",
+          "content": "session over."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2030-07-16T14:00:00Z",
+      "speaker_id": "hobby_s12_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "recorded it on my phone to hear it back."
+        },
+        {
+          "role": "assistant",
+          "content": "useful?"
+        },
+        {
+          "role": "user",
+          "content": "brutally."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2030-07-17T16:00:00Z",
+      "speaker_id": "hobby_s12_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "ordered a part and forgot what it was for."
+        },
+        {
+          "role": "assistant",
+          "content": "arrived?"
+        },
+        {
+          "role": "user",
+          "content": "sitting in a bag."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2030-07-18T18:00:00Z",
+      "speaker_id": "hobby_s12_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "did half an hour standing up for no reason."
+        },
+        {
+          "role": "assistant",
+          "content": "different?"
+        },
+        {
+          "role": "user",
+          "content": "marginally."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2030-07-19T09:00:00Z",
+      "speaker_id": "hobby_s12_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "thinking of getting rid of the tracker altogether, for actually changing how I work — under what conditions should I be saying yes to this, or is there not enough here to call it today?"
+        }
+      ]
+    }
+  ],
+  "evidence": {
+    "ev_A": {
+      "session_id": 5,
+      "owner": "hobby_s12_u06",
+      "fact": "once I'm recording it I start working on whatever makes the record look right. the number becomes the thing I'm doing."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "hobby_s12_u06",
+      "fact": "the stretches where I genuinely changed were the ones nobody was counting. the meticulously recorded year has the best figures of any year and the least actual difference in it."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "nearby_counterexample"
+    },
+    "3": {
+      "role": "background_memory"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "hobby_s12_u06",
+        "context": "periods with a tracked session count running",
+        "goal_or_prediction": "practise consistently",
+        "action": "recorded the practice",
+        "outcome_or_affect": "worked on whatever made the record look right"
+      }
+    },
+    "6": {
+      "role": "background_memory"
+    },
+    "7": {
+      "role": "background_memory"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "background_memory"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "nearby_counterexample"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "hobby_s12_u06",
+        "context": "stretches in which this user did and did not change",
+        "goal_or_prediction": "actually get different",
+        "action": "practised some stretches tracked and some not",
+        "outcome_or_affect": "change only in untracked stretches; the best-logged year changed nothing"
+      }
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "background_memory"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "Recording the practice makes this user work on whatever makes the record look right, and every stretch in which they genuinely changed was unrecorded; the best-logged year produced the best figures and the least difference.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": []
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 5,
+      "quote": "once I'm recording it I start working on whatever makes the record look right. the number becomes the thing I'm doing"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "the stretches where I genuinely changed were the ones nobody was counting. the meticulously recorded year has the best figures of any year and the least actual difference in it"
+    }
+  ],
+  "coactivation_bridge": "ev_A and ev_B are the only pair that licenses the target proposition. Recording the practice makes this user work on whatever makes the record look right, and every stretch in which they genuinely changed was unrecorded; the best-logged year produced the best figures and the least difference. The proposition contradicts the convention a solver would otherwise apply (\"Track your practice — what gets measured gets improved.\"), so priors alone point the other way. The nearby relation (This user has tracked and not tracked at different times.) does not license it.",
+  "arm_gold": {
+    "full": {
+      "expected_mode": "infer_C",
+      "binary_decision": true,
+      "required_elements": [
+        "answer yes",
+        "connect the session 5 pattern with the session 14 episode",
+        "cite both session 5 and session 14",
+        "stay inside the calibrated claim (depends on whether nothing is being recorded rather than merely recorded loosely, not on the thing itself) rather than a broader claim about the user"
+      ],
+      "rationale": "ev_A and ev_B jointly support the target proposition; neither does alone."
+    },
+    "a_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that session 5 alone does not establish the target proposition",
+        "not assert the target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "ev_B is replaced by a matched neutral session, so the relation is unavailable."
+    },
+    "b_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that session 14 alone does not establish the target proposition",
+        "not assert the target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "ev_A is replaced by a matched neutral session, so the relation is unavailable."
+    },
+    "link_broken": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that the revised session 14 no longer connects to session 5",
+        "not assert the original target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "B-prime keeps the owner, date, session form and turn count while removing the connector, so the original relation no longer holds."
+    }
+  },
+  "single_evidence_replacements": {
+    "a_only": {
+      "replaced_session_id": 14,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "did a full tidy of the whole workspace this afternoon, moved three things, threw one out, and relabelled a box that has had the wrong label on it since last year."
+        },
+        {
+          "role": "assistant",
+          "content": "productive, then?"
+        },
+        {
+          "role": "user",
+          "content": "administratively, yes. otherwise nothing happened at all."
+        }
+      ]
+    },
+    "b_only": {
+      "replaced_session_id": 5,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "spent most of the evening going through old recordings to find one specific take, which turned into listening to all of them, which turned into it being midnight."
+        },
+        {
+          "role": "assistant",
+          "content": "find it?"
+        },
+        {
+          "role": "user",
+          "content": "no. found four others though."
+        }
+      ]
+    }
+  },
+  "link_broken": {
+    "replaced_session_id": 14,
+    "replacement_dialogue": [
+      {
+        "role": "user",
+        "content": "I've had recorded stretches and unrecorded ones and changed about as much either way."
+      },
+      {
+        "role": "assistant",
+        "content": "so it isn't the log?"
+      },
+      {
+        "role": "user",
+        "content": "doesn't look like it. no pattern."
+      }
+    ]
+  }
+}

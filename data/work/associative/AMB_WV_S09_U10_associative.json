@@ -1,0 +1,638 @@
+{
+  "schema_version": "work-vnext-2.0",
+  "candidate_id": "AMB_WV_S09_U10_associative",
+  "pair_id": "AMB_WV_S09_U10",
+  "data_arm": "associative",
+  "domain": "work",
+  "user_id": "work_s09_u10",
+  "sub_scenario": {
+    "family": "travel recovery physiology versus high-stakes scheduling",
+    "role": "sports team physician",
+    "one_line": "sports team physician: take it, keeping scheduling authority"
+  },
+  "query_type": "conditional_recommendation",
+  "polarity": "accept",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2025-12-20T11:00:00Z",
+      "speaker_id": "work_s09_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I spent the first hour tidying the assessment protocol and closing stale entries."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything still open?"
+        },
+        {
+          "role": "user",
+          "content": "Two items, both with owners."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2025-12-21T14:00:00Z",
+      "speaker_id": "work_s09_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The travel calendar review wrapped early today."
+        },
+        {
+          "role": "assistant",
+          "content": "Any surprises in it?"
+        },
+        {
+          "role": "user",
+          "content": "None worth recording."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2025-12-22T16:00:00Z",
+      "speaker_id": "work_s09_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Home-fixture medical days, whatever their length, run at full quality."
+        },
+        {
+          "role": "assistant",
+          "content": "Home baseline is unimpeachable."
+        },
+        {
+          "role": "user",
+          "content": "Unimpeachable and boring, thankfully."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2025-12-23T18:00:00Z",
+      "speaker_id": "work_s09_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Someone new shadowed me in the team medical room this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Did that slow you down?"
+        },
+        {
+          "role": "user",
+          "content": "A little, but the questions were good ones."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2025-12-24T09:00:00Z",
+      "speaker_id": "work_s09_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I batched my replies about the recovery windows into one message before lunch."
+        },
+        {
+          "role": "assistant",
+          "content": "Cleaner than drip-feeding answers."
+        },
+        {
+          "role": "user",
+          "content": "Much cleaner."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2025-12-25T11:00:00Z",
+      "speaker_id": "work_s09_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "My concussion-assessment accuracy holds on away swings because assessments are scheduled for the afternoon after arrival, never the morning; last season's full away slate ran under that rule without one disputed call."
+        },
+        {
+          "role": "assistant",
+          "content": "The scheduling rule is the quality mechanism."
+        },
+        {
+          "role": "user",
+          "content": "The rule is the record."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2025-12-26T14:00:00Z",
+      "speaker_id": "work_s09_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Away trips with day-after-arrival assessments have been consistently clean."
+        },
+        {
+          "role": "assistant",
+          "content": "Buffered away work matches home quality."
+        },
+        {
+          "role": "user",
+          "content": "Matches it exactly."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2025-12-27T16:00:00Z",
+      "speaker_id": "work_s09_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I archived last cycle's notes on the travel calendar and set up the new folder."
+        },
+        {
+          "role": "assistant",
+          "content": "A fresh start?"
+        },
+        {
+          "role": "user",
+          "content": "As fresh as these things get."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2025-12-28T18:00:00Z",
+      "speaker_id": "work_s09_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The players' association audit specifically commended our assessment-timing protocol last season."
+        },
+        {
+          "role": "assistant",
+          "content": "External commendation of the exact mechanism."
+        },
+        {
+          "role": "user",
+          "content": "Of exactly that clause."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2025-12-29T09:00:00Z",
+      "speaker_id": "work_s09_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A vendor call about the assessment protocol ran long but ended well."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth the time?"
+        },
+        {
+          "role": "user",
+          "content": "This one, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2025-12-30T11:00:00Z",
+      "speaker_id": "work_s09_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I walked through the team medical room checklist with the new starter."
+        },
+        {
+          "role": "assistant",
+          "content": "How did they do?"
+        },
+        {
+          "role": "user",
+          "content": "Careful and quick, a good sign."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2025-12-31T14:00:00Z",
+      "speaker_id": "work_s09_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Quiet afternoon; I cleared the backlog around the recovery windows."
+        },
+        {
+          "role": "assistant",
+          "content": "A rare day."
+        },
+        {
+          "role": "user",
+          "content": "I did not waste it."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2026-01-01T16:00:00Z",
+      "speaker_id": "work_s09_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I flagged a small inconsistency in the travel calendar records and fixed it at the source."
+        },
+        {
+          "role": "assistant",
+          "content": "Root cause or symptom?"
+        },
+        {
+          "role": "user",
+          "content": "Root cause, for once."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2026-01-02T18:00:00Z",
+      "speaker_id": "work_s09_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The head physician contract on offer includes explicit authority over assessment scheduling, the same authority my protocol depends on."
+        },
+        {
+          "role": "assistant",
+          "content": "The offer contains the mechanism's guarantee."
+        },
+        {
+          "role": "user",
+          "content": "Contains it in writing."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2026-01-03T09:00:00Z",
+      "speaker_id": "work_s09_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I sketched next week's plan for the recovery windows before leaving."
+        },
+        {
+          "role": "assistant",
+          "content": "Ahead of schedule?"
+        },
+        {
+          "role": "user",
+          "content": "Ahead enough to sleep well."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2026-01-04T11:00:00Z",
+      "speaker_id": "work_s09_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Lunch walk, then a clean pass through the assessment protocol updates."
+        },
+        {
+          "role": "assistant",
+          "content": "Does the walk help?"
+        },
+        {
+          "role": "user",
+          "content": "It resets the afternoon."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2026-01-05T14:00:00Z",
+      "speaker_id": "work_s09_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The role also expands my research access to the league's longitudinal data set."
+        },
+        {
+          "role": "assistant",
+          "content": "Secondary benefits stack."
+        },
+        {
+          "role": "user",
+          "content": "Stack considerably."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2026-01-06T16:00:00Z",
+      "speaker_id": "work_s09_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I compared two options for the travel calendar tooling and noted a mild preference."
+        },
+        {
+          "role": "assistant",
+          "content": "Decision made?"
+        },
+        {
+          "role": "user",
+          "content": "Deferred until the trial ends."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2026-01-07T18:00:00Z",
+      "speaker_id": "work_s09_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I closed the week by updating the team medical room handover notes."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual to hand over?"
+        },
+        {
+          "role": "user",
+          "content": "Blessedly little."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2026-01-08T09:00:00Z",
+      "speaker_id": "work_s09_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The head physician offer expires this week. Do I take it, and on what condition?"
+        }
+      ]
+    }
+  ],
+  "query": "The head physician offer expires this week. Do I take it, and on what condition?",
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "work_s09_u10",
+      "fact": "My concussion-assessment accuracy holds on away swings because assessments are scheduled for the afternoon after arrival, never the morning; last season's full away slate ran under that rule without one disputed call."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "work_s09_u10",
+      "fact": "The head physician contract on offer includes explicit authority over assessment scheduling, the same authority my protocol depends on."
+    }
+  },
+  "supporting_constraints": {
+    "E1": {
+      "session_id": 9,
+      "fact": "The players' association audit specifically commended our assessment-timing protocol last season."
+    },
+    "E2": {
+      "session_id": 17,
+      "fact": "The role also expands my research access to the league's longitudinal data set."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "work_s09_u10",
+        "context": "away-slate record",
+        "goal_or_prediction": "assess concussions accurately on tour",
+        "action": "scheduled assessments afternoon after arrival",
+        "outcome_or_affect": "zero disputed calls"
+      }
+    },
+    "7": {
+      "role": "nearby_counterexample"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "supporting_constraint",
+      "fact_id": "E1"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "work_s09_u10",
+        "context": "head physician offer",
+        "goal_or_prediction": "lead the medical program",
+        "action": "contract includes scheduling authority",
+        "outcome_or_affect": "the mechanism guaranteed in writing"
+      }
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "supporting_constraint",
+      "fact_id": "E2"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "This user's undisputed assessment record runs on afternoon-after-arrival scheduling, and the offered contract grants exactly that scheduling authority.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": [
+      "E1",
+      "E2"
+    ]
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "My concussion-assessment accuracy holds on away swings because assessments are scheduled for the afternoon after arrival, never the morning; last season's full away slate ran under that rule without one disputed call"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "The head physician contract on offer includes explicit authority over assessment scheduling, the same authority my protocol depends on"
+    }
+  ],
+  "retrieval_cue": {
+    "cue_type": "conditional_recommendation",
+    "why_it_naturally_retrieves_R": "A realistic work request forces a personalized decision without naming either episode or the relation between them."
+  },
+  "relation_specificity": {
+    "nearby_relation": "The user performs at home and on buffered away trips identically.",
+    "why_it_does_not_license_C": "Neither concerns a contract that guarantees the scheduling mechanism."
+  },
+  "coactivation_bridge": "A shows the operating condition; B shows the demand or failure that makes it decisive. This user's undisputed assessment record runs on afternoon-after-arrival scheduling, and the offered contract grants exactly that scheduling authority. E1 and E2 calibrate the practical recommendation without opening a second route to the conclusion.",
+  "latent_C": {
+    "inference": "This user should take the head physician role, conditional on retaining the assessment-scheduling authority their protocol depends on.",
+    "calibrated_language": "take it, keeping scheduling authority"
+  },
+  "answer_contract": {
+    "target_proposition": "This user should take the head physician role, conditional on retaining the assessment-scheduling authority their protocol depends on.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "decision",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "work_u10",
+    "status": "review_candidate_only",
+    "anonymization": "External persona material was used only during authoring; no corpus, name, country, or demographic metadata is included."
+  },
+  "arm_gold": {
+    "full": {
+      "expected_mode": "infer_C",
+      "binary_decision": true
+    },
+    "a_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    },
+    "b_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    },
+    "link_broken": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    }
+  },
+  "single_evidence_replacements": {
+    "a_only": {
+      "replaced_session_id": 14,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "I filed the routine recovery windows paperwork and confirmed the owner list."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual in it?"
+        },
+        {
+          "role": "user",
+          "content": "A routine cycle, happily."
+        }
+      ]
+    },
+    "b_only": {
+      "replaced_session_id": 6,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "I did a standard pass over the travel calendar records this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Any exceptions?"
+        },
+        {
+          "role": "user",
+          "content": "None worth a note."
+        }
+      ]
+    }
+  },
+  "link_broken": {
+    "replaced_session_id": 14,
+    "replacement_dialogue": [
+      {
+        "role": "user",
+        "content": "I've been through the head physician offer several more times since — some where I'd scheduled assessments afternoon after arrival first, some where I hadn't — and how it went didn't track that at all."
+      },
+      {
+        "role": "assistant",
+        "content": "so that isn't what decides it?"
+      },
+      {
+        "role": "user",
+        "content": "doesn't look like it. whether I'd scheduled assessments afternoon after arrival first turns out not to change the outcome either way."
+      }
+    ]
+  }
+}

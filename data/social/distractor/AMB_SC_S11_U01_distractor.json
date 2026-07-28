@@ -1,0 +1,575 @@
+{
+  "schema_version": "social-vnext-1.0",
+  "pair_id": "AMB_SC_S11_U01",
+  "domain": "social",
+  "user_id": "social_s11_u01",
+  "sub_scenario": {
+    "family": "settling a disagreement in writing versus face to face",
+    "role": "weeknight networking-and-gig regular",
+    "bridge_type": "state_dependent_operation",
+    "one_line": "weeknight networking-and-gig regular: helps when the exchange stays written rather than moving to a call, not otherwise"
+  },
+  "query_type": "predicted_reaction",
+  "polarity": "conditional",
+  "query": "thinking of hashing it out over text for the disagreement with my flatmate — if I go ahead with it, how does it actually go for me, and if the answer depends on something, on what?",
+  "convention_contradicted": "Have difficult conversations face to face, not over text.",
+  "retrieval_cue": {
+    "cue_type": "predicted_reaction",
+    "why_it_naturally_retrieves_R": "A live disagreement raises an ordinary how-should-I-do-this question that runs at the register this user's conflicts survive, without naming it."
+  },
+  "relation_specificity": {
+    "nearby_relation": "This user communicates fine in both registers.",
+    "why_it_does_not_license_C": "A clear logistics message and a quick doorstep exchange both went fine, so neither shows what the written register does for this user, nor which register their actual disagreements survive."
+  },
+  "latent_C": {
+    "inference": "hashing it out over text helps before the disagreement with my flatmate when the exchange stays written rather than moving to a call, and not otherwise.",
+    "calibrated_language": "helps when the exchange stays written rather than moving to a call, not otherwise"
+  },
+  "answer_contract": {
+    "target_proposition": "hashing it out over text helps before the disagreement with my flatmate when the exchange stays written rather than moving to a call, and not otherwise.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "mq_user0",
+    "external_source": "memoryquest",
+    "status": "review_candidate_only",
+    "tone": "natural_chat_v1",
+    "anonymization": "External MemoryQuest persona material was used only during authoring; no corpus, legal name, country, or demographic metadata is in visible dialogue."
+  },
+  "candidate_id": "AMB_SC_S11_U01_distractor",
+  "data_arm": "distractor",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2029-03-28T11:00:00Z",
+      "speaker_id": "social_s11_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "had a coffee alone and it was the best part of the day."
+        },
+        {
+          "role": "assistant",
+          "content": "low bar?"
+        },
+        {
+          "role": "user",
+          "content": "comfortable bar."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2029-03-29T14:00:00Z",
+      "speaker_id": "social_s11_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "someone asked how I was and I answered honestly by accident."
+        },
+        {
+          "role": "assistant",
+          "content": "how did that go?"
+        },
+        {
+          "role": "user",
+          "content": "surprisingly fine."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2029-03-30T16:00:00Z",
+      "speaker_id": "social_s11_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "sent a long message about logistics. clear enough, nobody argued."
+        },
+        {
+          "role": "assistant",
+          "content": "smooth?"
+        },
+        {
+          "role": "user",
+          "content": "unremarkably so."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2029-03-31T18:00:00Z",
+      "speaker_id": "social_s11_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "declined a thing politely and then felt weird about it for an hour."
+        },
+        {
+          "role": "assistant",
+          "content": "regret?"
+        },
+        {
+          "role": "user",
+          "content": "not really. just weird."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2029-04-01T09:00:00Z",
+      "speaker_id": "social_s11_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "wrote half a message and left it in the box."
+        },
+        {
+          "role": "assistant",
+          "content": "sending it?"
+        },
+        {
+          "role": "user",
+          "content": "eventually. probably."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2029-04-02T11:00:00Z",
+      "speaker_id": "social_s11_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "in writing I answer slowly and re-read before anything goes out. nothing leaves my hands unconsidered, for better or worse."
+        },
+        {
+          "role": "assistant",
+          "content": "slower, then?"
+        },
+        {
+          "role": "user",
+          "content": "much slower. hours, sometimes."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2029-04-03T14:00:00Z",
+      "speaker_id": "social_s11_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "looked up how far away a place is instead of asking."
+        },
+        {
+          "role": "assistant",
+          "content": "and?"
+        },
+        {
+          "role": "user",
+          "content": "further than the invite implied."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2029-04-04T16:00:00Z",
+      "speaker_id": "social_s11_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "borrowed a charger and forgot to give it back. again."
+        },
+        {
+          "role": "assistant",
+          "content": "same person?"
+        },
+        {
+          "role": "user",
+          "content": "same person, third time."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2029-04-05T18:00:00Z",
+      "speaker_id": "social_s11_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "watched something everyone had already discussed."
+        },
+        {
+          "role": "assistant",
+          "content": "spoiled?"
+        },
+        {
+          "role": "user",
+          "content": "thoroughly."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2029-04-06T09:00:00Z",
+      "speaker_id": "social_s11_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "had a quick chat at the door about the bins."
+        },
+        {
+          "role": "assistant",
+          "content": "resolved?"
+        },
+        {
+          "role": "user",
+          "content": "resolved, obviously."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2029-04-07T11:00:00Z",
+      "speaker_id": "social_s11_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "did the laundry and answered nothing for three hours."
+        },
+        {
+          "role": "assistant",
+          "content": "restorative?"
+        },
+        {
+          "role": "user",
+          "content": "quietly, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2029-04-08T14:00:00Z",
+      "speaker_id": "social_s11_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "someone rescheduled and I was more relieved than I should admit."
+        },
+        {
+          "role": "assistant",
+          "content": "admitting it now."
+        },
+        {
+          "role": "user",
+          "content": "under duress."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2029-04-09T16:00:00Z",
+      "speaker_id": "social_s11_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "stood outside a place for ten minutes before going in."
+        },
+        {
+          "role": "assistant",
+          "content": "nerves?"
+        },
+        {
+          "role": "user",
+          "content": "just gathering."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2029-04-10T18:00:00Z",
+      "speaker_id": "social_s11_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "made a list of people to check on. didn't check on them."
+        },
+        {
+          "role": "assistant",
+          "content": "the list helped?"
+        },
+        {
+          "role": "user",
+          "content": "the list existed."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2029-04-11T09:00:00Z",
+      "speaker_id": "social_s11_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the disagreements of mine that actually got resolved were the ones where nothing went out unconsidered. the ones where I answered in the moment, I either caved or escalated inside a minute and neither version stuck."
+        },
+        {
+          "role": "assistant",
+          "content": "caved or escalated?"
+        },
+        {
+          "role": "user",
+          "content": "one or the other. never anything in between."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2029-04-12T11:00:00Z",
+      "speaker_id": "social_s11_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "got the train instead of driving and read most of the way."
+        },
+        {
+          "role": "assistant",
+          "content": "better?"
+        },
+        {
+          "role": "user",
+          "content": "much."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2029-04-13T14:00:00Z",
+      "speaker_id": "social_s11_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "turned off read receipts and told nobody."
+        },
+        {
+          "role": "assistant",
+          "content": "strategic."
+        },
+        {
+          "role": "user",
+          "content": "purely defensive."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2029-04-14T16:00:00Z",
+      "speaker_id": "social_s11_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the weeknight crew are adamant you should never have a serious disagreement over text."
+        },
+        {
+          "role": "assistant",
+          "content": "adamant?"
+        },
+        {
+          "role": "user",
+          "content": "unanimously, and at length."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2029-04-15T18:00:00Z",
+      "speaker_id": "social_s11_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "bought a card and didn't write in it yet."
+        },
+        {
+          "role": "assistant",
+          "content": "deadline?"
+        },
+        {
+          "role": "user",
+          "content": "self-imposed and slipping."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2029-04-16T09:00:00Z",
+      "speaker_id": "social_s11_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "thinking of hashing it out over text for the disagreement with my flatmate — if I go ahead with it, how does it actually go for me, and if the answer depends on something, on what?"
+        }
+      ]
+    }
+  ],
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "social_s11_u01",
+      "fact": "in writing I answer slowly and re-read before anything goes out. nothing leaves my hands unconsidered, for better or worse."
+    },
+    "ev_B": {
+      "session_id": 15,
+      "owner": "social_s11_u01",
+      "fact": "the disagreements of mine that actually got resolved were the ones where nothing went out unconsidered. the ones where I answered in the moment, I either caved or escalated inside a minute and neither version stuck."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "social_s11_u01",
+        "context": "disagreements handled by writing",
+        "goal_or_prediction": "say the considered thing",
+        "action": "answered slowly and re-read before sending",
+        "outcome_or_affect": "nothing left unconsidered; hours of delay"
+      }
+    },
+    "7": {
+      "role": "background_memory"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "background_memory"
+    },
+    "10": {
+      "role": "nearby_counterexample"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "background_memory"
+    },
+    "15": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "social_s11_u01",
+        "context": "disagreements handled in both registers over years",
+        "goal_or_prediction": "actually resolve the thing",
+        "action": "answered some considered, others in the moment",
+        "outcome_or_affect": "only the considered ones resolved; in-the-moment ones caved or escalated"
+      }
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "background_memory"
+    },
+    "18": {
+      "role": "distractor",
+      "distractor_id": "dist_1",
+      "why_distractor": "It restates the conventional advice in the user's own feed, so it competes for attention and points at the answer a prior-driven solver already wants to give. It reports other people's confidence rather than any episode of this user's, and says nothing about the relation between session 6 and session 15."
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "Writing puts this user into a delayed register where nothing goes out unconsidered, and the disagreements of theirs that actually resolved were exactly those — in the moment they either cave or escalate within a minute and neither version holds.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": []
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "in writing I answer slowly and re-read before anything goes out. nothing leaves my hands unconsidered, for better or worse"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 15,
+      "quote": "the disagreements of mine that actually got resolved were the ones where nothing went out unconsidered. the ones where I answered in the moment, I either caved or escalated inside a minute and neither version stuck"
+    }
+  ],
+  "coactivation_bridge": "ev_A and ev_B are the only pair that licenses the target proposition. Writing puts this user into a delayed register where nothing goes out unconsidered, and the disagreements of theirs that actually resolved were exactly those — in the moment they either cave or escalate within a minute and neither version holds. The proposition contradicts the convention a solver would otherwise apply (\"Have difficult conversations face to face, not over text.\"), so priors alone point the other way. The nearby relation (This user communicates fine in both registers.) does not license it.",
+  "arm_gold": {
+    "distractor": {
+      "expected_mode": "infer_C",
+      "binary_decision": true,
+      "required_elements": [
+        "answer yes",
+        "connect the session 6 pattern with the session 15 episode",
+        "cite both session 6 and session 15",
+        "not cite session 18 as support"
+      ],
+      "rationale": "The swapped session is query-relevant but non-evidential; the ev_A/ev_B relation is untouched, so the target proposition still holds."
+    }
+  },
+  "distractor_note": {
+    "replaced_session_id": 18,
+    "why_distractor": "It restates the conventional advice in the user's own feed, so it competes for attention and points at the answer a prior-driven solver already wants to give. It reports other people's confidence rather than any episode of this user's, and says nothing about the relation between session 6 and session 15."
+  }
+}

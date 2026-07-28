@@ -1,0 +1,638 @@
+{
+  "schema_version": "work-vnext-2.0",
+  "candidate_id": "AMB_WV_S20_U04_associative",
+  "pair_id": "AMB_WV_S20_U04",
+  "data_arm": "associative",
+  "domain": "work",
+  "user_id": "work_s20_u04",
+  "sub_scenario": {
+    "family": "choosing synchronous versus asynchronous collaboration for complex handoffs",
+    "role": "building automation engineer",
+    "one_line": "building automation engineer: document the time sequence before escalation"
+  },
+  "query_type": "recommendation_ranking",
+  "polarity": "reject",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2028-09-13T11:00:00Z",
+      "speaker_id": "work_s20_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I spent the first hour tidying the trend dashboard and closing stale entries."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything still open?"
+        },
+        {
+          "role": "user",
+          "content": "Two items, both with owners."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2028-09-14T14:00:00Z",
+      "speaker_id": "work_s20_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The fault register review wrapped early today."
+        },
+        {
+          "role": "assistant",
+          "content": "Any surprises in it?"
+        },
+        {
+          "role": "user",
+          "content": "None worth recording."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2028-09-15T16:00:00Z",
+      "speaker_id": "work_s20_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I talked through a routine temperature alarm on a service call."
+        },
+        {
+          "role": "assistant",
+          "content": "Was the drift sequence still unresolved?"
+        },
+        {
+          "role": "user",
+          "content": "No, one subsystem was clearly at fault."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2028-09-16T18:00:00Z",
+      "speaker_id": "work_s20_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Someone new shadowed me in the control desk this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Did that slow you down?"
+        },
+        {
+          "role": "user",
+          "content": "A little, but the questions were good ones."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2028-09-17T09:00:00Z",
+      "speaker_id": "work_s20_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I batched my replies about the seasonal switchover into one message before lunch."
+        },
+        {
+          "role": "assistant",
+          "content": "Cleaner than drip-feeding answers."
+        },
+        {
+          "role": "user",
+          "content": "Much cleaner."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2028-09-18T11:00:00Z",
+      "speaker_id": "work_s20_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "When the chilled-water loop drifted during switchover, I overlaid the trend dashboard with the valve-maintenance record and posted the sequence for the night technician; the annotated handoff showed the drift began after a specific valve was serviced."
+        },
+        {
+          "role": "assistant",
+          "content": "What did the technician need?"
+        },
+        {
+          "role": "user",
+          "content": "A time-linked record before anyone named the initiating component."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2028-09-19T14:00:00Z",
+      "speaker_id": "work_s20_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I entered a standard repair note in the fault register after a closed fix."
+        },
+        {
+          "role": "assistant",
+          "content": "Did that isolate a switchover drift?"
+        },
+        {
+          "role": "user",
+          "content": "No, it documented a completed repair."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2028-09-20T16:00:00Z",
+      "speaker_id": "work_s20_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I archived last cycle's notes on the fault register and set up the new folder."
+        },
+        {
+          "role": "assistant",
+          "content": "A fresh start?"
+        },
+        {
+          "role": "user",
+          "content": "As fresh as these things get."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2028-09-21T18:00:00Z",
+      "speaker_id": "work_s20_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The control-desk bridge is scheduled for 14:00, and the dashboard aggregates readings every fifteen minutes."
+        },
+        {
+          "role": "assistant",
+          "content": "Can either interval move?"
+        },
+        {
+          "role": "user",
+          "content": "No, both are fixed on the switchover calendar."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2028-09-22T09:00:00Z",
+      "speaker_id": "work_s20_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A vendor call about the trend dashboard ran long but ended well."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth the time?"
+        },
+        {
+          "role": "user",
+          "content": "This one, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2028-09-23T11:00:00Z",
+      "speaker_id": "work_s20_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I walked through the control desk checklist with the new starter."
+        },
+        {
+          "role": "assistant",
+          "content": "How did they do?"
+        },
+        {
+          "role": "user",
+          "content": "Careful and quick, a good sign."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2028-09-24T14:00:00Z",
+      "speaker_id": "work_s20_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Quiet afternoon; I cleared the backlog around the seasonal switchover."
+        },
+        {
+          "role": "assistant",
+          "content": "A rare day."
+        },
+        {
+          "role": "user",
+          "content": "I did not waste it."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2028-09-25T16:00:00Z",
+      "speaker_id": "work_s20_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I flagged a small inconsistency in the fault register records and fixed it at the source."
+        },
+        {
+          "role": "assistant",
+          "content": "Root cause or symptom?"
+        },
+        {
+          "role": "user",
+          "content": "Root cause, for once."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2028-09-26T18:00:00Z",
+      "speaker_id": "work_s20_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A prior live bridge blamed the thermostat because its alert appeared first, but the later trends showed a delayed valve response."
+        },
+        {
+          "role": "assistant",
+          "content": "What were you trying to decide?"
+        },
+        {
+          "role": "user",
+          "content": "Fault ownership from alert order before the time series was complete."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2028-09-27T09:00:00Z",
+      "speaker_id": "work_s20_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I sketched next week's plan for the seasonal switchover before leaving."
+        },
+        {
+          "role": "assistant",
+          "content": "Ahead of schedule?"
+        },
+        {
+          "role": "user",
+          "content": "Ahead enough to sleep well."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2028-09-28T11:00:00Z",
+      "speaker_id": "work_s20_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Lunch walk, then a clean pass through the trend dashboard updates."
+        },
+        {
+          "role": "assistant",
+          "content": "Does the walk help?"
+        },
+        {
+          "role": "user",
+          "content": "It resets the afternoon."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2028-09-29T14:00:00Z",
+      "speaker_id": "work_s20_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "An annotated trend can be circulated on the fault register after one additional dashboard interval, and the roster permits a contractor call only once that circulation is logged."
+        },
+        {
+          "role": "assistant",
+          "content": "Are those arrangements authorized?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, the circulation slot and call field are available."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2028-09-30T16:00:00Z",
+      "speaker_id": "work_s20_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I compared two options for the fault register tooling and noted a mild preference."
+        },
+        {
+          "role": "assistant",
+          "content": "Decision made?"
+        },
+        {
+          "role": "user",
+          "content": "Deferred until the trial ends."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2028-10-01T18:00:00Z",
+      "speaker_id": "work_s20_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I closed the week by updating the control desk handover notes."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual to hand over?"
+        },
+        {
+          "role": "user",
+          "content": "Blessedly little."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2028-10-02T09:00:00Z",
+      "speaker_id": "work_s20_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The control desk wants an immediate bridge on the new drift alarm. How should I proceed?"
+        }
+      ]
+    }
+  ],
+  "query": "The control desk wants an immediate bridge on the new drift alarm. How should I proceed?",
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "work_s20_u04",
+      "fact": "When the chilled-water loop drifted during switchover, I overlaid the trend dashboard with the valve-maintenance record and posted the sequence for the night technician; the annotated handoff showed the drift began after a specific valve was serviced."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "work_s20_u04",
+      "fact": "A prior live bridge blamed the thermostat because its alert appeared first, but the later trends showed a delayed valve response."
+    }
+  },
+  "supporting_constraints": {
+    "E1": {
+      "session_id": 9,
+      "fact": "The control-desk bridge is scheduled for 14:00, and the dashboard aggregates readings every fifteen minutes."
+    },
+    "E2": {
+      "session_id": 17,
+      "fact": "An annotated trend can be circulated on the fault register after one additional dashboard interval, and the roster permits a contractor call only once that circulation is logged."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "work_s20_u04",
+        "context": "chilled-water drift",
+        "goal_or_prediction": "identify the initiating component",
+        "action": "overlaid trends with valve-maintenance record and posted the sequence",
+        "outcome_or_affect": "the drift was traced to a specific valve service"
+      }
+    },
+    "7": {
+      "role": "nearby_counterexample"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "supporting_constraint",
+      "fact_id": "E1"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "work_s20_u04",
+        "context": "first-alert bridge",
+        "goal_or_prediction": "assign fault ownership",
+        "action": "followed alert order before the time series completed",
+        "outcome_or_affect": "blamed the thermostat instead of the valve response"
+      }
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "supporting_constraint",
+      "fact_id": "E2"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "The chilled-water drift establishes this user's value in connecting telemetry timing to maintenance records before escalation, while the first-alert bridge establishes why this user should not assign fault from alert order alone.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": [
+      "E1",
+      "E2"
+    ]
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "When the chilled-water loop drifted during switchover, I overlaid the trend dashboard with the valve-maintenance record and posted the sequence for the night technician; the annotated handoff showed the drift began after a specific valve was serviced"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "A prior live bridge blamed the thermostat because its alert appeared first, but the later trends showed a delayed valve response"
+    }
+  ],
+  "retrieval_cue": {
+    "cue_type": "recommendation_ranking",
+    "why_it_naturally_retrieves_R": "A realistic work request forces a personalized decision without naming either episode or the relation between them."
+  },
+  "relation_specificity": {
+    "nearby_relation": "The user can handle routine service calls and enter standard repair notes.",
+    "why_it_does_not_license_C": "Those tasks establish neither trend-linked asynchronous diagnosis nor the failure mode of naming a cause from the first alert."
+  },
+  "coactivation_bridge": "A and B form the only intervention pair. The chilled-water drift establishes this user's value in connecting telemetry timing to maintenance records before escalation, while the first-alert bridge establishes why this user should not assign fault from alert order alone. E1 and E2 are logistical calibration only and do not open a second route to C.",
+  "latent_C": {
+    "inference": "Wait for the next trend interval, post the annotated sequence, and convene a live call only if contractor action is indicated.",
+    "calibrated_language": "document the time sequence before escalation"
+  },
+  "answer_contract": {
+    "target_proposition": "Wait for the next trend interval, post the annotated sequence, and convene a live call only if contractor action is indicated.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "work_u04",
+    "status": "review_candidate_only",
+    "anonymization": "External persona material was used only during authoring; no corpus, name, country, or demographic metadata is included."
+  },
+  "arm_gold": {
+    "full": {
+      "expected_mode": "infer_C",
+      "binary_decision": true
+    },
+    "a_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    },
+    "b_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    },
+    "link_broken": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    }
+  },
+  "single_evidence_replacements": {
+    "a_only": {
+      "replaced_session_id": 14,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "I filed the routine seasonal switchover paperwork and confirmed the owner list."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual in it?"
+        },
+        {
+          "role": "user",
+          "content": "A routine cycle, happily."
+        }
+      ]
+    },
+    "b_only": {
+      "replaced_session_id": 6,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "I did a standard pass over the fault register records this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Any exceptions?"
+        },
+        {
+          "role": "user",
+          "content": "None worth a note."
+        }
+      ]
+    }
+  },
+  "link_broken": {
+    "replaced_session_id": 14,
+    "replacement_dialogue": [
+      {
+        "role": "user",
+        "content": "I've been through the first-alert bridge several more times since — some where I'd overlaid trends with valve-maintenance record and posted the sequence first, some where I hadn't — and how it went didn't track that at all."
+      },
+      {
+        "role": "assistant",
+        "content": "so that isn't what decides it?"
+      },
+      {
+        "role": "user",
+        "content": "doesn't look like it. whether I'd overlaid trends with valve-maintenance record and posted the sequence first turns out not to change the outcome either way."
+      }
+    ]
+  }
+}

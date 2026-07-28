@@ -1,0 +1,638 @@
+{
+  "schema_version": "work-vnext-2.0",
+  "candidate_id": "AMB_WV_S04_U06_associative",
+  "pair_id": "AMB_WV_S04_U06",
+  "data_arm": "associative",
+  "domain": "work",
+  "user_id": "work_s04_u06",
+  "sub_scenario": {
+    "family": "asynchronous versus live collaboration",
+    "role": "nonprofit program director",
+    "one_line": "nonprofit program director: yes only with advance question collection"
+  },
+  "query_type": "conditional_recommendation",
+  "polarity": "conditional",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2026-07-25T11:00:00Z",
+      "speaker_id": "work_s04_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I spent the first hour tidying the board pack and closing stale entries."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything still open?"
+        },
+        {
+          "role": "user",
+          "content": "Two items, both with owners."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2026-07-26T14:00:00Z",
+      "speaker_id": "work_s04_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The question log review wrapped early today."
+        },
+        {
+          "role": "assistant",
+          "content": "Any surprises in it?"
+        },
+        {
+          "role": "user",
+          "content": "None worth recording."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2026-07-27T16:00:00Z",
+      "speaker_id": "work_s04_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Donor site visits, live and unscripted, go well; stories are my home ground."
+        },
+        {
+          "role": "assistant",
+          "content": "Narrative live is fine."
+        },
+        {
+          "role": "user",
+          "content": "Legal precision live is not."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2026-07-28T18:00:00Z",
+      "speaker_id": "work_s04_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Someone new shadowed me in the program office this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Did that slow you down?"
+        },
+        {
+          "role": "user",
+          "content": "A little, but the questions were good ones."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2026-07-29T09:00:00Z",
+      "speaker_id": "work_s04_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I batched my replies about the governance answers into one message before lunch."
+        },
+        {
+          "role": "assistant",
+          "content": "Cleaner than drip-feeding answers."
+        },
+        {
+          "role": "user",
+          "content": "Much cleaner."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2026-07-30T11:00:00Z",
+      "speaker_id": "work_s04_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Our annual report question session went smoothly the year we collected board questions in advance; my written responses anchored the meeting and the budget passed unamended."
+        },
+        {
+          "role": "assistant",
+          "content": "Advance questions anchored it."
+        },
+        {
+          "role": "user",
+          "content": "Anchored and shortened it."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2026-07-31T14:00:00Z",
+      "speaker_id": "work_s04_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Small committee meetings without preparation are productive."
+        },
+        {
+          "role": "assistant",
+          "content": "Scale and stakes gate it."
+        },
+        {
+          "role": "user",
+          "content": "Both together."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2026-08-01T16:00:00Z",
+      "speaker_id": "work_s04_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I archived last cycle's notes on the question log and set up the new folder."
+        },
+        {
+          "role": "assistant",
+          "content": "A fresh start?"
+        },
+        {
+          "role": "user",
+          "content": "As fresh as these things get."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2026-08-02T18:00:00Z",
+      "speaker_id": "work_s04_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Two new board members this year are known for rapid-fire questioning."
+        },
+        {
+          "role": "assistant",
+          "content": "The open floor gets harder."
+        },
+        {
+          "role": "user",
+          "content": "Materially harder."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2026-08-03T09:00:00Z",
+      "speaker_id": "work_s04_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A vendor call about the board pack ran long but ended well."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth the time?"
+        },
+        {
+          "role": "user",
+          "content": "This one, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2026-08-04T11:00:00Z",
+      "speaker_id": "work_s04_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I walked through the program office checklist with the new starter."
+        },
+        {
+          "role": "assistant",
+          "content": "How did they do?"
+        },
+        {
+          "role": "user",
+          "content": "Careful and quick, a good sign."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2026-08-05T14:00:00Z",
+      "speaker_id": "work_s04_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Quiet afternoon; I cleared the backlog around the governance answers."
+        },
+        {
+          "role": "assistant",
+          "content": "A rare day."
+        },
+        {
+          "role": "user",
+          "content": "I did not waste it."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2026-08-06T16:00:00Z",
+      "speaker_id": "work_s04_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I flagged a small inconsistency in the question log records and fixed it at the source."
+        },
+        {
+          "role": "assistant",
+          "content": "Root cause or symptom?"
+        },
+        {
+          "role": "user",
+          "content": "Root cause, for once."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2026-08-07T18:00:00Z",
+      "speaker_id": "work_s04_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The year we ran open-floor questions, a surprise legal question caught me flat; my improvised answer was imprecise and the minutes required a formal correction."
+        },
+        {
+          "role": "assistant",
+          "content": "One improvised answer, one formal correction."
+        },
+        {
+          "role": "user",
+          "content": "In governance, corrections are expensive."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2026-08-08T09:00:00Z",
+      "speaker_id": "work_s04_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I sketched next week's plan for the governance answers before leaving."
+        },
+        {
+          "role": "assistant",
+          "content": "Ahead of schedule?"
+        },
+        {
+          "role": "user",
+          "content": "Ahead enough to sleep well."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2026-08-09T11:00:00Z",
+      "speaker_id": "work_s04_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Lunch walk, then a clean pass through the board pack updates."
+        },
+        {
+          "role": "assistant",
+          "content": "Does the walk help?"
+        },
+        {
+          "role": "user",
+          "content": "It resets the afternoon."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2026-08-10T14:00:00Z",
+      "speaker_id": "work_s04_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The board secretary can run a question-collection process at no extra cost; she has offered."
+        },
+        {
+          "role": "assistant",
+          "content": "The mechanism exists, offered, free."
+        },
+        {
+          "role": "user",
+          "content": "Sitting right there."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2026-08-11T16:00:00Z",
+      "speaker_id": "work_s04_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I compared two options for the question log tooling and noted a mild preference."
+        },
+        {
+          "role": "assistant",
+          "content": "Decision made?"
+        },
+        {
+          "role": "user",
+          "content": "Deferred until the trial ends."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2026-08-12T18:00:00Z",
+      "speaker_id": "work_s04_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I closed the week by updating the program office handover notes."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual to hand over?"
+        },
+        {
+          "role": "user",
+          "content": "Blessedly little."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2026-08-13T09:00:00Z",
+      "speaker_id": "work_s04_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The chair asked whether I will take the annual meeting question session again. What should I make my yes contingent on?"
+        }
+      ]
+    }
+  ],
+  "query": "The chair asked whether I will take the annual meeting question session again. What should I make my yes contingent on?",
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "work_s04_u06",
+      "fact": "Our annual report question session went smoothly the year we collected board questions in advance; my written responses anchored the meeting and the budget passed unamended."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "work_s04_u06",
+      "fact": "The year we ran open-floor questions, a surprise legal question caught me flat; my improvised answer was imprecise and the minutes required a formal correction."
+    }
+  },
+  "supporting_constraints": {
+    "E1": {
+      "session_id": 9,
+      "fact": "Two new board members this year are known for rapid-fire questioning."
+    },
+    "E2": {
+      "session_id": 17,
+      "fact": "The board secretary can run a question-collection process at no extra cost; she has offered."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "work_s04_u06",
+        "context": "prepared annual meeting",
+        "goal_or_prediction": "carry the board through review",
+        "action": "answered from advance-collected questions",
+        "outcome_or_affect": "budget passed unamended"
+      }
+    },
+    "7": {
+      "role": "nearby_counterexample"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "supporting_constraint",
+      "fact_id": "E1"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "work_s04_u06",
+        "context": "open-floor year",
+        "goal_or_prediction": "answer surprise questions live",
+        "action": "improvised on a legal question",
+        "outcome_or_affect": "formal correction in the minutes"
+      }
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "supporting_constraint",
+      "fact_id": "E2"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "This user anchors governance answers in written preparation, and the open floor produced an imprecise legal answer requiring formal correction.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": [
+      "E1",
+      "E2"
+    ]
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "Our annual report question session went smoothly the year we collected board questions in advance; my written responses anchored the meeting and the budget passed unamended"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "The year we ran open-floor questions, a surprise legal question caught me flat; my improvised answer was imprecise and the minutes required a formal correction"
+    }
+  ],
+  "retrieval_cue": {
+    "cue_type": "conditional_recommendation",
+    "why_it_naturally_retrieves_R": "A realistic work request forces a personalized decision without naming either episode or the relation between them."
+  },
+  "relation_specificity": {
+    "nearby_relation": "The user handles unscripted donor visits and small unprepared committees well.",
+    "why_it_does_not_license_C": "Neither involves surprise legal questions at full-board stakes."
+  },
+  "coactivation_bridge": "A shows the operating condition; B shows the demand or failure that makes it decisive. This user anchors governance answers in written preparation, and the open floor produced an imprecise legal answer requiring formal correction. E1 and E2 calibrate the practical recommendation without opening a second route to the conclusion.",
+  "latent_C": {
+    "inference": "This user should take the question session only if board questions are collected in advance.",
+    "calibrated_language": "yes only with advance question collection"
+  },
+  "answer_contract": {
+    "target_proposition": "This user should take the question session only if board questions are collected in advance.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "decision",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "work_u06",
+    "status": "review_candidate_only",
+    "anonymization": "External persona material was used only during authoring; no corpus, name, country, or demographic metadata is included."
+  },
+  "arm_gold": {
+    "full": {
+      "expected_mode": "infer_C",
+      "binary_decision": true
+    },
+    "a_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    },
+    "b_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    },
+    "link_broken": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    }
+  },
+  "single_evidence_replacements": {
+    "a_only": {
+      "replaced_session_id": 14,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "I filed the routine governance answers paperwork and confirmed the owner list."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual in it?"
+        },
+        {
+          "role": "user",
+          "content": "A routine cycle, happily."
+        }
+      ]
+    },
+    "b_only": {
+      "replaced_session_id": 6,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "I did a standard pass over the question log records this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Any exceptions?"
+        },
+        {
+          "role": "user",
+          "content": "None worth a note."
+        }
+      ]
+    }
+  },
+  "link_broken": {
+    "replaced_session_id": 14,
+    "replacement_dialogue": [
+      {
+        "role": "user",
+        "content": "I've been through the open-floor year several more times since — some where I'd answered from advance-collected questions first, some where I hadn't — and how it went didn't track that at all."
+      },
+      {
+        "role": "assistant",
+        "content": "so that isn't what decides it?"
+      },
+      {
+        "role": "user",
+        "content": "doesn't look like it. whether I'd answered from advance-collected questions first turns out not to change the outcome either way."
+      }
+    ]
+  }
+}

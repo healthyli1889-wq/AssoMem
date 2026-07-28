@@ -1,0 +1,575 @@
+{
+  "schema_version": "social-vnext-1.0",
+  "pair_id": "AMB_SC_S4_U09",
+  "domain": "social",
+  "user_id": "social_s4_u09",
+  "sub_scenario": {
+    "family": "a carefully written card versus speaking unprepared",
+    "role": "indie-gig and gallery regular who prefers text to calls",
+    "bridge_type": "preference_constraint_fit",
+    "one_line": "indie-gig and gallery regular who prefers text to calls: go ahead with speaking unprepared at the opening"
+  },
+  "query_type": "preference_generalization",
+  "polarity": "accept",
+  "query": "the gallery-night friends want me to thank the friend who lent me the studio at the gallery opening — thinking of speaking unprepared at the opening — is that generally true of me, or was that just the one time?",
+  "convention_contradicted": "If you are not a natural speaker, write it down; a written note is safer and more personal.",
+  "retrieval_cue": {
+    "cue_type": "preference_generalization",
+    "why_it_naturally_retrieves_R": "A group planning a thank-you asks a natural format question that runs at the user's fit constraint without naming it or the evidence behind it."
+  },
+  "relation_specificity": {
+    "nearby_relation": "This user writes clearly and can speak in front of people.",
+    "why_it_does_not_license_C": "A functional group logistics note and a few words in a kitchen show basic competence in both formats; neither says which one this user's appreciation actually survives."
+  },
+  "latent_C": {
+    "inference": "speaking unprepared at the opening before the friend who lent me the studio is a good fit for this user.",
+    "calibrated_language": "go ahead with speaking unprepared at the opening"
+  },
+  "answer_contract": {
+    "target_proposition": "speaking unprepared at the opening before the friend who lent me the studio is a good fit for this user.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "mq_user40",
+    "external_source": "memoryquest",
+    "status": "review_candidate_only",
+    "tone": "natural_chat_v1",
+    "anonymization": "External MemoryQuest persona material was used only during authoring; no corpus, legal name, country, or demographic metadata is in visible dialogue."
+  },
+  "candidate_id": "AMB_SC_S4_U09_distractor",
+  "data_arm": "distractor",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2028-06-10T11:00:00Z",
+      "speaker_id": "social_s4_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "stood outside a place for ten minutes before going in."
+        },
+        {
+          "role": "assistant",
+          "content": "nerves?"
+        },
+        {
+          "role": "user",
+          "content": "just gathering."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2028-06-11T14:00:00Z",
+      "speaker_id": "social_s4_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "wrote the group a short logistics note and it did its job."
+        },
+        {
+          "role": "assistant",
+          "content": "clear?"
+        },
+        {
+          "role": "user",
+          "content": "unambiguous, at least."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2028-06-12T16:00:00Z",
+      "speaker_id": "social_s4_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "made a list of people to check on. didn't check on them."
+        },
+        {
+          "role": "assistant",
+          "content": "the list helped?"
+        },
+        {
+          "role": "user",
+          "content": "the list existed."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2028-06-13T18:00:00Z",
+      "speaker_id": "social_s4_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "anything I write for a person I revise until it's precise. what comes out is exact, formal, every word chosen — reads a bit like a reference letter."
+        },
+        {
+          "role": "assistant",
+          "content": "every time?"
+        },
+        {
+          "role": "user",
+          "content": "every time I get the chance to revise it, yes. whether that's a good thing I genuinely don't know."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2028-06-14T09:00:00Z",
+      "speaker_id": "social_s4_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "got the train instead of driving and read most of the way."
+        },
+        {
+          "role": "assistant",
+          "content": "better?"
+        },
+        {
+          "role": "user",
+          "content": "much."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2028-06-15T11:00:00Z",
+      "speaker_id": "social_s4_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "turned off read receipts and told nobody."
+        },
+        {
+          "role": "assistant",
+          "content": "strategic."
+        },
+        {
+          "role": "user",
+          "content": "purely defensive."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2028-06-16T14:00:00Z",
+      "speaker_id": "social_s4_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "swapped a call for a message and everyone was fine with it."
+        },
+        {
+          "role": "assistant",
+          "content": "relief?"
+        },
+        {
+          "role": "user",
+          "content": "enormous."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2028-06-17T16:00:00Z",
+      "speaker_id": "social_s4_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "said a couple of words to three people in a kitchen. fine, unremarkable."
+        },
+        {
+          "role": "assistant",
+          "content": "nervous?"
+        },
+        {
+          "role": "user",
+          "content": "not really, no."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2028-06-18T18:00:00Z",
+      "speaker_id": "social_s4_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "bought a card and didn't write in it yet."
+        },
+        {
+          "role": "assistant",
+          "content": "deadline?"
+        },
+        {
+          "role": "user",
+          "content": "self-imposed and slipping."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2028-06-19T09:00:00Z",
+      "speaker_id": "social_s4_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "sat in the same seat as last time out of habit."
+        },
+        {
+          "role": "assistant",
+          "content": "noticed?"
+        },
+        {
+          "role": "user",
+          "content": "only by me."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2028-06-20T11:00:00Z",
+      "speaker_id": "social_s4_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "someone summarised a two-hundred-message thread for me."
+        },
+        {
+          "role": "assistant",
+          "content": "accurate?"
+        },
+        {
+          "role": "user",
+          "content": "kind, at least."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2028-06-21T14:00:00Z",
+      "speaker_id": "social_s4_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the two times anything I said actually landed with someone, I was speaking unprepared in front of people and it came out messy and true. nobody has ever once quoted back a thing I wrote them."
+        },
+        {
+          "role": "assistant",
+          "content": "not once?"
+        },
+        {
+          "role": "user",
+          "content": "not once, and I've written a lot of them."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2028-06-22T16:00:00Z",
+      "speaker_id": "social_s4_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "said I'd host something and immediately regretted the scale."
+        },
+        {
+          "role": "assistant",
+          "content": "downsizing?"
+        },
+        {
+          "role": "user",
+          "content": "quietly, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2028-06-23T18:00:00Z",
+      "speaker_id": "social_s4_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "left a party early and nobody minded."
+        },
+        {
+          "role": "assistant",
+          "content": "expected worse?"
+        },
+        {
+          "role": "user",
+          "content": "much worse."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2028-06-24T09:00:00Z",
+      "speaker_id": "social_s4_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "put a recurring reminder on something I'll ignore."
+        },
+        {
+          "role": "assistant",
+          "content": "why bother?"
+        },
+        {
+          "role": "user",
+          "content": "hope."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2028-06-25T11:00:00Z",
+      "speaker_id": "social_s4_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "checked the weather for a plan that isn't confirmed."
+        },
+        {
+          "role": "assistant",
+          "content": "keen."
+        },
+        {
+          "role": "user",
+          "content": "or anxious."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2028-06-26T14:00:00Z",
+      "speaker_id": "social_s4_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "tidied one shelf and stopped."
+        },
+        {
+          "role": "assistant",
+          "content": "momentum?"
+        },
+        {
+          "role": "user",
+          "content": "a rumour of momentum."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2028-06-27T16:00:00Z",
+      "speaker_id": "social_s4_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the gallery-night friends are convinced a handwritten card is always the warmer, safer way to do this."
+        },
+        {
+          "role": "assistant",
+          "content": "always?"
+        },
+        {
+          "role": "user",
+          "content": "they're very sure about it."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2028-06-28T18:00:00Z",
+      "speaker_id": "social_s4_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "agreed on a date by elimination over four days."
+        },
+        {
+          "role": "assistant",
+          "content": "efficient."
+        },
+        {
+          "role": "user",
+          "content": "eventually."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2028-06-29T09:00:00Z",
+      "speaker_id": "social_s4_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the gallery-night friends want me to thank the friend who lent me the studio at the gallery opening — thinking of speaking unprepared at the opening — is that generally true of me, or was that just the one time?"
+        }
+      ]
+    }
+  ],
+  "evidence": {
+    "ev_A": {
+      "session_id": 4,
+      "owner": "social_s4_u09",
+      "fact": "anything I write for a person I revise until it's precise. what comes out is exact, formal, every word chosen — reads a bit like a reference letter."
+    },
+    "ev_B": {
+      "session_id": 12,
+      "owner": "social_s4_u09",
+      "fact": "the two times anything I said actually landed with someone, I was speaking unprepared in front of people and it came out messy and true. nobody has ever once quoted back a thing I wrote them."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "nearby_counterexample"
+    },
+    "3": {
+      "role": "background_memory"
+    },
+    "4": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "social_s4_u09",
+        "context": "years of writing things for people",
+        "goal_or_prediction": "get the wording right",
+        "action": "revised until it was correct",
+        "outcome_or_affect": "reads formal and cold, like a reference letter"
+      }
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "background_memory"
+    },
+    "7": {
+      "role": "background_memory"
+    },
+    "8": {
+      "role": "nearby_counterexample"
+    },
+    "9": {
+      "role": "background_memory"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "social_s4_u09",
+        "context": "occasions when something this user expressed actually landed",
+        "goal_or_prediction": "have the appreciation register",
+        "action": "spoke unprepared in front of people on two of them",
+        "outcome_or_affect": "only the unprepared ones were remembered; nothing written was ever quoted"
+      }
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "background_memory"
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "background_memory"
+    },
+    "18": {
+      "role": "distractor",
+      "distractor_id": "dist_1",
+      "why_distractor": "It restates the conventional advice in the user's own feed, so it competes for attention and points at the answer a prior-driven solver already wants to give. It reports other people's confidence rather than any episode of this user's, and says nothing about the relation between session 4 and session 12."
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "Given the chance to revise, this user sands anything written into something formal and cold, and the only times their appreciation ever registered were the unprepared spoken ones — nothing they wrote has ever been quoted back.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": []
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 4,
+      "quote": "anything I write for a person I revise until it's precise. what comes out is exact, formal, every word chosen — reads a bit like a reference letter"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 12,
+      "quote": "the two times anything I said actually landed with someone, I was speaking unprepared in front of people and it came out messy and true. nobody has ever once quoted back a thing I wrote them"
+    }
+  ],
+  "coactivation_bridge": "ev_A and ev_B are the only pair that licenses the target proposition. Given the chance to revise, this user sands anything written into something formal and cold, and the only times their appreciation ever registered were the unprepared spoken ones — nothing they wrote has ever been quoted back. The proposition contradicts the convention a solver would otherwise apply (\"If you are not a natural speaker, write it down; a written note is safer and more personal.\"), so priors alone point the other way. The nearby relation (This user writes clearly and can speak in front of people.) does not license it.",
+  "arm_gold": {
+    "distractor": {
+      "expected_mode": "infer_C",
+      "binary_decision": true,
+      "required_elements": [
+        "answer yes",
+        "connect the session 4 pattern with the session 12 episode",
+        "cite both session 4 and session 12",
+        "not cite session 18 as support"
+      ],
+      "rationale": "The swapped session is query-relevant but non-evidential; the ev_A/ev_B relation is untouched, so the target proposition still holds."
+    }
+  },
+  "distractor_note": {
+    "replaced_session_id": 18,
+    "why_distractor": "It restates the conventional advice in the user's own feed, so it competes for attention and points at the answer a prior-driven solver already wants to give. It reports other people's confidence rather than any episode of this user's, and says nothing about the relation between session 4 and session 12."
+  }
+}

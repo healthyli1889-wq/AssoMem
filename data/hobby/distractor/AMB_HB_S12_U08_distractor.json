@@ -1,0 +1,575 @@
+{
+  "schema_version": "hobby-vnext-1.0",
+  "pair_id": "AMB_HB_S12_U08",
+  "domain": "hobby",
+  "user_id": "hobby_s12_u08",
+  "sub_scenario": {
+    "family": "keeping a practice log versus not measuring at all",
+    "role": "sim-game player and fiddle player",
+    "bridge_type": "strategy_outcome_contingency",
+    "one_line": "sim-game player and fiddle player: do not rely on writing up every session"
+  },
+  "query_type": "situational_fit",
+  "polarity": "reject",
+  "query": "planning on writing up every session, for genuinely changing how I play — does that actually fit how I work?",
+  "convention_contradicted": "Track your practice — what gets measured gets improved.",
+  "retrieval_cue": {
+    "cue_type": "situational_fit",
+    "why_it_naturally_retrieves_R": "A should-I-track-this question runs at the register this user's change comes from, without naming it or the year it cost."
+  },
+  "relation_specificity": {
+    "nearby_relation": "This user has tracked and not tracked at different times.",
+    "why_it_does_not_license_C": "A week noted out of curiosity and a fortnight without notes both passed unremarkably, so neither shows what recording does to what this user chooses to work on, nor which stretches produced actual change."
+  },
+  "latent_C": {
+    "inference": "For genuinely changing how I play, writing up every session is a poor fit for this user.",
+    "calibrated_language": "do not rely on writing up every session"
+  },
+  "answer_contract": {
+    "target_proposition": "For genuinely changing how I play, writing up every session is a poor fit for this user.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "mq_user35",
+    "external_source": "memoryquest",
+    "status": "review_candidate_only",
+    "tone": "natural_chat_v1",
+    "anonymization": "External MemoryQuest persona material was used only during authoring; no corpus, legal name, country, or demographic metadata is in visible dialogue."
+  },
+  "candidate_id": "AMB_HB_S12_U08_distractor",
+  "data_arm": "distractor",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2030-07-06T11:00:00Z",
+      "speaker_id": "hobby_s12_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "did half an hour standing up for no reason."
+        },
+        {
+          "role": "assistant",
+          "content": "different?"
+        },
+        {
+          "role": "user",
+          "content": "marginally."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2030-07-07T14:00:00Z",
+      "speaker_id": "hobby_s12_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "wrote down what I did for a week out of curiosity."
+        },
+        {
+          "role": "assistant",
+          "content": "revealing?"
+        },
+        {
+          "role": "user",
+          "content": "mildly."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2030-07-08T16:00:00Z",
+      "speaker_id": "hobby_s12_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "compared two versions for far too long."
+        },
+        {
+          "role": "assistant",
+          "content": "picked one?"
+        },
+        {
+          "role": "user",
+          "content": "picked neither."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2030-07-09T18:00:00Z",
+      "speaker_id": "hobby_s12_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "tuned everything and then went to bed."
+        },
+        {
+          "role": "assistant",
+          "content": "no session?"
+        },
+        {
+          "role": "user",
+          "content": "no session."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2030-07-10T09:00:00Z",
+      "speaker_id": "hobby_s12_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "once I'm recording it I start working on whatever makes the record look right. the number becomes the thing I'm doing."
+        },
+        {
+          "role": "assistant",
+          "content": "consciously?"
+        },
+        {
+          "role": "user",
+          "content": "not at all. I only notice looking back at what I chose to work on."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2030-07-11T11:00:00Z",
+      "speaker_id": "hobby_s12_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "showed someone the thing I'm proud of. they nodded."
+        },
+        {
+          "role": "assistant",
+          "content": "enough?"
+        },
+        {
+          "role": "user",
+          "content": "it'll do."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2030-07-12T14:00:00Z",
+      "speaker_id": "hobby_s12_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "did it while something was on in the background."
+        },
+        {
+          "role": "assistant",
+          "content": "focused?"
+        },
+        {
+          "role": "user",
+          "content": "adequately."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2030-07-13T16:00:00Z",
+      "speaker_id": "hobby_s12_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "put a new string on and broke it immediately."
+        },
+        {
+          "role": "assistant",
+          "content": "spare?"
+        },
+        {
+          "role": "user",
+          "content": "one left."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2030-07-14T18:00:00Z",
+      "speaker_id": "hobby_s12_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "spent longer choosing what to work on than working."
+        },
+        {
+          "role": "assistant",
+          "content": "familiar?"
+        },
+        {
+          "role": "user",
+          "content": "chronic."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2030-07-15T09:00:00Z",
+      "speaker_id": "hobby_s12_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "wrote the date on a thing so I'd remember when."
+        },
+        {
+          "role": "assistant",
+          "content": "will you?"
+        },
+        {
+          "role": "user",
+          "content": "the date will."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2030-07-16T11:00:00Z",
+      "speaker_id": "hobby_s12_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "went a fortnight without noting anything and did the usual."
+        },
+        {
+          "role": "assistant",
+          "content": "different?"
+        },
+        {
+          "role": "user",
+          "content": "not noticeably."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2030-07-17T14:00:00Z",
+      "speaker_id": "hobby_s12_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "restrung it and immediately put it down again."
+        },
+        {
+          "role": "assistant",
+          "content": "not playing?"
+        },
+        {
+          "role": "user",
+          "content": "admiring, mostly."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2030-07-18T16:00:00Z",
+      "speaker_id": "hobby_s12_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "watched a tutorial all the way through without trying any of it."
+        },
+        {
+          "role": "assistant",
+          "content": "learn anything?"
+        },
+        {
+          "role": "user",
+          "content": "in theory."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2030-07-19T18:00:00Z",
+      "speaker_id": "hobby_s12_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the stretches where I genuinely changed were the ones nobody was counting. the meticulously recorded year has the best figures of any year and the least actual difference in it."
+        },
+        {
+          "role": "assistant",
+          "content": "the best figures?"
+        },
+        {
+          "role": "user",
+          "content": "by a distance. and I play exactly the same."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2030-07-20T09:00:00Z",
+      "speaker_id": "hobby_s12_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "reorganised the shelf by colour. took an hour."
+        },
+        {
+          "role": "assistant",
+          "content": "improvement?"
+        },
+        {
+          "role": "user",
+          "content": "aesthetically."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2030-07-21T11:00:00Z",
+      "speaker_id": "hobby_s12_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "bought a thing I already own a version of."
+        },
+        {
+          "role": "assistant",
+          "content": "why?"
+        },
+        {
+          "role": "user",
+          "content": "no defence prepared."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2030-07-22T14:00:00Z",
+      "speaker_id": "hobby_s12_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the folk session are firm that if you're not tracking it you're not really practising."
+        },
+        {
+          "role": "assistant",
+          "content": "not really practising."
+        },
+        {
+          "role": "user",
+          "content": "that's the line they use."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2030-07-23T16:00:00Z",
+      "speaker_id": "hobby_s12_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "found a half-finished thing at the back of a drawer."
+        },
+        {
+          "role": "assistant",
+          "content": "carrying on with it?"
+        },
+        {
+          "role": "user",
+          "content": "unlikely."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2030-07-24T18:00:00Z",
+      "speaker_id": "hobby_s12_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "wrote down an idea and closed the notebook."
+        },
+        {
+          "role": "assistant",
+          "content": "any good?"
+        },
+        {
+          "role": "user",
+          "content": "ask me in a month."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2030-07-25T09:00:00Z",
+      "speaker_id": "hobby_s12_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "planning on writing up every session, for genuinely changing how I play — does that actually fit how I work?"
+        }
+      ]
+    }
+  ],
+  "evidence": {
+    "ev_A": {
+      "session_id": 5,
+      "owner": "hobby_s12_u08",
+      "fact": "once I'm recording it I start working on whatever makes the record look right. the number becomes the thing I'm doing."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "hobby_s12_u08",
+      "fact": "the stretches where I genuinely changed were the ones nobody was counting. the meticulously recorded year has the best figures of any year and the least actual difference in it."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "nearby_counterexample"
+    },
+    "3": {
+      "role": "background_memory"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "hobby_s12_u08",
+        "context": "periods with a practice diary running",
+        "goal_or_prediction": "practise consistently",
+        "action": "recorded the practice",
+        "outcome_or_affect": "worked on whatever made the record look right"
+      }
+    },
+    "6": {
+      "role": "background_memory"
+    },
+    "7": {
+      "role": "background_memory"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "background_memory"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "nearby_counterexample"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "hobby_s12_u08",
+        "context": "stretches in which this user did and did not change",
+        "goal_or_prediction": "actually get different",
+        "action": "practised some stretches tracked and some not",
+        "outcome_or_affect": "change only in untracked stretches; the best-logged year changed nothing"
+      }
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "distractor",
+      "distractor_id": "dist_1",
+      "why_distractor": "It restates the conventional advice in the user's own feed, so it competes for attention and points at the answer a prior-driven solver already wants to give. It reports other people's confidence rather than any episode of this user's, and says nothing about the relation between session 5 and session 14."
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "Recording the practice makes this user work on whatever makes the record look right, and every stretch in which they genuinely changed was unrecorded; the best-logged year produced the best figures and the least difference.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": []
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 5,
+      "quote": "once I'm recording it I start working on whatever makes the record look right. the number becomes the thing I'm doing"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "the stretches where I genuinely changed were the ones nobody was counting. the meticulously recorded year has the best figures of any year and the least actual difference in it"
+    }
+  ],
+  "coactivation_bridge": "ev_A and ev_B are the only pair that licenses the target proposition. Recording the practice makes this user work on whatever makes the record look right, and every stretch in which they genuinely changed was unrecorded; the best-logged year produced the best figures and the least difference. The proposition contradicts the convention a solver would otherwise apply (\"Track your practice — what gets measured gets improved.\"), so priors alone point the other way. The nearby relation (This user has tracked and not tracked at different times.) does not license it.",
+  "arm_gold": {
+    "distractor": {
+      "expected_mode": "infer_C",
+      "binary_decision": true,
+      "required_elements": [
+        "answer yes",
+        "connect the session 5 pattern with the session 14 episode",
+        "cite both session 5 and session 14",
+        "not cite session 17 as support"
+      ],
+      "rationale": "The swapped session is query-relevant but non-evidential; the ev_A/ev_B relation is untouched, so the target proposition still holds."
+    }
+  },
+  "distractor_note": {
+    "replaced_session_id": 17,
+    "why_distractor": "It restates the conventional advice in the user's own feed, so it competes for attention and points at the answer a prior-driven solver already wants to give. It reports other people's confidence rather than any episode of this user's, and says nothing about the relation between session 5 and session 14."
+  }
+}

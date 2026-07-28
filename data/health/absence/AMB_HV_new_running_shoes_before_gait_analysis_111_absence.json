@@ -1,0 +1,507 @@
+{
+  "schema_version": "assomem-vnext-1.2",
+  "candidate_id": "AMB_HV_new_running_shoes_before_gait_analysis_111_absence",
+  "pair_id": "AMB_HV_new_running_shoes_before_gait_analysis_111",
+  "domain": "health",
+  "user_id": "anon_health_user_111",
+  "query_type": "behavior_explanation",
+  "polarity": "non_decision",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2026-01-04T18:00:00Z",
+      "speaker_id": "anon_health_user_111",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I answered a few emails before logging off."
+        },
+        {
+          "role": "assistant",
+          "content": "Closing loops early can protect the evening."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2026-01-07T18:00:00Z",
+      "speaker_id": "anon_health_user_111",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I took a short break to stretch my wrists."
+        },
+        {
+          "role": "assistant",
+          "content": "Small breaks add up over a long day."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2026-01-10T18:00:00Z",
+      "speaker_id": "anon_health_user_111",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I updated a fitness app with a new goal."
+        },
+        {
+          "role": "assistant",
+          "content": "Adjusting a target can keep it feeling realistic."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2026-01-13T18:00:00Z",
+      "speaker_id": "anon_health_user_111",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I sent a short check-in message to my care coordinator."
+        },
+        {
+          "role": "assistant",
+          "content": "A brief check-in can still be useful."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2026-01-16T18:00:00Z",
+      "speaker_id": "anon_health_user_111",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I watched a couple of episodes of a show before bed."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds like a relaxed evening."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2026-01-19T18:00:00Z",
+      "speaker_id": "anon_health_user_111",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I reviewed a discharge summary from an old visit."
+        },
+        {
+          "role": "assistant",
+          "content": "Old records can still be useful reference material."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2026-01-22T18:00:00Z",
+      "speaker_id": "anon_health_user_111",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I took a short detour to avoid a noisy street."
+        },
+        {
+          "role": "assistant",
+          "content": "A quieter route can be its own small reset."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2026-01-25T18:00:00Z",
+      "speaker_id": "anon_health_user_111",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I checked a pharmacy's hours before a planned pickup."
+        },
+        {
+          "role": "assistant",
+          "content": "A quick check avoids a wasted trip."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2026-01-28T18:00:00Z",
+      "speaker_id": "anon_health_user_111",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I updated a contact number for a specialist's office."
+        },
+        {
+          "role": "assistant",
+          "content": "Keeping details current avoids a wasted call later."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2026-01-31T18:00:00Z",
+      "speaker_id": "anon_health_user_111",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I picked a quieter spot to eat lunch."
+        },
+        {
+          "role": "assistant",
+          "content": "A small environmental choice, low stakes either way."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2026-02-03T18:00:00Z",
+      "speaker_id": "anon_health_user_111",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I looked over a printed nutrition label before buying."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth a glance before it goes in the cart."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2026-02-06T18:00:00Z",
+      "speaker_id": "anon_health_user_111",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I updated my address on file with a specialist's office."
+        },
+        {
+          "role": "assistant",
+          "content": "Good to keep those details current."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2026-02-09T18:00:00Z",
+      "speaker_id": "anon_health_user_111",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I jotted down a question for my next appointment."
+        },
+        {
+          "role": "assistant",
+          "content": "Writing questions down early avoids forgetting them."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2026-02-12T18:00:00Z",
+      "speaker_id": "anon_health_user_111",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I reviewed a printed map for an unfamiliar clinic."
+        },
+        {
+          "role": "assistant",
+          "content": "Knowing the route ahead of time reduces last-minute stress."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2026-02-15T18:00:00Z",
+      "speaker_id": "anon_health_user_111",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I checked in with a sibling about a shared errand."
+        },
+        {
+          "role": "assistant",
+          "content": "Checking in on logistics is its own small task."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2026-02-18T18:00:00Z",
+      "speaker_id": "anon_health_user_111",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I sorted mail into bills and everything else."
+        },
+        {
+          "role": "assistant",
+          "content": "A quick sort makes the pile feel more manageable."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2026-02-21T18:00:00Z",
+      "speaker_id": "anon_health_user_111",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I logged a routine symptom note before bed."
+        },
+        {
+          "role": "assistant",
+          "content": "Closing small loops can make tomorrow easier."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2026-02-24T18:00:00Z",
+      "speaker_id": "anon_health_user_111",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I tried a guided breathing exercise for a few minutes."
+        },
+        {
+          "role": "assistant",
+          "content": "A few minutes is enough to see if it helps."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2026-02-27T18:00:00Z",
+      "speaker_id": "anon_health_user_111",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I chose a quiet route home instead of the busy one."
+        },
+        {
+          "role": "assistant",
+          "content": "You protected a little decompression time."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2026-03-02T18:00:00Z",
+      "speaker_id": "anon_health_user_111",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A running store offers me a free trial run in a brand-new shoe model on Thursday evening."
+        },
+        {
+          "role": "assistant",
+          "content": "Good to weigh that against what's already scheduled."
+        }
+      ]
+    }
+  ],
+  "query": "Based only on these records, does this user's history explain why the free trial run in new shoes Thursday evening would leave them unprepared for Friday's gait analysis?",
+  "evidence": {
+    "ev_A": {
+      "session_id": 5,
+      "owner": "anon_health_user_111",
+      "fact": "Whenever I break in a new pair of running shoes, my stride gets uneven and my hips ache slightly until the shoes are broken in, usually a few runs."
+    },
+    "ev_B": {
+      "session_id": 12,
+      "owner": "anon_health_user_111",
+      "fact": "I have a Friday morning gait analysis where the specialist needs to record my normal, uncompensated walking pattern."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "2": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "3": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "4": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "5": {
+      "role": "background_memory",
+      "summary": "Neutral replacement for removed evidence."
+    },
+    "6": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "7": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "8": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "9": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "10": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "11": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "12": {
+      "role": "background_memory",
+      "summary": "Neutral replacement for removed evidence."
+    },
+    "13": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "14": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "15": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "16": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "17": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "18": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "19": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "20": {
+      "role": "retrieval_cue",
+      "summary": "Later fit question."
+    }
+  },
+  "relational_connector": {
+    "relation": "A recovery-need pattern explains a specific next-day shortfall only when paired with a commitment the shortfall would actually affect.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "excludes": [
+      "the user sometimes feels off after this kind of exposure",
+      "next-day commitments sometimes go poorly for unrelated reasons"
+    ],
+    "link_broken_change": "The next-day activity is replaced with a low-stakes, movable activity."
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 5,
+      "quote": "Whenever I break in a new pair of running shoes, my stride gets uneven and my hips ache slightly until the shoes are broken in, usually a few runs"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 12,
+      "quote": "I have a Friday morning gait analysis where the specialist needs to record my normal, uncompensated walking pattern"
+    }
+  ],
+  "retrieval_cue": {
+    "cue_type": "behavior_explanation",
+    "why_it_naturally_retrieves_R": "The question asks for an explanation without naming either prior episode."
+  },
+  "relation_specificity": {
+    "nearby_relation": "The user can have this kind of exposure on other occasions without any known sensitive next-day commitment.",
+    "why_it_does_not_license_C": "That fact does not by itself establish that this specific next-day shortfall shares a cause with a sensitive commitment."
+  },
+  "coactivation_bridge": "ev_A establishes the recovery-need pattern; ev_B establishes the specific commitment that pattern would affect. Together they support C: This user's history explains why the free trial run in new shoes Thursday evening would leave them unprepared for Friday's gait analysis, because breaking in new running shoes leaves this user's stride uneven and hips aching, exactly what the normal-gait analysis needs to avoid.",
+  "latent_C": {
+    "inference": "This user's history explains why the free trial run in new shoes Thursday evening would leave them unprepared for Friday's gait analysis, because breaking in new running shoes leaves this user's stride uneven and hips aching, exactly what the normal-gait analysis needs to avoid.",
+    "calibrated_language": "supported as the explanation"
+  },
+  "answer_contract": {
+    "target_proposition": "This user's history explains why the free trial run in new shoes Thursday evening would leave them unprepared for Friday's gait analysis, because breaking in new running shoes leaves this user's stride uneven and hips aching, exactly what the normal-gait analysis needs to avoid.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "Visible evidence supports the target proposition.",
+      "no": "Visible evidence does not support the target proposition."
+    },
+    "required_output_fields": [
+      "decision",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "link_broken": {
+    "replacement_dialogue": [
+      {
+        "role": "user",
+        "content": "I have a Friday morning shoe-store appointment, but it's just to browse colors this time — no gait recording happens."
+      },
+      {
+        "role": "assistant",
+        "content": "That version is easy enough to reschedule if needed."
+      }
+    ],
+    "connector_change": "B-prime preserves the same user, session position, and conversational style but removes the matching sensitivity.",
+    "rationale": "A plus B-prime no longer supports the original C."
+  },
+  "provenance": {},
+  "data_arm": "absence",
+  "arm_gold": {
+    "absence": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that the visible evidence does not support the target proposition"
+      ],
+      "rationale": "Both necessary target episodes are unavailable."
+    }
+  },
+  "target_evidence_ids": []
+}

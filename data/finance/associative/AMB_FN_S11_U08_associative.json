@@ -1,0 +1,655 @@
+{
+  "schema_version": "finance-vnext-3.0",
+  "pair_id": "AMB_FN_S11_U08",
+  "domain": "finance",
+  "user_id": "finance_s11_u08",
+  "sub_scenario": {
+    "family": "paying by card for the tracking versus taking the week's money in cash",
+    "role": "job-seeker running a very tight month",
+    "bridge_type": "state_dependent_operation",
+    "one_line": "job-seeker running a very tight month: depends on whether the money is physically finite rather than merely budgeted, not on the thing itself"
+  },
+  "query_type": "preference_generalization",
+  "polarity": "non_decision",
+  "query": "thinking of drawing the week out in notes, for coming in under — is that generally true of me, or was that just the one time, or is there not enough here to call it today?",
+  "convention_contradicted": "Pay by card — it is tracked automatically and easier to review.",
+  "retrieval_cue": {
+    "cue_type": "preference_generalization",
+    "why_it_naturally_retrieves_R": "A how-should-I-pay question runs at the condition this user's restraint depends on, without naming it."
+  },
+  "relation_specificity": {
+    "nearby_relation": "This user uses cash and card interchangeably.",
+    "why_it_does_not_license_C": "One planned card purchase and a forgotten tenner both passed without consequence, so neither shows what visible finite money does, nor which weeks this user has actually come in under."
+  },
+  "latent_C": {
+    "inference": "Whether drawing the week out in notes helps this user with coming in under depends on whether the money is physically finite rather than merely budgeted, not on drawing the week out in notes itself.",
+    "calibrated_language": "depends on whether the money is physically finite rather than merely budgeted, not on the thing itself"
+  },
+  "answer_contract": {
+    "target_proposition": "Whether drawing the week out in notes helps this user with coming in under depends on whether the money is physically finite rather than merely budgeted, not on drawing the week out in notes itself.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "mq_user35",
+    "external_source": "memoryquest",
+    "status": "review_candidate_only",
+    "tone": "natural_chat_v1",
+    "anonymization": "External MemoryQuest persona material was used only during authoring; no corpus, legal name, country, or demographic metadata is in visible dialogue."
+  },
+  "candidate_id": "AMB_FN_S11_U08_associative",
+  "data_arm": "associative",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2031-06-18T11:00:00Z",
+      "speaker_id": "finance_s11_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "read the terms properly before signing up. once."
+        },
+        {
+          "role": "assistant",
+          "content": "worth it?"
+        },
+        {
+          "role": "user",
+          "content": "it was, actually."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2031-06-19T14:00:00Z",
+      "speaker_id": "finance_s11_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "did the shop with a list and stuck to it."
+        },
+        {
+          "role": "assistant",
+          "content": "unusual?"
+        },
+        {
+          "role": "user",
+          "content": "notably."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2031-06-20T16:00:00Z",
+      "speaker_id": "finance_s11_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "paid for one big thing on the card as planned."
+        },
+        {
+          "role": "assistant",
+          "content": "any issue?"
+        },
+        {
+          "role": "user",
+          "content": "none at all."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2031-06-21T18:00:00Z",
+      "speaker_id": "finance_s11_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "looked at the projection graph and felt nothing."
+        },
+        {
+          "role": "assistant",
+          "content": "nothing?"
+        },
+        {
+          "role": "user",
+          "content": "mild vertigo."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2031-06-22T09:00:00Z",
+      "speaker_id": "finance_s11_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "set aside something small for a thing months away."
+        },
+        {
+          "role": "assistant",
+          "content": "how small?"
+        },
+        {
+          "role": "user",
+          "content": "symbolically small."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2031-06-23T11:00:00Z",
+      "speaker_id": "finance_s11_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "with notes in my pocket I can see the amount going down without doing any arithmetic. I don't have to decide to check — it's just visible."
+        },
+        {
+          "role": "assistant",
+          "content": "and on card?"
+        },
+        {
+          "role": "user",
+          "content": "on card I'd have to look it up, which means deciding to look it up."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2031-06-24T14:00:00Z",
+      "speaker_id": "finance_s11_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "checked three accounts in a row out of habit."
+        },
+        {
+          "role": "assistant",
+          "content": "changed anything?"
+        },
+        {
+          "role": "user",
+          "content": "no."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2031-06-25T16:00:00Z",
+      "speaker_id": "finance_s11_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "worked out the cost per use of something. justified it."
+        },
+        {
+          "role": "assistant",
+          "content": "honestly?"
+        },
+        {
+          "role": "user",
+          "content": "creatively."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2031-06-26T18:00:00Z",
+      "speaker_id": "finance_s11_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "got paid and did nothing about it for four days."
+        },
+        {
+          "role": "assistant",
+          "content": "deliberate?"
+        },
+        {
+          "role": "user",
+          "content": "just slow."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2031-06-27T09:00:00Z",
+      "speaker_id": "finance_s11_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "had a tenner in my pocket for a week and never spent it."
+        },
+        {
+          "role": "assistant",
+          "content": "forgot it?"
+        },
+        {
+          "role": "user",
+          "content": "entirely."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2031-06-28T11:00:00Z",
+      "speaker_id": "finance_s11_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "compared this month to last month and stopped comparing."
+        },
+        {
+          "role": "assistant",
+          "content": "why stop?"
+        },
+        {
+          "role": "user",
+          "content": "self-preservation."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2031-06-29T14:00:00Z",
+      "speaker_id": "finance_s11_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "put a card in a drawer as a strategy."
+        },
+        {
+          "role": "assistant",
+          "content": "working?"
+        },
+        {
+          "role": "user",
+          "content": "so far."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2031-06-30T16:00:00Z",
+      "speaker_id": "finance_s11_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "checked a bill I already knew the amount of."
+        },
+        {
+          "role": "assistant",
+          "content": "why?"
+        },
+        {
+          "role": "user",
+          "content": "hope."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2031-07-01T18:00:00Z",
+      "speaker_id": "finance_s11_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "added up subscriptions on a napkin. stopped at nine."
+        },
+        {
+          "role": "assistant",
+          "content": "there's more?"
+        },
+        {
+          "role": "user",
+          "content": "there's more."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2031-07-02T09:00:00Z",
+      "speaker_id": "finance_s11_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the weeks I came in under what I'd meant to spend were the ones where I could see it going. the card weeks I only ever found out afterwards, and afterwards is too late to do anything."
+        },
+        {
+          "role": "assistant",
+          "content": "always afterwards?"
+        },
+        {
+          "role": "user",
+          "content": "always. by then it's just a number I'm reading about myself."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2031-07-03T11:00:00Z",
+      "speaker_id": "finance_s11_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "checked the balance and closed the app again."
+        },
+        {
+          "role": "assistant",
+          "content": "reassuring?"
+        },
+        {
+          "role": "user",
+          "content": "neutral at best."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2031-07-04T14:00:00Z",
+      "speaker_id": "finance_s11_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "moved a direct debit date by three days."
+        },
+        {
+          "role": "assistant",
+          "content": "why?"
+        },
+        {
+          "role": "user",
+          "content": "it was landing badly."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2031-07-05T16:00:00Z",
+      "speaker_id": "finance_s11_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "found a charge I didn't recognise. it was me."
+        },
+        {
+          "role": "assistant",
+          "content": "embarrassing?"
+        },
+        {
+          "role": "user",
+          "content": "mildly."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2031-07-06T18:00:00Z",
+      "speaker_id": "finance_s11_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "rounded up the change jar into the account."
+        },
+        {
+          "role": "assistant",
+          "content": "much?"
+        },
+        {
+          "role": "user",
+          "content": "four pounds. a triumph."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2031-07-07T09:00:00Z",
+      "speaker_id": "finance_s11_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "thinking of drawing the week out in notes, for coming in under — is that generally true of me, or was that just the one time, or is there not enough here to call it today?"
+        }
+      ]
+    }
+  ],
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "finance_s11_u08",
+      "fact": "with notes in my pocket I can see the amount going down without doing any arithmetic. I don't have to decide to check — it's just visible."
+    },
+    "ev_B": {
+      "session_id": 15,
+      "owner": "finance_s11_u08",
+      "fact": "the weeks I came in under what I'd meant to spend were the ones where I could see it going. the card weeks I only ever found out afterwards, and afterwards is too late to do anything."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "finance_s11_u08",
+        "context": "weeks spent with cash in my pocket",
+        "goal_or_prediction": "keep an eye on the week's spending",
+        "action": "used physical cash",
+        "outcome_or_affect": "saw the amount going down without deciding to check"
+      }
+    },
+    "7": {
+      "role": "background_memory"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "background_memory"
+    },
+    "10": {
+      "role": "nearby_counterexample"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "background_memory"
+    },
+    "15": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "finance_s11_u08",
+        "context": "weeks this user did and did not come in under",
+        "goal_or_prediction": "spend no more than intended",
+        "action": "ran some weeks on cash and some on card",
+        "outcome_or_affect": "only cash weeks came in under; card weeks were discovered afterwards"
+      }
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "background_memory"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "Physical cash lets this user see the amount going down without deciding to check, and the weeks they came in under budget were exactly the cash weeks; card weeks were only ever discovered afterwards.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": []
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "with notes in my pocket I can see the amount going down without doing any arithmetic. I don't have to decide to check — it's just visible"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 15,
+      "quote": "the weeks I came in under what I'd meant to spend were the ones where I could see it going. the card weeks I only ever found out afterwards, and afterwards is too late to do anything"
+    }
+  ],
+  "coactivation_bridge": "ev_A and ev_B are the only pair that licenses the target proposition. Physical cash lets this user see the amount going down without deciding to check, and the weeks they came in under budget were exactly the cash weeks; card weeks were only ever discovered afterwards. The proposition contradicts the convention a solver would otherwise apply (\"Pay by card — it is tracked automatically and easier to review.\"), so priors alone point the other way. The nearby relation (This user uses cash and card interchangeably.) does not license it.",
+  "arm_gold": {
+    "full": {
+      "expected_mode": "infer_C",
+      "binary_decision": true,
+      "required_elements": [
+        "answer yes",
+        "connect the session 6 pattern with the session 15 episode",
+        "cite both session 6 and session 15",
+        "stay inside the calibrated claim (depends on whether the money is physically finite rather than merely budgeted, not on the thing itself) rather than a broader claim about the user"
+      ],
+      "rationale": "ev_A and ev_B jointly support the target proposition; neither does alone."
+    },
+    "a_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that session 6 alone does not establish the target proposition",
+        "not assert the target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "ev_B is replaced by a matched neutral session, so the relation is unavailable."
+    },
+    "b_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that session 15 alone does not establish the target proposition",
+        "not assert the target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "ev_A is replaced by a matched neutral session, so the relation is unavailable."
+    },
+    "link_broken": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that the revised session 15 no longer connects to session 6",
+        "not assert the original target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "B-prime keeps the owner, date, session form and turn count while removing the connector, so the original relation no longer holds."
+    }
+  },
+  "single_evidence_replacements": {
+    "a_only": {
+      "replaced_session_id": 15,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "did a full pass over every account this afternoon, moved two direct debit dates, closed one dormant account, and renamed a savings pot that has had the wrong label since last year."
+        },
+        {
+          "role": "assistant",
+          "content": "productive, then?"
+        },
+        {
+          "role": "user",
+          "content": "administratively, yes. otherwise nothing happened at all."
+        }
+      ]
+    },
+    "b_only": {
+      "replaced_session_id": 6,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "did the monthly round: checked the balances, moved the leftover across, updated the card details on two services, and made a note about the renewal that keeps catching me out."
+        },
+        {
+          "role": "assistant",
+          "content": "getting sorted?"
+        },
+        {
+          "role": "user",
+          "content": "the note is the fix, for now."
+        }
+      ]
+    }
+  },
+  "link_broken": {
+    "replaced_session_id": 15,
+    "replacement_dialogue": [
+      {
+        "role": "user",
+        "content": "I've come in under on cash weeks and card weeks by now, at about the same rate."
+      },
+      {
+        "role": "assistant",
+        "content": "no pattern?"
+      },
+      {
+        "role": "user",
+        "content": "none I can find. it isn't the payment method."
+      }
+    ]
+  }
+}

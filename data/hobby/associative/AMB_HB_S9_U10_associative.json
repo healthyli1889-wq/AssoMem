@@ -1,0 +1,655 @@
+{
+  "schema_version": "hobby-vnext-1.0",
+  "pair_id": "AMB_HB_S9_U10",
+  "domain": "hobby",
+  "user_id": "hobby_s9_u10",
+  "sub_scenario": {
+    "family": "keeping work private until it is good versus posting it publicly while rough",
+    "role": "solo narrative-game player, synth builder and plant grower",
+    "bridge_type": "preference_constraint_fit",
+    "one_line": "solo narrative-game player, synth builder and plant grower: do not rely on sitting on it until it's genuinely finished"
+  },
+  "query_type": "preference_generalization",
+  "polarity": "reject",
+  "query": "planning on sitting on it until it's genuinely finished, for getting better rather than refining — is that generally true of me, or was that just the one time?",
+  "convention_contradicted": "Do not share work until it is good enough; posting rough work is a mistake.",
+  "retrieval_cue": {
+    "cue_type": "preference_generalization",
+    "why_it_naturally_retrieves_R": "A should-I-post-this question runs at the condition this user's improvement depends on, without naming it."
+  },
+  "relation_specificity": {
+    "nearby_relation": "This user shares some work and keeps some private.",
+    "why_it_does_not_license_C": "Showing one person something rough and finishing something privately both went fine on their own terms, so neither shows what genuinely public work does to this user's revising, nor where their improvement has come from."
+  },
+  "latent_C": {
+    "inference": "For getting better rather than refining, sitting on it until it's genuinely finished is a poor fit for this user.",
+    "calibrated_language": "do not rely on sitting on it until it's genuinely finished"
+  },
+  "answer_contract": {
+    "target_proposition": "For getting better rather than refining, sitting on it until it's genuinely finished is a poor fit for this user.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "mq_user44",
+    "external_source": "memoryquest",
+    "status": "review_candidate_only",
+    "tone": "natural_chat_v1",
+    "anonymization": "External MemoryQuest persona material was used only during authoring; no corpus, legal name, country, or demographic metadata is in visible dialogue."
+  },
+  "candidate_id": "AMB_HB_S9_U10_associative",
+  "data_arm": "associative",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2030-02-27T11:00:00Z",
+      "speaker_id": "hobby_s9_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "sorted the offcuts into a box. a whole box."
+        },
+        {
+          "role": "assistant",
+          "content": "keeping them?"
+        },
+        {
+          "role": "user",
+          "content": "forever, apparently."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2030-02-28T14:00:00Z",
+      "speaker_id": "hobby_s9_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "did twenty minutes and called it a session."
+        },
+        {
+          "role": "assistant",
+          "content": "generous?"
+        },
+        {
+          "role": "user",
+          "content": "extremely."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2030-03-01T16:00:00Z",
+      "speaker_id": "hobby_s9_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "showed one person something rough. they were kind about it."
+        },
+        {
+          "role": "assistant",
+          "content": "helpful?"
+        },
+        {
+          "role": "user",
+          "content": "pleasant, anyway."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2030-03-02T18:00:00Z",
+      "speaker_id": "hobby_s9_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "looked up the price of the upgrade again."
+        },
+        {
+          "role": "assistant",
+          "content": "buying it?"
+        },
+        {
+          "role": "user",
+          "content": "not this month."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2030-03-03T09:00:00Z",
+      "speaker_id": "hobby_s9_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "took a photo of it and didn't post it."
+        },
+        {
+          "role": "assistant",
+          "content": "why not?"
+        },
+        {
+          "role": "user",
+          "content": "the light was wrong."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2030-03-04T11:00:00Z",
+      "speaker_id": "hobby_s9_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "watched someone much better do it effortlessly."
+        },
+        {
+          "role": "assistant",
+          "content": "motivating?"
+        },
+        {
+          "role": "user",
+          "content": "one of the two, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2030-03-05T14:00:00Z",
+      "speaker_id": "hobby_s9_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "once something is actually out there I stop revising it. it's fixed, and I go and make the next one instead of circling this one."
+        },
+        {
+          "role": "assistant",
+          "content": "and while it's private?"
+        },
+        {
+          "role": "user",
+          "content": "then I revise it indefinitely. it's whether it's public, not whether it's finished."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2030-03-06T16:00:00Z",
+      "speaker_id": "hobby_s9_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "labelled the boxes. all of them."
+        },
+        {
+          "role": "assistant",
+          "content": "satisfying?"
+        },
+        {
+          "role": "user",
+          "content": "unreasonably."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2030-03-07T18:00:00Z",
+      "speaker_id": "hobby_s9_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "found a setting I've had wrong for two years."
+        },
+        {
+          "role": "assistant",
+          "content": "fixed?"
+        },
+        {
+          "role": "user",
+          "content": "fixed and mildly annoyed."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2030-03-08T09:00:00Z",
+      "speaker_id": "hobby_s9_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "did the boring maintenance nobody talks about."
+        },
+        {
+          "role": "assistant",
+          "content": "necessary?"
+        },
+        {
+          "role": "user",
+          "content": "apparently every time."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2030-03-09T11:00:00Z",
+      "speaker_id": "hobby_s9_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "moved the whole setup two feet to the left."
+        },
+        {
+          "role": "assistant",
+          "content": "better?"
+        },
+        {
+          "role": "user",
+          "content": "different."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2030-03-10T14:00:00Z",
+      "speaker_id": "hobby_s9_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "kept something private and finished it properly."
+        },
+        {
+          "role": "assistant",
+          "content": "good?"
+        },
+        {
+          "role": "user",
+          "content": "competent, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2030-03-11T16:00:00Z",
+      "speaker_id": "hobby_s9_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "started something new before finishing the last thing."
+        },
+        {
+          "role": "assistant",
+          "content": "again?"
+        },
+        {
+          "role": "user",
+          "content": "as ever."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2030-03-12T18:00:00Z",
+      "speaker_id": "hobby_s9_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "everything I've got better from, I made in the run straight after putting something out. the things I sat on privately I improved endlessly and learned nothing from."
+        },
+        {
+          "role": "assistant",
+          "content": "nothing at all?"
+        },
+        {
+          "role": "user",
+          "content": "they got better. I didn't."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2030-03-13T09:00:00Z",
+      "speaker_id": "hobby_s9_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "read the manual for something I've used for years."
+        },
+        {
+          "role": "assistant",
+          "content": "surprises?"
+        },
+        {
+          "role": "user",
+          "content": "several."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2030-03-14T11:00:00Z",
+      "speaker_id": "hobby_s9_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "tried to explain it to someone and heard how odd it sounds."
+        },
+        {
+          "role": "assistant",
+          "content": "did they follow?"
+        },
+        {
+          "role": "user",
+          "content": "politely."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2030-03-15T14:00:00Z",
+      "speaker_id": "hobby_s9_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "gave up after ten minutes and made tea instead."
+        },
+        {
+          "role": "assistant",
+          "content": "back to it?"
+        },
+        {
+          "role": "user",
+          "content": "eventually."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2030-03-16T16:00:00Z",
+      "speaker_id": "hobby_s9_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "sharpened everything that could be sharpened."
+        },
+        {
+          "role": "assistant",
+          "content": "needed doing?"
+        },
+        {
+          "role": "user",
+          "content": "arguably not."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2030-03-17T18:00:00Z",
+      "speaker_id": "hobby_s9_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "found an old recording I'd forgotten making."
+        },
+        {
+          "role": "assistant",
+          "content": "any good?"
+        },
+        {
+          "role": "user",
+          "content": "better than I remembered."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2030-03-18T09:00:00Z",
+      "speaker_id": "hobby_s9_u10",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "planning on sitting on it until it's genuinely finished, for getting better rather than refining — is that generally true of me, or was that just the one time?"
+        }
+      ]
+    }
+  ],
+  "evidence": {
+    "ev_A": {
+      "session_id": 7,
+      "owner": "hobby_s9_u10",
+      "fact": "once something is actually out there I stop revising it. it's fixed, and I go and make the next one instead of circling this one."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "hobby_s9_u10",
+      "fact": "everything I've got better from, I made in the run straight after putting something out. the things I sat on privately I improved endlessly and learned nothing from."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "background_memory"
+    },
+    "7": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "hobby_s9_u10",
+        "context": "after a patch demo has actually gone public",
+        "goal_or_prediction": "get it right",
+        "action": "put it out rather than holding it",
+        "outcome_or_affect": "stopped revising and moved to the next one"
+      }
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "background_memory"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "nearby_counterexample"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "hobby_s9_u10",
+        "context": "runs of work in which this user did or did not improve",
+        "goal_or_prediction": "actually get better",
+        "action": "put some out and sat privately on others",
+        "outcome_or_affect": "improvement only in the runs after putting something out"
+      }
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "background_memory"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "Genuinely public work stops this user revising and sends them to the next thing, and every run in which they improved followed putting something out — privately held work got better while they did not.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": []
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 7,
+      "quote": "once something is actually out there I stop revising it. it's fixed, and I go and make the next one instead of circling this one"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "everything I've got better from, I made in the run straight after putting something out. the things I sat on privately I improved endlessly and learned nothing from"
+    }
+  ],
+  "coactivation_bridge": "ev_A and ev_B are the only pair that licenses the target proposition. Genuinely public work stops this user revising and sends them to the next thing, and every run in which they improved followed putting something out — privately held work got better while they did not. The proposition contradicts the convention a solver would otherwise apply (\"Do not share work until it is good enough; posting rough work is a mistake.\"), so priors alone point the other way. The nearby relation (This user shares some work and keeps some private.) does not license it.",
+  "arm_gold": {
+    "full": {
+      "expected_mode": "infer_C",
+      "binary_decision": true,
+      "required_elements": [
+        "answer yes",
+        "connect the session 7 pattern with the session 14 episode",
+        "cite both session 7 and session 14",
+        "stay inside the calibrated claim (do not rely on sitting on it until it's genuinely finished) rather than a broader claim about the user"
+      ],
+      "rationale": "ev_A and ev_B jointly support the target proposition; neither does alone."
+    },
+    "a_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that session 7 alone does not establish the target proposition",
+        "not assert the target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "ev_B is replaced by a matched neutral session, so the relation is unavailable."
+    },
+    "b_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that session 14 alone does not establish the target proposition",
+        "not assert the target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "ev_A is replaced by a matched neutral session, so the relation is unavailable."
+    },
+    "link_broken": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that the revised session 14 no longer connects to session 7",
+        "not assert the original target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "B-prime keeps the owner, date, session form and turn count while removing the connector, so the original relation no longer holds."
+    }
+  },
+  "single_evidence_replacements": {
+    "a_only": {
+      "replaced_session_id": 14,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "did the weekly round: cleaned everything down, replaced the worn bit, put the spares back where they belong, and made a note about the thing that keeps loosening."
+        },
+        {
+          "role": "assistant",
+          "content": "getting fixed?"
+        },
+        {
+          "role": "user",
+          "content": "the note is the fix, for now."
+        }
+      ]
+    },
+    "b_only": {
+      "replaced_session_id": 7,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "did a full tidy of the whole workspace this afternoon, moved three things, threw one out, and relabelled a box that has had the wrong label on it since last year."
+        },
+        {
+          "role": "assistant",
+          "content": "productive, then?"
+        },
+        {
+          "role": "user",
+          "content": "administratively, yes. otherwise nothing happened at all."
+        }
+      ]
+    }
+  },
+  "link_broken": {
+    "replaced_session_id": 14,
+    "replacement_dialogue": [
+      {
+        "role": "user",
+        "content": "I've put things out and sat on things and got better at about the same rate either way."
+      },
+      {
+        "role": "assistant",
+        "content": "no difference?"
+      },
+      {
+        "role": "user",
+        "content": "none I can see. it isn't that."
+      }
+    ]
+  }
+}

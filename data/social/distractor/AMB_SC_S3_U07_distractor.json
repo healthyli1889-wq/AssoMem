@@ -1,0 +1,575 @@
+{
+  "schema_version": "social-vnext-1.0",
+  "pair_id": "AMB_SC_S3_U07",
+  "domain": "social",
+  "user_id": "social_s3_u07",
+  "sub_scenario": {
+    "family": "one planned proper sit-down versus several unpolished short catch-ups",
+    "role": "theatre-for-two planner who batches long threads",
+    "bridge_type": "threshold_context_interaction",
+    "one_line": "theatre-for-two planner who batches long threads: do not rely on one unhurried booked dinner instead"
+  },
+  "query_type": "conditional_recommendation",
+  "polarity": "reject",
+  "query": "thinking of clearing the week and doing one unhurried booked dinner instead — under what conditions should I be saying yes to this?",
+  "convention_contradicted": "One proper unhurried dinner beats several rushed coffees.",
+  "retrieval_cue": {
+    "cue_type": "conditional_recommendation",
+    "why_it_naturally_retrieves_R": "An ordinary scheduling question about how to spend the week runs straight at the state this user has to reach, without naming it or the disclosures it produced."
+  },
+  "relation_specificity": {
+    "nearby_relation": "This user can manage several social commitments in a week.",
+    "why_it_does_not_license_C": "Two catch-ups in an afternoon and a twice-moved coffee show only that the logistics are survivable; neither says what state this user has to be in before anyone tells them anything real."
+  },
+  "latent_C": {
+    "inference": "one unhurried booked dinner instead before whatever the one from the book group is carrying is a poor fit for this user.",
+    "calibrated_language": "do not rely on one unhurried booked dinner instead"
+  },
+  "answer_contract": {
+    "target_proposition": "one unhurried booked dinner instead before whatever the one from the book group is carrying is a poor fit for this user.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "mq_user30",
+    "external_source": "memoryquest",
+    "status": "review_candidate_only",
+    "tone": "natural_chat_v1",
+    "anonymization": "External MemoryQuest persona material was used only during authoring; no corpus, legal name, country, or demographic metadata is in visible dialogue."
+  },
+  "candidate_id": "AMB_SC_S3_U07_distractor",
+  "data_arm": "distractor",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2028-04-20T11:00:00Z",
+      "speaker_id": "social_s3_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "moved two things on the calendar and called that admin done."
+        },
+        {
+          "role": "assistant",
+          "content": "productive?"
+        },
+        {
+          "role": "user",
+          "content": "generously described."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2028-04-21T14:00:00Z",
+      "speaker_id": "social_s3_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "finally replied to the thread from last week."
+        },
+        {
+          "role": "assistant",
+          "content": "how late is late?"
+        },
+        {
+          "role": "user",
+          "content": "nine days. a personal best."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2028-04-22T16:00:00Z",
+      "speaker_id": "social_s3_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "had two catch-ups in one afternoon and enjoyed both."
+        },
+        {
+          "role": "assistant",
+          "content": "tiring?"
+        },
+        {
+          "role": "user",
+          "content": "less than expected."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2028-04-23T18:00:00Z",
+      "speaker_id": "social_s3_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "someone sent a photo from years ago and derailed my afternoon."
+        },
+        {
+          "role": "assistant",
+          "content": "worth it?"
+        },
+        {
+          "role": "user",
+          "content": "completely."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2028-04-24T09:00:00Z",
+      "speaker_id": "social_s3_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "muted one group and un-muted another. net zero."
+        },
+        {
+          "role": "assistant",
+          "content": "any peace?"
+        },
+        {
+          "role": "user",
+          "content": "about forty minutes of it."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2028-04-25T11:00:00Z",
+      "speaker_id": "social_s3_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "walked the long way home and didn't check my phone."
+        },
+        {
+          "role": "assistant",
+          "content": "deliberate?"
+        },
+        {
+          "role": "user",
+          "content": "half deliberate."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2028-04-26T14:00:00Z",
+      "speaker_id": "social_s3_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the first couple of short interval drinks in a week I'm still doing the curated version of myself. by the third or fourth I've stopped curating — whatever's in my head comes out, useful or not."
+        },
+        {
+          "role": "assistant",
+          "content": "stopped curating?"
+        },
+        {
+          "role": "user",
+          "content": "no energy left to manage how I'm coming across. mixed results, I'd say."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2028-04-27T16:00:00Z",
+      "speaker_id": "social_s3_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "made a playlist for a thing that hasn't been planned yet."
+        },
+        {
+          "role": "assistant",
+          "content": "optimistic."
+        },
+        {
+          "role": "user",
+          "content": "aspirational, really."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2028-04-28T18:00:00Z",
+      "speaker_id": "social_s3_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "booked the haircut I've been putting off since spring."
+        },
+        {
+          "role": "assistant",
+          "content": "which slot?"
+        },
+        {
+          "role": "user",
+          "content": "an evening one, obviously."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2028-04-29T09:00:00Z",
+      "speaker_id": "social_s3_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "left a voice note instead of typing. felt strange."
+        },
+        {
+          "role": "assistant",
+          "content": "faster?"
+        },
+        {
+          "role": "user",
+          "content": "faster. stranger."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2028-04-30T11:00:00Z",
+      "speaker_id": "social_s3_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "cleaned the kitchen instead of answering anything."
+        },
+        {
+          "role": "assistant",
+          "content": "avoidance?"
+        },
+        {
+          "role": "user",
+          "content": "structured avoidance."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2028-05-01T14:00:00Z",
+      "speaker_id": "social_s3_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "moved a coffee twice and it still happened."
+        },
+        {
+          "role": "assistant",
+          "content": "persistence."
+        },
+        {
+          "role": "user",
+          "content": "on their part, mostly."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2028-05-02T16:00:00Z",
+      "speaker_id": "social_s3_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "skimmed the invites and closed the tab."
+        },
+        {
+          "role": "assistant",
+          "content": "decide anything?"
+        },
+        {
+          "role": "user",
+          "content": "no. classic."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2028-05-03T18:00:00Z",
+      "speaker_id": "social_s3_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "someone changed the group name again."
+        },
+        {
+          "role": "assistant",
+          "content": "improvement?"
+        },
+        {
+          "role": "user",
+          "content": "debatable."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2028-05-04T09:00:00Z",
+      "speaker_id": "social_s3_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "every time someone has actually told me something serious, it was never at a planned proper sit-down. it was always one of the unpolished ones, where I'd stopped trying."
+        },
+        {
+          "role": "assistant",
+          "content": "never at the planned ones?"
+        },
+        {
+          "role": "user",
+          "content": "not once. those stay pleasant and say nothing."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2028-05-05T11:00:00Z",
+      "speaker_id": "social_s3_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "ate standing up reading a thread I wasn't in."
+        },
+        {
+          "role": "assistant",
+          "content": "why?"
+        },
+        {
+          "role": "user",
+          "content": "no defence."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2028-05-06T14:00:00Z",
+      "speaker_id": "social_s3_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "found a birthday I'd forgotten and covered it with a message."
+        },
+        {
+          "role": "assistant",
+          "content": "did it land?"
+        },
+        {
+          "role": "user",
+          "content": "seemed to."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2028-05-07T16:00:00Z",
+      "speaker_id": "social_s3_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the two of us plus the old book group keep telling me one proper unhurried dinner is worth five rushed coffees."
+        },
+        {
+          "role": "assistant",
+          "content": "worth five?"
+        },
+        {
+          "role": "user",
+          "content": "their maths, not mine."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2028-05-08T18:00:00Z",
+      "speaker_id": "social_s3_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "re-read something I sent and winced slightly."
+        },
+        {
+          "role": "assistant",
+          "content": "that bad?"
+        },
+        {
+          "role": "user",
+          "content": "just the tone."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2028-05-09T09:00:00Z",
+      "speaker_id": "social_s3_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "thinking of clearing the week and doing one unhurried booked dinner instead — under what conditions should I be saying yes to this?"
+        }
+      ]
+    }
+  ],
+  "evidence": {
+    "ev_A": {
+      "session_id": 7,
+      "owner": "social_s3_u07",
+      "fact": "the first couple of short interval drinks in a week I'm still doing the curated version of myself. by the third or fourth I've stopped curating — whatever's in my head comes out, useful or not."
+    },
+    "ev_B": {
+      "session_id": 15,
+      "owner": "social_s3_u07",
+      "fact": "every time someone has actually told me something serious, it was never at a planned proper sit-down. it was always one of the unpolished ones, where I'd stopped trying."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "background_memory"
+    },
+    "7": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "social_s3_u07",
+        "context": "weeks containing different numbers of short interval drinks",
+        "goal_or_prediction": "see how many is too many",
+        "action": "kept going past the second one",
+        "outcome_or_affect": "performance runs out; plain talking starts"
+      }
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "background_memory"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "nearby_counterexample"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "background_memory"
+    },
+    "15": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "social_s3_u07",
+        "context": "occasions when people disclosed something serious",
+        "goal_or_prediction": "be someone people can tell things to",
+        "action": "attended both planned sit-downs and unpolished catch-ups",
+        "outcome_or_affect": "disclosures only ever happened at the unpolished ones"
+      }
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "background_memory"
+    },
+    "18": {
+      "role": "distractor",
+      "distractor_id": "dist_1",
+      "why_distractor": "It restates the conventional advice in the user's own feed, so it competes for attention and points at the answer a prior-driven solver already wants to give. It reports other people's confidence rather than any episode of this user's, and says nothing about the relation between session 7 and session 15."
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "Past the second short catch-up in a week this user runs out of performance and simply talks, and every serious disclosure anyone has made to them came at one of those unpolished occasions rather than at a planned sit-down.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": []
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 7,
+      "quote": "the first couple of short interval drinks in a week I'm still doing the curated version of myself. by the third or fourth I've stopped curating — whatever's in my head comes out, useful or not"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 15,
+      "quote": "every time someone has actually told me something serious, it was never at a planned proper sit-down. it was always one of the unpolished ones, where I'd stopped trying"
+    }
+  ],
+  "coactivation_bridge": "ev_A and ev_B are the only pair that licenses the target proposition. Past the second short catch-up in a week this user runs out of performance and simply talks, and every serious disclosure anyone has made to them came at one of those unpolished occasions rather than at a planned sit-down. The proposition contradicts the convention a solver would otherwise apply (\"One proper unhurried dinner beats several rushed coffees.\"), so priors alone point the other way. The nearby relation (This user can manage several social commitments in a week.) does not license it.",
+  "arm_gold": {
+    "distractor": {
+      "expected_mode": "infer_C",
+      "binary_decision": true,
+      "required_elements": [
+        "answer yes",
+        "connect the session 7 pattern with the session 15 episode",
+        "cite both session 7 and session 15",
+        "not cite session 18 as support"
+      ],
+      "rationale": "The swapped session is query-relevant but non-evidential; the ev_A/ev_B relation is untouched, so the target proposition still holds."
+    }
+  },
+  "distractor_note": {
+    "replaced_session_id": 18,
+    "why_distractor": "It restates the conventional advice in the user's own feed, so it competes for attention and points at the answer a prior-driven solver already wants to give. It reports other people's confidence rather than any episode of this user's, and says nothing about the relation between session 7 and session 15."
+  }
+}

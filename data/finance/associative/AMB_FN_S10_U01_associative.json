@@ -1,0 +1,655 @@
+{
+  "schema_version": "finance-vnext-3.0",
+  "pair_id": "AMB_FN_S10_U01",
+  "domain": "finance",
+  "user_id": "finance_s10_u01",
+  "sub_scenario": {
+    "family": "the big bulk shop versus small frequent shops at a worse unit price",
+    "role": "full-time earner who checks a dashboard daily",
+    "bridge_type": "prediction_calibration",
+    "one_line": "full-time earner who checks a dashboard daily: go ahead with buying small amounts every few days at the worse unit price"
+  },
+  "query_type": "behavior_explanation",
+  "polarity": "accept",
+  "query": "thinking of buying small amounts every few days at the worse unit price, for actually spending less on food — why does this particular thing go the way it does for me?",
+  "convention_contradicted": "Buy in bulk — the unit price is lower, so you spend less.",
+  "retrieval_cue": {
+    "cue_type": "behavior_explanation",
+    "why_it_naturally_retrieves_R": "A should-I-bulk-buy question runs at the failed prediction without naming it or the months that corrected it."
+  },
+  "relation_specificity": {
+    "nearby_relation": "This user shops in bulk and in small amounts alike.",
+    "why_it_does_not_license_C": "A big pack of a staple and a two-item midweek trip both passed unremarkably: neither is a full cupboard or a sustained small-and-often month, and neither says when the food spend has actually dropped."
+  },
+  "latent_C": {
+    "inference": "For actually spending less on food, buying small amounts every few days at the worse unit price is a good fit for this user.",
+    "calibrated_language": "go ahead with buying small amounts every few days at the worse unit price"
+  },
+  "answer_contract": {
+    "target_proposition": "For actually spending less on food, buying small amounts every few days at the worse unit price is a good fit for this user.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "mq_user0",
+    "external_source": "memoryquest",
+    "status": "review_candidate_only",
+    "tone": "natural_chat_v1",
+    "anonymization": "External MemoryQuest persona material was used only during authoring; no corpus, legal name, country, or demographic metadata is in visible dialogue."
+  },
+  "candidate_id": "AMB_FN_S10_U01_associative",
+  "data_arm": "associative",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2031-04-13T11:00:00Z",
+      "speaker_id": "finance_s10_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "split a bill four ways and covered the rounding."
+        },
+        {
+          "role": "assistant",
+          "content": "generous?"
+        },
+        {
+          "role": "user",
+          "content": "thirty pence of generous."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2031-04-14T14:00:00Z",
+      "speaker_id": "finance_s10_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "bought a big pack of one thing we always use."
+        },
+        {
+          "role": "assistant",
+          "content": "sensible?"
+        },
+        {
+          "role": "user",
+          "content": "entirely."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2031-04-15T16:00:00Z",
+      "speaker_id": "finance_s10_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "set a reminder for a renewal I'd forgotten about."
+        },
+        {
+          "role": "assistant",
+          "content": "close call?"
+        },
+        {
+          "role": "user",
+          "content": "eleven days."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2031-04-16T18:00:00Z",
+      "speaker_id": "finance_s10_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "bought the thing I'd had in a basket for three weeks."
+        },
+        {
+          "role": "assistant",
+          "content": "regret?"
+        },
+        {
+          "role": "user",
+          "content": "not yet."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2031-04-17T09:00:00Z",
+      "speaker_id": "finance_s10_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I assumed a full cupboard would mean fewer shops. what it actually does is stop me noticing what I'm using — I don't ration anything I can't see the end of."
+        },
+        {
+          "role": "assistant",
+          "content": "you predicted the opposite?"
+        },
+        {
+          "role": "user",
+          "content": "confidently. the unit price maths was very persuasive."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2031-04-18T11:00:00Z",
+      "speaker_id": "finance_s10_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "worked out the annual cost of something and stopped there."
+        },
+        {
+          "role": "assistant",
+          "content": "act on it?"
+        },
+        {
+          "role": "user",
+          "content": "no."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2031-04-19T14:00:00Z",
+      "speaker_id": "finance_s10_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "moved money between two of my own accounts for no clear reason."
+        },
+        {
+          "role": "assistant",
+          "content": "net effect?"
+        },
+        {
+          "role": "user",
+          "content": "zero."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2031-04-20T16:00:00Z",
+      "speaker_id": "finance_s10_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "checked the statement line by line for once."
+        },
+        {
+          "role": "assistant",
+          "content": "find anything?"
+        },
+        {
+          "role": "user",
+          "content": "one duplicate."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2031-04-21T18:00:00Z",
+      "speaker_id": "finance_s10_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "popped out for two items midweek."
+        },
+        {
+          "role": "assistant",
+          "content": "expensive?"
+        },
+        {
+          "role": "user",
+          "content": "no, trivial."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2031-04-22T09:00:00Z",
+      "speaker_id": "finance_s10_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "said no to a group thing on cost grounds."
+        },
+        {
+          "role": "assistant",
+          "content": "awkward?"
+        },
+        {
+          "role": "user",
+          "content": "briefly."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2031-04-23T11:00:00Z",
+      "speaker_id": "finance_s10_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "added something to a wishlist instead of buying it."
+        },
+        {
+          "role": "assistant",
+          "content": "does that work?"
+        },
+        {
+          "role": "user",
+          "content": "sometimes."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2031-04-24T14:00:00Z",
+      "speaker_id": "finance_s10_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "paid a small bill early because it was in front of me."
+        },
+        {
+          "role": "assistant",
+          "content": "efficient?"
+        },
+        {
+          "role": "user",
+          "content": "accidentally."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2031-04-25T16:00:00Z",
+      "speaker_id": "finance_s10_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "added up what the week actually cost. surprising."
+        },
+        {
+          "role": "assistant",
+          "content": "in which direction?"
+        },
+        {
+          "role": "user",
+          "content": "the usual one."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2031-04-26T18:00:00Z",
+      "speaker_id": "finance_s10_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "looked up the price of the same thing in three places."
+        },
+        {
+          "role": "assistant",
+          "content": "difference?"
+        },
+        {
+          "role": "user",
+          "content": "ninety pence."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2031-04-27T09:00:00Z",
+      "speaker_id": "finance_s10_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the months my food spend actually dropped were the small-and-often ones at the worse unit price. the bulk months always came out higher, which I still find annoying."
+        },
+        {
+          "role": "assistant",
+          "content": "higher, with cheaper units?"
+        },
+        {
+          "role": "user",
+          "content": "every time. we just got through more of it."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2031-04-28T11:00:00Z",
+      "speaker_id": "finance_s10_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "got a notification about a rate change and ignored it."
+        },
+        {
+          "role": "assistant",
+          "content": "reading it later?"
+        },
+        {
+          "role": "user",
+          "content": "unlikely."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2031-04-29T14:00:00Z",
+      "speaker_id": "finance_s10_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "wrote down what I owe someone so I wouldn't forget."
+        },
+        {
+          "role": "assistant",
+          "content": "will you?"
+        },
+        {
+          "role": "user",
+          "content": "the note will."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2031-04-30T16:00:00Z",
+      "speaker_id": "finance_s10_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "bought lunch out twice and noticed both times."
+        },
+        {
+          "role": "assistant",
+          "content": "noticing help?"
+        },
+        {
+          "role": "user",
+          "content": "not measurably."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2031-05-01T18:00:00Z",
+      "speaker_id": "finance_s10_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "cleared a tiny balance just to see it at zero."
+        },
+        {
+          "role": "assistant",
+          "content": "satisfying?"
+        },
+        {
+          "role": "user",
+          "content": "unreasonably."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2031-05-02T09:00:00Z",
+      "speaker_id": "finance_s10_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "thinking of buying small amounts every few days at the worse unit price, for actually spending less on food — why does this particular thing go the way it does for me?"
+        }
+      ]
+    }
+  ],
+  "evidence": {
+    "ev_A": {
+      "session_id": 5,
+      "owner": "finance_s10_u01",
+      "fact": "I assumed a full cupboard would mean fewer shops. what it actually does is stop me noticing what I'm using — I don't ration anything I can't see the end of."
+    },
+    "ev_B": {
+      "session_id": 15,
+      "owner": "finance_s10_u01",
+      "fact": "the months my food spend actually dropped were the small-and-often ones at the worse unit price. the bulk months always came out higher, which I still find annoying."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "nearby_counterexample"
+    },
+    "3": {
+      "role": "background_memory"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "finance_s10_u01",
+        "context": "periods with a full cupboard",
+        "goal_or_prediction": "predicted bulk buying would mean fewer shops and less spend",
+        "action": "kept the cupboard fully stocked",
+        "outcome_or_affect": "stopped noticing usage; nothing rationed that had no visible end"
+      }
+    },
+    "6": {
+      "role": "background_memory"
+    },
+    "7": {
+      "role": "background_memory"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "nearby_counterexample"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "background_memory"
+    },
+    "15": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "finance_s10_u01",
+        "context": "months in which the food spend did and did not drop",
+        "goal_or_prediction": "spend less on food",
+        "action": "ran some months on bulk shops and some small-and-often",
+        "outcome_or_affect": "only small-and-often months came down, despite worse unit prices"
+      }
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "background_memory"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "A full cupboard stops this user noticing what they use, because nothing whose end is invisible gets rationed, and the months their food spend actually fell were the small-and-often ones despite worse unit prices.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": []
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 5,
+      "quote": "I assumed a full cupboard would mean fewer shops. what it actually does is stop me noticing what I'm using — I don't ration anything I can't see the end of"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 15,
+      "quote": "the months my food spend actually dropped were the small-and-often ones at the worse unit price. the bulk months always came out higher, which I still find annoying"
+    }
+  ],
+  "coactivation_bridge": "ev_A and ev_B are the only pair that licenses the target proposition. A full cupboard stops this user noticing what they use, because nothing whose end is invisible gets rationed, and the months their food spend actually fell were the small-and-often ones despite worse unit prices. The proposition contradicts the convention a solver would otherwise apply (\"Buy in bulk — the unit price is lower, so you spend less.\"), so priors alone point the other way. The nearby relation (This user shops in bulk and in small amounts alike.) does not license it.",
+  "arm_gold": {
+    "full": {
+      "expected_mode": "infer_C",
+      "binary_decision": true,
+      "required_elements": [
+        "answer yes",
+        "connect the session 5 pattern with the session 15 episode",
+        "cite both session 5 and session 15",
+        "stay inside the calibrated claim (go ahead with buying small amounts every few days at the worse unit price) rather than a broader claim about the user"
+      ],
+      "rationale": "ev_A and ev_B jointly support the target proposition; neither does alone."
+    },
+    "a_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that session 5 alone does not establish the target proposition",
+        "not assert the target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "ev_B is replaced by a matched neutral session, so the relation is unavailable."
+    },
+    "b_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that session 15 alone does not establish the target proposition",
+        "not assert the target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "ev_A is replaced by a matched neutral session, so the relation is unavailable."
+    },
+    "link_broken": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that the revised session 15 no longer connects to session 5",
+        "not assert the original target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "B-prime keeps the owner, date, session form and turn count while removing the connector, so the original relation no longer holds."
+    }
+  },
+  "single_evidence_replacements": {
+    "a_only": {
+      "replaced_session_id": 15,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "went through the whole backlog of small admin, cancelled two things, updated one address, claimed a refund I'd been owed since spring, and closed an account I have not used in three years."
+        },
+        {
+          "role": "assistant",
+          "content": "any tidier?"
+        },
+        {
+          "role": "user",
+          "content": "measurably. for about a day."
+        }
+      ]
+    },
+    "b_only": {
+      "replaced_session_id": 5,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "did a full pass over every account this afternoon, moved two direct debit dates, closed one dormant account, and renamed a savings pot that has had the wrong label since last year."
+        },
+        {
+          "role": "assistant",
+          "content": "productive, then?"
+        },
+        {
+          "role": "user",
+          "content": "administratively, yes. otherwise nothing happened at all."
+        }
+      ]
+    }
+  },
+  "link_broken": {
+    "replaced_session_id": 15,
+    "replacement_dialogue": [
+      {
+        "role": "user",
+        "content": "I've had cheap months and dear months on both bulk shops and small ones, about equally."
+      },
+      {
+        "role": "assistant",
+        "content": "no pattern?"
+      },
+      {
+        "role": "user",
+        "content": "none I can find. it isn't the shop size."
+      }
+    ]
+  }
+}

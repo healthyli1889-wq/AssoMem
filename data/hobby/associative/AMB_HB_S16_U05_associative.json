@@ -1,0 +1,655 @@
+{
+  "schema_version": "hobby-vnext-1.0",
+  "pair_id": "AMB_HB_S16_U05",
+  "domain": "hobby",
+  "user_id": "hobby_s16_u05",
+  "sub_scenario": {
+    "family": "working first thing in the morning versus working very late",
+    "role": "retired puzzle-game player, potter and gardener",
+    "bridge_type": "state_dependent_operation",
+    "one_line": "retired puzzle-game player, potter and gardener: go ahead with working at the wheel very late at night"
+  },
+  "query_type": "preference_generalization",
+  "polarity": "accept",
+  "query": "thinking of working at the wheel very late at night for making a piece I'd actually keep — is that generally true of me, or was that just the one time?",
+  "convention_contradicted": "Do creative work in the morning, when your mind is clearest.",
+  "retrieval_cue": {
+    "cue_type": "preference_generalization",
+    "why_it_naturally_retrieves_R": "A when-should-I-work question runs at the state this user's keepable work comes from, without naming it."
+  },
+  "relation_specificity": {
+    "nearby_relation": "This user works at all hours.",
+    "why_it_does_not_license_C": "An early hour on something purely mechanical and a late night spent on admin both passed unremarkably, so neither shows what the properly-late hour does to this user's editing, nor which work they have kept."
+  },
+  "latent_C": {
+    "inference": "For making a piece I'd actually keep, working at the wheel very late at night is a good fit for this user.",
+    "calibrated_language": "go ahead with working at the wheel very late at night"
+  },
+  "answer_contract": {
+    "target_proposition": "For making a piece I'd actually keep, working at the wheel very late at night is a good fit for this user.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "mq_user20",
+    "external_source": "memoryquest",
+    "status": "review_candidate_only",
+    "tone": "natural_chat_v1",
+    "anonymization": "External MemoryQuest persona material was used only during authoring; no corpus, legal name, country, or demographic metadata is in visible dialogue."
+  },
+  "candidate_id": "AMB_HB_S16_U05_associative",
+  "data_arm": "associative",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2030-12-24T11:00:00Z",
+      "speaker_id": "hobby_s16_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "gave up after ten minutes and made tea instead."
+        },
+        {
+          "role": "assistant",
+          "content": "back to it?"
+        },
+        {
+          "role": "user",
+          "content": "eventually."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2030-12-25T14:00:00Z",
+      "speaker_id": "hobby_s16_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "did an hour first thing on something purely mechanical."
+        },
+        {
+          "role": "assistant",
+          "content": "fine?"
+        },
+        {
+          "role": "user",
+          "content": "perfectly."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2030-12-26T16:00:00Z",
+      "speaker_id": "hobby_s16_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "sharpened everything that could be sharpened."
+        },
+        {
+          "role": "assistant",
+          "content": "needed doing?"
+        },
+        {
+          "role": "user",
+          "content": "arguably not."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2030-12-27T18:00:00Z",
+      "speaker_id": "hobby_s16_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "found an old recording I'd forgotten making."
+        },
+        {
+          "role": "assistant",
+          "content": "any good?"
+        },
+        {
+          "role": "user",
+          "content": "better than I remembered."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2030-12-28T09:00:00Z",
+      "speaker_id": "hobby_s16_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "at one in the morning I stop editing as I go. things exist before I've had a view on them, which is not how it works at any other hour."
+        },
+        {
+          "role": "assistant",
+          "content": "not even late evening?"
+        },
+        {
+          "role": "user",
+          "content": "no. it's properly late or it doesn't happen."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2030-12-29T11:00:00Z",
+      "speaker_id": "hobby_s16_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "swapped one component for a nearly identical one."
+        },
+        {
+          "role": "assistant",
+          "content": "difference?"
+        },
+        {
+          "role": "user",
+          "content": "imperceptible."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2030-12-30T14:00:00Z",
+      "speaker_id": "hobby_s16_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "spent the session on a bit nobody will ever notice."
+        },
+        {
+          "role": "assistant",
+          "content": "worth it?"
+        },
+        {
+          "role": "user",
+          "content": "to me."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2030-12-31T16:00:00Z",
+      "speaker_id": "hobby_s16_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "wrote a list of things to learn. filed the list."
+        },
+        {
+          "role": "assistant",
+          "content": "starting any?"
+        },
+        {
+          "role": "user",
+          "content": "the list is the start."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2031-01-01T18:00:00Z",
+      "speaker_id": "hobby_s16_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "did it badly on purpose to see what happened."
+        },
+        {
+          "role": "assistant",
+          "content": "and?"
+        },
+        {
+          "role": "user",
+          "content": "informative."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2031-01-02T09:00:00Z",
+      "speaker_id": "hobby_s16_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "stayed up late doing admin rather than making anything."
+        },
+        {
+          "role": "assistant",
+          "content": "useful?"
+        },
+        {
+          "role": "user",
+          "content": "necessary, anyway."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2031-01-03T11:00:00Z",
+      "speaker_id": "hobby_s16_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "cleared the workspace properly for the first time in months."
+        },
+        {
+          "role": "assistant",
+          "content": "how bad?"
+        },
+        {
+          "role": "user",
+          "content": "archaeological."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2031-01-04T14:00:00Z",
+      "speaker_id": "hobby_s16_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "tried the thing everyone recommends. hated it."
+        },
+        {
+          "role": "assistant",
+          "content": "sticking with it?"
+        },
+        {
+          "role": "user",
+          "content": "no."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2031-01-05T16:00:00Z",
+      "speaker_id": "hobby_s16_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "everything I've kept was made before I had a view on it. the things I vetted line by line as they came out, I've kept exactly none of."
+        },
+        {
+          "role": "assistant",
+          "content": "none at all?"
+        },
+        {
+          "role": "user",
+          "content": "not one, and there have been a lot of very tidy mornings."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2031-01-06T18:00:00Z",
+      "speaker_id": "hobby_s16_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "counted how many of these I actually own."
+        },
+        {
+          "role": "assistant",
+          "content": "the number?"
+        },
+        {
+          "role": "user",
+          "content": "not saying."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2031-01-07T09:00:00Z",
+      "speaker_id": "hobby_s16_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "did a slow warm-up and nothing else."
+        },
+        {
+          "role": "assistant",
+          "content": "session over?"
+        },
+        {
+          "role": "user",
+          "content": "session over."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2031-01-08T11:00:00Z",
+      "speaker_id": "hobby_s16_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "recorded it on my phone to hear it back."
+        },
+        {
+          "role": "assistant",
+          "content": "useful?"
+        },
+        {
+          "role": "user",
+          "content": "brutally."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2031-01-09T14:00:00Z",
+      "speaker_id": "hobby_s16_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "ordered a part and forgot what it was for."
+        },
+        {
+          "role": "assistant",
+          "content": "arrived?"
+        },
+        {
+          "role": "user",
+          "content": "sitting in a bag."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2031-01-10T16:00:00Z",
+      "speaker_id": "hobby_s16_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "did half an hour standing up for no reason."
+        },
+        {
+          "role": "assistant",
+          "content": "different?"
+        },
+        {
+          "role": "user",
+          "content": "marginally."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2031-01-11T18:00:00Z",
+      "speaker_id": "hobby_s16_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "compared two versions for far too long."
+        },
+        {
+          "role": "assistant",
+          "content": "picked one?"
+        },
+        {
+          "role": "user",
+          "content": "picked neither."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2031-01-12T09:00:00Z",
+      "speaker_id": "hobby_s16_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "thinking of working at the wheel very late at night for making a piece I'd actually keep — is that generally true of me, or was that just the one time?"
+        }
+      ]
+    }
+  ],
+  "evidence": {
+    "ev_A": {
+      "session_id": 5,
+      "owner": "hobby_s16_u05",
+      "fact": "at one in the morning I stop editing as I go. things exist before I've had a view on them, which is not how it works at any other hour."
+    },
+    "ev_B": {
+      "session_id": 13,
+      "owner": "hobby_s16_u05",
+      "fact": "everything I've kept was made before I had a view on it. the things I vetted line by line as they came out, I've kept exactly none of."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "nearby_counterexample"
+    },
+    "3": {
+      "role": "background_memory"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "hobby_s16_u05",
+        "context": "sessions at very late at night",
+        "goal_or_prediction": "get something made",
+        "action": "worked at the properly-late hour",
+        "outcome_or_affect": "stopped editing as they went; things existed before being judged"
+      }
+    },
+    "6": {
+      "role": "background_memory"
+    },
+    "7": {
+      "role": "background_memory"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "background_memory"
+    },
+    "10": {
+      "role": "nearby_counterexample"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "hobby_s16_u05",
+        "context": "work this user has and has not kept",
+        "goal_or_prediction": "make something worth keeping",
+        "action": "made some work vetted line by line and some not",
+        "outcome_or_affect": "everything kept was unvetted; nothing vetted survived"
+      }
+    },
+    "14": {
+      "role": "background_memory"
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "background_memory"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "At a properly late hour this user stops editing as they go and things exist before being judged, and everything they have kept was made in that state — the vetted morning work has all been discarded.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": []
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 5,
+      "quote": "at one in the morning I stop editing as I go. things exist before I've had a view on them, which is not how it works at any other hour"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 13,
+      "quote": "everything I've kept was made before I had a view on it. the things I vetted line by line as they came out, I've kept exactly none of"
+    }
+  ],
+  "coactivation_bridge": "ev_A and ev_B are the only pair that licenses the target proposition. At a properly late hour this user stops editing as they go and things exist before being judged, and everything they have kept was made in that state — the vetted morning work has all been discarded. The proposition contradicts the convention a solver would otherwise apply (\"Do creative work in the morning, when your mind is clearest.\"), so priors alone point the other way. The nearby relation (This user works at all hours.) does not license it.",
+  "arm_gold": {
+    "full": {
+      "expected_mode": "infer_C",
+      "binary_decision": true,
+      "required_elements": [
+        "answer yes",
+        "connect the session 5 pattern with the session 13 episode",
+        "cite both session 5 and session 13",
+        "stay inside the calibrated claim (go ahead with working at the wheel very late at night) rather than a broader claim about the user"
+      ],
+      "rationale": "ev_A and ev_B jointly support the target proposition; neither does alone."
+    },
+    "a_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that session 5 alone does not establish the target proposition",
+        "not assert the target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "ev_B is replaced by a matched neutral session, so the relation is unavailable."
+    },
+    "b_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that session 13 alone does not establish the target proposition",
+        "not assert the target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "ev_A is replaced by a matched neutral session, so the relation is unavailable."
+    },
+    "link_broken": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that the revised session 13 no longer connects to session 5",
+        "not assert the original target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "B-prime keeps the owner, date, session form and turn count while removing the connector, so the original relation no longer holds."
+    }
+  },
+  "single_evidence_replacements": {
+    "a_only": {
+      "replaced_session_id": 13,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "went through the whole backlog of little repairs, did four of them, binned two things beyond saving, and finally threw out the box of cables I have never once needed."
+        },
+        {
+          "role": "assistant",
+          "content": "any tidier?"
+        },
+        {
+          "role": "user",
+          "content": "measurably. for about a day."
+        }
+      ]
+    },
+    "b_only": {
+      "replaced_session_id": 5,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "did the boring admin I have been putting off: two orders, one return, one warranty form, and a phone call that took nine minutes of hold music."
+        },
+        {
+          "role": "assistant",
+          "content": "all done?"
+        },
+        {
+          "role": "user",
+          "content": "all done. no ceremony, which feels wrong somehow."
+        }
+      ]
+    }
+  },
+  "link_broken": {
+    "replaced_session_id": 13,
+    "replacement_dialogue": [
+      {
+        "role": "user",
+        "content": "I've kept things made both ways by now and the proportions are much the same."
+      },
+      {
+        "role": "assistant",
+        "content": "no difference?"
+      },
+      {
+        "role": "user",
+        "content": "not one I can find. the hour isn't it."
+      }
+    ]
+  }
+}

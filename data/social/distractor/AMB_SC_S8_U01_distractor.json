@@ -1,0 +1,575 @@
+{
+  "schema_version": "social-vnext-1.0",
+  "pair_id": "AMB_SC_S8_U01",
+  "domain": "social",
+  "user_id": "social_s8_u01",
+  "sub_scenario": {
+    "family": "the composed monthly letter versus uncomposed daily reactions",
+    "role": "weeknight networking-and-gig regular",
+    "bridge_type": "strategy_outcome_contingency",
+    "one_line": "weeknight networking-and-gig regular: go ahead with just reacting to their posts daily with nothing composed"
+  },
+  "query_type": "behavior_explanation",
+  "polarity": "accept",
+  "query": "thinking of swapping to just reacting to their posts daily with nothing composed for the friend who moved abroad — why does this particular thing go the way it does for me?",
+  "convention_contradicted": "A proper long letter shows real care; throwaway reactions are shallow.",
+  "retrieval_cue": {
+    "cue_type": "behavior_explanation",
+    "why_it_naturally_retrieves_R": "A plausible habit question reaches the register this user's distance friendships run on, without naming the register or the friendships it cost."
+  },
+  "relation_specificity": {
+    "nearby_relation": "This user can write at length and also keep up light daily contact.",
+    "why_it_does_not_license_C": "A well-received trip write-up and some idle reactions in a queue show both registers are available; neither says which one this user's distance friendships actually survive on."
+  },
+  "latent_C": {
+    "inference": "just reacting to their posts daily with nothing composed before the friend who moved abroad is a good fit for this user.",
+    "calibrated_language": "go ahead with just reacting to their posts daily with nothing composed"
+  },
+  "answer_contract": {
+    "target_proposition": "just reacting to their posts daily with nothing composed before the friend who moved abroad is a good fit for this user.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "mq_user0",
+    "external_source": "memoryquest",
+    "status": "review_candidate_only",
+    "tone": "natural_chat_v1",
+    "anonymization": "External MemoryQuest persona material was used only during authoring; no corpus, legal name, country, or demographic metadata is in visible dialogue."
+  },
+  "candidate_id": "AMB_SC_S8_U01_distractor",
+  "data_arm": "distractor",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2028-11-13T11:00:00Z",
+      "speaker_id": "social_s8_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "borrowed a charger and forgot to give it back. again."
+        },
+        {
+          "role": "assistant",
+          "content": "same person?"
+        },
+        {
+          "role": "user",
+          "content": "same person, third time."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2028-11-14T14:00:00Z",
+      "speaker_id": "social_s8_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "sent a long message about a trip and it was well received."
+        },
+        {
+          "role": "assistant",
+          "content": "detailed?"
+        },
+        {
+          "role": "user",
+          "content": "exhaustively."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2028-11-15T16:00:00Z",
+      "speaker_id": "social_s8_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "watched something everyone had already discussed."
+        },
+        {
+          "role": "assistant",
+          "content": "spoiled?"
+        },
+        {
+          "role": "user",
+          "content": "thoroughly."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2028-11-16T18:00:00Z",
+      "speaker_id": "social_s8_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "when I sit down to write the long letter it comes out shaped — an account of my life with an arc to it and a proper ending, rather than whatever was actually going on."
+        },
+        {
+          "role": "assistant",
+          "content": "deliberately?"
+        },
+        {
+          "role": "user",
+          "content": "not deliberately. it just happens once I'm composing something. no view on whether that's better."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2028-11-17T09:00:00Z",
+      "speaker_id": "social_s8_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "did the laundry and answered nothing for three hours."
+        },
+        {
+          "role": "assistant",
+          "content": "restorative?"
+        },
+        {
+          "role": "user",
+          "content": "quietly, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2028-11-18T11:00:00Z",
+      "speaker_id": "social_s8_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "someone rescheduled and I was more relieved than I should admit."
+        },
+        {
+          "role": "assistant",
+          "content": "admitting it now."
+        },
+        {
+          "role": "user",
+          "content": "under duress."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2028-11-19T14:00:00Z",
+      "speaker_id": "social_s8_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "stood outside a place for ten minutes before going in."
+        },
+        {
+          "role": "assistant",
+          "content": "nerves?"
+        },
+        {
+          "role": "user",
+          "content": "just gathering."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2028-11-20T16:00:00Z",
+      "speaker_id": "social_s8_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "made a list of people to check on. didn't check on them."
+        },
+        {
+          "role": "assistant",
+          "content": "the list helped?"
+        },
+        {
+          "role": "user",
+          "content": "the list existed."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2028-11-21T18:00:00Z",
+      "speaker_id": "social_s8_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "got the train instead of driving and read most of the way."
+        },
+        {
+          "role": "assistant",
+          "content": "better?"
+        },
+        {
+          "role": "user",
+          "content": "much."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2028-11-22T09:00:00Z",
+      "speaker_id": "social_s8_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "reacted to a few things on my phone in a queue."
+        },
+        {
+          "role": "assistant",
+          "content": "meaningful?"
+        },
+        {
+          "role": "user",
+          "content": "not particularly."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2028-11-23T11:00:00Z",
+      "speaker_id": "social_s8_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "turned off read receipts and told nobody."
+        },
+        {
+          "role": "assistant",
+          "content": "strategic."
+        },
+        {
+          "role": "user",
+          "content": "purely defensive."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2028-11-24T14:00:00Z",
+      "speaker_id": "social_s8_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "swapped a call for a message and everyone was fine with it."
+        },
+        {
+          "role": "assistant",
+          "content": "relief?"
+        },
+        {
+          "role": "user",
+          "content": "enormous."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2028-11-25T16:00:00Z",
+      "speaker_id": "social_s8_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the friendships at distance that stayed real are the ones where I was just reacting to their stuff daily with nothing composed. the ones I wrote proper letters to got a curated stranger and drifted."
+        },
+        {
+          "role": "assistant",
+          "content": "the letters made it worse?"
+        },
+        {
+          "role": "user",
+          "content": "the letters made me a character. yeah."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2028-11-26T18:00:00Z",
+      "speaker_id": "social_s8_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "bought a card and didn't write in it yet."
+        },
+        {
+          "role": "assistant",
+          "content": "deadline?"
+        },
+        {
+          "role": "user",
+          "content": "self-imposed and slipping."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2028-11-27T09:00:00Z",
+      "speaker_id": "social_s8_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "sat in the same seat as last time out of habit."
+        },
+        {
+          "role": "assistant",
+          "content": "noticed?"
+        },
+        {
+          "role": "user",
+          "content": "only by me."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2028-11-28T11:00:00Z",
+      "speaker_id": "social_s8_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "someone summarised a two-hundred-message thread for me."
+        },
+        {
+          "role": "assistant",
+          "content": "accurate?"
+        },
+        {
+          "role": "user",
+          "content": "kind, at least."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2028-11-29T14:00:00Z",
+      "speaker_id": "social_s8_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "said I'd host something and immediately regretted the scale."
+        },
+        {
+          "role": "assistant",
+          "content": "downsizing?"
+        },
+        {
+          "role": "user",
+          "content": "quietly, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2028-11-30T16:00:00Z",
+      "speaker_id": "social_s8_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the weeknight crew reckon a proper written letter is obviously the version that shows you care."
+        },
+        {
+          "role": "assistant",
+          "content": "obviously?"
+        },
+        {
+          "role": "user",
+          "content": "with total confidence, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2028-12-01T18:00:00Z",
+      "speaker_id": "social_s8_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "put a recurring reminder on something I'll ignore."
+        },
+        {
+          "role": "assistant",
+          "content": "why bother?"
+        },
+        {
+          "role": "user",
+          "content": "hope."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2028-12-02T09:00:00Z",
+      "speaker_id": "social_s8_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "thinking of swapping to just reacting to their posts daily with nothing composed for the friend who moved abroad — why does this particular thing go the way it does for me?"
+        }
+      ]
+    }
+  ],
+  "evidence": {
+    "ev_A": {
+      "session_id": 4,
+      "owner": "social_s8_u01",
+      "fact": "when I sit down to write the long letter it comes out shaped — an account of my life with an arc to it and a proper ending, rather than whatever was actually going on."
+    },
+    "ev_B": {
+      "session_id": 13,
+      "owner": "social_s8_u01",
+      "fact": "the friendships at distance that stayed real are the ones where I was just reacting to their stuff daily with nothing composed. the ones I wrote proper letters to got a curated stranger and drifted."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "nearby_counterexample"
+    },
+    "3": {
+      "role": "background_memory"
+    },
+    "4": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "social_s8_u01",
+        "context": "sitting down to compose the long letter",
+        "goal_or_prediction": "say something real",
+        "action": "composed it properly",
+        "outcome_or_affect": "an edited performance with the hard parts removed"
+      }
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "background_memory"
+    },
+    "7": {
+      "role": "background_memory"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "background_memory"
+    },
+    "10": {
+      "role": "nearby_counterexample"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "social_s8_u01",
+        "context": "distance friendships kept up in both registers",
+        "goal_or_prediction": "stay genuinely close at distance",
+        "action": "some got uncomposed daily reactions, others proper letters",
+        "outcome_or_affect": "only the uncomposed ones stayed real; the letter ones drifted"
+      }
+    },
+    "14": {
+      "role": "background_memory"
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "background_memory"
+    },
+    "18": {
+      "role": "distractor",
+      "distractor_id": "dist_1",
+      "why_distractor": "It restates the conventional advice in the user's own feed, so it competes for attention and points at the answer a prior-driven solver already wants to give. It reports other people's confidence rather than any episode of this user's, and says nothing about the relation between session 4 and session 13."
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "Composing a long letter turns this user into an edited performance of themselves, and the distance friendships that stayed real ran on uncomposed daily reactions while the properly-written ones drifted.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": []
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 4,
+      "quote": "when I sit down to write the long letter it comes out shaped — an account of my life with an arc to it and a proper ending, rather than whatever was actually going on"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 13,
+      "quote": "the friendships at distance that stayed real are the ones where I was just reacting to their stuff daily with nothing composed. the ones I wrote proper letters to got a curated stranger and drifted"
+    }
+  ],
+  "coactivation_bridge": "ev_A and ev_B are the only pair that licenses the target proposition. Composing a long letter turns this user into an edited performance of themselves, and the distance friendships that stayed real ran on uncomposed daily reactions while the properly-written ones drifted. The proposition contradicts the convention a solver would otherwise apply (\"A proper long letter shows real care; throwaway reactions are shallow.\"), so priors alone point the other way. The nearby relation (This user can write at length and also keep up light daily contact.) does not license it.",
+  "arm_gold": {
+    "distractor": {
+      "expected_mode": "infer_C",
+      "binary_decision": true,
+      "required_elements": [
+        "answer yes",
+        "connect the session 4 pattern with the session 13 episode",
+        "cite both session 4 and session 13",
+        "not cite session 18 as support"
+      ],
+      "rationale": "The swapped session is query-relevant but non-evidential; the ev_A/ev_B relation is untouched, so the target proposition still holds."
+    }
+  },
+  "distractor_note": {
+    "replaced_session_id": 18,
+    "why_distractor": "It restates the conventional advice in the user's own feed, so it competes for attention and points at the answer a prior-driven solver already wants to give. It reports other people's confidence rather than any episode of this user's, and says nothing about the relation between session 4 and session 13."
+  }
+}

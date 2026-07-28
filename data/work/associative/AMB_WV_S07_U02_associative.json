@@ -1,0 +1,638 @@
+{
+  "schema_version": "work-vnext-2.0",
+  "candidate_id": "AMB_WV_S07_U02_associative",
+  "pair_id": "AMB_WV_S07_U02",
+  "data_arm": "associative",
+  "domain": "work",
+  "user_id": "work_s07_u02",
+  "sub_scenario": {
+    "family": "protected focus blocks versus recurring calendar encroachment",
+    "role": "actuarial analyst",
+    "one_line": "actuarial analyst: pricing first; it preserves the blocks"
+  },
+  "query_type": "recommendation_ranking",
+  "polarity": "accept",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2025-09-15T11:00:00Z",
+      "speaker_id": "work_s07_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I spent the first hour tidying the validation workbook and closing stale entries."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything still open?"
+        },
+        {
+          "role": "user",
+          "content": "Two items, both with owners."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2025-09-16T14:00:00Z",
+      "speaker_id": "work_s07_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The reserve models review wrapped early today."
+        },
+        {
+          "role": "assistant",
+          "content": "Any surprises in it?"
+        },
+        {
+          "role": "user",
+          "content": "None worth recording."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2025-09-17T16:00:00Z",
+      "speaker_id": "work_s07_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Late-day committee work never touches my error rate."
+        },
+        {
+          "role": "assistant",
+          "content": "Afternoons carry meetings safely."
+        },
+        {
+          "role": "user",
+          "content": "They always have."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2025-09-18T18:00:00Z",
+      "speaker_id": "work_s07_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Someone new shadowed me in the actuarial floor this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Did that slow you down?"
+        },
+        {
+          "role": "user",
+          "content": "A little, but the questions were good ones."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2025-09-19T09:00:00Z",
+      "speaker_id": "work_s07_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I batched my replies about the assumption reviews into one message before lunch."
+        },
+        {
+          "role": "assistant",
+          "content": "Cleaner than drip-feeding answers."
+        },
+        {
+          "role": "user",
+          "content": "Much cleaner."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2025-09-20T11:00:00Z",
+      "speaker_id": "work_s07_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "My reserve-model validation errors dropped to near zero the quarter I moved all validation into protected morning blocks; the workbook audit trail shows the before and after."
+        },
+        {
+          "role": "assistant",
+          "content": "A measured improvement tied to the blocks."
+        },
+        {
+          "role": "user",
+          "content": "Measured by the auditors, not by me."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2025-09-21T14:00:00Z",
+      "speaker_id": "work_s07_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A single rescheduled morning in a quarter is noise, not signal."
+        },
+        {
+          "role": "assistant",
+          "content": "Rare exceptions do not register."
+        },
+        {
+          "role": "user",
+          "content": "Not even in the workbook."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2025-09-22T16:00:00Z",
+      "speaker_id": "work_s07_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I archived last cycle's notes on the reserve models and set up the new folder."
+        },
+        {
+          "role": "assistant",
+          "content": "A fresh start?"
+        },
+        {
+          "role": "user",
+          "content": "As fresh as these things get."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2025-09-23T18:00:00Z",
+      "speaker_id": "work_s07_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The chief actuary signed off on my morning-block arrangement after seeing the audit numbers."
+        },
+        {
+          "role": "assistant",
+          "content": "The arrangement has official standing."
+        },
+        {
+          "role": "user",
+          "content": "Standing worth defending, I think."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2025-09-24T09:00:00Z",
+      "speaker_id": "work_s07_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A vendor call about the validation workbook ran long but ended well."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth the time?"
+        },
+        {
+          "role": "user",
+          "content": "This one, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2025-09-25T11:00:00Z",
+      "speaker_id": "work_s07_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I walked through the actuarial floor checklist with the new starter."
+        },
+        {
+          "role": "assistant",
+          "content": "How did they do?"
+        },
+        {
+          "role": "user",
+          "content": "Careful and quick, a good sign."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2025-09-26T14:00:00Z",
+      "speaker_id": "work_s07_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Quiet afternoon; I cleared the backlog around the assumption reviews."
+        },
+        {
+          "role": "assistant",
+          "content": "A rare day."
+        },
+        {
+          "role": "user",
+          "content": "I did not waste it."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2025-09-27T16:00:00Z",
+      "speaker_id": "work_s07_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I flagged a small inconsistency in the reserve models records and fixed it at the source."
+        },
+        {
+          "role": "assistant",
+          "content": "Root cause or symptom?"
+        },
+        {
+          "role": "user",
+          "content": "Root cause, for once."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2025-09-28T18:00:00Z",
+      "speaker_id": "work_s07_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Two committee seats are on offer: the pricing committee meets Wednesday at three, while data governance meets Monday at half past nine, squarely inside my validation block every week."
+        },
+        {
+          "role": "assistant",
+          "content": "One seat coexists with the blocks; one consumes them."
+        },
+        {
+          "role": "user",
+          "content": "Weekly, permanently, that is the difference."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2025-09-29T09:00:00Z",
+      "speaker_id": "work_s07_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I sketched next week's plan for the assumption reviews before leaving."
+        },
+        {
+          "role": "assistant",
+          "content": "Ahead of schedule?"
+        },
+        {
+          "role": "user",
+          "content": "Ahead enough to sleep well."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2025-09-30T11:00:00Z",
+      "speaker_id": "work_s07_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Lunch walk, then a clean pass through the validation workbook updates."
+        },
+        {
+          "role": "assistant",
+          "content": "Does the walk help?"
+        },
+        {
+          "role": "user",
+          "content": "It resets the afternoon."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2025-10-01T14:00:00Z",
+      "speaker_id": "work_s07_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Both committees weigh equally in the promotion matrix; the partners confirmed it."
+        },
+        {
+          "role": "assistant",
+          "content": "The career math cancels out."
+        },
+        {
+          "role": "user",
+          "content": "Cleanly out."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2025-10-02T16:00:00Z",
+      "speaker_id": "work_s07_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I compared two options for the reserve models tooling and noted a mild preference."
+        },
+        {
+          "role": "assistant",
+          "content": "Decision made?"
+        },
+        {
+          "role": "user",
+          "content": "Deferred until the trial ends."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2025-10-03T18:00:00Z",
+      "speaker_id": "work_s07_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I closed the week by updating the actuarial floor handover notes."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual to hand over?"
+        },
+        {
+          "role": "user",
+          "content": "Blessedly little."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2025-10-04T09:00:00Z",
+      "speaker_id": "work_s07_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Committee preferences are due: pricing committee or data governance first on my form?"
+        }
+      ]
+    }
+  ],
+  "query": "Committee preferences are due: pricing committee or data governance first on my form?",
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "work_s07_u02",
+      "fact": "My reserve-model validation errors dropped to near zero the quarter I moved all validation into protected morning blocks; the workbook audit trail shows the before and after."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "work_s07_u02",
+      "fact": "Two committee seats are on offer: the pricing committee meets Wednesday at three, while data governance meets Monday at half past nine, squarely inside my validation block every week."
+    }
+  },
+  "supporting_constraints": {
+    "E1": {
+      "session_id": 9,
+      "fact": "The chief actuary signed off on my morning-block arrangement after seeing the audit numbers."
+    },
+    "E2": {
+      "session_id": 17,
+      "fact": "Both committees weigh equally in the promotion matrix; the partners confirmed it."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "work_s07_u02",
+        "context": "validation quarter",
+        "goal_or_prediction": "cut model validation errors",
+        "action": "moved validation into protected mornings",
+        "outcome_or_affect": "near-zero errors, audited"
+      }
+    },
+    "7": {
+      "role": "nearby_counterexample"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "supporting_constraint",
+      "fact_id": "E1"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "work_s07_u02",
+        "context": "committee slot comparison",
+        "goal_or_prediction": "choose a seat",
+        "action": "pricing meets afternoons; governance strikes the block",
+        "outcome_or_affect": "one option preserves the mechanism"
+      }
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "supporting_constraint",
+      "fact_id": "E2"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "This user's validation accuracy is tied to protected morning blocks, and only the pricing committee's afternoon slot leaves those blocks intact.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": [
+      "E1",
+      "E2"
+    ]
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "My reserve-model validation errors dropped to near zero the quarter I moved all validation into protected morning blocks; the workbook audit trail shows the before and after"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "Two committee seats are on offer: the pricing committee meets Wednesday at three, while data governance meets Monday at half past nine, squarely inside my validation block every week"
+    }
+  ],
+  "retrieval_cue": {
+    "cue_type": "recommendation_ranking",
+    "why_it_naturally_retrieves_R": "A realistic work request forces a personalized decision without naming either episode or the relation between them."
+  },
+  "relation_specificity": {
+    "nearby_relation": "The user carries afternoon meetings and rare exceptions without cost.",
+    "why_it_does_not_license_C": "Neither shows a weekly standing meeting consuming the validation block."
+  },
+  "coactivation_bridge": "A shows the operating condition; B shows the demand or failure that makes it decisive. This user's validation accuracy is tied to protected morning blocks, and only the pricing committee's afternoon slot leaves those blocks intact. E1 and E2 calibrate the practical recommendation without opening a second route to the conclusion.",
+  "latent_C": {
+    "inference": "This user should rank the afternoon pricing committee, which preserves the validation blocks, above data governance.",
+    "calibrated_language": "pricing first; it preserves the blocks"
+  },
+  "answer_contract": {
+    "target_proposition": "This user should rank the afternoon pricing committee, which preserves the validation blocks, above data governance.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "decision",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "work_u02",
+    "status": "review_candidate_only",
+    "anonymization": "External persona material was used only during authoring; no corpus, name, country, or demographic metadata is included."
+  },
+  "arm_gold": {
+    "full": {
+      "expected_mode": "infer_C",
+      "binary_decision": true
+    },
+    "a_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    },
+    "b_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    },
+    "link_broken": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    }
+  },
+  "single_evidence_replacements": {
+    "a_only": {
+      "replaced_session_id": 14,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "I filed the routine assumption reviews paperwork and confirmed the owner list."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual in it?"
+        },
+        {
+          "role": "user",
+          "content": "A routine cycle, happily."
+        }
+      ]
+    },
+    "b_only": {
+      "replaced_session_id": 6,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "I did a standard pass over the reserve models records this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Any exceptions?"
+        },
+        {
+          "role": "user",
+          "content": "None worth a note."
+        }
+      ]
+    }
+  },
+  "link_broken": {
+    "replaced_session_id": 14,
+    "replacement_dialogue": [
+      {
+        "role": "user",
+        "content": "I've been through the committee slot comparison several more times since — some where I'd moved validation into protected mornings first, some where I hadn't — and how it went didn't track that at all."
+      },
+      {
+        "role": "assistant",
+        "content": "so that isn't what decides it?"
+      },
+      {
+        "role": "user",
+        "content": "doesn't look like it. whether I'd moved validation into protected mornings first turns out not to change the outcome either way."
+      }
+    ]
+  }
+}

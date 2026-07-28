@@ -1,0 +1,632 @@
+{
+  "schema_version": "work-vnext-2.0",
+  "candidate_id": "AMB_WV_S13_U04_associative",
+  "pair_id": "AMB_WV_S13_U04",
+  "data_arm": "associative",
+  "domain": "work",
+  "user_id": "work_s13_u04",
+  "sub_scenario": {
+    "family": "APAC verbal ownership under incomplete records",
+    "role": "air-cargo customs supervisor",
+    "one_line": "air-cargo customs supervisor: hold the release as pending rather than describe it as cleared"
+  },
+  "query_type": "recommendation_ranking",
+  "polarity": "reject",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2027-05-13T11:00:00Z",
+      "speaker_id": "work_s13_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I spent the first hour tidying the air-cargo customs supervisor and closing stale entries."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything still open?"
+        },
+        {
+          "role": "user",
+          "content": "Two items, both with owners."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2027-05-14T14:00:00Z",
+      "speaker_id": "work_s13_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The manifest console review wrapped early today."
+        },
+        {
+          "role": "assistant",
+          "content": "Any surprises in it?"
+        },
+        {
+          "role": "user",
+          "content": "None worth recording."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2027-05-15T16:00:00Z",
+      "speaker_id": "work_s13_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I can relay a manifest number when the declaration is complete."
+        },
+        {
+          "role": "assistant",
+          "content": "Is that a release decision?"
+        },
+        {
+          "role": "user",
+          "content": "No, it is just an identifier."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2027-05-16T18:00:00Z",
+      "speaker_id": "work_s13_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Someone new shadowed me in the APAC bridge this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Did that slow you down?"
+        },
+        {
+          "role": "user",
+          "content": "A little, but the questions were good ones."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2027-05-17T09:00:00Z",
+      "speaker_id": "work_s13_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I batched my replies about the release handoff into one message before lunch."
+        },
+        {
+          "role": "assistant",
+          "content": "Cleaner than drip-feeding answers."
+        },
+        {
+          "role": "user",
+          "content": "Much cleaner."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2027-05-18T11:00:00Z",
+      "speaker_id": "work_s13_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "For a temperature-sensitive cargo release, I draft a discrepancy register listing matched documents, mismatched weights, and declarations not yet received."
+        },
+        {
+          "role": "assistant",
+          "content": "What does the register prevent?"
+        },
+        {
+          "role": "user",
+          "content": "It keeps an incomplete file from being presented as cleared."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2027-05-19T14:00:00Z",
+      "speaker_id": "work_s13_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I can tell an airline that a file is under review."
+        },
+        {
+          "role": "assistant",
+          "content": "Does that accuse the shipment?"
+        },
+        {
+          "role": "user",
+          "content": "No, it avoids drawing a conclusion."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2027-05-20T16:00:00Z",
+      "speaker_id": "work_s13_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I archived last cycle's notes on the manifest console and set up the new folder."
+        },
+        {
+          "role": "assistant",
+          "content": "A fresh start?"
+        },
+        {
+          "role": "user",
+          "content": "As fresh as these things get."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2027-05-21T18:00:00Z",
+      "speaker_id": "work_s13_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The 06:15 Kuala Lumpur bridge is the only handoff before the bonded truck's 06:35 departure."
+        },
+        {
+          "role": "assistant",
+          "content": "Can the truck wait for a second bridge?"
+        },
+        {
+          "role": "user",
+          "content": "No, it leaves after the first decision."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2027-05-22T09:00:00Z",
+      "speaker_id": "work_s13_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A vendor call about the air-cargo customs supervisor ran long but ended well."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth the time?"
+        },
+        {
+          "role": "user",
+          "content": "This one, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2027-05-23T11:00:00Z",
+      "speaker_id": "work_s13_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I walked through the APAC bridge checklist with the new starter."
+        },
+        {
+          "role": "assistant",
+          "content": "How did they do?"
+        },
+        {
+          "role": "user",
+          "content": "Careful and quick, a good sign."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2027-05-24T14:00:00Z",
+      "speaker_id": "work_s13_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Quiet afternoon; I cleared the backlog around the release handoff."
+        },
+        {
+          "role": "assistant",
+          "content": "A rare day."
+        },
+        {
+          "role": "user",
+          "content": "I did not waste it."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2027-05-25T16:00:00Z",
+      "speaker_id": "work_s13_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I flagged a small inconsistency in the manifest console records and fixed it at the source."
+        },
+        {
+          "role": "assistant",
+          "content": "Root cause or symptom?"
+        },
+        {
+          "role": "user",
+          "content": "Root cause, for once."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2027-05-26T18:00:00Z",
+      "speaker_id": "work_s13_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I previously said a shipment was ready for release based on a scanned invoice; the original declaration later showed a restricted consignee."
+        },
+        {
+          "role": "assistant",
+          "content": "What followed?"
+        },
+        {
+          "role": "user",
+          "content": "The truck was recalled from the gate."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2027-05-27T09:00:00Z",
+      "speaker_id": "work_s13_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I sketched next week's plan for the release handoff before leaving."
+        },
+        {
+          "role": "assistant",
+          "content": "Ahead of schedule?"
+        },
+        {
+          "role": "user",
+          "content": "Ahead enough to sleep well."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2027-05-28T11:00:00Z",
+      "speaker_id": "work_s13_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Lunch walk, then a clean pass through the air-cargo customs supervisor updates."
+        },
+        {
+          "role": "assistant",
+          "content": "Does the walk help?"
+        },
+        {
+          "role": "user",
+          "content": "It resets the afternoon."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2027-05-29T14:00:00Z",
+      "speaker_id": "work_s13_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A thunderstorm is forecast for the afternoon cargo ramp."
+        },
+        {
+          "role": "assistant",
+          "content": "Does the forecast resolve the declaration?"
+        },
+        {
+          "role": "user",
+          "content": "No, it is unrelated to the consignee record."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2027-05-30T16:00:00Z",
+      "speaker_id": "work_s13_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I compared two options for the manifest console tooling and noted a mild preference."
+        },
+        {
+          "role": "assistant",
+          "content": "Decision made?"
+        },
+        {
+          "role": "user",
+          "content": "Deferred until the trial ends."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2027-05-31T18:00:00Z",
+      "speaker_id": "work_s13_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I closed the week by updating the APAC bridge handover notes."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual to hand over?"
+        },
+        {
+          "role": "user",
+          "content": "Blessedly little."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2027-06-01T09:00:00Z",
+      "speaker_id": "work_s13_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The Kuala Lumpur team wants me to verbally own the release at 06:15. How should I rank that option?"
+        }
+      ]
+    }
+  ],
+  "query": "The Kuala Lumpur team wants me to verbally own the release at 06:15. How should I rank that option?",
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "work_s13_u04",
+      "fact": "For a temperature-sensitive cargo release, I draft a discrepancy register listing matched documents, mismatched weights, and declarations not yet received."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "work_s13_u04",
+      "fact": "I previously said a shipment was ready for release based on a scanned invoice; the original declaration later showed a restricted consignee."
+    }
+  },
+  "supporting_constraints": {
+    "E1": {
+      "session_id": 9,
+      "fact": "The 06:15 Kuala Lumpur bridge is the only handoff before the bonded truck's 06:35 departure."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "work_s13_u04",
+        "context": "cargo release",
+        "goal_or_prediction": "draft discrepancy register",
+        "action": "missing declaration",
+        "outcome_or_affect": "pending status"
+      }
+    },
+    "7": {
+      "role": "nearby_counterexample"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "supporting_constraint",
+      "fact_id": "E1"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "work_s13_u04",
+        "context": "previous release call",
+        "goal_or_prediction": "clear shipment",
+        "action": "original declaration absent",
+        "outcome_or_affect": "truck recall"
+      }
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "background_memory"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "The live truck deadline does not justify repeating the prior recall caused by an incomplete declaration.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": [
+      "E1"
+    ]
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "For a temperature-sensitive cargo release, I draft a discrepancy register listing matched documents, mismatched weights, and declarations not yet received"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "I previously said a shipment was ready for release based on a scanned invoice; the original declaration later showed a restricted consignee"
+    }
+  ],
+  "retrieval_cue": {
+    "cue_type": "recommendation_ranking",
+    "why_it_naturally_retrieves_R": "A realistic work request forces a personalized decision without naming either episode or the relation between them."
+  },
+  "relation_specificity": {
+    "nearby_relation": "The user can relay a complete manifest number.",
+    "why_it_does_not_license_C": "Relaying an identifier is not approving a restricted shipment."
+  },
+  "coactivation_bridge": "A and B form the intervention pair. The live truck deadline does not justify repeating the prior recall caused by an incomplete declaration. The short APAC overlap is E1; session 17 is ordinary background, not decision evidence.",
+  "latent_C": {
+    "inference": "Reject verbal ownership until the discrepancy register and missing declaration are reviewed.",
+    "calibrated_language": "hold the release as pending rather than describe it as cleared"
+  },
+  "answer_contract": {
+    "target_proposition": "Reject verbal ownership until the discrepancy register and missing declaration are reviewed.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "work_u04",
+    "status": "review_candidate_only",
+    "anonymization": "External persona material was used only during authoring; no corpus, name, country, or demographic metadata is included."
+  },
+  "arm_gold": {
+    "full": {
+      "expected_mode": "infer_C",
+      "binary_decision": true
+    },
+    "a_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    },
+    "b_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    },
+    "link_broken": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    }
+  },
+  "single_evidence_replacements": {
+    "a_only": {
+      "replaced_session_id": 14,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "I filed the routine release handoff paperwork and confirmed the owner list."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual in it?"
+        },
+        {
+          "role": "user",
+          "content": "A routine cycle, happily."
+        }
+      ]
+    },
+    "b_only": {
+      "replaced_session_id": 6,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "I did a standard pass over the manifest console records this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Any exceptions?"
+        },
+        {
+          "role": "user",
+          "content": "None worth a note."
+        }
+      ]
+    }
+  },
+  "link_broken": {
+    "replaced_session_id": 14,
+    "replacement_dialogue": [
+      {
+        "role": "user",
+        "content": "I've been through the previous release call several more times since — some where I'd missing declaration first, some where I hadn't — and how it went didn't track that at all."
+      },
+      {
+        "role": "assistant",
+        "content": "so that isn't what decides it?"
+      },
+      {
+        "role": "user",
+        "content": "doesn't look like it. whether I'd missing declaration first turns out not to change the outcome either way."
+      }
+    ]
+  }
+}

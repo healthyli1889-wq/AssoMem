@@ -1,0 +1,638 @@
+{
+  "schema_version": "work-vnext-2.0",
+  "candidate_id": "AMB_WV_S03_U09_associative",
+  "pair_id": "AMB_WV_S03_U09",
+  "data_arm": "associative",
+  "domain": "work",
+  "user_id": "work_s03_u09",
+  "sub_scenario": {
+    "family": "interrupt-driven task switching",
+    "role": "grant writer",
+    "one_line": "grant writer: likely strong under the quiet-floor conditions"
+  },
+  "query_type": "predicted_reaction",
+  "polarity": "accept",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2026-06-16T11:00:00Z",
+      "speaker_id": "work_s03_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I spent the first hour tidying the outline lock and closing stale entries."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything still open?"
+        },
+        {
+          "role": "user",
+          "content": "Two items, both with owners."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2026-06-17T14:00:00Z",
+      "speaker_id": "work_s03_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The proposal draft review wrapped early today."
+        },
+        {
+          "role": "assistant",
+          "content": "Any surprises in it?"
+        },
+        {
+          "role": "user",
+          "content": "None worth recording."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2026-06-18T16:00:00Z",
+      "speaker_id": "work_s03_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Afternoon collaboration sessions I enjoy and keep."
+        },
+        {
+          "role": "assistant",
+          "content": "The residency does not remove people, then."
+        },
+        {
+          "role": "user",
+          "content": "Just the drumbeat."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2026-06-19T18:00:00Z",
+      "speaker_id": "work_s03_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Someone new shadowed me in the writing room this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Did that slow you down?"
+        },
+        {
+          "role": "user",
+          "content": "A little, but the questions were good ones."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2026-06-20T09:00:00Z",
+      "speaker_id": "work_s03_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I batched my replies about the silence blocks into one message before lunch."
+        },
+        {
+          "role": "assistant",
+          "content": "Cleaner than drip-feeding answers."
+        },
+        {
+          "role": "user",
+          "content": "Much cleaner."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2026-06-21T11:00:00Z",
+      "speaker_id": "work_s03_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I drafted the hospital-wing proposal in morning silence blocks with notifications paused, and it scored top of the round."
+        },
+        {
+          "role": "assistant",
+          "content": "Silence blocks produced the win."
+        },
+        {
+          "role": "user",
+          "content": "Silence plus a locked outline."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2026-06-22T14:00:00Z",
+      "speaker_id": "work_s03_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "One-off urgent rewrites in noisy rooms are survivable."
+        },
+        {
+          "role": "assistant",
+          "content": "Capacity for exceptions remains."
+        },
+        {
+          "role": "user",
+          "content": "For exceptions, always."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2026-06-23T16:00:00Z",
+      "speaker_id": "work_s03_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I archived last cycle's notes on the proposal draft and set up the new folder."
+        },
+        {
+          "role": "assistant",
+          "content": "A fresh start?"
+        },
+        {
+          "role": "user",
+          "content": "As fresh as these things get."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2026-06-24T18:00:00Z",
+      "speaker_id": "work_s03_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "My two deadline months coincide with the residency term cleanly."
+        },
+        {
+          "role": "assistant",
+          "content": "Calendar alignment."
+        },
+        {
+          "role": "user",
+          "content": "Rare and complete."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2026-06-25T09:00:00Z",
+      "speaker_id": "work_s03_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A vendor call about the outline lock ran long but ended well."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth the time?"
+        },
+        {
+          "role": "user",
+          "content": "This one, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2026-06-26T11:00:00Z",
+      "speaker_id": "work_s03_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I walked through the writing room checklist with the new starter."
+        },
+        {
+          "role": "assistant",
+          "content": "How did they do?"
+        },
+        {
+          "role": "user",
+          "content": "Careful and quick, a good sign."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2026-06-27T14:00:00Z",
+      "speaker_id": "work_s03_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Quiet afternoon; I cleared the backlog around the silence blocks."
+        },
+        {
+          "role": "assistant",
+          "content": "A rare day."
+        },
+        {
+          "role": "user",
+          "content": "I did not waste it."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2026-06-28T16:00:00Z",
+      "speaker_id": "work_s03_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I flagged a small inconsistency in the proposal draft records and fixed it at the source."
+        },
+        {
+          "role": "assistant",
+          "content": "Root cause or symptom?"
+        },
+        {
+          "role": "user",
+          "content": "Root cause, for once."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2026-06-29T18:00:00Z",
+      "speaker_id": "work_s03_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The library residency I was offered runs on a designated quiet floor with a no-meeting-before-noon policy, the exact architecture of my best drafting months."
+        },
+        {
+          "role": "assistant",
+          "content": "The residency institutionalizes your conditions."
+        },
+        {
+          "role": "user",
+          "content": "Down to the floor plan."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2026-06-30T09:00:00Z",
+      "speaker_id": "work_s03_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I sketched next week's plan for the silence blocks before leaving."
+        },
+        {
+          "role": "assistant",
+          "content": "Ahead of schedule?"
+        },
+        {
+          "role": "user",
+          "content": "Ahead enough to sleep well."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2026-07-01T11:00:00Z",
+      "speaker_id": "work_s03_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Lunch walk, then a clean pass through the outline lock updates."
+        },
+        {
+          "role": "assistant",
+          "content": "Does the walk help?"
+        },
+        {
+          "role": "user",
+          "content": "It resets the afternoon."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2026-07-02T14:00:00Z",
+      "speaker_id": "work_s03_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "My tinnitus makes open-plan offices costly; quiet floors are a health accommodation as much as a preference."
+        },
+        {
+          "role": "assistant",
+          "content": "A medical dimension."
+        },
+        {
+          "role": "user",
+          "content": "A documented one."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2026-07-03T16:00:00Z",
+      "speaker_id": "work_s03_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I compared two options for the proposal draft tooling and noted a mild preference."
+        },
+        {
+          "role": "assistant",
+          "content": "Decision made?"
+        },
+        {
+          "role": "user",
+          "content": "Deferred until the trial ends."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2026-07-04T18:00:00Z",
+      "speaker_id": "work_s03_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I closed the week by updating the writing room handover notes."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual to hand over?"
+        },
+        {
+          "role": "user",
+          "content": "Blessedly little."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2026-07-05T09:00:00Z",
+      "speaker_id": "work_s03_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "If I take the library residency for the spring term, how is my drafting output likely to look by the midpoint?"
+        }
+      ]
+    }
+  ],
+  "query": "If I take the library residency for the spring term, how is my drafting output likely to look by the midpoint?",
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "work_s03_u09",
+      "fact": "I drafted the hospital-wing proposal in morning silence blocks with notifications paused, and it scored top of the round."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "work_s03_u09",
+      "fact": "The library residency I was offered runs on a designated quiet floor with a no-meeting-before-noon policy, the exact architecture of my best drafting months."
+    }
+  },
+  "supporting_constraints": {
+    "E1": {
+      "session_id": 9,
+      "fact": "My two deadline months coincide with the residency term cleanly."
+    },
+    "E2": {
+      "session_id": 17,
+      "fact": "My tinnitus makes open-plan offices costly; quiet floors are a health accommodation as much as a preference."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "work_s03_u09",
+        "context": "hospital-wing proposal",
+        "goal_or_prediction": "draft a winning bid",
+        "action": "wrote in morning silence blocks with notifications paused",
+        "outcome_or_affect": "top score of the round"
+      }
+    },
+    "7": {
+      "role": "nearby_counterexample"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "supporting_constraint",
+      "fact_id": "E1"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "work_s03_u09",
+        "context": "library residency offer",
+        "goal_or_prediction": "draft through the spring term",
+        "action": "quiet floor with no meetings before noon",
+        "outcome_or_affect": "conditions match the winning months"
+      }
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "supporting_constraint",
+      "fact_id": "E2"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "This user's winning drafts came from silence blocks with paused notifications, and the residency schedules exactly those conditions through the deadline months.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": [
+      "E1",
+      "E2"
+    ]
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "I drafted the hospital-wing proposal in morning silence blocks with notifications paused, and it scored top of the round"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "The library residency I was offered runs on a designated quiet floor with a no-meeting-before-noon policy, the exact architecture of my best drafting months"
+    }
+  ],
+  "retrieval_cue": {
+    "cue_type": "predicted_reaction",
+    "why_it_naturally_retrieves_R": "A realistic work request forces a personalized decision without naming either episode or the relation between them."
+  },
+  "relation_specificity": {
+    "nearby_relation": "The user keeps afternoon collaboration and survives one-off noisy rewrites.",
+    "why_it_does_not_license_C": "Neither describes sustained drafting under institutionalized quiet conditions."
+  },
+  "coactivation_bridge": "A shows the operating condition; B shows the demand or failure that makes it decisive. This user's winning drafts came from silence blocks with paused notifications, and the residency schedules exactly those conditions through the deadline months. E1 and E2 calibrate the practical recommendation without opening a second route to the conclusion.",
+  "latent_C": {
+    "inference": "This user's drafting output by midterm would likely be strong under the residency's quiet-floor conditions.",
+    "calibrated_language": "likely strong under the quiet-floor conditions"
+  },
+  "answer_contract": {
+    "target_proposition": "This user's drafting output by midterm would likely be strong under the residency's quiet-floor conditions.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "decision",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "work_u09",
+    "status": "review_candidate_only",
+    "anonymization": "External persona material was used only during authoring; no corpus, name, country, or demographic metadata is included."
+  },
+  "arm_gold": {
+    "full": {
+      "expected_mode": "infer_C",
+      "binary_decision": true
+    },
+    "a_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    },
+    "b_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    },
+    "link_broken": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    }
+  },
+  "single_evidence_replacements": {
+    "a_only": {
+      "replaced_session_id": 14,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "I filed the routine silence blocks paperwork and confirmed the owner list."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual in it?"
+        },
+        {
+          "role": "user",
+          "content": "A routine cycle, happily."
+        }
+      ]
+    },
+    "b_only": {
+      "replaced_session_id": 6,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "I did a standard pass over the proposal draft records this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Any exceptions?"
+        },
+        {
+          "role": "user",
+          "content": "None worth a note."
+        }
+      ]
+    }
+  },
+  "link_broken": {
+    "replaced_session_id": 14,
+    "replacement_dialogue": [
+      {
+        "role": "user",
+        "content": "I've been through the library residency offer several more times since — some where I'd wrote in morning silence blocks with notifications paused first, some where I hadn't — and how it went didn't track that at all."
+      },
+      {
+        "role": "assistant",
+        "content": "so that isn't what decides it?"
+      },
+      {
+        "role": "user",
+        "content": "doesn't look like it. whether I'd wrote in morning silence blocks with notifications paused first turns out not to change the outcome either way."
+      }
+    ]
+  }
+}

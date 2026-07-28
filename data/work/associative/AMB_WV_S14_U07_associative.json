@@ -1,0 +1,638 @@
+{
+  "schema_version": "work-vnext-2.0",
+  "candidate_id": "AMB_WV_S14_U07_associative",
+  "pair_id": "AMB_WV_S14_U07",
+  "data_arm": "associative",
+  "domain": "work",
+  "user_id": "work_s14_u07",
+  "sub_scenario": {
+    "family": "hot-desking versus protected compliance drafting",
+    "role": "public defender supervisor",
+    "one_line": "public defender supervisor: conditional on coverage for the drafting overlap"
+  },
+  "query_type": "behavior_explanation",
+  "polarity": "conditional",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2027-07-21T11:00:00Z",
+      "speaker_id": "work_s14_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I spent the first hour tidying the sentencing memorandum and closing stale entries."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything still open?"
+        },
+        {
+          "role": "user",
+          "content": "Two items, both with owners."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2027-07-22T14:00:00Z",
+      "speaker_id": "work_s14_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The courthouse hot desks review wrapped early today."
+        },
+        {
+          "role": "assistant",
+          "content": "Any surprises in it?"
+        },
+        {
+          "role": "user",
+          "content": "None worth recording."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2027-07-23T16:00:00Z",
+      "speaker_id": "work_s14_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I completed a sentencing memorandum in the library consultation room after reading the mitigation records in sequence."
+        },
+        {
+          "role": "assistant",
+          "content": "What did that protect?"
+        },
+        {
+          "role": "user",
+          "content": "It kept the family history connected to the requested sentence."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2027-07-24T18:00:00Z",
+      "speaker_id": "work_s14_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Someone new shadowed me in the Thursday morning hearing this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Did that slow you down?"
+        },
+        {
+          "role": "user",
+          "content": "A little, but the questions were good ones."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2027-07-25T09:00:00Z",
+      "speaker_id": "work_s14_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I batched my replies about the library consultation room into one message before lunch."
+        },
+        {
+          "role": "assistant",
+          "content": "Cleaner than drip-feeding answers."
+        },
+        {
+          "role": "user",
+          "content": "Much cleaner."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2027-07-26T11:00:00Z",
+      "speaker_id": "work_s14_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I tried to draft a mitigation memorandum at a courthouse hot desk while lawyers and clients asked for help."
+        },
+        {
+          "role": "assistant",
+          "content": "What happened?"
+        },
+        {
+          "role": "user",
+          "content": "I lost the treatment chronology and filed an incomplete first version."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2027-07-27T14:00:00Z",
+      "speaker_id": "work_s14_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I can return client calls from the courthouse hot desks between appearances."
+        },
+        {
+          "role": "assistant",
+          "content": "Do those calls go well?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, when each call has one immediate purpose."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2027-07-28T16:00:00Z",
+      "speaker_id": "work_s14_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I archived last cycle's notes on the courthouse hot desks and set up the new folder."
+        },
+        {
+          "role": "assistant",
+          "content": "A fresh start?"
+        },
+        {
+          "role": "user",
+          "content": "As fresh as these things get."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2027-07-29T18:00:00Z",
+      "speaker_id": "work_s14_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The library consultation room is available from 07:00 to 09:30, but the hot-desk rotation begins at 09:00."
+        },
+        {
+          "role": "assistant",
+          "content": "Could both be managed?"
+        },
+        {
+          "role": "user",
+          "content": "Only if the last half hour of the rotation is covered by another supervisor."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2027-07-30T09:00:00Z",
+      "speaker_id": "work_s14_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A vendor call about the sentencing memorandum ran long but ended well."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth the time?"
+        },
+        {
+          "role": "user",
+          "content": "This one, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2027-07-31T11:00:00Z",
+      "speaker_id": "work_s14_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I walked through the Thursday morning hearing checklist with the new starter."
+        },
+        {
+          "role": "assistant",
+          "content": "How did they do?"
+        },
+        {
+          "role": "user",
+          "content": "Careful and quick, a good sign."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2027-08-01T14:00:00Z",
+      "speaker_id": "work_s14_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Quiet afternoon; I cleared the backlog around the library consultation room."
+        },
+        {
+          "role": "assistant",
+          "content": "A rare day."
+        },
+        {
+          "role": "user",
+          "content": "I did not waste it."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2027-08-02T16:00:00Z",
+      "speaker_id": "work_s14_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I flagged a small inconsistency in the courthouse hot desks records and fixed it at the source."
+        },
+        {
+          "role": "assistant",
+          "content": "Root cause or symptom?"
+        },
+        {
+          "role": "user",
+          "content": "Root cause, for once."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2027-08-03T18:00:00Z",
+      "speaker_id": "work_s14_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "At a courthouse hot desk before an earlier sentencing hearing, urgent questions from two attorneys made me skip a treatment letter and the memorandum lacked its key timeline."
+        },
+        {
+          "role": "assistant",
+          "content": "Did the judge receive the complete context?"
+        },
+        {
+          "role": "user",
+          "content": "No, I had to supplement the record afterward."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2027-08-04T09:00:00Z",
+      "speaker_id": "work_s14_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I sketched next week's plan for the library consultation room before leaving."
+        },
+        {
+          "role": "assistant",
+          "content": "Ahead of schedule?"
+        },
+        {
+          "role": "user",
+          "content": "Ahead enough to sleep well."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2027-08-05T11:00:00Z",
+      "speaker_id": "work_s14_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Lunch walk, then a clean pass through the sentencing memorandum updates."
+        },
+        {
+          "role": "assistant",
+          "content": "Does the walk help?"
+        },
+        {
+          "role": "user",
+          "content": "It resets the afternoon."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2027-08-06T14:00:00Z",
+      "speaker_id": "work_s14_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The client meeting ends at 09:30, leaving no later gap before the hearing calendar opens."
+        },
+        {
+          "role": "assistant",
+          "content": "Can you finish the memorandum after the rotation starts?"
+        },
+        {
+          "role": "user",
+          "content": "No, the final review must be done before I meet the client."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2027-08-07T16:00:00Z",
+      "speaker_id": "work_s14_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I compared two options for the courthouse hot desks tooling and noted a mild preference."
+        },
+        {
+          "role": "assistant",
+          "content": "Decision made?"
+        },
+        {
+          "role": "user",
+          "content": "Deferred until the trial ends."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2027-08-08T18:00:00Z",
+      "speaker_id": "work_s14_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I closed the week by updating the Thursday morning hearing handover notes."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual to hand over?"
+        },
+        {
+          "role": "user",
+          "content": "Blessedly little."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2027-08-09T09:00:00Z",
+      "speaker_id": "work_s14_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Why would I agree to the courthouse hot-desk rotation only with coverage during my sentencing-memorandum block?"
+        }
+      ]
+    }
+  ],
+  "query": "Why would I agree to the courthouse hot-desk rotation only with coverage during my sentencing-memorandum block?",
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "work_s14_u07",
+      "fact": "I tried to draft a mitigation memorandum at a courthouse hot desk while lawyers and clients asked for help."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "work_s14_u07",
+      "fact": "At a courthouse hot desk before an earlier sentencing hearing, urgent questions from two attorneys made me skip a treatment letter and the memorandum lacked its key timeline."
+    }
+  },
+  "supporting_constraints": {
+    "E1": {
+      "session_id": 9,
+      "fact": "The library consultation room is available from 07:00 to 09:30, but the hot-desk rotation begins at 09:00."
+    },
+    "E2": {
+      "session_id": 17,
+      "fact": "The client meeting ends at 09:30, leaving no later gap before the hearing calendar opens."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "work_s14_u07",
+        "context": "sentencing memorandum",
+        "goal_or_prediction": "connect mitigation records",
+        "action": "library consultation room",
+        "outcome_or_affect": "complete argument for hearing"
+      }
+    },
+    "7": {
+      "role": "nearby_counterexample"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "supporting_constraint",
+      "fact_id": "E1"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "work_s14_u07",
+        "context": "mitigation memorandum",
+        "goal_or_prediction": "preserve treatment chronology",
+        "action": "courthouse interruptions",
+        "outcome_or_affect": "incomplete first filing"
+      }
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "supporting_constraint",
+      "fact_id": "E2"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "The user's own interrupted hot-desk draft lost a material chronology, while a quiet alternative exists only if the overlapping desk obligation is covered.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": [
+      "E1",
+      "E2"
+    ]
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "I tried to draft a mitigation memorandum at a courthouse hot desk while lawyers and clients asked for help"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "At a courthouse hot desk before an earlier sentencing hearing, urgent questions from two attorneys made me skip a treatment letter and the memorandum lacked its key timeline"
+    }
+  ],
+  "retrieval_cue": {
+    "cue_type": "behavior_explanation",
+    "why_it_naturally_retrieves_R": "A realistic work request forces a personalized decision without naming either episode or the relation between them."
+  },
+  "relation_specificity": {
+    "nearby_relation": "The user can make focused client calls from the courthouse hot desks.",
+    "why_it_does_not_license_C": "Focused calls do not require building a complete mitigation narrative from multiple records."
+  },
+  "coactivation_bridge": "A shows the operating condition; B shows the demand or failure that makes it decisive. The user's own interrupted hot-desk draft lost a material chronology, while a quiet alternative exists only if the overlapping desk obligation is covered. E1 and E2 calibrate the practical recommendation without opening a second route to the conclusion.",
+  "latent_C": {
+    "inference": "The user should agree only if the early library block and its final half hour are protected.",
+    "calibrated_language": "conditional on coverage for the drafting overlap"
+  },
+  "answer_contract": {
+    "target_proposition": "The user should agree only if the early library block and its final half hour are protected.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "work_u07",
+    "status": "review_candidate_only",
+    "anonymization": "External persona material was used only during authoring; no corpus, name, country, or demographic metadata is included."
+  },
+  "arm_gold": {
+    "full": {
+      "expected_mode": "infer_C",
+      "binary_decision": true
+    },
+    "a_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    },
+    "b_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    },
+    "link_broken": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    }
+  },
+  "single_evidence_replacements": {
+    "a_only": {
+      "replaced_session_id": 14,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "I filed the routine library consultation room paperwork and confirmed the owner list."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual in it?"
+        },
+        {
+          "role": "user",
+          "content": "A routine cycle, happily."
+        }
+      ]
+    },
+    "b_only": {
+      "replaced_session_id": 6,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "I did a standard pass over the courthouse hot desks records this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Any exceptions?"
+        },
+        {
+          "role": "user",
+          "content": "None worth a note."
+        }
+      ]
+    }
+  },
+  "link_broken": {
+    "replaced_session_id": 14,
+    "replacement_dialogue": [
+      {
+        "role": "user",
+        "content": "I've been through the mitigation memorandum several more times since — some where I'd library consultation room first, some where I hadn't — and how it went didn't track that at all."
+      },
+      {
+        "role": "assistant",
+        "content": "so that isn't what decides it?"
+      },
+      {
+        "role": "user",
+        "content": "doesn't look like it. whether I'd library consultation room first turns out not to change the outcome either way."
+      }
+    ]
+  }
+}

@@ -1,0 +1,575 @@
+{
+  "schema_version": "social-vnext-1.0",
+  "pair_id": "AMB_SC_S1_U08",
+  "domain": "social",
+  "user_id": "social_s1_u08",
+  "sub_scenario": {
+    "family": "large-group warm-up versus a rested start before a repair conversation",
+    "role": "community-event and career-meetup attendee",
+    "bridge_type": "state_dependent_operation",
+    "one_line": "community-event and career-meetup attendee: do not rely on an early night in with the phone off"
+  },
+  "query_type": "preference_generalization",
+  "polarity": "reject",
+  "query": "I was going to have an early night in with the phone off the night before the hard talk with my landlord's daughter — is that generally true of me, or was that just the one time?",
+  "convention_contradicted": "Do not go out the night before a difficult conversation; arrive rested.",
+  "retrieval_cue": {
+    "cue_type": "preference_generalization",
+    "why_it_naturally_retrieves_R": "A friend-group invitation lands against something already booked, which forces a personalised call without naming either episode or the link between them."
+  },
+  "relation_specificity": {
+    "nearby_relation": "This user enjoys large gatherings.",
+    "why_it_does_not_license_C": "An unremarkable midweek lunch and a skipped commitment say nothing about what a large-group night does to this user's state, and nothing about which state their difficult conversations actually go well in."
+  },
+  "latent_C": {
+    "inference": "an early night in with the phone off before the hard talk with my landlord's daughter is a poor fit for this user.",
+    "calibrated_language": "do not rely on an early night in with the phone off"
+  },
+  "answer_contract": {
+    "target_proposition": "an early night in with the phone off before the hard talk with my landlord's daughter is a poor fit for this user.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "mq_user35",
+    "external_source": "memoryquest",
+    "status": "review_candidate_only",
+    "tone": "natural_chat_v1",
+    "anonymization": "External MemoryQuest persona material was used only during authoring; no corpus, legal name, country, or demographic metadata is in visible dialogue."
+  },
+  "candidate_id": "AMB_SC_S1_U08_distractor",
+  "data_arm": "distractor",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2028-01-24T11:00:00Z",
+      "speaker_id": "social_s1_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "did the laundry and answered nothing for three hours."
+        },
+        {
+          "role": "assistant",
+          "content": "restorative?"
+        },
+        {
+          "role": "user",
+          "content": "quietly, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2028-01-25T14:00:00Z",
+      "speaker_id": "social_s1_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "someone rescheduled and I was more relieved than I should admit."
+        },
+        {
+          "role": "assistant",
+          "content": "admitting it now."
+        },
+        {
+          "role": "user",
+          "content": "under duress."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2028-01-26T16:00:00Z",
+      "speaker_id": "social_s1_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "did a short lunch with one person midweek. pleasant, unremarkable."
+        },
+        {
+          "role": "assistant",
+          "content": "worth repeating?"
+        },
+        {
+          "role": "user",
+          "content": "probably, yeah."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2028-01-27T18:00:00Z",
+      "speaker_id": "social_s1_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "stood outside a place for ten minutes before going in."
+        },
+        {
+          "role": "assistant",
+          "content": "nerves?"
+        },
+        {
+          "role": "user",
+          "content": "just gathering."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2028-01-28T09:00:00Z",
+      "speaker_id": "social_s1_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "made a list of people to check on. didn't check on them."
+        },
+        {
+          "role": "assistant",
+          "content": "the list helped?"
+        },
+        {
+          "role": "user",
+          "content": "the list existed."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2028-01-29T11:00:00Z",
+      "speaker_id": "social_s1_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the morning after the neighbourhood street party I talk more and plan less — things come out as they occur to me instead of me working the line out first. no idea if that's an improvement."
+        },
+        {
+          "role": "assistant",
+          "content": "how long does that last?"
+        },
+        {
+          "role": "user",
+          "content": "till about two. it's the size of the thing that does it, not how late I get back."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2028-01-30T14:00:00Z",
+      "speaker_id": "social_s1_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "got the train instead of driving and read most of the way."
+        },
+        {
+          "role": "assistant",
+          "content": "better?"
+        },
+        {
+          "role": "user",
+          "content": "much."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2028-01-31T16:00:00Z",
+      "speaker_id": "social_s1_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "turned off read receipts and told nobody."
+        },
+        {
+          "role": "assistant",
+          "content": "strategic."
+        },
+        {
+          "role": "user",
+          "content": "purely defensive."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2028-02-01T18:00:00Z",
+      "speaker_id": "social_s1_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "swapped a call for a message and everyone was fine with it."
+        },
+        {
+          "role": "assistant",
+          "content": "relief?"
+        },
+        {
+          "role": "user",
+          "content": "enormous."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2028-02-02T09:00:00Z",
+      "speaker_id": "social_s1_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "bought a card and didn't write in it yet."
+        },
+        {
+          "role": "assistant",
+          "content": "deadline?"
+        },
+        {
+          "role": "user",
+          "content": "self-imposed and slipping."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2028-02-03T11:00:00Z",
+      "speaker_id": "social_s1_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "skipped a thing I'd said yes to and nobody noticed."
+        },
+        {
+          "role": "assistant",
+          "content": "guilt?"
+        },
+        {
+          "role": "user",
+          "content": "briefly. then nothing."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2028-02-04T14:00:00Z",
+      "speaker_id": "social_s1_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "sat in the same seat as last time out of habit."
+        },
+        {
+          "role": "assistant",
+          "content": "noticed?"
+        },
+        {
+          "role": "user",
+          "content": "only by me."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2028-02-05T16:00:00Z",
+      "speaker_id": "social_s1_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "someone summarised a two-hundred-message thread for me."
+        },
+        {
+          "role": "assistant",
+          "content": "accurate?"
+        },
+        {
+          "role": "user",
+          "content": "kind, at least."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2028-02-06T18:00:00Z",
+      "speaker_id": "social_s1_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "every clear-the-air conversation of mine that actually landed, I'd gone in without a line worked out. the ones I went in having planned, I turned clipped and legalistic and made it worse."
+        },
+        {
+          "role": "assistant",
+          "content": "so preparing hurts?"
+        },
+        {
+          "role": "user",
+          "content": "with those specific conversations, yes. every single time."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2028-02-07T09:00:00Z",
+      "speaker_id": "social_s1_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "said I'd host something and immediately regretted the scale."
+        },
+        {
+          "role": "assistant",
+          "content": "downsizing?"
+        },
+        {
+          "role": "user",
+          "content": "quietly, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2028-02-08T11:00:00Z",
+      "speaker_id": "social_s1_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "left a party early and nobody minded."
+        },
+        {
+          "role": "assistant",
+          "content": "expected worse?"
+        },
+        {
+          "role": "user",
+          "content": "much worse."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2028-02-09T14:00:00Z",
+      "speaker_id": "social_s1_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the neighbourhood regulars are adamant that you never regret an early night before something that matters."
+        },
+        {
+          "role": "assistant",
+          "content": "adamant?"
+        },
+        {
+          "role": "user",
+          "content": "loudly, and with total confidence."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2028-02-10T16:00:00Z",
+      "speaker_id": "social_s1_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "checked the weather for a plan that isn't confirmed."
+        },
+        {
+          "role": "assistant",
+          "content": "keen."
+        },
+        {
+          "role": "user",
+          "content": "or anxious."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2028-02-11T18:00:00Z",
+      "speaker_id": "social_s1_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "tidied one shelf and stopped."
+        },
+        {
+          "role": "assistant",
+          "content": "momentum?"
+        },
+        {
+          "role": "user",
+          "content": "a rumour of momentum."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2028-02-12T09:00:00Z",
+      "speaker_id": "social_s1_u08",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I was going to have an early night in with the phone off the night before the hard talk with my landlord's daughter — is that generally true of me, or was that just the one time?"
+        }
+      ]
+    }
+  ],
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "social_s1_u08",
+      "fact": "the morning after the neighbourhood street party I talk more and plan less — things come out as they occur to me instead of me working the line out first. no idea if that's an improvement."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "social_s1_u08",
+      "fact": "every clear-the-air conversation of mine that actually landed, I'd gone in without a line worked out. the ones I went in having planned, I turned clipped and legalistic and made it worse."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "social_s1_u08",
+        "context": "mornings after the neighbourhood street party",
+        "goal_or_prediction": "see what the next morning is like",
+        "action": "went to the full-group version",
+        "outcome_or_affect": "warm, unguarded and generous until early afternoon"
+      }
+    },
+    "7": {
+      "role": "background_memory"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "background_memory"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "nearby_counterexample"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "social_s1_u08",
+        "context": "clear-the-air conversations across several years",
+        "goal_or_prediction": "resolve things properly",
+        "action": "went into some warm and unguarded, others rested and sharp",
+        "outcome_or_affect": "only the warm ones landed; rested ones turned clipped and made it worse"
+      }
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "distractor",
+      "distractor_id": "dist_1",
+      "why_distractor": "It restates the conventional advice in the user's own feed, so it competes for attention and points at the answer a prior-driven solver already wants to give. It reports other people's confidence rather than any episode of this user's, and says nothing about the relation between session 6 and session 14."
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "Large-group nights leave this user warm and unguarded until early afternoon, and their clear-the-air conversations only ever landed when they went in warm — the rested, sharp ones turned clipped and made things worse. The conventional advice to arrive rested is backwards for this person.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": []
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "the morning after the neighbourhood street party I talk more and plan less — things come out as they occur to me instead of me working the line out first. no idea if that's an improvement"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "every clear-the-air conversation of mine that actually landed, I'd gone in without a line worked out. the ones I went in having planned, I turned clipped and legalistic and made it worse"
+    }
+  ],
+  "coactivation_bridge": "ev_A and ev_B are the only pair that licenses the target proposition. Large-group nights leave this user warm and unguarded until early afternoon, and their clear-the-air conversations only ever landed when they went in warm — the rested, sharp ones turned clipped and made things worse. The conventional advice to arrive rested is backwards for this person. The proposition contradicts the convention a solver would otherwise apply (\"Do not go out the night before a difficult conversation; arrive rested.\"), so priors alone point the other way. The nearby relation (This user enjoys large gatherings.) does not license it.",
+  "arm_gold": {
+    "distractor": {
+      "expected_mode": "infer_C",
+      "binary_decision": true,
+      "required_elements": [
+        "answer yes",
+        "connect the session 6 pattern with the session 14 episode",
+        "cite both session 6 and session 14",
+        "not cite session 17 as support"
+      ],
+      "rationale": "The swapped session is query-relevant but non-evidential; the ev_A/ev_B relation is untouched, so the target proposition still holds."
+    }
+  },
+  "distractor_note": {
+    "replaced_session_id": 17,
+    "why_distractor": "It restates the conventional advice in the user's own feed, so it competes for attention and points at the answer a prior-driven solver already wants to give. It reports other people's confidence rather than any episode of this user's, and says nothing about the relation between session 6 and session 14."
+  }
+}

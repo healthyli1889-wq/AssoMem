@@ -1,0 +1,555 @@
+{
+  "schema_version": "social-vnext-1.0",
+  "pair_id": "AMB_SC_S8_U07",
+  "domain": "social",
+  "user_id": "social_s8_u07",
+  "sub_scenario": {
+    "family": "the composed monthly letter versus uncomposed daily reactions",
+    "role": "theatre-for-two planner who batches long threads",
+    "bridge_type": "strategy_outcome_contingency",
+    "one_line": "theatre-for-two planner who batches long threads: helps when the contact stays uncomposed rather than merely frequent, not otherwise"
+  },
+  "query_type": "behavior_explanation",
+  "polarity": "conditional",
+  "query": "thinking of swapping to quick uncomposed daily reacts for the friend from the book group who moved countries — why does this particular thing go the way it does for me, and if the answer depends on something, on what?",
+  "convention_contradicted": "A proper long letter shows real care; throwaway reactions are shallow.",
+  "retrieval_cue": {
+    "cue_type": "behavior_explanation",
+    "why_it_naturally_retrieves_R": "A plausible habit question reaches the register this user's distance friendships run on, without naming the register or the friendships it cost."
+  },
+  "relation_specificity": {
+    "nearby_relation": "This user can write at length and also keep up light daily contact.",
+    "why_it_does_not_license_C": "A well-received trip write-up and some idle reactions in a queue show both registers are available; neither says which one this user's distance friendships actually survive on."
+  },
+  "latent_C": {
+    "inference": "quick uncomposed daily reacts helps before the friend from the book group who moved countries when the contact stays uncomposed rather than merely frequent, and not otherwise.",
+    "calibrated_language": "helps when the contact stays uncomposed rather than merely frequent, not otherwise"
+  },
+  "answer_contract": {
+    "target_proposition": "quick uncomposed daily reacts helps before the friend from the book group who moved countries when the contact stays uncomposed rather than merely frequent, and not otherwise.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "mq_user30",
+    "external_source": "memoryquest",
+    "status": "review_candidate_only",
+    "tone": "natural_chat_v1",
+    "anonymization": "External MemoryQuest persona material was used only during authoring; no corpus, legal name, country, or demographic metadata is in visible dialogue."
+  },
+  "candidate_id": "AMB_SC_S8_U07_absence",
+  "data_arm": "absence",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2028-12-01T11:00:00Z",
+      "speaker_id": "social_s8_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "wrote half a message and left it in the box."
+        },
+        {
+          "role": "assistant",
+          "content": "sending it?"
+        },
+        {
+          "role": "user",
+          "content": "eventually. probably."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2028-12-02T14:00:00Z",
+      "speaker_id": "social_s8_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "sent a long message about a trip and it was well received."
+        },
+        {
+          "role": "assistant",
+          "content": "detailed?"
+        },
+        {
+          "role": "user",
+          "content": "exhaustively."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2028-12-03T16:00:00Z",
+      "speaker_id": "social_s8_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "looked up how far away a place is instead of asking."
+        },
+        {
+          "role": "assistant",
+          "content": "and?"
+        },
+        {
+          "role": "user",
+          "content": "further than the invite implied."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2028-12-04T18:00:00Z",
+      "speaker_id": "social_s8_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "went through the notifications backlog, muted four things, archived a couple of threads that finished months ago, and turned off two reminders I have never once acted on."
+        },
+        {
+          "role": "assistant",
+          "content": "any quieter?"
+        },
+        {
+          "role": "user",
+          "content": "measurably quieter, yes. for about a day."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2028-12-05T09:00:00Z",
+      "speaker_id": "social_s8_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "borrowed a charger and forgot to give it back. again."
+        },
+        {
+          "role": "assistant",
+          "content": "same person?"
+        },
+        {
+          "role": "user",
+          "content": "same person, third time."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2028-12-06T11:00:00Z",
+      "speaker_id": "social_s8_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "watched something everyone had already discussed."
+        },
+        {
+          "role": "assistant",
+          "content": "spoiled?"
+        },
+        {
+          "role": "user",
+          "content": "thoroughly."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2028-12-07T14:00:00Z",
+      "speaker_id": "social_s8_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "did the laundry and answered nothing for three hours."
+        },
+        {
+          "role": "assistant",
+          "content": "restorative?"
+        },
+        {
+          "role": "user",
+          "content": "quietly, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2028-12-08T16:00:00Z",
+      "speaker_id": "social_s8_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "someone rescheduled and I was more relieved than I should admit."
+        },
+        {
+          "role": "assistant",
+          "content": "admitting it now."
+        },
+        {
+          "role": "user",
+          "content": "under duress."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2028-12-09T18:00:00Z",
+      "speaker_id": "social_s8_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "stood outside a place for ten minutes before going in."
+        },
+        {
+          "role": "assistant",
+          "content": "nerves?"
+        },
+        {
+          "role": "user",
+          "content": "just gathering."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2028-12-10T09:00:00Z",
+      "speaker_id": "social_s8_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "reacted to a few things on my phone in a queue."
+        },
+        {
+          "role": "assistant",
+          "content": "meaningful?"
+        },
+        {
+          "role": "user",
+          "content": "not particularly."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2028-12-11T11:00:00Z",
+      "speaker_id": "social_s8_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "made a list of people to check on. didn't check on them."
+        },
+        {
+          "role": "assistant",
+          "content": "the list helped?"
+        },
+        {
+          "role": "user",
+          "content": "the list existed."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2028-12-12T14:00:00Z",
+      "speaker_id": "social_s8_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "got the train instead of driving and read most of the way."
+        },
+        {
+          "role": "assistant",
+          "content": "better?"
+        },
+        {
+          "role": "user",
+          "content": "much."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2028-12-13T16:00:00Z",
+      "speaker_id": "social_s8_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "wrote out the month on paper to see it properly, realised two things clash, moved neither, and put the paper in a drawer where I will not look at it again."
+        },
+        {
+          "role": "assistant",
+          "content": "so the clash stands?"
+        },
+        {
+          "role": "user",
+          "content": "the clash stands. it's a future problem now."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2028-12-14T18:00:00Z",
+      "speaker_id": "social_s8_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "turned off read receipts and told nobody."
+        },
+        {
+          "role": "assistant",
+          "content": "strategic."
+        },
+        {
+          "role": "user",
+          "content": "purely defensive."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2028-12-15T09:00:00Z",
+      "speaker_id": "social_s8_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "swapped a call for a message and everyone was fine with it."
+        },
+        {
+          "role": "assistant",
+          "content": "relief?"
+        },
+        {
+          "role": "user",
+          "content": "enormous."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2028-12-16T11:00:00Z",
+      "speaker_id": "social_s8_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "bought a card and didn't write in it yet."
+        },
+        {
+          "role": "assistant",
+          "content": "deadline?"
+        },
+        {
+          "role": "user",
+          "content": "self-imposed and slipping."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2028-12-17T14:00:00Z",
+      "speaker_id": "social_s8_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "sat in the same seat as last time out of habit."
+        },
+        {
+          "role": "assistant",
+          "content": "noticed?"
+        },
+        {
+          "role": "user",
+          "content": "only by me."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2028-12-18T16:00:00Z",
+      "speaker_id": "social_s8_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "someone summarised a two-hundred-message thread for me."
+        },
+        {
+          "role": "assistant",
+          "content": "accurate?"
+        },
+        {
+          "role": "user",
+          "content": "kind, at least."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2028-12-19T18:00:00Z",
+      "speaker_id": "social_s8_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "said I'd host something and immediately regretted the scale."
+        },
+        {
+          "role": "assistant",
+          "content": "downsizing?"
+        },
+        {
+          "role": "user",
+          "content": "quietly, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2028-12-20T09:00:00Z",
+      "speaker_id": "social_s8_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "thinking of swapping to quick uncomposed daily reacts for the friend from the book group who moved countries — why does this particular thing go the way it does for me, and if the answer depends on something, on what?"
+        }
+      ]
+    }
+  ],
+  "target_evidence_ids": [],
+  "evidence": {
+    "ev_A": {
+      "session_id": 4,
+      "owner": "social_s8_u07",
+      "withheld": true
+    },
+    "ev_B": {
+      "session_id": 13,
+      "owner": "social_s8_u07",
+      "withheld": true
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "nearby_counterexample"
+    },
+    "3": {
+      "role": "background_memory"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "background_memory"
+    },
+    "7": {
+      "role": "background_memory"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "background_memory"
+    },
+    "10": {
+      "role": "nearby_counterexample"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "background_memory"
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "background_memory"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "Withheld in the absence source.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": []
+  },
+  "connector_spans": [],
+  "coactivation_bridge": "Withheld in the absence source: neither target episode is visible.",
+  "arm_gold": {
+    "absence": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that the visible history does not contain the episodes the question needs",
+        "not assert the target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "Both target episodes are replaced by matched neutral sessions of the same owner, date and turn count, so nothing licenses the target proposition."
+    }
+  },
+  "absence_note": {
+    "replaced_session_ids": [
+      4,
+      13
+    ],
+    "withheld_evidence_ids": [
+      "ev_A",
+      "ev_B"
+    ]
+  }
+}

@@ -1,0 +1,638 @@
+{
+  "schema_version": "work-vnext-2.0",
+  "candidate_id": "AMB_WV_S05_U09_associative",
+  "pair_id": "AMB_WV_S05_U09",
+  "data_arm": "associative",
+  "domain": "work",
+  "user_id": "work_s05_u09",
+  "sub_scenario": {
+    "family": "deadline compression with quality tradeoffs",
+    "role": "manufacturing line supervisor",
+    "one_line": "manufacturing line supervisor: unmeasured until the supervised trials"
+  },
+  "query_type": "preference_generalization",
+  "polarity": "non_decision",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2026-09-14T11:00:00Z",
+      "speaker_id": "work_s05_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I spent the first hour tidying the verification sheet and closing stale entries."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything still open?"
+        },
+        {
+          "role": "user",
+          "content": "Two items, both with owners."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2026-09-15T14:00:00Z",
+      "speaker_id": "work_s05_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The changeover plan review wrapped early today."
+        },
+        {
+          "role": "assistant",
+          "content": "Any surprises in it?"
+        },
+        {
+          "role": "user",
+          "content": "None worth recording."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2026-09-16T16:00:00Z",
+      "speaker_id": "work_s05_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Expediting paperwork and material staging is routine and safe."
+        },
+        {
+          "role": "assistant",
+          "content": "Peripheral compression is fine."
+        },
+        {
+          "role": "user",
+          "content": "Always was."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2026-09-17T18:00:00Z",
+      "speaker_id": "work_s05_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Someone new shadowed me in the line floor this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Did that slow you down?"
+        },
+        {
+          "role": "user",
+          "content": "A little, but the questions were good ones."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2026-09-18T09:00:00Z",
+      "speaker_id": "work_s05_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I batched my replies about the torque checks into one message before lunch."
+        },
+        {
+          "role": "assistant",
+          "content": "Cleaner than drip-feeding answers."
+        },
+        {
+          "role": "user",
+          "content": "Much cleaner."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2026-09-19T11:00:00Z",
+      "speaker_id": "work_s05_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The scheduled changeover ran perfectly because we walked the full verification sheet; torque checks caught a loose guard rail before restart."
+        },
+        {
+          "role": "assistant",
+          "content": "The sheet caught a physical hazard."
+        },
+        {
+          "role": "user",
+          "content": "The kind that ends careers and fingers."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2026-09-20T14:00:00Z",
+      "speaker_id": "work_s05_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Emergency stops and restarts follow their own protocol and go fine."
+        },
+        {
+          "role": "assistant",
+          "content": "Codified exceptions again."
+        },
+        {
+          "role": "user",
+          "content": "The good kind of exception."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2026-09-21T16:00:00Z",
+      "speaker_id": "work_s05_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I archived last cycle's notes on the changeover plan and set up the new folder."
+        },
+        {
+          "role": "assistant",
+          "content": "A fresh start?"
+        },
+        {
+          "role": "user",
+          "content": "As fresh as these things get."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2026-09-22T18:00:00Z",
+      "speaker_id": "work_s05_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "That expedited trial ran with a trainee crew during vacation season."
+        },
+        {
+          "role": "assistant",
+          "content": "The sample is confounded."
+        },
+        {
+          "role": "user",
+          "content": "Thoroughly confounded."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2026-09-23T09:00:00Z",
+      "speaker_id": "work_s05_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A vendor call about the verification sheet ran long but ended well."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth the time?"
+        },
+        {
+          "role": "user",
+          "content": "This one, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2026-09-24T11:00:00Z",
+      "speaker_id": "work_s05_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I walked through the line floor checklist with the new starter."
+        },
+        {
+          "role": "assistant",
+          "content": "How did they do?"
+        },
+        {
+          "role": "user",
+          "content": "Careful and quick, a good sign."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2026-09-25T14:00:00Z",
+      "speaker_id": "work_s05_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Quiet afternoon; I cleared the backlog around the torque checks."
+        },
+        {
+          "role": "assistant",
+          "content": "A rare day."
+        },
+        {
+          "role": "user",
+          "content": "I did not waste it."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2026-09-26T16:00:00Z",
+      "speaker_id": "work_s05_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I flagged a small inconsistency in the changeover plan records and fixed it at the source."
+        },
+        {
+          "role": "assistant",
+          "content": "Root cause or symptom?"
+        },
+        {
+          "role": "user",
+          "content": "Root cause, for once."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2026-09-27T18:00:00Z",
+      "speaker_id": "work_s05_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "My one expedited changeover skipped half the sheet under order pressure; we restarted twenty minutes early and a misaligned conveyor scrapped an hour of product."
+        },
+        {
+          "role": "assistant",
+          "content": "One expedited trial, one scrapped hour."
+        },
+        {
+          "role": "user",
+          "content": "Net minus forty minutes, for the record."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2026-09-28T09:00:00Z",
+      "speaker_id": "work_s05_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I sketched next week's plan for the torque checks before leaving."
+        },
+        {
+          "role": "assistant",
+          "content": "Ahead of schedule?"
+        },
+        {
+          "role": "user",
+          "content": "Ahead enough to sleep well."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2026-09-29T11:00:00Z",
+      "speaker_id": "work_s05_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Lunch walk, then a clean pass through the verification sheet updates."
+        },
+        {
+          "role": "assistant",
+          "content": "Does the walk help?"
+        },
+        {
+          "role": "user",
+          "content": "It resets the afternoon."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2026-09-30T14:00:00Z",
+      "speaker_id": "work_s05_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The plant manager has offered two supervised expedited changeovers with a full crew as a proper trial next month."
+        },
+        {
+          "role": "assistant",
+          "content": "A clean measurement is scheduled."
+        },
+        {
+          "role": "user",
+          "content": "On the board already."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2026-10-01T16:00:00Z",
+      "speaker_id": "work_s05_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I compared two options for the changeover plan tooling and noted a mild preference."
+        },
+        {
+          "role": "assistant",
+          "content": "Decision made?"
+        },
+        {
+          "role": "user",
+          "content": "Deferred until the trial ends."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2026-10-02T18:00:00Z",
+      "speaker_id": "work_s05_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I closed the week by updating the line floor handover notes."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual to hand over?"
+        },
+        {
+          "role": "user",
+          "content": "Blessedly little."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2026-10-03T09:00:00Z",
+      "speaker_id": "work_s05_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The capability review asks whether expedited changeovers are within my reliable range. What is the honest answer this week?"
+        }
+      ]
+    }
+  ],
+  "query": "The capability review asks whether expedited changeovers are within my reliable range. What is the honest answer this week?",
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "work_s05_u09",
+      "fact": "The scheduled changeover ran perfectly because we walked the full verification sheet; torque checks caught a loose guard rail before restart."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "work_s05_u09",
+      "fact": "My one expedited changeover skipped half the sheet under order pressure; we restarted twenty minutes early and a misaligned conveyor scrapped an hour of product."
+    }
+  },
+  "supporting_constraints": {
+    "E1": {
+      "session_id": 9,
+      "fact": "That expedited trial ran with a trainee crew during vacation season."
+    },
+    "E2": {
+      "session_id": 17,
+      "fact": "The plant manager has offered two supervised expedited changeovers with a full crew as a proper trial next month."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "work_s05_u09",
+        "context": "scheduled changeover",
+        "goal_or_prediction": "restart the line safely",
+        "action": "walked the full verification sheet",
+        "outcome_or_affect": "loose guard rail caught pre-restart"
+      }
+    },
+    "7": {
+      "role": "nearby_counterexample"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "supporting_constraint",
+      "fact_id": "E1"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "work_s05_u09",
+        "context": "expedited changeover trial",
+        "goal_or_prediction": "restart early under order pressure",
+        "action": "skipped half the sheet",
+        "outcome_or_affect": "misaligned conveyor scrapped an hour"
+      }
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "supporting_constraint",
+      "fact_id": "E2"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "This user's full-sheet changeovers run clean, the single expedited sample was confounded by a trainee crew, and clean supervised trials are already scheduled.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": [
+      "E1",
+      "E2"
+    ]
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "The scheduled changeover ran perfectly because we walked the full verification sheet; torque checks caught a loose guard rail before restart"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "My one expedited changeover skipped half the sheet under order pressure; we restarted twenty minutes early and a misaligned conveyor scrapped an hour of product"
+    }
+  ],
+  "retrieval_cue": {
+    "cue_type": "preference_generalization",
+    "why_it_naturally_retrieves_R": "A realistic work request forces a personalized decision without naming either episode or the relation between them."
+  },
+  "relation_specificity": {
+    "nearby_relation": "The user expedites paperwork safely and executes emergency protocols well.",
+    "why_it_does_not_license_C": "Neither settles expedited changeover capability, which the trials will measure."
+  },
+  "coactivation_bridge": "A shows the operating condition; B shows the demand or failure that makes it decisive. This user's full-sheet changeovers run clean, the single expedited sample was confounded by a trainee crew, and clean supervised trials are already scheduled. E1 and E2 calibrate the practical recommendation without opening a second route to the conclusion.",
+  "latent_C": {
+    "inference": "The records support answering that this user's expedited-changeover capability is unmeasured until the supervised trials run.",
+    "calibrated_language": "unmeasured until the supervised trials"
+  },
+  "answer_contract": {
+    "target_proposition": "The records support answering that this user's expedited-changeover capability is unmeasured until the supervised trials run.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "decision",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "work_u09",
+    "status": "review_candidate_only",
+    "anonymization": "External persona material was used only during authoring; no corpus, name, country, or demographic metadata is included."
+  },
+  "arm_gold": {
+    "full": {
+      "expected_mode": "infer_C",
+      "binary_decision": true
+    },
+    "a_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    },
+    "b_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    },
+    "link_broken": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    }
+  },
+  "single_evidence_replacements": {
+    "a_only": {
+      "replaced_session_id": 14,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "I filed the routine torque checks paperwork and confirmed the owner list."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual in it?"
+        },
+        {
+          "role": "user",
+          "content": "A routine cycle, happily."
+        }
+      ]
+    },
+    "b_only": {
+      "replaced_session_id": 6,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "I did a standard pass over the changeover plan records this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Any exceptions?"
+        },
+        {
+          "role": "user",
+          "content": "None worth a note."
+        }
+      ]
+    }
+  },
+  "link_broken": {
+    "replaced_session_id": 14,
+    "replacement_dialogue": [
+      {
+        "role": "user",
+        "content": "I've been through the expedited changeover trial several more times since — some where I'd walked the full verification sheet first, some where I hadn't — and how it went didn't track that at all."
+      },
+      {
+        "role": "assistant",
+        "content": "so that isn't what decides it?"
+      },
+      {
+        "role": "user",
+        "content": "doesn't look like it. whether I'd walked the full verification sheet first turns out not to change the outcome either way."
+      }
+    ]
+  }
+}

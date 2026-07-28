@@ -1,0 +1,655 @@
+{
+  "schema_version": "finance-vnext-3.0",
+  "pair_id": "AMB_FN_S13_U02",
+  "domain": "finance",
+  "user_id": "finance_s13_u02",
+  "sub_scenario": {
+    "family": "waiting for the sale versus buying it today at full price",
+    "role": "student on a tight monthly budget",
+    "bridge_type": "threshold_context_interaction",
+    "one_line": "student on a tight monthly budget: do not rely on holding out for a discount"
+  },
+  "query_type": "preference_generalization",
+  "polarity": "reject",
+  "query": "planning on holding out for a discount, for actually using what I buy — is that generally true of me, or was that just the one time?",
+  "convention_contradicted": "Never pay full price — wait for it to go on sale.",
+  "retrieval_cue": {
+    "cue_type": "preference_generalization",
+    "why_it_naturally_retrieves_R": "A should-I-wait-for-the-sale question runs at the waiting threshold this user's regrets depend on, without naming it."
+  },
+  "relation_specificity": {
+    "nearby_relation": "This user buys at full price and in sales alike.",
+    "why_it_does_not_license_C": "A few days' wait that ended in a discount and an impulse purchase promptly returned both passed unremarkably: neither crosses the multi-week threshold, and neither says which purchases this user has actually regretted."
+  },
+  "latent_C": {
+    "inference": "For actually using what I buy, holding out for a discount is a poor fit for this user.",
+    "calibrated_language": "do not rely on holding out for a discount"
+  },
+  "answer_contract": {
+    "target_proposition": "For actually using what I buy, holding out for a discount is a poor fit for this user.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "mq_user5",
+    "external_source": "memoryquest",
+    "status": "review_candidate_only",
+    "tone": "natural_chat_v1",
+    "anonymization": "External MemoryQuest persona material was used only during authoring; no corpus, legal name, country, or demographic metadata is in visible dialogue."
+  },
+  "candidate_id": "AMB_FN_S13_U02_associative",
+  "data_arm": "associative",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2031-08-29T11:00:00Z",
+      "speaker_id": "finance_s13_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "moved money between two of my own accounts for no clear reason."
+        },
+        {
+          "role": "assistant",
+          "content": "net effect?"
+        },
+        {
+          "role": "user",
+          "content": "zero."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2031-08-30T14:00:00Z",
+      "speaker_id": "finance_s13_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "checked the statement line by line for once."
+        },
+        {
+          "role": "assistant",
+          "content": "find anything?"
+        },
+        {
+          "role": "user",
+          "content": "one duplicate."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2031-08-31T16:00:00Z",
+      "speaker_id": "finance_s13_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "said no to a group thing on cost grounds."
+        },
+        {
+          "role": "assistant",
+          "content": "awkward?"
+        },
+        {
+          "role": "user",
+          "content": "briefly."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2031-09-01T18:00:00Z",
+      "speaker_id": "finance_s13_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "waited a few days for something and it dropped. bought it."
+        },
+        {
+          "role": "assistant",
+          "content": "pleased?"
+        },
+        {
+          "role": "user",
+          "content": "reasonably."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2031-09-02T09:00:00Z",
+      "speaker_id": "finance_s13_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "added something to a wishlist instead of buying it."
+        },
+        {
+          "role": "assistant",
+          "content": "does that work?"
+        },
+        {
+          "role": "user",
+          "content": "sometimes."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2031-09-03T11:00:00Z",
+      "speaker_id": "finance_s13_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "bought something at full price on impulse and returned it."
+        },
+        {
+          "role": "assistant",
+          "content": "hassle?"
+        },
+        {
+          "role": "user",
+          "content": "mild."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2031-09-04T14:00:00Z",
+      "speaker_id": "finance_s13_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "paid a small bill early because it was in front of me."
+        },
+        {
+          "role": "assistant",
+          "content": "efficient?"
+        },
+        {
+          "role": "user",
+          "content": "accidentally."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2031-09-05T16:00:00Z",
+      "speaker_id": "finance_s13_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "past about three weeks of watching something for a discount, it stops being a purchase I'm deciding on and turns into a thing I'm owed. by then I'm not choosing, I'm collecting."
+        },
+        {
+          "role": "assistant",
+          "content": "owed?"
+        },
+        {
+          "role": "user",
+          "content": "that's genuinely how it feels by week four."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2031-09-06T18:00:00Z",
+      "speaker_id": "finance_s13_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "added up what the week actually cost. surprising."
+        },
+        {
+          "role": "assistant",
+          "content": "in which direction?"
+        },
+        {
+          "role": "user",
+          "content": "the usual one."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2031-09-07T09:00:00Z",
+      "speaker_id": "finance_s13_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "looked up the price of the same thing in three places."
+        },
+        {
+          "role": "assistant",
+          "content": "difference?"
+        },
+        {
+          "role": "user",
+          "content": "ninety pence."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2031-09-08T11:00:00Z",
+      "speaker_id": "finance_s13_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "got a notification about a rate change and ignored it."
+        },
+        {
+          "role": "assistant",
+          "content": "reading it later?"
+        },
+        {
+          "role": "user",
+          "content": "unlikely."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2031-09-09T14:00:00Z",
+      "speaker_id": "finance_s13_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "wrote down what I owe someone so I wouldn't forget."
+        },
+        {
+          "role": "assistant",
+          "content": "will you?"
+        },
+        {
+          "role": "user",
+          "content": "the note will."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2031-09-10T16:00:00Z",
+      "speaker_id": "finance_s13_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "bought lunch out twice and noticed both times."
+        },
+        {
+          "role": "assistant",
+          "content": "noticing help?"
+        },
+        {
+          "role": "user",
+          "content": "not measurably."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2031-09-11T18:00:00Z",
+      "speaker_id": "finance_s13_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "cleared a tiny balance just to see it at zero."
+        },
+        {
+          "role": "assistant",
+          "content": "satisfying?"
+        },
+        {
+          "role": "user",
+          "content": "unreasonably."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2031-09-12T09:00:00Z",
+      "speaker_id": "finance_s13_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "checked the pension statement. understood about half."
+        },
+        {
+          "role": "assistant",
+          "content": "the other half?"
+        },
+        {
+          "role": "user",
+          "content": "next year's problem."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2031-09-13T11:00:00Z",
+      "speaker_id": "finance_s13_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "everything I've regretted buying was something I'd been waiting on for weeks and finally caught in a sale. the things I decided on and bought the same day, I've kept and used."
+        },
+        {
+          "role": "assistant",
+          "content": "all of them?"
+        },
+        {
+          "role": "user",
+          "content": "the pattern's uncomfortably clean."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2031-09-14T14:00:00Z",
+      "speaker_id": "finance_s13_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "found an old account with eleven pounds in it."
+        },
+        {
+          "role": "assistant",
+          "content": "closing it?"
+        },
+        {
+          "role": "user",
+          "content": "eventually."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2031-09-15T16:00:00Z",
+      "speaker_id": "finance_s13_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "declined an upgrade offer over the phone."
+        },
+        {
+          "role": "assistant",
+          "content": "hard?"
+        },
+        {
+          "role": "user",
+          "content": "harder than it should be."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2031-09-16T18:00:00Z",
+      "speaker_id": "finance_s13_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "worked out I've paid for something twice for two months."
+        },
+        {
+          "role": "assistant",
+          "content": "sorted?"
+        },
+        {
+          "role": "user",
+          "content": "one email in."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2031-09-17T09:00:00Z",
+      "speaker_id": "finance_s13_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "planning on holding out for a discount, for actually using what I buy — is that generally true of me, or was that just the one time?"
+        }
+      ]
+    }
+  ],
+  "evidence": {
+    "ev_A": {
+      "session_id": 8,
+      "owner": "finance_s13_u02",
+      "fact": "past about three weeks of watching something for a discount, it stops being a purchase I'm deciding on and turns into a thing I'm owed. by then I'm not choosing, I'm collecting."
+    },
+    "ev_B": {
+      "session_id": 16,
+      "owner": "finance_s13_u02",
+      "fact": "everything I've regretted buying was something I'd been waiting on for weeks and finally caught in a sale. the things I decided on and bought the same day, I've kept and used."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "background_memory"
+    },
+    "4": {
+      "role": "nearby_counterexample"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "nearby_counterexample"
+    },
+    "7": {
+      "role": "background_memory"
+    },
+    "8": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "finance_s13_u02",
+        "context": "periods spent waiting for a price drop",
+        "goal_or_prediction": "get it at a better price",
+        "action": "waited past about three weeks",
+        "outcome_or_affect": "stopped being a decision; became something felt owed"
+      }
+    },
+    "9": {
+      "role": "background_memory"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "background_memory"
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "finance_s13_u02",
+        "context": "purchases this user has and has not regretted",
+        "goal_or_prediction": "buy things worth keeping",
+        "action": "bought some after long waits in sales and some same-day at full price",
+        "outcome_or_affect": "every regret was a long-waited sale purchase; same-day ones were kept"
+      }
+    },
+    "17": {
+      "role": "background_memory"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "Past about three weeks of waiting a purchase stops being a decision for this user and becomes something felt owed, and everything they have regretted buying was a long-waited sale purchase; same-day full-price buys were kept.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": []
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 8,
+      "quote": "past about three weeks of watching something for a discount, it stops being a purchase I'm deciding on and turns into a thing I'm owed. by then I'm not choosing, I'm collecting"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 16,
+      "quote": "everything I've regretted buying was something I'd been waiting on for weeks and finally caught in a sale. the things I decided on and bought the same day, I've kept and used"
+    }
+  ],
+  "coactivation_bridge": "ev_A and ev_B are the only pair that licenses the target proposition. Past about three weeks of waiting a purchase stops being a decision for this user and becomes something felt owed, and everything they have regretted buying was a long-waited sale purchase; same-day full-price buys were kept. The proposition contradicts the convention a solver would otherwise apply (\"Never pay full price — wait for it to go on sale.\"), so priors alone point the other way. The nearby relation (This user buys at full price and in sales alike.) does not license it.",
+  "arm_gold": {
+    "full": {
+      "expected_mode": "infer_C",
+      "binary_decision": true,
+      "required_elements": [
+        "answer yes",
+        "connect the session 8 pattern with the session 16 episode",
+        "cite both session 8 and session 16",
+        "stay inside the calibrated claim (do not rely on holding out for a discount) rather than a broader claim about the user"
+      ],
+      "rationale": "ev_A and ev_B jointly support the target proposition; neither does alone."
+    },
+    "a_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that session 8 alone does not establish the target proposition",
+        "not assert the target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "ev_B is replaced by a matched neutral session, so the relation is unavailable."
+    },
+    "b_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that session 16 alone does not establish the target proposition",
+        "not assert the target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "ev_A is replaced by a matched neutral session, so the relation is unavailable."
+    },
+    "link_broken": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that the revised session 16 no longer connects to session 8",
+        "not assert the original target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "B-prime keeps the owner, date, session form and turn count while removing the connector, so the original relation no longer holds."
+    }
+  },
+  "single_evidence_replacements": {
+    "a_only": {
+      "replaced_session_id": 16,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "did the monthly round: checked the balances, moved the leftover across, updated the card details on two services, and made a note about the renewal that keeps catching me out."
+        },
+        {
+          "role": "assistant",
+          "content": "getting sorted?"
+        },
+        {
+          "role": "user",
+          "content": "the note is the fix, for now."
+        }
+      ]
+    },
+    "b_only": {
+      "replaced_session_id": 8,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "went through the whole backlog of small admin, cancelled two things, updated one address, claimed a refund I'd been owed since spring, and closed an account I have not used in three years."
+        },
+        {
+          "role": "assistant",
+          "content": "any tidier?"
+        },
+        {
+          "role": "user",
+          "content": "measurably. for about a day."
+        }
+      ]
+    }
+  },
+  "link_broken": {
+    "replaced_session_id": 16,
+    "replacement_dialogue": [
+      {
+        "role": "user",
+        "content": "I've regretted sale purchases and full-price ones at about the same rate by now."
+      },
+      {
+        "role": "assistant",
+        "content": "no pattern?"
+      },
+      {
+        "role": "user",
+        "content": "none I can see. it isn't the discount."
+      }
+    ]
+  }
+}

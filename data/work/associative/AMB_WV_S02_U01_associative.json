@@ -1,0 +1,638 @@
+{
+  "schema_version": "work-vnext-2.0",
+  "candidate_id": "AMB_WV_S02_U01_associative",
+  "pair_id": "AMB_WV_S02_U01",
+  "data_arm": "associative",
+  "domain": "work",
+  "user_id": "work_s02_u01",
+  "sub_scenario": {
+    "family": "escalation ownership under ambiguous evidence",
+    "role": "site reliability engineer",
+    "one_line": "site reliability engineer: poor fit under the current charter"
+  },
+  "query_type": "situational_fit",
+  "polarity": "reject",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2026-04-16T11:00:00Z",
+      "speaker_id": "work_s02_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I spent the first hour tidying the evidence table and closing stale entries."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything still open?"
+        },
+        {
+          "role": "user",
+          "content": "Two items, both with owners."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2026-04-17T14:00:00Z",
+      "speaker_id": "work_s02_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The alert review review wrapped early today."
+        },
+        {
+          "role": "assistant",
+          "content": "Any surprises in it?"
+        },
+        {
+          "role": "user",
+          "content": "None worth recording."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2026-04-18T16:00:00Z",
+      "speaker_id": "work_s02_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Ambiguity itself does not scare me; slow-burning mystery tickets are my favorite work."
+        },
+        {
+          "role": "assistant",
+          "content": "So time is the variable."
+        },
+        {
+          "role": "user",
+          "content": "Time and a place to write."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2026-04-19T18:00:00Z",
+      "speaker_id": "work_s02_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Someone new shadowed me in the reliability channel this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Did that slow you down?"
+        },
+        {
+          "role": "user",
+          "content": "A little, but the questions were good ones."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2026-04-20T09:00:00Z",
+      "speaker_id": "work_s02_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I batched my replies about the incident causes into one message before lunch."
+        },
+        {
+          "role": "assistant",
+          "content": "Cleaner than drip-feeding answers."
+        },
+        {
+          "role": "user",
+          "content": "Much cleaner."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2026-04-21T11:00:00Z",
+      "speaker_id": "work_s02_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "During the database stall I wrote a three-column table of observed, inferred, and unknown before the owner call, and we picked the right subsystem on the first try."
+        },
+        {
+          "role": "assistant",
+          "content": "The table forced the separation."
+        },
+        {
+          "role": "user",
+          "content": "It kept my guesses out of my facts."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2026-04-22T14:00:00Z",
+      "speaker_id": "work_s02_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I have owned plenty of clear-cut escalations verbally with zero drama."
+        },
+        {
+          "role": "assistant",
+          "content": "When evidence is unambiguous, verbal is fine?"
+        },
+        {
+          "role": "user",
+          "content": "Completely fine."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2026-04-23T16:00:00Z",
+      "speaker_id": "work_s02_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I archived last cycle's notes on the alert review and set up the new folder."
+        },
+        {
+          "role": "assistant",
+          "content": "A fresh start?"
+        },
+        {
+          "role": "user",
+          "content": "As fresh as these things get."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2026-04-24T18:00:00Z",
+      "speaker_id": "work_s02_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Give me a scribe or a shared doc during an incident and my accuracy jumps; I have watched it happen for two years."
+        },
+        {
+          "role": "assistant",
+          "content": "Externalizing is your mechanism."
+        },
+        {
+          "role": "user",
+          "content": "It is the whole trick."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2026-04-25T09:00:00Z",
+      "speaker_id": "work_s02_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A vendor call about the evidence table ran long but ended well."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth the time?"
+        },
+        {
+          "role": "user",
+          "content": "This one, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2026-04-26T11:00:00Z",
+      "speaker_id": "work_s02_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I walked through the reliability channel checklist with the new starter."
+        },
+        {
+          "role": "assistant",
+          "content": "How did they do?"
+        },
+        {
+          "role": "user",
+          "content": "Careful and quick, a good sign."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2026-04-27T14:00:00Z",
+      "speaker_id": "work_s02_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Quiet afternoon; I cleared the backlog around the incident causes."
+        },
+        {
+          "role": "assistant",
+          "content": "A rare day."
+        },
+        {
+          "role": "user",
+          "content": "I did not waste it."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2026-04-28T16:00:00Z",
+      "speaker_id": "work_s02_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I flagged a small inconsistency in the alert review records and fixed it at the source."
+        },
+        {
+          "role": "assistant",
+          "content": "Root cause or symptom?"
+        },
+        {
+          "role": "user",
+          "content": "Root cause, for once."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2026-04-29T18:00:00Z",
+      "speaker_id": "work_s02_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "On the paging bridge in May I was pushed to name a probable cause inside five minutes; I said connection pool, we rolled back the wrong service, and the real fault sat untouched for an hour."
+        },
+        {
+          "role": "assistant",
+          "content": "Before any logs?"
+        },
+        {
+          "role": "user",
+          "content": "Logs landed twenty minutes after my guess did the damage."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2026-04-30T09:00:00Z",
+      "speaker_id": "work_s02_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I sketched next week's plan for the incident causes before leaving."
+        },
+        {
+          "role": "assistant",
+          "content": "Ahead of schedule?"
+        },
+        {
+          "role": "user",
+          "content": "Ahead enough to sleep well."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2026-05-01T11:00:00Z",
+      "speaker_id": "work_s02_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Lunch walk, then a clean pass through the evidence table updates."
+        },
+        {
+          "role": "assistant",
+          "content": "Does the walk help?"
+        },
+        {
+          "role": "user",
+          "content": "It resets the afternoon."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2026-05-02T14:00:00Z",
+      "speaker_id": "work_s02_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The rapid-response pod's charter explicitly times the first cause statement at five minutes; I asked whether a written-first variant was possible and the answer was no."
+        },
+        {
+          "role": "assistant",
+          "content": "So the format is fixed."
+        },
+        {
+          "role": "user",
+          "content": "Charter-level fixed."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2026-05-03T16:00:00Z",
+      "speaker_id": "work_s02_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I compared two options for the alert review tooling and noted a mild preference."
+        },
+        {
+          "role": "assistant",
+          "content": "Decision made?"
+        },
+        {
+          "role": "user",
+          "content": "Deferred until the trial ends."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2026-05-04T18:00:00Z",
+      "speaker_id": "work_s02_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I closed the week by updating the reliability channel handover notes."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual to hand over?"
+        },
+        {
+          "role": "user",
+          "content": "Blessedly little."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2026-05-05T09:00:00Z",
+      "speaker_id": "work_s02_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The team lead asked me straight: is the rapid-response pod, as it currently operates, a place where my incident work would be at its best?"
+        }
+      ]
+    }
+  ],
+  "query": "The team lead asked me straight: is the rapid-response pod, as it currently operates, a place where my incident work would be at its best?",
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "work_s02_u01",
+      "fact": "During the database stall I wrote a three-column table of observed, inferred, and unknown before the owner call, and we picked the right subsystem on the first try."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "work_s02_u01",
+      "fact": "On the paging bridge in May I was pushed to name a probable cause inside five minutes; I said connection pool, we rolled back the wrong service, and the real fault sat untouched for an hour."
+    }
+  },
+  "supporting_constraints": {
+    "E1": {
+      "session_id": 9,
+      "fact": "Give me a scribe or a shared doc during an incident and my accuracy jumps; I have watched it happen for two years."
+    },
+    "E2": {
+      "session_id": 17,
+      "fact": "The rapid-response pod's charter explicitly times the first cause statement at five minutes; I asked whether a written-first variant was possible and the answer was no."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "work_s02_u01",
+        "context": "database stall",
+        "goal_or_prediction": "pick the right subsystem",
+        "action": "wrote the three-column evidence table first",
+        "outcome_or_affect": "correct on the first try"
+      }
+    },
+    "7": {
+      "role": "nearby_counterexample"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "supporting_constraint",
+      "fact_id": "E1"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "work_s02_u01",
+        "context": "May paging bridge",
+        "goal_or_prediction": "name a probable cause in five minutes",
+        "action": "guessed connection pool aloud",
+        "outcome_or_affect": "wrong rollback, hour-long delay"
+      }
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "supporting_constraint",
+      "fact_id": "E2"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "This user attributes causes correctly after writing an observed-inferred-unknown table, and the pod demands a verbal cause before any table can exist.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": [
+      "E1",
+      "E2"
+    ]
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "During the database stall I wrote a three-column table of observed, inferred, and unknown before the owner call, and we picked the right subsystem on the first try"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "On the paging bridge in May I was pushed to name a probable cause inside five minutes; I said connection pool, we rolled back the wrong service, and the real fault sat untouched for an hour"
+    }
+  ],
+  "retrieval_cue": {
+    "cue_type": "situational_fit",
+    "why_it_naturally_retrieves_R": "A realistic work request forces a personalized decision without naming either episode or the relation between them."
+  },
+  "relation_specificity": {
+    "nearby_relation": "The user enjoys ambiguous slow tickets and owns clear-cut escalations verbally.",
+    "why_it_does_not_license_C": "Neither involves naming an ambiguous cause inside five minutes with no written pass."
+  },
+  "coactivation_bridge": "A shows the operating condition; B shows the demand or failure that makes it decisive. This user attributes causes correctly after writing an observed-inferred-unknown table, and the pod demands a verbal cause before any table can exist. E1 and E2 calibrate the practical recommendation without opening a second route to the conclusion.",
+  "latent_C": {
+    "inference": "The rapid-response pod's five-minute verbal cause rule, as currently chartered, is a poor fit for this user's evidence-first mechanism.",
+    "calibrated_language": "poor fit under the current charter"
+  },
+  "answer_contract": {
+    "target_proposition": "The rapid-response pod's five-minute verbal cause rule, as currently chartered, is a poor fit for this user's evidence-first mechanism.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "decision",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "work_u01",
+    "status": "review_candidate_only",
+    "anonymization": "External persona material was used only during authoring; no corpus, name, country, or demographic metadata is included."
+  },
+  "arm_gold": {
+    "full": {
+      "expected_mode": "infer_C",
+      "binary_decision": true
+    },
+    "a_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    },
+    "b_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    },
+    "link_broken": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    }
+  },
+  "single_evidence_replacements": {
+    "a_only": {
+      "replaced_session_id": 14,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "I filed the routine incident causes paperwork and confirmed the owner list."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual in it?"
+        },
+        {
+          "role": "user",
+          "content": "A routine cycle, happily."
+        }
+      ]
+    },
+    "b_only": {
+      "replaced_session_id": 6,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "I did a standard pass over the alert review records this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Any exceptions?"
+        },
+        {
+          "role": "user",
+          "content": "None worth a note."
+        }
+      ]
+    }
+  },
+  "link_broken": {
+    "replaced_session_id": 14,
+    "replacement_dialogue": [
+      {
+        "role": "user",
+        "content": "I've been through the May paging bridge several more times since — some where I'd wrote the three-column evidence table first, some where I hadn't — and how it went didn't track that at all."
+      },
+      {
+        "role": "assistant",
+        "content": "so that isn't what decides it?"
+      },
+      {
+        "role": "user",
+        "content": "doesn't look like it. whether I'd wrote the three-column evidence table first turns out not to change the outcome either way."
+      }
+    ]
+  }
+}

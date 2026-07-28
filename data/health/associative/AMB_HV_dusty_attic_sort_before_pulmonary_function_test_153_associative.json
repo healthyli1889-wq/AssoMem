@@ -1,0 +1,550 @@
+{
+  "schema_version": "assomem-vnext-1.2",
+  "candidate_id": "AMB_HV_dusty_attic_sort_before_pulmonary_function_test_153_associative",
+  "pair_id": "AMB_HV_dusty_attic_sort_before_pulmonary_function_test_153",
+  "domain": "health",
+  "user_id": "anon_health_user_153",
+  "query_type": "recommendation_ranking",
+  "polarity": "accept",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2026-01-04T18:00:00Z",
+      "speaker_id": "anon_health_user_153",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I tested a home blood pressure cuff for calibration."
+        },
+        {
+          "role": "assistant",
+          "content": "Confirming accuracy now avoids questioning a reading later."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2026-01-07T18:00:00Z",
+      "speaker_id": "anon_health_user_153",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I set a reminder to rotate an injection site."
+        },
+        {
+          "role": "assistant",
+          "content": "A small habit that protects against irritation over time."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2026-01-10T18:00:00Z",
+      "speaker_id": "anon_health_user_153",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I made tea before reading for a while."
+        },
+        {
+          "role": "assistant",
+          "content": "You made room for a calm transition."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2026-01-13T18:00:00Z",
+      "speaker_id": "anon_health_user_153",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I took a quiet walk after dinner."
+        },
+        {
+          "role": "assistant",
+          "content": "A small reset can make an evening feel less crowded."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2026-01-16T18:00:00Z",
+      "speaker_id": "anon_health_user_153",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Digging through a dusty attic for an afternoon leaves me sneezing in fits and coughing well into the next day."
+        },
+        {
+          "role": "assistant",
+          "content": "That's useful to have written down."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2026-01-19T18:00:00Z",
+      "speaker_id": "anon_health_user_153",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I updated a contact number for a specialist's office."
+        },
+        {
+          "role": "assistant",
+          "content": "Keeping details current avoids a wasted call later."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2026-01-22T18:00:00Z",
+      "speaker_id": "anon_health_user_153",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I closed my laptop earlier than usual one night."
+        },
+        {
+          "role": "assistant",
+          "content": "An earlier stop can protect the rest of the evening."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2026-01-25T18:00:00Z",
+      "speaker_id": "anon_health_user_153",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I set a reminder to renew an insurance card."
+        },
+        {
+          "role": "assistant",
+          "content": "Catching it early avoids a last-minute scramble."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2026-01-28T18:00:00Z",
+      "speaker_id": "anon_health_user_153",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I reviewed a printed intake form before a visit."
+        },
+        {
+          "role": "assistant",
+          "content": "Filling it out ahead of time saves time at the desk."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2026-01-31T18:00:00Z",
+      "speaker_id": "anon_health_user_153",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I picked a quieter spot to eat lunch."
+        },
+        {
+          "role": "assistant",
+          "content": "A small environmental choice, low stakes either way."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2026-02-03T18:00:00Z",
+      "speaker_id": "anon_health_user_153",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I updated my appointment calendar before the week began."
+        },
+        {
+          "role": "assistant",
+          "content": "Keeping a visible plan helps you notice conflicts early."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2026-02-06T18:00:00Z",
+      "speaker_id": "anon_health_user_153",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I have a Sunday morning pulmonary function test where the technician needs three consistent, forceful exhales without a cough interrupting them."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds like that one has a fixed, specific expectation."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2026-02-09T18:00:00Z",
+      "speaker_id": "anon_health_user_153",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I wrote down a reminder for next week's refill."
+        },
+        {
+          "role": "assistant",
+          "content": "External reminders protect follow-through."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2026-02-12T18:00:00Z",
+      "speaker_id": "anon_health_user_153",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I jotted down a question for my next appointment."
+        },
+        {
+          "role": "assistant",
+          "content": "Writing questions down early avoids forgetting them."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2026-02-15T18:00:00Z",
+      "speaker_id": "anon_health_user_153",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I put fresh batteries in a home monitor device."
+        },
+        {
+          "role": "assistant",
+          "content": "Routine maintenance avoids surprises later."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2026-02-18T18:00:00Z",
+      "speaker_id": "anon_health_user_153",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I swapped my usual coffee for decaf one afternoon."
+        },
+        {
+          "role": "assistant",
+          "content": "Small experiments can reveal useful patterns."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2026-02-21T18:00:00Z",
+      "speaker_id": "anon_health_user_153",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I watered the plants before breakfast."
+        },
+        {
+          "role": "assistant",
+          "content": "A small routine can anchor the morning."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2026-02-24T18:00:00Z",
+      "speaker_id": "anon_health_user_153",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I took the stairs instead of the elevator."
+        },
+        {
+          "role": "assistant",
+          "content": "Small choices like that add up."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2026-02-27T18:00:00Z",
+      "speaker_id": "anon_health_user_153",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I filed an old lab report into a folder."
+        },
+        {
+          "role": "assistant",
+          "content": "Keeping records organized pays off later."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2026-03-02T18:00:00Z",
+      "speaker_id": "anon_health_user_153",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A parent asks me to help sort through their dusty attic this Saturday afternoon."
+        },
+        {
+          "role": "assistant",
+          "content": "That's worth a second look given the timing."
+        }
+      ]
+    }
+  ],
+  "query": "Based only on these records, should this user turn down sorting the dusty attic Saturday rather than risk a cough disrupting Sunday's pulmonary function test?",
+  "evidence": {
+    "ev_A": {
+      "session_id": 5,
+      "owner": "anon_health_user_153",
+      "fact": "Digging through a dusty attic for an afternoon leaves me sneezing in fits and coughing well into the next day."
+    },
+    "ev_B": {
+      "session_id": 12,
+      "owner": "anon_health_user_153",
+      "fact": "I have a Sunday morning pulmonary function test where the technician needs three consistent, forceful exhales without a cough interrupting them."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "2": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "3": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "4": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "5": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "anon_health_user_153",
+        "context": "A pattern that creates a recovery need affecting next-day functioning",
+        "goal_or_prediction": "Recover functioning by the next day",
+        "action": "Digging through a dusty attic for an afternoon leaves me sneezing in fits and coughing well into the next day.",
+        "outcome_or_affect": "Establishes a repeatable next-day impairment pattern"
+      }
+    },
+    "6": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "7": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "8": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "9": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "10": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "11": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "12": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "anon_health_user_153",
+        "context": "A scheduled commitment sensitive to that specific impairment",
+        "goal_or_prediction": "Perform well at a specific, fixed commitment",
+        "action": "I have a Sunday morning pulmonary function test where the technician needs three consistent, forceful exhales without a cough interrupting them.",
+        "outcome_or_affect": "Creates the situational condition needed for latent C"
+      }
+    },
+    "13": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "14": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "15": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "16": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "17": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "18": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "19": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "20": {
+      "role": "retrieval_cue",
+      "summary": "Later fit question."
+    }
+  },
+  "relational_connector": {
+    "relation": "A recovery-need pattern makes declining or deferring the proposal the better choice only when the next day carries a specific commitment the pattern would affect.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "excludes": [
+      "this kind of exposure is generally best avoided",
+      "the user should avoid this kind of exposure in general"
+    ],
+    "link_broken_change": "The next-day activity is replaced with a low-stakes, movable activity."
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 5,
+      "quote": "Digging through a dusty attic for an afternoon leaves me sneezing in fits and coughing well into the next day"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 12,
+      "quote": "I have a Sunday morning pulmonary function test where the technician needs three consistent, forceful exhales without a cough interrupting them"
+    }
+  ],
+  "retrieval_cue": {
+    "cue_type": "recommendation_ranking",
+    "why_it_naturally_retrieves_R": "The choice between proceeding with or declining the proposal asks for a ranked recommendation without naming either prior episode."
+  },
+  "relation_specificity": {
+    "nearby_relation": "The user can usually recover from this kind of exposure within a day or two with no fixed commitment.",
+    "why_it_does_not_license_C": "That fact does not by itself establish that a specific next-day commitment would be affected."
+  },
+  "coactivation_bridge": "ev_A establishes the recovery-need pattern; ev_B establishes the specific commitment that pattern would affect. Together they support C: This user should turn down sorting the dusty attic Saturday rather than risk Sunday's pulmonary function test, because digging through attic dust matches the pattern that sets off this user's sneezing and coughing into the next day, which is exactly what would disrupt the forceful, uninterrupted exhales the test needs.",
+  "latent_C": {
+    "inference": "This user should turn down sorting the dusty attic Saturday rather than risk Sunday's pulmonary function test, because digging through attic dust matches the pattern that sets off this user's sneezing and coughing into the next day, which is exactly what would disrupt the forceful, uninterrupted exhales the test needs.",
+    "calibrated_language": "the recommended choice"
+  },
+  "answer_contract": {
+    "target_proposition": "This user should turn down sorting the dusty attic Saturday rather than risk Sunday's pulmonary function test, because digging through attic dust matches the pattern that sets off this user's sneezing and coughing into the next day, which is exactly what would disrupt the forceful, uninterrupted exhales the test needs.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "Visible evidence supports the target proposition.",
+      "no": "Visible evidence does not support the target proposition."
+    },
+    "required_output_fields": [
+      "decision",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "link_broken": {
+    "replacement_dialogue": [
+      {
+        "role": "user",
+        "content": "I have a Sunday morning appointment to drop off a pulmonary function questionnaire at the front desk, which needs no breathing test."
+      },
+      {
+        "role": "assistant",
+        "content": "That version is easy enough to reschedule if needed."
+      }
+    ],
+    "connector_change": "B-prime preserves the same user, session position, and conversational style but removes the fixed next-day stake.",
+    "rationale": "A plus B-prime no longer supports the original C."
+  },
+  "provenance": {},
+  "data_arm": "associative",
+  "arm_gold": {
+    "full": {
+      "expected_mode": "infer_C",
+      "binary_decision": true,
+      "required_elements": [
+        "answer yes",
+        "connect the recovery-need pattern with the specific next-day commitment",
+        "cite both session 5 and session 12",
+        "state the calibrated recommendation"
+      ],
+      "rationale": "A and B jointly support the target proposition."
+    },
+    "a_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that no specific next-day commitment is available",
+        "withhold the target proposition"
+      ],
+      "rationale": "A alone does not establish that a specific next-day commitment would be affected."
+    },
+    "b_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that no recovery-need pattern is available",
+        "withhold the target proposition"
+      ],
+      "rationale": "B alone does not establish that the proposal would affect the commitment."
+    },
+    "link_broken": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "identify that the replacement commitment is flexible and reschedulable",
+        "withhold the target proposition"
+      ],
+      "rationale": "B-prime removes the fixed sensitivity while retaining the same user, timing, and conversational form."
+    }
+  }
+}

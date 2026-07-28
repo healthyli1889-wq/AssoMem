@@ -1,0 +1,638 @@
+{
+  "schema_version": "work-vnext-2.0",
+  "candidate_id": "AMB_WV_S05_U07_associative",
+  "pair_id": "AMB_WV_S05_U07",
+  "data_arm": "associative",
+  "domain": "work",
+  "user_id": "work_s05_u07",
+  "sub_scenario": {
+    "family": "deadline compression with quality tradeoffs",
+    "role": "machine learning engineer",
+    "one_line": "machine learning engineer: quality likely holds under the charter"
+  },
+  "query_type": "predicted_reaction",
+  "polarity": "accept",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2026-09-10T11:00:00Z",
+      "speaker_id": "work_s05_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I spent the first hour tidying the eval gate and closing stale entries."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything still open?"
+        },
+        {
+          "role": "user",
+          "content": "Two items, both with owners."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2026-09-11T14:00:00Z",
+      "speaker_id": "work_s05_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The rollout plan review wrapped early today."
+        },
+        {
+          "role": "assistant",
+          "content": "Any surprises in it?"
+        },
+        {
+          "role": "user",
+          "content": "None worth recording."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2026-09-12T16:00:00Z",
+      "speaker_id": "work_s05_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Compressed feature-engineering timelines are fine; that work parallelizes."
+        },
+        {
+          "role": "assistant",
+          "content": "Compression tolerance elsewhere."
+        },
+        {
+          "role": "user",
+          "content": "Plenty of it."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2026-09-13T18:00:00Z",
+      "speaker_id": "work_s05_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Someone new shadowed me in the model registry this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Did that slow you down?"
+        },
+        {
+          "role": "user",
+          "content": "A little, but the questions were good ones."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2026-09-14T09:00:00Z",
+      "speaker_id": "work_s05_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I batched my replies about the drift metrics into one message before lunch."
+        },
+        {
+          "role": "assistant",
+          "content": "Cleaner than drip-feeding answers."
+        },
+        {
+          "role": "user",
+          "content": "Much cleaner."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2026-09-15T11:00:00Z",
+      "speaker_id": "work_s05_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Our fraud-model rollout held because the eval gate flagged a drift regression pre-launch; we fixed it in a day instead of discovering it in production."
+        },
+        {
+          "role": "assistant",
+          "content": "The gate converted a crisis into a day."
+        },
+        {
+          "role": "user",
+          "content": "Gates are crisis converters."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2026-09-16T14:00:00Z",
+      "speaker_id": "work_s05_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Hotfix models with human review can bypass gates briefly."
+        },
+        {
+          "role": "assistant",
+          "content": "Bounded exceptions exist."
+        },
+        {
+          "role": "user",
+          "content": "Bounded, logged ones."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2026-09-17T16:00:00Z",
+      "speaker_id": "work_s05_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I archived last cycle's notes on the rollout plan and set up the new folder."
+        },
+        {
+          "role": "assistant",
+          "content": "A fresh start?"
+        },
+        {
+          "role": "user",
+          "content": "As fresh as these things get."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2026-09-18T18:00:00Z",
+      "speaker_id": "work_s05_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "My model area is fraud, where silent regressions cost real money fast."
+        },
+        {
+          "role": "assistant",
+          "content": "The gate matters most in your area."
+        },
+        {
+          "role": "user",
+          "content": "Most in mine, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2026-09-19T09:00:00Z",
+      "speaker_id": "work_s05_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A vendor call about the eval gate ran long but ended well."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth the time?"
+        },
+        {
+          "role": "user",
+          "content": "This one, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2026-09-20T11:00:00Z",
+      "speaker_id": "work_s05_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I walked through the model registry checklist with the new starter."
+        },
+        {
+          "role": "assistant",
+          "content": "How did they do?"
+        },
+        {
+          "role": "user",
+          "content": "Careful and quick, a good sign."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2026-09-21T14:00:00Z",
+      "speaker_id": "work_s05_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Quiet afternoon; I cleared the backlog around the drift metrics."
+        },
+        {
+          "role": "assistant",
+          "content": "A rare day."
+        },
+        {
+          "role": "user",
+          "content": "I did not waste it."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2026-09-22T16:00:00Z",
+      "speaker_id": "work_s05_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I flagged a small inconsistency in the rollout plan records and fixed it at the source."
+        },
+        {
+          "role": "assistant",
+          "content": "Root cause or symptom?"
+        },
+        {
+          "role": "user",
+          "content": "Root cause, for once."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2026-09-23T18:00:00Z",
+      "speaker_id": "work_s05_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The new fast release train keeps the eval gate mandatory while compressing everything around it; the pilot team shipped weekly with zero eval skips."
+        },
+        {
+          "role": "assistant",
+          "content": "Compression that spares the gate."
+        },
+        {
+          "role": "user",
+          "content": "Spares it in writing, in the charter."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2026-09-24T09:00:00Z",
+      "speaker_id": "work_s05_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I sketched next week's plan for the drift metrics before leaving."
+        },
+        {
+          "role": "assistant",
+          "content": "Ahead of schedule?"
+        },
+        {
+          "role": "user",
+          "content": "Ahead enough to sleep well."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2026-09-25T11:00:00Z",
+      "speaker_id": "work_s05_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Lunch walk, then a clean pass through the eval gate updates."
+        },
+        {
+          "role": "assistant",
+          "content": "Does the walk help?"
+        },
+        {
+          "role": "user",
+          "content": "It resets the afternoon."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2026-09-26T14:00:00Z",
+      "speaker_id": "work_s05_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The train's cadence matches my sprint rhythm; I checked the calendar."
+        },
+        {
+          "role": "assistant",
+          "content": "Operational alignment."
+        },
+        {
+          "role": "user",
+          "content": "Full alignment."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2026-09-27T16:00:00Z",
+      "speaker_id": "work_s05_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I compared two options for the rollout plan tooling and noted a mild preference."
+        },
+        {
+          "role": "assistant",
+          "content": "Decision made?"
+        },
+        {
+          "role": "user",
+          "content": "Deferred until the trial ends."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2026-09-28T18:00:00Z",
+      "speaker_id": "work_s05_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I closed the week by updating the model registry handover notes."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual to hand over?"
+        },
+        {
+          "role": "user",
+          "content": "Blessedly little."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2026-09-29T09:00:00Z",
+      "speaker_id": "work_s05_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "If I move my models onto the fast release train next quarter, how is that likely to go for my rollout quality?"
+        }
+      ]
+    }
+  ],
+  "query": "If I move my models onto the fast release train next quarter, how is that likely to go for my rollout quality?",
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "work_s05_u07",
+      "fact": "Our fraud-model rollout held because the eval gate flagged a drift regression pre-launch; we fixed it in a day instead of discovering it in production."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "work_s05_u07",
+      "fact": "The new fast release train keeps the eval gate mandatory while compressing everything around it; the pilot team shipped weekly with zero eval skips."
+    }
+  },
+  "supporting_constraints": {
+    "E1": {
+      "session_id": 9,
+      "fact": "My model area is fraud, where silent regressions cost real money fast."
+    },
+    "E2": {
+      "session_id": 17,
+      "fact": "The train's cadence matches my sprint rhythm; I checked the calendar."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "work_s05_u07",
+        "context": "fraud-model rollout",
+        "goal_or_prediction": "launch without silent regressions",
+        "action": "let the eval gate run pre-launch",
+        "outcome_or_affect": "drift regression fixed in a day"
+      }
+    },
+    "7": {
+      "role": "nearby_counterexample"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "supporting_constraint",
+      "fact_id": "E1"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "work_s05_u07",
+        "context": "fast release train pilot",
+        "goal_or_prediction": "ship weekly under compression",
+        "action": "kept the mandatory eval gate",
+        "outcome_or_affect": "zero eval skips across the pilot"
+      }
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "supporting_constraint",
+      "fact_id": "E2"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "This user's rollouts stay clean because the eval gate runs, and the train compresses schedules while chartering that gate as mandatory.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": [
+      "E1",
+      "E2"
+    ]
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "Our fraud-model rollout held because the eval gate flagged a drift regression pre-launch; we fixed it in a day instead of discovering it in production"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "The new fast release train keeps the eval gate mandatory while compressing everything around it; the pilot team shipped weekly with zero eval skips"
+    }
+  ],
+  "retrieval_cue": {
+    "cue_type": "predicted_reaction",
+    "why_it_naturally_retrieves_R": "A realistic work request forces a personalized decision without naming either episode or the relation between them."
+  },
+  "relation_specificity": {
+    "nearby_relation": "The user compresses feature work freely and allows bounded hotfix bypasses.",
+    "why_it_does_not_license_C": "Neither addresses weekly shipping under a charter-protected gate."
+  },
+  "coactivation_bridge": "A shows the operating condition; B shows the demand or failure that makes it decisive. This user's rollouts stay clean because the eval gate runs, and the train compresses schedules while chartering that gate as mandatory. E1 and E2 calibrate the practical recommendation without opening a second route to the conclusion.",
+  "latent_C": {
+    "inference": "This user's rollout quality would likely hold on the train, whose charter keeps the eval gate mandatory under compression.",
+    "calibrated_language": "quality likely holds under the charter"
+  },
+  "answer_contract": {
+    "target_proposition": "This user's rollout quality would likely hold on the train, whose charter keeps the eval gate mandatory under compression.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "decision",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "work_u07",
+    "status": "review_candidate_only",
+    "anonymization": "External persona material was used only during authoring; no corpus, name, country, or demographic metadata is included."
+  },
+  "arm_gold": {
+    "full": {
+      "expected_mode": "infer_C",
+      "binary_decision": true
+    },
+    "a_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    },
+    "b_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    },
+    "link_broken": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    }
+  },
+  "single_evidence_replacements": {
+    "a_only": {
+      "replaced_session_id": 14,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "I filed the routine drift metrics paperwork and confirmed the owner list."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual in it?"
+        },
+        {
+          "role": "user",
+          "content": "A routine cycle, happily."
+        }
+      ]
+    },
+    "b_only": {
+      "replaced_session_id": 6,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "I did a standard pass over the rollout plan records this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Any exceptions?"
+        },
+        {
+          "role": "user",
+          "content": "None worth a note."
+        }
+      ]
+    }
+  },
+  "link_broken": {
+    "replaced_session_id": 14,
+    "replacement_dialogue": [
+      {
+        "role": "user",
+        "content": "I've been through the fast release train pilot several more times since — some where I'd let the eval gate run pre-launch first, some where I hadn't — and how it went didn't track that at all."
+      },
+      {
+        "role": "assistant",
+        "content": "so that isn't what decides it?"
+      },
+      {
+        "role": "user",
+        "content": "doesn't look like it. whether I'd let the eval gate run pre-launch first turns out not to change the outcome either way."
+      }
+    ]
+  }
+}

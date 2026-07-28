@@ -1,0 +1,555 @@
+{
+  "schema_version": "social-vnext-1.0",
+  "pair_id": "AMB_SC_S17_U01",
+  "domain": "social",
+  "user_id": "social_s17_u01",
+  "sub_scenario": {
+    "family": "a one-to-one weekend versus a group trip with something to be getting on with",
+    "role": "weeknight networking-and-gig regular",
+    "bridge_type": "strategy_outcome_contingency",
+    "one_line": "weeknight networking-and-gig regular: go ahead with the six-person walking trip"
+  },
+  "query_type": "situational_fit",
+  "polarity": "accept",
+  "query": "thinking of the six-person walking trip for reconnecting with my oldest friend — does that actually fit how I work?",
+  "convention_contradicted": "If you want to reconnect with someone, go one-to-one.",
+  "retrieval_cue": {
+    "cue_type": "situational_fit",
+    "why_it_naturally_retrieves_R": "A trip-planning question about reconnecting runs at the arrangement this user needs, without naming it or the trips that produced nothing."
+  },
+  "relation_specificity": {
+    "nearby_relation": "This user is sociable in most settings.",
+    "why_it_does_not_license_C": "A pleasant long lunch and a big group thing with little conversation both passed unremarkably, so neither shows what the side-by-side arrangement does, nor where this user has actually learned anything about anyone."
+  },
+  "latent_C": {
+    "inference": "the six-person walking trip before reconnecting with my oldest friend is a good fit for this user.",
+    "calibrated_language": "go ahead with the six-person walking trip"
+  },
+  "answer_contract": {
+    "target_proposition": "the six-person walking trip before reconnecting with my oldest friend is a good fit for this user.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "mq_user0",
+    "external_source": "memoryquest",
+    "status": "review_candidate_only",
+    "tone": "natural_chat_v1",
+    "anonymization": "External MemoryQuest persona material was used only during authoring; no corpus, legal name, country, or demographic metadata is in visible dialogue."
+  },
+  "candidate_id": "AMB_SC_S17_U01_absence",
+  "data_arm": "absence",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2029-12-23T11:00:00Z",
+      "speaker_id": "social_s17_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "cleaned the kitchen instead of answering anything."
+        },
+        {
+          "role": "assistant",
+          "content": "avoidance?"
+        },
+        {
+          "role": "user",
+          "content": "structured avoidance."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2029-12-24T14:00:00Z",
+      "speaker_id": "social_s17_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "skimmed the invites and closed the tab."
+        },
+        {
+          "role": "assistant",
+          "content": "decide anything?"
+        },
+        {
+          "role": "user",
+          "content": "no. classic."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2029-12-25T16:00:00Z",
+      "speaker_id": "social_s17_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "someone changed the group name again."
+        },
+        {
+          "role": "assistant",
+          "content": "improvement?"
+        },
+        {
+          "role": "user",
+          "content": "debatable."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2029-12-26T18:00:00Z",
+      "speaker_id": "social_s17_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "had a long lunch with one person. pleasant throughout."
+        },
+        {
+          "role": "assistant",
+          "content": "learn anything?"
+        },
+        {
+          "role": "user",
+          "content": "not especially."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2029-12-27T09:00:00Z",
+      "speaker_id": "social_s17_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "ate standing up reading a thread I wasn't in."
+        },
+        {
+          "role": "assistant",
+          "content": "why?"
+        },
+        {
+          "role": "user",
+          "content": "no defence."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2029-12-28T11:00:00Z",
+      "speaker_id": "social_s17_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "found a birthday I'd forgotten and covered it with a message."
+        },
+        {
+          "role": "assistant",
+          "content": "did it land?"
+        },
+        {
+          "role": "user",
+          "content": "seemed to."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2029-12-29T14:00:00Z",
+      "speaker_id": "social_s17_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "wrote out the month on paper to see it properly, realised two things clash, moved neither, and put the paper in a drawer where I will not look at it again."
+        },
+        {
+          "role": "assistant",
+          "content": "so the clash stands?"
+        },
+        {
+          "role": "user",
+          "content": "the clash stands. it's a future problem now."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2029-12-30T16:00:00Z",
+      "speaker_id": "social_s17_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "said maybe to two things I already knew the answer to."
+        },
+        {
+          "role": "assistant",
+          "content": "which answer?"
+        },
+        {
+          "role": "user",
+          "content": "you know which."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2029-12-31T18:00:00Z",
+      "speaker_id": "social_s17_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "re-read something I sent and winced slightly."
+        },
+        {
+          "role": "assistant",
+          "content": "that bad?"
+        },
+        {
+          "role": "user",
+          "content": "just the tone."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2030-01-01T09:00:00Z",
+      "speaker_id": "social_s17_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "put my phone in a drawer for an hour."
+        },
+        {
+          "role": "assistant",
+          "content": "and?"
+        },
+        {
+          "role": "user",
+          "content": "checked it twice from across the room."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2030-01-02T11:00:00Z",
+      "speaker_id": "social_s17_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "went on a big group thing where I barely spoke to anyone."
+        },
+        {
+          "role": "assistant",
+          "content": "worth going?"
+        },
+        {
+          "role": "user",
+          "content": "it was fine."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2030-01-03T14:00:00Z",
+      "speaker_id": "social_s17_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "agreed to be somewhere without checking the day."
+        },
+        {
+          "role": "assistant",
+          "content": "brave."
+        },
+        {
+          "role": "user",
+          "content": "reckless, more like."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2030-01-04T16:00:00Z",
+      "speaker_id": "social_s17_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "sorted the photos from the last thing into a folder nobody will open."
+        },
+        {
+          "role": "assistant",
+          "content": "including you?"
+        },
+        {
+          "role": "user",
+          "content": "including me."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2030-01-05T18:00:00Z",
+      "speaker_id": "social_s17_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "had a coffee alone and it was the best part of the day."
+        },
+        {
+          "role": "assistant",
+          "content": "low bar?"
+        },
+        {
+          "role": "user",
+          "content": "comfortable bar."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2030-01-06T09:00:00Z",
+      "speaker_id": "social_s17_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "walked the long way back and worked out that the reason my week feels full is that I've said yes to three things that are all admin rather than anything I'd have chosen."
+        },
+        {
+          "role": "assistant",
+          "content": "any of them droppable?"
+        },
+        {
+          "role": "user",
+          "content": "one, maybe. I'll think about it and then not do anything."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2030-01-07T11:00:00Z",
+      "speaker_id": "social_s17_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "someone asked how I was and I answered honestly by accident."
+        },
+        {
+          "role": "assistant",
+          "content": "how did that go?"
+        },
+        {
+          "role": "user",
+          "content": "surprisingly fine."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2030-01-08T14:00:00Z",
+      "speaker_id": "social_s17_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "declined a thing politely and then felt weird about it for an hour."
+        },
+        {
+          "role": "assistant",
+          "content": "regret?"
+        },
+        {
+          "role": "user",
+          "content": "not really. just weird."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2030-01-09T16:00:00Z",
+      "speaker_id": "social_s17_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "wrote half a message and left it in the box."
+        },
+        {
+          "role": "assistant",
+          "content": "sending it?"
+        },
+        {
+          "role": "user",
+          "content": "eventually. probably."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2030-01-10T18:00:00Z",
+      "speaker_id": "social_s17_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "looked up how far away a place is instead of asking."
+        },
+        {
+          "role": "assistant",
+          "content": "and?"
+        },
+        {
+          "role": "user",
+          "content": "further than the invite implied."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2030-01-11T09:00:00Z",
+      "speaker_id": "social_s17_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "thinking of the six-person walking trip for reconnecting with my oldest friend — does that actually fit how I work?"
+        }
+      ]
+    }
+  ],
+  "target_evidence_ids": [],
+  "evidence": {
+    "ev_A": {
+      "session_id": 7,
+      "owner": "social_s17_u01",
+      "withheld": true
+    },
+    "ev_B": {
+      "session_id": 15,
+      "owner": "social_s17_u01",
+      "withheld": true
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "background_memory"
+    },
+    "4": {
+      "role": "nearby_counterexample"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "background_memory"
+    },
+    "7": {
+      "role": "background_memory"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "background_memory"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "nearby_counterexample"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "background_memory"
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "background_memory"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "Withheld in the absence source.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": []
+  },
+  "connector_spans": [],
+  "coactivation_bridge": "Withheld in the absence source: neither target episode is visible.",
+  "arm_gold": {
+    "absence": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that the visible history does not contain the episodes the question needs",
+        "not assert the target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "Both target episodes are replaced by matched neutral sessions of the same owner, date and turn count, so nothing licenses the target proposition."
+    }
+  },
+  "absence_note": {
+    "replaced_session_ids": [
+      7,
+      15
+    ],
+    "withheld_evidence_ids": [
+      "ev_A",
+      "ev_B"
+    ]
+  }
+}

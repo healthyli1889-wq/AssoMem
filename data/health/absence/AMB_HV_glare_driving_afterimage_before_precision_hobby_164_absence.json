@@ -1,0 +1,507 @@
+{
+  "schema_version": "assomem-vnext-1.2",
+  "candidate_id": "AMB_HV_glare_driving_afterimage_before_precision_hobby_164_absence",
+  "pair_id": "AMB_HV_glare_driving_afterimage_before_precision_hobby_164",
+  "domain": "health",
+  "user_id": "anon_health_user_164",
+  "query_type": "conditional_recommendation",
+  "polarity": "conditional",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2026-01-04T18:00:00Z",
+      "speaker_id": "anon_health_user_164",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I picked out clothes for a busy day ahead."
+        },
+        {
+          "role": "assistant",
+          "content": "A little prep can smooth out a rushed morning."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2026-01-07T18:00:00Z",
+      "speaker_id": "anon_health_user_164",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I moved a plant to get more morning light."
+        },
+        {
+          "role": "assistant",
+          "content": "A small adjustment, low effort either way."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2026-01-10T18:00:00Z",
+      "speaker_id": "anon_health_user_164",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I reviewed a printed exercise sheet from physical therapy."
+        },
+        {
+          "role": "assistant",
+          "content": "Revisiting instructions can surface a detail you forgot."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2026-01-13T18:00:00Z",
+      "speaker_id": "anon_health_user_164",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I set my phone to do-not-disturb an hour early."
+        },
+        {
+          "role": "assistant",
+          "content": "A boundary like that can protect a wind-down routine."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2026-01-16T18:00:00Z",
+      "speaker_id": "anon_health_user_164",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I organized a few folders on my laptop."
+        },
+        {
+          "role": "assistant",
+          "content": "A low-effort task, easy to knock out."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2026-01-19T18:00:00Z",
+      "speaker_id": "anon_health_user_164",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I updated a fitness app with a new goal."
+        },
+        {
+          "role": "assistant",
+          "content": "Adjusting a target can keep it feeling realistic."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2026-01-22T18:00:00Z",
+      "speaker_id": "anon_health_user_164",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I sorted mail into bills and everything else."
+        },
+        {
+          "role": "assistant",
+          "content": "A quick sort makes the pile feel more manageable."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2026-01-25T18:00:00Z",
+      "speaker_id": "anon_health_user_164",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I reviewed a printed map for an unfamiliar clinic."
+        },
+        {
+          "role": "assistant",
+          "content": "Knowing the route ahead of time reduces last-minute stress."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2026-01-28T18:00:00Z",
+      "speaker_id": "anon_health_user_164",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I charged my fitness tracker overnight."
+        },
+        {
+          "role": "assistant",
+          "content": "A charged device is one less friction point tomorrow."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2026-01-31T18:00:00Z",
+      "speaker_id": "anon_health_user_164",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I tidied the kitchen after a quiet dinner."
+        },
+        {
+          "role": "assistant",
+          "content": "A contained task can be restorative."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2026-02-03T18:00:00Z",
+      "speaker_id": "anon_health_user_164",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I looked up a recipe for a lighter dinner."
+        },
+        {
+          "role": "assistant",
+          "content": "Planning ahead can simplify the evening."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2026-02-06T18:00:00Z",
+      "speaker_id": "anon_health_user_164",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I scheduled a routine oil change for the car."
+        },
+        {
+          "role": "assistant",
+          "content": "That's a straightforward errand to have on the books."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2026-02-09T18:00:00Z",
+      "speaker_id": "anon_health_user_164",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I confirmed the time zone for a virtual appointment."
+        },
+        {
+          "role": "assistant",
+          "content": "Catching a mismatch early avoids missing the call."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2026-02-12T18:00:00Z",
+      "speaker_id": "anon_health_user_164",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I reviewed an old symptom log from a few months back."
+        },
+        {
+          "role": "assistant",
+          "content": "Old entries can reveal a pattern you forgot about."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2026-02-15T18:00:00Z",
+      "speaker_id": "anon_health_user_164",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I picked a lighter bag for a short errand."
+        },
+        {
+          "role": "assistant",
+          "content": "A small adjustment based on how the day is going."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2026-02-18T18:00:00Z",
+      "speaker_id": "anon_health_user_164",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I picked a quieter spot to eat lunch."
+        },
+        {
+          "role": "assistant",
+          "content": "A small environmental choice, low stakes either way."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2026-02-21T18:00:00Z",
+      "speaker_id": "anon_health_user_164",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I logged a routine symptom note before bed."
+        },
+        {
+          "role": "assistant",
+          "content": "Closing small loops can make tomorrow easier."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2026-02-24T18:00:00Z",
+      "speaker_id": "anon_health_user_164",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I replied to a scheduling request with a clear boundary."
+        },
+        {
+          "role": "assistant",
+          "content": "Clear expectations reduce friction."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2026-02-27T18:00:00Z",
+      "speaker_id": "anon_health_user_164",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I tried a new stretch routine for five minutes."
+        },
+        {
+          "role": "assistant",
+          "content": "A short trial is a low-stakes way to test something new."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2026-03-02T18:00:00Z",
+      "speaker_id": "anon_health_user_164",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Friends invite me to a Saturday afternoon road trip with several hours of driving into the western sun."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth weighing that against what else is already on the calendar."
+        }
+      ]
+    }
+  ],
+  "query": "Based only on these records, should this user only take the Saturday afternoon glare-heavy road trip if Sunday's model-building session is pushed back?",
+  "evidence": {
+    "ev_A": {
+      "session_id": 5,
+      "owner": "anon_health_user_164",
+      "fact": "Driving straight into bright afternoon glare leaves bright afterimages and halo rings in my vision for a couple of hours afterward."
+    },
+    "ev_B": {
+      "session_id": 12,
+      "owner": "anon_health_user_164",
+      "fact": "I have a Sunday afternoon model-building session where I need sharp, accurate vision to align tiny parts."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "2": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "3": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "4": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "5": {
+      "role": "background_memory",
+      "summary": "Neutral replacement for removed evidence."
+    },
+    "6": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "7": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "8": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "9": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "10": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "11": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "12": {
+      "role": "background_memory",
+      "summary": "Neutral replacement for removed evidence."
+    },
+    "13": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "14": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "15": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "16": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "17": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "18": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "19": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "20": {
+      "role": "retrieval_cue",
+      "summary": "Later fit question."
+    }
+  },
+  "relational_connector": {
+    "relation": "A recovery-need pattern makes proceeding with the proposal conditional on moving a fixed next-day commitment only when that commitment cannot otherwise be avoided.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "excludes": [
+      "this kind of exposure is generally fine the night before a commitment",
+      "the user should avoid this kind of exposure in general"
+    ],
+    "link_broken_change": "The next-day activity is replaced with a low-stakes, movable activity."
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 5,
+      "quote": "Driving straight into bright afternoon glare leaves bright afterimages and halo rings in my vision for a couple of hours afterward"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 12,
+      "quote": "I have a Sunday afternoon model-building session where I need sharp, accurate vision to align tiny parts"
+    }
+  ],
+  "retrieval_cue": {
+    "cue_type": "conditional_recommendation",
+    "why_it_naturally_retrieves_R": "The question about proceeding with the proposal asks for a conditional recommendation without naming either prior episode."
+  },
+  "relation_specificity": {
+    "nearby_relation": "The user can usually engage in this kind of exposure with no fixed commitment the next day.",
+    "why_it_does_not_license_C": "That fact does not by itself establish that a specific next-day commitment would be affected."
+  },
+  "coactivation_bridge": "ev_A establishes the recovery-need pattern; ev_B establishes the specific commitment that pattern would affect. Together they support C: This user should only take the Saturday afternoon glare-heavy road trip if Sunday's model-building session is pushed back, because the resulting afterimages would interfere with the sharp, accurate vision Sunday's session needs.",
+  "latent_C": {
+    "inference": "This user should only take the Saturday afternoon glare-heavy road trip if Sunday's model-building session is pushed back, because the resulting afterimages would interfere with the sharp, accurate vision Sunday's session needs.",
+    "calibrated_language": "conditionally supported"
+  },
+  "answer_contract": {
+    "target_proposition": "This user should only take the Saturday afternoon glare-heavy road trip if Sunday's model-building session is pushed back, because the resulting afterimages would interfere with the sharp, accurate vision Sunday's session needs.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "Visible evidence supports the target proposition.",
+      "no": "Visible evidence does not support the target proposition."
+    },
+    "required_output_fields": [
+      "decision",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "link_broken": {
+    "replacement_dialogue": [
+      {
+        "role": "user",
+        "content": "I have a Sunday afternoon plan to sort a box of old photos, which doesn't need sharp close-up vision."
+      },
+      {
+        "role": "assistant",
+        "content": "Good, that one isn't pinned to a specific outcome."
+      }
+    ],
+    "connector_change": "B-prime preserves the same user, session position, and conversational style but removes the fixed next-day stake.",
+    "rationale": "A plus B-prime no longer supports the original C."
+  },
+  "provenance": {},
+  "data_arm": "absence",
+  "arm_gold": {
+    "absence": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that the visible evidence does not support the target proposition"
+      ],
+      "rationale": "Both necessary target episodes are unavailable."
+    }
+  },
+  "target_evidence_ids": []
+}

@@ -1,0 +1,638 @@
+{
+  "schema_version": "work-vnext-2.0",
+  "candidate_id": "AMB_WV_S11_U09_associative",
+  "pair_id": "AMB_WV_S11_U09",
+  "data_arm": "associative",
+  "domain": "work",
+  "user_id": "work_s11_u09",
+  "sub_scenario": {
+    "family": "offsite response under recovery, health, calendar, and messaging constraints",
+    "role": "environmental field coordinator",
+    "one_line": "environmental field coordinator: participate only with remote or later attendance"
+  },
+  "query_type": "situational_fit",
+  "polarity": "conditional",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2027-01-28T11:00:00Z",
+      "speaker_id": "work_s11_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I spent the first hour tidying the sampling log and closing stale entries."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything still open?"
+        },
+        {
+          "role": "user",
+          "content": "Two items, both with owners."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2027-01-29T14:00:00Z",
+      "speaker_id": "work_s11_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The field rota review wrapped early today."
+        },
+        {
+          "role": "assistant",
+          "content": "Any surprises in it?"
+        },
+        {
+          "role": "user",
+          "content": "None worth recording."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2027-01-30T16:00:00Z",
+      "speaker_id": "work_s11_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I enjoy normal afternoon site walks after daytime sampling."
+        },
+        {
+          "role": "assistant",
+          "content": "Does fieldwork tire you in general?"
+        },
+        {
+          "role": "user",
+          "content": "No, a regular day outside feels restorative."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2027-01-31T18:00:00Z",
+      "speaker_id": "work_s11_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Someone new shadowed me in the field office this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Did that slow you down?"
+        },
+        {
+          "role": "user",
+          "content": "A little, but the questions were good ones."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2027-02-01T09:00:00Z",
+      "speaker_id": "work_s11_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I batched my replies about the survey weeks into one message before lunch."
+        },
+        {
+          "role": "assistant",
+          "content": "Cleaner than drip-feeding answers."
+        },
+        {
+          "role": "user",
+          "content": "Much cleaner."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2027-02-02T11:00:00Z",
+      "speaker_id": "work_s11_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "After overnight flood-sensor monitoring, I completed the sampling log at 10:55."
+        },
+        {
+          "role": "assistant",
+          "content": "Could you take on a long meeting later?"
+        },
+        {
+          "role": "user",
+          "content": "Only if I had time to recover first; my attention was unreliable."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2027-02-03T14:00:00Z",
+      "speaker_id": "work_s11_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A brief debrief with the survey crew is easy after lunch."
+        },
+        {
+          "role": "assistant",
+          "content": "What makes it easy?"
+        },
+        {
+          "role": "user",
+          "content": "It is short and does not follow an all-night watch."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2027-02-04T16:00:00Z",
+      "speaker_id": "work_s11_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I archived last cycle's notes on the field rota and set up the new folder."
+        },
+        {
+          "role": "assistant",
+          "content": "A fresh start?"
+        },
+        {
+          "role": "user",
+          "content": "As fresh as these things get."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2027-02-05T18:00:00Z",
+      "speaker_id": "work_s11_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Storm alerts have fractured my sleep, and the poor sleep is aggravating my Achilles tendon flare."
+        },
+        {
+          "role": "assistant",
+          "content": "How does that affect attendance?"
+        },
+        {
+          "role": "user",
+          "content": "Standing through a long retreat after a watch makes the tendon tighten quickly."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2027-02-06T09:00:00Z",
+      "speaker_id": "work_s11_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A vendor call about the sampling log ran long but ended well."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth the time?"
+        },
+        {
+          "role": "user",
+          "content": "This one, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2027-02-07T11:00:00Z",
+      "speaker_id": "work_s11_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I walked through the field office checklist with the new starter."
+        },
+        {
+          "role": "assistant",
+          "content": "How did they do?"
+        },
+        {
+          "role": "user",
+          "content": "Careful and quick, a good sign."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2027-02-08T14:00:00Z",
+      "speaker_id": "work_s11_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Quiet afternoon; I cleared the backlog around the survey weeks."
+        },
+        {
+          "role": "assistant",
+          "content": "A rare day."
+        },
+        {
+          "role": "user",
+          "content": "I did not waste it."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2027-02-09T16:00:00Z",
+      "speaker_id": "work_s11_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I flagged a small inconsistency in the field rota records and fixed it at the source."
+        },
+        {
+          "role": "assistant",
+          "content": "Root cause or symptom?"
+        },
+        {
+          "role": "user",
+          "content": "Root cause, for once."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2027-02-10T18:00:00Z",
+      "speaker_id": "work_s11_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Tendon therapy is fixed for Thursday at 16:30 because the therapist needs to clear me for next week's river survey."
+        },
+        {
+          "role": "assistant",
+          "content": "Can the appointment move?"
+        },
+        {
+          "role": "user",
+          "content": "No, the survey plan depends on that assessment."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2027-02-11T09:00:00Z",
+      "speaker_id": "work_s11_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I sketched next week's plan for the survey weeks before leaving."
+        },
+        {
+          "role": "assistant",
+          "content": "Ahead of schedule?"
+        },
+        {
+          "role": "user",
+          "content": "Ahead enough to sleep well."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2027-02-12T11:00:00Z",
+      "speaker_id": "work_s11_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Lunch walk, then a clean pass through the sampling log updates."
+        },
+        {
+          "role": "assistant",
+          "content": "Does the walk help?"
+        },
+        {
+          "role": "user",
+          "content": "It resets the afternoon."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2027-02-13T14:00:00Z",
+      "speaker_id": "work_s11_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I avoid coffee after a racing-heart episode and use hydration and an early finish instead."
+        },
+        {
+          "role": "assistant",
+          "content": "Can caffeine solve the fatigue?"
+        },
+        {
+          "role": "user",
+          "content": "No, it would undermine the next night's sleep."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2027-02-14T16:00:00Z",
+      "speaker_id": "work_s11_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I compared two options for the field rota tooling and noted a mild preference."
+        },
+        {
+          "role": "assistant",
+          "content": "Decision made?"
+        },
+        {
+          "role": "user",
+          "content": "Deferred until the trial ends."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2027-02-15T18:00:00Z",
+      "speaker_id": "work_s11_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I closed the week by updating the field office handover notes."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual to hand over?"
+        },
+        {
+          "role": "user",
+          "content": "Blessedly little."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2027-02-16T09:00:00Z",
+      "speaker_id": "work_s11_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The survey unit wants a Thursday afternoon offsite commitment after flood monitoring. Is there a workable way to participate?"
+        }
+      ]
+    }
+  ],
+  "query": "The survey unit wants a Thursday afternoon offsite commitment after flood monitoring. Is there a workable way to participate?",
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "work_s11_u09",
+      "fact": "After overnight flood-sensor monitoring, I completed the sampling log at 10:55."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "work_s11_u09",
+      "fact": "Tendon therapy is fixed for Thursday at 16:30 because the therapist needs to clear me for next week's river survey."
+    }
+  },
+  "supporting_constraints": {
+    "E1": {
+      "session_id": 9,
+      "fact": "Storm alerts have fractured my sleep, and the poor sleep is aggravating my Achilles tendon flare."
+    },
+    "E2": {
+      "session_id": 17,
+      "fact": "I avoid coffee after a racing-heart episode and use hydration and an early finish instead."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "work_s11_u09",
+        "context": "flood-sensor monitoring",
+        "goal_or_prediction": "protect the river survey data",
+        "action": "monitored through the night and completed the sampling log at 10:55",
+        "outcome_or_affect": "had unreliable afternoon attention"
+      }
+    },
+    "7": {
+      "role": "nearby_counterexample"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "supporting_constraint",
+      "fact_id": "E1"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "work_s11_u09",
+        "context": "tendon therapy",
+        "goal_or_prediction": "clear the Achilles flare for fieldwork",
+        "action": "kept the Thursday assessment",
+        "outcome_or_affect": "preserved readiness for the river survey"
+      }
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "supporting_constraint",
+      "fact_id": "E2"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "The overnight monitoring demand, disrupted sleep, tendon flare, fixed clearance appointment, and caffeine boundary require both recovery time and a lower-load format.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": [
+      "E1",
+      "E2"
+    ]
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "After overnight flood-sensor monitoring, I completed the sampling log at 10:55"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "Tendon therapy is fixed for Thursday at 16:30 because the therapist needs to clear me for next week's river survey"
+    }
+  ],
+  "retrieval_cue": {
+    "cue_type": "situational_fit",
+    "why_it_naturally_retrieves_R": "A realistic work request forces a personalized decision without naming either episode or the relation between them."
+  },
+  "relation_specificity": {
+    "nearby_relation": "The user handles ordinary site walks and short crew debriefs.",
+    "why_it_does_not_license_C": "Neither requires sustained standing after a flood watch or competes with clearance for the river survey."
+  },
+  "coactivation_bridge": "A shows the operating condition; B shows the demand or failure that makes it decisive. The overnight monitoring demand, disrupted sleep, tendon flare, fixed clearance appointment, and caffeine boundary require both recovery time and a lower-load format. E1 and E2 calibrate the practical recommendation without opening a second route to the conclusion.",
+  "latent_C": {
+    "inference": "Participate only if the offsite is remote or rescheduled after recovery and the therapy requirement is met.",
+    "calibrated_language": "participate only with remote or later attendance"
+  },
+  "answer_contract": {
+    "target_proposition": "Participate only if the offsite is remote or rescheduled after recovery and the therapy requirement is met.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "work_u09",
+    "status": "review_candidate_only",
+    "anonymization": "External persona material was used only during authoring; no corpus, name, country, or demographic metadata is included."
+  },
+  "arm_gold": {
+    "full": {
+      "expected_mode": "infer_C",
+      "binary_decision": true
+    },
+    "a_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    },
+    "b_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    },
+    "link_broken": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    }
+  },
+  "single_evidence_replacements": {
+    "a_only": {
+      "replaced_session_id": 14,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "I filed the routine survey weeks paperwork and confirmed the owner list."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual in it?"
+        },
+        {
+          "role": "user",
+          "content": "A routine cycle, happily."
+        }
+      ]
+    },
+    "b_only": {
+      "replaced_session_id": 6,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "I did a standard pass over the field rota records this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Any exceptions?"
+        },
+        {
+          "role": "user",
+          "content": "None worth a note."
+        }
+      ]
+    }
+  },
+  "link_broken": {
+    "replaced_session_id": 14,
+    "replacement_dialogue": [
+      {
+        "role": "user",
+        "content": "I've been through the tendon therapy several more times since — some where I'd monitored through the night and completed the sampling log at 10:55 first, some where I hadn't — and how it went didn't track that at all."
+      },
+      {
+        "role": "assistant",
+        "content": "so that isn't what decides it?"
+      },
+      {
+        "role": "user",
+        "content": "doesn't look like it. whether I'd monitored through the night and completed the sampling log at 10:55 first turns out not to change the outcome either way."
+      }
+    ]
+  }
+}

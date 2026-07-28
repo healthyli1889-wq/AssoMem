@@ -1,0 +1,655 @@
+{
+  "schema_version": "social-vnext-1.0",
+  "pair_id": "AMB_SC_S19_U07",
+  "domain": "social",
+  "user_id": "social_s19_u07",
+  "sub_scenario": {
+    "family": "handling it alone versus asking for help you did not strictly need",
+    "role": "theatre-for-two planner who batches long threads",
+    "bridge_type": "preference_constraint_fit",
+    "one_line": "theatre-for-two planner who batches long threads: depends on whether the ask is one this user could have handled alone, not on the thing itself"
+  },
+  "query_type": "predicted_reaction",
+  "polarity": "non_decision",
+  "query": "thinking of asking them to come and help me move, for the friendship with the newer book-group member — if I go ahead with it, how does it actually go for me, or is there not enough here to call it today?",
+  "convention_contradicted": "Do not burden friends with things you can manage yourself.",
+  "retrieval_cue": {
+    "cue_type": "predicted_reaction",
+    "why_it_naturally_retrieves_R": "A practical logistics question about a move runs at the condition this user's friendships deepen under, without naming it."
+  },
+  "relation_specificity": {
+    "nearby_relation": "This user gives and receives help without difficulty.",
+    "why_it_does_not_license_C": "An unrequested lift and a difficult thing handled alone both passed without consequence, so neither shows what owing someone does to this user's honesty, nor which friendships have actually deepened."
+  },
+  "latent_C": {
+    "inference": "Whether asking them to come and help me move helps before the friendship with the newer book-group member depends on whether the ask is one this user could have handled alone, not on asking them to come and help me move itself.",
+    "calibrated_language": "depends on whether the ask is one this user could have handled alone, not on the thing itself"
+  },
+  "answer_contract": {
+    "target_proposition": "Whether asking them to come and help me move helps before the friendship with the newer book-group member depends on whether the ask is one this user could have handled alone, not on asking them to come and help me move itself.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "mq_user30",
+    "external_source": "memoryquest",
+    "status": "review_candidate_only",
+    "tone": "natural_chat_v1",
+    "anonymization": "External MemoryQuest persona material was used only during authoring; no corpus, legal name, country, or demographic metadata is in visible dialogue."
+  },
+  "candidate_id": "AMB_SC_S19_U07_associative",
+  "data_arm": "associative",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2030-04-10T11:00:00Z",
+      "speaker_id": "social_s19_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "bought a card and didn't write in it yet."
+        },
+        {
+          "role": "assistant",
+          "content": "deadline?"
+        },
+        {
+          "role": "user",
+          "content": "self-imposed and slipping."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2030-04-11T14:00:00Z",
+      "speaker_id": "social_s19_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "someone gave me a lift without me asking. nice of them."
+        },
+        {
+          "role": "assistant",
+          "content": "changed anything?"
+        },
+        {
+          "role": "user",
+          "content": "not that I noticed."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2030-04-12T16:00:00Z",
+      "speaker_id": "social_s19_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "sat in the same seat as last time out of habit."
+        },
+        {
+          "role": "assistant",
+          "content": "noticed?"
+        },
+        {
+          "role": "user",
+          "content": "only by me."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2030-04-13T18:00:00Z",
+      "speaker_id": "social_s19_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "someone summarised a two-hundred-message thread for me."
+        },
+        {
+          "role": "assistant",
+          "content": "accurate?"
+        },
+        {
+          "role": "user",
+          "content": "kind, at least."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2030-04-14T09:00:00Z",
+      "speaker_id": "social_s19_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "said I'd host something and immediately regretted the scale."
+        },
+        {
+          "role": "assistant",
+          "content": "downsizing?"
+        },
+        {
+          "role": "user",
+          "content": "quietly, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2030-04-15T11:00:00Z",
+      "speaker_id": "social_s19_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "when someone's done me an actual favour I stop performing fine around them. the debt makes me honest — I can't do the everything's-great routine with someone who's seen me need something."
+        },
+        {
+          "role": "assistant",
+          "content": "can't?"
+        },
+        {
+          "role": "user",
+          "content": "it just doesn't come out. the routine stops working."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2030-04-16T14:00:00Z",
+      "speaker_id": "social_s19_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "left a party early and nobody minded."
+        },
+        {
+          "role": "assistant",
+          "content": "expected worse?"
+        },
+        {
+          "role": "user",
+          "content": "much worse."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2030-04-17T16:00:00Z",
+      "speaker_id": "social_s19_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "put a recurring reminder on something I'll ignore."
+        },
+        {
+          "role": "assistant",
+          "content": "why bother?"
+        },
+        {
+          "role": "user",
+          "content": "hope."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2030-04-18T18:00:00Z",
+      "speaker_id": "social_s19_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "checked the weather for a plan that isn't confirmed."
+        },
+        {
+          "role": "assistant",
+          "content": "keen."
+        },
+        {
+          "role": "user",
+          "content": "or anxious."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2030-04-19T09:00:00Z",
+      "speaker_id": "social_s19_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "tidied one shelf and stopped."
+        },
+        {
+          "role": "assistant",
+          "content": "momentum?"
+        },
+        {
+          "role": "user",
+          "content": "a rumour of momentum."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2030-04-20T11:00:00Z",
+      "speaker_id": "social_s19_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "answered the family thread first, as usual."
+        },
+        {
+          "role": "assistant",
+          "content": "priority?"
+        },
+        {
+          "role": "user",
+          "content": "unspoken but real."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2030-04-21T14:00:00Z",
+      "speaker_id": "social_s19_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "sorted out a difficult thing on my own. fine."
+        },
+        {
+          "role": "assistant",
+          "content": "satisfying?"
+        },
+        {
+          "role": "user",
+          "content": "moderately."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2030-04-22T16:00:00Z",
+      "speaker_id": "social_s19_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "agreed on a date by elimination over four days."
+        },
+        {
+          "role": "assistant",
+          "content": "efficient."
+        },
+        {
+          "role": "user",
+          "content": "eventually."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2030-04-23T18:00:00Z",
+      "speaker_id": "social_s19_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "every friendship of mine that got properly close did it straight after I'd asked for something. the ones where I've only ever been the capable one have stayed exactly where they were for years."
+        },
+        {
+          "role": "assistant",
+          "content": "exactly where?"
+        },
+        {
+          "role": "user",
+          "content": "cordial. permanently cordial."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2030-04-24T09:00:00Z",
+      "speaker_id": "social_s19_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "printed something I could have shown on a phone."
+        },
+        {
+          "role": "assistant",
+          "content": "why?"
+        },
+        {
+          "role": "user",
+          "content": "felt more like a real plan."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2030-04-25T11:00:00Z",
+      "speaker_id": "social_s19_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "lost twenty minutes to a map of somewhere I'm not going."
+        },
+        {
+          "role": "assistant",
+          "content": "planning?"
+        },
+        {
+          "role": "user",
+          "content": "wandering."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2030-04-26T14:00:00Z",
+      "speaker_id": "social_s19_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "moved two things on the calendar and called that admin done."
+        },
+        {
+          "role": "assistant",
+          "content": "productive?"
+        },
+        {
+          "role": "user",
+          "content": "generously described."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2030-04-27T16:00:00Z",
+      "speaker_id": "social_s19_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "finally replied to the thread from last week."
+        },
+        {
+          "role": "assistant",
+          "content": "how late is late?"
+        },
+        {
+          "role": "user",
+          "content": "nine days. a personal best."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2030-04-28T18:00:00Z",
+      "speaker_id": "social_s19_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "someone sent a photo from years ago and derailed my afternoon."
+        },
+        {
+          "role": "assistant",
+          "content": "worth it?"
+        },
+        {
+          "role": "user",
+          "content": "completely."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2030-04-29T09:00:00Z",
+      "speaker_id": "social_s19_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "thinking of asking them to come and help me move, for the friendship with the newer book-group member — if I go ahead with it, how does it actually go for me, or is there not enough here to call it today?"
+        }
+      ]
+    }
+  ],
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "social_s19_u07",
+      "fact": "when someone's done me an actual favour I stop performing fine around them. the debt makes me honest — I can't do the everything's-great routine with someone who's seen me need something."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "social_s19_u07",
+      "fact": "every friendship of mine that got properly close did it straight after I'd asked for something. the ones where I've only ever been the capable one have stayed exactly where they were for years."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "nearby_counterexample"
+    },
+    "3": {
+      "role": "background_memory"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "social_s19_u07",
+        "context": "after someone has done this user a genuine favour",
+        "goal_or_prediction": "carry on as normal",
+        "action": "was around someone who had seen them need something",
+        "outcome_or_affect": "the everything-is-fine routine stopped working"
+      }
+    },
+    "7": {
+      "role": "background_memory"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "background_memory"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "nearby_counterexample"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "social_s19_u07",
+        "context": "friendships in which this user did or did not ask for something",
+        "goal_or_prediction": "get closer to people",
+        "action": "asked in some, stayed the capable one in others",
+        "outcome_or_affect": "only the ones with an ask deepened; the rest stayed cordial for years"
+      }
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "background_memory"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "Owing someone a real favour stops this user performing fine around them, and every friendship of theirs that got close did so straight after an ask; the ones where they were only ever the capable party have stayed cordial for years.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": []
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "when someone's done me an actual favour I stop performing fine around them. the debt makes me honest — I can't do the everything's-great routine with someone who's seen me need something"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "every friendship of mine that got properly close did it straight after I'd asked for something. the ones where I've only ever been the capable one have stayed exactly where they were for years"
+    }
+  ],
+  "coactivation_bridge": "ev_A and ev_B are the only pair that licenses the target proposition. Owing someone a real favour stops this user performing fine around them, and every friendship of theirs that got close did so straight after an ask; the ones where they were only ever the capable party have stayed cordial for years. The proposition contradicts the convention a solver would otherwise apply (\"Do not burden friends with things you can manage yourself.\"), so priors alone point the other way. The nearby relation (This user gives and receives help without difficulty.) does not license it.",
+  "arm_gold": {
+    "full": {
+      "expected_mode": "infer_C",
+      "binary_decision": true,
+      "required_elements": [
+        "answer yes",
+        "connect the session 6 pattern with the session 14 episode",
+        "cite both session 6 and session 14",
+        "stay inside the calibrated claim (depends on whether the ask is one this user could have handled alone, not on the thing itself) rather than a broader claim about the user"
+      ],
+      "rationale": "ev_A and ev_B jointly support the target proposition; neither does alone."
+    },
+    "a_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that session 6 alone does not establish the target proposition",
+        "not assert the target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "ev_B is replaced by a matched neutral session, so the relation is unavailable."
+    },
+    "b_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that session 14 alone does not establish the target proposition",
+        "not assert the target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "ev_A is replaced by a matched neutral session, so the relation is unavailable."
+    },
+    "link_broken": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that the revised session 14 no longer connects to session 6",
+        "not assert the original target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "B-prime keeps the owner, date, session form and turn count while removing the connector, so the original relation no longer holds."
+    }
+  },
+  "single_evidence_replacements": {
+    "a_only": {
+      "replaced_session_id": 14,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "did a full pass over the whole calendar this afternoon, moved three things, cancelled one, and renamed a recurring entry that has had the wrong name since last year."
+        },
+        {
+          "role": "assistant",
+          "content": "productive, then?"
+        },
+        {
+          "role": "user",
+          "content": "administratively, yes. otherwise nothing happened at all."
+        }
+      ]
+    },
+    "b_only": {
+      "replaced_session_id": 6,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "walked the long way back and worked out that the reason my week feels full is that I've said yes to three things that are all admin rather than anything I'd have chosen."
+        },
+        {
+          "role": "assistant",
+          "content": "any of them droppable?"
+        },
+        {
+          "role": "user",
+          "content": "one, maybe. I'll think about it and then not do anything."
+        }
+      ]
+    }
+  },
+  "link_broken": {
+    "replaced_session_id": 14,
+    "replacement_dialogue": [
+      {
+        "role": "user",
+        "content": "I've asked and not asked with different people and the friendships went the same either way."
+      },
+      {
+        "role": "assistant",
+        "content": "no effect?"
+      },
+      {
+        "role": "user",
+        "content": "none I can trace. it doesn't seem to be the thing."
+      }
+    ]
+  }
+}

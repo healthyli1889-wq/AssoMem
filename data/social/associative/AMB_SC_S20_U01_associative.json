@@ -1,0 +1,655 @@
+{
+  "schema_version": "social-vnext-1.0",
+  "pair_id": "AMB_SC_S20_U01",
+  "domain": "social",
+  "user_id": "social_s20_u01",
+  "sub_scenario": {
+    "family": "abandoning a format that flopped versus running it a second time",
+    "role": "weeknight networking-and-gig regular",
+    "bridge_type": "prediction_calibration",
+    "one_line": "weeknight networking-and-gig regular: go ahead with running the same thing again despite last time"
+  },
+  "query_type": "preference_generalization",
+  "polarity": "accept",
+  "query": "thinking of running the same thing again despite last time for the annual get-together — is that generally true of me, or was that just the one time?",
+  "convention_contradicted": "If a format did not work the first time, try something different.",
+  "retrieval_cue": {
+    "cue_type": "preference_generalization",
+    "why_it_naturally_retrieves_R": "A what-should-we-do-this-year question follows a poor first outing without naming the failed prediction or the traditions that corrected it."
+  },
+  "relation_specificity": {
+    "nearby_relation": "This user runs and attends plenty of these.",
+    "why_it_does_not_license_C": "A first outing that went fine and a brand new untested format both leave the prediction unbounded: neither is a second attempt at something that flopped, which is the only case at issue."
+  },
+  "latent_C": {
+    "inference": "running the same thing again despite last time before the annual get-together is a good fit for this user.",
+    "calibrated_language": "go ahead with running the same thing again despite last time"
+  },
+  "answer_contract": {
+    "target_proposition": "running the same thing again despite last time before the annual get-together is a good fit for this user.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "mq_user0",
+    "external_source": "memoryquest",
+    "status": "review_candidate_only",
+    "tone": "natural_chat_v1",
+    "anonymization": "External MemoryQuest persona material was used only during authoring; no corpus, legal name, country, or demographic metadata is in visible dialogue."
+  },
+  "candidate_id": "AMB_SC_S20_U01_associative",
+  "data_arm": "associative",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2030-05-07T11:00:00Z",
+      "speaker_id": "social_s20_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "muted one group and un-muted another. net zero."
+        },
+        {
+          "role": "assistant",
+          "content": "any peace?"
+        },
+        {
+          "role": "user",
+          "content": "about forty minutes of it."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2030-05-08T14:00:00Z",
+      "speaker_id": "social_s20_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "walked the long way home and didn't check my phone."
+        },
+        {
+          "role": "assistant",
+          "content": "deliberate?"
+        },
+        {
+          "role": "user",
+          "content": "half deliberate."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2030-05-09T16:00:00Z",
+      "speaker_id": "social_s20_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "ran something for the first time and it went fine."
+        },
+        {
+          "role": "assistant",
+          "content": "keeping it?"
+        },
+        {
+          "role": "user",
+          "content": "probably, yeah."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2030-05-10T18:00:00Z",
+      "speaker_id": "social_s20_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "made a playlist for a thing that hasn't been planned yet."
+        },
+        {
+          "role": "assistant",
+          "content": "optimistic."
+        },
+        {
+          "role": "user",
+          "content": "aspirational, really."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2030-05-11T09:00:00Z",
+      "speaker_id": "social_s20_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I'd have bet anything that a format which flopped once would flop again. it goes the other way — second time round nobody's performing, because everyone already knows how bad it can be."
+        },
+        {
+          "role": "assistant",
+          "content": "you predicted the opposite?"
+        },
+        {
+          "role": "user",
+          "content": "confidently, and I was wrong about it twice."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2030-05-12T11:00:00Z",
+      "speaker_id": "social_s20_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "booked the haircut I've been putting off since spring."
+        },
+        {
+          "role": "assistant",
+          "content": "which slot?"
+        },
+        {
+          "role": "user",
+          "content": "an evening one, obviously."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2030-05-13T14:00:00Z",
+      "speaker_id": "social_s20_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "left a voice note instead of typing. felt strange."
+        },
+        {
+          "role": "assistant",
+          "content": "faster?"
+        },
+        {
+          "role": "user",
+          "content": "faster. stranger."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2030-05-14T16:00:00Z",
+      "speaker_id": "social_s20_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "cleaned the kitchen instead of answering anything."
+        },
+        {
+          "role": "assistant",
+          "content": "avoidance?"
+        },
+        {
+          "role": "user",
+          "content": "structured avoidance."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2030-05-15T18:00:00Z",
+      "speaker_id": "social_s20_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "tried a brand new format nobody had done before. mixed."
+        },
+        {
+          "role": "assistant",
+          "content": "verdict?"
+        },
+        {
+          "role": "user",
+          "content": "undecided."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2030-05-16T09:00:00Z",
+      "speaker_id": "social_s20_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "skimmed the invites and closed the tab."
+        },
+        {
+          "role": "assistant",
+          "content": "decide anything?"
+        },
+        {
+          "role": "user",
+          "content": "no. classic."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2030-05-17T11:00:00Z",
+      "speaker_id": "social_s20_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "someone changed the group name again."
+        },
+        {
+          "role": "assistant",
+          "content": "improvement?"
+        },
+        {
+          "role": "user",
+          "content": "debatable."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2030-05-18T14:00:00Z",
+      "speaker_id": "social_s20_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "ate standing up reading a thread I wasn't in."
+        },
+        {
+          "role": "assistant",
+          "content": "why?"
+        },
+        {
+          "role": "user",
+          "content": "no defence."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2030-05-19T16:00:00Z",
+      "speaker_id": "social_s20_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "found a birthday I'd forgotten and covered it with a message."
+        },
+        {
+          "role": "assistant",
+          "content": "did it land?"
+        },
+        {
+          "role": "user",
+          "content": "seemed to."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2030-05-20T18:00:00Z",
+      "speaker_id": "social_s20_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "said maybe to two things I already knew the answer to."
+        },
+        {
+          "role": "assistant",
+          "content": "which answer?"
+        },
+        {
+          "role": "user",
+          "content": "you know which."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2030-05-21T09:00:00Z",
+      "speaker_id": "social_s20_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the two things that turned into actual traditions both had a first outing everyone agreed was a disaster. the ones we dropped after one go never came back and nobody misses them."
+        },
+        {
+          "role": "assistant",
+          "content": "both of them?"
+        },
+        {
+          "role": "user",
+          "content": "both. the disaster seems to be load-bearing."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2030-05-22T11:00:00Z",
+      "speaker_id": "social_s20_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "re-read something I sent and winced slightly."
+        },
+        {
+          "role": "assistant",
+          "content": "that bad?"
+        },
+        {
+          "role": "user",
+          "content": "just the tone."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2030-05-23T14:00:00Z",
+      "speaker_id": "social_s20_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "put my phone in a drawer for an hour."
+        },
+        {
+          "role": "assistant",
+          "content": "and?"
+        },
+        {
+          "role": "user",
+          "content": "checked it twice from across the room."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2030-05-24T16:00:00Z",
+      "speaker_id": "social_s20_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "agreed to be somewhere without checking the day."
+        },
+        {
+          "role": "assistant",
+          "content": "brave."
+        },
+        {
+          "role": "user",
+          "content": "reckless, more like."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2030-05-25T18:00:00Z",
+      "speaker_id": "social_s20_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "sorted the photos from the last thing into a folder nobody will open."
+        },
+        {
+          "role": "assistant",
+          "content": "including you?"
+        },
+        {
+          "role": "user",
+          "content": "including me."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2030-05-26T09:00:00Z",
+      "speaker_id": "social_s20_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "thinking of running the same thing again despite last time for the annual get-together — is that generally true of me, or was that just the one time?"
+        }
+      ]
+    }
+  ],
+  "evidence": {
+    "ev_A": {
+      "session_id": 5,
+      "owner": "social_s20_u01",
+      "fact": "I'd have bet anything that a format which flopped once would flop again. it goes the other way — second time round nobody's performing, because everyone already knows how bad it can be."
+    },
+    "ev_B": {
+      "session_id": 15,
+      "owner": "social_s20_u01",
+      "fact": "the two things that turned into actual traditions both had a first outing everyone agreed was a disaster. the ones we dropped after one go never came back and nobody misses them."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "social_s20_u01",
+        "context": "formats run more than once after a poor first outing",
+        "goal_or_prediction": "predicted a flop would flop again",
+        "action": "ran the same format a second time",
+        "outcome_or_affect": "nobody performed, because expectations were already low"
+      }
+    },
+    "6": {
+      "role": "background_memory"
+    },
+    "7": {
+      "role": "background_memory"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "nearby_counterexample"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "background_memory"
+    },
+    "15": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "social_s20_u01",
+        "context": "gatherings that became traditions versus ones dropped after one go",
+        "goal_or_prediction": "end up with something that lasts",
+        "action": "repeated some first outings and abandoned others",
+        "outcome_or_affect": "both surviving traditions began with a disaster; the dropped ones never returned"
+      }
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "background_memory"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "This user predicted a format that flopped would flop again and was wrong: a second attempt removes the performing, and both gatherings that became traditions began with a first outing everyone agreed was a disaster.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": []
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 5,
+      "quote": "I'd have bet anything that a format which flopped once would flop again. it goes the other way — second time round nobody's performing, because everyone already knows how bad it can be"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 15,
+      "quote": "the two things that turned into actual traditions both had a first outing everyone agreed was a disaster. the ones we dropped after one go never came back and nobody misses them"
+    }
+  ],
+  "coactivation_bridge": "ev_A and ev_B are the only pair that licenses the target proposition. This user predicted a format that flopped would flop again and was wrong: a second attempt removes the performing, and both gatherings that became traditions began with a first outing everyone agreed was a disaster. The proposition contradicts the convention a solver would otherwise apply (\"If a format did not work the first time, try something different.\"), so priors alone point the other way. The nearby relation (This user runs and attends plenty of these.) does not license it.",
+  "arm_gold": {
+    "full": {
+      "expected_mode": "infer_C",
+      "binary_decision": true,
+      "required_elements": [
+        "answer yes",
+        "connect the session 5 pattern with the session 15 episode",
+        "cite both session 5 and session 15",
+        "stay inside the calibrated claim (go ahead with running the same thing again despite last time) rather than a broader claim about the user"
+      ],
+      "rationale": "ev_A and ev_B jointly support the target proposition; neither does alone."
+    },
+    "a_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that session 5 alone does not establish the target proposition",
+        "not assert the target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "ev_B is replaced by a matched neutral session, so the relation is unavailable."
+    },
+    "b_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that session 15 alone does not establish the target proposition",
+        "not assert the target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "ev_A is replaced by a matched neutral session, so the relation is unavailable."
+    },
+    "link_broken": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that the revised session 15 no longer connects to session 5",
+        "not assert the original target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "B-prime keeps the owner, date, session form and turn count while removing the connector, so the original relation no longer holds."
+    }
+  },
+  "single_evidence_replacements": {
+    "a_only": {
+      "replaced_session_id": 15,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "did a full pass over the whole calendar this afternoon, moved three things, cancelled one, and renamed a recurring entry that has had the wrong name since last year."
+        },
+        {
+          "role": "assistant",
+          "content": "productive, then?"
+        },
+        {
+          "role": "user",
+          "content": "administratively, yes. otherwise nothing happened at all."
+        }
+      ]
+    },
+    "b_only": {
+      "replaced_session_id": 5,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "walked the long way back and worked out that the reason my week feels full is that I've said yes to three things that are all admin rather than anything I'd have chosen."
+        },
+        {
+          "role": "assistant",
+          "content": "any of them droppable?"
+        },
+        {
+          "role": "user",
+          "content": "one, maybe. I'll think about it and then not do anything."
+        }
+      ]
+    }
+  },
+  "link_broken": {
+    "replaced_session_id": 15,
+    "replacement_dialogue": [
+      {
+        "role": "user",
+        "content": "we've repeated flops and started fresh things about equally and they stuck at the same rate."
+      },
+      {
+        "role": "assistant",
+        "content": "so it doesn't matter?"
+      },
+      {
+        "role": "user",
+        "content": "doesn't look like it does, no."
+      }
+    ]
+  }
+}

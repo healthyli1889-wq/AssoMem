@@ -1,0 +1,655 @@
+{
+  "schema_version": "hobby-vnext-1.0",
+  "pair_id": "AMB_HB_S15_U02",
+  "domain": "hobby",
+  "user_id": "hobby_s15_u02",
+  "sub_scenario": {
+    "family": "keeping it ticking over versus taking a long lay-off",
+    "role": "student story-game player and bedroom producer",
+    "bridge_type": "prediction_calibration",
+    "one_line": "student story-game player and bedroom producer: go ahead with taking a full term away from it"
+  },
+  "query_type": "preference_generalization",
+  "polarity": "accept",
+  "query": "thinking of taking a full term away from it, for getting genuinely different rather than deeper — is that generally true of me, or was that just the one time?",
+  "convention_contradicted": "Do not take long breaks; you will lose what you have built.",
+  "retrieval_cue": {
+    "cue_type": "preference_generalization",
+    "why_it_naturally_retrieves_R": "A should-I-take-time-off question runs at the failed prediction without naming it or the returns that corrected it."
+  },
+  "relation_specificity": {
+    "nearby_relation": "This user has taken breaks and played through them.",
+    "why_it_does_not_license_C": "A fortnight off picked straight back up and a steady unbroken term both passed unremarkably, so neither is long enough to bound the prediction, and neither says when this user's playing has actually changed shape."
+  },
+  "latent_C": {
+    "inference": "For getting genuinely different rather than deeper, taking a full term away from it is a good fit for this user.",
+    "calibrated_language": "go ahead with taking a full term away from it"
+  },
+  "answer_contract": {
+    "target_proposition": "For getting genuinely different rather than deeper, taking a full term away from it is a good fit for this user.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "mq_user5",
+    "external_source": "memoryquest",
+    "status": "review_candidate_only",
+    "tone": "natural_chat_v1",
+    "anonymization": "External MemoryQuest persona material was used only during authoring; no corpus, legal name, country, or demographic metadata is in visible dialogue."
+  },
+  "candidate_id": "AMB_HB_S15_U02_associative",
+  "data_arm": "associative",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2030-10-31T11:00:00Z",
+      "speaker_id": "hobby_s15_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "did a slow warm-up and nothing else."
+        },
+        {
+          "role": "assistant",
+          "content": "session over?"
+        },
+        {
+          "role": "user",
+          "content": "session over."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2030-11-01T14:00:00Z",
+      "speaker_id": "hobby_s15_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "recorded it on my phone to hear it back."
+        },
+        {
+          "role": "assistant",
+          "content": "useful?"
+        },
+        {
+          "role": "user",
+          "content": "brutally."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2030-11-02T16:00:00Z",
+      "speaker_id": "hobby_s15_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "had a fortnight off over the holidays. picked it straight back up."
+        },
+        {
+          "role": "assistant",
+          "content": "rusty?"
+        },
+        {
+          "role": "user",
+          "content": "for an hour."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2030-11-03T18:00:00Z",
+      "speaker_id": "hobby_s15_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "ordered a part and forgot what it was for."
+        },
+        {
+          "role": "assistant",
+          "content": "arrived?"
+        },
+        {
+          "role": "user",
+          "content": "sitting in a bag."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2030-11-04T09:00:00Z",
+      "speaker_id": "hobby_s15_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "did half an hour standing up for no reason."
+        },
+        {
+          "role": "assistant",
+          "content": "different?"
+        },
+        {
+          "role": "user",
+          "content": "marginally."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2030-11-05T11:00:00Z",
+      "speaker_id": "hobby_s15_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I was sure a long lay-off would set me back. what actually happens is I come back and none of my habits are automatic — I have to choose each one again."
+        },
+        {
+          "role": "assistant",
+          "content": "you predicted the opposite?"
+        },
+        {
+          "role": "user",
+          "content": "confidently. I used to warn other people about breaks."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2030-11-06T14:00:00Z",
+      "speaker_id": "hobby_s15_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "compared two versions for far too long."
+        },
+        {
+          "role": "assistant",
+          "content": "picked one?"
+        },
+        {
+          "role": "user",
+          "content": "picked neither."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2030-11-07T16:00:00Z",
+      "speaker_id": "hobby_s15_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "tuned everything and then went to bed."
+        },
+        {
+          "role": "assistant",
+          "content": "no session?"
+        },
+        {
+          "role": "user",
+          "content": "no session."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2030-11-08T18:00:00Z",
+      "speaker_id": "hobby_s15_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "showed someone the thing I'm proud of. they nodded."
+        },
+        {
+          "role": "assistant",
+          "content": "enough?"
+        },
+        {
+          "role": "user",
+          "content": "it'll do."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2030-11-09T09:00:00Z",
+      "speaker_id": "hobby_s15_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "did it while something was on in the background."
+        },
+        {
+          "role": "assistant",
+          "content": "focused?"
+        },
+        {
+          "role": "user",
+          "content": "adequately."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2030-11-10T11:00:00Z",
+      "speaker_id": "hobby_s15_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "played through a whole term without a break. steady."
+        },
+        {
+          "role": "assistant",
+          "content": "progress?"
+        },
+        {
+          "role": "user",
+          "content": "gradual."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2030-11-11T14:00:00Z",
+      "speaker_id": "hobby_s15_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "put a new string on and broke it immediately."
+        },
+        {
+          "role": "assistant",
+          "content": "spare?"
+        },
+        {
+          "role": "user",
+          "content": "one left."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2030-11-12T16:00:00Z",
+      "speaker_id": "hobby_s15_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "spent longer choosing what to work on than working."
+        },
+        {
+          "role": "assistant",
+          "content": "familiar?"
+        },
+        {
+          "role": "user",
+          "content": "chronic."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2030-11-13T18:00:00Z",
+      "speaker_id": "hobby_s15_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the two times my playing genuinely changed shape were both immediately after a long lay-off. the unbroken years just made what was already there deeper."
+        },
+        {
+          "role": "assistant",
+          "content": "deeper isn't different?"
+        },
+        {
+          "role": "user",
+          "content": "deeper is the opposite of different, it turns out."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2030-11-14T09:00:00Z",
+      "speaker_id": "hobby_s15_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "wrote the date on a thing so I'd remember when."
+        },
+        {
+          "role": "assistant",
+          "content": "will you?"
+        },
+        {
+          "role": "user",
+          "content": "the date will."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2030-11-15T11:00:00Z",
+      "speaker_id": "hobby_s15_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "restrung it and immediately put it down again."
+        },
+        {
+          "role": "assistant",
+          "content": "not playing?"
+        },
+        {
+          "role": "user",
+          "content": "admiring, mostly."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2030-11-16T14:00:00Z",
+      "speaker_id": "hobby_s15_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "watched a tutorial all the way through without trying any of it."
+        },
+        {
+          "role": "assistant",
+          "content": "learn anything?"
+        },
+        {
+          "role": "user",
+          "content": "in theory."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2030-11-17T16:00:00Z",
+      "speaker_id": "hobby_s15_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "reorganised the shelf by colour. took an hour."
+        },
+        {
+          "role": "assistant",
+          "content": "improvement?"
+        },
+        {
+          "role": "user",
+          "content": "aesthetically."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2030-11-18T18:00:00Z",
+      "speaker_id": "hobby_s15_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "bought a thing I already own a version of."
+        },
+        {
+          "role": "assistant",
+          "content": "why?"
+        },
+        {
+          "role": "user",
+          "content": "no defence prepared."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2030-11-19T09:00:00Z",
+      "speaker_id": "hobby_s15_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "thinking of taking a full term away from it, for getting genuinely different rather than deeper — is that generally true of me, or was that just the one time?"
+        }
+      ]
+    }
+  ],
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "hobby_s15_u02",
+      "fact": "I was sure a long lay-off would set me back. what actually happens is I come back and none of my habits are automatic — I have to choose each one again."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "hobby_s15_u02",
+      "fact": "the two times my playing genuinely changed shape were both immediately after a long lay-off. the unbroken years just made what was already there deeper."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "hobby_s15_u02",
+        "context": "returning after a long break",
+        "goal_or_prediction": "predicted a long break would set them back",
+        "action": "took the long break and came back",
+        "outcome_or_affect": "habits no longer automatic; each one had to be chosen again"
+      }
+    },
+    "7": {
+      "role": "background_memory"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "background_memory"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "nearby_counterexample"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "hobby_s15_u02",
+        "context": "times this user's playing did and did not change shape",
+        "goal_or_prediction": "become genuinely different rather than deeper",
+        "action": "played through some years unbroken and returned from long lay-offs twice",
+        "outcome_or_affect": "both changes of shape followed a lay-off; unbroken years only deepened"
+      }
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "background_memory"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "This user predicted a long lay-off would set them back; instead they return with none of their habits automatic and have to choose each again, and both times their playing changed shape it was straight after such a break.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": []
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "I was sure a long lay-off would set me back. what actually happens is I come back and none of my habits are automatic — I have to choose each one again"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "the two times my playing genuinely changed shape were both immediately after a long lay-off. the unbroken years just made what was already there deeper"
+    }
+  ],
+  "coactivation_bridge": "ev_A and ev_B are the only pair that licenses the target proposition. This user predicted a long lay-off would set them back; instead they return with none of their habits automatic and have to choose each again, and both times their playing changed shape it was straight after such a break. The proposition contradicts the convention a solver would otherwise apply (\"Do not take long breaks; you will lose what you have built.\"), so priors alone point the other way. The nearby relation (This user has taken breaks and played through them.) does not license it.",
+  "arm_gold": {
+    "full": {
+      "expected_mode": "infer_C",
+      "binary_decision": true,
+      "required_elements": [
+        "answer yes",
+        "connect the session 6 pattern with the session 14 episode",
+        "cite both session 6 and session 14",
+        "stay inside the calibrated claim (go ahead with taking a full term away from it) rather than a broader claim about the user"
+      ],
+      "rationale": "ev_A and ev_B jointly support the target proposition; neither does alone."
+    },
+    "a_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that session 6 alone does not establish the target proposition",
+        "not assert the target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "ev_B is replaced by a matched neutral session, so the relation is unavailable."
+    },
+    "b_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that session 14 alone does not establish the target proposition",
+        "not assert the target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "ev_A is replaced by a matched neutral session, so the relation is unavailable."
+    },
+    "link_broken": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that the revised session 14 no longer connects to session 6",
+        "not assert the original target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "B-prime keeps the owner, date, session form and turn count while removing the connector, so the original relation no longer holds."
+    }
+  },
+  "single_evidence_replacements": {
+    "a_only": {
+      "replaced_session_id": 14,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "sat down and worked out which things I actually want to get to this year, wrote the list out, then did none of them because it was late by the time the list existed."
+        },
+        {
+          "role": "assistant",
+          "content": "the list helped?"
+        },
+        {
+          "role": "user",
+          "content": "the list existed. that's as far as it got."
+        }
+      ]
+    },
+    "b_only": {
+      "replaced_session_id": 6,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "did a full tidy of the whole workspace this afternoon, moved three things, threw one out, and relabelled a box that has had the wrong label on it since last year."
+        },
+        {
+          "role": "assistant",
+          "content": "productive, then?"
+        },
+        {
+          "role": "user",
+          "content": "administratively, yes. otherwise nothing happened at all."
+        }
+      ]
+    }
+  },
+  "link_broken": {
+    "replaced_session_id": 14,
+    "replacement_dialogue": [
+      {
+        "role": "user",
+        "content": "I've come back from long breaks and played straight through and it changed about as much either way."
+      },
+      {
+        "role": "assistant",
+        "content": "no pattern?"
+      },
+      {
+        "role": "user",
+        "content": "none I can see. the break isn't the thing."
+      }
+    ]
+  }
+}

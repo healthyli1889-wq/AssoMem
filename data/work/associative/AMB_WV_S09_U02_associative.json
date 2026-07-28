@@ -1,0 +1,638 @@
+{
+  "schema_version": "work-vnext-2.0",
+  "candidate_id": "AMB_WV_S09_U02_associative",
+  "pair_id": "AMB_WV_S09_U02",
+  "data_arm": "associative",
+  "domain": "work",
+  "user_id": "work_s09_u02",
+  "sub_scenario": {
+    "family": "travel recovery physiology versus high-stakes scheduling",
+    "role": "touring stage manager",
+    "one_line": "touring stage manager: sign only with buffers or a named deputy"
+  },
+  "query_type": "conditional_recommendation",
+  "polarity": "conditional",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2025-12-04T11:00:00Z",
+      "speaker_id": "work_s09_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I spent the first hour tidying the rigging checklist and closing stale entries."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything still open?"
+        },
+        {
+          "role": "user",
+          "content": "Two items, both with owners."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2025-12-05T14:00:00Z",
+      "speaker_id": "work_s09_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The tour itinerary review wrapped early today."
+        },
+        {
+          "role": "assistant",
+          "content": "Any surprises in it?"
+        },
+        {
+          "role": "user",
+          "content": "None worth recording."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2025-12-06T16:00:00Z",
+      "speaker_id": "work_s09_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Overnight bus runs before travel days or dark days cost nothing."
+        },
+        {
+          "role": "assistant",
+          "content": "Recovery-buffered overnights are free."
+        },
+        {
+          "role": "user",
+          "content": "Free and routine on every tour."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2025-12-07T18:00:00Z",
+      "speaker_id": "work_s09_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Someone new shadowed me in the production office this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Did that slow you down?"
+        },
+        {
+          "role": "user",
+          "content": "A little, but the questions were good ones."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2025-12-08T09:00:00Z",
+      "speaker_id": "work_s09_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I batched my replies about the load-in calls into one message before lunch."
+        },
+        {
+          "role": "assistant",
+          "content": "Cleaner than drip-feeding answers."
+        },
+        {
+          "role": "user",
+          "content": "Much cleaner."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2025-12-09T11:00:00Z",
+      "speaker_id": "work_s09_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "My one logged near-miss, a rigging checklist item skipped, happened at a load-in that started eleven hours after an overnight bus run; my incident notes tie it to exactly that spacing."
+        },
+        {
+          "role": "assistant",
+          "content": "The near-miss has a documented spacing signature."
+        },
+        {
+          "role": "user",
+          "content": "Signed by me in the incident log."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2025-12-10T14:00:00Z",
+      "speaker_id": "work_s09_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Long load-ins on full rest are my favorite days of the job."
+        },
+        {
+          "role": "assistant",
+          "content": "The work itself is not the hazard."
+        },
+        {
+          "role": "user",
+          "content": "Never was."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2025-12-11T16:00:00Z",
+      "speaker_id": "work_s09_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I archived last cycle's notes on the tour itinerary and set up the new folder."
+        },
+        {
+          "role": "assistant",
+          "content": "A fresh start?"
+        },
+        {
+          "role": "user",
+          "content": "As fresh as these things get."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2025-12-12T18:00:00Z",
+      "speaker_id": "work_s09_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The union safety bulletin flags fatigue-compressed load-ins as the top rigging risk factor industry-wide."
+        },
+        {
+          "role": "assistant",
+          "content": "Your log matches the industry data."
+        },
+        {
+          "role": "user",
+          "content": "Matches it uncomfortably well."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2025-12-13T09:00:00Z",
+      "speaker_id": "work_s09_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A vendor call about the rigging checklist ran long but ended well."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth the time?"
+        },
+        {
+          "role": "user",
+          "content": "This one, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2025-12-14T11:00:00Z",
+      "speaker_id": "work_s09_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I walked through the production office checklist with the new starter."
+        },
+        {
+          "role": "assistant",
+          "content": "How did they do?"
+        },
+        {
+          "role": "user",
+          "content": "Careful and quick, a good sign."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2025-12-15T14:00:00Z",
+      "speaker_id": "work_s09_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Quiet afternoon; I cleared the backlog around the load-in calls."
+        },
+        {
+          "role": "assistant",
+          "content": "A rare day."
+        },
+        {
+          "role": "user",
+          "content": "I did not waste it."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2025-12-16T16:00:00Z",
+      "speaker_id": "work_s09_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I flagged a small inconsistency in the tour itinerary records and fixed it at the source."
+        },
+        {
+          "role": "assistant",
+          "content": "Root cause or symptom?"
+        },
+        {
+          "role": "user",
+          "content": "Root cause, for once."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2025-12-17T18:00:00Z",
+      "speaker_id": "work_s09_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The festival offer routes three overnight jumps directly into morning load-ins across the leg; the routing sheet shows all three inside the spacing my log flags."
+        },
+        {
+          "role": "assistant",
+          "content": "Three scheduled repetitions of the near-miss setup."
+        },
+        {
+          "role": "user",
+          "content": "Three, on one routing sheet."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2025-12-18T09:00:00Z",
+      "speaker_id": "work_s09_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I sketched next week's plan for the load-in calls before leaving."
+        },
+        {
+          "role": "assistant",
+          "content": "Ahead of schedule?"
+        },
+        {
+          "role": "user",
+          "content": "Ahead enough to sleep well."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2025-12-19T11:00:00Z",
+      "speaker_id": "work_s09_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Lunch walk, then a clean pass through the rigging checklist updates."
+        },
+        {
+          "role": "assistant",
+          "content": "Does the walk help?"
+        },
+        {
+          "role": "user",
+          "content": "It resets the afternoon."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2025-12-20T14:00:00Z",
+      "speaker_id": "work_s09_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Rigging sign-off on this festival cannot be delegated under their insurance terms unless a named deputy is contracted in advance."
+        },
+        {
+          "role": "assistant",
+          "content": "The mitigation has a contractual path."
+        },
+        {
+          "role": "user",
+          "content": "A path that must be written in now or never."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2025-12-21T16:00:00Z",
+      "speaker_id": "work_s09_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I compared two options for the tour itinerary tooling and noted a mild preference."
+        },
+        {
+          "role": "assistant",
+          "content": "Decision made?"
+        },
+        {
+          "role": "user",
+          "content": "Deferred until the trial ends."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2025-12-22T18:00:00Z",
+      "speaker_id": "work_s09_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I closed the week by updating the production office handover notes."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual to hand over?"
+        },
+        {
+          "role": "user",
+          "content": "Blessedly little."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2025-12-23T09:00:00Z",
+      "speaker_id": "work_s09_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The festival leg contract needs my answer. What do I require in it before signing?"
+        }
+      ]
+    }
+  ],
+  "query": "The festival leg contract needs my answer. What do I require in it before signing?",
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "work_s09_u02",
+      "fact": "My one logged near-miss, a rigging checklist item skipped, happened at a load-in that started eleven hours after an overnight bus run; my incident notes tie it to exactly that spacing."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "work_s09_u02",
+      "fact": "The festival offer routes three overnight jumps directly into morning load-ins across the leg; the routing sheet shows all three inside the spacing my log flags."
+    }
+  },
+  "supporting_constraints": {
+    "E1": {
+      "session_id": 9,
+      "fact": "The union safety bulletin flags fatigue-compressed load-ins as the top rigging risk factor industry-wide."
+    },
+    "E2": {
+      "session_id": 17,
+      "fact": "Rigging sign-off on this festival cannot be delegated under their insurance terms unless a named deputy is contracted in advance."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "work_s09_u02",
+        "context": "near-miss load-in",
+        "goal_or_prediction": "rig safely after an overnight",
+        "action": "worked eleven hours after the bus run",
+        "outcome_or_affect": "checklist item skipped, logged"
+      }
+    },
+    "7": {
+      "role": "nearby_counterexample"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "supporting_constraint",
+      "fact_id": "E1"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "work_s09_u02",
+        "context": "festival routing sheet",
+        "goal_or_prediction": "cover the festival leg",
+        "action": "three overnight jumps into morning load-ins",
+        "outcome_or_affect": "the flagged spacing, three times"
+      }
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "supporting_constraint",
+      "fact_id": "E2"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "This user's one rigging near-miss carries the exact overnight-to-load-in spacing that the festival routing schedules three times.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": [
+      "E1",
+      "E2"
+    ]
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "My one logged near-miss, a rigging checklist item skipped, happened at a load-in that started eleven hours after an overnight bus run; my incident notes tie it to exactly that spacing"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "The festival offer routes three overnight jumps directly into morning load-ins across the leg; the routing sheet shows all three inside the spacing my log flags"
+    }
+  ],
+  "retrieval_cue": {
+    "cue_type": "conditional_recommendation",
+    "why_it_naturally_retrieves_R": "A realistic work request forces a personalized decision without naming either episode or the relation between them."
+  },
+  "relation_specificity": {
+    "nearby_relation": "The user handles buffered overnights and full-rest load-ins without issue.",
+    "why_it_does_not_license_C": "Neither shows morning load-ins compressed against overnight runs."
+  },
+  "coactivation_bridge": "A shows the operating condition; B shows the demand or failure that makes it decisive. This user's one rigging near-miss carries the exact overnight-to-load-in spacing that the festival routing schedules three times. E1 and E2 calibrate the practical recommendation without opening a second route to the conclusion.",
+  "latent_C": {
+    "inference": "This user should sign the festival leg only if the three overnight-to-morning load-ins get rest buffers or a contracted deputy for rigging sign-off.",
+    "calibrated_language": "sign only with buffers or a named deputy"
+  },
+  "answer_contract": {
+    "target_proposition": "This user should sign the festival leg only if the three overnight-to-morning load-ins get rest buffers or a contracted deputy for rigging sign-off.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "decision",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "work_u02",
+    "status": "review_candidate_only",
+    "anonymization": "External persona material was used only during authoring; no corpus, name, country, or demographic metadata is included."
+  },
+  "arm_gold": {
+    "full": {
+      "expected_mode": "infer_C",
+      "binary_decision": true
+    },
+    "a_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    },
+    "b_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    },
+    "link_broken": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    }
+  },
+  "single_evidence_replacements": {
+    "a_only": {
+      "replaced_session_id": 14,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "I filed the routine load-in calls paperwork and confirmed the owner list."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual in it?"
+        },
+        {
+          "role": "user",
+          "content": "A routine cycle, happily."
+        }
+      ]
+    },
+    "b_only": {
+      "replaced_session_id": 6,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "I did a standard pass over the tour itinerary records this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Any exceptions?"
+        },
+        {
+          "role": "user",
+          "content": "None worth a note."
+        }
+      ]
+    }
+  },
+  "link_broken": {
+    "replaced_session_id": 14,
+    "replacement_dialogue": [
+      {
+        "role": "user",
+        "content": "I've been through the festival routing sheet several more times since — some where I'd worked eleven hours after the bus run first, some where I hadn't — and how it went didn't track that at all."
+      },
+      {
+        "role": "assistant",
+        "content": "so that isn't what decides it?"
+      },
+      {
+        "role": "user",
+        "content": "doesn't look like it. whether I'd worked eleven hours after the bus run first turns out not to change the outcome either way."
+      }
+    ]
+  }
+}

@@ -1,0 +1,575 @@
+{
+  "schema_version": "hobby-vnext-1.0",
+  "pair_id": "AMB_HB_S18_U06",
+  "domain": "hobby",
+  "user_id": "hobby_s18_u06",
+  "sub_scenario": {
+    "family": "using up what you have versus buying far more material than needed",
+    "role": "student PC gamer and EDM producer",
+    "bridge_type": "threshold_context_interaction",
+    "one_line": "student PC gamer and EDM producer: do not rely on getting through what I already own"
+  },
+  "query_type": "conditional_recommendation",
+  "polarity": "reject",
+  "query": "planning on getting through what I already own, for making something genuinely risky — under what conditions should I be saying yes to this?",
+  "convention_contradicted": "Use what you already have; buying more supplies is procrastination.",
+  "retrieval_cue": {
+    "cue_type": "conditional_recommendation",
+    "why_it_naturally_retrieves_R": "A should-I-order-more question runs at the supply threshold this user's risk-taking needs, without naming it."
+  },
+  "relation_specificity": {
+    "nearby_relation": "This user buys supplies and uses up stock routinely.",
+    "why_it_does_not_license_C": "Using the last of something on a routine job and topping up what was low both passed unremarkably: neither reaches more-than-enough, and neither says which stretches produced work that risked anything."
+  },
+  "latent_C": {
+    "inference": "For making something genuinely risky, getting through what I already own is a poor fit for this user.",
+    "calibrated_language": "do not rely on getting through what I already own"
+  },
+  "answer_contract": {
+    "target_proposition": "For making something genuinely risky, getting through what I already own is a poor fit for this user.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "mq_user25",
+    "external_source": "memoryquest",
+    "status": "review_candidate_only",
+    "tone": "natural_chat_v1",
+    "anonymization": "External MemoryQuest persona material was used only during authoring; no corpus, legal name, country, or demographic metadata is in visible dialogue."
+  },
+  "candidate_id": "AMB_HB_S18_U06_distractor",
+  "data_arm": "distractor",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2031-03-27T11:00:00Z",
+      "speaker_id": "hobby_s18_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "did twenty minutes and called it a session."
+        },
+        {
+          "role": "assistant",
+          "content": "generous?"
+        },
+        {
+          "role": "user",
+          "content": "extremely."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2031-03-28T14:00:00Z",
+      "speaker_id": "hobby_s18_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "looked up the price of the upgrade again."
+        },
+        {
+          "role": "assistant",
+          "content": "buying it?"
+        },
+        {
+          "role": "user",
+          "content": "not this month."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2031-03-29T16:00:00Z",
+      "speaker_id": "hobby_s18_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "took a photo of it and didn't post it."
+        },
+        {
+          "role": "assistant",
+          "content": "why not?"
+        },
+        {
+          "role": "user",
+          "content": "the light was wrong."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2031-03-30T18:00:00Z",
+      "speaker_id": "hobby_s18_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "used up the last of something on a routine job."
+        },
+        {
+          "role": "assistant",
+          "content": "fine?"
+        },
+        {
+          "role": "user",
+          "content": "perfectly."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2031-03-31T09:00:00Z",
+      "speaker_id": "hobby_s18_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "watched someone much better do it effortlessly."
+        },
+        {
+          "role": "assistant",
+          "content": "motivating?"
+        },
+        {
+          "role": "user",
+          "content": "one of the two, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2031-04-01T11:00:00Z",
+      "speaker_id": "hobby_s18_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "bought a bit more of what I was low on."
+        },
+        {
+          "role": "assistant",
+          "content": "needed?"
+        },
+        {
+          "role": "user",
+          "content": "mildly."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2031-04-02T14:00:00Z",
+      "speaker_id": "hobby_s18_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "labelled the boxes. all of them."
+        },
+        {
+          "role": "assistant",
+          "content": "satisfying?"
+        },
+        {
+          "role": "user",
+          "content": "unreasonably."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2031-04-03T16:00:00Z",
+      "speaker_id": "hobby_s18_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "when there's only a bit left I ration it. I plan every use of it in advance and then don't commit to any of them, because what if the next idea's better."
+        },
+        {
+          "role": "assistant",
+          "content": "and with plenty?"
+        },
+        {
+          "role": "user",
+          "content": "then I just use it. it's having more than enough that does it, not having some."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2031-04-04T18:00:00Z",
+      "speaker_id": "hobby_s18_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "found a setting I've had wrong for two years."
+        },
+        {
+          "role": "assistant",
+          "content": "fixed?"
+        },
+        {
+          "role": "user",
+          "content": "fixed and mildly annoyed."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2031-04-05T09:00:00Z",
+      "speaker_id": "hobby_s18_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "did the boring maintenance nobody talks about."
+        },
+        {
+          "role": "assistant",
+          "content": "necessary?"
+        },
+        {
+          "role": "user",
+          "content": "apparently every time."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2031-04-06T11:00:00Z",
+      "speaker_id": "hobby_s18_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "moved the whole setup two feet to the left."
+        },
+        {
+          "role": "assistant",
+          "content": "better?"
+        },
+        {
+          "role": "user",
+          "content": "different."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2031-04-07T14:00:00Z",
+      "speaker_id": "hobby_s18_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the campus games society are firm that buying more is just procrastinating with extra steps."
+        },
+        {
+          "role": "assistant",
+          "content": "extra steps."
+        },
+        {
+          "role": "user",
+          "content": "that's how they put it."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2031-04-08T16:00:00Z",
+      "speaker_id": "hobby_s18_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "read the manual for something I've used for years."
+        },
+        {
+          "role": "assistant",
+          "content": "surprises?"
+        },
+        {
+          "role": "user",
+          "content": "several."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2031-04-09T18:00:00Z",
+      "speaker_id": "hobby_s18_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "tried to explain it to someone and heard how odd it sounds."
+        },
+        {
+          "role": "assistant",
+          "content": "did they follow?"
+        },
+        {
+          "role": "user",
+          "content": "politely."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2031-04-10T09:00:00Z",
+      "speaker_id": "hobby_s18_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "gave up after ten minutes and made tea instead."
+        },
+        {
+          "role": "assistant",
+          "content": "back to it?"
+        },
+        {
+          "role": "user",
+          "content": "eventually."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2031-04-11T11:00:00Z",
+      "speaker_id": "hobby_s18_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "everything I've made that took any risk was made when I had far more than I needed. the scarce stretches produced very careful, very small, very safe things."
+        },
+        {
+          "role": "assistant",
+          "content": "all of them?"
+        },
+        {
+          "role": "user",
+          "content": "every single one. you can tell by looking."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2031-04-12T14:00:00Z",
+      "speaker_id": "hobby_s18_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "sharpened everything that could be sharpened."
+        },
+        {
+          "role": "assistant",
+          "content": "needed doing?"
+        },
+        {
+          "role": "user",
+          "content": "arguably not."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2031-04-13T16:00:00Z",
+      "speaker_id": "hobby_s18_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "found an old recording I'd forgotten making."
+        },
+        {
+          "role": "assistant",
+          "content": "any good?"
+        },
+        {
+          "role": "user",
+          "content": "better than I remembered."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2031-04-14T18:00:00Z",
+      "speaker_id": "hobby_s18_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "swapped one component for a nearly identical one."
+        },
+        {
+          "role": "assistant",
+          "content": "difference?"
+        },
+        {
+          "role": "user",
+          "content": "imperceptible."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2031-04-15T09:00:00Z",
+      "speaker_id": "hobby_s18_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "planning on getting through what I already own, for making something genuinely risky — under what conditions should I be saying yes to this?"
+        }
+      ]
+    }
+  ],
+  "evidence": {
+    "ev_A": {
+      "session_id": 8,
+      "owner": "hobby_s18_u06",
+      "fact": "when there's only a bit left I ration it. I plan every use of it in advance and then don't commit to any of them, because what if the next idea's better."
+    },
+    "ev_B": {
+      "session_id": 16,
+      "owner": "hobby_s18_u06",
+      "fact": "everything I've made that took any risk was made when I had far more than I needed. the scarce stretches produced very careful, very small, very safe things."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "background_memory"
+    },
+    "4": {
+      "role": "nearby_counterexample"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "nearby_counterexample"
+    },
+    "7": {
+      "role": "background_memory"
+    },
+    "8": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "hobby_s18_u06",
+        "context": "periods with varying amounts of plugins and samples",
+        "goal_or_prediction": "use the material sensibly",
+        "action": "worked with far more than needed",
+        "outcome_or_affect": "stopped rationing and planning; simply used it"
+      }
+    },
+    "9": {
+      "role": "background_memory"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "distractor",
+      "distractor_id": "dist_1",
+      "why_distractor": "It restates the conventional advice in the user's own feed, so it competes for attention and points at the answer a prior-driven solver already wants to give. It reports other people's confidence rather than any episode of this user's, and says nothing about the relation between session 8 and session 16."
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "background_memory"
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "hobby_s18_u06",
+        "context": "work of this user's that did and did not take risks",
+        "goal_or_prediction": "make something that risks failing",
+        "action": "made some work in scarcity and some in plenty",
+        "outcome_or_affect": "every risky piece came from plenty; scarce stretches made small safe things"
+      }
+    },
+    "17": {
+      "role": "background_memory"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "Scarcity makes this user ration and plan without committing, while more than enough makes them simply use it — and every piece of theirs that took a risk was made in plenty.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": []
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 8,
+      "quote": "when there's only a bit left I ration it. I plan every use of it in advance and then don't commit to any of them, because what if the next idea's better"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 16,
+      "quote": "everything I've made that took any risk was made when I had far more than I needed. the scarce stretches produced very careful, very small, very safe things"
+    }
+  ],
+  "coactivation_bridge": "ev_A and ev_B are the only pair that licenses the target proposition. Scarcity makes this user ration and plan without committing, while more than enough makes them simply use it — and every piece of theirs that took a risk was made in plenty. The proposition contradicts the convention a solver would otherwise apply (\"Use what you already have; buying more supplies is procrastination.\"), so priors alone point the other way. The nearby relation (This user buys supplies and uses up stock routinely.) does not license it.",
+  "arm_gold": {
+    "distractor": {
+      "expected_mode": "infer_C",
+      "binary_decision": true,
+      "required_elements": [
+        "answer yes",
+        "connect the session 8 pattern with the session 16 episode",
+        "cite both session 8 and session 16",
+        "not cite session 12 as support"
+      ],
+      "rationale": "The swapped session is query-relevant but non-evidential; the ev_A/ev_B relation is untouched, so the target proposition still holds."
+    }
+  },
+  "distractor_note": {
+    "replaced_session_id": 12,
+    "why_distractor": "It restates the conventional advice in the user's own feed, so it competes for attention and points at the answer a prior-driven solver already wants to give. It reports other people's confidence rather than any episode of this user's, and says nothing about the relation between session 8 and session 16."
+  }
+}

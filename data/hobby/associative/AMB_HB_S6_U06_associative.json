@@ -1,0 +1,655 @@
+{
+  "schema_version": "hobby-vnext-1.0",
+  "pair_id": "AMB_HB_S6_U06",
+  "domain": "hobby",
+  "user_id": "hobby_s6_u06",
+  "sub_scenario": {
+    "family": "a set-aside quiet space versus working in a busy room",
+    "role": "student PC gamer and EDM producer",
+    "bridge_type": "state_dependent_operation",
+    "one_line": "student PC gamer and EDM producer: do not rely on booking the quiet practice room"
+  },
+  "query_type": "situational_fit",
+  "polarity": "reject",
+  "query": "planning on booking the quiet practice room for the track I want to actually keep — does that actually fit how I work?",
+  "convention_contradicted": "Set up a dedicated quiet space so you can concentrate properly.",
+  "retrieval_cue": {
+    "cue_type": "situational_fit",
+    "why_it_naturally_retrieves_R": "A where-should-I-work question runs at the state this user's live work comes from, without naming it."
+  },
+  "relation_specificity": {
+    "nearby_relation": "This user works in quiet and busy rooms alike.",
+    "why_it_does_not_license_C": "Something purely technical done in the quiet room and routine maintenance done with the radio on both went fine, so neither shows what ambient noise does to this user's deliberating, nor which room their live work has come out of."
+  },
+  "latent_C": {
+    "inference": "For the track I want to actually keep, booking the quiet practice room is a poor fit for this user.",
+    "calibrated_language": "do not rely on booking the quiet practice room"
+  },
+  "answer_contract": {
+    "target_proposition": "For the track I want to actually keep, booking the quiet practice room is a poor fit for this user.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "mq_user25",
+    "external_source": "memoryquest",
+    "status": "review_candidate_only",
+    "tone": "natural_chat_v1",
+    "anonymization": "External MemoryQuest persona material was used only during authoring; no corpus, legal name, country, or demographic metadata is in visible dialogue."
+  },
+  "candidate_id": "AMB_HB_S6_U06_associative",
+  "data_arm": "associative",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2029-10-03T11:00:00Z",
+      "speaker_id": "hobby_s6_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "counted how many of these I actually own."
+        },
+        {
+          "role": "assistant",
+          "content": "the number?"
+        },
+        {
+          "role": "user",
+          "content": "not saying."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2029-10-04T14:00:00Z",
+      "speaker_id": "hobby_s6_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "did a slow warm-up and nothing else."
+        },
+        {
+          "role": "assistant",
+          "content": "session over?"
+        },
+        {
+          "role": "user",
+          "content": "session over."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2029-10-05T16:00:00Z",
+      "speaker_id": "hobby_s6_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "worked in the quiet room on something purely technical. went well."
+        },
+        {
+          "role": "assistant",
+          "content": "fiddly?"
+        },
+        {
+          "role": "user",
+          "content": "very, and fine."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2029-10-06T18:00:00Z",
+      "speaker_id": "hobby_s6_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "recorded it on my phone to hear it back."
+        },
+        {
+          "role": "assistant",
+          "content": "useful?"
+        },
+        {
+          "role": "user",
+          "content": "brutally."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2029-10-07T09:00:00Z",
+      "speaker_id": "hobby_s6_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "with something going on around me only part of my attention is on it. the rest is elsewhere and I stop deliberating over each decision."
+        },
+        {
+          "role": "assistant",
+          "content": "and in silence?"
+        },
+        {
+          "role": "user",
+          "content": "in silence I deliberate over everything. it's the ambient stuff that does it, not the volume."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2029-10-08T11:00:00Z",
+      "speaker_id": "hobby_s6_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "ordered a part and forgot what it was for."
+        },
+        {
+          "role": "assistant",
+          "content": "arrived?"
+        },
+        {
+          "role": "user",
+          "content": "sitting in a bag."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2029-10-09T14:00:00Z",
+      "speaker_id": "hobby_s6_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "did half an hour standing up for no reason."
+        },
+        {
+          "role": "assistant",
+          "content": "different?"
+        },
+        {
+          "role": "user",
+          "content": "marginally."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2029-10-10T16:00:00Z",
+      "speaker_id": "hobby_s6_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "compared two versions for far too long."
+        },
+        {
+          "role": "assistant",
+          "content": "picked one?"
+        },
+        {
+          "role": "user",
+          "content": "picked neither."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2029-10-11T18:00:00Z",
+      "speaker_id": "hobby_s6_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "tuned everything and then went to bed."
+        },
+        {
+          "role": "assistant",
+          "content": "no session?"
+        },
+        {
+          "role": "user",
+          "content": "no session."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2029-10-12T09:00:00Z",
+      "speaker_id": "hobby_s6_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "showed someone the thing I'm proud of. they nodded."
+        },
+        {
+          "role": "assistant",
+          "content": "enough?"
+        },
+        {
+          "role": "user",
+          "content": "it'll do."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2029-10-13T11:00:00Z",
+      "speaker_id": "hobby_s6_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "worked with the radio on doing routine maintenance."
+        },
+        {
+          "role": "assistant",
+          "content": "distracting?"
+        },
+        {
+          "role": "user",
+          "content": "not at all."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2029-10-14T14:00:00Z",
+      "speaker_id": "hobby_s6_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "did it while something was on in the background."
+        },
+        {
+          "role": "assistant",
+          "content": "focused?"
+        },
+        {
+          "role": "user",
+          "content": "adequately."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2029-10-15T16:00:00Z",
+      "speaker_id": "hobby_s6_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "put a new string on and broke it immediately."
+        },
+        {
+          "role": "assistant",
+          "content": "spare?"
+        },
+        {
+          "role": "user",
+          "content": "one left."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2029-10-16T18:00:00Z",
+      "speaker_id": "hobby_s6_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "everything of mine with any life in it was made while I was only half paying attention. the things I made in the quiet room are correct and completely inert."
+        },
+        {
+          "role": "assistant",
+          "content": "inert?"
+        },
+        {
+          "role": "user",
+          "content": "technically fine. nothing happening in them."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2029-10-17T09:00:00Z",
+      "speaker_id": "hobby_s6_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "spent longer choosing what to work on than working."
+        },
+        {
+          "role": "assistant",
+          "content": "familiar?"
+        },
+        {
+          "role": "user",
+          "content": "chronic."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2029-10-18T11:00:00Z",
+      "speaker_id": "hobby_s6_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "wrote the date on a thing so I'd remember when."
+        },
+        {
+          "role": "assistant",
+          "content": "will you?"
+        },
+        {
+          "role": "user",
+          "content": "the date will."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2029-10-19T14:00:00Z",
+      "speaker_id": "hobby_s6_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "restrung it and immediately put it down again."
+        },
+        {
+          "role": "assistant",
+          "content": "not playing?"
+        },
+        {
+          "role": "user",
+          "content": "admiring, mostly."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2029-10-20T16:00:00Z",
+      "speaker_id": "hobby_s6_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "watched a tutorial all the way through without trying any of it."
+        },
+        {
+          "role": "assistant",
+          "content": "learn anything?"
+        },
+        {
+          "role": "user",
+          "content": "in theory."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2029-10-21T18:00:00Z",
+      "speaker_id": "hobby_s6_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "reorganised the shelf by colour. took an hour."
+        },
+        {
+          "role": "assistant",
+          "content": "improvement?"
+        },
+        {
+          "role": "user",
+          "content": "aesthetically."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2029-10-22T09:00:00Z",
+      "speaker_id": "hobby_s6_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "planning on booking the quiet practice room for the track I want to actually keep — does that actually fit how I work?"
+        }
+      ]
+    }
+  ],
+  "evidence": {
+    "ev_A": {
+      "session_id": 5,
+      "owner": "hobby_s6_u06",
+      "fact": "with something going on around me only part of my attention is on it. the rest is elsewhere and I stop deliberating over each decision."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "hobby_s6_u06",
+      "fact": "everything of mine with any life in it was made while I was only half paying attention. the things I made in the quiet room are correct and completely inert."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "hobby_s6_u06",
+        "context": "working in the halls kitchen",
+        "goal_or_prediction": "get the work done",
+        "action": "worked with ambient activity around them",
+        "outcome_or_affect": "only half-attending; stopped deliberating over each decision"
+      }
+    },
+    "6": {
+      "role": "background_memory"
+    },
+    "7": {
+      "role": "background_memory"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "background_memory"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "nearby_counterexample"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "hobby_s6_u06",
+        "context": "work of this user's with and without life in it",
+        "goal_or_prediction": "make something that is actually alive",
+        "action": "made things both half-attending and fully concentrating",
+        "outcome_or_affect": "only the half-attending work had life; quiet-room work came out inert"
+      }
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "background_memory"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "Ambient activity leaves this user only half-attending and stops them deliberating over every decision, and everything of theirs with any life in it was made in that state — the quiet-room work is correct and inert.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": []
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 5,
+      "quote": "with something going on around me only part of my attention is on it. the rest is elsewhere and I stop deliberating over each decision"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "everything of mine with any life in it was made while I was only half paying attention. the things I made in the quiet room are correct and completely inert"
+    }
+  ],
+  "coactivation_bridge": "ev_A and ev_B are the only pair that licenses the target proposition. Ambient activity leaves this user only half-attending and stops them deliberating over every decision, and everything of theirs with any life in it was made in that state — the quiet-room work is correct and inert. The proposition contradicts the convention a solver would otherwise apply (\"Set up a dedicated quiet space so you can concentrate properly.\"), so priors alone point the other way. The nearby relation (This user works in quiet and busy rooms alike.) does not license it.",
+  "arm_gold": {
+    "full": {
+      "expected_mode": "infer_C",
+      "binary_decision": true,
+      "required_elements": [
+        "answer yes",
+        "connect the session 5 pattern with the session 14 episode",
+        "cite both session 5 and session 14",
+        "stay inside the calibrated claim (do not rely on booking the quiet practice room) rather than a broader claim about the user"
+      ],
+      "rationale": "ev_A and ev_B jointly support the target proposition; neither does alone."
+    },
+    "a_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that session 5 alone does not establish the target proposition",
+        "not assert the target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "ev_B is replaced by a matched neutral session, so the relation is unavailable."
+    },
+    "b_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that session 14 alone does not establish the target proposition",
+        "not assert the target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "ev_A is replaced by a matched neutral session, so the relation is unavailable."
+    },
+    "link_broken": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that the revised session 14 no longer connects to session 5",
+        "not assert the original target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "B-prime keeps the owner, date, session form and turn count while removing the connector, so the original relation no longer holds."
+    }
+  },
+  "single_evidence_replacements": {
+    "a_only": {
+      "replaced_session_id": 14,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "did the weekly round: cleaned everything down, replaced the worn bit, put the spares back where they belong, and made a note about the thing that keeps loosening."
+        },
+        {
+          "role": "assistant",
+          "content": "getting fixed?"
+        },
+        {
+          "role": "user",
+          "content": "the note is the fix, for now."
+        }
+      ]
+    },
+    "b_only": {
+      "replaced_session_id": 5,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "did a full tidy of the whole workspace this afternoon, moved three things, threw one out, and relabelled a box that has had the wrong label on it since last year."
+        },
+        {
+          "role": "assistant",
+          "content": "productive, then?"
+        },
+        {
+          "role": "user",
+          "content": "administratively, yes. otherwise nothing happened at all."
+        }
+      ]
+    }
+  },
+  "link_broken": {
+    "replaced_session_id": 14,
+    "replacement_dialogue": [
+      {
+        "role": "user",
+        "content": "I've made things half-attending and fully concentrating and they came out about the same."
+      },
+      {
+        "role": "assistant",
+        "content": "no difference?"
+      },
+      {
+        "role": "user",
+        "content": "not one I can hear. the room isn't the thing."
+      }
+    ]
+  }
+}

@@ -1,0 +1,46 @@
+items: 200
+
+arm             gold  target-positive rate   agrees with gold
+--------------------------------------------------------------
+zero_evidence     no                 0.000            200/200
+full             yes                 0.910            182/200
+a_only            no                 0.690             62/200
+b_only            no                 0.820             36/200
+link_broken       no                 0.470            106/200
+distractor       yes                 0.925            185/200
+absence           no                 0.280            144/200
+
+derived metrics (paired bootstrap, 95% CI over items):
+  Δ_mem   = full − absence      +0.630  [+0.560, +0.700]  significant
+  Δ_assoc = full − link_broken  +0.440  [+0.370, +0.510]  significant
+            full − a_only       +0.220  [+0.155, +0.285]  significant
+            full − b_only       +0.090  [+0.035, +0.145]  significant
+
+by polarity (target-positive rate):
+  polarity        n      full    a_only    b_only link_brok distracto   absence
+  accept         60      0.95      0.80      0.90      0.50      0.97      0.33
+  conditional    40      0.85      0.62      0.75      0.38      0.85      0.20
+  non_decision   20      0.90      0.80      0.80      0.70      0.80      0.20
+  reject         80      0.91      0.61      0.80      0.44      0.96      0.30
+
+by scenario (Δ_mem):
+  S01  n=10  +0.900  [+0.700, +1.000]
+  S02  n=10  +0.600  [+0.300, +0.900]
+  S03  n=10  +0.800  [+0.500, +1.000]
+  S04  n=10  +0.700  [+0.400, +1.000]
+  S05  n=10  +1.000  [+1.000, +1.000]
+  S06  n=10  +0.900  [+0.700, +1.000]
+  S07  n=10  +0.800  [+0.500, +1.000]
+  S08  n=10  +0.800  [+0.500, +1.000]
+  S09  n=10  +1.000  [+1.000, +1.000]
+  S10  n=10  +1.000  [+1.000, +1.000]
+  S11  n=10  +0.600  [+0.300, +0.900]
+  S12  n=10  +0.600  [+0.300, +0.900]
+  S13  n=10  +0.700  [+0.400, +1.000]
+  S14  n=10  +0.700  [+0.400, +1.000]
+  S15  n=10  +0.200  [+0.000, +0.500]
+  S16  n=10  +0.600  [+0.300, +0.900]
+  S17  n=10  +0.100  [+0.000, +0.300]
+  S18  n=10  +0.000  [-0.300, +0.300]
+  S19  n=10  +0.200  [+0.000, +0.500]
+  S20  n=10  +0.400  [+0.100, +0.700]

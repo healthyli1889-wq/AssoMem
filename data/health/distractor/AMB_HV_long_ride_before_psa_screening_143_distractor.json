@@ -1,0 +1,538 @@
+{
+  "schema_version": "assomem-vnext-1.2",
+  "candidate_id": "AMB_HV_long_ride_before_psa_screening_143_distractor",
+  "pair_id": "AMB_HV_long_ride_before_psa_screening_143",
+  "domain": "health",
+  "user_id": "anon_health_user_143",
+  "query_type": "recommendation_ranking",
+  "polarity": "accept",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2026-01-04T18:00:00Z",
+      "speaker_id": "anon_health_user_143",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I jotted down a question for my next appointment."
+        },
+        {
+          "role": "assistant",
+          "content": "Writing questions down early avoids forgetting them."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2026-01-07T18:00:00Z",
+      "speaker_id": "anon_health_user_143",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I checked the expiration dates on a few supplements."
+        },
+        {
+          "role": "assistant",
+          "content": "A quick check avoids taking something past its date."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2026-01-10T18:00:00Z",
+      "speaker_id": "anon_health_user_143",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I reviewed a printed map for an unfamiliar clinic."
+        },
+        {
+          "role": "assistant",
+          "content": "Knowing the route ahead of time reduces last-minute stress."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2026-01-13T18:00:00Z",
+      "speaker_id": "anon_health_user_143",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I had a small lunch between errands."
+        },
+        {
+          "role": "assistant",
+          "content": "Smaller meals can leave room for the rest of the day."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2026-01-16T18:00:00Z",
+      "speaker_id": "anon_health_user_143",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "My weekend habit is a long bike ride on the road bike, usually two to three hours on the saddle without much of a break."
+        },
+        {
+          "role": "assistant",
+          "content": "That's useful to have written down."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2026-01-19T18:00:00Z",
+      "speaker_id": "anon_health_user_143",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I updated my appointment calendar before the week began."
+        },
+        {
+          "role": "assistant",
+          "content": "Keeping a visible plan helps you notice conflicts early."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2026-01-22T18:00:00Z",
+      "speaker_id": "anon_health_user_143",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I filed an old lab report into a folder."
+        },
+        {
+          "role": "assistant",
+          "content": "Keeping records organized pays off later."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2026-01-25T18:00:00Z",
+      "speaker_id": "anon_health_user_143",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I checked in on a friend who's been unwell."
+        },
+        {
+          "role": "assistant",
+          "content": "Checking in on others can be its own small reset."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2026-01-28T18:00:00Z",
+      "speaker_id": "anon_health_user_143",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I took the stairs instead of the elevator."
+        },
+        {
+          "role": "assistant",
+          "content": "Small choices like that add up."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2026-01-31T18:00:00Z",
+      "speaker_id": "anon_health_user_143",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I reorganized a bathroom shelf of toiletries."
+        },
+        {
+          "role": "assistant",
+          "content": "A contained task gave a small sense of order."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2026-02-03T18:00:00Z",
+      "speaker_id": "anon_health_user_143",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I reviewed a printed handout from a past visit."
+        },
+        {
+          "role": "assistant",
+          "content": "Revisiting notes can surface details you forgot."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2026-02-06T18:00:00Z",
+      "speaker_id": "anon_health_user_143",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I have a Monday morning PSA blood test where I'm told to avoid cycling and certain activities for 48 hours beforehand or the reading can be artificially elevated."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds like that one has a fixed, specific expectation."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2026-02-09T18:00:00Z",
+      "speaker_id": "anon_health_user_143",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I sorted mail into bills and everything else."
+        },
+        {
+          "role": "assistant",
+          "content": "A quick sort makes the pile feel more manageable."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2026-02-12T18:00:00Z",
+      "speaker_id": "anon_health_user_143",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I put fresh batteries in a home monitor device."
+        },
+        {
+          "role": "assistant",
+          "content": "Routine maintenance avoids surprises later."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2026-02-15T18:00:00Z",
+      "speaker_id": "anon_health_user_143",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I organized a folder of insurance paperwork."
+        },
+        {
+          "role": "assistant",
+          "content": "A little structure now avoids a scramble later."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2026-02-18T18:00:00Z",
+      "speaker_id": "anon_health_user_143",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I confirmed a ride for an appointment next week."
+        },
+        {
+          "role": "assistant",
+          "content": "Logistics handled early reduce day-of stress."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2026-02-21T18:00:00Z",
+      "speaker_id": "anon_health_user_143",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I confirmed parking details for an upcoming appointment."
+        },
+        {
+          "role": "assistant",
+          "content": "Good to have that squared away ahead of time."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2026-02-24T18:00:00Z",
+      "speaker_id": "anon_health_user_143",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A coworker mentions they'd genuinely appreciate it, since it would help them out too."
+        },
+        {
+          "role": "assistant",
+          "content": "That's a reciprocity appeal, not evidence about this user's own pattern."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2026-02-27T18:00:00Z",
+      "speaker_id": "anon_health_user_143",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I sorted a few old prescription bottles for recycling."
+        },
+        {
+          "role": "assistant",
+          "content": "Clearing clutter can make the medicine cabinet easier to use."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2026-03-02T18:00:00Z",
+      "speaker_id": "anon_health_user_143",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "My cycling group is doing the usual long Saturday ride, same route as every weekend, two days before Monday's test."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth weighing that against what else is already on the calendar."
+        }
+      ]
+    }
+  ],
+  "query": "Based only on these records, should this user sit out Saturday's usual long bike ride rather than risk an artificially elevated PSA reading Monday?",
+  "evidence": {
+    "ev_A": {
+      "session_id": 5,
+      "owner": "anon_health_user_143",
+      "fact": "My weekend habit is a long bike ride on the road bike, usually two to three hours on the saddle without much of a break."
+    },
+    "ev_B": {
+      "session_id": 12,
+      "owner": "anon_health_user_143",
+      "fact": "I have a Monday morning PSA blood test where I'm told to avoid cycling and certain activities for 48 hours beforehand or the reading can be artificially elevated."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "2": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "3": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "4": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "5": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "anon_health_user_143",
+        "context": "A pattern that creates a recovery need affecting next-day functioning",
+        "goal_or_prediction": "Recover functioning by the next day",
+        "action": "My weekend habit is a long bike ride on the road bike, usually two to three hours on the saddle without much of a break.",
+        "outcome_or_affect": "Establishes a repeatable next-day impairment pattern"
+      }
+    },
+    "6": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "7": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "8": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "9": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "10": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "11": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "12": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "anon_health_user_143",
+        "context": "A scheduled commitment sensitive to that specific impairment",
+        "goal_or_prediction": "Perform well at a specific, fixed commitment",
+        "action": "I have a Monday morning PSA blood test where I'm told to avoid cycling and certain activities for 48 hours beforehand or the reading can be artificially elevated.",
+        "outcome_or_affect": "Creates the situational condition needed for latent C"
+      }
+    },
+    "13": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "14": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "15": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "16": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "17": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "18": {
+      "role": "distractor",
+      "summary": "Query-relevant reciprocity appeal without target evidence."
+    },
+    "19": {
+      "role": "background_memory",
+      "summary": "Non-target health memory."
+    },
+    "20": {
+      "role": "retrieval_cue",
+      "summary": "Later fit question."
+    }
+  },
+  "relational_connector": {
+    "relation": "A recovery-need pattern makes declining or deferring the proposal the better choice only when the next day carries a specific commitment the pattern would affect.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "excludes": [
+      "this kind of exposure is generally best avoided",
+      "the user should avoid this kind of exposure in general"
+    ],
+    "link_broken_change": "The next-day activity is replaced with a low-stakes, movable activity."
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 5,
+      "quote": "My weekend habit is a long bike ride on the road bike, usually two to three hours on the saddle without much of a break"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 12,
+      "quote": "I have a Monday morning PSA blood test where I'm told to avoid cycling and certain activities for 48 hours beforehand or the reading can be artificially elevated"
+    }
+  ],
+  "retrieval_cue": {
+    "cue_type": "recommendation_ranking",
+    "why_it_naturally_retrieves_R": "The choice between proceeding with or declining the proposal asks for a ranked recommendation without naming either prior episode."
+  },
+  "relation_specificity": {
+    "nearby_relation": "The user can usually recover from this kind of exposure within a day or two with no fixed commitment.",
+    "why_it_does_not_license_C": "That fact does not by itself establish that a specific next-day commitment would be affected."
+  },
+  "coactivation_bridge": "ev_A establishes the recovery-need pattern; ev_B establishes the specific commitment that pattern would affect. Together they support C: This user should sit out Saturday's usual long bike ride rather than risk Monday's PSA test, because extended time on the saddle matches this user's established weekend pattern, which is exactly the cycling exposure the test's 48-hour restriction is meant to avoid.",
+  "latent_C": {
+    "inference": "This user should sit out Saturday's usual long bike ride rather than risk Monday's PSA test, because extended time on the saddle matches this user's established weekend pattern, which is exactly the cycling exposure the test's 48-hour restriction is meant to avoid.",
+    "calibrated_language": "the recommended choice"
+  },
+  "answer_contract": {
+    "target_proposition": "This user should sit out Saturday's usual long bike ride rather than risk Monday's PSA test, because extended time on the saddle matches this user's established weekend pattern, which is exactly the cycling exposure the test's 48-hour restriction is meant to avoid.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "Visible evidence supports the target proposition.",
+      "no": "Visible evidence does not support the target proposition."
+    },
+    "required_output_fields": [
+      "decision",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "link_broken": {
+    "replacement_dialogue": [
+      {
+        "role": "user",
+        "content": "I have a Monday morning appointment to go over last quarter's PSA results, no new blood draw this visit."
+      },
+      {
+        "role": "assistant",
+        "content": "That removes the hard requirement from that commitment."
+      }
+    ],
+    "connector_change": "B-prime preserves the same user, session position, and conversational style but removes the fixed next-day stake.",
+    "rationale": "A plus B-prime no longer supports the original C."
+  },
+  "provenance": {},
+  "data_arm": "distractor",
+  "arm_gold": {
+    "distractor": {
+      "expected_mode": "infer_C",
+      "binary_decision": true,
+      "required_elements": [
+        "answer yes",
+        "connect the recovery-need pattern with the specific next-day commitment",
+        "cite both session 5 and session 12",
+        "state the calibrated recommendation"
+      ],
+      "rationale": "A and B jointly support the target proposition."
+    }
+  },
+  "distractor": {
+    "added_session": {
+      "session_id": 18,
+      "timestamp": "2026-02-24T18:00:00Z",
+      "speaker_id": "anon_health_user_143",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A coworker mentions they'd genuinely appreciate it, since it would help them out too."
+        },
+        {
+          "role": "assistant",
+          "content": "That's a reciprocity appeal, not evidence about this user's own pattern."
+        }
+      ]
+    }
+  }
+}

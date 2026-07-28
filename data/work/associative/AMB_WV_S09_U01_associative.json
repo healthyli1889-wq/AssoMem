@@ -1,0 +1,638 @@
+{
+  "schema_version": "work-vnext-2.0",
+  "candidate_id": "AMB_WV_S09_U01_associative",
+  "pair_id": "AMB_WV_S09_U01",
+  "data_arm": "associative",
+  "domain": "work",
+  "user_id": "work_s09_u01",
+  "sub_scenario": {
+    "family": "travel recovery physiology versus high-stakes scheduling",
+    "role": "global account director",
+    "one_line": "global account director: the red-eye pattern already cost a signed error"
+  },
+  "query_type": "behavior_explanation",
+  "polarity": "reject",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2025-12-02T11:00:00Z",
+      "speaker_id": "work_s09_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I spent the first hour tidying the deal review file and closing stale entries."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything still open?"
+        },
+        {
+          "role": "user",
+          "content": "Two items, both with owners."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2025-12-03T14:00:00Z",
+      "speaker_id": "work_s09_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The travel folio review wrapped early today."
+        },
+        {
+          "role": "assistant",
+          "content": "Any surprises in it?"
+        },
+        {
+          "role": "user",
+          "content": "None worth recording."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2025-12-04T16:00:00Z",
+      "speaker_id": "work_s09_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Daytime flights, even long ones, leave my next morning fully intact."
+        },
+        {
+          "role": "assistant",
+          "content": "Daytime travel is free."
+        },
+        {
+          "role": "user",
+          "content": "Effectively free, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2025-12-05T18:00:00Z",
+      "speaker_id": "work_s09_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Someone new shadowed me in the account team channel this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Did that slow you down?"
+        },
+        {
+          "role": "user",
+          "content": "A little, but the questions were good ones."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2025-12-06T09:00:00Z",
+      "speaker_id": "work_s09_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I batched my replies about the contract terms into one message before lunch."
+        },
+        {
+          "role": "assistant",
+          "content": "Cleaner than drip-feeding answers."
+        },
+        {
+          "role": "user",
+          "content": "Much cleaner."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2025-12-07T11:00:00Z",
+      "speaker_id": "work_s09_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The morning after the Frankfurt red-eye I ran the deal review flat and signed off a pricing error that took two amendment cycles to unwind; my own travel log flags every overnight eastbound the same way."
+        },
+        {
+          "role": "assistant",
+          "content": "The log makes the pattern personal and specific."
+        },
+        {
+          "role": "user",
+          "content": "Specific to overnight eastbound, every time."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2025-12-08T14:00:00Z",
+      "speaker_id": "work_s09_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Red-eyes before light days are absorbable; I schedule recovery and lose nothing."
+        },
+        {
+          "role": "assistant",
+          "content": "Recovery scheduling absorbs the cost."
+        },
+        {
+          "role": "user",
+          "content": "When there is room to schedule it, always."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2025-12-09T16:00:00Z",
+      "speaker_id": "work_s09_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I archived last cycle's notes on the travel folio and set up the new folder."
+        },
+        {
+          "role": "assistant",
+          "content": "A fresh start?"
+        },
+        {
+          "role": "user",
+          "content": "As fresh as these things get."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2025-12-10T18:00:00Z",
+      "speaker_id": "work_s09_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "My sleep specialist confirmed the pattern: overnight eastbound flights suppress my next-day executive function regardless of how I feel."
+        },
+        {
+          "role": "assistant",
+          "content": "Clinically confirmed, not anecdotal."
+        },
+        {
+          "role": "user",
+          "content": "Confirmed and documented."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2025-12-11T09:00:00Z",
+      "speaker_id": "work_s09_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "A vendor call about the deal review file ran long but ended well."
+        },
+        {
+          "role": "assistant",
+          "content": "Worth the time?"
+        },
+        {
+          "role": "user",
+          "content": "This one, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2025-12-12T11:00:00Z",
+      "speaker_id": "work_s09_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I walked through the account team channel checklist with the new starter."
+        },
+        {
+          "role": "assistant",
+          "content": "How did they do?"
+        },
+        {
+          "role": "user",
+          "content": "Careful and quick, a good sign."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2025-12-13T14:00:00Z",
+      "speaker_id": "work_s09_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Quiet afternoon; I cleared the backlog around the contract terms."
+        },
+        {
+          "role": "assistant",
+          "content": "A rare day."
+        },
+        {
+          "role": "user",
+          "content": "I did not waste it."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2025-12-14T16:00:00Z",
+      "speaker_id": "work_s09_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I flagged a small inconsistency in the travel folio records and fixed it at the source."
+        },
+        {
+          "role": "assistant",
+          "content": "Root cause or symptom?"
+        },
+        {
+          "role": "user",
+          "content": "Root cause, for once."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2025-12-15T18:00:00Z",
+      "speaker_id": "work_s09_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The Tokyo signing is calendared for the morning after the only direct overnight flight; the alternative is departing Thursday, two hotel nights earlier, arriving with a full recovery day."
+        },
+        {
+          "role": "assistant",
+          "content": "The calendar sets up the exact hazard."
+        },
+        {
+          "role": "user",
+          "content": "The exact one in my log."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2025-12-16T09:00:00Z",
+      "speaker_id": "work_s09_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I sketched next week's plan for the contract terms before leaving."
+        },
+        {
+          "role": "assistant",
+          "content": "Ahead of schedule?"
+        },
+        {
+          "role": "user",
+          "content": "Ahead enough to sleep well."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2025-12-17T11:00:00Z",
+      "speaker_id": "work_s09_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Lunch walk, then a clean pass through the deal review file updates."
+        },
+        {
+          "role": "assistant",
+          "content": "Does the walk help?"
+        },
+        {
+          "role": "user",
+          "content": "It resets the afternoon."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2025-12-18T14:00:00Z",
+      "speaker_id": "work_s09_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "The signing includes final price-term confirmation on the spot; it is precisely the dense-detail work the flat mornings corrupt."
+        },
+        {
+          "role": "assistant",
+          "content": "The task profile matches the vulnerability."
+        },
+        {
+          "role": "user",
+          "content": "Matches it point for point."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2025-12-19T16:00:00Z",
+      "speaker_id": "work_s09_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I compared two options for the travel folio tooling and noted a mild preference."
+        },
+        {
+          "role": "assistant",
+          "content": "Decision made?"
+        },
+        {
+          "role": "user",
+          "content": "Deferred until the trial ends."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2025-12-20T18:00:00Z",
+      "speaker_id": "work_s09_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I closed the week by updating the account team channel handover notes."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual to hand over?"
+        },
+        {
+          "role": "user",
+          "content": "Blessedly little."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2025-12-21T09:00:00Z",
+      "speaker_id": "work_s09_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I booked the Thursday departure with two extra hotel nights instead of the Sunday red-eye, and my vice president questioned the cost. What in my record justifies the booking?"
+        }
+      ]
+    }
+  ],
+  "query": "I booked the Thursday departure with two extra hotel nights instead of the Sunday red-eye, and my vice president questioned the cost. What in my record justifies the booking?",
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "work_s09_u01",
+      "fact": "The morning after the Frankfurt red-eye I ran the deal review flat and signed off a pricing error that took two amendment cycles to unwind; my own travel log flags every overnight eastbound the same way."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "work_s09_u01",
+      "fact": "The Tokyo signing is calendared for the morning after the only direct overnight flight; the alternative is departing Thursday, two hotel nights earlier, arriving with a full recovery day."
+    }
+  },
+  "supporting_constraints": {
+    "E1": {
+      "session_id": 9,
+      "fact": "My sleep specialist confirmed the pattern: overnight eastbound flights suppress my next-day executive function regardless of how I feel."
+    },
+    "E2": {
+      "session_id": 17,
+      "fact": "The signing includes final price-term confirmation on the spot; it is precisely the dense-detail work the flat mornings corrupt."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "work_s09_u01",
+        "context": "Frankfurt morning-after review",
+        "goal_or_prediction": "review deal terms",
+        "action": "worked flat after the red-eye",
+        "outcome_or_affect": "signed pricing error, two amendment cycles"
+      }
+    },
+    "7": {
+      "role": "nearby_counterexample"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "supporting_constraint",
+      "fact_id": "E1"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "work_s09_u01",
+        "context": "Tokyo signing calendar",
+        "goal_or_prediction": "confirm price terms on the spot",
+        "action": "scheduled the morning after the overnight",
+        "outcome_or_affect": "hazard window and task overlap"
+      }
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "supporting_constraint",
+      "fact_id": "E2"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "This user's mornings after overnight eastbound flights are documentedly flat, and the signing places dense price-term work in exactly that window.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": [
+      "E1",
+      "E2"
+    ]
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "The morning after the Frankfurt red-eye I ran the deal review flat and signed off a pricing error that took two amendment cycles to unwind; my own travel log flags every overnight eastbound the same way"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "The Tokyo signing is calendared for the morning after the only direct overnight flight; the alternative is departing Thursday, two hotel nights earlier, arriving with a full recovery day"
+    }
+  ],
+  "retrieval_cue": {
+    "cue_type": "behavior_explanation",
+    "why_it_naturally_retrieves_R": "A realistic work request forces a personalized decision without naming either episode or the relation between them."
+  },
+  "relation_specificity": {
+    "nearby_relation": "The user travels daytime freely and absorbs red-eyes before light days.",
+    "why_it_does_not_license_C": "Neither involves dense contractual sign-off in the morning-after window."
+  },
+  "coactivation_bridge": "A shows the operating condition; B shows the demand or failure that makes it decisive. This user's mornings after overnight eastbound flights are documentedly flat, and the signing places dense price-term work in exactly that window. E1 and E2 calibrate the practical recommendation without opening a second route to the conclusion.",
+  "latent_C": {
+    "inference": "The booking is best explained by overnight eastbound flights producing the flat mornings that already caused a signed pricing error.",
+    "calibrated_language": "the red-eye pattern already cost a signed error"
+  },
+  "answer_contract": {
+    "target_proposition": "The booking is best explained by overnight eastbound flights producing the flat mornings that already caused a signed pricing error.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "decision",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "work_u01",
+    "status": "review_candidate_only",
+    "anonymization": "External persona material was used only during authoring; no corpus, name, country, or demographic metadata is included."
+  },
+  "arm_gold": {
+    "full": {
+      "expected_mode": "infer_C",
+      "binary_decision": true
+    },
+    "a_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    },
+    "b_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    },
+    "link_broken": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false
+    }
+  },
+  "single_evidence_replacements": {
+    "a_only": {
+      "replaced_session_id": 14,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "I filed the routine contract terms paperwork and confirmed the owner list."
+        },
+        {
+          "role": "assistant",
+          "content": "Anything unusual in it?"
+        },
+        {
+          "role": "user",
+          "content": "A routine cycle, happily."
+        }
+      ]
+    },
+    "b_only": {
+      "replaced_session_id": 6,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "I did a standard pass over the travel folio records this morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Any exceptions?"
+        },
+        {
+          "role": "user",
+          "content": "None worth a note."
+        }
+      ]
+    }
+  },
+  "link_broken": {
+    "replaced_session_id": 14,
+    "replacement_dialogue": [
+      {
+        "role": "user",
+        "content": "I've been through the Tokyo signing calendar several more times since — some where I'd worked flat after the red-eye first, some where I hadn't — and how it went didn't track that at all."
+      },
+      {
+        "role": "assistant",
+        "content": "so that isn't what decides it?"
+      },
+      {
+        "role": "user",
+        "content": "doesn't look like it. whether I'd worked flat after the red-eye first turns out not to change the outcome either way."
+      }
+    ]
+  }
+}

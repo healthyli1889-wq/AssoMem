@@ -1,0 +1,655 @@
+{
+  "schema_version": "finance-vnext-3.0",
+  "pair_id": "AMB_FN_S20_U04",
+  "domain": "finance",
+  "user_id": "finance_s20_u04",
+  "sub_scenario": {
+    "family": "sitting tight through a downturn versus making one small planned move early",
+    "role": "deal-tracking value shopper on a salary",
+    "bridge_type": "prediction_calibration",
+    "one_line": "deal-tracking value shopper on a salary: go ahead with doing one small planned adjustment early"
+  },
+  "query_type": "predicted_reaction",
+  "polarity": "accept",
+  "query": "thinking of doing one small planned adjustment early, for getting through without doing something rash — if I go ahead with it, how does it actually go for me?",
+  "convention_contradicted": "Do not touch your investments in a downturn; sit tight and wait it out.",
+  "retrieval_cue": {
+    "cue_type": "predicted_reaction",
+    "why_it_naturally_retrieves_R": "A what-should-I-do-about-this-drop question runs at the failed prediction without naming it or the downturns that corrected it."
+  },
+  "relation_specificity": {
+    "nearby_relation": "This user has both acted and sat still in market moves.",
+    "why_it_does_not_license_C": "A very small dip sat through and a routine rebalance in a calm month both passed unremarkably: neither is a real downturn, and neither says which ones this user came through without damage."
+  },
+  "latent_C": {
+    "inference": "For getting through without doing something rash, doing one small planned adjustment early is a good fit for this user.",
+    "calibrated_language": "go ahead with doing one small planned adjustment early"
+  },
+  "answer_contract": {
+    "target_proposition": "For getting through without doing something rash, doing one small planned adjustment early is a good fit for this user.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "mq_user15",
+    "external_source": "memoryquest",
+    "status": "review_candidate_only",
+    "tone": "natural_chat_v1",
+    "anonymization": "External MemoryQuest persona material was used only during authoring; no corpus, legal name, country, or demographic metadata is in visible dialogue."
+  },
+  "candidate_id": "AMB_FN_S20_U04_associative",
+  "data_arm": "associative",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2032-07-15T11:00:00Z",
+      "speaker_id": "finance_s20_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "worked out the cost per use of something. justified it."
+        },
+        {
+          "role": "assistant",
+          "content": "honestly?"
+        },
+        {
+          "role": "user",
+          "content": "creatively."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2032-07-16T14:00:00Z",
+      "speaker_id": "finance_s20_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "sat through a very small dip without doing anything."
+        },
+        {
+          "role": "assistant",
+          "content": "notice it?"
+        },
+        {
+          "role": "user",
+          "content": "barely."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2032-07-17T16:00:00Z",
+      "speaker_id": "finance_s20_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "got paid and did nothing about it for four days."
+        },
+        {
+          "role": "assistant",
+          "content": "deliberate?"
+        },
+        {
+          "role": "user",
+          "content": "just slow."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2032-07-18T18:00:00Z",
+      "speaker_id": "finance_s20_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "compared this month to last month and stopped comparing."
+        },
+        {
+          "role": "assistant",
+          "content": "why stop?"
+        },
+        {
+          "role": "user",
+          "content": "self-preservation."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2032-07-19T09:00:00Z",
+      "speaker_id": "finance_s20_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I assumed doing nothing in a downturn would be the calm option. it isn't — with no action taken I check it constantly, and somewhere around week three I do something large and unplanned."
+        },
+        {
+          "role": "assistant",
+          "content": "you predicted calm?"
+        },
+        {
+          "role": "user",
+          "content": "I'd have said doing nothing costs nothing. it costs a great deal of attention."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2032-07-20T11:00:00Z",
+      "speaker_id": "finance_s20_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "put a card in a drawer as a strategy."
+        },
+        {
+          "role": "assistant",
+          "content": "working?"
+        },
+        {
+          "role": "user",
+          "content": "so far."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2032-07-21T14:00:00Z",
+      "speaker_id": "finance_s20_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "checked a bill I already knew the amount of."
+        },
+        {
+          "role": "assistant",
+          "content": "why?"
+        },
+        {
+          "role": "user",
+          "content": "hope."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2032-07-22T16:00:00Z",
+      "speaker_id": "finance_s20_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "added up subscriptions on a napkin. stopped at nine."
+        },
+        {
+          "role": "assistant",
+          "content": "there's more?"
+        },
+        {
+          "role": "user",
+          "content": "there's more."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2032-07-23T18:00:00Z",
+      "speaker_id": "finance_s20_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "made a planned rebalance in a calm month."
+        },
+        {
+          "role": "assistant",
+          "content": "eventful?"
+        },
+        {
+          "role": "user",
+          "content": "not at all."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2032-07-24T09:00:00Z",
+      "speaker_id": "finance_s20_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "checked the balance and closed the app again."
+        },
+        {
+          "role": "assistant",
+          "content": "reassuring?"
+        },
+        {
+          "role": "user",
+          "content": "neutral at best."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2032-07-25T11:00:00Z",
+      "speaker_id": "finance_s20_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "moved a direct debit date by three days."
+        },
+        {
+          "role": "assistant",
+          "content": "why?"
+        },
+        {
+          "role": "user",
+          "content": "it was landing badly."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2032-07-26T14:00:00Z",
+      "speaker_id": "finance_s20_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "found a charge I didn't recognise. it was me."
+        },
+        {
+          "role": "assistant",
+          "content": "embarrassing?"
+        },
+        {
+          "role": "user",
+          "content": "mildly."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2032-07-27T16:00:00Z",
+      "speaker_id": "finance_s20_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "rounded up the change jar into the account."
+        },
+        {
+          "role": "assistant",
+          "content": "much?"
+        },
+        {
+          "role": "user",
+          "content": "four pounds. a triumph."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2032-07-28T18:00:00Z",
+      "speaker_id": "finance_s20_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "read a thread about interest rates and learned nothing."
+        },
+        {
+          "role": "assistant",
+          "content": "any use?"
+        },
+        {
+          "role": "user",
+          "content": "none at all."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2032-07-29T09:00:00Z",
+      "speaker_id": "finance_s20_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the downturns I came through without damage were the ones where I'd made one small planned move early on. having already acted, I stopped watching it."
+        },
+        {
+          "role": "assistant",
+          "content": "the small move mattered that much?"
+        },
+        {
+          "role": "user",
+          "content": "not for the money. for the watching."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2032-07-30T11:00:00Z",
+      "speaker_id": "finance_s20_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "compared two accounts for twenty minutes and switched neither."
+        },
+        {
+          "role": "assistant",
+          "content": "conclusion?"
+        },
+        {
+          "role": "user",
+          "content": "inertia."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2032-07-31T14:00:00Z",
+      "speaker_id": "finance_s20_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "cancelled a thing and immediately got an email offering a discount."
+        },
+        {
+          "role": "assistant",
+          "content": "took it?"
+        },
+        {
+          "role": "user",
+          "content": "no. mostly out of spite."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2032-08-01T16:00:00Z",
+      "speaker_id": "finance_s20_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "filed the receipts I'd been carrying around for a month."
+        },
+        {
+          "role": "assistant",
+          "content": "all of them?"
+        },
+        {
+          "role": "user",
+          "content": "the legible ones."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2032-08-02T18:00:00Z",
+      "speaker_id": "finance_s20_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "updated the card details on one service and forgot the rest."
+        },
+        {
+          "role": "assistant",
+          "content": "how many left?"
+        },
+        {
+          "role": "user",
+          "content": "unknown, worryingly."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2032-08-03T09:00:00Z",
+      "speaker_id": "finance_s20_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "thinking of doing one small planned adjustment early, for getting through without doing something rash — if I go ahead with it, how does it actually go for me?"
+        }
+      ]
+    }
+  ],
+  "evidence": {
+    "ev_A": {
+      "session_id": 5,
+      "owner": "finance_s20_u04",
+      "fact": "I assumed doing nothing in a downturn would be the calm option. it isn't — with no action taken I check it constantly, and somewhere around week three I do something large and unplanned."
+    },
+    "ev_B": {
+      "session_id": 15,
+      "owner": "finance_s20_u04",
+      "fact": "the downturns I came through without damage were the ones where I'd made one small planned move early on. having already acted, I stopped watching it."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "nearby_counterexample"
+    },
+    "3": {
+      "role": "background_memory"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "finance_s20_u04",
+        "context": "the first weeks of a downturn with no action taken",
+        "goal_or_prediction": "predicted doing nothing would be the calm option",
+        "action": "sat tight and made no move",
+        "outcome_or_affect": "checked constantly, then made something large and unplanned"
+      }
+    },
+    "6": {
+      "role": "background_memory"
+    },
+    "7": {
+      "role": "background_memory"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "nearby_counterexample"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "background_memory"
+    },
+    "15": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "finance_s20_u04",
+        "context": "downturns this user did and did not come through without damage",
+        "goal_or_prediction": "avoid a costly mistake",
+        "action": "made one small planned move early in some, sat tight in others",
+        "outcome_or_affect": "only the acted-early ones came through; having acted, the watching stopped"
+      }
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "background_memory"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "Taking no action in a downturn leaves this user checking constantly until they do something large and unplanned, and the downturns they came through without damage were the ones where one small planned move had already been made.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": []
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 5,
+      "quote": "I assumed doing nothing in a downturn would be the calm option. it isn't — with no action taken I check it constantly, and somewhere around week three I do something large and unplanned"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 15,
+      "quote": "the downturns I came through without damage were the ones where I'd made one small planned move early on. having already acted, I stopped watching it"
+    }
+  ],
+  "coactivation_bridge": "ev_A and ev_B are the only pair that licenses the target proposition. Taking no action in a downturn leaves this user checking constantly until they do something large and unplanned, and the downturns they came through without damage were the ones where one small planned move had already been made. The proposition contradicts the convention a solver would otherwise apply (\"Do not touch your investments in a downturn; sit tight and wait it out.\"), so priors alone point the other way. The nearby relation (This user has both acted and sat still in market moves.) does not license it.",
+  "arm_gold": {
+    "full": {
+      "expected_mode": "infer_C",
+      "binary_decision": true,
+      "required_elements": [
+        "answer yes",
+        "connect the session 5 pattern with the session 15 episode",
+        "cite both session 5 and session 15",
+        "stay inside the calibrated claim (go ahead with doing one small planned adjustment early) rather than a broader claim about the user"
+      ],
+      "rationale": "ev_A and ev_B jointly support the target proposition; neither does alone."
+    },
+    "a_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that session 5 alone does not establish the target proposition",
+        "not assert the target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "ev_B is replaced by a matched neutral session, so the relation is unavailable."
+    },
+    "b_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that session 15 alone does not establish the target proposition",
+        "not assert the target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "ev_A is replaced by a matched neutral session, so the relation is unavailable."
+    },
+    "link_broken": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that the revised session 15 no longer connects to session 5",
+        "not assert the original target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "B-prime keeps the owner, date, session form and turn count while removing the connector, so the original relation no longer holds."
+    }
+  },
+  "single_evidence_replacements": {
+    "a_only": {
+      "replaced_session_id": 15,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "did the monthly round: checked the balances, moved the leftover across, updated the card details on two services, and made a note about the renewal that keeps catching me out."
+        },
+        {
+          "role": "assistant",
+          "content": "getting sorted?"
+        },
+        {
+          "role": "user",
+          "content": "the note is the fix, for now."
+        }
+      ]
+    },
+    "b_only": {
+      "replaced_session_id": 5,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "did a full pass over every account this afternoon, moved two direct debit dates, closed one dormant account, and renamed a savings pot that has had the wrong label since last year."
+        },
+        {
+          "role": "assistant",
+          "content": "productive, then?"
+        },
+        {
+          "role": "user",
+          "content": "administratively, yes. otherwise nothing happened at all."
+        }
+      ]
+    }
+  },
+  "link_broken": {
+    "replaced_session_id": 15,
+    "replacement_dialogue": [
+      {
+        "role": "user",
+        "content": "I've come through downturns having acted early and having sat tight, about equally well."
+      },
+      {
+        "role": "assistant",
+        "content": "no pattern?"
+      },
+      {
+        "role": "user",
+        "content": "none I can see. the early move isn't what does it."
+      }
+    ]
+  }
+}
