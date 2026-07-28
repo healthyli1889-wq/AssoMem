@@ -93,7 +93,18 @@ def main() -> None:
     scenarios: dict[str, list[dict]] = defaultdict(list)
     for row in rows:
         scenarios[row["scenario"]].append(row)
-    for scenario in sorted(scenarios, key=lambda s: int(s[1:])):
+
+    def _order(name: str) -> tuple[int, str]:
+        # S1..S20 sorts numerically; slug-named batches like health's
+        # AMB_HV_<slug>_<nnn> fall back to alphabetical.
+        if len(name) > 1 and name[0] == "S" and name[1:].isdigit():
+            return (0, f"{int(name[1:]):04d}")
+        return (1, name)
+
+    if len(scenarios) > 30:
+        print(f"  {len(scenarios)} distinct scenario slugs; per-scenario Δ needs a grid batch")
+        return
+    for scenario in sorted(scenarios, key=_order):
         subset = scenarios[scenario]
         point, low, high = _paired_delta(subset, "full", "absence")
         print(f"  {scenario:4s} n={len(subset):<3d} {point:+.3f}  [{low:+.3f}, {high:+.3f}]")
