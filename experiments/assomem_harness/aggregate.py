@@ -26,12 +26,19 @@ def audit_attempts(path: Path) -> dict[str, int]:
         len({record.get("rea") for record in records if record.get("status") == "scored"}) > 1
         for records in duplicated
     )
+    scored = [record for record in records if record.get("status") == "scored"]
+    validators = Counter(record.get("validator_model") for record in scored)
+    solvers = Counter(record.get("solver_model") for record in scored)
     return {
         "records": len(records),
         "unique_keys": len(groups),
         "duplicate_keys": len(duplicated),
         "conflicting_scores": conflicts,
         "status_counts": dict(Counter(record.get("status", "unknown") for record in records)),
+        "scored_records": len(scored),
+        "unscored_records": len(records) - len(scored),
+        "solver_models": dict(solvers),
+        "validator_models": dict(validators),
     }
 
 
@@ -43,6 +50,20 @@ def aggregate(results_path: Path, output_dir: Path, *, seed: int = 20260720) -> 
         raise ValueError(
             "Refusing aggregation: duplicate attempts exist. "
             "Inspect the duplicate audit before choosing a resolution."
+        )
+    if len(audit["validator_models"]) > 1:
+        # Judges disagree most on exactly the ablation arms that set Δ_assoc, so a
+        # run scored by several of them yields a Δ that depends on the mix rather
+        # than on the data. Re-score the run with one judge instead.
+        raise ValueError(
+            "Refusing aggregation: the run was scored by more than one validator "
+            f"({audit['validator_models']}). Δ would reflect the judge mix, not the data."
+        )
+    if audit["unscored_records"]:
+        # The denominator is every planned trial, not just the ones that returned.
+        print(
+            f"WARNING: {audit['unscored_records']} of {audit['records']} records are unscored "
+            f"({audit['status_counts']}). Metrics below cover scored records only."
         )
     grouped: dict[str, dict[str, list[int]]] = defaultdict(lambda: defaultdict(list))
     is_vnext = False
