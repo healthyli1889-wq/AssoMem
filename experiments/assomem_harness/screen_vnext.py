@@ -19,8 +19,10 @@ import argparse
 import json
 import os
 import sys
+import threading
+import time
 from collections import Counter, defaultdict
-from concurrent.futures import ThreadPoolExecutor
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 from typing import Any
 
@@ -67,6 +69,9 @@ def main() -> int:
     parser.add_argument("--per-polarity", type=int, default=3)
     parser.add_argument("--workers", type=int, default=6)
     parser.add_argument("--out", type=Path, default=Path("/tmp/social_screen.json"))
+    parser.add_argument(
+        "--restart", action="store_true", help="ignore any existing progress sidecar"
+    )
     args = parser.parse_args()
 
     profile = load_profile(Path(os.environ["ASSOMEM_PROFILE"]))
@@ -101,9 +106,56 @@ def main() -> int:
             row[f"{arm_name}_gold"] = "yes" if arm.ground_truth["binary_decision"] else "no"
         return row
 
-    with ThreadPoolExecutor(max_workers=args.workers) as pool:
-        rows = list(pool.map(screen, items))
+    # Progress is appended to a sidecar JSONL as each item finishes, so an
+    # interrupted run neither loses work nor goes silent for ten minutes.
+    progress_path = args.out.with_suffix(".progress.jsonl")
+    done: dict[str, dict[str, Any]] = {}
+    if progress_path.exists() and not args.restart:
+        for line in progress_path.read_text(encoding="utf-8").splitlines():
+            if line.strip():
+                row = json.loads(line)
+                done[row["item_id"]] = row
+        print(f"resuming: {len(done)} items already in {progress_path.name}\n", flush=True)
 
+    todo = [item for item in items if item.item_id not in done]
+    total = len(items)
+    lock = threading.Lock()
+    started = time.monotonic()
+    handle = progress_path.open("a", encoding="utf-8")
+
+    def record(row: dict[str, Any]) -> None:
+        with lock:
+            done[row["item_id"]] = row
+            handle.write(json.dumps(row, ensure_ascii=False) + "\n")
+            handle.flush()
+            n = len(done)
+            elapsed = time.monotonic() - started
+            rate = (n - (total - len(todo))) / elapsed if elapsed > 0 else 0
+            eta = (total - n) / rate if rate > 0 else float("nan")
+            marks = "".join(
+                "." if row[a] == row[f"{a}_gold"] else "X" for a in LADDER
+            )
+            print(
+                f"[{n:>3d}/{total}] {row['item_id']:<18s} {row['polarity']:<12s} "
+                f"zeroEv={str(row['zero_evidence']):<4s} arms={marks} "
+                f"| {elapsed/60:.1f}m elapsed, ~{eta/60:.1f}m left",
+                flush=True,
+            )
+
+    try:
+        with ThreadPoolExecutor(max_workers=args.workers) as pool:
+            futures = {pool.submit(screen, item): item for item in todo}
+            for future in as_completed(futures):
+                item = futures[future]
+                try:
+                    record(future.result())
+                except Exception as exc:  # noqa: BLE001 - keep the run going
+                    print(f"[----] {item.item_id}: FAILED {exc}", flush=True)
+    finally:
+        handle.close()
+
+    rows = [done[item.item_id] for item in items if item.item_id in done]
+    print(f"\ncompleted {len(rows)}/{total} items in {(time.monotonic()-started)/60:.1f} min\n", flush=True)
     args.out.write_text(json.dumps(rows, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
     header = f"{'item':18s} {'polarity':13s} {'zeroEv':7s} " + " ".join(f"{a[:9]:>9s}" for a in LADDER)
