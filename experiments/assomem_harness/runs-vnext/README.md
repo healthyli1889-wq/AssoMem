@@ -1,29 +1,34 @@
-# Published vNext harness runs
+# Published vNext harness results
 
-These run directories were previously gitignored under `experiments/assomem_harness/runs-vnext/`.
-This PR force-publishes completed finance + work evaluation artifacts.
+## Work (one suite, 3 splits)
 
-## Work (complete: 240/240 each)
+`work-expand40/` — S1–S20 expand40, all scored. See `work-expand40/README.md`.
 
-| Run | Path | Checkpoint | Scoring |
-|---|---|---|---|
-| S1–S10 | `work/work-vnext-s1-s10-expand40-20260726/` | `checkpoint.jsonl` (240) | `out/table_a.md`, `out/table_b.md`, `out/*_scores.csv` |
-| S11–S15 | `work/work-vnext-s11-s15-expand40-20260726/` | `checkpoint.jsonl` (240) | same |
-| S16–S20 | `work/work-vnext-s16-s20-expand40-20260726/` | `checkpoint.jsonl` (240) | same |
+## Finance
 
-Shared pooled metrics summary: `work/WORK_EXPAND40_METRICS_5.json`
+`finance/s1-s10/` — original `finance-vnext-s1-s10-20260727`.
 
-Each work run also includes:
-- `review/e1_intervention.csv`, `review/e2_judgment.csv`
-- `records/` (per-trial scored JSON)
-- `item_manifest.json`, `run_manifest.json`, `PROGRESS.txt`
+| Artifact | Present |
+|---|---|
+| `checkpoint.jsonl` | yes (600) |
+| `records/` | yes (600; 447 scored / 153 validator_error) |
+| `review/*.csv` | yes |
+| `out/` | **no** (scoring incomplete until 403 retries finish) |
+| manifests / PROGRESS / by_condition / log / zero_evidence | yes |
 
-## Finance (partial: 447 scored / 153 validator_error)
+## Required file set per run folder
 
-| Run | Path | Notes |
-|---|---|---|
-| S1–S10 | `finance/finance-vnext-s1-s10-20260727/` | 600 checkpoint lines; 153 HTTP 403 validator failures still need retry |
-
-Includes `checkpoint.jsonl`, `records/`, `review/*.csv`, manifests.
-
-`attempts/` directories are omitted from this PR to reduce size (records/checkpoint are sufficient for scoring).
+```
+checkpoint.jsonl
+records/
+review/e1_intervention.csv
+review/e2_judgment.csv
+out/                    # work complete; finance pending
+item_manifest.json
+run_manifest.json
+PROGRESS.txt
+results.tsv
+by_condition/
+log/
+zero_evidence/
+```
