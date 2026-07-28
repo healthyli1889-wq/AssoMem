@@ -1,0 +1,53 @@
+{
+  "check": "zero_evidence",
+  "candidate_id": "AMB_FN_S1_U03_associative",
+  "pair_id": "AMB_FN_S1_U03",
+  "query_only": true,
+  "context_session_count": 0,
+  "trials_requested": 1,
+  "valid_trials": 1,
+  "target_positive_count": 0,
+  "target_false_positive_rate": 0.0,
+  "pass": true,
+  "attempts": [
+    {
+      "trial": 1,
+      "status": "valid",
+      "target_asserted": false,
+      "response": {
+        "mode": "withhold",
+        "answer": "I don’t have any visible conversation evidence to assess whether that situation is a good fit. Be cautious with offers involving “free” money, Discord groups, card payments, or top-ups, and verify terms independently before paying or sharing financial details.",
+        "evidence_session_ids": []
+      },
+      "solver_usage": {
+        "input_tokens": 175,
+        "output_tokens": 93,
+        "reasoning_tokens": null,
+        "total_tokens": 268
+      },
+      "validator": {
+        "target_asserted": false,
+        "target_evidence_grounded": false,
+        "evidence_usage": {
+          "ev_A_used": false,
+          "ev_B_used": false,
+          "h_k": 0,
+          "source_misattribution": false
+        },
+        "abstention": {
+          "abstains": true,
+          "asserts_absent_pattern": false
+        },
+        "condition_correct": true,
+        "failure_tags": [],
+        "reason": "The solver explicitly abstained, stating it had no visible conversation evidence to assess fit, and cited no evidence sessions, consistent with the empty allowed_evidence_ids. Its cautionary remarks about 'free' money and Discord groups are generic safety advice, not an assertion of the target proposition that the alpha pot is a poor fit for this user, and it did not fabricate an absent pattern. Withholding matches the expected withhold_C mode, so the condition is satisfied."
+      },
+      "validator_usage": {
+        "input_tokens": 701,
+        "output_tokens": 883,
+        "reasoning_tokens": null,
+        "total_tokens": 1584
+      }
+    }
+  ]
+}

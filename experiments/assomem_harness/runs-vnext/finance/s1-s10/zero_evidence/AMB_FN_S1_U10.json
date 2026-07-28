@@ -1,0 +1,53 @@
+{
+  "check": "zero_evidence",
+  "candidate_id": "AMB_FN_S1_U10_associative",
+  "pair_id": "AMB_FN_S1_U10",
+  "query_only": true,
+  "context_session_count": 0,
+  "trials_requested": 1,
+  "valid_trials": 1,
+  "target_positive_count": 0,
+  "target_false_positive_rate": 0.0,
+  "pass": true,
+  "attempts": [
+    {
+      "trial": 1,
+      "status": "valid",
+      "target_asserted": false,
+      "response": {
+        "mode": "withhold",
+        "answer": "I don’t have visible information about your protective plan, finances, or the group-chat offer, so I can’t say whether you should stick with it. Be cautious about committing money before a tuition draft and review the offer’s terms independently.",
+        "evidence_session_ids": []
+      },
+      "solver_usage": {
+        "input_tokens": 186,
+        "output_tokens": 120,
+        "reasoning_tokens": null,
+        "total_tokens": 306
+      },
+      "validator": {
+        "target_asserted": false,
+        "target_evidence_grounded": false,
+        "evidence_usage": {
+          "ev_A_used": false,
+          "ev_B_used": false,
+          "h_k": 0,
+          "source_misattribution": false
+        },
+        "abstention": {
+          "abstains": true,
+          "asserts_absent_pattern": false
+        },
+        "condition_correct": true,
+        "failure_tags": [],
+        "reason": "With no visible context, the solver correctly withheld: it explicitly stated it lacks visible information about the plan, finances, or offer, declined to say whether the user should stick with the protective plan, cited no evidence IDs, and set mode to 'withhold' matching expected 'withhold_C'. The closing caution about committing money before the tuition draft is generic prudential advice, not an assertion that the user's protective plan is supported by their episodes, so the target proposition is not asserted. No absent evidence was used or fabricated, satisfying the withhold_C condition."
+      },
+      "validator_usage": {
+        "input_tokens": 715,
+        "output_tokens": 1087,
+        "reasoning_tokens": null,
+        "total_tokens": 1802
+      }
+    }
+  ]
+}

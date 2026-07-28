@@ -1,0 +1,53 @@
+{
+  "check": "zero_evidence",
+  "candidate_id": "AMB_WV_S10_U06_associative",
+  "pair_id": "AMB_WV_S10_U06",
+  "query_only": true,
+  "context_session_count": 0,
+  "trials_requested": 1,
+  "valid_trials": 1,
+  "target_positive_count": 0,
+  "target_false_positive_rate": 0.0,
+  "pass": true,
+  "attempts": [
+    {
+      "trial": 1,
+      "status": "valid",
+      "target_asserted": false,
+      "response": {
+        "mode": "withhold",
+        "answer": "I don’t have any visible context about the open-floor pilot or your prior conditions, so I can’t determine what condition you should attach to joining.",
+        "evidence_session_ids": []
+      },
+      "solver_usage": {
+        "input_tokens": 171,
+        "output_tokens": 50,
+        "reasoning_tokens": null,
+        "total_tokens": 221
+      },
+      "validator": {
+        "target_asserted": false,
+        "target_evidence_grounded": false,
+        "evidence_usage": {
+          "ev_A_used": false,
+          "ev_B_used": false,
+          "h_k": 0,
+          "source_misattribution": false
+        },
+        "abstention": {
+          "abstains": true,
+          "asserts_absent_pattern": false
+        },
+        "condition_correct": true,
+        "failure_tags": [],
+        "reason": "No memory evidence was visible, and the solver correctly withheld rather than asserting the quiet-pods condition; it cited no evidence and used no disallowed facts."
+      },
+      "validator_usage": {
+        "input_tokens": 672,
+        "output_tokens": 1140,
+        "reasoning_tokens": null,
+        "total_tokens": 1812
+      }
+    }
+  ]
+}

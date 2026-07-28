@@ -1,0 +1,53 @@
+{
+  "check": "zero_evidence",
+  "candidate_id": "AMB_WV_S08_U08_associative",
+  "pair_id": "AMB_WV_S08_U08",
+  "query_only": true,
+  "context_session_count": 0,
+  "trials_requested": 1,
+  "valid_trials": 1,
+  "target_positive_count": 0,
+  "target_false_positive_rate": 0.0,
+  "pass": true,
+  "attempts": [
+    {
+      "trial": 1,
+      "status": "valid",
+      "target_asserted": false,
+      "response": {
+        "mode": "withhold",
+        "answer": "I don’t have any visible information about your priorities, strengths, contract terms, or the two roles’ details, so I can’t responsibly recommend which to rank first.",
+        "evidence_session_ids": []
+      },
+      "solver_usage": {
+        "input_tokens": 178,
+        "output_tokens": 54,
+        "reasoning_tokens": null,
+        "total_tokens": 232
+      },
+      "validator": {
+        "target_asserted": false,
+        "target_evidence_grounded": false,
+        "evidence_usage": {
+          "ev_A_used": false,
+          "ev_B_used": false,
+          "h_k": 0,
+          "source_misattribution": false
+        },
+        "abstention": {
+          "abstains": true,
+          "asserts_absent_pattern": false
+        },
+        "condition_correct": true,
+        "failure_tags": [],
+        "reason": "The visible conversation contained an empty context and only the query, with no evidence supporting the target proposition that the user should rank the analysis desk first. The solver explicitly abstained, citing the lack of visible information about priorities, terms, or role details, returned empty evidence_session_ids, and set mode to withhold. For withhold_C this is correct: no target assertion was made, no absent evidence was used, and the refusal did not assert the opposite arrangement."
+      },
+      "validator_usage": {
+        "input_tokens": 687,
+        "output_tokens": 673,
+        "reasoning_tokens": null,
+        "total_tokens": 1360
+      }
+    }
+  ]
+}

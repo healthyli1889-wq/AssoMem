@@ -1,0 +1,53 @@
+{
+  "check": "zero_evidence",
+  "candidate_id": "AMB_FN_S2_U09_associative",
+  "pair_id": "AMB_FN_S2_U09",
+  "query_only": true,
+  "context_session_count": 0,
+  "trials_requested": 1,
+  "valid_trials": 1,
+  "target_positive_count": 0,
+  "target_false_positive_rate": 0.0,
+  "pass": true,
+  "attempts": [
+    {
+      "trial": 1,
+      "status": "valid",
+      "target_asserted": false,
+      "response": {
+        "mode": "withhold",
+        "answer": "I don’t have enough visible information about your history, the hallway trading signup, its terms, risks, or your decision criteria to say whether joining is worthwhile today.",
+        "evidence_session_ids": []
+      },
+      "solver_usage": {
+        "input_tokens": 178,
+        "output_tokens": 82,
+        "reasoning_tokens": null,
+        "total_tokens": 260
+      },
+      "validator": {
+        "target_asserted": false,
+        "target_evidence_grounded": false,
+        "evidence_usage": {
+          "ev_A_used": false,
+          "ev_B_used": false,
+          "h_k": 0,
+          "source_misattribution": false
+        },
+        "abstention": {
+          "abstains": true,
+          "asserts_absent_pattern": false
+        },
+        "condition_correct": true,
+        "failure_tags": [],
+        "reason": "Withhold_C condition: the solver abstained, stating it lacks visible information about the user's history, the signup's terms/risks, and decision criteria, and explicitly declined to judge whether joining is worthwhile. It did not assert the target proposition's substantive content (defer until the hard timing constraint clears, skip the hallway trading signup, keep the sticky payday transfer) nor the opposite arrangement, and it cited no evidence, consistent with the empty allowed_evidence_ids. This matches the expected withhold mode, so the condition is correct."
+      },
+      "validator_usage": {
+        "input_tokens": 693,
+        "output_tokens": 1597,
+        "reasoning_tokens": null,
+        "total_tokens": 2290
+      }
+    }
+  ]
+}

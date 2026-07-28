@@ -1,0 +1,53 @@
+{
+  "check": "zero_evidence",
+  "candidate_id": "AMB_FN_S6_U02_associative",
+  "pair_id": "AMB_FN_S6_U02",
+  "query_only": true,
+  "context_session_count": 0,
+  "trials_requested": 1,
+  "valid_trials": 1,
+  "target_positive_count": 0,
+  "target_false_positive_rate": 0.0,
+  "pass": true,
+  "attempts": [
+    {
+      "trial": 1,
+      "status": "valid",
+      "target_asserted": false,
+      "response": {
+        "mode": "withhold",
+        "answer": "I don’t have enough visible information about your account, match rules, tipping options, or what “split” means to rank those uses responsibly.",
+        "evidence_session_ids": []
+      },
+      "solver_usage": {
+        "input_tokens": 184,
+        "output_tokens": 73,
+        "reasoning_tokens": null,
+        "total_tokens": 257
+      },
+      "validator": {
+        "target_asserted": false,
+        "target_evidence_grounded": false,
+        "evidence_usage": {
+          "ev_A_used": false,
+          "ev_B_used": false,
+          "h_k": 0,
+          "source_misattribution": false
+        },
+        "abstention": {
+          "abstains": true,
+          "asserts_absent_pattern": false
+        },
+        "condition_correct": true,
+        "failure_tags": [],
+        "reason": "With an empty visible context and no allowed evidence, the solver appropriately declined to rank and cited no sessions. It did not assert that keeping the match contribution should outrank the tip pot, nor did it assert the opposite."
+      },
+      "validator_usage": {
+        "input_tokens": 683,
+        "output_tokens": 1970,
+        "reasoning_tokens": null,
+        "total_tokens": 2653
+      }
+    }
+  ]
+}

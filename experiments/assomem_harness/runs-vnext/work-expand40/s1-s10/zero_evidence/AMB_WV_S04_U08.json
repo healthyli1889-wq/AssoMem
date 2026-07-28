@@ -1,0 +1,53 @@
+{
+  "check": "zero_evidence",
+  "candidate_id": "AMB_WV_S04_U08_associative",
+  "pair_id": "AMB_WV_S04_U08",
+  "query_only": true,
+  "context_session_count": 0,
+  "trials_requested": 1,
+  "valid_trials": 1,
+  "target_positive_count": 0,
+  "target_false_positive_rate": 0.0,
+  "pass": true,
+  "attempts": [
+    {
+      "trial": 1,
+      "status": "valid",
+      "target_asserted": false,
+      "response": {
+        "mode": "withhold",
+        "answer": "I don’t have any visible information about how you work best or the appellate support team role, so I can’t assess whether it is the right fit.",
+        "evidence_session_ids": []
+      },
+      "solver_usage": {
+        "input_tokens": 174,
+        "output_tokens": 79,
+        "reasoning_tokens": null,
+        "total_tokens": 253
+      },
+      "validator": {
+        "target_asserted": false,
+        "target_evidence_grounded": false,
+        "evidence_usage": {
+          "ev_A_used": false,
+          "ev_B_used": false,
+          "h_k": 0,
+          "source_misattribution": false
+        },
+        "abstention": {
+          "abstains": true,
+          "asserts_absent_pattern": false
+        },
+        "condition_correct": true,
+        "failure_tags": [],
+        "reason": "The solver correctly withheld judgment, stating it had no visible information about the user's work style or the appellate role. The target proposition was never asserted, no evidence was cited or fabricated, and evidence_session_ids is empty, matching the withhold_C condition with an empty allowed_evidence_ids set."
+      },
+      "validator_usage": {
+        "input_tokens": 672,
+        "output_tokens": 497,
+        "reasoning_tokens": null,
+        "total_tokens": 1169
+      }
+    }
+  ]
+}

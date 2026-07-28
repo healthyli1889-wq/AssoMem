@@ -1,0 +1,53 @@
+{
+  "check": "zero_evidence",
+  "candidate_id": "AMB_WV_S15_U07_associative",
+  "pair_id": "AMB_WV_S15_U07",
+  "query_only": true,
+  "context_session_count": 0,
+  "trials_requested": 1,
+  "valid_trials": 1,
+  "target_positive_count": 0,
+  "target_false_positive_rate": 0.0,
+  "pass": true,
+  "attempts": [
+    {
+      "trial": 1,
+      "status": "valid",
+      "target_asserted": false,
+      "response": {
+        "mode": "withhold",
+        "answer": "I don’t have visible session information about your role, authority, safety policies, or the commissioner’s expectations, so I can’t responsibly recommend specific terms for chairing the coordination room.",
+        "evidence_session_ids": []
+      },
+      "solver_usage": {
+        "input_tokens": 170,
+        "output_tokens": 58,
+        "reasoning_tokens": null,
+        "total_tokens": 228
+      },
+      "validator": {
+        "target_asserted": false,
+        "target_evidence_grounded": false,
+        "evidence_usage": {
+          "ev_A_used": false,
+          "ev_B_used": false,
+          "h_k": 0,
+          "source_misattribution": false
+        },
+        "abstention": {
+          "abstains": true,
+          "asserts_absent_pattern": false
+        },
+        "condition_correct": true,
+        "failure_tags": [],
+        "reason": "The solver correctly withheld: it declined to set terms, asserting only that no session evidence was visible, without asserting the target proposition or its opposite. No evidence IDs were cited, consistent with the empty allowed_evidence_ids, matching the expected withhold_C mode."
+      },
+      "validator_usage": {
+        "input_tokens": 679,
+        "output_tokens": 305,
+        "reasoning_tokens": null,
+        "total_tokens": 984
+      }
+    }
+  ]
+}

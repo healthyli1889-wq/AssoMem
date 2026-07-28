@@ -1,0 +1,53 @@
+{
+  "check": "zero_evidence",
+  "candidate_id": "AMB_WV_S17_U10_associative",
+  "pair_id": "AMB_WV_S17_U10",
+  "query_only": true,
+  "context_session_count": 0,
+  "trials_requested": 1,
+  "valid_trials": 1,
+  "target_positive_count": 0,
+  "target_false_positive_rate": 0.0,
+  "pass": true,
+  "attempts": [
+    {
+      "trial": 1,
+      "status": "valid",
+      "target_asserted": false,
+      "response": {
+        "mode": "withhold",
+        "answer": "I don’t have visible information confirming whether you can announce that demonstration.",
+        "evidence_session_ids": []
+      },
+      "solver_usage": {
+        "input_tokens": 164,
+        "output_tokens": 51,
+        "reasoning_tokens": null,
+        "total_tokens": 215
+      },
+      "validator": {
+        "target_asserted": false,
+        "target_evidence_grounded": false,
+        "evidence_usage": {
+          "ev_A_used": false,
+          "ev_B_used": false,
+          "h_k": 0,
+          "source_misattribution": false
+        },
+        "abstention": {
+          "abstains": true,
+          "asserts_absent_pattern": false
+        },
+        "condition_correct": true,
+        "failure_tags": [],
+        "reason": "The solver correctly withheld the target proposition because no evidence was visible, and it did not cite unavailable evidence or assert an unsupported alternative."
+      },
+      "validator_usage": {
+        "input_tokens": 645,
+        "output_tokens": 343,
+        "reasoning_tokens": null,
+        "total_tokens": 988
+      }
+    }
+  ]
+}

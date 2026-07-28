@@ -1,0 +1,53 @@
+{
+  "check": "zero_evidence",
+  "candidate_id": "AMB_WV_S11_U04_associative",
+  "pair_id": "AMB_WV_S11_U04",
+  "query_only": true,
+  "context_session_count": 0,
+  "trials_requested": 1,
+  "valid_trials": 1,
+  "target_positive_count": 0,
+  "target_false_positive_rate": 0.0,
+  "pass": true,
+  "attempts": [
+    {
+      "trial": 1,
+      "status": "valid",
+      "target_asserted": false,
+      "response": {
+        "mode": "withhold",
+        "answer": "I don’t have any visible information about your schedule, obligations, preferences, or the offsite details, so I can’t determine what response fits your situation. A neutral option is: “Thanks for the invitation. I’ll confirm whether I can attend after furnace monitoring once I know my availability.”",
+        "evidence_session_ids": []
+      },
+      "solver_usage": {
+        "input_tokens": 173,
+        "output_tokens": 81,
+        "reasoning_tokens": null,
+        "total_tokens": 254
+      },
+      "validator": {
+        "target_asserted": false,
+        "target_evidence_grounded": false,
+        "evidence_usage": {
+          "ev_A_used": false,
+          "ev_B_used": false,
+          "h_k": 0,
+          "source_misattribution": false
+        },
+        "abstention": {
+          "abstains": true,
+          "asserts_absent_pattern": false
+        },
+        "condition_correct": true,
+        "failure_tags": [],
+        "reason": "The solver correctly recognized that no memory evidence was visible (context empty) and withheld, explicitly stating it cannot determine what response fits. It did not assert the target proposition (asking for a morning, remote, or rescheduled option), nor did it assert the opposite arrangement; the suggested neutral reply only defers confirmation of availability and introduces no unsupported evidence. No evidence IDs were cited, consistent with the empty allowed_evidence_ids. This matches the expected withhold_C condition."
+      },
+      "validator_usage": {
+        "input_tokens": 700,
+        "output_tokens": 613,
+        "reasoning_tokens": null,
+        "total_tokens": 1313
+      }
+    }
+  ]
+}

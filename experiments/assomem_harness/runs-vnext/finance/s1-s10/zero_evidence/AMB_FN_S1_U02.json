@@ -1,0 +1,53 @@
+{
+  "check": "zero_evidence",
+  "candidate_id": "AMB_FN_S1_U02_associative",
+  "pair_id": "AMB_FN_S1_U02",
+  "query_only": true,
+  "context_session_count": 0,
+  "trials_requested": 1,
+  "valid_trials": 1,
+  "target_positive_count": 0,
+  "target_false_positive_rate": 0.0,
+  "pass": true,
+  "attempts": [
+    {
+      "trial": 1,
+      "status": "valid",
+      "target_asserted": false,
+      "response": {
+        "mode": "withhold",
+        "answer": "I can’t assess whether that is a good fit because there is no visible context about the group chat, the channel, or the financial situation.",
+        "evidence_session_ids": []
+      },
+      "solver_usage": {
+        "input_tokens": 174,
+        "output_tokens": 78,
+        "reasoning_tokens": null,
+        "total_tokens": 252
+      },
+      "validator": {
+        "target_asserted": false,
+        "target_evidence_grounded": false,
+        "evidence_usage": {
+          "ev_A_used": false,
+          "ev_B_used": false,
+          "h_k": 0,
+          "source_misattribution": false
+        },
+        "abstention": {
+          "abstains": true,
+          "asserts_absent_pattern": false
+        },
+        "condition_correct": true,
+        "failure_tags": [],
+        "reason": "The solver correctly withheld judgment: it asserted neither the target proposition (that the tip channel is a poor fit) nor the opposite arrangement, explicitly noting the absence of visible context about the group chat, channel, or finances. No evidence session IDs were cited, consistent with the empty allowed_evidence_ids, and there is no misattribution or fabrication of absent patterns. This matches the expected withhold_C condition."
+      },
+      "validator_usage": {
+        "input_tokens": 679,
+        "output_tokens": 550,
+        "reasoning_tokens": null,
+        "total_tokens": 1229
+      }
+    }
+  ]
+}

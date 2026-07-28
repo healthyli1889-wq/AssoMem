@@ -1,0 +1,53 @@
+{
+  "check": "zero_evidence",
+  "candidate_id": "AMB_WV_S13_U10_associative",
+  "pair_id": "AMB_WV_S13_U10",
+  "query_only": true,
+  "context_session_count": 0,
+  "trials_requested": 1,
+  "valid_trials": 1,
+  "target_positive_count": 0,
+  "target_false_positive_rate": 0.0,
+  "pass": true,
+  "attempts": [
+    {
+      "trial": 1,
+      "status": "valid",
+      "target_asserted": false,
+      "response": {
+        "mode": "withhold",
+        "answer": "I can’t determine how you will react in that situation from the information available. There is no visible evidence about your likely response to being asked to take verbal ownership of the district safety classification at 06:10.",
+        "evidence_session_ids": []
+      },
+      "solver_usage": {
+        "input_tokens": 173,
+        "output_tokens": 88,
+        "reasoning_tokens": null,
+        "total_tokens": 261
+      },
+      "validator": {
+        "target_asserted": false,
+        "target_evidence_grounded": false,
+        "evidence_usage": {
+          "ev_A_used": false,
+          "ev_B_used": false,
+          "h_k": 0,
+          "source_misattribution": false
+        },
+        "abstention": {
+          "abstains": true,
+          "asserts_absent_pattern": false
+        },
+        "condition_correct": true,
+        "failure_tags": [],
+        "reason": "The visible arm has empty context and empty allowed_evidence_ids, so there is nothing from which to infer the target proposition (refusing the classification and handing off the field log for an engineer's decision). The solver correctly abstains: it says it cannot determine the user's reaction, returns an empty evidence_session_ids list, and does not assert the target or any absent behavioral pattern. This refusal is not treated as asserting the opposite arrangement. For withhold_C, condition_correct holds because there is no target assertion and no evidence outside the empty allowed set was used. h_k=0 because no original target facts are present or cited in this arm, and there is no source misattribution."
+      },
+      "validator_usage": {
+        "input_tokens": 690,
+        "output_tokens": 1574,
+        "reasoning_tokens": null,
+        "total_tokens": 2264
+      }
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "check": "zero_evidence",
+  "candidate_id": "AMB_FN_S3_U03_associative",
+  "pair_id": "AMB_FN_S3_U03",
+  "query_only": true,
+  "context_session_count": 0,
+  "trials_requested": 1,
+  "valid_trials": 1,
+  "target_positive_count": 0,
+  "target_false_positive_rate": 0.0,
+  "pass": true,
+  "attempts": [
+    {
+      "trial": 1,
+      "status": "valid",
+      "target_asserted": false,
+      "response": {
+        "mode": "withhold",
+        "answer": "I don’t have any visible information about your reserve, the proposed forum yield pitch, or its terms, so I can’t assess whether it is sensible for you.",
+        "evidence_session_ids": []
+      },
+      "solver_usage": {
+        "input_tokens": 166,
+        "output_tokens": 75,
+        "reasoning_tokens": null,
+        "total_tokens": 241
+      },
+      "validator": {
+        "target_asserted": false,
+        "target_evidence_grounded": false,
+        "evidence_usage": {
+          "ev_A_used": false,
+          "ev_B_used": false,
+          "h_k": 0,
+          "source_misattribution": false
+        },
+        "abstention": {
+          "abstains": true,
+          "asserts_absent_pattern": false
+        },
+        "condition_correct": true,
+        "failure_tags": [],
+        "reason": "The solver correctly withheld: no memory evidence was visible (context empty, allowed_evidence_ids empty), and the response explicitly states it lacks information about the reserve and the pitch and cannot assess sensibility. It does not assert the target proposition (that rolling thin-reserve cash into the forum yield pitch is a poor fit), does not assert the opposite arrangement, and cites no evidence outside allowed_evidence_ids (evidence_session_ids is empty). This matches expected_mode withhold_C."
+      },
+      "validator_usage": {
+        "input_tokens": 675,
+        "output_tokens": 851,
+        "reasoning_tokens": null,
+        "total_tokens": 1526
+      }
+    }
+  ]
+}

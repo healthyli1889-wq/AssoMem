@@ -1,0 +1,40 @@
+{
+  "check": "zero_evidence",
+  "candidate_id": "AMB_WV_S19_U08_associative",
+  "pair_id": "AMB_WV_S19_U08",
+  "query_only": true,
+  "context_session_count": 0,
+  "trials_requested": 1,
+  "valid_trials": 1,
+  "target_positive_count": 0,
+  "target_false_positive_rate": 0.0,
+  "pass": true,
+  "attempts": [
+    {
+      "trial": 1,
+      "status": "valid",
+      "target_asserted": false,
+      "response": {
+        "mode": "withhold",
+        "answer": "I don’t have any visible information about the available escalation channels or your organization’s process, so I can’t recommend which option to put first.",
+        "evidence_session_ids": []
+      },
+      "solver_usage": {
+        "input_tokens": 173,
+        "output_tokens": 67,
+        "reasoning_tokens": null,
+        "total_tokens": 240
+      },
+      "validator": {
+        "target_asserted": false,
+        "fast_withhold_path": true,
+        "reason": "clean withhold + empty evidence_session_ids; validator skipped for speed"
+      },
+      "validator_usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "total_tokens": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "check": "zero_evidence",
+  "candidate_id": "AMB_WV_S14_U04_associative",
+  "pair_id": "AMB_WV_S14_U04",
+  "query_only": true,
+  "context_session_count": 0,
+  "trials_requested": 1,
+  "valid_trials": 1,
+  "target_positive_count": 0,
+  "target_false_positive_rate": 0.0,
+  "pass": true,
+  "attempts": [
+    {
+      "trial": 1,
+      "status": "valid",
+      "target_asserted": false,
+      "response": {
+        "mode": "withhold",
+        "answer": "I don’t have any visible information about the hot-desk assignment or Friday’s safety review, so I can’t determine why it would be a poor choice.",
+        "evidence_session_ids": []
+      },
+      "solver_usage": {
+        "input_tokens": 170,
+        "output_tokens": 69,
+        "reasoning_tokens": null,
+        "total_tokens": 239
+      },
+      "validator": {
+        "target_asserted": false,
+        "target_evidence_grounded": false,
+        "evidence_usage": {
+          "ev_A_used": false,
+          "ev_B_used": false,
+          "h_k": 0,
+          "source_misattribution": false
+        },
+        "abstention": {
+          "abstains": true,
+          "asserts_absent_pattern": false
+        },
+        "condition_correct": true,
+        "failure_tags": [],
+        "reason": "The solver correctly withheld: with an empty visible context, it made no target assertion (it neither endorsed nor denied that the hot-desk assignment should be rejected), cited no evidence outside the empty allowed_evidence_ids set, and did not misattribute any source. Its statement merely reports the absence of visible information rather than asserting the opposite arrangement, satisfying the withhold_C condition."
+      },
+      "validator_usage": {
+        "input_tokens": 666,
+        "output_tokens": 382,
+        "reasoning_tokens": null,
+        "total_tokens": 1048
+      }
+    }
+  ]
+}

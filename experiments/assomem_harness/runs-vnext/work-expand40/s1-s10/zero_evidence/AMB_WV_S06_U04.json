@@ -1,0 +1,53 @@
+{
+  "check": "zero_evidence",
+  "candidate_id": "AMB_WV_S06_U04_associative",
+  "pair_id": "AMB_WV_S06_U04",
+  "query_only": true,
+  "context_session_count": 0,
+  "trials_requested": 1,
+  "valid_trials": 1,
+  "target_positive_count": 0,
+  "target_false_positive_rate": 0.0,
+  "pass": true,
+  "attempts": [
+    {
+      "trial": 1,
+      "status": "valid",
+      "target_asserted": false,
+      "response": {
+        "mode": "withhold",
+        "answer": "I don’t have any visible records about your workload, install-season capacity, or prior survey responses, so I can’t support a personalized range. You could state a range based on documented recent hours, project load, travel, and recovery needs, but that would need to come from your own records.",
+        "evidence_session_ids": []
+      },
+      "solver_usage": {
+        "input_tokens": 172,
+        "output_tokens": 80,
+        "reasoning_tokens": null,
+        "total_tokens": 252
+      },
+      "validator": {
+        "target_asserted": false,
+        "target_evidence_grounded": false,
+        "evidence_usage": {
+          "ev_A_used": false,
+          "ev_B_used": false,
+          "h_k": 0,
+          "source_misattribution": false
+        },
+        "abstention": {
+          "abstains": true,
+          "asserts_absent_pattern": false
+        },
+        "condition_correct": true,
+        "failure_tags": [],
+        "reason": "No records were visible in this arm. The solver explicitly withheld a personalized supported range, cited no evidence sessions, and did not assert the hidden target proposition about install-week participation requiring hourly rotation off sustained overhead scaffold work. The generic suggestions are conditional on the user's own records and are not treated as visible evidence."
+      },
+      "validator_usage": {
+        "input_tokens": 701,
+        "output_tokens": 2505,
+        "reasoning_tokens": null,
+        "total_tokens": 3206
+      }
+    }
+  ]
+}

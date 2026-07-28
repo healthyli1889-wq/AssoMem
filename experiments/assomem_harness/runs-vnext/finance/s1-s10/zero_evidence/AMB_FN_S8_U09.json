@@ -1,0 +1,53 @@
+{
+  "check": "zero_evidence",
+  "candidate_id": "AMB_FN_S8_U09_associative",
+  "pair_id": "AMB_FN_S8_U09",
+  "query_only": true,
+  "context_session_count": 0,
+  "trials_requested": 1,
+  "valid_trials": 1,
+  "target_positive_count": 0,
+  "target_false_positive_rate": 0.0,
+  "pass": true,
+  "attempts": [
+    {
+      "trial": 1,
+      "status": "valid",
+      "target_asserted": false,
+      "response": {
+        "mode": "withhold",
+        "answer": "I don’t have enough visible information about the decision or today’s hallway registry split to say whether you have sufficient information to join it. I’d need the relevant options, criteria, and any deadlines or consequences.",
+        "evidence_session_ids": []
+      },
+      "solver_usage": {
+        "input_tokens": 172,
+        "output_tokens": 87,
+        "reasoning_tokens": null,
+        "total_tokens": 259
+      },
+      "validator": {
+        "target_asserted": false,
+        "target_evidence_grounded": false,
+        "evidence_usage": {
+          "ev_A_used": false,
+          "ev_B_used": false,
+          "h_k": 0,
+          "source_misattribution": false
+        },
+        "abstention": {
+          "abstains": true,
+          "asserts_absent_pattern": false
+        },
+        "condition_correct": true,
+        "failure_tags": [],
+        "reason": "The context was empty and the expected mode was withhold_C. The solver correctly withheld: it stated it lacks enough visible information to decide and cited no evidence (evidence_session_ids empty), so nothing outside allowed_evidence_ids (also empty) was used. Its statement 'I don't have enough visible information to say whether you have sufficient information' is an abstention on the meta-question, not an assertion of the target proposition ('not enough info — defer'); it neither affirms nor denies the underlying arrangement. No original target facts exist in the visible arm, so h_k=0 and no misattribution occurred. Withhold behavior matches the expected condition."
+      },
+      "validator_usage": {
+        "input_tokens": 690,
+        "output_tokens": 603,
+        "reasoning_tokens": null,
+        "total_tokens": 1293
+      }
+    }
+  ]
+}

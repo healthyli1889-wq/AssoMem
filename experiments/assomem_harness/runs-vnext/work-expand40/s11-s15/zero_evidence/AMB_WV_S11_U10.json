@@ -1,0 +1,53 @@
+{
+  "check": "zero_evidence",
+  "candidate_id": "AMB_WV_S11_U10_associative",
+  "pair_id": "AMB_WV_S11_U10",
+  "query_only": true,
+  "context_session_count": 0,
+  "trials_requested": 1,
+  "valid_trials": 1,
+  "target_positive_count": 0,
+  "target_false_positive_rate": 0.0,
+  "pass": true,
+  "attempts": [
+    {
+      "trial": 1,
+      "status": "valid",
+      "target_asserted": false,
+      "response": {
+        "mode": "withhold",
+        "answer": "I don’t have any visible information about your duty schedule, offsite requirements, or workplace policies, so I can’t recommend a participation plan.",
+        "evidence_session_ids": []
+      },
+      "solver_usage": {
+        "input_tokens": 175,
+        "output_tokens": 73,
+        "reasoning_tokens": null,
+        "total_tokens": 248
+      },
+      "validator": {
+        "target_asserted": false,
+        "target_evidence_grounded": false,
+        "evidence_usage": {
+          "ev_A_used": false,
+          "ev_B_used": false,
+          "h_k": 0,
+          "source_misattribution": false
+        },
+        "abstention": {
+          "abstains": true,
+          "asserts_absent_pattern": false
+        },
+        "condition_correct": true,
+        "failure_tags": [],
+        "reason": "The visible context was empty and allowed_evidence_ids is empty, so withhold_C is the expected condition. The solver explicitly abstained, stating it has no visible information about the duty schedule, offsite requirements, or policies, and declined to recommend a participation plan. It did not assert the target proposition (remote participation/rescheduling contingent on physiotherapy), cited no evidence, and used no evidence outside the allowed set. This matches the withhold_C requirement: no target assertion and no disallowed evidence use. The refusal does not assert the opposite arrangement."
+      },
+      "validator_usage": {
+        "input_tokens": 677,
+        "output_tokens": 613,
+        "reasoning_tokens": null,
+        "total_tokens": 1290
+      }
+    }
+  ]
+}

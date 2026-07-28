@@ -1,0 +1,53 @@
+{
+  "check": "zero_evidence",
+  "candidate_id": "AMB_WV_S07_U02_associative",
+  "pair_id": "AMB_WV_S07_U02",
+  "query_only": true,
+  "context_session_count": 0,
+  "trials_requested": 1,
+  "valid_trials": 1,
+  "target_positive_count": 0,
+  "target_false_positive_rate": 0.0,
+  "pass": true,
+  "attempts": [
+    {
+      "trial": 1,
+      "status": "valid",
+      "target_asserted": false,
+      "response": {
+        "mode": "withhold",
+        "answer": "I don’t have any visible information about your committee preferences or form priorities, so I can’t determine whether pricing committee or data governance should come first.",
+        "evidence_session_ids": []
+      },
+      "solver_usage": {
+        "input_tokens": 167,
+        "output_tokens": 50,
+        "reasoning_tokens": null,
+        "total_tokens": 217
+      },
+      "validator": {
+        "target_asserted": false,
+        "target_evidence_grounded": false,
+        "evidence_usage": {
+          "ev_A_used": false,
+          "ev_B_used": false,
+          "h_k": 0,
+          "source_misattribution": false
+        },
+        "abstention": {
+          "abstains": true,
+          "asserts_absent_pattern": false
+        },
+        "condition_correct": true,
+        "failure_tags": [],
+        "reason": "The solver correctly abstained, stating it has no visible information about the user's committee preferences or form priorities. It did not assert the target proposition (that the pricing committee should be ranked above data governance), did not assert the opposite arrangement, and cited no evidence — consistent with the empty allowed_evidence_ids and the expected withhold_C mode."
+      },
+      "validator_usage": {
+        "input_tokens": 669,
+        "output_tokens": 195,
+        "reasoning_tokens": null,
+        "total_tokens": 864
+      }
+    }
+  ]
+}

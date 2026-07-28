@@ -1,0 +1,53 @@
+{
+  "check": "zero_evidence",
+  "candidate_id": "AMB_WV_S10_U04_associative",
+  "pair_id": "AMB_WV_S10_U04",
+  "query_only": true,
+  "context_session_count": 0,
+  "trials_requested": 1,
+  "valid_trials": 1,
+  "target_positive_count": 0,
+  "target_false_positive_rate": 0.0,
+  "pass": true,
+  "attempts": [
+    {
+      "trial": 1,
+      "status": "valid",
+      "target_asserted": false,
+      "response": {
+        "mode": "withhold",
+        "answer": "I don’t have enough information about your preferences or priorities to recommend which to list first.",
+        "evidence_session_ids": []
+      },
+      "solver_usage": {
+        "input_tokens": 172,
+        "output_tokens": 69,
+        "reasoning_tokens": null,
+        "total_tokens": 241
+      },
+      "validator": {
+        "target_asserted": false,
+        "target_evidence_grounded": false,
+        "evidence_usage": {
+          "ev_A_used": false,
+          "ev_B_used": false,
+          "h_k": 0,
+          "source_misattribution": false
+        },
+        "abstention": {
+          "abstains": true,
+          "asserts_absent_pattern": false
+        },
+        "condition_correct": true,
+        "failure_tags": [],
+        "reason": "No memory evidence is visible in this arm, so the target proposition (preferring the listening-room wing based on calibration validation) cannot be grounded. The solver correctly withheld, stating it lacks information about the user's preferences, cited no evidence, and did not assert the target or the opposite arrangement. This matches the expected withhold_C condition."
+      },
+      "validator_usage": {
+        "input_tokens": 668,
+        "output_tokens": 515,
+        "reasoning_tokens": null,
+        "total_tokens": 1183
+      }
+    }
+  ]
+}

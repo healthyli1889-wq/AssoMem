@@ -1,0 +1,53 @@
+{
+  "check": "zero_evidence",
+  "candidate_id": "AMB_WV_S12_U04_associative",
+  "pair_id": "AMB_WV_S12_U04",
+  "query_only": true,
+  "context_session_count": 0,
+  "trials_requested": 1,
+  "valid_trials": 1,
+  "target_positive_count": 0,
+  "target_false_positive_rate": 0.0,
+  "pass": true,
+  "attempts": [
+    {
+      "trial": 1,
+      "status": "valid",
+      "target_asserted": false,
+      "response": {
+        "mode": "withhold",
+        "answer": "I don’t have any visible information about your rehearsal schedule, the compressor area, or your readiness for Friday’s crane-safety assessment, so I can’t determine whether that slot is a good fit.",
+        "evidence_session_ids": []
+      },
+      "solver_usage": {
+        "input_tokens": 173,
+        "output_tokens": 92,
+        "reasoning_tokens": null,
+        "total_tokens": 265
+      },
+      "validator": {
+        "target_asserted": false,
+        "target_evidence_grounded": false,
+        "evidence_usage": {
+          "ev_A_used": false,
+          "ev_B_used": false,
+          "h_k": 0,
+          "source_misattribution": false
+        },
+        "abstention": {
+          "abstains": true,
+          "asserts_absent_pattern": false
+        },
+        "condition_correct": true,
+        "failure_tags": [],
+        "reason": "The visible conversation had empty context and no memory evidence. The solver correctly withheld: it did not assert the target proposition, used no evidence (evidence_session_ids is empty, consistent with allowed_evidence_ids being empty), cited no original target facts (h_k=0), and did not assert the opposite arrangement—it only stated it could not determine fit. This satisfies withhold_C."
+      },
+      "validator_usage": {
+        "input_tokens": 685,
+        "output_tokens": 773,
+        "reasoning_tokens": null,
+        "total_tokens": 1458
+      }
+    }
+  ]
+}

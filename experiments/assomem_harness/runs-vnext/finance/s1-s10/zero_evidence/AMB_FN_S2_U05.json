@@ -1,0 +1,53 @@
+{
+  "check": "zero_evidence",
+  "candidate_id": "AMB_FN_S2_U05_associative",
+  "pair_id": "AMB_FN_S2_U05",
+  "query_only": true,
+  "context_session_count": 0,
+  "trials_requested": 1,
+  "valid_trials": 1,
+  "target_positive_count": 0,
+  "target_false_positive_rate": 0.0,
+  "pass": true,
+  "attempts": [
+    {
+      "trial": 1,
+      "status": "valid",
+      "target_asserted": false,
+      "response": {
+        "mode": "withhold",
+        "answer": "I don’t have any visible information about your trading history, risk tolerance, finances, or the specific desk challenge, so I can’t assess whether joining is worthwhile.",
+        "evidence_session_ids": []
+      },
+      "solver_usage": {
+        "input_tokens": 167,
+        "output_tokens": 71,
+        "reasoning_tokens": null,
+        "total_tokens": 238
+      },
+      "validator": {
+        "target_asserted": false,
+        "target_evidence_grounded": false,
+        "evidence_usage": {
+          "ev_A_used": false,
+          "ev_B_used": false,
+          "h_k": 0,
+          "source_misattribution": false
+        },
+        "abstention": {
+          "abstains": true,
+          "asserts_absent_pattern": false
+        },
+        "condition_correct": true,
+        "failure_tags": [],
+        "reason": "The solver correctly withheld judgment: the visible context was empty, allowed_evidence_ids was empty, and the response makes no target assertion, cites no evidence, and does not fabricate any absent pattern. It neutrally states that no information about trading history or the challenge is visible, without asserting the target proposition or its opposite. This matches the expected withhold_C condition."
+      },
+      "validator_usage": {
+        "input_tokens": 678,
+        "output_tokens": 784,
+        "reasoning_tokens": null,
+        "total_tokens": 1462
+      }
+    }
+  ]
+}

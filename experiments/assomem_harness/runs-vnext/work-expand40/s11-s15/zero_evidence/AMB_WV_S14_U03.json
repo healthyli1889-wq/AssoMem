@@ -1,0 +1,53 @@
+{
+  "check": "zero_evidence",
+  "candidate_id": "AMB_WV_S14_U03_associative",
+  "pair_id": "AMB_WV_S14_U03",
+  "query_only": true,
+  "context_session_count": 0,
+  "trials_requested": 1,
+  "valid_trials": 1,
+  "target_positive_count": 0,
+  "target_false_positive_rate": 0.0,
+  "pass": true,
+  "attempts": [
+    {
+      "trial": 1,
+      "status": "valid",
+      "target_asserted": false,
+      "response": {
+        "mode": "withhold",
+        "answer": "I don’t have any visible context about the hot desk, Tuesday’s arrangements, or the bargaining brief, so I can’t say why you should decline it.",
+        "evidence_session_ids": []
+      },
+      "solver_usage": {
+        "input_tokens": 173,
+        "output_tokens": 78,
+        "reasoning_tokens": null,
+        "total_tokens": 251
+      },
+      "validator": {
+        "target_asserted": false,
+        "target_evidence_grounded": false,
+        "evidence_usage": {
+          "ev_A_used": false,
+          "ev_B_used": false,
+          "h_k": 0,
+          "source_misattribution": false
+        },
+        "abstention": {
+          "abstains": true,
+          "asserts_absent_pattern": false
+        },
+        "condition_correct": true,
+        "failure_tags": [],
+        "reason": "The expected mode is withhold_C because no memory evidence was visible (allowed_evidence_ids is empty). The solver correctly recognized the absence of visible context, explicitly abstained from asserting the target proposition (that the user should decline the hot desk unless a quiet drafting room is secured), cited no evidence, and set mode to withhold. No original target facts exist in the visible conversation, so h_k is 0 and neither ev_A nor ev_B was used. There is no source misattribution and no assertion of an unsupported pattern. The abstention does not assert the opposite arrangement, so the withhold_C condition is fully satisfied."
+      },
+      "validator_usage": {
+        "input_tokens": 672,
+        "output_tokens": 430,
+        "reasoning_tokens": null,
+        "total_tokens": 1102
+      }
+    }
+  ]
+}

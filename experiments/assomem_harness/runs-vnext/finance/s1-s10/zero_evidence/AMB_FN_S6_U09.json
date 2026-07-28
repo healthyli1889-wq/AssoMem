@@ -1,0 +1,53 @@
+{
+  "check": "zero_evidence",
+  "candidate_id": "AMB_FN_S6_U09_associative",
+  "pair_id": "AMB_FN_S6_U09",
+  "query_only": true,
+  "context_session_count": 0,
+  "trials_requested": 1,
+  "valid_trials": 1,
+  "target_positive_count": 0,
+  "target_false_positive_rate": 0.0,
+  "pass": true,
+  "attempts": [
+    {
+      "trial": 1,
+      "status": "valid",
+      "target_asserted": false,
+      "response": {
+        "mode": "withhold",
+        "answer": "I don’t have enough visible information to determine whether you have enough to chip into the hallway pot today.",
+        "evidence_session_ids": []
+      },
+      "solver_usage": {
+        "input_tokens": 177,
+        "output_tokens": 74,
+        "reasoning_tokens": null,
+        "total_tokens": 251
+      },
+      "validator": {
+        "target_asserted": false,
+        "target_evidence_grounded": false,
+        "evidence_usage": {
+          "ev_A_used": false,
+          "ev_B_used": false,
+          "h_k": 0,
+          "source_misattribution": false
+        },
+        "abstention": {
+          "abstains": true,
+          "asserts_absent_pattern": false
+        },
+        "condition_correct": true,
+        "failure_tags": [],
+        "reason": "The solver correctly withheld: no memory evidence was visible in the conversation, it did not assert the target deferral proposition (it only stated it could not determine the answer from visible information, which is abstention rather than asserting the target or its opposite), and it cited no evidence outside the empty allowed set. This satisfies withhold_C."
+      },
+      "validator_usage": {
+        "input_tokens": 675,
+        "output_tokens": 1383,
+        "reasoning_tokens": null,
+        "total_tokens": 2058
+      }
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "check": "zero_evidence",
+  "candidate_id": "AMB_WV_S19_U02_associative",
+  "pair_id": "AMB_WV_S19_U02",
+  "query_only": true,
+  "context_session_count": 0,
+  "trials_requested": 1,
+  "valid_trials": 1,
+  "target_positive_count": 0,
+  "target_false_positive_rate": 0.0,
+  "pass": true,
+  "attempts": [
+    {
+      "trial": 1,
+      "status": "valid",
+      "target_asserted": false,
+      "response": {
+        "mode": "withhold",
+        "answer": "I don’t have visible information about the goals, attendees, urgency, or outcomes of either meeting, so I can’t recommend one over the other.",
+        "evidence_session_ids": []
+      },
+      "solver_usage": {
+        "input_tokens": 185,
+        "output_tokens": 67,
+        "reasoning_tokens": null,
+        "total_tokens": 252
+      },
+      "validator": {
+        "target_asserted": false,
+        "target_evidence_grounded": false,
+        "evidence_usage": {
+          "ev_A_used": false,
+          "ev_B_used": false,
+          "h_k": 0,
+          "source_misattribution": false
+        },
+        "abstention": {
+          "abstains": true,
+          "asserts_absent_pattern": false
+        },
+        "condition_correct": true,
+        "failure_tags": [],
+        "reason": "The solver correctly withheld: it made no recommendation between the two options, asserted neither the target proposition nor its opposite, and cited no evidence (matching the empty allowed_evidence_ids and empty visible context). The mode 'withhold' matches the expected withhold_C condition, and the stated reason (no visible information about either meeting) is an appropriate abstention rather than a claim about an absent pattern."
+      },
+      "validator_usage": {
+        "input_tokens": 686,
+        "output_tokens": 703,
+        "reasoning_tokens": null,
+        "total_tokens": 1389
+      }
+    }
+  ]
+}

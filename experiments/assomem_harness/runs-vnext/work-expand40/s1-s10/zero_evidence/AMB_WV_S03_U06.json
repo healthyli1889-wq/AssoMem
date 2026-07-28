@@ -1,0 +1,53 @@
+{
+  "check": "zero_evidence",
+  "candidate_id": "AMB_WV_S03_U06_associative",
+  "pair_id": "AMB_WV_S03_U06",
+  "query_only": true,
+  "context_session_count": 0,
+  "trials_requested": 1,
+  "valid_trials": 1,
+  "target_positive_count": 0,
+  "target_false_positive_rate": 0.0,
+  "pass": true,
+  "attempts": [
+    {
+      "trial": 1,
+      "status": "valid",
+      "target_asserted": false,
+      "response": {
+        "mode": "withhold",
+        "answer": "I don’t have any visible record of your hallway-duty request, grading-month workload, or the deputy’s reaction, so I can’t say what explains it.",
+        "evidence_session_ids": []
+      },
+      "solver_usage": {
+        "input_tokens": 177,
+        "output_tokens": 73,
+        "reasoning_tokens": null,
+        "total_tokens": 250
+      },
+      "validator": {
+        "target_asserted": false,
+        "target_evidence_grounded": false,
+        "evidence_usage": {
+          "ev_A_used": false,
+          "ev_B_used": false,
+          "h_k": 0,
+          "source_misattribution": false
+        },
+        "abstention": {
+          "abstains": true,
+          "asserts_absent_pattern": false
+        },
+        "condition_correct": true,
+        "failure_tags": [],
+        "reason": "The solver correctly withheld: with an empty visible context, it declined to explain the swap request, cited no evidence, and did not assert the target proposition (interrupted grading drifting marks, prevented by sealed-session grading). Its answer notes the absence of records without asserting the opposite arrangement or any absent pattern, and evidence_session_ids is empty, consistent with allowed_evidence_ids. This matches the expected withhold_C condition."
+      },
+      "validator_usage": {
+        "input_tokens": 681,
+        "output_tokens": 483,
+        "reasoning_tokens": null,
+        "total_tokens": 1164
+      }
+    }
+  ]
+}

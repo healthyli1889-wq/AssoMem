@@ -1,0 +1,53 @@
+{
+  "check": "zero_evidence",
+  "candidate_id": "AMB_FN_S8_U02_associative",
+  "pair_id": "AMB_FN_S8_U02",
+  "query_only": true,
+  "context_session_count": 0,
+  "trials_requested": 1,
+  "valid_trials": 1,
+  "target_positive_count": 0,
+  "target_false_positive_rate": 0.0,
+  "pass": true,
+  "attempts": [
+    {
+      "trial": 1,
+      "status": "valid",
+      "target_asserted": false,
+      "response": {
+        "mode": "withhold",
+        "answer": "I can’t rank those options because no visible conversation evidence provides the relevant amounts, obligations, or priorities.",
+        "evidence_session_ids": []
+      },
+      "solver_usage": {
+        "input_tokens": 168,
+        "output_tokens": 69,
+        "reasoning_tokens": null,
+        "total_tokens": 237
+      },
+      "validator": {
+        "target_asserted": false,
+        "target_evidence_grounded": false,
+        "evidence_usage": {
+          "ev_A_used": false,
+          "ev_B_used": false,
+          "h_k": 0,
+          "source_misattribution": false
+        },
+        "abstention": {
+          "abstains": true,
+          "asserts_absent_pattern": false
+        },
+        "condition_correct": true,
+        "failure_tags": [],
+        "reason": "The solver correctly withheld a ranking, stating that no visible evidence supports the relevant amounts, obligations, or priorities. This matches the expected withhold_C condition: the target proposition (rank protecting the tax reserve above the split-pay gift) was not asserted, no evidence absent from the empty allowed_evidence_ids was used, and the abstention did not assert the opposite arrangement. No failure modes apply."
+      },
+      "validator_usage": {
+        "input_tokens": 657,
+        "output_tokens": 560,
+        "reasoning_tokens": null,
+        "total_tokens": 1217
+      }
+    }
+  ]
+}

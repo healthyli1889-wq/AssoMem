@@ -1,0 +1,53 @@
+{
+  "check": "zero_evidence",
+  "candidate_id": "AMB_FN_S2_U06_associative",
+  "pair_id": "AMB_FN_S2_U06",
+  "query_only": true,
+  "context_session_count": 0,
+  "trials_requested": 1,
+  "valid_trials": 1,
+  "target_positive_count": 0,
+  "target_false_positive_rate": 0.0,
+  "pass": true,
+  "attempts": [
+    {
+      "trial": 1,
+      "status": "valid",
+      "target_asserted": false,
+      "response": {
+        "mode": "withhold",
+        "answer": "I can’t assess whether the sprint is worth joining or whether you should change your protective plan, because no information about your history, goals, risk limits, or the plan’s results is available here. In general, avoid letting promotional hype override a risk-management approach you have validated for yourself without reviewing the specific rules and downside exposure.",
+        "evidence_session_ids": []
+      },
+      "solver_usage": {
+        "input_tokens": 182,
+        "output_tokens": 117,
+        "reasoning_tokens": null,
+        "total_tokens": 299
+      },
+      "validator": {
+        "target_asserted": false,
+        "target_evidence_grounded": false,
+        "evidence_usage": {
+          "ev_A_used": false,
+          "ev_B_used": false,
+          "h_k": 0,
+          "source_misattribution": false
+        },
+        "abstention": {
+          "abstains": true,
+          "asserts_absent_pattern": false
+        },
+        "condition_correct": true,
+        "failure_tags": [],
+        "reason": "Expected mode is withhold_C with no visible evidence. The solver explicitly abstained ('I can't assess...'), cited no evidence sessions, and used no facts absent from allowed_evidence_ids (which is empty). The closing sentence is generic risk-management advice, not an assertion of the target proposition grounded in the user's episodes, so it does not count as asserting the target. No source misattribution and no fabricated pattern. Withhold condition satisfied."
+      },
+      "validator_usage": {
+        "input_tokens": 731,
+        "output_tokens": 630,
+        "reasoning_tokens": null,
+        "total_tokens": 1361
+      }
+    }
+  ]
+}

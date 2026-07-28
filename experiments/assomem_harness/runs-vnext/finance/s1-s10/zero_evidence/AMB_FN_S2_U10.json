@@ -1,0 +1,53 @@
+{
+  "check": "zero_evidence",
+  "candidate_id": "AMB_FN_S2_U10_associative",
+  "pair_id": "AMB_FN_S2_U10",
+  "query_only": true,
+  "context_session_count": 0,
+  "trials_requested": 1,
+  "valid_trials": 1,
+  "target_positive_count": 0,
+  "target_false_positive_rate": 0.0,
+  "pass": true,
+  "attempts": [
+    {
+      "trial": 1,
+      "status": "valid",
+      "target_asserted": false,
+      "response": {
+        "mode": "withhold",
+        "answer": "I don’t have any visible information about your trading history, risk tolerance, or the protective plan you’ve found effective, so I can’t assess whether joining the cohort challenge fits your situation. Be cautious about changing a risk-managed approach based on promotional hype.",
+        "evidence_session_ids": []
+      },
+      "solver_usage": {
+        "input_tokens": 181,
+        "output_tokens": 99,
+        "reasoning_tokens": null,
+        "total_tokens": 280
+      },
+      "validator": {
+        "target_asserted": false,
+        "target_evidence_grounded": false,
+        "evidence_usage": {
+          "ev_A_used": false,
+          "ev_B_used": false,
+          "h_k": 0,
+          "source_misattribution": false
+        },
+        "abstention": {
+          "abstains": true,
+          "asserts_absent_pattern": false
+        },
+        "condition_correct": true,
+        "failure_tags": [],
+        "reason": "No memory/context evidence was visible and allowed_evidence_ids is empty. The solver correctly withheld: it stated it lacks visible information about the user's history/plan, did not assert the target proposition (that the A+B protective plan is supported by episodes), cited no evidence, and set mode to withhold. The generic caution about promotional hype does not assert the absent A+B pattern nor use removed evidence, so the withhold_C condition is satisfied."
+      },
+      "validator_usage": {
+        "input_tokens": 716,
+        "output_tokens": 990,
+        "reasoning_tokens": null,
+        "total_tokens": 1706
+      }
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "check": "zero_evidence",
+  "candidate_id": "AMB_FN_S4_U01_associative",
+  "pair_id": "AMB_FN_S4_U01",
+  "query_only": true,
+  "context_session_count": 0,
+  "trials_requested": 1,
+  "valid_trials": 1,
+  "target_positive_count": 0,
+  "target_false_positive_rate": 0.0,
+  "pass": true,
+  "attempts": [
+    {
+      "trial": 1,
+      "status": "valid",
+      "target_asserted": false,
+      "response": {
+        "mode": "withhold",
+        "answer": "I don’t have visible context about the desk, the proposed blitz, or fit criteria, so I can’t assess whether it is a good fit.",
+        "evidence_session_ids": []
+      },
+      "solver_usage": {
+        "input_tokens": 164,
+        "output_tokens": 67,
+        "reasoning_tokens": null,
+        "total_tokens": 231
+      },
+      "validator": {
+        "target_asserted": false,
+        "target_evidence_grounded": false,
+        "evidence_usage": {
+          "ev_A_used": false,
+          "ev_B_used": false,
+          "h_k": 0,
+          "source_misattribution": false
+        },
+        "abstention": {
+          "abstains": true,
+          "asserts_absent_pattern": false
+        },
+        "condition_correct": true,
+        "failure_tags": [],
+        "reason": "The visible conversation contained an empty context, so no evidence supported the target proposition (that the blitz is a poor fit given used Roth room and prior failed dual-wrapper sprints). The solver correctly abstained, asserting neither the target nor its opposite, cited no evidence, and used no facts absent from allowed_evidence_ids. This matches the withhold_C condition: no target assertion and no disallowed evidence use."
+      },
+      "validator_usage": {
+        "input_tokens": 680,
+        "output_tokens": 621,
+        "reasoning_tokens": null,
+        "total_tokens": 1301
+      }
+    }
+  ]
+}

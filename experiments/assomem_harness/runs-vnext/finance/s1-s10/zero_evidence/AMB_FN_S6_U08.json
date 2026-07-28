@@ -1,0 +1,53 @@
+{
+  "check": "zero_evidence",
+  "candidate_id": "AMB_FN_S6_U08_associative",
+  "pair_id": "AMB_FN_S6_U08",
+  "query_only": true,
+  "context_session_count": 0,
+  "trials_requested": 1,
+  "valid_trials": 1,
+  "target_positive_count": 0,
+  "target_false_positive_rate": 0.0,
+  "pass": true,
+  "attempts": [
+    {
+      "trial": 1,
+      "status": "valid",
+      "target_asserted": false,
+      "response": {
+        "mode": "withhold",
+        "answer": "I don’t have any visible information about how you run money, the specific ask, the licensure requirements, or the peer tip lockup terms, so I can’t responsibly rank them. In general, compare hard deadlines and penalties, regulatory or income consequences of delayed licensure, lockup duration and liquidity needs, and whether the lockup fits your stated risk and cash-reserve rules.",
+        "evidence_session_ids": []
+      },
+      "solver_usage": {
+        "input_tokens": 184,
+        "output_tokens": 116,
+        "reasoning_tokens": null,
+        "total_tokens": 300
+      },
+      "validator": {
+        "target_asserted": false,
+        "target_evidence_grounded": false,
+        "evidence_usage": {
+          "ev_A_used": false,
+          "ev_B_used": false,
+          "h_k": 0,
+          "source_misattribution": false
+        },
+        "abstention": {
+          "abstains": true,
+          "asserts_absent_pattern": false
+        },
+        "condition_correct": true,
+        "failure_tags": [],
+        "reason": "The visible conversation contains no memory evidence (empty context), so the target proposition about E1/E2 cash timing and licensure-before-lockup ordering cannot be grounded. The solver correctly withheld: it stated it lacked visible information, declined to rank, cited no evidence sessions, and set mode to 'withhold'. Its generic comparison criteria (deadlines, penalties, liquidity, risk rules) are generic advice, not an assertion of the hidden target pattern, and it did not fabricate or misattribute evidence. For withhold_C, condition_correct requires no target assertion and no use of disallowed evidence; both are satisfied."
+      },
+      "validator_usage": {
+        "input_tokens": 744,
+        "output_tokens": 590,
+        "reasoning_tokens": null,
+        "total_tokens": 1334
+      }
+    }
+  ]
+}

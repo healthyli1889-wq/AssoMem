@@ -1,0 +1,93 @@
+{
+  "generated_at": "2026-07-28",
+  "definition": {
+    "REA": "binary_correct on FULL (infer_C); vNext rea field is broken/always 0",
+    "DELTA_MEM": "FULL_binary - max(A-only_binary, B-only_binary); ablation gold is withhold_C",
+    "DELTA_ASSOC": "FULL_binary - link_broken_binary; link_broken gold is withhold_C",
+    "JER": "mean(jer) on FULL; jer := 1[h_k >= 2]",
+    "DIR": "among FULL binary=1, 1[distractor binary=1 and distractor jer == full jer]",
+    "CI": "Wilson 95% for rates; paired bootstrap 95% for deltas (scoring.paired_delta_ci, 10000 draws)"
+  },
+  "accuracy_checks": {
+    "each_split_scored_trials": 240,
+    "each_split_complete_items": 40,
+    "binary_recon_mismatches": [0, 0, 0],
+    "jer_vs_hk_mismatches": [0, 0, 0]
+  },
+  "splits": [
+    {
+      "split": "S1-S10",
+      "run_id": "work-vnext-s1-s10-expand40-20260726",
+      "N_items": 40,
+      "metrics": {
+        "REA_FULL": {"mean": 1.0, "ci95": [0.912, 1.0], "display": "100.0% [91.2, 100.0]"},
+        "DELTA_MEM": {"mean": 0.70, "ci95": [0.55, 0.825], "display": "70.0% [55.0, 82.5] ✓"},
+        "DELTA_ASSOC": {"mean": 0.70, "ci95": [0.55, 0.825], "display": "70.0% [55.0, 82.5] ✓"},
+        "JER_FULL": {"mean": 0.875, "ci95": [0.739, 0.945], "display": "87.5% [73.9, 94.5]"},
+        "DIR": {"mean": 0.95, "ci95": [0.835, 0.986], "display": "95.0% [83.5, 98.6]"}
+      },
+      "arm_binary_correct": {
+        "full": "100.0% [91.2, 100.0]",
+        "a_only": "27.5% [16.1, 42.8]",
+        "b_only": "10.0% [4.0, 23.1]",
+        "link_broken": "30.0% [18.1, 45.4]",
+        "distractor": "97.5% [87.1, 99.6]",
+        "absence": "75.0% [59.8, 85.8]",
+        "AbC": "42.5% [28.5, 57.8]"
+      }
+    },
+    {
+      "split": "S11-S15",
+      "run_id": "work-vnext-s11-s15-expand40-20260726",
+      "N_items": 40,
+      "metrics": {
+        "REA_FULL": {"mean": 0.80, "ci95": [0.652, 0.895], "display": "80.0% [65.2, 89.5]"},
+        "DELTA_MEM": {"mean": 0.425, "ci95": [0.20, 0.65], "display": "42.5% [20.0, 65.0] ✓"},
+        "DELTA_ASSOC": {"mean": 0.625, "ci95": [0.40, 0.825], "display": "62.5% [40.0, 82.5] ✓"},
+        "JER_FULL": {"mean": 0.575, "ci95": [0.422, 0.715], "display": "57.5% [42.2, 71.5]"},
+        "DIR": {"mean": 0.719, "ci95": [0.546, 0.844], "display": "71.9% [54.6, 84.4]"}
+      },
+      "arm_binary_correct": {
+        "full": "80.0% [65.2, 89.5]",
+        "a_only": "22.5% [12.3, 37.5]",
+        "b_only": "27.5% [16.1, 42.8]",
+        "link_broken": "17.5% [8.7, 31.9]",
+        "distractor": "82.5% [68.1, 91.3]",
+        "absence": "87.5% [73.9, 94.5]",
+        "AbC": "75.0% [59.8, 85.8]"
+      }
+    },
+    {
+      "split": "S16-S20",
+      "run_id": "work-vnext-s16-s20-expand40-20260726",
+      "N_items": 40,
+      "metrics": {
+        "REA_FULL": {"mean": 0.925, "ci95": [0.801, 0.974], "display": "92.5% [80.1, 97.4]"},
+        "DELTA_MEM": {"mean": 0.25, "ci95": [0.075, 0.425], "display": "25.0% [7.5, 42.5] ✓"},
+        "DELTA_ASSOC": {"mean": 0.275, "ci95": [0.10, 0.45], "display": "27.5% [10.0, 45.0] ✓"},
+        "JER_FULL": {"mean": 0.825, "ci95": [0.681, 0.913], "display": "82.5% [68.1, 91.3]"},
+        "DIR": {"mean": 0.892, "ci95": [0.753, 0.957], "display": "89.2% [75.3, 95.7]"}
+      },
+      "arm_binary_correct": {
+        "full": "92.5% [80.1, 97.4]",
+        "a_only": "52.5% [37.5, 67.1]",
+        "b_only": "60.0% [44.6, 73.7]",
+        "link_broken": "65.0% [49.5, 77.9]",
+        "distractor": "90.0% [76.9, 96.0]",
+        "absence": "77.5% [62.5, 87.7]",
+        "AbC": "42.5% [28.5, 57.8]"
+      }
+    }
+  ],
+  "pooled": {
+    "N_items": 120,
+    "N_trials": 720,
+    "metrics": {
+      "REA_FULL": "90.8% [84.3, 94.8]",
+      "DELTA_MEM": "45.8% [34.2, 56.7] ✓",
+      "DELTA_ASSOC": "53.3% [42.5, 64.2] ✓",
+      "JER_FULL": "75.8% [67.4, 82.6]",
+      "DIR": "86.2% [78.5, 91.5]"
+    }
+  }
+}

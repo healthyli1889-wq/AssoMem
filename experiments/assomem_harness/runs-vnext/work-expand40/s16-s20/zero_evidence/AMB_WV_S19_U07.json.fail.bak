@@ -1,0 +1,37 @@
+{
+  "check": "zero_evidence",
+  "candidate_id": "AMB_WV_S19_U07_associative",
+  "pair_id": "AMB_WV_S19_U07",
+  "query_only": true,
+  "context_session_count": 0,
+  "trials_requested": 1,
+  "valid_trials": 0,
+  "target_positive_count": 0,
+  "target_false_positive_rate": 1.0,
+  "pass": false,
+  "attempts": [
+    {
+      "trial": 1,
+      "status": "invalid_validator_response",
+      "error": "validator response has missing or unexpected top-level fields",
+      "response": {
+        "mode": "withhold",
+        "answer": "I don’t have visible information about the partnership office’s authority, required records, or your role. A cautious reply would be: “Thanks for the invitation. Before I confirm, could you clarify the escalation hour’s decision authority, expected attendees, and any record-keeping or documentation requirements? Once those are confirmed, I can determine the appropriate participation and RSVP.”",
+        "evidence_session_ids": []
+      },
+      "validator": {},
+      "solver_usage": {
+        "input_tokens": 184,
+        "output_tokens": 93,
+        "reasoning_tokens": null,
+        "total_tokens": 277
+      },
+      "validator_usage": {
+        "input_tokens": 720,
+        "output_tokens": 1024,
+        "reasoning_tokens": null,
+        "total_tokens": 1744
+      }
+    }
+  ]
+}

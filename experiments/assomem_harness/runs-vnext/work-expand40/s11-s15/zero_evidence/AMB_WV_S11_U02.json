@@ -1,0 +1,53 @@
+{
+  "check": "zero_evidence",
+  "candidate_id": "AMB_WV_S11_U02_associative",
+  "pair_id": "AMB_WV_S11_U02",
+  "query_only": true,
+  "context_session_count": 0,
+  "trials_requested": 1,
+  "valid_trials": 1,
+  "target_positive_count": 0,
+  "target_false_positive_rate": 0.0,
+  "pass": true,
+  "attempts": [
+    {
+      "trial": 1,
+      "status": "valid",
+      "target_asserted": false,
+      "response": {
+        "mode": "withhold",
+        "answer": "I don’t have any visible context about your workplace expectations, the offsite’s importance, or your overnight coverage obligations, so I can’t recommend a specific response. You could ask Facilities for the agenda, expected attendance, and whether your overnight cancellation-list coverage affects your availability, then respond based on your capacity and manager’s guidance.",
+        "evidence_session_ids": []
+      },
+      "solver_usage": {
+        "input_tokens": 175,
+        "output_tokens": 86,
+        "reasoning_tokens": null,
+        "total_tokens": 261
+      },
+      "validator": {
+        "target_asserted": false,
+        "target_evidence_grounded": false,
+        "evidence_usage": {
+          "ev_A_used": false,
+          "ev_B_used": false,
+          "h_k": 0,
+          "source_misattribution": false
+        },
+        "abstention": {
+          "abstains": true,
+          "asserts_absent_pattern": false
+        },
+        "condition_correct": true,
+        "failure_tags": [],
+        "reason": "The expected condition is withhold_C. The solver explicitly states it lacks visible context and declines to recommend a specific response, sets mode to withhold, and cites no evidence session ids. It does not assert the target proposition (requesting a different attendance window); it only neutrally suggests gathering agenda/attendance/availability information. With allowed_evidence_ids empty and no evidence used, the withhold condition is satisfied."
+      },
+      "validator_usage": {
+        "input_tokens": 707,
+        "output_tokens": 951,
+        "reasoning_tokens": null,
+        "total_tokens": 1658
+      }
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "check": "zero_evidence",
+  "candidate_id": "AMB_WV_S18_U09_associative",
+  "pair_id": "AMB_WV_S18_U09",
+  "query_only": true,
+  "context_session_count": 0,
+  "trials_requested": 1,
+  "valid_trials": 1,
+  "target_positive_count": 0,
+  "target_false_positive_rate": 0.0,
+  "pass": true,
+  "attempts": [
+    {
+      "trial": 1,
+      "status": "valid",
+      "target_asserted": false,
+      "response": {
+        "mode": "withhold",
+        "answer": "I don’t have any visible conversation evidence explaining the rationale for protected review hours versus handling routine queue messages throughout, so I can’t provide a supported answer.",
+        "evidence_session_ids": []
+      },
+      "solver_usage": {
+        "input_tokens": 171,
+        "output_tokens": 52,
+        "reasoning_tokens": null,
+        "total_tokens": 223
+      },
+      "validator": {
+        "target_asserted": false,
+        "target_evidence_grounded": false,
+        "evidence_usage": {
+          "ev_A_used": false,
+          "ev_B_used": false,
+          "h_k": 0,
+          "source_misattribution": false
+        },
+        "abstention": {
+          "abstains": true,
+          "asserts_absent_pattern": false
+        },
+        "condition_correct": true,
+        "failure_tags": [],
+        "reason": "The solver correctly withholds the target proposition because no supporting evidence is visible, and it does not use any disallowed evidence or assert the opposite arrangement."
+      },
+      "validator_usage": {
+        "input_tokens": 670,
+        "output_tokens": 327,
+        "reasoning_tokens": null,
+        "total_tokens": 997
+      }
+    }
+  ]
+}
