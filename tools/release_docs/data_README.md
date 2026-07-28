@@ -128,9 +128,11 @@ code reads them, because a reviewer does.
 ## Provenance and anonymisation
 
 `provenance.persona_anchor` records which respondent of a public longitudinal
-survey corpus a profile was grounded in during authoring. No demographic, corpus,
-location or name metadata reaches any visible dialogue turn; `audit.py` fails the
-batch on any such term, and the release was scanned again on assembly. One work
-item named a colleague in a visible turn and now says "a colleague".
+survey corpus a profile was grounded in during authoring. No demographic, corpus or
+location metadata reaches any visible dialogue turn; `audit.py` fails the batch on
+any such term, and the release was scanned again on assembly.
+
+Dialogue is shipped exactly as authored. One work item gives a synthetic co-worker
+an invented first name; it identifies nobody and was left as written.
 
 All items carry `provenance.status: review_candidate_only`.

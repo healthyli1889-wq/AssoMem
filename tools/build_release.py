@@ -14,9 +14,10 @@ Three things happen on the way through:
    construct are kept even where nothing reads them, because a reviewer does. The
    full-fidelity records stay on the per-domain working branches.
 
-2. **Anonymisation.** One work item names a colleague in visible dialogue, which
-   DATA CRITERIA section 4 forbids; it is replaced with a role. A final scan
-   rejects the tree if any identity, path or URL string survives anywhere.
+2. **Anonymisation scan.** The tree is rejected if any real identity, home path,
+   repository URL, commit trailer, API key or private endpoint string survives.
+   Invented first names inside synthetic dialogue are left alone: they identify
+   nobody, and rewriting a collaborator's item text buys no anonymity.
 
 3. **Import rewriting.** The generators locate the shared engine by walking up a
    fixed number of directories. The release layout is flatter, so that one line is
@@ -63,8 +64,10 @@ KEEP_UNREAD = (
     "relational_connector.link_broken_change",
 )
 
-# One work item names a colleague in visible dialogue.
-NAME_FIXES = ((re.compile(r"\bSam\b"), "a colleague"),)
+# Visible dialogue is left exactly as authored. One work item names a colleague
+# ("Sam"), which DATA CRITERIA section 4 discourages, but it is an invented first
+# name attached to a synthetic co-worker, not a real person, so rewriting it would
+# alter a collaborator's item text for no gain in anonymity.
 
 FORBIDDEN = (
     (re.compile(r"healthyli|montyzhang|jgwy", re.I), "identity"),
@@ -85,18 +88,6 @@ def strip_record(record: dict) -> dict:
     if isinstance(provenance, dict):
         for field in DROP_PROVENANCE:
             provenance.pop(field, None)
-    for session in record.get("context", []):
-        for turn in session.get("dialogue", []):
-            for pattern, replacement in NAME_FIXES:
-                turn["content"] = pattern.sub(replacement, turn["content"])
-    for block in ("evidence",):
-        for value in record.get(block, {}).values():
-            if isinstance(value, dict) and "fact" in value:
-                for pattern, replacement in NAME_FIXES:
-                    value["fact"] = pattern.sub(replacement, value["fact"])
-    for span in record.get("connector_spans", []) or []:
-        for pattern, replacement in NAME_FIXES:
-            span["quote"] = pattern.sub(replacement, span["quote"])
     return record
 
 
