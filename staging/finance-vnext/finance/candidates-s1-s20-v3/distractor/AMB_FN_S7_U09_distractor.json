@@ -1,0 +1,577 @@
+{
+  "schema_version": "finance-vnext-3.0",
+  "pair_id": "AMB_FN_S7_U09",
+  "domain": "finance",
+  "user_id": "finance_s7_u09",
+  "sub_scenario": {
+    "family": "keeping a buffer in the current account versus sweeping it nearly empty",
+    "role": "student living on a part-time income",
+    "bridge_type": "threshold_context_interaction",
+    "one_line": "student living on a part-time income: helps when the balance is low enough to read as a limit rather than a cushion, not otherwise"
+  },
+  "query_type": "predicted_reaction",
+  "polarity": "conditional",
+  "query": "thinking of sweeping the balance across and staying low, for staying inside what I planned — if I go ahead with it, how does it actually go for me, and if the answer depends on something, on what?",
+  "convention_contradicted": "Keep a healthy buffer in your current account so you never go overdrawn.",
+  "retrieval_cue": {
+    "cue_type": "predicted_reaction",
+    "why_it_naturally_retrieves_R": "A how-much-should-I-leave-in question runs at the balance threshold this user's restraint depends on, without naming it."
+  },
+  "relation_specificity": {
+    "nearby_relation": "This user's balance runs high and low at different times.",
+    "why_it_does_not_license_C": "A tight week between paydays and a large balance held for a planned purchase both passed unremarkably: neither is a sustained low balance, and neither says which months this user actually stayed inside the plan."
+  },
+  "latent_C": {
+    "inference": "For staying inside what I planned, sweeping the balance across and staying low helps this user when the balance is low enough to read as a limit rather than a cushion, and not otherwise.",
+    "calibrated_language": "helps when the balance is low enough to read as a limit rather than a cushion, not otherwise"
+  },
+  "answer_contract": {
+    "target_proposition": "For staying inside what I planned, sweeping the balance across and staying low helps this user when the balance is low enough to read as a limit rather than a cushion, and not otherwise.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "mq_user40",
+    "external_folder_tag": "user40",
+    "external_source": "memoryquest",
+    "status": "review_candidate_only",
+    "tone": "natural_chat_v1",
+    "voice": "observant, understated",
+    "anonymization": "External MemoryQuest persona material was used only during authoring; no corpus, legal name, country, or demographic metadata is in visible dialogue."
+  },
+  "candidate_id": "AMB_FN_S7_U09_distractor",
+  "data_arm": "distractor",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2030-12-23T11:00:00Z",
+      "speaker_id": "finance_s7_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "declined an upgrade offer over the phone."
+        },
+        {
+          "role": "assistant",
+          "content": "hard?"
+        },
+        {
+          "role": "user",
+          "content": "harder than it should be."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2030-12-24T14:00:00Z",
+      "speaker_id": "finance_s7_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "worked out I've paid for something twice for two months."
+        },
+        {
+          "role": "assistant",
+          "content": "sorted?"
+        },
+        {
+          "role": "user",
+          "content": "one email in."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2030-12-25T16:00:00Z",
+      "speaker_id": "finance_s7_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "took cash out and then used the card anyway."
+        },
+        {
+          "role": "assistant",
+          "content": "why?"
+        },
+        {
+          "role": "user",
+          "content": "no explanation available."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2030-12-26T18:00:00Z",
+      "speaker_id": "finance_s7_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "had a low balance for a week between paydays. uneventful."
+        },
+        {
+          "role": "assistant",
+          "content": "tight?"
+        },
+        {
+          "role": "user",
+          "content": "briefly."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2030-12-27T09:00:00Z",
+      "speaker_id": "finance_s7_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "read the terms properly before signing up. once."
+        },
+        {
+          "role": "assistant",
+          "content": "worth it?"
+        },
+        {
+          "role": "user",
+          "content": "it was, actually."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2030-12-28T11:00:00Z",
+      "speaker_id": "finance_s7_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "had a large amount sitting there before a planned purchase."
+        },
+        {
+          "role": "assistant",
+          "content": "spend it?"
+        },
+        {
+          "role": "user",
+          "content": "on the thing, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2030-12-29T14:00:00Z",
+      "speaker_id": "finance_s7_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "did the shop with a list and stuck to it."
+        },
+        {
+          "role": "assistant",
+          "content": "unusual?"
+        },
+        {
+          "role": "user",
+          "content": "notably."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2030-12-30T16:00:00Z",
+      "speaker_id": "finance_s7_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "past about four hundred sitting in the current account the balance stops reading as a limit. below that I feel every purchase against it."
+        },
+        {
+          "role": "assistant",
+          "content": "a real feeling?"
+        },
+        {
+          "role": "user",
+          "content": "physical, almost. above it the number is just decoration."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2030-12-31T18:00:00Z",
+      "speaker_id": "finance_s7_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "looked at the projection graph and felt nothing."
+        },
+        {
+          "role": "assistant",
+          "content": "nothing?"
+        },
+        {
+          "role": "user",
+          "content": "mild vertigo."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2031-01-01T09:00:00Z",
+      "speaker_id": "finance_s7_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "set aside something small for a thing months away."
+        },
+        {
+          "role": "assistant",
+          "content": "how small?"
+        },
+        {
+          "role": "user",
+          "content": "symbolically small."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2031-01-02T11:00:00Z",
+      "speaker_id": "finance_s7_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "checked three accounts in a row out of habit."
+        },
+        {
+          "role": "assistant",
+          "content": "changed anything?"
+        },
+        {
+          "role": "user",
+          "content": "no."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2031-01-03T14:00:00Z",
+      "speaker_id": "finance_s7_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "worked out the cost per use of something. justified it."
+        },
+        {
+          "role": "assistant",
+          "content": "honestly?"
+        },
+        {
+          "role": "user",
+          "content": "creatively."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2031-01-04T16:00:00Z",
+      "speaker_id": "finance_s7_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the halls group are firm that you should always keep a healthy cushion in the current account."
+        },
+        {
+          "role": "assistant",
+          "content": "always?"
+        },
+        {
+          "role": "user",
+          "content": "they were quite clear about it."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2031-01-05T18:00:00Z",
+      "speaker_id": "finance_s7_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "compared this month to last month and stopped comparing."
+        },
+        {
+          "role": "assistant",
+          "content": "why stop?"
+        },
+        {
+          "role": "user",
+          "content": "self-preservation."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2031-01-06T09:00:00Z",
+      "speaker_id": "finance_s7_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "put a card in a drawer as a strategy."
+        },
+        {
+          "role": "assistant",
+          "content": "working?"
+        },
+        {
+          "role": "user",
+          "content": "so far."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2031-01-07T11:00:00Z",
+      "speaker_id": "finance_s7_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the months I stayed inside what I'd planned were the ones where the account looked nearly empty all the way through. the cushioned months I drifted past every single time."
+        },
+        {
+          "role": "assistant",
+          "content": "every time?"
+        },
+        {
+          "role": "user",
+          "content": "every cushioned month I can find. it's very consistent."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2031-01-08T14:00:00Z",
+      "speaker_id": "finance_s7_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "checked a bill I already knew the amount of."
+        },
+        {
+          "role": "assistant",
+          "content": "why?"
+        },
+        {
+          "role": "user",
+          "content": "hope."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2031-01-09T16:00:00Z",
+      "speaker_id": "finance_s7_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "added up subscriptions on a napkin. stopped at nine."
+        },
+        {
+          "role": "assistant",
+          "content": "there's more?"
+        },
+        {
+          "role": "user",
+          "content": "there's more."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2031-01-10T18:00:00Z",
+      "speaker_id": "finance_s7_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "checked the balance and closed the app again."
+        },
+        {
+          "role": "assistant",
+          "content": "reassuring?"
+        },
+        {
+          "role": "user",
+          "content": "neutral at best."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2031-01-11T09:00:00Z",
+      "speaker_id": "finance_s7_u09",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "thinking of sweeping the balance across and staying low, for staying inside what I planned — if I go ahead with it, how does it actually go for me, and if the answer depends on something, on what?"
+        }
+      ]
+    }
+  ],
+  "evidence": {
+    "ev_A": {
+      "session_id": 8,
+      "owner": "finance_s7_u09",
+      "fact": "past about four hundred sitting in the current account the balance stops reading as a limit. below that I feel every purchase against it."
+    },
+    "ev_B": {
+      "session_id": 16,
+      "owner": "finance_s7_u09",
+      "fact": "the months I stayed inside what I'd planned were the ones where the account looked nearly empty all the way through. the cushioned months I drifted past every single time."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "background_memory"
+    },
+    "4": {
+      "role": "nearby_counterexample"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "nearby_counterexample"
+    },
+    "7": {
+      "role": "background_memory"
+    },
+    "8": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "finance_s7_u09",
+        "context": "months with varying balances in the everyday account",
+        "goal_or_prediction": "keep an eye on spending",
+        "action": "ran the account below about four hundred",
+        "outcome_or_affect": "every purchase registered against the balance"
+      }
+    },
+    "9": {
+      "role": "background_memory"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "distractor",
+      "distractor_id": "dist_1",
+      "why_distractor": "It restates the conventional advice in the user's own feed, so it competes for attention and points at the answer a prior-driven solver already wants to give. It reports other people's confidence rather than any episode of this user's, and says nothing about the relation between session 8 and session 16."
+    },
+    "14": {
+      "role": "background_memory"
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "finance_s7_u09",
+        "context": "months this user did and did not stay inside the plan",
+        "goal_or_prediction": "spend only what was planned",
+        "action": "ran some months cushioned and some nearly empty",
+        "outcome_or_affect": "only the nearly-empty months stayed inside; cushioned ones drifted every time"
+      }
+    },
+    "17": {
+      "role": "background_memory"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "Below about four hundred the balance reads to this user as a limit rather than decoration, and the months they stayed inside their plan were exactly the nearly-empty ones; cushioned months drifted every time.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": []
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 8,
+      "quote": "past about four hundred sitting in the current account the balance stops reading as a limit. below that I feel every purchase against it"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 16,
+      "quote": "the months I stayed inside what I'd planned were the ones where the account looked nearly empty all the way through. the cushioned months I drifted past every single time"
+    }
+  ],
+  "coactivation_bridge": "ev_A and ev_B are the only pair that licenses the target proposition. Below about four hundred the balance reads to this user as a limit rather than decoration, and the months they stayed inside their plan were exactly the nearly-empty ones; cushioned months drifted every time. The proposition contradicts the convention a solver would otherwise apply (\"Keep a healthy buffer in your current account so you never go overdrawn.\"), so priors alone point the other way. The nearby relation (This user's balance runs high and low at different times.) does not license it.",
+  "arm_gold": {
+    "distractor": {
+      "expected_mode": "infer_C",
+      "binary_decision": true,
+      "required_elements": [
+        "answer yes",
+        "connect the session 8 pattern with the session 16 episode",
+        "cite both session 8 and session 16",
+        "not cite session 13 as support"
+      ],
+      "rationale": "The swapped session is query-relevant but non-evidential; the ev_A/ev_B relation is untouched, so the target proposition still holds."
+    }
+  },
+  "distractor_note": {
+    "replaced_session_id": 13,
+    "why_distractor": "It restates the conventional advice in the user's own feed, so it competes for attention and points at the answer a prior-driven solver already wants to give. It reports other people's confidence rather than any episode of this user's, and says nothing about the relation between session 8 and session 16."
+  }
+}

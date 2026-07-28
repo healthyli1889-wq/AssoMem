@@ -1,0 +1,577 @@
+{
+  "schema_version": "finance-vnext-3.0",
+  "pair_id": "AMB_FN_S8_U06",
+  "domain": "finance",
+  "user_id": "finance_s8_u06",
+  "sub_scenario": {
+    "family": "tracking every expense versus setting one rule and not tracking",
+    "role": "student watching every subscription",
+    "bridge_type": "strategy_outcome_contingency",
+    "one_line": "student watching every subscription: do not rely on logging everything properly"
+  },
+  "query_type": "conditional_recommendation",
+  "polarity": "reject",
+  "query": "planning on logging everything properly, for genuinely cutting it — under what conditions should I be saying yes to this?",
+  "convention_contradicted": "Track every expense — you cannot manage what you do not measure.",
+  "retrieval_cue": {
+    "cue_type": "conditional_recommendation",
+    "why_it_naturally_retrieves_R": "A should-I-start-tracking question runs at the register this user's cuts come from, without naming it."
+  },
+  "relation_specificity": {
+    "nearby_relation": "This user has tracked and not tracked at different times.",
+    "why_it_does_not_license_C": "A week logged out of curiosity and a rule abandoned after nine days both passed unremarkably, so neither shows what logging does to the deciding, nor which categories have actually come down."
+  },
+  "latent_C": {
+    "inference": "For genuinely cutting it, logging everything properly is a poor fit for this user.",
+    "calibrated_language": "do not rely on logging everything properly"
+  },
+  "answer_contract": {
+    "target_proposition": "For genuinely cutting it, logging everything properly is a poor fit for this user.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "mq_user25",
+    "external_folder_tag": "user25",
+    "external_source": "memoryquest",
+    "status": "review_candidate_only",
+    "tone": "natural_chat_v1",
+    "voice": "upbeat, casual, uses lowercase",
+    "anonymization": "External MemoryQuest persona material was used only during authoring; no corpus, legal name, country, or demographic metadata is in visible dialogue."
+  },
+  "candidate_id": "AMB_FN_S8_U06_distractor",
+  "data_arm": "distractor",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2031-01-28T11:00:00Z",
+      "speaker_id": "finance_s8_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "added up what the week actually cost. surprising."
+        },
+        {
+          "role": "assistant",
+          "content": "in which direction?"
+        },
+        {
+          "role": "user",
+          "content": "the usual one."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2031-01-29T14:00:00Z",
+      "speaker_id": "finance_s8_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "logged a week's spending out of curiosity."
+        },
+        {
+          "role": "assistant",
+          "content": "revealing?"
+        },
+        {
+          "role": "user",
+          "content": "mildly."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2031-01-30T16:00:00Z",
+      "speaker_id": "finance_s8_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "looked up the price of the same thing in three places."
+        },
+        {
+          "role": "assistant",
+          "content": "difference?"
+        },
+        {
+          "role": "user",
+          "content": "ninety pence."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2031-01-31T18:00:00Z",
+      "speaker_id": "finance_s8_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "once I've logged something it feels dealt with. writing it down is the closure — the decision part quietly stops happening."
+        },
+        {
+          "role": "assistant",
+          "content": "you notice at the time?"
+        },
+        {
+          "role": "user",
+          "content": "never at the time. only looking back at what I let through."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2031-02-01T09:00:00Z",
+      "speaker_id": "finance_s8_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "got a notification about a rate change and ignored it."
+        },
+        {
+          "role": "assistant",
+          "content": "reading it later?"
+        },
+        {
+          "role": "user",
+          "content": "unlikely."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2031-02-02T11:00:00Z",
+      "speaker_id": "finance_s8_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "wrote down what I owe someone so I wouldn't forget."
+        },
+        {
+          "role": "assistant",
+          "content": "will you?"
+        },
+        {
+          "role": "user",
+          "content": "the note will."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2031-02-03T14:00:00Z",
+      "speaker_id": "finance_s8_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "bought lunch out twice and noticed both times."
+        },
+        {
+          "role": "assistant",
+          "content": "noticing help?"
+        },
+        {
+          "role": "user",
+          "content": "not measurably."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2031-02-04T16:00:00Z",
+      "speaker_id": "finance_s8_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "cleared a tiny balance just to see it at zero."
+        },
+        {
+          "role": "assistant",
+          "content": "satisfying?"
+        },
+        {
+          "role": "user",
+          "content": "unreasonably."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2031-02-05T18:00:00Z",
+      "speaker_id": "finance_s8_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "checked the pension statement. understood about half."
+        },
+        {
+          "role": "assistant",
+          "content": "the other half?"
+        },
+        {
+          "role": "user",
+          "content": "next year's problem."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2031-02-06T09:00:00Z",
+      "speaker_id": "finance_s8_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "made a rule about something and then ignored it."
+        },
+        {
+          "role": "assistant",
+          "content": "for long?"
+        },
+        {
+          "role": "user",
+          "content": "about nine days."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2031-02-07T11:00:00Z",
+      "speaker_id": "finance_s8_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "found an old account with eleven pounds in it."
+        },
+        {
+          "role": "assistant",
+          "content": "closing it?"
+        },
+        {
+          "role": "user",
+          "content": "eventually."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2031-02-08T14:00:00Z",
+      "speaker_id": "finance_s8_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "declined an upgrade offer over the phone."
+        },
+        {
+          "role": "assistant",
+          "content": "hard?"
+        },
+        {
+          "role": "user",
+          "content": "harder than it should be."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2031-02-09T16:00:00Z",
+      "speaker_id": "finance_s8_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the categories I've actually cut are ones I never tracked and just made a flat rule about. the meticulously tracked ones have beautiful records and totals that haven't moved in two years."
+        },
+        {
+          "role": "assistant",
+          "content": "haven't moved at all?"
+        },
+        {
+          "role": "user",
+          "content": "within a few pounds. very well documented, though."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2031-02-10T18:00:00Z",
+      "speaker_id": "finance_s8_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "worked out I've paid for something twice for two months."
+        },
+        {
+          "role": "assistant",
+          "content": "sorted?"
+        },
+        {
+          "role": "user",
+          "content": "one email in."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2031-02-11T09:00:00Z",
+      "speaker_id": "finance_s8_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "took cash out and then used the card anyway."
+        },
+        {
+          "role": "assistant",
+          "content": "why?"
+        },
+        {
+          "role": "user",
+          "content": "no explanation available."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2031-02-12T11:00:00Z",
+      "speaker_id": "finance_s8_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "read the terms properly before signing up. once."
+        },
+        {
+          "role": "assistant",
+          "content": "worth it?"
+        },
+        {
+          "role": "user",
+          "content": "it was, actually."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2031-02-13T14:00:00Z",
+      "speaker_id": "finance_s8_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "did the shop with a list and stuck to it."
+        },
+        {
+          "role": "assistant",
+          "content": "unusual?"
+        },
+        {
+          "role": "user",
+          "content": "notably."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2031-02-14T16:00:00Z",
+      "speaker_id": "finance_s8_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the four-person group chat are firm that if you're not tracking it you're not managing it."
+        },
+        {
+          "role": "assistant",
+          "content": "not managing it."
+        },
+        {
+          "role": "user",
+          "content": "that's the line they use."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2031-02-15T18:00:00Z",
+      "speaker_id": "finance_s8_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "set aside something small for a thing months away."
+        },
+        {
+          "role": "assistant",
+          "content": "how small?"
+        },
+        {
+          "role": "user",
+          "content": "symbolically small."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2031-02-16T09:00:00Z",
+      "speaker_id": "finance_s8_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "planning on logging everything properly, for genuinely cutting it — under what conditions should I be saying yes to this?"
+        }
+      ]
+    }
+  ],
+  "evidence": {
+    "ev_A": {
+      "session_id": 4,
+      "owner": "finance_s8_u06",
+      "fact": "once I've logged something it feels dealt with. writing it down is the closure — the decision part quietly stops happening."
+    },
+    "ev_B": {
+      "session_id": 13,
+      "owner": "finance_s8_u06",
+      "fact": "the categories I've actually cut are ones I never tracked and just made a flat rule about. the meticulously tracked ones have beautiful records and totals that haven't moved in two years."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "nearby_counterexample"
+    },
+    "3": {
+      "role": "background_memory"
+    },
+    "4": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "finance_s8_u06",
+        "context": "periods running a spending app",
+        "goal_or_prediction": "keep control by measuring",
+        "action": "recorded each expense as it happened",
+        "outcome_or_affect": "logging became the closure; the deciding stopped"
+      }
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "background_memory"
+    },
+    "7": {
+      "role": "background_memory"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "background_memory"
+    },
+    "10": {
+      "role": "nearby_counterexample"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "finance_s8_u06",
+        "context": "categories this user has and has not cut",
+        "goal_or_prediction": "bring the category down",
+        "action": "tracked some categories and set flat rules for others",
+        "outcome_or_affect": "only the rule-based ones came down; tracked totals unchanged in two years"
+      }
+    },
+    "14": {
+      "role": "background_memory"
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "background_memory"
+    },
+    "18": {
+      "role": "distractor",
+      "distractor_id": "dist_1",
+      "why_distractor": "It restates the conventional advice in the user's own feed, so it competes for attention and points at the answer a prior-driven solver already wants to give. It reports other people's confidence rather than any episode of this user's, and says nothing about the relation between session 4 and session 13."
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "Logging a purchase feels to this user like handling it, so recording quietly replaces deciding, and the categories they have actually cut are the untracked ones governed by a flat rule.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": []
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 4,
+      "quote": "once I've logged something it feels dealt with. writing it down is the closure — the decision part quietly stops happening"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 13,
+      "quote": "the categories I've actually cut are ones I never tracked and just made a flat rule about. the meticulously tracked ones have beautiful records and totals that haven't moved in two years"
+    }
+  ],
+  "coactivation_bridge": "ev_A and ev_B are the only pair that licenses the target proposition. Logging a purchase feels to this user like handling it, so recording quietly replaces deciding, and the categories they have actually cut are the untracked ones governed by a flat rule. The proposition contradicts the convention a solver would otherwise apply (\"Track every expense — you cannot manage what you do not measure.\"), so priors alone point the other way. The nearby relation (This user has tracked and not tracked at different times.) does not license it.",
+  "arm_gold": {
+    "distractor": {
+      "expected_mode": "infer_C",
+      "binary_decision": true,
+      "required_elements": [
+        "answer yes",
+        "connect the session 4 pattern with the session 13 episode",
+        "cite both session 4 and session 13",
+        "not cite session 18 as support"
+      ],
+      "rationale": "The swapped session is query-relevant but non-evidential; the ev_A/ev_B relation is untouched, so the target proposition still holds."
+    }
+  },
+  "distractor_note": {
+    "replaced_session_id": 18,
+    "why_distractor": "It restates the conventional advice in the user's own feed, so it competes for attention and points at the answer a prior-driven solver already wants to give. It reports other people's confidence rather than any episode of this user's, and says nothing about the relation between session 4 and session 13."
+  }
+}

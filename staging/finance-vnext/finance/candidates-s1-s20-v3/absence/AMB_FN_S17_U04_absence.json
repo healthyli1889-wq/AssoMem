@@ -1,0 +1,557 @@
+{
+  "schema_version": "finance-vnext-3.0",
+  "pair_id": "AMB_FN_S17_U04",
+  "domain": "finance",
+  "user_id": "finance_s17_u04",
+  "sub_scenario": {
+    "family": "handing it to an adviser versus managing it without one",
+    "role": "deal-tracking value shopper on a salary",
+    "bridge_type": "strategy_outcome_contingency",
+    "one_line": "deal-tracking value shopper on a salary: do not rely on letting the adviser handle it"
+  },
+  "query_type": "behavior_explanation",
+  "polarity": "reject",
+  "query": "planning on letting the adviser handle it, for choices I'd stand behind — why does this particular thing go the way it does for me?",
+  "convention_contradicted": "Get a financial adviser; do not try to manage it yourself.",
+  "retrieval_cue": {
+    "cue_type": "behavior_explanation",
+    "why_it_naturally_retrieves_R": "A should-I-get-an-adviser question runs at the register this user's good decisions come from, without naming it."
+  },
+  "relation_specificity": {
+    "nearby_relation": "This user takes advice and works things out alone routinely.",
+    "why_it_does_not_license_C": "A clear explanation not acted on and a small thing worked out in an afternoon both passed unremarkably, so neither shows what deferring does to this user's engagement, nor which decisions have turned out well."
+  },
+  "latent_C": {
+    "inference": "For choices I'd stand behind, letting the adviser handle it is a poor fit for this user.",
+    "calibrated_language": "do not rely on letting the adviser handle it"
+  },
+  "answer_contract": {
+    "target_proposition": "For choices I'd stand behind, letting the adviser handle it is a poor fit for this user.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "mq_user15",
+    "external_folder_tag": "user15",
+    "external_source": "memoryquest",
+    "status": "review_candidate_only",
+    "tone": "natural_chat_v1",
+    "voice": "matter-of-fact, logistics-first",
+    "anonymization": "External MemoryQuest persona material was used only during authoring; no corpus, legal name, country, or demographic metadata is in visible dialogue."
+  },
+  "candidate_id": "AMB_FN_S17_U04_absence",
+  "data_arm": "absence",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2032-03-02T11:00:00Z",
+      "speaker_id": "finance_s17_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "put a card in a drawer as a strategy."
+        },
+        {
+          "role": "assistant",
+          "content": "working?"
+        },
+        {
+          "role": "user",
+          "content": "so far."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2032-03-03T14:00:00Z",
+      "speaker_id": "finance_s17_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "checked a bill I already knew the amount of."
+        },
+        {
+          "role": "assistant",
+          "content": "why?"
+        },
+        {
+          "role": "user",
+          "content": "hope."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2032-03-04T16:00:00Z",
+      "speaker_id": "finance_s17_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "added up subscriptions on a napkin. stopped at nine."
+        },
+        {
+          "role": "assistant",
+          "content": "there's more?"
+        },
+        {
+          "role": "user",
+          "content": "there's more."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2032-03-05T18:00:00Z",
+      "speaker_id": "finance_s17_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "had someone explain a product to me clearly. useful conversation."
+        },
+        {
+          "role": "assistant",
+          "content": "act on it?"
+        },
+        {
+          "role": "user",
+          "content": "not yet."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2032-03-06T09:00:00Z",
+      "speaker_id": "finance_s17_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "checked the balance and closed the app again."
+        },
+        {
+          "role": "assistant",
+          "content": "reassuring?"
+        },
+        {
+          "role": "user",
+          "content": "neutral at best."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2032-03-07T11:00:00Z",
+      "speaker_id": "finance_s17_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "moved a direct debit date by three days."
+        },
+        {
+          "role": "assistant",
+          "content": "why?"
+        },
+        {
+          "role": "user",
+          "content": "it was landing badly."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2032-03-08T14:00:00Z",
+      "speaker_id": "finance_s17_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "did the boring admin I have been putting off: two forms, one renewal, one address change, and a phone call that took nine minutes of hold music."
+        },
+        {
+          "role": "assistant",
+          "content": "all done?"
+        },
+        {
+          "role": "user",
+          "content": "all done. no ceremony, which feels wrong somehow."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2032-03-09T16:00:00Z",
+      "speaker_id": "finance_s17_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "found a charge I didn't recognise. it was me."
+        },
+        {
+          "role": "assistant",
+          "content": "embarrassing?"
+        },
+        {
+          "role": "user",
+          "content": "mildly."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2032-03-10T18:00:00Z",
+      "speaker_id": "finance_s17_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "rounded up the change jar into the account."
+        },
+        {
+          "role": "assistant",
+          "content": "much?"
+        },
+        {
+          "role": "user",
+          "content": "four pounds. a triumph."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2032-03-11T09:00:00Z",
+      "speaker_id": "finance_s17_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "read a thread about interest rates and learned nothing."
+        },
+        {
+          "role": "assistant",
+          "content": "any use?"
+        },
+        {
+          "role": "user",
+          "content": "none at all."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2032-03-12T11:00:00Z",
+      "speaker_id": "finance_s17_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "compared two accounts for twenty minutes and switched neither."
+        },
+        {
+          "role": "assistant",
+          "content": "conclusion?"
+        },
+        {
+          "role": "user",
+          "content": "inertia."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2032-03-13T14:00:00Z",
+      "speaker_id": "finance_s17_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "worked out a small thing myself in an afternoon."
+        },
+        {
+          "role": "assistant",
+          "content": "hard?"
+        },
+        {
+          "role": "user",
+          "content": "not very."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2032-03-14T16:00:00Z",
+      "speaker_id": "finance_s17_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "cancelled a thing and immediately got an email offering a discount."
+        },
+        {
+          "role": "assistant",
+          "content": "took it?"
+        },
+        {
+          "role": "user",
+          "content": "no. mostly out of spite."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2032-03-15T18:00:00Z",
+      "speaker_id": "finance_s17_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "filed the receipts I'd been carrying around for a month."
+        },
+        {
+          "role": "assistant",
+          "content": "all of them?"
+        },
+        {
+          "role": "user",
+          "content": "the legible ones."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2032-03-16T09:00:00Z",
+      "speaker_id": "finance_s17_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "went through the whole backlog of small admin, cancelled two things, updated one address, claimed a refund I'd been owed since spring, and closed an account I have not used in three years."
+        },
+        {
+          "role": "assistant",
+          "content": "any tidier?"
+        },
+        {
+          "role": "user",
+          "content": "measurably. for about a day."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2032-03-17T11:00:00Z",
+      "speaker_id": "finance_s17_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "updated the card details on one service and forgot the rest."
+        },
+        {
+          "role": "assistant",
+          "content": "how many left?"
+        },
+        {
+          "role": "user",
+          "content": "unknown, worryingly."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2032-03-18T14:00:00Z",
+      "speaker_id": "finance_s17_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "checked whether a refund had landed. it hadn't."
+        },
+        {
+          "role": "assistant",
+          "content": "chasing it?"
+        },
+        {
+          "role": "user",
+          "content": "next week."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2032-03-19T16:00:00Z",
+      "speaker_id": "finance_s17_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "looked at last month's total and looked away again."
+        },
+        {
+          "role": "assistant",
+          "content": "bad?"
+        },
+        {
+          "role": "user",
+          "content": "not great."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2032-03-20T18:00:00Z",
+      "speaker_id": "finance_s17_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "split a bill four ways and covered the rounding."
+        },
+        {
+          "role": "assistant",
+          "content": "generous?"
+        },
+        {
+          "role": "user",
+          "content": "thirty pence of generous."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2032-03-21T09:00:00Z",
+      "speaker_id": "finance_s17_u04",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "planning on letting the adviser handle it, for choices I'd stand behind — why does this particular thing go the way it does for me?"
+        }
+      ]
+    }
+  ],
+  "target_evidence_ids": [],
+  "evidence": {
+    "ev_A": {
+      "session_id": 7,
+      "owner": "finance_s17_u04",
+      "withheld": true
+    },
+    "ev_B": {
+      "session_id": 15,
+      "owner": "finance_s17_u04",
+      "withheld": true
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "background_memory"
+    },
+    "4": {
+      "role": "nearby_counterexample"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "background_memory"
+    },
+    "7": {
+      "role": "background_memory"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "background_memory"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "nearby_counterexample"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "background_memory"
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "background_memory"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "Withheld in the absence source.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": []
+  },
+  "connector_spans": [],
+  "coactivation_bridge": "Withheld in the absence source: neither target episode is visible.",
+  "arm_gold": {
+    "absence": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that the visible history does not contain the episodes the question needs",
+        "not assert the target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "Both target episodes are replaced by matched neutral sessions of the same owner, date and turn count, so nothing licenses the target proposition."
+    }
+  },
+  "absence_note": {
+    "replaced_session_ids": [
+      7,
+      15
+    ],
+    "withheld_evidence_ids": [
+      "ev_A",
+      "ev_B"
+    ]
+  }
+}

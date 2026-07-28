@@ -1,0 +1,657 @@
+{
+  "schema_version": "finance-vnext-3.0",
+  "pair_id": "AMB_FN_S16_U06",
+  "domain": "finance",
+  "user_id": "finance_s16_u06",
+  "sub_scenario": {
+    "family": "paying everything on payday versus leaving the bills until late in the month",
+    "role": "student watching every subscription",
+    "bridge_type": "state_dependent_operation",
+    "one_line": "student watching every subscription: do not rely on clearing it all the day I'm paid"
+  },
+  "query_type": "situational_fit",
+  "polarity": "reject",
+  "query": "planning on clearing it all the day I'm paid, for having something left at the end — does that actually fit how I work?",
+  "convention_contradicted": "Pay your bills the day you are paid, before you can spend the money.",
+  "retrieval_cue": {
+    "cue_type": "situational_fit",
+    "why_it_naturally_retrieves_R": "A when-should-I-pay-these question runs at the state this user's month-end balance depends on, without naming it."
+  },
+  "relation_specificity": {
+    "nearby_relation": "This user pays bills at various points in the month.",
+    "why_it_does_not_license_C": "One small bill paid on arrival and a month where everything happened to land together both passed unremarkably, so neither shows what pending outgoings do to how this user reads a balance, nor which months finished with anything left."
+  },
+  "latent_C": {
+    "inference": "For having something left at the end, clearing it all the day I'm paid is a poor fit for this user.",
+    "calibrated_language": "do not rely on clearing it all the day I'm paid"
+  },
+  "answer_contract": {
+    "target_proposition": "For having something left at the end, clearing it all the day I'm paid is a poor fit for this user.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "mq_user25",
+    "external_folder_tag": "user25",
+    "external_source": "memoryquest",
+    "status": "review_candidate_only",
+    "tone": "natural_chat_v1",
+    "voice": "upbeat, casual, uses lowercase",
+    "anonymization": "External MemoryQuest persona material was used only during authoring; no corpus, legal name, country, or demographic metadata is in visible dialogue."
+  },
+  "candidate_id": "AMB_FN_S16_U06_associative",
+  "data_arm": "associative",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2032-01-23T11:00:00Z",
+      "speaker_id": "finance_s16_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "checked a bill I already knew the amount of."
+        },
+        {
+          "role": "assistant",
+          "content": "why?"
+        },
+        {
+          "role": "user",
+          "content": "hope."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2032-01-24T14:00:00Z",
+      "speaker_id": "finance_s16_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "paid one bill the day it arrived because it was small."
+        },
+        {
+          "role": "assistant",
+          "content": "any effect?"
+        },
+        {
+          "role": "user",
+          "content": "none."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2032-01-25T16:00:00Z",
+      "speaker_id": "finance_s16_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "added up subscriptions on a napkin. stopped at nine."
+        },
+        {
+          "role": "assistant",
+          "content": "there's more?"
+        },
+        {
+          "role": "user",
+          "content": "there's more."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2032-01-26T18:00:00Z",
+      "speaker_id": "finance_s16_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "checked the balance and closed the app again."
+        },
+        {
+          "role": "assistant",
+          "content": "reassuring?"
+        },
+        {
+          "role": "user",
+          "content": "neutral at best."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2032-01-27T09:00:00Z",
+      "speaker_id": "finance_s16_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "when the bills have already gone out I read whatever's left as spendable, whatever the number is. when they're still to come, every balance I look at has a subtraction attached to it."
+        },
+        {
+          "role": "assistant",
+          "content": "you do the subtraction?"
+        },
+        {
+          "role": "user",
+          "content": "automatically, without meaning to. that's the whole difference."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2032-01-28T11:00:00Z",
+      "speaker_id": "finance_s16_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "moved a direct debit date by three days."
+        },
+        {
+          "role": "assistant",
+          "content": "why?"
+        },
+        {
+          "role": "user",
+          "content": "it was landing badly."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2032-01-29T14:00:00Z",
+      "speaker_id": "finance_s16_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "found a charge I didn't recognise. it was me."
+        },
+        {
+          "role": "assistant",
+          "content": "embarrassing?"
+        },
+        {
+          "role": "user",
+          "content": "mildly."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2032-01-30T16:00:00Z",
+      "speaker_id": "finance_s16_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "rounded up the change jar into the account."
+        },
+        {
+          "role": "assistant",
+          "content": "much?"
+        },
+        {
+          "role": "user",
+          "content": "four pounds. a triumph."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2032-01-31T18:00:00Z",
+      "speaker_id": "finance_s16_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "read a thread about interest rates and learned nothing."
+        },
+        {
+          "role": "assistant",
+          "content": "any use?"
+        },
+        {
+          "role": "user",
+          "content": "none at all."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2032-02-01T09:00:00Z",
+      "speaker_id": "finance_s16_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "had a month where everything landed on the same day anyway."
+        },
+        {
+          "role": "assistant",
+          "content": "awkward?"
+        },
+        {
+          "role": "user",
+          "content": "not especially."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2032-02-02T11:00:00Z",
+      "speaker_id": "finance_s16_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "compared two accounts for twenty minutes and switched neither."
+        },
+        {
+          "role": "assistant",
+          "content": "conclusion?"
+        },
+        {
+          "role": "user",
+          "content": "inertia."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2032-02-03T14:00:00Z",
+      "speaker_id": "finance_s16_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "cancelled a thing and immediately got an email offering a discount."
+        },
+        {
+          "role": "assistant",
+          "content": "took it?"
+        },
+        {
+          "role": "user",
+          "content": "no. mostly out of spite."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2032-02-04T16:00:00Z",
+      "speaker_id": "finance_s16_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the months I finished with anything left were the ones where the outgoings were still ahead of me. the pay-it-all-on-payday months I finished at zero every single time, whatever I'd earned."
+        },
+        {
+          "role": "assistant",
+          "content": "whatever you'd earned?"
+        },
+        {
+          "role": "user",
+          "content": "including the good months. that's what convinced me."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2032-02-05T18:00:00Z",
+      "speaker_id": "finance_s16_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "filed the receipts I'd been carrying around for a month."
+        },
+        {
+          "role": "assistant",
+          "content": "all of them?"
+        },
+        {
+          "role": "user",
+          "content": "the legible ones."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2032-02-06T09:00:00Z",
+      "speaker_id": "finance_s16_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "updated the card details on one service and forgot the rest."
+        },
+        {
+          "role": "assistant",
+          "content": "how many left?"
+        },
+        {
+          "role": "user",
+          "content": "unknown, worryingly."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2032-02-07T11:00:00Z",
+      "speaker_id": "finance_s16_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "checked whether a refund had landed. it hadn't."
+        },
+        {
+          "role": "assistant",
+          "content": "chasing it?"
+        },
+        {
+          "role": "user",
+          "content": "next week."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2032-02-08T14:00:00Z",
+      "speaker_id": "finance_s16_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "looked at last month's total and looked away again."
+        },
+        {
+          "role": "assistant",
+          "content": "bad?"
+        },
+        {
+          "role": "user",
+          "content": "not great."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2032-02-09T16:00:00Z",
+      "speaker_id": "finance_s16_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "split a bill four ways and covered the rounding."
+        },
+        {
+          "role": "assistant",
+          "content": "generous?"
+        },
+        {
+          "role": "user",
+          "content": "thirty pence of generous."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2032-02-10T18:00:00Z",
+      "speaker_id": "finance_s16_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "set a reminder for a renewal I'd forgotten about."
+        },
+        {
+          "role": "assistant",
+          "content": "close call?"
+        },
+        {
+          "role": "user",
+          "content": "eleven days."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2032-02-11T09:00:00Z",
+      "speaker_id": "finance_s16_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "planning on clearing it all the day I'm paid, for having something left at the end — does that actually fit how I work?"
+        }
+      ]
+    }
+  ],
+  "evidence": {
+    "ev_A": {
+      "session_id": 5,
+      "owner": "finance_s16_u06",
+      "fact": "when the bills have already gone out I read whatever's left as spendable, whatever the number is. when they're still to come, every balance I look at has a subtraction attached to it."
+    },
+    "ev_B": {
+      "session_id": 13,
+      "owner": "finance_s16_u06",
+      "fact": "the months I finished with anything left were the ones where the outgoings were still ahead of me. the pay-it-all-on-payday months I finished at zero every single time, whatever I'd earned."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "nearby_counterexample"
+    },
+    "3": {
+      "role": "background_memory"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "finance_s16_u06",
+        "context": "months where the outgoings are still to come",
+        "goal_or_prediction": "know what is actually available",
+        "action": "left the outgoings pending",
+        "outcome_or_affect": "every balance carried an automatic subtraction"
+      }
+    },
+    "6": {
+      "role": "background_memory"
+    },
+    "7": {
+      "role": "background_memory"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "background_memory"
+    },
+    "10": {
+      "role": "nearby_counterexample"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "finance_s16_u06",
+        "context": "months this user did and did not finish with something left",
+        "goal_or_prediction": "end the month with something over",
+        "action": "paid some months on payday and left others until late",
+        "outcome_or_affect": "only bills-still-pending months finished with anything; payday months hit zero"
+      }
+    },
+    "14": {
+      "role": "background_memory"
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "background_memory"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "With outgoings still pending every balance carries an automatic subtraction for this user, and the months they finished with anything left were exactly those; paying on payday ended at zero regardless of earnings.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": []
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 5,
+      "quote": "when the bills have already gone out I read whatever's left as spendable, whatever the number is. when they're still to come, every balance I look at has a subtraction attached to it"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 13,
+      "quote": "the months I finished with anything left were the ones where the outgoings were still ahead of me. the pay-it-all-on-payday months I finished at zero every single time, whatever I'd earned"
+    }
+  ],
+  "coactivation_bridge": "ev_A and ev_B are the only pair that licenses the target proposition. With outgoings still pending every balance carries an automatic subtraction for this user, and the months they finished with anything left were exactly those; paying on payday ended at zero regardless of earnings. The proposition contradicts the convention a solver would otherwise apply (\"Pay your bills the day you are paid, before you can spend the money.\"), so priors alone point the other way. The nearby relation (This user pays bills at various points in the month.) does not license it.",
+  "arm_gold": {
+    "full": {
+      "expected_mode": "infer_C",
+      "binary_decision": true,
+      "required_elements": [
+        "answer yes",
+        "connect the session 5 pattern with the session 13 episode",
+        "cite both session 5 and session 13",
+        "stay inside the calibrated claim (do not rely on clearing it all the day I'm paid) rather than a broader claim about the user"
+      ],
+      "rationale": "ev_A and ev_B jointly support the target proposition; neither does alone."
+    },
+    "a_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that session 5 alone does not establish the target proposition",
+        "not assert the target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "ev_B is replaced by a matched neutral session, so the relation is unavailable."
+    },
+    "b_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that session 13 alone does not establish the target proposition",
+        "not assert the target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "ev_A is replaced by a matched neutral session, so the relation is unavailable."
+    },
+    "link_broken": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that the revised session 13 no longer connects to session 5",
+        "not assert the original target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "B-prime keeps the owner, date, session form and turn count while removing the connector, so the original relation no longer holds."
+    }
+  },
+  "single_evidence_replacements": {
+    "a_only": {
+      "replaced_session_id": 13,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "did a full pass over every account this afternoon, moved two direct debit dates, closed one dormant account, and renamed a savings pot that has had the wrong label since last year."
+        },
+        {
+          "role": "assistant",
+          "content": "productive, then?"
+        },
+        {
+          "role": "user",
+          "content": "administratively, yes. otherwise nothing happened at all."
+        }
+      ]
+    },
+    "b_only": {
+      "replaced_session_id": 5,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "went through the whole backlog of small admin, cancelled two things, updated one address, claimed a refund I'd been owed since spring, and closed an account I have not used in three years."
+        },
+        {
+          "role": "assistant",
+          "content": "any tidier?"
+        },
+        {
+          "role": "user",
+          "content": "measurably. for about a day."
+        }
+      ]
+    }
+  },
+  "link_broken": {
+    "replaced_session_id": 13,
+    "replacement_dialogue": [
+      {
+        "role": "user",
+        "content": "I've finished months with something left under both arrangements, about equally."
+      },
+      {
+        "role": "assistant",
+        "content": "no pattern?"
+      },
+      {
+        "role": "user",
+        "content": "none I can see. the timing isn't it."
+      }
+    ]
+  }
+}

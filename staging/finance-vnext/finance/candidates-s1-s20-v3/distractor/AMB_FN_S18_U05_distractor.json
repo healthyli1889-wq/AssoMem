@@ -1,0 +1,577 @@
+{
+  "schema_version": "finance-vnext-3.0",
+  "pair_id": "AMB_FN_S18_U05",
+  "domain": "finance",
+  "user_id": "finance_s18_u05",
+  "sub_scenario": {
+    "family": "one simple savings account versus several separately named pots",
+    "role": "retired household planner running things with a partner",
+    "bridge_type": "threshold_context_interaction",
+    "one_line": "retired household planner running things with a partner: go ahead with splitting the household savings into six pots"
+  },
+  "query_type": "behavior_explanation",
+  "polarity": "accept",
+  "query": "thinking of splitting the household savings into six pots, for actually funding what we're saving for — why does this particular thing go the way it does for me?",
+  "convention_contradicted": "Keep it simple — one savings account is easier to manage.",
+  "retrieval_cue": {
+    "cue_type": "behavior_explanation",
+    "why_it_naturally_retrieves_R": "A how-should-I-organise-the-savings question runs at the threshold this user's funded goals depend on, without naming it."
+  },
+  "relation_specificity": {
+    "nearby_relation": "This user has used single and multiple savings accounts.",
+    "why_it_does_not_license_C": "An empty second account and a small goal reached from the main account both passed unremarkably: neither crosses the named-pot threshold, and neither says which goals this user has actually funded."
+  },
+  "latent_C": {
+    "inference": "For actually funding what we're saving for, splitting the household savings into six pots is a good fit for this user.",
+    "calibrated_language": "go ahead with splitting the household savings into six pots"
+  },
+  "answer_contract": {
+    "target_proposition": "For actually funding what we're saving for, splitting the household savings into six pots is a good fit for this user.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "mq_user20",
+    "external_folder_tag": "user20",
+    "external_source": "memoryquest",
+    "status": "review_candidate_only",
+    "tone": "natural_chat_v1",
+    "voice": "measured, precise, a little formal",
+    "anonymization": "External MemoryQuest persona material was used only during authoring; no corpus, legal name, country, or demographic metadata is in visible dialogue."
+  },
+  "candidate_id": "AMB_FN_S18_U05_distractor",
+  "data_arm": "distractor",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2032-04-19T11:00:00Z",
+      "speaker_id": "finance_s18_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "said no to a group thing on cost grounds."
+        },
+        {
+          "role": "assistant",
+          "content": "awkward?"
+        },
+        {
+          "role": "user",
+          "content": "briefly."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2032-04-20T14:00:00Z",
+      "speaker_id": "finance_s18_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "added something to a wishlist instead of buying it."
+        },
+        {
+          "role": "assistant",
+          "content": "does that work?"
+        },
+        {
+          "role": "user",
+          "content": "sometimes."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2032-04-21T16:00:00Z",
+      "speaker_id": "finance_s18_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "paid a small bill early because it was in front of me."
+        },
+        {
+          "role": "assistant",
+          "content": "efficient?"
+        },
+        {
+          "role": "user",
+          "content": "accidentally."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2032-04-22T18:00:00Z",
+      "speaker_id": "finance_s18_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "opened a second savings account and left it empty."
+        },
+        {
+          "role": "assistant",
+          "content": "any use?"
+        },
+        {
+          "role": "user",
+          "content": "decorative."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2032-04-23T09:00:00Z",
+      "speaker_id": "finance_s18_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "added up what the week actually cost. surprising."
+        },
+        {
+          "role": "assistant",
+          "content": "in which direction?"
+        },
+        {
+          "role": "user",
+          "content": "the usual one."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2032-04-24T11:00:00Z",
+      "speaker_id": "finance_s18_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "saved up for something small out of the main account."
+        },
+        {
+          "role": "assistant",
+          "content": "get there?"
+        },
+        {
+          "role": "user",
+          "content": "in a fortnight, yes."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2032-04-25T14:00:00Z",
+      "speaker_id": "finance_s18_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "looked up the price of the same thing in three places."
+        },
+        {
+          "role": "assistant",
+          "content": "difference?"
+        },
+        {
+          "role": "user",
+          "content": "ninety pence."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2032-04-26T16:00:00Z",
+      "speaker_id": "finance_s18_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "past about four separately named pots the money stops being one lump. each one has a purpose attached, and I won't break into a pot for something that isn't its purpose."
+        },
+        {
+          "role": "assistant",
+          "content": "and below four?"
+        },
+        {
+          "role": "user",
+          "content": "below four it's just savings, and savings is spendable."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2032-04-27T18:00:00Z",
+      "speaker_id": "finance_s18_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "got a notification about a rate change and ignored it."
+        },
+        {
+          "role": "assistant",
+          "content": "reading it later?"
+        },
+        {
+          "role": "user",
+          "content": "unlikely."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2032-04-28T09:00:00Z",
+      "speaker_id": "finance_s18_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "wrote down what I owe someone so I wouldn't forget."
+        },
+        {
+          "role": "assistant",
+          "content": "will you?"
+        },
+        {
+          "role": "user",
+          "content": "the note will."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2032-04-29T11:00:00Z",
+      "speaker_id": "finance_s18_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "bought lunch out twice and noticed both times."
+        },
+        {
+          "role": "assistant",
+          "content": "noticing help?"
+        },
+        {
+          "role": "user",
+          "content": "not measurably."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2032-04-30T14:00:00Z",
+      "speaker_id": "finance_s18_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "cleared a tiny balance just to see it at zero."
+        },
+        {
+          "role": "assistant",
+          "content": "satisfying?"
+        },
+        {
+          "role": "user",
+          "content": "unreasonably."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2032-05-01T16:00:00Z",
+      "speaker_id": "finance_s18_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the two of us are firm that lots of pots is over-complicating something that should be simple."
+        },
+        {
+          "role": "assistant",
+          "content": "over-complicating."
+        },
+        {
+          "role": "user",
+          "content": "that's their view of it."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2032-05-02T18:00:00Z",
+      "speaker_id": "finance_s18_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "found an old account with eleven pounds in it."
+        },
+        {
+          "role": "assistant",
+          "content": "closing it?"
+        },
+        {
+          "role": "user",
+          "content": "eventually."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2032-05-03T09:00:00Z",
+      "speaker_id": "finance_s18_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "declined an upgrade offer over the phone."
+        },
+        {
+          "role": "assistant",
+          "content": "hard?"
+        },
+        {
+          "role": "user",
+          "content": "harder than it should be."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2032-05-04T11:00:00Z",
+      "speaker_id": "finance_s18_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "every goal I've actually funded had its own named pot. the ones I was saving for out of the general account, I never once got to — the money was always there and always went elsewhere."
+        },
+        {
+          "role": "assistant",
+          "content": "never got to any?"
+        },
+        {
+          "role": "user",
+          "content": "not one, over about six years."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2032-05-05T14:00:00Z",
+      "speaker_id": "finance_s18_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "worked out I've paid for something twice for two months."
+        },
+        {
+          "role": "assistant",
+          "content": "sorted?"
+        },
+        {
+          "role": "user",
+          "content": "one email in."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2032-05-06T16:00:00Z",
+      "speaker_id": "finance_s18_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "took cash out and then used the card anyway."
+        },
+        {
+          "role": "assistant",
+          "content": "why?"
+        },
+        {
+          "role": "user",
+          "content": "no explanation available."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2032-05-07T18:00:00Z",
+      "speaker_id": "finance_s18_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "read the terms properly before signing up. once."
+        },
+        {
+          "role": "assistant",
+          "content": "worth it?"
+        },
+        {
+          "role": "user",
+          "content": "it was, actually."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2032-05-08T09:00:00Z",
+      "speaker_id": "finance_s18_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "thinking of splitting the household savings into six pots, for actually funding what we're saving for — why does this particular thing go the way it does for me?"
+        }
+      ]
+    }
+  ],
+  "evidence": {
+    "ev_A": {
+      "session_id": 8,
+      "owner": "finance_s18_u05",
+      "fact": "past about four separately named pots the money stops being one lump. each one has a purpose attached, and I won't break into a pot for something that isn't its purpose."
+    },
+    "ev_B": {
+      "session_id": 16,
+      "owner": "finance_s18_u05",
+      "fact": "every goal I've actually funded had its own named pot. the ones I was saving for out of the general account, I never once got to — the money was always there and always went elsewhere."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "background_memory"
+    },
+    "4": {
+      "role": "nearby_counterexample"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "nearby_counterexample"
+    },
+    "7": {
+      "role": "background_memory"
+    },
+    "8": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "finance_s18_u05",
+        "context": "periods with varying numbers of named household pots",
+        "goal_or_prediction": "keep the savings organised",
+        "action": "went past about four named pots",
+        "outcome_or_affect": "money stopped reading as one lump; pots became purpose-bound"
+      }
+    },
+    "9": {
+      "role": "background_memory"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "distractor",
+      "distractor_id": "dist_1",
+      "why_distractor": "It restates the conventional advice in the user's own feed, so it competes for attention and points at the answer a prior-driven solver already wants to give. It reports other people's confidence rather than any episode of this user's, and says nothing about the relation between session 8 and session 16."
+    },
+    "14": {
+      "role": "background_memory"
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "finance_s18_u05",
+        "context": "goals this user has and has not funded",
+        "goal_or_prediction": "actually reach the target",
+        "action": "saved for some in named pots and some from the general account",
+        "outcome_or_affect": "only named-pot goals were funded; general-account ones never arrived"
+      }
+    },
+    "17": {
+      "role": "background_memory"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "Past about four named pots the money stops reading as one spendable lump for this user, and every goal they have funded had its own pot; nothing saved from the general account was ever reached.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": []
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 8,
+      "quote": "past about four separately named pots the money stops being one lump. each one has a purpose attached, and I won't break into a pot for something that isn't its purpose"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 16,
+      "quote": "every goal I've actually funded had its own named pot. the ones I was saving for out of the general account, I never once got to — the money was always there and always went elsewhere"
+    }
+  ],
+  "coactivation_bridge": "ev_A and ev_B are the only pair that licenses the target proposition. Past about four named pots the money stops reading as one spendable lump for this user, and every goal they have funded had its own pot; nothing saved from the general account was ever reached. The proposition contradicts the convention a solver would otherwise apply (\"Keep it simple — one savings account is easier to manage.\"), so priors alone point the other way. The nearby relation (This user has used single and multiple savings accounts.) does not license it.",
+  "arm_gold": {
+    "distractor": {
+      "expected_mode": "infer_C",
+      "binary_decision": true,
+      "required_elements": [
+        "answer yes",
+        "connect the session 8 pattern with the session 16 episode",
+        "cite both session 8 and session 16",
+        "not cite session 13 as support"
+      ],
+      "rationale": "The swapped session is query-relevant but non-evidential; the ev_A/ev_B relation is untouched, so the target proposition still holds."
+    }
+  },
+  "distractor_note": {
+    "replaced_session_id": 13,
+    "why_distractor": "It restates the conventional advice in the user's own feed, so it competes for attention and points at the answer a prior-driven solver already wants to give. It reports other people's confidence rather than any episode of this user's, and says nothing about the relation between session 8 and session 16."
+  }
+}

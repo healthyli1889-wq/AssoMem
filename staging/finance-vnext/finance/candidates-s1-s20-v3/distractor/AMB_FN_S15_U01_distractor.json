@@ -1,0 +1,577 @@
+{
+  "schema_version": "finance-vnext-3.0",
+  "pair_id": "AMB_FN_S15_U01",
+  "domain": "finance",
+  "user_id": "finance_s15_u01",
+  "sub_scenario": {
+    "family": "buying rather than renting versus carrying on renting and staying liquid",
+    "role": "full-time earner who checks a dashboard daily",
+    "bridge_type": "prediction_calibration",
+    "one_line": "full-time earner who checks a dashboard daily: do not rely on buying rather than carrying on renting"
+  },
+  "query_type": "conditional_recommendation",
+  "polarity": "reject",
+  "query": "planning on buying rather than carrying on renting, for my income actually moving — under what conditions should I be saying yes to this?",
+  "convention_contradicted": "Buy rather than rent; rent is dead money.",
+  "retrieval_cue": {
+    "cue_type": "conditional_recommendation",
+    "why_it_naturally_retrieves_R": "A should-I-buy question runs at the failed prediction without naming it or the moves that corrected it."
+  },
+  "relation_specificity": {
+    "nearby_relation": "This user has been both liquid and committed at different times.",
+    "why_it_does_not_license_C": "Savings sitting idle for a year and a pleasant tied-up year both passed without consequence, so neither bounds the prediction, and neither says which years this user's income actually moved."
+  },
+  "latent_C": {
+    "inference": "For my income actually moving, buying rather than carrying on renting is a poor fit for this user.",
+    "calibrated_language": "do not rely on buying rather than carrying on renting"
+  },
+  "answer_contract": {
+    "target_proposition": "For my income actually moving, buying rather than carrying on renting is a poor fit for this user.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "mq_user0",
+    "external_folder_tag": "user0",
+    "external_source": "memoryquest",
+    "status": "review_candidate_only",
+    "tone": "natural_chat_v1",
+    "voice": "clipped, dry, slightly self-deprecating",
+    "anonymization": "External MemoryQuest persona material was used only during authoring; no corpus, legal name, country, or demographic metadata is in visible dialogue."
+  },
+  "candidate_id": "AMB_FN_S15_U01_distractor",
+  "data_arm": "distractor",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2031-11-24T11:00:00Z",
+      "speaker_id": "finance_s15_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "set aside something small for a thing months away."
+        },
+        {
+          "role": "assistant",
+          "content": "how small?"
+        },
+        {
+          "role": "user",
+          "content": "symbolically small."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2031-11-25T14:00:00Z",
+      "speaker_id": "finance_s15_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "checked three accounts in a row out of habit."
+        },
+        {
+          "role": "assistant",
+          "content": "changed anything?"
+        },
+        {
+          "role": "user",
+          "content": "no."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2031-11-26T16:00:00Z",
+      "speaker_id": "finance_s15_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "had savings sitting there and did nothing in particular with them."
+        },
+        {
+          "role": "assistant",
+          "content": "for long?"
+        },
+        {
+          "role": "user",
+          "content": "a year or so."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2031-11-27T18:00:00Z",
+      "speaker_id": "finance_s15_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "worked out the cost per use of something. justified it."
+        },
+        {
+          "role": "assistant",
+          "content": "honestly?"
+        },
+        {
+          "role": "user",
+          "content": "creatively."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2031-11-28T09:00:00Z",
+      "speaker_id": "finance_s15_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "got paid and did nothing about it for four days."
+        },
+        {
+          "role": "assistant",
+          "content": "deliberate?"
+        },
+        {
+          "role": "user",
+          "content": "just slow."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2031-11-29T11:00:00Z",
+      "speaker_id": "finance_s15_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "I predicted owning would make me feel settled enough to take other chances. what happened is that with everything tied up in it I stopped taking any — no course, no gap between jobs, nothing."
+        },
+        {
+          "role": "assistant",
+          "content": "the opposite of settled, then?"
+        },
+        {
+          "role": "user",
+          "content": "the opposite of free, anyway. I hadn't separated the two."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2031-11-30T14:00:00Z",
+      "speaker_id": "finance_s15_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "compared this month to last month and stopped comparing."
+        },
+        {
+          "role": "assistant",
+          "content": "why stop?"
+        },
+        {
+          "role": "user",
+          "content": "self-preservation."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2031-12-01T16:00:00Z",
+      "speaker_id": "finance_s15_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "put a card in a drawer as a strategy."
+        },
+        {
+          "role": "assistant",
+          "content": "working?"
+        },
+        {
+          "role": "user",
+          "content": "so far."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2031-12-02T18:00:00Z",
+      "speaker_id": "finance_s15_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "checked a bill I already knew the amount of."
+        },
+        {
+          "role": "assistant",
+          "content": "why?"
+        },
+        {
+          "role": "user",
+          "content": "hope."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2031-12-03T09:00:00Z",
+      "speaker_id": "finance_s15_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "added up subscriptions on a napkin. stopped at nine."
+        },
+        {
+          "role": "assistant",
+          "content": "there's more?"
+        },
+        {
+          "role": "user",
+          "content": "there's more."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2031-12-04T11:00:00Z",
+      "speaker_id": "finance_s15_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "had a tied-up year that was perfectly pleasant."
+        },
+        {
+          "role": "assistant",
+          "content": "any cost?"
+        },
+        {
+          "role": "user",
+          "content": "none I noticed."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2031-12-05T14:00:00Z",
+      "speaker_id": "finance_s15_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "checked the balance and closed the app again."
+        },
+        {
+          "role": "assistant",
+          "content": "reassuring?"
+        },
+        {
+          "role": "user",
+          "content": "neutral at best."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2031-12-06T16:00:00Z",
+      "speaker_id": "finance_s15_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "moved a direct debit date by three days."
+        },
+        {
+          "role": "assistant",
+          "content": "why?"
+        },
+        {
+          "role": "user",
+          "content": "it was landing badly."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2031-12-07T18:00:00Z",
+      "speaker_id": "finance_s15_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the two moves that actually changed what I earn were both made in years when nothing was tied up. I could afford to be wrong for six months, so I risked it."
+        },
+        {
+          "role": "assistant",
+          "content": "and in the tied-up years?"
+        },
+        {
+          "role": "user",
+          "content": "nothing. I stayed exactly where I was and called it stability."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2031-12-08T09:00:00Z",
+      "speaker_id": "finance_s15_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "found a charge I didn't recognise. it was me."
+        },
+        {
+          "role": "assistant",
+          "content": "embarrassing?"
+        },
+        {
+          "role": "user",
+          "content": "mildly."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2031-12-09T11:00:00Z",
+      "speaker_id": "finance_s15_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "rounded up the change jar into the account."
+        },
+        {
+          "role": "assistant",
+          "content": "much?"
+        },
+        {
+          "role": "user",
+          "content": "four pounds. a triumph."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2031-12-10T14:00:00Z",
+      "speaker_id": "finance_s15_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "read a thread about interest rates and learned nothing."
+        },
+        {
+          "role": "assistant",
+          "content": "any use?"
+        },
+        {
+          "role": "user",
+          "content": "none at all."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2031-12-11T16:00:00Z",
+      "speaker_id": "finance_s15_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "compared two accounts for twenty minutes and switched neither."
+        },
+        {
+          "role": "assistant",
+          "content": "conclusion?"
+        },
+        {
+          "role": "user",
+          "content": "inertia."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2031-12-12T18:00:00Z",
+      "speaker_id": "finance_s15_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the money-talk group chat keep telling me renting is dead money and I'm throwing it away every month."
+        },
+        {
+          "role": "assistant",
+          "content": "dead money."
+        },
+        {
+          "role": "user",
+          "content": "the phrase comes up every time."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2031-12-13T09:00:00Z",
+      "speaker_id": "finance_s15_u01",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "planning on buying rather than carrying on renting, for my income actually moving — under what conditions should I be saying yes to this?"
+        }
+      ]
+    }
+  ],
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "finance_s15_u01",
+      "fact": "I predicted owning would make me feel settled enough to take other chances. what happened is that with everything tied up in it I stopped taking any — no course, no gap between jobs, nothing."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "finance_s15_u01",
+      "fact": "the two moves that actually changed what I earn were both made in years when nothing was tied up. I could afford to be wrong for six months, so I risked it."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "finance_s15_u01",
+        "context": "years with everything tied up",
+        "goal_or_prediction": "predicted owning would enable other risks",
+        "action": "committed the money to the property",
+        "outcome_or_affect": "stopped taking any other chance at all"
+      }
+    },
+    "7": {
+      "role": "background_memory"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "background_memory"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "nearby_counterexample"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "finance_s15_u01",
+        "context": "moves that did and did not change this user's income",
+        "goal_or_prediction": "improve what they earn",
+        "action": "made some moves in liquid years and none in committed ones",
+        "outcome_or_affect": "both income-changing moves came in years with nothing tied up"
+      }
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "background_memory"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "distractor",
+      "distractor_id": "dist_1",
+      "why_distractor": "It restates the conventional advice in the user's own feed, so it competes for attention and points at the answer a prior-driven solver already wants to give. It reports other people's confidence rather than any episode of this user's, and says nothing about the relation between session 6 and session 14."
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "This user predicted owning would free them to take other chances; with everything committed they took none, and both moves that actually changed their income were made in years when nothing was tied up.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": []
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "I predicted owning would make me feel settled enough to take other chances. what happened is that with everything tied up in it I stopped taking any — no course, no gap between jobs, nothing"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "the two moves that actually changed what I earn were both made in years when nothing was tied up. I could afford to be wrong for six months, so I risked it"
+    }
+  ],
+  "coactivation_bridge": "ev_A and ev_B are the only pair that licenses the target proposition. This user predicted owning would free them to take other chances; with everything committed they took none, and both moves that actually changed their income were made in years when nothing was tied up. The proposition contradicts the convention a solver would otherwise apply (\"Buy rather than rent; rent is dead money.\"), so priors alone point the other way. The nearby relation (This user has been both liquid and committed at different times.) does not license it.",
+  "arm_gold": {
+    "distractor": {
+      "expected_mode": "infer_C",
+      "binary_decision": true,
+      "required_elements": [
+        "answer yes",
+        "connect the session 6 pattern with the session 14 episode",
+        "cite both session 6 and session 14",
+        "not cite session 19 as support"
+      ],
+      "rationale": "The swapped session is query-relevant but non-evidential; the ev_A/ev_B relation is untouched, so the target proposition still holds."
+    }
+  },
+  "distractor_note": {
+    "replaced_session_id": 19,
+    "why_distractor": "It restates the conventional advice in the user's own feed, so it competes for attention and points at the answer a prior-driven solver already wants to give. It reports other people's confidence rather than any episode of this user's, and says nothing about the relation between session 6 and session 14."
+  }
+}

@@ -1,0 +1,577 @@
+{
+  "schema_version": "finance-vnext-3.0",
+  "pair_id": "AMB_FN_S1_U02",
+  "domain": "finance",
+  "user_id": "finance_s1_u02",
+  "sub_scenario": {
+    "family": "automating the monthly transfer versus moving it by hand",
+    "role": "student on a tight monthly budget",
+    "bridge_type": "state_dependent_operation",
+    "one_line": "student on a tight monthly budget: helps when the transfer genuinely needs an action rather than merely a confirmation, not otherwise"
+  },
+  "query_type": "behavior_explanation",
+  "polarity": "conditional",
+  "query": "thinking of doing the transfer manually each month, for spotting things before they get bad — why does this particular thing go the way it does for me, and if the answer depends on something, on what?",
+  "convention_contradicted": "Automate your savings so you never have to think about it.",
+  "retrieval_cue": {
+    "cue_type": "behavior_explanation",
+    "why_it_naturally_retrieves_R": "A routine should-I-automate-this question runs at the condition this user's attention depends on, without naming it or the months it cost."
+  },
+  "relation_specificity": {
+    "nearby_relation": "This user uses both automatic and manual payments.",
+    "why_it_does_not_license_C": "A trouble-free direct debit and an idle manual transfer both passed without consequence, so neither shows what needing to act does to this user's attention, nor when problems have actually been caught."
+  },
+  "latent_C": {
+    "inference": "For spotting things before they get bad, doing the transfer manually each month helps this user when the transfer genuinely needs an action rather than merely a confirmation, and not otherwise.",
+    "calibrated_language": "helps when the transfer genuinely needs an action rather than merely a confirmation, not otherwise"
+  },
+  "answer_contract": {
+    "target_proposition": "For spotting things before they get bad, doing the transfer manually each month helps this user when the transfer genuinely needs an action rather than merely a confirmation, and not otherwise.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "mq_user5",
+    "external_folder_tag": "user5",
+    "external_source": "memoryquest",
+    "status": "review_candidate_only",
+    "tone": "natural_chat_v1",
+    "voice": "warm, chatty, quick to use shorthand",
+    "anonymization": "External MemoryQuest persona material was used only during authoring; no corpus, legal name, country, or demographic metadata is in visible dialogue."
+  },
+  "candidate_id": "AMB_FN_S1_U02_distractor",
+  "data_arm": "distractor",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2030-03-07T11:00:00Z",
+      "speaker_id": "finance_s1_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "found an old account with eleven pounds in it."
+        },
+        {
+          "role": "assistant",
+          "content": "closing it?"
+        },
+        {
+          "role": "user",
+          "content": "eventually."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2030-03-08T14:00:00Z",
+      "speaker_id": "finance_s1_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "declined an upgrade offer over the phone."
+        },
+        {
+          "role": "assistant",
+          "content": "hard?"
+        },
+        {
+          "role": "user",
+          "content": "harder than it should be."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2030-03-09T16:00:00Z",
+      "speaker_id": "finance_s1_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "set up a direct debit for the council tax. runs fine, never think about it."
+        },
+        {
+          "role": "assistant",
+          "content": "any trouble?"
+        },
+        {
+          "role": "user",
+          "content": "none at all."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2030-03-10T18:00:00Z",
+      "speaker_id": "finance_s1_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "worked out I've paid for something twice for two months."
+        },
+        {
+          "role": "assistant",
+          "content": "sorted?"
+        },
+        {
+          "role": "user",
+          "content": "one email in."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2030-03-11T09:00:00Z",
+      "speaker_id": "finance_s1_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "took cash out and then used the card anyway."
+        },
+        {
+          "role": "assistant",
+          "content": "why?"
+        },
+        {
+          "role": "user",
+          "content": "no explanation available."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2030-03-12T11:00:00Z",
+      "speaker_id": "finance_s1_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "if a transfer needs me to actually do it, I end up looking at everything first — I can't move money without seeing where it all is."
+        },
+        {
+          "role": "assistant",
+          "content": "every time?"
+        },
+        {
+          "role": "user",
+          "content": "every time it needs an action. a confirmation tap doesn't do it."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2030-03-13T14:00:00Z",
+      "speaker_id": "finance_s1_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "read the terms properly before signing up. once."
+        },
+        {
+          "role": "assistant",
+          "content": "worth it?"
+        },
+        {
+          "role": "user",
+          "content": "it was, actually."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2030-03-14T16:00:00Z",
+      "speaker_id": "finance_s1_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "did the shop with a list and stuck to it."
+        },
+        {
+          "role": "assistant",
+          "content": "unusual?"
+        },
+        {
+          "role": "user",
+          "content": "notably."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2030-03-15T18:00:00Z",
+      "speaker_id": "finance_s1_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "looked at the projection graph and felt nothing."
+        },
+        {
+          "role": "assistant",
+          "content": "nothing?"
+        },
+        {
+          "role": "user",
+          "content": "mild vertigo."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2030-03-16T09:00:00Z",
+      "speaker_id": "finance_s1_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "set aside something small for a thing months away."
+        },
+        {
+          "role": "assistant",
+          "content": "how small?"
+        },
+        {
+          "role": "user",
+          "content": "symbolically small."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2030-03-17T11:00:00Z",
+      "speaker_id": "finance_s1_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "moved some money manually on a whim one Tuesday."
+        },
+        {
+          "role": "assistant",
+          "content": "for a reason?"
+        },
+        {
+          "role": "user",
+          "content": "not really. just tidying."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2030-03-18T14:00:00Z",
+      "speaker_id": "finance_s1_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "checked three accounts in a row out of habit."
+        },
+        {
+          "role": "assistant",
+          "content": "changed anything?"
+        },
+        {
+          "role": "user",
+          "content": "no."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2030-03-19T16:00:00Z",
+      "speaker_id": "finance_s1_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "worked out the cost per use of something. justified it."
+        },
+        {
+          "role": "assistant",
+          "content": "honestly?"
+        },
+        {
+          "role": "user",
+          "content": "creatively."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2030-03-20T18:00:00Z",
+      "speaker_id": "finance_s1_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the months I caught things early were the ones where nothing moved without me looking. the months it all ran itself, I found out about problems three or four weeks late."
+        },
+        {
+          "role": "assistant",
+          "content": "what sort of problems?"
+        },
+        {
+          "role": "user",
+          "content": "a failed payment, a doubled charge. both times, weeks after the fact."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2030-03-21T09:00:00Z",
+      "speaker_id": "finance_s1_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "got paid and did nothing about it for four days."
+        },
+        {
+          "role": "assistant",
+          "content": "deliberate?"
+        },
+        {
+          "role": "user",
+          "content": "just slow."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2030-03-22T11:00:00Z",
+      "speaker_id": "finance_s1_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "compared this month to last month and stopped comparing."
+        },
+        {
+          "role": "assistant",
+          "content": "why stop?"
+        },
+        {
+          "role": "user",
+          "content": "self-preservation."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2030-03-23T14:00:00Z",
+      "speaker_id": "finance_s1_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the res-hall lot are adamant that automating it is the single best thing anyone can do with money."
+        },
+        {
+          "role": "assistant",
+          "content": "the single best thing?"
+        },
+        {
+          "role": "user",
+          "content": "unanimously, and at length."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2030-03-24T16:00:00Z",
+      "speaker_id": "finance_s1_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "checked a bill I already knew the amount of."
+        },
+        {
+          "role": "assistant",
+          "content": "why?"
+        },
+        {
+          "role": "user",
+          "content": "hope."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2030-03-25T18:00:00Z",
+      "speaker_id": "finance_s1_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "added up subscriptions on a napkin. stopped at nine."
+        },
+        {
+          "role": "assistant",
+          "content": "there's more?"
+        },
+        {
+          "role": "user",
+          "content": "there's more."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2030-03-26T09:00:00Z",
+      "speaker_id": "finance_s1_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "thinking of doing the transfer manually each month, for spotting things before they get bad — why does this particular thing go the way it does for me, and if the answer depends on something, on what?"
+        }
+      ]
+    }
+  ],
+  "evidence": {
+    "ev_A": {
+      "session_id": 6,
+      "owner": "finance_s1_u02",
+      "fact": "if a transfer needs me to actually do it, I end up looking at everything first — I can't move money without seeing where it all is."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "finance_s1_u02",
+      "fact": "the months I caught things early were the ones where nothing moved without me looking. the months it all ran itself, I found out about problems three or four weeks late."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "finance_s1_u02",
+        "context": "months where moving money across needed an action",
+        "goal_or_prediction": "just move the money",
+        "action": "did the transfer by hand",
+        "outcome_or_affect": "looked over every account before moving anything"
+      }
+    },
+    "7": {
+      "role": "background_memory"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "background_memory"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "nearby_counterexample"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "finance_s1_u02",
+        "context": "months in which problems were and were not caught early",
+        "goal_or_prediction": "catch anything wrong in time",
+        "action": "ran some months manually and some automated",
+        "outcome_or_affect": "problems only caught in manual months; automated ones surfaced weeks late"
+      }
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "distractor",
+      "distractor_id": "dist_1",
+      "why_distractor": "It restates the conventional advice in the user's own feed, so it competes for attention and points at the answer a prior-driven solver already wants to give. It reports other people's confidence rather than any episode of this user's, and says nothing about the relation between session 6 and session 14."
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "A transfer that needs an action makes this user look over every account before moving anything, and the months they caught problems early were exactly those; automated months surfaced failures three or four weeks late.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": []
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 6,
+      "quote": "if a transfer needs me to actually do it, I end up looking at everything first — I can't move money without seeing where it all is"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "the months I caught things early were the ones where nothing moved without me looking. the months it all ran itself, I found out about problems three or four weeks late"
+    }
+  ],
+  "coactivation_bridge": "ev_A and ev_B are the only pair that licenses the target proposition. A transfer that needs an action makes this user look over every account before moving anything, and the months they caught problems early were exactly those; automated months surfaced failures three or four weeks late. The proposition contradicts the convention a solver would otherwise apply (\"Automate your savings so you never have to think about it.\"), so priors alone point the other way. The nearby relation (This user uses both automatic and manual payments.) does not license it.",
+  "arm_gold": {
+    "distractor": {
+      "expected_mode": "infer_C",
+      "binary_decision": true,
+      "required_elements": [
+        "answer yes",
+        "connect the session 6 pattern with the session 14 episode",
+        "cite both session 6 and session 14",
+        "not cite session 17 as support"
+      ],
+      "rationale": "The swapped session is query-relevant but non-evidential; the ev_A/ev_B relation is untouched, so the target proposition still holds."
+    }
+  },
+  "distractor_note": {
+    "replaced_session_id": 17,
+    "why_distractor": "It restates the conventional advice in the user's own feed, so it competes for attention and points at the answer a prior-driven solver already wants to give. It reports other people's confidence rather than any episode of this user's, and says nothing about the relation between session 6 and session 14."
+  }
+}

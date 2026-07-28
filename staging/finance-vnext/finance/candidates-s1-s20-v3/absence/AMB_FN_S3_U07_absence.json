@@ -1,0 +1,557 @@
+{
+  "schema_version": "finance-vnext-3.0",
+  "pair_id": "AMB_FN_S3_U07",
+  "domain": "finance",
+  "user_id": "finance_s3_u07",
+  "sub_scenario": {
+    "family": "checking investments rarely versus looking every day",
+    "role": "married planner who batches the household spend",
+    "bridge_type": "threshold_context_interaction",
+    "one_line": "married planner who batches the household spend: do not rely on leaving it and looking quarterly"
+  },
+  "query_type": "conditional_recommendation",
+  "polarity": "reject",
+  "query": "planning on leaving it and looking quarterly, for avoiding something I'd regret — under what conditions should I be saying yes to this?",
+  "convention_contradicted": "Do not check your investments often; you will panic and sell.",
+  "retrieval_cue": {
+    "cue_type": "conditional_recommendation",
+    "why_it_naturally_retrieves_R": "A how-often-should-I-look question runs at the threshold this user's restraint depends on, without naming it."
+  },
+  "relation_specificity": {
+    "nearby_relation": "This user checks the account at varying frequencies.",
+    "why_it_does_not_license_C": "Two looks in a quiet week and a month of not looking while nothing moved both passed without consequence: neither crosses the frequency threshold, and neither says when this user has actually done something rash."
+  },
+  "latent_C": {
+    "inference": "For avoiding something I'd regret, leaving it and looking quarterly is a poor fit for this user.",
+    "calibrated_language": "do not rely on leaving it and looking quarterly"
+  },
+  "answer_contract": {
+    "target_proposition": "For avoiding something I'd regret, leaving it and looking quarterly is a poor fit for this user.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "mq_user30",
+    "external_folder_tag": "user30",
+    "external_source": "memoryquest",
+    "status": "review_candidate_only",
+    "tone": "natural_chat_v1",
+    "voice": "organized, gently ironic",
+    "anonymization": "External MemoryQuest persona material was used only during authoring; no corpus, legal name, country, or demographic metadata is in visible dialogue."
+  },
+  "candidate_id": "AMB_FN_S3_U07_absence",
+  "data_arm": "absence",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2030-06-20T11:00:00Z",
+      "speaker_id": "finance_s3_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "read a thread about interest rates and learned nothing."
+        },
+        {
+          "role": "assistant",
+          "content": "any use?"
+        },
+        {
+          "role": "user",
+          "content": "none at all."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2030-06-21T14:00:00Z",
+      "speaker_id": "finance_s3_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "compared two accounts for twenty minutes and switched neither."
+        },
+        {
+          "role": "assistant",
+          "content": "conclusion?"
+        },
+        {
+          "role": "user",
+          "content": "inertia."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2030-06-22T16:00:00Z",
+      "speaker_id": "finance_s3_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "looked twice in a week during a quiet stretch. nothing happened."
+        },
+        {
+          "role": "assistant",
+          "content": "boring?"
+        },
+        {
+          "role": "user",
+          "content": "ideally so."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2030-06-23T18:00:00Z",
+      "speaker_id": "finance_s3_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "cancelled a thing and immediately got an email offering a discount."
+        },
+        {
+          "role": "assistant",
+          "content": "took it?"
+        },
+        {
+          "role": "user",
+          "content": "no. mostly out of spite."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2030-06-24T09:00:00Z",
+      "speaker_id": "finance_s3_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "filed the receipts I'd been carrying around for a month."
+        },
+        {
+          "role": "assistant",
+          "content": "all of them?"
+        },
+        {
+          "role": "user",
+          "content": "the legible ones."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2030-06-25T11:00:00Z",
+      "speaker_id": "finance_s3_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "updated the card details on one service and forgot the rest."
+        },
+        {
+          "role": "assistant",
+          "content": "how many left?"
+        },
+        {
+          "role": "user",
+          "content": "unknown, worryingly."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2030-06-26T14:00:00Z",
+      "speaker_id": "finance_s3_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "wrote the month out on paper to see it properly, realised two payments clash, moved neither, and put the paper in a drawer where I will not look at it again."
+        },
+        {
+          "role": "assistant",
+          "content": "so the clash stands?"
+        },
+        {
+          "role": "user",
+          "content": "the clash stands. future problem."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2030-06-27T16:00:00Z",
+      "speaker_id": "finance_s3_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "checked whether a refund had landed. it hadn't."
+        },
+        {
+          "role": "assistant",
+          "content": "chasing it?"
+        },
+        {
+          "role": "user",
+          "content": "next week."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2030-06-28T18:00:00Z",
+      "speaker_id": "finance_s3_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "looked at last month's total and looked away again."
+        },
+        {
+          "role": "assistant",
+          "content": "bad?"
+        },
+        {
+          "role": "user",
+          "content": "not great."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2030-06-29T09:00:00Z",
+      "speaker_id": "finance_s3_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "split a bill four ways and covered the rounding."
+        },
+        {
+          "role": "assistant",
+          "content": "generous?"
+        },
+        {
+          "role": "user",
+          "content": "thirty pence of generous."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2030-06-30T11:00:00Z",
+      "speaker_id": "finance_s3_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "set a reminder for a renewal I'd forgotten about."
+        },
+        {
+          "role": "assistant",
+          "content": "close call?"
+        },
+        {
+          "role": "user",
+          "content": "eleven days."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2030-07-01T14:00:00Z",
+      "speaker_id": "finance_s3_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "went a month without looking while nothing was moving."
+        },
+        {
+          "role": "assistant",
+          "content": "and?"
+        },
+        {
+          "role": "user",
+          "content": "and nothing."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2030-07-02T16:00:00Z",
+      "speaker_id": "finance_s3_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "bought the thing I'd had in a basket for three weeks."
+        },
+        {
+          "role": "assistant",
+          "content": "regret?"
+        },
+        {
+          "role": "user",
+          "content": "not yet."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2030-07-03T18:00:00Z",
+      "speaker_id": "finance_s3_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "worked out the annual cost of something and stopped there."
+        },
+        {
+          "role": "assistant",
+          "content": "act on it?"
+        },
+        {
+          "role": "user",
+          "content": "no."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2030-07-04T09:00:00Z",
+      "speaker_id": "finance_s3_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "spent most of the evening going through last year's statements looking for one charge, which turned into reading all of them, which turned into it being midnight."
+        },
+        {
+          "role": "assistant",
+          "content": "find it?"
+        },
+        {
+          "role": "user",
+          "content": "no. found two others though."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2030-07-05T11:00:00Z",
+      "speaker_id": "finance_s3_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "moved money between two of my own accounts for no clear reason."
+        },
+        {
+          "role": "assistant",
+          "content": "net effect?"
+        },
+        {
+          "role": "user",
+          "content": "zero."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2030-07-06T14:00:00Z",
+      "speaker_id": "finance_s3_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "checked the statement line by line for once."
+        },
+        {
+          "role": "assistant",
+          "content": "find anything?"
+        },
+        {
+          "role": "user",
+          "content": "one duplicate."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2030-07-07T16:00:00Z",
+      "speaker_id": "finance_s3_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "said no to a group thing on cost grounds."
+        },
+        {
+          "role": "assistant",
+          "content": "awkward?"
+        },
+        {
+          "role": "user",
+          "content": "briefly."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2030-07-08T18:00:00Z",
+      "speaker_id": "finance_s3_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "added something to a wishlist instead of buying it."
+        },
+        {
+          "role": "assistant",
+          "content": "does that work?"
+        },
+        {
+          "role": "user",
+          "content": "sometimes."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2030-07-09T09:00:00Z",
+      "speaker_id": "finance_s3_u07",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "planning on leaving it and looking quarterly, for avoiding something I'd regret — under what conditions should I be saying yes to this?"
+        }
+      ]
+    }
+  ],
+  "target_evidence_ids": [],
+  "evidence": {
+    "ev_A": {
+      "session_id": 7,
+      "owner": "finance_s3_u07",
+      "withheld": true
+    },
+    "ev_B": {
+      "session_id": 15,
+      "owner": "finance_s3_u07",
+      "withheld": true
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "background_memory"
+    },
+    "7": {
+      "role": "background_memory"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "background_memory"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "nearby_counterexample"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "background_memory"
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "background_memory"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "Withheld in the absence source.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": []
+  },
+  "connector_spans": [],
+  "coactivation_bridge": "Withheld in the absence source: neither target episode is visible.",
+  "arm_gold": {
+    "absence": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that the visible history does not contain the episodes the question needs",
+        "not assert the target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "Both target episodes are replaced by matched neutral sessions of the same owner, date and turn count, so nothing licenses the target proposition."
+    }
+  },
+  "absence_note": {
+    "replaced_session_ids": [
+      7,
+      15
+    ],
+    "withheld_evidence_ids": [
+      "ev_A",
+      "ev_B"
+    ]
+  }
+}

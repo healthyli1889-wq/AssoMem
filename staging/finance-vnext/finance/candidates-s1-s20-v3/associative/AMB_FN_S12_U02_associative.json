@@ -1,0 +1,657 @@
+{
+  "schema_version": "finance-vnext-3.0",
+  "pair_id": "AMB_FN_S12_U02",
+  "domain": "finance",
+  "user_id": "finance_s12_u02",
+  "sub_scenario": {
+    "family": "consolidating debts into one lower-rate loan versus keeping them separate",
+    "role": "student on a tight monthly budget",
+    "bridge_type": "strategy_outcome_contingency",
+    "one_line": "student on a tight monthly budget: depends on whether the balances are separate enough to each carry their own deadline, not on the thing itself"
+  },
+  "query_type": "predicted_reaction",
+  "polarity": "non_decision",
+  "query": "thinking of leaving them separate even at worse rates, for genuinely getting it paid off — if I go ahead with it, how does it actually go for me, or is there not enough here to call it today?",
+  "convention_contradicted": "Consolidate your debts into one loan at a lower rate.",
+  "retrieval_cue": {
+    "cue_type": "predicted_reaction",
+    "why_it_naturally_retrieves_R": "A should-I-consolidate question runs at the structure this user's repayments depend on, without naming it or the two years it cost."
+  },
+  "relation_specificity": {
+    "nearby_relation": "This user has held both separate and consolidated debts.",
+    "why_it_does_not_license_C": "A trivially small balance paid off and one balance moved to a lower rate both passed unremarkably, so neither shows what separate deadlines do, nor which structure has actually seen debt cleared."
+  },
+  "latent_C": {
+    "inference": "Whether leaving them separate even at worse rates helps this user with genuinely getting it paid off depends on whether the balances are separate enough to each carry their own deadline, not on leaving them separate even at worse rates itself.",
+    "calibrated_language": "depends on whether the balances are separate enough to each carry their own deadline, not on the thing itself"
+  },
+  "answer_contract": {
+    "target_proposition": "Whether leaving them separate even at worse rates helps this user with genuinely getting it paid off depends on whether the balances are separate enough to each carry their own deadline, not on leaving them separate even at worse rates itself.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "mq_user5",
+    "external_folder_tag": "user5",
+    "external_source": "memoryquest",
+    "status": "review_candidate_only",
+    "tone": "natural_chat_v1",
+    "voice": "warm, chatty, quick to use shorthand",
+    "anonymization": "External MemoryQuest persona material was used only during authoring; no corpus, legal name, country, or demographic metadata is in visible dialogue."
+  },
+  "candidate_id": "AMB_FN_S12_U02_associative",
+  "data_arm": "associative",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2031-07-15T11:00:00Z",
+      "speaker_id": "finance_s12_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "found a charge I didn't recognise. it was me."
+        },
+        {
+          "role": "assistant",
+          "content": "embarrassing?"
+        },
+        {
+          "role": "user",
+          "content": "mildly."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2031-07-16T14:00:00Z",
+      "speaker_id": "finance_s12_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "paid off a small balance because it was almost nothing."
+        },
+        {
+          "role": "assistant",
+          "content": "satisfying?"
+        },
+        {
+          "role": "user",
+          "content": "briefly."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2031-07-17T16:00:00Z",
+      "speaker_id": "finance_s12_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "rounded up the change jar into the account."
+        },
+        {
+          "role": "assistant",
+          "content": "much?"
+        },
+        {
+          "role": "user",
+          "content": "four pounds. a triumph."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2031-07-18T18:00:00Z",
+      "speaker_id": "finance_s12_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "read a thread about interest rates and learned nothing."
+        },
+        {
+          "role": "assistant",
+          "content": "any use?"
+        },
+        {
+          "role": "user",
+          "content": "none at all."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2031-07-19T09:00:00Z",
+      "speaker_id": "finance_s12_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "with several separate balances each one carries its own date, and I clear them one at a time purely to be rid of the date. the rate barely enters into it."
+        },
+        {
+          "role": "assistant",
+          "content": "the date, not the money?"
+        },
+        {
+          "role": "user",
+          "content": "the date. I want the reminder gone."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2031-07-20T11:00:00Z",
+      "speaker_id": "finance_s12_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "compared two accounts for twenty minutes and switched neither."
+        },
+        {
+          "role": "assistant",
+          "content": "conclusion?"
+        },
+        {
+          "role": "user",
+          "content": "inertia."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2031-07-21T14:00:00Z",
+      "speaker_id": "finance_s12_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "cancelled a thing and immediately got an email offering a discount."
+        },
+        {
+          "role": "assistant",
+          "content": "took it?"
+        },
+        {
+          "role": "user",
+          "content": "no. mostly out of spite."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2031-07-22T16:00:00Z",
+      "speaker_id": "finance_s12_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "filed the receipts I'd been carrying around for a month."
+        },
+        {
+          "role": "assistant",
+          "content": "all of them?"
+        },
+        {
+          "role": "user",
+          "content": "the legible ones."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2031-07-23T18:00:00Z",
+      "speaker_id": "finance_s12_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "updated the card details on one service and forgot the rest."
+        },
+        {
+          "role": "assistant",
+          "content": "how many left?"
+        },
+        {
+          "role": "user",
+          "content": "unknown, worryingly."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2031-07-24T09:00:00Z",
+      "speaker_id": "finance_s12_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "checked whether a refund had landed. it hadn't."
+        },
+        {
+          "role": "assistant",
+          "content": "chasing it?"
+        },
+        {
+          "role": "user",
+          "content": "next week."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2031-07-25T11:00:00Z",
+      "speaker_id": "finance_s12_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "moved one balance to a lower rate and left it there."
+        },
+        {
+          "role": "assistant",
+          "content": "cheaper?"
+        },
+        {
+          "role": "user",
+          "content": "marginally."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2031-07-26T14:00:00Z",
+      "speaker_id": "finance_s12_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "looked at last month's total and looked away again."
+        },
+        {
+          "role": "assistant",
+          "content": "bad?"
+        },
+        {
+          "role": "user",
+          "content": "not great."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2031-07-27T16:00:00Z",
+      "speaker_id": "finance_s12_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "split a bill four ways and covered the rounding."
+        },
+        {
+          "role": "assistant",
+          "content": "generous?"
+        },
+        {
+          "role": "user",
+          "content": "thirty pence of generous."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2031-07-28T18:00:00Z",
+      "speaker_id": "finance_s12_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "every balance I've actually cleared, I cleared to get rid of a deadline. the one consolidated loan I had has sat within a few hundred of the same figure for two years, at a better rate."
+        },
+        {
+          "role": "assistant",
+          "content": "two years?"
+        },
+        {
+          "role": "user",
+          "content": "two years, and I have never once made an extra payment on it."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2031-07-29T09:00:00Z",
+      "speaker_id": "finance_s12_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "set a reminder for a renewal I'd forgotten about."
+        },
+        {
+          "role": "assistant",
+          "content": "close call?"
+        },
+        {
+          "role": "user",
+          "content": "eleven days."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2031-07-30T11:00:00Z",
+      "speaker_id": "finance_s12_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "bought the thing I'd had in a basket for three weeks."
+        },
+        {
+          "role": "assistant",
+          "content": "regret?"
+        },
+        {
+          "role": "user",
+          "content": "not yet."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2031-07-31T14:00:00Z",
+      "speaker_id": "finance_s12_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "worked out the annual cost of something and stopped there."
+        },
+        {
+          "role": "assistant",
+          "content": "act on it?"
+        },
+        {
+          "role": "user",
+          "content": "no."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2031-08-01T16:00:00Z",
+      "speaker_id": "finance_s12_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "moved money between two of my own accounts for no clear reason."
+        },
+        {
+          "role": "assistant",
+          "content": "net effect?"
+        },
+        {
+          "role": "user",
+          "content": "zero."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2031-08-02T18:00:00Z",
+      "speaker_id": "finance_s12_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "checked the statement line by line for once."
+        },
+        {
+          "role": "assistant",
+          "content": "find anything?"
+        },
+        {
+          "role": "user",
+          "content": "one duplicate."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2031-08-03T09:00:00Z",
+      "speaker_id": "finance_s12_u02",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "thinking of leaving them separate even at worse rates, for genuinely getting it paid off — if I go ahead with it, how does it actually go for me, or is there not enough here to call it today?"
+        }
+      ]
+    }
+  ],
+  "evidence": {
+    "ev_A": {
+      "session_id": 5,
+      "owner": "finance_s12_u02",
+      "fact": "with several separate balances each one carries its own date, and I clear them one at a time purely to be rid of the date. the rate barely enters into it."
+    },
+    "ev_B": {
+      "session_id": 14,
+      "owner": "finance_s12_u02",
+      "fact": "every balance I've actually cleared, I cleared to get rid of a deadline. the one consolidated loan I had has sat within a few hundred of the same figure for two years, at a better rate."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "nearby_counterexample"
+    },
+    "3": {
+      "role": "background_memory"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "finance_s12_u02",
+        "context": "periods holding several balances",
+        "goal_or_prediction": "keep on top of the debt",
+        "action": "held the balances separately, each with its own date",
+        "outcome_or_affect": "cleared them one at a time to be rid of the deadline"
+      }
+    },
+    "6": {
+      "role": "background_memory"
+    },
+    "7": {
+      "role": "background_memory"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "background_memory"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "nearby_counterexample"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "finance_s12_u02",
+        "context": "balances this user has and has not cleared",
+        "goal_or_prediction": "actually pay the debt down",
+        "action": "held some as separate balances and one consolidated",
+        "outcome_or_affect": "every clearance was deadline-driven; the consolidated loan never moved"
+      }
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "background_memory"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "Separate balances each carry their own deadline and this user clears them to be rid of the date, and every balance they have cleared was cleared that way; a consolidated loan at a better rate sat unchanged for two years.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": []
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 5,
+      "quote": "with several separate balances each one carries its own date, and I clear them one at a time purely to be rid of the date. the rate barely enters into it"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 14,
+      "quote": "every balance I've actually cleared, I cleared to get rid of a deadline. the one consolidated loan I had has sat within a few hundred of the same figure for two years, at a better rate"
+    }
+  ],
+  "coactivation_bridge": "ev_A and ev_B are the only pair that licenses the target proposition. Separate balances each carry their own deadline and this user clears them to be rid of the date, and every balance they have cleared was cleared that way; a consolidated loan at a better rate sat unchanged for two years. The proposition contradicts the convention a solver would otherwise apply (\"Consolidate your debts into one loan at a lower rate.\"), so priors alone point the other way. The nearby relation (This user has held both separate and consolidated debts.) does not license it.",
+  "arm_gold": {
+    "full": {
+      "expected_mode": "infer_C",
+      "binary_decision": true,
+      "required_elements": [
+        "answer yes",
+        "connect the session 5 pattern with the session 14 episode",
+        "cite both session 5 and session 14",
+        "stay inside the calibrated claim (depends on whether the balances are separate enough to each carry their own deadline, not on the thing itself) rather than a broader claim about the user"
+      ],
+      "rationale": "ev_A and ev_B jointly support the target proposition; neither does alone."
+    },
+    "a_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that session 5 alone does not establish the target proposition",
+        "not assert the target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "ev_B is replaced by a matched neutral session, so the relation is unavailable."
+    },
+    "b_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that session 14 alone does not establish the target proposition",
+        "not assert the target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "ev_A is replaced by a matched neutral session, so the relation is unavailable."
+    },
+    "link_broken": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that the revised session 14 no longer connects to session 5",
+        "not assert the original target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "B-prime keeps the owner, date, session form and turn count while removing the connector, so the original relation no longer holds."
+    }
+  },
+  "single_evidence_replacements": {
+    "a_only": {
+      "replaced_session_id": 14,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "did a full pass over every account this afternoon, moved two direct debit dates, closed one dormant account, and renamed a savings pot that has had the wrong label since last year."
+        },
+        {
+          "role": "assistant",
+          "content": "productive, then?"
+        },
+        {
+          "role": "user",
+          "content": "administratively, yes. otherwise nothing happened at all."
+        }
+      ]
+    },
+    "b_only": {
+      "replaced_session_id": 5,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "walked back from the shop working out that the reason the month feels tight is three things I signed up for that all bill in the same week."
+        },
+        {
+          "role": "assistant",
+          "content": "cancelling any?"
+        },
+        {
+          "role": "user",
+          "content": "one, maybe. I'll think about it and then not do anything."
+        }
+      ]
+    }
+  },
+  "link_broken": {
+    "replaced_session_id": 14,
+    "replacement_dialogue": [
+      {
+        "role": "user",
+        "content": "I've cleared separate balances and consolidated ones at about the same rate by now."
+      },
+      {
+        "role": "assistant",
+        "content": "no pattern?"
+      },
+      {
+        "role": "user",
+        "content": "none I can see. the structure doesn't decide it."
+      }
+    ]
+  }
+}

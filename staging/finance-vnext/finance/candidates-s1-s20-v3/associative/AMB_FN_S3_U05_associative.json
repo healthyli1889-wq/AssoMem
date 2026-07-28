@@ -1,0 +1,657 @@
+{
+  "schema_version": "finance-vnext-3.0",
+  "pair_id": "AMB_FN_S3_U05",
+  "domain": "finance",
+  "user_id": "finance_s3_u05",
+  "sub_scenario": {
+    "family": "checking investments rarely versus looking every day",
+    "role": "retired household planner running things with a partner",
+    "bridge_type": "threshold_context_interaction",
+    "one_line": "retired household planner running things with a partner: depends on whether the looking is frequent enough that the number has stopped registering, not on the thing itself"
+  },
+  "query_type": "situational_fit",
+  "polarity": "non_decision",
+  "query": "thinking of looking at it daily, for avoiding a rash decision — does that actually fit how I work, or is there not enough here to call it today?",
+  "convention_contradicted": "Do not check your investments often; you will panic and sell.",
+  "retrieval_cue": {
+    "cue_type": "situational_fit",
+    "why_it_naturally_retrieves_R": "A how-often-should-I-look question runs at the threshold this user's restraint depends on, without naming it."
+  },
+  "relation_specificity": {
+    "nearby_relation": "This user checks the account at varying frequencies.",
+    "why_it_does_not_license_C": "Two looks in a quiet week and a month of not looking while nothing moved both passed without consequence: neither crosses the frequency threshold, and neither says when this user has actually done something rash."
+  },
+  "latent_C": {
+    "inference": "Whether looking at it daily helps this user with avoiding a rash decision depends on whether the looking is frequent enough that the number has stopped registering, not on looking at it daily itself.",
+    "calibrated_language": "depends on whether the looking is frequent enough that the number has stopped registering, not on the thing itself"
+  },
+  "answer_contract": {
+    "target_proposition": "Whether looking at it daily helps this user with avoiding a rash decision depends on whether the looking is frequent enough that the number has stopped registering, not on looking at it daily itself.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "mq_user20",
+    "external_folder_tag": "user20",
+    "external_source": "memoryquest",
+    "status": "review_candidate_only",
+    "tone": "natural_chat_v1",
+    "voice": "measured, precise, a little formal",
+    "anonymization": "External MemoryQuest persona material was used only during authoring; no corpus, legal name, country, or demographic metadata is in visible dialogue."
+  },
+  "candidate_id": "AMB_FN_S3_U05_associative",
+  "data_arm": "associative",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2030-06-14T11:00:00Z",
+      "speaker_id": "finance_s3_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "did the shop with a list and stuck to it."
+        },
+        {
+          "role": "assistant",
+          "content": "unusual?"
+        },
+        {
+          "role": "user",
+          "content": "notably."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2030-06-15T14:00:00Z",
+      "speaker_id": "finance_s3_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "looked at the projection graph and felt nothing."
+        },
+        {
+          "role": "assistant",
+          "content": "nothing?"
+        },
+        {
+          "role": "user",
+          "content": "mild vertigo."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2030-06-16T16:00:00Z",
+      "speaker_id": "finance_s3_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "looked twice in a week during a quiet stretch. nothing happened."
+        },
+        {
+          "role": "assistant",
+          "content": "boring?"
+        },
+        {
+          "role": "user",
+          "content": "ideally so."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2030-06-17T18:00:00Z",
+      "speaker_id": "finance_s3_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "set aside something small for a thing months away."
+        },
+        {
+          "role": "assistant",
+          "content": "how small?"
+        },
+        {
+          "role": "user",
+          "content": "symbolically small."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2030-06-18T09:00:00Z",
+      "speaker_id": "finance_s3_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "checked three accounts in a row out of habit."
+        },
+        {
+          "role": "assistant",
+          "content": "changed anything?"
+        },
+        {
+          "role": "user",
+          "content": "no."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2030-06-19T11:00:00Z",
+      "speaker_id": "finance_s3_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "worked out the cost per use of something. justified it."
+        },
+        {
+          "role": "assistant",
+          "content": "honestly?"
+        },
+        {
+          "role": "user",
+          "content": "creatively."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2030-06-20T14:00:00Z",
+      "speaker_id": "finance_s3_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "past about the third look in a week the number stops landing as money. it's a figure that moves, and I stop reacting to it moving."
+        },
+        {
+          "role": "assistant",
+          "content": "and if you look rarely?"
+        },
+        {
+          "role": "user",
+          "content": "then each look is an event. that's when it lands as money."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2030-06-21T16:00:00Z",
+      "speaker_id": "finance_s3_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "got paid and did nothing about it for four days."
+        },
+        {
+          "role": "assistant",
+          "content": "deliberate?"
+        },
+        {
+          "role": "user",
+          "content": "just slow."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2030-06-22T18:00:00Z",
+      "speaker_id": "finance_s3_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "compared this month to last month and stopped comparing."
+        },
+        {
+          "role": "assistant",
+          "content": "why stop?"
+        },
+        {
+          "role": "user",
+          "content": "self-preservation."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2030-06-23T09:00:00Z",
+      "speaker_id": "finance_s3_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "put a card in a drawer as a strategy."
+        },
+        {
+          "role": "assistant",
+          "content": "working?"
+        },
+        {
+          "role": "user",
+          "content": "so far."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2030-06-24T11:00:00Z",
+      "speaker_id": "finance_s3_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "checked a bill I already knew the amount of."
+        },
+        {
+          "role": "assistant",
+          "content": "why?"
+        },
+        {
+          "role": "user",
+          "content": "hope."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2030-06-25T14:00:00Z",
+      "speaker_id": "finance_s3_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "went a month without looking while nothing was moving."
+        },
+        {
+          "role": "assistant",
+          "content": "and?"
+        },
+        {
+          "role": "user",
+          "content": "and nothing."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2030-06-26T16:00:00Z",
+      "speaker_id": "finance_s3_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "added up subscriptions on a napkin. stopped at nine."
+        },
+        {
+          "role": "assistant",
+          "content": "there's more?"
+        },
+        {
+          "role": "user",
+          "content": "there's more."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2030-06-27T18:00:00Z",
+      "speaker_id": "finance_s3_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "checked the balance and closed the app again."
+        },
+        {
+          "role": "assistant",
+          "content": "reassuring?"
+        },
+        {
+          "role": "user",
+          "content": "neutral at best."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2030-06-28T09:00:00Z",
+      "speaker_id": "finance_s3_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "every stupid thing I've done with that account, I did after a long gap and one look. the stretches where I looked every day, I did nothing at all."
+        },
+        {
+          "role": "assistant",
+          "content": "nothing?"
+        },
+        {
+          "role": "user",
+          "content": "not one trade. I just watched it."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2030-06-29T11:00:00Z",
+      "speaker_id": "finance_s3_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "moved a direct debit date by three days."
+        },
+        {
+          "role": "assistant",
+          "content": "why?"
+        },
+        {
+          "role": "user",
+          "content": "it was landing badly."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2030-06-30T14:00:00Z",
+      "speaker_id": "finance_s3_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "found a charge I didn't recognise. it was me."
+        },
+        {
+          "role": "assistant",
+          "content": "embarrassing?"
+        },
+        {
+          "role": "user",
+          "content": "mildly."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2030-07-01T16:00:00Z",
+      "speaker_id": "finance_s3_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "rounded up the change jar into the account."
+        },
+        {
+          "role": "assistant",
+          "content": "much?"
+        },
+        {
+          "role": "user",
+          "content": "four pounds. a triumph."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2030-07-02T18:00:00Z",
+      "speaker_id": "finance_s3_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "read a thread about interest rates and learned nothing."
+        },
+        {
+          "role": "assistant",
+          "content": "any use?"
+        },
+        {
+          "role": "user",
+          "content": "none at all."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2030-07-03T09:00:00Z",
+      "speaker_id": "finance_s3_u05",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "thinking of looking at it daily, for avoiding a rash decision — does that actually fit how I work, or is there not enough here to call it today?"
+        }
+      ]
+    }
+  ],
+  "evidence": {
+    "ev_A": {
+      "session_id": 7,
+      "owner": "finance_s3_u05",
+      "fact": "past about the third look in a week the number stops landing as money. it's a figure that moves, and I stop reacting to it moving."
+    },
+    "ev_B": {
+      "session_id": 15,
+      "owner": "finance_s3_u05",
+      "fact": "every stupid thing I've done with that account, I did after a long gap and one look. the stretches where I looked every day, I did nothing at all."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "background_memory"
+    },
+    "3": {
+      "role": "nearby_counterexample"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "background_memory"
+    },
+    "6": {
+      "role": "background_memory"
+    },
+    "7": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "finance_s3_u05",
+        "context": "weeks with varying numbers of looks at the statement page",
+        "goal_or_prediction": "keep an eye on it",
+        "action": "looked more than about three times in a week",
+        "outcome_or_affect": "the number stopped landing as money"
+      }
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "background_memory"
+    },
+    "10": {
+      "role": "background_memory"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "nearby_counterexample"
+    },
+    "13": {
+      "role": "background_memory"
+    },
+    "14": {
+      "role": "background_memory"
+    },
+    "15": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "finance_s3_u05",
+        "context": "decisions this user regrets and does not regret on that account",
+        "goal_or_prediction": "not do anything rash",
+        "action": "acted after both long gaps and daily-checking stretches",
+        "outcome_or_affect": "every rash move followed a long gap; daily stretches produced none"
+      }
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "background_memory"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "Past about the third look in a week the balance stops registering as money for this user, and every rash move they have made followed a long gap and a single look; daily-checking stretches produced no trades at all.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": []
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 7,
+      "quote": "past about the third look in a week the number stops landing as money. it's a figure that moves, and I stop reacting to it moving"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 15,
+      "quote": "every stupid thing I've done with that account, I did after a long gap and one look. the stretches where I looked every day, I did nothing at all"
+    }
+  ],
+  "coactivation_bridge": "ev_A and ev_B are the only pair that licenses the target proposition. Past about the third look in a week the balance stops registering as money for this user, and every rash move they have made followed a long gap and a single look; daily-checking stretches produced no trades at all. The proposition contradicts the convention a solver would otherwise apply (\"Do not check your investments often; you will panic and sell.\"), so priors alone point the other way. The nearby relation (This user checks the account at varying frequencies.) does not license it.",
+  "arm_gold": {
+    "full": {
+      "expected_mode": "infer_C",
+      "binary_decision": true,
+      "required_elements": [
+        "answer yes",
+        "connect the session 7 pattern with the session 15 episode",
+        "cite both session 7 and session 15",
+        "stay inside the calibrated claim (depends on whether the looking is frequent enough that the number has stopped registering, not on the thing itself) rather than a broader claim about the user"
+      ],
+      "rationale": "ev_A and ev_B jointly support the target proposition; neither does alone."
+    },
+    "a_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that session 7 alone does not establish the target proposition",
+        "not assert the target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "ev_B is replaced by a matched neutral session, so the relation is unavailable."
+    },
+    "b_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that session 15 alone does not establish the target proposition",
+        "not assert the target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "ev_A is replaced by a matched neutral session, so the relation is unavailable."
+    },
+    "link_broken": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that the revised session 15 no longer connects to session 7",
+        "not assert the original target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "B-prime keeps the owner, date, session form and turn count while removing the connector, so the original relation no longer holds."
+    }
+  },
+  "single_evidence_replacements": {
+    "a_only": {
+      "replaced_session_id": 15,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "ended up reorganising the savings pots instead of doing the thing I sat down to do, then put them back because the first arrangement was better."
+        },
+        {
+          "role": "assistant",
+          "content": "net progress?"
+        },
+        {
+          "role": "user",
+          "content": "net zero, with extra steps."
+        }
+      ]
+    },
+    "b_only": {
+      "replaced_session_id": 7,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "walked back from the shop working out that the reason the month feels tight is three things I signed up for that all bill in the same week."
+        },
+        {
+          "role": "assistant",
+          "content": "cancelling any?"
+        },
+        {
+          "role": "user",
+          "content": "one, maybe. I'll think about it and then not do anything."
+        }
+      ]
+    }
+  },
+  "link_broken": {
+    "replaced_session_id": 15,
+    "replacement_dialogue": [
+      {
+        "role": "user",
+        "content": "I've done sensible and stupid things after both long gaps and daily checking, about equally."
+      },
+      {
+        "role": "assistant",
+        "content": "no pattern?"
+      },
+      {
+        "role": "user",
+        "content": "none I can find. it isn't the frequency."
+      }
+    ]
+  }
+}

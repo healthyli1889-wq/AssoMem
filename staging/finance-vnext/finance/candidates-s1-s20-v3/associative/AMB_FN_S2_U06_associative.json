@@ -1,0 +1,657 @@
+{
+  "schema_version": "finance-vnext-3.0",
+  "pair_id": "AMB_FN_S2_U06",
+  "domain": "finance",
+  "user_id": "finance_s2_u06",
+  "sub_scenario": {
+    "family": "consolidating onto one account versus splitting across separate cards",
+    "role": "student watching every subscription",
+    "bridge_type": "strategy_outcome_contingency",
+    "one_line": "student watching every subscription: go ahead with running separate cards for each type of thing"
+  },
+  "query_type": "situational_fit",
+  "polarity": "accept",
+  "query": "thinking of running separate cards for each type of thing, for getting a grip on the spending — does that actually fit how I work?",
+  "convention_contradicted": "Keep it simple — one account, one card, so you can see everything.",
+  "retrieval_cue": {
+    "cue_type": "situational_fit",
+    "why_it_naturally_retrieves_R": "An ordinary simplify-my-setup question runs at the structure this user's control depends on, without naming it or the year it cost."
+  },
+  "relation_specificity": {
+    "nearby_relation": "This user has run both split and consolidated setups.",
+    "why_it_does_not_license_C": "A barely-used second account and one month's shopping on the wrong card both passed unremarkably: neither is a split by category, and neither says which setup has ever produced control."
+  },
+  "latent_C": {
+    "inference": "For getting a grip on the spending, running separate cards for each type of thing is a good fit for this user.",
+    "calibrated_language": "go ahead with running separate cards for each type of thing"
+  },
+  "answer_contract": {
+    "target_proposition": "For getting a grip on the spending, running separate cards for each type of thing is a good fit for this user.",
+    "allowed_decisions": [
+      "yes",
+      "no"
+    ],
+    "decision_semantics": {
+      "yes": "The visible records support the target proposition.",
+      "no": "The visible records do not support the target proposition; this does not assert the opposite arrangement is good."
+    },
+    "required_output_fields": [
+      "mode",
+      "answer",
+      "evidence_session_ids"
+    ]
+  },
+  "provenance": {
+    "persona_anchor": "mq_user25",
+    "external_folder_tag": "user25",
+    "external_source": "memoryquest",
+    "status": "review_candidate_only",
+    "tone": "natural_chat_v1",
+    "voice": "upbeat, casual, uses lowercase",
+    "anonymization": "External MemoryQuest persona material was used only during authoring; no corpus, legal name, country, or demographic metadata is in visible dialogue."
+  },
+  "candidate_id": "AMB_FN_S2_U06_associative",
+  "data_arm": "associative",
+  "context": [
+    {
+      "session_id": 1,
+      "timestamp": "2030-05-03T11:00:00Z",
+      "speaker_id": "finance_s2_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "checked the pension statement. understood about half."
+        },
+        {
+          "role": "assistant",
+          "content": "the other half?"
+        },
+        {
+          "role": "user",
+          "content": "next year's problem."
+        }
+      ]
+    },
+    {
+      "session_id": 2,
+      "timestamp": "2030-05-04T14:00:00Z",
+      "speaker_id": "finance_s2_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "opened a second account at a different bank for no real reason."
+        },
+        {
+          "role": "assistant",
+          "content": "using it?"
+        },
+        {
+          "role": "user",
+          "content": "barely."
+        }
+      ]
+    },
+    {
+      "session_id": 3,
+      "timestamp": "2030-05-05T16:00:00Z",
+      "speaker_id": "finance_s2_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "found an old account with eleven pounds in it."
+        },
+        {
+          "role": "assistant",
+          "content": "closing it?"
+        },
+        {
+          "role": "user",
+          "content": "eventually."
+        }
+      ]
+    },
+    {
+      "session_id": 4,
+      "timestamp": "2030-05-06T18:00:00Z",
+      "speaker_id": "finance_s2_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "declined an upgrade offer over the phone."
+        },
+        {
+          "role": "assistant",
+          "content": "hard?"
+        },
+        {
+          "role": "user",
+          "content": "harder than it should be."
+        }
+      ]
+    },
+    {
+      "session_id": 5,
+      "timestamp": "2030-05-07T09:00:00Z",
+      "speaker_id": "finance_s2_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "when everything comes off one account I read it as one number. I can't tell the categories apart, so I don't treat them differently."
+        },
+        {
+          "role": "assistant",
+          "content": "not even roughly?"
+        },
+        {
+          "role": "user",
+          "content": "not even roughly. it's a single figure going down."
+        }
+      ]
+    },
+    {
+      "session_id": 6,
+      "timestamp": "2030-05-08T11:00:00Z",
+      "speaker_id": "finance_s2_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "worked out I've paid for something twice for two months."
+        },
+        {
+          "role": "assistant",
+          "content": "sorted?"
+        },
+        {
+          "role": "user",
+          "content": "one email in."
+        }
+      ]
+    },
+    {
+      "session_id": 7,
+      "timestamp": "2030-05-09T14:00:00Z",
+      "speaker_id": "finance_s2_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "took cash out and then used the card anyway."
+        },
+        {
+          "role": "assistant",
+          "content": "why?"
+        },
+        {
+          "role": "user",
+          "content": "no explanation available."
+        }
+      ]
+    },
+    {
+      "session_id": 8,
+      "timestamp": "2030-05-10T16:00:00Z",
+      "speaker_id": "finance_s2_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "read the terms properly before signing up. once."
+        },
+        {
+          "role": "assistant",
+          "content": "worth it?"
+        },
+        {
+          "role": "user",
+          "content": "it was, actually."
+        }
+      ]
+    },
+    {
+      "session_id": 9,
+      "timestamp": "2030-05-11T18:00:00Z",
+      "speaker_id": "finance_s2_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "did the shop with a list and stuck to it."
+        },
+        {
+          "role": "assistant",
+          "content": "unusual?"
+        },
+        {
+          "role": "user",
+          "content": "notably."
+        }
+      ]
+    },
+    {
+      "session_id": 10,
+      "timestamp": "2030-05-12T09:00:00Z",
+      "speaker_id": "finance_s2_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "put one month's shopping on a different card by accident."
+        },
+        {
+          "role": "assistant",
+          "content": "notice?"
+        },
+        {
+          "role": "user",
+          "content": "only at the statement."
+        }
+      ]
+    },
+    {
+      "session_id": 11,
+      "timestamp": "2030-05-13T11:00:00Z",
+      "speaker_id": "finance_s2_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "looked at the projection graph and felt nothing."
+        },
+        {
+          "role": "assistant",
+          "content": "nothing?"
+        },
+        {
+          "role": "user",
+          "content": "mild vertigo."
+        }
+      ]
+    },
+    {
+      "session_id": 12,
+      "timestamp": "2030-05-14T14:00:00Z",
+      "speaker_id": "finance_s2_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "set aside something small for a thing months away."
+        },
+        {
+          "role": "assistant",
+          "content": "how small?"
+        },
+        {
+          "role": "user",
+          "content": "symbolically small."
+        }
+      ]
+    },
+    {
+      "session_id": 13,
+      "timestamp": "2030-05-15T16:00:00Z",
+      "speaker_id": "finance_s2_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "the categories I've ever actually got under control each had their own card. the year I put it all on one, I overspent on everything by about the same amount."
+        },
+        {
+          "role": "assistant",
+          "content": "everything equally?"
+        },
+        {
+          "role": "user",
+          "content": "evenly, which was almost impressive."
+        }
+      ]
+    },
+    {
+      "session_id": 14,
+      "timestamp": "2030-05-16T18:00:00Z",
+      "speaker_id": "finance_s2_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "checked three accounts in a row out of habit."
+        },
+        {
+          "role": "assistant",
+          "content": "changed anything?"
+        },
+        {
+          "role": "user",
+          "content": "no."
+        }
+      ]
+    },
+    {
+      "session_id": 15,
+      "timestamp": "2030-05-17T09:00:00Z",
+      "speaker_id": "finance_s2_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "worked out the cost per use of something. justified it."
+        },
+        {
+          "role": "assistant",
+          "content": "honestly?"
+        },
+        {
+          "role": "user",
+          "content": "creatively."
+        }
+      ]
+    },
+    {
+      "session_id": 16,
+      "timestamp": "2030-05-18T11:00:00Z",
+      "speaker_id": "finance_s2_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "got paid and did nothing about it for four days."
+        },
+        {
+          "role": "assistant",
+          "content": "deliberate?"
+        },
+        {
+          "role": "user",
+          "content": "just slow."
+        }
+      ]
+    },
+    {
+      "session_id": 17,
+      "timestamp": "2030-05-19T14:00:00Z",
+      "speaker_id": "finance_s2_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "compared this month to last month and stopped comparing."
+        },
+        {
+          "role": "assistant",
+          "content": "why stop?"
+        },
+        {
+          "role": "user",
+          "content": "self-preservation."
+        }
+      ]
+    },
+    {
+      "session_id": 18,
+      "timestamp": "2030-05-20T16:00:00Z",
+      "speaker_id": "finance_s2_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "put a card in a drawer as a strategy."
+        },
+        {
+          "role": "assistant",
+          "content": "working?"
+        },
+        {
+          "role": "user",
+          "content": "so far."
+        }
+      ]
+    },
+    {
+      "session_id": 19,
+      "timestamp": "2030-05-21T18:00:00Z",
+      "speaker_id": "finance_s2_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "checked a bill I already knew the amount of."
+        },
+        {
+          "role": "assistant",
+          "content": "why?"
+        },
+        {
+          "role": "user",
+          "content": "hope."
+        }
+      ]
+    },
+    {
+      "session_id": 20,
+      "timestamp": "2030-05-22T09:00:00Z",
+      "speaker_id": "finance_s2_u06",
+      "speaker_label": "User",
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "thinking of running separate cards for each type of thing, for getting a grip on the spending — does that actually fit how I work?"
+        }
+      ]
+    }
+  ],
+  "evidence": {
+    "ev_A": {
+      "session_id": 5,
+      "owner": "finance_s2_u06",
+      "fact": "when everything comes off one account I read it as one number. I can't tell the categories apart, so I don't treat them differently."
+    },
+    "ev_B": {
+      "session_id": 13,
+      "owner": "finance_s2_u06",
+      "fact": "the categories I've ever actually got under control each had their own card. the year I put it all on one, I overspent on everything by about the same amount."
+    }
+  },
+  "episode_annotations": {
+    "1": {
+      "role": "background_memory"
+    },
+    "2": {
+      "role": "nearby_counterexample"
+    },
+    "3": {
+      "role": "background_memory"
+    },
+    "4": {
+      "role": "background_memory"
+    },
+    "5": {
+      "role": "ev_A",
+      "event_elements": {
+        "person": "finance_s2_u06",
+        "context": "periods running everything through one account",
+        "goal_or_prediction": "keep it simple and visible",
+        "action": "put all spending through a single account",
+        "outcome_or_affect": "read it as one figure; categories became indistinguishable"
+      }
+    },
+    "6": {
+      "role": "background_memory"
+    },
+    "7": {
+      "role": "background_memory"
+    },
+    "8": {
+      "role": "background_memory"
+    },
+    "9": {
+      "role": "background_memory"
+    },
+    "10": {
+      "role": "nearby_counterexample"
+    },
+    "11": {
+      "role": "background_memory"
+    },
+    "12": {
+      "role": "background_memory"
+    },
+    "13": {
+      "role": "ev_B",
+      "event_elements": {
+        "person": "finance_s2_u06",
+        "context": "categories this user has and has not controlled",
+        "goal_or_prediction": "get spending under control",
+        "action": "ran some categories on their own card and one year all combined",
+        "outcome_or_affect": "only separately-carded categories came under control"
+      }
+    },
+    "14": {
+      "role": "background_memory"
+    },
+    "15": {
+      "role": "background_memory"
+    },
+    "16": {
+      "role": "background_memory"
+    },
+    "17": {
+      "role": "background_memory"
+    },
+    "18": {
+      "role": "background_memory"
+    },
+    "19": {
+      "role": "background_memory"
+    },
+    "20": {
+      "role": "retrieval_cue"
+    }
+  },
+  "relational_connector": {
+    "relation": "One account collapses this user's spending into a single figure they cannot break into categories, and every category they have brought under control had its own card — the consolidated year overspent on everything evenly.",
+    "requires_evidence": [
+      "ev_A",
+      "ev_B"
+    ],
+    "calibration_constraints": []
+  },
+  "connector_spans": [
+    {
+      "evidence_id": "ev_A",
+      "session_id": 5,
+      "quote": "when everything comes off one account I read it as one number. I can't tell the categories apart, so I don't treat them differently"
+    },
+    {
+      "evidence_id": "ev_B",
+      "session_id": 13,
+      "quote": "the categories I've ever actually got under control each had their own card. the year I put it all on one, I overspent on everything by about the same amount"
+    }
+  ],
+  "coactivation_bridge": "ev_A and ev_B are the only pair that licenses the target proposition. One account collapses this user's spending into a single figure they cannot break into categories, and every category they have brought under control had its own card — the consolidated year overspent on everything evenly. The proposition contradicts the convention a solver would otherwise apply (\"Keep it simple — one account, one card, so you can see everything.\"), so priors alone point the other way. The nearby relation (This user has run both split and consolidated setups.) does not license it.",
+  "arm_gold": {
+    "full": {
+      "expected_mode": "infer_C",
+      "binary_decision": true,
+      "required_elements": [
+        "answer yes",
+        "connect the session 5 pattern with the session 13 episode",
+        "cite both session 5 and session 13",
+        "stay inside the calibrated claim (go ahead with running separate cards for each type of thing) rather than a broader claim about the user"
+      ],
+      "rationale": "ev_A and ev_B jointly support the target proposition; neither does alone."
+    },
+    "a_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that session 5 alone does not establish the target proposition",
+        "not assert the target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "ev_B is replaced by a matched neutral session, so the relation is unavailable."
+    },
+    "b_only": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that session 13 alone does not establish the target proposition",
+        "not assert the target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "ev_A is replaced by a matched neutral session, so the relation is unavailable."
+    },
+    "link_broken": {
+      "expected_mode": "withhold_C",
+      "binary_decision": false,
+      "required_elements": [
+        "answer no",
+        "state that the revised session 13 no longer connects to session 5",
+        "not assert the original target proposition",
+        "not claim instead that the proposed arrangement is good"
+      ],
+      "rationale": "B-prime keeps the owner, date, session form and turn count while removing the connector, so the original relation no longer holds."
+    }
+  },
+  "single_evidence_replacements": {
+    "a_only": {
+      "replaced_session_id": 13,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "walked back from the shop working out that the reason the month feels tight is three things I signed up for that all bill in the same week."
+        },
+        {
+          "role": "assistant",
+          "content": "cancelling any?"
+        },
+        {
+          "role": "user",
+          "content": "one, maybe. I'll think about it and then not do anything."
+        }
+      ]
+    },
+    "b_only": {
+      "replaced_session_id": 5,
+      "replacement_dialogue": [
+        {
+          "role": "user",
+          "content": "spent most of the evening going through last year's statements looking for one charge, which turned into reading all of them, which turned into it being midnight."
+        },
+        {
+          "role": "assistant",
+          "content": "find it?"
+        },
+        {
+          "role": "user",
+          "content": "no. found two others though."
+        }
+      ]
+    }
+  },
+  "link_broken": {
+    "replaced_session_id": 13,
+    "replacement_dialogue": [
+      {
+        "role": "user",
+        "content": "I've run it split and I've run it combined and the spending came out much the same either way."
+      },
+      {
+        "role": "assistant",
+        "content": "no difference?"
+      },
+      {
+        "role": "user",
+        "content": "none I can point at. it isn't the setup."
+      }
+    ]
+  }
+}
