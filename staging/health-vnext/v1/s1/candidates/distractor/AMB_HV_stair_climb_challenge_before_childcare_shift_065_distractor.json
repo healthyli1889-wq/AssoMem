@@ -4,7 +4,7 @@
   "pair_id": "AMB_HV_stair_climb_challenge_before_childcare_shift_065",
   "domain": "health",
   "user_id": "anon_health_user_65",
-  "query_type": "situational_fit",
+  "query_type": "predicted_reaction",
   "polarity": "reject",
   "context": [
     {
@@ -328,7 +328,7 @@
       ]
     }
   ],
-  "query": "Based only on these records, should the 50-flight stair-climb challenge Monday evening be flagged as a fit risk for this user?",
+  "query": "Based only on these records, will Monday evening's 50-flight stair-climb challenge likely leave this user's footing too unsteady for Tuesday's childcare shift?",
   "evidence": {
     "ev_A": {
       "session_id": 5,
@@ -362,10 +362,10 @@
       "role": "ev_A",
       "event_elements": {
         "person": "anon_health_user_65",
-        "context": "A demanding health-related exposure",
-        "goal_or_prediction": "Remain functional the following day",
+        "context": "A pattern that creates a recovery need affecting next-day functioning",
+        "goal_or_prediction": "Return to normal functioning by the next day",
         "action": "A stair-climb challenge leaves my legs wobbly and my balance off enough that I have to hold the railing going down stairs the rest of that day.",
-        "outcome_or_affect": "Needs recovery before a demanding health responsibility"
+        "outcome_or_affect": "Establishes a repeatable next-day impairment pattern"
       }
     },
     "6": {
@@ -396,8 +396,8 @@
       "role": "ev_B",
       "event_elements": {
         "person": "anon_health_user_65",
-        "context": "A scheduled next-day health responsibility",
-        "goal_or_prediction": "Show up ready for a health appointment or procedure",
+        "context": "A scheduled commitment sensitive to that specific impairment",
+        "goal_or_prediction": "Meet the commitment in an unimpaired state",
         "action": "I have a Tuesday morning shift watching my toddler nephew where I need steady footing to keep up with him on the playground.",
         "outcome_or_affect": "Creates the situational condition needed for latent C"
       }
@@ -436,14 +436,14 @@
     }
   },
   "relational_connector": {
-    "relation": "A health-exposure recovery pattern creates a fit risk only when paired with B's specific next-day health responsibility.",
+    "relation": "A recovery-need pattern predicts a specific next-day impairment only when paired with a commitment that is sensitive to that impairment.",
     "requires_evidence": [
       "ev_A",
       "ev_B"
     ],
     "excludes": [
-      "all evening activities are unsuitable",
-      "all next-day plans are incompatible"
+      "the user is generally affected by this kind of exposure",
+      "any next-day commitment would be affected"
     ],
     "link_broken_change": "The next-day activity is replaced with a low-stakes, movable activity."
   },
@@ -460,20 +460,20 @@
     }
   ],
   "retrieval_cue": {
-    "cue_type": "situational_fit",
-    "why_it_naturally_retrieves_R": "The new invitation asks about fit without naming either prior episode."
+    "cue_type": "predicted_reaction",
+    "why_it_naturally_retrieves_R": "The question asks for a prediction about the outcome without naming either prior episode."
   },
   "relation_specificity": {
-    "nearby_relation": "The user can generally tolerate a single late evening without any next-day appointment.",
-    "why_it_does_not_license_C": "That fact does not by itself establish a recovery-to-responsibility conflict."
+    "nearby_relation": "The user can have this kind of exposure on other occasions without any known sensitive next-day commitment.",
+    "why_it_does_not_license_C": "That fact does not by itself establish that a specific next-day commitment would be affected."
   },
-  "coactivation_bridge": "ev_A describes why the proposed exposure needs recovery; ev_B establishes the specific responsibility that would be impaired. Together they support C: The 50-flight stair-climb challenge Monday evening should be flagged as a fit risk because the wobbly legs and balance trouble it causes would conflict with Tuesday's shift needing steady footing to keep up with a toddler.",
+  "coactivation_bridge": "ev_A establishes the recovery-need pattern; ev_B establishes the specific commitment that pattern would affect. Together they support C: This user's footing will likely still be unsteady for Tuesday's childcare shift, because Monday evening's stair-climb challenge matches the pattern that leaves this user's legs wobbly and balance off for the rest of that day.",
   "latent_C": {
-    "inference": "The 50-flight stair-climb challenge Monday evening should be flagged as a fit risk because the wobbly legs and balance trouble it causes would conflict with Tuesday's shift needing steady footing to keep up with a toddler.",
-    "calibrated_language": "flagged as a fit risk"
+    "inference": "This user's footing will likely still be unsteady for Tuesday's childcare shift, because Monday evening's stair-climb challenge matches the pattern that leaves this user's legs wobbly and balance off for the rest of that day.",
+    "calibrated_language": "predicted to still apply"
   },
   "answer_contract": {
-    "target_proposition": "The 50-flight stair-climb challenge Monday evening should be flagged as a fit risk because the wobbly legs and balance trouble it causes would conflict with Tuesday's shift needing steady footing to keep up with a toddler.",
+    "target_proposition": "This user's footing will likely still be unsteady for Tuesday's childcare shift, because Monday evening's stair-climb challenge matches the pattern that leaves this user's legs wobbly and balance off for the rest of that day.",
     "allowed_decisions": [
       "yes",
       "no"
@@ -499,7 +499,7 @@
         "content": "That's a much lower-stakes version of that commitment."
       }
     ],
-    "connector_change": "B-prime preserves the same user, session position, and conversational style but removes the fixed health responsibility.",
+    "connector_change": "B-prime preserves the same user, session position, and conversational style but removes the specific sensitivity to the impairment.",
     "rationale": "A plus B-prime no longer supports the original C."
   },
   "provenance": {
@@ -527,9 +527,9 @@
       "binary_decision": true,
       "required_elements": [
         "answer yes",
-        "connect the health-exposure recovery pattern with the scheduled next-day responsibility",
+        "connect the recovery-need pattern with the specific next-day commitment",
         "cite both session 5 and session 12",
-        "state the calibrated fit-risk conclusion"
+        "state the calibrated prediction"
       ],
       "rationale": "A and B jointly support the target proposition."
     }

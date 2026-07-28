@@ -4,8 +4,8 @@
   "pair_id": "AMB_HV_screen_strain_before_dmv_vision_test_136",
   "domain": "health",
   "user_id": "anon_health_user_136",
-  "query_type": "situational_fit",
-  "polarity": "reject",
+  "query_type": "recommendation_ranking",
+  "polarity": "accept",
   "context": [
     {
       "session_id": 1,
@@ -328,7 +328,7 @@
       ]
     }
   ],
-  "query": "Based only on these records, should finishing Tuesday morning's spreadsheet audit be flagged as a fit risk for this user?",
+  "query": "Based only on these records, should this user push back Tuesday morning's spreadsheet audit rather than risk blurrier vision for the afternoon's DMV test?",
   "evidence": {
     "ev_A": {
       "session_id": 5,
@@ -362,10 +362,10 @@
       "role": "ev_A",
       "event_elements": {
         "person": "anon_health_user_136",
-        "context": "A demanding health-related exposure",
-        "goal_or_prediction": "Remain functional the following day",
+        "context": "A pattern that creates a recovery need affecting next-day functioning",
+        "goal_or_prediction": "Recover functioning by the next day",
         "action": "Staring at spreadsheets for hours without breaks leaves my eyes dry and my vision noticeably blurrier by early evening.",
-        "outcome_or_affect": "Needs recovery before a demanding health responsibility"
+        "outcome_or_affect": "Establishes a repeatable next-day impairment pattern"
       }
     },
     "6": {
@@ -396,8 +396,8 @@
       "role": "ev_B",
       "event_elements": {
         "person": "anon_health_user_136",
-        "context": "A scheduled next-day health responsibility",
-        "goal_or_prediction": "Show up ready for a health appointment or procedure",
+        "context": "A scheduled commitment sensitive to that specific impairment",
+        "goal_or_prediction": "Perform well at a specific, fixed commitment",
         "action": "Tuesday afternoon's DMV vision screening comes down to whether I can clearly make out the smallest line on their chart.",
         "outcome_or_affect": "Creates the situational condition needed for latent C"
       }
@@ -436,14 +436,14 @@
     }
   },
   "relational_connector": {
-    "relation": "A health-exposure recovery pattern creates a fit risk only when paired with B's specific next-day health responsibility.",
+    "relation": "A recovery-need pattern makes declining or deferring the proposal the better choice only when the next day carries a specific commitment the pattern would affect.",
     "requires_evidence": [
       "ev_A",
       "ev_B"
     ],
     "excludes": [
-      "all evening activities are unsuitable",
-      "all next-day plans are incompatible"
+      "this kind of exposure is generally best avoided",
+      "the user should avoid this kind of exposure in general"
     ],
     "link_broken_change": "The next-day activity is replaced with a low-stakes, movable activity."
   },
@@ -460,20 +460,20 @@
     }
   ],
   "retrieval_cue": {
-    "cue_type": "situational_fit",
-    "why_it_naturally_retrieves_R": "The new invitation asks about fit without naming either prior episode."
+    "cue_type": "recommendation_ranking",
+    "why_it_naturally_retrieves_R": "The choice between proceeding with or declining the proposal asks for a ranked recommendation without naming either prior episode."
   },
   "relation_specificity": {
-    "nearby_relation": "The user can generally tolerate a single late evening without any next-day appointment.",
-    "why_it_does_not_license_C": "That fact does not by itself establish a recovery-to-responsibility conflict."
+    "nearby_relation": "The user can usually recover from this kind of exposure within a day or two with no fixed commitment.",
+    "why_it_does_not_license_C": "That fact does not by itself establish that a specific next-day commitment would be affected."
   },
-  "coactivation_bridge": "ev_A describes why the proposed exposure needs recovery; ev_B establishes the specific responsibility that would be impaired. Together they support C: Finishing Tuesday morning's spreadsheet audit should be flagged as a fit risk because hours of screen strain leaves this user's vision blurrier by early evening, right when the DMV vision screening needs sharp reading of the smallest line.",
+  "coactivation_bridge": "ev_A establishes the recovery-need pattern; ev_B establishes the specific commitment that pattern would affect. Together they support C: This user should push back Tuesday morning's spreadsheet audit rather than risk the DMV vision test, because hours of screen strain without breaks matches the pattern that leaves this user's vision blurrier by early evening, which is exactly the sharp reading the DMV's smallest line requires.",
   "latent_C": {
-    "inference": "Finishing Tuesday morning's spreadsheet audit should be flagged as a fit risk because hours of screen strain leaves this user's vision blurrier by early evening, right when the DMV vision screening needs sharp reading of the smallest line.",
-    "calibrated_language": "flagged as a fit risk"
+    "inference": "This user should push back Tuesday morning's spreadsheet audit rather than risk the DMV vision test, because hours of screen strain without breaks matches the pattern that leaves this user's vision blurrier by early evening, which is exactly the sharp reading the DMV's smallest line requires.",
+    "calibrated_language": "the recommended choice"
   },
   "answer_contract": {
-    "target_proposition": "Finishing Tuesday morning's spreadsheet audit should be flagged as a fit risk because hours of screen strain leaves this user's vision blurrier by early evening, right when the DMV vision screening needs sharp reading of the smallest line.",
+    "target_proposition": "This user should push back Tuesday morning's spreadsheet audit rather than risk the DMV vision test, because hours of screen strain without breaks matches the pattern that leaves this user's vision blurrier by early evening, which is exactly the sharp reading the DMV's smallest line requires.",
     "allowed_decisions": [
       "yes",
       "no"
@@ -499,7 +499,7 @@
         "content": "That one sounds flexible enough not to worry about."
       }
     ],
-    "connector_change": "B-prime preserves the same user, session position, and conversational style but removes the fixed health responsibility.",
+    "connector_change": "B-prime preserves the same user, session position, and conversational style but removes the fixed next-day stake.",
     "rationale": "A plus B-prime no longer supports the original C."
   },
   "provenance": {
@@ -527,9 +527,9 @@
       "binary_decision": true,
       "required_elements": [
         "answer yes",
-        "connect the health-exposure recovery pattern with the scheduled next-day responsibility",
+        "connect the recovery-need pattern with the specific next-day commitment",
         "cite both session 5 and session 12",
-        "state the calibrated fit-risk conclusion"
+        "state the calibrated recommendation"
       ],
       "rationale": "A and B jointly support the target proposition."
     }

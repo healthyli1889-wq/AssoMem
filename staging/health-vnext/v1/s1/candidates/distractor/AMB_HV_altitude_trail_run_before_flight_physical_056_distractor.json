@@ -4,7 +4,7 @@
   "pair_id": "AMB_HV_altitude_trail_run_before_flight_physical_056",
   "domain": "health",
   "user_id": "anon_health_user_56",
-  "query_type": "situational_fit",
+  "query_type": "predicted_reaction",
   "polarity": "reject",
   "context": [
     {
@@ -328,7 +328,7 @@
       ]
     }
   ],
-  "query": "Based only on these records, should the high-altitude trail race Thursday be flagged as a fit risk for this user?",
+  "query": "Based only on these records, will Thursday's high-altitude trail race likely leave this user's breathing and blood oxygen abnormal for Friday's flight physical?",
   "evidence": {
     "ev_A": {
       "session_id": 5,
@@ -362,10 +362,10 @@
       "role": "ev_A",
       "event_elements": {
         "person": "anon_health_user_56",
-        "context": "A demanding health-related exposure",
-        "goal_or_prediction": "Remain functional the following day",
+        "context": "A pattern that creates a recovery need affecting next-day functioning",
+        "goal_or_prediction": "Return to normal functioning by the next day",
         "action": "Running trails above 8,000 feet leaves me short of breath and lightheaded for the rest of that day, even after I'm back down.",
-        "outcome_or_affect": "Needs recovery before a demanding health responsibility"
+        "outcome_or_affect": "Establishes a repeatable next-day impairment pattern"
       }
     },
     "6": {
@@ -396,8 +396,8 @@
       "role": "ev_B",
       "event_elements": {
         "person": "anon_health_user_56",
-        "context": "A scheduled next-day health responsibility",
-        "goal_or_prediction": "Show up ready for a health appointment or procedure",
+        "context": "A scheduled commitment sensitive to that specific impairment",
+        "goal_or_prediction": "Meet the commitment in an unimpaired state",
         "action": "I have a Friday morning flight medical exam where the doctor needs my breathing and blood oxygen to read completely normal.",
         "outcome_or_affect": "Creates the situational condition needed for latent C"
       }
@@ -436,14 +436,14 @@
     }
   },
   "relational_connector": {
-    "relation": "A health-exposure recovery pattern creates a fit risk only when paired with B's specific next-day health responsibility.",
+    "relation": "A recovery-need pattern predicts a specific next-day impairment only when paired with a commitment that is sensitive to that impairment.",
     "requires_evidence": [
       "ev_A",
       "ev_B"
     ],
     "excludes": [
-      "all evening activities are unsuitable",
-      "all next-day plans are incompatible"
+      "the user is generally affected by this kind of exposure",
+      "any next-day commitment would be affected"
     ],
     "link_broken_change": "The next-day activity is replaced with a low-stakes, movable activity."
   },
@@ -460,20 +460,20 @@
     }
   ],
   "retrieval_cue": {
-    "cue_type": "situational_fit",
-    "why_it_naturally_retrieves_R": "The new invitation asks about fit without naming either prior episode."
+    "cue_type": "predicted_reaction",
+    "why_it_naturally_retrieves_R": "The question asks for a prediction about the outcome without naming either prior episode."
   },
   "relation_specificity": {
-    "nearby_relation": "The user can generally tolerate a single late evening without any next-day appointment.",
-    "why_it_does_not_license_C": "That fact does not by itself establish a recovery-to-responsibility conflict."
+    "nearby_relation": "The user can have this kind of exposure on other occasions without any known sensitive next-day commitment.",
+    "why_it_does_not_license_C": "That fact does not by itself establish that a specific next-day commitment would be affected."
   },
-  "coactivation_bridge": "ev_A describes why the proposed exposure needs recovery; ev_B establishes the specific responsibility that would be impaired. Together they support C: The high-altitude trail race Thursday should be flagged as a fit risk because the shortness of breath and lightheadedness it causes would conflict with Friday's flight physical needing normal breathing and blood oxygen readings.",
+  "coactivation_bridge": "ev_A establishes the recovery-need pattern; ev_B establishes the specific commitment that pattern would affect. Together they support C: This user's breathing and blood oxygen will likely still read abnormal for Friday's flight physical, because Thursday's high-altitude trail race matches the pattern that leaves this user short of breath and lightheaded for the rest of that day.",
   "latent_C": {
-    "inference": "The high-altitude trail race Thursday should be flagged as a fit risk because the shortness of breath and lightheadedness it causes would conflict with Friday's flight physical needing normal breathing and blood oxygen readings.",
-    "calibrated_language": "flagged as a fit risk"
+    "inference": "This user's breathing and blood oxygen will likely still read abnormal for Friday's flight physical, because Thursday's high-altitude trail race matches the pattern that leaves this user short of breath and lightheaded for the rest of that day.",
+    "calibrated_language": "predicted to still apply"
   },
   "answer_contract": {
-    "target_proposition": "The high-altitude trail race Thursday should be flagged as a fit risk because the shortness of breath and lightheadedness it causes would conflict with Friday's flight physical needing normal breathing and blood oxygen readings.",
+    "target_proposition": "This user's breathing and blood oxygen will likely still read abnormal for Friday's flight physical, because Thursday's high-altitude trail race matches the pattern that leaves this user short of breath and lightheaded for the rest of that day.",
     "allowed_decisions": [
       "yes",
       "no"
@@ -499,7 +499,7 @@
         "content": "That version leaves plenty of room to adjust later."
       }
     ],
-    "connector_change": "B-prime preserves the same user, session position, and conversational style but removes the fixed health responsibility.",
+    "connector_change": "B-prime preserves the same user, session position, and conversational style but removes the specific sensitivity to the impairment.",
     "rationale": "A plus B-prime no longer supports the original C."
   },
   "provenance": {
@@ -527,9 +527,9 @@
       "binary_decision": true,
       "required_elements": [
         "answer yes",
-        "connect the health-exposure recovery pattern with the scheduled next-day responsibility",
+        "connect the recovery-need pattern with the specific next-day commitment",
         "cite both session 5 and session 12",
-        "state the calibrated fit-risk conclusion"
+        "state the calibrated prediction"
       ],
       "rationale": "A and B jointly support the target proposition."
     }

@@ -2429,6 +2429,265 @@ HEALTH_SCENARIOS = (
     },
 )
 
+# ---------------------------------------------------------------------------
+# Query-framing diversification (2026-07-28)
+#
+# Pairs 1-10 and 16-200 originally all used query_type=situational_fit
+# ("should X be flagged as a fit risk"), leaving the batch at 195/200 (97.5%)
+# on one query type -- far over this project's own DATA CRITERIA_new.md quota
+# ("No query type exceeds 20% of the batch"). A framing-diversity smoke test
+# (health-vnext-diversity-check-20260728b) compared this dominant phrasing
+# against the 5 hand-authored alternate-framing items (pairs 11-15) and found
+# the solver's "always say yes" pattern on the b_only/absence arms largely
+# DISAPPEARED under alternate framings (b_only accuracy 0/5 -> 4/5, absence
+# 3/5 -> 4/5), while a_only/link_broken failures replicated regardless of
+# framing (0/5 -> 1/5 both) -- i.e. situational_fit's specific phrasing was
+# priming affirmative answers on two of six arms, not just revealing a
+# framing-independent memory failure.
+#
+# QUERY_FRAMING_OVERRIDES redistributes pairs 46-200 (155 items) across four
+# alternate query_types, chosen because they map cleanly onto every item's
+# existing A/B/proposal/broken shape (a repeated personal pattern colliding
+# with a specific upcoming commitment) without altering the underlying facts
+# -- only the query's phrasing and the calibrated target-conclusion (`c`)
+# change. `a`/`b`/`proposal`/`broken` are untouched for every item.
+#
+# Resulting distribution across all 200 items: situational_fit 40 (20.0%),
+# predicted_reaction 40 (20.0%), behavior_explanation 40 (20.0%),
+# recommendation_ranking 40 (20.0%), conditional_recommendation 39 (19.5%),
+# preference_generalization 1 (0.5%, pair 11 only -- its underlying shape,
+# generalizing a mechanism from two same-type successes, doesn't map onto
+# the single-exposure-vs-single-commitment shape the other 199 items share,
+# so it was not forced onto ill-fitting content). Polarity: reject 80/200
+# (40.0%, at but not over the 40% cap), accept 41/200 (20.5%), non_decision
+# 40/200 (20.0%), conditional 39/200 (19.5%).
+#
+# The four frame templates below are deliberately generic/role-based (mirrors
+# DEFAULT_FRAME's own style) rather than scenario-specific: every field they
+# drive (relational_connector, retrieval_cue, relation_specificity,
+# coactivation_bridge lead-in, arm_gold req_*/rationale_*) is validator/gold
+# metadata, never sent to the solver (dataset.solver_input() only sends
+# context+query -- confirmed earlier this session), so reusing one template
+# per query_type across ~39 items each is not a duplication concern the way
+# solver-visible text (dialogue, query wording) is. Only `query` and `c` are
+# solver/validator-visible text and are authored per-item.
+PREDICTED_REACTION_FRAME = {
+    "query_type": "predicted_reaction",
+    "polarity": "reject",
+    "calibrated_language": "predicted to still apply",
+    "relation": "A recovery-need pattern predicts a specific next-day impairment only when paired with a commitment that is sensitive to that impairment.",
+    "excludes": ["the user is generally affected by this kind of exposure", "any next-day commitment would be affected"],
+    "nearby_relation": "The user can have this kind of exposure on other occasions without any known sensitive next-day commitment.",
+    "why_it_does_not_license_C": "That fact does not by itself establish that a specific next-day commitment would be affected.",
+    "ev_a_context": "A pattern that creates a recovery need affecting next-day functioning",
+    "ev_a_goal": "Return to normal functioning by the next day",
+    "ev_a_outcome": "Establishes a repeatable next-day impairment pattern",
+    "ev_b_context": "A scheduled commitment sensitive to that specific impairment",
+    "ev_b_goal": "Meet the commitment in an unimpaired state",
+    "ev_b_outcome": "Creates the situational condition needed for latent C",
+    "cue_type": "predicted_reaction",
+    "why_it_naturally_retrieves": "The question asks for a prediction about the outcome without naming either prior episode.",
+    "bridge_lead": "ev_A establishes the recovery-need pattern; ev_B establishes the specific commitment that pattern would affect.",
+    "req_full": [
+        "answer yes",
+        "connect the recovery-need pattern with the specific next-day commitment",
+        "cite both session 5 and session 12",
+        "state the calibrated prediction",
+    ],
+    "rationale_full": "A and B jointly support the target proposition.",
+    "req_a_only": [
+        "answer no",
+        "state that no specific next-day commitment is available",
+        "withhold the target proposition",
+    ],
+    "rationale_a_only": "A alone does not establish that a specific next-day commitment would be affected.",
+    "req_b_only": [
+        "answer no",
+        "state that no recovery-need pattern is available",
+        "withhold the target proposition",
+    ],
+    "rationale_b_only": "B alone does not establish that the user would actually be impaired.",
+    "req_link_broken": [
+        "answer no",
+        "identify that the replacement commitment no longer carries the same sensitivity",
+        "withhold the target proposition",
+    ],
+    "rationale_link_broken": "B-prime removes the impairment-sensitivity of the commitment while retaining the same user, timing, and conversational form.",
+    "link_broken_connector_change": "B-prime preserves the same user, session position, and conversational style but removes the specific sensitivity to the impairment.",
+    "link_broken_rationale": "A plus B-prime no longer supports the original C.",
+}
+
+BEHAVIOR_EXPLANATION_FRAME = {
+    "query_type": "behavior_explanation",
+    "polarity": "non_decision",
+    "calibrated_language": "supported as the explanation",
+    "relation": "A recovery-need pattern explains a specific next-day shortfall only when paired with a commitment the shortfall would actually affect.",
+    "excludes": ["the user sometimes feels off after this kind of exposure", "next-day commitments sometimes go poorly for unrelated reasons"],
+    "nearby_relation": "The user can have this kind of exposure on other occasions without any known sensitive next-day commitment.",
+    "why_it_does_not_license_C": "That fact does not by itself establish that this specific next-day shortfall shares a cause with a sensitive commitment.",
+    "ev_a_context": "A pattern that creates a recovery need affecting next-day functioning",
+    "ev_a_goal": "Identify why the shortfall happens",
+    "ev_a_outcome": "Establishes a repeatable next-day impairment pattern",
+    "ev_b_context": "A scheduled commitment sensitive to that specific impairment",
+    "ev_b_goal": "Confirm whether the shortfall has a specific, identifiable cause",
+    "ev_b_outcome": "Creates the situational condition needed for latent C",
+    "cue_type": "behavior_explanation",
+    "why_it_naturally_retrieves": "The question asks for an explanation without naming either prior episode.",
+    "bridge_lead": "ev_A establishes the recovery-need pattern; ev_B establishes the specific commitment that pattern would affect.",
+    "req_full": [
+        "answer yes",
+        "connect the recovery-need pattern with the specific next-day commitment",
+        "cite both session 5 and session 12",
+        "state the calibrated explanatory conclusion",
+    ],
+    "rationale_full": "A and B jointly support the target proposition.",
+    "req_a_only": [
+        "answer no",
+        "state that no specific next-day commitment is available to explain",
+        "withhold the target proposition",
+    ],
+    "rationale_a_only": "A alone is a recovery-need pattern without a specific commitment on record to explain.",
+    "req_b_only": [
+        "answer no",
+        "state that no recovery-need pattern is available",
+        "withhold the target proposition",
+    ],
+    "rationale_b_only": "B alone is a commitment without a confirmed recovery-need pattern to explain it.",
+    "req_link_broken": [
+        "answer no",
+        "identify that the replacement commitment no longer carries the same sensitivity to explain",
+        "withhold the target proposition",
+    ],
+    "rationale_link_broken": "B-prime removes the matching sensitivity while retaining the same user, timing, and conversational form.",
+    "link_broken_connector_change": "B-prime preserves the same user, session position, and conversational style but removes the matching sensitivity.",
+    "link_broken_rationale": "A plus B-prime no longer supports the original C.",
+}
+
+RECOMMENDATION_RANKING_FRAME = {
+    "query_type": "recommendation_ranking",
+    "polarity": "accept",
+    "calibrated_language": "the recommended choice",
+    "relation": "A recovery-need pattern makes declining or deferring the proposal the better choice only when the next day carries a specific commitment the pattern would affect.",
+    "excludes": ["this kind of exposure is generally best avoided", "the user should avoid this kind of exposure in general"],
+    "nearby_relation": "The user can usually recover from this kind of exposure within a day or two with no fixed commitment.",
+    "why_it_does_not_license_C": "That fact does not by itself establish that a specific next-day commitment would be affected.",
+    "ev_a_context": "A pattern that creates a recovery need affecting next-day functioning",
+    "ev_a_goal": "Recover functioning by the next day",
+    "ev_a_outcome": "Establishes a repeatable next-day impairment pattern",
+    "ev_b_context": "A scheduled commitment sensitive to that specific impairment",
+    "ev_b_goal": "Perform well at a specific, fixed commitment",
+    "ev_b_outcome": "Creates the situational condition needed for latent C",
+    "cue_type": "recommendation_ranking",
+    "why_it_naturally_retrieves": "The choice between proceeding with or declining the proposal asks for a ranked recommendation without naming either prior episode.",
+    "bridge_lead": "ev_A establishes the recovery-need pattern; ev_B establishes the specific commitment that pattern would affect.",
+    "req_full": [
+        "answer yes",
+        "connect the recovery-need pattern with the specific next-day commitment",
+        "cite both session 5 and session 12",
+        "state the calibrated recommendation",
+    ],
+    "rationale_full": "A and B jointly support the target proposition.",
+    "req_a_only": [
+        "answer no",
+        "state that no specific next-day commitment is available",
+        "withhold the target proposition",
+    ],
+    "rationale_a_only": "A alone does not establish that a specific next-day commitment would be affected.",
+    "req_b_only": [
+        "answer no",
+        "state that no recovery-need pattern is available",
+        "withhold the target proposition",
+    ],
+    "rationale_b_only": "B alone does not establish that the proposal would affect the commitment.",
+    "req_link_broken": [
+        "answer no",
+        "identify that the replacement commitment is flexible and reschedulable",
+        "withhold the target proposition",
+    ],
+    "rationale_link_broken": "B-prime removes the fixed sensitivity while retaining the same user, timing, and conversational form.",
+    "link_broken_connector_change": "B-prime preserves the same user, session position, and conversational style but removes the fixed next-day stake.",
+    "link_broken_rationale": "A plus B-prime no longer supports the original C.",
+}
+
+CONDITIONAL_RECOMMENDATION_FRAME = {
+    "query_type": "conditional_recommendation",
+    "polarity": "conditional",
+    "calibrated_language": "conditionally supported",
+    "relation": "A recovery-need pattern makes proceeding with the proposal conditional on moving a fixed next-day commitment only when that commitment cannot otherwise be avoided.",
+    "excludes": ["this kind of exposure is generally fine the night before a commitment", "the user should avoid this kind of exposure in general"],
+    "nearby_relation": "The user can usually engage in this kind of exposure with no fixed commitment the next day.",
+    "why_it_does_not_license_C": "That fact does not by itself establish that a specific next-day commitment would be affected.",
+    "ev_a_context": "A pattern that creates a recovery need affecting next-day functioning",
+    "ev_a_goal": "Recover functioning by the next day",
+    "ev_a_outcome": "Establishes a repeatable next-day impairment pattern",
+    "ev_b_context": "A scheduled commitment sensitive to that specific impairment",
+    "ev_b_goal": "Perform a specific, fixed commitment",
+    "ev_b_outcome": "Creates the situational condition needed for latent C",
+    "cue_type": "conditional_recommendation",
+    "why_it_naturally_retrieves": "The question about proceeding with the proposal asks for a conditional recommendation without naming either prior episode.",
+    "bridge_lead": "ev_A establishes the recovery-need pattern; ev_B establishes the specific commitment that pattern would affect.",
+    "req_full": [
+        "answer yes",
+        "connect the recovery-need pattern with the specific next-day commitment",
+        "cite both session 5 and session 12",
+        "state the calibrated conditional recommendation",
+    ],
+    "rationale_full": "A and B jointly support the target proposition.",
+    "req_a_only": [
+        "answer no",
+        "state that no specific next-day commitment is available",
+        "withhold the target proposition",
+    ],
+    "rationale_a_only": "A alone does not establish that a specific next-day commitment would be affected.",
+    "req_b_only": [
+        "answer no",
+        "state that no recovery-need pattern is available",
+        "withhold the target proposition",
+    ],
+    "rationale_b_only": "B alone does not establish that the proposal would affect the commitment.",
+    "req_link_broken": [
+        "answer no",
+        "identify that the replacement commitment is now flexible with no fixed timing",
+        "withhold the target proposition",
+    ],
+    "rationale_link_broken": "B-prime removes the fixed sensitivity while retaining the same user, timing, and conversational form.",
+    "link_broken_connector_change": "B-prime preserves the same user, session position, and conversational style but removes the fixed next-day stake.",
+    "link_broken_rationale": "A plus B-prime no longer supports the original C.",
+}
+
+# Populated by _load_query_framing_overrides() below from four JSON files
+# (one per query_type, authored separately for each block of ~39 items).
+# Maps slug -> {"query": ..., "c": ..., "frame": <one of the four templates
+# above>}. Kept as a module-level dict built at import time so _candidate()
+# can look it up the same way it looks up HEALTH_SCENARIOS.
+QUERY_FRAMING_OVERRIDES: dict[str, dict[str, Any]] = {}
+
+
+def _load_query_framing_overrides() -> dict[str, dict[str, Any]]:
+    overrides: dict[str, dict[str, Any]] = {}
+    block_dir = Path(__file__).parent / "health_query_framing"
+    blocks = (
+        ("framing_block_A.json", PREDICTED_REACTION_FRAME),
+        ("framing_block_B.json", BEHAVIOR_EXPLANATION_FRAME),
+        ("framing_block_C.json", RECOMMENDATION_RANKING_FRAME),
+        ("framing_block_D.json", CONDITIONAL_RECOMMENDATION_FRAME),
+    )
+    for filename, frame_template in blocks:
+        path = block_dir / filename
+        if not path.is_file():
+            continue
+        entries = json.loads(path.read_text(encoding="utf-8"))
+        for entry in entries:
+            overrides[entry["slug"]] = {
+                "query": entry["query"],
+                "c": entry["c"],
+                "frame": frame_template,
+            }
+    return overrides
+
+
+QUERY_FRAMING_OVERRIDES = _load_query_framing_overrides()
+
 PERSONAS = (
     "tracks symptoms in a daily notes app",
     "prefers early bedtimes on weeknights",
@@ -2667,7 +2926,12 @@ def _core_gold(frame: dict[str, Any]) -> dict[str, dict[str, Any]]:
 
 def _candidate(pair_number: int, source_arm: str) -> dict[str, Any]:
     scenario = HEALTH_SCENARIOS[pair_number - 1]
-    scenario_frame = scenario.get("frame", {})
+    framing_override = QUERY_FRAMING_OVERRIDES.get(scenario["slug"])
+    if framing_override is not None:
+        scenario = {**scenario, "query": framing_override["query"], "c": framing_override["c"]}
+        scenario_frame = framing_override["frame"]
+    else:
+        scenario_frame = scenario.get("frame", {})
     frame = {**DEFAULT_FRAME, **scenario_frame}
     # These five are resolved from the scenario's own frame override when
     # present (the 5 diversity scenarios each hand-author their own), or a

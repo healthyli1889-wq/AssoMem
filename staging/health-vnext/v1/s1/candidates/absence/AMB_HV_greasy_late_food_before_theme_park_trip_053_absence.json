@@ -4,7 +4,7 @@
   "pair_id": "AMB_HV_greasy_late_food_before_theme_park_trip_053",
   "domain": "health",
   "user_id": "anon_health_user_53",
-  "query_type": "situational_fit",
+  "query_type": "predicted_reaction",
   "polarity": "reject",
   "context": [
     {
@@ -328,7 +328,7 @@
       ]
     }
   ],
-  "query": "Based only on these records, should tonight's greasy loaded burgers and fries be flagged as a fit risk for this user?",
+  "query": "Based only on these records, will tonight's greasy burgers and fries likely leave this user's stomach too unsettled for Saturday's theme park roller coasters?",
   "evidence": {
     "ev_A": {
       "session_id": 5,
@@ -424,14 +424,14 @@
     }
   },
   "relational_connector": {
-    "relation": "A health-exposure recovery pattern creates a fit risk only when paired with B's specific next-day health responsibility.",
+    "relation": "A recovery-need pattern predicts a specific next-day impairment only when paired with a commitment that is sensitive to that impairment.",
     "requires_evidence": [
       "ev_A",
       "ev_B"
     ],
     "excludes": [
-      "all evening activities are unsuitable",
-      "all next-day plans are incompatible"
+      "the user is generally affected by this kind of exposure",
+      "any next-day commitment would be affected"
     ],
     "link_broken_change": "The next-day activity is replaced with a low-stakes, movable activity."
   },
@@ -448,20 +448,20 @@
     }
   ],
   "retrieval_cue": {
-    "cue_type": "situational_fit",
-    "why_it_naturally_retrieves_R": "The new invitation asks about fit without naming either prior episode."
+    "cue_type": "predicted_reaction",
+    "why_it_naturally_retrieves_R": "The question asks for a prediction about the outcome without naming either prior episode."
   },
   "relation_specificity": {
-    "nearby_relation": "The user can generally tolerate a single late evening without any next-day appointment.",
-    "why_it_does_not_license_C": "That fact does not by itself establish a recovery-to-responsibility conflict."
+    "nearby_relation": "The user can have this kind of exposure on other occasions without any known sensitive next-day commitment.",
+    "why_it_does_not_license_C": "That fact does not by itself establish that a specific next-day commitment would be affected."
   },
-  "coactivation_bridge": "ev_A describes why the proposed exposure needs recovery; ev_B establishes the specific responsibility that would be impaired. Together they support C: Tonight's greasy loaded burgers and fries should be flagged as a fit risk because the resulting stomach upset would conflict with Saturday's theme park trip needing a stable stomach for the roller coasters.",
+  "coactivation_bridge": "ev_A establishes the recovery-need pattern; ev_B establishes the specific commitment that pattern would affect. Together they support C: This user's stomach will likely still be unsettled and queasy for Saturday's theme park trip, because tonight's greasy food matches the pattern that leaves this user's stomach unsettled well into the next day.",
   "latent_C": {
-    "inference": "Tonight's greasy loaded burgers and fries should be flagged as a fit risk because the resulting stomach upset would conflict with Saturday's theme park trip needing a stable stomach for the roller coasters.",
-    "calibrated_language": "flagged as a fit risk"
+    "inference": "This user's stomach will likely still be unsettled and queasy for Saturday's theme park trip, because tonight's greasy food matches the pattern that leaves this user's stomach unsettled well into the next day.",
+    "calibrated_language": "predicted to still apply"
   },
   "answer_contract": {
-    "target_proposition": "Tonight's greasy loaded burgers and fries should be flagged as a fit risk because the resulting stomach upset would conflict with Saturday's theme park trip needing a stable stomach for the roller coasters.",
+    "target_proposition": "This user's stomach will likely still be unsettled and queasy for Saturday's theme park trip, because tonight's greasy food matches the pattern that leaves this user's stomach unsettled well into the next day.",
     "allowed_decisions": [
       "yes",
       "no"
@@ -487,7 +487,7 @@
         "content": "Sounds like that one can shift without much cost."
       }
     ],
-    "connector_change": "B-prime preserves the same user, session position, and conversational style but removes the fixed health responsibility.",
+    "connector_change": "B-prime preserves the same user, session position, and conversational style but removes the specific sensitivity to the impairment.",
     "rationale": "A plus B-prime no longer supports the original C."
   },
   "provenance": {

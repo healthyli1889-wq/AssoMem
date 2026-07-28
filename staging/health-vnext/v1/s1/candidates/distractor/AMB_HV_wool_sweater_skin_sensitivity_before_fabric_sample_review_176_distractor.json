@@ -4,8 +4,8 @@
   "pair_id": "AMB_HV_wool_sweater_skin_sensitivity_before_fabric_sample_review_176",
   "domain": "health",
   "user_id": "anon_health_user_176",
-  "query_type": "situational_fit",
-  "polarity": "reject",
+  "query_type": "conditional_recommendation",
+  "polarity": "conditional",
   "context": [
     {
       "session_id": 1,
@@ -328,7 +328,7 @@
       ]
     }
   ],
-  "query": "Based only on these records, should wearing the heavy wool sweater outdoors most of Saturday be flagged as a fit risk for this user?",
+  "query": "Based only on these records, should this user only wear the heavy wool sweater outdoors most of Saturday if Sunday's fabric review only needs a visual inspection?",
   "evidence": {
     "ev_A": {
       "session_id": 5,
@@ -362,10 +362,10 @@
       "role": "ev_A",
       "event_elements": {
         "person": "anon_health_user_176",
-        "context": "A demanding health-related exposure",
-        "goal_or_prediction": "Remain functional the following day",
+        "context": "A pattern that creates a recovery need affecting next-day functioning",
+        "goal_or_prediction": "Recover functioning by the next day",
         "action": "A few hours in a wool sweater and my skin stays itchy and reactive to any fabric brushing against it well into the evening.",
-        "outcome_or_affect": "Needs recovery before a demanding health responsibility"
+        "outcome_or_affect": "Establishes a repeatable next-day impairment pattern"
       }
     },
     "6": {
@@ -396,8 +396,8 @@
       "role": "ev_B",
       "event_elements": {
         "person": "anon_health_user_176",
-        "context": "A scheduled next-day health responsibility",
-        "goal_or_prediction": "Show up ready for a health appointment or procedure",
+        "context": "A scheduled commitment sensitive to that specific impairment",
+        "goal_or_prediction": "Perform a specific, fixed commitment",
         "action": "I have a Sunday afternoon job reviewing fabric samples where I need to compare textures carefully by hand.",
         "outcome_or_affect": "Creates the situational condition needed for latent C"
       }
@@ -436,14 +436,14 @@
     }
   },
   "relational_connector": {
-    "relation": "A health-exposure recovery pattern creates a fit risk only when paired with B's specific next-day health responsibility.",
+    "relation": "A recovery-need pattern makes proceeding with the proposal conditional on moving a fixed next-day commitment only when that commitment cannot otherwise be avoided.",
     "requires_evidence": [
       "ev_A",
       "ev_B"
     ],
     "excludes": [
-      "all evening activities are unsuitable",
-      "all next-day plans are incompatible"
+      "this kind of exposure is generally fine the night before a commitment",
+      "the user should avoid this kind of exposure in general"
     ],
     "link_broken_change": "The next-day activity is replaced with a low-stakes, movable activity."
   },
@@ -460,20 +460,20 @@
     }
   ],
   "retrieval_cue": {
-    "cue_type": "situational_fit",
-    "why_it_naturally_retrieves_R": "The new invitation asks about fit without naming either prior episode."
+    "cue_type": "conditional_recommendation",
+    "why_it_naturally_retrieves_R": "The question about proceeding with the proposal asks for a conditional recommendation without naming either prior episode."
   },
   "relation_specificity": {
-    "nearby_relation": "The user can generally tolerate a single late evening without any next-day appointment.",
-    "why_it_does_not_license_C": "That fact does not by itself establish a recovery-to-responsibility conflict."
+    "nearby_relation": "The user can usually engage in this kind of exposure with no fixed commitment the next day.",
+    "why_it_does_not_license_C": "That fact does not by itself establish that a specific next-day commitment would be affected."
   },
-  "coactivation_bridge": "ev_A describes why the proposed exposure needs recovery; ev_B establishes the specific responsibility that would be impaired. Together they support C: Wearing the heavy wool sweater outdoors most of Saturday should be flagged as a fit risk because the resulting skin sensitivity would interfere with Sunday's careful hand comparison of fabric samples.",
+  "coactivation_bridge": "ev_A establishes the recovery-need pattern; ev_B establishes the specific commitment that pattern would affect. Together they support C: This user should only wear the heavy wool sweater outdoors most of Saturday if Sunday's fabric review only needs a visual inspection, because the resulting skin sensitivity would interfere with comparing textures carefully by hand.",
   "latent_C": {
-    "inference": "Wearing the heavy wool sweater outdoors most of Saturday should be flagged as a fit risk because the resulting skin sensitivity would interfere with Sunday's careful hand comparison of fabric samples.",
-    "calibrated_language": "flagged as a fit risk"
+    "inference": "This user should only wear the heavy wool sweater outdoors most of Saturday if Sunday's fabric review only needs a visual inspection, because the resulting skin sensitivity would interfere with comparing textures carefully by hand.",
+    "calibrated_language": "conditionally supported"
   },
   "answer_contract": {
-    "target_proposition": "Wearing the heavy wool sweater outdoors most of Saturday should be flagged as a fit risk because the resulting skin sensitivity would interfere with Sunday's careful hand comparison of fabric samples.",
+    "target_proposition": "This user should only wear the heavy wool sweater outdoors most of Saturday if Sunday's fabric review only needs a visual inspection, because the resulting skin sensitivity would interfere with comparing textures carefully by hand.",
     "allowed_decisions": [
       "yes",
       "no"
@@ -499,7 +499,7 @@
         "content": "Good -- that removes the tight timing constraint."
       }
     ],
-    "connector_change": "B-prime preserves the same user, session position, and conversational style but removes the fixed health responsibility.",
+    "connector_change": "B-prime preserves the same user, session position, and conversational style but removes the fixed next-day stake.",
     "rationale": "A plus B-prime no longer supports the original C."
   },
   "provenance": {
@@ -527,9 +527,9 @@
       "binary_decision": true,
       "required_elements": [
         "answer yes",
-        "connect the health-exposure recovery pattern with the scheduled next-day responsibility",
+        "connect the recovery-need pattern with the specific next-day commitment",
         "cite both session 5 and session 12",
-        "state the calibrated fit-risk conclusion"
+        "state the calibrated conditional recommendation"
       ],
       "rationale": "A and B jointly support the target proposition."
     }

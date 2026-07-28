@@ -4,8 +4,8 @@
   "pair_id": "AMB_HV_fragmented_layover_sleep_before_interpreting_gig_200",
   "domain": "health",
   "user_id": "anon_health_user_200",
-  "query_type": "situational_fit",
-  "polarity": "reject",
+  "query_type": "conditional_recommendation",
+  "polarity": "conditional",
   "context": [
     {
       "session_id": 1,
@@ -328,7 +328,7 @@
       ]
     }
   ],
-  "query": "Based only on these records, should Monday morning's overnight-layover arrival be flagged as a fit risk for this user?",
+  "query": "Based only on these records, should this user only keep the overnight-layover connection if Monday turns out to be just picking up a badge and schedule with no live interpreting?",
   "evidence": {
     "ev_A": {
       "session_id": 5,
@@ -424,14 +424,14 @@
     }
   },
   "relational_connector": {
-    "relation": "A health-exposure recovery pattern creates a fit risk only when paired with B's specific next-day health responsibility.",
+    "relation": "A recovery-need pattern makes proceeding with the proposal conditional on moving a fixed next-day commitment only when that commitment cannot otherwise be avoided.",
     "requires_evidence": [
       "ev_A",
       "ev_B"
     ],
     "excludes": [
-      "all evening activities are unsuitable",
-      "all next-day plans are incompatible"
+      "this kind of exposure is generally fine the night before a commitment",
+      "the user should avoid this kind of exposure in general"
     ],
     "link_broken_change": "The next-day activity is replaced with a low-stakes, movable activity."
   },
@@ -448,20 +448,20 @@
     }
   ],
   "retrieval_cue": {
-    "cue_type": "situational_fit",
-    "why_it_naturally_retrieves_R": "The new invitation asks about fit without naming either prior episode."
+    "cue_type": "conditional_recommendation",
+    "why_it_naturally_retrieves_R": "The question about proceeding with the proposal asks for a conditional recommendation without naming either prior episode."
   },
   "relation_specificity": {
-    "nearby_relation": "The user can generally tolerate a single late evening without any next-day appointment.",
-    "why_it_does_not_license_C": "That fact does not by itself establish a recovery-to-responsibility conflict."
+    "nearby_relation": "The user can usually engage in this kind of exposure with no fixed commitment the next day.",
+    "why_it_does_not_license_C": "That fact does not by itself establish that a specific next-day commitment would be affected."
   },
-  "coactivation_bridge": "ev_A describes why the proposed exposure needs recovery; ev_B establishes the specific responsibility that would be impaired. Together they support C: Monday morning's overnight-layover arrival should be flagged as a fit risk because the fragmented sleep it causes would undercut the fast, accurate language processing Monday's interpreting gig needs.",
+  "coactivation_bridge": "ev_A establishes the recovery-need pattern; ev_B establishes the specific commitment that pattern would affect. Together they support C: This user should only keep the overnight-layover connection if Monday turns out to be just picking up a badge and schedule with no live interpreting, because the fragmented sleep it causes would undercut the fast, accurate language processing live interpreting needs.",
   "latent_C": {
-    "inference": "Monday morning's overnight-layover arrival should be flagged as a fit risk because the fragmented sleep it causes would undercut the fast, accurate language processing Monday's interpreting gig needs.",
-    "calibrated_language": "flagged as a fit risk"
+    "inference": "This user should only keep the overnight-layover connection if Monday turns out to be just picking up a badge and schedule with no live interpreting, because the fragmented sleep it causes would undercut the fast, accurate language processing live interpreting needs.",
+    "calibrated_language": "conditionally supported"
   },
   "answer_contract": {
-    "target_proposition": "Monday morning's overnight-layover arrival should be flagged as a fit risk because the fragmented sleep it causes would undercut the fast, accurate language processing Monday's interpreting gig needs.",
+    "target_proposition": "This user should only keep the overnight-layover connection if Monday turns out to be just picking up a badge and schedule with no live interpreting, because the fragmented sleep it causes would undercut the fast, accurate language processing live interpreting needs.",
     "allowed_decisions": [
       "yes",
       "no"
@@ -487,7 +487,7 @@
         "content": "That one sounds flexible enough not to worry about."
       }
     ],
-    "connector_change": "B-prime preserves the same user, session position, and conversational style but removes the fixed health responsibility.",
+    "connector_change": "B-prime preserves the same user, session position, and conversational style but removes the fixed next-day stake.",
     "rationale": "A plus B-prime no longer supports the original C."
   },
   "provenance": {

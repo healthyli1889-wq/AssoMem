@@ -4,8 +4,8 @@
   "pair_id": "AMB_HV_intense_therapy_session_before_negotiation_100",
   "domain": "health",
   "user_id": "anon_health_user_100",
-  "query_type": "situational_fit",
-  "polarity": "reject",
+  "query_type": "behavior_explanation",
+  "polarity": "non_decision",
   "context": [
     {
       "session_id": 1,
@@ -328,7 +328,7 @@
       ]
     }
   ],
-  "query": "Based only on these records, should Saturday's deeper therapy session be flagged as a fit risk for this user?",
+  "query": "Based only on these records, does this user's history explain why Saturday's deeper therapy session would leave them unprepared for Sunday's negotiation?",
   "evidence": {
     "ev_A": {
       "session_id": 5,
@@ -362,10 +362,10 @@
       "role": "ev_A",
       "event_elements": {
         "person": "anon_health_user_100",
-        "context": "A demanding health-related exposure",
-        "goal_or_prediction": "Remain functional the following day",
+        "context": "A pattern that creates a recovery need affecting next-day functioning",
+        "goal_or_prediction": "Identify why the shortfall happens",
         "action": "After an intense therapy session that surfaces old material, I feel emotionally raw and less able to hold firm boundaries for the rest of that day.",
-        "outcome_or_affect": "Needs recovery before a demanding health responsibility"
+        "outcome_or_affect": "Establishes a repeatable next-day impairment pattern"
       }
     },
     "6": {
@@ -396,8 +396,8 @@
       "role": "ev_B",
       "event_elements": {
         "person": "anon_health_user_100",
-        "context": "A scheduled next-day health responsibility",
-        "goal_or_prediction": "Show up ready for a health appointment or procedure",
+        "context": "A scheduled commitment sensitive to that specific impairment",
+        "goal_or_prediction": "Confirm whether the shortfall has a specific, identifiable cause",
         "action": "I have a Sunday morning salary negotiation where I need to hold firm boundaries and not cave under pressure.",
         "outcome_or_affect": "Creates the situational condition needed for latent C"
       }
@@ -436,14 +436,14 @@
     }
   },
   "relational_connector": {
-    "relation": "A health-exposure recovery pattern creates a fit risk only when paired with B's specific next-day health responsibility.",
+    "relation": "A recovery-need pattern explains a specific next-day shortfall only when paired with a commitment the shortfall would actually affect.",
     "requires_evidence": [
       "ev_A",
       "ev_B"
     ],
     "excludes": [
-      "all evening activities are unsuitable",
-      "all next-day plans are incompatible"
+      "the user sometimes feels off after this kind of exposure",
+      "next-day commitments sometimes go poorly for unrelated reasons"
     ],
     "link_broken_change": "The next-day activity is replaced with a low-stakes, movable activity."
   },
@@ -460,20 +460,20 @@
     }
   ],
   "retrieval_cue": {
-    "cue_type": "situational_fit",
-    "why_it_naturally_retrieves_R": "The new invitation asks about fit without naming either prior episode."
+    "cue_type": "behavior_explanation",
+    "why_it_naturally_retrieves_R": "The question asks for an explanation without naming either prior episode."
   },
   "relation_specificity": {
-    "nearby_relation": "The user can generally tolerate a single late evening without any next-day appointment.",
-    "why_it_does_not_license_C": "That fact does not by itself establish a recovery-to-responsibility conflict."
+    "nearby_relation": "The user can have this kind of exposure on other occasions without any known sensitive next-day commitment.",
+    "why_it_does_not_license_C": "That fact does not by itself establish that this specific next-day shortfall shares a cause with a sensitive commitment."
   },
-  "coactivation_bridge": "ev_A describes why the proposed exposure needs recovery; ev_B establishes the specific responsibility that would be impaired. Together they support C: Saturday's deeper therapy session should be flagged as a fit risk because the emotional rawness it leaves would undercut the firm boundaries Sunday's salary negotiation needs.",
+  "coactivation_bridge": "ev_A establishes the recovery-need pattern; ev_B establishes the specific commitment that pattern would affect. Together they support C: This user's history explains why Saturday's deeper therapy session would leave them unprepared for Sunday's negotiation, because a session that surfaces old material leaves this user emotionally raw and less able to hold firm boundaries, exactly what the negotiation needs.",
   "latent_C": {
-    "inference": "Saturday's deeper therapy session should be flagged as a fit risk because the emotional rawness it leaves would undercut the firm boundaries Sunday's salary negotiation needs.",
-    "calibrated_language": "flagged as a fit risk"
+    "inference": "This user's history explains why Saturday's deeper therapy session would leave them unprepared for Sunday's negotiation, because a session that surfaces old material leaves this user emotionally raw and less able to hold firm boundaries, exactly what the negotiation needs.",
+    "calibrated_language": "supported as the explanation"
   },
   "answer_contract": {
-    "target_proposition": "Saturday's deeper therapy session should be flagged as a fit risk because the emotional rawness it leaves would undercut the firm boundaries Sunday's salary negotiation needs.",
+    "target_proposition": "This user's history explains why Saturday's deeper therapy session would leave them unprepared for Sunday's negotiation, because a session that surfaces old material leaves this user emotionally raw and less able to hold firm boundaries, exactly what the negotiation needs.",
     "allowed_decisions": [
       "yes",
       "no"
@@ -499,7 +499,7 @@
         "content": "That one sounds flexible enough not to worry about."
       }
     ],
-    "connector_change": "B-prime preserves the same user, session position, and conversational style but removes the fixed health responsibility.",
+    "connector_change": "B-prime preserves the same user, session position, and conversational style but removes the matching sensitivity.",
     "rationale": "A plus B-prime no longer supports the original C."
   },
   "provenance": {
@@ -527,9 +527,9 @@
       "binary_decision": true,
       "required_elements": [
         "answer yes",
-        "connect the health-exposure recovery pattern with the scheduled next-day responsibility",
+        "connect the recovery-need pattern with the specific next-day commitment",
         "cite both session 5 and session 12",
-        "state the calibrated fit-risk conclusion"
+        "state the calibrated explanatory conclusion"
       ],
       "rationale": "A and B jointly support the target proposition."
     }

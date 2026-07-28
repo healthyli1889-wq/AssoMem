@@ -4,8 +4,8 @@
   "pair_id": "AMB_HV_heavy_lifting_before_shoulder_impingement_test_108",
   "domain": "health",
   "user_id": "anon_health_user_108",
-  "query_type": "situational_fit",
-  "polarity": "reject",
+  "query_type": "behavior_explanation",
+  "polarity": "non_decision",
   "context": [
     {
       "session_id": 1,
@@ -328,7 +328,7 @@
       ]
     }
   ],
-  "query": "Based only on these records, should helping hoist heavy moving boxes onto a truck bed on Monday evening be flagged as a fit risk for this user?",
+  "query": "Based only on these records, does this user's history explain why helping hoist moving boxes Monday evening would leave them unprepared for Tuesday's shoulder impingement test?",
   "evidence": {
     "ev_A": {
       "session_id": 5,
@@ -362,10 +362,10 @@
       "role": "ev_A",
       "event_elements": {
         "person": "anon_health_user_108",
-        "context": "A demanding health-related exposure",
-        "goal_or_prediction": "Remain functional the following day",
+        "context": "A pattern that creates a recovery need affecting next-day functioning",
+        "goal_or_prediction": "Identify why the shortfall happens",
         "action": "Whenever I do heavy overhead lifting at the gym, my right shoulder catches and aches for about a day, especially raising my arm above head height.",
-        "outcome_or_affect": "Needs recovery before a demanding health responsibility"
+        "outcome_or_affect": "Establishes a repeatable next-day impairment pattern"
       }
     },
     "6": {
@@ -396,8 +396,8 @@
       "role": "ev_B",
       "event_elements": {
         "person": "anon_health_user_108",
-        "context": "A scheduled next-day health responsibility",
-        "goal_or_prediction": "Show up ready for a health appointment or procedure",
+        "context": "A scheduled commitment sensitive to that specific impairment",
+        "goal_or_prediction": "Confirm whether the shortfall has a specific, identifiable cause",
         "action": "I have a Tuesday morning shoulder impingement test where the therapist needs me to raise my arm through a full pain-free range of motion.",
         "outcome_or_affect": "Creates the situational condition needed for latent C"
       }
@@ -436,14 +436,14 @@
     }
   },
   "relational_connector": {
-    "relation": "A health-exposure recovery pattern creates a fit risk only when paired with B's specific next-day health responsibility.",
+    "relation": "A recovery-need pattern explains a specific next-day shortfall only when paired with a commitment the shortfall would actually affect.",
     "requires_evidence": [
       "ev_A",
       "ev_B"
     ],
     "excludes": [
-      "all evening activities are unsuitable",
-      "all next-day plans are incompatible"
+      "the user sometimes feels off after this kind of exposure",
+      "next-day commitments sometimes go poorly for unrelated reasons"
     ],
     "link_broken_change": "The next-day activity is replaced with a low-stakes, movable activity."
   },
@@ -460,20 +460,20 @@
     }
   ],
   "retrieval_cue": {
-    "cue_type": "situational_fit",
-    "why_it_naturally_retrieves_R": "The new invitation asks about fit without naming either prior episode."
+    "cue_type": "behavior_explanation",
+    "why_it_naturally_retrieves_R": "The question asks for an explanation without naming either prior episode."
   },
   "relation_specificity": {
-    "nearby_relation": "The user can generally tolerate a single late evening without any next-day appointment.",
-    "why_it_does_not_license_C": "That fact does not by itself establish a recovery-to-responsibility conflict."
+    "nearby_relation": "The user can have this kind of exposure on other occasions without any known sensitive next-day commitment.",
+    "why_it_does_not_license_C": "That fact does not by itself establish that this specific next-day shortfall shares a cause with a sensitive commitment."
   },
-  "coactivation_bridge": "ev_A describes why the proposed exposure needs recovery; ev_B establishes the specific responsibility that would be impaired. Together they support C: Helping hoist heavy moving boxes onto a truck bed on Monday evening should be flagged as a fit risk because the overhead-lifting pattern that inflames this user's shoulder would conflict with Tuesday's full-range impingement test.",
+  "coactivation_bridge": "ev_A establishes the recovery-need pattern; ev_B establishes the specific commitment that pattern would affect. Together they support C: This user's history explains why helping hoist moving boxes Monday evening would leave them unprepared for Tuesday's shoulder impingement test, because overhead lifting leaves this user's shoulder catching and aching into the next day, exactly what the pain-free range-of-motion test needs to avoid.",
   "latent_C": {
-    "inference": "Helping hoist heavy moving boxes onto a truck bed on Monday evening should be flagged as a fit risk because the overhead-lifting pattern that inflames this user's shoulder would conflict with Tuesday's full-range impingement test.",
-    "calibrated_language": "flagged as a fit risk"
+    "inference": "This user's history explains why helping hoist moving boxes Monday evening would leave them unprepared for Tuesday's shoulder impingement test, because overhead lifting leaves this user's shoulder catching and aching into the next day, exactly what the pain-free range-of-motion test needs to avoid.",
+    "calibrated_language": "supported as the explanation"
   },
   "answer_contract": {
-    "target_proposition": "Helping hoist heavy moving boxes onto a truck bed on Monday evening should be flagged as a fit risk because the overhead-lifting pattern that inflames this user's shoulder would conflict with Tuesday's full-range impingement test.",
+    "target_proposition": "This user's history explains why helping hoist moving boxes Monday evening would leave them unprepared for Tuesday's shoulder impingement test, because overhead lifting leaves this user's shoulder catching and aching into the next day, exactly what the pain-free range-of-motion test needs to avoid.",
     "allowed_decisions": [
       "yes",
       "no"
@@ -499,7 +499,7 @@
         "content": "That version is easy enough to reschedule if needed."
       }
     ],
-    "connector_change": "B-prime preserves the same user, session position, and conversational style but removes the fixed health responsibility.",
+    "connector_change": "B-prime preserves the same user, session position, and conversational style but removes the matching sensitivity.",
     "rationale": "A plus B-prime no longer supports the original C."
   },
   "provenance": {
@@ -527,9 +527,9 @@
       "binary_decision": true,
       "required_elements": [
         "answer yes",
-        "connect the health-exposure recovery pattern with the scheduled next-day responsibility",
+        "connect the recovery-need pattern with the specific next-day commitment",
         "cite both session 5 and session 12",
-        "state the calibrated fit-risk conclusion"
+        "state the calibrated explanatory conclusion"
       ],
       "rationale": "A and B jointly support the target proposition."
     }

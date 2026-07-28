@@ -4,8 +4,8 @@
   "pair_id": "AMB_HV_houseguest_couch_before_sleep_apnea_test_139",
   "domain": "health",
   "user_id": "anon_health_user_139",
-  "query_type": "situational_fit",
-  "polarity": "reject",
+  "query_type": "recommendation_ranking",
+  "polarity": "accept",
   "context": [
     {
       "session_id": 1,
@@ -328,7 +328,7 @@
       ]
     }
   ],
-  "query": "Based only on these records, should sleeping on the couch during the friend's weekend visit be flagged as a fit risk for this user?",
+  "query": "Based only on these records, should this user find another sleeping arrangement for the friend's weekend visit rather than risk a distorted read on Sunday's sleep apnea test?",
   "evidence": {
     "ev_A": {
       "session_id": 5,
@@ -424,14 +424,14 @@
     }
   },
   "relational_connector": {
-    "relation": "A health-exposure recovery pattern creates a fit risk only when paired with B's specific next-day health responsibility.",
+    "relation": "A recovery-need pattern makes declining or deferring the proposal the better choice only when the next day carries a specific commitment the pattern would affect.",
     "requires_evidence": [
       "ev_A",
       "ev_B"
     ],
     "excludes": [
-      "all evening activities are unsuitable",
-      "all next-day plans are incompatible"
+      "this kind of exposure is generally best avoided",
+      "the user should avoid this kind of exposure in general"
     ],
     "link_broken_change": "The next-day activity is replaced with a low-stakes, movable activity."
   },
@@ -448,20 +448,20 @@
     }
   ],
   "retrieval_cue": {
-    "cue_type": "situational_fit",
-    "why_it_naturally_retrieves_R": "The new invitation asks about fit without naming either prior episode."
+    "cue_type": "recommendation_ranking",
+    "why_it_naturally_retrieves_R": "The choice between proceeding with or declining the proposal asks for a ranked recommendation without naming either prior episode."
   },
   "relation_specificity": {
-    "nearby_relation": "The user can generally tolerate a single late evening without any next-day appointment.",
-    "why_it_does_not_license_C": "That fact does not by itself establish a recovery-to-responsibility conflict."
+    "nearby_relation": "The user can usually recover from this kind of exposure within a day or two with no fixed commitment.",
+    "why_it_does_not_license_C": "That fact does not by itself establish that a specific next-day commitment would be affected."
   },
-  "coactivation_bridge": "ev_A describes why the proposed exposure needs recovery; ev_B establishes the specific responsibility that would be impaired. Together they support C: Sleeping on the couch during the friend's weekend visit should be flagged as a fit risk because couch-sleeping puts this user on their back most of the night, right when Sunday's home sleep apnea test needs an accurate read of normal sleep position.",
+  "coactivation_bridge": "ev_A establishes the recovery-need pattern; ev_B establishes the specific commitment that pattern would affect. Together they support C: This user should find another sleeping arrangement for the friend's weekend visit rather than risk Sunday's sleep apnea test, because sleeping on the couch matches the pattern that puts this user on their back most of the night, which is exactly the abnormal sleep position that would distort the test's accurate read.",
   "latent_C": {
-    "inference": "Sleeping on the couch during the friend's weekend visit should be flagged as a fit risk because couch-sleeping puts this user on their back most of the night, right when Sunday's home sleep apnea test needs an accurate read of normal sleep position.",
-    "calibrated_language": "flagged as a fit risk"
+    "inference": "This user should find another sleeping arrangement for the friend's weekend visit rather than risk Sunday's sleep apnea test, because sleeping on the couch matches the pattern that puts this user on their back most of the night, which is exactly the abnormal sleep position that would distort the test's accurate read.",
+    "calibrated_language": "the recommended choice"
   },
   "answer_contract": {
-    "target_proposition": "Sleeping on the couch during the friend's weekend visit should be flagged as a fit risk because couch-sleeping puts this user on their back most of the night, right when Sunday's home sleep apnea test needs an accurate read of normal sleep position.",
+    "target_proposition": "This user should find another sleeping arrangement for the friend's weekend visit rather than risk Sunday's sleep apnea test, because sleeping on the couch matches the pattern that puts this user on their back most of the night, which is exactly the abnormal sleep position that would distort the test's accurate read.",
     "allowed_decisions": [
       "yes",
       "no"
@@ -487,7 +487,7 @@
         "content": "That removes the hard requirement from that commitment."
       }
     ],
-    "connector_change": "B-prime preserves the same user, session position, and conversational style but removes the fixed health responsibility.",
+    "connector_change": "B-prime preserves the same user, session position, and conversational style but removes the fixed next-day stake.",
     "rationale": "A plus B-prime no longer supports the original C."
   },
   "provenance": {

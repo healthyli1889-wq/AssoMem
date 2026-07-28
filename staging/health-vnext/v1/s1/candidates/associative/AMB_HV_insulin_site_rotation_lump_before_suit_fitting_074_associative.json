@@ -4,7 +4,7 @@
   "pair_id": "AMB_HV_insulin_site_rotation_lump_before_suit_fitting_074",
   "domain": "health",
   "user_id": "anon_health_user_74",
-  "query_type": "situational_fit",
+  "query_type": "predicted_reaction",
   "polarity": "reject",
   "context": [
     {
@@ -328,7 +328,7 @@
       ]
     }
   ],
-  "query": "Based only on these records, should reusing the same injection site again this week be flagged as a fit risk for this user?",
+  "query": "Based only on these records, will reusing the same injection site this week likely leave this user with a lump too tender for Friday's suit fitting?",
   "evidence": {
     "ev_A": {
       "session_id": 5,
@@ -362,10 +362,10 @@
       "role": "ev_A",
       "event_elements": {
         "person": "anon_health_user_74",
-        "context": "A demanding health-related exposure",
-        "goal_or_prediction": "Remain functional the following day",
+        "context": "A pattern that creates a recovery need affecting next-day functioning",
+        "goal_or_prediction": "Return to normal functioning by the next day",
         "action": "When I forget to rotate my insulin injection sites, I get a tender lump that makes tight clothing uncomfortable against that spot for a couple of days.",
-        "outcome_or_affect": "Needs recovery before a demanding health responsibility"
+        "outcome_or_affect": "Establishes a repeatable next-day impairment pattern"
       }
     },
     "6": {
@@ -396,8 +396,8 @@
       "role": "ev_B",
       "event_elements": {
         "person": "anon_health_user_74",
-        "context": "A scheduled next-day health responsibility",
-        "goal_or_prediction": "Show up ready for a health appointment or procedure",
+        "context": "A scheduled commitment sensitive to that specific impairment",
+        "goal_or_prediction": "Meet the commitment in an unimpaired state",
         "action": "I have a Friday afternoon suit fitting where the tailor needs to pin the fabric snugly against my torso.",
         "outcome_or_affect": "Creates the situational condition needed for latent C"
       }
@@ -436,14 +436,14 @@
     }
   },
   "relational_connector": {
-    "relation": "A health-exposure recovery pattern creates a fit risk only when paired with B's specific next-day health responsibility.",
+    "relation": "A recovery-need pattern predicts a specific next-day impairment only when paired with a commitment that is sensitive to that impairment.",
     "requires_evidence": [
       "ev_A",
       "ev_B"
     ],
     "excludes": [
-      "all evening activities are unsuitable",
-      "all next-day plans are incompatible"
+      "the user is generally affected by this kind of exposure",
+      "any next-day commitment would be affected"
     ],
     "link_broken_change": "The next-day activity is replaced with a low-stakes, movable activity."
   },
@@ -460,20 +460,20 @@
     }
   ],
   "retrieval_cue": {
-    "cue_type": "situational_fit",
-    "why_it_naturally_retrieves_R": "The new invitation asks about fit without naming either prior episode."
+    "cue_type": "predicted_reaction",
+    "why_it_naturally_retrieves_R": "The question asks for a prediction about the outcome without naming either prior episode."
   },
   "relation_specificity": {
-    "nearby_relation": "The user can generally tolerate a single late evening without any next-day appointment.",
-    "why_it_does_not_license_C": "That fact does not by itself establish a recovery-to-responsibility conflict."
+    "nearby_relation": "The user can have this kind of exposure on other occasions without any known sensitive next-day commitment.",
+    "why_it_does_not_license_C": "That fact does not by itself establish that a specific next-day commitment would be affected."
   },
-  "coactivation_bridge": "ev_A describes why the proposed exposure needs recovery; ev_B establishes the specific responsibility that would be impaired. Together they support C: Reusing the same injection site again this week should be flagged as a fit risk because it causes a tender lump right when Friday's suit fitting needs snug fabric against that spot.",
+  "coactivation_bridge": "ev_A establishes the recovery-need pattern; ev_B establishes the specific commitment that pattern would affect. Together they support C: This user will likely still have a tender lump at Friday's suit fitting, because reusing the same injection site matches the pattern that gives this user a tender lump lasting a couple of days.",
   "latent_C": {
-    "inference": "Reusing the same injection site again this week should be flagged as a fit risk because it causes a tender lump right when Friday's suit fitting needs snug fabric against that spot.",
-    "calibrated_language": "flagged as a fit risk"
+    "inference": "This user will likely still have a tender lump at Friday's suit fitting, because reusing the same injection site matches the pattern that gives this user a tender lump lasting a couple of days.",
+    "calibrated_language": "predicted to still apply"
   },
   "answer_contract": {
-    "target_proposition": "Reusing the same injection site again this week should be flagged as a fit risk because it causes a tender lump right when Friday's suit fitting needs snug fabric against that spot.",
+    "target_proposition": "This user will likely still have a tender lump at Friday's suit fitting, because reusing the same injection site matches the pattern that gives this user a tender lump lasting a couple of days.",
     "allowed_decisions": [
       "yes",
       "no"
@@ -499,7 +499,7 @@
         "content": "That Sunday activity is low stakes and can be moved without affecting your care."
       }
     ],
-    "connector_change": "B-prime preserves the same user, session position, and conversational style but removes the fixed health responsibility.",
+    "connector_change": "B-prime preserves the same user, session position, and conversational style but removes the specific sensitivity to the impairment.",
     "rationale": "A plus B-prime no longer supports the original C."
   },
   "provenance": {
@@ -527,9 +527,9 @@
       "binary_decision": true,
       "required_elements": [
         "answer yes",
-        "connect the health-exposure recovery pattern with the scheduled next-day responsibility",
+        "connect the recovery-need pattern with the specific next-day commitment",
         "cite both session 5 and session 12",
-        "state the calibrated fit-risk conclusion"
+        "state the calibrated prediction"
       ],
       "rationale": "A and B jointly support the target proposition."
     },
@@ -538,30 +538,30 @@
       "binary_decision": false,
       "required_elements": [
         "answer no",
-        "state that no specific next-day responsibility is available",
+        "state that no specific next-day commitment is available",
         "withhold the target proposition"
       ],
-      "rationale": "A alone does not establish that the proposed event conflicts with a concrete responsibility."
+      "rationale": "A alone does not establish that a specific next-day commitment would be affected."
     },
     "b_only": {
       "expected_mode": "withhold_C",
       "binary_decision": false,
       "required_elements": [
         "answer no",
-        "state that no exposure-recovery pattern is available",
+        "state that no recovery-need pattern is available",
         "withhold the target proposition"
       ],
-      "rationale": "B alone does not establish that the proposed event would impair the responsibility."
+      "rationale": "B alone does not establish that the user would actually be impaired."
     },
     "link_broken": {
       "expected_mode": "withhold_C",
       "binary_decision": false,
       "required_elements": [
         "answer no",
-        "identify that the replacement responsibility is low stakes or movable",
+        "identify that the replacement commitment no longer carries the same sensitivity",
         "withhold the target proposition"
       ],
-      "rationale": "B-prime removes the responsibility connector while retaining same-user conversational form."
+      "rationale": "B-prime removes the impairment-sensitivity of the commitment while retaining the same user, timing, and conversational form."
     }
   }
 }
