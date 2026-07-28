@@ -1,0 +1,53 @@
+{
+  "check": "zero_evidence",
+  "candidate_id": "AMB_WV_S06_U08_associative",
+  "pair_id": "AMB_WV_S06_U08",
+  "query_only": true,
+  "context_session_count": 0,
+  "trials_requested": 1,
+  "valid_trials": 1,
+  "target_positive_count": 0,
+  "target_false_positive_rate": 0.0,
+  "pass": true,
+  "attempts": [
+    {
+      "trial": 1,
+      "status": "valid",
+      "target_asserted": false,
+      "response": {
+        "mode": "withhold",
+        "answer": "I don’t have any visible information about your campaign preferences or sign-up priorities, so I can’t determine whether plateau or canyon should be first on your list.",
+        "evidence_session_ids": []
+      },
+      "solver_usage": {
+        "input_tokens": 169,
+        "output_tokens": 69,
+        "reasoning_tokens": null,
+        "total_tokens": 238
+      },
+      "validator": {
+        "target_asserted": false,
+        "target_evidence_grounded": false,
+        "evidence_usage": {
+          "ev_A_used": false,
+          "ev_B_used": false,
+          "h_k": 0,
+          "source_misattribution": false
+        },
+        "abstention": {
+          "abstains": true,
+          "asserts_absent_pattern": false
+        },
+        "condition_correct": true,
+        "failure_tags": [],
+        "reason": "The solver correctly withheld: no memory evidence was visible in the conversation, and the response explicitly states it cannot determine whether plateau or canyon should rank first, asserting neither the target proposition nor its opposite. It cited no evidence (evidence_session_ids empty), so nothing absent from allowed_evidence_ids was used. This matches the expected withhold_C condition."
+      },
+      "validator_usage": {
+        "input_tokens": 677,
+        "output_tokens": 375,
+        "reasoning_tokens": null,
+        "total_tokens": 1052
+      }
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "check": "zero_evidence",
+  "candidate_id": "AMB_WV_S16_U03_associative",
+  "pair_id": "AMB_WV_S16_U03",
+  "query_only": true,
+  "context_session_count": 0,
+  "trials_requested": 1,
+  "valid_trials": 1,
+  "target_positive_count": 0,
+  "target_false_positive_rate": 0.0,
+  "pass": true,
+  "attempts": [
+    {
+      "trial": 1,
+      "status": "valid",
+      "target_asserted": false,
+      "response": {
+        "mode": "withhold",
+        "answer": "I don’t have any visible information about the two regulator-call duties or their priority, so I can’t determine whether initial hazard spokesperson should come first.",
+        "evidence_session_ids": []
+      },
+      "solver_usage": {
+        "input_tokens": 171,
+        "output_tokens": 75,
+        "reasoning_tokens": null,
+        "total_tokens": 246
+      },
+      "validator": {
+        "target_asserted": false,
+        "target_evidence_grounded": false,
+        "evidence_usage": {
+          "ev_A_used": false,
+          "ev_B_used": false,
+          "h_k": 0,
+          "source_misattribution": false
+        },
+        "abstention": {
+          "abstains": true,
+          "asserts_absent_pattern": false
+        },
+        "condition_correct": true,
+        "failure_tags": [],
+        "reason": "No context or evidence was visible to the solver (context empty, allowed_evidence_ids empty), so the expected mode is withhold_C. The solver explicitly states it has no visible information about the two regulator-call duties and cannot determine whether initial hazard spokesperson should come first. This is a clean abstention: it does not assert the target proposition (do not rank initial hazard spokesperson first), does not assert the opposite arrangement, cites no evidence, and uses no evidence outside allowed_evidence_ids. Therefore the withhold_C condition is satisfied."
+      },
+      "validator_usage": {
+        "input_tokens": 668,
+        "output_tokens": 1000,
+        "reasoning_tokens": null,
+        "total_tokens": 1668
+      }
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "check": "zero_evidence",
+  "candidate_id": "AMB_FN_S9_U09_associative",
+  "pair_id": "AMB_FN_S9_U09",
+  "query_only": true,
+  "context_session_count": 0,
+  "trials_requested": 1,
+  "valid_trials": 1,
+  "target_positive_count": 0,
+  "target_false_positive_rate": 0.0,
+  "pass": true,
+  "attempts": [
+    {
+      "trial": 1,
+      "status": "valid",
+      "target_asserted": false,
+      "response": {
+        "mode": "withhold",
+        "answer": "I don’t have enough visible context to determine whether you have sufficient information to make that decision or “hallway-tip” today.",
+        "evidence_session_ids": []
+      },
+      "solver_usage": {
+        "input_tokens": 170,
+        "output_tokens": 80,
+        "reasoning_tokens": null,
+        "total_tokens": 250
+      },
+      "validator": {
+        "target_asserted": false,
+        "target_evidence_grounded": false,
+        "evidence_usage": {
+          "ev_A_used": false,
+          "ev_B_used": false,
+          "h_k": 0,
+          "source_misattribution": false
+        },
+        "abstention": {
+          "abstains": true,
+          "asserts_absent_pattern": false
+        },
+        "condition_correct": true,
+        "failure_tags": [],
+        "reason": "No context or memory evidence was visible to the solver. The solver correctly used withhold mode: it said it lacked visible context to determine whether the user had enough information to decide/hallway-tip today, returned empty evidence_session_ids, and did not assert the target proposition ('not enough info — defer'). That statement is an abstention about the solver's own context, not an assertion that the user lacks sufficient information, and it must not be read as asserting the opposite arrangement. For expected_mode withhold_C, condition correctness requires no target assertion and no use of evidence outside allowed_evidence_ids (empty); both are satisfied."
+      },
+      "validator_usage": {
+        "input_tokens": 672,
+        "output_tokens": 2268,
+        "reasoning_tokens": null,
+        "total_tokens": 2940
+      }
+    }
+  ]
+}

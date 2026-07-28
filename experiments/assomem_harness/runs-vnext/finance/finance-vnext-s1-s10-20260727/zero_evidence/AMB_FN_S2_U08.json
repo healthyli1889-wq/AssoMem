@@ -1,0 +1,53 @@
+{
+  "check": "zero_evidence",
+  "candidate_id": "AMB_FN_S2_U08_associative",
+  "pair_id": "AMB_FN_S2_U08",
+  "query_only": true,
+  "context_session_count": 0,
+  "trials_requested": 1,
+  "valid_trials": 1,
+  "target_positive_count": 0,
+  "target_false_positive_rate": 0.0,
+  "pass": true,
+  "attempts": [
+    {
+      "trial": 1,
+      "status": "valid",
+      "target_asserted": false,
+      "response": {
+        "mode": "withhold",
+        "answer": "I don’t have any visible information about your money habits, trading experience, risk tolerance, goals, or the workshop’s specifics, so I can’t assess whether it fits your approach. In general, it would only be worth considering if the cost is modest, the organizer is credible and transparent, the material is educational rather than hype or signals-selling, and it aligns with a pre-set risk and learning budget—not pressure to trade or recruit others.",
+        "evidence_session_ids": []
+      },
+      "solver_usage": {
+        "input_tokens": 180,
+        "output_tokens": 109,
+        "reasoning_tokens": null,
+        "total_tokens": 289
+      },
+      "validator": {
+        "target_asserted": false,
+        "target_evidence_grounded": false,
+        "evidence_usage": {
+          "ev_A_used": false,
+          "ev_B_used": false,
+          "h_k": 0,
+          "source_misattribution": false
+        },
+        "abstention": {
+          "abstains": true,
+          "asserts_absent_pattern": false
+        },
+        "condition_correct": true,
+        "failure_tags": [],
+        "reason": "The solver correctly withheld: with an empty visible context, it stated it cannot assess fit and declined to assert the target proposition (which depends on E1/E2 cash-timing and payday-index facts that are not visible). It cited no evidence sessions, invented no user-specific facts, and its conditional guidance is explicitly generic ('in general'), so it neither asserts the absent target pattern nor misuses evidence. This matches the expected withhold_C condition: no target assertion and no use of evidence outside the empty allowed_evidence_ids."
+      },
+      "validator_usage": {
+        "input_tokens": 756,
+        "output_tokens": 588,
+        "reasoning_tokens": null,
+        "total_tokens": 1344
+      }
+    }
+  ]
+}

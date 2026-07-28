@@ -1,0 +1,53 @@
+{
+  "check": "zero_evidence",
+  "candidate_id": "AMB_WV_S02_U08_associative",
+  "pair_id": "AMB_WV_S02_U08",
+  "query_only": true,
+  "context_session_count": 0,
+  "trials_requested": 1,
+  "valid_trials": 1,
+  "target_positive_count": 0,
+  "target_false_positive_rate": 0.0,
+  "pass": true,
+  "attempts": [
+    {
+      "trial": 1,
+      "status": "valid",
+      "target_asserted": false,
+      "response": {
+        "mode": "withhold",
+        "answer": "I don’t have any visible information about your experience, strengths, goals, or the requirements of the incident-comms versus postmortem tracks, so I can’t responsibly recommend one over the other. If you share those details, I can help weigh the choice.",
+        "evidence_session_ids": []
+      },
+      "solver_usage": {
+        "input_tokens": 178,
+        "output_tokens": 73,
+        "reasoning_tokens": null,
+        "total_tokens": 251
+      },
+      "validator": {
+        "target_asserted": false,
+        "target_evidence_grounded": false,
+        "evidence_usage": {
+          "ev_A_used": false,
+          "ev_B_used": false,
+          "h_k": 0,
+          "source_misattribution": false
+        },
+        "abstention": {
+          "abstains": true,
+          "asserts_absent_pattern": false
+        },
+        "condition_correct": true,
+        "failure_tags": [],
+        "reason": "The solver correctly withheld judgment: with an empty context and no visible evidence about the user's fit for either track, it declined to assert the target proposition (ranking postmortem above incident-comms) and cited no evidence, consistent with allowed_evidence_ids being empty. It did not assert the opposite arrangement either; it simply requested more information. This matches the expected withhold_C condition."
+      },
+      "validator_usage": {
+        "input_tokens": 705,
+        "output_tokens": 394,
+        "reasoning_tokens": null,
+        "total_tokens": 1099
+      }
+    }
+  ]
+}

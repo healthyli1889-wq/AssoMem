@@ -1,0 +1,53 @@
+{
+  "check": "zero_evidence",
+  "candidate_id": "AMB_FN_S3_U06_associative",
+  "pair_id": "AMB_FN_S3_U06",
+  "query_only": true,
+  "context_session_count": 0,
+  "trials_requested": 1,
+  "valid_trials": 1,
+  "target_positive_count": 0,
+  "target_false_positive_rate": 0.0,
+  "pass": true,
+  "attempts": [
+    {
+      "trial": 1,
+      "status": "valid",
+      "target_asserted": false,
+      "response": {
+        "mode": "withhold",
+        "answer": "I don’t have visible information about your reserve, the proposed idea, or your existing protective plan, so I can’t assess whether you should change course.",
+        "evidence_session_ids": []
+      },
+      "solver_usage": {
+        "input_tokens": 180,
+        "output_tokens": 98,
+        "reasoning_tokens": null,
+        "total_tokens": 278
+      },
+      "validator": {
+        "target_asserted": false,
+        "target_evidence_grounded": false,
+        "evidence_usage": {
+          "ev_A_used": false,
+          "ev_B_used": false,
+          "h_k": 0,
+          "source_misattribution": false
+        },
+        "abstention": {
+          "abstains": true,
+          "asserts_absent_pattern": false
+        },
+        "condition_correct": true,
+        "failure_tags": [],
+        "reason": "The visible conversation contains an empty context, so no memory evidence exists to support the target proposition. The solver correctly withheld, stating it lacks visible information about the reserve, the pitched idea, or the protective plan, and cited no evidence. It did not assert the target proposition, did not assert the opposite arrangement, and did not fabricate or misuse any evidence. This matches the withhold_C condition: no target assertion and no use of evidence outside the empty allowed_evidence_ids."
+      },
+      "validator_usage": {
+        "input_tokens": 694,
+        "output_tokens": 557,
+        "reasoning_tokens": null,
+        "total_tokens": 1251
+      }
+    }
+  ]
+}

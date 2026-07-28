@@ -1,0 +1,53 @@
+{
+  "check": "zero_evidence",
+  "candidate_id": "AMB_WV_S08_U06_associative",
+  "pair_id": "AMB_WV_S08_U06",
+  "query_only": true,
+  "context_session_count": 0,
+  "trials_requested": 1,
+  "valid_trials": 1,
+  "target_positive_count": 0,
+  "target_false_positive_rate": 0.0,
+  "pass": true,
+  "attempts": [
+    {
+      "trial": 1,
+      "status": "valid",
+      "target_asserted": false,
+      "response": {
+        "mode": "withhold",
+        "answer": "I don’t have any visible records of your routing decisions or the circumstances of those press requests, so I can’t support an explanation of the pattern.",
+        "evidence_session_ids": []
+      },
+      "solver_usage": {
+        "input_tokens": 183,
+        "output_tokens": 78,
+        "reasoning_tokens": null,
+        "total_tokens": 261
+      },
+      "validator": {
+        "target_asserted": false,
+        "target_evidence_grounded": false,
+        "evidence_usage": {
+          "ev_A_used": false,
+          "ev_B_used": false,
+          "h_k": 0,
+          "source_misattribution": false
+        },
+        "abstention": {
+          "abstains": true,
+          "asserts_absent_pattern": false
+        },
+        "condition_correct": true,
+        "failure_tags": [],
+        "reason": "The solver correctly withheld: with an empty visible context and no memory evidence, it declined to assert the target proposition (that the routing is best explained by the impromptu format producing a unique misstatement/disclosure), cited no evidence, and did not assert the opposite arrangement. This matches the expected withhold_C condition with allowed_evidence_ids empty."
+      },
+      "validator_usage": {
+        "input_tokens": 691,
+        "output_tokens": 522,
+        "reasoning_tokens": null,
+        "total_tokens": 1213
+      }
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "check": "zero_evidence",
+  "candidate_id": "AMB_FN_S9_U06_associative",
+  "pair_id": "AMB_FN_S9_U06",
+  "query_only": true,
+  "context_session_count": 0,
+  "trials_requested": 1,
+  "valid_trials": 1,
+  "target_positive_count": 0,
+  "target_false_positive_rate": 0.0,
+  "pass": true,
+  "attempts": [
+    {
+      "trial": 1,
+      "status": "valid",
+      "target_asserted": false,
+      "response": {
+        "mode": "withhold",
+        "answer": "I don’t have visible information about your budget, HSA eligibility, the “IDEA tip,” or the protective plan you’ve used, so I can’t responsibly recommend one over the other. Compare the tax benefits, liquidity needs, and whether the existing plan still fits your goals before deciding.",
+        "evidence_session_ids": []
+      },
+      "solver_usage": {
+        "input_tokens": 180,
+        "output_tokens": 135,
+        "reasoning_tokens": null,
+        "total_tokens": 315
+      },
+      "validator": {
+        "target_asserted": false,
+        "target_evidence_grounded": false,
+        "evidence_usage": {
+          "ev_A_used": false,
+          "ev_B_used": false,
+          "h_k": 0,
+          "source_misattribution": false
+        },
+        "abstention": {
+          "abstains": true,
+          "asserts_absent_pattern": false
+        },
+        "condition_correct": true,
+        "failure_tags": [],
+        "reason": "The visible conversation contains no context/evidence (empty context), and allowed_evidence_ids is empty, so the expected behavior is withhold_C. The solver explicitly states it lacks visible information, makes no recommendation for or against the target proposition, cites no evidence (evidence_session_ids empty), and uses mode 'withhold'. It does not assert the target pattern, does not fabricate or misattribute evidence, and its generic advice does not count as asserting the target or its opposite. Condition satisfied: no target assertion and no use of absent evidence."
+      },
+      "validator_usage": {
+        "input_tokens": 720,
+        "output_tokens": 596,
+        "reasoning_tokens": null,
+        "total_tokens": 1316
+      }
+    }
+  ]
+}

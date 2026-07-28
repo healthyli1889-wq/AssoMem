@@ -1,0 +1,53 @@
+{
+  "check": "zero_evidence",
+  "candidate_id": "AMB_FN_S1_U06_associative",
+  "pair_id": "AMB_FN_S1_U06",
+  "query_only": true,
+  "context_session_count": 0,
+  "trials_requested": 1,
+  "valid_trials": 1,
+  "target_positive_count": 0,
+  "target_false_positive_rate": 0.0,
+  "pass": true,
+  "attempts": [
+    {
+      "trial": 1,
+      "status": "valid",
+      "target_asserted": false,
+      "response": {
+        "mode": "withhold",
+        "answer": "I don’t have any visible information about your financial situation, the group chat proposal, or the protective plan you’ve used, so I can’t determine whether it is a good fit or advise you to change course.",
+        "evidence_session_ids": []
+      },
+      "solver_usage": {
+        "input_tokens": 190,
+        "output_tokens": 92,
+        "reasoning_tokens": null,
+        "total_tokens": 282
+      },
+      "validator": {
+        "target_asserted": false,
+        "target_evidence_grounded": false,
+        "evidence_usage": {
+          "ev_A_used": false,
+          "ev_B_used": false,
+          "h_k": 0,
+          "source_misattribution": false
+        },
+        "abstention": {
+          "abstains": true,
+          "asserts_absent_pattern": false
+        },
+        "condition_correct": true,
+        "failure_tags": [],
+        "reason": "The visible context is empty, so no evidence for the target proposition (A+B supporting the protective plan) is available. The solver correctly withheld: it made no target assertion, cited no evidence, and used no evidence outside the empty allowed_evidence_ids. Its statement that it lacks visible information accurately reflects the empty context and does not assert an absent pattern or the opposite arrangement. This satisfies the withhold_C condition."
+      },
+      "validator_usage": {
+        "input_tokens": 718,
+        "output_tokens": 829,
+        "reasoning_tokens": null,
+        "total_tokens": 1547
+      }
+    }
+  ]
+}

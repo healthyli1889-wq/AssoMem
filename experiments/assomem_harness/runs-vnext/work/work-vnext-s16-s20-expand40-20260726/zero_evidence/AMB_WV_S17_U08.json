@@ -1,0 +1,53 @@
+{
+  "check": "zero_evidence",
+  "candidate_id": "AMB_WV_S17_U08_associative",
+  "pair_id": "AMB_WV_S17_U08",
+  "query_only": true,
+  "context_session_count": 0,
+  "trials_requested": 1,
+  "valid_trials": 1,
+  "target_positive_count": 0,
+  "target_false_positive_rate": 0.0,
+  "pass": true,
+  "attempts": [
+    {
+      "trial": 1,
+      "status": "valid",
+      "target_asserted": false,
+      "response": {
+        "mode": "withhold",
+        "answer": "I don’t have any visible information about your neighbourhood, the proposed drop-ins, community interest, capacity, or potential constraints, so I can’t responsibly recommend whether to announce them.",
+        "evidence_session_ids": []
+      },
+      "solver_usage": {
+        "input_tokens": 164,
+        "output_tokens": 57,
+        "reasoning_tokens": null,
+        "total_tokens": 221
+      },
+      "validator": {
+        "target_asserted": false,
+        "target_evidence_grounded": false,
+        "evidence_usage": {
+          "ev_A_used": false,
+          "ev_B_used": false,
+          "h_k": 0,
+          "source_misattribution": false
+        },
+        "abstention": {
+          "abstains": true,
+          "asserts_absent_pattern": false
+        },
+        "condition_correct": true,
+        "failure_tags": [],
+        "reason": "The solver explicitly abstained, stating it lacked visible information to recommend announcing or rejecting the drop-ins. It did not assert the target proposition (rejecting the recurring-service announcement and committing to listening sessions/mapping first), nor did it assert the opposite arrangement. No evidence was cited (evidence_session_ids is empty), consistent with the empty allowed_evidence_ids, so no out-of-contract evidence was used. This matches the expected withhold_C condition: no target assertion and no use of disallowed evidence."
+      },
+      "validator_usage": {
+        "input_tokens": 666,
+        "output_tokens": 948,
+        "reasoning_tokens": null,
+        "total_tokens": 1614
+      }
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "check": "zero_evidence",
+  "candidate_id": "AMB_FN_S2_U07_associative",
+  "pair_id": "AMB_FN_S2_U07",
+  "query_only": true,
+  "context_session_count": 0,
+  "trials_requested": 1,
+  "valid_trials": 1,
+  "target_positive_count": 0,
+  "target_false_positive_rate": 0.0,
+  "pass": true,
+  "attempts": [
+    {
+      "trial": 1,
+      "status": "valid",
+      "target_asserted": false,
+      "response": {
+        "mode": "withhold",
+        "answer": "I don’t have any visible information about your trading experience, risk tolerance, finances, or the bootcamp’s curriculum, costs, and track record, so I can’t assess whether it is worth joining for you. Be cautious of hype-driven trading programs; review total cost, instructor credentials, independently verified outcomes, refund terms, and whether it emphasizes risk management rather than promises of profits.",
+        "evidence_session_ids": []
+      },
+      "solver_usage": {
+        "input_tokens": 168,
+        "output_tokens": 97,
+        "reasoning_tokens": null,
+        "total_tokens": 265
+      },
+      "validator": {
+        "target_asserted": false,
+        "target_evidence_grounded": false,
+        "evidence_usage": {
+          "ev_A_used": false,
+          "ev_B_used": false,
+          "h_k": 0,
+          "source_misattribution": false
+        },
+        "abstention": {
+          "abstains": true,
+          "asserts_absent_pattern": false
+        },
+        "condition_correct": true,
+        "failure_tags": [],
+        "reason": "The context was empty, so no evidence about the user's trading history, the stuck Friday auto-invest, or the bootcamp was visible. The solver correctly abstained, explicitly stating it lacks visible information to judge whether the bootcamp is worth joining, and used no evidence (evidence_session_ids empty). It did not assert the target proposition (that the bootcamp is a poor fit), nor did it fabricate or cite the removed target facts; its cautionary remarks are generic risk advice, not an assertion of the absent pattern. This satisfies the withhold_C condition: no target assertion and no out-of-scope evidence use. Required output fields (mode, answer, evidence_session_ids) are all present."
+      },
+      "validator_usage": {
+        "input_tokens": 725,
+        "output_tokens": 848,
+        "reasoning_tokens": null,
+        "total_tokens": 1573
+      }
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "check": "zero_evidence",
+  "candidate_id": "AMB_FN_S6_U07_associative",
+  "pair_id": "AMB_FN_S6_U07",
+  "query_only": true,
+  "context_session_count": 0,
+  "trials_requested": 1,
+  "valid_trials": 1,
+  "target_positive_count": 0,
+  "target_false_positive_rate": 0.0,
+  "pass": true,
+  "attempts": [
+    {
+      "trial": 1,
+      "status": "valid",
+      "target_asserted": false,
+      "response": {
+        "mode": "withhold",
+        "answer": "I don’t have any visible information about your office tip-pool arrangement or your match plan, so I can’t say which should take priority. Review the governing plan documents, applicable workplace policies, and any legal or financial obligations before making changes.",
+        "evidence_session_ids": []
+      },
+      "solver_usage": {
+        "input_tokens": 172,
+        "output_tokens": 69,
+        "reasoning_tokens": null,
+        "total_tokens": 241
+      },
+      "validator": {
+        "target_asserted": false,
+        "target_evidence_grounded": false,
+        "evidence_usage": {
+          "ev_A_used": false,
+          "ev_B_used": false,
+          "h_k": 0,
+          "source_misattribution": false
+        },
+        "abstention": {
+          "abstains": true,
+          "asserts_absent_pattern": false
+        },
+        "condition_correct": true,
+        "failure_tags": [],
+        "reason": "The solver correctly withheld: it stated that no visible information about the tip-pool arrangement or match plan exists, declined to assert the target proposition, and cited no evidence. With allowed_evidence_ids empty and expected_mode withhold_C, this satisfies the condition: no target assertion and no use of absent evidence. The generic advice to review plan documents does not assert the target or its opposite and does not fabricate evidence."
+      },
+      "validator_usage": {
+        "input_tokens": 697,
+        "output_tokens": 298,
+        "reasoning_tokens": null,
+        "total_tokens": 995
+      }
+    }
+  ]
+}

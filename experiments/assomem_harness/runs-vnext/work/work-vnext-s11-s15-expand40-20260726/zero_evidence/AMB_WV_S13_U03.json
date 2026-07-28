@@ -1,0 +1,53 @@
+{
+  "check": "zero_evidence",
+  "candidate_id": "AMB_WV_S13_U03_associative",
+  "pair_id": "AMB_WV_S13_U03",
+  "query_only": true,
+  "context_session_count": 0,
+  "trials_requested": 1,
+  "valid_trials": 1,
+  "target_positive_count": 0,
+  "target_false_positive_rate": 0.0,
+  "pass": true,
+  "attempts": [
+    {
+      "trial": 1,
+      "status": "valid",
+      "target_asserted": false,
+      "response": {
+        "mode": "withhold",
+        "answer": "I don’t have any visible context about the Tokyo urgent-study handoff, your alternatives, or your ranking criteria, so I can’t responsibly rank it.",
+        "evidence_session_ids": []
+      },
+      "solver_usage": {
+        "input_tokens": 164,
+        "output_tokens": 69,
+        "reasoning_tokens": null,
+        "total_tokens": 233
+      },
+      "validator": {
+        "target_asserted": false,
+        "target_evidence_grounded": false,
+        "evidence_usage": {
+          "ev_A_used": false,
+          "ev_B_used": false,
+          "h_k": 0,
+          "source_misattribution": false
+        },
+        "abstention": {
+          "abstains": true,
+          "asserts_absent_pattern": false
+        },
+        "condition_correct": true,
+        "failure_tags": [],
+        "reason": "The solver correctly withheld: with an empty visible context and no allowed evidence, it declined to rank the Tokyo handoff and did not assert the target proposition ('Accept it with the source-labeled triage note'). It cited no evidence, misattributed nothing, and did not assert the opposite arrangement or any absent pattern. This matches the expected withhold_C mode."
+      },
+      "validator_usage": {
+        "input_tokens": 660,
+        "output_tokens": 290,
+        "reasoning_tokens": null,
+        "total_tokens": 950
+      }
+    }
+  ]
+}

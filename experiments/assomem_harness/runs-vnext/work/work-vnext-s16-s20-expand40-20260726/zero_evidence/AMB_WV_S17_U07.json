@@ -1,0 +1,53 @@
+{
+  "check": "zero_evidence",
+  "candidate_id": "AMB_WV_S17_U07_associative",
+  "pair_id": "AMB_WV_S17_U07",
+  "query_only": true,
+  "context_session_count": 0,
+  "trials_requested": 1,
+  "valid_trials": 1,
+  "target_positive_count": 0,
+  "target_false_positive_rate": 0.0,
+  "pass": true,
+  "attempts": [
+    {
+      "trial": 1,
+      "status": "valid",
+      "target_asserted": false,
+      "response": {
+        "mode": "withhold",
+        "answer": "I can’t confirm that based on the information available here; no supporting conversation details were provided.",
+        "evidence_session_ids": []
+      },
+      "solver_usage": {
+        "input_tokens": 164,
+        "output_tokens": 58,
+        "reasoning_tokens": null,
+        "total_tokens": 222
+      },
+      "validator": {
+        "target_asserted": false,
+        "target_evidence_grounded": false,
+        "evidence_usage": {
+          "ev_A_used": false,
+          "ev_B_used": false,
+          "h_k": 0,
+          "source_misattribution": false
+        },
+        "abstention": {
+          "abstains": true,
+          "asserts_absent_pattern": false
+        },
+        "condition_correct": true,
+        "failure_tags": [],
+        "reason": "The solver correctly withheld confirmation of the target proposition given an empty visible context. It made no target assertion, used no evidence (consistent with empty allowed_evidence_ids), cited no sources, and its refusal to confirm did not assert the opposite arrangement. This matches the expected withhold_C condition."
+      },
+      "validator_usage": {
+        "input_tokens": 650,
+        "output_tokens": 656,
+        "reasoning_tokens": null,
+        "total_tokens": 1306
+      }
+    }
+  ]
+}

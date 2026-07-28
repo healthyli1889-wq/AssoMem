@@ -1,0 +1,53 @@
+{
+  "check": "zero_evidence",
+  "candidate_id": "AMB_FN_S4_U04_associative",
+  "pair_id": "AMB_FN_S4_U04",
+  "query_only": true,
+  "context_session_count": 0,
+  "trials_requested": 1,
+  "valid_trials": 1,
+  "target_positive_count": 0,
+  "target_false_positive_rate": 0.0,
+  "pass": true,
+  "attempts": [
+    {
+      "trial": 1,
+      "status": "valid",
+      "target_asserted": false,
+      "response": {
+        "mode": "withhold",
+        "answer": "I don’t have any visible information about how you run money, your account structure, mandate, risk limits, or what the proposed parent/second-account push entails, so I can’t assess whether it is a good fit. Generally, it would need to align with your authority, liquidity and risk constraints, operational setup, incentives, and controls.",
+        "evidence_session_ids": []
+      },
+      "solver_usage": {
+        "input_tokens": 176,
+        "output_tokens": 89,
+        "reasoning_tokens": null,
+        "total_tokens": 265
+      },
+      "validator": {
+        "target_asserted": false,
+        "target_evidence_grounded": false,
+        "evidence_usage": {
+          "ev_A_used": false,
+          "ev_B_used": false,
+          "h_k": 0,
+          "source_misattribution": false
+        },
+        "abstention": {
+          "abstains": true,
+          "asserts_absent_pattern": false
+        },
+        "condition_correct": true,
+        "failure_tags": [],
+        "reason": "The visible conversation contained no context/evidence, and the solver correctly abstained: it stated it lacks information about the user's money management, account structure, or the proposed push, asserted neither the target proposition nor its opposite, cited no evidence (evidence_session_ids empty, consistent with allowed_evidence_ids being empty), and set mode to withhold. Its generic list of considerations is generic advice, not an assertion of the target or an absent pattern, so withhold_C is satisfied."
+      },
+      "validator_usage": {
+        "input_tokens": 730,
+        "output_tokens": 547,
+        "reasoning_tokens": null,
+        "total_tokens": 1277
+      }
+    }
+  ]
+}

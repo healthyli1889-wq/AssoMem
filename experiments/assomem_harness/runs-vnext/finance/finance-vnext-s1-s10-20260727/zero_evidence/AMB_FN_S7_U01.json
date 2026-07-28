@@ -1,0 +1,53 @@
+{
+  "check": "zero_evidence",
+  "candidate_id": "AMB_FN_S7_U01_associative",
+  "pair_id": "AMB_FN_S7_U01",
+  "query_only": true,
+  "context_session_count": 0,
+  "trials_requested": 1,
+  "valid_trials": 1,
+  "target_positive_count": 0,
+  "target_false_positive_rate": 0.0,
+  "pass": true,
+  "attempts": [
+    {
+      "trial": 1,
+      "status": "valid",
+      "target_asserted": false,
+      "response": {
+        "mode": "withhold",
+        "answer": "I don’t have enough context to advise whether you should make that after-hours remittance tonight. Check the club’s rules, authorization, and payment records before proceeding.",
+        "evidence_session_ids": []
+      },
+      "solver_usage": {
+        "input_tokens": 169,
+        "output_tokens": 88,
+        "reasoning_tokens": null,
+        "total_tokens": 257
+      },
+      "validator": {
+        "target_asserted": false,
+        "target_evidence_grounded": false,
+        "evidence_usage": {
+          "ev_A_used": false,
+          "ev_B_used": false,
+          "h_k": 0,
+          "source_misattribution": false
+        },
+        "abstention": {
+          "abstains": true,
+          "asserts_absent_pattern": false
+        },
+        "condition_correct": true,
+        "failure_tags": [],
+        "reason": "The solver correctly withheld judgment, stating it lacks enough context and offering only generic due-diligence advice. It does not assert the target proposition (that the remittance is a poor fit), nor does it assert the opposite. No evidence was cited, and the allowed evidence set is empty, so there is no misuse of absent evidence or misattribution. This matches the expected withhold_C condition."
+      },
+      "validator_usage": {
+        "input_tokens": 679,
+        "output_tokens": 606,
+        "reasoning_tokens": null,
+        "total_tokens": 1285
+      }
+    }
+  ]
+}

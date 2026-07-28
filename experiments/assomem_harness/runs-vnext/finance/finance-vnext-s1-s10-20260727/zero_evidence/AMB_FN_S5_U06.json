@@ -1,0 +1,53 @@
+{
+  "check": "zero_evidence",
+  "candidate_id": "AMB_FN_S5_U06_associative",
+  "pair_id": "AMB_FN_S5_U06",
+  "query_only": true,
+  "context_session_count": 0,
+  "trials_requested": 1,
+  "valid_trials": 1,
+  "target_positive_count": 0,
+  "target_false_positive_rate": 0.0,
+  "pass": true,
+  "attempts": [
+    {
+      "trial": 1,
+      "status": "valid",
+      "target_asserted": false,
+      "response": {
+        "mode": "withhold",
+        "answer": "I don’t have any visible information about the forum lifestyle bundle, its terms, or your current protective plan, so I can’t say whether switching or adding it makes sense this week.",
+        "evidence_session_ids": []
+      },
+      "solver_usage": {
+        "input_tokens": 175,
+        "output_tokens": 84,
+        "reasoning_tokens": null,
+        "total_tokens": 259
+      },
+      "validator": {
+        "target_asserted": false,
+        "target_evidence_grounded": false,
+        "evidence_usage": {
+          "ev_A_used": false,
+          "ev_B_used": false,
+          "h_k": 0,
+          "source_misattribution": false
+        },
+        "abstention": {
+          "abstains": true,
+          "asserts_absent_pattern": false
+        },
+        "condition_correct": true,
+        "failure_tags": [],
+        "reason": "The visible conversation contains no memory evidence (empty context), so the target proposition cannot be grounded. The solver correctly abstained, asserted neither the target nor an opposite arrangement, cited no absent evidence, and used withhold mode consistent with expected_mode withhold_C."
+      },
+      "validator_usage": {
+        "input_tokens": 692,
+        "output_tokens": 349,
+        "reasoning_tokens": null,
+        "total_tokens": 1041
+      }
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "check": "zero_evidence",
+  "candidate_id": "AMB_WV_S19_U03_associative",
+  "pair_id": "AMB_WV_S19_U03",
+  "query_only": true,
+  "context_session_count": 0,
+  "trials_requested": 1,
+  "valid_trials": 1,
+  "target_positive_count": 0,
+  "target_false_positive_rate": 0.0,
+  "pass": true,
+  "attempts": [
+    {
+      "trial": 1,
+      "status": "valid",
+      "target_asserted": false,
+      "response": {
+        "mode": "withhold",
+        "answer": "I don’t have any visible prior information about your preferences or likely response to that proposal, so I can’t determine how you’re likely to respond.",
+        "evidence_session_ids": []
+      },
+      "solver_usage": {
+        "input_tokens": 182,
+        "output_tokens": 78,
+        "reasoning_tokens": null,
+        "total_tokens": 260
+      },
+      "validator": {
+        "target_asserted": false,
+        "target_evidence_grounded": false,
+        "evidence_usage": {
+          "ev_A_used": false,
+          "ev_B_used": false,
+          "h_k": 0,
+          "source_misattribution": false
+        },
+        "abstention": {
+          "abstains": true,
+          "asserts_absent_pattern": false
+        },
+        "condition_correct": true,
+        "failure_tags": [],
+        "reason": "The visible conversation contains no memory evidence, so the expected mode is withhold_C. The solver explicitly stated it has no visible prior information about the user's likely response, declined to assert the target proposition (conditional agreement), cited no evidence, and set mode to withhold with an empty evidence list. This matches the withhold_C condition: no target assertion and no use of evidence outside allowed_evidence_ids (which is empty). The abstention does not assert the opposite arrangement either, so it is fully correct."
+      },
+      "validator_usage": {
+        "input_tokens": 682,
+        "output_tokens": 426,
+        "reasoning_tokens": null,
+        "total_tokens": 1108
+      }
+    }
+  ]
+}

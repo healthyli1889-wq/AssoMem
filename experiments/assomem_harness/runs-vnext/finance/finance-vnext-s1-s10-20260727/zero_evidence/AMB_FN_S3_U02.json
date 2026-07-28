@@ -1,0 +1,53 @@
+{
+  "check": "zero_evidence",
+  "candidate_id": "AMB_FN_S3_U02_associative",
+  "pair_id": "AMB_FN_S3_U02",
+  "query_only": true,
+  "context_session_count": 0,
+  "trials_requested": 1,
+  "valid_trials": 1,
+  "target_positive_count": 0,
+  "target_false_positive_rate": 0.0,
+  "pass": true,
+  "attempts": [
+    {
+      "trial": 1,
+      "status": "valid",
+      "target_asserted": false,
+      "response": {
+        "mode": "withhold",
+        "answer": "I don’t have visible information about your reserve, liquidity needs, or the specific parking-for-yield proposal, so I can’t assess whether it is sensible for you.",
+        "evidence_session_ids": []
+      },
+      "solver_usage": {
+        "input_tokens": 167,
+        "output_tokens": 96,
+        "reasoning_tokens": null,
+        "total_tokens": 263
+      },
+      "validator": {
+        "target_asserted": false,
+        "target_evidence_grounded": false,
+        "evidence_usage": {
+          "ev_A_used": false,
+          "ev_B_used": false,
+          "h_k": 0,
+          "source_misattribution": false
+        },
+        "abstention": {
+          "abstains": true,
+          "asserts_absent_pattern": false
+        },
+        "condition_correct": true,
+        "failure_tags": [],
+        "reason": "The solver correctly withheld judgment: no evidence was visible in this arm (empty context, allowed_evidence_ids empty), and the response explicitly declined to assess sensibility without asserting the target proposition or its opposite. It cited no absent or fabricated evidence, matching the expected withhold_C condition."
+      },
+      "validator_usage": {
+        "input_tokens": 677,
+        "output_tokens": 281,
+        "reasoning_tokens": null,
+        "total_tokens": 958
+      }
+    }
+  ]
+}

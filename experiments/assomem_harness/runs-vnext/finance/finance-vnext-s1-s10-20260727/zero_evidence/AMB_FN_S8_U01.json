@@ -1,0 +1,53 @@
+{
+  "check": "zero_evidence",
+  "candidate_id": "AMB_FN_S8_U01_associative",
+  "pair_id": "AMB_FN_S8_U01",
+  "query_only": true,
+  "context_session_count": 0,
+  "trials_requested": 1,
+  "valid_trials": 1,
+  "target_positive_count": 0,
+  "target_false_positive_rate": 0.0,
+  "pass": true,
+  "attempts": [
+    {
+      "trial": 1,
+      "status": "valid",
+      "target_asserted": false,
+      "response": {
+        "mode": "withhold",
+        "answer": "I don’t have any visible information about your finances, the registry terms, or the specific split-pay plan, so I can’t assess whether it’s sensible for you.",
+        "evidence_session_ids": []
+      },
+      "solver_usage": {
+        "input_tokens": 166,
+        "output_tokens": 76,
+        "reasoning_tokens": null,
+        "total_tokens": 242
+      },
+      "validator": {
+        "target_asserted": false,
+        "target_evidence_grounded": false,
+        "evidence_usage": {
+          "ev_A_used": false,
+          "ev_B_used": false,
+          "h_k": 0,
+          "source_misattribution": false
+        },
+        "abstention": {
+          "abstains": true,
+          "asserts_absent_pattern": false
+        },
+        "condition_correct": true,
+        "failure_tags": [],
+        "reason": "The visible conversation contained no evidence (empty context), and the expected mode was withhold_C. The solver correctly abstained: it stated it lacks visible information to assess the plan, asserted neither the target proposition nor the opposite arrangement, and cited no evidence session IDs (consistent with the empty allowed_evidence_ids). No target facts were used or misattributed, so the withhold condition is satisfied."
+      },
+      "validator_usage": {
+        "input_tokens": 676,
+        "output_tokens": 606,
+        "reasoning_tokens": null,
+        "total_tokens": 1282
+      }
+    }
+  ]
+}

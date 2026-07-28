@@ -1,0 +1,53 @@
+{
+  "check": "zero_evidence",
+  "candidate_id": "AMB_WV_S12_U05_associative",
+  "pair_id": "AMB_WV_S12_U05",
+  "query_only": true,
+  "context_session_count": 0,
+  "trials_requested": 1,
+  "valid_trials": 1,
+  "target_positive_count": 0,
+  "target_false_positive_rate": 0.0,
+  "pass": true,
+  "attempts": [
+    {
+      "trial": 1,
+      "status": "valid",
+      "target_asserted": false,
+      "response": {
+        "mode": "withhold",
+        "answer": "I don’t have any visible information about the schedule, participants, preparation needs, or constraints for the Thursday table reads and Friday 09:00 sponsor recording, so I can’t determine whether two reads should be scheduled.",
+        "evidence_session_ids": []
+      },
+      "solver_usage": {
+        "input_tokens": 171,
+        "output_tokens": 65,
+        "reasoning_tokens": null,
+        "total_tokens": 236
+      },
+      "validator": {
+        "target_asserted": false,
+        "target_evidence_grounded": false,
+        "evidence_usage": {
+          "ev_A_used": false,
+          "ev_B_used": false,
+          "h_k": 0,
+          "source_misattribution": false
+        },
+        "abstention": {
+          "abstains": true,
+          "asserts_absent_pattern": false
+        },
+        "condition_correct": true,
+        "failure_tags": [],
+        "reason": "The solver correctly withholds: it makes no yes/no scheduling decision, does not assert that the two table reads are a poor fit, cites no evidence sessions, and uses no evidence outside the empty allowed set."
+      },
+      "validator_usage": {
+        "input_tokens": 683,
+        "output_tokens": 1328,
+        "reasoning_tokens": null,
+        "total_tokens": 2011
+      }
+    }
+  ]
+}
